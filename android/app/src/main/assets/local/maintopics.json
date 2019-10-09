@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "De 1900 a 1929",
+    "subtitle": "Parte 01",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "image": {
+      "image_type": "local",
+      "url": "img_viagem_lua_webp",
+      "animation": {
+        "type": "shake_vertical",
+        "duration": 1300
+      }
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_red_500"
+  }
+]
