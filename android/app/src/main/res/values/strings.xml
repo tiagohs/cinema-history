@@ -2,5 +2,7 @@
     <string name="app_name">cinema-history</string>
     <string name="action_settings">Settings</string>
 
+    <string name="quotes">\"\"</string>
+
     <string name="unknown_error">An error occurred, please try again.</string>
 </resources>

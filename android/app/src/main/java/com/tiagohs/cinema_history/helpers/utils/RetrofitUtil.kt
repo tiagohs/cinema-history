@@ -1,7 +1,9 @@
 package com.tiagohs.cinema_history.helpers.utils
 
 import com.google.gson.*
+import com.tiagohs.cinema_history.helpers.deserializers.MainTopicDeserializer
 import com.tiagohs.cinema_history.helpers.deserializers.PageContentDeserializer
+import com.tiagohs.cinema_history.models.MainTopic
 import com.tiagohs.cinema_history.models.contents.Content
 import com.tiagohs.cinema_history.services.config.FakeInterceptor
 import com.tiagohs.cinema_history.services.config.RxErrorHandlingCallAdapterFactory
@@ -62,6 +64,7 @@ object RetrofitUtil {
 
         return GsonBuilder()
                 .registerTypeAdapter(Content::class.java, PageContentDeserializer())
+                .registerTypeAdapter(MainTopic::class.java, MainTopicDeserializer())
                 .create()
     }
 }

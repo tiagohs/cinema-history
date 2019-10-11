@@ -1,5 +1,6 @@
 [
   {
+    "layout_type": "full",
     "id": 1,
     "title": "De 1900 a 1929",
     "subtitle": "Parte 01",
@@ -13,6 +14,25 @@
       }
     },
     "title_color": "md_white_1000",
-    "title_background_color": "md_red_500"
+    "title_background_color": "md_black_1000"
+  },
+  {
+    "layout_type": "card",
+    "id": 2,
+    "title": "De 1930 a 1939",
+    "subtitle": "Parte 02",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "image": {
+      "image_type": "local",
+      "url": "img_brancaneve_movie"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_purple_800"
+  },
+  {
+    "layout_type": "quote",
+    "id": 1,
+    "quote": "Charlie Chaplin e eu tinhamos uma disputa amigável: quem faria o filme com menos legenda?",
+    "author": "Buster Keaton"
   }
 ]

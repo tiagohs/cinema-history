@@ -1,7 +1,7 @@
 package com.tiagohs.cinema_history.dagger.modules
 
-import com.tiagohs.cinema_history.presenter.HomePresenter
-import com.tiagohs.cinema_history.presenter.HomePresenterImpl
+import com.tiagohs.cinema_history.presenter.MainTopicsPresenter
+import com.tiagohs.cinema_history.presenter.MainTopicsPresenterImpl
 import com.tiagohs.cinema_history.services.LocalService
 import dagger.Module
 import dagger.Provides
@@ -10,5 +10,5 @@ import dagger.Provides
 class PresenterModule {
 
     @Provides
-    fun providerHomePresenter(localService: LocalService): HomePresenter = HomePresenterImpl(localService)
+    fun providerHomePresenter(localService: LocalService): MainTopicsPresenter = MainTopicsPresenterImpl(localService)
 }

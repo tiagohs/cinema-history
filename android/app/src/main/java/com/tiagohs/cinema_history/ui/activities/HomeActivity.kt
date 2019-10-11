@@ -1,44 +1,71 @@
 package com.tiagohs.cinema_history.ui.activities
 
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
+import android.view.View
+import com.google.android.material.appbar.AppBarLayout
+import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.models.MainTopic
-import com.tiagohs.cinema_history.presenter.HomePresenter
-import com.tiagohs.cinema_history.ui.adapters.MainTopicsAdapter
-import com.tiagohs.cinema_history.ui.views.HomeView
+import com.tiagohs.cinema_history.enums.MainTopicsType
+import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
+import com.tiagohs.hqr.helpers.tools.AppBarListener
 import kotlinx.android.synthetic.main.activity_home.*
-import javax.inject.Inject
+
 
 class HomeActivity :
-    BaseActivity(),
-    HomeView {
+    BaseActivity() {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_home
     override fun onGetMenuLayoutId(): Int = 0
 
-    @Inject
-    lateinit var homePresenter: HomePresenter
+    var isMoviesCardAnimating = false
+    var isTimelineCardAnimating = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        getApplicationComponent()?.inject(this)
+        setSupportActionBar(toolbar)
 
-        homePresenter.onBindView(this)
-        homePresenter.fetchMainTopics()
+        val width = resources.configuration.screenWidthDp
+
+        Picasso.get()
+            .load(R.drawable.img_chinatown)
+            .centerInside()
+            .resize(width, 500.convertIntToDp(this))
+            .into(historyMovieImage)
+
+        Picasso.get()
+            .load(R.drawable.img_goodfather)
+            .centerCrop()
+            .resize(width, 500.convertIntToDp(this))
+            .into(moviesImage)
+
+        cinemaImageContainer.setOnClickListener(onHistoryCinemaClick())
+        cinemaTitleContainer.setOnClickListener(onHistoryCinemaClick())
+        cinemaFooterContainer.setOnClickListener(onHistoryCinemaClick())
+        startHistoryButton.setOnClickListener(onHistoryCinemaClick())
+
+        moviesCard.setOnClickListener(onMilMoviesClick())
+
+        timelineCard.setOnClickListener(onTimelineCinemaClick())
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-
-        homePresenter.onUnbindView()
+    private fun onHistoryCinemaClick(): View.OnClickListener {
+        return View.OnClickListener {
+            startActivity(MainTopicsActivity.newIntent(MainTopicsType.HISTORY_CINEMA, this, darkMode = true))
+        }
     }
 
-    override fun bindMainTopics(mainTopics: List<MainTopic>) {
-        mainTopicsRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        mainTopicsRecyclerView.adapter = MainTopicsAdapter(this, mainTopics)
+    private fun onMilMoviesClick(): View.OnClickListener {
+        return View.OnClickListener {
+            startActivity(MainTopicsActivity.newIntent(MainTopicsType.MILL_MOVIES, this))
+        }
+    }
+
+    private fun onTimelineCinemaClick(): View.OnClickListener {
+        return View.OnClickListener {
+            startActivity(MainTopicsActivity.newIntent(MainTopicsType.TIMELINE, this))
+        }
     }
 
 }

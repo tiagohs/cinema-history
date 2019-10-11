@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.services.retrofit
 
 import com.tiagohs.cinema_history.models.MainTopic
+import com.tiagohs.cinema_history.models.MainTopicItem
 import com.tiagohs.cinema_history.models.Page
 import io.reactivex.Observable
 import retrofit2.http.GET

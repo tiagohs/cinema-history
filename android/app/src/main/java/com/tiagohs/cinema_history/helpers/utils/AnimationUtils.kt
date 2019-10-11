@@ -41,21 +41,22 @@ object AnimationUtils {
         return fadeIn
     }
 
-    fun createScaleButtonAnimation(button: ToggleButton) {
-        val scaleAnimation = ScaleAnimation(0.7f, 1.0f, 0.7f, 1.0f, Animation.RELATIVE_TO_SELF, 0.7f, Animation.RELATIVE_TO_SELF, 0.7f)
-        scaleAnimation.setDuration(500)
-        val bounceInterpolator = BounceInterpolator()
-        scaleAnimation.setInterpolator(bounceInterpolator)
-
-        button.setOnCheckedChangeListener(object:View.OnClickListener, CompoundButton.OnCheckedChangeListener {
-            override fun onCheckedChanged(p0: CompoundButton?, p1: Boolean) {
-                p0?.startAnimation(scaleAnimation);
+    fun createScaleAnimation(scaleTo: Float, duration: Long, v: View, onFinished: (() -> Unit)? = null) {
+        v.animate()
+            .scaleXBy(scaleTo)
+            .scaleYBy(scaleTo)
+            .setDuration(duration)
+            .withEndAction {
+                v.animate()
+                    .scaleX(1f)
+                    .scaleY(1f)
+                    .setDuration(duration)
+                    .withEndAction {
+                        onFinished?.invoke()
+                    }
+                    .start()
             }
-
-            override fun onClick(p0: View?) {
-
-            }
-        });
+            .start()
     }
 
     fun createShowCircularReveal(view: View) {
