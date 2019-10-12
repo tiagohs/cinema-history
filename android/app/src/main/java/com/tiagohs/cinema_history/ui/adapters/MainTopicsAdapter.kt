@@ -22,6 +22,9 @@ class MainTopicsAdapter(
     val context: Context?,
     val mainTopicList: List<MainTopic>
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    var onMainTopicSelected: ((mainTopic: MainTopicItem) -> Unit)? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
         when (viewType) {
@@ -135,6 +138,7 @@ class MainTopicsAdapter(
             background.cornerRadius = 10f
 
             itemView.mainTopicsContainer.background = background
+            itemView.mainTopicsContainer.setOnClickListener { onMainTopicSelected?.invoke(mainTopicItem) }
         }
 
         fun setupAnimation() {

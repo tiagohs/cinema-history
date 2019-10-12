@@ -5,6 +5,7 @@ import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.cinema_history.enums.MainTopicItemLayoutType
 import com.tiagohs.cinema_history.models.image.Image
+import java.io.Serializable
 
 data class MainTopicItem(
     @SerializedName("id")
@@ -26,41 +27,14 @@ data class MainTopicItem(
     val titleColor: String,
 
     @SerializedName("title_background_color")
-    val titleBackgroundColor: String
-): MainTopic(), Parcelable {
-    constructor(parcel: Parcel) : this(
-        parcel.readInt(),
-        parcel.readString(),
-        parcel.readString(),
-        parcel.readString(),
-        parcel.readParcelable(Image::class.java.classLoader),
-        parcel.readString(),
-        parcel.readString()
-    ) {
-    }
+    val titleBackgroundColor: String,
 
-    override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeInt(id)
-        parcel.writeString(title)
-        parcel.writeString(subtitle)
-        parcel.writeString(description)
-        parcel.writeParcelable(image, flags)
-        parcel.writeString(titleColor)
-        parcel.writeString(titleBackgroundColor)
-    }
+    @SerializedName("quote")
+    val quote: Quote,
 
-    override fun describeContents(): Int {
-        return 0
-    }
+    @SerializedName("sumario_list")
+    val sumarioList: List<Sumario>
 
-    companion object CREATOR : Parcelable.Creator<MainTopicItem> {
-        override fun createFromParcel(parcel: Parcel): MainTopicItem {
-            return MainTopicItem(parcel)
-        }
-
-        override fun newArray(size: Int): Array<MainTopicItem?> {
-            return arrayOfNulls(size)
-        }
-    }
+): MainTopic(), Serializable {
 
 }

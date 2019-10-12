@@ -4,6 +4,7 @@ import android.os.Parcel
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.cinema_history.enums.ImageType
+import java.io.Serializable
 
 class Image(
 
@@ -15,32 +16,7 @@ class Image(
 
     @SerializedName("animation")
     val animation: Animation? = null
-): Parcelable {
-    constructor(parcel: Parcel) : this(
-        parcel.readParcelable(ImageType::class.java.classLoader),
-        parcel.readString(),
-        parcel.readParcelable(Animation::class.java.classLoader)
-    ) {
-    }
+): Serializable {
 
-    override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeParcelable(imageType, flags)
-        parcel.writeString(url)
-        parcel.writeParcelable(animation, flags)
-    }
-
-    override fun describeContents(): Int {
-        return 0
-    }
-
-    companion object CREATOR : Parcelable.Creator<Image> {
-        override fun createFromParcel(parcel: Parcel): Image {
-            return Image(parcel)
-        }
-
-        override fun newArray(size: Int): Array<Image?> {
-            return arrayOfNulls(size)
-        }
-    }
 
 }

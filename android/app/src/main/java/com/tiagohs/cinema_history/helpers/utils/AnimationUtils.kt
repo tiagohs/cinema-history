@@ -13,11 +13,21 @@ object AnimationUtils {
     fun createAnimationFromType(type: AnimationType, duration: Int): Animation {
         return when (type) {
             AnimationType.SHAKE_VERTICAL -> createShakeAnimation(duration)
+            AnimationType.BLINK_VERTICAL -> createBlinkAnimation(duration)
         }
     }
 
     fun createShakeAnimation(duration: Int): Animation {
         val animation = TranslateAnimation(0f, 0f, -30f, 30f)
+        animation.duration = duration.toLong()
+        animation.repeatCount = Animation.INFINITE
+        animation.repeatMode = Animation.REVERSE
+
+        return animation
+    }
+
+    fun createBlinkAnimation(duration: Int): Animation {
+        val animation = AlphaAnimation(0.7f, 1.0f)
         animation.duration = duration.toLong()
         animation.repeatCount = Animation.INFINITE
         animation.repeatMode = Animation.REVERSE

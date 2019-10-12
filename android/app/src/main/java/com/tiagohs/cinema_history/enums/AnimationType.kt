@@ -3,32 +3,16 @@ package com.tiagohs.cinema_history.enums
 import android.os.Parcel
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 enum class AnimationType(
     val type: String
-): Parcelable {
+): Serializable {
 
     @SerializedName("shake_vertical")
-    SHAKE_VERTICAL("shake_vertical");
+    SHAKE_VERTICAL("shake_vertical"),
 
-    constructor(parcel: Parcel) : this(parcel.readString()) {
-    }
+    @SerializedName("blink")
+    BLINK_VERTICAL("blink");
 
-    override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeString(type)
-    }
-
-    override fun describeContents(): Int {
-        return 0
-    }
-
-    companion object CREATOR : Parcelable.Creator<AnimationType> {
-        override fun createFromParcel(parcel: Parcel): AnimationType {
-            return values()[parcel.readInt()]
-        }
-
-        override fun newArray(size: Int): Array<AnimationType?> {
-            return arrayOfNulls(size)
-        }
-    }
 }

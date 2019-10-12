@@ -14,7 +14,18 @@
       }
     },
     "title_color": "md_white_1000",
-    "title_background_color": "md_black_1000"
+    "title_background_color": "md_black_1000",
+    "quote": {
+      "quote": "Labor omnia vincit (o trabalho vence tudo)",
+      "author": "Viagem à Lua"
+    },
+    "sumario_list": [
+      {
+        "id": 1,
+        "title": "Pioneiros do Cinema",
+        "description": ""
+      }
+    ]
   },
   {
     "layout_type": "card",
@@ -26,13 +37,158 @@
       "image_type": "local",
       "url": "img_brancaneve_movie"
     },
+    "quote": {
+      "quote": "Espelho, espelho meu, existe alguém mais bela do que eu?",
+      "author": "Rainha Má"
+    },
     "title_color": "md_white_1000",
-    "title_background_color": "md_purple_800"
+    "title_background_color": "md_purple_800",
+    "sumario_list": [
+      {
+        "id": 1,
+        "title": "",
+        "description": ""
+      }
+    ]
   },
   {
     "layout_type": "quote",
     "id": 1,
     "quote": "Charlie Chaplin e eu tinhamos uma disputa amigável: quem faria o filme com menos legenda?",
     "author": "Buster Keaton"
+  },
+  {
+    "layout_type": "card",
+    "id": 2,
+    "title": "De 1940 a 1959",
+    "subtitle": "Parte 03",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "image": {
+      "image_type": "local",
+      "url": "img_sevensamurais"
+    },
+    "quote": {
+      "quote": "O perigo sempre aparece quando tudo parece bem.",
+      "author": "Kambei / Os Setes Samurais"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_grey_700",
+    "sumario_list": [
+      {
+        "id": 1,
+        "title": "Pioneiros do Cinema",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "layout_type": "full",
+    "id": 1,
+    "title": "De 1960 a 1969",
+    "subtitle": "Parte 04",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "image": {
+      "image_type": "local",
+      "url": "img_2001",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      }
+    },
+    "quote": {
+      "quote": "Sua origem e seu propósito são um mistério total.",
+      "author": "Última frase da Missão de Controle"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_black_1000",
+    "sumario_list": [
+      {
+        "id": 1,
+        "title": "Pioneiros do Cinema",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "layout_type": "card",
+    "id": 2,
+    "title": "De 1970 a 1989",
+    "subtitle": "Parte 05",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "image": {
+      "image_type": "local",
+      "url": "img_exorcist"
+    },
+    "quote": {
+      "quote": "Que ótimo dia para um exorcismo!",
+      "author": "Regan MacNeil"
+    },
+    "title_color": "md_grey_600",
+    "title_background_color": "md_white_1000",
+    "sumario_list": [
+      {
+        "id": 1,
+        "title": "Pioneiros do Cinema",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "layout_type": "quote",
+    "id": 1,
+    "quote": "Hoje mais que nunca precisamos ouvir uns aos outros e entender como vemos o mundo, e o cinema é o melhor meio de fazer isso.",
+    "author": "Martin Scorsese"
+  },
+  {
+    "layout_type": "card",
+    "id": 2,
+    "title": "De 1990 a 2009",
+    "subtitle": "Parte 06",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "image": {
+      "image_type": "local",
+      "url": "img_pulp_fiction"
+    },
+    "quote": {
+      "quote": "Ninguém vai machucar ninguém. Nós vamos ser os Três Caras Bonzinhos aqui. Sabe como é um cara bonzinho?",
+      "author": "Jules / Pulp Fiction"
+    },
+    "title_color": "md_black_1000",
+    "title_background_color": "yellow_dark",
+    "sumario_list": [
+      {
+        "id": 1,
+        "title": "Pioneiros do Cinema",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "layout_type": "full",
+    "id": 1,
+    "title": "De 2010 até Hoje",
+    "subtitle": "Parte 07",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "image": {
+      "image_type": "local",
+      "url": "img_avengers",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      }
+    },
+    "quote": {
+      "quote": "Eu sou o Homem de Ferro.",
+      "author": "Tony Stark / The Avengers"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_black_1000",
+    "sumario_list": [
+      {
+        "id": 1,
+        "title": "Pioneiros do Cinema",
+        "description": ""
+      }
+    ]
   }
 ]

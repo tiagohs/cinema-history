@@ -3,6 +3,7 @@ package com.tiagohs.cinema_history.enums
 import android.os.Parcel
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import java.lang.Exception
 
 enum class ImageType(
     val type: String
@@ -26,7 +27,14 @@ enum class ImageType(
 
     companion object CREATOR : Parcelable.Creator<ImageType> {
         override fun createFromParcel(parcel: Parcel): ImageType {
-            return values()[parcel.readInt()]
+
+            try {
+                return values()[parcel.readInt()]
+            } catch(ex: Exception) {
+                return LOCAL
+            }
+
+
         }
 
         override fun newArray(size: Int): Array<ImageType?> {

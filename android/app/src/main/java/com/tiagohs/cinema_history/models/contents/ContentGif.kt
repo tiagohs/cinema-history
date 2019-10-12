@@ -2,6 +2,7 @@ package com.tiagohs.cinema_history.models.contents
 
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.cinema_history.enums.GifType
+import java.io.Serializable
 
 class ContentGif(
 
@@ -10,4 +11,4 @@ class ContentGif(
 
     @SerializedName("path")
     var path: String
-): Content()
+): Content(), Serializable

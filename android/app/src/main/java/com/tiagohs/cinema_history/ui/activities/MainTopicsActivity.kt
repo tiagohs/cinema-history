@@ -63,8 +63,14 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
     }
 
     override fun bindMainTopics(mainTopics: List<MainTopic>) {
+        val adapter = MainTopicsAdapter(this, mainTopics)
+        adapter.onMainTopicSelected = {
+            startActivity(PresentationActivity.newInstance(this, it))
+        }
+
         mainTopicsList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        mainTopicsList.adapter = MainTopicsAdapter(this, mainTopics)
+        mainTopicsList.adapter = adapter
+
     }
 
     companion object {
