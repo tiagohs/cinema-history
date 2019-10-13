@@ -59,10 +59,7 @@ class HomeActivity :
 
     private fun onMilMoviesClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivity(MilMoviesPresentationActivity.newIntent(
-                MilMoviesMainTopic(1, "123858", "1900 a 1929", "md_black_1000", "yellow_dark"),
-                this
-            ))
+            startActivity(MainTopicsActivity.newIntent(MainTopicsType.MIL_MOVIES, this))
         }
     }
 

@@ -13,4 +13,7 @@ interface LocalServiceRetrofit {
 
     @GET("maintopics")
     fun getMainTopics(): Observable<List<MainTopic>>
+
+    @GET("milmoviesmaintopics")
+    fun getMilMoviesMainTopics(): Observable<List<MainTopic>>
 }

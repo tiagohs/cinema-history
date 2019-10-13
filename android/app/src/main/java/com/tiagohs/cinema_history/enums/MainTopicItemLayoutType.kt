@@ -11,6 +11,9 @@ enum class MainTopicItemLayoutType(
     @SerializedName("card")
     CARD("card"),
 
+    @SerializedName("card_full")
+    CARD_FULL("card_full"),
+
     @SerializedName("full")
     FULL("full"),
 

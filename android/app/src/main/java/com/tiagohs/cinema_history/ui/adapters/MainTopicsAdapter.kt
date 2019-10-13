@@ -10,20 +10,25 @@ import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.enums.MainTopicItemLayoutType
+import com.tiagohs.cinema_history.enums.MainTopicsType
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
-import kotlinx.android.synthetic.main.adapter_main_topics_full_card.view.*
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.Quote
+import com.tiagohs.cinema_history.models.image.Image
+import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
 import kotlinx.android.synthetic.main.adapter_main_topics_inter_quote.view.*
 
 class MainTopicsAdapter(
     val context: Context?,
-    val mainTopicList: List<MainTopic>
+    val mainTopicsType: MainTopicsType,
+    val mainTopicList: List<MainTopic>,
+    val isDarkMode: Boolean = true
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    var onMainTopicSelected: ((mainTopic: MainTopicItem) -> Unit)? = null
+    var onMainTopicSelected: ((mainTopic: MainTopic) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
@@ -35,7 +40,7 @@ class MainTopicsAdapter(
             }
 
             MainTopicItemLayoutType.CARD.ordinal -> {
-                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_full_card, parent, false)
+                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_card, parent, false)
 
                 return MainTopicViewHolder(view)
             }
@@ -44,8 +49,13 @@ class MainTopicsAdapter(
 
                 return MainTopicViewHolder(view)
             }
+            MainTopicItemLayoutType.CARD_FULL.ordinal -> {
+                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_card_full, parent, false)
+
+                return MainTopicViewHolder(view)
+            }
             else -> {
-                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_full_card, parent, false)
+                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_card, parent, false)
 
                 return MainTopicViewHolder(view)
             }
@@ -68,10 +78,20 @@ class MainTopicsAdapter(
             }
             else -> {
                 val mainTopicHoder = holder as? MainTopicViewHolder ?: return
-                val mainTopic = mainTopic as? MainTopicItem
-                    ?: return
 
-                mainTopicHoder.bind(mainTopic)
+                when (mainTopicsType) {
+                    MainTopicsType.HISTORY_CINEMA -> {
+                        val mainTopicItem = mainTopic as? MainTopicItem ?: return
+
+                        mainTopicHoder.bind(mainTopicItem)
+                    }
+                    MainTopicsType.MIL_MOVIES -> {
+                        val milMoviesMainTopic = mainTopic as? MilMoviesMainTopic ?: return
+
+                        mainTopicHoder.bindMillMainTopic(milMoviesMainTopic)
+                    }
+                }
+
             }
         }
 
@@ -90,37 +110,33 @@ class MainTopicsAdapter(
 
     }
 
-
     inner class MainTopicViewHolder(
         val view: View
     ): RecyclerView.ViewHolder(view) {
 
-        var mainTopicItem: MainTopicItem? = null
+        var mainTopicItem: MainTopic? = null
+
+        fun bindMillMainTopic(mainTopic: MilMoviesMainTopic) {
+            this.mainTopicItem = mainTopic
+
+            val context = context ?: return
+
+            loadImage(context, mainTopic.image)
+
+            itemView.title.text = mainTopic.title
+            itemView.mainTopicsContainer.setOnClickListener {
+                val mainTopicItem = mainTopicItem ?: return@setOnClickListener
+
+                onMainTopicSelected?.invoke(mainTopicItem)
+            }
+        }
 
         fun bind(mainTopicItem: MainTopicItem) {
             this.mainTopicItem = mainTopicItem
 
             val context = context ?: return
 
-            when (mainTopicItem.image.imageType) {
-                ImageType.ONLINE -> {
-                    Picasso.get()
-                        .load(mainTopicItem.image.url)
-                        .into(itemView.mainImage)
-                }
-                ImageType.LOCAL -> {
-                    val drawable = context.resources
-                        .getIdentifier(mainTopicItem.image.url, "drawable", context.packageName)
-
-                    val width = context.resources.configuration.screenWidthDp
-
-                    Picasso.get()
-                        .load(drawable)
-                        .centerInside()
-                        .resize(width, 250.convertIntToDp(context))
-                        .into(itemView.mainImage)
-                }
-            }
+            loadImage(context, mainTopicItem.image)
 
             val backgroundColor = context.resources
                 .getIdentifier(mainTopicItem.titleBackgroundColor, "color", context.packageName)
@@ -142,12 +158,41 @@ class MainTopicsAdapter(
             itemView.mainTopicsContainer.setOnClickListener { onMainTopicSelected?.invoke(mainTopicItem) }
         }
 
-        fun setupAnimation() {
-            val mainTopicAnimation = mainTopicItem?.image?.animation ?: return
-            val animation = AnimationUtils.createAnimationFromType(mainTopicAnimation.type, mainTopicAnimation.duration)
+        private fun loadImage(context: Context, mainTopicImage: Image) {
+            when (mainTopicImage.imageType) {
+                ImageType.ONLINE -> {
+                    Picasso.get()
+                        .load(mainTopicImage.url)
+                        .into(itemView.mainImage)
+                }
+                ImageType.LOCAL -> {
+                    val drawable = context.resources
+                        .getIdentifier(mainTopicImage.url, "drawable", context.packageName)
 
-            itemView.mainImage.clearAnimation()
-            itemView.mainImage.startAnimation(animation)
+                    val width = context.resources.configuration.screenWidthDp
+
+                    Picasso.get()
+                        .load(drawable)
+                        .centerInside()
+                        .resize(width, 250.convertIntToDp(context))
+                        .into(itemView.mainImage)
+                }
+            }
+
+        }
+
+        fun setupAnimation() {
+            val mainTopicItem = mainTopicItem ?: return
+
+            if (mainTopicItem is MainTopicItem) {
+                val mainTopicAnimation = mainTopicItem.image.animation ?: return
+                val animation = AnimationUtils.createAnimationFromType(mainTopicAnimation.type, mainTopicAnimation.duration)
+
+                itemView.mainImage.clearAnimation()
+                itemView.mainImage.startAnimation(animation)
+            }
+
+
         }
     }
 
@@ -158,6 +203,12 @@ class MainTopicsAdapter(
         fun bind(quote: Quote) {
             itemView.quoteText.text = quote.quote
             itemView.quoteTextAuthor.text = quote.author
+
+            if (!isDarkMode) {
+                val context = context ?: return
+
+                itemView.quoteText.setTextColor(context.resources.getColor(R.color.md_black_1000))
+            }
         }
     }
 }

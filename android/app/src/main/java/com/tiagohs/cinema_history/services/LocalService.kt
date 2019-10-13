@@ -10,4 +10,5 @@ class LocalService: BaseService() {
 
     fun getPage(pageNumber: Int): Observable<Page> = buildLocalService(LocalServiceRetrofit::class.java).getPage(pageNumber)
     fun getMainTopics(): Observable<List<MainTopic>> = buildLocalService(LocalServiceRetrofit::class.java).getMainTopics()
+    fun getMilMoviesMainTopics(): Observable<List<MainTopic>> = buildLocalService(LocalServiceRetrofit::class.java).getMilMoviesMainTopics()
 }
