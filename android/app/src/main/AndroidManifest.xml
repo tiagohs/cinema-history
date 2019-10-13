@@ -35,6 +35,8 @@
             android:name=".ui.activities.PresentationActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
+        <activity android:name=".ui.activities.MilMoviesPresentationActivity" />
+
         <!--        <activity android:name=".ui.activities.PresentationActivity" />-->
     </application>
 

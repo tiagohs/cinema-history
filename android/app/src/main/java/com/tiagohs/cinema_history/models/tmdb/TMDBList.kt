@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.models.tmdb
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 import kotlin.collections.List
 
 
@@ -21,4 +22,4 @@ data class TMDBList (
 	@SerializedName("average_rating") val average_rating : Double,
 	@SerializedName("runtime") 		val runtime : Int,
 	@SerializedName("poster_path") 	val poster_path : String
-)
+): Serializable

@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 object DateUtils {
-    private val formatter = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US)
+    private val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.US)
     private val c = Calendar.getInstance()
 
     fun getYearByDate(dateString: String): Int {

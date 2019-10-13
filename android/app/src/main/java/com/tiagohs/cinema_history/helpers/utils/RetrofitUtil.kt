@@ -1,21 +1,21 @@
 package com.tiagohs.cinema_history.helpers.utils
 
 import com.google.gson.*
+import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.BuildConfig
 import com.tiagohs.cinema_history.helpers.deserializers.MainTopicDeserializer
 import com.tiagohs.cinema_history.helpers.deserializers.PageContentDeserializer
-import com.tiagohs.cinema_history.models.MainTopic
+import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.contents.Content
 import com.tiagohs.cinema_history.services.config.FakeInterceptor
 import com.tiagohs.cinema_history.services.config.RxErrorHandlingCallAdapterFactory
-import okhttp3.Interceptor
-import okhttp3.OkHttpClient
-import okhttp3.Response
+import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.*
 import java.util.concurrent.TimeUnit
+import java.io.IOException
+
 
 object RetrofitUtil {
 
@@ -37,6 +37,7 @@ object RetrofitUtil {
 
         return Retrofit.Builder()
                 .baseUrl("https://api.themoviedb.org/4/")
+                .addConverterFactory(GsonConverterFactory.create(gsonBuilder()))
                 .addCallAdapterFactory(RxErrorHandlingCallAdapterFactory.create())
                 .client(client)
                 .build()
@@ -44,6 +45,14 @@ object RetrofitUtil {
 
     private fun client(): OkHttpClient {
         val httpClient = OkHttpClient.Builder()
+        val cacheSize = 30 * 1024 * 1024 // 30 MB
+        val context = App.appContext
+
+        if (context != null) {
+            val cache = Cache(context.cacheDir, cacheSize.toLong())
+            httpClient.cache(cache)
+        }
+
         httpClient.connectTimeout(30, TimeUnit.SECONDS)
                 .readTimeout(30, TimeUnit.SECONDS)
                 .writeTimeout(30, TimeUnit.SECONDS)
@@ -65,21 +74,11 @@ object RetrofitUtil {
         return object : Interceptor {
             override fun intercept(chain: Interceptor.Chain): Response {
                 val original = chain.request()
-                var newRequest = original
 
                 val builder = original.newBuilder()
                 val newUrl = original.url.toString() + "&api_key=" + BuildConfig.THEMOVIEDB_API_KEY
-                newRequest = builder.url(newUrl).build()
 
-                var response = chain.proceed(newRequest)
-
-                var retryCount = 0
-                while (!response.isSuccessful && retryCount < 3) {
-                    retryCount++
-                    response = chain.proceed(newRequest)
-                }
-
-                return response
+                return chain.proceed(builder.url(newUrl).build())
             }
 
         }

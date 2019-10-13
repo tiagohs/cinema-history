@@ -8,11 +8,11 @@ import io.reactivex.Observable
 
 class TMDBService: BaseService() {
 
-    fun getMovieDetails(movieId: String): Observable<Movie> {
-        return buildTMDBService(TMDBServiceRetrofit::class.java).getMovieDetails(movieId, "pt-BR,en-EN,null")
+    fun getMovieDetails(movieId: String, appendToResponse: List<String>): Observable<Movie> {
+        return buildTMDBService(TMDBServiceRetrofit::class.java).getMovieDetails(movieId, "pt-BR,en-EN,null", appendToResponse.joinToString(","))
     }
 
     fun getList(listId: String, page: Int): Observable<TMDBList> {
-        return buildTMDBService(TMDBServiceRetrofit::class.java).getList(listId, page, "pt-BR")
+        return buildTMDBService(TMDBServiceRetrofit::class.java).getList(listId, page, "null")
     }
 }

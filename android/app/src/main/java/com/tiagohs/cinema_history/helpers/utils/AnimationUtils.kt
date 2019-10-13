@@ -119,12 +119,30 @@ object AnimationUtils {
             view.visibility = View.GONE
     }
 
-    fun creatScaleUpAnimation(view: View, duration: Int) {
+    fun creatScaleUpAnimation(
+        view: View,
+        fromX: Float,
+        toX: Float,
+        fromY: Float,
+        toY: Float,
+        pivotX: Float,
+        pivotY: Float,
+        duration: Int
+    ) {
+        val scale = ScaleAnimation(
+            fromX,
+            toX,
+            fromY,
+            toY,
+            Animation.RELATIVE_TO_SELF,
+            pivotX,
+            Animation.RELATIVE_TO_SELF,
+            pivotY)
 
-        val fade_in = ScaleAnimation(0f, 1f, 0f, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f)
-        fade_in.duration = duration.toLong()     // animation duration in milliseconds
-        fade_in.fillAfter = true    // If fillAfter is true, the transformation that this animation performed will persist when it is finished.
-        view.startAnimation(fade_in)
+        scale.duration = duration.toLong()     // animation duration in milliseconds
+        scale.fillAfter = true    // If fillAfter is true, the transformation that this animation performed will persist when it is finished.
+
+        view.startAnimation(scale)
 
     }
 }

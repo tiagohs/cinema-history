@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.models.tmdb
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
 data class Image (
@@ -11,4 +12,4 @@ data class Image (
 	@SerializedName("vote_average") val voteAverage : Double,
 	@SerializedName("vote_count") val voteCount : Int,
 	@SerializedName("width") val width : Int
-)
+): Serializable

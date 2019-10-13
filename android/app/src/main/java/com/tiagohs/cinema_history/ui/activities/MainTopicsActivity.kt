@@ -6,8 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.MainTopicsType
-import com.tiagohs.cinema_history.models.MainTopic
-import com.tiagohs.cinema_history.models.MainTopicItem
+import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.presenter.MainTopicsPresenter
 import com.tiagohs.cinema_history.ui.adapters.MainTopicsAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
@@ -39,7 +38,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             MainTopicsType.HISTORY_CINEMA -> {
                 toolbarTitle.text = "Historia do Cinema"
             }
-            MainTopicsType.MILL_MOVIES -> {
+            MainTopicsType.MIL_MOVIES -> {
                 toolbarTitle.text = "1001 Filmes"
             }
             MainTopicsType.TIMELINE -> {

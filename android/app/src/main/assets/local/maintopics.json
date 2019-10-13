@@ -1,5 +1,6 @@
 [
   {
+    "main_topic_type": "history_cinema",
     "layout_type": "full",
     "id": 1,
     "title": "De 1900 a 1929",
@@ -28,6 +29,7 @@
     ]
   },
   {
+    "main_topic_type": "history_cinema",
     "layout_type": "card",
     "id": 2,
     "title": "De 1930 a 1939",
@@ -52,12 +54,14 @@
     ]
   },
   {
+    "main_topic_type": "",
     "layout_type": "quote",
     "id": 1,
     "quote": "Charlie Chaplin e eu tinhamos uma disputa amigável: quem faria o filme com menos legenda?",
     "author": "Buster Keaton"
   },
   {
+    "main_topic_type": "history_cinema",
     "layout_type": "card",
     "id": 2,
     "title": "De 1940 a 1959",
@@ -82,6 +86,7 @@
     ]
   },
   {
+    "main_topic_type": "history_cinema",
     "layout_type": "full",
     "id": 1,
     "title": "De 1960 a 1969",
@@ -110,6 +115,7 @@
     ]
   },
   {
+    "main_topic_type": "history_cinema",
     "layout_type": "card",
     "id": 2,
     "title": "De 1970 a 1989",
@@ -134,12 +140,14 @@
     ]
   },
   {
+    "main_topic_type": "",
     "layout_type": "quote",
     "id": 1,
     "quote": "Hoje mais que nunca precisamos ouvir uns aos outros e entender como vemos o mundo, e o cinema é o melhor meio de fazer isso.",
     "author": "Martin Scorsese"
   },
   {
+    "main_topic_type": "history_cinema",
     "layout_type": "card",
     "id": 2,
     "title": "De 1990 a 2009",
@@ -164,6 +172,7 @@
     ]
   },
   {
+    "main_topic_type": "history_cinema",
     "layout_type": "full",
     "id": 1,
     "title": "De 2010 até Hoje",

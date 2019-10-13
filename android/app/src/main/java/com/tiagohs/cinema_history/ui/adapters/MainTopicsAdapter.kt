@@ -10,11 +10,11 @@ import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.enums.MainTopicItemLayoutType
-import com.tiagohs.cinema_history.models.MainTopicItem
+import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import kotlinx.android.synthetic.main.adapter_main_topics_full_card.view.*
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
-import com.tiagohs.cinema_history.models.MainTopic
+import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.Quote
 import kotlinx.android.synthetic.main.adapter_main_topics_inter_quote.view.*
 
@@ -68,7 +68,8 @@ class MainTopicsAdapter(
             }
             else -> {
                 val mainTopicHoder = holder as? MainTopicViewHolder ?: return
-                val mainTopic = mainTopic as? MainTopicItem ?: return
+                val mainTopic = mainTopic as? MainTopicItem
+                    ?: return
 
                 mainTopicHoder.bind(mainTopic)
             }

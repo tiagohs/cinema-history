@@ -8,8 +8,7 @@ import android.widget.LinearLayout
 import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.models.MainTopic
-import com.tiagohs.cinema_history.models.MainTopicItem
+import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import kotlinx.android.synthetic.main.activity_presentation.*
 import kotlinx.android.synthetic.main.activity_presentation.toolbar

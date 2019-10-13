@@ -7,6 +7,7 @@ import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.MainTopicsType
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
+import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.hqr.helpers.tools.AppBarListener
 import kotlinx.android.synthetic.main.activity_home.*
@@ -58,7 +59,10 @@ class HomeActivity :
 
     private fun onMilMoviesClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivity(MainTopicsActivity.newIntent(MainTopicsType.MILL_MOVIES, this))
+            startActivity(MilMoviesPresentationActivity.newIntent(
+                MilMoviesMainTopic(1, "123858", "1900 a 1929", "md_black_1000", "yellow_dark"),
+                this
+            ))
         }
     }
 

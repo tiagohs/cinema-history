@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.models.tmdb
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
 data class Video (
@@ -19,4 +20,4 @@ data class Video (
 	@SerializedName("overview") val overview : String,
 	@SerializedName("poster_path") val postePath : String,
 	@SerializedName("popularity") val popularity : Double
-)
+): Serializable

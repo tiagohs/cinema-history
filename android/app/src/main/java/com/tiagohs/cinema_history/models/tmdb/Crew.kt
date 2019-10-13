@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.models.tmdb
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
 data class Crew (
@@ -12,4 +13,4 @@ data class Crew (
 	@SerializedName("job") val job : String,
 	@SerializedName("name") val name : String,
 	@SerializedName("profile_path") val profilePath : String
-)
+): Serializable

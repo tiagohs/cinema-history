@@ -2,6 +2,7 @@ package com.tiagohs.cinema_history.models.tmdb
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
 data class Cast (
@@ -14,4 +15,4 @@ data class Cast (
 	@SerializedName("name") val name : String,
 	@SerializedName("order") val order : Int,
 	@SerializedName("profile_path") val profilePath : String
-)
+): Serializable

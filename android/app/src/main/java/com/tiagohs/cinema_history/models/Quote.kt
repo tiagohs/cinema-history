@@ -1,8 +1,7 @@
 package com.tiagohs.cinema_history.models
 
-import android.os.Parcel
-import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import java.io.Serializable
 
 class Quote(

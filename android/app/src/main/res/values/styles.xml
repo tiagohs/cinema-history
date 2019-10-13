@@ -16,9 +16,18 @@
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 
+    <style name="AppTheme.AppThemeWithStatusWhite">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimaryDark">@color/md_black_1000</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Overlay" parent="AppTheme">
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
 
     <style name="TextAppearance.ExpandedTitle" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/oswald_bold</item>
