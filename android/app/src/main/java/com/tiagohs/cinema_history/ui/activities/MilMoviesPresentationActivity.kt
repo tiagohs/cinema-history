@@ -67,15 +67,13 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
     }
 
     override fun bindMovieList(list: List<Movie>) {
-        //moviesPagerAdapter = MoviesPagerAdapter(supportFragmentManager, mainTopic, list)
-
         val adapter = MovieListAdapter(this, list, mainTopic)
         moviesViewPager.adapter = adapter
         moviesViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         moviesViewPager.offscreenPageLimit = 1
 
         val horizontalSpace = 42.convertIntToDp(this)
-        val spaceBetweenItems = 52.convertIntToDp(this)
+        val spaceBetweenItems = 32.convertIntToDp(this)
 
         moviesViewPager.setPageTransformer(ScaleMovieImageTransformer(horizontalSpace, spaceBetweenItems))
         moviesViewPager.addItemDecoration(ScaleMovieImageTransformer.HorizontalMarginItemDecoration(horizontalSpace))

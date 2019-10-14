@@ -25,6 +25,9 @@ class ScaleMovieImageTransformer(
             if (position >= -1 && position <= 1) { // [-1,1]
                 originalTitle.setTranslationX((position) * (width / 4).toFloat())
                 title.setTranslationX((position) * (width / 2).toFloat())
+            } else {
+                originalTitle.setTranslationX((position) * (width / 4).toFloat())
+                title.setTranslationX((position) * (width / 2).toFloat())
             }
         }
     }

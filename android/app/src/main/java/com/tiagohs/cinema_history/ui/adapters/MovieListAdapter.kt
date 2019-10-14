@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageSize
@@ -35,6 +36,10 @@ class MovieListAdapter(
         holder.bind(movie, position)
     }
 
+    override fun getItemId(position: Int): Long {
+        return list.get(position).id?.toLong() ?: position.toLong()
+    }
+
     inner class MovieListViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         fun bind(movie: Movie, position: Int) {
@@ -44,6 +49,10 @@ class MovieListAdapter(
                 val backgroundColor = context.resources
                     .getIdentifier(mainTopic.backgroundColor, "color", context.packageName)
                 itemView.backgroundContent.setBackgroundColor(context.resources.getColor(backgroundColor))
+            } else {
+                val color = context?.resources?.getColor(R.color.md_white_1000) ?: return
+
+                itemView.backgroundContent.setBackgroundColor(color)
             }
 
             loadImage(movie)
