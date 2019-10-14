@@ -43,6 +43,11 @@ class PageAdapter(
 
                 QuoteViewHolder(context, view)
             }
+            ContentType.SLIDE.ordinal -> {
+                val view = LayoutInflater.from(parent.context).inflate(SlideViewHolder.LAYOUT_ID, parent, false)
+
+                SlideViewHolder(context, view)
+            }
             else -> {
                 val view = LayoutInflater.from(parent.context).inflate(TextViewHolder.LAYOUT_ID, parent, false)
                 TextViewHolder(context, view)
@@ -83,6 +88,13 @@ class PageAdapter(
 
                 quoteViewHolder.bind(quoteContent)
             }
+            ContentType.SLIDE.ordinal -> {
+                val slideContent = contentList[position] as? ContentSlide ?: return
+                val slideViewHolder = holder as? SlideViewHolder ?: return
+
+                slideViewHolder.bind(slideContent)
+            }
+
             else -> {
                 val pageTextContent = contentList[position] as? ContentText ?: return
                 val textViewHolder = holder as? TextViewHolder ?: return
