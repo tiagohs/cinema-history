@@ -11,14 +11,15 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.enums.MainTopicItemLayoutType
 import com.tiagohs.cinema_history.enums.MainTopicsType
-import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
+import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
-import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.Quote
 import com.tiagohs.cinema_history.models.image.Image
+import com.tiagohs.cinema_history.models.main_topics.MainTopic
+import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
 import kotlinx.android.synthetic.main.adapter_main_topics_inter_quote.view.*
 
 class MainTopicsAdapter(
@@ -29,38 +30,38 @@ class MainTopicsAdapter(
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     var onMainTopicSelected: ((mainTopic: MainTopic) -> Unit)? = null
+    private var viewHolders: ArrayList<RecyclerView.ViewHolder> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
-        when (viewType) {
+        return when (viewType) {
             MainTopicItemLayoutType.QUOTE.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_inter_quote, parent, false)
 
-                return QuoteViewHolder(view)
+                 QuoteViewHolder(view)
             }
 
             MainTopicItemLayoutType.CARD.ordinal -> {
                 val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_card, parent, false)
 
-                return MainTopicViewHolder(view)
+                 MainTopicViewHolder(view)
             }
             MainTopicItemLayoutType.FULL.ordinal -> {
                 val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_full_screen, parent, false)
 
-                return MainTopicViewHolder(view)
+                 MainTopicViewHolder(view)
             }
             MainTopicItemLayoutType.CARD_FULL.ordinal -> {
                 val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_card_full, parent, false)
 
-                return MainTopicViewHolder(view)
+                 MainTopicViewHolder(view)
             }
             else -> {
                 val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_card, parent, false)
 
-                return MainTopicViewHolder(view)
+                 MainTopicViewHolder(view)
             }
         }
-
     }
 
     override fun getItemCount(): Int = mainTopicList.size
@@ -110,6 +111,10 @@ class MainTopicsAdapter(
 
     }
 
+    fun onDestroy() {
+
+    }
+
     inner class MainTopicViewHolder(
         val view: View
     ): RecyclerView.ViewHolder(view) {
@@ -121,7 +126,7 @@ class MainTopicsAdapter(
 
             val context = context ?: return
 
-            loadImage(context, mainTopic.image)
+            itemView.mainImage.loadImage(mainTopic.image)
 
             itemView.title.text = mainTopic.title
             itemView.mainTopicsContainer.setOnClickListener {
@@ -136,7 +141,7 @@ class MainTopicsAdapter(
 
             val context = context ?: return
 
-            loadImage(context, mainTopicItem.image)
+            itemView.mainImage.loadImage(mainTopicItem.image)
 
             val backgroundColor = context.resources
                 .getIdentifier(mainTopicItem.titleBackgroundColor, "color", context.packageName)
@@ -156,29 +161,6 @@ class MainTopicsAdapter(
 
             itemView.mainTopicsContainer.background = background
             itemView.mainTopicsContainer.setOnClickListener { onMainTopicSelected?.invoke(mainTopicItem) }
-        }
-
-        private fun loadImage(context: Context, mainTopicImage: Image) {
-            when (mainTopicImage.imageType) {
-                ImageType.ONLINE -> {
-                    Picasso.get()
-                        .load(mainTopicImage.url)
-                        .into(itemView.mainImage)
-                }
-                ImageType.LOCAL -> {
-                    val drawable = context.resources
-                        .getIdentifier(mainTopicImage.url, "drawable", context.packageName)
-
-                    val width = context.resources.configuration.screenWidthDp
-
-                    Picasso.get()
-                        .load(drawable)
-                        .centerInside()
-                        .resize(width, 250.convertIntToDp(context))
-                        .into(itemView.mainImage)
-                }
-            }
-
         }
 
         fun setupAnimation() {

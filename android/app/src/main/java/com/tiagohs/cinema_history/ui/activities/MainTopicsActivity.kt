@@ -3,7 +3,11 @@ package com.tiagohs.cinema_history.ui.activities
 import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
+import android.os.Build
 import android.os.Bundle
+import android.view.View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+import android.view.WindowManager
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.MainTopicsType
@@ -15,8 +19,6 @@ import com.tiagohs.cinema_history.ui.adapters.MainTopicsAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.cinema_history.ui.views.MainTopicsView
 import kotlinx.android.synthetic.main.activity_main_topics.*
-import kotlinx.android.synthetic.main.activity_main_topics.toolbar
-import kotlinx.android.synthetic.main.activity_mil_movies_presentation.*
 import javax.inject.Inject
 
 
@@ -30,6 +32,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
 
     private var mainTopicsType: MainTopicsType? = null
     private var isDarkMode = false
+    private var adapter: MainTopicsAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,11 +58,24 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
 
         if (isDarkMode) {
             val view = this.window.decorView
-            view.setBackgroundColor(resources.getColor(R.color.md_black_1000))
+            view.setBackgroundColor(ContextCompat.getColor(this, R.color.md_black_1000))
         } else {
-            toolbar.setBackgroundColor(resources.getColor(R.color.md_white_1000))
-            toolbarTitle.setTextColor(resources.getColor(R.color.md_black_1000))
-            toolbar.navigationIcon?.setColorFilter(resources.getColor(R.color.md_black_1000), PorterDuff.Mode.SRC_ATOP)
+            toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.md_white_1000))
+            toolbarTitle.setTextColor(ContextCompat.getColor(this, R.color.md_black_1000))
+            toolbar.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.md_black_1000), PorterDuff.Mode.SRC_ATOP)
+
+            mainTopicsList.setBackgroundColor(ContextCompat.getColor(this, R.color.md_white_1000))
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                val decor = window.decorView
+                decor.systemUiVisibility = SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+            }
+
+            val window = getWindow()
+
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.setStatusBarColor(ContextCompat.getColor(this, R.color.md_white_1000))
         }
 
         presenter.onBindView(this)
@@ -67,15 +83,17 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
     }
 
     override fun onDestroy() {
-        super.onDestroy()
 
         presenter.onUnbindView()
+        adapter?.onDestroy()
+
+        super.onDestroy()
     }
 
     override fun bindMainTopics(mainTopics: List<MainTopic>) {
         val mainTopicsType = mainTopicsType?: return
-        val adapter = MainTopicsAdapter(this, mainTopicsType, mainTopics, isDarkMode)
-        adapter.onMainTopicSelected = {
+        adapter = MainTopicsAdapter(this, mainTopicsType, mainTopics, isDarkMode)
+        adapter?.onMainTopicSelected = {
 
             when (mainTopicsType) {
                 MainTopicsType.HISTORY_CINEMA -> {

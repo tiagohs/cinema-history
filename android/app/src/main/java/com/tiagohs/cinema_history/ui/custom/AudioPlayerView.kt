@@ -11,6 +11,7 @@ import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
+import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.managers.AudioManager
 import com.tiagohs.cinema_history.models.image.Image
 import kotlinx.android.synthetic.main.view_audio_player.view.*
@@ -19,6 +20,7 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
     : ConstraintLayout(context, attrs) {
 
     private val audioManager: AudioManager
+    private var isReady: Boolean = false
 
     init {
         View.inflate(context, R.layout.view_audio_player, this)
@@ -30,6 +32,8 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
 
         configureSeekBar()
         configureControll()
+
+        isReady = false
     }
 
     var url: String = ""
@@ -47,12 +51,17 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
         prepareResetLayout()
         startLoading()
 
-        this.audioManager.prepareAudioPlayer(this.url, context) { totalDuration, displayTotalTime, displayElapsedTime, mediaPlayer ->
-            stopLoading()
-            prepareReadyLayout(totalDuration, displayTotalTime, displayElapsedTime)
+        if (!isReady) {
+            this.audioManager.prepareAudioPlayer(this.url, context) { totalDuration, displayTotalTime, displayElapsedTime, mediaPlayer ->
+                isReady = true
 
-            onReady?.invoke(totalDuration, displayTotalTime, displayElapsedTime, mediaPlayer)
+                stopLoading()
+                prepareReadyLayout(totalDuration, displayTotalTime, displayElapsedTime)
+
+                onReady?.invoke(totalDuration, displayTotalTime, displayElapsedTime, mediaPlayer)
+            }
         }
+
     }
 
     fun playOrPause() {
@@ -123,25 +132,7 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
     }
 
     private fun loadImage(image: Image) {
-        when (image.imageType) {
-            ImageType.ONLINE -> {
-                Picasso.get()
-                    .load(image.url)
-                    .centerInside()
-                    .resize(30, 30.convertIntToDp(context))
-                    .into(audioImage)
-            }
-            ImageType.LOCAL -> {
-                val drawable = context.resources
-                    .getIdentifier(image.url, "drawable", context.packageName)
-
-                Picasso.get()
-                    .load(drawable)
-                    .centerInside()
-                    .resize(30, 30.convertIntToDp(context))
-                    .into(audioImage)
-            }
-        }
+        audioImage.loadImage(image)
     }
 
 }

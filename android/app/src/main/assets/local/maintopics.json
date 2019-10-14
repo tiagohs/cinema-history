@@ -12,6 +12,12 @@
       "animation": {
         "type": "shake_vertical",
         "duration": 1300
+      },
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 250
+        }
       }
     },
     "title_color": "md_white_1000",
@@ -37,7 +43,13 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
     "image": {
       "image_type": "local",
-      "url": "img_brancaneve_movie"
+      "url": "img_brancaneve_movie",
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 250
+        }
+      }
     },
     "quote": {
       "quote": "Espelho, espelho meu, existe alguém mais bela do que eu?",
@@ -69,7 +81,13 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
     "image": {
       "image_type": "local",
-      "url": "img_sevensamurais"
+      "url": "img_sevensamurais",
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 250
+        }
+      }
     },
     "quote": {
       "quote": "O perigo sempre aparece quando tudo parece bem.",
@@ -98,6 +116,12 @@
       "animation": {
         "type": "blink",
         "duration": 1000
+      },
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 250
+        }
       }
     },
     "quote": {
@@ -123,7 +147,13 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
     "image": {
       "image_type": "local",
-      "url": "img_exorcist"
+      "url": "img_exorcist",
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 250
+        }
+      }
     },
     "quote": {
       "quote": "Que ótimo dia para um exorcismo!",
@@ -155,7 +185,13 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
     "image": {
       "image_type": "local",
-      "url": "img_pulp_fiction"
+      "url": "img_pulp_fiction",
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 250
+        }
+      }
     },
     "quote": {
       "quote": "Ninguém vai machucar ninguém. Nós vamos ser os Três Caras Bonzinhos aqui. Sabe como é um cara bonzinho?",
@@ -184,6 +220,12 @@
       "animation": {
         "type": "blink",
         "duration": 1000
+      },
+      "style": {
+        "resize": {
+          "height": 250
+        },
+        "scale_type": "center_inside"
       }
     },
     "quote": {

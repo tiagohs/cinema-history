@@ -1,23 +1,29 @@
 package com.tiagohs.cinema_history.ui.adapters.page
 
 import android.content.Context
+import android.graphics.Typeface
 import android.view.View
-import androidx.recyclerview.widget.RecyclerView
+import androidx.core.text.HtmlCompat
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.FontEnum
+import com.tiagohs.cinema_history.helpers.extensions.styledString
 import com.tiagohs.cinema_history.models.contents.ContentText
 import kotlinx.android.synthetic.main.adapter_page_text.view.*
 
 class TextViewHolder(
     val context: Context?,
     val view: View
-): RecyclerView.ViewHolder(view) {
+): BasePageViewHolder(view) {
 
-    fun bind(content: ContentText) {
+    fun bind(contentText: ContentText) {
         val context = context ?: return
 
-        itemView.contentText.text = content.contentText
-        itemView.contentText.typeface = FontEnum.OPEN_SANS_BOLD.getTypeface(context.assets)
+        itemView.contentText.text = contentText.contentText.styledString()
+
+        contentText.font?.let {
+            val font = Typeface.createFromAsset(context.assets, "fonts/${it}.ttf")
+            itemView.contentText.typeface = font
+
+        }
     }
 
     companion object {

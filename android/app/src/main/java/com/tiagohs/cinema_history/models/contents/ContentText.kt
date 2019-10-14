@@ -6,5 +6,8 @@ import java.io.Serializable
 data class ContentText(
 
     @SerializedName("content_text")
-    var contentText: String?
+    var contentText: String,
+
+    @SerializedName("font")
+    var font: String?
 ): Content(), Serializable

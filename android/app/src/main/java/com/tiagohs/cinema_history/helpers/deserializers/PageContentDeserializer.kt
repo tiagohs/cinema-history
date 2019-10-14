@@ -20,6 +20,7 @@ class PageContentDeserializer: JsonDeserializer<Content> {
         return when (type) {
             ContentType.TEXT -> Gson().fromJson(obj, ContentText::class.java)
             ContentType.GIF -> Gson().fromJson(obj, ContentGif::class.java)
+            else -> { Gson().fromJson(obj, Content::class.java) }
         }
     }
 }

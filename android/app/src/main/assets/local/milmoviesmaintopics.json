@@ -7,7 +7,13 @@
     "title": "De 1900 a 1929",
     "image": {
       "image_type": "local",
-      "url": "img_the_gold_rush"
+      "url": "img_the_gold_rush",
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 380
+        }
+      }
     },
     "title_color": "md_indigo_500",
     "background_color": "md_black_1000"
@@ -20,7 +26,13 @@
     "title": "De 1930 a 1939",
     "image": {
       "image_type": "local",
-      "url": "img_frankenstein"
+      "url": "img_frankenstein",
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 380
+        }
+      }
     },
     "title_color": "md_yellow_700",
     "background_color": "md_black_1000"

@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
+import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.models.Page
 import com.tiagohs.cinema_history.models.Sumario
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
@@ -35,15 +36,7 @@ class PresentationActivity: BaseActivity() {
         quoteText.text = mainTopic?.quote?.quote
         quoteTextAuthor.text = mainTopic?.quote?.author
 
-        val drawable = resources
-            .getIdentifier(mainTopic?.image?.url, "drawable", packageName)
-        val width = resources.configuration.screenWidthDp
-
-        Picasso.get()
-            .load(drawable)
-            .centerInside()
-            .resize(width, 350.convertIntToDp(this))
-            .into(image)
+        loadImage(mainTopic)
 
         mainTopicTitle.text = mainTopic?.title
         mainTopicDescription.text = mainTopic?.description
@@ -71,6 +64,14 @@ class PresentationActivity: BaseActivity() {
         }
 
         sumarioList.adapter = adapter
+    }
+
+    private fun loadImage(mainTopic: MainTopicItem?) {
+        val presentationImage = mainTopic?.image ?: return
+
+        presentationImage.imageStyle?.height = 350
+
+        image.loadImage(presentationImage)
     }
 
     companion object {

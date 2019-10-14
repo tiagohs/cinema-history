@@ -6,6 +6,7 @@ import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageSize
 import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
+import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.helpers.utils.DateUtils
 import com.tiagohs.cinema_history.helpers.utils.LocaleUtils
@@ -44,9 +45,7 @@ class MoviePresentationItemFragment: BaseFragment() {
 
         val movie = arguments?.getSerializable(MOVIE_ARGUMENT) as? Movie ?: return
 
-        Picasso.get()
-            .load(movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500))
-            .into(image)
+        loadImage(movie)
 
         title.text = movie.title ?: movie.originalTitle
         originalTitle.text = movie.originalTitle
@@ -65,6 +64,12 @@ class MoviePresentationItemFragment: BaseFragment() {
             genre.visibility = View.GONE
         }
 
+    }
+
+    private fun loadImage(movie: Movie) {
+        val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
+
+        image.loadImage(url)
     }
 
     fun scaleUpImage(duration: Int = 380) {

@@ -6,8 +6,13 @@ import android.view.View
 import com.google.android.material.appbar.AppBarLayout
 import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.enums.MainTopicsType
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
+import com.tiagohs.cinema_history.helpers.extensions.loadImage
+import com.tiagohs.cinema_history.models.image.Image
+import com.tiagohs.cinema_history.models.image.ImageResize
+import com.tiagohs.cinema_history.models.image.ImageStyle
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.hqr.helpers.tools.AppBarListener
@@ -28,19 +33,44 @@ class HomeActivity :
 
         setSupportActionBar(toolbar)
 
-        val width = resources.configuration.screenWidthDp
+        val historyImage = Image(
+            ImageType.LOCAL,
+            "img_chinatown",
+            null,
+            ImageStyle(
+                resize = ImageResize(
+                    height = 500
+                ),
+                scaleType = "center_inside")
+        )
 
-        Picasso.get()
-            .load(R.drawable.img_chinatown)
-            .centerInside()
-            .resize(width, 500.convertIntToDp(this))
-            .into(historyMovieImage)
+        historyMovieImage.loadImage(historyImage)
 
-        Picasso.get()
-            .load(R.drawable.img_goodfather)
-            .centerCrop()
-            .resize(width, 500.convertIntToDp(this))
-            .into(moviesImage)
+        val milMoviesImage = Image(
+            ImageType.LOCAL,
+            "img_goodfather",
+            null,
+            ImageStyle(
+                resize = ImageResize(
+                    height = 500
+                ),
+                scaleType = "center_crop")
+        )
+
+        moviesImage.loadImage(milMoviesImage)
+
+        val timelineImageObject = Image(
+            ImageType.LOCAL,
+            "img_faixa",
+            null,
+            ImageStyle(
+                resize = ImageResize(
+                    height = 300
+                ),
+                scaleType = "center_inside")
+        )
+
+        timelineImage.loadImage(timelineImageObject)
 
         cinemaImageContainer.setOnClickListener(onHistoryCinemaClick())
         cinemaTitleContainer.setOnClickListener(onHistoryCinemaClick())

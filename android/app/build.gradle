@@ -42,6 +42,8 @@ dependencies {
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.23'
 
+    implementation 'com.github.stfalcon:stfalcon-imageviewer:0.1.0'
+
     /**
      * PICASSO Dependencies
      */

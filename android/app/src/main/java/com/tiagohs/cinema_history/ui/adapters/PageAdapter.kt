@@ -5,20 +5,19 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.enums.ContentType
-import com.tiagohs.cinema_history.models.contents.Content
-import com.tiagohs.cinema_history.models.contents.ContentGif
-import com.tiagohs.cinema_history.models.contents.ContentText
-import com.tiagohs.cinema_history.ui.adapters.page.GifViewHolder
-import com.tiagohs.cinema_history.ui.adapters.page.TextViewHolder
+import com.tiagohs.cinema_history.models.contents.*
+import com.tiagohs.cinema_history.ui.adapters.page.*
 
 class PageAdapter(
     val context: Context?,
     val contentList: List<Content>
-): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+): RecyclerView.Adapter<BasePageViewHolder>() {
+
+    private var viewHolders: ArrayList<BasePageViewHolder> = ArrayList()
 
     override fun getItemCount(): Int = contentList.size
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BasePageViewHolder {
 
         return when (viewType) {
             ContentType.TEXT.ordinal -> {
@@ -29,18 +28,31 @@ class PageAdapter(
                 val view = LayoutInflater.from(parent.context).inflate(GifViewHolder.LAYOUT_ID, parent, false)
                 GifViewHolder(context, view)
             }
+            ContentType.AUDIO_STREAM.ordinal -> {
+                val view = LayoutInflater.from(parent.context).inflate(AudioStreamViewHolder.LAYOUT_ID, parent, false)
+
+                AudioStreamViewHolder(context, view)
+            }
+            ContentType.IMAGE.ordinal -> {
+                val view = LayoutInflater.from(parent.context).inflate(ImageViewHolder.LAYOUT_ID, parent, false)
+
+                ImageViewHolder(context, view)
+            }
+            ContentType.QUOTE.ordinal -> {
+                val view = LayoutInflater.from(parent.context).inflate(QuoteViewHolder.LAYOUT_ID, parent, false)
+
+                QuoteViewHolder(context, view)
+            }
             else -> {
                 val view = LayoutInflater.from(parent.context).inflate(TextViewHolder.LAYOUT_ID, parent, false)
                 TextViewHolder(context, view)
             }
         }
-
     }
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val viewType = getItemViewType(position)
+    override fun onBindViewHolder(holder: BasePageViewHolder, position: Int) {
 
-        when (viewType) {
+        when (getItemViewType(position)) {
             ContentType.TEXT.ordinal -> {
                 val pageTextContent = contentList[position] as? ContentText ?: return
                 val textViewHolder = holder as? TextViewHolder ?: return
@@ -53,9 +65,42 @@ class PageAdapter(
 
                 gifViewHolder.bind(pageGifContent)
             }
-            else -> {}
+            ContentType.AUDIO_STREAM.ordinal -> {
+                val pageAudioStreamContent = contentList[position] as? ContentAudioStream ?: return
+                val audioStreamViewHolder = holder as? AudioStreamViewHolder ?: return
+
+                audioStreamViewHolder.bind(pageAudioStreamContent)
+            }
+            ContentType.IMAGE.ordinal -> {
+                val pageImageContent = contentList[position] as? ContentImage ?: return
+                val imageStreamViewHolder = holder as? ImageViewHolder ?: return
+
+                imageStreamViewHolder.bind(pageImageContent)
+            }
+            ContentType.QUOTE.ordinal -> {
+                val quoteContent = contentList[position] as? ContentQuote ?: return
+                val quoteViewHolder = holder as? QuoteViewHolder ?: return
+
+                quoteViewHolder.bind(quoteContent)
+            }
+            else -> {
+                val pageTextContent = contentList[position] as? ContentText ?: return
+                val textViewHolder = holder as? TextViewHolder ?: return
+
+                textViewHolder.bind(pageTextContent)
+            }
         }
     }
 
     override fun getItemViewType(position: Int): Int = contentList.get(position).type.ordinal
+
+    fun onDestroy() {
+
+        viewHolders.forEach {
+            if (it is GifViewHolder) {
+                it.onDestroy()
+            }
+        }
+    }
+
 }
