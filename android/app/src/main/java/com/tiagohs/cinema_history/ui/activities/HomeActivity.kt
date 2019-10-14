@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.ui.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.google.android.material.appbar.AppBarLayout

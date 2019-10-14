@@ -209,7 +209,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/featuredTitle"
-                android:text="Features"
+                android:text="Sumário"
                 android:textSize="14sp"
                 android:textColor="@color/md_black_1000"
                 android:fontFamily="@font/heptaslab_bold"
@@ -223,18 +223,17 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 />
 
-            <LinearLayout
-                android:layout_width="0dp"
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/sumarioListContainer"
-                android:orientation="vertical"
+                android:id="@+id/sumarioList"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="20dp"
-                android:gravity="center"
                 app:layout_constraintTop_toBottomOf="@id/featuredTitle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+            />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

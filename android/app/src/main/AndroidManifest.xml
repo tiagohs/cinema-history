@@ -18,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        android:networkSecurityConfig="@xml/network_config_security">
 
         <activity
             android:name=".ui.activities.HomeActivity"
@@ -36,6 +37,7 @@
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <activity android:name=".ui.activities.MilMoviesPresentationActivity" />
+        <activity android:name=".ui.activities.HistoryPagesActivity" />
 
         <!--        <activity android:name=".ui.activities.PresentationActivity" />-->
     </application>

@@ -11,6 +11,21 @@ enum class ContentType(
     @SerializedName("gif")
     GIF("gif");
 
+//    @SerializedName("video")
+//    VIDEO("video"),
+//
+//    @SerializedName("slide")
+//    SLIDE("slide"),
+//
+//    @SerializedName("image")
+//    IMAGE("image"),
+//
+//    @SerializedName("audio_stream")
+//    AUDIO_STREAM("audio_stream"),
+//
+//    @SerializedName("quote")
+//    QUOTE("quote");
+
     companion object {
         fun getContentType(type: String): ContentType {
             var typeEnum = TEXT

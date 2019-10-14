@@ -7,7 +7,7 @@ import java.io.Serializable
 
 class Sumario(
     @SerializedName("id")
-    val id: String,
+    val id: Int,
 
     @SerializedName("name")
     val name: String,

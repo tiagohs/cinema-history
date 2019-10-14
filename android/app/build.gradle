@@ -39,6 +39,9 @@ dependencies {
 
     implementation 'com.github.Adilhusen:circle-progress-ad-android-:1.0'
 
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.23'
+
     /**
      * PICASSO Dependencies
      */
