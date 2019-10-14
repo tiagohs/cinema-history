@@ -1,5 +1,8 @@
 package com.tiagohs.cinema_history.helpers.utils
 
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkInfo
 import com.google.gson.*
 import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.BuildConfig
@@ -45,7 +48,7 @@ object RetrofitUtil {
 
     private fun client(): OkHttpClient {
         val httpClient = OkHttpClient.Builder()
-        val cacheSize = 30 * 1024 * 1024 // 30 MB
+        val cacheSize = 10 * 1024 * 1024 // 30 MB
         val context = App.appContext
 
         if (context != null) {
@@ -59,8 +62,44 @@ object RetrofitUtil {
 
         httpClient.addInterceptor(getLoggingInterceptor())
         httpClient.addInterceptor(getTMDBIntercaptor())
+        httpClient.addInterceptor(getCacheInterceptor(context))
 
         return httpClient.build()
+    }
+
+    private fun getCacheInterceptor(context: Context?): Interceptor {
+        return object: Interceptor {
+            override fun intercept(chain: Interceptor.Chain): Response {
+                var request = chain.request()
+
+                /*
+                *  Leveraging the advantage of using Kotlin,
+                *  we initialize the request and change its header depending on whether
+                *  the device is connected to Internet or not.
+                */
+                request = if (hasNetwork(context)!!)
+                /*
+                *  If there is Internet, get the cache that was stored 5 seconds ago.
+                *  If the cache is older than 5 seconds, then discard it,
+                *  and indicate an error in fetching the response.
+                *  The 'max-age' attribute is responsible for this behavior.
+                */
+                    request.newBuilder().header("Cache-Control", "public, max-age=" + 10).build()
+                else
+                /*
+                *  If there is no Internet, get the cache that was stored 7 days ago.
+                *  If the cache is older than 7 days, then discard it,
+                *  and indicate an error in fetching the response.
+                *  The 'max-stale' attribute is responsible for this behavior.
+                *  The 'only-if-cached' attribute indicates to not retrieve new data; fetch the cache only instead.
+                */
+                    request.newBuilder().header("Cache-Control", "public, only-if-cached, max-stale=" + 60 * 60 * 24 * 7).build()
+                // End of if-else statement
+
+                // Add the modified request to the chain.
+                return chain.proceed(request)
+            }
+        }
     }
 
     private fun getLoggingInterceptor(): HttpLoggingInterceptor {
@@ -82,6 +121,16 @@ object RetrofitUtil {
             }
 
         }
+    }
+
+    fun hasNetwork(context: Context?): Boolean? {
+        var isConnected: Boolean? = false
+        val connectivityManager = context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val activeNetwork: NetworkInfo? = connectivityManager.activeNetworkInfo
+        if (activeNetwork != null && activeNetwork.isConnected)
+            isConnected = true
+
+        return isConnected
     }
 
     private fun gsonBuilder(): Gson {

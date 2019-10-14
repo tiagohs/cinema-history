@@ -6,16 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.enums.MainTopicItemLayoutType
 import com.tiagohs.cinema_history.enums.MainTopicsType
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.Quote
-import com.tiagohs.cinema_history.models.image.Image
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
@@ -30,7 +26,6 @@ class MainTopicsAdapter(
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     var onMainTopicSelected: ((mainTopic: MainTopic) -> Unit)? = null
-    private var viewHolders: ArrayList<RecyclerView.ViewHolder> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
@@ -47,7 +42,7 @@ class MainTopicsAdapter(
                  MainTopicViewHolder(view)
             }
             MainTopicItemLayoutType.FULL.ordinal -> {
-                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_full_screen, parent, false)
+                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_full, parent, false)
 
                  MainTopicViewHolder(view)
             }
@@ -108,10 +103,6 @@ class MainTopicsAdapter(
         if (holder is MainTopicViewHolder) {
             holder.setupAnimation()
         }
-
-    }
-
-    fun onDestroy() {
 
     }
 

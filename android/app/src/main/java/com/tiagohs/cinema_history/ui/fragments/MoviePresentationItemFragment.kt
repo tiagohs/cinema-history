@@ -2,23 +2,21 @@ package com.tiagohs.cinema_history.ui.fragments
 
 import android.os.Bundle
 import android.view.View
-import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageSize
 import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
-import com.tiagohs.cinema_history.helpers.utils.DateUtils
 import com.tiagohs.cinema_history.helpers.utils.LocaleUtils
 import com.tiagohs.cinema_history.helpers.utils.MovieUtils
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
 import com.tiagohs.cinema_history.models.tmdb.Movie
 import com.tiagohs.cinema_history.ui.configs.BaseFragment
-import kotlinx.android.synthetic.main.fragment_movie_presentation_item.*
+import kotlinx.android.synthetic.main.adapter_movie_list.*
 
 class MoviePresentationItemFragment: BaseFragment() {
 
-    override fun getViewID(): Int = R.layout.fragment_movie_presentation_item
+    override fun getViewID(): Int = R.layout.adapter_movie_list
 
     override fun onErrorAction() {
 

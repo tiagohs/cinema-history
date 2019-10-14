@@ -1,16 +1,13 @@
 package com.tiagohs.cinema_history.ui.adapters.page
 
 import android.content.Context
-import android.graphics.Typeface
 import android.view.View
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.styledString
 import com.tiagohs.cinema_history.models.contents.ContentSlide
-import com.tiagohs.cinema_history.models.contents.ContentText
 import com.tiagohs.cinema_history.ui.adapters.ImageAdapter
+import com.tiagohs.cinema_history.ui.custom.ParallaxImageTransformer
 import kotlinx.android.synthetic.main.adapter_page_slide.view.*
-import kotlinx.android.synthetic.main.adapter_page_text.view.*
 
 class SlideViewHolder(
     val context: Context?,
@@ -20,8 +17,9 @@ class SlideViewHolder(
     fun bind(contentSlide: ContentSlide) {
         val context = context ?: return
 
-        itemView.imageList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        itemView.imageList.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         itemView.imageList.adapter = ImageAdapter(context, contentSlide.images)
+        itemView.imageList.setPageTransformer(ParallaxImageTransformer())
 
         setupContentFooterInformation(contentSlide.information)
     }

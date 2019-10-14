@@ -14,7 +14,7 @@ import com.tiagohs.cinema_history.models.image.GifImage
 import com.tiagohs.cinema_history.models.image.Image
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
 import kotlinx.android.synthetic.main.adapter_page_gif.view.*
-import kotlinx.android.synthetic.main.fragment_movie_presentation_item.*
+import kotlinx.android.synthetic.main.adapter_movie_list.*
 import java.lang.Exception
 
 fun ImageView.loadImage(url: String) {

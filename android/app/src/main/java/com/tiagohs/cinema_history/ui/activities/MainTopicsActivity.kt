@@ -21,7 +21,6 @@ import com.tiagohs.cinema_history.ui.views.MainTopicsView
 import kotlinx.android.synthetic.main.activity_main_topics.*
 import javax.inject.Inject
 
-
 class MainTopicsActivity: BaseActivity(), MainTopicsView {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_main_topics
@@ -85,7 +84,6 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
     override fun onDestroy() {
 
         presenter.onUnbindView()
-        adapter?.onDestroy()
 
         super.onDestroy()
     }

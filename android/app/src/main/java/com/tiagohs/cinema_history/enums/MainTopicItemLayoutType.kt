@@ -20,7 +20,6 @@ enum class MainTopicItemLayoutType(
     @SerializedName("quote")
     QUOTE("quote");
 
-
     constructor(parcel: Parcel) : this(parcel.readString()) {
     }
 

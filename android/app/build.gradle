@@ -37,6 +37,8 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.10.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
 
+    implementation 'androidx.viewpager2:viewpager2:1.0.0-beta05'
+
     implementation 'com.github.Adilhusen:circle-progress-ad-android-:1.0'
 
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'

@@ -3,18 +3,23 @@ package com.tiagohs.cinema_history.ui.activities
 import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
+import android.graphics.Rect
 import android.os.Bundle
-import androidx.core.graphics.drawable.DrawableCompat
-import androidx.viewpager.widget.ViewPager
+import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
 import com.tiagohs.cinema_history.models.tmdb.Movie
 import com.tiagohs.cinema_history.presenter.MilMoviesPresentationPresenter
+import com.tiagohs.cinema_history.ui.adapters.MovieListAdapter
 import com.tiagohs.cinema_history.ui.adapters.MoviesPagerAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
+import com.tiagohs.cinema_history.ui.custom.ScaleMovieImageTransformer
 import com.tiagohs.cinema_history.ui.views.MilMoviesPresentationView
 import kotlinx.android.synthetic.main.activity_mil_movies_presentation.*
 import javax.inject.Inject
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 
 
 class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
@@ -62,22 +67,18 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
     }
 
     override fun bindMovieList(list: List<Movie>) {
-        moviesPagerAdapter = MoviesPagerAdapter(supportFragmentManager, mainTopic, list)
+        //moviesPagerAdapter = MoviesPagerAdapter(supportFragmentManager, mainTopic, list)
 
-        moviesViewPager.adapter = moviesPagerAdapter
-        moviesViewPager.addOnPageChangeListener(onPageChangeListener())
-    }
+        val adapter = MovieListAdapter(this, list, mainTopic)
+        moviesViewPager.adapter = adapter
+        moviesViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        moviesViewPager.offscreenPageLimit = 1
 
-    private fun onPageChangeListener(): ViewPager.OnPageChangeListener {
-        return object : ViewPager.OnPageChangeListener {
-            override fun onPageScrollStateChanged(state: Int) {}
-            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {}
+        val horizontalSpace = 42.convertIntToDp(this)
+        val spaceBetweenItems = 52.convertIntToDp(this)
 
-            override fun onPageSelected(position: Int) {
-                moviesPagerAdapter?.onPageSelected(position)
-            }
-
-        }
+        moviesViewPager.setPageTransformer(ScaleMovieImageTransformer(horizontalSpace, spaceBetweenItems))
+        moviesViewPager.addItemDecoration(ScaleMovieImageTransformer.HorizontalMarginItemDecoration(horizontalSpace))
     }
 
     companion object {
