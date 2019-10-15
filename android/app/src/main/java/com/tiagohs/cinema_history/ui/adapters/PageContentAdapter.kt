@@ -8,7 +8,7 @@ import com.tiagohs.cinema_history.enums.ContentType
 import com.tiagohs.cinema_history.models.contents.*
 import com.tiagohs.cinema_history.ui.adapters.page.*
 
-class PageAdapter(
+class PageContentAdapter(
     val context: Context?,
     val contentList: List<Content>
 ): RecyclerView.Adapter<BasePageViewHolder>() {
@@ -47,6 +47,11 @@ class PageAdapter(
                 val view = LayoutInflater.from(parent.context).inflate(SlideViewHolder.LAYOUT_ID, parent, false)
 
                 SlideViewHolder(context, view)
+            }
+            ContentType.VIDEO.ordinal -> {
+                val view = LayoutInflater.from(parent.context).inflate(VideoViewHolder.LAYOUT_ID, parent, false)
+
+                VideoViewHolder(context, view)
             }
             else -> {
                 val view = LayoutInflater.from(parent.context).inflate(TextViewHolder.LAYOUT_ID, parent, false)
@@ -93,6 +98,12 @@ class PageAdapter(
                 val slideViewHolder = holder as? SlideViewHolder ?: return
 
                 slideViewHolder.bind(slideContent)
+            }
+            ContentType.VIDEO.ordinal -> {
+                val contentVideo = contentList[position] as? ContentVideo ?: return
+                val videoViewHolder = holder as? VideoViewHolder ?: return
+
+                videoViewHolder.bind(contentVideo)
             }
 
             else -> {

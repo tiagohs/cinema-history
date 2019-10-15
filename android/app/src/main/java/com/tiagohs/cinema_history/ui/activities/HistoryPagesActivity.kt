@@ -8,58 +8,110 @@ import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
 import android.text.Html
+import android.view.View
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.DecelerateInterpolator
+import android.view.animation.Interpolator
+import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageType
+import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
+import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.extensions.styledString
 import com.tiagohs.cinema_history.models.Page
+import com.tiagohs.cinema_history.models.Sumario
 import com.tiagohs.cinema_history.models.image.Image
+import com.tiagohs.cinema_history.models.image.ImageResize
+import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
+import com.tiagohs.cinema_history.ui.adapters.PagePagerAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_history_pages.*
 
-class HistoryPagesActivity: BaseActivity(),
-    MediaPlayer.OnBufferingUpdateListener,
-    MediaPlayer.OnCompletionListener {
+class HistoryPagesActivity: BaseActivity() {
 
-    override fun onCompletion(mp: MediaPlayer?) {
-
-    }
-
-    override fun onBufferingUpdate(mp: MediaPlayer?, percent: Int) {
-
-    }
+    var mainTopic: MainTopicItem? = null
+    var sumario: Sumario? = null
+    var itemSelectedPosition = 0
+    var adapterPager: PagePagerAdapter? = null
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_history_pages
     override fun onGetMenuLayoutId(): Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setSupportActionBar(toolbar)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
-//        val textTest = "A <strong>transformação</strong> do cinema, de show de curiosidades no início do século XX a atividade artistica, testemunhou o lançamento de centenas e, logo de milhares de filmes em todo o mundo. Destes, alguns vieram a ser reconhecidos pelos críticos por seu significado e seu caráter inovador, uma vasta quantidade foi efetivamente vista e consumida pelo grande público. mas a maioria caiu na obscuridade, assistida por não mais do que um punhado de pessoas além das envolvidas em sua produção."
-//        text.text = textTest.styledString()
+        setupArguments()
+        setupPagesContainer()
+        setupFooter()
+    }
 
-        val pageArgument = intent.getSerializableExtra(PAGES) as? Array<Page>
-        val pages = pageArgument?.toList()
+    private fun setupFooter() {
+        val image = mainTopic?.image ?: return
+        image.imageStyle?.resize = ImageResize(width = 60.convertIntToDp(this), height = 80.convertIntToDp(this))
 
-        if (pages != null) {
-
+        toolbarImage.loadImage(image)
+        toolbarImageCardContainer.setOnClickListener {
+            onBackPressed()
         }
 
+        toolbarNextButton.setOnClickListener {
+            setNextPage()
+        }
+    }
+
+    private fun setNextPage() {
+        val currentPosition = sumarioContentViewPager.currentItem
+
+        sumarioContentViewPager.setCurrentItem(currentPosition + 1, true)
+    }
+
+    fun showFooter() {
+        animate(footerContent, 0f, DecelerateInterpolator(2f))
+        animate(toolbarNextButton, 0f, DecelerateInterpolator(2f))
+        animate(toolbarImageCardContainer, 0f, DecelerateInterpolator(4f))
+    }
+
+    fun hideFooter() {
+        animate(footerContent, footerContent.height.toFloat(), AccelerateInterpolator(2f))
+        animate(toolbarNextButton, toolbarNextButton.height.toFloat(), AccelerateInterpolator(2f))
+        animate(toolbarImageCardContainer, toolbarImageCardContainer.height.toFloat() + 10.convertIntToDp(this), AccelerateInterpolator(2f))
+    }
+
+    private fun animate(view: View, translationY: Float, interpolator: Interpolator) {
+        view.animate()
+            .translationY(translationY)
+            .setInterpolator(interpolator)
+            .start()
+    }
+
+    private fun setupArguments() {
+        mainTopic = intent.getSerializableExtra(MAIN_TOPIC) as? MainTopicItem
+        itemSelectedPosition = intent.getIntExtra(ITEM_SELECTED_POSITION, 0)
+    }
+
+    private fun setupPagesContainer() {
+        val mainTopic = this.mainTopic ?: return
+        adapterPager = PagePagerAdapter(supportFragmentManager, lifecycle, mainTopic.sumarioList)
+
+        sumarioContentViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        sumarioContentViewPager.adapter = adapterPager
+        sumarioContentViewPager.currentItem = itemSelectedPosition
     }
 
     companion object {
 
-        const val PAGES = "PAGES"
+        const val MAIN_TOPIC = "MAIN_TOPIC"
+        const val ITEM_SELECTED_POSITION = "ITEM_SELECTED_POSITION"
 
-        fun newIntent(context: Context, pages: List<Page>): Intent {
+        fun newIntent(context: Context, mainTopic: MainTopicItem, itemSelectedPosition: Int): Intent {
             val intent = Intent(context, HistoryPagesActivity::class.java)
 
-            intent.putExtra(PAGES, pages.toTypedArray())
+            intent.putExtra(ITEM_SELECTED_POSITION, itemSelectedPosition)
+            intent.putExtra(MAIN_TOPIC, mainTopic)
 
             return intent
         }

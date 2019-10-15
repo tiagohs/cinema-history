@@ -1,0 +1,47 @@
+{
+  "number": 1,
+  "content_list": [
+    {
+      "type": "text",
+      "content_text": "O cinema criou e alimentou ao mesmo tempo, um apetite pelo espetáculo, oferecendo a oportunidade de se recriar o passado, reimaginar o presente \n\ne visualizar o futuro. Os pioneiros dessa arte não se encontravam \n\nem Hollywood que na época nem sequer existia como centro de produção \n\nCinematográfica, mas sim na Europa.<br/><br/> Entre os mais notáveis estavam os cineastas \n\nfranceses <strong>Georges Méiles</strong> (1861-1938), <strong>Charlies Pathé</strong> (1863-1957) e <strong>Ferdinand Zecca</strong> (1864-1947)."
+    },
+    {
+      "type": "slide",
+      "images": [
+        {
+          "image_type": "online",
+          "url": "https://image.tmdb.org/t/p/w780/2CR4OT6Ou4axUfThbJ6sbnMGWWm.jpg",
+          "style": {
+            "height": 300
+          }
+        },
+        {
+          "image_type": "online",
+          "url": "https://image.tmdb.org/t/p/w780/jeC1kzwWnZTuXl7xF4E5D70BD8c.jpg",
+          "style": {
+            "height": 300
+          }
+        },
+        {
+          "image_type": "online",
+          "url": "https://image.tmdb.org/t/p/w780/kJSnhBQZyCcbqxMZJuDby8ULcfS.jpg",
+          "style": {
+            "height": 300
+          }
+        },
+        {
+          "image_type": "online",
+          "url": "https://image.tmdb.org/t/p/w780/2Jqv9Fhmgr2VPj5Ks5SwVpPolT4.jpg",
+          "style": {
+            "height": 300
+          }
+        }
+      ],
+      "information": {
+        "contentTitle": "O cinetoscópio",
+        "contentText": "Uma breve explicação do que vem a ser o cinetoscópio.",
+        "source": "Canal AmericanExperiencePBS"
+      }
+    }
+  ]
+}

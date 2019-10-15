@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Visionários",
+    "description": "Os primeiros inventores, sonhadores e artistas. Da invenção do cinetoscópio até a primeira exibição conhecida pública de um filme para um público pagante pelos irmãos Lumierè.",
+    "image": {
+      "image_type": "local",
+      "url": "img_assaltotrem",
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Os primeiros Épicos",
+    "description": "Os primeiros inventores, sonhadores e artistas. Da invenção do cinetoscópio até a primeira exibição conhecida pública de um filme para um público pagante pelos irmãos Lumierè.",
+    "image": {
+      "image_type": "local",
+      "url": "img_assaltotrem",
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

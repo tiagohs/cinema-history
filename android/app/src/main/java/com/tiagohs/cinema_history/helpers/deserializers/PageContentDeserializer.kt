@@ -2,9 +2,7 @@ package com.tiagohs.cinema_history.helpers.deserializers
 
 import com.google.gson.*
 import com.tiagohs.cinema_history.enums.ContentType
-import com.tiagohs.cinema_history.models.contents.Content
-import com.tiagohs.cinema_history.models.contents.ContentGif
-import com.tiagohs.cinema_history.models.contents.ContentText
+import com.tiagohs.cinema_history.models.contents.*
 import java.lang.reflect.Type
 
 class PageContentDeserializer: JsonDeserializer<Content> {
@@ -20,7 +18,11 @@ class PageContentDeserializer: JsonDeserializer<Content> {
         return when (type) {
             ContentType.TEXT -> Gson().fromJson(obj, ContentText::class.java)
             ContentType.GIF -> Gson().fromJson(obj, ContentGif::class.java)
-            else -> { Gson().fromJson(obj, Content::class.java) }
+            ContentType.SLIDE -> Gson().fromJson(obj, ContentSlide::class.java)
+            ContentType.IMAGE -> Gson().fromJson(obj, ContentImage::class.java)
+            ContentType.QUOTE -> Gson().fromJson(obj, ContentQuote::class.java)
+            ContentType.AUDIO_STREAM -> Gson().fromJson(obj, ContentAudioStream::class.java)
+            ContentType.VIDEO -> Gson().fromJson(obj, ContentVideo::class.java)
         }
     }
 }

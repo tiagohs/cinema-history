@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.dagger.AppComponent
+import com.tiagohs.cinema_history.helpers.extensions.toast
 
 abstract class BaseFragment: Fragment() {
 
@@ -59,6 +61,11 @@ abstract class BaseFragment: Fragment() {
 
         return (activity as BaseActivity).getConfiguratedAd(adView)
     }*/
+
+    open fun onError(ex: Throwable?, message: String) {
+        (activity as? BaseActivity)?.onError(ex, message)
+    }
+
 
     abstract fun onErrorAction()
 }

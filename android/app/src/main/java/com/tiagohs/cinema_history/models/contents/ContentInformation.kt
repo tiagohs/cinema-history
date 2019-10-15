@@ -7,7 +7,7 @@ data class ContentInformation(
     @SerializedName("contentText")
     var contentText: String,
 
-    @SerializedName("contentText")
+    @SerializedName("contentTitle")
     var contentTitle: String,
 
     @SerializedName("source")

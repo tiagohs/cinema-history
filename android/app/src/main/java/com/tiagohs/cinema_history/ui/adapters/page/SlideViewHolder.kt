@@ -2,12 +2,17 @@ package com.tiagohs.cinema_history.ui.adapters.page
 
 import android.content.Context
 import android.view.View
-import androidx.viewpager2.widget.ViewPager2
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.PagerSnapHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.models.contents.ContentSlide
 import com.tiagohs.cinema_history.ui.adapters.ImageAdapter
-import com.tiagohs.cinema_history.ui.custom.ParallaxImageTransformer
 import kotlinx.android.synthetic.main.adapter_page_slide.view.*
+import cz.intik.overflowindicator.SimpleSnapHelper
+
 
 class SlideViewHolder(
     val context: Context?,
@@ -17,11 +22,35 @@ class SlideViewHolder(
     fun bind(contentSlide: ContentSlide) {
         val context = context ?: return
 
-        itemView.imageList.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        itemView.imageList.adapter = ImageAdapter(context, contentSlide.images)
-        itemView.imageList.setPageTransformer(ParallaxImageTransformer())
+        contentSlide.height?.let {
+            val imageListLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(context))
 
-        setupContentFooterInformation(contentSlide.information)
+            itemView.imageList.layoutParams = imageListLayoutParams
+        }
+
+        itemView.imageList.apply {
+            adapter = ImageAdapter(context, contentSlide.images)
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+
+            itemView.imageListIndicator.attachToRecyclerView(this)
+            SimpleSnapHelper(itemView.imageListIndicator).attachToRecyclerView(this)
+
+            setupParallaxScrollListener()
+        }
+
+    }
+
+    private fun RecyclerView.setupParallaxScrollListener() {
+        addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                val layoutManager = recyclerView.layoutManager as? LinearLayoutManager ?: return
+                val firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition()
+
+                findViewHolderForAdapterPosition(firstVisibleItemPosition)?.let {
+                    it.itemView.translationX = (-it.itemView.left / 2).toFloat()
+                }
+            }
+        })
     }
 
     companion object {

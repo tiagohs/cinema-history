@@ -1,17 +1,17 @@
 package com.tiagohs.cinema_history.models.contents
 
 import com.google.gson.annotations.SerializedName
-import com.tiagohs.cinema_history.models.image.Image
 import java.io.Serializable
 
-class ContentSlide(
+class ContentVideo(
 
-    @SerializedName("images")
-    var images: List<Image>,
+    @SerializedName("video_id")
+    val videoId: String,
+
 
     @SerializedName("height")
-    var height: Int? = null,
+    val height: Int? = null,
 
     @SerializedName("information")
-    var information: ContentInformation
+    val information: ContentInformation
 ): Content(), Serializable

@@ -63,6 +63,8 @@ fun ImageView.loadImage(image: Image) {
         picassoRequest.resize(imagewidth, imageHeight.convertIntToDp(context))
     }
 
+
+
     picassoRequest.into(this, object : Callback {
         override fun onSuccess() {
             image.imageStyle?.scaleType?.let {

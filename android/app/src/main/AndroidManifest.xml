@@ -39,6 +39,10 @@
         <activity android:name=".ui.activities.MilMoviesPresentationActivity" />
         <activity android:name=".ui.activities.HistoryPagesActivity" />
 
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.tiagohs.cinema_history.helpers.tools.CastOptionsProvider" />
+
         <!--        <activity android:name=".ui.activities.PresentationActivity" />-->
     </application>
 

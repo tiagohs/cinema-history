@@ -65,7 +65,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/presentationTitle"
-            android:text="De 1900 a 1910"
             android:textColor="@color/yellow_dark"
             android:fontFamily="@font/roboto_bold"
             android:textSize="28sp"

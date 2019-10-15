@@ -3,7 +3,6 @@ package com.tiagohs.cinema_history.ui.activities
 import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
-import android.graphics.Rect
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
@@ -11,14 +10,11 @@ import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
 import com.tiagohs.cinema_history.models.tmdb.Movie
 import com.tiagohs.cinema_history.presenter.MilMoviesPresentationPresenter
 import com.tiagohs.cinema_history.ui.adapters.MovieListAdapter
-import com.tiagohs.cinema_history.ui.adapters.MoviesPagerAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.cinema_history.ui.custom.ScaleMovieImageTransformer
 import com.tiagohs.cinema_history.ui.views.MilMoviesPresentationView
 import kotlinx.android.synthetic.main.activity_mil_movies_presentation.*
 import javax.inject.Inject
-import android.view.View
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 
 
@@ -31,7 +27,6 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
     lateinit var presenter: MilMoviesPresentationPresenter
 
     lateinit var mainTopic: MilMoviesMainTopic
-    var moviesPagerAdapter: MoviesPagerAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

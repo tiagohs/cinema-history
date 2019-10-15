@@ -28,7 +28,7 @@ object RetrofitUtil {
         httpClient.addInterceptor(FakeInterceptor())
 
         return Retrofit.Builder()
-            .baseUrl("http://local/")
+            .baseUrl("https://local/")
             .addConverterFactory(GsonConverterFactory.create(gsonBuilder()))
             .addCallAdapterFactory(RxErrorHandlingCallAdapterFactory.create())
             .client(httpClient.build())

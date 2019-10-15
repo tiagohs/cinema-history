@@ -137,7 +137,6 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Viagem a Lua"
                     android:id="@+id/originalTitle"
                     android:textSize="12sp"
                     android:textColor="@color/md_grey_100"
@@ -154,7 +153,6 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Viagem a Lua"
                     android:id="@+id/title"
                     android:textSize="16sp"
                     android:textColor="@color/md_white_1000"
@@ -184,7 +182,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/language"
-                        android:text="Inglês"
                         android:textSize="10sp"
                         android:textColor="@color/md_white_1000"
                         android:maxLines="1"
@@ -212,7 +209,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/genre"
-                        android:text="Comédia"
                         android:textSize="10sp"
                         android:textColor="@color/md_white_1000"
                         android:maxLines="1"

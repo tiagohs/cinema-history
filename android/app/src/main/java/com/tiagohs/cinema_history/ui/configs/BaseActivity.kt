@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.fragment.app.Fragment
 import com.tiagohs.cinema_history.App
@@ -25,6 +26,13 @@ abstract class BaseActivity : AppCompatActivity() {
     /*fun getConfiguratedAd(adView: AdView) {
         adView.loadAd(AdRequest.Builder().build())
     }*/
+
+    fun setupToolbar(toolbar: Toolbar, displayHomeAsUpEnabled: Boolean = true, displayShowTitleEnabled: Boolean = false) {
+        setSupportActionBar(toolbar)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(displayHomeAsUpEnabled)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+    }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         if (onGetMenuLayoutId() != 0)

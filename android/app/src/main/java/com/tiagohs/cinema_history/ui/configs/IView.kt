@@ -1,5 +1,7 @@
 package com.tiagohs.cinema_history.ui.configs
 
+import androidx.appcompat.widget.Toolbar
+
 interface IView {
 
     fun isInternetConnected(): Boolean

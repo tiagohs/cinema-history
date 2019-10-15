@@ -10,11 +10,13 @@
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:id="@+id/videoView"
-        app:videoId="S0Q4gqBUs7c"
-        app:autoPlay="true"
+        android:layout_height="280dp"
+        android:id="@+id/videoContentView"
+        app:autoPlay="false"
         app:showFullScreenButton="true"
+        app:showVideoCurrentTime="true"
+        app:showVideoDuration="true"
+        app:showYouTubeButton="false"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/videoView"
+        app:layout_constraintTop_toBottomOf="@id/videoContentView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 

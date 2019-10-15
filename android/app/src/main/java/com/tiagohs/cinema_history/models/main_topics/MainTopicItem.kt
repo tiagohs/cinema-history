@@ -32,7 +32,7 @@ data class MainTopicItem(
     val quote: Quote,
 
     @SerializedName("sumario_list")
-    val sumarioList: List<Sumario>
+    var sumarioList: List<Sumario>
 
 ): MainTopic(), Serializable {
 
