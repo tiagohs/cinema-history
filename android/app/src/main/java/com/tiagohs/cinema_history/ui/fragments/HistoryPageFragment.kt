@@ -24,6 +24,7 @@ import javax.inject.Inject
 import kotlin.math.abs
 import android.os.Handler
 import android.util.Log
+import android.util.TypedValue
 import com.tiagohs.cinema_history.models.image.ImageResize
 
 
@@ -64,7 +65,21 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView {
         pageContentList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         pageContentList.adapter = PageContentAdapter(context, pageContent.contentList)
         pageContentList.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(context), SpaceOffsetDecoration.TOP))
-        pageContentList.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+        pageContentList.addOnScrollListener(onScrollListener())
+
+        val tv = TypedValue()
+        val activity = activity ?: return
+
+        if (activity.theme.resolveAttribute(android.R.attr.actionBarSize, tv, true)) {
+            val actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
+            pageContentList.addItemDecoration(SpaceOffsetDecoration(actionBarHeight, SpaceOffsetDecoration.BOTTOM))
+        }
+
+        setupHeader()
+    }
+
+    private fun onScrollListener(): RecyclerView.OnScrollListener {
+        return object : RecyclerView.OnScrollListener() {
 
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
@@ -92,9 +107,7 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView {
 
                 isUserScrolling = newState ==  RecyclerView.SCROLL_STATE_DRAGGING
             }
-        })
-
-        setupHeader()
+        }
     }
 
     override fun setupHeader() {

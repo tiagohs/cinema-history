@@ -2,34 +2,24 @@ package com.tiagohs.cinema_history.ui.activities
 
 import android.content.Context
 import android.content.Intent
-import android.media.AudioAttributes
-import android.media.AudioManager
-import android.media.MediaPlayer
-import android.os.Build
 import android.os.Bundle
-import android.text.Html
+import android.util.TypedValue
 import android.view.View
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.Interpolator
-import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.helpers.extensions.styledString
-import com.tiagohs.cinema_history.models.Page
 import com.tiagohs.cinema_history.models.Sumario
-import com.tiagohs.cinema_history.models.image.Image
 import com.tiagohs.cinema_history.models.image.ImageResize
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.ui.adapters.PagePagerAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
-import io.reactivex.Observable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
+import com.tiagohs.cinema_history.ui.custom.SpaceOffsetDecoration
 import kotlinx.android.synthetic.main.activity_history_pages.*
+
 
 class HistoryPagesActivity: BaseActivity() {
 
