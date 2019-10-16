@@ -10,13 +10,16 @@ import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.graphics.drawable.Drawable
 import android.net.ConnectivityManager
+import android.net.Uri
 import android.os.Build
 import android.os.PowerManager
 import android.widget.Toast
 import androidx.annotation.StringRes
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import com.tiagohs.cinema_history.R
 
 
 fun Context.toast(@StringRes resource: Int, duration: Int = Toast.LENGTH_SHORT) {
@@ -87,4 +90,17 @@ fun Context.isServiceRunning(serviceClass: Class<*>): Boolean {
     @Suppress("DEPRECATION")
     return manager.getRunningServices(Integer.MAX_VALUE)
             .any { className == it.service.className }
+}
+
+fun Context.openLink(url: String) {
+    try {
+        val urlUri = Uri.parse(url)
+        val intent = CustomTabsIntent.Builder()
+            .setToolbarColor(resources.getColor(R.color.colorPrimary))
+            .setShowTitle(true)
+            .build()
+        intent.launchUrl(this, urlUri)
+    } catch (e: Exception) {
+
+    }
 }

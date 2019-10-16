@@ -2,12 +2,16 @@ package com.tiagohs.cinema_history.ui.adapters.page
 
 import android.content.Context
 import android.graphics.Typeface
+import android.net.Uri
 import android.view.View
-import androidx.core.text.HtmlCompat
+import androidx.browser.customtabs.CustomTabsIntent
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.helpers.extensions.setupLinkableTextView
 import com.tiagohs.cinema_history.helpers.extensions.styledString
 import com.tiagohs.cinema_history.models.contents.ContentText
 import kotlinx.android.synthetic.main.adapter_page_text.view.*
+import me.saket.bettermovementmethod.BetterLinkMovementMethod
+
 
 class TextViewHolder(
     val context: Context?,
@@ -18,11 +22,11 @@ class TextViewHolder(
         val context = context ?: return
 
         itemView.contentText.text = contentText.contentText.styledString()
+        itemView.contentText.setupLinkableTextView()
 
         contentText.font?.let {
             val font = Typeface.createFromAsset(context.assets, "fonts/${it}.ttf")
             itemView.contentText.typeface = font
-
         }
     }
 
