@@ -3,44 +3,37 @@
   "content_list": [
     {
       "type": "text",
-      "content_text": "O cinema criou e alimentou ao mesmo tempo, um apetite pelo espetáculo, oferecendo a oportunidade de se recriar o passado, reimaginar o presente \n\ne visualizar o futuro. Os pioneiros dessa arte não se encontravam \n\nem Hollywood que na época nem sequer existia como centro de produção \n\nCinematográfica, mas sim na Europa.<br/><br/> Entre os mais notáveis estavam os cineastas \n\nfranceses <strong>Georges Méiles</strong> (1861-1938), <strong>Charlies Pathé</strong> (1863-1957) e <strong>Ferdinand Zecca</strong> (1864-1947)."
+      "content_text": "O cinema criou e alimentou ao mesmo tempo, um apetite pelo espetáculo, oferecendo a oportunidade de se recriar o passado, reimaginar o presente \n\ne visualizar o futuro. Os pioneiros dessa arte não se encontravam \n\nem Hollywood, que na época nem sequer existia como centro de produção \n\ncinematográfica, mas sim na Europa. Entre os mais notáveis estavam os cineastas \n\nfranceses <strong>Georges Méiles</strong> (1861-1938), <strong>Charlies Pathé</strong> (1863-1957) e <strong>Ferdinand Zecca</strong> (1864-1947).<br/> <br/> \n\n \n\nEste último dirigiu o curta-metragem de um minuto <i>A la conquête de l'air</i> (BR: A conquista dos ares, 1901), no qual aparece sobrevoando o bairro parisiense de Belleville em uma máquina voadora bizarra. O filme foi realizado para a produtora Pathé Frères, fundada em 1896 por Charles Pathe e seu irmão Emile. Numa referência às suas origens como donos de restaurante, usavam um galo, <strong>Le Coq</strong>, na logomarca."
     },
     {
-      "type": "slide",
-      "images": [
-        {
-          "image_type": "online",
-          "url": "https://image.tmdb.org/t/p/w780/2CR4OT6Ou4axUfThbJ6sbnMGWWm.jpg",
-          "style": {
-            "height": 300
-          }
-        },
-        {
-          "image_type": "online",
-          "url": "https://image.tmdb.org/t/p/w780/jeC1kzwWnZTuXl7xF4E5D70BD8c.jpg",
-          "style": {
-            "height": 300
-          }
-        },
-        {
-          "image_type": "online",
-          "url": "https://image.tmdb.org/t/p/w780/kJSnhBQZyCcbqxMZJuDby8ULcfS.jpg",
-          "style": {
-            "height": 300
-          }
-        },
-        {
-          "image_type": "online",
-          "url": "https://image.tmdb.org/t/p/w780/2Jqv9Fhmgr2VPj5Ks5SwVpPolT4.jpg",
-          "style": {
+      "type": "gif",
+      "gif_image": {
+        "image_type": "online",
+        "url": "https://ptp0pw.sn.files.1drv.com/y4pIxTyL3e2GsW9dzDeCD7w1dDw71sl8I6UzEzGTAnSi9dRtPHMLKY_5TUDPDAZ1D9N_qeSXnhDEjTxkXbTk6ah_QGiXREfEpgXrU_0lvNnyuF34BScszQrqNViDoHb7iLn9WNDyncvdUWmfH_deGZu5Qhbvon7BbzUBRwX9tBUosE7FJjG2IcJ5FMVdwq2PpCgViq1s7J5Mt3vv13uxVtEjQ/Pathe-logo.gif",
+        "style": {
+          "scale_type": "center_crop",
+          "resize": {
             "height": 300
           }
         }
-      ],
+      },
       "information": {
-        "contentTitle": "O cinetoscópio",
-        "contentText": "Uma breve explicação do que vem a ser o cinetoscópio.",
-        "source": "Canal AmericanExperiencePBS"
+        "contentTitle": "Pathé Films Logo",
+        "contentText": "Logo de uma das mais importantes produtoras de cinema de todos os tempos, contendo o galo Le Coq, presente desde o começo em seus cartazes.",
+        "source": ""
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Podemos citar outros nomes até então desconhecidos: Thomas Edison, George Eastman, W.K.L Dickson, Louis Le Prince, Francis Doublier, G.A Smiths e Thomas Ince. Todos contribuíram de alguma forma na criação da chamada sétima arte, e por isso, não podemos dizer que o ela foi criada por uma única pessoa, e ainda não há uma data precisa para o seu nascimento. Em 1884, George Eastman inventou o filme de rolo. Na mesma década, Thomas Edison e seu assistente W. K. L. Dickson inventaram o <strong>cinetoscópio</strong>. Diversas outras invenções foram surgindo em paralelo ou com base em uma anterior. <br/> </br> \n\n \n\nMas uma data entrou para a história: 25 de dezembro de 1895, amplamente considerada pelos historiadores como a data de nascimento do cinema. Eles exibiram um programa curto com seus filmes documentários para um público pagante, dentre eles, o hoje famoso L'arrivee d'um Train Em Gare de La Ciotat (A chegada de um trem à estação de La Ciotat, 1895 – Franca)."
+    },
+    {
+      "type": "video",
+      "video_id": "ymjlHsPmesk",
+      "information": {
+        "contentTitle": "A chegada de um trem à estação de La Ciotat ",
+        "contentText": "Um dos primeiros filmes da história a ser exibido a um público pagante. A câmera foi colocada perto dos trilhos, de modo que o trem aumentava conforme se aproximava, até parecer que atravessaria a tela e invadiria a sala. Diz a lenda que as pessoas se abaixavam, gritavam ou levantavam para sair.",
+        "source": "Youtube: Canal <i>maccafan21 [Ciné'Culte]</i>"
       }
     }
   ]

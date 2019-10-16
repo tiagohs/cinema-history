@@ -11,6 +11,6 @@ data class ContentInformation(
     var contentTitle: String,
 
     @SerializedName("source")
-    var source: String
+    var source: String? = null
 ) {
 }

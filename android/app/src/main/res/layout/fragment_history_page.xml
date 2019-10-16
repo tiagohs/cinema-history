@@ -20,6 +20,7 @@
             android:id="@+id/collapsingToolbar"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll"
+            app:scrimVisibleHeightTrigger="0dp"
             app:contentScrim="@color/colorPrimary"
             app:titleEnabled="false">
 
@@ -32,6 +33,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
+
+
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:orientation="vertical"
@@ -124,6 +127,15 @@
                 />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:fitsSystemWindows="false"
+                app:layout_collapseParallaxMultiplier="0.8"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 

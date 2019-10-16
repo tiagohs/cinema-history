@@ -2,6 +2,7 @@ package com.tiagohs.cinema_history.helpers.extensions
 
 import android.widget.ImageView
 import android.widget.LinearLayout
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.squareup.picasso.Callback
@@ -85,10 +86,10 @@ fun ImageView.loadGif(gifImage: GifImage) {
     val glide = Glide.with(context)
                     .asGif()
                     .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
-    val newLayoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+    val newLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, ConstraintLayout.LayoutParams.WRAP_CONTENT)
 
-    newLayoutParams.width = gifImage.imageStyle?.width ?: LinearLayout.LayoutParams.MATCH_PARENT
-    newLayoutParams.height = gifImage.imageStyle?.height ?: 210
+    newLayoutParams.width = gifImage.imageStyle?.width ?: ConstraintLayout.LayoutParams.MATCH_PARENT
+    newLayoutParams.height = gifImage.imageStyle?.height?.convertIntToDp(context) ?: 210.convertIntToDp(context)
 
     layoutParams = newLayoutParams
 

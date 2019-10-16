@@ -8,7 +8,6 @@ class ContentVideo(
     @SerializedName("video_id")
     val videoId: String,
 
-
     @SerializedName("height")
     val height: Int? = null,
 

@@ -2,6 +2,7 @@ package com.tiagohs.cinema_history.ui.fragments
 
 import android.graphics.Rect
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.View
 import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -22,10 +23,6 @@ import com.tiagohs.cinema_history.ui.views.HistoryPageView
 import kotlinx.android.synthetic.main.fragment_history_page.*
 import javax.inject.Inject
 import kotlin.math.abs
-import android.os.Handler
-import android.util.Log
-import android.util.TypedValue
-import com.tiagohs.cinema_history.models.image.ImageResize
 
 
 class HistoryPageFragment: BaseFragment(), HistoryPageView {
@@ -40,9 +37,10 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView {
     @Inject
     lateinit var presenter: HistoryPagePresenter
 
-    var hasScrollEnded = false
+    var hasShowFooter = false
     private var isUserScrolling = false
     private var footerShowsFromAppBar = false
+    private var isListGoingUp = true
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -83,30 +81,23 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView {
 
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
+                val activity = (activity as? HistoryPagesActivity)
+                val layoutManager = recyclerView.layoutManager as LinearLayoutManager
+                val visibleItemCount = layoutManager.childCount
+                val totalItemCount = layoutManager.itemCount
+                val pastVisibleItems = layoutManager.findFirstVisibleItemPosition()
 
-                if(isUserScrolling){
-                    if(dy > 0 && !footerShowsFromAppBar){
-                        val activity = (activity as? HistoryPagesActivity)
+                if ((pastVisibleItems + visibleItemCount >= totalItemCount) && !hasShowFooter) {
+                    activity?.showFooter()
 
-                        activity?.showFooter()
-
-                        hasScrollEnded = true
-                    }
-                    else if (hasScrollEnded) {
-                        val activity = (activity as? HistoryPagesActivity)
-
-                        activity?.hideFooter()
-
-                        hasScrollEnded = false
-                    }
+                    hasShowFooter = true
+                } else if (hasShowFooter) {
+                    activity?.hideFooter()
+                    hasShowFooter = false
                 }
+
             }
 
-            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
-                super.onScrollStateChanged(recyclerView, newState)
-
-                isUserScrolling = newState ==  RecyclerView.SCROLL_STATE_DRAGGING
-            }
         }
     }
 

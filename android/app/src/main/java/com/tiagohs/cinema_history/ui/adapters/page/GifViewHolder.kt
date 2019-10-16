@@ -17,8 +17,15 @@ class GifViewHolder(
     val view: View
 ): BasePageViewHolder(view) {
 
+    var loaded = false
+
     fun bind(gifContent: ContentGif) {
-        itemView.gifImage.loadGif(gifContent.gifImage)
+
+        if (!loaded) {
+            itemView.gifImage.loadGif(gifContent.gifImage)
+
+            loaded = true
+        }
 
         setupContentFooterInformation(gifContent.information)
     }
