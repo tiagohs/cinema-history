@@ -12,6 +12,9 @@ data class GifImage(
     @SerializedName("url")
     val url: String,
 
+    @SerializedName("thumbnail")
+    val thumbnail: Image,
+
     @SerializedName("style")
     val imageStyle: ImageStyle? = null
 ): Serializable

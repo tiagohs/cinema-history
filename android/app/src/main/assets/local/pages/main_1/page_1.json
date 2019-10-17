@@ -8,13 +8,17 @@
     {
       "type": "gif",
       "gif_image": {
-        "image_type": "online",
-        "url": "https://ptp0pw.sn.files.1drv.com/y4pIxTyL3e2GsW9dzDeCD7w1dDw71sl8I6UzEzGTAnSi9dRtPHMLKY_5TUDPDAZ1D9N_qeSXnhDEjTxkXbTk6ah_QGiXREfEpgXrU_0lvNnyuF34BScszQrqNViDoHb7iLn9WNDyncvdUWmfH_deGZu5Qhbvon7BbzUBRwX9tBUosE7FJjG2IcJ5FMVdwq2PpCgViq1s7J5Mt3vv13uxVtEjQ/Pathe-logo.gif",
-        "style": {
-          "scale_type": "center_crop",
-          "resize": {
-            "height": 300
+        "image_type": "local",
+        "url": "pathe_logo",
+        "thumbnail": {
+          "image_type": "online",
+          "url": "https://img.youtube.com/vi/J9jBA-tZ7tU/0.jpg",
+          "style": {
+            "scale_type": "center_crop"
           }
+        },
+        "style": {
+          "scale_type": "center_crop"
         }
       },
       "information": {
