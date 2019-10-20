@@ -4,8 +4,12 @@ import com.tiagohs.cinema_history.helpers.utils.RetrofitUtil
 
 abstract class BaseService {
 
-    fun <T> buildTMDBService(mClass: Class<T>): T {
-        return RetrofitUtil.tmdbBuild().create(mClass)
+    fun <T> buildTMDB3Service(mClass: Class<T>): T {
+        return RetrofitUtil.tmdb3Build().create(mClass)
+    }
+
+    fun <T> buildTMDB4Service(mClass: Class<T>): T {
+        return RetrofitUtil.tmdb4Build().create(mClass)
     }
 
     fun <T> buildLocalService(mClass: Class<T>): T {

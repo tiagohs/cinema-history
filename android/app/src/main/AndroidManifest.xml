@@ -36,8 +36,14 @@
             android:name=".ui.activities.PresentationActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
-        <activity android:name=".ui.activities.MilMoviesPresentationActivity" />
+        <activity android:name=".ui.activities.MilMoviesPresentationActivity"
+            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
+
         <activity android:name=".ui.activities.HistoryPagesActivity" />
+        <activity android:name=".ui.activities.PersonDetailsActivity" />
+
+        <activity android:name=".ui.activities.MovieDetailsActivity"
+            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <meta-data
             android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"

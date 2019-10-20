@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.helpers.extensions
 
+import android.graphics.Bitmap
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -24,7 +25,7 @@ fun ImageView.loadImage(url: String) {
         .into(this)
 }
 
-fun ImageView.loadImage(image: Image) {
+fun ImageView.loadImage(image: Image, onLoadSuccess: (() -> Unit)? = null) {
     val picasso = Picasso.get()
     val picassoRequest: RequestCreator
 
@@ -64,16 +65,15 @@ fun ImageView.loadImage(image: Image) {
         picassoRequest.resize(imagewidth, imageHeight.convertIntToDp(context))
     }
 
-
-
     picassoRequest.into(this, object : Callback {
         override fun onSuccess() {
             image.imageStyle?.scaleType?.let {
                 if (image.imageType == ImageType.ONLINE) {
                     scaleType = ImageScaleType.getImageViewScaleType(it)
                 }
-
             }
+
+            onLoadSuccess?.invoke()
         }
 
         override fun onError(e: Exception?) {

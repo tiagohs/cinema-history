@@ -8,7 +8,7 @@ object DateUtils {
     private val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.US)
     private val c = Calendar.getInstance()
 
-    fun getYearByDate(dateString: String): Int {
+    fun getYearByDate(dateString: String?): Int {
         val date: Date?
 
         try {
@@ -49,8 +49,8 @@ object DateUtils {
         return formatter.format(c.time)
     }
 
-    fun formateDate(dateString: String): String {
-        var dateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US)
+    fun formateDate(dateString: String?): String? {
+        var dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
         val date: Date?
 
         try {

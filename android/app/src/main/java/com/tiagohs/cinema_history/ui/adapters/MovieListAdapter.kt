@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageSize
@@ -13,7 +12,7 @@ import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.LocaleUtils
 import com.tiagohs.cinema_history.helpers.utils.MovieUtils
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
-import com.tiagohs.cinema_history.models.tmdb.Movie
+import com.tiagohs.cinema_history.models.tmdb.movie.Movie
 import kotlinx.android.synthetic.main.adapter_movie_list.view.*
 
 class MovieListAdapter(
@@ -21,6 +20,8 @@ class MovieListAdapter(
     val list: List<Movie>,
     val mainTopic: MilMoviesMainTopic
 ): RecyclerView.Adapter<MovieListAdapter.MovieListViewHolder>() {
+
+    var onMovieSelected: ((movie: Movie, position: Int) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieListViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_list, parent, false)
@@ -40,9 +41,18 @@ class MovieListAdapter(
         return list.get(position).id?.toLong() ?: position.toLong()
     }
 
-    inner class MovieListViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    inner class MovieListViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
+
+        init {
+            itemView.setOnClickListener(this)
+        }
+
+        var movie: Movie? = null
+        var moviePosition: Int = 0
 
         fun bind(movie: Movie, position: Int) {
+            this.movie = movie
+            this.moviePosition = position
 
             if (position == 0) {
                 val context = context ?: return
@@ -80,6 +90,12 @@ class MovieListAdapter(
             val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
 
             itemView.image.loadImage(url)
+        }
+
+        override fun onClick(v: View?) {
+            val movie = this.movie ?: return
+
+            onMovieSelected?.invoke(movie, moviePosition)
         }
     }
 }

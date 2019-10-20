@@ -31,7 +31,7 @@ abstract class BaseActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(displayHomeAsUpEnabled)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayShowTitleEnabled(displayShowTitleEnabled)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

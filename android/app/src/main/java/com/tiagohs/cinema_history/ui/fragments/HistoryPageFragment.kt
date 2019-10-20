@@ -11,6 +11,7 @@ import com.google.android.material.appbar.AppBarLayout
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
+import com.tiagohs.cinema_history.helpers.tools.HidingScrollListener
 import com.tiagohs.cinema_history.models.Page
 import com.tiagohs.cinema_history.models.Sumario
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
@@ -18,14 +19,15 @@ import com.tiagohs.cinema_history.presenter.HistoryPagePresenter
 import com.tiagohs.cinema_history.ui.activities.HistoryPagesActivity
 import com.tiagohs.cinema_history.ui.adapters.PageContentAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseFragment
-import com.tiagohs.cinema_history.ui.custom.SpaceOffsetDecoration
+import com.tiagohs.cinema_history.helpers.tools.SpaceOffsetDecoration
 import com.tiagohs.cinema_history.ui.views.HistoryPageView
 import kotlinx.android.synthetic.main.fragment_history_page.*
 import javax.inject.Inject
 import kotlin.math.abs
 
 
-class HistoryPageFragment: BaseFragment(), HistoryPageView {
+class HistoryPageFragment: BaseFragment(), HistoryPageView,
+    HidingScrollListener.HidingScrollCallback {
 
     private var pageContent: Page? = null
     private var sumario: Sumario? = null
@@ -37,10 +39,7 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView {
     @Inject
     lateinit var presenter: HistoryPagePresenter
 
-    var hasShowFooter = false
-    private var isUserScrolling = false
     private var footerShowsFromAppBar = false
-    private var isListGoingUp = true
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -63,42 +62,34 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView {
         pageContentList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         pageContentList.adapter = PageContentAdapter(context, pageContent.contentList)
         pageContentList.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(context), SpaceOffsetDecoration.TOP))
-        pageContentList.addOnScrollListener(onScrollListener())
+        pageContentList.addOnScrollListener(HidingScrollListener(this))
 
         val tv = TypedValue()
         val activity = activity ?: return
 
         if (activity.theme.resolveAttribute(android.R.attr.actionBarSize, tv, true)) {
             val actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
-            pageContentList.addItemDecoration(SpaceOffsetDecoration(actionBarHeight, SpaceOffsetDecoration.BOTTOM))
+            pageContentList.addItemDecoration(
+                SpaceOffsetDecoration(
+                    actionBarHeight,
+                    SpaceOffsetDecoration.BOTTOM
+                )
+            )
         }
 
         setupHeader()
     }
 
-    private fun onScrollListener(): RecyclerView.OnScrollListener {
-        return object : RecyclerView.OnScrollListener() {
+    override fun onScrollUp() {
+        val activity = (activity as? HistoryPagesActivity)
 
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                super.onScrolled(recyclerView, dx, dy)
-                val activity = (activity as? HistoryPagesActivity)
-                val layoutManager = recyclerView.layoutManager as LinearLayoutManager
-                val visibleItemCount = layoutManager.childCount
-                val totalItemCount = layoutManager.itemCount
-                val pastVisibleItems = layoutManager.findFirstVisibleItemPosition()
+        activity?.showFooter()
+    }
 
-                if ((pastVisibleItems + visibleItemCount >= totalItemCount) && !hasShowFooter) {
-                    activity?.showFooter()
+    override fun onScrollDown() {
+        val activity = (activity as? HistoryPagesActivity)
 
-                    hasShowFooter = true
-                } else if (hasShowFooter) {
-                    activity?.hideFooter()
-                    hasShowFooter = false
-                }
-
-            }
-
-        }
+        activity?.hideFooter()
     }
 
     override fun setupHeader() {

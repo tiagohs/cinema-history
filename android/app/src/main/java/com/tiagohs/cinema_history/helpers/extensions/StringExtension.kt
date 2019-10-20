@@ -4,7 +4,7 @@ import android.text.Spannable
 import android.text.Spanned
 import android.text.style.URLSpan
 import androidx.core.text.HtmlCompat
-import com.tiagohs.cinema_history.ui.custom.URLSpanNoUnderline
+import com.tiagohs.cinema_history.helpers.tools.URLSpanNoUnderline
 
 fun String.styledString(): Spanned {
     val htmlString = HtmlCompat.fromHtml(this, HtmlCompat.FROM_HTML_MODE_COMPACT)

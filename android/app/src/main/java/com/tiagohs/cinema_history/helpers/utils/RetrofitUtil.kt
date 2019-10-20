@@ -35,11 +35,15 @@ object RetrofitUtil {
             .build()
     }
 
-    fun tmdbBuild(): Retrofit {
+    fun tmdb4Build(): Retrofit = tmdbBuild("https://api.themoviedb.org/4/")
+
+    fun tmdb3Build(): Retrofit = tmdbBuild("https://api.themoviedb.org/3/")
+
+    fun tmdbBuild(url: String): Retrofit {
         val client = client()
 
         return Retrofit.Builder()
-                .baseUrl("https://api.themoviedb.org/4/")
+                .baseUrl(url)
                 .addConverterFactory(GsonConverterFactory.create(gsonBuilder()))
                 .addCallAdapterFactory(RxErrorHandlingCallAdapterFactory.create())
                 .client(client)

@@ -7,11 +7,11 @@ import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
-import com.tiagohs.cinema_history.models.tmdb.Movie
+import com.tiagohs.cinema_history.models.tmdb.movie.Movie
 import com.tiagohs.cinema_history.presenter.MilMoviesPresentationPresenter
 import com.tiagohs.cinema_history.ui.adapters.MovieListAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
-import com.tiagohs.cinema_history.ui.custom.ScaleMovieImageTransformer
+import com.tiagohs.cinema_history.helpers.tools.ScaleMovieImageTransformer
 import com.tiagohs.cinema_history.ui.views.MilMoviesPresentationView
 import kotlinx.android.synthetic.main.activity_mil_movies_presentation.*
 import javax.inject.Inject
@@ -31,14 +31,10 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setSupportActionBar(toolbar)
-
-        supportActionBar?.setDisplayShowTitleEnabled(false)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
         getApplicationComponent()?.inject(this)
         presenter.onBindView(this)
 
+        setupToolbar(toolbar)
         setupArguments()
         presenter.fetchMoviesByListId(mainTopic.list_id)
 
@@ -63,6 +59,9 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
 
     override fun bindMovieList(list: List<Movie>) {
         val adapter = MovieListAdapter(this, list, mainTopic)
+
+        adapter.onMovieSelected = { movie, position -> onMovieSelected(movie, position) }
+
         moviesViewPager.adapter = adapter
         moviesViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         moviesViewPager.offscreenPageLimit = 1
@@ -70,8 +69,19 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
         val horizontalSpace = 42.convertIntToDp(this)
         val spaceBetweenItems = 32.convertIntToDp(this)
 
-        moviesViewPager.setPageTransformer(ScaleMovieImageTransformer(horizontalSpace, spaceBetweenItems))
+        moviesViewPager.setPageTransformer(
+            ScaleMovieImageTransformer(
+                horizontalSpace,
+                spaceBetweenItems
+            )
+        )
         moviesViewPager.addItemDecoration(ScaleMovieImageTransformer.HorizontalMarginItemDecoration(horizontalSpace))
+    }
+
+    private fun onMovieSelected(movie: Movie, position: Int) {
+        val id = movie.id ?: return
+
+        startActivity(MovieDetailsActivity.newIntent(this, id))
     }
 
     companion object {

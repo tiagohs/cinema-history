@@ -5,6 +5,7 @@
     <color name="colorAccent">@color/md_blue_500</color>
 
     <color name="black_transparent_medium">#66000000</color>
+    <color name="grey_transparent_medium">#66757575</color>
 
     <color name="yellow_dark">#C4942E</color>
     <!-- google's material design colours from http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->

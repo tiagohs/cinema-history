@@ -20,4 +20,10 @@ class PresenterModule {
 
     @Provides
     fun providerHistoryPagePresenter(localService: LocalService): HistoryPagePresenter = HistoryPagePresenterImpl(localService)
+
+    @Provides
+    fun providerMovieDetailsPresenter(tmdbService: TMDBService): MovieDetailsPresenter = MovieDetailsPresenterImpl(tmdbService)
+
+    @Provides
+    fun providerPersonDetailsPresenter(tmdbService: TMDBService): PersonDetailsPresenter = PersonDetailsPresenterImpl(tmdbService)
 }

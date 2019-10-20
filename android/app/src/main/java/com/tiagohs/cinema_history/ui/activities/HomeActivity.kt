@@ -25,9 +25,6 @@ class HomeActivity :
     override fun onGetLayoutViewId(): Int = R.layout.activity_home
     override fun onGetMenuLayoutId(): Int = 0
 
-    var isMoviesCardAnimating = false
-    var isTimelineCardAnimating = false
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
