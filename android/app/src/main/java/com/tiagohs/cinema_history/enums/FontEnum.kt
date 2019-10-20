@@ -37,7 +37,14 @@ enum class FontEnum(
     HEPTASLAB_MEDIUM("heptaslab_medium.ttf"),
     HEPTASLAB_REGULAR("heptaslab_regular.ttf"),
     HEPTASLAB_THIN("heptaslab_thin.ttf"),
-    BILLIONAIRE_MEDIUM_GRUNGE("billionairemediumgrunge.ttf");
+    BILLIONAIRE_MEDIUM_GRUNGE("billionairemediumgrunge.ttf"),
+    JOMOLHARI_REGULAR("jomolhari_regular.ttf"),
+    MONTSERRAT_BOLD("montserrat_bold.ttf"),
+    MONTSERRAT_ITALIC("montserrat_italic.ttf"),
+    MONTSERRAT_LIGHT("montserrat_light.ttf"),
+    MONTSERRAT_MEDIUM("montserrat_medium.ttf"),
+    MONTSERRAT_REGULAR("montserrat_regular.ttf"),
+    MONTSERRAT_THIN("montserrat_thin.ttf");
 
     val fontWithPath: String
         get() = String.format("fonts/%s", this.fontName)

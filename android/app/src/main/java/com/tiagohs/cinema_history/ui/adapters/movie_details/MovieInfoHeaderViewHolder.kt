@@ -8,6 +8,7 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageSize
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
+import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.DateUtils
 import com.tiagohs.cinema_history.helpers.utils.LocaleUtils
 import com.tiagohs.cinema_history.models.tmdb.movie.Movie
@@ -43,13 +44,12 @@ class MovieInfoHeaderViewHolder(
     }
 
     private fun bindMoviePoster(movie: Movie) {
-        val imageUrl = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
+        val imageUrl = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_185) ?: return
 
-        Picasso.get()
-            .load(imageUrl)
-            .centerCrop()
-            .resize(itemView.width, 180.convertIntToDp(context))
-            .into(itemView.moviePoster)
+        itemView.moviePoster.loadImage(imageUrl) { picasso ->
+            picasso.centerCrop()
+                    .resize(itemView.width, 180.convertIntToDp(context))
+        }
     }
 
     companion object {

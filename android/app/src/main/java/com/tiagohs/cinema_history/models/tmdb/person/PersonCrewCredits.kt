@@ -4,22 +4,22 @@ import com.google.gson.annotations.SerializedName
 
 data class PersonCrewCredits (
 
-	@SerializedName("department") val department : String,
-	@SerializedName("job") val job : String,
-	@SerializedName("credit_id") val creditId : String,
+	@SerializedName("department") val department : String? = null,
+	@SerializedName("job") val job : String? = null,
+	@SerializedName("credit_id") val creditId : String? = null,
 
-	@SerializedName("id") val id : Int,
-	@SerializedName("original_language") val originalLanguage : String,
+	@SerializedName("id") val id : Int? = null,
+	@SerializedName("original_language") val originalLanguage : String? = null,
 	@SerializedName("original_title") val originalTitle : String,
-	@SerializedName("overview") val overview : String,
-	@SerializedName("genre_ids") val genreIds : List<Int>,
-	@SerializedName("video") val video : Boolean,
-	@SerializedName("release_date") val releaseDate : String,
-	@SerializedName("popularity") val popularity : Double,
-	@SerializedName("vote_average") val voteAverage : Double,
-	@SerializedName("vote_count") val voteCount : Int,
-	@SerializedName("title") val title : String,
-	@SerializedName("adult") val adult : Boolean,
-	@SerializedName("backdrop_path") val backdropPath : String,
-	@SerializedName("poster_path") val posterPath : String
+	@SerializedName("overview") val overview : String? = null,
+	@SerializedName("genre_ids") val genreIds : List<Int>? = null,
+	@SerializedName("video") val video : Boolean? = null,
+	@SerializedName("release_date") val releaseDate : String? = null,
+	@SerializedName("popularity") val popularity : Double? = null,
+	@SerializedName("vote_average") val voteAverage : Double? = null,
+	@SerializedName("vote_count") val voteCount : Int? = null,
+	@SerializedName("title") val title : String? = null,
+	@SerializedName("adult") val adult : Boolean? = null,
+	@SerializedName("backdrop_path") val backdropPath : String? = null,
+	@SerializedName("poster_path") val posterPath : String? = null
 )

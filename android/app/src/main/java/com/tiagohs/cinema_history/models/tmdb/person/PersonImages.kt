@@ -4,5 +4,5 @@ import com.google.gson.annotations.SerializedName
 import com.tiagohs.cinema_history.models.tmdb.Image
 
 data class PersonImages (
-	@SerializedName("profiles") val profiles : List<Image>
+	@SerializedName("profiles") val profiles : List<Image>? = null
 )

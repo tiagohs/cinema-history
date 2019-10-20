@@ -1,4 +1,4 @@
-package com.tiagohs.cinema_history.ui.adapters.movie_details
+package com.tiagohs.cinema_history.ui.adapters.person_details
 
 import android.content.Context
 import android.view.View
@@ -7,19 +7,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.tools.SpaceOffsetDecoration
-import com.tiagohs.cinema_history.models.PersonDTO
-import com.tiagohs.cinema_history.ui.adapters.PersonAdapter
+import com.tiagohs.cinema_history.models.MovieFilmographyDTO
+import com.tiagohs.cinema_history.ui.adapters.MovieItemAdapter
 import kotlinx.android.synthetic.main.adapter_movie_info_person_list.view.*
 
 
-class MovieInfoPersonListViewHolder(
+class PersonInfoFilmographyViewHolder(
     val context: Context?,
     view: View,
-    private val onPersonClicked: ((personId: Int) -> Unit)?
+    private val onMovieSelected: ((movieId: Int) -> Unit)? = null
 ): RecyclerView.ViewHolder(view) {
 
-    fun bindMovieInfo(listTitle: String, personList: List<PersonDTO>) {
-        val adapter = PersonAdapter(context, personList, onPersonClicked)
+    fun bindPersonInfo(listTitle: String, movieList: List<MovieFilmographyDTO>) {
+        val adapter = MovieItemAdapter(context, movieList)
+        adapter.onMovieClicked = onMovieSelected
 
         itemView.personList.adapter = adapter
         itemView.personList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)

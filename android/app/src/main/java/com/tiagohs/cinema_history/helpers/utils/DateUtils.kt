@@ -65,16 +65,17 @@ object DateUtils {
     }
 
     fun formateDate(format: String, dateString: String): String {
-        val dateFormat = SimpleDateFormat(format, Locale.US)
+        val customDate = SimpleDateFormat(dateString, Locale.US)
+        val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.US)
         val date: Date?
 
         try {
-            date = dateFormat.parse(dateString)
+            date = sdf.parse(format)
         } catch (e: ParseException) {
             return dateString
         }
 
-        return dateFormat.format(date)
+        return customDate.format(date)
     }
 
     fun formateStringToCalendar(dateString: String): Calendar {

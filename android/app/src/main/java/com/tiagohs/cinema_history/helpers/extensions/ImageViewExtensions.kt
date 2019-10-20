@@ -4,11 +4,13 @@ import android.graphics.Bitmap
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.Placeholder
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import com.squareup.picasso.RequestCreator
+import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageScaleType
 import com.tiagohs.cinema_history.enums.ImageSize
 import com.tiagohs.cinema_history.enums.ImageType
@@ -19,10 +21,21 @@ import kotlinx.android.synthetic.main.adapter_page_gif.view.*
 import kotlinx.android.synthetic.main.adapter_movie_list.*
 import java.lang.Exception
 
-fun ImageView.loadImage(url: String) {
-    Picasso.get()
-        .load(url)
-        .into(this)
+fun ImageView.loadImage(url: String?, placeholder: Int? = R.drawable.placeholder_movie_poster, errorPlaceholder: Int? = R.drawable.placeholder_movie_poster, onConfigure: ((picassoRequest: RequestCreator) -> Unit)? = null) {
+    val picasso = Picasso.get()
+    val picassoRequest: RequestCreator = picasso.load(url)
+
+    placeholder?.let {
+        picassoRequest.placeholder(placeholder)
+    }
+
+    errorPlaceholder?.let {
+        picassoRequest.error(it)
+    }
+
+    onConfigure?.invoke(picassoRequest)
+
+    picassoRequest.into(this)
 }
 
 fun ImageView.loadImage(image: Image, onLoadSuccess: (() -> Unit)? = null) {

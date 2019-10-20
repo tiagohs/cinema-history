@@ -9,12 +9,14 @@ import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageSize
 import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
+import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.models.PersonDTO
 import kotlinx.android.synthetic.main.adapter_person.view.*
 
 class PersonAdapter(
     val context: Context?,
-    val persons: List<PersonDTO>
+    val persons: List<PersonDTO>,
+    private val onPersonClicked: ((personId: Int) -> Unit)?
 ): RecyclerView.Adapter<PersonAdapter.PersonViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
@@ -31,15 +33,31 @@ class PersonAdapter(
         holder.bind(person)
     }
 
-    inner class PersonViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    inner class PersonViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
+
+        init {
+            itemView.setOnClickListener(this)
+        }
+
+        var person: PersonDTO? = null
 
         fun bind(person: PersonDTO) {
+            this.person = person
+
             itemView.personName.text = person.name
             itemView.personSubtitle.text = person.subtitle
 
-            Picasso.get()
-                .load(person.imagePath?.imageUrlFromTMDB(ImageSize.PROFILE_185))
-                .into(itemView.personImage)
+            itemView.personImage.loadImage(
+                person.imagePath?.imageUrlFromTMDB(ImageSize.PROFILE_185),
+                R.drawable.placeholder_movie_person,
+                R.drawable.placeholder_movie_person
+            )
+        }
+
+        override fun onClick(v: View?) {
+            val personId = person?.id ?: return
+
+            onPersonClicked?.invoke(personId)
         }
     }
 }

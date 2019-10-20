@@ -21,6 +21,11 @@ class PersonDetailsPresenterImpl @Inject constructor(
         val appendToResponse = listOf("tagged_images", "images", "movie_credits", "external_ids")
 
         add(tmdbService.getPersonDetails(personId, appendToResponse)
+            .map {
+                it.personFilmography = it.generatePersonFilmography()
+                it.departmentsList = it.generatePersonDepartmentsList()
+                it
+            }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({

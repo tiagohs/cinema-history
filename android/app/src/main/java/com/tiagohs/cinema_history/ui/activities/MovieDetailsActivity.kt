@@ -13,6 +13,7 @@ import com.tiagohs.cinema_history.enums.ImageSize
 import com.tiagohs.cinema_history.enums.MovieInfoType
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
+import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.DateUtils
 import com.tiagohs.cinema_history.models.PersonDTO
 import com.tiagohs.cinema_history.models.movie_info.MovieInfo
@@ -62,18 +63,20 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     override fun bindMovieDetails(movie: Movie) {
         val movieInfoList = generateMovieInfoList(movie)
+        val adapter = MovieInfoAdapter(this, movieInfoList)
 
         collapsingToolbar.title = movie.title ?: movie.originalTitle
+        adapter.onPersonClicked = { onPersonClicked(it) }
 
-        pageContentList.adapter = MovieInfoAdapter(this, movieInfoList)
+        pageContentList.adapter = adapter
         pageContentList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         bindMovieHeader(movie)
     }
 
     private fun generateMovieInfoList(movie: Movie): List<MovieInfo> {
-        val castList = movie.credits?.cast?.map { PersonDTO(it.profilePath, it.name, it.character) } ?: emptyList()
-        val crewList = movie.credits?.crew?.map { PersonDTO(it.profilePath, it.name, it.department) } ?: emptyList()
+        val castList = movie.credits?.cast?.map { PersonDTO(it.id, it.profilePath, it.name, it.character) } ?: emptyList()
+        val crewList = movie.credits?.crew?.map { PersonDTO(it.id, it.profilePath, it.name, it.department) } ?: emptyList()
 
         return listOf(
             MovieInfo(MovieInfoType.INFO_HEADER, movie),
@@ -81,6 +84,10 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
             MovieInfoPersonList(MovieInfoType.INFO_CAST, movie, castList, "Elenco"),
             MovieInfoPersonList(MovieInfoType.INFO_CREW, movie, crewList, "Equipe Técnica")
         )
+    }
+
+    private fun onPersonClicked(personId: Int) {
+        startActivity(PersonDetailsActivity.newIntent(this, personId))
     }
 
     private fun bindMovieHeader(movie: Movie) {
@@ -123,9 +130,7 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     }
 
     private fun bindBackdrop(backdropPath: String?) {
-        Picasso.get()
-            .load(backdropPath)
-            .into(movieBackdrop)
+        movieBackdrop.loadImage(backdropPath, R.drawable.placeholder_movie_poster, R.drawable.placeholder_movie_poster)
     }
 
     companion object {

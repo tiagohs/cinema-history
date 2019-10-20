@@ -17,13 +17,15 @@ class MovieInfoAdapter(
     val list: List<MovieInfo>
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
+    var onPersonClicked: ((personId: Int) -> Unit)? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
         return when (viewType) {
             MovieInfoType.INFO_CAST.ordinal, MovieInfoType.INFO_CREW.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_info_person_list, parent, false)
 
-                MovieInfoPersonListViewHolder(context, view)
+                MovieInfoPersonListViewHolder(context, view, onPersonClicked)
             }
             MovieInfoType.INFO_HEADER.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_info_header, parent, false)

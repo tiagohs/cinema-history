@@ -40,7 +40,9 @@
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <activity android:name=".ui.activities.HistoryPagesActivity" />
-        <activity android:name=".ui.activities.PersonDetailsActivity" />
+
+        <activity android:name=".ui.activities.PersonDetailsActivity"
+            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <activity android:name=".ui.activities.MovieDetailsActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />

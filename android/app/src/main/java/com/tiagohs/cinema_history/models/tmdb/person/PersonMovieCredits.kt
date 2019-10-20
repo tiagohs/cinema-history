@@ -4,6 +4,6 @@ import com.google.gson.annotations.SerializedName
 
 data class PersonMovieCredits (
 
-	@SerializedName("castCredits") val castCredits : List<PersonCastCredits>,
-	@SerializedName("crewCredits") val crewCredits : List<PersonCrewCredits>
+	@SerializedName("cast") val castCredits : List<PersonCastCredits>? = null,
+	@SerializedName("crew") val crewCredits : List<PersonCrewCredits>? = null
 )
