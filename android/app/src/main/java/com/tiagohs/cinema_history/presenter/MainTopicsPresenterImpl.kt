@@ -17,15 +17,19 @@ class MainTopicsPresenterImpl @Inject constructor(
     override fun fetchMainTopics(mainTopicsType: MainTopicsType?) {
         val mainTopicsType = mainTopicsType ?: return
 
+        view?.startLoading()
+
         when (mainTopicsType) {
             MainTopicsType.HISTORY_CINEMA -> {
                 add(localService.getMainTopics()
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe({
+                        view?.hideLoading()
                         view?.bindMainTopics(it)
                     }, {
-
+                        view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                        view?.hideLoading()
                     })
                 )
             }
@@ -34,9 +38,11 @@ class MainTopicsPresenterImpl @Inject constructor(
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe({
+                        view?.hideLoading()
                         view?.bindMainTopics(it)
                     }, {
-
+                        view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                        view?.hideLoading()
                     })
                 )
             }
@@ -45,15 +51,14 @@ class MainTopicsPresenterImpl @Inject constructor(
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe({
+                        view?.hideLoading()
                         view?.bindMainTopics(it)
                     }, {
-
+                        view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                        view?.hideLoading()
                     })
                 )
             }
         }
-
-
-
     }
 }

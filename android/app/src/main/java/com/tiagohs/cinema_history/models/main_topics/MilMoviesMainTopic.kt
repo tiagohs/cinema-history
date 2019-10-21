@@ -15,10 +15,10 @@ class MilMoviesMainTopic(
     val title: String,
 
     @SerializedName("background_color")
-    val backgroundColor: String,
+    val backgroundColor: String? = null,
 
     @SerializedName("title_color")
-    val titleColor: String,
+    val titleColor: String? = null,
 
     @SerializedName("image")
     val image: Image

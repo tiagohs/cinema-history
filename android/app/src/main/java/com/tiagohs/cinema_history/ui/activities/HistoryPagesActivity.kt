@@ -3,6 +3,7 @@ package com.tiagohs.cinema_history.ui.activities
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
@@ -32,9 +33,29 @@ class HistoryPagesActivity: BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        startLoading()
+
         setupArguments()
         setupPagesContainer()
         setupFooter()
+
+        Handler().postDelayed( {
+            hideLoading()
+        }, 1000)
+    }
+
+    fun startLoading() {
+        pagesContainer.visibility = View.INVISIBLE
+
+        loadView.startShimmer()
+        loadView.visibility = View.VISIBLE
+    }
+
+    fun hideLoading() {
+        pagesContainer.visibility = View.VISIBLE
+
+        loadView.stopShimmer()
+        loadView.visibility = View.GONE
     }
 
     private fun setupFooter() {

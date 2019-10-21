@@ -5,10 +5,12 @@ import android.graphics.drawable.GradientDrawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.MainTopicItemLayoutType
 import com.tiagohs.cinema_history.enums.MainTopicsType
+import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.Quote
@@ -116,6 +118,12 @@ class MainTopicsAdapter(
             this.mainTopicItem = mainTopic
 
             val context = context ?: return
+
+            mainTopic.image.imageStyle?.height?.let {
+                val imageListLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(context))
+
+                itemView.mainImage.layoutParams = imageListLayoutParams
+            }
 
             itemView.mainImage.loadImage(mainTopic.image)
 

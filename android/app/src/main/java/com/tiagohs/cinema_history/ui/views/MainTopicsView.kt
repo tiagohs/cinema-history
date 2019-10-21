@@ -6,4 +6,7 @@ import com.tiagohs.cinema_history.ui.configs.IView
 interface MainTopicsView: IView {
 
     fun bindMainTopics(mainTopics: List<MainTopic>)
+
+    fun startLoading()
+    fun hideLoading()
 }

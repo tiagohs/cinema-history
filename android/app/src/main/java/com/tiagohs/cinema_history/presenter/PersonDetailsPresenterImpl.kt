@@ -20,6 +20,8 @@ class PersonDetailsPresenterImpl @Inject constructor(
     override fun fetchPersonDetails(personId: Int) {
         val appendToResponse = listOf("tagged_images", "images", "movie_credits", "external_ids")
 
+        view?.startLoading()
+
         add(tmdbService.getPersonDetails(personId, appendToResponse)
             .map {
                 it.personFilmography = it.generatePersonFilmography()
@@ -29,9 +31,11 @@ class PersonDetailsPresenterImpl @Inject constructor(
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
+                view?.hideLoading()
                 view?.bindPersonDetails(it)
             }, {
-
+                view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                view?.hideLoading()
             })
         )
     }

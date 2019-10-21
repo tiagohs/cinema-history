@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.adapter_movie_list.view.*
 
 class MovieListAdapter(
     val context: Context?,
-    val list: List<Movie>,
+    val list: ArrayList<Movie>,
     val mainTopic: MilMoviesMainTopic
 ): RecyclerView.Adapter<MovieListAdapter.MovieListViewHolder>() {
 
@@ -39,6 +39,14 @@ class MovieListAdapter(
 
     override fun getItemId(position: Int): Long {
         return list.get(position).id?.toLong() ?: position.toLong()
+    }
+
+    fun addMoreMovies(movies: List<Movie>) {
+        val startPosition = list.size
+
+        list.addAll(movies)
+
+        notifyItemRangeChanged(startPosition, list.size)
     }
 
     inner class MovieListViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener {

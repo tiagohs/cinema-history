@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -69,7 +70,6 @@ class PresentationActivity: BaseActivity(), PresentationView {
         sumarioList.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         sumarioList.adapter = adapter
     }
-
 
     private fun loadImage(mainTopic: MainTopicItem?) {
         val presentationImage = mainTopic?.image ?: return

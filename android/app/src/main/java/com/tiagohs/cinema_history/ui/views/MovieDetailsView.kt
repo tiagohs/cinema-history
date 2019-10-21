@@ -6,4 +6,7 @@ import com.tiagohs.cinema_history.ui.configs.IView
 interface MovieDetailsView: IView {
     fun setupArguments()
     fun bindMovieDetails(movie: Movie)
+
+    fun startLoading()
+    fun hideLoading()
 }

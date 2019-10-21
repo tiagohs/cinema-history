@@ -83,13 +83,13 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView,
     override fun onScrollUp() {
         val activity = (activity as? HistoryPagesActivity)
 
-        activity?.showFooter()
+        activity?.hideFooter()
     }
 
     override fun onScrollDown() {
         val activity = (activity as? HistoryPagesActivity)
 
-        activity?.hideFooter()
+        activity?.showFooter()
     }
 
     override fun setupHeader() {

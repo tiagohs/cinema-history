@@ -5,7 +5,8 @@ import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Build
 import android.os.Bundle
-import android.view.View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+import android.view.LayoutInflater
+import android.view.View.*
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -58,6 +59,13 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
         if (isDarkMode) {
             val view = this.window.decorView
             view.setBackgroundColor(ContextCompat.getColor(this, R.color.md_black_1000))
+
+            val loadView1 = LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_dark, null, false)
+            loadViewContainer.addView(loadView1)
+
+            val loadView2 = LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_dark, null, false)
+            loadViewContainer.addView(loadView2)
+
         } else {
             toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.md_white_1000))
             toolbarTitle.setTextColor(ContextCompat.getColor(this, R.color.md_black_1000))
@@ -75,6 +83,12 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.setStatusBarColor(ContextCompat.getColor(this, R.color.md_white_1000))
+
+            val loadView1 = LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_light, null, false)
+            loadViewContainer.addView(loadView1)
+
+            val loadView2 = LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_light, null, false)
+            loadViewContainer.addView(loadView2)
         }
 
         presenter.onBindView(this)
@@ -109,6 +123,20 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
 
         mainTopicsList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         mainTopicsList.adapter = adapter
+    }
+
+    override fun startLoading() {
+        mainTopicsList.visibility = GONE
+
+        loadView.startShimmer()
+        loadView.visibility = VISIBLE
+    }
+
+    override fun hideLoading() {
+        mainTopicsList.visibility = VISIBLE
+
+        loadView.stopShimmer()
+        loadView.visibility = GONE
     }
 
     companion object {

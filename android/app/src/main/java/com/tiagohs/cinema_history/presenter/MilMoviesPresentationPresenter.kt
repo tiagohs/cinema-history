@@ -6,4 +6,7 @@ import com.tiagohs.cinema_history.ui.views.MilMoviesPresentationView
 interface MilMoviesPresentationPresenter: IPresenter<MilMoviesPresentationView> {
 
     fun fetchMoviesByListId(listId: String)
+    fun fetchMoreMovies(listId: String, page: Int)
+
+    fun hasMorePages(): Boolean
 }

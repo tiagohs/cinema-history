@@ -21,7 +21,7 @@
   {
     "main_topic_type": "mil_movies",
     "layout_type": "card_full",
-    "id": 1,
+    "id": 2,
     "list_id": "123876",
     "title": "De 1930 a 1939",
     "image": {
@@ -40,8 +40,55 @@
   {
     "main_topic_type": "",
     "layout_type": "quote",
-    "id": 1,
-    "quote": "Charlie Chaplin e eu tinhamos uma disputa amigável: quem faria o filme com menos legenda?",
-    "author": "Buster Keaton"
+    "id": 3,
+    "quote": "Não pretendo divertir os críticos, vou tentar a sorte com o público.",
+    "author": "Walt Disney"
+  },
+  {
+    "main_topic_type": "mil_movies",
+    "layout_type": "card_full",
+    "id": 4,
+    "list_id": "124440",
+    "title": "De 1940 a 1949",
+    "image": {
+      "image_type": "local",
+      "url": "img_casablanca",
+      "style": {
+        "height": 420,
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 420
+        }
+      }
+    },
+    "title_color": "md_blue_500",
+    "background_color": "md_black_1000"
+  },
+  {
+    "main_topic_type": "mil_movies",
+    "layout_type": "card_full",
+    "id": 5,
+    "list_id": "124444",
+    "title": "De 1950 a 1959",
+    "image": {
+      "image_type": "local",
+      "url": "img_benhur",
+      "style": {
+        "height": 450,
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 450
+        }
+      }
+    },
+    "title_color": "md_red_500",
+    "background_color": "md_black_1000"
+  },
+  {
+    "main_topic_type": "",
+    "layout_type": "quote",
+    "id": 3,
+    "quote": "Minha sorte na vida foi ser uma pessoa apavorada de verdade. Tenho sorte de ser patife, de ter pouca tolerância ao medo, porque um herói jamais faria um bom filme de suspense.",
+    "author": "Alfred Hitchcock"
   }
 ]

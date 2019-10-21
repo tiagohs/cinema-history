@@ -12,7 +12,8 @@
         android:layout_height="400dp"
         android:id="@+id/appBar"
         android:theme="@style/AppTheme.AppBarOverlay"
-        android:fitsSystemWindows="true" >
+        android:fitsSystemWindows="true"
+        android:visibility="invisible" >
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
@@ -162,6 +163,7 @@
                         android:layout_height="40dp"
                         android:id="@+id/facebookImageContainer"
                         android:layout_marginBottom="16dp"
+                        android:visibility="gone"
                         android:background="@drawable/background_border_circle">
 
                         <ImageView
@@ -181,6 +183,7 @@
                         android:layout_height="40dp"
                         android:id="@+id/twitterImageContainer"
                         android:layout_marginBottom="16dp"
+                        android:visibility="gone"
                         android:background="@drawable/background_border_circle">
 
                         <ImageView
@@ -199,6 +202,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:id="@+id/instagramImageContainer"
+                        android:visibility="gone"
                         android:background="@drawable/background_border_circle">
 
                         <ImageView
@@ -233,8 +237,10 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/pageContentListContainer"
         android:layout_marginBottom="20dp"
         android:fitsSystemWindows="true"
+        android:visibility="invisible"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -245,6 +251,17 @@
 
     </androidx.core.widget.NestedScrollView>
 
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/loadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:shimmer_duration="800"
+        android:fitsSystemWindows="true">
 
+        <include layout="@layout/load_view_person_details" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Bundle
+import android.view.View
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
@@ -28,6 +29,11 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
 
     lateinit var mainTopic: MilMoviesMainTopic
 
+    var page = 1
+    var isSearching = false
+
+    var adapter: MovieListAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -37,14 +43,6 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
         setupToolbar(toolbar)
         setupArguments()
         presenter.fetchMoviesByListId(mainTopic.list_id)
-
-        val titleColor = resources.getIdentifier(mainTopic.titleColor, "color", packageName)
-        toolbar.getNavigationIcon()?.setColorFilter(resources.getColor(titleColor), PorterDuff.Mode.SRC_ATOP)
-
-        presentationTitle.text = mainTopic.title
-
-        presentationTitle.setTextColor(resources.getColor(titleColor))
-        presentationSubtitle.setTextColor(resources.getColor(titleColor))
     }
 
     override fun onDestroy() {
@@ -58,13 +56,26 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
     }
 
     override fun bindMovieList(list: List<Movie>) {
-        val adapter = MovieListAdapter(this, list, mainTopic)
+        adapter = MovieListAdapter(this, ArrayList(list), mainTopic)
 
-        adapter.onMovieSelected = { movie, position -> onMovieSelected(movie, position) }
+        adapter?.onMovieSelected = { movie, position -> onMovieSelected(movie, position) }
 
         moviesViewPager.adapter = adapter
         moviesViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         moviesViewPager.offscreenPageLimit = 1
+        moviesViewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                val movieList = adapter?.list ?: return
+
+                if (position == movieList.size - 3 && !isSearching && presenter.hasMorePages()) {
+                    loadingProgress.visibility = View.VISIBLE
+
+                    presenter.fetchMoreMovies(mainTopic.list_id, ++page)
+
+                    isSearching = true
+                }
+            }
+        })
 
         val horizontalSpace = 42.convertIntToDp(this)
         val spaceBetweenItems = 32.convertIntToDp(this)
@@ -75,7 +86,38 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
                 spaceBetweenItems
             )
         )
+
         moviesViewPager.addItemDecoration(ScaleMovieImageTransformer.HorizontalMarginItemDecoration(horizontalSpace))
+
+        val titleColor = resources.getIdentifier(mainTopic.titleColor, "color", packageName)
+        toolbar.getNavigationIcon()?.setColorFilter(resources.getColor(titleColor), PorterDuff.Mode.SRC_ATOP)
+
+        presentationTitle.text = mainTopic.title
+
+        presentationTitle.setTextColor(resources.getColor(titleColor))
+        presentationSubtitle.setTextColor(resources.getColor(titleColor))
+    }
+
+    override fun bindMoreMovies(movies: List<Movie>) {
+        loadingProgress.visibility = View.GONE
+
+        adapter?.addMoreMovies(movies)
+
+        isSearching = false
+    }
+
+    override fun startLoading() {
+        contentContainer.visibility = View.INVISIBLE
+
+        loadView.startShimmer()
+        loadView.visibility = View.VISIBLE
+    }
+
+    override fun hideLoading() {
+        contentContainer.visibility = View.VISIBLE
+
+        loadView.stopShimmer()
+        loadView.visibility = View.GONE
     }
 
     private fun onMovieSelected(movie: Movie, position: Int) {

@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:background="@color/md_white_1000">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/collapsingToolbar"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="noScroll"
             app:contentScrim="@color/colorPrimary"
@@ -28,6 +30,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:id="@+id/contentContainer"
                 android:background="@color/md_white_1000"
                 android:fitsSystemWindows="true">
 
@@ -63,6 +66,19 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     />
+
+                <ProgressBar
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/loadingProgress"
+                    android:padding="5dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    style="?android:attr/progressBarStyleLarge"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/guidelineBottom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guidelineRight"/>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
@@ -110,13 +126,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
+                android:fitsSystemWindows="false"
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/loadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:shimmer_duration="800"
+        android:visibility="invisible"
+        android:fitsSystemWindows="true">
 
+        <include layout="@layout/load_view_mil_movies_presentation" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

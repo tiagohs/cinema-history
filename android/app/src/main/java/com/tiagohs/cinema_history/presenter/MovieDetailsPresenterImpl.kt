@@ -20,13 +20,16 @@ class MovieDetailsPresenterImpl @Inject constructor(
     override fun fetchMovieDetails(movieId: Int) {
         val appendToResponse = listOf("credits", "images", "videos", "keywords", "releases", "similar_movies")
 
+        view?.startLoading()
         add(tmdbService.getMovieDetails(movieId, appendToResponse)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
+                view?.hideLoading()
                 view?.bindMovieDetails(it)
             }, {
-
+                view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                view?.hideLoading()
             })
         )
     }

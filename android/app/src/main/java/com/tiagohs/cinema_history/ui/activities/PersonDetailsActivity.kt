@@ -78,6 +78,22 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
         bindHeader(person)
     }
 
+    override fun startLoading() {
+        pageContentListContainer.visibility = View.INVISIBLE
+        appBar.visibility = View.INVISIBLE
+
+        loadView.startShimmer()
+        loadView.visibility = View.VISIBLE
+    }
+
+    override fun hideLoading() {
+        pageContentListContainer.visibility = View.VISIBLE
+        appBar.visibility = View.VISIBLE
+
+        loadView.stopShimmer()
+        loadView.visibility = View.GONE
+    }
+
     private fun onMovieSelected(movieId: Int) {
         startActivity(MovieDetailsActivity.newIntent(this, movieId))
     }
@@ -131,14 +147,14 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
 
     private fun bindSocialItem(imageContainer: ConstraintLayout, image: ImageView, socialPath: String?) {
 
-        if (socialPath.isNullOrEmpty()) {
-            imageContainer.visibility = View.GONE
-            return
+        socialPath?.let { url ->
+            imageContainer.visibility = View.VISIBLE
+
+            image.setOnClickListener {
+                openUrl(url)
+            }
         }
 
-        image.setOnClickListener {
-            openUrl(socialPath)
-        }
     }
 
     private fun generatePersonInfoList(person: Person): List<PersonInfo> = listOf(

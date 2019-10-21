@@ -74,6 +74,22 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         bindMovieHeader(movie)
     }
 
+    override fun startLoading() {
+        pageContentListContainer.visibility = View.INVISIBLE
+        appBar.visibility = View.INVISIBLE
+
+        loadView.startShimmer()
+        loadView.visibility = View.VISIBLE
+    }
+
+    override fun hideLoading() {
+        pageContentListContainer.visibility = View.VISIBLE
+        appBar.visibility = View.VISIBLE
+
+        loadView.stopShimmer()
+        loadView.visibility = View.GONE
+    }
+
     private fun generateMovieInfoList(movie: Movie): List<MovieInfo> {
         val castList = movie.credits?.cast?.map { PersonDTO(it.id, it.profilePath, it.name, it.character) } ?: emptyList()
         val crewList = movie.credits?.crew?.map { PersonDTO(it.id, it.profilePath, it.name, it.department) } ?: emptyList()

@@ -7,4 +7,8 @@ interface MilMoviesPresentationView: IView {
 
     fun setupArguments()
     fun bindMovieList(list: List<Movie>)
+    fun bindMoreMovies(movies: List<Movie>)
+
+    fun startLoading()
+    fun hideLoading()
 }

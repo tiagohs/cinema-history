@@ -7,4 +7,7 @@ interface PersonDetailsView: IView {
 
     fun setupArguments()
     fun bindPersonDetails(person: Person)
+
+    fun startLoading()
+    fun hideLoading()
 }
