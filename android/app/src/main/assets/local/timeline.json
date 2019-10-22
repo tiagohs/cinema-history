@@ -1,0 +1,51 @@
+[
+  {
+    "type": "title"
+  },
+  {
+    "type": "left",
+    "year": "18\n95",
+    "title": "O Nascimento",
+    "description": "Auguste (1862-1954) e Louis (1864-1948) Lumière exibem 10 curtas-metragens em Paris, entre eles, A saída dos operários da fábrica Lumière, para um público pagante.",
+    "background_color": "md_black_1000",
+    "year_color": "md_white_1000",
+    "image": {
+      "image_type": "local",
+      "url": "img_saida_opera",
+      "style": {
+        "height": 100,
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 100
+        }
+      }
+    },
+    "image_info": {
+      "contentTitle": "A saída dos operários da fábrica Lumière",
+      "contentText": "Cena do filme A saída dos operários da fábrica Lumière, um dos primeiros filmes da história a ser exibido a um público pagante."
+    }
+  },
+  {
+    "type": "right",
+    "year": "18\n95",
+    "title": "O Nascimento",
+    "description": "Auguste (1862-1954) e Louis (1864-1948) Lumière exibem 10 curtas-metragens em Paris, entre eles, A saída dos operários da fábrica Lumière, para um público pagante.",
+    "background_color": "md_black_1000",
+    "year_color": "md_white_1000",
+    "image": {
+      "image_type": "local",
+      "url": "img_saida_opera",
+      "style": {
+        "height": 100,
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 100
+        }
+      }
+    },
+    "image_info": {
+      "contentTitle": "A saída dos operários da fábrica Lumière",
+      "contentText": "Cena do filme A saída dos operários da fábrica Lumière, um dos primeiros filmes da história a ser exibido a um público pagante."
+    }
+  }
+]

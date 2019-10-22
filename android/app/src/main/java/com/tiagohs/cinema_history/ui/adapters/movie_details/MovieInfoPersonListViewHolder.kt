@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.tools.SpaceOffsetDecoration
-import com.tiagohs.cinema_history.models.PersonDTO
+import com.tiagohs.cinema_history.models.dto.PersonDTO
 import com.tiagohs.cinema_history.ui.adapters.PersonAdapter
 import kotlinx.android.synthetic.main.adapter_movie_info_person_list.view.*
 

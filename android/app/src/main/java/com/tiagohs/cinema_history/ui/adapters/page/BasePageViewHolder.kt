@@ -12,7 +12,7 @@ abstract class BasePageViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
     fun setupContentFooterInformation(information: ContentInformation) {
         itemView.footerTitle?.text = information.contentTitle
-        itemView.footerText?.text = information.contentText.styledString()
+        itemView.footerText?.text = information.contentText?.styledString()
 
         if (information.source.isNullOrEmpty()) { itemView.footerReference.visibility = View.GONE; return }
 

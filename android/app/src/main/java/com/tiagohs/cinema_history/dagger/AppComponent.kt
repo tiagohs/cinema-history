@@ -23,4 +23,5 @@ interface AppComponent {
     fun inject(historyPageFragment: HistoryPageFragment)
     fun inject(movieDetailsActivity: MovieDetailsActivity)
     fun inject(personDetailsActivity: PersonDetailsActivity)
+    fun inject(timelineActivity: TimelineActivity)
 }

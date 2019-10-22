@@ -1,7 +1,7 @@
 package com.tiagohs.cinema_history.models.tmdb.person
 
 import com.google.gson.annotations.SerializedName
-import com.tiagohs.cinema_history.models.MovieFilmographyDTO
+import com.tiagohs.cinema_history.models.dto.MovieFilmographyDTO
 
 data class Person (
 
@@ -29,25 +29,33 @@ data class Person (
 	var departmentsList: List<String> = emptyList()
 
 	fun generatePersonFilmography(): List<MovieFilmographyDTO> {
-		val castMovies = movieCredits?.castCredits?.map { MovieFilmographyDTO(it.id, it.title ?: it.originalTitle, it.poster_path, character = it.character) } ?: emptyList()
+		val castMovies = movieCredits?.castCredits?.map {
+            MovieFilmographyDTO(
+                it.id,
+                it.title ?: it.originalTitle,
+                it.poster_path,
+                character = it.character
+            )
+        } ?: emptyList()
 		val crewMovies = movieCredits?.crewCredits?.groupBy { it.id }?.entries?.map { moviesGrouped ->
-			MovieFilmographyDTO(
-				moviesGrouped.value.firstOrNull()?.id,
-				moviesGrouped.value.firstOrNull()?.title ?: moviesGrouped.value.firstOrNull()?.originalTitle,
-				moviesGrouped.value.firstOrNull()?.posterPath,
-				departments = moviesGrouped.value.mapNotNull { it.department }.joinToString(", ")
-			)
+            MovieFilmographyDTO(
+                moviesGrouped.value.firstOrNull()?.id,
+                moviesGrouped.value.firstOrNull()?.title
+                    ?: moviesGrouped.value.firstOrNull()?.originalTitle,
+                moviesGrouped.value.firstOrNull()?.posterPath,
+                departments = moviesGrouped.value.mapNotNull { it.department }.joinToString(", ")
+            )
 		} ?: emptyList()
 		val allMovies = listOf(castMovies, crewMovies).flatten()
 
 		return allMovies.groupBy { it.id }.entries.map { moviesGrouped ->
-			MovieFilmographyDTO(
-				moviesGrouped.value.firstOrNull()?.id,
-				moviesGrouped.value.firstOrNull()?.title,
-				moviesGrouped.value.firstOrNull()?.posterPath,
-				moviesGrouped.value.mapNotNull { it.character }.joinToString(", "),
-				moviesGrouped.value.mapNotNull { it.departments }.joinToString(", ")
-			)
+            MovieFilmographyDTO(
+                moviesGrouped.value.firstOrNull()?.id,
+                moviesGrouped.value.firstOrNull()?.title,
+                moviesGrouped.value.firstOrNull()?.posterPath,
+                moviesGrouped.value.mapNotNull { it.character }.joinToString(", "),
+                moviesGrouped.value.mapNotNull { it.departments }.joinToString(", ")
+            )
 		}
 	}
 

@@ -1,7 +1,7 @@
 package com.tiagohs.cinema_history.models.movie_info
 
 import com.tiagohs.cinema_history.enums.MovieInfoType
-import com.tiagohs.cinema_history.models.PersonDTO
+import com.tiagohs.cinema_history.models.dto.PersonDTO
 import com.tiagohs.cinema_history.models.tmdb.movie.Movie
 
 class MovieInfoPersonList(

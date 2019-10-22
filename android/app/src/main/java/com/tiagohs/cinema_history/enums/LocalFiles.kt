@@ -6,6 +6,7 @@ enum class LocalFiles(
     var path: String,
     var raw: String
 ) {
+    TIMELINE("/timeline", "local/timeline.json"),
     MAIN_TOPICS("/maintopics", "local/maintopics.json"),
     MIL_MOVIES_MAIN_TOPICS("/milmoviesmaintopics", "local/milmoviesmaintopics.json"),
 

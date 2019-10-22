@@ -1,12 +1,10 @@
 package com.tiagohs.cinema_history.helpers.utils
 
 import android.content.res.Resources
-import com.tiagohs.cinema_history.models.LocaleDTO
 
 import java.util.ArrayList
 import java.util.Collections
 import java.util.Locale
-import java.util.MissingResourceException
 
 object LocaleUtils {
 

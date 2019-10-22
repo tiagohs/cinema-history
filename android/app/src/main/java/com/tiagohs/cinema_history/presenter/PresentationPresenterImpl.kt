@@ -30,7 +30,7 @@ class PresentationPresenterImpl @Inject constructor(
 
                 view?.bindMainTopicPresentation(mainTopic)
             }, {
-
+                view?.onError(it, "Houve um erro inesperado, tente novamente.")
             })
         )
     }

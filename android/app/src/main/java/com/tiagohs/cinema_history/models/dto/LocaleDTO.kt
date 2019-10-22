@@ -1,4 +1,4 @@
-package com.tiagohs.cinema_history.models
+package com.tiagohs.cinema_history.models.dto
 
 import java.util.*
 

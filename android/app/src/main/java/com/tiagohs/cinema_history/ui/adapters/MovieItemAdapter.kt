@@ -5,12 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageSize
 import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.models.MovieFilmographyDTO
+import com.tiagohs.cinema_history.models.dto.MovieFilmographyDTO
 import kotlinx.android.synthetic.main.adapter_movie_item.view.*
 
 class MovieItemAdapter(

@@ -93,7 +93,7 @@ class HomeActivity :
 
     private fun onTimelineCinemaClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivity(MainTopicsActivity.newIntent(MainTopicsType.TIMELINE, this))
+            startActivity(TimelineActivity.newIntent(this))
         }
     }
 

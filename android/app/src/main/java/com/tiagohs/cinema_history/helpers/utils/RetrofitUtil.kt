@@ -8,8 +8,10 @@ import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.BuildConfig
 import com.tiagohs.cinema_history.helpers.deserializers.MainTopicDeserializer
 import com.tiagohs.cinema_history.helpers.deserializers.PageContentDeserializer
+import com.tiagohs.cinema_history.helpers.deserializers.TimelineDeserializer
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.contents.Content
+import com.tiagohs.cinema_history.models.timeline.Timeline
 import com.tiagohs.cinema_history.services.config.FakeInterceptor
 import com.tiagohs.cinema_history.services.config.RxErrorHandlingCallAdapterFactory
 import okhttp3.*
@@ -145,6 +147,7 @@ object RetrofitUtil {
         return GsonBuilder()
                 .registerTypeAdapter(Content::class.java, PageContentDeserializer())
                 .registerTypeAdapter(MainTopic::class.java, MainTopicDeserializer())
+                .registerTypeAdapter(Timeline::class.java, TimelineDeserializer())
                 .create()
     }
 }

@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageSize
 import com.tiagohs.cinema_history.enums.MovieInfoType
@@ -15,7 +14,7 @@ import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.DateUtils
-import com.tiagohs.cinema_history.models.PersonDTO
+import com.tiagohs.cinema_history.models.dto.PersonDTO
 import com.tiagohs.cinema_history.models.movie_info.MovieInfo
 import com.tiagohs.cinema_history.models.movie_info.MovieInfoPersonList
 import com.tiagohs.cinema_history.models.tmdb.movie.Genres
@@ -91,8 +90,22 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     }
 
     private fun generateMovieInfoList(movie: Movie): List<MovieInfo> {
-        val castList = movie.credits?.cast?.map { PersonDTO(it.id, it.profilePath, it.name, it.character) } ?: emptyList()
-        val crewList = movie.credits?.crew?.map { PersonDTO(it.id, it.profilePath, it.name, it.department) } ?: emptyList()
+        val castList = movie.credits?.cast?.map {
+            PersonDTO(
+                it.id,
+                it.profilePath,
+                it.name,
+                it.character
+            )
+        } ?: emptyList()
+        val crewList = movie.credits?.crew?.map {
+            PersonDTO(
+                it.id,
+                it.profilePath,
+                it.name,
+                it.department
+            )
+        } ?: emptyList()
 
         return listOf(
             MovieInfo(MovieInfoType.INFO_HEADER, movie),
