@@ -10,50 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca0b0c0c-1a25-4599-b9f9-15e8c0b80ad2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/local/timeline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/enums/TimelineType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/helpers/deserializers/TimelineDeserializer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/timeline/Timeline.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/timeline/TimelineTitle.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presenter/TimelinePresenter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presenter/TimelinePresenterImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/activities/TimelineActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/timelines/TimelineRightItemViewHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/views/TimelineView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_saida_opera.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_timeline.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_left.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_right.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_title.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/dagger/AppComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/dagger/AppComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/dagger/modules/PresenterModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/dagger/modules/PresenterModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/enums/LocalFiles.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/enums/LocalFiles.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/helpers/utils/LocaleUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/helpers/utils/LocaleUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/helpers/utils/RetrofitUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/helpers/utils/RetrofitUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/LocaleDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/dto/LocaleDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/MovieFilmographyDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/dto/MovieFilmographyDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/PersonDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/dto/PersonDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/contents/ContentInformation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/contents/ContentInformation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/movie_info/MovieInfoPersonList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/movie_info/MovieInfoPersonList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/person_info/PersonInfoMovieList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/person_info/PersonInfoMovieList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/timeline/TimelineItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/timeline/TimelineItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/tmdb/person/Person.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/tmdb/person/Person.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presenter/PresentationPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presenter/PresentationPresenterImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/services/LocalService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/services/LocalService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/services/retrofit/LocalServiceRetrofit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/services/retrofit/LocalServiceRetrofit.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/activities/HomeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/activities/HomeActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/activities/MovieDetailsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/activities/MovieDetailsActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/activities/PersonDetailsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/activities/PersonDetailsActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/MovieItemAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/MovieItemAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/PersonAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/PersonAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/TimelineAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/TimelineAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/movie_details/MovieInfoPersonListViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/movie_details/MovieInfoPersonListViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/page/BasePageViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/page/BasePageViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/person_details/PersonInfoFilmographyViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/person_details/PersonInfoFilmographyViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/timelines/TimelineRightItemViewHolder.kt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,20 +39,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_left.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_title.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_right.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="52" selection-end-column="70" />
+            <state relative-caret-position="133">
+              <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
@@ -104,18 +53,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/timelines/TimelineRightItemViewHolder.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-              <folding>
-                <element signature="e#58#707#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -233,7 +170,6 @@
         <option value="$PROJECT_DIR$/app/src/main/assets/local/milmoviesmaintopics.json" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/activities/HomeActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_title.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/enums/TimelineType.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presenter/TimelinePresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/enums/LocalFiles.kt" />
@@ -252,11 +188,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/timeline/Timeline.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/helpers/utils/RetrofitUtil.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/timelines/TimelineRightItemViewHolder.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_right.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_left.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/models/contents/ContentInformation.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/page/BasePageViewHolder.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_timeline.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_title.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_left.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_right.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/TimelineAdapter.kt" />
       </list>
     </option>
@@ -318,6 +255,14 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="cinema_history" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinema-history" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cinema_history" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="adapters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cinema-history" type="1abcf292:AndroidViewProjectNode" />
@@ -503,11 +448,11 @@
       <window_info id="Resources Explorer" order="7" weight="0.3297568" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49713877" weight="0.31445783" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49713877" visible="true" weight="0.31445783" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5028612" side_tool="true" weight="0.39638555" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49928468" visible="true" weight="0.20722891" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49928468" weight="0.43975905" />
       <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49785408" weight="0.32650602" />
@@ -628,14 +573,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="12" selection-start-line="29" selection-end-line="30" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_title.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
@@ -916,28 +853,33 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/TimelineAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_right.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="52" selection-end-column="70" />
+        <state relative-caret-position="259">
+          <caret line="222" column="8" selection-start-line="222" selection-start-column="8" selection-end-line="222" selection-end-column="8" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/ui/adapters/TimelineAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="100" column="63" lean-forward="true" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
-          <folding>
-            <element signature="e#48#957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_left.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="273">
+          <caret line="199" column="35" selection-start-line="199" selection-start-column="35" selection-end-line="199" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item_title.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />

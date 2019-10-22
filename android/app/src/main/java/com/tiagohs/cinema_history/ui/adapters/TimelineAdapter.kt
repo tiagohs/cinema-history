@@ -34,7 +34,7 @@ class TimelineAdapter(
             TimelineType.TITLE.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_timeline_item_title, parent, false)
 
-                return TimelineItemViewHolder(view)
+                return TimelineItemTitleHolder(view)
             }
             TimelineType.RIGHT.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_timeline_item_right, parent, false)
@@ -62,9 +62,6 @@ class TimelineAdapter(
         val viewType = getItemViewType(position)
 
         when (viewType) {
-//            TimelineType.TITLE.ordinal -> {
-//
-//            }
             TimelineType.RIGHT.ordinal, TimelineType.LEFT.ordinal -> {
                 val timelineItem = list[position] as? TimelineItem ?: return
                 val timelineViewHolder = holder as? TimelineItemViewHolder ?: return
@@ -78,19 +75,30 @@ class TimelineAdapter(
         return list[position].type.ordinal
     }
 
+    inner class TimelineItemTitleHolder(view: View): RecyclerView.ViewHolder(view) {}
+
     inner class TimelineItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
-        fun bind(timelineItem: TimelineItem) {
-            val yearView = itemView.findViewById<TextView>(R.id.year)
-            val descriptionView = itemView.findViewById<TextView>(R.id.itemDescription)
+        private val yearView: TextView = itemView.findViewById(R.id.year)
+        private val descriptionView: TextView = itemView.findViewById(R.id.itemDescription)
+        private val titleView: TextView = itemView.findViewById(R.id.itemTitle)
+        private val imageView: ImageView = itemView.findViewById(R.id.image)
+        private val imageContainer: ConstraintLayout = itemView.findViewById(R.id.imageContainer)
+        private val guidelineRootDivisorCenter: View = itemView.findViewById(R.id.guidelineRootDivisorCenter)
+        private val imageLegendContainer: View = itemView.findViewById(R.id.imageLegendContainer)
+        private val imageInfoContainer: ConstraintLayout = itemView.findViewById(R.id.imageLegendContainer)
+        private val imageInfoTitle: TextView = itemView.findViewById(R.id.footerTitle)
+        private val imageInfoDescription: TextView = itemView.findViewById(R.id.footerText)
+        private val imageInfoSource: TextView = itemView.findViewById(R.id.footerReference)
 
+        fun bind(timelineItem: TimelineItem) {
             descriptionView.setupLinkableTextView()
 
             yearView.text = timelineItem.year
             descriptionView.text = timelineItem.description.styledString()
 
             timelineItem.title?.let {
-                val titleView = itemView.findViewById<TextView>(R.id.itemTitle)
+
                 titleView.setupLinkableTextView()
 
                 titleView.visibility = View.VISIBLE
@@ -102,10 +110,6 @@ class TimelineAdapter(
         }
 
         private fun bindImage(type: TimelineType, image: Image) {
-            val imageView = itemView.findViewById<ImageView>(R.id.image)
-            val imageContainer = itemView.findViewById<ConstraintLayout>(R.id.imageContainer)
-            val guidelineRootDivisorCenter = itemView.findViewById<View>(R.id.guidelineRootDivisorCenter)
-            val imageLegendContainer = itemView.findViewById<View>(R.id.imageLegendContainer)
 
             image.imageStyle?.height?.let {
                 val containerLayoutParams = ConstraintLayout.LayoutParams(0.convertIntToDp(context), it.convertIntToDp(context))
@@ -141,11 +145,6 @@ class TimelineAdapter(
         }
 
         private fun bindContentInfo(contentInformation: ContentInformation) {
-            val imageInfoContainer = itemView.findViewById<ConstraintLayout>(R.id.imageLegendContainer)
-            val imageInfoTitle = itemView.findViewById<TextView>(R.id.footerTitle)
-            val imageInfoDescription = itemView.findViewById<TextView>(R.id.footerText)
-            val imageInfoSource = itemView.findViewById<TextView>(R.id.footerReference)
-
             imageInfoContainer.visibility = View.VISIBLE
 
             imageInfoDescription.setupLinkableTextView()
