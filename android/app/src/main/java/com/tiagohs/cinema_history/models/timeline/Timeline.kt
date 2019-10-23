@@ -8,4 +8,10 @@ open class Timeline: Serializable {
 
     @SerializedName("type")
     var type: TimelineType = TimelineType.RIGHT
+
+    @SerializedName("background_color")
+    val backgroundColor: String? = null
+
+    @SerializedName("background_transparent_color")
+    val backgroundTransparentColor: String? = null
 }

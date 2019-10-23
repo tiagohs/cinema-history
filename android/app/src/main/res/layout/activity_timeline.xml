@@ -17,9 +17,10 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:id="@+id/collapsingToolbar"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|enterAlways|snap"
-            app:contentScrim="@color/colorPrimary"
+            app:contentScrim="@color/red_timeline"
             app:titleEnabled="false">
 
             <androidx.appcompat.widget.Toolbar
@@ -27,6 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
+                android:background="@color/red_timeline"
                 app:popupTheme="@style/AppTheme.PopupOverlay">
 
                 <androidx.constraintlayout.widget.ConstraintLayout

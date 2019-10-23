@@ -17,14 +17,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageScaleType
 import com.tiagohs.cinema_history.enums.TimelineType
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.helpers.extensions.setupLinkableTextView
-import com.tiagohs.cinema_history.helpers.extensions.styledString
+import com.tiagohs.cinema_history.helpers.extensions.*
 import com.tiagohs.cinema_history.models.contents.ContentInformation
 import com.tiagohs.cinema_history.models.image.Image
 import com.tiagohs.cinema_history.models.timeline.Timeline
 import com.tiagohs.cinema_history.models.timeline.TimelineItem
+import com.tiagohs.cinema_history.models.timeline.TimelineTitle
 import kotlin.math.abs
 
 class TimelineAdapter(
@@ -70,6 +68,12 @@ class TimelineAdapter(
         val viewType = getItemViewType(position)
 
         when (viewType) {
+            TimelineType.TITLE.ordinal -> {
+                val timelineTitle = list[position] as? TimelineTitle ?: return
+                val timelineItemTitleHolder = holder as? TimelineItemTitleHolder ?: return
+
+                timelineItemTitleHolder.bind(timelineTitle)
+            }
             TimelineType.RIGHT.ordinal, TimelineType.LEFT.ordinal -> {
                 val timelineItem = list[position] as? TimelineItem ?: return
                 val timelineViewHolder = holder as? TimelineItemViewHolder ?: return
@@ -83,18 +87,38 @@ class TimelineAdapter(
         return list[position].type.ordinal
     }
 
-    inner class TimelineItemTitleHolder(view: View): RecyclerView.ViewHolder(view) {}
+    inner class TimelineItemTitleHolder(view: View): RecyclerView.ViewHolder(view) {
+
+        private val centerLine: ConstraintLayout = itemView.findViewById(R.id.centerLine)
+        private val textLine = itemView.findViewById<CardView>(R.id.textLine)
+        private val title2 = itemView.findViewById<TextView>(R.id.title2)
+
+        fun bind(timeline: TimelineTitle) {
+            val context = context ?: return
+            val colorIdentifier = timeline.backgroundColor ?: return
+            val color = context.getResourceColor(colorIdentifier)
+
+            centerLine.setBackgroundColor(color)
+            textLine.setCardBackgroundColor(color)
+            title2.setTextColor(color)
+        }
+    }
 
     inner class TimelineItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         private val yearView: TextView = itemView.findViewById(R.id.year)
         private val descriptionView: TextView = itemView.findViewById(R.id.itemDescription)
         private val titleView: TextView = itemView.findViewById(R.id.itemTitle)
+
         private val imageView: ImageView = itemView.findViewById(R.id.image)
         private val imageContainer: ConstraintLayout = itemView.findViewById(R.id.imageContainer)
         private val imageShadow = itemView.findViewById<View>(R.id.imageShadow)
         private val imageCard = itemView.findViewById<CardView>(R.id.imageCard)
+        private val textLine = itemView.findViewById<CardView>(R.id.textLine)
+
         private val centerLine: ConstraintLayout = itemView.findViewById(R.id.centerLine)
+        private val centerBackgroundLine: ConstraintLayout = itemView.findViewById(R.id.centerBackgroundLine)
+
         private val guidelineRootDivisorCenter: View = itemView.findViewById(R.id.guidelineRootDivisorCenter)
         private val guidelineRootDivisorRight: View = itemView.findViewById(R.id.guidelineRootDivisorRight)
         private val guidelineRootDivisorLeft: View = itemView.findViewById(R.id.guidelineRootDivisorLeft)
@@ -112,7 +136,6 @@ class TimelineAdapter(
             descriptionView.text = timelineItem.description.styledString()
 
             timelineItem.title?.let {
-
                 titleView.setupLinkableTextView()
 
                 titleView.visibility = View.VISIBLE
@@ -121,19 +144,24 @@ class TimelineAdapter(
 
             timelineItem.image?.let { bindImage(timelineItem) }
             timelineItem.imageInfo?.let { bindContentInfo(it) }
+
+            bindTemplateColor(timelineItem)
         }
 
         private fun bindImage(timelineItem: TimelineItem) {
             val image = timelineItem.image ?: return
+            val color = timelineItem.backgroundColor ?: return
+            val transparentColor = timelineItem.backgroundTransparentColor ?: return
             val type = timelineItem.type
             val imageTransparent = timelineItem.imageTransparent
-            val color = timelineItem.backgroundColor
 
             image.imageStyle?.height?.let { changeImageDimens(it, type, imageTransparent) }
             imageView.loadImage(image)
 
             if (imageTransparent) {
                 bindTransparentImage(color)
+            } else {
+                bindDefaultImage(color, transparentColor)
             }
 
             imageContainer.visibility = View.VISIBLE
@@ -141,12 +169,12 @@ class TimelineAdapter(
 
         private fun changeImageDimens(height: Int, type: TimelineType, imageTransparent: Boolean) {
             val containerLayoutParams = ConstraintLayout.LayoutParams(0.convertIntToDp(context), height.convertIntToDp(context))
+            val marginSides = if (imageTransparent) 0 else 10.convertIntToDp(context)
 
             when (type) {
                 TimelineType.TITLE -> {}
                 TimelineType.RIGHT -> {
-                    val marginRight = if (imageTransparent) 0 else 10.convertIntToDp(context)
-                    containerLayoutParams.setMargins(10.convertIntToDp(context), 50.convertIntToDp(context), marginRight, 0)
+                    containerLayoutParams.setMargins(marginSides, 50.convertIntToDp(context), marginSides, 0)
 
                     containerLayoutParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
                     containerLayoutParams.endToStart = if (imageTransparent) guidelineRootDivisorLeft.id else guidelineRootDivisorCenter.id
@@ -154,8 +182,7 @@ class TimelineAdapter(
                     containerLayoutParams.bottomToTop = imageLegendContainer.id
                 }
                 TimelineType.LEFT -> {
-                    val marginLeft = if (imageTransparent) 0 else 10.convertIntToDp(context)
-                    containerLayoutParams.setMargins(marginLeft, 50.convertIntToDp(context), 10.convertIntToDp(context), 0)
+                    containerLayoutParams.setMargins(marginSides, 50.convertIntToDp(context), marginSides, 0)
 
                     containerLayoutParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
                     containerLayoutParams.startToEnd = if (imageTransparent) guidelineRootDivisorRight.id else guidelineRootDivisorCenter.id
@@ -175,8 +202,19 @@ class TimelineAdapter(
             imageCard.cardElevation = 0f
             imageCard.radius = 0f
 
-            val backgroundColor = context.resources.getIdentifier(color, "color", context.packageName)
-            centerLine.setBackgroundColor(context.resources.getColor(backgroundColor))
+            centerLine.setBackgroundColor(context.getResourceColor(color))
+        }
+
+        private fun bindDefaultImage(color: String, transparentColor: String) {
+            val context = context ?: return
+
+            imageShadow.visibility = View.VISIBLE
+            imageCard.elevation = 5f
+            imageCard.cardElevation = 5f
+            imageCard.radius = 15f
+
+            centerBackgroundLine.setBackgroundColor(context.getResourceColor(color))
+            centerLine.setBackgroundColor(context.getResourceColor(transparentColor))
         }
 
         private fun bindContentInfo(contentInformation: ContentInformation) {
@@ -189,6 +227,22 @@ class TimelineAdapter(
             imageInfoTitle.text = contentInformation.contentTitle?.styledString()
             imageInfoDescription.text = contentInformation.contentText?.styledString()
             imageInfoSource.text = contentInformation.source?.styledString()
+        }
+
+        private fun bindTemplateColor(timelineItem: TimelineItem) {
+            val context = context ?: return
+            val colorIdentifier = timelineItem.backgroundColor ?: return
+            val colorTransparentIdentifier = timelineItem.backgroundTransparentColor ?: return
+            val color = context.getResourceColor(colorIdentifier)
+            val colorTransparent = context.getResourceColor(colorTransparentIdentifier)
+
+            titleView.setLinkTextColor(color)
+            descriptionView.setLinkTextColor(color)
+            imageShadow.setBackgroundColor(colorTransparent)
+            textLine.setCardBackgroundColor(color)
+
+            centerBackgroundLine.setBackgroundColor(color)
+            centerLine.setBackgroundColor(colorTransparent)
         }
     }
 }

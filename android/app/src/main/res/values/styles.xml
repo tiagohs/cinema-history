@@ -28,6 +28,10 @@
         <item name="colorPrimaryDark">@color/md_black_1000</item>
     </style>
 
+    <style name="AppTheme.TimelineStyle">
+        <item name="colorPrimaryDark">@color/red_timeline</item>
+    </style>
+
     <style name="AppTheme.Expansed">
         <item name="android:textColor">@android:color/transparent</item>
         <item name="android:fontFamily">@font/roboto_bold</item>
@@ -43,6 +47,10 @@
 
     <style name="AppTheme.Overlay" parent="AppTheme">
         <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash_screen</item>
     </style>
 
     <style name="TextAppearance.ExpandedTitle" parent="TextAppearance.AppCompat">

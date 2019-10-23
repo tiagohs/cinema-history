@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">cinema-history</string>
+    <string name="app_name">História do Cinema</string>
     <string name="action_settings">Settings</string>
 
     <string name="quotes">\"\"</string>
 
     <string name="unknown_error">An error occurred, please try again.</string>
-
 
     <!-- Genres -->
     <string name="genere_action">Ação</string>

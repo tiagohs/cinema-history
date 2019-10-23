@@ -11,6 +11,7 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.MainTopicItemLayoutType
 import com.tiagohs.cinema_history.enums.MainTopicsType
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
+import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.Quote
@@ -142,17 +143,12 @@ class MainTopicsAdapter(
 
             itemView.mainImage.loadImage(mainTopicItem.image)
 
-            val backgroundColor = context.resources
-                .getIdentifier(mainTopicItem.titleBackgroundColor, "color", context.packageName)
-            val textColor = context.resources
-                .getIdentifier(mainTopicItem.titleColor, "color", context.packageName)
-
             itemView.title.text = mainTopicItem.title
-            itemView.title.setTextColor(context.resources.getColor(textColor))
-            itemView.contentBackground.setBackgroundColor(context.resources.getColor(backgroundColor))
+            itemView.title.setTextColor(context.getResourceColor(mainTopicItem.titleColor))
+            itemView.contentBackground.setBackgroundColor(context.getResourceColor(mainTopicItem.titleBackgroundColor))
             itemView.description.text = mainTopicItem.description
-            itemView.description.setTextColor(context.resources.getColor(textColor))
-            itemView.mainSubtitle.setTextColor(context.resources.getColor(textColor))
+            itemView.description.setTextColor(context.getResourceColor(mainTopicItem.titleColor))
+            itemView.mainSubtitle.setTextColor(context.getResourceColor(mainTopicItem.titleColor))
             itemView.mainSubtitle.text = mainTopicItem.subtitle
 
             val background = GradientDrawable()
@@ -188,7 +184,7 @@ class MainTopicsAdapter(
             if (!isDarkMode) {
                 val context = context ?: return
 
-                itemView.quoteText.setTextColor(context.resources.getColor(R.color.md_black_1000))
+                itemView.quoteText.setTextColor(context.getResourceColor(R.color.md_black_1000))
             }
         }
     }

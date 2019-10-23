@@ -104,3 +104,9 @@ fun Context.openLink(url: String) {
 
     }
 }
+
+fun Context.getResourceColor(colorName: String): Int {
+    val colorIdentifier = resources.getIdentifier(colorName, "color", packageName)
+
+    return getResourceColor(colorIdentifier)
+}

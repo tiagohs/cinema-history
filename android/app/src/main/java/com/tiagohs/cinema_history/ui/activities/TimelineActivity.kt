@@ -13,6 +13,8 @@ import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.cinema_history.ui.views.TimelineView
 import kotlinx.android.synthetic.main.activity_timeline.*
 import javax.inject.Inject
+import android.view.WindowManager
+import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
 
 
 class TimelineActivity: BaseActivity(), TimelineView {
@@ -52,6 +54,16 @@ class TimelineActivity: BaseActivity(), TimelineView {
 
         loadView.stopShimmer()
         loadView.visibility = View.GONE
+    }
+
+    fun changeStatusBarAndToolbarColor(timelineColor: String) {
+        val backgroundColor = getResourceColor(timelineColor)
+
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+
+        window.statusBarColor = backgroundColor
+        toolbar.setBackgroundColor(backgroundColor)
     }
 
     companion object {

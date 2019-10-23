@@ -12,9 +12,6 @@ data class TimelineItem(
     @SerializedName("description")
     val description: String,
 
-    @SerializedName("background_color")
-    val backgroundColor: String,
-
     @SerializedName("year_color")
     val yearColor: String,
 
