@@ -14,6 +14,7 @@ import com.tiagohs.cinema_history.ui.views.TimelineView
 import kotlinx.android.synthetic.main.activity_timeline.*
 import javax.inject.Inject
 
+
 class TimelineActivity: BaseActivity(), TimelineView {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_timeline

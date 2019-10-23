@@ -56,9 +56,27 @@ fun ImageView.loadImage(image: Image, onLoadSuccess: (() -> Unit)? = null) {
                 when (ImageScaleType.getImageViewScaleType(it)) {
                     ImageView.ScaleType.CENTER_CROP -> {
                         picassoRequest.centerCrop()
+
+                        val screenWidth = context.resources.configuration.screenWidthDp
+
+                        image.imageStyle?.resize?.let {
+                            val imagewidth = it.width?.convertIntToDp(context) ?: screenWidth
+                            val imageHeight = it.height ?: 300
+
+                            picassoRequest.resize(imagewidth, imageHeight.convertIntToDp(context))
+                        }
                     }
                     ImageView.ScaleType.CENTER_INSIDE -> {
                         picassoRequest.centerInside()
+
+                        val screenWidth = context.resources.configuration.screenWidthDp
+
+                        image.imageStyle?.resize?.let {
+                            val imagewidth = it.width?.convertIntToDp(context) ?: screenWidth
+                            val imageHeight = it.height ?: 300
+
+                            picassoRequest.resize(imagewidth, imageHeight.convertIntToDp(context))
+                        }
                     }
                     ImageView.ScaleType.FIT_XY -> {
                         picassoRequest.fit()
@@ -67,15 +85,6 @@ fun ImageView.loadImage(image: Image, onLoadSuccess: (() -> Unit)? = null) {
                 }
             }
         }
-    }
-
-    val screenWidth = context.resources.configuration.screenWidthDp
-
-    image.imageStyle?.resize?.let {
-        val imagewidth = it.width?.convertIntToDp(context) ?: screenWidth
-        val imageHeight = it.height ?: 300
-
-        picassoRequest.resize(imagewidth, imageHeight.convertIntToDp(context))
     }
 
     picassoRequest.into(this, object : Callback {

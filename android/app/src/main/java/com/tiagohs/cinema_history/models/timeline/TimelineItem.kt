@@ -18,6 +18,9 @@ data class TimelineItem(
     @SerializedName("year_color")
     val yearColor: String,
 
+    @SerializedName("image_transparent")
+    val imageTransparent: Boolean = false,
+
     @SerializedName("title")
     val title: String? = null,
 

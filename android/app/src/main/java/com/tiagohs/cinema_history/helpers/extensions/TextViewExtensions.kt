@@ -2,27 +2,42 @@ package com.tiagohs.cinema_history.helpers.extensions
 
 import android.widget.TextView
 import com.google.gson.Gson
+import com.tiagohs.cinema_history.enums.TextViewLinkScreenType
 import com.tiagohs.cinema_history.enums.TextViewUrlType
-import com.tiagohs.cinema_history.models.TextViewUrl
+import com.tiagohs.cinema_history.enums.TimelineType
+import com.tiagohs.cinema_history.models.textview_url.TextViewLink
+import com.tiagohs.cinema_history.models.textview_url.TextViewLinkOnline
+import com.tiagohs.cinema_history.models.textview_url.TextViewLinkScreen
+import com.tiagohs.cinema_history.ui.activities.MovieDetailsActivity
+import com.tiagohs.cinema_history.ui.activities.PersonDetailsActivity
 import me.saket.bettermovementmethod.BetterLinkMovementMethod
+import org.json.JSONObject
 
 fun TextView.setupLinkableTextView() {
     BetterLinkMovementMethod
         .linkifyHtml(this)
         .setOnLinkClickListener { _, url ->
             val value = url.split("://_")
-            val obj = Gson().fromJson<TextViewUrl>(value[1], TextViewUrl::class.java)
+            val jsonObject = JSONObject(value[1])
+            val type = TextViewUrlType.getContentType(jsonObject.get("type").toString())
 
-            when (obj.type) {
+            when (type) {
                 TextViewUrlType.ONLINE -> {
-                    context.openLink(obj.value)
+                    val obj = Gson().fromJson<TextViewLinkOnline>(value[1], TextViewLinkOnline::class.java)
+
+                    context.openLink(obj.url)
                 }
                 TextViewUrlType.SCREEN -> {
+                    val obj = Gson().fromJson<TextViewLinkScreen>(value[1], TextViewLinkScreen::class.java)
+                    val intent = when (obj.screenType) {
+                        TextViewLinkScreenType.MOVIE -> MovieDetailsActivity.newIntent(context, obj.id)
+                        TextViewLinkScreenType.PERSON -> PersonDetailsActivity.newIntent(context, obj.id)
+                    }
 
+                    context.startActivity(intent)
                 }
             }
 
             true
         }
-
 }

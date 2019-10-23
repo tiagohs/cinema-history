@@ -9,5 +9,21 @@ enum class TextViewUrlType(
     ONLINE("online"),
 
     @SerializedName("screen")
-    SCREEN("screen")
+    SCREEN("screen");
+
+    companion object {
+
+        fun getContentType(type: String): TextViewUrlType {
+            var typeEnum = ONLINE
+
+            for (typeValue in values()) {
+                if (typeValue.type == type) {
+                    typeEnum = typeValue
+                    break
+                }
+            }
+
+            return typeEnum
+        }
+    }
 }

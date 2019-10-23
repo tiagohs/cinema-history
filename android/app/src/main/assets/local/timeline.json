@@ -5,47 +5,121 @@
   {
     "type": "left",
     "year": "18\n95",
-    "title": "O Nascimento",
-    "description": "Auguste (1862-1954) e Louis (1864-1948) Lumière exibem 10 curtas-metragens em Paris, entre eles, A saída dos operários da fábrica Lumière, para um público pagante.",
+    "title": "A primeira exibição",
+    "description": "<a href=\"https://_{'type': 'screen', 'id': 1867, 'screen_type': 'person'}\">Auguste</a> (1862-1954) e <a href=\"https://_{'type': 'screen', 'id': 1868, 'screen_type': 'person'}\">Louis </a> (1864-1948) Lumière exibem 10 curtas-metragens em Paris, entre eles, <strong><a href=\"https://_{type: 'screen', 'id': 774, 'screen_type': 'movie'}\">A saída dos operários da fábrica Lumière</a></strong>, para um público pagante.",
     "background_color": "md_black_1000",
     "year_color": "md_white_1000",
+    "image_transparent": true,
     "image": {
       "image_type": "local",
-      "url": "img_saida_opera",
+      "url": "img_lumiere_brothers",
       "style": {
-        "height": 100,
-        "scale_type": "center_inside",
+        "height": 120,
+        "scale_type": "fit_xy",
         "resize": {
-          "height": 100
+          "height": 120
         }
       }
-    },
-    "image_info": {
-      "contentTitle": "A saída dos operários da fábrica Lumière",
-      "contentText": "Cena do filme A saída dos operários da fábrica Lumière, um dos primeiros filmes da história a ser exibido a um público pagante."
     }
   },
   {
     "type": "right",
-    "year": "18\n95",
-    "title": "O Nascimento",
-    "description": "Auguste (1862-1954) e Louis (1864-1948) Lumière exibem 10 curtas-metragens em Paris, entre eles, A saída dos operários da fábrica Lumière, para um público pagante.",
+    "year": "18\n96",
+    "title": "O Beijo mais polêmico da História",
+    "description": "<a href=\"https://_{'type': 'screen', 'id': 239027, 'screen_type': 'person'}\">Thomas Edison</a>, o pai do cinetoscópio, lança aquela que pode ser a primeira grande obra polêmica da história do cinema, <a href=\"https://_{type: 'screen', 'id': 94570, 'screen_type': 'movie'}\">The Kiss</a> (BR: O Beijo, 1896), dirigido por <a href=\"https://_{'type': 'screen', 'id': 110348, 'screen_type': 'person'}\">William Heise</a>, sendo o primeiro filme a filmar um beijo para as grandes telas.",
     "background_color": "md_black_1000",
     "year_color": "md_white_1000",
     "image": {
-      "image_type": "local",
-      "url": "img_saida_opera",
+      "image_type": "online",
+      "url": "https://ptqqka.sn.files.1drv.com/y4pPQH715-BeusCxRAMsjfgAQGctdu94OOQpDZV-P8XjAuv2hUi-Jd9A7ycGpxitZWv-4TjD5U1PRsYHsW4CFqCSB-W8E-DQh4zsmCA7bxxNioBfGYctDCvw57VkB5fODs71trOxyVYTfOh7UERpo6VLGlyhjpLxR8vogNWJF3r-gyY37OEP7bxSPjexnXif0wDnv-EpWncnyx4IMqb-LFUYJisQ9RaZnQjywHWC-nMkuM/film-the-kiss-1896-granger.jpg",
       "style": {
-        "height": 100,
-        "scale_type": "center_inside",
+        "height": 130,
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "type": "left",
+    "year": "18\n99",
+    "title": "Phantom ride",
+    "description": "<a href=\"https://_{'type': 'screen', 'id': 1037661, 'screen_type': 'person'}\">George Albert Smith</a> filmou o que passou a ser conhecido como \"phantom ride\" no seu filme <a href=\"https://_{type: 'screen', 'id': 143819, 'screen_type': 'movie'}\">The Kiss in the Tunnel</a> (BR: O beijo no Túneo, 1899). Tratava-se de uma nova experiência visual para o público, obtida pela colocação da câmera na frente de um trem em movimento, como se ela fosse um olho fantasmagórico avançando pelo ar.",
+    "background_color": "md_black_1000",
+    "year_color": "md_white_1000",
+    "image": {
+      "image_type": "online",
+      "url": "https://ptqqka.sn.files.1drv.com/y4p0WZIiao98IQv4lHFbILR2LMKAd6MAulZisp-elfxAuTbHkVOLCwdGv6eaiKL3ncBrWruprGITeeuQz1b7dioolnRq3isQXJeSrhzISEm8BXWIB-hOASqHRAX5dCnQKeaje7MF-hhvMU2AP_wB2BHuD_IYvASUyvlUjbfVvoWSflrXmx1B8AL0L-haA2T8S8AJoYsdPUeixLxPenQJG2EMsibCxxJ_rMoVbpSeUeoMYs/phantom.jpeg",
+      "style": {
+        "height": 130,
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "type": "right",
+    "year": "19\n00",
+    "title": "A primeira revolução narrativa ",
+    "description": "O filme <a href=\"https://_{type: 'screen', 'id': 179546, 'screen_type': 'movie'}\"> Attack on a China Mission - Bluejackets to the Rescue</a> (BR: Ataque a uma missão chinesa – Soldados navais ao resgate, 1900) é exibido na câmara Municipal de Hove, no condado de Sussex. Um divisor de águas para o cinema, <a href=\"https://_{'type': 'screen', 'id': 1037369, 'screen_type': 'person'}\"> James Williamson</a> (1855-1933) criou uma das narrativas mais complexas da época.",
+    "background_color": "md_black_1000",
+    "year_color": "md_white_1000"
+  },
+  {
+    "type": "left",
+    "year": "19\n02",
+    "title": "Um novo padrão",
+    "description": "Em <a href=\"https://_{'type': 'screen', 'id': 775, 'screen_type': 'movie'}\">Le Voyage dans la Lune</a> (Viagem à Lua, 1902), <a href=\"https://_{'type': 'screen', 'id': 11523, 'screen_type': 'person'}\">Georges Méliés</a> estabelece um novo padão de custos de <strong>produção e efeitos especiais</strong>.",
+    "background_color": "md_black_1000",
+    "year_color": "md_white_1000",
+    "image_transparent": true,
+    "image": {
+      "image_type": "local",
+      "url": "img_viagem_lua_2",
+      "style": {
+        "height": 130,
+        "scale_type": "fit_xy",
         "resize": {
-          "height": 100
+          "height": 130
         }
       }
-    },
-    "image_info": {
-      "contentTitle": "A saída dos operários da fábrica Lumière",
-      "contentText": "Cena do filme A saída dos operários da fábrica Lumière, um dos primeiros filmes da história a ser exibido a um público pagante."
+    }
+  },
+  {
+    "type": "right",
+    "year": "19\n02",
+    "title": "Evolução técnica",
+    "description": "A extensão média de um rolo de filme aumenta de <strong>15</strong> para <strong>183</strong> metros, permitindo mais tempo para se desenvolver uma narrativa.",
+    "background_color": "md_black_1000",
+    "year_color": "md_white_1000"
+  },
+  {
+    "type": "left",
+    "year": "19\n03",
+    "title": "Close-up",
+    "description": "<a href=\"https://_{'type': 'screen', 'id': 143801, 'screen_type': 'movie'}\">The Sick Kitten</a> (BR: O gato doente, 1903), remake do filme The Little Doctor (1901), ambos de <a href=\"https://_{'type': 'screen', 'id': 1037661, 'screen_type': 'person'}\">George Albert Smith</a>, é lançado. Neste, vemos primeiro uma sala, duas crianças e um gato, o plano principal. Então, Smith corta para um close-up do gato, recebendo uma colher de remédio. Essa é considerada o <strong>primeiro uso de um close-up</strong> sem o envolvimento de personagens olhando através de alguma coisa.",
+    "background_color": "md_black_1000",
+    "year_color": "md_white_1000",
+    "image": {
+      "image_type": "online",
+      "url": "https://ptqqka.sn.files.1drv.com/y4pzR0j1-4ZZpDq3Mm-AWMV5k6jEs49B0IX7rWuk_7mmfIAYeSoyJvajT9nvRwL5-s8dywDcfozcvAqfoGHkU9icRsGnDDozHYnL0zNi9fXXzrlBwmCZ6pRjWlr86D-oo583kp38L1zZOW4w81jq_4fLBtyMidQtZvSffgwT0A41oMbooBg49Ya1f3jIAOlnlW9VvJAO2N4g_5HzpxvqPCzjK9qKG473bQBa7LiZdOAwO0/sick_kitten.jpg",
+      "style": {
+        "height": 130,
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "type": "right",
+    "year": "19\n03",
+    "title": "Continuidade nas telas",
+    "description": "<a href=\"https://_{'type': 'screen', 'id': 44341, 'screen_type': 'movie'}\">Life of an American Fireman</a> (A vida de um bombeiro americano, 1903), de <a href=\"https://_{'type': 'screen', 'id': 44866, 'screen_type': 'person'}\">Edwin Porter</a> é lançado. Na sequência onde o bombeiro chega à casa pegando fogo, Edwin corta para um quarto dentro da casa, mostrando o resgate de uma mulher pelo bombeiro e, depois, corta para um plano exterior da mãe na rua. Para muitos historiadores, esse foi o <strong>primeiro exemplo de edição de continuidade</strong>.",
+    "background_color": "md_black_1000",
+    "year_color": "md_white_1000",
+    "image": {
+      "image_type": "online",
+      "url": "https://ptqqka.sn.files.1drv.com/y4pKgyb-XT3yRa1Lpdokd2yO28-iDU271bFGLff7mIZSa17hjhri2fMGOuZa_K25i7DKMMwOWtqlMWoQ3eKYIw1WOSTbKG2pTgtkqqVy5g4MIwSGvCffnMWGNhk3o3CPD2gHny5_fkPvA1cki8XL7LyoLrst3N3mqUmmLco3SvuXqXerm5pgQ75TeVeP8ZxJlCqC3iewWI1w0YaNFg-9BidGrDJFGQ93n7tQGm9Lftfzys/life_of_american.jpg",
+      "style": {
+        "height": 130,
+        "scale_type": "center_crop"
+      }
     }
   }
 ]

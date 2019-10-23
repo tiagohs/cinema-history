@@ -4,11 +4,18 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.AnimationUtils
+import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.enums.ImageScaleType
 import com.tiagohs.cinema_history.enums.TimelineType
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
@@ -18,6 +25,7 @@ import com.tiagohs.cinema_history.models.contents.ContentInformation
 import com.tiagohs.cinema_history.models.image.Image
 import com.tiagohs.cinema_history.models.timeline.Timeline
 import com.tiagohs.cinema_history.models.timeline.TimelineItem
+import kotlin.math.abs
 
 class TimelineAdapter(
     val context: Context?,
@@ -84,7 +92,13 @@ class TimelineAdapter(
         private val titleView: TextView = itemView.findViewById(R.id.itemTitle)
         private val imageView: ImageView = itemView.findViewById(R.id.image)
         private val imageContainer: ConstraintLayout = itemView.findViewById(R.id.imageContainer)
+        private val imageShadow = itemView.findViewById<View>(R.id.imageShadow)
+        private val imageCard = itemView.findViewById<CardView>(R.id.imageCard)
+        private val centerLine: ConstraintLayout = itemView.findViewById(R.id.centerLine)
         private val guidelineRootDivisorCenter: View = itemView.findViewById(R.id.guidelineRootDivisorCenter)
+        private val guidelineRootDivisorRight: View = itemView.findViewById(R.id.guidelineRootDivisorRight)
+        private val guidelineRootDivisorLeft: View = itemView.findViewById(R.id.guidelineRootDivisorLeft)
+
         private val imageLegendContainer: View = itemView.findViewById(R.id.imageLegendContainer)
         private val imageInfoContainer: ConstraintLayout = itemView.findViewById(R.id.imageLegendContainer)
         private val imageInfoTitle: TextView = itemView.findViewById(R.id.footerTitle)
@@ -105,43 +119,64 @@ class TimelineAdapter(
                 titleView.text = it.styledString()
             }
 
-            timelineItem.image?.let { bindImage(timelineItem.type, it) }
+            timelineItem.image?.let { bindImage(timelineItem) }
             timelineItem.imageInfo?.let { bindContentInfo(it) }
         }
 
-        private fun bindImage(type: TimelineType, image: Image) {
+        private fun bindImage(timelineItem: TimelineItem) {
+            val image = timelineItem.image ?: return
+            val type = timelineItem.type
+            val imageTransparent = timelineItem.imageTransparent
+            val color = timelineItem.backgroundColor
 
-            image.imageStyle?.height?.let {
-                val containerLayoutParams = ConstraintLayout.LayoutParams(0.convertIntToDp(context), it.convertIntToDp(context))
-                containerLayoutParams.setMargins(10.convertIntToDp(context), 50.convertIntToDp(context), 10.convertIntToDp(context), 0)
+            image.imageStyle?.height?.let { changeImageDimens(it, type, imageTransparent) }
+            imageView.loadImage(image)
 
-                when (type) {
-                    TimelineType.TITLE -> {}
-                    TimelineType.RIGHT -> {
-                        containerLayoutParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
-                        containerLayoutParams.endToStart = guidelineRootDivisorCenter.id
-                        containerLayoutParams.startToStart = ConstraintLayout.LayoutParams.PARENT_ID
-                        containerLayoutParams.bottomToTop = imageLegendContainer.id
-                    }
-                    TimelineType.LEFT -> {
-                        containerLayoutParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
-                        containerLayoutParams.startToEnd = guidelineRootDivisorCenter.id
-                        containerLayoutParams.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID
-                        containerLayoutParams.bottomToTop = imageLegendContainer.id
-                    }
-                }
-
-                containerLayoutParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
-                containerLayoutParams.startToEnd = guidelineRootDivisorCenter.id
-                containerLayoutParams.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID
-                containerLayoutParams.bottomToTop = imageLegendContainer.id
-
-                imageContainer.layoutParams = containerLayoutParams
+            if (imageTransparent) {
+                bindTransparentImage(color)
             }
 
             imageContainer.visibility = View.VISIBLE
+        }
 
-            imageView.loadImage(image)
+        private fun changeImageDimens(height: Int, type: TimelineType, imageTransparent: Boolean) {
+            val containerLayoutParams = ConstraintLayout.LayoutParams(0.convertIntToDp(context), height.convertIntToDp(context))
+
+            when (type) {
+                TimelineType.TITLE -> {}
+                TimelineType.RIGHT -> {
+                    val marginRight = if (imageTransparent) 0 else 10.convertIntToDp(context)
+                    containerLayoutParams.setMargins(10.convertIntToDp(context), 50.convertIntToDp(context), marginRight, 0)
+
+                    containerLayoutParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
+                    containerLayoutParams.endToStart = if (imageTransparent) guidelineRootDivisorLeft.id else guidelineRootDivisorCenter.id
+                    containerLayoutParams.startToStart = ConstraintLayout.LayoutParams.PARENT_ID
+                    containerLayoutParams.bottomToTop = imageLegendContainer.id
+                }
+                TimelineType.LEFT -> {
+                    val marginLeft = if (imageTransparent) 0 else 10.convertIntToDp(context)
+                    containerLayoutParams.setMargins(marginLeft, 50.convertIntToDp(context), 10.convertIntToDp(context), 0)
+
+                    containerLayoutParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
+                    containerLayoutParams.startToEnd = if (imageTransparent) guidelineRootDivisorRight.id else guidelineRootDivisorCenter.id
+                    containerLayoutParams.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID
+                    containerLayoutParams.bottomToTop = imageLegendContainer.id
+                }
+            }
+
+            imageContainer.layoutParams = containerLayoutParams
+        }
+
+        private fun bindTransparentImage(color: String) {
+            val context = context ?: return
+
+            imageShadow.visibility = View.GONE
+            imageCard.elevation = 0f
+            imageCard.cardElevation = 0f
+            imageCard.radius = 0f
+
+            val backgroundColor = context.resources.getIdentifier(color, "color", context.packageName)
+            centerLine.setBackgroundColor(context.resources.getColor(backgroundColor))
         }
 
         private fun bindContentInfo(contentInformation: ContentInformation) {
