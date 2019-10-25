@@ -5,6 +5,7 @@ import com.tiagohs.cinema_history.enums.ContentType
 import com.tiagohs.cinema_history.enums.TimelineType
 import com.tiagohs.cinema_history.models.contents.*
 import com.tiagohs.cinema_history.models.timeline.Timeline
+import com.tiagohs.cinema_history.models.timeline.TimelineHeader
 import com.tiagohs.cinema_history.models.timeline.TimelineItem
 import com.tiagohs.cinema_history.models.timeline.TimelineTitle
 import java.lang.reflect.Type
@@ -23,6 +24,7 @@ class TimelineDeserializer: JsonDeserializer<Timeline> {
             TimelineType.TITLE -> Gson().fromJson(obj, TimelineTitle::class.java)
             TimelineType.RIGHT -> Gson().fromJson(obj, TimelineItem::class.java)
             TimelineType.LEFT -> Gson().fromJson(obj, TimelineItem::class.java)
+            TimelineType.HEADER -> Gson().fromJson(obj, TimelineHeader::class.java)
         }
     }
 }

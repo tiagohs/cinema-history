@@ -5,13 +5,22 @@ import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Build
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.Slide
+import android.view.Gravity
 import android.view.LayoutInflater
+import android.view.View
 import android.view.View.*
-import android.view.WindowManager
-import androidx.core.content.ContextCompat
+import android.widget.TextView
+import androidx.core.app.ActivityOptionsCompat
+import androidx.core.util.Pair
+import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.MainTopicsType
+import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
+import com.tiagohs.cinema_history.helpers.extensions.setScreenBackgroundColor
+import com.tiagohs.cinema_history.helpers.extensions.setStatusBarColor
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
@@ -21,6 +30,7 @@ import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.cinema_history.ui.views.MainTopicsView
 import kotlinx.android.synthetic.main.activity_main_topics.*
 import javax.inject.Inject
+
 
 class MainTopicsActivity: BaseActivity(), MainTopicsView {
 
@@ -36,67 +46,74 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setSupportActionBar(toolbar)
 
         getApplicationComponent()?.inject(this)
-
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        mainTopicsType = intent.getSerializableExtra(MAIN_TOPIC_TYPE) as? MainTopicsType
-        isDarkMode = intent.getBooleanExtra(DARK_MODE, false)
-
-        when (mainTopicsType) {
-            MainTopicsType.HISTORY_CINEMA -> {
-                toolbarTitle.text = "Historia do Cinema"
-            }
-            MainTopicsType.MIL_MOVIES -> {
-                toolbarTitle.text = "1001 Filmes"
-            }
-            MainTopicsType.TIMELINE -> {
-                toolbarTitle.text = "Timeline do Cinema"
-            }
-        }
-
-        if (isDarkMode) {
-            val view = this.window.decorView
-            view.setBackgroundColor(ContextCompat.getColor(this, R.color.md_black_1000))
-
-            val loadView1 = LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_dark, null, false)
-            loadViewContainer.addView(loadView1)
-
-            val loadView2 = LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_dark, null, false)
-            loadViewContainer.addView(loadView2)
-
-        } else {
-            toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.md_white_1000))
-            toolbarTitle.setTextColor(ContextCompat.getColor(this, R.color.md_black_1000))
-            toolbar.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.md_black_1000), PorterDuff.Mode.SRC_ATOP)
-
-            mainTopicsList.setBackgroundColor(ContextCompat.getColor(this, R.color.md_white_1000))
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                val decor = window.decorView
-                decor.systemUiVisibility = SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-            }
-
-            val window = getWindow()
-
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            window.setStatusBarColor(ContextCompat.getColor(this, R.color.md_white_1000))
-
-            val loadView1 = LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_light, null, false)
-            loadViewContainer.addView(loadView1)
-
-            val loadView2 = LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_light, null, false)
-            loadViewContainer.addView(loadView2)
-        }
+        setupToolbar(toolbar)
 
         presenter.onBindView(this)
         presenter.fetchMainTopics(mainTopicsType)
     }
 
-    override fun onDestroy() {
+    override fun onBackPressed() {
+        super.onBackPressed()
 
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
+    override fun setupArguments() {
+        mainTopicsType = intent.getSerializableExtra(MAIN_TOPIC_TYPE) as? MainTopicsType
+        isDarkMode = intent.getBooleanExtra(DARK_MODE, false)
+    }
+
+    override fun setupScreenTitle() {
+        val titleRes = when (mainTopicsType) {
+            MainTopicsType.HISTORY_CINEMA -> R.string.history_cinema_title
+            MainTopicsType.MIL_MOVIES -> R.string.mil_movies_title
+            MainTopicsType.TIMELINE -> R.string.timeline_title
+            else -> R.string.history_cinema_title
+        }
+
+        toolbarTitle.text = getString(titleRes)
+    }
+
+    override fun setupScreenLayout() {
+        if (isDarkMode) {
+            setupDarkScreen()
+            return
+        }
+
+        setupLightScreen()
+    }
+
+    private fun setupDarkScreen() {
+        setScreenBackgroundColor(R.color.md_black_1000)
+
+        loadViewContainer.addView(LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_dark, null, false))
+        loadViewContainer.addView(LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_dark, null, false))
+    }
+
+    private fun setupLightScreen() {
+        val whiteColor = getResourceColor(R.color.md_white_1000)
+        val blackColor = getResourceColor(R.color.md_black_1000)
+
+        toolbar.setBackgroundColor(whiteColor)
+        toolbarTitle.setTextColor(blackColor)
+        toolbar.navigationIcon?.setColorFilter(blackColor, PorterDuff.Mode.SRC_ATOP)
+
+        mainTopicsList.setBackgroundColor(whiteColor)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            val decor = window.decorView
+            decor.systemUiVisibility = SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        }
+
+        setStatusBarColor(R.color.md_white_1000)
+
+        loadViewContainer.addView(LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_light, null, false))
+        loadViewContainer.addView(LayoutInflater.from(this).inflate(R.layout.load_view_main_topics_card_light, null, false))
+    }
+
+    override fun onDestroy() {
         presenter.onUnbindView()
 
         super.onDestroy()
@@ -105,24 +122,38 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
     override fun bindMainTopics(mainTopics: List<MainTopic>) {
         val mainTopicsType = mainTopicsType?: return
         adapter = MainTopicsAdapter(this, mainTopicsType, mainTopics, isDarkMode)
-        adapter?.onMainTopicSelected = {
-
-            when (mainTopicsType) {
-                MainTopicsType.HISTORY_CINEMA -> {
-                    startActivity(PresentationActivity.newInstance(this, it as MainTopicItem))
-                }
-                MainTopicsType.MIL_MOVIES -> {
-                    startActivity(MilMoviesPresentationActivity.newIntent(it as MilMoviesMainTopic, this))
-                }
-                MainTopicsType.TIMELINE -> {
-
-                }
-            }
-
-        }
+        adapter?.onMainTopicSelected = { mainTopic, view -> onMainTopicSelected(mainTopic, view) }
 
         mainTopicsList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         mainTopicsList.adapter = adapter
+    }
+
+    private fun onMainTopicSelected(mainTopic: MainTopic, view: View?) {
+        val intent = when (mainTopicsType) {
+            MainTopicsType.HISTORY_CINEMA -> PresentationActivity.newInstance(this, mainTopic as MainTopicItem)
+            MainTopicsType.MIL_MOVIES -> MilMoviesPresentationActivity.newIntent(mainTopic as MilMoviesMainTopic, this)
+            else -> return
+        }
+
+        if (view != null) {
+            val title = view.findViewById<View>(R.id.title)
+            val description = view.findViewById<View>(R.id.description)
+            val image = view.findViewById<View>(R.id.mainImage)
+
+            val p1 = Pair.create(title, "mainTopicTitleTransition")
+            val p2 = Pair.create(description, "mainTopicDescriptionTransition")
+            val p3 = Pair.create(toolbar as View, "toolbar")
+            val p4 = Pair.create(image as View, "mainImage")
+
+            val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, p1, p2, p3, p4)
+
+            startActivity(intent, options.toBundle())
+            return
+        }
+
+        startActivity(intent)
+
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
     }
 
     override fun startLoading() {

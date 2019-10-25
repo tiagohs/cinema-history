@@ -44,7 +44,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
         when (item.itemId) {
             android.R.id.home -> {
-                finish()
+                onBackPressed()
                 return true
             }
 

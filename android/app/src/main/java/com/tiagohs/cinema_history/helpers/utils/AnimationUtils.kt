@@ -35,10 +35,12 @@ object AnimationUtils {
         return animation
     }
 
-    fun createFadeInAnimation(duration: Int): Animation {
+    fun createFadeInAnimation(duration: Int, startOffset: Long = 0): Animation {
         val fadeIn = AlphaAnimation(0f, 1f)
         fadeIn.interpolator = DecelerateInterpolator()
         fadeIn.duration = duration.toLong()
+        fadeIn.startOffset = startOffset
+        fadeIn.fillAfter = true
 
         return fadeIn
     }
@@ -119,7 +121,7 @@ object AnimationUtils {
             view.visibility = View.GONE
     }
 
-    fun creatScaleUpAnimation(
+    fun createScaleUpAnimation(
         view: View,
         fromX: Float,
         toX: Float,
@@ -127,7 +129,8 @@ object AnimationUtils {
         toY: Float,
         pivotX: Float,
         pivotY: Float,
-        duration: Int
+        duration: Int,
+        startOffset: Long = 0
     ) {
         val scale = ScaleAnimation(
             fromX,
@@ -141,6 +144,7 @@ object AnimationUtils {
 
         scale.duration = duration.toLong()     // animation duration in milliseconds
         scale.fillAfter = true    // If fillAfter is true, the transformation that this animation performed will persist when it is finished.
+        scale.startOffset = startOffset
 
         view.startAnimation(scale)
 

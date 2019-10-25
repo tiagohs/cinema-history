@@ -4,6 +4,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.AnimationUtils
+import android.view.animation.DecelerateInterpolator
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageSize
@@ -14,6 +17,9 @@ import com.tiagohs.cinema_history.helpers.utils.MovieUtils
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
 import com.tiagohs.cinema_history.models.tmdb.movie.Movie
 import kotlinx.android.synthetic.main.adapter_movie_list.view.*
+import android.view.animation.TranslateAnimation
+import kotlinx.android.synthetic.main.activity_presentation.*
+
 
 class MovieListAdapter(
     val context: Context?,
@@ -67,10 +73,17 @@ class MovieListAdapter(
                 val backgroundColor = context.resources
                     .getIdentifier(mainTopic.backgroundColor, "color", context.packageName)
                 itemView.backgroundContent.setBackgroundColor(context.resources.getColor(backgroundColor))
+
+                val animation = AnimationUtils.loadAnimation(context, R.anim.slide_in_left)
+                animation.duration = 300
+                animation.startOffset = 150
+
+                itemView.backgroundContent.startAnimation(animation)
             } else {
                 val color = context?.resources?.getColor(R.color.md_white_1000) ?: return
 
                 itemView.backgroundContent.setBackgroundColor(color)
+
             }
 
             loadImage(movie)
@@ -92,6 +105,10 @@ class MovieListAdapter(
                 itemView.genre.visibility = View.GONE
             }
 
+            com.tiagohs.cinema_history.helpers.utils.AnimationUtils
+                    .createScaleUpAnimation(itemView.languageCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
+            com.tiagohs.cinema_history.helpers.utils.AnimationUtils
+                .createScaleUpAnimation(itemView.genreCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
         }
 
         private fun loadImage(movie: Movie) {

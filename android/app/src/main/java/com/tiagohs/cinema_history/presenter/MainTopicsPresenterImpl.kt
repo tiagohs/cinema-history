@@ -14,6 +14,14 @@ class MainTopicsPresenterImpl @Inject constructor(
     BasePresenter<MainTopicsView>(),
     MainTopicsPresenter {
 
+    override fun onBindView(view: MainTopicsView) {
+        super.onBindView(view)
+
+        this.view?.setupArguments()
+        this.view?.setupScreenTitle()
+        this.view?.setupScreenLayout()
+    }
+
     override fun fetchMainTopics(mainTopicsType: MainTopicsType?) {
         val mainTopicsType = mainTopicsType ?: return
 

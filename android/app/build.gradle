@@ -41,7 +41,9 @@ dependencies {
     implementation 'com.android.support:customtabs:28.0.0'
     implementation 'me.saket:better-link-movement-method:2.2.0'
 
-    implementation 'androidx.viewpager2:viewpager2:1.0.0-beta05'
+    implementation 'com.github.santalu:diagonal-imageview:1.1.0'
+
+    implementation 'com.github.florent37:diagonallayout:1.1.1'
 
     implementation 'com.github.Adilhusen:circle-progress-ad-android-:1.0'
     implementation 'com.github.intik:overflow-pager-indicator:3.0.1'

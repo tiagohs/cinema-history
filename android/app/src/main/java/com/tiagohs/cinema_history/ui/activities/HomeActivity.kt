@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.ui.activities
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -82,18 +83,24 @@ class HomeActivity :
     private fun onHistoryCinemaClick(): View.OnClickListener {
         return View.OnClickListener {
             startActivity(MainTopicsActivity.newIntent(MainTopicsType.HISTORY_CINEMA, this, darkMode = true))
+
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }
 
     private fun onMilMoviesClick(): View.OnClickListener {
         return View.OnClickListener {
             startActivity(MainTopicsActivity.newIntent(MainTopicsType.MIL_MOVIES, this))
+
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }
 
     private fun onTimelineCinemaClick(): View.OnClickListener {
         return View.OnClickListener {
             startActivity(TimelineActivity.newIntent(this))
+
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }
 

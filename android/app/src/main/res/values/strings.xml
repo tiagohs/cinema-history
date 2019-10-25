@@ -6,6 +6,10 @@
 
     <string name="unknown_error">An error occurred, please try again.</string>
 
+    <string name="history_cinema_title">Historia do Cinema</string>
+    <string name="mil_movies_title">1001 Filmes</string>
+    <string name="timeline_title">Timeline do Cinema</string>
+
     <!-- Genres -->
     <string name="genere_action">Ação</string>
     <string name="genere_adventure">Aventura</string>

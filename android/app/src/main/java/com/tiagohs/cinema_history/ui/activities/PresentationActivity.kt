@@ -3,25 +3,26 @@ package com.tiagohs.cinema_history.ui.activities
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.widget.LinearLayout
+import android.transition.Fade
+import android.transition.Slide
+import android.transition.Visibility
+import android.view.Gravity
+import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.Animation
+import android.view.animation.ScaleAnimation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.models.Page
-import com.tiagohs.cinema_history.models.Sumario
+import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.presenter.PresentationPresenter
 import com.tiagohs.cinema_history.ui.adapters.SumarioPresentationAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.cinema_history.ui.views.PresentationView
 import kotlinx.android.synthetic.main.activity_presentation.*
-import kotlinx.android.synthetic.main.activity_presentation.toolbar
 import javax.inject.Inject
+
 
 class PresentationActivity: BaseActivity(), PresentationView {
 
@@ -41,6 +42,19 @@ class PresentationActivity: BaseActivity(), PresentationView {
 
         presenter.onBindView(this)
         presenter.fetchMoviesByListId(mainTopic)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        AnimationUtils.createScaleUpAnimation(startButton, 1f, 0f, 1f, 0f, 0.5f, 0.5f, 200)
+        supportFinishAfterTransition()
+    }
+
+    override fun onEnterAnimationComplete() {
+        super.onEnterAnimationComplete()
+
+        AnimationUtils.createScaleUpAnimation(startButton, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200)
     }
 
     override fun setupArguments() {

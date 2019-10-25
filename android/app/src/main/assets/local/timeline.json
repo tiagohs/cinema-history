@@ -5,6 +5,25 @@
     "background_transparent_color": "red_timeline_transparent"
   },
   {
+    "type": "header",
+    "background_color": "red_timeline",
+    "background_transparent_color": "red_timeline_transparent",
+    "title_color": "md_white_1000",
+    "subtitle_color": "md_black_1000",
+    "title": "1800's / 1900's",
+    "subtitle": "Pioneirismo e Criatividade",
+    "image": {
+      "image_type": "local",
+      "url": "img_viagem_lua_webp",
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 250
+        }
+      }
+    }
+  },
+  {
     "type": "left",
     "year": "18\n95",
     "title": "A <span style=\"color: #E21E22;\">primeira</span> exibição",

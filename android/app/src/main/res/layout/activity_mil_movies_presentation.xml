@@ -31,6 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/contentContainer"
+                android:alpha="0"
                 android:background="@color/md_white_1000"
                 android:fitsSystemWindows="true">
 

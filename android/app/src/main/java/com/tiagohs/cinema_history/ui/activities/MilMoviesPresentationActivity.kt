@@ -1,10 +1,14 @@
 package com.tiagohs.cinema_history.ui.activities
 
+import android.animation.Animator
 import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.View
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.Animation
+import android.view.animation.DecelerateInterpolator
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
@@ -17,6 +21,7 @@ import com.tiagohs.cinema_history.ui.views.MilMoviesPresentationView
 import kotlinx.android.synthetic.main.activity_mil_movies_presentation.*
 import javax.inject.Inject
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
+import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 
 
 class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
@@ -49,6 +54,12 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
         super.onDestroy()
 
         presenter.onUnbindView()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
     }
 
     override fun setupArguments() {
@@ -96,6 +107,9 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
 
         presentationTitle.setTextColor(resources.getColor(titleColor))
         presentationSubtitle.setTextColor(resources.getColor(titleColor))
+
+        presentationTitle.startAnimation(AnimationUtils.createFadeInAnimation(200, 350))
+        presentationSubtitle.startAnimation(AnimationUtils.createFadeInAnimation(200, 350))
     }
 
     override fun bindMoreMovies(movies: List<Movie>) {
@@ -107,17 +121,39 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
     }
 
     override fun startLoading() {
-        contentContainer.visibility = View.INVISIBLE
+        contentContainer.alpha = 0f
 
         loadView.startShimmer()
         loadView.visibility = View.VISIBLE
+        loadView.alpha = 1f
     }
 
     override fun hideLoading() {
-        contentContainer.visibility = View.VISIBLE
+        contentContainer
+            .animate()
+            .alpha(1f)
+            .setDuration(200)
+            .setInterpolator(DecelerateInterpolator(2f))
+            .start()
 
-        loadView.stopShimmer()
-        loadView.visibility = View.GONE
+        loadView
+            .animate()
+            .alpha(0f)
+            .setDuration(200)
+            .setInterpolator(AccelerateInterpolator(2f))
+            .setListener(object : Animator.AnimatorListener {
+                override fun onAnimationEnd(animation: Animator?) {
+                    loadView.stopShimmer()
+                    loadView.visibility = View.INVISIBLE
+                }
+
+                override fun onAnimationRepeat(animation: Animator?) {}
+                override fun onAnimationCancel(animation: Animator?) {}
+                override fun onAnimationStart(animation: Animator?) {}
+
+            })
+            .start()
+
     }
 
     private fun onMovieSelected(movie: Movie, position: Int) {

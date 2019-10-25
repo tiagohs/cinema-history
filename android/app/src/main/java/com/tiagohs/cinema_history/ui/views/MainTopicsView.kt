@@ -5,6 +5,10 @@ import com.tiagohs.cinema_history.ui.configs.IView
 
 interface MainTopicsView: IView {
 
+    fun setupArguments()
+    fun setupScreenTitle()
+    fun setupScreenLayout()
+
     fun bindMainTopics(mainTopics: List<MainTopic>)
 
     fun startLoading()
