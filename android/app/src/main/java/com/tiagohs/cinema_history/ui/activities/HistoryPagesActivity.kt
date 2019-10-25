@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.ui.activities
 
+import android.animation.Animator
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -44,18 +45,45 @@ class HistoryPagesActivity: BaseActivity() {
         }, 1000)
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
     fun startLoading() {
-        pagesContainer.visibility = View.INVISIBLE
+        pagesContainer.alpha = 0f
 
         loadView.startShimmer()
         loadView.visibility = View.VISIBLE
+        loadView.alpha = 1f
     }
 
     fun hideLoading() {
-        pagesContainer.visibility = View.VISIBLE
+        pagesContainer
+            .animate()
+            .alpha(1f)
+            .setDuration(200)
+            .setInterpolator(DecelerateInterpolator(2f))
+            .start()
 
-        loadView.stopShimmer()
-        loadView.visibility = View.GONE
+        loadView
+            .animate()
+            .alpha(0f)
+            .setDuration(150)
+            .setInterpolator(AccelerateInterpolator(2f))
+            .setListener(object : Animator.AnimatorListener {
+                override fun onAnimationEnd(animation: Animator?) {
+                    loadView.stopShimmer()
+                    loadView.visibility = View.INVISIBLE
+                }
+
+                override fun onAnimationRepeat(animation: Animator?) {}
+                override fun onAnimationCancel(animation: Animator?) {}
+                override fun onAnimationStart(animation: Animator?) {}
+
+            })
+            .start()
     }
 
     private fun setupFooter() {

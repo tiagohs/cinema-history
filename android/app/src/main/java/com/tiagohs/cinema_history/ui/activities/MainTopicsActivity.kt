@@ -11,6 +11,8 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.*
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.DecelerateInterpolator
 import android.widget.TextView
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.util.Pair
@@ -21,6 +23,7 @@ import com.tiagohs.cinema_history.enums.MainTopicsType
 import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
 import com.tiagohs.cinema_history.helpers.extensions.setScreenBackgroundColor
 import com.tiagohs.cinema_history.helpers.extensions.setStatusBarColor
+import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
@@ -126,6 +129,8 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
 
         mainTopicsList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         mainTopicsList.adapter = adapter
+
+        mainTopicsList.startAnimation(AnimationUtils.createFadeInAnimation(300, 200))
     }
 
     private fun onMainTopicSelected(mainTopic: MainTopic, view: View?) {

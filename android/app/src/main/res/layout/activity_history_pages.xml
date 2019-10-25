@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:id="@+id/pagesContainer"
         android:fitsSystemWindows="true"
-        android:visibility="invisible"
+        android:alpha="0"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

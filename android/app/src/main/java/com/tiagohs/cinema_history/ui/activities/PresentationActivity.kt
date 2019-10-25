@@ -34,6 +34,8 @@ class PresentationActivity: BaseActivity(), PresentationView {
     @Inject
     lateinit var presenter: PresentationPresenter
 
+    var isFirstEnter = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupToolbar(toolbar)
@@ -54,7 +56,10 @@ class PresentationActivity: BaseActivity(), PresentationView {
     override fun onEnterAnimationComplete() {
         super.onEnterAnimationComplete()
 
-        AnimationUtils.createScaleUpAnimation(startButton, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200)
+        if (isFirstEnter) {
+            AnimationUtils.createScaleUpAnimation(startButton, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200)
+            isFirstEnter = false
+        }
     }
 
     override fun setupArguments() {
@@ -79,6 +84,8 @@ class PresentationActivity: BaseActivity(), PresentationView {
         val adapter = SumarioPresentationAdapter(this, mainTopic.sumarioList)
         adapter.onSumarioClick = { sumario,  position ->
             startActivity(HistoryPagesActivity.newIntent(this, mainTopic, position))
+
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
 
         sumarioList.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
