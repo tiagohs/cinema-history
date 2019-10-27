@@ -23,10 +23,10 @@ data class MainTopicItem(
     val image: Image,
 
     @SerializedName("title_color")
-    val titleColor: String,
+    val titleColor: String? = null,
 
     @SerializedName("title_background_color")
-    val titleBackgroundColor: String,
+    val titleBackgroundColor: String? = null,
 
     @SerializedName("quote")
     val quote: Quote,

@@ -23,6 +23,7 @@ import com.tiagohs.cinema_history.enums.MainTopicsType
 import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
 import com.tiagohs.cinema_history.helpers.extensions.setScreenBackgroundColor
 import com.tiagohs.cinema_history.helpers.extensions.setStatusBarColor
+import com.tiagohs.cinema_history.helpers.extensions.startActivityWithSlideAnimation
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
@@ -156,9 +157,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             return
         }
 
-        startActivity(intent)
-
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        startActivityWithSlideAnimation(intent)
     }
 
     override fun startLoading() {

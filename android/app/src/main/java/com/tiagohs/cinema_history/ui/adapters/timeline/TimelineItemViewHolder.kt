@@ -39,13 +39,13 @@ class TimelineItemViewHolder(val context: Context?, view: View): RecyclerView.Vi
     private val imageInfoSource: TextView = itemView.findViewById(R.id.footerReference)
 
     fun bind(timelineItem: TimelineItem) {
-        descriptionView.setupLinkableTextView()
+        descriptionView.setupLinkableTextView(context)
 
         yearView.text = timelineItem.year
         descriptionView.text = timelineItem.description.styledString()
 
         timelineItem.title?.let {
-            titleView.setupLinkableTextView()
+            titleView.setupLinkableTextView(context)
 
             titleView.visibility = View.VISIBLE
             titleView.text = it.styledString()
@@ -106,7 +106,7 @@ class TimelineItemViewHolder(val context: Context?, view: View): RecyclerView.Vi
     private fun bindTransparentImage(color: String) {
         val context = context ?: return
 
-        imageShadow.visibility = View.GONE
+        imageShadow.visibility = View.INVISIBLE
         imageCard.elevation = 0f
         imageCard.cardElevation = 0f
         imageCard.radius = 0f
@@ -129,9 +129,9 @@ class TimelineItemViewHolder(val context: Context?, view: View): RecyclerView.Vi
     private fun bindContentInfo(contentInformation: ContentInformation) {
         imageInfoContainer.visibility = View.VISIBLE
 
-        imageInfoDescription.setupLinkableTextView()
-        imageInfoTitle.setupLinkableTextView()
-        imageInfoSource.setupLinkableTextView()
+        imageInfoDescription.setupLinkableTextView(context)
+        imageInfoTitle.setupLinkableTextView(context)
+        imageInfoSource.setupLinkableTextView(context)
 
         imageInfoTitle.text = contentInformation.contentTitle?.styledString()
         imageInfoDescription.text = contentInformation.contentText?.styledString()

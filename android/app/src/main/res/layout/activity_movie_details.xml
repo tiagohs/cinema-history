@@ -14,7 +14,8 @@
         android:id="@+id/appBar"
         android:theme="@style/AppTheme.AppBarOverlay"
         android:fitsSystemWindows="true"
-        android:visibility="invisible" >
+        android:background="@color/md_black_1000"
+        android:alpha="0">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
@@ -50,14 +51,17 @@
                         android:fitsSystemWindows="true"
                         android:id="@+id/movieBackdrop"
                         android:scaleType="centerCrop"
+                        android:alpha="0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"/>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="210dp"
+                        android:id="@+id/movieBackdropDegrade"
                         android:background="@drawable/background_degrade_bottom"
                         android:layout_gravity="bottom"
+                        android:alpha="0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         />
@@ -76,7 +80,6 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
                     android:layout_marginBottom="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -92,6 +95,7 @@
                         android:textSize="22sp"
                         android:maxLines="2"
                         android:ellipsize="end"
+                        android:layout_marginStart="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -106,6 +110,7 @@
                         android:textSize="16sp"
                         android:maxLines="2"
                         android:ellipsize="end"
+                        android:layout_marginStart="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/movieTitle"
@@ -119,6 +124,8 @@
                         android:fadingEdgeLength="16dp"
                         android:visibility="gone"
                         android:scrollbars="none"
+                        android:layout_marginStart="16dp"
+                        android:alpha="0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/movieOriginalTitle"
@@ -169,6 +176,7 @@
                         app:cardCornerRadius="25dp"
                         app:cardElevation="0dp"
                         app:cardBackgroundColor="@color/grey_transparent_medium"
+                        android:alpha="0"
                         android:fitsSystemWindows="true"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -206,7 +214,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pageContentListContainer"
-        android:visibility="invisible"
+        android:alpha="0"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <androidx.recyclerview.widget.RecyclerView

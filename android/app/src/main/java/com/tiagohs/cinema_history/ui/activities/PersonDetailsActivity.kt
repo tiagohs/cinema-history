@@ -1,10 +1,13 @@
 package com.tiagohs.cinema_history.ui.activities
 
+import android.animation.Animator
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.Constraints
@@ -15,6 +18,7 @@ import com.tiagohs.cinema_history.enums.PersonInfoType
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
+import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.helpers.utils.DateUtils
 import com.tiagohs.cinema_history.models.movie_info.PersonInfo
 import com.tiagohs.cinema_history.models.movie_info.PersonInfoMovieList
@@ -58,6 +62,12 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
         presenter.onUnbindView()
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
     override fun bindPersonDetails(person: Person) {
         val personInfoContentList = generatePersonInfoList(person)
         val adapter = PersonInfoAdapter(this, personInfoContentList)
@@ -71,19 +81,45 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
     }
 
     override fun startLoading() {
-        pageContentListContainer.visibility = View.INVISIBLE
-        appBar.visibility = View.INVISIBLE
+        pageContentListContainer.alpha = 0f
+        appBar.alpha = 0f
 
         loadView.startShimmer()
         loadView.visibility = View.VISIBLE
     }
 
     override fun hideLoading() {
-        pageContentListContainer.visibility = View.VISIBLE
-        appBar.visibility = View.VISIBLE
+        pageContentListContainer
+            .animate()
+            .alpha(1f)
+            .setDuration(200)
+            .setInterpolator(DecelerateInterpolator(2f))
+            .start()
 
-        loadView.stopShimmer()
-        loadView.visibility = View.GONE
+        appBar
+            .animate()
+            .alpha(1f)
+            .setDuration(200)
+            .setInterpolator(DecelerateInterpolator(2f))
+            .start()
+
+        loadView
+            .animate()
+            .alpha(0f)
+            .setDuration(200)
+            .setInterpolator(AccelerateInterpolator(2f))
+            .setListener(object : Animator.AnimatorListener {
+                override fun onAnimationEnd(animation: Animator?) {
+                    loadView.stopShimmer()
+                    loadView.visibility = View.INVISIBLE
+                }
+
+                override fun onAnimationRepeat(animation: Animator?) {}
+                override fun onAnimationCancel(animation: Animator?) {}
+                override fun onAnimationStart(animation: Animator?) {}
+
+            })
+            .start()
     }
 
     private fun onMovieSelected(movieId: Int) {
@@ -104,7 +140,18 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
     private fun bindPersonProfileImage(person: Person) {
         val profilePath = person.profilePath?.imageUrlFromTMDB(ImageSize.PROFILE_632) ?: return
 
-        personImage.loadImage(profilePath, R.drawable.placeholder_movie_person, R.drawable.placeholder_movie_person)
+        personImage.loadImage(profilePath, R.drawable.placeholder_movie_person, R.drawable.placeholder_movie_person) {
+            personImage.alpha = 1f
+            val animation = AnimationUtils.createFadeInAnimation(200) {
+                personImageDegrade.alpha = 1f
+
+                AnimationUtils.createPulseAnimation(personName, 1.1f, 1.1f)
+                personBirthInfo.startAnimation(AnimationUtils.createFadeInAnimation(200))
+            }
+
+            personImage.startAnimation(animation)
+        }
+
     }
 
     private fun bindPersonDepartments(person: Person) {

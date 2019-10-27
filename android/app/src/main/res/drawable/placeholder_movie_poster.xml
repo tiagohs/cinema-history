@@ -9,6 +9,6 @@
 
     <item
         android:drawable="@drawable/ic_movie_white_24dp"
-        android:right="10dp" android:left="10dp"
-        android:top="10dp" android:bottom="10dp" />
+        android:right="20dp" android:left="20dp"
+        android:top="20dp" android:bottom="20dp" />
 </layer-list>

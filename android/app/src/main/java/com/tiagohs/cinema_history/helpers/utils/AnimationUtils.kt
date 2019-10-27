@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.helpers.utils
 
 import android.animation.Animator
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.animation.*
@@ -35,12 +37,26 @@ object AnimationUtils {
         return animation
     }
 
-    fun createFadeInAnimation(duration: Int, startOffset: Long = 0): Animation {
+    fun createFadeInAnimation(duration: Int, startOffset: Long = 0, onFinished: (() -> Unit)? = null): Animation {
         val fadeIn = AlphaAnimation(0f, 1f)
         fadeIn.interpolator = DecelerateInterpolator()
         fadeIn.duration = duration.toLong()
         fadeIn.startOffset = startOffset
         fadeIn.fillAfter = true
+
+        fadeIn.setAnimationListener(object : Animation.AnimationListener {
+            override fun onAnimationRepeat(animation: Animation?) {
+
+            }
+
+            override fun onAnimationEnd(animation: Animation?) {
+                onFinished?.invoke()
+            }
+
+            override fun onAnimationStart(animation: Animation?) {
+            }
+
+        })
 
         return fadeIn
     }
@@ -71,13 +87,31 @@ object AnimationUtils {
             .start()
     }
 
-    fun createShowCircularReveal(view: View) {
+    fun createShowCircularReveal(view: View, onFinished: (() -> Unit)? = null) {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
             val cx = (view.left + view.right) / 2
             val cy = (view.top + view.bottom) / 2
             val finalRadius = Math.max(view.width, view.height)
 
             val anim = ViewAnimationUtils.createCircularReveal(view, cx, cy, 0f, finalRadius.toFloat())
+            anim.addListener(object : Animator.AnimatorListener {
+                override fun onAnimationRepeat(animation: Animator?) {
+
+                }
+
+                override fun onAnimationEnd(animation: Animator?) {
+                    onFinished?.invoke()
+                }
+
+                override fun onAnimationCancel(animation: Animator?) {
+                    onFinished?.invoke()
+                }
+
+                override fun onAnimationStart(animation: Animator?) {
+
+                }
+
+            })
             anim.start()
         } else
             view.visibility = View.VISIBLE
@@ -130,7 +164,8 @@ object AnimationUtils {
         pivotX: Float,
         pivotY: Float,
         duration: Int,
-        startOffset: Long = 0
+        startOffset: Long = 0,
+        onFinished: (() -> Unit)? = null
     ) {
         val scale = ScaleAnimation(
             fromX,
@@ -144,9 +179,32 @@ object AnimationUtils {
 
         scale.duration = duration.toLong()     // animation duration in milliseconds
         scale.fillAfter = true    // If fillAfter is true, the transformation that this animation performed will persist when it is finished.
+        scale.interpolator = AccelerateInterpolator(2f)
         scale.startOffset = startOffset
+        scale.setAnimationListener(object : Animation.AnimationListener {
+            override fun onAnimationRepeat(animation: Animation?) {
 
+            }
+
+            override fun onAnimationEnd(animation: Animation?) {
+                onFinished?.invoke()
+            }
+
+            override fun onAnimationStart(animation: Animation?) {
+            }
+
+        })
         view.startAnimation(scale)
 
+    }
+
+    fun createPulseAnimation(view: View, toX: Float = 1.2f, toY: Float = 1.2f) {
+        val animatorSet = AnimatorSet()
+        animatorSet.playTogether(ObjectAnimator.ofFloat(view, "scaleY", 1f, toY, 1f, toY, 1f),
+            ObjectAnimator.ofFloat(view, "scaleX", 1f, toX, 1f, toX, 1f))
+
+        animatorSet.interpolator = AccelerateDecelerateInterpolator()
+        animatorSet.duration = 600
+        animatorSet.start()
     }
 }

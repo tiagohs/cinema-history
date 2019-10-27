@@ -21,7 +21,7 @@ data class Movie (
     @SerializedName("production_companies") val productionCompanies : List<ProductionCompanies>? = null,
     @SerializedName("production_countries") val productionCountries : List<ProductionCountries>? = null,
     @SerializedName("release_date") val releaseDate : String? = null,
-    @SerializedName("revenue") val revenue : Int? = null,
+    @SerializedName("revenue") val revenue : Long? = null,
     @SerializedName("runtime") val runtime : Int? = null,
     @SerializedName("spoken_languages") val spokenLanguages : List<SpokenLanguages>? = null,
     @SerializedName("status") val status : String? = null,
@@ -36,5 +36,7 @@ data class Movie (
     @SerializedName("releases") val releases : Releases? = null,
     @SerializedName("similar_movies") val similarMovies : SimilarMovies? = null,
     @SerializedName("credits") val credits : Credits? = null,
-    @SerializedName("genre_ids") val genreIds : List<Int>? = null
+    @SerializedName("genre_ids") val genreIds : List<Int>? = null,
+    @SerializedName("translations") val translations : TranslationsResult? = null
+
 ): Serializable

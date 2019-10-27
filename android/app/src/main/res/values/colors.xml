@@ -4,21 +4,28 @@
     <color name="colorPrimaryDark">@color/md_grey_800</color>
     <color name="colorAccent">@color/md_blue_500</color>
 
+    <!-- Half Transparent Colors -->
+
     <color name="black_transparent_medium">#66000000</color>
     <color name="grey_transparent_medium">#66757575</color>
     <color name="grey_transparent_low">#E6757575</color>
     <color name="grey_light_transparent_low">#E6E0E0E0</color>
     <color name="grey_light_transparent_50">#80000000</color>
 
+    <!-- Load Colors -->
     <color name="cell_background_light">#dddddd</color>
     <color name="cell_background_dark">#212121</color>
+
+    <!-- Specifics Colors -->
+
+    <color name="yellow_dark">#C4942E</color>
+    <color name="purple_snow_shite">#5A398B</color>
+    <color name="pink_light">#F3AFAE</color>
 
     <color name="red_timeline">#E21E22</color>
     <color name="red_timeline_transparent">#80E21E22</color>
 
-    <color name="yellow_dark">#C4942E</color>
-
-    <!-- google's material design colours from http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
+    <!-- Google's Material Design Colours from http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
 
     <!--reds-->
     <color name="md_red_50">#FFEBEE</color>

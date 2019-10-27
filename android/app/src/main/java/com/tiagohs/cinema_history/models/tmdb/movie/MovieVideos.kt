@@ -5,5 +5,5 @@ import java.io.Serializable
 
 
 data class MovieVideos (
-	@SerializedName("results") val videoList : List<Video>? = null
+	@SerializedName("results") var videoList : List<Video>? = null
 ): Serializable

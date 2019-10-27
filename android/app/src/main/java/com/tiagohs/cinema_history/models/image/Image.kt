@@ -3,6 +3,7 @@ package com.tiagohs.cinema_history.models.image
 import android.os.Parcel
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import com.tiagohs.cinema_history.enums.ImageScaleType
 import com.tiagohs.cinema_history.enums.ImageType
 import java.io.Serializable
 

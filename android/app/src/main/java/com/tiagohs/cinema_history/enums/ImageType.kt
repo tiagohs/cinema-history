@@ -11,6 +11,9 @@ enum class ImageType(
     LOCAL("local"),
 
     @SerializedName("online")
-    ONLINE("online");
+    ONLINE("online"),
+
+    @SerializedName("online_firebase")
+    ONLINE_FIREBASE("online_firebase");
 
 }

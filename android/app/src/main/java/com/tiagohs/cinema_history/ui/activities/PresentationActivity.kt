@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
+import com.tiagohs.cinema_history.helpers.extensions.startActivityWithSlideAnimation
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.presenter.PresentationPresenter
@@ -41,6 +42,8 @@ class PresentationActivity: BaseActivity(), PresentationView {
         setupToolbar(toolbar)
 
         getApplicationComponent()?.inject(this)
+
+        supportPostponeEnterTransition()
 
         presenter.onBindView(this)
         presenter.fetchMoviesByListId(mainTopic)
@@ -83,9 +86,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
 
         val adapter = SumarioPresentationAdapter(this, mainTopic.sumarioList)
         adapter.onSumarioClick = { sumario,  position ->
-            startActivity(HistoryPagesActivity.newIntent(this, mainTopic, position))
-
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            startActivityWithSlideAnimation(HistoryPagesActivity.newIntent(this, mainTopic, position))
         }
 
         sumarioList.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
@@ -97,7 +98,9 @@ class PresentationActivity: BaseActivity(), PresentationView {
 
         presentationImage.imageStyle?.height = 350
 
-        image.loadImage(presentationImage)
+        image.loadImage(presentationImage, null) {
+            supportStartPostponedEnterTransition()
+        }
     }
 
     companion object {

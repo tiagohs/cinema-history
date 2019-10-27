@@ -1,134 +1,81 @@
 package com.tiagohs.cinema_history.helpers.extensions
 
-import android.graphics.Bitmap
+import android.annotation.SuppressLint
+import android.graphics.drawable.Drawable
 import android.widget.ImageView
-import android.widget.LinearLayout
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.Placeholder
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.squareup.picasso.Callback
-import com.squareup.picasso.Picasso
-import com.squareup.picasso.RequestCreator
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
+import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.target.Target
+import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
+import com.google.firebase.storage.FirebaseStorage
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageScaleType
-import com.tiagohs.cinema_history.enums.ImageSize
 import com.tiagohs.cinema_history.enums.ImageType
-import com.tiagohs.cinema_history.models.image.GifImage
 import com.tiagohs.cinema_history.models.image.Image
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
-import kotlinx.android.synthetic.main.adapter_page_gif.view.*
-import kotlinx.android.synthetic.main.adapter_movie_list.*
-import java.lang.Exception
 
-fun ImageView.loadImage(url: String?, placeholder: Int? = R.drawable.placeholder_movie_poster, errorPlaceholder: Int? = R.drawable.placeholder_movie_poster, onConfigure: ((picassoRequest: RequestCreator) -> Unit)? = null) {
-    val picasso = Picasso.get()
-    val picassoRequest: RequestCreator = picasso.load(url)
-
-    placeholder?.let {
-        picassoRequest.placeholder(placeholder)
-    }
-
-    errorPlaceholder?.let {
-        picassoRequest.error(it)
-    }
-
-    onConfigure?.invoke(picassoRequest)
-
-    picassoRequest.into(this)
+fun ImageView.loadImage(url: String?,
+                        placeholder: Int? = R.drawable.placeholder_movie_poster,
+                        errorPlaceholder: Int? = R.drawable.placeholder_movie_poster,
+                        oonLoadSuccess: (() -> Unit)? = null) {
+    loadImage(Image(ImageType.ONLINE, url ?: ""), placeholder, errorPlaceholder, oonLoadSuccess)
 }
 
-fun ImageView.loadImage(image: Image, onLoadSuccess: (() -> Unit)? = null) {
-    val picasso = Picasso.get()
-    val picassoRequest: RequestCreator
+@SuppressLint("CheckResult")
+fun ImageView.loadImage(
+    image: Image,
+    placeholder: Int? = R.drawable.placeholder_movie_poster,
+    errorPlaceholder: Int? = R.drawable.placeholder_movie_poster,
+    onFinished: (() -> Unit)? = null) {
 
-    when (image.imageType) {
-        ImageType.ONLINE -> {
-            picassoRequest = picasso.load(image.url)
-        }
-        ImageType.LOCAL -> {
-            val drawable = context.resources
-                .getIdentifier(image.url, "drawable", context.packageName)
+    val glide = Glide.with(context)
+    val glideRequest = when (image.imageType) {
+        ImageType.ONLINE -> glide.load(image.url)
+        ImageType.LOCAL -> glide.load(context.getResourceDrawable(image.url))
+        ImageType.ONLINE_FIREBASE -> {
+            val storage = FirebaseStorage.getInstance()
+            val storageRef = storage.getReferenceFromUrl("gs://cinema-history.appspot.com")
+            val imageRef = storageRef.child(image.url)
 
-            picassoRequest = picasso.load(drawable)
-
-            image.imageStyle?.scaleType?.let {
-                when (ImageScaleType.getImageViewScaleType(it)) {
-                    ImageView.ScaleType.CENTER_CROP -> {
-                        picassoRequest.centerCrop()
-
-                        val screenWidth = context.resources.configuration.screenWidthDp
-
-                        image.imageStyle?.resize?.let {
-                            val imagewidth = it.width?.convertIntToDp(context) ?: screenWidth
-                            val imageHeight = it.height ?: 300
-
-                            picassoRequest.resize(imagewidth, imageHeight.convertIntToDp(context))
-                        }
-                    }
-                    ImageView.ScaleType.CENTER_INSIDE -> {
-                        picassoRequest.centerInside()
-
-                        val screenWidth = context.resources.configuration.screenWidthDp
-
-                        image.imageStyle?.resize?.let {
-                            val imagewidth = it.width?.convertIntToDp(context) ?: screenWidth
-                            val imageHeight = it.height ?: 300
-
-                            picassoRequest.resize(imagewidth, imageHeight.convertIntToDp(context))
-                        }
-                    }
-                    ImageView.ScaleType.FIT_XY -> {
-                        picassoRequest.fit()
-                    }
-                    else -> {}
-                }
-            }
+            glide.load(imageRef)
         }
     }
 
-    picassoRequest.into(this, object : Callback {
-        override fun onSuccess() {
-            image.imageStyle?.scaleType?.let {
-                if (image.imageType == ImageType.ONLINE) {
-                    scaleType = ImageScaleType.getImageViewScaleType(it)
-                }
-            }
+    placeholder?.let { glideRequest.placeholder(it) }
+    errorPlaceholder?.let { glideRequest.error(it) }
 
-            onLoadSuccess?.invoke()
+    image.imageStyle?.resize?.let {
+        val width = it.width?.convertIntToDp(context) ?: this.width
+        val height = it.height?.convertIntToDp(context) ?: this.height
+
+        glideRequest.override(width, height)
+    }
+
+    when (ImageScaleType.getImageViewScaleType(image.imageStyle?.scaleType)) {
+        ImageView.ScaleType.FIT_XY, ImageView.ScaleType.FIT_CENTER,
+        ImageView.ScaleType.FIT_START, ImageView.ScaleType.FIT_END -> glideRequest.fitCenter()
+
+        ImageView.ScaleType.CENTER_INSIDE -> glideRequest.centerInside()
+        ImageView.ScaleType.CENTER_CROP -> glideRequest.centerCrop()
+
+        else -> { glideRequest.centerCrop() }
+    }
+
+    glideRequest.diskCacheStrategy(DiskCacheStrategy.ALL)
+    glideRequest.transition(DrawableTransitionOptions.withCrossFade(DrawableCrossFadeFactory.Builder().setCrossFadeEnabled(true).build()))
+    glideRequest.listener(object : RequestListener<Drawable> {
+        override fun onLoadFailed( e: GlideException?, model: Any?, target: Target<Drawable>?, isFirstResource: Boolean): Boolean {
+            onFinished?.invoke()
+            return false
         }
-
-        override fun onError(e: Exception?) {
-
+        override fun onResourceReady( resource: Drawable?, model: Any?, target: Target<Drawable>?, dataSource: DataSource?, isFirstResource: Boolean): Boolean {
+            onFinished?.invoke()
+            return false
         }
     })
-}
 
-fun ImageView.loadGif(gifImage: GifImage) {
-    val glide = Glide.with(context)
-                    .asGif()
-                    .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
-    val newLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, ConstraintLayout.LayoutParams.WRAP_CONTENT)
-
-    newLayoutParams.width = gifImage.imageStyle?.width ?: ConstraintLayout.LayoutParams.MATCH_PARENT
-    newLayoutParams.height = gifImage.imageStyle?.height?.convertIntToDp(context) ?: 210.convertIntToDp(context)
-
-    layoutParams = newLayoutParams
-
-    when (gifImage.imageType) {
-        ImageType.LOCAL -> {
-            val gifFile = context.resources
-                .getIdentifier(gifImage.url, "raw", context.packageName)
-
-            glide.load(gifFile).into(this)
-        }
-        ImageType.ONLINE -> {
-            glide.load(gifImage.url).into(this)
-        }
-    }
-
-    gifImage.imageStyle?.scaleType?.let {
-        scaleType = ImageScaleType.getImageViewScaleType(it)
-    }
-
+    glideRequest.into(this)
 }

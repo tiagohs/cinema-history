@@ -8,7 +8,7 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
     "image": {
       "image_type": "local",
-      "url": "img_viagem_lua_webp",
+      "url": "img_voyage",
       "animation": {
         "type": "shake_vertical",
         "duration": 1300
@@ -43,9 +43,9 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
     "image": {
       "image_type": "local",
-      "url": "img_brancaneve_movie",
+      "url": "img_snow_white",
       "style": {
-        "scale_type": "center_inside",
+        "scale_type": "center_crop",
         "resize": {
           "height": 250
         }
@@ -56,7 +56,7 @@
       "author": "Rainha Má"
     },
     "title_color": "md_white_1000",
-    "title_background_color": "md_purple_800",
+    "title_background_color": "purple_snow_shite",
     "sumario_list": [
       {
         "id": 1,
@@ -112,7 +112,7 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
     "image": {
       "image_type": "local",
-      "url": "img_2001",
+      "url": "img_2001_hal",
       "animation": {
         "type": "blink",
         "duration": 1000
@@ -140,7 +140,7 @@
   },
   {
     "main_topic_type": "history_cinema",
-    "layout_type": "card",
+    "layout_type": "card_full",
     "id": 2,
     "title": "De 1970 a 1989",
     "subtitle": "Parte 05",
@@ -159,8 +159,7 @@
       "quote": "Que ótimo dia para um exorcismo!",
       "author": "Regan MacNeil"
     },
-    "title_color": "md_grey_600",
-    "title_background_color": "md_white_1000",
+    "title_color": "md_white_1000",
     "sumario_list": [
       {
         "id": 1,
@@ -209,21 +208,22 @@
   },
   {
     "main_topic_type": "history_cinema",
-    "layout_type": "full",
+    "layout_type": "card_full",
     "id": 1,
     "title": "De 2010 até Hoje",
     "subtitle": "Parte 07",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
     "image": {
       "image_type": "local",
-      "url": "img_avengers",
+      "url": "img_iron_man",
       "animation": {
         "type": "blink",
         "duration": 1000
       },
       "style": {
+        "height": 400,
         "resize": {
-          "height": 250
+          "height": 400
         },
         "scale_type": "center_inside"
       }
@@ -233,7 +233,6 @@
       "author": "Tony Stark / The Avengers"
     },
     "title_color": "md_white_1000",
-    "title_background_color": "md_black_1000",
     "sumario_list": [
       {
         "id": 1,

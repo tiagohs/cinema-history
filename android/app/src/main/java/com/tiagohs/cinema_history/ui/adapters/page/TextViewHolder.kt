@@ -19,7 +19,7 @@ class TextViewHolder(
         val context = context ?: return
 
         itemView.contentText.text = contentText.contentText.styledString()
-        itemView.contentText.setupLinkableTextView()
+        itemView.contentText.setupLinkableTextView(context)
 
         contentText.font?.let {
             val font = Typeface.createFromAsset(context.assets, "fonts/${it}.ttf")

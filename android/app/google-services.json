@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1077537531291",
+    "firebase_url": "https://cinema-history.firebaseio.com",
+    "project_id": "cinema-history",
+    "storage_bucket": "cinema-history.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077537531291:android:0da1519946307d13a6ad3e",
+        "android_client_info": {
+          "package_name": "com.tiagohs.cinema_history"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077537531291-ftljjucl04p6fasnijk82432ahvbu8fv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tiagohs.cinema_history",
+            "certificate_hash": "754fa7d001542f324a13bd5c88ebabae51f2211a"
+          }
+        },
+        {
+          "client_id": "1077537531291-u080kjaedo33q64uk3a3l47319o24834.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu0UScyEnOOvPHYNMFMFAexQ8DCBzI3YE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077537531291-u080kjaedo33q64uk3a3l47319o24834.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -21,6 +21,7 @@ import com.tiagohs.cinema_history.ui.views.MilMoviesPresentationView
 import kotlinx.android.synthetic.main.activity_mil_movies_presentation.*
 import javax.inject.Inject
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
+import com.tiagohs.cinema_history.helpers.extensions.startActivityWithSlideAnimation
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 
 
@@ -153,13 +154,12 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
 
             })
             .start()
-
     }
 
     private fun onMovieSelected(movie: Movie, position: Int) {
         val id = movie.id ?: return
 
-        startActivity(MovieDetailsActivity.newIntent(this, id))
+        startActivityWithSlideAnimation(MovieDetailsActivity.newIntent(this, id))
     }
 
     companion object {

@@ -1,10 +1,13 @@
 package com.tiagohs.cinema_history.ui.activities
 
+import android.animation.Animator
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.DecelerateInterpolator
 import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
@@ -13,6 +16,8 @@ import com.tiagohs.cinema_history.enums.MovieInfoType
 import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
 import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.cinema_history.helpers.extensions.loadImage
+import com.tiagohs.cinema_history.helpers.extensions.startActivityWithSlideAnimation
+import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.helpers.utils.DateUtils
 import com.tiagohs.cinema_history.models.dto.PersonDTO
 import com.tiagohs.cinema_history.models.movie_info.MovieInfo
@@ -55,9 +60,14 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         presenter.onUnbindView()
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
     override fun setupArguments() {
         movieId = intent.getIntExtra(MOVIE_ID, 0)
-
     }
 
     override fun bindMovieDetails(movie: Movie) {
@@ -74,19 +84,45 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     }
 
     override fun startLoading() {
-        pageContentListContainer.visibility = View.INVISIBLE
-        appBar.visibility = View.INVISIBLE
+        pageContentListContainer.alpha = 0f
+        appBar.alpha = 0f
 
         loadView.startShimmer()
         loadView.visibility = View.VISIBLE
     }
 
     override fun hideLoading() {
-        pageContentListContainer.visibility = View.VISIBLE
-        appBar.visibility = View.VISIBLE
+        pageContentListContainer
+            .animate()
+            .alpha(1f)
+            .setDuration(200)
+            .setInterpolator(DecelerateInterpolator(2f))
+            .start()
 
-        loadView.stopShimmer()
-        loadView.visibility = View.GONE
+        appBar
+            .animate()
+            .alpha(1f)
+            .setDuration(200)
+            .setInterpolator(DecelerateInterpolator(2f))
+            .start()
+
+        loadView
+            .animate()
+            .alpha(0f)
+            .setDuration(200)
+            .setInterpolator(AccelerateInterpolator(2f))
+            .setListener(object : Animator.AnimatorListener {
+                override fun onAnimationEnd(animation: Animator?) {
+                    loadView.stopShimmer()
+                    loadView.visibility = View.INVISIBLE
+                }
+
+                override fun onAnimationRepeat(animation: Animator?) {}
+                override fun onAnimationCancel(animation: Animator?) {}
+                override fun onAnimationStart(animation: Animator?) {}
+
+            })
+            .start()
     }
 
     private fun generateMovieInfoList(movie: Movie): List<MovieInfo> {
@@ -116,7 +152,7 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     }
 
     private fun onPersonClicked(personId: Int) {
-        startActivity(PersonDetailsActivity.newIntent(this, personId))
+        startActivityWithSlideAnimation(PersonDetailsActivity.newIntent(this, personId))
     }
 
     private fun bindMovieHeader(movie: Movie) {
@@ -159,7 +195,26 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     }
 
     private fun bindBackdrop(backdropPath: String?) {
-        movieBackdrop.loadImage(backdropPath, R.drawable.placeholder_movie_poster, R.drawable.placeholder_movie_poster)
+        movieBackdrop.loadImage(backdropPath, R.drawable.placeholder_movie_poster, R.drawable.placeholder_movie_poster) {
+            movieBackdrop.alpha = 1f
+
+            AnimationUtils.createShowCircularReveal(movieBackdrop) {
+                playCard.alpha = 1f
+
+                val animation = AnimationUtils.createFadeInAnimation(150) {
+                    movieBackdropDegrade.alpha = 1f
+                    genresScrollView.alpha = 1f
+                }
+
+                movieBackdropDegrade.startAnimation(animation)
+
+                AnimationUtils.createPulseAnimation(movieTitle)
+                AnimationUtils.createPulseAnimation(movieOriginalTitle)
+
+
+                AnimationUtils.createScaleUpAnimation(playCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200)
+            }
+        }
     }
 
     companion object {

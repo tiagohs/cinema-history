@@ -55,6 +55,10 @@ dependencies {
 
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
 
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.firebaseui:firebase-ui-storage:6.0.2'
+
     /**
      * PICASSO Dependencies
      */
@@ -97,3 +101,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+apply plugin: 'com.google.gms.google-services'

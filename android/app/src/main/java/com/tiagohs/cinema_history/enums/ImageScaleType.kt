@@ -34,7 +34,7 @@ enum class ImageScaleType(
 
     companion object {
 
-        fun getImageViewScaleType(type: String): ImageView.ScaleType {
+        fun getImageViewScaleType(type: String?): ImageView.ScaleType {
             var imageScaleEnum = CENTER_CROP.imageViewEnum
 
             for (typeValue in values()) {

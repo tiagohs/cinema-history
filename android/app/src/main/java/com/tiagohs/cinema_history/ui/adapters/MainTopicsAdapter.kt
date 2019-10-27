@@ -19,6 +19,13 @@ import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.contentBackground
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.description
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainImage
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainSubtitle
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainTopicsContainer
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.title
+import kotlinx.android.synthetic.main.adapter_main_topics_card_full.view.*
 import kotlinx.android.synthetic.main.adapter_main_topics_inter_quote.view.*
 
 class MainTopicsAdapter(
@@ -126,7 +133,9 @@ class MainTopicsAdapter(
                 itemView.mainImage.layoutParams = imageListLayoutParams
             }
 
-            itemView.mainImage.loadImage(mainTopic.image)
+            itemView.mainImage.loadImage(mainTopic.image, null) {
+                itemView.mainImageDegrade.alpha = 1f
+            }
 
             itemView.title.text = mainTopic.title
             itemView.mainTopicsContainer.setOnClickListener {
@@ -141,15 +150,26 @@ class MainTopicsAdapter(
 
             val context = context ?: return
 
-            itemView.mainImage.loadImage(mainTopicItem.image)
+            itemView.mainImage.loadImage(mainTopicItem.image, null)
+
+            mainTopicItem.image.imageStyle?.height?.let {
+                val imageListLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(context))
+
+                itemView.mainImage.layoutParams = imageListLayoutParams
+            }
 
             itemView.title.text = mainTopicItem.title
-            itemView.title.setTextColor(context.getResourceColor(mainTopicItem.titleColor))
-            itemView.contentBackground.setBackgroundColor(context.getResourceColor(mainTopicItem.titleBackgroundColor))
+
             itemView.description.text = mainTopicItem.description
-            itemView.description.setTextColor(context.getResourceColor(mainTopicItem.titleColor))
-            itemView.mainSubtitle.setTextColor(context.getResourceColor(mainTopicItem.titleColor))
+            itemView.description.visibility = View.VISIBLE
+
             itemView.mainSubtitle.text = mainTopicItem.subtitle
+            itemView.mainSubtitle.visibility = View.VISIBLE
+
+            mainTopicItem.titleColor?.let { itemView.title.setTextColor(context.getResourceColor(mainTopicItem.titleColor)) }
+            mainTopicItem.titleBackgroundColor?.let { itemView.contentBackground.setBackgroundColor(context.getResourceColor(mainTopicItem.titleBackgroundColor)) }
+            mainTopicItem.titleColor?.let { itemView.description.setTextColor(context.getResourceColor(mainTopicItem.titleColor)) }
+            mainTopicItem.titleColor?.let { itemView.mainSubtitle.setTextColor(context.getResourceColor(mainTopicItem.titleColor)) }
 
             val background = GradientDrawable()
             background.cornerRadius = 10f

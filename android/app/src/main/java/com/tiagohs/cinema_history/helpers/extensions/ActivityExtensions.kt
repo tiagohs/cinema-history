@@ -1,9 +1,12 @@
 package com.tiagohs.cinema_history.helpers.extensions
 
 import android.app.Activity
+import android.content.Intent
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.enums.MainTopicsType
+import com.tiagohs.cinema_history.ui.activities.MainTopicsActivity
 
 
 fun Activity.setScreenBackgroundColor(color: String) {
@@ -22,4 +25,10 @@ fun Activity.setStatusBarColor(color: Int) {
     window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
     window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
     window.setStatusBarColor(ContextCompat.getColor(this, color))
+}
+
+fun Activity.startActivityWithSlideAnimation(intent: Intent) {
+    startActivity(intent)
+
+    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
 }

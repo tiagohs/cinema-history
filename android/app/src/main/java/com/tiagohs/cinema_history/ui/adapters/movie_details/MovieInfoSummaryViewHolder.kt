@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.tmdb.movie.Movie
 import kotlinx.android.synthetic.main.adapter_movie_info_summary.view.*
 
@@ -17,6 +18,7 @@ class MovieInfoSummaryViewHolder(
         val overview = movie.overview ?: "Esse filme não possui uma sinopse disponível."
 
         itemView.movieSummary.text = overview
+        itemView.movieSummary.startAnimation(AnimationUtils.createFadeInAnimation(150, 200))
     }
 
     companion object {

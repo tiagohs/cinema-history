@@ -9,9 +9,10 @@
       "image_type": "local",
       "url": "img_the_gold_rush",
       "style": {
-        "scale_type": "center_inside",
+        "height": 400,
+        "scale_type": "center_crop",
         "resize": {
-          "height": 380
+          "height": 400
         }
       }
     },
@@ -28,9 +29,10 @@
       "image_type": "local",
       "url": "img_frankenstein",
       "style": {
-        "scale_type": "center_inside",
+        "height": 500,
+        "scale_type": "center_crop",
         "resize": {
-          "height": 380
+          "height": 500
         }
       }
     },
@@ -54,10 +56,10 @@
       "image_type": "local",
       "url": "img_casablanca",
       "style": {
-        "height": 420,
-        "scale_type": "center_inside",
+        "height": 500,
+        "scale_type": "center_crop",
         "resize": {
-          "height": 420
+          "height": 500
         }
       }
     },
@@ -72,12 +74,12 @@
     "title": "De 1950 a 1959",
     "image": {
       "image_type": "local",
-      "url": "img_benhur",
+      "url": "img_ben_hur",
       "style": {
-        "height": 450,
-        "scale_type": "center_inside",
+        "height": 500,
+        "scale_type": "center_crop",
         "resize": {
-          "height": 450
+          "height": 500
         }
       }
     },
@@ -85,10 +87,137 @@
     "background_color": "md_black_1000"
   },
   {
+    "main_topic_type": "mil_movies",
+    "layout_type": "card_full",
+    "id": 6,
+    "list_id": "124905",
+    "title": "De 1960 a 1969",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_uggly",
+      "style": {
+        "height": 500,
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 500
+        }
+      }
+    },
+    "title_color": "pink_light",
+    "background_color": "md_black_1000"
+  },
+  {
     "main_topic_type": "",
     "layout_type": "quote",
-    "id": 3,
+    "id": 4,
     "quote": "Minha sorte na vida foi ser uma pessoa apavorada de verdade. Tenho sorte de ser patife, de ter pouca tolerância ao medo, porque um herói jamais faria um bom filme de suspense.",
     "author": "Alfred Hitchcock"
+  },
+  {
+    "main_topic_type": "mil_movies",
+    "layout_type": "card_full",
+    "id": 7,
+    "list_id": "124907",
+    "title": "De 1970 a 1979",
+    "image": {
+      "image_type": "local",
+      "url": "img_jaws",
+      "style": {
+        "height": 500,
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 500
+        }
+      }
+    },
+    "title_color": "md_green_800",
+    "background_color": "md_black_1000"
+  },
+  {
+    "main_topic_type": "mil_movies",
+    "layout_type": "card_full",
+    "id": 8,
+    "list_id": "124917",
+    "title": "De 1980 a 1989",
+    "image": {
+      "image_type": "local",
+      "url": "img_back_future",
+      "style": {
+        "height": 500,
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 500
+        }
+      }
+    },
+    "title_color": "md_deep_purple_700",
+    "background_color": "md_black_1000"
+  },
+  {
+    "main_topic_type": "mil_movies",
+    "layout_type": "card_full",
+    "id": 8,
+    "list_id": "124918",
+    "title": "De 1990 a 1999",
+    "image": {
+      "image_type": "local",
+      "url": "img_silence",
+      "style": {
+        "height": 500,
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 500
+        }
+      }
+    },
+    "title_color": "md_red_A700",
+    "background_color": "md_black_1000"
+  },
+  {
+    "main_topic_type": "",
+    "layout_type": "quote",
+    "id": 5,
+    "quote": "Acho que as pessoas são pervertidas, essa é a base da minha carreira.",
+    "author": "David Fincher"
+  },
+  {
+    "main_topic_type": "mil_movies",
+    "layout_type": "card_full",
+    "id": 9,
+    "list_id": "124920",
+    "title": "De 2000 a 2009",
+    "image": {
+      "image_type": "local",
+      "url": "img_cidade_deus",
+      "style": {
+        "height": 500,
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 500
+        }
+      }
+    },
+    "title_color": "md_orange_A200",
+    "background_color": "md_black_1000"
+  },
+  {
+    "main_topic_type": "mil_movies",
+    "layout_type": "card_full",
+    "id": 10,
+    "list_id": "124922",
+    "title": "De 2010 até 2018",
+    "image": {
+      "image_type": "local",
+      "url": "img_black_panther",
+      "style": {
+        "height": 500,
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 500
+        }
+      }
+    },
+    "title_color": "md_light_blue_800",
+    "background_color": "md_black_1000"
   }
 ]

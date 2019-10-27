@@ -33,6 +33,12 @@ fun Context.toast(text: String?, duration: Int = Toast.LENGTH_SHORT) {
 fun Context.hasPermission(permission: String)
         = ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED
 
+fun Context.getResourceColor(colorName: String): Int {
+    val colorIdentifier = resources.getIdentifier(colorName, "color", packageName)
+
+    return getResourceColor(colorIdentifier)
+}
+
 @Suppress("DEPRECATION")
 fun Context.getResourceColor(resource: Int): Int {
 
@@ -41,6 +47,12 @@ fun Context.getResourceColor(resource: Int): Int {
     } else {
         return resources.getColor(resource)
     }
+}
+
+fun Context.getResourceDrawable(name: String): Drawable? {
+    val drawableIdentifier = resources.getIdentifier(name, "drawable", packageName)
+
+    return getResourceDrawable(drawableIdentifier)
 }
 
 @Suppress("DEPRECATION")
@@ -64,10 +76,4 @@ fun Context.openLink(url: String) {
     } catch (e: Exception) {
 
     }
-}
-
-fun Context.getResourceColor(colorName: String): Int {
-    val colorIdentifier = resources.getIdentifier(colorName, "color", packageName)
-
-    return getResourceColor(colorIdentifier)
 }
