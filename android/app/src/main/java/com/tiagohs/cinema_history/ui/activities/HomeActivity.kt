@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.ui.activities
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageType
@@ -17,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_home.*
 class HomeActivity: BaseActivity() {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_home
-    override fun onGetMenuLayoutId(): Int = 0
+    override fun onGetMenuLayoutId(): Int = R.menu.menu_main
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,9 +29,30 @@ class HomeActivity: BaseActivity() {
         setupTimeline()
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.action_settings -> {
+                startActivityWithSlideAnimation(SettingActivity.newIntent(this))
+                return true
+            }
+            R.id.action_about -> {
+                startActivityWithSlideAnimation(AboutActivty.newIntent(this))
+                return true
+            }
+            R.id.action_references -> {
+                startActivityWithSlideAnimation(ReferenceActivity.newIntent(this))
+                return true
+            }
+
+            else -> return false
+        }
+
+    }
+
     private fun setupHistoryCinema() {
         val historyImage = Image(ImageType.LOCAL, "img_chinatown",null)
-        historyMovieImage.loadImage(historyImage)
+        historyMovieImage.loadImage(historyImage, null)
 
         cinemaImageContainer.setOnClickListener(onHistoryCinemaClick())
         cinemaTitleContainer.setOnClickListener(onHistoryCinemaClick())
@@ -42,7 +64,7 @@ class HomeActivity: BaseActivity() {
         val imageStyle = ImageStyle(resize = ImageResize(height = 500), scaleType = "center_crop")
         val milMoviesImage = Image(ImageType.LOCAL,"img_godfather",null, imageStyle)
 
-        moviesImage.loadImage(milMoviesImage)
+        moviesImage.loadImage(milMoviesImage, null)
 
         moviesCard.setOnClickListener(onMilMoviesClick())
     }
@@ -51,7 +73,7 @@ class HomeActivity: BaseActivity() {
         val imageStyle = ImageStyle(resize = ImageResize(height = 350), scaleType = "center_crop")
         val timelineImageObject = Image(ImageType.LOCAL,"img_film_faixa",null, imageStyle)
 
-        timelineImage.loadImage(timelineImageObject)
+        timelineImage.loadImage(timelineImageObject, null)
 
         timelineCard.setOnClickListener(onTimelineCinemaClick())
     }

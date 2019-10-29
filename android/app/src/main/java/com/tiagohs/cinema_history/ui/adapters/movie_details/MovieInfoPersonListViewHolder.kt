@@ -19,6 +19,11 @@ class MovieInfoPersonListViewHolder(
 ): RecyclerView.ViewHolder(view) {
 
     fun bindMovieInfo(listTitle: String, personList: List<PersonDTO>) {
+        if (personList.isEmpty()) {
+            itemView.personListContainer.visibility = View.GONE
+            return
+        }
+
         val adapter = PersonAdapter(context, personList, onPersonClicked)
 
         itemView.personList.adapter = adapter

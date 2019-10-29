@@ -59,6 +59,9 @@ class MovieInfoHeaderViewHolder(
         val runtimeFormated = "${hours}h ${minutes}m"
 
         itemView.movieRuntime.text = runtimeFormated
+
+        itemView.movieRuntime.visibility = View.VISIBLE
+        itemView.runtimeTitle.visibility = View.VISIBLE
     }
 
     private fun bindMoviePoster(movie: Movie) {

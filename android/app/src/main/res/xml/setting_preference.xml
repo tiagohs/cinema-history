@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.preference.PreferenceCategory
+        app:key="language_category"
+        app:title="Idioma">
+
+        <androidx.preference.ListPreference
+            app:key="language_app"
+            app:title="Idioma do App"
+            app:summary="Português Brasil"
+            app:icon="@drawable/ic_language_grey_24dp"
+            android:entryValues="@array/app_language_values"
+            android:entries="@array/app_language_values"
+            app:defaultValue="pt-BR"/>
+
+        <androidx.preference.ListPreference
+            app:key="language_movies"
+            app:title="Idioma do Filme"
+            app:summary="Português Brasil"
+            app:icon="@drawable/ic_language_grey_24dp"
+            android:entryValues="@array/movie_language_values"
+            android:entries="@array/movie_language_values"
+            app:defaultValue="pt-BR"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        app:key="help_category"
+        app:title="Geral">
+
+        <androidx.preference.Preference
+            app:key="references"
+            app:summary="Livros, links, artigos. A referência utilizada no desenvolvimento do conteúdo."
+            app:title="Referência Bibliográfica"
+            app:icon="@drawable/ic_open_book_grey_24dp"
+            app:selectable="true" />
+
+        <androidx.preference.Preference
+            app:key="about"
+            app:title="Sobre"
+            app:icon="@drawable/ic_info_grey_24dp"
+            app:selectable="true"/>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

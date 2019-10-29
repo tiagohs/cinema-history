@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">História do Cinema</string>
-    <string name="action_settings">Settings</string>
 
     <string name="quotes">\"\"</string>
 
@@ -32,4 +31,20 @@
     <string name="genere_western">Faroeste</string>
     <string name="genres_outros">Outros</string>
 
+    <!-- Settings -->
+    <string name="action_about">Sobre</string>
+    <string name="action_reference">Referências</string>
+    <string name="action_settings">Configurações</string>
+    <string name="activity_settings">Configurações</string>
+    <string name="activity_references">Referências</string>
+    <string name="activity_about">Sobre</string>
+
+    <!-- Arrays -->
+    <string-array name="app_language_values">
+        <item>Português Brasil</item>
+    </string-array>
+    <string-array name="movie_language_values">
+        <item>Português Brasil</item>
+        <item>Inglês</item>
+    </string-array>
 </resources>
