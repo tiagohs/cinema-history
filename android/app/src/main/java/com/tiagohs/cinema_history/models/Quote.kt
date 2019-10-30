@@ -13,7 +13,14 @@ class Quote(
     val quote: String,
 
     @SerializedName("author")
-    val author: String
-): MainTopic(), Serializable {
+    val author: String,
 
-}
+    @SerializedName("icon_color")
+    val iconColor: String? = null,
+
+    @SerializedName("background_color")
+    val backgroundColor: String? = null,
+
+    @SerializedName("text_color")
+    val textColor: String? = null
+): MainTopic(), Serializable

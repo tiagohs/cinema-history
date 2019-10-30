@@ -20,11 +20,22 @@
         }
       }
     },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_cabinet",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
     "title_color": "md_white_1000",
     "title_background_color": "md_black_1000",
+    "quote_position": "bottom_start",
     "quote": {
       "quote": "Labor omnia vincit (o trabalho vence tudo)",
-      "author": "Viagem à Lua"
+      "author": "Viagem à Lua",
+      "text_color": "md_black_1000",
+      "background_color": "md_white_1000",
+      "icon_color": "md_grey_300"
     },
     "sumario_list": [
       {
@@ -51,9 +62,20 @@
         }
       }
     },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_wizard_oz",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "top_end",
     "quote": {
-      "quote": "Espelho, espelho meu, existe alguém mais bela do que eu?",
-      "author": "Rainha Má"
+      "quote": "Tenho a sensação de que não estamos mais no Kansas.",
+      "author": "O Mágico de Oz",
+      "text_color": "md_black_1000",
+      "background_color": "md_yellow_500",
+      "icon_color": "md_black_1000"
     },
     "title_color": "md_white_1000",
     "title_background_color": "purple_snow_shite",
@@ -89,9 +111,20 @@
         }
       }
     },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_singin_in_the_rain",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_end",
     "quote": {
-      "quote": "O perigo sempre aparece quando tudo parece bem.",
-      "author": "Kambei / Os Setes Samurais"
+      "quote": "Não há nada entre nós. Nunca houve nós. Apenas ar.",
+      "author": "Cantando na Chuva",
+      "text_color": "md_white_1000",
+      "background_color": "md_indigo_800",
+      "icon_color": "md_white_1000"
     },
     "title_color": "md_white_1000",
     "title_background_color": "md_grey_700",
@@ -124,9 +157,20 @@
         }
       }
     },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_bonnie_clyde",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_end",
     "quote": {
       "quote": "Sua origem e seu propósito são um mistério total.",
-      "author": "Última frase da Missão de Controle"
+      "author": "Última frase da Missão de Controle",
+      "text_color": "md_black_1000",
+      "background_color": "md_white_1000",
+      "icon_color": "md_grey_500"
     },
     "title_color": "md_white_1000",
     "title_background_color": "md_black_1000",
@@ -155,9 +199,20 @@
         }
       }
     },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_taxi_driver",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_end",
     "quote": {
-      "quote": "Que ótimo dia para um exorcismo!",
-      "author": "Regan MacNeil"
+      "quote": "Você está falando comigo?",
+      "author": "Travis Bickle",
+      "text_color": "md_black_1000",
+      "background_color": "md_yellow_A400",
+      "icon_color": "md_black_1000"
     },
     "title_color": "md_white_1000",
     "sumario_list": [
@@ -192,9 +247,20 @@
         }
       }
     },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_walle",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_start",
     "quote": {
-      "quote": "Ninguém vai machucar ninguém. Nós vamos ser os Três Caras Bonzinhos aqui. Sabe como é um cara bonzinho?",
-      "author": "Jules / Pulp Fiction"
+      "quote": "Eu não quero sobreviver, eu quero viver!",
+      "author": "Wall-E",
+      "text_color": "md_white_1000",
+      "background_color": "brown_presentation",
+      "icon_color": "md_white_1000"
     },
     "title_color": "md_black_1000",
     "title_background_color": "yellow_dark",
@@ -228,9 +294,20 @@
         "scale_type": "center_inside"
       }
     },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_baby_driver",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_start",
     "quote": {
-      "quote": "Eu sou o Homem de Ferro.",
-      "author": "Tony Stark / The Avengers"
+      "quote": "Não há nada de errado em ser meio calado.",
+      "author": "Em Ritmo de Fuga",
+      "text_color": "md_white_1000",
+      "background_color": "md_black_1000",
+      "icon_color": "md_white_1000"
     },
     "title_color": "md_white_1000",
     "sumario_list": [

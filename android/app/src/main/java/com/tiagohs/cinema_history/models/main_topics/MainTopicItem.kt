@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.models.main_topics
 
 import com.google.gson.annotations.SerializedName
+import com.tiagohs.cinema_history.enums.ViewPosition
 import com.tiagohs.cinema_history.models.Quote
 import com.tiagohs.cinema_history.models.Sumario
 import com.tiagohs.cinema_history.models.image.Image
@@ -22,11 +23,17 @@ data class MainTopicItem(
     @SerializedName("image")
     val image: Image,
 
+    @SerializedName("presentation_image")
+    val presentationImage: Image? = null,
+
     @SerializedName("title_color")
     val titleColor: String? = null,
 
     @SerializedName("title_background_color")
     val titleBackgroundColor: String? = null,
+
+    @SerializedName("quote_position")
+    val quotePosition: ViewPosition,
 
     @SerializedName("quote")
     val quote: Quote,

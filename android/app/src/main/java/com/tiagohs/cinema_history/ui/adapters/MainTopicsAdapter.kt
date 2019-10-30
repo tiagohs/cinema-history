@@ -6,13 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.graphics.drawable.DrawableCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.MainTopicItemLayoutType
 import com.tiagohs.cinema_history.enums.MainTopicsType
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
+import com.tiagohs.cinema_history.helpers.extensions.*
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.Quote
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
@@ -189,7 +188,6 @@ class MainTopicsAdapter(
                 itemView.mainImage.startAnimation(animation)
             }
 
-
         }
     }
 
@@ -198,14 +196,17 @@ class MainTopicsAdapter(
     ): RecyclerView.ViewHolder(view) {
 
         fun bind(quote: Quote) {
+            val context = context ?: return
+
             itemView.quoteText.text = quote.quote
             itemView.quoteTextAuthor.text = quote.author
 
             if (!isDarkMode) {
-                val context = context ?: return
-
                 itemView.quoteText.setTextColor(context.getResourceColor(R.color.md_black_1000))
             }
+
+            itemView.quoteTop.setImageDrawableColored(R.drawable.ic_quote_bottom_24dp, R.color.md_white_1000)
+            itemView.quoteBottom.setImageDrawableColored(R.drawable.ic_quote_top_24dp, R.color.md_white_1000)
         }
     }
 }

@@ -3,6 +3,7 @@ package com.tiagohs.cinema_history.helpers.extensions
 import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
 import android.widget.ImageView
+import androidx.core.graphics.drawable.DrawableCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.DiskCacheStrategy
@@ -16,6 +17,35 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageScaleType
 import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.models.image.Image
+import kotlinx.android.synthetic.main.activity_presentation.*
+
+fun ImageView.setImageDrawableColored(drawableRes: Int, colorName: String) {
+    val drawable = context.getResourceDrawable(drawableRes) ?: return
+    val colorIdentifier = resources.getIdentifier(colorName, "color", context.packageName)
+
+    setImageDrawableColored(drawable, colorIdentifier)
+}
+
+fun ImageView.setImageDrawableColored(drawableName: String, colorName: String) {
+    val drawable = context.getResourceDrawable(drawableName) ?: return
+    val colorIdentifier = resources.getIdentifier(colorName, "color", context.packageName)
+
+    setImageDrawableColored(drawable, colorIdentifier)
+}
+
+fun ImageView.setImageDrawableColored(drawableRes: Int, color: Int) {
+    val drawable = context.getResourceDrawable(drawableRes) ?: return
+
+    setImageDrawableColored(drawable, color)
+}
+
+fun ImageView.setImageDrawableColored(drawable: Drawable, color: Int) {
+    val wrappedDrawable = DrawableCompat.wrap(drawable)
+
+    DrawableCompat.setTint(wrappedDrawable, context.getResourceColor(color))
+
+    setImageDrawable(wrappedDrawable)
+}
 
 fun ImageView.loadImage(url: String?,
                         placeholder: Int? = R.drawable.placeholder_movie_poster,

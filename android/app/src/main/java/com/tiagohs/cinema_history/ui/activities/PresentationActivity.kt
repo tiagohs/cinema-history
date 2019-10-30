@@ -3,19 +3,16 @@ package com.tiagohs.cinema_history.ui.activities
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.transition.Fade
-import android.transition.Slide
-import android.transition.Visibility
 import android.view.Gravity
-import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.Animation
-import android.view.animation.ScaleAnimation
+import androidx.core.graphics.drawable.DrawableCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.helpers.extensions.startActivityWithSlideAnimation
+import com.tiagohs.cinema_history.enums.ViewPosition
+import com.tiagohs.cinema_history.helpers.extensions.*
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
+import com.tiagohs.cinema_history.models.Quote
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.presenter.PresentationPresenter
 import com.tiagohs.cinema_history.ui.adapters.SumarioPresentationAdapter
@@ -43,8 +40,6 @@ class PresentationActivity: BaseActivity(), PresentationView {
 
         getApplicationComponent()?.inject(this)
 
-        supportPostponeEnterTransition()
-
         presenter.onBindView(this)
         presenter.fetchMoviesByListId(mainTopic)
     }
@@ -53,7 +48,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
         super.onBackPressed()
 
         AnimationUtils.createScaleUpAnimation(startButton, 1f, 0f, 1f, 0f, 0.5f, 0.5f, 200)
-        supportFinishAfterTransition()
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
     }
 
     override fun onEnterAnimationComplete() {
@@ -75,10 +70,62 @@ class PresentationActivity: BaseActivity(), PresentationView {
         mainTopicTitle.text = mainTopic?.title
         mainTopicDescription.text = mainTopic?.description
 
-        quoteText.text = mainTopic?.quote?.quote
-        quoteTextAuthor.text = mainTopic?.quote?.author
-
+        bindQuote(mainTopic)
         loadImage(mainTopic)
+    }
+
+    private fun bindQuote(mainTopic: MainTopicItem?) {
+        val position = mainTopic?.quotePosition ?: ViewPosition.BOTTOM_END
+        val quote = mainTopic?.quote ?: return
+
+        quoteText.text = quote.quote
+        quoteTextAuthor.text = quote.author
+
+        bindQuotePosition(position)
+        bindQuoteColor(quote)
+    }
+
+    private fun bindQuotePosition(position: ViewPosition) {
+
+        val layoutParams = CollapsingToolbarLayout.LayoutParams(
+            CollapsingToolbarLayout.LayoutParams.WRAP_CONTENT,
+            CollapsingToolbarLayout.LayoutParams.WRAP_CONTENT
+        ).apply {
+            when (position) {
+                ViewPosition.BOTTOM_END -> {
+                    gravity = Gravity.BOTTOM or Gravity.END
+                    setMargins(16.convertIntToDp(this@PresentationActivity), 0, 16.convertIntToDp(this@PresentationActivity), 0)
+                }
+                ViewPosition.BOTTOM_START -> {
+                    gravity = Gravity.BOTTOM or Gravity.START
+                    setMargins(16.convertIntToDp(this@PresentationActivity), 0, 16.convertIntToDp(this@PresentationActivity), 0)
+                }
+                ViewPosition.TOP_END -> {
+                    gravity = Gravity.TOP or Gravity.END
+                    setMargins(16.convertIntToDp(this@PresentationActivity), 20.convertIntToDp(this@PresentationActivity), 16.convertIntToDp(this@PresentationActivity), 0)
+                }
+                ViewPosition.TOP_START -> {
+                    gravity = Gravity.TOP or Gravity.START
+                    setMargins(16.convertIntToDp(this@PresentationActivity), 100.convertIntToDp(this@PresentationActivity), 16.convertIntToDp(this@PresentationActivity), 0)
+                }
+            }
+        }
+
+        quoteContainer.layoutParams = layoutParams
+    }
+
+    private fun bindQuoteColor(quote: Quote) {
+        quote.textColor?.let {
+            quoteText.setTextColor(getResourceColor(it))
+            quoteTextAuthor.setTextColor(getResourceColor(it))
+        }
+        quote.backgroundColor?.let {
+            quoteCard.setCardBackgroundColor(getResourceColor(it))
+        }
+        quote.iconColor?.let {
+            quoteTop.setImageDrawableColored(R.drawable.ic_quote_bottom_24dp, it)
+            quoteBottom.setImageDrawableColored(R.drawable.ic_quote_top_24dp, it)
+        }
     }
 
     override fun bindMainTopicPresentation(mainTopic: MainTopicItem?) {
@@ -94,13 +141,9 @@ class PresentationActivity: BaseActivity(), PresentationView {
     }
 
     private fun loadImage(mainTopic: MainTopicItem?) {
-        val presentationImage = mainTopic?.image ?: return
+        val presentationImage = mainTopic?.presentationImage ?: return
 
-        presentationImage.imageStyle?.height = 350
-
-        image.loadImage(presentationImage, null) {
-            supportStartPostponedEnterTransition()
-        }
+        image.loadImage(presentationImage, null)
     }
 
     companion object {

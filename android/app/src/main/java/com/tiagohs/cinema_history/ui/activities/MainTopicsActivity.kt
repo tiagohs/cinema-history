@@ -141,22 +141,6 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             else -> return
         }
 
-        if (view != null) {
-            val title = view.findViewById<View>(R.id.title)
-            val description = view.findViewById<View>(R.id.description)
-            val image = view.findViewById<View>(R.id.mainImage)
-
-            val p1 = Pair.create(title, "mainTopicTitleTransition")
-            val p2 = Pair.create(description, "mainTopicDescriptionTransition")
-            val p3 = Pair.create(toolbar as View, "toolbar")
-            val p4 = Pair.create(image as View, "mainImage")
-
-            val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, p1, p2, p3, p4)
-
-            startActivity(intent, options.toBundle())
-            return
-        }
-
         startActivityWithSlideAnimation(intent)
     }
 
