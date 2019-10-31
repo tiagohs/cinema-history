@@ -26,6 +26,15 @@
     <color name="red_timeline_transparent">#80E21E22</color>
     <color name="brown_presentation">#58484B</color>
 
+    <!-- Rating List Colors - BR -->
+    <color name="rating_br_livre">#0B9446</color>
+    <color name="rating_br_10">#0E7DC2</color>
+    <color name="rating_br_12">#F8C411</color>
+    <color name="rating_br_14">#E67823</color>
+    <color name="rating_br_16">#DB2827</color>
+    <color name="rating_br_18">@color/md_black_1000</color>
+    <color name="rating_br_unknown">@color/md_black_1000</color>
+
     <!-- Google's Material Design Colours from http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
 
     <!--reds-->

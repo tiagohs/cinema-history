@@ -8,9 +8,7 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.MovieInfoType
 import com.tiagohs.cinema_history.models.movie_info.MovieInfo
 import com.tiagohs.cinema_history.models.movie_info.MovieInfoPersonList
-import com.tiagohs.cinema_history.ui.adapters.movie_details.MovieInfoHeaderViewHolder
-import com.tiagohs.cinema_history.ui.adapters.movie_details.MovieInfoPersonListViewHolder
-import com.tiagohs.cinema_history.ui.adapters.movie_details.MovieInfoSummaryViewHolder
+import com.tiagohs.cinema_history.ui.adapters.movie_details.*
 
 class MovieInfoAdapter(
     val context: Context?,
@@ -23,22 +21,32 @@ class MovieInfoAdapter(
 
         return when (viewType) {
             MovieInfoType.INFO_CAST.ordinal, MovieInfoType.INFO_CREW.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_info_person_list, parent, false)
+                val view = LayoutInflater.from(parent.context).inflate(MovieInfoPersonListViewHolder.LAYOUT_ID, parent, false)
 
                 MovieInfoPersonListViewHolder(context, view, onPersonClicked)
             }
             MovieInfoType.INFO_HEADER.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_info_header, parent, false)
+                val view = LayoutInflater.from(parent.context).inflate(MovieInfoHeaderViewHolder.LAYOUT_ID, parent, false)
 
                 MovieInfoHeaderViewHolder(context, view)
             }
             MovieInfoType.INFO_SUMMARY.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_info_summary, parent, false)
+                val view = LayoutInflater.from(parent.context).inflate(MovieInfoSummaryViewHolder.LAYOUT_ID, parent, false)
 
                 MovieInfoSummaryViewHolder(context, view)
             }
+            MovieInfoType.INFO_PRODUCTION.ordinal -> {
+                val view = LayoutInflater.from(parent.context).inflate(MovieInfoProductionViewHolder.LAYOUT_ID, parent, false)
+
+                MovieInfoProductionViewHolder(context, view)
+            }
+            MovieInfoType.INFO_MIDIAS.ordinal -> {
+                val view = LayoutInflater.from(parent.context).inflate(MovieInfoMidiaViewHolder.LAYOUT_ID, parent, false)
+
+                MovieInfoMidiaViewHolder(context, view)
+            }
             else -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_info_summary, parent, false)
+                val view = LayoutInflater.from(parent.context).inflate(MovieInfoSummaryViewHolder.LAYOUT_ID, parent, false)
 
                 MovieInfoSummaryViewHolder(context, view)
             }
@@ -67,6 +75,18 @@ class MovieInfoAdapter(
                 val movieInfoSummaryViewHolder = holder as? MovieInfoSummaryViewHolder ?: return
 
                 movieInfoSummaryViewHolder.bindMovieInfo(movieInfo.movie)
+            }
+            MovieInfoType.INFO_PRODUCTION.ordinal -> {
+                val movieInfo = list[position]
+                val movieInfoProductionViewHolder = holder as? MovieInfoProductionViewHolder ?: return
+
+                movieInfoProductionViewHolder.bindMovieInfo(movieInfo.movie)
+            }
+            MovieInfoType.INFO_MIDIAS.ordinal -> {
+                val movieInfo = list[position]
+                val movieInfoMidiaViewHolder = holder as? MovieInfoMidiaViewHolder ?: return
+
+                movieInfoMidiaViewHolder.bindMovieInfo(movieInfo.movie)
             }
             else -> {
                 val movieInfo = list[position]

@@ -10,12 +10,13 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="350dp"
         android:id="@+id/appBar"
         android:theme="@style/AppTheme.AppBarOverlay"
         android:fitsSystemWindows="true"
-        android:background="@color/md_black_1000"
-        android:alpha="0">
+        android:elevation="20dp"
+        android:alpha="0"
+        android:background="@color/md_black_1000">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
@@ -80,7 +81,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="36dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/separatorVertical"
@@ -162,7 +163,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:background="?selectableItemBackground"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="36dp"
                     app:layout_constraintStart_toEndOf="@id/separatorVertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -214,6 +215,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pageContentListContainer"
+        android:background="@android:color/transparent"
+        app:behavior_overlapTop="20dp"
         android:alpha="0"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 

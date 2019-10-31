@@ -24,40 +24,51 @@ class MovieDetailsPresenterImpl @Inject constructor(
     }
 
     override fun fetchMovieDetails(movieId: Int) {
-        val appendToResponse = listOf("credits", "images", "videos", "keywords", "releases", "similar_movies")
+        val appendToResponse = listOf("credits", "images", "videos", "keywords", "releases", "similar_movies", "external_ids", "translations")
 
         view?.startLoading()
         add(tmdbService.getMovieDetails(movieId, appendToResponse)
             .concatMap { fetchVideos(it) }
-            .map { mapMovieWithVideos(it) }
+            .map { this.movie }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                view?.hideLoading()
-                view?.bindMovieDetails(it)
+                this.movie = it
             }, {
                 view?.onError(it, "Houve um erro inesperado, tente novamente.")
                 view?.hideLoading()
+            }, {
+                view?.hideLoading()
+                view?.bindMovieDetails(this.movie)
             })
         )
     }
 
     private fun fetchVideos(movie: Movie): Observable<Result<Video>> {
         this.movie = movie
+        val id = movie.id ?: return Observable.just(Result(results = movie.videos?.videoList))
 
-        val hasVideos = movie.videos?.videoList?.isEmpty() ?: false
+        val listOfObservables = ArrayList<Observable<Result<Video>>>()
+        val translation = movie.translations?.translations?.find { it.iso_639_1 != "pt" && it.iso_639_1 != "en" && it.iso_639_1 == movie.originalLanguage }
 
-        if (hasVideos) {
-            return Observable.just(Result(results = movie.videos?.videoList))
+        translation?.let {
+            val originalLanguage = "${it.iso_639_1}-${it.iso_3166_1}"
+
+            listOfObservables.add(tmdbService.getMovieVideos(id, originalLanguage))
         }
 
-        val languages = movie.translations?.translations?.map { "${it.iso_639_1}-${it.iso_3166_1}" }?.joinToString(",") ?: "en-US,null"
+        listOfObservables.add(tmdbService.getMovieVideos(id, "pt-BR"))
+        listOfObservables.add(tmdbService.getMovieVideos(id, "en-US"))
 
-        return tmdbService.getMovieVideos(movie.id!!, languages)
+        return Observable.concat(listOfObservables)
+                    .doOnNext { mapMovieWithVideos(it) }
     }
 
     private fun mapMovieWithVideos(videos: Result<Video>): Movie {
-        this.movie.videos?.videoList = videos.results
+        val arrayList = ArrayList(this.movie.videos?.videoList ?: emptyList())
+        arrayList.addAll(videos.results ?: emptyList())
+
+        this.movie.videos?.videoList = arrayList
 
         return this.movie
     }

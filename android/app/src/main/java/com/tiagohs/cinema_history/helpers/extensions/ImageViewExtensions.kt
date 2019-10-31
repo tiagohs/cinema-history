@@ -17,6 +17,8 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageScaleType
 import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.models.image.Image
+import com.tiagohs.cinema_history.models.image.ImageResize
+import com.tiagohs.cinema_history.models.image.ImageStyle
 import kotlinx.android.synthetic.main.activity_presentation.*
 
 fun ImageView.setImageDrawableColored(drawableRes: Int, colorName: String) {
@@ -50,8 +52,9 @@ fun ImageView.setImageDrawableColored(drawable: Drawable, color: Int) {
 fun ImageView.loadImage(url: String?,
                         placeholder: Int? = R.drawable.placeholder_movie_poster,
                         errorPlaceholder: Int? = R.drawable.placeholder_movie_poster,
+                        scaleType: String? = "center_inside",
                         oonLoadSuccess: (() -> Unit)? = null) {
-    loadImage(Image(ImageType.ONLINE, url ?: ""), placeholder, errorPlaceholder, oonLoadSuccess)
+    loadImage(Image(ImageType.ONLINE, url ?: "", imageStyle = ImageStyle(scaleType = scaleType)), placeholder, errorPlaceholder, oonLoadSuccess)
 }
 
 @SuppressLint("CheckResult")

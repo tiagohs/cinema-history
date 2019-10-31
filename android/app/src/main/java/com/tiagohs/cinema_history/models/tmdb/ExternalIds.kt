@@ -1,4 +1,4 @@
-package com.tiagohs.cinema_history.models.tmdb.person
+package com.tiagohs.cinema_history.models.tmdb
 
 import com.google.gson.annotations.SerializedName
 

@@ -28,7 +28,7 @@ class MovieInfoPersonListViewHolder(
 
         itemView.personList.adapter = adapter
         itemView.personList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-        itemView.personList.addItemDecoration(SpaceOffsetDecoration(6.convertIntToDp(context), SpaceOffsetDecoration.LEFT))
+        itemView.personList.addItemDecoration(SpaceOffsetDecoration(8.convertIntToDp(context), SpaceOffsetDecoration.LEFT))
 
         itemView.personTitle.text = listTitle
     }

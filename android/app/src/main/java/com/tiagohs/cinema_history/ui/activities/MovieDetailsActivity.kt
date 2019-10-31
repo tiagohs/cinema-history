@@ -26,6 +26,7 @@ import com.tiagohs.cinema_history.models.tmdb.movie.Genres
 import com.tiagohs.cinema_history.models.tmdb.movie.Movie
 import com.tiagohs.cinema_history.presenter.MovieDetailsPresenter
 import com.tiagohs.cinema_history.ui.adapters.MovieInfoAdapter
+import com.tiagohs.cinema_history.ui.adapters.movie_details.MovieInfoProductionViewHolder
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.cinema_history.ui.views.MovieDetailsView
 import kotlinx.android.synthetic.main.activity_movie_details.*
@@ -126,6 +127,7 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     }
 
     private fun generateMovieInfoList(movie: Movie): List<MovieInfo> {
+        val listOfMovieList = ArrayList<MovieInfo>()
         val castList = movie.credits?.cast?.map {
             PersonDTO(
                 it.id,
@@ -143,12 +145,24 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
             )
         } ?: emptyList()
 
-        return listOf(
-            MovieInfo(MovieInfoType.INFO_HEADER, movie),
-            MovieInfo(MovieInfoType.INFO_SUMMARY, movie),
-            MovieInfoPersonList(MovieInfoType.INFO_CAST, movie, castList, "Elenco"),
-            MovieInfoPersonList(MovieInfoType.INFO_CREW, movie, crewList, "Equipe Técnica")
-        )
+        listOfMovieList.add(MovieInfo(MovieInfoType.INFO_HEADER, movie))
+        listOfMovieList.add(MovieInfo(MovieInfoType.INFO_SUMMARY, movie))
+
+        if (castList.isNotEmpty()) {
+            listOfMovieList.add(MovieInfoPersonList(MovieInfoType.INFO_CAST, movie, castList, "Elenco"))
+        }
+
+        if (crewList.isNotEmpty()) {
+            listOfMovieList.add(MovieInfoPersonList(MovieInfoType.INFO_CREW, movie, crewList, "Equipe Técnica"))
+        }
+
+        if (!movie.productionCompanies.isNullOrEmpty()) {
+            listOfMovieList.add(MovieInfo(MovieInfoType.INFO_PRODUCTION, movie))
+        }
+
+        listOfMovieList.add(MovieInfo(MovieInfoType.INFO_MIDIAS, movie))
+
+        return listOfMovieList
     }
 
     private fun onPersonClicked(personId: Int) {
@@ -157,7 +171,7 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     private fun bindMovieHeader(movie: Movie) {
         val genres = movie.genres
-        val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_300)
+        val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_780)
 
         movieTitle.text = movie.title
         movieOriginalTitle.text = "${movie.originalTitle} (${DateUtils.getYearByDate(movie.releaseDate)})"

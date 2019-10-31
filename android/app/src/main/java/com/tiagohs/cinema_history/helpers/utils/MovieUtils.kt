@@ -3,6 +3,10 @@ package com.tiagohs.cinema_history.helpers.utils
 import android.content.Context
 import android.icu.text.NumberFormat
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.managers.SettingsManager
+import com.tiagohs.cinema_history.models.dto.RatingDTO
+import com.tiagohs.cinema_history.models.tmdb.movie.Country
+import java.security.cert.Certificate
 
 import java.util.ArrayList
 import java.util.Calendar
@@ -58,17 +62,6 @@ object MovieUtils {
             R.string.genere_war,
             R.string.genere_western
         )
-
-
-    fun formatCurrency(currency: Long): String {
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-            val format = NumberFormat.getCurrencyInstance(Locale.getDefault())
-            return format.format(currency)
-        } else {
-            val formatter = java.text.NumberFormat.getCurrencyInstance(Locale.getDefault())
-            return formatter.format(currency)
-        }
-    }
 
     fun getAge(_year: Int, _month: Int, _day: Int): Int {
 
@@ -171,6 +164,36 @@ object MovieUtils {
         }
 
         return genres
+    }
+
+    fun getRating(countries: List<Country>?): RatingDTO? {
+        val countryList = countries ?: return null
+
+        val certificationBrazil = countryList.find { it.iso3166_1 == "BR" }
+        if (certificationBrazil != null && !certificationBrazil.certification.isNullOrEmpty()) {
+            return RatingDTO("BR", certificationBrazil.certification, R.color.md_white_1000, getBrazilRatingColor(certificationBrazil.certification))
+        }
+
+        val certificationEua = countryList.find { it.iso3166_1 == "US" }
+        if (certificationEua != null && !certificationEua.certification.isNullOrEmpty()) {
+            return RatingDTO("US", certificationEua.certification, R.color.md_white_1000, R.color.md_black_1000)
+        }
+
+        return null
+    }
+
+    fun getBrazilRatingColor(certificate: String): Int {
+        return when(certificate) {
+            "L" -> R.color.rating_br_livre
+            "10" -> R.color.rating_br_10
+            "12" -> R.color.rating_br_12
+            "14" -> R.color.rating_br_14
+            "16" -> R.color.rating_br_16
+            "18" -> R.color.rating_br_18
+            else -> R.color.rating_br_unknown
+        }
+
+
     }
 
 }

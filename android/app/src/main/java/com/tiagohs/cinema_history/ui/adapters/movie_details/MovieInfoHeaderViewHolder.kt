@@ -28,7 +28,7 @@ class MovieInfoHeaderViewHolder(
 
     fun bindMovieInfo(movie: Movie) {
         val directors = movie.credits?.crew?.filter { it.job == "Director" }?.map { it.name }?.joinToString(", ") ?: ""
-        val writers = movie.credits?.crew?.filter { it.job == "Screenplay" }?.map { it.name }?.joinToString(", ") ?: ""
+        val writers = movie.credits?.crew?.filter { it.job == "Screenplay" || it.job == "Writer" }?.map { it.name }?.joinToString(", ") ?: ""
         val originalLanguage = LocaleUtils.getLanguageName(movie.originalLanguage)?.capitalize() ?: ""
         val releaseDate = DateUtils.formateDate(movie.releaseDate) ?: ""
 
