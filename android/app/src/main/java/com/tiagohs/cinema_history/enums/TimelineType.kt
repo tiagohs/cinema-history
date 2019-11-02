@@ -12,11 +12,8 @@ enum class TimelineType(
     @SerializedName("header")
     HEADER("header"),
 
-    @SerializedName("right")
-    RIGHT("right"),
-
-    @SerializedName("left")
-    LEFT("left");
+    @SerializedName("item")
+    ITEM("item");
 
     companion object {
 

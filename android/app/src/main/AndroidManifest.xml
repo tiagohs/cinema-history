@@ -52,8 +52,7 @@
         <activity android:name=".ui.activities.MovieDetailsActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
-        <activity android:name=".ui.activities.TimelineActivity"
-            android:theme="@style/AppTheme.TimelineStyle" />
+        <activity android:name=".ui.activities.TimelineActivity" />
         <activity android:name=".ui.activities.SettingActivity" />
         <activity android:name=".ui.activities.AboutActivty" />
         <activity android:name=".ui.activities.ReferenceActivity" />

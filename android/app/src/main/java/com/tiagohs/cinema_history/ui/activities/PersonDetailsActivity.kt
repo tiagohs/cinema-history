@@ -196,10 +196,43 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
 
     }
 
-    private fun generatePersonInfoList(person: Person): List<PersonInfo> = listOf(
-        PersonInfo(PersonInfoType.INFO_BIOGRAPHY, person),
-        PersonInfoMovieList(PersonInfoType.INFO_FILMOGRAPHY, person, person.personFilmography, "Filmography")
-    )
+    private fun generatePersonInfoList(person: Person): List<PersonInfo> {
+        val listOfPersonInfo = ArrayList<PersonInfo>()
+
+        person.biography = getPersonSummmary(person)
+        if (!person.biography.isNullOrBlank()) {
+            listOfPersonInfo.add(PersonInfo(PersonInfoType.INFO_BIOGRAPHY, person))
+        }
+
+        if (person.personFilmography.isNotEmpty()) {
+            listOfPersonInfo.add(PersonInfoMovieList(PersonInfoType.INFO_FILMOGRAPHY, person, person.personFilmography, "Filmography"))
+        }
+
+        return listOfPersonInfo
+    }
+
+    private fun getPersonSummmary(person: Person): String? {
+        val translations = person.translations?.translations ?: emptyList()
+
+        val portugueseOverview = translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
+        if (!portugueseOverview.isNullOrBlank()) {
+            return portugueseOverview
+        }
+
+        val englishOverview = translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.overview
+        if (!englishOverview.isNullOrBlank()) {
+            return englishOverview
+        }
+
+        val otherOverview = translations.firstOrNull()?.data?.overview
+        if (!otherOverview.isNullOrBlank()) {
+            return otherOverview
+        }
+
+        return null
+    }
+
+
 
     private fun getBirthIfo(person: Person): String {
         val birthdayDate = person.birthday

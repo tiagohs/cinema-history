@@ -50,7 +50,7 @@ class MovieInfoProductionViewHolder(
 
         }
 
-        company.logoPath?.imageUrlFromTMDB(ImageSize.LOGO_300)?.let { view.companyImage.loadImage(it, null) }
+        company.logoPath?.imageUrlFromTMDB(ImageSize.LOGO_300)?.let { view.companyImage.loadImage(it, null, scaleType = "center_inside") }
 
         itemView.companiesProductionContainer.addView(view)
     }

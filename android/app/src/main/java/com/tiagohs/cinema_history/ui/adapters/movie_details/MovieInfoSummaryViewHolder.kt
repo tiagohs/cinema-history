@@ -9,7 +9,6 @@ import com.tiagohs.cinema_history.helpers.extensions.openLink
 import com.tiagohs.cinema_history.helpers.extensions.toCurrency
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.helpers.utils.MovieUtils
-import com.tiagohs.cinema_history.models.tmdb.ExternalIds
 import com.tiagohs.cinema_history.models.tmdb.movie.Movie
 import kotlinx.android.synthetic.main.adapter_movie_info_summary.view.*
 
@@ -23,11 +22,38 @@ class MovieInfoSummaryViewHolder(
         val overview = movie.overview ?: "Esse filme não possui uma sinopse disponível."
 
         itemView.movieSummary.text = overview
-        itemView.movieSummary.startAnimation(AnimationUtils.createFadeInAnimation(150, 200))
 
+        setupMovieSummmary(movie)
         setupExternalLinks(movie)
         setupSeekBarWithBudget(movie)
         setupRating(movie)
+    }
+
+    private fun setupMovieSummmary(movie: Movie) {
+        val translations = movie.translations?.translations ?: emptyList()
+        val originalLanguage = movie.originalLanguage
+
+        itemView.movieSummary.startAnimation(AnimationUtils.createFadeInAnimation(150, 200))
+
+        val portugueseOverview = translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
+        if (!portugueseOverview.isNullOrBlank()) {
+            itemView.movieSummary.text = portugueseOverview
+            return
+        }
+
+        val englishOverview = translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.overview
+        if (!englishOverview.isNullOrBlank()) {
+            itemView.movieSummary.text = englishOverview
+            return
+        }
+
+        val originalOverview = translations.find { it.iso_639_1 == originalLanguage }?.data?.overview
+        if (!originalOverview.isNullOrBlank()) {
+            itemView.movieSummary.text = originalOverview
+            return
+        }
+
+        itemView.movieSummary.text = "Esse filme não possui uma sinopse disponível."
     }
 
     private fun setupExternalLinks(movie: Movie) {

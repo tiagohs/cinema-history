@@ -2,6 +2,8 @@ package com.tiagohs.cinema_history.models.tmdb.movie
 
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.cinema_history.models.tmdb.ExternalIds
+import com.tiagohs.cinema_history.models.tmdb.TranslationMovieData
+import com.tiagohs.cinema_history.models.tmdb.TranslationsResult
 import java.io.Serializable
 
 
@@ -38,7 +40,7 @@ data class Movie (
     @SerializedName("similar_movies") val similarMovies : SimilarMovies? = null,
     @SerializedName("credits") val credits : Credits? = null,
     @SerializedName("genre_ids") val genreIds : List<Int>? = null,
-    @SerializedName("translations") val translations : TranslationsResult? = null,
+    @SerializedName("translations") val translations : TranslationsResult<TranslationMovieData>? = null,
     @SerializedName("external_ids") val externalIds : ExternalIds? = null
 
 

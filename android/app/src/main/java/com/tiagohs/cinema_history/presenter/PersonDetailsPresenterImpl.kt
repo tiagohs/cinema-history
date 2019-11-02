@@ -18,7 +18,7 @@ class PersonDetailsPresenterImpl @Inject constructor(
     }
 
     override fun fetchPersonDetails(personId: Int) {
-        val appendToResponse = listOf("tagged_images", "images", "movie_credits", "external_ids")
+        val appendToResponse = listOf("tagged_images", "images", "movie_credits", "external_ids", "translations")
 
         view?.startLoading()
 

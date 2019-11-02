@@ -12,9 +12,6 @@ data class TimelineItem(
     @SerializedName("description")
     val description: String,
 
-    @SerializedName("year_color")
-    val yearColor: String,
-
     @SerializedName("image_transparent")
     val imageTransparent: Boolean = false,
 

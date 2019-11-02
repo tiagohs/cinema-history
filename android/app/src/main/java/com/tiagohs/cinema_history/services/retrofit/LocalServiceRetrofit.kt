@@ -4,6 +4,7 @@ import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.Page
 import com.tiagohs.cinema_history.models.Sumario
 import com.tiagohs.cinema_history.models.timeline.Timeline
+import com.tiagohs.cinema_history.models.timeline.TimelineResult
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -22,6 +23,9 @@ interface LocalServiceRetrofit {
     @GET("milmoviesmaintopics")
     fun getMilMoviesMainTopics(): Observable<List<MainTopic>>
 
-    @GET("timeline")
-    fun getTimeline(): Observable<List<Timeline>>
+    @GET("timeline_{id}")
+    fun getTimeline(@Path("id") id: Int): Observable<TimelineResult>
+
+    @GET("timelines")
+    fun getTimelineItems(): Observable<List<Int>>
 }

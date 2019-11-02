@@ -1,0 +1,272 @@
+{
+  "id": 1,
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "A História<br/>do Cinema:<br/>1895 a 1929",
+      "page_title": "1895 a 1929",
+      "next": "1930 a 1939"
+    },
+    {
+      "type": "item",
+      "year": "18\n95",
+      "title": "A Primeira Exibição",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 1867, 'screen_type': 'person'}\">Auguste</a> (1862-1954) e <a href=\"https://_{'type': 'screen', 'id': 1868, 'screen_type': 'person'}\">Louis </a> (1864-1948) Lumière exibem 10 curtas-metragens em Paris para um público pagante, entre eles, <strong><a href=\"https://_{type: 'screen', 'id': 774, 'screen_type': 'movie'}\">A saída dos operários da fábrica Lumière</a></strong>.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "local",
+        "url": "img_lumiere_brothers",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "18\n96",
+      "title": "Um Beijo Polêmico",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 1867, 'screen_type': 'person'}\">Auguste</a> (1862-1954) e <a href=\"https://_{'type': 'screen', 'id': 1868, 'screen_type': 'person'}\">Louis </a> (1864-1948) Lumière exibem 10 curtas-metragens em Paris para um público pagante, entre eles, <strong><a href=\"https://_{type: 'screen', 'id': 774, 'screen_type': 'movie'}\"> La Sortie des usines Lumière </a></strong> (BR: A saída dos operários da fábrica Lumière, 1986).",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_kiss.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "18\n99",
+      "title": "Phantom Ride",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 1037661, 'screen_type': 'person'}\">George Albert Smith</a> filmou o que passou a ser conhecido como \"phantom ride\" no seu filme <a href=\"https://_{type: 'screen', 'id': 143819, 'screen_type': 'movie'}\">The Kiss in the Tunnel</a> (BR: O beijo no Túneo, 1899). Tratava-se de uma nova experiência visual para o público, obtida pela colocação da câmera na frente de um trem em movimento, como se ela fosse um olho fantasmagórico avançando pelo ar. ",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_phantom_ride.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n00",
+      "title": "Complexidade na Narrativa",
+      "description": "O filme <a href=\"https://_{type: 'screen', 'id': 179546, 'screen_type': 'movie'}\">Attack on a China Mission - Bluejackets to the Rescue</a> (BR: Ataque a uma missão chinesa – Soldados navais ao resgate, 1900) é exibido na câmara Municipal de Hove, no condado de Sussex. Um divisor de águas para o cinema, <a href=\"https://_{'type': 'screen', 'id': 1037369, 'screen_type': 'person'}\"> James Williamson</a> (1855-1933) criou uma das narrativas mais complexas da época.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_attack_china_mission.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n02",
+      "title": "Um Novo Padrão",
+      "description": "Em <a href=\"https://_{'type': 'screen', 'id': 775, 'screen_type': 'movie'}\">Le Voyage dans la Lune</a> (BR: Viagem à Lua, 1902), <a href=\"https://_{'type': 'screen', 'id': 11523, 'screen_type': 'person'}\">Georges Méliés</a> estabelece um novo padão de custos de <strong>produção e efeitos especiais</strong>.",
+      "image": {
+        "image_type": "local",
+        "url": "img_voyage_2",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n02",
+      "title": "Evolução técnica",
+      "description": "A extensão média de um rolo de filme aumenta de <strong>15</strong> para <strong>183</strong> metros, permitindo mais tempo para se desenvolver uma narrativa.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_movie_roll.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n03",
+      "title": "Close-up",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 143801, 'screen_type': 'movie'}\">The Sick Kitten</a> (BR: O gato doente, 1903), remake do filme The Little Doctor (1901), ambos de George Albert Smith, é lançado. Neste, vemos primeiro uma sala, duas crianças e um gato, o plano principal. Então, Smith corta para um close-up do gato, recebendo uma colher de remédio. Essa é considerada o <strong>primeiro uso de um close-up</strong> sem o envolvimento de personagens olhando através de alguma coisa.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_sick_kitten.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n03",
+      "title": "Continuidade nas telas",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 44341, 'screen_type': 'movie'}\">Life of an American Fireman</a> (A vida de um bombeiro americano, 1903), de <a href=\"https://_{'type': 'screen', 'id': 44866, 'screen_type': 'person'}\">Edwin Porter</a> é lançado. Na sequência onde o bombeiro chega à casa pegando fogo, Edwin corta para um quarto dentro da casa, mostrando o resgate de uma mulher pelo bombeiro e, depois, corta para um plano exterior da mãe na rua. Para muitos historiadores, esse foi o <strong>primeiro exemplo de edição de continuidade</strong>.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_life_american_fireman.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n06",
+      "title": "O Primeiro longa-metragem",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 20105, 'screen_type': 'movie'}\">The story of the Kelly Gang</a> (1906), de <a href=\"https://_{'type': 'screen', 'id': 85621, 'screen_type': 'person'}\">Charlie Tait</a> é lançado na Austrália, possuindo mais de uma hora de duração. Sua bobina possuía mais de 1200 metros, se tornando o primeiro longa-metragem da história do cinema.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_story_kelly.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n10",
+      "title": "O começo de Hollywood",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 100036, 'screen_type': 'person'}\">D.W. Griffith</a> dirige o curta-metragem de 17 minutos <a href=\"https://_{'type': 'screen', 'id': 462398, 'screen_type': 'movie'}\">In Old California</a> (Na velha Califórnia, 1910), a primeira película filmada em <strong>Hollywood<strong>.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_hollywood_1910.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n12",
+      "title": "Famous Players Film Company",
+      "description": "Fundada por Adolph Zukor, <strong>Famous Players Film Company</strong> se torna a primeira produtora americana a se dedicar exclusivamente à produção de longas-metragens.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_famous_players.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n12",
+      "title": "A Era Vampe",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 89676, 'screen_type': 'person'}\">Clara Pontoppidan</a> interpreta a primeira vampe do cinema no influente melodrama erótico <a href=\"https://_{'type': 'screen', 'id': 238149, 'screen_type': 'movie'}\">Vampyrdanserinden</a> (BR: O vampiro dançarino, 1912).",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_vampire_dancing.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n14",
+      "title": "Superproduções",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 5153, 'screen_type': 'movie'}\">Cabiria</a> (1914) custa mais de <strong>1 milhão de liras</strong> para ser realizado e se torna o filme mais caro de sua época.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cabiria.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n15",
+      "title": "Um polêmico marco",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 618, 'screen_type': 'movie'}\">The Birth of a Nation</a> (BR: O nascimento de uma nação, 1915), com seus 190 minutos, quebra o recorde de filme mais longo do cinema. Ao mesmo tempo, o filme reavive o interessa na <strong>Ku Klux Klan</strong>, que àquela altura já havia praticamente desaparecido. Em resposta a isso, um ano após o lançamento, D. W. Griffith responde a acusação de preconceito realizando o épico <a href=\"https://_{'type': 'screen', 'id': 3059, 'screen_type': 'movie'}\">Intolerance: Love's Struggle Throughout the Ages</a> (BR: Intolerância, 1916).",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_birth_nation.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n20",
+      "title": "O expressionismo alemão",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 234, 'screen_type': 'movie'}\">Das Cabinet des Dr. Caligari</a> (BR: O gabinete do Dr. Caligari, 1920), um clássico perturbador do chamado expressionismo alemão, reflete as vivências de seu autor na Primeira Guerra Mundial. Essencial para o desenvolvimento de imaginação, esse filme inaugurou muitos dos principais elementos do cinema de terror.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cabinet_caligari.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n20",
+      "title": "Capa e Espada",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 108106, 'screen_type': 'person'}\">Fred Niblo</a> lança <a href=\"https://_{'type': 'screen', 'id': 42657, 'screen_type': 'movie'}\">The Mark of Zorro</a> (BR: A marca do Zorro, 1920), marcando o início de um novo gênero no cinema: o filme de capa e espada. Zorro foi uma invenção de <a href=\"https://_{'type': 'screen', 'id': 109088, 'screen_type': 'person'}\">Douglas Fairbanks</a>, que produziu e estrelou o filme.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_zorro.webp",
+        "style": {
+          "scale_type": "center_inside"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n25",
+      "title": "O Mais lucrativo de sua Era",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 3060, 'screen_type': 'movie'}\">The Big Parade</a> (O grande desfile, 1925), de <a href=\"https://_{'type': 'screen', 'id': 29962, 'screen_type': 'person'}\">King Vidor</a>, é lançado e arrecada 22 milhões de dólares nas bilheterias em todo o mundo, se tornando o filme mudo mais bem-sucedido de todos os tempos.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_big_parade.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n26",
+      "title": "Technicolor",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 50075, 'screen_type': 'movie'}\">The Black Pirate</a> (O Pirata Negro, 1926) é o primeiro filme realizado totalmente no sistema Technicolor de duas cores, um processo caríssimo para a época.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_black_pirate.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
+      "title": "\"It Girl\"",
+      "description": "A vendedora interpretada por Clara Bow conquista seu chefe rico em It, cujo título se refere à qualidade definida pela roteirista <a href=\"https://_{'type': 'screen', 'id': 705395, 'screen_type': 'person'}\">Elinor Glyn</a>. E graças a esse filme, Clara Bow se tornou um dos primeiros símbolos sexuais das telas.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_it.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
+      "title": "Uma nova Era",
+      "description": "A era do cinema mudo chega ao fim com o lançamento de <a href=\"https://_{'type': 'screen', 'id': 939, 'screen_type': 'movie'}\">The Jazz Singer</a> (BR: O cantor de Jazz, 1927), o primeiro longa-metragem falado exibido em grande escala.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_jazz_singer.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.helpers.extensions
 
 import android.annotation.SuppressLint
+import android.graphics.ColorMatrix
+import android.graphics.ColorMatrixColorFilter
 import android.graphics.drawable.Drawable
 import android.widget.ImageView
 import androidx.core.graphics.drawable.DrawableCompat
@@ -52,7 +54,7 @@ fun ImageView.setImageDrawableColored(drawable: Drawable, color: Int) {
 fun ImageView.loadImage(url: String?,
                         placeholder: Int? = R.drawable.placeholder_movie_poster,
                         errorPlaceholder: Int? = R.drawable.placeholder_movie_poster,
-                        scaleType: String? = "center_inside",
+                        scaleType: String? = "center_crop",
                         oonLoadSuccess: (() -> Unit)? = null) {
     loadImage(Image(ImageType.ONLINE, url ?: "", imageStyle = ImageStyle(scaleType = scaleType)), placeholder, errorPlaceholder, oonLoadSuccess)
 }
@@ -111,4 +113,24 @@ fun ImageView.loadImage(
     })
 
     glideRequest.into(this)
+
+    scaleType = ImageScaleType.getImageViewScaleType(image.imageStyle?.scaleType)
+}
+
+@SuppressLint("CheckResult")
+fun ImageView.loadImageBlackAndWhite(
+    image: Image,
+    placeholder: Int? = R.drawable.placeholder_movie_poster,
+    errorPlaceholder: Int? = R.drawable.placeholder_movie_poster,
+    onFinished: (() -> Unit)? = null) {
+
+    loadImage(image, placeholder, errorPlaceholder) {
+        val colorMatrix =  ColorMatrix()
+        colorMatrix.setSaturation(0.0f)
+        val filter =  ColorMatrixColorFilter(colorMatrix)
+
+        colorFilter = filter
+
+        onFinished?.invoke()
+    }
 }

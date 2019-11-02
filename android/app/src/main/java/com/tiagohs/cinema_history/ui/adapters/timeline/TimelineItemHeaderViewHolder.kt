@@ -12,12 +12,10 @@ class TimelineItemHeaderViewHolder(val context: Context?, view: View): RecyclerV
 
     fun bind(timelineHeader: TimelineHeader) {
         val context = context ?: return
-        val color = timelineHeader.backgroundColor ?: return
 
         itemView.headerTitle.text = timelineHeader.title
         itemView.headerSubtitle.text = timelineHeader.subtitle
 
-        itemView.imageShadow.setBackgroundColor(context.getResourceColor(color))
         itemView.headerTitle.setTextColor(context.getResourceColor(timelineHeader.titleColor))
         itemView.headerSubtitle.setTextColor(context.getResourceColor(timelineHeader.subtitleColor))
 

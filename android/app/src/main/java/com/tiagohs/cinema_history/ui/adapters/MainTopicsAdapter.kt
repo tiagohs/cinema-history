@@ -197,6 +197,7 @@ class MainTopicsAdapter(
 
         fun bind(quote: Quote) {
             val context = context ?: return
+            val quoteColor =  if (isDarkMode) R.color.md_white_1000 else R.color.md_black_1000
 
             itemView.quoteText.text = quote.quote
             itemView.quoteTextAuthor.text = quote.author
@@ -205,8 +206,8 @@ class MainTopicsAdapter(
                 itemView.quoteText.setTextColor(context.getResourceColor(R.color.md_black_1000))
             }
 
-            itemView.quoteTop.setImageDrawableColored(R.drawable.ic_quote_bottom_24dp, R.color.md_white_1000)
-            itemView.quoteBottom.setImageDrawableColored(R.drawable.ic_quote_top_24dp, R.color.md_white_1000)
+            itemView.quoteTop.setImageDrawableColored(R.drawable.ic_quote_bottom_24dp, quoteColor)
+            itemView.quoteBottom.setImageDrawableColored(R.drawable.ic_quote_top_24dp, quoteColor)
         }
     }
 }

@@ -3,6 +3,9 @@ package com.tiagohs.cinema_history.models.tmdb.person
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.cinema_history.models.dto.MovieFilmographyDTO
 import com.tiagohs.cinema_history.models.tmdb.ExternalIds
+import com.tiagohs.cinema_history.models.tmdb.TranslationMovieData
+import com.tiagohs.cinema_history.models.tmdb.TranslationPersonData
+import com.tiagohs.cinema_history.models.tmdb.TranslationsResult
 
 data class Person (
 
@@ -18,13 +21,14 @@ data class Person (
     @SerializedName("external_ids") val externalIds : ExternalIds? = null,
     @SerializedName("name") val name : String? = null,
     @SerializedName("also_known_as") val alsoKnownAs : List<String>? = null,
-    @SerializedName("biography") val biography : String? = null,
+    @SerializedName("biography") var biography : String? = null,
     @SerializedName("movie_credits") val movieCredits : PersonMovieCredits? = null,
     @SerializedName("adult") val adult : Boolean? = null,
     @SerializedName("gender") val gender : Int? = null,
     @SerializedName("popularity") val popularity : Double? = null,
-    @SerializedName("tagged_images") val taggedImages : TaggedImages? = null
-) {
+    @SerializedName("tagged_images") val taggedImages : TaggedImages? = null,
+    @SerializedName("translations") val translations : TranslationsResult<TranslationPersonData>? = null
+    ) {
 
 	var personFilmography: List<MovieFilmographyDTO> = emptyList()
 	var departmentsList: List<String> = emptyList()

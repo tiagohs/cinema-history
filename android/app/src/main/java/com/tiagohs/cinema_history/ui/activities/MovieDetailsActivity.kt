@@ -199,13 +199,15 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     }
 
     private fun bindTrailer(movie: Movie) {
-        playContainer.setOnClickListener {
-            val trailerUrl = movie.videos?.videoList?.find { it.type == "Trailer" }?.key ?: movie.videos?.videoList?.firstOrNull()?.key
+        val trailerUrlKey = movie.videos?.videoList?.find { it.type == "Trailer" }?.key ?: movie.videos?.videoList?.firstOrNull()?.key
 
-            trailerUrl?.let {
-                openUrl("https://www.youtube.com/watch?v=${it}")
-            }
+        if (trailerUrlKey.isNullOrBlank()) {
+            playContainer.visibility = View.GONE
+            separatorVertical.setGuidelinePercent(1f)
+            return
         }
+
+        playContainer.setOnClickListener { openUrl("https://www.youtube.com/watch?v=${trailerUrlKey}") }
     }
 
     private fun bindBackdrop(backdropPath: String?) {

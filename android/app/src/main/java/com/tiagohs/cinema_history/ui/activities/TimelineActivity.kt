@@ -3,67 +3,61 @@ package com.tiagohs.cinema_history.ui.activities
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import androidx.recyclerview.widget.LinearLayoutManager
+import android.view.WindowManager
+import androidx.core.view.size
+import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.models.timeline.Timeline
-import com.tiagohs.cinema_history.presenter.TimelinePresenter
-import com.tiagohs.cinema_history.ui.adapters.TimelineAdapter
+import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
+import com.tiagohs.cinema_history.presenter.TimelinePagePresenter
+import com.tiagohs.cinema_history.ui.adapters.TimelinePagerAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
-import com.tiagohs.cinema_history.ui.views.TimelineView
+import com.tiagohs.cinema_history.ui.views.TimelinePageView
 import kotlinx.android.synthetic.main.activity_timeline.*
 import javax.inject.Inject
-import android.view.WindowManager
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
 
 
-class TimelineActivity: BaseActivity(), TimelineView {
+class TimelineActivity: BaseActivity(), TimelinePageView {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_timeline
     override fun onGetMenuLayoutId(): Int = 0
 
     @Inject
-    lateinit var presenter: TimelinePresenter
+    lateinit var presenter: TimelinePagePresenter
+
+    var adapterPager: TimelinePagerAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         getApplicationComponent()?.inject(this)
-        setupToolbar(toolbar)
 
         presenter.onBindView(this)
         presenter.fetchTimelineItems()
     }
 
-    override fun bindTimeline(timelines: List<Timeline>) {
-        val adapter = TimelineAdapter(this, timelines)
+    override fun bindTimelineIDs(list: List<Int>) {
+        adapterPager = TimelinePagerAdapter(supportFragmentManager, lifecycle, list)
 
-        timelineList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        timelineList.adapter = adapter
+        timelineContentViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        timelineContentViewPager.adapter = adapterPager
     }
 
-    override fun startLoading() {
-        timelineList.visibility = View.GONE
+    fun setNextPage() {
+        val currentPosition = timelineContentViewPager.currentItem
 
-        loadView.startShimmer()
-        loadView.visibility = View.VISIBLE
+        if (currentPosition < timelineContentViewPager.size) {
+            timelineContentViewPager.setCurrentItem(currentPosition + 1, true)
+        }
+
     }
 
-    override fun hideLoading() {
-        timelineList.visibility = View.VISIBLE
+    fun setPreviousPage() {
+        val currentPosition = timelineContentViewPager.currentItem
 
-        loadView.stopShimmer()
-        loadView.visibility = View.GONE
-    }
+        if (currentPosition > 0 && timelineContentViewPager.size > 0) {
+            timelineContentViewPager.setCurrentItem(currentPosition - 1, true)
+        }
 
-    fun changeStatusBarAndToolbarColor(timelineColor: String) {
-        val backgroundColor = getResourceColor(timelineColor)
-
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-
-        window.statusBarColor = backgroundColor
-        toolbar.setBackgroundColor(backgroundColor)
     }
 
     companion object {

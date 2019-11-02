@@ -22,8 +22,7 @@ class TimelineDeserializer: JsonDeserializer<Timeline> {
 
         return when (type) {
             TimelineType.TITLE -> Gson().fromJson(obj, TimelineTitle::class.java)
-            TimelineType.RIGHT -> Gson().fromJson(obj, TimelineItem::class.java)
-            TimelineType.LEFT -> Gson().fromJson(obj, TimelineItem::class.java)
+            TimelineType.ITEM -> Gson().fromJson(obj, TimelineItem::class.java)
             TimelineType.HEADER -> Gson().fromJson(obj, TimelineHeader::class.java)
         }
     }
