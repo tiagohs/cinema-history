@@ -7,6 +7,12 @@ data class TimelineResult(
     @SerializedName("id")
     val id: Int,
 
+    @SerializedName("color")
+    val color: String,
+
+    @SerializedName("title_text_color")
+    val titleTextColor: String,
+
     @SerializedName("timeline_list")
     val timelineList: List<Timeline>
 ): Serializable

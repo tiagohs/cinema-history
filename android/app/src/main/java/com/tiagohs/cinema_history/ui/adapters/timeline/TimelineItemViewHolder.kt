@@ -2,26 +2,26 @@ package com.tiagohs.cinema_history.ui.adapters.timeline
 
 import android.content.Context
 import android.view.View
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.cardview.widget.CardView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.TimelineType
 import com.tiagohs.cinema_history.helpers.extensions.*
-import com.tiagohs.cinema_history.models.contents.ContentInformation
 import com.tiagohs.cinema_history.models.timeline.TimelineItem
 import kotlinx.android.synthetic.main.adapter_timeline_item.view.*
 
-class TimelineItemViewHolder(val context: Context?, view: View): RecyclerView.ViewHolder(view) {
+class TimelineItemViewHolder(
+    val context: Context?,
+    val color: String,
+    val textColor: String,
+    view: View): RecyclerView.ViewHolder(view) {
+
+    init {
+        bindColors()
+    }
 
     fun bind(timelineItem: TimelineItem) {
         itemView.itemDescription.setupLinkableTextView(context)
 
         itemView.year.text = timelineItem.year
         itemView.itemDescription.text = timelineItem.description.styledString()
-        //itemView.itemDescription.justify()
 
         timelineItem.title?.let {
             itemView.titleContainer.visibility = View.VISIBLE
@@ -44,4 +44,14 @@ class TimelineItemViewHolder(val context: Context?, view: View): RecyclerView.Vi
         }
     }
 
+
+    private fun bindColors() {
+        val context = context ?: return
+        val colorRes = context.getResourceColor(color)
+        val textColorRes = context.getResourceColor(textColor)
+
+        itemView.textLine.setCardBackgroundColor(textColorRes)
+        itemView.titleContainer.setBackgroundColor(colorRes)
+        itemView.title.setTextColor(textColorRes)
+    }
 }

@@ -1,5 +1,7 @@
 {
   "id": 1,
+  "color": "md_yellow_A700",
+  "title_text_color": "md_black_1000",
   "timeline_list": [
     {
       "type": "title",
@@ -179,6 +181,19 @@
     },
     {
       "type": "item",
+      "year": "19\n14",
+      "title": "O \"vagabundo\"",
+      "description": "O \"vagabundo\" de <a href=\"https://_{'type': 'screen', 'id': 13848, 'screen_type': 'person'}\">Chaplin</a> estreia nas telas em <a href=\"https://_{'type': 'screen', 'id': 22885, 'screen_type': 'movie'}\">Kid Auto Races at Venice</a> (BR: Corrida de automóveis para meninos, 1914).",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_chaplin_vagabundo.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
       "year": "19\n15",
       "title": "Um polêmico marco",
       "description": "<a href=\"https://_{'type': 'screen', 'id': 618, 'screen_type': 'movie'}\">The Birth of a Nation</a> (BR: O nascimento de uma nação, 1915), com seus 190 minutos, quebra o recorde de filme mais longo do cinema. Ao mesmo tempo, o filme reavive o interessa na <strong>Ku Klux Klan</strong>, que àquela altura já havia praticamente desaparecido. Em resposta a isso, um ano após o lançamento, D. W. Griffith responde a acusação de preconceito realizando o épico <a href=\"https://_{'type': 'screen', 'id': 3059, 'screen_type': 'movie'}\">Intolerance: Love's Struggle Throughout the Ages</a> (BR: Intolerância, 1916).",
@@ -187,6 +202,19 @@
         "url": "images/img_birth_nation.webp",
         "style": {
           "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n19",
+      "title": "Cinema nas salas de aula",
+      "description": "O cinema soviético é nacionalizado e a primeira escola de cinema do mundo, o Instituto de Cinematografia Estatal da União Soviética, é fundada em Moscou",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_russian_school.webp",
+        "style": {
+          "scale_type": "center_inside"
         }
       }
     },
@@ -218,12 +246,51 @@
     },
     {
       "type": "item",
+      "year": "19\n21",
+      "title": "O primeiro ídolo do Cinema",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 116367, 'screen_type': 'person'}\">Rodolfo Valentino</a> desponta para o estrelato em <a href=\"https://_{'type': 'screen', 'id': 31432, 'screen_type': 'movie'}\">The Four Horsemen of the Apocalypse</a> (BR: Os Quatro Cavaleiros do Apocalipse, 1921). No mesmo ano, atua em <a href=\"https://_{'type': 'screen', 'id': 36841, 'screen_type': 'movie'}\">The sheik</a> (BR: O sheik, 1921), e mulheres desmaiam durante a projeção. Por causa do seu charme exótico, se tornou o primeiro símbolo sexual masculino em Hollywood.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_rodolfo.webp",
+        "style": {
+          "scale_type": "center_inside"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n23",
+      "title": "Um dos três reis da comédia",
+      "description": "É lançado <a href=\"https://_{'type': 'screen', 'id': 22596, 'screen_type': 'movie'}\">Safety Last!</a> (BR: O homem-mosca, 1923), estrelado por <a href=\"https://_{'type': 'screen', 'id': 88953, 'screen_type': 'person'}\">Harold Lloyd</a>, considerado um dos três reis da comédia muda, junto a Charlie Chaplin e <a href=\"https://_{'type': 'screen', 'id': 8635, 'screen_type': 'person'}\">Beaton Keaton</a>. É nesse filme que um dos momentos mais icônicos do cinema mudo, onde Lloyd se vê pendurado nos ponteiros de um rológio no alto de um edifício.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_homem_mosca.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
       "year": "19\n25",
       "title": "O Mais lucrativo de sua Era",
       "description": "<a href=\"https://_{'type': 'screen', 'id': 3060, 'screen_type': 'movie'}\">The Big Parade</a> (O grande desfile, 1925), de <a href=\"https://_{'type': 'screen', 'id': 29962, 'screen_type': 'person'}\">King Vidor</a>, é lançado e arrecada 22 milhões de dólares nas bilheterias em todo o mundo, se tornando o filme mudo mais bem-sucedido de todos os tempos.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_big_parade.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n25",
+      "title": "Eisenstein",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 9603, 'screen_type': 'person'}\">Sergei Eisenstein</a>, considerado um dos maiores e mais importantes diretores do de todos os tempos, realiza seu primeiro longa-metragem: <a href=\"https://_{'type': 'screen', 'id': 44967, 'screen_type': 'movie'}\">Стачка</a> (BR: A Greve, 1925) é lançado em 28 de abril, seguindo por <a href=\"https://_{'type': 'screen', 'id': 643, 'screen_type': 'movie'}\">Броненосец Потёмкин</a> (BR: O encouraçado Potemkin, 1925) em 24 de dezembro.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_eisenstein.webp",
         "style": {
           "scale_type": "center_crop"
         }
@@ -267,6 +334,10 @@
           "scale_type": "center_crop"
         }
       }
+    },
+    {
+      "type": "footer",
+      "next": "1930 a 1939"
     }
   ]
 }

@@ -46,7 +46,7 @@ class TimelineFragment: BaseFragment(), TimelineView {
     }
 
     override fun bindTimeline(timelines: TimelineResult) {
-        val adapter = TimelineAdapter(activity, timelines.timelineList)
+        val adapter = TimelineAdapter(activity, timelines.timelineList, timelines.color, timelines.titleTextColor)
         adapter.onNextClicked = { setNextPage() }
         adapter.onPreviousClicked = { setPreviousPage() }
 

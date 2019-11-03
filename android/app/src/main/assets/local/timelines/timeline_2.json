@@ -1,10 +1,17 @@
 {
   "id": 2,
+  "color": "md_red_500",
+  "title_text_color": "md_white_1000",
   "timeline_list": [
     {
       "type": "title",
       "title": "A História<br/>do Cinema:<br/>1930 a 1939",
       "page_title": "1930 a 1939",
+      "previous": "1895 a 1929",
+      "next": "1930 a 1959"
+    },
+    {
+      "type": "footer",
       "previous": "1895 a 1929",
       "next": "1930 a 1959"
     }

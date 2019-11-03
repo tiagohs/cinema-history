@@ -9,8 +9,8 @@ enum class TimelineType(
     @SerializedName("title")
     TITLE("title"),
 
-    @SerializedName("header")
-    HEADER("header"),
+    @SerializedName("footer")
+    FOOTER("footer"),
 
     @SerializedName("item")
     ITEM("item");
