@@ -25,7 +25,7 @@ class PresenterModule {
     fun providerMovieDetailsPresenter(tmdbService: TMDBService): MovieDetailsPresenter = MovieDetailsPresenterImpl(tmdbService)
 
     @Provides
-    fun providerPersonDetailsPresenter(tmdbService: TMDBService): PersonDetailsPresenter = PersonDetailsPresenterImpl(tmdbService)
+    fun providerPersonDetailsPresenter(tmdbService: TMDBService, localService: LocalService): PersonDetailsPresenter = PersonDetailsPresenterImpl(tmdbService, localService)
 
     @Provides
     fun providerTimelinePresenter(localService: LocalService): TimelinePresenter = TimelinePresenterImpl(localService)

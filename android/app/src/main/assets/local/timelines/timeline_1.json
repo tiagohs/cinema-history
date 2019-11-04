@@ -246,7 +246,20 @@
     },
     {
       "type": "item",
-      "year": "19\n21",
+      "year": "19\n22",
+      "title": "Uma Sinfonia do Horror",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 9076, 'screen_type': 'person'}\">F.W. Murnau</a> lança <a href=\"https://_{'type': 'screen', 'id': 653, 'screen_type': 'movie'}\">Nosferatu</a> (1922), adaptação não autorizada de Drácula, de Bram Stroker, quase destruído devido a um processo judicial.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_nosferatu.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n22",
       "title": "O primeiro ídolo do Cinema",
       "description": "<a href=\"https://_{'type': 'screen', 'id': 116367, 'screen_type': 'person'}\">Rodolfo Valentino</a> desponta para o estrelato em <a href=\"https://_{'type': 'screen', 'id': 31432, 'screen_type': 'movie'}\">The Four Horsemen of the Apocalypse</a> (BR: Os Quatro Cavaleiros do Apocalipse, 1921). No mesmo ano, atua em <a href=\"https://_{'type': 'screen', 'id': 36841, 'screen_type': 'movie'}\">The sheik</a> (BR: O sheik, 1921), e mulheres desmaiam durante a projeção. Por causa do seu charme exótico, se tornou o primeiro símbolo sexual masculino em Hollywood.",
       "image": {
@@ -286,6 +299,19 @@
     {
       "type": "item",
       "year": "19\n25",
+      "title": "Em busca do Ouro",
+      "description": "Chaplin lança <a href=\"https://_{'type': 'screen', 'id': 962, 'screen_type': 'movie'}\">The Gold Rush</a> (BR: Em busca do ouro, 1925), que se torna um dos seus filmes mais icônicos e bem-sucedidos. Trata-se de uma das maiores bilheterias do cinema mudo.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_gold_rush.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n25",
       "title": "Eisenstein",
       "description": "<a href=\"https://_{'type': 'screen', 'id': 9603, 'screen_type': 'person'}\">Sergei Eisenstein</a>, considerado um dos maiores e mais importantes diretores do de todos os tempos, realiza seu primeiro longa-metragem: <a href=\"https://_{'type': 'screen', 'id': 44967, 'screen_type': 'movie'}\">Стачка</a> (BR: A Greve, 1925) é lançado em 28 de abril, seguindo por <a href=\"https://_{'type': 'screen', 'id': 643, 'screen_type': 'movie'}\">Броненосец Потёмкин</a> (BR: O encouraçado Potemkin, 1925) em 24 de dezembro.",
       "image": {
@@ -311,6 +337,32 @@
     },
     {
       "type": "item",
+      "year": "19\n26",
+      "title": "Um clássico da comédia muda",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 8635, 'screen_type': 'person'}\">Buster Keaton</a> finaliza <a href=\"https://_{'type': 'screen', 'id': 961, 'screen_type': 'movie'}\">The General</a> (BR: A general, 1926). Um fracasso de crítica na época, mais tarde o filme seria redescoberto e aclamado como uma das melhores obras da era do cinema mudo.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_general.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n26",
+      "title": "Amadurecimento",
+      "description": "Na UFA, F. W. Murnau realiza <a href=\"https://_{'type': 'screen', 'id': 10728, 'screen_type': 'movie'}\">Faust – Eine deutsche Volkssage</a> (BR: Fausto, 1926), um espetáculo visual. O vanguardista <a href=\"https://_{'type': 'screen', 'id': 94525, 'screen_type': 'person'}\">Kurutta ippêji</a> (BR: Uma Página de Loucura, 1926), de <a href=\"https://_{'type': 'screen', 'id': 213471, 'screen_type': 'person'}\">Teinosuke Kinugasa</a>, demonstra a maturidade do cinema mudo japonês.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_pagina_loucura.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
       "year": "19\n27",
       "title": "\"It Girl\"",
       "description": "A vendedora interpretada por Clara Bow conquista seu chefe rico em It, cujo título se refere à qualidade definida pela roteirista <a href=\"https://_{'type': 'screen', 'id': 705395, 'screen_type': 'person'}\">Elinor Glyn</a>. E graças a esse filme, Clara Bow se tornou um dos primeiros símbolos sexuais das telas.",
@@ -325,11 +377,50 @@
     {
       "type": "item",
       "year": "19\n27",
+      "title": "Pioneiro na ficção cientifica",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 19, 'screen_type': 'movie'}\">Metropolis</a> (BR: Metrópolis, 1927), de <a href=\"https://_{'type': 'screen', 'id': 68, 'screen_type': 'person'}\">Fritz Lang</a>, é um dos primeiros longas-metragens de ficção cientifica. É uma distopia ambientada num futuro tecnologicamente avançado.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_metropolis.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
+      "title": "Surrealismo",
+      "description": "Um dos maiores clássicos do cinema surrealista, <a href=\"https://_{'type': 'screen', 'id': 626, 'screen_type': 'movie'}\">Un chien andalou</a> (BR: Um cão andaluz, 1929), de <a href=\"https://_{'type': 'screen', 'id': 793, 'screen_type': 'person'}\">Luis Buñuel</a>, roterizado pelo próprio e por <a href=\"https://_{'type': 'screen', 'id': 8988, 'screen_type': 'person'}\">Salvador Dali</a>, estreia em Paris. O filme cai nas graças do público e fica em cartaz por oito meses.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cao_andaluz.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
       "title": "Uma nova Era",
       "description": "A era do cinema mudo chega ao fim com o lançamento de <a href=\"https://_{'type': 'screen', 'id': 939, 'screen_type': 'movie'}\">The Jazz Singer</a> (BR: O cantor de Jazz, 1927), o primeiro longa-metragem falado exibido em grande escala.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_jazz_singer.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
+      "title": "Oscar",
+      "description": "A primeira cerimônia do Oscar é realizada no Hotel Hollywood, em Los Angeles.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_oscar.webp",
         "style": {
           "scale_type": "center_crop"
         }

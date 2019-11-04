@@ -67,6 +67,19 @@ class MainTopicsPresenterImpl @Inject constructor(
                     })
                 )
             }
+            MainTopicsType.DIRECTORS -> {
+                add(localService.getDirectorsMainTopics()
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe({
+                        view?.hideLoading()
+                        view?.bindMainTopics(it)
+                    }, {
+                        view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                        view?.hideLoading()
+                    })
+                )
+            }
         }
     }
 }

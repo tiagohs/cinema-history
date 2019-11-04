@@ -52,10 +52,14 @@
         <activity android:name=".ui.activities.MovieDetailsActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
+        <activity android:name=".ui.activities.PersonDetailsSpecialActivity"
+            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
+
         <activity android:name=".ui.activities.TimelineActivity" />
         <activity android:name=".ui.activities.SettingActivity" />
         <activity android:name=".ui.activities.AboutActivty" />
         <activity android:name=".ui.activities.ReferenceActivity" />
+
 
 
         <meta-data

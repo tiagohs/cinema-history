@@ -37,7 +37,7 @@ class MovieVideoAdapter(
             val videoThumbnailUrl = "https://img.youtube.com/vi/${videoId}/0.jpg"
 
             itemView.videoThumb.loadImage(videoThumbnailUrl, null, scaleType = "center_crop")
-            itemView.videoContainer.setOnClickListener { context.openLink("https://www.youtube.com/watch?v=${it}") }
+            itemView.videoContainer.setOnClickListener { context.openLink("https://www.youtube.com/watch?v=${videoId}") }
         }
     }
 }

@@ -14,6 +14,7 @@ import com.tiagohs.cinema_history.enums.MainTopicsType
 import com.tiagohs.cinema_history.helpers.extensions.*
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
 import com.tiagohs.cinema_history.models.Quote
+import com.tiagohs.cinema_history.models.main_topics.DirectorsMainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
@@ -95,6 +96,11 @@ class MainTopicsAdapter(
 
                         mainTopicHoder.bindMillMainTopic(milMoviesMainTopic)
                     }
+                    MainTopicsType.DIRECTORS -> {
+                        val directorsMainTopic = mainTopic as? DirectorsMainTopic ?: return
+
+                        mainTopicHoder.bindDirectorMainTopic(directorsMainTopic)
+                    }
                 }
 
             }
@@ -120,6 +126,29 @@ class MainTopicsAdapter(
     ): RecyclerView.ViewHolder(view) {
 
         var mainTopicItem: MainTopic? = null
+
+        fun bindDirectorMainTopic(mainTopic: DirectorsMainTopic) {
+            this.mainTopicItem = mainTopic
+
+            val context = context ?: return
+
+            mainTopic.image.imageStyle?.height?.let {
+                val imageListLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(context))
+
+                itemView.mainImage.layoutParams = imageListLayoutParams
+            }
+
+            itemView.mainImage.loadImage(mainTopic.image, null) {
+                itemView.mainImageDegrade.alpha = 1f
+            }
+
+            itemView.title.text = mainTopic.title
+            itemView.mainTopicsContainer.setOnClickListener {
+                val mainTopicItem = mainTopicItem ?: return@setOnClickListener
+
+                onMainTopicSelected?.invoke(mainTopicItem, null)
+            }
+        }
 
         fun bindMillMainTopic(mainTopic: MilMoviesMainTopic) {
             this.mainTopicItem = mainTopic

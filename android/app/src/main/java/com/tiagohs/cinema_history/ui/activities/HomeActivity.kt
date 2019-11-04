@@ -27,6 +27,7 @@ class HomeActivity: BaseActivity() {
         setupHistoryCinema()
         setupMilMovies()
         setupTimeline()
+        setupDirectors()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -78,6 +79,15 @@ class HomeActivity: BaseActivity() {
         timelineCard.setOnClickListener(onTimelineCinemaClick())
     }
 
+    private fun setupDirectors() {
+        val imageStyle = ImageStyle(resize = ImageResize(height = 450), scaleType = "center_crop")
+        val image = Image(ImageType.LOCAL,"img_david_fincher",null, imageStyle)
+
+        directorsImage.loadImage(image, null)
+
+        directorsCard.setOnClickListener(onDirectorsClick())
+    }
+
     private fun onHistoryCinemaClick(): View.OnClickListener {
         return View.OnClickListener {
             startActivityWithSlideAnimation(MainTopicsActivity.newIntent(MainTopicsType.HISTORY_CINEMA, this, darkMode = true))
@@ -96,4 +106,9 @@ class HomeActivity: BaseActivity() {
         }
     }
 
+    private fun onDirectorsClick(): View.OnClickListener {
+        return View.OnClickListener {
+            startActivityWithSlideAnimation(MainTopicsActivity.newIntent(MainTopicsType.DIRECTORS, this))
+        }
+    }
 }

@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.models.tmdb
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class ExternalIds (
 
@@ -11,4 +12,4 @@ data class ExternalIds (
 	@SerializedName("freebase_mid") val freebaseMid : String? = null,
 	@SerializedName("imdb_id") val imdbId : String? = null,
 	@SerializedName("facebook_id") val facebookId : String? = null
-)
+): Serializable

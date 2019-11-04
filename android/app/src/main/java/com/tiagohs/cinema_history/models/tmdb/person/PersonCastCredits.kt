@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.models.tmdb.person
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class PersonCastCredits (
 
@@ -20,4 +21,4 @@ data class PersonCastCredits (
 	@SerializedName("vote_average") val voteAverage : Double? = null,
 	@SerializedName("overview") val overview : String? = null,
 	@SerializedName("credit_id") val creditId : String? = null
-)
+): Serializable

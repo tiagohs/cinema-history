@@ -5,6 +5,7 @@ import com.tiagohs.cinema_history.models.Page
 import com.tiagohs.cinema_history.models.Sumario
 import com.tiagohs.cinema_history.models.timeline.Timeline
 import com.tiagohs.cinema_history.models.timeline.TimelineResult
+import com.tiagohs.cinema_history.models.tmdb.person.PersonExtraInfo
 import com.tiagohs.cinema_history.services.config.BaseService
 import com.tiagohs.cinema_history.services.retrofit.LocalServiceRetrofit
 import io.reactivex.Observable
@@ -22,4 +23,9 @@ class LocalService: BaseService() {
     fun getTimelineItems(): Observable<List<Int>> = buildLocalService(LocalServiceRetrofit::class.java).getTimelineItems()
 
     fun getMilMoviesMainTopics(): Observable<List<MainTopic>> = buildLocalService(LocalServiceRetrofit::class.java).getMilMoviesMainTopics()
+
+    fun getDirectorsMainTopics(): Observable<List<MainTopic>> = buildLocalService(LocalServiceRetrofit::class.java).getDirectorsMainTopics()
+
+    fun getSpecialPersons(): Observable<List<PersonExtraInfo>> = buildLocalService(LocalServiceRetrofit::class.java).getSpecialPersons()
+
 }

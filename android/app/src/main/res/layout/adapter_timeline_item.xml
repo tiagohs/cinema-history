@@ -29,6 +29,7 @@
         android:textColor="@color/md_black_1000"
         android:fontFamily="@font/oswald_bold"
         android:textSize="42sp"
+        android:text="18\n95"
         android:textAlignment="textEnd"
         android:includeFontPadding="false"
         android:lineSpacingExtra="0dp"

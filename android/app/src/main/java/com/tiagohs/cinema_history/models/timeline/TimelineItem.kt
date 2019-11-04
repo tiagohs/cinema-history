@@ -18,6 +18,9 @@ data class TimelineItem(
     @SerializedName("title")
     val title: String? = null,
 
+    @SerializedName("margin_top")
+    val marginTop: Int? = null,
+
     @SerializedName("image")
     val image: Image? = null,
 

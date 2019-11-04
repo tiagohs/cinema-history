@@ -15,7 +15,10 @@ enum class MainTopicsType(
     MIL_MOVIES("mil_movies"),
 
     @SerializedName("timeline")
-    TIMELINE("timeline");
+    TIMELINE("timeline"),
+
+    @SerializedName("directors")
+    DIRECTORS("directors");
 
     companion object {
         fun getContentType(type: String): MainTopicsType {

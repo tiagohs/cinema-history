@@ -25,6 +25,7 @@ import com.tiagohs.cinema_history.helpers.extensions.setScreenBackgroundColor
 import com.tiagohs.cinema_history.helpers.extensions.setStatusBarColor
 import com.tiagohs.cinema_history.helpers.extensions.startActivityWithSlideAnimation
 import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
+import com.tiagohs.cinema_history.models.main_topics.DirectorsMainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
@@ -74,6 +75,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             MainTopicsType.HISTORY_CINEMA -> R.string.history_cinema_title
             MainTopicsType.MIL_MOVIES -> R.string.mil_movies_title
             MainTopicsType.TIMELINE -> R.string.timeline_title
+            MainTopicsType.DIRECTORS -> R.string.directors_title
             else -> R.string.history_cinema_title
         }
 
@@ -138,6 +140,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
         val intent = when (mainTopicsType) {
             MainTopicsType.HISTORY_CINEMA -> PresentationActivity.newInstance(this, mainTopic as MainTopicItem)
             MainTopicsType.MIL_MOVIES -> MilMoviesPresentationActivity.newIntent(mainTopic as MilMoviesMainTopic, this)
+            MainTopicsType.DIRECTORS -> PersonDetailsActivity.newIntent(this, (mainTopic as DirectorsMainTopic).personId)
             else -> return
         }
 

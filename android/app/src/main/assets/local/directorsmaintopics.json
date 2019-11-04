@@ -1,0 +1,19 @@
+[
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 1032,
+    "title": "Martin Scorsese",
+    "image": {
+      "image_type": "local",
+      "url": "img_scorsese",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  }
+]

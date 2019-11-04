@@ -11,7 +11,7 @@ import com.tiagohs.cinema_history.models.timeline.TimelineFooter
 import com.tiagohs.cinema_history.models.timeline.TimelineItem
 import com.tiagohs.cinema_history.models.timeline.TimelineTitle
 import com.tiagohs.cinema_history.ui.adapters.timeline.TimelineItemFooterHolder
-import com.tiagohs.cinema_history.ui.adapters.timeline.TimelineItemTitleHolder
+import com.tiagohs.cinema_history.ui.adapters.timeline.TimelineTitleViewHolder
 import com.tiagohs.cinema_history.ui.adapters.timeline.TimelineItemViewHolder
 
 class TimelineAdapter(
@@ -34,7 +34,7 @@ class TimelineAdapter(
             TimelineType.TITLE.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_timeline_title, parent, false)
 
-                return TimelineItemTitleHolder(context, color, onNextClicked, onPreviousClicked, view)
+                return TimelineTitleViewHolder(context, color, onNextClicked, onPreviousClicked, view)
             }
             TimelineType.ITEM.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_timeline_item, parent, false)
@@ -64,7 +64,7 @@ class TimelineAdapter(
         when (viewType) {
             TimelineType.TITLE.ordinal -> {
                 val timelineTitle = list[position] as? TimelineTitle ?: return
-                val timelineItemTitleHolder = holder as? TimelineItemTitleHolder ?: return
+                val timelineItemTitleHolder = holder as? TimelineTitleViewHolder ?: return
 
                 timelineItemTitleHolder.bind(timelineTitle)
             }

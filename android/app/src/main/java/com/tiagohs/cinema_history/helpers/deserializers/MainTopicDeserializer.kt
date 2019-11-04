@@ -9,6 +9,7 @@ import com.tiagohs.cinema_history.enums.MainTopicsType
 import com.tiagohs.cinema_history.models.main_topics.MainTopic
 import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.models.Quote
+import com.tiagohs.cinema_history.models.main_topics.DirectorsMainTopic
 import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
 import java.lang.reflect.Type
 
@@ -30,6 +31,7 @@ class MainTopicDeserializer: JsonDeserializer<MainTopic> {
                 when(type) {
                     MainTopicsType.HISTORY_CINEMA -> Gson().fromJson(obj, MainTopicItem::class.java)
                     MainTopicsType.MIL_MOVIES -> Gson().fromJson(obj, MilMoviesMainTopic::class.java)
+                    MainTopicsType.DIRECTORS -> Gson().fromJson(obj, DirectorsMainTopic::class.java)
                     else -> Gson().fromJson(obj, MainTopicItem::class.java)
                 }
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:id="@+id/jobName"
+    android:fontFamily="@font/roboto_light"
+    android:textColor="@color/md_black_1000"
+    android:textSize="12sp"
+    android:background="@drawable/background_border_rectangle_white_1dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:layout_marginEnd="10dp"
+    android:gravity="center"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/movieTitle"
+/>

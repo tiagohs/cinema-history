@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.models.tmdb.person
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class PersonCrewCredits (
 
@@ -22,4 +23,4 @@ data class PersonCrewCredits (
 	@SerializedName("adult") val adult : Boolean? = null,
 	@SerializedName("backdrop_path") val backdropPath : String? = null,
 	@SerializedName("poster_path") val posterPath : String? = null
-)
+): Serializable

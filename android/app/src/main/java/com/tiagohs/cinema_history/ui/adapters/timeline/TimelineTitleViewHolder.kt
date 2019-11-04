@@ -8,7 +8,7 @@ import com.tiagohs.cinema_history.helpers.extensions.styledString
 import com.tiagohs.cinema_history.models.timeline.TimelineTitle
 import kotlinx.android.synthetic.main.adapter_timeline_title.view.*
 
-class TimelineItemTitleHolder(
+class TimelineTitleViewHolder(
     val context: Context?,
     val color: String,
     private val onNextClicked: (() -> Unit)?,

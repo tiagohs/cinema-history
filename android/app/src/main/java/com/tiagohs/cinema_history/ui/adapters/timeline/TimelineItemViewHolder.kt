@@ -2,6 +2,7 @@ package com.tiagohs.cinema_history.ui.adapters.timeline
 
 import android.content.Context
 import android.view.View
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.helpers.extensions.*
 import com.tiagohs.cinema_history.models.timeline.TimelineItem
@@ -29,6 +30,14 @@ class TimelineItemViewHolder(
             itemView.title.setupLinkableTextView(context)
             itemView.title.text = it.styledString()
         }
+
+        val marginTop = timelineItem.marginTop?.convertIntToDp(context) ?: 16.convertIntToDp(context)
+        val yearLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.WRAP_CONTENT, ConstraintLayout.LayoutParams.WRAP_CONTENT)
+        yearLayoutParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
+        yearLayoutParams.endToStart = itemView.guidelineVertical.id
+        yearLayoutParams.setMargins(0, marginTop, 0, 0)
+
+        itemView.year.layoutParams = yearLayoutParams
 
         timelineItem.image?.let { bindImage(timelineItem) }
     }
