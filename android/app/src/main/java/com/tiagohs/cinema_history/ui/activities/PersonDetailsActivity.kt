@@ -6,7 +6,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AccelerateInterpolator
-import android.view.animation.DecelerateInterpolator
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.models.tmdb.person.Person
 import com.tiagohs.cinema_history.presenter.PersonDetailsPresenter

@@ -7,10 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.enums.ImageType
 import com.tiagohs.cinema_history.enums.PersonInfoType
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.helpers.extensions.setupLinkableTextView
-import com.tiagohs.cinema_history.helpers.extensions.styledString
+import com.tiagohs.cinema_history.helpers.extensions.*
 import com.tiagohs.cinema_history.models.image.Image
 import com.tiagohs.cinema_history.models.person_info.PersonInfo
 import com.tiagohs.cinema_history.models.person_info.PersonInfoMovieList
@@ -58,8 +55,8 @@ class PersonDetailsSpecialFragment: BaseFragment() {
         personName.setupLinkableTextView(context)
         personQuote.setupLinkableTextView(context)
 
-        personName.text = personExtraInfo.customName.styledString()
-        personQuote.text = personExtraInfo.quote.styledString()
+        personName.text = personExtraInfo.customName?.styledString()
+        personQuote.text = personExtraInfo.quote?.styledString()
         moviesQuantity.text = person.personFilmography.size.toString()
 
         bindPersonImage(personExtraInfo.highlight_image)
@@ -75,10 +72,11 @@ class PersonDetailsSpecialFragment: BaseFragment() {
         pageContentList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
     }
 
-    private fun bindPersonImage(imageName: String) {
-        val image = Image(ImageType.LOCAL, imageName)
+    private fun bindPersonImage(imageName: String?) {
+        val imageUrl = imageName ?: return
+        val image = Image(ImageType.LOCAL, imageUrl)
 
-        personImage.loadImage(image, null)
+        personImage.loadImageBlackAndWhite(image, null)
     }
 
     private fun onMovieSelected(movieId: Int) {
@@ -96,15 +94,15 @@ class PersonDetailsSpecialFragment: BaseFragment() {
 
         val personExtraInfo = person.extraInfo?: return listOfPersonInfo
 
-        if (personExtraInfo.profile.isNotEmpty()) {
+        if (!personExtraInfo.profile.isNullOrEmpty()) {
             listOfPersonInfo.add(PersonInfo(PersonInfoType.INFO_SPECIAL_PROFILE, person))
         }
 
-        if (person.personFilmography.isNotEmpty()) {
+        if (!person.personFilmography.isNullOrEmpty()) {
             listOfPersonInfo.add(PersonInfo(PersonInfoType.INFO_SPECIAL_FILMOGRAPHY, person))
         }
 
-        if (person.allImages.isNotEmpty() || personExtraInfo.videos.isNotEmpty()) {
+        if (!person.allImages.isNullOrEmpty() || !personExtraInfo.videos.isNullOrEmpty()) {
             listOfPersonInfo.add(PersonInfo(PersonInfoType.INFO_MIDIA, person))
         }
 

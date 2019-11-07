@@ -19,7 +19,9 @@ class PersonInfoSpecialFilmographyViewHolder(
 ): RecyclerView.ViewHolder(view) {
 
     fun bindPersonInfo(person: Person) {
-        val personAdapter = MovieItemSpecialAdapter(context, person.personFilmography)
+        val filmography = person.personFilmography.filter { !it.posterPath.isNullOrBlank() && !it.backdrop.isNullOrBlank() }
+        val personAdapter = MovieItemSpecialAdapter(context, filmography)
+
         personAdapter.onMovieClicked = onMovieSelected
 
         itemView.filmographyList.apply {
@@ -27,7 +29,6 @@ class PersonInfoSpecialFilmographyViewHolder(
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
             itemView.filmographyListIndicator.attachToRecyclerView(this)
-            //PagerSnapHelper().attachToRecyclerView(this)
             SimpleSnapHelper(itemView.filmographyListIndicator).attachToRecyclerView(this)
 
             setupParallaxScrollListener()

@@ -2,11 +2,96 @@
   {
     "main_topic_type": "directors",
     "layout_type": "card_full",
+    "person_id": 138,
+    "title": "Quentin Tarantino",
+    "image": {
+      "image_type": "local",
+      "url": "img_quentin",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
     "person_id": 1032,
     "title": "Martin Scorsese",
     "image": {
       "image_type": "local",
       "url": "img_scorsese",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 8635,
+    "title": "Buster Keaton",
+    "image": {
+      "image_type": "local",
+      "url": "img_keaton",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 525,
+    "title": "Christopher Nolan",
+    "image": {
+      "image_type": "local",
+      "url": "img_nolan",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 11523,
+    "title": "Georges Méliès",
+    "image": {
+      "image_type": "local",
+      "url": "img_georges_melies",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 9603,
+    "title": "Sergei Eisenstein",
+    "image": {
+      "image_type": "local",
+      "url": "img_eisenstein",
       "style": {
         "height": 350,
         "resize": {

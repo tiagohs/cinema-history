@@ -13,6 +13,7 @@ import com.tiagohs.cinema_history.models.tmdb.movie.Video
 import com.tiagohs.cinema_history.models.tmdb.person.Person
 import com.tiagohs.cinema_history.ui.adapters.MovieVideoAdapter
 import com.tiagohs.cinema_history.ui.adapters.MovieWallpaperAdapter
+import com.tiagohs.cinema_history.ui.adapters.PersonVideoAdapter
 import kotlinx.android.synthetic.main.adapter_person_info_special_midia.view.*
 
 class PersonInfoMidiaViewHolder(
@@ -42,10 +43,10 @@ class PersonInfoMidiaViewHolder(
         if (!person.extraInfo?.videos.isNullOrEmpty()) {
             itemView.videoList.visibility = View.VISIBLE
 
-            val allVideos = person.extraInfo?.videos?.map { Video(key = it.key) } ?: emptyList()
+            val allVideos = person.extraInfo?.videos ?: emptyList()
 
             itemView.videoList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            itemView.videoList.adapter = MovieVideoAdapter(context, allVideos)
+            itemView.videoList.adapter = PersonVideoAdapter(context, allVideos)
             itemView.videoList.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(context), SpaceOffsetDecoration.LEFT))
         }
 

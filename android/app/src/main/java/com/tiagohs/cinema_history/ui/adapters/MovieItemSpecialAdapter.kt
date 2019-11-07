@@ -79,6 +79,7 @@ class MovieItemSpecialAdapter(
 
             val colorAsset = ColorUtils.getRandomColorAssets()
 
+            itemView.movieName.text = movie.title
             itemView.overview.text = movie.overview
 
             bindCharacters(movie.character)
@@ -87,21 +88,7 @@ class MovieItemSpecialAdapter(
             itemView.moviePoster.loadImage(movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_342))
             itemView.movieBackdrop.loadImage(movie.backdrop?.imageUrlFromTMDB(ImageSize.BACKDROP_300))
 
-            bindTitle(movie)
             bindColor(colorAsset)
-        }
-
-        private fun bindTitle(movie: MovieFilmographyDTO) {
-
-            if (movie.releaseDate != null) {
-                val year = DateUtils.getYearByDate(movie.releaseDate)
-
-                itemView.movieName.text = if (year > 0)
-                    "${movie.title} (${year})"
-                else
-                    movie.title
-            }
-
         }
 
         private fun bindColor(colorAsset: ColorAsset) {
