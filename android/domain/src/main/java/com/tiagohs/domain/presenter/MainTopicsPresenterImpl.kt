@@ -21,7 +21,7 @@ class MainTopicsPresenterImpl @Inject constructor(
     }
 
     override fun fetchMainTopics(mainTopicsType: MainTopicsType?) {
-        val mainTopicsType = mainTopicsType ?: return
+        mainTopicsType ?: return
 
         view?.startLoading()
 

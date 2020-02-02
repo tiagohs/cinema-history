@@ -81,7 +81,7 @@ object MovieUtils {
     }
 
     fun setupBirthdayInfo(person: Person?) {
-        val person = person ?: return
+        person ?: return
 
         val birthdayDate = person.birthday
         val placeOfBirth = person.placeOfBirth
@@ -102,7 +102,7 @@ object MovieUtils {
     }
 
     fun generatePersonFilmography(person: Person?) {
-        val person = person ?: return
+        person ?: return
 
         val castMovies = person.movieCredits?.castCredits?.map {
             MovieFilmographyDTO(
@@ -193,10 +193,10 @@ object MovieUtils {
     }
 
     fun getGenresName(context: Context?, ids: List<Int>?): List<String> {
-        val ids = ids ?: return emptyList()
-        val context = context ?: return emptyList()
+        ids ?: return emptyList()
+        context ?: return emptyList()
 
-        var genres = arrayListOf<String>()
+        val genres = arrayListOf<String>()
         var name = ""
 
         for (i in ids.indices) {

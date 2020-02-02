@@ -59,7 +59,7 @@ fun Context.openLink(url: String) {
     try {
         val urlUri = Uri.parse(url)
         val intent = CustomTabsIntent.Builder()
-            .setToolbarColor(resources.getColor(R.color.colorPrimary))
+            .setToolbarColor(getResourceColor(R.color.colorPrimary))
             .setShowTitle(true)
             .build()
         intent.launchUrl(this, urlUri)

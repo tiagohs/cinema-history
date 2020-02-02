@@ -152,7 +152,7 @@ class RetrofitConfig(
     }
 
     private fun gsonBuilder(): Gson {
-        val customPolicy = FieldNamingStrategy {
+        FieldNamingStrategy {
             it.name.toLowerCase()
         }
 

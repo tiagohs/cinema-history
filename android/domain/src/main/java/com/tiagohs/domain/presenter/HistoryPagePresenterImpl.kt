@@ -18,7 +18,7 @@ class HistoryPagePresenterImpl @Inject constructor(
     }
 
     override fun fetchPageContent(mainTopicId: Int?, sumarioId: Int?) {
-        val sumarioId = sumarioId ?: return
+        sumarioId ?: return
         val mainId = mainTopicId ?: return
 
         add(localService.getPage(mainId, sumarioId)

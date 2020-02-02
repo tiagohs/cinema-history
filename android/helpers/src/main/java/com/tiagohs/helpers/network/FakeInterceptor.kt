@@ -19,8 +19,6 @@ class FakeInterceptor(
     @Throws(IOException::class)
     override fun intercept(chain: Interceptor.Chain): Response {
         val response: Response
-        val mediaType = "application/json".toMediaTypeOrNull()
-        val body = this.content.toByteArray().toResponseBody(mediaType)
 
         try {
             setup(chain.request())
@@ -30,7 +28,7 @@ class FakeInterceptor(
                     .message(this.content)
                     .request(chain.request())
                     .protocol(Protocol.HTTP_1_0)
-                    .body(ResponseBody.create("application/json".toMediaTypeOrNull(), this.content.toByteArray()))
+                    .body(this.content.toByteArray().toResponseBody("application/json".toMediaTypeOrNull()))
                     .addHeader("content-type", "application/json")
                     .build()
 

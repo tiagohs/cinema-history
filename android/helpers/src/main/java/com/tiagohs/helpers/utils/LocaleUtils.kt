@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.tiagohs.helpers.utils
 
 import android.content.res.Resources
@@ -45,10 +47,6 @@ object LocaleUtils {
             return countries
         }
 
-    fun getLocaleLanguageISO(locale: Locale): String {
-        return localeAtual.language
-    }
-
     fun getLocaleLanguageName(languageIso: String): String {
         return Locale("en").getDisplayLanguage(Locale(languageIso))
     }
@@ -70,7 +68,7 @@ object LocaleUtils {
     }
 
     fun getLocaleLanguageAndCountry(locale: Locale): String {
-        return getLocaleLanguageISO(locale) + "-" + getLocaleCountryISO(locale)
+        return localeAtual.language + "-" + getLocaleCountryISO(locale)
     }
 
 }
