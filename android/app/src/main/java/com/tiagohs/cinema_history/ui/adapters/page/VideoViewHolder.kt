@@ -5,8 +5,8 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.models.contents.ContentVideo
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.entities.contents.ContentVideo
 import kotlinx.android.synthetic.main.adapter_page_video.view.*
 
 class VideoViewHolder(

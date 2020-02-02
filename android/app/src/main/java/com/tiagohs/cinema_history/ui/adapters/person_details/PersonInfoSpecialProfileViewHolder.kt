@@ -6,9 +6,9 @@ import android.view.View
 import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.setupLinkableTextView
-import com.tiagohs.cinema_history.helpers.extensions.styledString
-import com.tiagohs.cinema_history.models.tmdb.person.Person
+import com.tiagohs.cinema_history.extensions.setupLinkableTextView
+import com.tiagohs.entities.tmdb.person.Person
+import com.tiagohs.helpers.extensions.styledString
 import kotlinx.android.synthetic.main.adapter_person_info_special_profile.view.*
 import kotlinx.android.synthetic.main.view_person_profile_item.view.*
 

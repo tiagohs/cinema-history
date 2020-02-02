@@ -5,14 +5,14 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.TimelineType
-import com.tiagohs.cinema_history.models.timeline.Timeline
-import com.tiagohs.cinema_history.models.timeline.TimelineFooter
-import com.tiagohs.cinema_history.models.timeline.TimelineItem
-import com.tiagohs.cinema_history.models.timeline.TimelineTitle
+import com.tiagohs.entities.timeline.Timeline
+import com.tiagohs.entities.timeline.TimelineFooter
+import com.tiagohs.entities.timeline.TimelineItem
+import com.tiagohs.entities.timeline.TimelineTitle
 import com.tiagohs.cinema_history.ui.adapters.timeline.TimelineItemFooterHolder
 import com.tiagohs.cinema_history.ui.adapters.timeline.TimelineTitleViewHolder
 import com.tiagohs.cinema_history.ui.adapters.timeline.TimelineItemViewHolder
+import com.tiagohs.entities.enums.TimelineType
 
 class TimelineAdapter(
     val context: Context?,

@@ -11,9 +11,9 @@ import androidx.fragment.app.Fragment
 import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.dagger.AppComponent
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
-import com.tiagohs.cinema_history.helpers.extensions.toast
-import com.tiagohs.cinema_history.helpers.utils.ServerUtils
+import com.tiagohs.helpers.extensions.getResourceColor
+import com.tiagohs.helpers.extensions.toast
+import com.tiagohs.helpers.utils.ServerUtils
 
 abstract class BaseActivity : AppCompatActivity() {
 

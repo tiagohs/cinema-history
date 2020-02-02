@@ -6,16 +6,12 @@ import android.view.View
 import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageSize
-import com.tiagohs.cinema_history.helpers.extensions.*
-import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
-import com.tiagohs.cinema_history.helpers.utils.LocaleUtils
-import com.tiagohs.cinema_history.helpers.utils.MovieUtils
-import com.tiagohs.cinema_history.models.tmdb.ExternalIds
-import com.tiagohs.cinema_history.models.tmdb.movie.Movie
-import com.tiagohs.cinema_history.models.tmdb.movie.ProductionCompanies
+import com.tiagohs.entities.enums.ImageSize
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.*
+import com.tiagohs.entities.tmdb.movie.Movie
+import com.tiagohs.entities.tmdb.movie.ProductionCompanies
 import kotlinx.android.synthetic.main.adapter_movie_info_production.view.*
-import kotlinx.android.synthetic.main.adapter_movie_info_summary.view.*
 import kotlinx.android.synthetic.main.view_company_item.view.*
 import java.util.*
 

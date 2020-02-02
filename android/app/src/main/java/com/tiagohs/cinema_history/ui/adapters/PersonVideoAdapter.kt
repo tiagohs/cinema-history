@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.helpers.extensions.openLink
-import com.tiagohs.cinema_history.models.tmdb.person.PersonVideo
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.openLink
+import com.tiagohs.entities.tmdb.person.PersonVideo
 import kotlinx.android.synthetic.main.adapter_person_video.view.*
 
 class PersonVideoAdapter(

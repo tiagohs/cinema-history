@@ -4,19 +4,13 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.LinearLayout
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageScaleType
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.models.image.Image
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.entities.image.Image
+import com.tiagohs.helpers.extensions.convertIntToDp
 import kotlinx.android.synthetic.main.adapter_image.view.*
-import kotlin.math.abs
 
 class ImageAdapter(
     val context: Context?,

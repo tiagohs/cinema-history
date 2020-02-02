@@ -7,7 +7,7 @@
       "image_type": "local",
       "url": "img_great_train",
       "style": {
-        "scale_type": "center_inside",
+        "scale_type": "center_crop",
         "resize": {
           "height": 350
         }
@@ -22,7 +22,7 @@
       "image_type": "local",
       "url": "img_great_train",
       "style": {
-        "scale_type": "center_inside",
+        "scale_type": "center_crop",
         "resize": {
           "height": 350
         }

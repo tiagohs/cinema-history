@@ -8,16 +8,14 @@ import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageSize
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
-import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.helpers.tools.SpaceOffsetDecoration
-import com.tiagohs.cinema_history.helpers.utils.ColorAsset
-import com.tiagohs.cinema_history.helpers.utils.ColorUtils
-import com.tiagohs.cinema_history.helpers.utils.DateUtils
-import com.tiagohs.cinema_history.models.dto.MovieFilmographyDTO
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.getResourceColor
+import com.tiagohs.entities.dto.MovieFilmographyDTO
+import com.tiagohs.helpers.tools.SpaceOffsetDecoration
+import com.tiagohs.helpers.utils.ColorUtils
+import com.tiagohs.entities.enums.ImageSize
+import com.tiagohs.helpers.extensions.imageUrlFromTMDB
+import com.tiagohs.helpers.extensions.loadImage
 import kotlinx.android.synthetic.main.adapter_movie_special_item.view.*
 import kotlinx.android.synthetic.main.view_line_five_colors.view.*
 import kotlin.math.abs
@@ -91,7 +89,7 @@ class MovieItemSpecialAdapter(
             bindColor(colorAsset)
         }
 
-        private fun bindColor(colorAsset: ColorAsset) {
+        private fun bindColor(colorAsset: com.tiagohs.entities.ColorAsset) {
             val context = context ?: return
             val backgroundColor = context.getResourceColor("md_${colorAsset.colorName}_500")
             val textColor = context.getResourceColor(colorAsset.textColorName)
@@ -119,7 +117,7 @@ class MovieItemSpecialAdapter(
             }
         }
 
-        private fun bindDepartaments(departaments: String?, colorAsset: ColorAsset) {
+        private fun bindDepartaments(departaments: String?, colorAsset: com.tiagohs.entities.ColorAsset) {
 
             if (!departaments.isNullOrBlank()) {
                 val context = context ?: return
@@ -142,27 +140,4 @@ class MovieItemSpecialAdapter(
             onMovieClicked?.invoke(movieId)
         }
     }
-}
-
-fun RecyclerView.setupParallaxScrollListener() {
-    addOnScrollListener(object : RecyclerView.OnScrollListener() {
-        override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-            val layoutManager = layoutManager as? LinearLayoutManager ?: return
-
-            val scrollOffset = recyclerView.computeHorizontalScrollOffset()
-            val offsetFactor = (scrollOffset % measuredWidth) / measuredWidth.toFloat()
-
-            val firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition()
-            findViewHolderForAdapterPosition(firstVisibleItemPosition)?.let {
-                (it as? MovieItemSpecialAdapter.MovieItemViewHolder)?.offset = -offsetFactor
-            }
-
-            val lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition()
-            if (firstVisibleItemPosition != lastVisibleItemPosition) {
-                findViewHolderForAdapterPosition(lastVisibleItemPosition)?.let {
-                    (it as? MovieItemSpecialAdapter.MovieItemViewHolder)?.offset = 1 - offsetFactor
-                }
-            }
-        }
-    })
 }

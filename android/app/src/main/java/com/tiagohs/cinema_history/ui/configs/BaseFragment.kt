@@ -5,9 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.dagger.AppComponent
-import com.tiagohs.cinema_history.helpers.extensions.toast
 
 abstract class BaseFragment: Fragment() {
 

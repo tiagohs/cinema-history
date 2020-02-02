@@ -3,15 +3,13 @@ package com.tiagohs.cinema_history.ui.activities
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.WindowManager
 import androidx.core.view.size
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
-import com.tiagohs.cinema_history.presenter.TimelinePagePresenter
+import com.tiagohs.domain.presenter.TimelinePagePresenter
 import com.tiagohs.cinema_history.ui.adapters.TimelinePagerAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
-import com.tiagohs.cinema_history.ui.views.TimelinePageView
+import com.tiagohs.domain.views.TimelinePageView
 import kotlinx.android.synthetic.main.activity_timeline.*
 import javax.inject.Inject
 

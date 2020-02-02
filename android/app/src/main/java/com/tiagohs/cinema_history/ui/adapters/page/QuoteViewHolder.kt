@@ -1,13 +1,10 @@
 package com.tiagohs.cinema_history.ui.adapters.page
 
 import android.content.Context
-import android.graphics.Typeface
 import android.view.View
 import androidx.core.content.ContextCompat
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.styledString
-import com.tiagohs.cinema_history.models.contents.ContentQuote
-import com.tiagohs.cinema_history.models.contents.ContentText
+import com.tiagohs.entities.contents.ContentQuote
 import kotlinx.android.synthetic.main.adapter_page_quote.view.*
 
 class QuoteViewHolder(

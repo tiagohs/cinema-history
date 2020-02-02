@@ -5,7 +5,7 @@ import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.managers.SettingsManager
+import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.cinema_history.ui.activities.AboutActivty
 import com.tiagohs.cinema_history.ui.activities.ReferenceActivity
 

@@ -4,12 +4,11 @@ import android.content.Context
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.models.contents.ContentSlide
+import com.tiagohs.entities.contents.ContentSlide
 import com.tiagohs.cinema_history.ui.adapters.ImageAdapter
+import com.tiagohs.helpers.extensions.convertIntToDp
 import kotlinx.android.synthetic.main.adapter_page_slide.view.*
 import cz.intik.overflowindicator.SimpleSnapHelper
 

@@ -1,7 +1,8 @@
 package com.tiagohs.cinema_history.dagger.modules
 
-import com.tiagohs.cinema_history.services.LocalService
-import com.tiagohs.cinema_history.services.TMDBService
+import com.tiagohs.domain.services.LocalService
+import com.tiagohs.domain.services.TMDBService
+import com.tiagohs.domain.services.config.RetrofitConfig
 import dagger.Module
 import dagger.Provides
 
@@ -9,13 +10,13 @@ import dagger.Provides
 class ServiceModule {
 
     @Provides
-    fun provideLocalService(): LocalService {
-        return LocalService()
+    fun provideLocalService(retrofitConfig: RetrofitConfig): LocalService {
+        return LocalService(retrofitConfig)
     }
 
     @Provides
-    fun provideTMDBService(): TMDBService {
-        return TMDBService()
+    fun provideTMDBService(retrofitConfig: RetrofitConfig): TMDBService {
+        return TMDBService(retrofitConfig)
     }
 
 

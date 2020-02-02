@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["compileSDK"]
+    buildToolsVersion globalConfiguration["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["minSDK"]
+        targetSdkVersion globalConfiguration["targetSDK"]
+
+        versionCode globalConfiguration["versionCode"]
+        versionName globalConfiguration["versionName"]
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':data')
+    implementation project(path: ':helpers')
+    implementation project(path: ':entities')
+
+    def dependencies = rootProject.ext.dependencies
+
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
+    // Tools
+    implementation dependencies.volley
+    implementation dependencies.gson
+    implementation dependencies.timber
+    implementation dependencies.javaxAnnotation
+
+    // Rx
+    implementation dependencies.rxAndroid
+    implementation dependencies.rxJava
+    implementation dependencies.rxPreferences
+
+    // Dagger
+    implementation dependencies.dagger
+    annotationProcessor dependencies.daggerCompiler
+    kapt dependencies.daggerCompilerKtx
+
+    // Retrofit
+    implementation dependencies.retrofit2
+    implementation dependencies.retrofit2JacksonConverter
+    implementation dependencies.retrofit2GsonConverter
+    implementation dependencies.retrofit2RxJavaAdapter
+
+    // Okhttp3
+    implementation dependencies.okhttp3
+    implementation dependencies.okhttp3LoggingInterceptor
+}

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
+import com.tiagohs.helpers.extensions.getResourceColor
 import kotlinx.android.synthetic.main.adapter_department.view.*
 
 class DepartamentAdapter(

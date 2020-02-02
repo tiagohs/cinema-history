@@ -3,12 +3,11 @@ package com.tiagohs.cinema_history.ui.adapters.person_details
 import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.models.tmdb.person.Person
+import com.tiagohs.cinema_history.extensions.setupParallaxScrollListener
+import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.cinema_history.ui.adapters.MovieItemSpecialAdapter
-import com.tiagohs.cinema_history.ui.adapters.setupParallaxScrollListener
 import cz.intik.overflowindicator.SimpleSnapHelper
 import kotlinx.android.synthetic.main.adapter_person_info_special_filmography.view.*
 

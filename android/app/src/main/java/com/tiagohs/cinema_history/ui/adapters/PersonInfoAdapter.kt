@@ -4,13 +4,10 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.MovieInfoType
-import com.tiagohs.cinema_history.enums.PersonInfoType
-import com.tiagohs.cinema_history.models.person_info.PersonInfo
-import com.tiagohs.cinema_history.models.person_info.PersonInfoMovieList
-import com.tiagohs.cinema_history.ui.adapters.movie_details.*
+import com.tiagohs.entities.person_info.PersonInfo
+import com.tiagohs.entities.person_info.PersonInfoMovieList
 import com.tiagohs.cinema_history.ui.adapters.person_details.*
+import com.tiagohs.entities.enums.PersonInfoType
 
 class PersonInfoAdapter(
     val context: Context?,

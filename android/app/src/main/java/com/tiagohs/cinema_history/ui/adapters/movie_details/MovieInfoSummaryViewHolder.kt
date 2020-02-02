@@ -4,12 +4,12 @@ import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
-import com.tiagohs.cinema_history.helpers.extensions.openLink
-import com.tiagohs.cinema_history.helpers.extensions.toCurrency
-import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
-import com.tiagohs.cinema_history.helpers.utils.MovieUtils
-import com.tiagohs.cinema_history.models.tmdb.movie.Movie
+import com.tiagohs.helpers.extensions.getResourceColor
+import com.tiagohs.helpers.extensions.openLink
+import com.tiagohs.helpers.utils.AnimationUtils
+import com.tiagohs.helpers.utils.MovieUtils
+import com.tiagohs.entities.tmdb.movie.Movie
+import com.tiagohs.helpers.extensions.toCurrency
 import kotlinx.android.synthetic.main.adapter_movie_info_summary.view.*
 
 

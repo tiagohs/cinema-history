@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.models.tmdb.person.Person
+import com.tiagohs.entities.tmdb.person.Person
 import kotlinx.android.synthetic.main.adapter_person_info_biography.view.*
 
 class PersonInfoBiographyViewHolder(

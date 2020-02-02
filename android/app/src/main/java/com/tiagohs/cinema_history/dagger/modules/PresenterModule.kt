@@ -1,8 +1,8 @@
 package com.tiagohs.cinema_history.dagger.modules
 
-import com.tiagohs.cinema_history.presenter.*
-import com.tiagohs.cinema_history.services.LocalService
-import com.tiagohs.cinema_history.services.TMDBService
+import com.tiagohs.domain.presenter.*
+import com.tiagohs.domain.services.LocalService
+import com.tiagohs.domain.services.TMDBService
 import dagger.Module
 import dagger.Provides
 

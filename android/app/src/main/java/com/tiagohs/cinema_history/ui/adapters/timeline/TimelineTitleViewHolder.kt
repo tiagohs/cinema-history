@@ -3,9 +3,9 @@ package com.tiagohs.cinema_history.ui.adapters.timeline
 import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
-import com.tiagohs.cinema_history.helpers.extensions.styledString
-import com.tiagohs.cinema_history.models.timeline.TimelineTitle
+import com.tiagohs.helpers.extensions.getResourceColor
+import com.tiagohs.entities.timeline.TimelineTitle
+import com.tiagohs.helpers.extensions.styledString
 import kotlinx.android.synthetic.main.adapter_timeline_title.view.*
 
 class TimelineTitleViewHolder(

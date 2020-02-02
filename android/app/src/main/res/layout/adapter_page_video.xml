@@ -8,7 +8,7 @@
     android:layout_marginTop="20dp"
     android:layout_marginBottom="20dp">
 
-    <com.tiagohs.cinema_history.ui.custom.VideoViewerView
+    <com.tiagohs.uicomponents.videoviewer.VideoViewerView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:id="@+id/videoViewer"

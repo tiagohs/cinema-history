@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["compileSDK"]
+    buildToolsVersion globalConfiguration["buildToolsVersion"]
+
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["minSDK"]
+        targetSdkVersion globalConfiguration["targetSDK"]
+
+        versionCode globalConfiguration["versionCode"]
+        versionName globalConfiguration["versionName"]
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        test.java.srcDir 'javatests'
+        main {
+            globalConfiguration["componentsSrcDirs"].forEach {
+                res.srcDirs += 'src/main/java/' + it + '/res'
+            }
+            java.srcDir 'java'
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':domain')
+    implementation project(path: ':entities')
+    implementation project(path: ':helpers')
+
+    def dependencies = rootProject.ext.dependencies
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
+    // Android Core / Material
+    implementation dependencies.appcompat
+    implementation dependencies.androidxCore
+    implementation dependencies.constrantlayout
+    implementation dependencies.androidMaterial
+    implementation dependencies.browser
+    implementation dependencies.androidMaterial2
+
+    // YoutubePlayer
+    implementation dependencies.youtubePlayer
+    implementation dependencies.youtubePlayerChromecast
+
+    // Test Tools
+    testImplementation dependencies.junit
+    implementation dependencies.testRunner
+    implementation dependencies.espresso
+}

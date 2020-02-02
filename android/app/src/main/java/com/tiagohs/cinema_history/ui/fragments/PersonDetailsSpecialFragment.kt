@@ -5,17 +5,18 @@ import android.view.View
 import android.view.animation.DecelerateInterpolator
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageType
-import com.tiagohs.cinema_history.enums.PersonInfoType
-import com.tiagohs.cinema_history.helpers.extensions.*
-import com.tiagohs.cinema_history.models.image.Image
-import com.tiagohs.cinema_history.models.person_info.PersonInfo
-import com.tiagohs.cinema_history.models.person_info.PersonInfoMovieList
-import com.tiagohs.cinema_history.models.tmdb.person.Person
+import com.tiagohs.cinema_history.extensions.setupLinkableTextView
+import com.tiagohs.helpers.extensions.loadImageBlackAndWhite
+import com.tiagohs.entities.image.Image
+import com.tiagohs.entities.person_info.PersonInfo
+import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.cinema_history.ui.activities.MovieDetailsActivity
 import com.tiagohs.cinema_history.ui.activities.PersonDetailsActivity
 import com.tiagohs.cinema_history.ui.adapters.PersonInfoAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseFragment
+import com.tiagohs.entities.enums.ImageType
+import com.tiagohs.entities.enums.PersonInfoType
+import com.tiagohs.helpers.extensions.styledString
 import kotlinx.android.synthetic.main.fragment_person_details_special.*
 
 class PersonDetailsSpecialFragment: BaseFragment() {

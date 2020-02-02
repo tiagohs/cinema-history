@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageSize
-import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.models.dto.MovieFilmographyDTO
+import com.tiagohs.entities.dto.MovieFilmographyDTO
+import com.tiagohs.entities.enums.ImageSize
+import com.tiagohs.helpers.extensions.imageUrlFromTMDB
+import com.tiagohs.helpers.extensions.loadImage
 import kotlinx.android.synthetic.main.adapter_movie_item.view.*
 
 class MovieItemAdapter(
@@ -56,7 +56,11 @@ class MovieItemAdapter(
                 itemView.movieCharacter.text = "as ${movie.character}"
             }
 
-            itemView.image.loadImage(movie.posterPath?.imageUrlFromTMDB(ImageSize.PROFILE_185))
+            itemView.image.loadImage(
+                movie.posterPath?.imageUrlFromTMDB(
+                    ImageSize.PROFILE_185
+                )
+            )
         }
 
         override fun onClick(v: View?) {

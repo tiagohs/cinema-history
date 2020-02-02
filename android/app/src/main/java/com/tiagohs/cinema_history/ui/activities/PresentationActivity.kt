@@ -4,20 +4,20 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
-import androidx.core.graphics.drawable.DrawableCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ViewPosition
-import com.tiagohs.cinema_history.helpers.extensions.*
-import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
-import com.tiagohs.cinema_history.models.Quote
-import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
-import com.tiagohs.cinema_history.presenter.PresentationPresenter
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.setImageDrawableColored
+import com.tiagohs.helpers.extensions.*
+import com.tiagohs.helpers.utils.AnimationUtils
+import com.tiagohs.entities.main_topics.MainTopicItem
+import com.tiagohs.domain.presenter.PresentationPresenter
 import com.tiagohs.cinema_history.ui.adapters.SumarioPresentationAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
-import com.tiagohs.cinema_history.ui.views.PresentationView
+import com.tiagohs.entities.enums.ViewPosition
+import com.tiagohs.domain.views.PresentationView
 import kotlinx.android.synthetic.main.activity_presentation.*
 import javax.inject.Inject
 
@@ -114,7 +114,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
         quoteContainer.layoutParams = layoutParams
     }
 
-    private fun bindQuoteColor(quote: Quote) {
+    private fun bindQuoteColor(quote: com.tiagohs.entities.Quote) {
         quote.textColor?.let {
             quoteText.setTextColor(getResourceColor(it))
             quoteTextAuthor.setTextColor(getResourceColor(it))
@@ -132,7 +132,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
         this.mainTopic = mainTopic ?: return
 
         val adapter = SumarioPresentationAdapter(this, mainTopic.sumarioList)
-        adapter.onSumarioClick = { sumario,  position ->
+        adapter.onSumarioClick = { _,  position ->
             startActivityWithSlideAnimation(HistoryPagesActivity.newIntent(this, mainTopic, position))
         }
 

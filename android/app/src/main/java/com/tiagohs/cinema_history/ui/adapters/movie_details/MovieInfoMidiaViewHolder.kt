@@ -5,10 +5,10 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.tools.SpaceOffsetDecoration
-import com.tiagohs.cinema_history.models.tmdb.Image
-import com.tiagohs.cinema_history.models.tmdb.movie.Movie
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.tools.SpaceOffsetDecoration
+import com.tiagohs.entities.tmdb.Image
+import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.cinema_history.ui.adapters.MovieVideoAdapter
 import com.tiagohs.cinema_history.ui.adapters.MovieWallpaperAdapter
 import kotlinx.android.synthetic.main.adapter_movie_info_midia.view.*

@@ -1,23 +1,13 @@
 package com.tiagohs.cinema_history.ui.adapters.page
 
 import android.content.Context
-import android.graphics.Typeface
 import android.view.View
-import android.widget.LinearLayout
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.squareup.picasso.Picasso
 import com.stfalcon.imageviewer.StfalconImageViewer
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageType
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.helpers.extensions.styledString
-import com.tiagohs.cinema_history.models.contents.ContentImage
-import com.tiagohs.cinema_history.models.contents.ContentText
-import com.tiagohs.cinema_history.models.image.Image
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.entities.contents.ContentImage
+import com.tiagohs.entities.image.Image
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
-import kotlinx.android.synthetic.main.adapter_page_gif.view.*
 
 class ImageViewHolder(
     val context: Context?,

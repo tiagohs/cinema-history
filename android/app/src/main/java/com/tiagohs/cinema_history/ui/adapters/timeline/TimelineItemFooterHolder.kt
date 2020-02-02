@@ -3,7 +3,7 @@ package com.tiagohs.cinema_history.ui.adapters.timeline
 import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.cinema_history.models.timeline.TimelineFooter
+import com.tiagohs.entities.timeline.TimelineFooter
 import kotlinx.android.synthetic.main.adapter_timeline_footer.view.*
 
 class TimelineItemFooterHolder(

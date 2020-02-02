@@ -5,10 +5,10 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.tools.SpaceOffsetDecoration
-import com.tiagohs.cinema_history.models.dto.MovieFilmographyDTO
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import com.tiagohs.cinema_history.ui.adapters.MovieItemAdapter
+import com.tiagohs.entities.dto.MovieFilmographyDTO
 import kotlinx.android.synthetic.main.adapter_movie_info_person_list.view.*
 
 

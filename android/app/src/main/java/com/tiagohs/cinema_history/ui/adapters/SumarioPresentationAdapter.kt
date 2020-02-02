@@ -6,16 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.models.Sumario
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
+import com.tiagohs.entities.Sumario
 import kotlinx.android.synthetic.main.adapter_sumario_presentation_item.view.*
 
 class SumarioPresentationAdapter(
     val context: Context,
-    val list: List<Sumario>
+    val list: List<com.tiagohs.entities.Sumario>
 ): RecyclerView.Adapter<SumarioPresentationAdapter.SumarioPresentationViewHolder>() {
 
-    var onSumarioClick: ((sumario: Sumario, position: Int) -> Unit)? = null
+    var onSumarioClick: ((sumario: com.tiagohs.entities.Sumario, position: Int) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SumarioPresentationViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_sumario_presentation_item, parent, false)
@@ -37,10 +36,10 @@ class SumarioPresentationAdapter(
             view.setOnClickListener(this)
         }
 
-        private var sumario: Sumario? = null
+        private var sumario: com.tiagohs.entities.Sumario? = null
         private var positionItem: Int = 0
 
-        fun bind(sumario: Sumario, position: Int) {
+        fun bind(sumario: com.tiagohs.entities.Sumario, position: Int) {
             this.sumario = sumario
             this.positionItem = position
 

@@ -3,14 +3,12 @@ package com.tiagohs.cinema_history.ui.adapters.person_details
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.ImageView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.extensions.openLink
-import com.tiagohs.cinema_history.models.tmdb.person.Person
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.openLink
+import com.tiagohs.entities.tmdb.person.Person
 import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.*
 import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.facebookContainer
 import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.facebookContainerClickable

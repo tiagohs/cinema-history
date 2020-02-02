@@ -7,12 +7,12 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.AccelerateInterpolator
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.models.tmdb.person.Person
-import com.tiagohs.cinema_history.presenter.PersonDetailsPresenter
+import com.tiagohs.entities.tmdb.person.Person
+import com.tiagohs.domain.presenter.PersonDetailsPresenter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.cinema_history.ui.fragments.PersonDetailsFragment
 import com.tiagohs.cinema_history.ui.fragments.PersonDetailsSpecialFragment
-import com.tiagohs.cinema_history.ui.views.PersonDetailsView
+import com.tiagohs.domain.views.PersonDetailsView
 import kotlinx.android.synthetic.main.activity_person_details.*
 import javax.inject.Inject
 

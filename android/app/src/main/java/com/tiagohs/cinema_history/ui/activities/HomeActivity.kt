@@ -4,14 +4,14 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageType
-import com.tiagohs.cinema_history.enums.MainTopicsType
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.helpers.extensions.startActivityWithSlideAnimation
-import com.tiagohs.cinema_history.models.image.Image
-import com.tiagohs.cinema_history.models.image.ImageResize
-import com.tiagohs.cinema_history.models.image.ImageStyle
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.startActivityWithSlideAnimation
+import com.tiagohs.entities.image.Image
+import com.tiagohs.entities.image.ImageResize
+import com.tiagohs.entities.image.ImageStyle
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
+import com.tiagohs.entities.enums.ImageType
+import com.tiagohs.entities.enums.MainTopicsType
 import kotlinx.android.synthetic.main.activity_home.*
 
 

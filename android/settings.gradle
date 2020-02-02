@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':uicomponents', ':helpers', ':data', ':domain', ':entities'
 rootProject.name='cinema-history'

@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.stfalcon.imageviewer.StfalconImageViewer
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageSize
-import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.models.tmdb.Image
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.entities.tmdb.Image
+import com.tiagohs.entities.enums.ImageSize
+import com.tiagohs.helpers.extensions.imageUrlFromTMDB
 import kotlinx.android.synthetic.main.adapter_movie_wallpaper.view.*
 
 class MovieWallpaperAdapter(

@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.ImageSize
-import com.tiagohs.cinema_history.helpers.extensions.imageUrlFromTMDB
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.models.dto.PersonDTO
+import com.tiagohs.entities.dto.PersonDTO
+import com.tiagohs.entities.enums.ImageSize
+import com.tiagohs.helpers.extensions.imageUrlFromTMDB
+import com.tiagohs.helpers.extensions.loadImage
 import kotlinx.android.synthetic.main.adapter_person.view.*
 
 class PersonAdapter(

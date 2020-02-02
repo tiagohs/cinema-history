@@ -4,14 +4,14 @@ import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.models.timeline.TimelineResult
-import com.tiagohs.cinema_history.models.timeline.TimelineTitle
-import com.tiagohs.cinema_history.presenter.TimelinePresenter
+import com.tiagohs.entities.timeline.TimelineResult
+import com.tiagohs.entities.timeline.TimelineTitle
+import com.tiagohs.domain.presenter.TimelinePresenter
 import com.tiagohs.cinema_history.ui.activities.TimelineActivity
 import com.tiagohs.cinema_history.ui.adapters.TimelineAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import com.tiagohs.cinema_history.ui.configs.BaseFragment
-import com.tiagohs.cinema_history.ui.views.TimelineView
+import com.tiagohs.domain.views.TimelineView
 import kotlinx.android.synthetic.main.fragment_timeline.*
 import javax.inject.Inject
 

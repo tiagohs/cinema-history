@@ -11,11 +11,10 @@ import android.view.animation.DecelerateInterpolator
 import android.view.animation.Interpolator
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.extensions.loadImage
-import com.tiagohs.cinema_history.models.Sumario
-import com.tiagohs.cinema_history.models.image.ImageResize
-import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.entities.image.ImageResize
+import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.ui.adapters.PagePagerAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
 import kotlinx.android.synthetic.main.activity_history_pages.*
@@ -24,7 +23,7 @@ import kotlinx.android.synthetic.main.activity_history_pages.*
 class HistoryPagesActivity: BaseActivity() {
 
     var mainTopic: MainTopicItem? = null
-    var sumario: Sumario? = null
+    var sumario: com.tiagohs.entities.Sumario? = null
     var itemSelectedPosition = 0
     var adapterPager: PagePagerAdapter? = null
 
@@ -89,6 +88,7 @@ class HistoryPagesActivity: BaseActivity() {
     private fun setupFooter() {
         val image = mainTopic?.image ?: return
         image.imageStyle?.resize = ImageResize(width = 60.convertIntToDp(this), height = 80.convertIntToDp(this))
+        image.imageStyle?.scaleType = "center_crop"
 
         toolbarImage.loadImage(image)
         toolbarImageCardContainer.setOnClickListener {

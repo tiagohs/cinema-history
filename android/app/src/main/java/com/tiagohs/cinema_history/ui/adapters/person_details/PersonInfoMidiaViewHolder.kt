@@ -5,13 +5,9 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.helpers.extensions.convertIntToDp
-import com.tiagohs.cinema_history.helpers.extensions.openLink
-import com.tiagohs.cinema_history.helpers.tools.SpaceOffsetDecoration
-import com.tiagohs.cinema_history.models.tmdb.Image
-import com.tiagohs.cinema_history.models.tmdb.movie.Video
-import com.tiagohs.cinema_history.models.tmdb.person.Person
-import com.tiagohs.cinema_history.ui.adapters.MovieVideoAdapter
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.tools.SpaceOffsetDecoration
+import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.cinema_history.ui.adapters.MovieWallpaperAdapter
 import com.tiagohs.cinema_history.ui.adapters.PersonVideoAdapter
 import kotlinx.android.synthetic.main.adapter_person_info_special_midia.view.*

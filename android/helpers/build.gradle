@@ -1,0 +1,74 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["compileSDK"]
+    buildToolsVersion globalConfiguration["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["minSDK"]
+        targetSdkVersion globalConfiguration["targetSDK"]
+
+        versionCode globalConfiguration["versionCode"]
+        versionName globalConfiguration["versionName"]
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':entities')
+
+    def dependencies = rootProject.ext.dependencies
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
+    // Android Core / Material
+    implementation dependencies.appcompat
+    implementation dependencies.androidxCore
+    implementation dependencies.constrantlayout
+    implementation dependencies.androidMaterial
+    implementation dependencies.browser
+    implementation dependencies.androidMaterial2
+
+    // Tools
+    implementation dependencies.timber
+
+    // Rx
+    implementation dependencies.rxAndroid
+    implementation dependencies.rxJava
+    implementation dependencies.rxPreferences
+
+    // Retrofit
+    implementation dependencies.retrofit2
+    implementation dependencies.retrofit2JacksonConverter
+    implementation dependencies.retrofit2GsonConverter
+    implementation dependencies.retrofit2RxJavaAdapter
+
+    // Okhttp3
+    implementation dependencies.okhttp3
+    implementation dependencies.okhttp3LoggingInterceptor
+
+    // Glide
+    implementation dependencies.glide
+
+    // Firebase
+    implementation dependencies.firebaseStorage
+    implementation dependencies.firebaseUiStorage
+
+    // Test Tools
+    testImplementation dependencies.junit
+    implementation dependencies.testRunner
+    implementation dependencies.espresso
+}

@@ -2,6 +2,7 @@ package com.tiagohs.cinema_history.dagger
 
 import com.tiagohs.cinema_history.dagger.modules.AppModule
 import com.tiagohs.cinema_history.dagger.modules.PresenterModule
+import com.tiagohs.cinema_history.dagger.modules.RetrofitModule
 import com.tiagohs.cinema_history.dagger.modules.ServiceModule
 import com.tiagohs.cinema_history.ui.activities.*
 import com.tiagohs.cinema_history.ui.fragments.HistoryPageFragment
@@ -12,7 +13,8 @@ import javax.inject.Singleton
 @Component(modules = [
     AppModule::class,
     PresenterModule::class,
-    ServiceModule::class])
+    ServiceModule::class,
+    RetrofitModule::class])
 @Singleton
 interface AppComponent {
 

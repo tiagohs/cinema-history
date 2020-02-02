@@ -4,8 +4,11 @@ import android.content.Context
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.cinema_history.helpers.extensions.*
-import com.tiagohs.cinema_history.models.timeline.TimelineItem
+import com.tiagohs.cinema_history.extensions.setupLinkableTextView
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.loadImageBlackAndWhite
+import com.tiagohs.helpers.extensions.*
+import com.tiagohs.entities.timeline.TimelineItem
 import kotlinx.android.synthetic.main.adapter_timeline_item.view.*
 
 class TimelineItemViewHolder(

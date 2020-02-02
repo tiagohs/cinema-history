@@ -4,9 +4,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.cinema_history.enums.ContentType
-import com.tiagohs.cinema_history.models.contents.*
+import com.tiagohs.entities.contents.*
 import com.tiagohs.cinema_history.ui.adapters.page.*
+import com.tiagohs.entities.enums.ContentType
 
 class PageContentAdapter(
     val context: Context?,

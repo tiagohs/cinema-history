@@ -5,34 +5,25 @@ import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Build
 import android.os.Bundle
-import android.transition.Fade
-import android.transition.Slide
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.*
-import android.view.animation.AccelerateInterpolator
-import android.view.animation.DecelerateInterpolator
-import android.widget.TextView
-import androidx.core.app.ActivityOptionsCompat
-import androidx.core.util.Pair
-import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.MainTopicsType
-import com.tiagohs.cinema_history.helpers.extensions.getResourceColor
-import com.tiagohs.cinema_history.helpers.extensions.setScreenBackgroundColor
-import com.tiagohs.cinema_history.helpers.extensions.setStatusBarColor
-import com.tiagohs.cinema_history.helpers.extensions.startActivityWithSlideAnimation
-import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
-import com.tiagohs.cinema_history.models.main_topics.DirectorsMainTopic
-import com.tiagohs.cinema_history.models.main_topics.MainTopic
-import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
-import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
-import com.tiagohs.cinema_history.presenter.MainTopicsPresenter
+import com.tiagohs.helpers.extensions.getResourceColor
+import com.tiagohs.helpers.extensions.setScreenBackgroundColor
+import com.tiagohs.helpers.extensions.setStatusBarColor
+import com.tiagohs.helpers.extensions.startActivityWithSlideAnimation
+import com.tiagohs.helpers.utils.AnimationUtils
+import com.tiagohs.entities.main_topics.DirectorsMainTopic
+import com.tiagohs.entities.main_topics.MainTopic
+import com.tiagohs.entities.main_topics.MainTopicItem
+import com.tiagohs.entities.main_topics.MilMoviesMainTopic
+import com.tiagohs.domain.presenter.MainTopicsPresenter
 import com.tiagohs.cinema_history.ui.adapters.MainTopicsAdapter
 import com.tiagohs.cinema_history.ui.configs.BaseActivity
-import com.tiagohs.cinema_history.ui.views.MainTopicsView
+import com.tiagohs.entities.enums.MainTopicsType
+import com.tiagohs.domain.views.MainTopicsView
 import kotlinx.android.synthetic.main.activity_main_topics.*
 import javax.inject.Inject
 
@@ -128,7 +119,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
     override fun bindMainTopics(mainTopics: List<MainTopic>) {
         val mainTopicsType = mainTopicsType?: return
         adapter = MainTopicsAdapter(this, mainTopicsType, mainTopics, isDarkMode)
-        adapter?.onMainTopicSelected = { mainTopic, view -> onMainTopicSelected(mainTopic, view) }
+        adapter?.onMainTopicSelected = { mainTopic, _ -> onMainTopicSelected(mainTopic) }
 
         mainTopicsList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         mainTopicsList.adapter = adapter
@@ -136,7 +127,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
         mainTopicsList.startAnimation(AnimationUtils.createFadeInAnimation(300, 200))
     }
 
-    private fun onMainTopicSelected(mainTopic: MainTopic, view: View?) {
+    private fun onMainTopicSelected(mainTopic: MainTopic) {
         val intent = when (mainTopicsType) {
             MainTopicsType.HISTORY_CINEMA -> PresentationActivity.newInstance(this, mainTopic as MainTopicItem)
             MainTopicsType.MIL_MOVIES -> MilMoviesPresentationActivity.newIntent(mainTopic as MilMoviesMainTopic, this)

@@ -105,7 +105,7 @@
       "image_type": "local",
       "url": "img_sevensamurais",
       "style": {
-        "scale_type": "center_inside",
+        "scale_type": "center_crop",
         "resize": {
           "height": 250
         }
@@ -151,7 +151,7 @@
         "duration": 1000
       },
       "style": {
-        "scale_type": "center_inside",
+        "scale_type": "center_crop",
         "resize": {
           "height": 250
         }
@@ -193,7 +193,7 @@
       "image_type": "local",
       "url": "img_exorcist",
       "style": {
-        "scale_type": "center_inside",
+        "scale_type": "center_crop",
         "resize": {
           "height": 250
         }
@@ -241,7 +241,7 @@
       "image_type": "local",
       "url": "img_pulp_fiction",
       "style": {
-        "scale_type": "center_inside",
+        "scale_type": "center_crop",
         "resize": {
           "height": 250
         }
@@ -291,7 +291,7 @@
         "resize": {
           "height": 400
         },
-        "scale_type": "center_inside"
+        "scale_type": "center_crop"
       }
     },
     "presentation_image": {

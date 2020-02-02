@@ -6,19 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.graphics.drawable.DrawableCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.enums.MainTopicItemLayoutType
-import com.tiagohs.cinema_history.enums.MainTopicsType
-import com.tiagohs.cinema_history.helpers.extensions.*
-import com.tiagohs.cinema_history.helpers.utils.AnimationUtils
-import com.tiagohs.cinema_history.models.Quote
-import com.tiagohs.cinema_history.models.main_topics.DirectorsMainTopic
-import com.tiagohs.cinema_history.models.main_topics.MainTopic
-import com.tiagohs.cinema_history.models.main_topics.MainTopicItem
-import com.tiagohs.cinema_history.models.main_topics.MilMoviesMainTopic
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.setImageDrawableColored
+import com.tiagohs.helpers.extensions.*
+import com.tiagohs.helpers.utils.AnimationUtils
+import com.tiagohs.entities.main_topics.DirectorsMainTopic
+import com.tiagohs.entities.main_topics.MainTopic
+import com.tiagohs.entities.main_topics.MainTopicItem
+import com.tiagohs.entities.main_topics.MilMoviesMainTopic
+import com.tiagohs.entities.enums.MainTopicItemLayoutType
+import com.tiagohs.entities.enums.MainTopicsType
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.contentBackground
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.description
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainImage
@@ -78,7 +77,7 @@ class MainTopicsAdapter(
         when (layoutType) {
             MainTopicItemLayoutType.QUOTE.ordinal -> {
                 val quoteHoder = holder as? QuoteViewHolder ?: return
-                val quote = mainTopic as? Quote ?: return
+                val quote = mainTopic as? com.tiagohs.entities.Quote ?: return
 
                 quoteHoder.bind(quote)
             }
@@ -100,6 +99,11 @@ class MainTopicsAdapter(
                         val directorsMainTopic = mainTopic as? DirectorsMainTopic ?: return
 
                         mainTopicHoder.bindDirectorMainTopic(directorsMainTopic)
+                    }
+                    else -> {
+                        val mainTopicItem = mainTopic as? MainTopicItem ?: return
+
+                        mainTopicHoder.bind(mainTopicItem)
                     }
                 }
 
@@ -224,7 +228,7 @@ class MainTopicsAdapter(
         val view: View
     ): RecyclerView.ViewHolder(view) {
 
-        fun bind(quote: Quote) {
+        fun bind(quote: com.tiagohs.entities.Quote) {
             val context = context ?: return
             val quoteColor =  if (isDarkMode) R.color.md_white_1000 else R.color.md_black_1000
 
