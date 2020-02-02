@@ -4,9 +4,9 @@ import com.tiagohs.cinema_history.dagger.modules.AppModule
 import com.tiagohs.cinema_history.dagger.modules.PresenterModule
 import com.tiagohs.cinema_history.dagger.modules.RetrofitModule
 import com.tiagohs.cinema_history.dagger.modules.ServiceModule
-import com.tiagohs.cinema_history.ui.activities.*
-import com.tiagohs.cinema_history.ui.fragments.HistoryPageFragment
-import com.tiagohs.cinema_history.ui.fragments.TimelineFragment
+import com.tiagohs.cinema_history.presentation.activities.*
+import com.tiagohs.cinema_history.presentation.fragments.HistoryPageFragment
+import com.tiagohs.cinema_history.presentation.fragments.TimelineFragment
 import dagger.Component
 import javax.inject.Singleton
 

@@ -2,7 +2,7 @@ package com.tiagohs.cinema_history.extensions
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.cinema_history.ui.adapters.MovieItemSpecialAdapter
+import com.tiagohs.cinema_history.presentation.adapters.MovieItemSpecialAdapter
 
 
 fun RecyclerView.setupParallaxScrollListener() {

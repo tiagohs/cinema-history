@@ -4,8 +4,8 @@ import android.app.Activity
 import android.content.Context
 import android.widget.TextView
 import com.google.gson.Gson
-import com.tiagohs.cinema_history.ui.activities.MovieDetailsActivity
-import com.tiagohs.cinema_history.ui.activities.PersonDetailsActivity
+import com.tiagohs.cinema_history.presentation.activities.MovieDetailsActivity
+import com.tiagohs.cinema_history.presentation.activities.PersonDetailsActivity
 import com.tiagohs.entities.enums.TextViewLinkScreenType
 import com.tiagohs.entities.enums.TextViewUrlType
 import com.tiagohs.entities.textview_url.TextViewLinkOnline
