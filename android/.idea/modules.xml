@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/android-app.iml" filepath="$PROJECT_DIR$/app/android-app.iml" group="cinema-history/app" />
+      <module fileurl="file://$PROJECT_DIR$/android-cinema-history.iml" filepath="$PROJECT_DIR$/android-cinema-history.iml" group="cinema-history" />
+      <module fileurl="file://$PROJECT_DIR$/data/android-data.iml" filepath="$PROJECT_DIR$/data/android-data.iml" group="cinema-history/data" />
+      <module fileurl="file://$PROJECT_DIR$/domain/android-domain.iml" filepath="$PROJECT_DIR$/domain/android-domain.iml" group="cinema-history/domain" />
+      <module fileurl="file://$PROJECT_DIR$/entities/android-entities.iml" filepath="$PROJECT_DIR$/entities/android-entities.iml" group="cinema-history/entities" />
+      <module fileurl="file://$PROJECT_DIR$/helpers/android-helpers.iml" filepath="$PROJECT_DIR$/helpers/android-helpers.iml" group="cinema-history/helpers" />
+      <module fileurl="file://$PROJECT_DIR$/uicomponents/android-uicomponents.iml" filepath="$PROJECT_DIR$/uicomponents/android-uicomponents.iml" group="cinema-history/uicomponents" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cinema-history.iml" filepath="$PROJECT_DIR$/cinema-history.iml" />
       <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" />

@@ -49,17 +49,17 @@ dependencies {
     implementation dependencies.rxPreferences
 
     // Dagger
-    implementation dependencies.dagger
-    annotationProcessor dependencies.daggerCompiler
-    kapt dependencies.daggerCompilerKtx
+    implementation 'com.google.dagger:dagger:2.28'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.28'
+    kapt 'com.google.dagger:dagger-compiler:2.28'
 
     // Retrofit
-    implementation dependencies.retrofit2
-    implementation dependencies.retrofit2JacksonConverter
-    implementation dependencies.retrofit2GsonConverter
-    implementation dependencies.retrofit2RxJavaAdapter
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
 
     // Okhttp3
-    implementation dependencies.okhttp3
-    implementation dependencies.okhttp3LoggingInterceptor
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
 }
