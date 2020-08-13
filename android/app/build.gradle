@@ -79,6 +79,7 @@ dependencies {
     // Glide
     implementation dependencies.glide
     kapt dependencies.glideCompiler
+    kapt dependencies.lifecycleCompiler
 
     // Firebase
     implementation dependencies.firebaseStorage

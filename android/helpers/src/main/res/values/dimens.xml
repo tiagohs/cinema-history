@@ -1,0 +1,38 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="viewpager_next_item_visible">36dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">42dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_0.2x">2dp</dimen>
+    <dimen name="activity_vertical_margin_0.5x">5dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin_1.2x">10dp</dimen>
+    <dimen name="activity_vertical_margin_1.5x">12dp</dimen>
+    <dimen name="activity_vertical_margin_2x">16dp</dimen>
+    <dimen name="activity_vertical_margin_2.2x">18dp</dimen>
+    <dimen name="activity_vertical_margin_2.5x">20dp</dimen>
+    <dimen name="activity_vertical_margin_3x">24dp</dimen>
+    <dimen name="activity_vertical_margin_4x">32dp</dimen>
+    <dimen name="activity_vertical_margin_5x">40dp</dimen>
+    <dimen name="activity_vertical_margin_6x">48dp</dimen>
+
+    <!-- FONT SIZE -->
+    <dimen name="text_size_zeplin_12pt">9sp</dimen>
+    <dimen name="text_size_zeplin_14pt">10sp</dimen>
+    <dimen name="text_size_zeplin_16pt">11sp</dimen>
+    <dimen name="text_size_zeplin_18pt">12sp</dimen>
+    <dimen name="text_size_zeplin_22pt">14sp</dimen>
+    <dimen name="text_size_zeplin_24pt">15sp</dimen>
+    <dimen name="text_size_zeplin_26pt">16sp</dimen>
+    <dimen name="text_size_zeplin_28pt">18sp</dimen>
+    <dimen name="text_size_zeplin_32pt">20sp</dimen>
+    <dimen name="text_size_zeplin_36pt">24sp</dimen>
+
+    <!-- =========== COMPONENTS =========== -->
+
+    <!-- PAGE TOOLBAR BOTTOM -->
+    <dimen name="page_toolbar_bottom_image_card_width">60dp</dimen>
+    <dimen name="page_toolbar_bottom_image_card_height">80dp</dimen>
+</resources>

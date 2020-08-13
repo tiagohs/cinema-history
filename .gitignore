@@ -54,9 +54,17 @@ android/.idea/
 *~
 *.swp
 
-.gradle/1.10/taskArtifacts/cache.properties
-.gradle/1.10/taskArtifacts/outputFileStates.bin
-build/intermediates/dex-cache/cache.xml
+android/.idea/
+android/.gradle
+android/local.properties
+android/out
+android/*/build
+android/build
+android/*/production
+
+android/.gradle/1.10/taskArtifacts/cache.properties
+android/.gradle/1.10/taskArtifacts/outputFileStates.bin
+android/build/intermediates/dex-cache/cache.xml
 # gradle.properties
 
 #IOS

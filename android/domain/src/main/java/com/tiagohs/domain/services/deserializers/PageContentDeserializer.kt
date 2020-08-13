@@ -19,6 +19,7 @@ class PageContentDeserializer: JsonDeserializer<Content> {
 
         return when (type) {
             ContentType.TEXT -> Gson().fromJson(obj, ContentText::class.java)
+            ContentType.BLOCK_SPECIAL -> Gson().fromJson(obj, ContentBlockSpecial::class.java)
             ContentType.GIF -> Gson().fromJson(obj, ContentGif::class.java)
             ContentType.SLIDE -> Gson().fromJson(obj, ContentSlide::class.java)
             ContentType.IMAGE -> Gson().fromJson(obj, ContentImage::class.java)

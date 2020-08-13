@@ -25,7 +25,10 @@ enum class ContentType(
     AUDIO_STREAM("audio_stream"),
 
     @SerializedName("quote")
-    QUOTE("quote");
+    QUOTE("quote"),
+
+    @SerializedName("block_special")
+    BLOCK_SPECIAL("block_special");
 
     companion object {
         fun getContentType(type: String): ContentType {

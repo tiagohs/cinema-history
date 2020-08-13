@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
@@ -61,7 +62,11 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
 
     // Glide
+
+    // Glide
     implementation dependencies.glide
+    kapt dependencies.glideCompiler
+    kapt dependencies.lifecycleCompiler
 
     // Firebase
     implementation 'com.google.firebase:firebase-storage:19.1.1'

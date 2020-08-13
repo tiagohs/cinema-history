@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable
 import android.widget.ImageView
 import androidx.core.graphics.drawable.DrawableCompat
 import com.bumptech.glide.Glide
+import com.bumptech.glide.RequestManager
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.engine.GlideException
@@ -20,6 +21,7 @@ import com.tiagohs.entities.image.ImageStyle
 import com.tiagohs.entities.enums.ImageScaleType
 import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.helpers.R
+import com.tiagohs.helpers.tools.GlideApp
 
 fun ImageView.setImageDrawableColored(drawableRes: Int, colorName: String) {
     val drawable = context.getResourceDrawable(drawableRes) ?: return
@@ -64,17 +66,23 @@ fun ImageView.loadImage(
     errorPlaceholder: Int? = R.drawable.placeholder_movie_poster,
     onFinished: (() -> Unit)? = null) {
 
-    val glide = Glide.with(context)
+    val glide = GlideApp.with(context)
     val glideRequest = when (image.imageType) {
-        ImageType.ONLINE -> glide.load(image.url)
-        ImageType.LOCAL -> glide.load(context.getResourceDrawable(image.url))
+        ImageType.ONLINE -> {
+            glide.load(image.url)
+        }
+        ImageType.LOCAL -> {
+            glide.load(context.getResourceDrawable(image.url))
+        }
         ImageType.ONLINE_FIREBASE -> {
             val storage = FirebaseStorage.getInstance()
             val storageRef = storage.getReferenceFromUrl("gs://cinema-history.appspot.com")
             val imageRef = storageRef.child(image.url)
 
             glide.load(imageRef)
-        } else -> glide.load(image.url)
+        } else -> {
+            glide.load(image.url)
+        }
     }
 
     placeholder?.let { glideRequest.placeholder(it) }

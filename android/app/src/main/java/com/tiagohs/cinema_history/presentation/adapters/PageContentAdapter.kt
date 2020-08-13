@@ -24,6 +24,10 @@ class PageContentAdapter(
                 val view = LayoutInflater.from(parent.context).inflate(TextViewHolder.LAYOUT_ID, parent, false)
                 TextViewHolder(context, view)
             }
+            ContentType.BLOCK_SPECIAL.ordinal -> {
+                val view = LayoutInflater.from(parent.context).inflate(BlockSpecialViewHolder.LAYOUT_ID, parent, false)
+                BlockSpecialViewHolder(context, view)
+            }
             ContentType.GIF.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(GifViewHolder.LAYOUT_ID, parent, false)
                 GifViewHolder(context, view)
@@ -68,6 +72,12 @@ class PageContentAdapter(
                 val textViewHolder = holder as? TextViewHolder ?: return
 
                 textViewHolder.bind(pageTextContent)
+            }
+            ContentType.BLOCK_SPECIAL.ordinal -> {
+                val pageContentBlockSpecial = contentList[position] as? ContentBlockSpecial ?: return
+                val blockSpecialViewHolder = holder as? BlockSpecialViewHolder ?: return
+
+                blockSpecialViewHolder.bind(pageContentBlockSpecial)
             }
             ContentType.GIF.ordinal -> {
                 val pageGifContent = contentList[position] as? ContentGif ?: return

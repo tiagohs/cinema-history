@@ -40,12 +40,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/toolbarImageCardContainer"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="5dp"
+            app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
+            app:cardElevation="@dimen/activity_vertical_margin_0.5x"
             android:clickable="true"
             android:focusable="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
 
@@ -54,24 +54,21 @@
                 android:layout_height="wrap_content"
                 android:background="@color/md_black_1000"
                 android:id="@+id/toolbarImageContainer"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp">
+                android:padding="@dimen/activity_vertical_margin_0.5x">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/toolbarImageCard"
-                    android:layout_width="60dp"
-                    android:layout_height="80dp"
-                    app:cardCornerRadius="5dp"
+                    android:layout_width="@dimen/page_toolbar_bottom_image_card_width"
+                    android:layout_height="@dimen/page_toolbar_bottom_image_card_height"
+                    app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
                         android:id="@+id/toolbarImage"
-                        android:layout_width="60dp"
-                        android:layout_height="80dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:background="@color/md_black_1000"
                         android:scaleType="centerCrop" />
 
@@ -80,11 +77,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SUMARIO"
-                    android:textSize="12sp"
+                    android:text="@string/sumario"
+                    android:textSize="@dimen/text_size_zeplin_18pt"
                     android:textColor="@color/md_white_1000"
                     android:fontFamily="@font/proxima_nova_bold"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/toolbarImageCard"
@@ -97,7 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="?attr/actionBarSize"
             android:id="@+id/toolbarNextButton"
-            android:text="Próximo"
+            android:text="@string/next"
             android:fontFamily="@font/proxima_nova_regular"
             android:background="@android:color/transparent"
             android:elevation="0dp"
