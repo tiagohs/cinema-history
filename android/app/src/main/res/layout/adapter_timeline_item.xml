@@ -181,7 +181,7 @@
             android:id="@+id/itemDescription"
             android:textColor="@color/md_black_1000"
             android:textColorLink="@color/md_yellow_A700"
-            android:fontFamily="@font/opensans_regular"
+            android:fontFamily="@font/proxima_nova_regular"
             android:textSize="12sp"
             android:lineSpacingMultiplier="0.8"
             android:textAlignment="textStart"

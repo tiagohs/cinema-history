@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/profileContent"
         android:textColor="@color/md_grey_300"
-        android:fontFamily="@font/roboto_regular"
+        android:fontFamily="@font/proxima_nova_regular"
         android:textSize="14sp"
         android:text="Martin Scorsese e o roteirista Jay Cocks escreveram um tratamento inicial para o livro de Shusaku Endo ainda na década de 1990. A ideia inicial era que o diretor rodasse o longa-metragem logo após concluir Gangues de Nova York (2002). Entretanto, dificuldades para obter a aprovação do orçamento junto a alguma produtora fizeram com que o projeto fosse adiado por cerca de 15 anos."
         android:includeFontPadding="false"

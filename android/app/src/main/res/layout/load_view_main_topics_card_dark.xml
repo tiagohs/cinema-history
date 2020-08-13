@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/description"
-            android:fontFamily="@font/opensans_light"
+            android:fontFamily="@font/proxima_nova_regular"
             android:textSize="14sp"
             android:textColor="@color/md_white_1000"
             android:layout_marginTop="10dp"

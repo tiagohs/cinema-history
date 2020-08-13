@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/quoteText"
         android:textColor="@color/md_white_1000"
-        android:fontFamily="@font/opensans_regular"
+        android:fontFamily="@font/proxima_nova_regular"
         android:textSize="14sp"
         android:textAlignment="center"
         android:layout_marginTop="5dp"

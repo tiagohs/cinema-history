@@ -21,7 +21,7 @@
         android:id="@+id/sumarioTitle"
         android:textSize="18sp"
         android:textColor="@color/md_black_1000"
-        android:fontFamily="@font/roboto_bold"
+        android:fontFamily="@font/proxima_nova_bold"
         android:textAllCaps="true" />
 
     <TextView
@@ -32,6 +32,6 @@
         android:id="@+id/sumarioDescription"
         android:textSize="12sp"
         android:textColor="@color/md_black_1000"
-        android:fontFamily="@font/roboto_light" />
+        android:fontFamily="@font/proxima_nova_regular" />
 
 </LinearLayout>

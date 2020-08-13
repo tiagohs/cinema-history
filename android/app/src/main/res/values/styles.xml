@@ -7,7 +7,7 @@
         <item name="colorPrimaryDark">@color/md_black_1000</item>
         <item name="colorAccent">@color/md_blue_500</item>
 
-        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
 
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -37,11 +37,11 @@
 
     <style name="AppTheme.Expansed">
         <item name="android:textColor">@android:color/transparent</item>
-        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
     </style>
 
     <style name="AppTheme.Collalpsed">
-        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

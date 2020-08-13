@@ -67,7 +67,7 @@
                 app:layout_collapseMode="parallax"
                 app:layout_collapseParallaxMultiplier="0.3">
 
-                <com.app.adprogressbarlib.AdCircleProgress
+                <!--<com.app.adprogressbarlib.AdCircleProgress
                     android:id="@+id/pgb_progress"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
@@ -83,14 +83,14 @@
                     android:layout_marginBottom="40dp"
                     android:layout_marginStart="20dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent" />
+                    app:layout_constraintBottom_toBottomOf="parent" />-->
 
                 <Button
                     android:id="@+id/startHistoryButton"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Começar a Jornada"
-                    android:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/proxima_nova_bold"
                     android:background="@android:color/transparent"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
@@ -270,7 +270,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/md_white_1000"
-                            android:fontFamily="@font/opensans_light"
+                            android:fontFamily="@font/proxima_nova_regular"
                             android:textSize="14sp"
                             android:text="Do clássico ao underground, do cult ao noir, do terror ao romance, veja aqui os filmes que marcaram época e emocionaram pratéias no mundo todo."
                             android:paddingStart="16dp"
@@ -338,7 +338,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/md_black_1000"
-                            android:fontFamily="@font/opensans_light"
+                            android:fontFamily="@font/proxima_nova_regular"
                             android:textSize="14sp"
                             android:textAlignment="center"
                             android:text="Os principais acontecimentos no mundo do cinema organizada cronologicamente."
@@ -423,7 +423,7 @@
                             android:text="Conheça em Detalhes os maiores diretores do Cinema"
                             android:textSize="14sp"
                             android:textColor="@color/md_white_1000"
-                            android:fontFamily="@font/oswald_bold"
+                            android:fontFamily="@font/proxima_nova_regular"
                             android:textAllCaps="true"
                             android:layout_marginBottom="10dp"
                             android:layout_marginStart="10dp"

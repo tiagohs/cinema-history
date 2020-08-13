@@ -18,12 +18,14 @@ import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.entities.main_topics.MilMoviesMainTopic
 import com.tiagohs.entities.enums.MainTopicItemLayoutType
 import com.tiagohs.entities.enums.MainTopicsType
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.contentBackground
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.description
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainImage
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainSubtitle
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainTopicsContainer
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.title
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.comingSoonTagContainer
 import kotlinx.android.synthetic.main.adapter_main_topics_card_full.view.*
 import kotlinx.android.synthetic.main.adapter_main_topics_inter_quote.view.*
 
@@ -208,6 +210,17 @@ class MainTopicsAdapter(
 
             itemView.mainTopicsContainer.background = background
             itemView.mainTopicsContainer.setOnClickListener { onMainTopicSelected?.invoke(mainTopicItem, itemView) }
+
+            if (mainTopicItem.blocked) {
+                itemView.mainTopicsContainer.isClickable = false
+                itemView.mainTopicsContainer.alpha = 0.3f
+                itemView.comingSoonTagContainer.visibility = View.VISIBLE
+                return
+            }
+
+            itemView.mainTopicsContainer.isClickable = true
+            itemView.mainTopicsContainer.alpha = 1f
+            itemView.comingSoonTagContainer.visibility = View.GONE
         }
 
         fun setupAnimation() {

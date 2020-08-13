@@ -6,6 +6,7 @@
     "title": "De 1900 a 1929",
     "subtitle": "Parte 01",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "blocked": false,
     "image": {
       "image_type": "local",
       "url": "img_voyage",
@@ -52,6 +53,7 @@
     "title": "De 1930 a 1939",
     "subtitle": "Parte 02",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "blocked": true,
     "image": {
       "image_type": "local",
       "url": "img_snow_white",
@@ -101,6 +103,7 @@
     "title": "De 1940 a 1959",
     "subtitle": "Parte 03",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "blocked": true,
     "image": {
       "image_type": "local",
       "url": "img_sevensamurais",
@@ -143,6 +146,7 @@
     "title": "De 1960 a 1969",
     "subtitle": "Parte 04",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "blocked": true,
     "image": {
       "image_type": "local",
       "url": "img_2001_hal",
@@ -189,6 +193,7 @@
     "title": "De 1970 a 1989",
     "subtitle": "Parte 05",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "blocked": true,
     "image": {
       "image_type": "local",
       "url": "img_exorcist",
@@ -237,6 +242,7 @@
     "title": "De 1990 a 2009",
     "subtitle": "Parte 06",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "blocked": true,
     "image": {
       "image_type": "local",
       "url": "img_pulp_fiction",
@@ -279,6 +285,7 @@
     "title": "De 2010 até Hoje",
     "subtitle": "Parte 07",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue, justo id efficitur pellentesque, ipsum mauris fermentum nulla, sed hendrerit turpis nulla non quam.",
+    "blocked": true,
     "image": {
       "image_type": "local",
       "url": "img_iron_man",

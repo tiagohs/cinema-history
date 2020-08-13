@@ -9,7 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca0b0c0c-1a25-4599-b9f9-15e8c0b80ad2" name="Default Changelist" comment="">
+    <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
@@ -19,8 +19,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_1_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
@@ -50,18 +48,49 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_1_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jp_wasabeef_picasso_transformations_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jp_wasabeef_picasso_transformations_2_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/entities/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uicomponents/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/uicomponents/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/maintopics.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/maintopics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/MainTopicsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/MainTopicsAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_history_pages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_history_pages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_presentation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_presentation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_card_full.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_card_full.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_full.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_full.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_full_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_full_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_inter_quote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_main_topics_inter_quote.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_summary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_summary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_special_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_special_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_video.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_video.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_wallpaper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_wallpaper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_page_quote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_page_quote.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_page_text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_page_text.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_person.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_person.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_person_info_biography.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_person_info_biography.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_person_info_special_biography.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_person_info_special_biography.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_sumario_presentation_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_sumario_presentation_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_timeline_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_page.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_person_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_person_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/include_page_content_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_page_content_header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/load_view_history_pages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/load_view_history_pages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/load_view_main_topics_card_dark.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/load_view_main_topics_card_dark.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/load_view_main_topics_card_light.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/load_view_main_topics_card_light.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/load_view_movie_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/load_view_movie_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/load_view_person_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/load_view_person_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_company_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_company_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_genre_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_genre_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_person_department.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_person_department.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_person_profile_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_person_profile_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/main_topics/MainTopicItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/main_topics/MainTopicItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/audioplayer/res/layout/view_audio_player.xml" beforeDir="false" afterPath="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/audioplayer/res/layout/view_audio_player.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,68 +110,10 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="cinema-history" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Object" />
-        <option value="Kotlin Interface" />
-        <option value="layoutResourceFile" />
-        <option value="resourceFile" />
-        <option value="Kotlin Enum" />
-        <option value="layoutResourceFile_vertical" />
-        <option value="valueResourceFile" />
-        <option value="Kotlin File" />
-        <option value="Kotlin Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>BACKDROP</find>
-      <find>generateMovieInfoList</find>
-      <find>youtube.c</find>
-      <find>fadi</find>
-      <find>color</find>
-      <find>changeImageDimens</find>
-      <find>timeline_item_ti</find>
-      <find>gli</find>
-      <find>cardBackgroundColor</find>
-      <find>PARENT_I</find>
-      <find>layer</find>
-      <find>SimpleSnapHelper</find>
-      <find>amber</find>
-      <find>overf</find>
-      <find>Space</find>
-      <find>ic_a</find>
-      <find>youtu</find>
-      <find>&quot;https://www.youtube.com/watch?v=${trailerUrlKey}&quot;</find>
-      <find>youtube.com</find>
-      <find>atta</find>
-      <find>com.android.tools.build</find>
-      <find>buildToolsVersion</find>
-      <find>getTMDBIntercaptor</find>
-      <find>rati</find>
-      <find>wid</find>
-      <find>javaxAnnotation</find>
-      <find>SpaceOffsetDecoration</find>
-      <find>ScaleMovieImageTransformer</find>
-      <find>SettingPreferenceFragment</find>
-      <find>getLocaleLanguageISO</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/app/src/main/res/layout</dir>
-    </dirStrings>
-  </component>
-  <component name="GenerateSignedApkSettings">
-    <option name="BUILD_TARGET_KEY" value="apk" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1c6WmRPBWFdkHrDqdxAst4TKsvy" />
+  <component name="ProjectId" id="1ehA7UPd36oLCKwKczhJSlyzRxo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -150,67 +121,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="0044112202" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-20T19:35:59.941Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last.edited.regexp" value="http://year" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="project.structure.last.edited" value="Dependencies" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../rabisco-stickers" />
   </component>
-  <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Signing Configs" />
-    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.tiagohs.cinema_history.ui.adapters.decorators" />
-      <recent name="com.tiagohs.entities" />
-      <recent name="com.tiagohs.entities.dto" />
-      <recent name="com.tiagohs.entities.enums" />
-      <recent name="com.tiagohs.helpers.entities" />
-    </key>
-    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="com.tiagohs.cinema_history.ui.adapters" />
-      <recent name="com.tiagohs.cinema_history.ui.adapters.person_details" />
-      <recent name="com.tiagohs.cinema_history.ui.adapters.timeline" />
-      <recent name="com.tiagohs.cinema_history.models.tmdb" />
-      <recent name="com.tiagohs.cinema_history.ui.adapters.movie_details" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/res" />
-      <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/audioplayer/res/drawable" />
-      <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/audioplayer/res/layout" />
-      <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/gifviewer/res/layout" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/extensions" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.tiagohs.domain" />
-      <recent name="com.tiagohs.entities" />
-      <recent name="com.tiagohs.data" />
-      <recent name="com.tiagohs.helpers" />
-      <recent name="com.tiagohs.cinema_history" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/gifviewer/res/drawable" />
-      <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/gifviewer/res" />
-      <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/audioplayer/res" />
-      <recent name="$PROJECT_DIR$/helpers/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/extensions" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.tiagohs.cinema_history.helpers.tools" />
-      <recent name="com.tiagohs.cinema_history.helpers.utils" />
-      <recent name="com.tiagohs.cinema_history.services.config" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -219,7 +134,7 @@
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="android-app" />
+      <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -269,84 +184,46 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="android [sourceSets]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="sourceSets" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Android App.app" />
-      <item itemvalue="Gradle.android [sourceSets]" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.android [sourceSets]" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ca0b0c0c-1a25-4599-b9f9-15e8c0b80ad2" name="Default Changelist" comment="" />
-      <created>1570313237032</created>
+      <changelist id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="" />
+      <created>1594763284496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570313237032</updated>
+      <updated>1594763284496</updated>
     </task>
     <servers />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.json" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Notifications" timestamp="1592681971893">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597101515055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Notifications/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592681971893" />
-    <state x="477" y="252" key="#PSD" timestamp="1592683302361">
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597101002103" />
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597101515055" />
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1597285736724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="477" y="252" key="#PSD/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592683302361" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592681639108">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736724" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1597285736723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592681639108" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1592682109627">
+    <state width="1877" height="278" key="GridCell.Tab.0.center/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736723" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1597285736723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592682109627" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1592682276575">
+    <state width="1877" height="278" key="GridCell.Tab.0.left/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736723" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1597285736723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592682276575" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736723" />
+    <state x="579" y="13" width="764" height="1005" key="find.popup" timestamp="1597285923944">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="579" y="13" width="764" height="1005" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285923944" />
+    <state x="2383" y="10" width="611" height="804" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@1920.0.1536.832" timestamp="1594772873800" />
   </component>
 </project>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/jobName"
-    android:fontFamily="@font/roboto_light"
+    android:fontFamily="@font/proxima_nova_regular"
     android:textColor="@color/md_grey_300"
     android:textSize="12sp"
     android:background="@drawable/background_border_rectangle_white_1dp"
