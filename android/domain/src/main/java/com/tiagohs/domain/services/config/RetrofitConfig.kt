@@ -9,7 +9,9 @@ import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.timeline.Timeline
 import com.tiagohs.domain.services.deserializers.MainTopicDeserializer
 import com.tiagohs.domain.services.deserializers.PageContentDeserializer
+import com.tiagohs.domain.services.deserializers.ReferencesDeserializer
 import com.tiagohs.domain.services.deserializers.TimelineDeserializer
+import com.tiagohs.entities.references.Reference
 import com.tiagohs.helpers.network.FakeInterceptor
 import com.tiagohs.helpers.network.RxErrorHandlingCallAdapterFactory
 import okhttp3.*
@@ -160,6 +162,7 @@ class RetrofitConfig(
                 .registerTypeAdapter(Content::class.java, PageContentDeserializer())
                 .registerTypeAdapter(MainTopic::class.java, MainTopicDeserializer())
                 .registerTypeAdapter(Timeline::class.java, TimelineDeserializer())
+                .registerTypeAdapter(Reference::class.java, ReferencesDeserializer())
                 .create()
     }
 }

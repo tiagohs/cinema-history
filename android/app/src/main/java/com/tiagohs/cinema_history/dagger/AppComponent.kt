@@ -28,4 +28,5 @@ interface AppComponent {
     fun inject(personDetailsActivity: PersonDetailsActivity)
     fun inject(timelineActivity: TimelineActivity)
     fun inject(timelineFragment: TimelineFragment)
+    fun inject(referenceActivity: ReferenceActivity)
 }

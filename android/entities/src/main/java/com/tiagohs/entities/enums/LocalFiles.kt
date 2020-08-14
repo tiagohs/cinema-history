@@ -6,6 +6,8 @@ enum class LocalFiles(
     var path: String,
     var raw: String
 ) {
+    REFERENCES("/references", "local/references.json"),
+
     TIMELINE_LIST("/timelines", "local/timelines/timeline_list.json"),
     TIMELINE_1("/timeline_1", "local/timelines/timeline_1.json"),
     TIMELINE_2("/timeline_2", "local/timelines/timeline_2.json"),

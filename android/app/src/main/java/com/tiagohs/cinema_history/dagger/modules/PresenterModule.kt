@@ -32,4 +32,7 @@ class PresenterModule {
 
     @Provides
     fun providerTimelinePagePresenter(localService: LocalService): TimelinePagePresenter = TimelinePagePresenterImpl(localService)
+
+    @Provides
+    fun providerReferencePresenter(localService: LocalService): ReferencePresenter = ReferencePresenterImpl(localService)
 }
