@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
+import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
 import android.util.TypedValue
@@ -57,7 +58,9 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView,
         this.pageContent = pageContent
 
         pageContentList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        pageContentList.adapter = PageContentAdapter(context, pageContent.contentList)
+        pageContentList.adapter = PageContentAdapter(context, pageContent.contentList).apply {
+            presentScreen = { presentScreen(it) }
+        }
         pageContentList.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(context), SpaceOffsetDecoration.TOP))
         pageContentList.addOnScrollListener(HidingScrollListener(this))
 
@@ -130,6 +133,10 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView,
                 }
             }
         }
+    }
+
+    private fun presentScreen(intent: Intent) {
+        startActivity(intent)
     }
 
     override fun setupArguments() {

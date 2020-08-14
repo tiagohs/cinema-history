@@ -21,7 +21,13 @@ enum class LocalFiles(
 
     // Main Topic 1900 to 1929
     MAIN_1_PAGE_1("/main_1/page_1", "local/pages/main_1/page_1.json"),
-    MAIN_1_PAGE_2("/main_1/page_2", "local/pages/main_1/page_2.json");
+    MAIN_1_PAGE_2("/main_1/page_2", "local/pages/main_1/page_2.json"),
+    MAIN_1_PAGE_3("/main_1/page_3", "local/pages/main_1/page_3.json"),
+    MAIN_1_PAGE_4("/main_1/page_4", "local/pages/main_1/page_4.json"),
+    MAIN_1_PAGE_5("/main_1/page_5", "local/pages/main_1/page_5.json"),
+    MAIN_1_PAGE_6("/main_1/page_6", "local/pages/main_1/page_6.json"),
+    MAIN_1_PAGE_7("/main_1/page_7", "local/pages/main_1/page_7.json"),
+    MAIN_1_PAGE_8("/main_1/page_8", "local/pages/main_1/page_8.json");
 
     fun isValid(request: Request): Boolean = request.url.toUri().path.contains(path, true)
 }

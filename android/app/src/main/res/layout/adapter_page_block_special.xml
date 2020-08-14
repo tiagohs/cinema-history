@@ -51,12 +51,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição"/>
 
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/blockSpecialClickHere"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/text_size_zeplin_24pt"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:visibility="gone"
+            android:text="@string/click_here_to_go"
+            android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+            android:lineSpacingMultiplier="0.8"
+            app:layout_constraintTop_toBottomOf="@id/blockSpecialDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Clique aqui para acessar"
+            tools:visibility="visible"/>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="10dp"
             android:id="@+id/line"
             android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="@id/blockSpecialDescription"
+            app:layout_constraintTop_toBottomOf="@id/blockSpecialClickHere"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 

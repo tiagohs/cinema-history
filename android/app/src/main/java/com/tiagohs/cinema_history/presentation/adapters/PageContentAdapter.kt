@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +13,8 @@ class PageContentAdapter(
     val context: Context?,
     val contentList: List<Content>
 ): RecyclerView.Adapter<BasePageViewHolder>() {
+
+    var presentScreen: ((Intent) -> Unit)? = null
 
     private var viewHolders: ArrayList<BasePageViewHolder> = ArrayList()
 
@@ -26,7 +29,7 @@ class PageContentAdapter(
             }
             ContentType.BLOCK_SPECIAL.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(BlockSpecialViewHolder.LAYOUT_ID, parent, false)
-                BlockSpecialViewHolder(context, view)
+                BlockSpecialViewHolder(context, view, presentScreen)
             }
             ContentType.GIF.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(GifViewHolder.LAYOUT_ID, parent, false)

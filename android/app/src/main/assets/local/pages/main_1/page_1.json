@@ -97,6 +97,27 @@
     {
       "type": "text",
       "content_text": "A oportunidade de se realizar filmes mais longos, o surgimento dos estúdios de Hollywood e orçamentos maiores encorajaram os cineastas a produzir adaptações literárias como <a href=\"https://_{type: 'screen', 'id': 30266, 'screen_type': 'movie'}\">20000 Leagues Under the Sea</a> (BR: Vinte mil léguos submarinas, 1916), dirigido por <a href=\"https://_{type: 'screen', 'id': 119672, 'screen_type': person}\">Stuart Paton</a> (1883-1944), baseado no romance de 1869 de Júlio Verne, cujo livro A ilha misteriosa (1874) também foi adaptado para o cinema. Paton uniu forças com dois outros imigrantes britânicos nos Estados Unidos, os irmãos John e George Williamson, para criar <i>o primeiro filme com algumas sequencias debaixo d'água</i>.  <br/> </br> </br> \n\nO apetite pelo espetáculo continuou a ser explorado em épicos como <a href=\"https://_{type: 'screen', 'id': 30266, 'screen_type': 'movie'}\">The Ten Commandments </a> (BR: Os dez mandamentos, 1923) e <a href=\"https://_{type: 'screen', 'id': 31510, 'screen_type': 'movie'}\">Ben-Hur</a> (1925), formando o que posteriormente seria conhecido como o género sword-and-sandal (espada e sandálias). O filme se mostrou uma produção atribulada e cara para a Metro-Goldwyn-Mayer, que havia acabado de realizar sua fusão. Para tornar a corrida de bigas mais emocionante, o estúdio estipulou um prêmio de 100 dólares para o vencedor, o acidente terrível que resultou disso permaneceu na cópia final do filme. É possível vislumbrar o espírito do diretor pioneiro Georges Mélies nesses épicos dos anos 1920 e, mais tarde, nos efeitos especiais criados por Ray Harryhausen nas décadas de 1950 e 1960. As técnicas cinematográficas se tornaram mais complexas e as estruturas narrativas, cada vez mais sofisticadas, porém o fundamento criativo do cinema - reinventar e reinterpretar a realidade permaneceu uma constante desde seus primórdios."
+    },
+    {
+      "type": "block_special",
+      "title": "Timeline de Acontecimentos: 1895 a 1929",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "0"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "A primeira exibição pelos irmãos Lumière, o primeiro beijo nas telonas, as invenções e descobertas, o inicio de Hollywood. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1895 e 1929."
     }
   ]
 }

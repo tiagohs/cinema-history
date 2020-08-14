@@ -23,6 +23,7 @@ class TimelineActivity: BaseActivity(), TimelinePageView {
     lateinit var presenter: TimelinePagePresenter
 
     var adapterPager: TimelinePagerAdapter? = null
+    var startIndex: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +31,9 @@ class TimelineActivity: BaseActivity(), TimelinePageView {
         getApplicationComponent()?.inject(this)
 
         presenter.onBindView(this)
+
+        startIndex = intent?.extras?.getString(VIEWPAGER_INDEX)?.toInt() ?: 0
+
         presenter.fetchTimelineItems()
     }
 
@@ -38,6 +42,7 @@ class TimelineActivity: BaseActivity(), TimelinePageView {
 
         timelineContentViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         timelineContentViewPager.adapter = adapterPager
+        timelineContentViewPager.currentItem = startIndex
     }
 
     fun setNextPage() {
@@ -59,6 +64,8 @@ class TimelineActivity: BaseActivity(), TimelinePageView {
     }
 
     companion object {
+
+        const val VIEWPAGER_INDEX = "VIEWPAGER_INDEX"
 
         fun newIntent(context: Context): Intent {
             val intent = Intent(context, TimelineActivity::class.java)

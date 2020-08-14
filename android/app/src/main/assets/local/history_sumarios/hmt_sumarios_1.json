@@ -17,7 +17,97 @@
   {
     "id": 2,
     "title": "Os primeiros Épicos",
-    "description": "Os primeiros inventores, sonhadores e artistas. Da invenção do cinetoscópio até a primeira exibição conhecida pública de um filme para um público pagante pelos irmãos Lumierè.",
+    "description": "Os primeiros inventores, sonhadores e artistas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_train",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Heroínas e Diretoras do Cinem",
+    "description": "Os primeiros inventores, sonhadores e artistas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_train",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "O Cinema Fantástico e Sobrenatural",
+    "description": "Os primeiros inventores, sonhadores e artistas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_train",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "A Comédia Muda",
+    "description": "Os primeiros inventores, sonhadores e artistas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_train",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "A \"Era de Ouro\" do Cinema Mudo",
+    "description": "Os primeiros inventores, sonhadores e artistas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_train",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Surrealismo nas Telas",
+    "description": "Os primeiros inventores, sonhadores e artistas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_train",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "O Início da Era dos Filmes Falados",
+    "description": "Os primeiros inventores, sonhadores e artistas.",
     "image": {
       "image_type": "local",
       "url": "img_great_train",
