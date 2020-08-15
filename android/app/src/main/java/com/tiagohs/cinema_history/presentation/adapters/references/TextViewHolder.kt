@@ -4,10 +4,10 @@ import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.entities.references.ReferenceBook
+import com.tiagohs.cinema_history.extensions.setupLinkableTextView
 import com.tiagohs.entities.references.ReferenceText
-import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.openLink
+import com.tiagohs.helpers.extensions.styledString
 import kotlinx.android.synthetic.main.adapter_reference_media.view.*
 
 class TextViewHolder(
@@ -18,7 +18,8 @@ class TextViewHolder(
     fun bind(referenceBook: ReferenceText) {
         val context = context ?: return
 
-        itemView.mediaName.text = referenceBook.text
+        itemView.mediaName.text = referenceBook.text.styledString()
+        itemView.mediaName.setupLinkableTextView(context)
 
         val link = referenceBook.link
         if (link != null) {

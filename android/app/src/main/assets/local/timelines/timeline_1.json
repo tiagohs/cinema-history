@@ -27,7 +27,7 @@
       "type": "item",
       "year": "18\n96",
       "title": "Um Beijo Polêmico",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 1867, 'screen_type': 'person'}\">Auguste</a> (1862-1954) e <a href=\"https://_{'type': 'screen', 'id': 1868, 'screen_type': 'person'}\">Louis </a> (1864-1948) Lumière exibem 10 curtas-metragens em Paris para um público pagante, entre eles, <strong><a href=\"https://_{type: 'screen', 'id': 774, 'screen_type': 'movie'}\"> La Sortie des usines Lumière </a></strong> (BR: A saída dos operários da fábrica Lumière, 1986).",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 239027, 'screen_type': 'person'}\">Thomas Edison</a>, o pai do cinetoscópio, lança aquela que pode ser a primeira grande polêmica na história do cinema, <a href=\"https://_{type: 'screen', 'id': 94570, 'screen_type': 'movie'}\">The Kiss</a> (BR: O Beijo, 1896), dirigido por <a href=\"https://_{'type': 'screen', 'id': 110348, 'screen_type': 'person'}\">William Heise</a>, o primeiro filme a filmar um beijo para as grandes telas.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_the_kiss.webp",
@@ -196,10 +196,23 @@
       "type": "item",
       "year": "19\n15",
       "title": "Um polêmico marco",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 618, 'screen_type': 'movie'}\">The Birth of a Nation</a> (BR: O nascimento de uma nação, 1915), com seus 190 minutos, quebra o recorde de filme mais longo do cinema. Ao mesmo tempo, o filme reavive o interessa na <strong>Ku Klux Klan</strong>, que àquela altura já havia praticamente desaparecido. Em resposta a isso, um ano após o lançamento, D. W. Griffith responde a acusação de preconceito realizando o épico <a href=\"https://_{'type': 'screen', 'id': 3059, 'screen_type': 'movie'}\">Intolerance: Love's Struggle Throughout the Ages</a> (BR: Intolerância, 1916).",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 618, 'screen_type': 'movie'}\">The Birth of a Nation</a> (BR: O nascimento de uma nação, 1915), com seus 190 minutos, quebra o recorde de filme mais longo do cinema. Ao mesmo tempo, o filme reavive o interesse na <strong>Ku Klux Klan</strong>, que àquela altura já havia praticamente desaparecido. Um ano após o lançamento, D. W. Griffith responde a acusação de preconceito realizando o épico <a href=\"https://_{'type': 'screen', 'id': 3059, 'screen_type': 'movie'}\">Intolerance: Love's Struggle Throughout the Ages</a> (BR: Intolerância, 1916).",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_birth_nation.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n15",
+      "title": "O primeiro filme para adultos do cinema",
+      "description": "A Free Ride (1915) é lançado, sendo considerado o primeiro filme pornô clássico do cinema junto ao El Satario (1907) na Argentina e Am Abend (1910) na Alemanha. O filme, que possui 09 minutos de duração, descreve o trajeto de um motorista que dá carona a duas mulheres na beira da estrada e que mais adiante, se relacionam sexualmente. Pesquisadores afirmam que provavelmente a equipe do filme se esforçou para fazer o elenco não ser identificável, já que o ator usava um grande bigode falso e um chapéu, além do anonimato de suas identidades nos créditos. O próprio diretor também permaneceu no anonimato, usando um pseudônimo de A Wise Guy (um cara sábio), sendo o único nome revelado de Will B. Hard, o cinematógrafo.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_first_porn.webp",
         "style": {
           "scale_type": "center_crop"
         }
@@ -352,7 +365,7 @@
       "type": "item",
       "year": "19\n26",
       "title": "Amadurecimento",
-      "description": "Na UFA, F. W. Murnau realiza <a href=\"https://_{'type': 'screen', 'id': 10728, 'screen_type': 'movie'}\">Faust – Eine deutsche Volkssage</a> (BR: Fausto, 1926), um espetáculo visual. O vanguardista <a href=\"https://_{'type': 'screen', 'id': 94525, 'screen_type': 'person'}\">Kurutta ippêji</a> (BR: Uma Página de Loucura, 1926), de <a href=\"https://_{'type': 'screen', 'id': 213471, 'screen_type': 'person'}\">Teinosuke Kinugasa</a>, demonstra a maturidade do cinema mudo japonês.",
+      "description": "Na UFA, F. W. Murnau realiza <a href=\"https://_{'type': 'screen', 'id': 10728, 'screen_type': 'movie'}\">Faust – Eine deutsche Volkssage</a> (BR: Fausto, 1926), um espetáculo visual. O vanguardista <a href=\"https://_{'type': 'screen', 'id': 94525, 'screen_type': 'movie'}\">Kurutta ippêji</a> (BR: Uma Página de Loucura, 1926), de <a href=\"https://_{'type': 'screen', 'id': 213471, 'screen_type': 'person'}\">Teinosuke Kinugasa</a>, demonstra a maturidade do cinema mudo japonês.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_pagina_loucura.webp",
