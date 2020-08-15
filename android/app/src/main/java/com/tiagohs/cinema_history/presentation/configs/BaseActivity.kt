@@ -52,43 +52,11 @@ abstract class BaseActivity : AppCompatActivity() {
         }
     }
 
-    fun openUrl(url: String?) {
-
-        if (!url.isNullOrEmpty()) {
-            try {
-                val urlUri = Uri.parse(url)
-                val intent = CustomTabsIntent.Builder()
-                        .setToolbarColor(getResourceColor(R.color.colorPrimary))
-                        .setShowTitle(true)
-                        .build()
-                intent.launchUrl(this, urlUri)
-            } catch (e: Exception) {
-                toast(e.message)
-            }
-        }
-    }
-
-    protected fun startFragment(fragmentID: Int, fragment: Fragment) {
-        val fm = supportFragmentManager
-        val f = fm.findFragmentById(fragmentID)
-
-        if (null == f) {
-            fm.beginTransaction()
-                    .add(fragmentID, fragment)
-                    .commitAllowingStateLoss()
-        } else {
-            fm.beginTransaction()
-                    .replace(fragmentID, fragment)
-                    .commitAllowingStateLoss()
-        }
-    }
-
     fun getApplicationComponent(): AppComponent? {
         val application = application ?: return null
 
         return (application as App).appComponent
     }
-
 
     fun isInternetConnected(): Boolean {
         return ServerUtils.isNetworkConnected(this)

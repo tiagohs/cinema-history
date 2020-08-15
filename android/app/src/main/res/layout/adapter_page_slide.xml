@@ -4,8 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    android:layout_marginBottom="20dp">
+    android:layout_marginTop="@dimen/activity_vertical_margin_2.5x"
+    android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="@dimen/page_slide_height"
             android:id="@+id/imageList"
             android:nestedScrollingEnabled="true"
         />
@@ -25,7 +25,7 @@
         <cz.intik.overflowindicator.OverflowPagerIndicator
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
             android:id="@+id/imageListIndicator"
             android:layout_gravity="center_horizontal|bottom"
             app:dotFillColor="@color/md_white_1000"
@@ -37,7 +37,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
         app:layout_constraintTop_toBottomOf="@id/imageListContainer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

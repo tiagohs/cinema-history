@@ -11,9 +11,6 @@ import android.view.animation.DecelerateInterpolator
 import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.convertIntToDp
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.startActivityWithSlideAnimation
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.helpers.utils.DateUtils
 import com.tiagohs.entities.movie_info.MovieInfo
@@ -27,7 +24,7 @@ import com.tiagohs.entities.dto.PersonDTO
 import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.enums.MovieInfoType
 import com.tiagohs.domain.views.MovieDetailsView
-import com.tiagohs.helpers.extensions.imageUrlFromTMDB
+import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.activity_movie_details.*
 import kotlinx.android.synthetic.main.view_genre_item.view.*
 import javax.inject.Inject
@@ -206,7 +203,7 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
             return
         }
 
-        playContainer.setOnClickListener { openUrl("https://www.youtube.com/watch?v=${trailerUrlKey}") }
+        playContainer.setOnClickListener { openLink("https://www.youtube.com/watch?v=${trailerUrlKey}") }
     }
 
     private fun bindBackdrop(backdropPath: String?) {

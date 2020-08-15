@@ -9,10 +9,10 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="@dimen/person_details_appbar_height"
         android:id="@+id/appBar"
         android:theme="@style/AppTheme.AppBarOverlay"
-        android:elevation="20dp"
+        android:elevation="@dimen/activity_vertical_margin_2.5x"
         android:alpha="0"
         android:fitsSystemWindows="true" >
 
@@ -49,7 +49,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="@dimen/person_details_degrade_height"
                     android:id="@+id/personImageDegrade"
                     android:background="@drawable/background_degrade_bottom"
                     android:layout_gravity="bottom"
@@ -87,10 +87,10 @@
                         android:fitsSystemWindows="true"
                         android:fontFamily="@font/oswald_bold"
                         android:textColor="@color/md_white_1000"
-                        android:textSize="32sp"
+                        android:textSize="@dimen/text_size_zeplin_40pt"
                         android:maxLines="2"
                         android:ellipsize="end"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -103,10 +103,10 @@
                         android:id="@+id/personBirthInfo"
                         android:fontFamily="@font/oswald_light"
                         android:textColor="@color/md_white_1000"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/text_size_zeplin_38pt"
                         android:maxLines="2"
                         android:ellipsize="end"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/personName"
@@ -118,12 +118,12 @@
                         android:id="@+id/jobsScrollView"
                         android:fitsSystemWindows="true"
                         android:requiresFadingEdge="horizontal"
-                        android:fadingEdgeLength="16dp"
+                        android:fadingEdgeLength="@dimen/activity_vertical_margin_2x"
                         android:scrollbars="none"
                         android:visibility="gone"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="50dp"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                        android:layout_marginBottom="@dimen/person_details_jobs_container_margin_bottom"
+                        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
                         app:layout_constraintTop_toBottomOf="@id/personBirthInfo"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -135,7 +135,7 @@
                             android:fitsSystemWindows="true"
                             android:id="@+id/jobsContainer"
                             android:orientation="horizontal"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="@dimen/activity_vertical_margin_2x"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent" />
@@ -157,17 +157,17 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center"
-                    android:layout_marginBottom="40dp"
+                    android:layout_marginBottom="@dimen/person_details_social_container_margin_bottom"
                     android:fitsSystemWindows="true"
                     app:layout_constraintStart_toEndOf="@id/separatorVertical"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="@dimen/person_details_social_icon_size"
+                        android:layout_height="@dimen/person_details_social_icon_size"
                         android:id="@+id/facebookImageContainer"
-                        android:layout_marginBottom="16dp"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
                         android:visibility="gone"
                         android:background="@drawable/background_border_oval_2dp">
 
@@ -175,7 +175,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:id="@+id/facebookImage"
-                            android:padding="10dp"
+                            android:padding="@dimen/activity_vertical_margin_1.2x"
                             android:focusable="true"
                             android:clickable="true"
                             android:background="?selectableItemBackground"
@@ -184,10 +184,10 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="@dimen/person_details_social_icon_size"
+                        android:layout_height="@dimen/person_details_social_icon_size"
                         android:id="@+id/twitterImageContainer"
-                        android:layout_marginBottom="16dp"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
                         android:visibility="gone"
                         android:background="@drawable/background_border_oval_2dp">
 
@@ -195,7 +195,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:id="@+id/twitterImage"
-                            android:padding="10dp"
+                            android:padding="@dimen/activity_vertical_margin_1.2x"
                             android:focusable="true"
                             android:clickable="true"
                             android:background="?selectableItemBackground"
@@ -204,8 +204,8 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="@dimen/person_details_social_icon_size"
+                        android:layout_height="@dimen/person_details_social_icon_size"
                         android:id="@+id/instagramImageContainer"
                         android:visibility="gone"
                         android:background="@drawable/background_border_oval_2dp">
@@ -214,7 +214,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:id="@+id/instagramImage"
-                            android:padding="10dp"
+                            android:padding="@dimen/activity_vertical_margin_1.2x"
                             android:focusable="true"
                             android:clickable="true"
                             android:background="?selectableItemBackground"
@@ -243,10 +243,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/pageContentListContainer"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x"
         android:fitsSystemWindows="true"
         android:background="@android:color/transparent"
-        app:behavior_overlapTop="20dp"
+        app:behavior_overlapTop="@dimen/activity_vertical_margin_2.5x"
         android:alpha="0"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 

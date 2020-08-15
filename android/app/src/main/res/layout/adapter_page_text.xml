@@ -5,16 +5,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="16dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp">
+    android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+    android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+    android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x">
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/contentText"
-        android:textSize="16sp"
+        android:textSize="@dimen/text_size_zeplin_26pt"
         android:textColor="@color/md_black_1000"
         android:textColorLink="@color/md_blue_500"
         android:fontFamily="@font/proxima_nova_regular"

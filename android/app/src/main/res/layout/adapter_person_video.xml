@@ -2,18 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:id="@+id/videoContainer"
     android:clickable="true"
     android:focusable="true"
     android:background="@color/md_black_1000"
-    android:layout_marginTop="10dp"
-    android:layout_marginEnd="16dp">
+    android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginEnd="@dimen/activity_vertical_margin_2x">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="300dp"
-        android:layout_height="180dp"
+        android:layout_width="@dimen/movie_video_card_width"
+        android:layout_height="@dimen/movie_video_card_height"
         android:id="@+id/videoImageContainer"
         android:background="@color/md_black_1000"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,11 +30,11 @@
         />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/movie_video_play_size"
+            android:layout_height="@dimen/movie_video_play_size"
             android:id="@+id/playCard"
             android:elevation="0dp"
-            app:cardCornerRadius="25dp"
+            app:cardCornerRadius="@dimen/movie_video_play_radius"
             app:cardElevation="0dp"
             app:cardBackgroundColor="@color/grey_light_transparent_50"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +45,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="5dp"
+                android:padding="@dimen/activity_vertical_margin_0.5x"
                 android:src="@drawable/ic_play_arrow_white_24dp"
             />
 
@@ -55,14 +56,14 @@
             android:layout_height="25dp"
             android:id="@+id/typeName"
             android:fontFamily="@font/robotomono_regular"
-            android:text="Entrevista"
+            android:text="@string/interviews"
             android:textColor="@color/md_white_1000"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_size_zeplin_18pt"
             android:background="@drawable/background_border_rectangle_white_1dp"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:paddingStart="@dimen/activity_vertical_margin_2x"
+            android:paddingEnd="@dimen/activity_vertical_margin_2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -74,7 +75,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
         app:layout_constraintTop_toBottomOf="@id/videoImageContainer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,28 +85,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/title"
-            android:text="Titulo no Youtube"
             android:textColor="@color/md_white_1000"
             android:fontFamily="@font/robotomono_bold"
-            android:textSize="16sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:textSize="@dimen/text_size_zeplin_26pt"
+            android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Titulo no Youtube"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/source"
-            android:text="Titulo no Youtube"
             android:textColor="@color/md_white_1000"
             android:fontFamily="@font/robotomono_light"
-            android:textSize="14sp"
-            android:layout_marginEnd="10dp"
+            android:textSize="@dimen/text_size_zeplin_22pt"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
             app:layout_constraintTop_toBottomOf="@id/title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Titulo no Youtube" />
 
     </LinearLayout>
 

@@ -10,12 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pageContentListContainer"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+        app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,39 +24,39 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="30dp">
+            android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_4x">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/topContainer"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/certification_card_height"
                     android:id="@+id/certificationCard"
-                    app:cardCornerRadius="5dp"
+                    app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
                     app:cardBackgroundColor="@color/md_black_1000"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/certification"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/text_size_zeplin_22pt"
                         android:textColor="@color/md_white_1000"
                         android:fontFamily="@font/proxima_nova_regular"
                         android:gravity="center"
-                        android:paddingStart="8dp"
-                        android:paddingEnd="8dp"
+                        android:paddingStart="@dimen/activity_vertical_margin"
+                        android:paddingEnd="@dimen/activity_vertical_margin"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -65,10 +65,10 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/social_card_width"
+                    android:layout_height="@dimen/social_card_height"
                     android:id="@+id/facebookContainer"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
                     android:background="@drawable/background_border_rectangle_grey_dark_1dp">
 
@@ -81,9 +81,9 @@
                         android:background="?selectableItemBackground">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:padding="5dp"
+                            android:layout_width="@dimen/social_image_size"
+                            android:layout_height="@dimen/social_image_size"
+                            android:padding="@dimen/activity_vertical_margin_0.5x"
                             android:src="@drawable/ic_facebook_grey_dark"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -96,10 +96,10 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/social_card_width"
+                    android:layout_height="@dimen/social_card_height"
                     android:id="@+id/twitterContainer"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
                     android:background="@drawable/background_border_rectangle_grey_dark_1dp">
 
@@ -112,9 +112,9 @@
                         android:background="?selectableItemBackground">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:padding="5dp"
+                            android:layout_width="@dimen/social_image_size"
+                            android:layout_height="@dimen/social_image_size"
+                            android:padding="@dimen/activity_vertical_margin_0.5x"
                             android:src="@drawable/ic_twitter_grey_dark"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -127,10 +127,10 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/social_card_width"
+                    android:layout_height="@dimen/social_card_height"
                     android:id="@+id/instagramContainer"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
                     android:background="@drawable/background_border_rectangle_grey_dark_1dp">
 
@@ -143,9 +143,9 @@
                         android:background="?selectableItemBackground">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:padding="5dp"
+                            android:layout_width="@dimen/social_image_size"
+                            android:layout_height="@dimen/social_image_size"
+                            android:padding="@dimen/activity_vertical_margin_0.5x"
                             android:src="@drawable/ic_instagram_grey_dark"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -158,10 +158,10 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/social_card_width"
+                    android:layout_height="@dimen/social_card_height"
                     android:id="@+id/linkContainer"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
                     android:background="@drawable/background_border_rectangle_grey_dark_1dp">
 
@@ -174,8 +174,8 @@
                         android:background="?selectableItemBackground">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="@dimen/social_image_size"
+                            android:layout_height="@dimen/social_image_size"
                             android:src="@drawable/ic_link_grey_dark_24dp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -188,10 +188,10 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/social_card_width"
+                    android:layout_height="@dimen/social_card_height"
                     android:id="@+id/imdbContainer"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
                     android:background="@drawable/background_border_rectangle_grey_dark_1dp">
 
@@ -204,8 +204,8 @@
                         android:background="?selectableItemBackground">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="@dimen/social_image_size"
+                            android:layout_height="@dimen/social_image_size"
                             android:src="@drawable/ic_imdb_grey_dark_24dp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -223,12 +223,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/summaryTitle"
-                android:text="Sinopse"
-                android:textSize="22sp"
+                android:text="@string/sinopsys"
+                android:textSize="@dimen/text_size_zeplin_34pt"
                 android:textColor="@color/md_black_1000"
                 android:fontFamily="@font/oswald_regular"
                 android:layout_gravity="bottom"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
                 app:layout_constraintTop_toBottomOf="@id/topContainer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -238,11 +238,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/movieSummary"
-                android:textSize="14sp"
+                android:textSize="@dimen/text_size_zeplin_22pt"
                 android:textColor="@color/md_black_1000"
                 android:fontFamily="@font/proxima_nova_regular"
                 android:layout_gravity="bottom"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
                 app:layout_constraintTop_toBottomOf="@id/summaryTitle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -256,7 +256,7 @@
                 android:progressBackgroundTintMode="src_over"
                 android:thumb="@null"
                 android:splitTrack="true"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin_3x"
                 app:layout_constraintTop_toBottomOf="@id/movieSummary"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -266,8 +266,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/budgetContainer"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
                 app:layout_constraintTop_toBottomOf="@id/budgetSeekBar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -286,16 +286,16 @@
                         android:id="@+id/movieBudget"
                         android:fontFamily="@font/proxima_nova_bold"
                         android:textColor="@color/md_black_1000"
-                        android:textSize="16sp"
-                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/text_size_zeplin_26pt"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin_0.5x"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent" />
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        app:cardCornerRadius="5dp"
+                        android:layout_width="@dimen/indicator_size"
+                        android:layout_height="@dimen/indicator_size"
+                        app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
                         android:id="@+id/budgetIndicator"
                         app:cardBackgroundColor="@color/md_deep_purple_500"
                         app:layout_constraintStart_toStartOf="parent"
@@ -305,11 +305,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Orçamento"
+                        android:text="@string/orcamento"
                         android:fontFamily="@font/proxima_nova_regular"
                         android:textColor="@color/md_grey_500"
-                        android:textSize="12sp"
-                        android:layout_marginStart="5dp"
+                        android:textSize="@dimen/text_size_zeplin_18pt"
+                        android:layout_marginStart="@dimen/activity_vertical_margin_0.5x"
                         app:layout_constraintStart_toEndOf="@id/budgetIndicator"
                         app:layout_constraintTop_toBottomOf="@id/movieBudget"
                         app:layout_constraintBottom_toBottomOf="parent" />
@@ -329,16 +329,16 @@
                         android:id="@+id/movieRevenue"
                         android:fontFamily="@font/proxima_nova_bold"
                         android:textColor="@color/md_black_1000"
-                        android:textSize="16sp"
-                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/text_size_zeplin_26pt"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin_0.5x"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent" />
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        app:cardCornerRadius="5dp"
+                        android:layout_width="@dimen/indicator_size"
+                        android:layout_height="@dimen/indicator_size"
+                        app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
                         android:id="@+id/revenueIndicator"
                         app:cardBackgroundColor="@color/md_red_500"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -348,11 +348,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Receita"
+                        android:text="@string/receita"
                         android:fontFamily="@font/proxima_nova_regular"
                         android:textColor="@color/md_grey_500"
-                        android:textSize="12sp"
-                        android:layout_marginEnd="5dp"
+                        android:textSize="@dimen/text_size_zeplin_18pt"
+                        android:layout_marginEnd="@dimen/activity_vertical_margin_0.5x"
                         app:layout_constraintEnd_toStartOf="@id/revenueIndicator"
                         app:layout_constraintTop_toBottomOf="@id/movieRevenue"
                         app:layout_constraintBottom_toBottomOf="parent" />

@@ -15,6 +15,7 @@
     <dimen name="activity_vertical_margin_2.5x">20dp</dimen>
     <dimen name="activity_vertical_margin_3x">24dp</dimen>
     <dimen name="activity_vertical_margin_4x">32dp</dimen>
+    <dimen name="activity_vertical_margin_4.5x">36dp</dimen>
     <dimen name="activity_vertical_margin_5x">40dp</dimen>
     <dimen name="activity_vertical_margin_6x">48dp</dimen>
 
@@ -28,11 +29,180 @@
     <dimen name="text_size_zeplin_26pt">16sp</dimen>
     <dimen name="text_size_zeplin_28pt">18sp</dimen>
     <dimen name="text_size_zeplin_32pt">20sp</dimen>
+    <dimen name="text_size_zeplin_34pt">22sp</dimen>
     <dimen name="text_size_zeplin_36pt">24sp</dimen>
+    <dimen name="text_size_zeplin_38pt">28sp</dimen>
+    <dimen name="text_size_zeplin_40pt">30sp</dimen>
+    <dimen name="text_size_home_title">100sp</dimen>
+    <dimen name="text_size_timeline_title">42sp</dimen>
+    <dimen name="text_size_person_special_name">52sp</dimen>
 
     <!-- =========== COMPONENTS =========== -->
+
+    <!-- SEPARATOR -->
+    <dimen name="separator_height">1dp</dimen>
 
     <!-- PAGE TOOLBAR BOTTOM -->
     <dimen name="page_toolbar_bottom_image_card_width">60dp</dimen>
     <dimen name="page_toolbar_bottom_image_card_height">80dp</dimen>
+
+    <!-- PAGE CONTENT HEADER -->
+    <dimen name="page_content_header_line_width">1dp</dimen>
+
+    <!-- PLACEHOLDER -->
+    <dimen name="references_placeholder_height_small">100dp</dimen>
+    <dimen name="references_placeholder_height_medium">180dp</dimen>
+    <dimen name="references_placeholder_height_large">210dp</dimen>
+
+    <!-- PLACEHOLDER -->
+    <dimen name="company_image_height">60dp</dimen>
+
+    <!-- PLACEHOLDER -->
+    <dimen name="person_profile_item_line_width">2dp</dimen>
+    <dimen name="person_profile_item_circle_size">10dp</dimen>
+    <dimen name="person_profile_item_circle_radius">5dp</dimen>
+    <dimen name="person_profile_item_inner_circle_size">6dp</dimen>
+    <dimen name="person_profile_item_inner_circle_radius">3dp</dimen>
+
+    <!-- =========== SCREENS =========== -->
+
+    <!-- HOME -->
+    <dimen name="home_appbar_height">500dp</dimen>
+    <dimen name="home_milmovies_card_height">500dp</dimen>
+    <dimen name="home_timeline_card_height">350dp</dimen>
+    <dimen name="home_directors_card_height">450dp</dimen>
+    <dimen name="home_appbar_degrade_height">200dp</dimen>
+    <dimen name="home_milmovies_degrade_height">250dp</dimen>
+    <dimen name="home_directors_degrade_height">250dp</dimen>
+    <dimen name="home_start_history_button_height">40dp</dimen>
+    <dimen name="home_icon_size">30dp</dimen>
+
+    <!-- MOVIE -->
+    <dimen name="movie_appbar_height">350dp</dimen>
+    <dimen name="movie_play_size">50dp</dimen>
+    <dimen name="movie_play_radius">25dp</dimen>
+
+    <!-- PRESENTATION -->
+    <dimen name="presentation_appbar_margin_bottom">120dp</dimen>
+    <dimen name="presentation_appbar_trigger">80dp</dimen>
+    <dimen name="presentation_quote_width">150dp</dimen>
+    <dimen name="presentation_quote_image_size">80dp</dimen>
+    <dimen name="presentation_start_button_size">40dp</dimen>
+
+    <!-- PRESENTATION -->
+    <dimen name="splashscreen_image_size">120dp</dimen>
+
+    <!-- HISTORY PAGE -->
+    <dimen name="history_page_image_height">350dp</dimen>
+    <dimen name="history_page_image_degrade_bottom_height">180dp</dimen>
+
+    <!-- PERSON DETAILS -->
+    <dimen name="person_details_appbar_height">400dp</dimen>
+    <dimen name="person_details_degrade_height">300dp</dimen>
+    <dimen name="person_details_jobs_container_margin_bottom">50dp</dimen>
+    <dimen name="person_details_social_container_margin_bottom">40dp</dimen>
+    <dimen name="person_details_social_icon_size">40dp</dimen>
+
+    <!-- PERSON DETAILS -->
+    <dimen name="person_details_special_appbar_height">300dp</dimen>
+    <dimen name="person_details_special_quote_size">40dp</dimen>
+    <dimen name="person_details_movies_quantity_margin_bottom">-20dp</dimen>
+
+    <!-- =========== ADAPTERS =========== -->
+
+    <!-- DEPARTMENT -->
+    <dimen name="department_button_size">30dp</dimen>
+
+    <!-- IMAGE SLIDE -->
+    <dimen name="image_slide_height">300dp</dimen>
+
+    <!-- MAIN TOPIC -->
+    <dimen name="main_topic_card_image_height">250dp</dimen>
+    <dimen name="main_topic_card_full_image_height">380dp</dimen>
+    <dimen name="main_topic_degrade_bottom">200dp</dimen>
+
+    <!-- MAIN TOPIC -->
+    <dimen name="main_topic_quote_image_width">100dp</dimen>
+    <dimen name="main_topic_quote_image_height">90dp</dimen>
+
+    <!-- MOVIE INFO HEADER -->
+    <dimen name="movie_info_header_poster_height">180dp</dimen>
+
+    <!-- MOVIE INFO SUMMARY -->
+    <dimen name="certification_card_height">30dp</dimen>
+    <dimen name="social_card_width">40dp</dimen>
+    <dimen name="social_card_height">30dp</dimen>
+    <dimen name="social_image_size">30dp</dimen>
+    <dimen name="indicator_size">10dp</dimen>
+
+    <!-- MOVIE ITEM -->
+    <dimen name="movie_item_image_width">140dp</dimen>
+    <dimen name="movie_item_image_height">200dp</dimen>
+    <dimen name="movie_item_image_degrade">120dp</dimen>
+    <dimen name="movie_item_language_card_height">25dp</dimen>
+
+    <!-- MOVIE SPECIAL ITEM-->
+    <dimen name="movie_special_item_backdrop_height">200dp</dimen>
+    <dimen name="movie_special_item_line_height">10dp</dimen>
+    <dimen name="movie_special_item_poster_width">100dp</dimen>
+    <dimen name="movie_special_item_poster_height">140dp</dimen>
+    <dimen name="movie_special_item_poster_margin_top">170dp</dimen>
+
+    <!-- MOVIE VIDEO ITEM -->
+    <dimen name="movie_video_card_width">300dp</dimen>
+    <dimen name="movie_video_card_height">180dp</dimen>
+    <dimen name="movie_video_play_size">50dp</dimen>
+    <dimen name="movie_video_play_radius">25dp</dimen>
+
+    <!-- MOVIE WALLPAPER ITEM -->
+    <dimen name="movie_wallpaper_card_width">180dp</dimen>
+    <dimen name="movie_wallpaper_card_height">120dp</dimen>
+
+    <!-- PAGE GIF -->
+    <dimen name="page_gif_height">200dp</dimen>
+
+    <!-- PAGE IMAGE -->
+    <dimen name="page_image_height">200dp</dimen>
+
+    <!-- PAGE QUOTE -->
+    <dimen name="page_quote_separator_width">100dp</dimen>
+
+    <!-- PAGE SLIDE -->
+    <dimen name="page_slide_height">300dp</dimen>
+
+    <!-- PAGE VIDEO -->
+    <dimen name="page_video_height">200dp</dimen>
+
+    <!-- PERSON ITEM -->
+    <dimen name="person_item_width">120dp</dimen>
+    <dimen name="person_item_height">180dp</dimen>
+    <dimen name="person_item_degrade">100dp</dimen>
+    <dimen name="person_item_social_image_width">25dp</dimen>
+    <dimen name="person_item_social_image_height">25dp</dimen>
+    <dimen name="next_icon_width">40dp</dimen>
+
+    <!-- REFERENCE_MEDIA -->
+    <dimen name="reference_media_description_container_margin_start">110dp</dimen>
+    <dimen name="reference_media_description_container_margin_end">80dp</dimen>
+    <dimen name="reference_media_image_width">90dp</dimen>
+    <dimen name="reference_media_image_height">120dp</dimen>
+
+    <!-- TIMELINE -->
+    <dimen name="timeline_footer_circle_container_size">18dp</dimen>
+    <dimen name="timeline_footer_circle_container_radius">9dp</dimen>
+    <dimen name="timeline_footer_circle_size">12dp</dimen>
+    <dimen name="timeline_footer_circle_radius">6dp</dimen>
+    <dimen name="timeline_footer_circle_margin_bottom">50dp</dimen>
+    <dimen name="timeline_divisor_vertical_width">3dp</dimen>
+    <dimen name="timeline_divisor_horizontal_height">3dp</dimen>
+    <dimen name="timeline_next_size">30dp</dimen>
+    <dimen name="timeline_title_container_width">150dp</dimen>
+    <dimen name="timeline_title_line_width">20dp</dimen>
+    <dimen name="timeline_title_line_height">2dp</dimen>
+    <dimen name="timeline_container_bottom_margin_bottom">100dp</dimen>
+    <dimen name="timeline_top_margin_top">50dp</dimen>
+    <dimen name="timeline_page_title_margin_top">70dp</dimen>
+    <dimen name="timeline_page_title_margin_bottom">100dp</dimen>
+    <dimen name="timeline_page_title_line_width">30dp</dimen>
+    <dimen name="timeline_page_title_line_height">4dp</dimen>
 </resources>

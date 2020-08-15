@@ -39,10 +39,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/toolbarTitle"
-                        android:text="Timeline"
+                        android:text="@string/timeline"
                         android:textColor="@color/md_white_1000"
                         android:textStyle="bold"
-                        android:textSize="30sp"
+                        android:textSize="@dimen/text_size_zeplin_40pt"
                         android:fontFamily="@font/billionairemediumgrunge"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,9 +83,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/loadViewContainer"
             android:orientation="vertical"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp" />
+            android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+            android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_2x" />
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 

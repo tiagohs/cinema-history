@@ -9,24 +9,12 @@ import com.tiagohs.cinema_history.dagger.AppComponent
 
 abstract class BaseFragment: Fragment() {
 
+    abstract fun getViewID(): Int
+    abstract fun onErrorAction()
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(getViewID(), container, false)
         return view
-    }
-
-    protected fun startFragment(fragmentID: Int, fragment: Fragment) {
-        val fm = childFragmentManager
-        val f = fm.findFragmentById(fragmentID)
-
-        if (null == f) {
-            fm.beginTransaction()
-                    .add(fragmentID, fragment)
-                    .commitAllowingStateLoss()
-        } else {
-            fm.beginTransaction()
-                    .replace(fragmentID, fragment)
-                    .commitAllowingStateLoss()
-        }
     }
 
     protected fun getApplicationComponent(): AppComponent? {
@@ -34,24 +22,10 @@ abstract class BaseFragment: Fragment() {
         return (activity as BaseActivity).getApplicationComponent()
     }
 
-    fun openUrl(url: String?) {
-        val activity = activity ?: return
-
-        return (activity as BaseActivity).openUrl(url)
-    }
-
-    fun isInternetConnected(): Boolean {
-        val activity = activity ?: return false
-
-        return (activity as BaseActivity).isInternetConnected()
-    }
-
-    abstract fun getViewID(): Int
+    fun isInternetConnected(): Boolean = (activity as? BaseActivity)?.isInternetConnected() ?: false
 
     open fun onError(ex: Throwable?, message: Int) {
-        val activity = activity ?: return
-
-        return (activity as BaseActivity).onError(ex, message)
+        (activity as? BaseActivity)?.onError(ex, message)
     }
 
     /*fun getConfiguratedAd(adView: AdView) {
@@ -63,7 +37,4 @@ abstract class BaseFragment: Fragment() {
     open fun onError(ex: Throwable?, message: String) {
         (activity as? BaseActivity)?.onError(ex, message)
     }
-
-
-    abstract fun onErrorAction()
 }

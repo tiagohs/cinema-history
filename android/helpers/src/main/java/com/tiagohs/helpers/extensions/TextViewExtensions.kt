@@ -5,7 +5,9 @@ import android.text.SpannableString
 import android.text.SpannableStringBuilder
 import android.text.Spanned
 import android.text.style.ImageSpan
+import android.util.TypedValue
 import android.widget.TextView
+import com.tiagohs.entities.enums.FontEnum
 import java.util.concurrent.atomic.AtomicBoolean
 
 
@@ -59,4 +61,61 @@ fun TextView.justify() {
             isJustify.set(true)
         }
     }
+}
+
+
+fun TextView.setResourceFont(fontName: String?) {
+    fontName ?: return
+    val context = context ?: return
+
+    typeface = context.getResourceFont(fontName)
+}
+
+fun TextView.setResourceFont(fontEnum: FontEnum?) {
+    fontEnum ?: return
+
+    setResourceFont(fontEnum.fontName)
+}
+
+fun TextView?.setResourceFontSize(fontSize: Int?) {
+    if (this == null) {
+        return
+    }
+
+    setTextSize(
+        TypedValue.COMPLEX_UNIT_PX,
+        context.resources.getDimension(fontSize ?: 16.convertIntToDp(context))
+    )
+}
+
+fun TextView?.setResourceText(id: Int) {
+    if (this == null) {
+        return
+    }
+
+    text = context.getResourceString(id)
+}
+
+fun TextView?.setResourceText(text: CharSequence?) {
+    if (this == null) {
+        return
+    }
+
+    this.text = text ?: return
+}
+
+fun TextView?.setResourceTextColor(color: Int) {
+    if (this == null) {
+        return
+    }
+
+    setTextColor(context.getResourceColor(color))
+}
+
+fun TextView?.setResourceTextSize(resId: Int) {
+    if (this == null) {
+        return
+    }
+
+    setTextSize(TypedValue.COMPLEX_UNIT_PX, context.resources.getDimension(resId))
 }

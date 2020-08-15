@@ -22,6 +22,7 @@ import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.enums.PersonInfoType
 import com.tiagohs.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.openLink
 import kotlinx.android.synthetic.main.fragment_person_details.*
 import kotlinx.android.synthetic.main.view_person_department.view.*
 
@@ -131,7 +132,7 @@ class PersonDetailsFragment: BaseFragment() {
             imageContainer.visibility = View.VISIBLE
 
             image.setOnClickListener {
-                openUrl(url)
+                context?.openLink(url)
             }
         }
 

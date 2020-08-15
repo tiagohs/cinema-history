@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/md_black_1000">
@@ -14,7 +15,7 @@
         app:layout_constraintGuide_percent="0.08" />
 
     <View
-        android:layout_width="2dp"
+        android:layout_width="@dimen/person_profile_item_line_width"
         android:layout_height="0dp"
         android:id="@+id/divisor"
         android:background="@color/md_white_1000"
@@ -29,15 +30,15 @@
         android:id="@+id/profileItemTitle"
         android:textColor="@color/md_white_1000"
         android:fontFamily="@font/oswald_bold"
-        android:textSize="16sp"
-        android:text="1942-1972"
+        android:textSize="@dimen/text_size_zeplin_26pt"
         android:includeFontPadding="false"
         android:lineSpacingExtra="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin_2.5x"
+        android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/guidelineVertical"
+        tools:text="1942-1972"
         />
 
     <TextView
@@ -46,13 +47,13 @@
         android:id="@+id/profileContent"
         android:textColor="@color/md_grey_300"
         android:fontFamily="@font/proxima_nova_regular"
-        android:textSize="14sp"
+        android:textSize="@dimen/text_size_zeplin_22pt"
         android:text="Martin Scorsese e o roteirista Jay Cocks escreveram um tratamento inicial para o livro de Shusaku Endo ainda na década de 1990. A ideia inicial era que o diretor rodasse o longa-metragem logo após concluir Gangues de Nova York (2002). Entretanto, dificuldades para obter a aprovação do orçamento junto a alguma produtora fizeram com que o projeto fosse adiado por cerca de 15 anos."
         android:includeFontPadding="false"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+        android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x"
         app:layout_constraintTop_toBottomOf="@id/profileItemTitle"
         app:layout_constraintStart_toEndOf="@id/guidelineVertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,10 +61,10 @@
         />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="10dp"
-        android:layout_height="10dp"
+        android:layout_width="@dimen/person_profile_item_circle_size"
+        android:layout_height="@dimen/person_profile_item_circle_size"
         android:id="@+id/circle"
-        app:cardCornerRadius="5dp"
+        app:cardCornerRadius="@dimen/person_profile_item_circle_radius"
         app:cardBackgroundColor="@color/md_white_1000"
         app:layout_constraintBottom_toBottomOf="@id/profileItemTitle"
         app:layout_constraintTop_toBottomOf="@id/profileItemTitle"
@@ -71,9 +72,9 @@
         app:layout_constraintStart_toStartOf="@id/divisor" >
 
         <androidx.cardview.widget.CardView
-            android:layout_width="6dp"
-            android:layout_height="6dp"
-            app:cardCornerRadius="3dp"
+            android:layout_width="@dimen/person_profile_item_inner_circle_size"
+            android:layout_height="@dimen/person_profile_item_inner_circle_size"
+            app:cardCornerRadius="@dimen/person_profile_item_inner_circle_radius"
             android:layout_gravity="center"
             app:cardBackgroundColor="@color/md_black_1000" />
 
