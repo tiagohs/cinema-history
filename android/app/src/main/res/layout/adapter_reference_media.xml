@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediaContainer"
+        app:cardElevation="@dimen/activity_vertical_margin_1.2x"
+        app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="110dp"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_2x">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mediaName"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/text_size_zeplin_22pt"
+                android:fontFamily="@font/oswald_bold"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Titulo do Livro"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mediaAuthor"
+                android:textColor="@color/md_grey_500"
+                android:textSize="@dimen/text_size_zeplin_18pt"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_marginTop="@dimen/activity_vertical_margin_0.2x"
+                app:layout_constraintTop_toBottomOf="@id/mediaName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Author do Livro"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mediaDescription"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/text_size_zeplin_22pt"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+                app:layout_constraintTop_toBottomOf="@id/mediaAuthor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Author do Livro Author do Livro Author do Livro Author do Livro Author do Livro"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        app:cardElevation="@dimen/activity_vertical_margin_1.2x"
+        app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginStart="@dimen/activity_vertical_margin_3x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mediaImage"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/img_2001_hal"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mediaType"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/text_size_zeplin_22pt"
+                android:padding="@dimen/activity_vertical_margin_0.2x"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textAlignment="center"
+                android:background="@color/colorAccent"
+                tools:text="Filme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyButon"
+        app:cardElevation="@dimen/activity_vertical_margin_1.2x"
+        app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+        app:cardBackgroundColor="@color/amazon_background"
+        android:layout_marginStart="@dimen/activity_vertical_margin_1.5x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/amazon_text"
+            android:textSize="@dimen/text_size_zeplin_22pt"
+            android:text="@string/buy"
+            android:padding="@dimen/activity_vertical_margin"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:background="?selectableItemBackground"
+            tools:text="@string/buy"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

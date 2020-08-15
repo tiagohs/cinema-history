@@ -1,10 +1,6 @@
 package com.tiagohs.domain.services.deserializers
 
 import com.google.gson.*
-import com.tiagohs.entities.contents.Content
-import com.tiagohs.entities.contents.*
-import com.tiagohs.entities.contents.ContentText
-import com.tiagohs.entities.enums.ContentType
 import com.tiagohs.entities.enums.ReferenceType
 import com.tiagohs.entities.references.Reference
 import com.tiagohs.entities.references.ReferenceBook
@@ -21,7 +17,8 @@ class ReferencesDeserializer: JsonDeserializer<Reference> {
         val type = ReferenceType.getContentType(obj.get("type").asString)
 
         return when (type) {
-            ReferenceType.BOOK -> Gson().fromJson(obj, ReferenceBook::class.java)
+            ReferenceType.MEDIA -> Gson().fromJson(obj, ReferenceBook::class.java)
+            ReferenceType.TEXT -> Gson().fromJson(obj, ReferenceBook::class.java)
         }
     }
 }

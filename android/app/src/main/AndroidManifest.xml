@@ -57,7 +57,8 @@
 
         <activity android:name=".presentation.activities.TimelineActivity" />
         <activity android:name=".presentation.activities.SettingActivity" />
-        <activity android:name=".presentation.activities.AboutActivty" />
+        <activity android:name=".presentation.activities.AboutActivty"
+            android:theme="@style/AboutTheme"/>
         <activity android:name=".presentation.activities.ReferenceActivity" />
 
 

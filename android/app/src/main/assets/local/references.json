@@ -1,3 +1,50 @@
 [
-
+  {
+    "type": "media",
+    "title": "O livro do cinema",
+    "subtitle": "Danny Leigh, Louis Baxter, Kieran Gant, John Farndon, Damon Wise (Colaboradores)",
+    "description": "Será que Chinatown realmente subverteu o gênero noir? Quais os efeitos causados pelo roteiro fragmentado de Pulp Fiction? Como os múltiplos pontos de vista afetam a noção de realidade em Rashomon? Ao exibir os melhores filmes de todos os tempos, este livro responde a estas questões e tantas outras enquanto traz um panorama do mundo do cinema. Escrito em linguagem simples e recheado de imagens icônicas dos filmes, além de pôsteres e infográficos, O livro do cinema explora os personagens, diretores, roteiros e temaschave de mais de cem dos maiores filmes já feitos. Seja você um grande cinéfilo ou um frequentador ocasional das salas de cinema procurando indicações, este livro te dará novas perspectivas sobre seus filmes prediletos ou uma introdução a uma grande quantidade de outras joias que você não pode deixar de ver.",
+    "link": "https://www.amazon.com.br/Livro-do-Cinema-V%C3%A1rios-Autores/dp/8525062421/",
+    "mediaType": "Livro",
+    "image": {
+      "image_type": "online",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/51HxDGyMZ3L._SX401_BO1,204,203,200_.jpg"
+    }
+  },
+  {
+    "type": "media",
+    "title": "Tudo sobre cinema",
+    "subtitle": "Philip Kemp (Autor)",
+    "description": "Se você ama cinema e deseja aprender mais sobre a sétima arte, este livro não pode faltar na sua biblioteca. Organizado cronologicamente e escrito por uma experiente equipe de críticos especializados, este é um guia instigante sobre a história do cinema, incrementado com análises aprofundadas das obras-primas e ilustrado com imagens de cenas inesquecíveis.",
+    "link": "https://www.amazon.com.br/Tudo-Sobre-Cinema-Philip-Kemp/dp/8575426680",
+    "mediaType": "Livro",
+    "image": {
+      "image_type": "online",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/41hO4sH7-0L._SX349_BO1,204,203,200_.jpg"
+    }
+  },
+  {
+    "type": "media",
+    "title": "1001 Filmes Para Ver Antes De Morrer",
+    "subtitle": "Steven Jay Schneider, Ian Haydn Smith (Editores)",
+    "description": "Traduzido para 25 línguas e com mais de um milhã o de exemplares vendidos, 1001 filmes para ver antes de morrer inclui obras de mais de 30 países e revela o que há de melhor no cinema de todos os tempos. Nesta edição atualizada, que conta com sucessos recentes, mais de 50 críticos consagrados selecionaram 1001 filmes imperdíveis e os reuniram neste guia de referência para todos os apaixonados pela sétima arte.",
+    "link": "https://www.amazon.com.br/1001-Movies-You-Must-Before/dp/1438050755",
+    "mediaType": "Livro",
+    "image": {
+      "image_type": "online",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/51YS8sYqh-L._SX393_BO1,204,203,200_.jpg"
+    }
+  },
+  {
+    "type": "media",
+    "title": "História do Cinema: Dos Clássicos Mudos ao Cinema Moderno",
+    "subtitle": "Mark Cousins (Autor)",
+    "description": "Do cinema mudo, passando pela engenhosidade do cinema sonoro, até as incríveis inovações da era digital, Mark Cousins apresenta um panorama completo e acessível da história do cinema mundial. Nela são desveladas as técnicas, aspirações e invenções de cada época, em diferentes países e por diversos cineastas que sonharam, imaginaram e trabalharam para que sua mensagem e sua estética fossem transmitidas a um público cada vez mais admirado pela sétima arte e pela rica história que ela comporta.",
+    "link": "https://www.amazon.com.br/Story-Film-Mark-Cousins/dp/186205942X",
+    "mediaType": "Livro",
+    "image": {
+      "image_type": "online",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/4193EnREauL._SX338_BO1,204,203,200_.jpg"
+    }
+  }
 ]

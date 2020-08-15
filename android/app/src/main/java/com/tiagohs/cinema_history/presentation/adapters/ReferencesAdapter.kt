@@ -5,12 +5,13 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.entities.contents.*
-import com.tiagohs.cinema_history.presentation.adapters.page.*
-import com.tiagohs.cinema_history.presentation.adapters.references.BookViewHolder
+import com.tiagohs.cinema_history.presentation.adapters.page.BasePageViewHolder
+import com.tiagohs.cinema_history.presentation.adapters.references.MediaViewHolder
+import com.tiagohs.cinema_history.presentation.adapters.references.TextViewHolder
 import com.tiagohs.entities.enums.ReferenceType
 import com.tiagohs.entities.references.Reference
 import com.tiagohs.entities.references.ReferenceBook
+import com.tiagohs.entities.references.ReferenceText
 
 class ReferencesAdapter(
     val context: Context?,
@@ -26,13 +27,17 @@ class ReferencesAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
         return when (viewType) {
-            ReferenceType.BOOK.ordinal -> {
+            ReferenceType.MEDIA.ordinal -> {
+                val view = LayoutInflater.from(parent.context).inflate(MediaViewHolder.LAYOUT_ID, parent, false)
+                MediaViewHolder(context, view)
+            }
+            ReferenceType.TEXT.ordinal -> {
                 val view = LayoutInflater.from(parent.context).inflate(TextViewHolder.LAYOUT_ID, parent, false)
-                BookViewHolder(context, view)
+                TextViewHolder(context, view)
             }
             else -> {
-                val view = LayoutInflater.from(parent.context).inflate(TextViewHolder.LAYOUT_ID, parent, false)
-                BookViewHolder(context, view)
+                val view = LayoutInflater.from(parent.context).inflate(MediaViewHolder.LAYOUT_ID, parent, false)
+                MediaViewHolder(context, view)
             }
         }
     }
@@ -40,17 +45,23 @@ class ReferencesAdapter(
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
 
         when (getItemViewType(position)) {
-            ReferenceType.BOOK.ordinal -> {
+            ReferenceType.MEDIA.ordinal -> {
                 val referenceBook = list[position] as? ReferenceBook ?: return
-                val bookViewHolder = holder as? BookViewHolder ?: return
+                val mediaViewHolder = holder as? MediaViewHolder ?: return
 
-                bookViewHolder.bind(referenceBook)
+                mediaViewHolder.bind(referenceBook)
+            }
+            ReferenceType.TEXT.ordinal -> {
+                val referenceText = list[position] as? ReferenceText ?: return
+                val textViewHolder = holder as? TextViewHolder ?: return
+
+                textViewHolder.bind(referenceText)
             }
             else -> {
                 val referenceBook = list[position] as? ReferenceBook ?: return
-                val bookViewHolder = holder as? BookViewHolder ?: return
+                val mediaViewHolder = holder as? MediaViewHolder ?: return
 
-                bookViewHolder.bind(referenceBook)
+                mediaViewHolder.bind(referenceBook)
             }
         }
     }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+    android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+    android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textContainer"
+        app:cardElevation="@dimen/activity_vertical_margin_1.2x"
+        app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mediaDescription"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/text_size_zeplin_22pt"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_margin="@dimen/activity_vertical_margin_2x"
+            tools:text="Author do Livro Author do Livro Author do Livro Author do Livro Author do Livro"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

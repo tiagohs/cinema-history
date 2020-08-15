@@ -4,6 +4,7 @@
     <string name="quotes">\"\"</string>
 
     <string name="unknown_error">An error occurred, please try again.</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
 
     <string name="history_cinema_title">Historia do Cinema</string>
     <string name="mil_movies_title">1001 Filmes</string>
@@ -23,6 +24,13 @@
     <string name="activity_references">Referências</string>
     <string name="activity_about">Sobre</string>
     <string name="click_here_to_go">Clique aqui para acessar</string>
+    <string name="buy">Comprar</string>
+    <string name="contact_us">Entre em contato</string>
+    <string name="sugestions">Críticas ou sugestões</string>
+    <string name="version">Versão %1s</string>
+    <string name="responsable">Desenvolvimento e Pesquisa por Tiago Silva</string>
+    <string name="terms">Termos</string>
+    <string name="app_description">%1s é um aplicativo grátis que busca, de uma forma divertida e intuitiva, levar a história da sétima arte a todos. Através de imagens, vídeos, entrevistas e infográficos, apresentaremos a trajetória do cinema desde a primeira exibição dos irmãos Lumière até os dias de hoje. Nos baseamos na literatura e em documentários e traduzimos para essa nova mídia. Divirta-se!</string>
 
     <!-- Arrays -->
     <string-array name="app_language_values">

@@ -6,12 +6,15 @@ import java.io.Serializable
 enum class ReferenceType(
     val type: String
 ): Serializable {
-    @SerializedName("book")
-    BOOK("book");
+    @SerializedName("media")
+    MEDIA("media"),
+
+    @SerializedName("text")
+    TEXT("text");
 
     companion object {
         fun getContentType(type: String): ReferenceType {
-            var typeEnum = BOOK
+            var typeEnum = MEDIA
 
             for (typeValue in values()) {
                 if (typeValue.type == type) {

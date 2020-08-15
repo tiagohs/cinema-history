@@ -11,6 +11,8 @@ import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.presenter.ReferencePresenter
 import com.tiagohs.domain.views.ReferenceView
 import com.tiagohs.entities.references.Reference
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import kotlinx.android.synthetic.main.activity_references.*
 import kotlinx.android.synthetic.main.activity_setting.toolbar
 import javax.inject.Inject
@@ -42,6 +44,7 @@ class ReferenceActivity : BaseActivity(), ReferenceView {
 
     override fun bindReference(references: List<Reference>) {
         contentList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        contentList.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(this), SpaceOffsetDecoration.LEFT))
         contentList.adapter = ReferencesAdapter(this, references)
     }
 
