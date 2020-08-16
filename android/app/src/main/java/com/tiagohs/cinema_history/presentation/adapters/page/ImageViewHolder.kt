@@ -1,21 +1,22 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.content.Context
 import android.view.View
 import com.stfalcon.imageviewer.StfalconImageViewer
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentImage
 import com.tiagohs.entities.image.Image
+import com.tiagohs.helpers.extensions.loadImage
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
 
 class ImageViewHolder(
-    val context: Context?,
     val view: View
-): BasePageViewHolder(view) {
+) : BasePageViewHolder(view) {
 
-    fun bind(contentImage: ContentImage) {
-        val context = context ?: return
+    override fun bind(item: Content, position: Int) {
+        super.bind(item, position)
+        val context = containerView.context ?: return
+        val contentImage = item as? ContentImage ?: return
 
         itemView.mainImage.loadImage(contentImage.image)
 

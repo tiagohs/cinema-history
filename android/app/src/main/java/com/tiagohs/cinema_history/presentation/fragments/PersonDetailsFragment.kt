@@ -9,7 +9,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.entities.person_info.PersonInfo
 import com.tiagohs.entities.person_info.PersonInfoMovieList
@@ -20,9 +19,7 @@ import com.tiagohs.cinema_history.presentation.adapters.PersonInfoAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseFragment
 import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.enums.PersonInfoType
-import com.tiagohs.helpers.extensions.imageUrlFromTMDB
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.openLink
+import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.fragment_person_details.*
 import kotlinx.android.synthetic.main.view_person_department.view.*
 
@@ -49,13 +46,21 @@ class PersonDetailsFragment: BaseFragment() {
     private fun bindPersonDetails() {
         val activity = (activity as? PersonDetailsActivity)
         val personInfoContentList = generatePersonInfoList(person)
-        val adapter = PersonInfoAdapter(activity, personInfoContentList)
 
         activity?.setupToolbar(toolbar)
 
-        adapter.onMovieSelected = { onMovieSelected(it) }
-        pageContentList.adapter = adapter
-        pageContentList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
+        pageContentList.apply {
+            adapter = PersonInfoAdapter(personInfoContentList, false).apply {
+                onMovieSelected = { onMovieSelected(it) }
+                onLinkClick = { activity?.openLink(it) }
+                onVideoClick = { videoId ->
+                    activity?.openLink(
+                        getString(R.string.youtube_link, videoId)
+                    )
+                }
+            }
+            layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
+        }
 
         bindHeader(person)
 
@@ -69,14 +74,13 @@ class PersonDetailsFragment: BaseFragment() {
     }
 
     private fun bindHeader(person: Person) {
-
         bindPersonProfileImage(person)
         bindPersonDepartments(person)
         bindSocial(person)
 
         collapsingToolbar.title = person.name
-        personName.text = person.name
-        personBirthInfo.text = person.birthdayFormated
+        personName.setResourceText(person.name)
+        personBirthInfo.setResourceText(person.birthdayFormated)
     }
 
     private fun bindPersonProfileImage(person: Person) {
@@ -99,13 +103,13 @@ class PersonDetailsFragment: BaseFragment() {
     private fun bindPersonDepartments(person: Person) {
 
         person.departmentsList.forEach {
-            jobsScrollView.visibility = View.VISIBLE
+            jobsScrollView.show()
 
             val view = LayoutInflater.from(activity).inflate(R.layout.view_person_department, null, false)
             val layoutParams = Constraints.LayoutParams(Constraints.LayoutParams.WRAP_CONTENT, Constraints.LayoutParams.WRAP_CONTENT)
 
             layoutParams.setMargins(0, 0, 10.convertIntToDp(activity), 0)
-            view.jobName.text = it
+            view.jobName.setResourceText(it)
 
             view.layoutParams = layoutParams
             jobsContainer.addView(view)
@@ -113,9 +117,9 @@ class PersonDetailsFragment: BaseFragment() {
     }
 
     private fun bindSocial(person: Person) {
-        val facebookLink = person.externalIds?.facebookId?.let { "https://www.facebook.com/$it" }
-        val twitterLink = person.externalIds?.facebookId?.let { "https://twitter.com/$it" }
-        val instagramLink = person.externalIds?.facebookId?.let { "https://instagram.com/$it" }
+        val facebookLink = person.externalIds?.facebookId?.let { getString(R.string.facebook_link, it) }
+        val twitterLink = person.externalIds?.twitterId?.let { getString(R.string.twitter_link, it) }
+        val instagramLink = person.externalIds?.instagramId?.let { getString(R.string.instagram_link, it) }
 
         bindSocialItem(facebookImageContainer, facebookImage, facebookLink)
         bindSocialItem(twitterImageContainer, twitterImage, twitterLink)
@@ -129,10 +133,10 @@ class PersonDetailsFragment: BaseFragment() {
     private fun bindSocialItem(imageContainer: ConstraintLayout, image: ImageView, socialPath: String?) {
 
         socialPath?.let { url ->
-            imageContainer.visibility = View.VISIBLE
+            imageContainer.show()
 
             image.setOnClickListener {
-                context?.openLink(url)
+                activity?.openLink(url)
             }
         }
 

@@ -23,9 +23,9 @@ import kotlinx.android.synthetic.main.activity_history_pages.*
 class HistoryPagesActivity: BaseActivity() {
 
     var mainTopic: MainTopicItem? = null
-    var sumario: com.tiagohs.entities.Sumario? = null
-    var itemSelectedPosition = 0
     var adapterPager: PagePagerAdapter? = null
+
+    private var itemSelectedPosition = 0
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_history_pages
     override fun onGetMenuLayoutId(): Int = 0
@@ -50,7 +50,7 @@ class HistoryPagesActivity: BaseActivity() {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
     }
 
-    fun startLoading() {
+    private fun startLoading() {
         pagesContainer.alpha = 0f
 
         loadView.startShimmer()
@@ -58,23 +58,23 @@ class HistoryPagesActivity: BaseActivity() {
         loadView.alpha = 1f
     }
 
-    fun hideLoading() {
+    private fun hideLoading() {
         pagesContainer
-            .animate()
-            .alpha(1f)
-            .setDuration(200)
-            .setInterpolator(DecelerateInterpolator(2f))
-            .start()
+            ?.animate()
+            ?.alpha(1f)
+            ?.setDuration(200)
+            ?.setInterpolator(DecelerateInterpolator(2f))
+            ?.start()
 
         loadView
-            .animate()
-            .alpha(0f)
-            .setDuration(150)
-            .setInterpolator(AccelerateInterpolator(2f))
-            .setListener(object : Animator.AnimatorListener {
+            ?.animate()
+            ?.alpha(0f)
+            ?.setDuration(150)
+            ?.setInterpolator(AccelerateInterpolator(2f))
+            ?.setListener(object : Animator.AnimatorListener {
                 override fun onAnimationEnd(animation: Animator?) {
-                    loadView.stopShimmer()
-                    loadView.visibility = View.INVISIBLE
+                    loadView?.hideShimmer()
+                    loadView?.visibility = View.INVISIBLE
                 }
 
                 override fun onAnimationRepeat(animation: Animator?) {}
@@ -82,7 +82,7 @@ class HistoryPagesActivity: BaseActivity() {
                 override fun onAnimationStart(animation: Animator?) {}
 
             })
-            .start()
+            ?.start()
     }
 
     private fun setupFooter() {

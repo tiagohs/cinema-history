@@ -69,13 +69,16 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     override fun bindMovieDetails(movie: Movie) {
         val movieInfoList = generateMovieInfoList(movie)
-        val adapter = MovieInfoAdapter(this, movieInfoList)
 
         collapsingToolbar.title = movie.title ?: movie.originalTitle
-        adapter.onPersonClicked = { onPersonClicked(it) }
-
-        pageContentList.adapter = adapter
-        pageContentList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        pageContentList.apply {
+            adapter = MovieInfoAdapter(movieInfoList).apply {
+                onPersonClicked = { onPersonClicked(it) }
+                onExtenalLink = { openLink(it) }
+                onVideoClick = { openLink(getString(R.string.youtube_link,it)) }
+            }
+            layoutManager = LinearLayoutManager(this@MovieDetailsActivity, LinearLayoutManager.VERTICAL, false)
+        }
 
         bindMovieHeader(movie)
     }
@@ -84,8 +87,8 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         pageContentListContainer.alpha = 0f
         appBar.alpha = 0f
 
-        loadView.startShimmer()
-        loadView.visibility = View.VISIBLE
+        loadView.showShimmer(true)
+        loadView.show()
     }
 
     override fun hideLoading() {
@@ -110,7 +113,7 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
             .setInterpolator(AccelerateInterpolator(2f))
             .setListener(object : Animator.AnimatorListener {
                 override fun onAnimationEnd(animation: Animator?) {
-                    loadView.stopShimmer()
+                    loadView.hideShimmer()
                     loadView.visibility = View.INVISIBLE
                 }
 
@@ -145,11 +148,11 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         listOfMovieList.add(MovieInfo(MovieInfoType.INFO_SUMMARY, movie))
 
         if (castList.isNotEmpty()) {
-            listOfMovieList.add(MovieInfoPersonList(MovieInfoType.INFO_CAST, movie, castList, "Elenco"))
+            listOfMovieList.add(MovieInfoPersonList(MovieInfoType.INFO_CAST, movie, castList, getResourceString(R.string.cast)))
         }
 
         if (crewList.isNotEmpty()) {
-            listOfMovieList.add(MovieInfoPersonList(MovieInfoType.INFO_CREW, movie, crewList, "Equipe Técnica"))
+            listOfMovieList.add(MovieInfoPersonList(MovieInfoType.INFO_CREW, movie, crewList, getResourceString(R.string.crew)))
         }
 
         if (!movie.productionCompanies.isNullOrEmpty()) {
@@ -169,8 +172,8 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         val genres = movie.genres
         val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_780)
 
-        movieTitle.text = movie.title
-        movieOriginalTitle.text = "${movie.originalTitle} (${DateUtils.getYearByDate(movie.releaseDate)})"
+        movieTitle.setResourceText(movie.title)
+        movieOriginalTitle.text = getString(R.string.original_title_format, movie.originalTitle, DateUtils.getYearByDate(movie.releaseDate))
 
         bindGenres(genres)
         bindTrailer(movie)
@@ -179,31 +182,32 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     private fun bindGenres(genres: List<Genres>?) {
         genres?.let {
-            genresScrollView.visibility = View.VISIBLE
+            genresScrollView.show()
 
             it.forEach { genre ->
                 val view = LayoutInflater.from(this).inflate(R.layout.view_genre_item, null, false)
-                val layoutParams = Constraints.LayoutParams(Constraints.LayoutParams.WRAP_CONTENT, Constraints.LayoutParams.WRAP_CONTENT)
-
-                layoutParams.setMargins(0, 0, 10.convertIntToDp(this), 0)
-                view.genreName.text = genre.name
+                val layoutParams = Constraints.LayoutParams(Constraints.LayoutParams.WRAP_CONTENT, Constraints.LayoutParams.WRAP_CONTENT).apply {
+                    setMargins(0, 0, 10.convertIntToDp(this@MovieDetailsActivity), 0)
+                }
 
                 view.layoutParams = layoutParams
+                view.genreName.setResourceText(genre.name)
+
                 genresContainer.addView(view)
             }
         }
     }
 
     private fun bindTrailer(movie: Movie) {
-        val trailerUrlKey = movie.videos?.videoList?.find { it.type == "Trailer" }?.key ?: movie.videos?.videoList?.firstOrNull()?.key
+        val trailerUrlKey = movie.trailerUrlKey
 
-        if (trailerUrlKey.isNullOrBlank()) {
-            playContainer.visibility = View.GONE
+        if (movie.trailerUrlKey.isNullOrBlank()) {
+            playContainer.hide()
             separatorVertical.setGuidelinePercent(1f)
             return
         }
 
-        playContainer.setOnClickListener { openLink("https://www.youtube.com/watch?v=${trailerUrlKey}") }
+        playContainer.setOnClickListener { openLink(getString(R.string.youtube_link, trailerUrlKey)) }
     }
 
     private fun bindBackdrop(backdropPath: String?) {
@@ -222,7 +226,6 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
                 AnimationUtils.createPulseAnimation(movieTitle)
                 AnimationUtils.createPulseAnimation(movieOriginalTitle)
-
 
                 AnimationUtils.createScaleUpAnimation(playCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200)
             }

@@ -1,47 +1,42 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.tmdb.person.PersonVideo
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.openLink
-import com.tiagohs.entities.tmdb.person.PersonVideo
+import com.tiagohs.helpers.extensions.setResourceText
 import kotlinx.android.synthetic.main.adapter_person_video.view.*
 
 class PersonVideoAdapter(
-    val context: Context?,
-    val videos: List<PersonVideo>
-): RecyclerView.Adapter<PersonVideoAdapter.PersonVideoViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonVideoViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_person_video, parent, false)
+    list: List<PersonVideo>,
+    var onVideoClick: ((String?) -> Unit)? = null
+) : BaseAdapter<PersonVideo, PersonVideoAdapter.PersonVideoViewHolder>(list) {
 
-        return PersonVideoViewHolder(view)
-    }
+    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_person_video
 
-    override fun getItemCount(): Int = videos.size
+    override fun onCreateViewHolder(viewType: Int, view: View): PersonVideoViewHolder =
+        PersonVideoViewHolder(view)
 
-    override fun onBindViewHolder(holder: PersonVideoViewHolder, position: Int) {
-        val video = videos[position]
+    inner class PersonVideoViewHolder(view: View) : BaseViewHolder<PersonVideo>(view) {
 
-        holder.bindVideo(video)
-    }
+        override fun bind(item: PersonVideo, position: Int) {
+            super.bind(item, position)
+            val context = containerView.context ?: return
+            val videoId = item.key
 
-    inner class PersonVideoViewHolder(view: View): RecyclerView.ViewHolder(view) {
-
-        fun bindVideo(video: PersonVideo) {
-            val context = context ?: return
-            val videoId = video.key
-            val videoThumbnailUrl = "https://img.youtube.com/vi/${videoId}/0.jpg"
-
-            itemView.videoThumb.loadImage(videoThumbnailUrl, null, scaleType = "center_crop")
-            itemView.videoContainer.setOnClickListener { context.openLink("https://www.youtube.com/watch?v=${videoId}") }
-
-            itemView.typeName.text = video.type
-            itemView.title.text = video.name
-            itemView.source.text = video.source
+            itemView.videoThumb.loadImage(
+                context.getString(R.string.youtube_image_link, videoId),
+                null,
+                scaleType = "center_crop"
+            )
+            itemView.videoContainer.setOnClickListener { onVideoClick?.invoke(videoId) }
+            itemView.typeName.setResourceText(item.type)
+            itemView.title.setResourceText(item.name)
+            itemView.source.setResourceText(item.source)
         }
     }
+
 }

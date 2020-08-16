@@ -1,87 +1,62 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
 import android.graphics.drawable.GradientDrawable
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.setImageDrawableColored
-import com.tiagohs.helpers.extensions.*
-import com.tiagohs.helpers.utils.AnimationUtils
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.Quote
+import com.tiagohs.entities.enums.MainTopicItemLayoutType
+import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.entities.main_topics.DirectorsMainTopic
 import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.entities.main_topics.MilMoviesMainTopic
-import com.tiagohs.entities.enums.MainTopicItemLayoutType
-import com.tiagohs.entities.enums.MainTopicsType
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.*
+import com.tiagohs.helpers.extensions.*
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.utils.AnimationUtils
+import kotlinx.android.synthetic.main.adapter_main_topics_card.view.comingSoonTagContainer
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.contentBackground
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.description
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainImage
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainSubtitle
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainTopicsContainer
 import kotlinx.android.synthetic.main.adapter_main_topics_card.view.title
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.comingSoonTagContainer
 import kotlinx.android.synthetic.main.adapter_main_topics_card_full.view.*
 import kotlinx.android.synthetic.main.adapter_main_topics_inter_quote.view.*
 
 class MainTopicsAdapter(
-    val context: Context?,
-    val mainTopicsType: MainTopicsType,
-    val mainTopicList: List<MainTopic>,
+    private val mainTopicsType: MainTopicsType,
+    list: List<MainTopic>,
     val isDarkMode: Boolean = true
-): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+) : BaseAdapter<MainTopic, BaseViewHolder<MainTopic>>(list) {
 
     var onMainTopicSelected: ((mainTopic: MainTopic, view: View?) -> Unit)? = null
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-
-        return when (viewType) {
-            MainTopicItemLayoutType.QUOTE.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_inter_quote, parent, false)
-
-                 QuoteViewHolder(view)
-            }
-
-            MainTopicItemLayoutType.CARD.ordinal -> {
-                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_card, parent, false)
-
-                 MainTopicViewHolder(view)
-            }
-            MainTopicItemLayoutType.FULL.ordinal -> {
-                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_full, parent, false)
-
-                 MainTopicViewHolder(view)
-            }
-            MainTopicItemLayoutType.CARD_FULL.ordinal -> {
-                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_card_full, parent, false)
-
-                 MainTopicViewHolder(view)
-            }
-            else -> {
-                val view =  LayoutInflater.from(parent.context).inflate(R.layout.adapter_main_topics_card, parent, false)
-
-                 MainTopicViewHolder(view)
-            }
-        }
+    override fun getLayoutResId(viewType: Int): Int = when (viewType) {
+        MainTopicItemLayoutType.QUOTE.ordinal -> R.layout.adapter_main_topics_inter_quote
+        MainTopicItemLayoutType.CARD.ordinal -> R.layout.adapter_main_topics_card
+        MainTopicItemLayoutType.FULL.ordinal -> R.layout.adapter_main_topics_full
+        MainTopicItemLayoutType.CARD_FULL.ordinal -> R.layout.adapter_main_topics_card_full
+        else -> R.layout.adapter_empty
     }
 
-    override fun getItemCount(): Int = mainTopicList.size
+    override fun onCreateViewHolder(viewType: Int, view: View): BaseViewHolder<MainTopic> =
+        when (viewType) {
+            MainTopicItemLayoutType.QUOTE.ordinal -> QuoteViewHolder(view)
+            MainTopicItemLayoutType.CARD.ordinal -> MainTopicViewHolder(view)
+            MainTopicItemLayoutType.FULL.ordinal -> MainTopicViewHolder(view)
+            MainTopicItemLayoutType.CARD_FULL.ordinal -> MainTopicViewHolder(view)
+            else -> object : BaseViewHolder<MainTopic>(view) {}
+        }
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val mainTopic = mainTopicList[position]
-        val layoutType = getItemViewType(position)
+    override fun onBindViewHolder(holder: BaseViewHolder<MainTopic>, position: Int) {
+        val mainTopic = list.getOrNull(position) ?: return
 
-        when (layoutType) {
+        when (getItemViewType(position)) {
             MainTopicItemLayoutType.QUOTE.ordinal -> {
-                val quoteHoder = holder as? QuoteViewHolder ?: return
-                val quote = mainTopic as? com.tiagohs.entities.Quote ?: return
-
-                quoteHoder.bind(quote)
+                (holder as? QuoteViewHolder)?.bind(mainTopic, position)
             }
             else -> {
                 val mainTopicHoder = holder as? MainTopicViewHolder ?: return
@@ -90,7 +65,7 @@ class MainTopicsAdapter(
                     MainTopicsType.HISTORY_CINEMA -> {
                         val mainTopicItem = mainTopic as? MainTopicItem ?: return
 
-                        mainTopicHoder.bind(mainTopicItem)
+                        mainTopicHoder.bind(mainTopicItem, position)
                     }
                     MainTopicsType.MIL_MOVIES -> {
                         val milMoviesMainTopic = mainTopic as? MilMoviesMainTopic ?: return
@@ -103,52 +78,100 @@ class MainTopicsAdapter(
                         mainTopicHoder.bindDirectorMainTopic(directorsMainTopic)
                     }
                     else -> {
-                        val mainTopicItem = mainTopic as? MainTopicItem ?: return
-
-                        mainTopicHoder.bind(mainTopicItem)
                     }
                 }
-
             }
         }
-
     }
 
-    override fun getItemViewType(position: Int): Int {
-        return mainTopicList[position].layoutType.ordinal
-    }
+    override fun getItemViewType(position: Int): Int = list[position].layoutType.ordinal
 
-    override fun onViewAttachedToWindow(holder: RecyclerView.ViewHolder) {
+    override fun onViewAttachedToWindow(holder: BaseViewHolder<MainTopic>) {
         super.onViewAttachedToWindow(holder)
 
         if (holder is MainTopicViewHolder) {
             holder.setupAnimation()
         }
-
     }
 
     inner class MainTopicViewHolder(
         val view: View
-    ): RecyclerView.ViewHolder(view) {
+    ) : BaseViewHolder<MainTopic>(view) {
 
         var mainTopicItem: MainTopic? = null
+
+        override fun bind(item: MainTopic, position: Int) {
+            super.bind(item, position)
+
+            val mainTopicItem = item as? MainTopicItem ?: return
+            val context = containerView.context ?: return
+
+            itemView.mainImage.loadImage(mainTopicItem.image, null)
+
+            mainTopicItem.image.imageStyle?.height?.let {
+                itemView.mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                    ConstraintLayout.LayoutParams.MATCH_PARENT,
+                    it.convertIntToDp(context)
+                )
+            }
+
+            itemView.title.setResourceText(mainTopicItem.title)
+
+            itemView.description.setResourceText(mainTopicItem.description)
+            itemView.description.show()
+
+            itemView.mainSubtitle.setResourceText(mainTopicItem.subtitle)
+            itemView.mainSubtitle.show()
+
+            mainTopicItem.titleColor?.let { itemView.title.setResourceTextColor(mainTopicItem.titleColor) }
+            mainTopicItem.titleBackgroundColor?.let {
+                itemView.contentBackground.setResourceBackgroundColor(
+                    mainTopicItem.titleBackgroundColor
+                )
+            }
+            mainTopicItem.titleColor?.let { itemView.description.setResourceTextColor(mainTopicItem.titleColor) }
+            mainTopicItem.titleColor?.let { itemView.mainSubtitle.setResourceTextColor(mainTopicItem.titleColor) }
+
+            itemView.mainTopicsContainer.background = GradientDrawable().apply {
+                cornerRadius = 10f
+            }
+
+            itemView.mainTopicsContainer.setOnClickListener {
+                onMainTopicSelected?.invoke(
+                    mainTopicItem,
+                    itemView
+                )
+            }
+
+            if (mainTopicItem.blocked) {
+                itemView.mainTopicsContainer.isClickable = false
+                itemView.mainTopicsContainer.alpha = 0.3f
+                itemView.comingSoonTagContainer.show()
+                return
+            }
+
+            itemView.mainTopicsContainer.isClickable = true
+            itemView.mainTopicsContainer.alpha = 1f
+            itemView.comingSoonTagContainer.hide()
+        }
 
         fun bindDirectorMainTopic(mainTopic: DirectorsMainTopic) {
             this.mainTopicItem = mainTopic
 
-            val context = context ?: return
+            val context = containerView.context ?: return
 
             mainTopic.image.imageStyle?.height?.let {
-                val imageListLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(context))
-
-                itemView.mainImage.layoutParams = imageListLayoutParams
+                itemView.mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                    ConstraintLayout.LayoutParams.MATCH_PARENT,
+                    it.convertIntToDp(context)
+                )
             }
 
             itemView.mainImage.loadImage(mainTopic.image, null) {
                 itemView.mainImageDegrade.alpha = 1f
             }
 
-            itemView.title.text = mainTopic.title
+            itemView.title.setResourceText(mainTopic.title)
             itemView.mainTopicsContainer.setOnClickListener {
                 val mainTopicItem = mainTopicItem ?: return@setOnClickListener
 
@@ -159,19 +182,20 @@ class MainTopicsAdapter(
         fun bindMillMainTopic(mainTopic: MilMoviesMainTopic) {
             this.mainTopicItem = mainTopic
 
-            val context = context ?: return
+            val context = containerView.context ?: return
 
             mainTopic.image.imageStyle?.height?.let {
-                val imageListLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(context))
-
-                itemView.mainImage.layoutParams = imageListLayoutParams
+                itemView.mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                    ConstraintLayout.LayoutParams.MATCH_PARENT,
+                    it.convertIntToDp(context)
+                )
             }
 
             itemView.mainImage.loadImage(mainTopic.image, null) {
                 itemView.mainImageDegrade.alpha = 1f
             }
 
-            itemView.title.text = mainTopic.title
+            itemView.title.setResourceText(mainTopic.title)
             itemView.mainTopicsContainer.setOnClickListener {
                 val mainTopicItem = mainTopicItem ?: return@setOnClickListener
 
@@ -179,56 +203,15 @@ class MainTopicsAdapter(
             }
         }
 
-        fun bind(mainTopicItem: MainTopicItem) {
-            this.mainTopicItem = mainTopicItem
-
-            val context = context ?: return
-
-            itemView.mainImage.loadImage(mainTopicItem.image, null)
-
-            mainTopicItem.image.imageStyle?.height?.let {
-                val imageListLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(context))
-
-                itemView.mainImage.layoutParams = imageListLayoutParams
-            }
-
-            itemView.title.text = mainTopicItem.title
-
-            itemView.description.text = mainTopicItem.description
-            itemView.description.visibility = View.VISIBLE
-
-            itemView.mainSubtitle.text = mainTopicItem.subtitle
-            itemView.mainSubtitle.visibility = View.VISIBLE
-
-            mainTopicItem.titleColor?.let { itemView.title.setTextColor(context.getResourceColor(mainTopicItem.titleColor)) }
-            mainTopicItem.titleBackgroundColor?.let { itemView.contentBackground.setBackgroundColor(context.getResourceColor(mainTopicItem.titleBackgroundColor)) }
-            mainTopicItem.titleColor?.let { itemView.description.setTextColor(context.getResourceColor(mainTopicItem.titleColor)) }
-            mainTopicItem.titleColor?.let { itemView.mainSubtitle.setTextColor(context.getResourceColor(mainTopicItem.titleColor)) }
-
-            val background = GradientDrawable()
-            background.cornerRadius = 10f
-
-            itemView.mainTopicsContainer.background = background
-            itemView.mainTopicsContainer.setOnClickListener { onMainTopicSelected?.invoke(mainTopicItem, itemView) }
-
-            if (mainTopicItem.blocked) {
-                itemView.mainTopicsContainer.isClickable = false
-                itemView.mainTopicsContainer.alpha = 0.3f
-                itemView.comingSoonTagContainer.visibility = View.VISIBLE
-                return
-            }
-
-            itemView.mainTopicsContainer.isClickable = true
-            itemView.mainTopicsContainer.alpha = 1f
-            itemView.comingSoonTagContainer.visibility = View.GONE
-        }
-
         fun setupAnimation() {
             val mainTopicItem = mainTopicItem ?: return
 
             if (mainTopicItem is MainTopicItem) {
                 val mainTopicAnimation = mainTopicItem.image.animation ?: return
-                val animation = AnimationUtils.createAnimationFromType(mainTopicAnimation.type, mainTopicAnimation.duration)
+                val animation = AnimationUtils.createAnimationFromType(
+                    mainTopicAnimation.type,
+                    mainTopicAnimation.duration
+                )
 
                 itemView.mainImage.clearAnimation()
                 itemView.mainImage.startAnimation(animation)
@@ -239,21 +222,23 @@ class MainTopicsAdapter(
 
     inner class QuoteViewHolder(
         val view: View
-    ): RecyclerView.ViewHolder(view) {
+    ) : BaseViewHolder<MainTopic>(view) {
 
-        fun bind(quote: com.tiagohs.entities.Quote) {
-            val context = context ?: return
-            val quoteColor =  if (isDarkMode) R.color.md_white_1000 else R.color.md_black_1000
+        override fun bind(item: MainTopic, position: Int) {
+            super.bind(item, position)
+            val quote = item as? Quote ?: return
+            val quoteColor = if (isDarkMode) R.color.md_white_1000 else R.color.md_black_1000
 
-            itemView.quoteText.text = quote.quote
-            itemView.quoteTextAuthor.text = quote.author
+            itemView.quoteText.setResourceText(quote.quote)
+            itemView.quoteTextAuthor.setResourceText(quote.author)
 
             if (!isDarkMode) {
-                itemView.quoteText.setTextColor(context.getResourceColor(R.color.md_black_1000))
+                itemView.quoteText.setResourceTextColor(R.color.md_black_1000)
             }
 
             itemView.quoteTop.setImageDrawableColored(R.drawable.ic_quote_bottom_24dp, quoteColor)
             itemView.quoteBottom.setImageDrawableColored(R.drawable.ic_quote_top_24dp, quoteColor)
         }
     }
+
 }

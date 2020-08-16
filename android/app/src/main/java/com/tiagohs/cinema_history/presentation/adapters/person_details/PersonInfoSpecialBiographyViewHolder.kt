@@ -1,33 +1,29 @@
 package com.tiagohs.cinema_history.presentation.adapters.person_details
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.Constraints
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.person_info.PersonInfo
+import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.openLink
-import com.tiagohs.entities.tmdb.person.Person
+import com.tiagohs.helpers.extensions.setResourceText
+import com.tiagohs.helpers.extensions.show
 import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.*
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.facebookContainer
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.facebookContainerClickable
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.imdbContainer
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.imdbContainerClickable
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.instagramContainer
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.instagramContainerClickable
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.twitterContainer
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.twitterContainerClickable
 import kotlinx.android.synthetic.main.view_person_department.view.*
 
 class PersonInfoSpecialBiographyViewHolder(
-    val context: Context?,
-    view: View
-): RecyclerView.ViewHolder(view) {
+    view: View,
+    var onLinkClick: ((String?) -> Unit)? = null
+) : BaseViewHolder<PersonInfo>(view) {
 
-    fun bindPersonInfo(person: Person) {
+    override fun bind(item: PersonInfo, position: Int) {
+        super.bind(item, position)
+        val person = item.person
 
-        itemView.personBiography.text = person.biography
+        itemView.personBiography.setResourceText(person.biography)
 
         bindAwards(person)
         bindBirthdayInfo(person)
@@ -38,57 +34,93 @@ class PersonInfoSpecialBiographyViewHolder(
     private fun bindBirthdayInfo(person: Person) {
 
         if (person.birthdayFormated.isNotBlank()) {
-            itemView.personBirthInfo.visibility = View.VISIBLE
-            itemView.personBirthInfo.text = person.birthdayFormated
+            itemView.personBirthInfo.show()
+            itemView.personBirthInfo.setResourceText(person.birthdayFormated)
         }
     }
 
     private fun bindAwards(person: Person) {
+        val context = containerView.context ?: return
 
         person.extraInfo?.awards?.let {
-            itemView.awardsContainer.visibility = View.VISIBLE
-            itemView.awards.text = it
+            itemView.awardsContainer.show()
+            itemView.awards.setResourceText(it)
 
-            itemView.awardsContainer.setOnClickListener { context?.openLink("https://www.imdb.com/name/${person.externalIds?.imdbId}/awards") }
+            itemView.awardsContainer.setOnClickListener {
+                onLinkClick?.invoke(
+                    context.getString(
+                        R.string.imdb_awards_link,
+                        person.externalIds?.imdbId
+                    )
+                )
+            }
         }
     }
 
     private fun bindSocial(person: Person) {
-        setupExternalLinkItem(person.externalIds?.facebookId, itemView.facebookContainer, itemView.facebookContainerClickable, "https://www.facebook.com")
-        setupExternalLinkItem(person.externalIds?.twitterId, itemView.twitterContainer, itemView.twitterContainerClickable, "https://twitter.com")
-        setupExternalLinkItem(person.externalIds?.instagramId, itemView.instagramContainer, itemView.instagramContainerClickable, "https://instagram.com")
-        setupExternalLinkItem(person.externalIds?.imdbId, itemView.imdbContainer, itemView.imdbContainerClickable, "https://www.imdb.com/name")
+        setupExternalLinkItem(
+            person.externalIds?.facebookId,
+            itemView.facebookContainer,
+            itemView.facebookContainerClickable,
+            R.string.facebook_link
+        )
+        setupExternalLinkItem(
+            person.externalIds?.twitterId,
+            itemView.twitterContainer,
+            itemView.twitterContainerClickable,
+            R.string.twitter_link
+        )
+        setupExternalLinkItem(
+            person.externalIds?.instagramId,
+            itemView.instagramContainer,
+            itemView.instagramContainerClickable,
+            R.string.instagram_link
+        )
+        setupExternalLinkItem(
+            person.externalIds?.imdbId,
+            itemView.imdbContainer,
+            itemView.imdbContainerClickable,
+            R.string.imdb_person_link
+        )
     }
 
-
     private fun bindPersonDepartments(person: Person) {
+        val context = containerView.context ?: return
 
         person.departmentsList.forEach {
             itemView.jobsScrollView.visibility = View.VISIBLE
 
-            val view = LayoutInflater.from(context).inflate(R.layout.view_person_department, null, false)
-            val layoutParams = Constraints.LayoutParams(Constraints.LayoutParams.WRAP_CONTENT, Constraints.LayoutParams.WRAP_CONTENT)
+            val view =
+                LayoutInflater.from(context).inflate(R.layout.view_person_department, null, false)
+            val layoutParams = Constraints.LayoutParams(
+                Constraints.LayoutParams.WRAP_CONTENT,
+                Constraints.LayoutParams.WRAP_CONTENT
+            )
 
             layoutParams.setMargins(0, 0, 10.convertIntToDp(context), 0)
-            view.jobName.text = it
+            view.jobName.setResourceText(it)
 
             view.layoutParams = layoutParams
             itemView.jobsContainer.addView(view)
         }
     }
 
-
-    private fun setupExternalLinkItem(externalLinkId: String?, container: View, containerClickable: View, baseUrl: String) {
-        val context = context ?: return
+    private fun setupExternalLinkItem(
+        externalLinkId: String?,
+        container: View,
+        containerClickable: View,
+        baseUrl: Int
+    ) {
+        val context = containerView.context ?: return
         val externalLinkID = externalLinkId ?: return
 
         if (externalLinkID.isNotBlank()) {
-            val externalLink = if (baseUrl.isNotBlank()) "$baseUrl/$externalLinkID" else externalLinkID
+            val externalLink =
+                if (baseUrl == 0) externalLinkID else context.getString(baseUrl, externalLinkID)
 
-            container.visibility = View.VISIBLE
-            containerClickable.setOnClickListener { context.openLink(externalLink) }
+            container.show()
+            containerClickable.setOnClickListener { onLinkClick?.invoke(externalLink) }
         }
-
     }
 
     companion object {

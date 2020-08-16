@@ -13,6 +13,8 @@ import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.cinema_history.presentation.fragments.PersonDetailsFragment
 import com.tiagohs.cinema_history.presentation.fragments.PersonDetailsSpecialFragment
 import com.tiagohs.domain.views.PersonDetailsView
+import com.tiagohs.helpers.extensions.show
+import com.tiagohs.helpers.extensions.startFragment
 import kotlinx.android.synthetic.main.activity_person_details.*
 import javax.inject.Inject
 
@@ -58,15 +60,12 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
         else
             PersonDetailsFragment.newInstance(person)
 
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.container, fragment)
-            .commit()
+        startFragment(R.id.container, fragment)
     }
 
     override fun startLoading() {
-        loadView.startShimmer()
-        loadView.visibility = View.VISIBLE
+        loadView.showShimmer(true)
+        loadView.show()
     }
 
     override fun hideLoading() {
@@ -77,8 +76,8 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
             .setInterpolator(AccelerateInterpolator(2f))
             .setListener(object : Animator.AnimatorListener {
                 override fun onAnimationEnd(animation: Animator?) {
-                    loadView.stopShimmer()
-                    loadView.visibility = View.INVISIBLE
+                    loadView?.hideShimmer()
+                    loadView?.visibility = View.INVISIBLE
                 }
 
                 override fun onAnimationRepeat(animation: Animator?) {}

@@ -42,4 +42,8 @@ data class Movie (
     @SerializedName("genre_ids") val genreIds : List<Int>? = null,
     @SerializedName("translations") val translations : TranslationsResult<TranslationMovieData>? = null,
     @SerializedName("external_ids") val externalIds : ExternalIds? = null
-): Serializable
+): Serializable {
+
+    val trailerUrlKey: String?
+        get() = videos?.videoList?.find { it.type == "Trailer" }?.key ?: videos?.videoList?.firstOrNull()?.key
+}

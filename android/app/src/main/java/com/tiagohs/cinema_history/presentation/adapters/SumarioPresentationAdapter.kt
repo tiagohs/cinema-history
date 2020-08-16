@@ -1,56 +1,44 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.Sumario
+import com.tiagohs.helpers.extensions.setResourceText
 import kotlinx.android.synthetic.main.adapter_sumario_presentation_item.view.*
 
 class SumarioPresentationAdapter(
-    val context: Context,
-    val list: List<com.tiagohs.entities.Sumario>
-): RecyclerView.Adapter<SumarioPresentationAdapter.SumarioPresentationViewHolder>() {
+    list: List<Sumario>
+) : BaseAdapter<Sumario, SumarioPresentationAdapter.SumarioPresentationViewHolder>(list) {
 
-    var onSumarioClick: ((sumario: com.tiagohs.entities.Sumario, position: Int) -> Unit)? = null
+    var onSumarioClick: ((sumario: Sumario, position: Int) -> Unit)? = null
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SumarioPresentationViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_sumario_presentation_item, parent, false)
+    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_sumario_presentation_item
 
-        return SumarioPresentationViewHolder(view)
-    }
+    override fun onCreateViewHolder(viewType: Int, view: View): SumarioPresentationViewHolder =
+        SumarioPresentationViewHolder(view)
 
-    override fun getItemCount(): Int = list.size
-
-    override fun onBindViewHolder(holder: SumarioPresentationViewHolder, position: Int) {
-        val timelineItem = list[position]
-
-        holder.bind(timelineItem, position)
-    }
-
-    inner class SumarioPresentationViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
+    inner class SumarioPresentationViewHolder(view: View) : BaseViewHolder<Sumario>(view),
+        View.OnClickListener {
 
         init {
             view.setOnClickListener(this)
         }
 
-        private var sumario: com.tiagohs.entities.Sumario? = null
-        private var positionItem: Int = 0
+        override fun bind(item: Sumario, position: Int) {
+            super.bind(item, position)
 
-        fun bind(sumario: com.tiagohs.entities.Sumario, position: Int) {
-            this.sumario = sumario
-            this.positionItem = position
-
-            itemView.sumarioTitle.text = sumario.title
-            itemView.sumarioDescription.text = sumario.description
+            itemView.sumarioTitle.setResourceText(item.title)
+            itemView.sumarioDescription.setResourceText(item.description)
         }
 
         override fun onClick(v: View?) {
-            val sumario = sumario ?: return
+            val sumario = item ?: return
 
             onSumarioClick?.invoke(sumario, positionItem)
         }
 
     }
+
 }

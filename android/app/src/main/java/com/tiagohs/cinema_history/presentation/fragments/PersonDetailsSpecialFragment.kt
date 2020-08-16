@@ -6,7 +6,6 @@ import android.view.animation.DecelerateInterpolator
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
-import com.tiagohs.helpers.extensions.loadImageBlackAndWhite
 import com.tiagohs.entities.image.Image
 import com.tiagohs.entities.person_info.PersonInfo
 import com.tiagohs.entities.tmdb.person.Person
@@ -16,7 +15,7 @@ import com.tiagohs.cinema_history.presentation.adapters.PersonInfoAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseFragment
 import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.entities.enums.PersonInfoType
-import com.tiagohs.helpers.extensions.styledString
+import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.fragment_person_details_special.*
 
 class PersonDetailsSpecialFragment: BaseFragment() {
@@ -56,9 +55,9 @@ class PersonDetailsSpecialFragment: BaseFragment() {
         personName.setupLinkableTextView(context)
         personQuote.setupLinkableTextView(context)
 
-        personName.text = personExtraInfo.customName?.styledString()
-        personQuote.text = personExtraInfo.quote?.styledString()
-        moviesQuantity.text = person.personFilmography.size.toString()
+        personName.setResourceStyledText(personExtraInfo.customName)
+        personQuote.setResourceStyledText(personExtraInfo.quote)
+        moviesQuantity.setResourceText(person.personFilmography.size.toString())
 
         bindPersonImage(personExtraInfo.highlight_image)
     }
@@ -66,9 +65,16 @@ class PersonDetailsSpecialFragment: BaseFragment() {
     private fun bindContentList() {
         val activity = (activity as? PersonDetailsActivity)
         val personInfoContentList = generatePersonInfoList(person)
-        val adapter = PersonInfoAdapter(activity, personInfoContentList)
+        val adapter = PersonInfoAdapter(personInfoContentList, true).apply {
+            onMovieSelected = { onMovieSelected(it) }
+            onLinkClick = { activity?.openLink(it) }
+            onVideoClick = { videoId ->
+                activity?.openLink(
+                    getString(R.string.youtube_link, videoId)
+                )
+            }
+        }
 
-        adapter.onMovieSelected = { onMovieSelected(it) }
         pageContentList.adapter = adapter
         pageContentList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
     }
@@ -109,8 +115,6 @@ class PersonDetailsSpecialFragment: BaseFragment() {
 
         return listOfPersonInfo
     }
-
-
 
     private fun startLoading() {
         pageContentListContainer.alpha = 0f

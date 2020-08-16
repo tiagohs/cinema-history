@@ -2,28 +2,31 @@ package com.tiagohs.cinema_history.presentation.adapters.references
 
 import android.content.Context
 import android.view.View
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.references.Reference
 import com.tiagohs.entities.references.ReferenceText
 import com.tiagohs.helpers.extensions.openLink
-import com.tiagohs.helpers.extensions.styledString
+import com.tiagohs.helpers.extensions.setResourceStyledText
 import kotlinx.android.synthetic.main.adapter_reference_media.view.*
 
 class TextViewHolder(
-    val context: Context?,
-    val view: View
-) : RecyclerView.ViewHolder(view) {
+    val view: View,
+    var onLinkClick: ((String?) -> Unit)? = null
+) : BaseViewHolder<Reference>(view) {
 
-    fun bind(referenceBook: ReferenceText) {
-        val context = context ?: return
+    override fun bind(item: Reference, position: Int) {
+        super.bind(item, position)
+        val context = containerView.context ?: return
+        val referenceBook = item as? ReferenceText ?: return
 
-        itemView.mediaName.text = referenceBook.text.styledString()
+        itemView.mediaName.setResourceStyledText(referenceBook.text)
         itemView.mediaName.setupLinkableTextView(context)
 
         val link = referenceBook.link
         if (link != null) {
-            itemView.mediaContainer.setOnClickListener { context.openLink(link) }
+            itemView.mediaContainer.setOnClickListener { onLinkClick?.invoke(link) }
         }
     }
 

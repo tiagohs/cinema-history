@@ -1,113 +1,42 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.entities.person_info.PersonInfo
-import com.tiagohs.entities.person_info.PersonInfoMovieList
+import android.view.View
+import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.cinema_history.presentation.adapters.person_details.*
 import com.tiagohs.entities.enums.PersonInfoType
+import com.tiagohs.entities.person_info.PersonInfo
 
 class PersonInfoAdapter(
-    val context: Context?,
-    val list: List<PersonInfo>
-): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    list: List<PersonInfo>,
+    private val isSpecial: Boolean
+) : BaseAdapter<PersonInfo, BaseViewHolder<PersonInfo>>(list) {
 
     var onMovieSelected: ((movieId: Int) -> Unit)? = null
+    var onVideoClick: ((String?) -> Unit)? = null
+    var onLinkClick: ((String?) -> Unit)? = null
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun getLayoutResId(viewType: Int): Int = when (viewType) {
+        PersonInfoType.INFO_FILMOGRAPHY.ordinal -> PersonInfoFilmographyViewHolder.LAYOUT_ID
+        PersonInfoType.INFO_BIOGRAPHY.ordinal -> PersonInfoBiographyViewHolder.LAYOUT_ID
+        PersonInfoType.INFO_SPECIAL_BIOGRAPHY.ordinal -> PersonInfoSpecialBiographyViewHolder.LAYOUT_ID
+        PersonInfoType.INFO_SPECIAL_FILMOGRAPHY.ordinal -> PersonInfoSpecialFilmographyViewHolder.LAYOUT_ID
+        PersonInfoType.INFO_SPECIAL_PROFILE.ordinal -> PersonInfoSpecialProfileViewHolder.LAYOUT_ID
+        PersonInfoType.INFO_MIDIA.ordinal -> PersonInfoMidiaViewHolder.LAYOUT_ID
+        else -> R.layout.adapter_empty
+    }
 
-        return when (viewType) {
-            PersonInfoType.INFO_FILMOGRAPHY.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(PersonInfoFilmographyViewHolder.LAYOUT_ID, parent, false)
-
-                PersonInfoFilmographyViewHolder(context, view, onMovieSelected)
-            }
-            PersonInfoType.INFO_BIOGRAPHY.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(PersonInfoBiographyViewHolder.LAYOUT_ID, parent, false)
-
-                PersonInfoBiographyViewHolder(context, view)
-            }
-            PersonInfoType.INFO_SPECIAL_BIOGRAPHY.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(PersonInfoSpecialBiographyViewHolder.LAYOUT_ID, parent, false)
-
-                PersonInfoSpecialBiographyViewHolder(context, view)
-            }
-            PersonInfoType.INFO_SPECIAL_FILMOGRAPHY.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(PersonInfoSpecialFilmographyViewHolder.LAYOUT_ID, parent, false)
-
-                PersonInfoSpecialFilmographyViewHolder(context, view, onMovieSelected)
-            }
-            PersonInfoType.INFO_SPECIAL_PROFILE.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(PersonInfoSpecialProfileViewHolder.LAYOUT_ID, parent, false)
-
-                PersonInfoSpecialProfileViewHolder(context, view)
-            }
-            PersonInfoType.INFO_MIDIA.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(PersonInfoMidiaViewHolder.LAYOUT_ID, parent, false)
-
-                PersonInfoMidiaViewHolder(context, view)
-            }
-            else -> {
-                val view = LayoutInflater.from(parent.context).inflate(PersonInfoBiographyViewHolder.LAYOUT_ID, parent, false)
-
-                PersonInfoBiographyViewHolder(context, view)
-            }
+    override fun onCreateViewHolder(viewType: Int, view: View): BaseViewHolder<PersonInfo> =
+        when (viewType) {
+            PersonInfoType.INFO_FILMOGRAPHY.ordinal -> PersonInfoFilmographyViewHolder(view, onMovieSelected)
+            PersonInfoType.INFO_BIOGRAPHY.ordinal -> PersonInfoBiographyViewHolder(view)
+            PersonInfoType.INFO_SPECIAL_BIOGRAPHY.ordinal -> PersonInfoSpecialBiographyViewHolder(view, onLinkClick)
+            PersonInfoType.INFO_SPECIAL_FILMOGRAPHY.ordinal -> PersonInfoSpecialFilmographyViewHolder(view, onMovieSelected)
+            PersonInfoType.INFO_SPECIAL_PROFILE.ordinal -> PersonInfoSpecialProfileViewHolder(view)
+            PersonInfoType.INFO_MIDIA.ordinal -> PersonInfoMidiaViewHolder(view, onVideoClick, isSpecial)
+            else -> object : BaseViewHolder<PersonInfo>(view) {}
         }
-    }
 
-    override fun getItemCount(): Int = list.size
-
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-
-        when (getItemViewType(position)) {
-            PersonInfoType.INFO_FILMOGRAPHY.ordinal -> {
-                val personInfoMovieList = list[position] as? PersonInfoMovieList ?: return
-                val movieInfoPersonViewHolder = holder as? PersonInfoFilmographyViewHolder ?: return
-
-                movieInfoPersonViewHolder.bindPersonInfo(personInfoMovieList.listTitle, personInfoMovieList.movieList)
-            }
-            PersonInfoType.INFO_BIOGRAPHY.ordinal -> {
-                val personInfo = list[position]
-                val personInfoBiographyViewHolder = holder as? PersonInfoBiographyViewHolder ?: return
-
-                personInfoBiographyViewHolder.bindPersonInfo(personInfo.person)
-            }
-            PersonInfoType.INFO_SPECIAL_BIOGRAPHY.ordinal -> {
-                val personInfo = list[position]
-                val personInfoSpecialBiographyViewHolder = holder as? PersonInfoSpecialBiographyViewHolder ?: return
-
-                personInfoSpecialBiographyViewHolder.bindPersonInfo(personInfo.person)
-            }
-            PersonInfoType.INFO_SPECIAL_FILMOGRAPHY.ordinal -> {
-                val personInfo = list[position]
-                val personInfoSpecialFilmographyViewHolder = holder as? PersonInfoSpecialFilmographyViewHolder ?: return
-
-                personInfoSpecialFilmographyViewHolder.bindPersonInfo(personInfo.person)
-            }
-            PersonInfoType.INFO_SPECIAL_PROFILE.ordinal -> {
-                val personInfo = list[position]
-                val personInfoSpecialProfileViewHolder = holder as? PersonInfoSpecialProfileViewHolder ?: return
-
-                personInfoSpecialProfileViewHolder.bindPersonInfo(personInfo.person)
-            }
-            PersonInfoType.INFO_MIDIA.ordinal -> {
-                val personInfo = list[position]
-                val personInfoMidiaViewHolder = holder as? PersonInfoMidiaViewHolder ?: return
-
-                personInfoMidiaViewHolder.bindPersonInfo(personInfo.person)
-            }
-            else -> {
-                val personInfo = list[position]
-                val personInfoBiographyViewHolder = holder as? PersonInfoBiographyViewHolder ?: return
-
-                personInfoBiographyViewHolder.bindPersonInfo(personInfo.person)
-            }
-        }
-    }
-
-    override fun getItemViewType(position: Int): Int {
-        return list[position].type.ordinal
-    }
+    override fun getItemViewType(position: Int): Int = list[position].type.ordinal
 }

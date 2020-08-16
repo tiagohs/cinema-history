@@ -1,34 +1,36 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.content.Context
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.entities.contents.ContentSlide
 import com.tiagohs.cinema_history.presentation.adapters.ImageAdapter
+import com.tiagohs.entities.contents.Content
+import com.tiagohs.entities.contents.ContentSlide
 import com.tiagohs.helpers.extensions.convertIntToDp
-import kotlinx.android.synthetic.main.adapter_page_slide.view.*
 import cz.intik.overflowindicator.SimpleSnapHelper
+import kotlinx.android.synthetic.main.adapter_page_slide.view.*
 
 
 class SlideViewHolder(
-    val context: Context?,
     val view: View
-): BasePageViewHolder(view) {
+) : BasePageViewHolder(view) {
 
-    fun bind(contentSlide: ContentSlide) {
-        val context = context ?: return
+    override fun bind(item: Content, position: Int) {
+        super.bind(item, position)
+        val context = containerView.context ?: return
+        val contentSlide = item as? ContentSlide ?: return
 
         contentSlide.height?.let {
-            val imageListLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(context))
-
-            itemView.imageList.layoutParams = imageListLayoutParams
+            itemView.imageList.layoutParams = ConstraintLayout.LayoutParams(
+                ConstraintLayout.LayoutParams.MATCH_PARENT,
+                it.convertIntToDp(context)
+            )
         }
 
         itemView.imageList.apply {
-            adapter = ImageAdapter(context, contentSlide.images)
+            adapter = ImageAdapter(contentSlide.images)
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
             itemView.imageListIndicator.attachToRecyclerView(this)
@@ -36,7 +38,6 @@ class SlideViewHolder(
 
             setupParallaxScrollListener()
         }
-
     }
 
     private fun RecyclerView.setupParallaxScrollListener() {

@@ -1,23 +1,22 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.content.Context
 import android.view.View
 import com.tiagohs.cinema_history.R
+import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentGif
 import kotlinx.android.synthetic.main.adapter_page_gif.view.*
 
 
-
 class GifViewHolder(
-    val context: Context?,
     val view: View
-): BasePageViewHolder(view) {
+) : BasePageViewHolder(view) {
 
-    fun bind(gifContent: ContentGif) {
+    override fun bind(item: Content, position: Int) {
+        super.bind(item, position)
+        val gifContent = item as? ContentGif ?: return
         val imageThumbnail = gifContent.gifImage.thumbnail
 
         itemView.gifViewer.setupGif(gifContent.gifImage, imageThumbnail)
-
         setupContentFooterInformation(gifContent.information)
     }
 

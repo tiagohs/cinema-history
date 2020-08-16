@@ -45,6 +45,14 @@ fun View?.setResourceBackground(resId: Int) {
     background = context.getResourceDrawable(resId)
 }
 
+fun View?.setResourceBackgroundColor(colorResName: String?) {
+    if (this == null) {
+        return
+    }
+    colorResName ?: return
+
+    setBackgroundColor(context.getResourceColor(colorResName))
+}
 fun View?.setResourceBackgroundColor(colorRes: Int) {
     if (this == null) {
         return

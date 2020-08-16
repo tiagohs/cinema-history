@@ -1,32 +1,45 @@
 package com.tiagohs.cinema_history.presentation.adapters.person_details
 
-import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.convertIntToDp
-import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import com.tiagohs.cinema_history.presentation.adapters.MovieItemAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.dto.MovieFilmographyDTO
+import com.tiagohs.entities.person_info.PersonInfo
+import com.tiagohs.entities.person_info.PersonInfoMovieList
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.setResourceText
+import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import kotlinx.android.synthetic.main.adapter_movie_info_person_list.view.*
 
 
 class PersonInfoFilmographyViewHolder(
-    val context: Context?,
     view: View,
     private val onMovieSelected: ((movieId: Int) -> Unit)? = null
-): RecyclerView.ViewHolder(view) {
+) : BaseViewHolder<PersonInfo>(view) {
 
-    fun bindPersonInfo(listTitle: String, movieList: List<MovieFilmographyDTO>) {
-        val adapter = MovieItemAdapter(context, movieList)
-        adapter.onMovieClicked = onMovieSelected
+    override fun bind(item: PersonInfo, position: Int) {
+        super.bind(item, position)
+        val personInfoMovieList = item as? PersonInfoMovieList ?: return
+        val context = containerView.context ?: return
+        val listTitle = personInfoMovieList.listTitle
+        val movieList = personInfoMovieList.movieList
 
-        itemView.personList.adapter = adapter
-        itemView.personList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-        itemView.personList.addItemDecoration(SpaceOffsetDecoration(6.convertIntToDp(context), SpaceOffsetDecoration.LEFT))
+        itemView.personList.apply {
+            adapter = MovieItemAdapter(movieList).apply {
+                onMovieClicked = onMovieSelected
+            }
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            addItemDecoration(
+                SpaceOffsetDecoration(
+                    6.convertIntToDp(context),
+                    SpaceOffsetDecoration.LEFT
+                )
+            )
+        }
 
-        itemView.personTitle.text = listTitle
+        itemView.personTitle.setResourceText(listTitle)
     }
 
     companion object {

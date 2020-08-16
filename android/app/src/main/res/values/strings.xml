@@ -6,6 +6,15 @@
     <string name="unknown_error">An error occurred, please try again.</string>
     <string name="copy_right" translatable="false">Copyrights © %1$d</string>
 
+    <string name="youtube_link">https://www.youtube.com/watch?v=%1s</string>
+    <string name="youtube_image_link">https://img.youtube.com/vi/%1s/0.jpg</string>
+    <string name="twitter_link">https://twitter.com/%1s</string>
+    <string name="instagram_link">https://instagram.com/%1s</string>
+    <string name="facebook_link">https://www.facebook.com/%1s</string>
+    <string name="imdb_link">https://www.imdb.com/title/%1s</string>
+    <string name="imdb_person_link">https://www.imdb.com/name/%1s</string>
+    <string name="imdb_awards_link">https://www.imdb.com/name/%1s/awards</string>
+
     <string name="history_cinema_title">Historia do Cinema</string>
     <string name="mil_movies_title">1001 Filmes</string>
     <string name="mil_movies_title_v2">1001 Filmes para Ver antes de Morrer</string>
@@ -16,7 +25,6 @@
     <string name="comingsoon">Em Breve</string>
     <string name="movies">Filmes</string>
     <string name="timeline">Timeline</string>
-
 
     <!-- History Pages -->
 
@@ -53,7 +61,11 @@
     <string name="home_directors_title">Os Mestres das Telas</string>
     <string name="home_directors_description">Conheça em Detalhes os maiores diretores do Cinema</string>
 
-
+    <string name="runtime_format">%1dh %2dm</string>
+    <string name="also_format">also %1s</string>
+    <string name="as_format">as %1s</string>
+    <string name="country_format">País: %1s</string>
+    <string name="original_title_format">%1s (%2d)</string>
     <string name="directors">Dirigido por: </string>
     <string name="write_by">Escrito por: </string>
     <string name="language_original">Idioma Original: </string>
@@ -61,6 +73,7 @@
     <string name="release">Lançamento: </string>
     <string name="media">Mídia</string>
     <string name="cast">Elenco</string>
+    <string name="crew">Equipe Técnica</string>
     <string name="production">Produção</string>
     <string name="sinopsys">Sinopse</string>
     <string name="orcamento">Orçamento</string>
@@ -69,6 +82,7 @@
     <string name="filmography">Filmografia</string>
     <string name="director_profile">Perfil do Diretor</string>
     <string name="interviews">Entrevista</string>
+    <string name="no_summary">Esse filme não possui uma sinopse disponível.</string>
 
     <!-- Arrays -->
     <string-array name="app_language_values">

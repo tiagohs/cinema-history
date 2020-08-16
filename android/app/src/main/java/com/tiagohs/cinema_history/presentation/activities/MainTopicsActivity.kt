@@ -9,10 +9,6 @@ import android.view.LayoutInflater
 import android.view.View.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.getResourceColor
-import com.tiagohs.helpers.extensions.setScreenBackgroundColor
-import com.tiagohs.helpers.extensions.setStatusBarColor
-import com.tiagohs.helpers.extensions.startActivityWithSlideAnimation
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.entities.main_topics.DirectorsMainTopic
 import com.tiagohs.entities.main_topics.MainTopic
@@ -23,6 +19,7 @@ import com.tiagohs.cinema_history.presentation.adapters.MainTopicsAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.domain.views.MainTopicsView
+import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.activity_main_topics.*
 import javax.inject.Inject
 
@@ -69,7 +66,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             else -> R.string.history_cinema_title
         }
 
-        toolbarTitle.text = getString(titleRes)
+        toolbarTitle.text = getResourceString(titleRes)
     }
 
     override fun setupScreenLayout() {
@@ -117,7 +114,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
 
     override fun bindMainTopics(mainTopics: List<MainTopic>) {
         val mainTopicsType = mainTopicsType?: return
-        adapter = MainTopicsAdapter(this, mainTopicsType, mainTopics, isDarkMode)
+        adapter = MainTopicsAdapter(mainTopicsType, mainTopics, isDarkMode)
         adapter?.onMainTopicSelected = { mainTopic, _ -> onMainTopicSelected(mainTopic) }
 
         mainTopicsList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
@@ -138,17 +135,17 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
     }
 
     override fun startLoading() {
-        mainTopicsList.visibility = GONE
+        mainTopicsList.hide()
 
-        loadView.startShimmer()
-        loadView.visibility = VISIBLE
+        loadView.showShimmer(true)
+        loadView.show()
     }
 
     override fun hideLoading() {
-        mainTopicsList.visibility = VISIBLE
+        mainTopicsList.show()
 
-        loadView.stopShimmer()
-        loadView.visibility = GONE
+        loadView.hideShimmer()
+        loadView.hide()
     }
 
     companion object {

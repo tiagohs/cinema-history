@@ -1,28 +1,32 @@
 package com.tiagohs.cinema_history.presentation.adapters.timeline
 
-import android.content.Context
 import android.view.View
-import androidx.recyclerview.widget.RecyclerView
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.timeline.Timeline
 import com.tiagohs.entities.timeline.TimelineFooter
+import com.tiagohs.helpers.extensions.show
 import kotlinx.android.synthetic.main.adapter_timeline_footer.view.*
 
 class TimelineItemFooterHolder(
-    val context: Context?,
     private val onNextClicked: (() -> Unit)?,
     private val onPreviousClicked: (() -> Unit)?,
-    view: View): RecyclerView.ViewHolder(view) {
+    view: View
+) : BaseViewHolder<Timeline>(view) {
 
-    fun bind(timeline: TimelineFooter) {
+    override fun bind(item: Timeline, position: Int) {
+        super.bind(item, position)
+        val timeline = item as? TimelineFooter ?: return
+
         bindDirectionButtons(timeline)
     }
 
     private fun bindDirectionButtons(timeline: TimelineFooter) {
         timeline.next?.let {
-            itemView.nextContainer.visibility = View.VISIBLE
+            itemView.nextContainer.show()
             itemView.nextContainer?.setOnClickListener { onNextClicked?.invoke() }
         }
         timeline.previous?.let {
-            itemView.previousContainer.visibility = View.VISIBLE
+            itemView.previousContainer.show()
             itemView.previousContainer?.setOnClickListener { onPreviousClicked?.invoke() }
         }
     }

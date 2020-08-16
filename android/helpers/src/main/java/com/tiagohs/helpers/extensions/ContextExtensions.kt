@@ -262,6 +262,7 @@ fun Context?.openLink(url: String?) {
                 .setToolbarColor(getResourceColor(R.color.colorPrimary))
                 .setShowTitle(true)
                 .build()
+
             intent.launchUrl(this, urlUri)
         } catch (e: Exception) {
             toast(e.message)

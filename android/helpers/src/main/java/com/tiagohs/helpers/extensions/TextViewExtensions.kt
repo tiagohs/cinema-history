@@ -96,12 +96,24 @@ fun TextView?.setResourceText(id: Int) {
     text = context.getResourceString(id)
 }
 
+fun TextView?.setResourceStyledText(text: String?) {
+    setResourceText(text?.styledString())
+}
+
+
 fun TextView?.setResourceText(text: CharSequence?) {
     if (this == null) {
         return
     }
 
     this.text = text ?: return
+}
+
+fun TextView?.setResourceTextColor(resName: String?) {
+    this ?: return
+    resName ?: return
+
+    setTextColor(context.getResourceColor(resName))
 }
 
 fun TextView?.setResourceTextColor(color: Int) {

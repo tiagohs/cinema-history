@@ -1,55 +1,45 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
 import android.graphics.drawable.GradientDrawable
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.helpers.extensions.getResourceColor
+import com.tiagohs.helpers.extensions.hide
+import com.tiagohs.helpers.extensions.setResourceText
+import com.tiagohs.helpers.extensions.setResourceTextColor
 import kotlinx.android.synthetic.main.adapter_department.view.*
 
 class DepartamentAdapter(
-    val context: Context?,
-    val movies: List<String>,
+    list: List<String>,
     val textColor: Int
-): RecyclerView.Adapter<DepartamentAdapter.DepartamentViewHolder>() {
+) : BaseAdapter<String, DepartamentAdapter.DepartamentViewHolder>(list) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DepartamentViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_department, parent, false)
+    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_department
 
-        return DepartamentViewHolder(view)
-    }
+    override fun onCreateViewHolder(viewType: Int, view: View): DepartamentViewHolder =
+        DepartamentViewHolder(view)
 
-    override fun getItemCount(): Int = movies.size
+    inner class DepartamentViewHolder(view: View) : BaseViewHolder<String>(view) {
 
-    override fun onBindViewHolder(holder: DepartamentViewHolder, position: Int) {
-        val movie = movies[position]
+        override fun bind(item: String, position: Int) {
+            super.bind(item, position)
 
-        holder.bind(movie)
-    }
-
-    inner class DepartamentViewHolder(view: View): RecyclerView.ViewHolder(view) {
-
-        fun bind(department: String) {
-            val context = context ?: return
-
-            if (department.isBlank()) {
-                itemView.visibility = View.GONE
+            if (item.isBlank()) {
+                itemView.hide()
                 return
             }
 
-            itemView.jobName.text = department
+            itemView.jobName.setResourceText(item)
             itemView.jobName.setTextColor(textColor)
 
             itemView.jobName.background = GradientDrawable().apply {
-                setColor(context.getResourceColor(android.R.color.transparent))
+                setColor(containerView.context.getResourceColor(android.R.color.transparent))
                 cornerRadius = 5f
                 setStroke(1, textColor)
             }
-
         }
-
     }
+
 }

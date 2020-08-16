@@ -1,27 +1,28 @@
 package com.tiagohs.cinema_history.presentation.adapters.movie_details
 
-import android.content.Context
 import android.view.View
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.getResourceColor
-import com.tiagohs.helpers.extensions.openLink
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.movie_info.MovieInfo
+import com.tiagohs.entities.tmdb.movie.Movie
+import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.helpers.utils.MovieUtils
-import com.tiagohs.entities.tmdb.movie.Movie
-import com.tiagohs.helpers.extensions.toCurrency
 import kotlinx.android.synthetic.main.adapter_movie_info_summary.view.*
 
 
 class MovieInfoSummaryViewHolder(
-    val context: Context?,
-    view: View
-): RecyclerView.ViewHolder(view) {
+    view: View,
+    var onExtenalLink: ((String?) -> Unit)?
+) : BaseViewHolder<MovieInfo>(view) {
 
-    fun bindMovieInfo(movie: Movie) {
-        val overview = movie.overview ?: "Esse filme não possui uma sinopse disponível."
+    override fun bind(item: MovieInfo, position: Int) {
+        super.bind(item, position)
+        val movie = item.movie
+        val overview =
+            movie.overview ?: containerView.context.getResourceString(R.string.no_summary)
 
-        itemView.movieSummary.text = overview
+        itemView.movieSummary.setResourceText(overview)
 
         setupMovieSummmary(movie)
         setupExternalLinks(movie)
@@ -35,44 +36,77 @@ class MovieInfoSummaryViewHolder(
 
         itemView.movieSummary.startAnimation(AnimationUtils.createFadeInAnimation(150, 200))
 
-        val portugueseOverview = translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
+        val portugueseOverview =
+            translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
         if (!portugueseOverview.isNullOrBlank()) {
-            itemView.movieSummary.text = portugueseOverview
+            itemView.movieSummary.setResourceText(portugueseOverview)
             return
         }
 
-        val englishOverview = translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.overview
+        val englishOverview =
+            translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.overview
         if (!englishOverview.isNullOrBlank()) {
-            itemView.movieSummary.text = englishOverview
+            itemView.movieSummary.setResourceText(englishOverview)
             return
         }
 
-        val originalOverview = translations.find { it.iso_639_1 == originalLanguage }?.data?.overview
+        val originalOverview =
+            translations.find { it.iso_639_1 == originalLanguage }?.data?.overview
         if (!originalOverview.isNullOrBlank()) {
-            itemView.movieSummary.text = originalOverview
+            itemView.movieSummary.setResourceText(originalOverview)
             return
         }
 
-        itemView.movieSummary.text = "Esse filme não possui uma sinopse disponível."
+        itemView.movieSummary.setResourceText(R.string.no_summary)
     }
 
     private fun setupExternalLinks(movie: Movie) {
-        setupExternalLinkItem(movie.externalIds?.facebookId, itemView.facebookContainer, itemView.facebookContainerClickable, "https://www.facebook.com")
-        setupExternalLinkItem(movie.externalIds?.twitterId, itemView.twitterContainer, itemView.twitterContainerClickable, "https://twitter.com")
-        setupExternalLinkItem(movie.externalIds?.instagramId, itemView.instagramContainer, itemView.instagramContainerClickable, "https://instagram.com")
-        setupExternalLinkItem(movie.externalIds?.imdbId, itemView.imdbContainer, itemView.imdbContainerClickable, "https://www.imdb.com/title")
-        setupExternalLinkItem(movie.homepage, itemView.linkContainer, itemView.linkContainerClickable, "")
+        setupExternalLinkItem(
+            movie.externalIds?.facebookId,
+            itemView.facebookContainer,
+            itemView.facebookContainerClickable,
+            R.string.facebook_link
+        )
+        setupExternalLinkItem(
+            movie.externalIds?.twitterId,
+            itemView.twitterContainer,
+            itemView.twitterContainerClickable,
+            R.string.twitter_link
+        )
+        setupExternalLinkItem(
+            movie.externalIds?.instagramId,
+            itemView.instagramContainer,
+            itemView.instagramContainerClickable,
+            R.string.instagram_link
+        )
+        setupExternalLinkItem(
+            movie.externalIds?.imdbId,
+            itemView.imdbContainer,
+            itemView.imdbContainerClickable,
+            R.string.imdb_link
+        )
+        setupExternalLinkItem(
+            movie.homepage,
+            itemView.linkContainer,
+            itemView.linkContainerClickable,
+            0
+        )
     }
 
-    private fun setupExternalLinkItem(externalLinkId: String?, container: View, containerClickable: View, baseUrl: String) {
-        val context = context ?: return
+    private fun setupExternalLinkItem(
+        externalLinkId: String?,
+        container: View,
+        containerClickable: View,
+        baseUrl: Int
+    ) {
+        val context = containerView.context ?: return
         val externalLinkID = externalLinkId ?: return
 
         if (externalLinkID.isNotBlank()) {
-            val externalLink = if (baseUrl.isNotBlank()) "$baseUrl/$externalLinkID" else externalLinkID
+            val externalLink = if (baseUrl == 0) externalLinkID else context.getString(baseUrl, externalLinkID)
 
-            container.visibility = View.VISIBLE
-            containerClickable.setOnClickListener { context.openLink(externalLink) }
+            container.show()
+            containerClickable.setOnClickListener { onExtenalLink?.invoke(externalLink)  }
         }
 
     }
@@ -82,8 +116,8 @@ class MovieInfoSummaryViewHolder(
         val revenue = movie.revenue
 
         if (budget == null || revenue == null || budget == 0L || revenue == 0L) {
-            itemView.budgetSeekBar.visibility = View.GONE
-            itemView.budgetContainer.visibility = View.GONE
+            itemView.budgetSeekBar.hide()
+            itemView.budgetContainer.hide()
             return
         }
 
@@ -91,19 +125,19 @@ class MovieInfoSummaryViewHolder(
         itemView.budgetSeekBar.max = budget.toInt() + revenue.toInt()
         itemView.budgetSeekBar.progress = revenue.toInt()
 
-        itemView.movieBudget.text = budget.toCurrency()
-        itemView.movieRevenue.text = revenue.toCurrency()
+        itemView.movieBudget.setResourceText(budget.toCurrency())
+        itemView.movieRevenue.setResourceText(revenue.toCurrency())
     }
 
     private fun setupRating(movie: Movie) {
-        val context = context ?: return
+        val context = containerView.context ?: return
         val rating = MovieUtils.getRating(movie.releases?.countries) ?: return
 
-        itemView.certificationCard.visibility = View.VISIBLE
+        itemView.certificationCard.show()
 
         itemView.certificationCard.setCardBackgroundColor(context.getResourceColor(rating.backgroundColor))
-        itemView.certification.setTextColor(context.getResourceColor(rating.textColor))
-        itemView.certification.text = rating.rating
+        itemView.certification.setResourceTextColor(rating.textColor)
+        itemView.certification.setResourceText(rating.rating)
     }
 
     companion object {

@@ -9,9 +9,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.tiagohs.cinema_history.BuildConfig
 import com.tiagohs.cinema_history.R
+import com.tiagohs.helpers.extensions.getResourceString
 import mehdi.sakout.aboutpage.AboutPage
 import mehdi.sakout.aboutpage.Element
-import java.lang.String
 import java.util.*
 
 class AboutActivty : AppCompatActivity() {
@@ -23,15 +23,15 @@ class AboutActivty : AppCompatActivity() {
 
         supportActionBar?.setDisplayShowTitleEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = getString(R.string.activity_about)
+        supportActionBar?.title = getResourceString(R.string.activity_about)
     }
 
     private fun setupContentView(): View {
         val adsElement = Element().apply {
-            title = getString(R.string.responsable)
+            title = getResourceString(R.string.responsable)
         }
         val termsElement = Element().apply {
-            title = getString(R.string.terms)
+            title = getResourceString(R.string.terms)
             onClickListener = View.OnClickListener {
 
             }
@@ -54,12 +54,12 @@ class AboutActivty : AppCompatActivity() {
             .isRTL(false)
             .enableDarkMode(false)
             .setImage(R.mipmap.ic_launcher)
-            .setDescription(getString(R.string.app_description, getString(R.string.app_name)))
+            .setDescription(getString(R.string.app_description, getResourceString(R.string.app_name)))
             .addItem(Element().setTitle(getString(R.string.version, BuildConfig.VERSION_NAME)))
             .addItem(adsElement)
             .addItem(termsElement)
-            .addGroup(getString(R.string.sugestions))
-            .addEmail("tiago.hsilva@gmail.com", getString(R.string.contact_us))
+            .addGroup(getResourceString(R.string.sugestions))
+            .addEmail("tiago.hsilva@gmail.com", getResourceString(R.string.contact_us))
             .addItem(copyRightsElement)
             .create()
     }

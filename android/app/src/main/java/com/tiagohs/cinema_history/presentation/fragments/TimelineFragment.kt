@@ -12,6 +12,8 @@ import com.tiagohs.cinema_history.presentation.adapters.TimelineAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.cinema_history.presentation.configs.BaseFragment
 import com.tiagohs.domain.views.TimelineView
+import com.tiagohs.helpers.extensions.hide
+import com.tiagohs.helpers.extensions.show
 import kotlinx.android.synthetic.main.fragment_timeline.*
 import javax.inject.Inject
 
@@ -23,7 +25,7 @@ class TimelineFragment: BaseFragment(), TimelineView {
     @Inject
     lateinit var presenter: TimelinePresenter
 
-    var timelineId: Int = 1
+    private var timelineId: Int = 1
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -46,12 +48,13 @@ class TimelineFragment: BaseFragment(), TimelineView {
     }
 
     override fun bindTimeline(timelines: TimelineResult) {
-        val adapter = TimelineAdapter(activity, timelines.timelineList, timelines.color, timelines.titleTextColor)
-        adapter.onNextClicked = { setNextPage() }
-        adapter.onPreviousClicked = { setPreviousPage() }
-
-        timelineList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
-        timelineList.adapter = adapter
+        timelineList.apply {
+            layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
+            timelineList.adapter = TimelineAdapter(timelines.timelineList, timelines.color, timelines.titleTextColor).apply {
+                onNextClicked = { setNextPage() }
+                onPreviousClicked = { setPreviousPage() }
+            }
+        }
 
         (timelines.timelineList.firstOrNull() as? TimelineTitle)?.pageTitle?.let { toolbarTitle.text = it }
     }
@@ -65,17 +68,17 @@ class TimelineFragment: BaseFragment(), TimelineView {
     }
 
     override fun startLoading() {
-        timelineList.visibility = View.GONE
+        timelineList.hide()
 
-        loadView.startShimmer()
-        loadView.visibility = View.VISIBLE
+        loadView.showShimmer(true)
+        loadView.hide()
     }
 
     override fun hideLoading() {
-        timelineList.visibility = View.VISIBLE
+        timelineList.show()
 
         loadView.stopShimmer()
-        loadView.visibility = View.GONE
+        loadView.hide()
     }
 
     companion object {

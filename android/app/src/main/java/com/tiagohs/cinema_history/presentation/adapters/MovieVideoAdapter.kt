@@ -1,43 +1,36 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.tmdb.movie.Video
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.openLink
-import com.tiagohs.entities.tmdb.movie.Video
 import kotlinx.android.synthetic.main.adapter_movie_video.view.*
 
 class MovieVideoAdapter(
-    val context: Context?,
-    val videos: List<Video>
-): RecyclerView.Adapter<MovieVideoAdapter.MovieVideoViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieVideoViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_video, parent, false)
+    list: List<Video>
+) : BaseAdapter<Video, MovieVideoAdapter.MovieVideoViewHolder>(list) {
 
-        return MovieVideoViewHolder(view)
-    }
+    var onVideoClick: ((String?) -> Unit)? = null
 
-    override fun getItemCount(): Int = videos.size
+    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_movie_video
 
-    override fun onBindViewHolder(holder: MovieVideoViewHolder, position: Int) {
-        val video = videos[position]
+    override fun onCreateViewHolder(viewType: Int, view: View): MovieVideoViewHolder =
+        MovieVideoViewHolder(view)
 
-        holder.bindVideo(video)
-    }
+    inner class MovieVideoViewHolder(view: View) : BaseViewHolder<Video>(view) {
 
-    inner class MovieVideoViewHolder(view: View): RecyclerView.ViewHolder(view) {
-
-        fun bindVideo(video: Video) {
-            val context = context ?: return
-            val videoId = video.key ?: return
-            val videoThumbnailUrl = "https://img.youtube.com/vi/${videoId}/0.jpg"
+        override fun bind(item: Video, position: Int) {
+            super.bind(item, position)
+            val context = containerView.context ?: return
+            val videoId = item.key ?: return
+            val videoThumbnailUrl = context.getString(R.string.youtube_image_link, videoId)
 
             itemView.videoThumb.loadImage(videoThumbnailUrl, null, scaleType = "center_crop")
-            itemView.videoContainer.setOnClickListener { context.openLink("https://www.youtube.com/watch?v=${videoId}") }
+            itemView.videoContainer.setOnClickListener { onVideoClick?.invoke(videoId) }
         }
     }
+
 }

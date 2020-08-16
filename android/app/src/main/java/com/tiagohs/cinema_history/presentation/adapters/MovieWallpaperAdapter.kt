@@ -1,45 +1,35 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
 import com.stfalcon.imageviewer.StfalconImageViewer
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.entities.tmdb.Image
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.enums.ImageSize
+import com.tiagohs.entities.tmdb.Image
 import com.tiagohs.helpers.extensions.imageUrlFromTMDB
+import com.tiagohs.helpers.extensions.loadImage
 import kotlinx.android.synthetic.main.adapter_movie_wallpaper.view.*
 
 class MovieWallpaperAdapter(
-    val context: Context?,
-    val images: List<Image>
-): RecyclerView.Adapter<MovieWallpaperAdapter.MovieWallpaperViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieWallpaperViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_wallpaper, parent, false)
+    list: List<Image>
+) : BaseAdapter<Image, MovieWallpaperAdapter.MovieWallpaperViewHolder>(list) {
 
-        return MovieWallpaperViewHolder(view)
-    }
+    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_movie_wallpaper
 
-    override fun getItemCount(): Int = images.size
+    override fun onCreateViewHolder(viewType: Int, view: View): MovieWallpaperViewHolder =
+        MovieWallpaperViewHolder(view)
 
-    override fun onBindViewHolder(holder: MovieWallpaperViewHolder, position: Int) {
-        val image = images[position]
+    inner class MovieWallpaperViewHolder(view: View) : BaseViewHolder<Image>(view) {
 
-        holder.bindImage(image)
-    }
-
-    inner class MovieWallpaperViewHolder(view: View): RecyclerView.ViewHolder(view) {
-
-        fun bindImage(image: Image) {
-            val context = context ?: return
-            val imageUrl = image.filePath?.imageUrlFromTMDB(ImageSize.BACKDROP_300)
+        override fun bind(item: Image, position: Int) {
+            super.bind(item, position)
+            val context = containerView.context ?: return
+            val imageUrl = item.filePath?.imageUrlFromTMDB(ImageSize.BACKDROP_300)
 
             itemView.image.loadImage(imageUrl, null, scaleType = "center_crop")
             itemView.image.setOnClickListener {
-                StfalconImageViewer.Builder<Image>(context, images) { view, image ->
+                StfalconImageViewer.Builder<Image>(context, list) { view, image ->
                     val url = image.filePath?.imageUrlFromTMDB(ImageSize.BACKDROP_ORIGINAL)
                     view.loadImage(url, null)
                 }
@@ -49,4 +39,5 @@ class MovieWallpaperAdapter(
             }
         }
     }
+
 }

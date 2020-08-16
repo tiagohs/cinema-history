@@ -5,26 +5,26 @@ import android.graphics.Typeface
 import android.view.View
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
+import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentText
+import com.tiagohs.helpers.extensions.setResourceFont
+import com.tiagohs.helpers.extensions.setResourceStyledText
 import com.tiagohs.helpers.extensions.styledString
 import kotlinx.android.synthetic.main.adapter_page_text.view.*
 
 
 class TextViewHolder(
-    val context: Context?,
-    val view: View
+    view: View
 ): BasePageViewHolder(view) {
 
-    fun bind(contentText: ContentText) {
-        val context = context ?: return
+    override fun bind(item: Content, position: Int) {
+        super.bind(item, position)
+        val context = containerView.context ?: return
+        val contentText = item as? ContentText ?: return
 
-        itemView.contentText.text = contentText.contentText.styledString()
+        itemView.contentText.setResourceStyledText(contentText.contentText)
         itemView.contentText.setupLinkableTextView(context)
-
-        contentText.font?.let {
-            val font = Typeface.createFromAsset(context.assets, "fonts/${it}.ttf")
-            itemView.contentText.typeface = font
-        }
+        itemView.contentText.setResourceFont(contentText.font)
     }
 
     companion object {

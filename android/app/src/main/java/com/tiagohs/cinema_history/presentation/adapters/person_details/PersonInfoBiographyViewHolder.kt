@@ -1,19 +1,20 @@
 package com.tiagohs.cinema_history.presentation.adapters.person_details
 
-import android.content.Context
 import android.view.View
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.entities.tmdb.person.Person
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.person_info.PersonInfo
+import com.tiagohs.helpers.extensions.setResourceText
 import kotlinx.android.synthetic.main.adapter_person_info_biography.view.*
 
 class PersonInfoBiographyViewHolder(
-    val context: Context?,
     view: View
-): RecyclerView.ViewHolder(view) {
+) : BaseViewHolder<PersonInfo>(view) {
 
-    fun bindPersonInfo(person: Person) {
-        itemView.personBiography.text = person.biography
+    override fun bind(item: PersonInfo, position: Int) {
+        super.bind(item, position)
+
+        itemView.personBiography.setResourceText(item.person.biography)
     }
 
     companion object {

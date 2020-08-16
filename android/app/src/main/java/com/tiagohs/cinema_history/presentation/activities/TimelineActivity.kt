@@ -22,8 +22,8 @@ class TimelineActivity: BaseActivity(), TimelinePageView {
     @Inject
     lateinit var presenter: TimelinePagePresenter
 
-    var adapterPager: TimelinePagerAdapter? = null
-    var startIndex: Int = 0
+    private var adapterPager: TimelinePagerAdapter? = null
+    private var startIndex: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,9 +40,11 @@ class TimelineActivity: BaseActivity(), TimelinePageView {
     override fun bindTimelineIDs(list: List<Int>) {
         adapterPager = TimelinePagerAdapter(supportFragmentManager, lifecycle, list)
 
-        timelineContentViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        timelineContentViewPager.adapter = adapterPager
-        timelineContentViewPager.currentItem = startIndex
+        timelineContentViewPager.apply {
+            orientation = ViewPager2.ORIENTATION_HORIZONTAL
+            adapter = adapterPager
+            currentItem = startIndex
+        }
     }
 
     fun setNextPage() {

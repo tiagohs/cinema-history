@@ -10,22 +10,20 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.adapters.MovieListAdapter
+import com.tiagohs.cinema_history.presentation.adapters.decorators.ScaleMovieImageTransformer
+import com.tiagohs.cinema_history.presentation.configs.BaseActivity
+import com.tiagohs.domain.presenter.MilMoviesPresentationPresenter
+import com.tiagohs.domain.views.MilMoviesPresentationView
 import com.tiagohs.entities.main_topics.MilMoviesMainTopic
 import com.tiagohs.entities.tmdb.movie.Movie
-import com.tiagohs.domain.presenter.MilMoviesPresentationPresenter
-import com.tiagohs.cinema_history.presentation.adapters.MovieListAdapter
-import com.tiagohs.cinema_history.presentation.configs.BaseActivity
-import com.tiagohs.cinema_history.presentation.adapters.decorators.ScaleMovieImageTransformer
-import com.tiagohs.domain.views.MilMoviesPresentationView
+import com.tiagohs.helpers.extensions.*
+import com.tiagohs.helpers.utils.AnimationUtils
 import kotlinx.android.synthetic.main.activity_mil_movies_presentation.*
 import javax.inject.Inject
-import com.tiagohs.helpers.extensions.convertIntToDp
-import com.tiagohs.helpers.extensions.getResourceColor
-import com.tiagohs.helpers.extensions.startActivityWithSlideAnimation
-import com.tiagohs.helpers.utils.AnimationUtils
 
 
-class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
+class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_mil_movies_presentation
     override fun onGetMenuLayoutId(): Int = 0
@@ -68,26 +66,29 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
     }
 
     override fun bindMovieList(list: List<Movie>) {
-        adapter = MovieListAdapter(this, ArrayList(list), mainTopic)
+        adapter = MovieListAdapter(ArrayList(list), mainTopic)
 
         adapter?.onMovieSelected = { movie, _ -> onMovieSelected(movie) }
 
-        moviesViewPager.adapter = adapter
-        moviesViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        moviesViewPager.offscreenPageLimit = 1
-        moviesViewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                val movieList = adapter?.list ?: return
+        moviesViewPager.apply {
+            adapter = this@MilMoviesPresentationActivity.adapter
+            orientation = ViewPager2.ORIENTATION_HORIZONTAL
+            offscreenPageLimit = 1
 
-                if (position == movieList.size - 3 && !isSearching && presenter.hasMorePages()) {
-                    loadingProgress.visibility = View.VISIBLE
+            registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+                override fun onPageSelected(position: Int) {
+                    val movieList = this@MilMoviesPresentationActivity.adapter?.list ?: return
 
-                    presenter.fetchMoreMovies(mainTopic.list_id, ++page)
+                    if (position == movieList.size - 3 && !isSearching && presenter.hasMorePages()) {
+                        loadingProgress.show()
 
-                    isSearching = true
+                        presenter.fetchMoreMovies(mainTopic.list_id, ++page)
+
+                        isSearching = true
+                    }
                 }
-            }
-        })
+            })
+        }
 
         val horizontalSpace = 42.convertIntToDp(this)
         val spaceBetweenItems = 32.convertIntToDp(this)
@@ -99,15 +100,18 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
             )
         )
 
-        moviesViewPager.addItemDecoration(ScaleMovieImageTransformer.HorizontalMarginItemDecoration(horizontalSpace))
+        moviesViewPager.addItemDecoration(
+            ScaleMovieImageTransformer.HorizontalMarginItemDecoration(
+                horizontalSpace
+            )
+        )
 
         val titleColorRes = resources.getIdentifier(mainTopic.titleColor, "color", packageName)
         val titleColor = getResourceColor(titleColorRes)
 
-        toolbar.getNavigationIcon()?.setColorFilter(titleColor, PorterDuff.Mode.SRC_ATOP)
+        toolbar.navigationIcon?.setColorFilter(titleColor, PorterDuff.Mode.SRC_ATOP)
 
-        presentationTitle.text = mainTopic.title
-
+        presentationTitle.setResourceText(mainTopic.title)
         presentationTitle.setTextColor(titleColor)
         presentationSubtitle.setTextColor(titleColor)
 
@@ -116,7 +120,7 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
     }
 
     override fun bindMoreMovies(movies: List<Movie>) {
-        loadingProgress.visibility = View.GONE
+        loadingProgress.hide()
 
         adapter?.addMoreMovies(movies)
 
@@ -126,8 +130,8 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
     override fun startLoading() {
         contentContainer.alpha = 0f
 
-        loadView.startShimmer()
-        loadView.visibility = View.VISIBLE
+        loadView.showShimmer(true)
+        loadView.show()
         loadView.alpha = 1f
     }
 
@@ -168,7 +172,7 @@ class MilMoviesPresentationActivity: BaseActivity(), MilMoviesPresentationView {
 
         const val MAIN_TOPIC = "MAIN_TOPIC"
 
-        fun newIntent(mainTopic: MilMoviesMainTopic, context: Context) : Intent {
+        fun newIntent(mainTopic: MilMoviesMainTopic, context: Context): Intent {
             val intent = Intent(context, MilMoviesPresentationActivity::class.java)
 
             intent.putExtra(MAIN_TOPIC, mainTopic)

@@ -1,29 +1,33 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.content.Context
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentVideo
+import com.tiagohs.helpers.extensions.convertIntToDp
 import kotlinx.android.synthetic.main.adapter_page_video.view.*
 
 class VideoViewHolder(
-    val context: Context?,
     val view: View
-): BasePageViewHolder(view) {
+) : BasePageViewHolder(view) {
 
-    fun bind(contentVideo: ContentVideo) {
-        val context = context ?: return
+    override fun bind(item: Content, position: Int) {
+        super.bind(item, position)
+        val context = containerView.context ?: return
         val activity = context as? AppCompatActivity ?: return
+        val contentVideo = item as? ContentVideo ?: return
 
         itemView.videoViewer.setupPlayer(activity, contentVideo.videoId)
 
         contentVideo.height?.let {
-            val params = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(context))
-            params.setMargins(16.convertIntToDp(context), 0, 16.convertIntToDp(context), 0)
-            itemView.videoViewer.layoutParams = params
+            itemView.videoViewer.layoutParams = ConstraintLayout.LayoutParams(
+                ConstraintLayout.LayoutParams.MATCH_PARENT,
+                it.convertIntToDp(context)
+            ).apply {
+                setMargins(16.convertIntToDp(context), 0, 16.convertIntToDp(context), 0)
+            }
         }
 
         setupContentFooterInformation(contentVideo.information)

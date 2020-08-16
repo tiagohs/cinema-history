@@ -1,72 +1,62 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.dto.MovieFilmographyDTO
 import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.setResourceText
+import com.tiagohs.helpers.extensions.show
 import kotlinx.android.synthetic.main.adapter_movie_item.view.*
 
 class MovieItemAdapter(
-    val context: Context?,
-    val movies: List<MovieFilmographyDTO>
-): RecyclerView.Adapter<MovieItemAdapter.MovieItemViewHolder>() {
+    list: List<MovieFilmographyDTO>
+) : BaseAdapter<MovieFilmographyDTO, MovieItemAdapter.MovieItemViewHolder>(list) {
 
     var onMovieClicked: ((movieId: Int) -> Unit)? = null
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieItemViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_item, parent, false)
+    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_movie_item
 
-        return MovieItemViewHolder(view)
-    }
+    override fun onCreateViewHolder(viewType: Int, view: View): MovieItemViewHolder =
+        MovieItemViewHolder(view)
 
-    override fun getItemCount(): Int = movies.size
-
-    override fun onBindViewHolder(holder: MovieItemViewHolder, position: Int) {
-        val movie = movies[position]
-
-        holder.bind(movie)
-    }
-
-    inner class MovieItemViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
+    inner class MovieItemViewHolder(view: View) : BaseViewHolder<MovieFilmographyDTO>(view),
+        View.OnClickListener {
 
         init {
             itemView.setOnClickListener(this)
         }
 
-        private var movie: MovieFilmographyDTO? = null
+        override fun bind(item: MovieFilmographyDTO, position: Int) {
+            super.bind(item, position)
 
-        fun bind(movie: MovieFilmographyDTO) {
-            this.movie = movie
+            itemView.movieTitle.setResourceText(item.title)
 
-            itemView.movieTitle.text = movie.title
-
-            if (!(movie.departments.isNullOrEmpty())) {
-                itemView.movieDepartments.visibility = View.VISIBLE
-                itemView.movieDepartments.text = "also ${movie.departments}"
+            if (!(item.departments.isNullOrEmpty())) {
+                itemView.movieDepartments.show()
+                itemView.movieDepartments.setResourceText(containerView.context.getString(R.string.also_format, item.departments))
             }
 
-            if (!(movie.character.isNullOrEmpty())) {
-                itemView.movieCharacter.visibility = View.VISIBLE
-                itemView.movieCharacter.text = "as ${movie.character}"
+            if (!(item.character.isNullOrEmpty())) {
+                itemView.movieCharacter.show()
+                itemView.movieCharacter.setResourceText(containerView.context.getString(R.string.as_format, item.character))
             }
 
             itemView.image.loadImage(
-                movie.posterPath?.imageUrlFromTMDB(
+                item.posterPath?.imageUrlFromTMDB(
                     ImageSize.PROFILE_185
                 )
             )
         }
 
         override fun onClick(v: View?) {
-            val movieId = movie?.id ?: return
+            val movieId = item?.id ?: return
 
             onMovieClicked?.invoke(movieId)
         }
     }
+
 }

@@ -1,54 +1,43 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.image.Image
 import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.loadImage
 import kotlinx.android.synthetic.main.adapter_image.view.*
 
 class ImageAdapter(
-    val context: Context?,
-    val images: List<Image>
-
-): RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
+    list: List<Image>
+) : BaseAdapter<Image, ImageAdapter.ImageViewHolder>(list) {
 
     init {
         setHasStableIds(true)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_image, parent, false)
+    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_image
 
-        return ImageViewHolder(view)
-    }
+    override fun onCreateViewHolder(viewType: Int, view: View): ImageViewHolder =
+        ImageViewHolder(view)
 
-    override fun getItemCount(): Int = images.size
+    override fun getItemId(position: Int): Long = list[position].hashCode().toLong()
 
-    override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
-        val image = images[position]
+    class ImageViewHolder(view: View) : BaseViewHolder<Image>(view) {
 
-        holder.bind(image)
-    }
+        override fun bind(item: Image, position: Int) {
+            super.bind(item, position)
 
-    override fun getItemId(position: Int): Long = images[position].hashCode().toLong()
-
-    class ImageViewHolder(view: View): RecyclerView.ViewHolder(view) {
-
-        fun bind(image: Image) {
-
-            image.imageStyle?.height?.let {
-                val layouParam = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.MATCH_PARENT, it.convertIntToDp(itemView.context))
-                itemView.image.layoutParams = layouParam
+            item.imageStyle?.height?.let {
+                itemView.image.layoutParams = ConstraintLayout.LayoutParams(
+                    ConstraintLayout.LayoutParams.MATCH_PARENT,
+                    it.convertIntToDp(itemView.context)
+                )
             }
 
-            itemView.image.loadImage(image)
+            itemView.image.loadImage(item)
         }
-
     }
 }

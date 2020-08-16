@@ -1,62 +1,51 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.dto.PersonDTO
 import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.setResourceText
 import kotlinx.android.synthetic.main.adapter_person.view.*
 
 class PersonAdapter(
-    val context: Context?,
-    val persons: List<PersonDTO>,
+    list: List<PersonDTO>,
     private val onPersonClicked: ((personId: Int) -> Unit)?
-): RecyclerView.Adapter<PersonAdapter.PersonViewHolder>() {
+) : BaseAdapter<PersonDTO, PersonAdapter.PersonViewHolder>(list) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_person, parent, false)
+    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_person
 
-        return PersonViewHolder(view)
-    }
+    override fun onCreateViewHolder(viewType: Int, view: View): PersonViewHolder =
+        PersonViewHolder(view)
 
-    override fun getItemCount(): Int = persons.size
-
-    override fun onBindViewHolder(holder: PersonViewHolder, position: Int) {
-        val person = persons[position]
-
-        holder.bind(person)
-    }
-
-    inner class PersonViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
+    inner class PersonViewHolder(view: View) : BaseViewHolder<PersonDTO>(view),
+        View.OnClickListener {
 
         init {
             itemView.setOnClickListener(this)
         }
 
-        var person: PersonDTO? = null
+        override fun bind(item: PersonDTO, position: Int) {
+            super.bind(item, position)
 
-        fun bind(person: PersonDTO) {
-            this.person = person
-
-            itemView.personName.text = person.name
-            itemView.personSubtitle.text = person.subtitle
+            itemView.personName.setResourceText(item.name)
+            itemView.personSubtitle.setResourceText(item.subtitle)
 
             itemView.personImage.loadImage(
-                person.imagePath?.imageUrlFromTMDB(ImageSize.PROFILE_185),
+                item.imagePath?.imageUrlFromTMDB(ImageSize.PROFILE_185),
                 R.drawable.placeholder_movie_person,
                 R.drawable.placeholder_movie_person
             )
         }
 
         override fun onClick(v: View?) {
-            val personId = person?.id ?: return
+            val personId = item?.id ?: return
 
             onPersonClicked?.invoke(personId)
         }
     }
+
 }

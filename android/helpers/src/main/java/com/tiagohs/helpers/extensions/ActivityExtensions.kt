@@ -1,6 +1,7 @@
 package com.tiagohs.helpers.extensions
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.graphics.Rect
 import android.net.Uri
@@ -58,5 +59,24 @@ fun FragmentActivity.startFragment(fragmentID: Int, fragment: Fragment) {
         fm.beginTransaction()
             .replace(fragmentID, fragment)
             .commitAllowingStateLoss()
+    }
+}
+
+fun Activity?.openLink(url: String?) {
+    url ?: return
+    this ?: return
+
+    if (!url.isNullOrEmpty()) {
+        try {
+            val urlUri = Uri.parse(url)
+            val intent = CustomTabsIntent.Builder()
+                .setToolbarColor(getResourceColor(R.color.colorPrimary))
+                .setShowTitle(true)
+                .build()
+
+            intent.launchUrl(this, urlUri)
+        } catch (e: Exception) {
+            toast(e.message)
+        }
     }
 }

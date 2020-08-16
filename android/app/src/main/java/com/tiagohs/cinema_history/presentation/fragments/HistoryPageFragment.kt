@@ -9,26 +9,29 @@ import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.appbar.AppBarLayout
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.convertIntToDp
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.tools.HidingScrollListener
-import com.tiagohs.entities.main_topics.MainTopicItem
-import com.tiagohs.domain.presenter.HistoryPagePresenter
 import com.tiagohs.cinema_history.presentation.activities.HistoryPagesActivity
 import com.tiagohs.cinema_history.presentation.adapters.PageContentAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseFragment
-import com.tiagohs.helpers.tools.SpaceOffsetDecoration
+import com.tiagohs.domain.presenter.HistoryPagePresenter
 import com.tiagohs.domain.views.HistoryPageView
+import com.tiagohs.entities.Page
+import com.tiagohs.entities.Sumario
+import com.tiagohs.entities.main_topics.MainTopicItem
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.setResourceText
+import com.tiagohs.helpers.tools.HidingScrollListener
+import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import kotlinx.android.synthetic.main.fragment_history_page.*
 import javax.inject.Inject
 import kotlin.math.abs
 
 
-class HistoryPageFragment: BaseFragment(), HistoryPageView,
+class HistoryPageFragment : BaseFragment(), HistoryPageView,
     HidingScrollListener.HidingScrollCallback {
 
-    private var pageContent: com.tiagohs.entities.Page? = null
-    private var sumario: com.tiagohs.entities.Sumario? = null
+    private var pageContent: Page? = null
+    private var sumario: Sumario? = null
     private var mainTopic: MainTopicItem? = null
 
     override fun getViewID(): Int = R.layout.fragment_history_page
@@ -54,21 +57,29 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView,
         presenter.onUnbindView()
     }
 
-    override fun bindPageContent(pageContent: com.tiagohs.entities.Page) {
+    override fun bindPageContent(pageContent: Page) {
         this.pageContent = pageContent
 
-        pageContentList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        pageContentList.adapter = PageContentAdapter(context, pageContent.contentList).apply {
-            presentScreen = { presentScreen(it) }
+        pageContentList.apply {
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+            adapter = PageContentAdapter(pageContent.contentList).apply {
+                presentScreen = { presentScreen(it) }
+            }
+            addItemDecoration(
+                SpaceOffsetDecoration(
+                    10.convertIntToDp(context),
+                    SpaceOffsetDecoration.TOP
+                )
+            )
+            addOnScrollListener(HidingScrollListener(this@HistoryPageFragment))
         }
-        pageContentList.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(context), SpaceOffsetDecoration.TOP))
-        pageContentList.addOnScrollListener(HidingScrollListener(this))
 
         val tv = TypedValue()
         val activity = activity ?: return
 
         if (activity.theme.resolveAttribute(android.R.attr.actionBarSize, tv, true)) {
-            val actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
+            val actionBarHeight =
+                TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
             pageContentList.addItemDecoration(
                 SpaceOffsetDecoration(
                     actionBarHeight,
@@ -81,21 +92,17 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView,
     }
 
     override fun onScrollUp() {
-        val activity = (activity as? HistoryPagesActivity)
-
-        activity?.hideFooter()
+        (activity as? HistoryPagesActivity)?.hideFooter()
     }
 
     override fun onScrollDown() {
-        val activity = (activity as? HistoryPagesActivity)
-
-        activity?.showFooter()
+        (activity as? HistoryPagesActivity)?.showFooter()
     }
 
     override fun setupHeader() {
-        mainTopicName.text = mainTopic?.title
-        pageTitle.text = sumario?.title
-        pageDescription.text = sumario?.description
+        mainTopicName.setResourceText(mainTopic?.title)
+        pageTitle.setResourceText(sumario?.title)
+        pageDescription.setResourceText(sumario?.description)
 
         val image = sumario?.image ?: return
 
@@ -140,14 +147,14 @@ class HistoryPageFragment: BaseFragment(), HistoryPageView,
     }
 
     override fun setupArguments() {
-        sumario = arguments?.getSerializable(SUMARIO) as? com.tiagohs.entities.Sumario
+        sumario = arguments?.getSerializable(SUMARIO) as? Sumario
         mainTopic = (activity as? HistoryPagesActivity)?.mainTopic
     }
 
     companion object {
         const val SUMARIO = "SUMARIO"
 
-        fun newInstance(sumario: com.tiagohs.entities.Sumario): HistoryPageFragment {
+        fun newInstance(sumario: Sumario): HistoryPageFragment {
             val historyPageFragment = HistoryPageFragment()
             val bundle = Bundle()
 

@@ -14,9 +14,5 @@ class TimelinePagerAdapter(
 
     override fun getItemCount(): Int = timelineIds.size
 
-    override fun createFragment(position: Int): Fragment {
-        val timelineId = timelineIds[position]
-
-        return TimelineFragment.newInstance(timelineId)
-    }
+    override fun createFragment(position: Int): Fragment = TimelineFragment.newInstance(timelineIds[position])
 }

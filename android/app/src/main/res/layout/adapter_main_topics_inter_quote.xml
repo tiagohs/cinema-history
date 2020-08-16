@@ -23,7 +23,7 @@
         android:id="@+id/quoteText"
         android:textColor="@color/md_white_1000"
         android:fontFamily="@font/proxima_nova_regular"
-        android:textSize="@dimen/text_size_zeplin_18pt"
+        android:textSize="@dimen/text_size_zeplin_26pt"
         android:textAlignment="center"
         android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
         android:paddingStart="@dimen/activity_vertical_margin_2.5x"

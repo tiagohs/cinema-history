@@ -1,35 +1,44 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.content.Context
 import android.view.View
 import androidx.core.content.ContextCompat
 import com.tiagohs.cinema_history.R
+import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentQuote
+import com.tiagohs.helpers.extensions.getResourceColor
+import com.tiagohs.helpers.extensions.setResourceText
 import kotlinx.android.synthetic.main.adapter_page_quote.view.*
 
 class QuoteViewHolder(
-    val context: Context?,
     val view: View
-): BasePageViewHolder(view) {
+) : BasePageViewHolder(view) {
 
-    fun bind(contentQuote: ContentQuote) {
-        val context = context ?: return
+    override fun bind(item: Content, position: Int) {
+        super.bind(item, position)
+        val context = containerView.context ?: return
+        val contentQuote = item as? ContentQuote ?: return
 
-        itemView.quoteText.text = contentQuote.quote.quote
-        itemView.quoteTextAuthor.text = contentQuote.quote.author
+        itemView.quoteText.setResourceText(contentQuote.quote.quote)
+        itemView.quoteTextAuthor.setResourceText(contentQuote.quote.author)
 
-        contentQuote.quoteMarkColor?.let {
-            val topDrawable = itemView.quoteTop.drawable
-            val bottomDrawable = itemView.quoteBottom.drawable
-            val color = context.resources
-                .getIdentifier(it, "color", context.packageName)
-
-            topDrawable.setTint(ContextCompat.getColor(context, color))
-            bottomDrawable.setTint(ContextCompat.getColor(context, color))
-
-            itemView.quoteTop.setImageDrawable(topDrawable)
-            itemView.quoteBottom.setImageDrawable(bottomDrawable)
+        val quoteMarkColor = contentQuote.quoteMarkColor
+        if (quoteMarkColor != null) {
+            bindQuoteColor(context.getResourceColor(quoteMarkColor))
+            return
         }
+
+        bindQuoteColor(context.getResourceColor(R.color.md_white_1000))
+    }
+
+    private fun bindQuoteColor(color: Int) {
+        val topDrawable = itemView.quoteTop.drawable
+        val bottomDrawable = itemView.quoteBottom.drawable
+
+        topDrawable.setTint(color)
+        bottomDrawable.setTint(color)
+
+        itemView.quoteTop.setImageDrawable(topDrawable)
+        itemView.quoteBottom.setImageDrawable(bottomDrawable)
     }
 
     companion object {

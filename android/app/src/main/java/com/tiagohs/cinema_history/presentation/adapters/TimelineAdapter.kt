@@ -1,25 +1,20 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
+import android.view.View
 import com.tiagohs.cinema_history.R
-import com.tiagohs.entities.timeline.Timeline
-import com.tiagohs.entities.timeline.TimelineFooter
-import com.tiagohs.entities.timeline.TimelineItem
-import com.tiagohs.entities.timeline.TimelineTitle
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.cinema_history.presentation.adapters.timeline.TimelineItemFooterHolder
-import com.tiagohs.cinema_history.presentation.adapters.timeline.TimelineTitleViewHolder
 import com.tiagohs.cinema_history.presentation.adapters.timeline.TimelineItemViewHolder
+import com.tiagohs.cinema_history.presentation.adapters.timeline.TimelineTitleViewHolder
 import com.tiagohs.entities.enums.TimelineType
+import com.tiagohs.entities.timeline.Timeline
 
 class TimelineAdapter(
-    val context: Context?,
-    val list: List<Timeline>,
+    list: List<Timeline>,
     val color: String,
     val textColor: String
-): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+) : BaseAdapter<Timeline, BaseViewHolder<Timeline>>(list) {
 
     var onNextClicked: (() -> Unit)? = null
     var onPreviousClicked: (() -> Unit)? = null
@@ -28,63 +23,32 @@ class TimelineAdapter(
         setHasStableIds(true)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
-        when (viewType) {
-            TimelineType.TITLE.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_timeline_title, parent, false)
-
-                return TimelineTitleViewHolder(context, color, onNextClicked, onPreviousClicked, view)
-            }
-            TimelineType.ITEM.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_timeline_item, parent, false)
-
-                return TimelineItemViewHolder(context, color, textColor, view)
-            }
-            TimelineType.FOOTER.ordinal -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_timeline_footer, parent, false)
-
-                return TimelineItemFooterHolder(context, onNextClicked, onPreviousClicked, view)
-            }
-            else -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_timeline_item, parent, false)
-
-                return TimelineItemViewHolder(context,color, textColor, view)
-            }
-        }
+    override fun getLayoutResId(viewType: Int): Int = when (viewType) {
+        TimelineType.TITLE.ordinal -> R.layout.adapter_timeline_title
+        TimelineType.ITEM.ordinal -> R.layout.adapter_timeline_item
+        TimelineType.FOOTER.ordinal -> R.layout.adapter_timeline_footer
+        else -> R.layout.adapter_empty
     }
 
-    override fun getItemCount(): Int = list.size
+    override fun onCreateViewHolder(viewType: Int, view: View): BaseViewHolder<Timeline> =
+        when (viewType) {
+            TimelineType.TITLE.ordinal -> TimelineTitleViewHolder(
+                color,
+                onNextClicked,
+                onPreviousClicked,
+                view
+            )
+            TimelineType.ITEM.ordinal -> TimelineItemViewHolder(color, textColor, view)
+            TimelineType.FOOTER.ordinal -> TimelineItemFooterHolder(
+                onNextClicked,
+                onPreviousClicked,
+                view
+            )
+            else -> object : BaseViewHolder<Timeline>(view) {}
+        }
 
     override fun getItemId(position: Int): Long = list[position].hashCode().toLong()
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val viewType = getItemViewType(position)
-
-        when (viewType) {
-            TimelineType.TITLE.ordinal -> {
-                val timelineTitle = list[position] as? TimelineTitle ?: return
-                val timelineItemTitleHolder = holder as? TimelineTitleViewHolder ?: return
-
-                timelineItemTitleHolder.bind(timelineTitle)
-            }
-            TimelineType.FOOTER.ordinal -> {
-                val timelineFooter = list[position] as? TimelineFooter ?: return
-                val timelineItemFooterHolder = holder as? TimelineItemFooterHolder ?: return
-
-                timelineItemFooterHolder.bind(timelineFooter)
-            }
-            TimelineType.ITEM.ordinal -> {
-                val timelineItem = list[position] as? TimelineItem ?: return
-                val timelineViewHolder = holder as? TimelineItemViewHolder ?: return
-
-                timelineViewHolder.bind(timelineItem)
-            }
-        }
-    }
-
-    override fun getItemViewType(position: Int): Int {
-        return list[position].type.ordinal
-    }
-
+    override fun getItemViewType(position: Int): Int = list[position].type.ordinal
 }

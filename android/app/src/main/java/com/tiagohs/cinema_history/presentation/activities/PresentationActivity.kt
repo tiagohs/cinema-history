@@ -18,6 +18,7 @@ import com.tiagohs.cinema_history.presentation.adapters.SumarioPresentationAdapt
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.entities.enums.ViewPosition
 import com.tiagohs.domain.views.PresentationView
+import com.tiagohs.entities.Quote
 import kotlinx.android.synthetic.main.activity_presentation.*
 import javax.inject.Inject
 
@@ -32,7 +33,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
     @Inject
     lateinit var presenter: PresentationPresenter
 
-    var isFirstEnter = true
+    private var isFirstEnter = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,8 +68,8 @@ class PresentationActivity: BaseActivity(), PresentationView {
     override fun bindSumarioHeader() {
         mainTopic ?: return
 
-        mainTopicTitle.text = mainTopic?.title
-        mainTopicDescription.text = mainTopic?.description
+        mainTopicTitle.setResourceText(mainTopic?.title)
+        mainTopicDescription.setResourceText(mainTopic?.description)
 
         bindQuote(mainTopic)
         loadImage(mainTopic)
@@ -78,8 +79,8 @@ class PresentationActivity: BaseActivity(), PresentationView {
         val position = mainTopic?.quotePosition ?: ViewPosition.BOTTOM_END
         val quote = mainTopic?.quote ?: return
 
-        quoteText.text = quote.quote
-        quoteTextAuthor.text = quote.author
+        quoteText.setResourceText(quote.quote)
+        quoteTextAuthor.setResourceText(quote.author)
 
         bindQuotePosition(position)
         bindQuoteColor(quote)
@@ -114,10 +115,10 @@ class PresentationActivity: BaseActivity(), PresentationView {
         quoteContainer.layoutParams = layoutParams
     }
 
-    private fun bindQuoteColor(quote: com.tiagohs.entities.Quote) {
+    private fun bindQuoteColor(quote: Quote) {
         quote.textColor?.let {
-            quoteText.setTextColor(getResourceColor(it))
-            quoteTextAuthor.setTextColor(getResourceColor(it))
+            quoteText.setResourceTextColor(it)
+            quoteTextAuthor.setResourceTextColor(it)
         }
         quote.backgroundColor?.let {
             quoteCard.setCardBackgroundColor(getResourceColor(it))
@@ -131,13 +132,16 @@ class PresentationActivity: BaseActivity(), PresentationView {
     override fun bindMainTopicPresentation(mainTopic: MainTopicItem?) {
         this.mainTopic = mainTopic ?: return
 
-        val adapter = SumarioPresentationAdapter(this, mainTopic.sumarioList)
-        adapter.onSumarioClick = { _,  position ->
-            startActivityWithSlideAnimation(HistoryPagesActivity.newIntent(this, mainTopic, position))
+        sumarioList.apply {
+            layoutManager = LinearLayoutManager(this@PresentationActivity, RecyclerView.VERTICAL, false)
+            adapter = SumarioPresentationAdapter(mainTopic.sumarioList).apply {
+                onSumarioClick = { _,  position ->
+                    startActivityWithSlideAnimation(HistoryPagesActivity.newIntent(this@PresentationActivity, mainTopic, position))
+                }
+            }
         }
 
-        sumarioList.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-        sumarioList.adapter = adapter
+        startButton.setOnClickListener { startActivityWithSlideAnimation(HistoryPagesActivity.newIntent(this, mainTopic, 0)) }
     }
 
     private fun loadImage(mainTopic: MainTopicItem?) {

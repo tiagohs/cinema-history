@@ -126,7 +126,7 @@ class MovieItemSpecialAdapter(
 
                 itemView.departments.visibility = View.VISIBLE
 
-                itemView.departments.adapter = DepartamentAdapter(context, listOfDepartments, textColor)
+                itemView.departments.adapter = DepartamentAdapter(listOfDepartments, textColor)
                 itemView.departments.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                 itemView.departments.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(context), SpaceOffsetDecoration.LEFT))
             } else {

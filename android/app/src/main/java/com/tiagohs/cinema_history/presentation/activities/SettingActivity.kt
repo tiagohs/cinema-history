@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.cinema_history.presentation.fragments.SettingPreferenceFragment
+import com.tiagohs.helpers.extensions.startFragment
 import kotlinx.android.synthetic.main.activity_setting.*
 
 class SettingActivity: BaseActivity() {
@@ -17,10 +18,7 @@ class SettingActivity: BaseActivity() {
 
         setupToolbar(toolbar, displayShowTitleEnabled = true)
 
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.container, SettingPreferenceFragment())
-            .commit()
+        startFragment(R.id.container, SettingPreferenceFragment())
     }
 
     override fun onBackPressed() {

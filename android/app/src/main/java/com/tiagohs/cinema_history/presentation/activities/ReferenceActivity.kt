@@ -12,6 +12,9 @@ import com.tiagohs.domain.presenter.ReferencePresenter
 import com.tiagohs.domain.views.ReferenceView
 import com.tiagohs.entities.references.Reference
 import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.hide
+import com.tiagohs.helpers.extensions.openLink
+import com.tiagohs.helpers.extensions.show
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import kotlinx.android.synthetic.main.activity_references.*
 import kotlinx.android.synthetic.main.activity_setting.toolbar
@@ -43,23 +46,27 @@ class ReferenceActivity : BaseActivity(), ReferenceView {
     }
 
     override fun bindReference(references: List<Reference>) {
-        contentList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        contentList.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(this), SpaceOffsetDecoration.LEFT))
-        contentList.adapter = ReferencesAdapter(this, references)
+        contentList.apply {
+            layoutManager = LinearLayoutManager(this@ReferenceActivity, LinearLayoutManager.VERTICAL, false)
+            addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(this@ReferenceActivity), SpaceOffsetDecoration.LEFT))
+            adapter = ReferencesAdapter(references).apply {
+                onLinkClick = { openLink(it) }
+            }
+        }
     }
 
     override fun startLoading() {
-        contentList.visibility = View.GONE
+        contentList.hide()
 
-        loadView.startShimmer()
-        loadView.visibility = View.VISIBLE
+        loadView.showShimmer(true)
+        loadView.show()
     }
 
     override fun hideLoading() {
-        contentList.visibility = View.VISIBLE
+        contentList.show()
 
-        loadView.startShimmer()
-        loadView.visibility = View.GONE
+        loadView.hideShimmer()
+        loadView.hide()
     }
 
     companion object {

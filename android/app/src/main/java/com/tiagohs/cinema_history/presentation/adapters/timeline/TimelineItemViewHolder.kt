@@ -1,46 +1,51 @@
 package com.tiagohs.cinema_history.presentation.adapters.timeline
 
-import android.content.Context
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.loadImageBlackAndWhite
-import com.tiagohs.helpers.extensions.*
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.timeline.Timeline
 import com.tiagohs.entities.timeline.TimelineItem
+import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.adapter_timeline_item.view.*
 
 class TimelineItemViewHolder(
-    val context: Context?,
     val color: String,
     val textColor: String,
-    view: View): RecyclerView.ViewHolder(view) {
+    view: View
+) : BaseViewHolder<Timeline>(view) {
 
     init {
         bindColors()
     }
 
-    fun bind(timelineItem: TimelineItem) {
+    override fun bind(item: Timeline, position: Int) {
+        super.bind(item, position)
+        val timelineItem = item as? TimelineItem ?: return
+        val context = containerView.context ?: return
+
         itemView.itemDescription.setupLinkableTextView(context)
 
-        itemView.year.text = timelineItem.year
-        itemView.itemDescription.text = timelineItem.description.styledString()
+        itemView.year.setResourceText(timelineItem.year)
+        itemView.itemDescription.setResourceStyledText(timelineItem.description)
 
         timelineItem.title?.let {
-            itemView.titleContainer.visibility = View.VISIBLE
+            itemView.titleContainer.show()
 
             itemView.title.setupLinkableTextView(context)
-            itemView.title.text = it.styledString()
+            itemView.title.setResourceStyledText(it)
         }
 
-        val marginTop = timelineItem.marginTop?.convertIntToDp(context) ?: 16.convertIntToDp(context)
-        val yearLayoutParams = ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.WRAP_CONTENT, ConstraintLayout.LayoutParams.WRAP_CONTENT)
-        yearLayoutParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
-        yearLayoutParams.endToStart = itemView.guidelineVertical.id
-        yearLayoutParams.setMargins(0, marginTop, 0, 0)
-
-        itemView.year.layoutParams = yearLayoutParams
+        val marginTop =
+            timelineItem.marginTop?.convertIntToDp(context) ?: 16.convertIntToDp(context)
+        itemView.year.layoutParams = ConstraintLayout.LayoutParams(
+            ConstraintLayout.LayoutParams.WRAP_CONTENT,
+            ConstraintLayout.LayoutParams.WRAP_CONTENT
+        ).apply {
+            topToTop = ConstraintLayout.LayoutParams.PARENT_ID
+            endToStart = itemView.guidelineVertical.id
+            setMargins(0, marginTop, 0, 0)
+        }
 
         timelineItem.image?.let { bindImage(timelineItem) }
     }
@@ -58,12 +63,11 @@ class TimelineItemViewHolder(
 
 
     private fun bindColors() {
-        val context = context ?: return
-        val colorRes = context.getResourceColor(color)
+        val context = containerView.context ?: return
         val textColorRes = context.getResourceColor(textColor)
 
         itemView.textLine.setCardBackgroundColor(textColorRes)
-        itemView.titleContainer.setBackgroundColor(colorRes)
+        itemView.titleContainer.setResourceBackgroundColor(color)
         itemView.title.setTextColor(textColorRes)
     }
 }
