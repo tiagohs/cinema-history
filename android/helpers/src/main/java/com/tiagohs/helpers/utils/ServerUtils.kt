@@ -11,7 +11,8 @@ class ServerUtils {
             try {
                 val cm = context!!.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
                 val isNetworkAvailable = cm.activeNetworkInfo != null
-                return isNetworkAvailable && cm.activeNetworkInfo.isConnected
+                val isConnected = cm.activeNetworkInfo?.isConnected ?: false
+                return isNetworkAvailable && isConnected
             } catch (e: Exception) {
                 e.printStackTrace()
                 return false
@@ -28,7 +29,7 @@ class ServerUtils {
                 if (network != null && network.size > 0) {
                     for (i in network.indices) {
                         val networkInfo = connManager.getNetworkInfo(network[i])
-                        val networkType = networkInfo.type
+                        val networkType = networkInfo?.type
 
                         if (ConnectivityManager.TYPE_WIFI == networkType)
                             return true
@@ -36,7 +37,7 @@ class ServerUtils {
                 }
             } else {
                 val mWifi = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI)
-                return mWifi.isConnected
+                return mWifi?.isConnected ?: false
             }
 
             return false
