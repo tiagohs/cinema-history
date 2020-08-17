@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">@color/md_grey_800</color>
     <color name="colorAccent">@color/md_blue_500</color>
 
+    <color name="transparent">@android:color/transparent</color>
+
     <!-- Rating List Colors - BR -->
     <color name="rating_br_livre">#0B9446</color>
     <color name="rating_br_10">#0E7DC2</color>

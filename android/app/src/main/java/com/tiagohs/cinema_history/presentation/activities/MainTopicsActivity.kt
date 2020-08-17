@@ -19,6 +19,7 @@ import com.tiagohs.cinema_history.presentation.adapters.MainTopicsAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.domain.views.MainTopicsView
+import com.tiagohs.entities.enums.MessageViewType
 import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.activity_main_topics.*
 import javax.inject.Inject

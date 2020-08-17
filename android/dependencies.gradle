@@ -26,7 +26,6 @@ ext {
             constrantlayout             : 'androidx.constraintlayout:constraintlayout:1.1.3',
             androidMaterial             : 'com.google.android.material:material:1.3.0-alpha01',
             browser                     : 'androidx.browser:browser:1.2.0',
-            androidMaterial2            : 'com.google.android.material:material:1.3.0-alpha01',
 
             customTabs                  : 'com.android.support:customtabs:28.0.0',
             betterLinkMovement          : 'me.saket:better-link-movement-method:2.2.0',
@@ -86,6 +85,7 @@ ext {
             'com/tiagohs/uicomponents/audioplayer',
             'com/tiagohs/uicomponents/gifviewer',
             'com/tiagohs/uicomponents/videoviewer',
+            'com/tiagohs/uicomponents/alertsnack',
             'com/tiagohs/uicomponents'
     ]
 

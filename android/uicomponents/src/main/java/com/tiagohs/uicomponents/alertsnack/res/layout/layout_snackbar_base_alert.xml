@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_width="match_parent"
+    tools:layout_height="wrap_content"
+    android:background="@color/transparent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_0.5x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.5x">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/messageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_green_500"
+            android:padding="@dimen/activity_vertical_margin_0.5x">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/messageview_icon_size"
+                android:layout_height="@dimen/messageview_icon_size"
+                android:layout_marginStart="@dimen/activity_vertical_margin_0.5x"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:src="@drawable/ic_error"
+                android:tint="@color/md_white_1000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/text_size_zeplin_22pt"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Teste de Titulo"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="@dimen/text_size_zeplin_26pt"
+                android:textColor="@color/md_white_1000"
+                android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                tools:text="Teste de Descricao"
+                tools:visibility="visible"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</merge>

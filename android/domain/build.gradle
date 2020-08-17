@@ -36,6 +36,7 @@ dependencies {
     def dependencies = rootProject.ext.dependencies
 
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    implementation dependencies.androidMaterial
 
     // Tools
     implementation dependencies.volley

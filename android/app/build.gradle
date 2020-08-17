@@ -57,7 +57,6 @@ dependencies {
     implementation dependencies.constrantlayout
     implementation dependencies.androidMaterial
     implementation dependencies.browser
-    implementation dependencies.androidMaterial2
 
     // Components and Tools
     implementation dependencies.customTabs

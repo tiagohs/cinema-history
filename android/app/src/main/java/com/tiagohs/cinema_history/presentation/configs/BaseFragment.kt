@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.tiagohs.cinema_history.dagger.AppComponent
+import com.tiagohs.entities.enums.MessageViewType
 
 abstract class BaseFragment : Fragment() {
 
@@ -28,12 +29,19 @@ abstract class BaseFragment : Fragment() {
 
     fun isInternetConnected(): Boolean = (activity as? BaseActivity)?.isInternetConnected() ?: false
 
-    open fun onError(ex: Throwable?, message: Int) {
-        (activity as? BaseActivity)?.onError(ex, message)
+    open fun onError(ex: Throwable?, message: Int, type: MessageViewType, duration: Int) {
+        (activity as? BaseActivity)?.onError(ex, message, type, duration)
     }
 
-    open fun showError(message: Int, onTryAgainClicked: (() -> Unit)?) {
-        (activity as? BaseActivity)?.showError(message, onTryAgainClicked)
+    open fun onError(ex: Throwable?, message: String, type: MessageViewType, duration: Int) {
+        (activity as? BaseActivity)?.onError(ex, message, type, duration)
+    }
+
+    open fun showError(message: Int,
+                       type: MessageViewType,
+                       duration: Int,
+                       onTryAgainClicked: (() -> Unit)?) {
+        (activity as? BaseActivity)?.showError(message, type, duration, onTryAgainClicked)
     }
 
     open fun hideError() {
@@ -46,7 +54,4 @@ abstract class BaseFragment : Fragment() {
         return (activity as BaseActivity).getConfiguratedAd(adView)
     }*/
 
-    open fun onError(ex: Throwable?, message: String) {
-        (activity as? BaseActivity)?.onError(ex, message)
-    }
 }

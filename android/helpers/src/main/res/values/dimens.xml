@@ -39,6 +39,9 @@
 
     <!-- =========== COMPONENTS =========== -->
 
+    <!-- MESSAGEVIEW -->
+    <dimen name="messageview_icon_size">35dp</dimen>
+
     <!-- SEPARATOR -->
     <dimen name="separator_height">1dp</dimen>
 

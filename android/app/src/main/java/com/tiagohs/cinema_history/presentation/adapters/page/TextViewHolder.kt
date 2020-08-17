@@ -7,9 +7,7 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentText
-import com.tiagohs.helpers.extensions.setResourceFont
-import com.tiagohs.helpers.extensions.setResourceStyledText
-import com.tiagohs.helpers.extensions.styledString
+import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.adapter_page_text.view.*
 
 
@@ -25,6 +23,24 @@ class TextViewHolder(
         itemView.contentText.setResourceStyledText(contentText.contentText)
         itemView.contentText.setupLinkableTextView(context)
         itemView.contentText.setResourceFont(contentText.font)
+
+        setupTitle(contentText)
+    }
+
+    private fun setupTitle(contentText: ContentText) {
+        val context = containerView.context ?: return
+        val title = contentText.contentTitle
+
+        if (title != null) {
+            itemView.contentTitle.show()
+            itemView.separator.show()
+            itemView.contentTitle.setupLinkableTextView(context)
+            itemView.contentTitle.setResourceStyledText(title)
+            return
+        }
+
+        itemView.contentTitle.hide()
+        itemView.separator.hide()
     }
 
     companion object {

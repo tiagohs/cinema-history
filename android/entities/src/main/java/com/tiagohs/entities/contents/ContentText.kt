@@ -8,6 +8,9 @@ data class ContentText(
     @SerializedName("content_text")
     var contentText: String,
 
+    @SerializedName("content_title")
+    var contentTitle: String? = null,
+
     @SerializedName("font")
     var font: String?
 ): Content(), Serializable
