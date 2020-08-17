@@ -11,9 +11,9 @@ import androidx.fragment.app.Fragment
 import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.dagger.AppComponent
-import com.tiagohs.helpers.extensions.getResourceColor
-import com.tiagohs.helpers.extensions.toast
+import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.ServerUtils
+import kotlinx.android.synthetic.main.view_error.*
 
 abstract class BaseActivity : AppCompatActivity() {
 
@@ -83,6 +83,22 @@ abstract class BaseActivity : AppCompatActivity() {
         }
 
         onError(ex, finalMessage)
+    }
+
+    open fun showError(message: Int, onTryAgainClicked: (() -> Unit)?) {
+        errorContainer.show()
+
+        if (message != 0) {
+            errorDescription.setResourceText(message)
+        }
+
+        tryAgainButton.setOnClickListener {
+            onTryAgainClicked?.invoke()
+        }
+    }
+
+    open fun hideError() {
+        errorContainer.hide()
     }
 
     open fun onError(ex: Throwable?, message: String) {

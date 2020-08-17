@@ -22,12 +22,12 @@ class PersonDetailsPresenterImpl @Inject constructor(
         this.view?.setupArguments()
     }
 
-    override fun fetchPersonDetails(personId: Int) {
+    override fun fetchPersonDetails(personId: Int, languageToUse: String) {
         val appendToResponse = listOf("tagged_images", "images", "movie_credits", "external_ids", "translations")
 
         view?.startLoading()
 
-        add(tmdbService.getPersonDetails(personId, appendToResponse)
+        add(tmdbService.getPersonDetails(personId, languageToUse, appendToResponse)
             .map { setupPersonDetails(it) }
             .concatMap { fetchExtraInfo(it) }
             .subscribeOn(Schedulers.io())

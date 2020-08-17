@@ -7,12 +7,16 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.tiagohs.cinema_history.dagger.AppComponent
 
-abstract class BaseFragment: Fragment() {
+abstract class BaseFragment : Fragment() {
 
     abstract fun getViewID(): Int
     abstract fun onErrorAction()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         val view = inflater.inflate(getViewID(), container, false)
         return view
     }
@@ -26,6 +30,14 @@ abstract class BaseFragment: Fragment() {
 
     open fun onError(ex: Throwable?, message: Int) {
         (activity as? BaseActivity)?.onError(ex, message)
+    }
+
+    open fun showError(message: Int, onTryAgainClicked: (() -> Unit)?) {
+        (activity as? BaseActivity)?.showError(message, onTryAgainClicked)
+    }
+
+    open fun hideError() {
+        (activity as? BaseActivity)?.hideError()
     }
 
     /*fun getConfiguratedAd(adView: AdView) {

@@ -6,6 +6,7 @@ import com.tiagohs.entities.tmdb.movie.Video
 import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.services.TMDBService
 import com.tiagohs.domain.views.MovieDetailsView
+import com.tiagohs.helpers.R
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -23,19 +24,25 @@ class MovieDetailsPresenterImpl @Inject constructor(
         this.view?.setupArguments()
     }
 
-    override fun fetchMovieDetails(movieId: Int) {
+    override fun fetchMovieDetails(movieId: Int, languageToUse: String) {
         val appendToResponse = listOf("credits", "images", "videos", "keywords", "releases", "similar_movies", "external_ids", "translations")
 
         view?.startLoading()
-        add(tmdbService.getMovieDetails(movieId, appendToResponse)
-            .concatMap { fetchVideos(it) }
+        add(tmdbService.getMovieDetails(movieId, languageToUse, appendToResponse)
+            .concatMap { fetchVideos(it, languageToUse) }
             .map { this.movie }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
                 this.movie = it
             }, {
-                view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                view?.showError {
+                    view?.startLoading()
+                    view?.hideError()
+
+                    fetchMovieDetails(movieId, languageToUse)
+                }
+                view?.onError(it, R.string.error_unknown)
                 view?.hideLoading()
             }, {
                 view?.hideLoading()
@@ -44,7 +51,7 @@ class MovieDetailsPresenterImpl @Inject constructor(
         )
     }
 
-    private fun fetchVideos(movie: Movie): Observable<Result<Video>> {
+    private fun fetchVideos(movie: Movie, languageToUse: String): Observable<Result<Video>> {
         this.movie = movie
         val id = movie.id ?: return Observable.just(Result(results = movie.videos?.videoList))
 
@@ -57,7 +64,7 @@ class MovieDetailsPresenterImpl @Inject constructor(
             listOfObservables.add(tmdbService.getMovieVideos(id, originalLanguage))
         }
 
-        listOfObservables.add(tmdbService.getMovieVideos(id, "pt-BR"))
+        listOfObservables.add(tmdbService.getMovieVideos(id, languageToUse))
         listOfObservables.add(tmdbService.getMovieVideos(id, "en-US"))
 
         return Observable.concat(listOfObservables)

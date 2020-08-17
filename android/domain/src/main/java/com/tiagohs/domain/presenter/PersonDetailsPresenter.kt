@@ -5,5 +5,5 @@ import com.tiagohs.domain.views.PersonDetailsView
 
 interface PersonDetailsPresenter: IPresenter<PersonDetailsView> {
 
-    fun fetchPersonDetails(personId: Int)
+    fun fetchPersonDetails(personId: Int, languageToUse: String)
 }

@@ -12,6 +12,7 @@ import com.tiagohs.domain.presenter.PersonDetailsPresenter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.cinema_history.presentation.fragments.PersonDetailsFragment
 import com.tiagohs.cinema_history.presentation.fragments.PersonDetailsSpecialFragment
+import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.domain.views.PersonDetailsView
 import com.tiagohs.helpers.extensions.show
 import com.tiagohs.helpers.extensions.startFragment
@@ -25,6 +26,7 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
 
     @Inject
     lateinit var presenter: PersonDetailsPresenter
+    private lateinit var settingManager: SettingsManager
 
     var personId: Int = 0
 
@@ -33,8 +35,15 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
 
         getApplicationComponent()?.inject(this)
 
+        setupSettingsManager()
+
         presenter.onBindView(this)
-        presenter.fetchPersonDetails(personId)
+        presenter.fetchPersonDetails(personId, settingManager.getMovieISOLanguage())
+    }
+
+    private fun setupSettingsManager() {
+        settingManager = SettingsManager()
+        settingManager.setupSharedPreferences(this)
     }
 
     override fun setupArguments() {

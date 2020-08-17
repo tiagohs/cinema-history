@@ -63,9 +63,9 @@ class SettingsManager:
         sharedEdit.apply()
     }
 
-    private fun getISOLanguage(language: String): String? = when(language) {
+    private fun getISOLanguage(language: String): String? = when (language) {
         "Português Brasil" -> "pt-BR"
-        "Inglês" -> "pt-BR"
+        "Inglês" -> "en-US"
         else -> "pt-BR"
     }
 

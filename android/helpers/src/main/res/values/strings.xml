@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Helpers</string>
 
+    <string name="error_title_ops">Ops!</string>
+    <string name="error_unknown">Houve um erro inesperado, por favor, tente novamente!</string>
 
     <!-- Genres -->
     <string name="genere_action">Ação</string>

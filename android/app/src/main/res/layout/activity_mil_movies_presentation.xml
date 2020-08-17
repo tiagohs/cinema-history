@@ -147,5 +147,7 @@
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 
+    <include layout="@layout/view_error" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

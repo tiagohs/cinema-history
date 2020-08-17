@@ -298,6 +298,19 @@
     },
     {
       "type": "item",
+      "year": "19\n23",
+      "title": "Walt Disney Company nasce",
+      "description": "No início de 1923, em Kansas City, Missouri, o animador <a href=\"https://_{'type': 'screen', 'id': 2106, 'screen_type': 'person'}\">Walt Disney</a> criou um curta-metragem intitulado <a href=\"https://_{'type': 'screen', 'id': 146730, 'screen_type': 'movie'}\">Alice's Wonderland</a>, que contou com a atriz mirim <a href=\"https://_{'type': 'screen', 'id': 144552, 'screen_type': 'person'}\">Virginia Davis</a> interagindo com personagens animados. Em 1923, após a falência de sua primeira firma, a Laugh-O-Gram Films, Walt Disney mudou-se para Hollywood para se juntar a seu irmão, Roy O. Disney. A distribuidora de filmes, Margaret J. Winkler, da MJ Winkler Productions contactou Disney, com planos para distribuir uma série de <strong>Alice Comedies</strong>, comprada por 1.500 dólares por carretel com Walt Disney sendo um parceiro de produção. Walt e Roy Disney formaram no mesmo ano a <strong>Disney Brothers Animation Studios</strong>. Outros filmes animados seguiram depois de Alice. Em janeiro de 1926, com a conclusão da expansão do estúdio Disney na Hyperion Street, o nome do estúdio foi alterado para <strong>Walt Disney Studios</strong>.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_alice_disney.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
       "year": "19\n25",
       "title": "O Mais lucrativo de sua Era",
       "description": "<a href=\"https://_{'type': 'screen', 'id': 3060, 'screen_type': 'movie'}\">The Big Parade</a> (O grande desfile, 1925), de <a href=\"https://_{'type': 'screen', 'id': 29962, 'screen_type': 'person'}\">King Vidor</a>, é lançado e arrecada 22 milhões de dólares nas bilheterias em todo o mundo, se tornando o filme mudo mais bem-sucedido de todos os tempos.",

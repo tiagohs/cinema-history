@@ -20,6 +20,7 @@ import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.domain.presenter.MovieDetailsPresenter
 import com.tiagohs.cinema_history.presentation.adapters.MovieInfoAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
+import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.entities.dto.PersonDTO
 import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.enums.MovieInfoType
@@ -36,6 +37,7 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     @Inject
     lateinit var presenter: MovieDetailsPresenter
+    private lateinit var settingManager: SettingsManager
 
     var movieId: Int = 0
     var movie: Movie? = null
@@ -46,9 +48,15 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         getApplicationComponent()?.inject(this)
 
         setupToolbar(toolbar)
+        setupSettingsManager()
 
         presenter.onBindView(this)
-        presenter.fetchMovieDetails(movieId)
+        presenter.fetchMovieDetails(movieId, settingManager.getMovieISOLanguage())
+    }
+
+    private fun setupSettingsManager() {
+        settingManager = SettingsManager()
+        settingManager.setupSharedPreferences(this)
     }
 
     override fun onDestroy() {

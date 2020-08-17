@@ -3,6 +3,7 @@ package com.tiagohs.domain.presenter
 import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.services.TMDBService
 import com.tiagohs.domain.views.MilMoviesPresentationView
+import com.tiagohs.helpers.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
@@ -28,12 +29,17 @@ class MilMoviesPresentationPresenterImpl @Inject constructor(
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
                 totalPage = it.total_pages
-                val movies = it.results
 
                 view?.hideLoading()
-                view?.bindMovieList(movies)
+                view?.bindMovieList(it.results)
             }, {
-                view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                view?.showError {
+                    view?.startLoading()
+                    view?.hideError()
+
+                    fetchMoviesByListId(listId)
+                }
+
                 view?.hideLoading()
             })
         )
@@ -46,11 +52,9 @@ class MilMoviesPresentationPresenterImpl @Inject constructor(
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                val movies = it.results
-
-                view?.bindMoreMovies(movies)
+                view?.bindMoreMovies(it.results)
             }, {
-                view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                view?.onError(it, R.string.error_unknown)
             })
         )
     }

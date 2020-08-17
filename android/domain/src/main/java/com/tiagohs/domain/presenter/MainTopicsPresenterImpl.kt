@@ -4,6 +4,7 @@ import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.domain.services.LocalService
 import com.tiagohs.domain.views.MainTopicsView
+import com.tiagohs.helpers.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
@@ -34,7 +35,7 @@ class MainTopicsPresenterImpl @Inject constructor(
                         view?.hideLoading()
                         view?.bindMainTopics(it)
                     }, {
-                        view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                        view?.onError(it, R.string.error_unknown)
                         view?.hideLoading()
                     })
                 )
@@ -47,7 +48,7 @@ class MainTopicsPresenterImpl @Inject constructor(
                         view?.hideLoading()
                         view?.bindMainTopics(it)
                     }, {
-                        view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                        view?.onError(it, R.string.error_unknown)
                         view?.hideLoading()
                     })
                 )
@@ -60,7 +61,7 @@ class MainTopicsPresenterImpl @Inject constructor(
                         view?.hideLoading()
                         view?.bindMainTopics(it)
                     }, {
-                        view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                        view?.onError(it, R.string.error_unknown)
                         view?.hideLoading()
                     })
                 )
@@ -73,7 +74,7 @@ class MainTopicsPresenterImpl @Inject constructor(
                         view?.hideLoading()
                         view?.bindMainTopics(it)
                     }, {
-                        view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                        view?.onError(it, R.string.error_unknown)
                         view?.hideLoading()
                     })
                 )

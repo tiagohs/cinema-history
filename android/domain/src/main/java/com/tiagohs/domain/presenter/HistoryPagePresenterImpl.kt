@@ -3,6 +3,7 @@ package com.tiagohs.domain.presenter
 import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.services.LocalService
 import com.tiagohs.domain.views.HistoryPageView
+import com.tiagohs.helpers.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
@@ -27,7 +28,7 @@ class HistoryPagePresenterImpl @Inject constructor(
             .subscribe({
                 view?.bindPageContent(it)
             }, {
-
+                view?.onError(it, R.string.error_unknown)
             })
         )
     }
