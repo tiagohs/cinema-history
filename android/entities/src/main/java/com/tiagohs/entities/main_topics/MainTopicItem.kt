@@ -41,8 +41,7 @@ data class MainTopicItem(
     @SerializedName("quote")
     val quote: Quote,
 
-    @SerializedName("sumario_list")
-    var sumarioList: List<Sumario>
+    var sumarioList: List<Sumario>? = null
 
 ): MainTopic(), Serializable {
 

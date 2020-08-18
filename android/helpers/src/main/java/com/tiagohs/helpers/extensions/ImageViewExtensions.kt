@@ -16,12 +16,33 @@ import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
 import com.google.firebase.storage.FirebaseStorage
+import com.stfalcon.imageviewer.StfalconImageViewer
 import com.tiagohs.entities.image.Image
 import com.tiagohs.entities.image.ImageStyle
 import com.tiagohs.entities.enums.ImageScaleType
 import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.helpers.R
 import com.tiagohs.helpers.tools.GlideApp
+
+fun ImageView?.setupPreview(image: Image, list: List<Image> = emptyList()) {
+    this ?: return
+
+    val finalList = if (list.isEmpty())
+            list.toMutableList().apply { add(image) }
+        else
+            list
+
+    setOnClickListener {
+        StfalconImageViewer.Builder<Image>(context, finalList) { view, image ->
+            image?.imageStyle?.scaleType = null
+            image?.imageStyle?.resize = null
+            view.loadImage(image, null)
+        }
+            .allowZooming(true)
+            .withTransitionFrom(this)
+            .show()
+    }
+}
 
 fun ImageView.setImageDrawableColored(drawableRes: Int, colorName: String) {
     val drawable = context.getResourceDrawable(drawableRes) ?: return
@@ -95,14 +116,16 @@ fun ImageView.loadImage(
         glideRequest.override(width, height)
     }
 
-    when (ImageScaleType.getImageViewScaleType(image.imageStyle?.scaleType)) {
-        ImageView.ScaleType.FIT_XY, ImageView.ScaleType.FIT_CENTER,
-        ImageView.ScaleType.FIT_START, ImageView.ScaleType.FIT_END -> glideRequest.fitCenter()
+    image.imageStyle?.scaleType?.let {
+        when (ImageScaleType.getImageViewScaleType(image.imageStyle?.scaleType)) {
+            ImageView.ScaleType.FIT_XY, ImageView.ScaleType.FIT_CENTER,
+            ImageView.ScaleType.FIT_START, ImageView.ScaleType.FIT_END -> glideRequest.fitCenter()
 
-        ImageView.ScaleType.CENTER_INSIDE -> glideRequest.centerInside()
-        ImageView.ScaleType.CENTER_CROP -> glideRequest.centerCrop()
+            ImageView.ScaleType.CENTER_INSIDE -> glideRequest.centerInside()
+            ImageView.ScaleType.CENTER_CROP -> glideRequest.centerCrop()
 
-        else -> { glideRequest.centerCrop() }
+            else -> { glideRequest.centerCrop() }
+        }
     }
 
     glideRequest.diskCacheStrategy(DiskCacheStrategy.ALL)

@@ -41,6 +41,7 @@ dependencies {
     implementation dependencies.constrantlayout
     implementation dependencies.browser
     implementation dependencies.androidMaterial
+    implementation dependencies.imageViewer
 
     // Tools
     implementation dependencies.timber

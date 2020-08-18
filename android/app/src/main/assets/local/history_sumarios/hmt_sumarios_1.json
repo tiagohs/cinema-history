@@ -17,25 +17,26 @@
   {
     "id": 2,
     "title": "Os primeiros Épicos",
-    "description": "Os primeiros inventores, sonhadores e artistas.",
+    "description": "Os épicos são conhecidos por seus orçamentos vultosos, cenários grandiosos, elencos enormes, olhar abrangente e, às vezes, por seus efeitos especiais. Nos primórdios do cinema, a tecnologia rudimentar limitava a capacidade de produção dos cineastas, porém, à medida que ela se desenvolveu, os diretores puderam dar asas à imaginação.",
     "image": {
       "image_type": "local",
-      "url": "img_great_train",
+      "url": "img_cabiria",
       "style": {
         "scale_type": "center_crop",
+        "height": 250,
         "resize": {
-          "height": 350
+          "height": 250
         }
       }
     }
   },
   {
     "id": 3,
-    "title": "Heroínas e Diretoras do Cinem",
-    "description": "Os primeiros inventores, sonhadores e artistas.",
+    "title": "O Cinema Fantástico e Sobrenatural",
+    "description": "Logo no início da evolução do cinema, alguns pioneiros perceberam o potencial da sétima arte para apresentar o misterioso, o apavorante, o fantástico e o sobrenatural. Cineastas como F. W. Murnau, Georges Méliès e Benjamin Christensen trouxeram para o cinema obras primas que influenciaram futuras gerações.",
     "image": {
       "image_type": "local",
-      "url": "img_great_train",
+      "url": "img_nosferatus",
       "style": {
         "scale_type": "center_crop",
         "resize": {
@@ -46,7 +47,7 @@
   },
   {
     "id": 4,
-    "title": "O Cinema Fantástico e Sobrenatural",
+    "title": "Heroínas e Diretoras do Cinem",
     "description": "Os primeiros inventores, sonhadores e artistas.",
     "image": {
       "image_type": "local",

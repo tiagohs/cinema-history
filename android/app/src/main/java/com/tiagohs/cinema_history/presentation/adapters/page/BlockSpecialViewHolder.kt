@@ -46,7 +46,7 @@ class BlockSpecialViewHolder(
     }
 
     private fun bindClick(click: Click) {
-        itemView.blockSpecialClickHere.hide()
+        itemView.blockSpecialClickHere.show()
         itemView.blockSpecialContainerCard.setOnClickListener {
             when (click.screen) {
                 Screen.TIMELINE_SCREEN -> {

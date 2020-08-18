@@ -5,6 +5,8 @@ import android.graphics.Rect
 import android.os.Bundle
 import android.util.TypedValue
 import android.view.View
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.appbar.AppBarLayout
@@ -105,6 +107,17 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
         pageDescription.setResourceText(sumario?.description)
 
         val image = sumario?.image ?: return
+
+        image.imageStyle?.height?.let {
+            pageHeaderImage.layoutParams = ConstraintLayout.LayoutParams(
+                ConstraintLayout.LayoutParams.MATCH_PARENT,
+                it.convertIntToDp(context)
+            ).apply {
+                topToBottom = R.id.headerContainer
+                startToStart = ConstraintSet.PARENT_ID
+                endToEnd = ConstraintSet.PARENT_ID
+            }
+        }
 
         pageHeaderImage.loadImage(image)
 

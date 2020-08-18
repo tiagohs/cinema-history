@@ -6,7 +6,7 @@ import java.io.Serializable
 
 data class ContentImage(
 
-    @SerializedName("path")
+    @SerializedName("image")
     var image: Image,
 
     @SerializedName("height")

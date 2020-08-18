@@ -134,7 +134,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
 
         sumarioList.apply {
             layoutManager = LinearLayoutManager(this@PresentationActivity, RecyclerView.VERTICAL, false)
-            adapter = SumarioPresentationAdapter(mainTopic.sumarioList).apply {
+            adapter = SumarioPresentationAdapter(mainTopic.sumarioList ?: emptyList()).apply {
                 onSumarioClick = { _,  position ->
                     startActivityWithSlideAnimation(HistoryPagesActivity.newIntent(this@PresentationActivity, mainTopic, position))
                 }

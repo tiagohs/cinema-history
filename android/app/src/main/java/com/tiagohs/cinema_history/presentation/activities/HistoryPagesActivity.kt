@@ -17,6 +17,7 @@ import com.tiagohs.entities.image.ImageResize
 import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.presentation.adapters.PagePagerAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
+import com.tiagohs.helpers.extensions.show
 import kotlinx.android.synthetic.main.activity_history_pages.*
 
 
@@ -54,7 +55,7 @@ class HistoryPagesActivity: BaseActivity() {
         pagesContainer.alpha = 0f
 
         loadView.startShimmer()
-        loadView.visibility = View.VISIBLE
+        loadView.show()
         loadView.alpha = 1f
     }
 
@@ -132,11 +133,13 @@ class HistoryPagesActivity: BaseActivity() {
 
     private fun setupPagesContainer() {
         val mainTopic = this.mainTopic ?: return
-        adapterPager = PagePagerAdapter(supportFragmentManager, lifecycle, mainTopic.sumarioList)
+        adapterPager = PagePagerAdapter(supportFragmentManager, lifecycle, mainTopic.sumarioList ?: emptyList())
 
-        sumarioContentViewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        sumarioContentViewPager.adapter = adapterPager
-        sumarioContentViewPager.currentItem = itemSelectedPosition
+        sumarioContentViewPager.apply {
+            orientation = ViewPager2.ORIENTATION_HORIZONTAL
+            adapter = adapterPager
+            currentItem = itemSelectedPosition
+        }
     }
 
     companion object {

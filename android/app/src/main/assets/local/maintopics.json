@@ -37,14 +37,7 @@
       "text_color": "md_black_1000",
       "background_color": "md_white_1000",
       "icon_color": "md_grey_300"
-    },
-    "sumario_list": [
-      {
-        "id": 1,
-        "title": "Pioneiros do Cinema",
-        "description": ""
-      }
-    ]
+    }
   },
   {
     "main_topic_type": "history_cinema",
@@ -80,14 +73,7 @@
       "icon_color": "md_black_1000"
     },
     "title_color": "md_white_1000",
-    "title_background_color": "purple_snow_shite",
-    "sumario_list": [
-      {
-        "id": 1,
-        "title": "",
-        "description": ""
-      }
-    ]
+    "title_background_color": "purple_snow_shite"
   },
   {
     "main_topic_type": "",
@@ -130,14 +116,7 @@
       "icon_color": "md_white_1000"
     },
     "title_color": "md_white_1000",
-    "title_background_color": "md_grey_700",
-    "sumario_list": [
-      {
-        "id": 1,
-        "title": "Pioneiros do Cinema",
-        "description": ""
-      }
-    ]
+    "title_background_color": "md_grey_700"
   },
   {
     "main_topic_type": "history_cinema",
@@ -177,14 +156,7 @@
       "icon_color": "md_grey_500"
     },
     "title_color": "md_white_1000",
-    "title_background_color": "md_black_1000",
-    "sumario_list": [
-      {
-        "id": 1,
-        "title": "Pioneiros do Cinema",
-        "description": ""
-      }
-    ]
+    "title_background_color": "md_black_1000"
   },
   {
     "main_topic_type": "history_cinema",
@@ -219,14 +191,7 @@
       "background_color": "md_yellow_A400",
       "icon_color": "md_black_1000"
     },
-    "title_color": "md_white_1000",
-    "sumario_list": [
-      {
-        "id": 1,
-        "title": "Pioneiros do Cinema",
-        "description": ""
-      }
-    ]
+    "title_color": "md_white_1000"
   },
   {
     "main_topic_type": "",
@@ -269,14 +234,7 @@
       "icon_color": "md_white_1000"
     },
     "title_color": "md_black_1000",
-    "title_background_color": "yellow_dark",
-    "sumario_list": [
-      {
-        "id": 1,
-        "title": "Pioneiros do Cinema",
-        "description": ""
-      }
-    ]
+    "title_background_color": "yellow_dark"
   },
   {
     "main_topic_type": "history_cinema",
@@ -316,13 +274,6 @@
       "background_color": "md_black_1000",
       "icon_color": "md_white_1000"
     },
-    "title_color": "md_white_1000",
-    "sumario_list": [
-      {
-        "id": 1,
-        "title": "Pioneiros do Cinema",
-        "description": ""
-      }
-    ]
+    "title_color": "md_white_1000"
   }
 ]
