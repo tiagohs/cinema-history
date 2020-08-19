@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.tiagohs.domain.managers.AudioManager
 import com.tiagohs.entities.image.Image
-import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.*
 import com.tiagohs.uicomponents.R
 import kotlinx.android.synthetic.main.view_audio_player.view.*
 
@@ -64,9 +64,9 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
     fun playOrPause() {
         this.audioManager.play(progressSeekBar.progress) { isPlaying ->
             if (isPlaying) {
-                controlButton.setImageDrawable(context.resources.getDrawable(R.drawable.ic_pause_black_24dp))
+                controlButton.setImageDrawable(context.getResourceDrawable(R.drawable.ic_pause_black_24dp))
             } else {
-                controlButton.setImageDrawable(context.resources.getDrawable(R.drawable.ic_play_arrow_grey_24dp))
+                controlButton.setImageDrawable(context.getResourceDrawable(R.drawable.ic_play_arrow_grey_24dp))
             }
         }
     }
@@ -77,7 +77,7 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
 
     fun onUpdateTimer(): (currentPosition: Int, elapsedTime: String) -> Unit = { currentPosition, elapsedTime ->
         progressSeekBar.progress = currentPosition;
-        progressTime.text = elapsedTime;
+        progressTime.setResourceText(elapsedTime)
     }
 
     fun onError(): (message: String, error: Throwable) -> Unit = { message, error ->
@@ -106,13 +106,13 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
     }
 
     private fun startLoading() {
-        audioImageContainer.visibility = View.GONE
-        audioLoadingProgress.visibility = View.VISIBLE
+        audioImageContainer.hide()
+        audioLoadingProgress.show()
     }
 
     private fun stopLoading() {
-        audioImageContainer.visibility = View.VISIBLE
-        audioLoadingProgress.visibility = View.GONE
+        audioImageContainer.show()
+        audioLoadingProgress.hide()
     }
 
     private fun prepareReadyLayout(totalDuration: Int, displayTotalTime: String, displayElapsedTime: String) {
@@ -120,10 +120,10 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
         controlButton.isEnabled = true
 
         progressSeekBar.max = totalDuration
-        controlButton.setImageDrawable(context.resources.getDrawable(R.drawable.ic_play_arrow_grey_24dp))
+        controlButton.setImageDrawable(context.getResourceDrawable(R.drawable.ic_play_arrow_grey_24dp))
 
-        progressTime.text = displayElapsedTime
-        totalTime.text = displayTotalTime
+        progressTime.setResourceText(displayElapsedTime)
+        totalTime.setResourceText(displayTotalTime)
 
         image?.let { loadImage(it) }
     }
