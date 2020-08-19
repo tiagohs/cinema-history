@@ -12,6 +12,7 @@ import com.tiagohs.entities.tmdb.Image
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
+import kotlinx.android.synthetic.main.adapter_movie_info_midia.*
 import kotlinx.android.synthetic.main.adapter_movie_info_midia.view.*
 
 
@@ -33,7 +34,7 @@ class MovieInfoMidiaViewHolder(
         val allImages = ArrayList<Image>(movie.images?.backdrops ?: emptyList())
         allImages.addAll(movie.images?.posters ?: emptyList())
 
-        itemView.wallpapersList.apply {
+        wallpapersList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = MovieWallpaperAdapter(allImages)
             addItemDecoration(
@@ -48,7 +49,7 @@ class MovieInfoMidiaViewHolder(
     private fun bindVideos(context: Context, movie: Movie) {
         val allVideos = movie.videos?.videoList ?: emptyList()
 
-        itemView.videoList.apply {
+        videoList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = MovieVideoAdapter(allVideos).apply {
                 onVideoClick = this@MovieInfoMidiaViewHolder.onVideoClick

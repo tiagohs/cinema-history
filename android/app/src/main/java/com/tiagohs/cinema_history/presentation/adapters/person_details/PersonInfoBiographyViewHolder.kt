@@ -5,7 +5,7 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.person_info.PersonInfo
 import com.tiagohs.helpers.extensions.setResourceText
-import kotlinx.android.synthetic.main.adapter_person_info_biography.view.*
+import kotlinx.android.synthetic.main.adapter_person_info_biography.*
 
 class PersonInfoBiographyViewHolder(
     view: View
@@ -14,7 +14,7 @@ class PersonInfoBiographyViewHolder(
     override fun bind(item: PersonInfo, position: Int) {
         super.bind(item, position)
 
-        itemView.personBiography.setResourceText(item.person.biography)
+        personBiography.setResourceText(item.person.biography)
     }
 
     companion object {

@@ -9,6 +9,7 @@ import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.movie_info.MovieInfo
 import com.tiagohs.entities.tmdb.movie.ProductionCompanies
 import com.tiagohs.helpers.extensions.*
+import kotlinx.android.synthetic.main.adapter_movie_info_production.*
 import kotlinx.android.synthetic.main.adapter_movie_info_production.view.*
 import kotlinx.android.synthetic.main.view_company_item.view.*
 import java.util.*
@@ -51,7 +52,7 @@ class MovieInfoProductionViewHolder(
         company.logoPath?.imageUrlFromTMDB(ImageSize.LOGO_300)
             ?.let { view.companyImage.loadImage(it, null, scaleType = "center_inside") }
 
-        itemView.companiesProductionContainer.addView(view)
+        companiesProductionContainer.addView(view)
     }
 
     companion object {

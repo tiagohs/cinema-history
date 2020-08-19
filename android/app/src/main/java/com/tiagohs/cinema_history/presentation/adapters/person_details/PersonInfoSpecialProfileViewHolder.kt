@@ -9,7 +9,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.person_info.PersonInfo
 import com.tiagohs.helpers.extensions.setResourceStyledText
 import com.tiagohs.helpers.extensions.setResourceText
-import kotlinx.android.synthetic.main.adapter_person_info_special_profile.view.*
+import kotlinx.android.synthetic.main.adapter_person_info_special_profile.*
 import kotlinx.android.synthetic.main.view_person_profile_item.view.*
 
 class PersonInfoSpecialProfileViewHolder(
@@ -36,7 +36,7 @@ class PersonInfoSpecialProfileViewHolder(
             view.profileItemTitle.setResourceText(it.years)
             view.profileContent.setResourceStyledText(it.content)
 
-            itemView.personProfileContainer.addView(view)
+            personProfileContainer.addView(view)
         }
     }
 

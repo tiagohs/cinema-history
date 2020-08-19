@@ -8,11 +8,13 @@ import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.helpers.utils.MovieUtils
+import kotlinx.android.synthetic.main.adapter_movie_info_summary.*
 import kotlinx.android.synthetic.main.adapter_movie_info_summary.view.*
 
 
 class MovieInfoSummaryViewHolder(
     view: View,
+    private val appLanguage: String,
     var onExtenalLink: ((String?) -> Unit)?
 ) : BaseViewHolder<MovieInfo>(view) {
 
@@ -22,7 +24,7 @@ class MovieInfoSummaryViewHolder(
         val overview =
             movie.overview ?: containerView.context.getResourceString(R.string.no_summary)
 
-        itemView.movieSummary.setResourceText(overview)
+        movieSummary.setResourceText(overview)
 
         setupMovieSummmary(movie)
         setupExternalLinks(movie)
@@ -34,61 +36,61 @@ class MovieInfoSummaryViewHolder(
         val translations = movie.translations?.translations ?: emptyList()
         val originalLanguage = movie.originalLanguage
 
-        itemView.movieSummary.startAnimation(AnimationUtils.createFadeInAnimation(150, 200))
+        movieSummary.startAnimation(AnimationUtils.createFadeInAnimation(150, 200))
 
-        val portugueseOverview =
-            translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
-        if (!portugueseOverview.isNullOrBlank()) {
-            itemView.movieSummary.setResourceText(portugueseOverview)
+        val portugueseOverview = translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
+        if (!portugueseOverview.isNullOrBlank() && appLanguage == "pt-BR") {
+            movieSummary.setResourceText(portugueseOverview)
             return
         }
 
         val englishOverview =
             translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.overview
-        if (!englishOverview.isNullOrBlank()) {
-            itemView.movieSummary.setResourceText(englishOverview)
+        if (!englishOverview.isNullOrBlank() && appLanguage == "en-US") {
+            movieSummary.setResourceText(englishOverview)
             return
         }
 
         val originalOverview =
             translations.find { it.iso_639_1 == originalLanguage }?.data?.overview
         if (!originalOverview.isNullOrBlank()) {
-            itemView.movieSummary.setResourceText(originalOverview)
+            movieSummary.setResourceText(originalOverview)
             return
         }
 
-        itemView.movieSummary.setResourceText(R.string.no_summary)
+        movieSummary.setResourceText(R.string.no_summary)
     }
+
 
     private fun setupExternalLinks(movie: Movie) {
         setupExternalLinkItem(
             movie.externalIds?.facebookId,
-            itemView.facebookContainer,
-            itemView.facebookContainerClickable,
+            facebookContainer,
+            facebookContainerClickable,
             R.string.facebook_link
         )
         setupExternalLinkItem(
             movie.externalIds?.twitterId,
-            itemView.twitterContainer,
-            itemView.twitterContainerClickable,
+            twitterContainer,
+            twitterContainerClickable,
             R.string.twitter_link
         )
         setupExternalLinkItem(
             movie.externalIds?.instagramId,
-            itemView.instagramContainer,
-            itemView.instagramContainerClickable,
+            instagramContainer,
+            instagramContainerClickable,
             R.string.instagram_link
         )
         setupExternalLinkItem(
             movie.externalIds?.imdbId,
-            itemView.imdbContainer,
-            itemView.imdbContainerClickable,
+            imdbContainer,
+            imdbContainerClickable,
             R.string.imdb_link
         )
         setupExternalLinkItem(
             movie.homepage,
-            itemView.linkContainer,
-            itemView.linkContainerClickable,
+            linkContainer,
+            linkContainerClickable,
             0
         )
     }
@@ -116,28 +118,28 @@ class MovieInfoSummaryViewHolder(
         val revenue = movie.revenue
 
         if (budget == null || revenue == null || budget == 0L || revenue == 0L) {
-            itemView.budgetSeekBar.hide()
-            itemView.budgetContainer.hide()
+            budgetSeekBar.hide()
+            budgetContainer.hide()
             return
         }
 
-        itemView.budgetSeekBar.setOnTouchListener { _, _ -> false }
-        itemView.budgetSeekBar.max = budget.toInt() + revenue.toInt()
-        itemView.budgetSeekBar.progress = revenue.toInt()
+        budgetSeekBar.setOnTouchListener { _, _ -> false }
+        budgetSeekBar.max = budget.toInt() + revenue.toInt()
+        budgetSeekBar.progress = revenue.toInt()
 
-        itemView.movieBudget.setResourceText(budget.toCurrency())
-        itemView.movieRevenue.setResourceText(revenue.toCurrency())
+        movieBudget.setResourceText(budget.toCurrency())
+        movieRevenue.setResourceText(revenue.toCurrency())
     }
 
     private fun setupRating(movie: Movie) {
         val context = containerView.context ?: return
         val rating = MovieUtils.getRating(movie.releases?.countries) ?: return
 
-        itemView.certificationCard.show()
+        certificationCard.show()
 
-        itemView.certificationCard.setCardBackgroundColor(context.getResourceColor(rating.backgroundColor))
-        itemView.certification.setResourceTextColor(rating.textColor)
-        itemView.certification.setResourceText(rating.rating)
+        certificationCard.setCardBackgroundColor(context.getResourceColor(rating.backgroundColor))
+        certification.setResourceTextColor(rating.textColor)
+        certification.setResourceText(rating.rating)
     }
 
     companion object {

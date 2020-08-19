@@ -12,8 +12,8 @@ import com.tiagohs.entities.contents.ContentBlockSpecial
 import com.tiagohs.entities.enums.Screen
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.ColorUtils
-import kotlinx.android.synthetic.main.adapter_page_block_special.view.*
-import kotlinx.android.synthetic.main.view_line_five_colors.view.*
+import kotlinx.android.synthetic.main.adapter_page_block_special.*
+import kotlinx.android.synthetic.main.view_line_five_colors.*
 
 
 class BlockSpecialViewHolder(
@@ -27,10 +27,10 @@ class BlockSpecialViewHolder(
         val contentBlockSpecial = item as? ContentBlockSpecial ?: return
         val colorAsset = ColorUtils.getRandomColorAssets()
 
-        itemView.blockSpecialTitle.setResourceStyledText(contentBlockSpecial.title)
-        itemView.blockSpecialDescription.setResourceStyledText(contentBlockSpecial.description)
-        itemView.blockSpecialDescription.setupLinkableTextView(context)
-        itemView.blockSpecialImage.loadImage(contentBlockSpecial.image, null)
+        blockSpecialTitle.setResourceStyledText(contentBlockSpecial.title)
+        blockSpecialDescription.setResourceStyledText(contentBlockSpecial.description)
+        blockSpecialDescription.setupLinkableTextView(context)
+        blockSpecialImage.loadImage(contentBlockSpecial.image, null)
 
         bindColor(colorAsset)
 
@@ -41,13 +41,13 @@ class BlockSpecialViewHolder(
             return
         }
 
-        itemView.blockSpecialClickHere.hide()
-        itemView.blockSpecialContainerCard.setOnClickListener(null)
+        blockSpecialClickHere.hide()
+        blockSpecialContainerCard.setOnClickListener(null)
     }
 
     private fun bindClick(click: Click) {
-        itemView.blockSpecialClickHere.show()
-        itemView.blockSpecialContainerCard.setOnClickListener {
+        blockSpecialClickHere.show()
+        blockSpecialContainerCard.setOnClickListener {
             when (click.screen) {
                 Screen.TIMELINE_SCREEN -> {
                     val intent = TimelineActivity.newIntent(itemView.context).apply {
@@ -66,16 +66,16 @@ class BlockSpecialViewHolder(
         val context = containerView.context ?: return
         val backgroundColor = context.getResourceColor("md_${colorAsset.colorName}_500")
 
-        itemView.blockSpecialContainerCard.setCardBackgroundColor(backgroundColor)
-        itemView.blockSpecialTitle.setResourceTextColor(colorAsset.textColorName)
-        itemView.blockSpecialDescription.setResourceTextColor(colorAsset.textColorName)
-        itemView.blockSpecialClickHere.setResourceTextColor(colorAsset.textColorName)
+        blockSpecialContainerCard.setCardBackgroundColor(backgroundColor)
+        blockSpecialTitle.setResourceTextColor(colorAsset.textColorName)
+        blockSpecialDescription.setResourceTextColor(colorAsset.textColorName)
+        blockSpecialClickHere.setResourceTextColor(colorAsset.textColorName)
 
-        itemView.color1.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
-        itemView.color2.setResourceBackgroundColor("md_${colorAsset.colorName}_600")
-        itemView.color3.setResourceBackgroundColor("md_${colorAsset.colorName}_700")
-        itemView.color4.setResourceBackgroundColor("md_${colorAsset.colorName}_800")
-        itemView.color5.setResourceBackgroundColor("md_${colorAsset.colorName}_900")
+        color1.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
+        color2.setResourceBackgroundColor("md_${colorAsset.colorName}_600")
+        color3.setResourceBackgroundColor("md_${colorAsset.colorName}_700")
+        color4.setResourceBackgroundColor("md_${colorAsset.colorName}_800")
+        color5.setResourceBackgroundColor("md_${colorAsset.colorName}_900")
     }
 
     companion object {

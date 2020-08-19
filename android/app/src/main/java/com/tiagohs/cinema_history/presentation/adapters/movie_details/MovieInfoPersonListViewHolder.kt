@@ -11,6 +11,7 @@ import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
+import kotlinx.android.synthetic.main.adapter_movie_info_person_list.*
 import kotlinx.android.synthetic.main.adapter_movie_info_person_list.view.*
 
 
@@ -25,19 +26,19 @@ class MovieInfoPersonListViewHolder(
         val movieInfo = item as? MovieInfoPersonList ?: return
 
         val listTitle = movieInfo.listTitle
-        val personList = movieInfo.personList
+        val persons = movieInfo.personList
 
-        if (personList.isEmpty()) {
-            itemView.personListContainer.hide()
+        if (persons.isEmpty()) {
+            personListContainer.hide()
             return
         }
 
-        itemView.personTitle.setResourceText(listTitle)
-        itemView.personList.apply {
-            adapter = PersonAdapter(personList, onPersonClicked)
-            itemView.personList.layoutManager =
+        personTitle.setResourceText(listTitle)
+        personList.apply {
+            adapter = PersonAdapter(persons, onPersonClicked)
+            layoutManager =
                 LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            itemView.personList.addItemDecoration(
+            addItemDecoration(
                 SpaceOffsetDecoration(
                     8.convertIntToDp(context),
                     SpaceOffsetDecoration.LEFT

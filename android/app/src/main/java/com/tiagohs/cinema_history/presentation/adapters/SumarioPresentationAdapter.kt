@@ -6,7 +6,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.Sumario
 import com.tiagohs.helpers.extensions.setResourceText
-import kotlinx.android.synthetic.main.adapter_sumario_presentation_item.view.*
+import kotlinx.android.synthetic.main.adapter_sumario_presentation_item.*
 
 class SumarioPresentationAdapter(
     list: List<Sumario>
@@ -29,8 +29,8 @@ class SumarioPresentationAdapter(
         override fun bind(item: Sumario, position: Int) {
             super.bind(item, position)
 
-            itemView.sumarioTitle.setResourceText(item.title)
-            itemView.sumarioDescription.setResourceText(item.description)
+            sumarioTitle.setResourceText(item.title)
+            sumarioDescription.setResourceText(item.description)
         }
 
         override fun onClick(v: View?) {

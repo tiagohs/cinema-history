@@ -7,6 +7,7 @@ import com.tiagohs.entities.timeline.TimelineTitle
 import com.tiagohs.helpers.extensions.getResourceColor
 import com.tiagohs.helpers.extensions.setResourceStyledText
 import com.tiagohs.helpers.extensions.show
+import kotlinx.android.synthetic.main.adapter_timeline_title.*
 import kotlinx.android.synthetic.main.adapter_timeline_title.view.*
 
 class TimelineTitleViewHolder(
@@ -24,19 +25,19 @@ class TimelineTitleViewHolder(
         super.bind(item, position)
         val timeline = item as? TimelineTitle ?: return
 
-        itemView.title1.setResourceStyledText(timeline.title)
+        title1.setResourceStyledText(timeline.title)
 
         bindDirectionButtons(timeline)
     }
 
     private fun bindDirectionButtons(timeline: TimelineTitle) {
         timeline.next?.let {
-            itemView.nextContainer.show()
-            itemView.nextContainer?.setOnClickListener { onNextClicked?.invoke() }
+            nextContainer.show()
+            nextContainer?.setOnClickListener { onNextClicked?.invoke() }
         }
         timeline.previous?.let {
-            itemView.previousContainer.show()
-            itemView.previousContainer?.setOnClickListener { onPreviousClicked?.invoke() }
+            previousContainer.show()
+            previousContainer?.setOnClickListener { onPreviousClicked?.invoke() }
         }
     }
 
@@ -44,7 +45,7 @@ class TimelineTitleViewHolder(
         val context = containerView.context ?: return
         val colorRes = context.getResourceColor(color)
 
-        itemView.textLine.setCardBackgroundColor(colorRes)
-        itemView.title2.setTextColor(colorRes)
+        textLine.setCardBackgroundColor(colorRes)
+        title2.setTextColor(colorRes)
     }
 }

@@ -8,6 +8,7 @@ import com.tiagohs.cinema_history.presentation.adapters.MovieItemSpecialAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.person_info.PersonInfo
 import cz.intik.overflowindicator.SimpleSnapHelper
+import kotlinx.android.synthetic.main.adapter_person_info_special_filmography.*
 import kotlinx.android.synthetic.main.adapter_person_info_special_filmography.view.*
 
 class PersonInfoSpecialFilmographyViewHolder(
@@ -21,11 +22,11 @@ class PersonInfoSpecialFilmographyViewHolder(
         val person = item.person
         val filmography =
             person.personFilmography.filter { !it.posterPath.isNullOrBlank() && !it.backdrop.isNullOrBlank() }
-        val personAdapter = MovieItemSpecialAdapter(context, filmography)
+        val personAdapter = MovieItemSpecialAdapter(filmography)
 
         personAdapter.onMovieClicked = onMovieSelected
 
-        itemView.filmographyList.apply {
+        filmographyList.apply {
             adapter = personAdapter
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 

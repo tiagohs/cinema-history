@@ -5,6 +5,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.timeline.Timeline
 import com.tiagohs.entities.timeline.TimelineFooter
 import com.tiagohs.helpers.extensions.show
+import kotlinx.android.synthetic.main.adapter_timeline_footer.*
 import kotlinx.android.synthetic.main.adapter_timeline_footer.view.*
 
 class TimelineItemFooterHolder(
@@ -22,12 +23,12 @@ class TimelineItemFooterHolder(
 
     private fun bindDirectionButtons(timeline: TimelineFooter) {
         timeline.next?.let {
-            itemView.nextContainer.show()
-            itemView.nextContainer?.setOnClickListener { onNextClicked?.invoke() }
+            nextContainer.show()
+            nextContainer?.setOnClickListener { onNextClicked?.invoke() }
         }
         timeline.previous?.let {
-            itemView.previousContainer.show()
-            itemView.previousContainer?.setOnClickListener { onPreviousClicked?.invoke() }
+            previousContainer.show()
+            previousContainer?.setOnClickListener { onPreviousClicked?.invoke() }
         }
     }
 

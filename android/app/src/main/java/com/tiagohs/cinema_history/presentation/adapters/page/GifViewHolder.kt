@@ -4,8 +4,7 @@ import android.view.View
 import com.tiagohs.cinema_history.R
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentGif
-import kotlinx.android.synthetic.main.adapter_page_gif.view.*
-
+import kotlinx.android.synthetic.main.adapter_page_gif.*
 
 class GifViewHolder(
     val view: View
@@ -13,11 +12,18 @@ class GifViewHolder(
 
     override fun bind(item: Content, position: Int) {
         super.bind(item, position)
+
         val gifContent = item as? ContentGif ?: return
         val imageThumbnail = gifContent.gifImage.thumbnail
 
-        itemView.gifViewer.setupGif(gifContent.gifImage, imageThumbnail)
+        gifViewer.setupGif(gifContent.gifImage, imageThumbnail)
         setupContentFooterInformation(gifContent.information)
+    }
+
+    override fun onDestroy() {
+        gifViewer.onDestroy()
+
+        super.onDestroy()
     }
 
     companion object {

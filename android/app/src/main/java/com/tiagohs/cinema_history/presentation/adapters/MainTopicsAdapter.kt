@@ -16,15 +16,15 @@ import com.tiagohs.entities.main_topics.MilMoviesMainTopic
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.utils.AnimationUtils
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.comingSoonTagContainer
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.contentBackground
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.description
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainImage
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainSubtitle
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.mainTopicsContainer
-import kotlinx.android.synthetic.main.adapter_main_topics_card.view.title
-import kotlinx.android.synthetic.main.adapter_main_topics_card_full.view.*
-import kotlinx.android.synthetic.main.adapter_main_topics_inter_quote.view.*
+import kotlinx.android.synthetic.main.adapter_main_topics_card.comingSoonTagContainer
+import kotlinx.android.synthetic.main.adapter_main_topics_card.contentBackground
+import kotlinx.android.synthetic.main.adapter_main_topics_card.description
+import kotlinx.android.synthetic.main.adapter_main_topics_card.mainImage
+import kotlinx.android.synthetic.main.adapter_main_topics_card.mainSubtitle
+import kotlinx.android.synthetic.main.adapter_main_topics_card.mainTopicsContainer
+import kotlinx.android.synthetic.main.adapter_main_topics_card.title
+import kotlinx.android.synthetic.main.adapter_main_topics_card_full.*
+import kotlinx.android.synthetic.main.adapter_main_topics_inter_quote.*
 
 class MainTopicsAdapter(
     private val mainTopicsType: MainTopicsType,
@@ -106,37 +106,37 @@ class MainTopicsAdapter(
             val mainTopicItem = item as? MainTopicItem ?: return
             val context = containerView.context ?: return
 
-            itemView.mainImage.loadImage(mainTopicItem.image, null)
+            mainImage.loadImage(mainTopicItem.image, null)
 
             mainTopicItem.image.imageStyle?.height?.let {
-                itemView.mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                mainImage.layoutParams = ConstraintLayout.LayoutParams(
                     ConstraintLayout.LayoutParams.MATCH_PARENT,
                     it.convertIntToDp(context)
                 )
             }
 
-            itemView.title.setResourceText(mainTopicItem.title)
+            title.setResourceText(mainTopicItem.title)
 
-            itemView.description.setResourceText(mainTopicItem.description)
-            itemView.description.show()
+            description.setResourceText(mainTopicItem.description)
+            description.show()
 
-            itemView.mainSubtitle.setResourceText(mainTopicItem.subtitle)
-            itemView.mainSubtitle.show()
+            mainSubtitle.setResourceText(mainTopicItem.subtitle)
+            mainSubtitle.show()
 
-            mainTopicItem.titleColor?.let { itemView.title.setResourceTextColor(mainTopicItem.titleColor) }
+            mainTopicItem.titleColor?.let { title.setResourceTextColor(mainTopicItem.titleColor) }
             mainTopicItem.titleBackgroundColor?.let {
-                itemView.contentBackground.setResourceBackgroundColor(
+                contentBackground.setResourceBackgroundColor(
                     mainTopicItem.titleBackgroundColor
                 )
             }
-            mainTopicItem.titleColor?.let { itemView.description.setResourceTextColor(mainTopicItem.titleColor) }
-            mainTopicItem.titleColor?.let { itemView.mainSubtitle.setResourceTextColor(mainTopicItem.titleColor) }
+            mainTopicItem.titleColor?.let { description.setResourceTextColor(mainTopicItem.titleColor) }
+            mainTopicItem.titleColor?.let { mainSubtitle.setResourceTextColor(mainTopicItem.titleColor) }
 
-            itemView.mainTopicsContainer.background = GradientDrawable().apply {
+            mainTopicsContainer.background = GradientDrawable().apply {
                 cornerRadius = 10f
             }
 
-            itemView.mainTopicsContainer.setOnClickListener {
+            mainTopicsContainer.setOnClickListener {
                 onMainTopicSelected?.invoke(
                     mainTopicItem,
                     itemView
@@ -144,15 +144,15 @@ class MainTopicsAdapter(
             }
 
             if (mainTopicItem.blocked) {
-                itemView.mainTopicsContainer.isClickable = false
-                itemView.mainTopicsContainer.alpha = 0.3f
-                itemView.comingSoonTagContainer.show()
+                mainTopicsContainer.isClickable = false
+                mainTopicsContainer.alpha = 0.3f
+                comingSoonTagContainer.show()
                 return
             }
 
-            itemView.mainTopicsContainer.isClickable = true
-            itemView.mainTopicsContainer.alpha = 1f
-            itemView.comingSoonTagContainer.hide()
+            mainTopicsContainer.isClickable = true
+            mainTopicsContainer.alpha = 1f
+            comingSoonTagContainer.hide()
         }
 
         fun bindDirectorMainTopic(mainTopic: DirectorsMainTopic) {
@@ -161,18 +161,18 @@ class MainTopicsAdapter(
             val context = containerView.context ?: return
 
             mainTopic.image.imageStyle?.height?.let {
-                itemView.mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                mainImage.layoutParams = ConstraintLayout.LayoutParams(
                     ConstraintLayout.LayoutParams.MATCH_PARENT,
                     it.convertIntToDp(context)
                 )
             }
 
-            itemView.mainImage.loadImage(mainTopic.image, null) {
-                itemView.mainImageDegrade.alpha = 1f
+            mainImage.loadImage(mainTopic.image, null) {
+                mainImageDegrade.alpha = 1f
             }
 
-            itemView.title.setResourceText(mainTopic.title)
-            itemView.mainTopicsContainer.setOnClickListener {
+            title.setResourceText(mainTopic.title)
+            mainTopicsContainer.setOnClickListener {
                 val mainTopicItem = mainTopicItem ?: return@setOnClickListener
 
                 onMainTopicSelected?.invoke(mainTopicItem, null)
@@ -185,18 +185,18 @@ class MainTopicsAdapter(
             val context = containerView.context ?: return
 
             mainTopic.image.imageStyle?.height?.let {
-                itemView.mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                mainImage.layoutParams = ConstraintLayout.LayoutParams(
                     ConstraintLayout.LayoutParams.MATCH_PARENT,
                     it.convertIntToDp(context)
                 )
             }
 
-            itemView.mainImage.loadImage(mainTopic.image, null) {
-                itemView.mainImageDegrade.alpha = 1f
+            mainImage.loadImage(mainTopic.image, null) {
+                mainImageDegrade.alpha = 1f
             }
 
-            itemView.title.setResourceText(mainTopic.title)
-            itemView.mainTopicsContainer.setOnClickListener {
+            title.setResourceText(mainTopic.title)
+            mainTopicsContainer.setOnClickListener {
                 val mainTopicItem = mainTopicItem ?: return@setOnClickListener
 
                 onMainTopicSelected?.invoke(mainTopicItem, null)
@@ -213,8 +213,8 @@ class MainTopicsAdapter(
                     mainTopicAnimation.duration
                 )
 
-                itemView.mainImage.clearAnimation()
-                itemView.mainImage.startAnimation(animation)
+                mainImage.clearAnimation()
+                mainImage.startAnimation(animation)
             }
 
         }
@@ -229,15 +229,15 @@ class MainTopicsAdapter(
             val quote = item as? Quote ?: return
             val quoteColor = if (isDarkMode) R.color.md_white_1000 else R.color.md_black_1000
 
-            itemView.quoteText.setResourceText(quote.quote)
-            itemView.quoteTextAuthor.setResourceText(quote.author)
+            quoteText.setResourceText(quote.quote)
+            quoteTextAuthor.setResourceText(quote.author)
 
             if (!isDarkMode) {
-                itemView.quoteText.setResourceTextColor(R.color.md_black_1000)
+                quoteText.setResourceTextColor(R.color.md_black_1000)
             }
 
-            itemView.quoteTop.setImageDrawableColored(R.drawable.ic_quote_bottom_24dp, quoteColor)
-            itemView.quoteBottom.setImageDrawableColored(R.drawable.ic_quote_top_24dp, quoteColor)
+            quoteTop.setImageDrawableColored(R.drawable.ic_quote_bottom_24dp, quoteColor)
+            quoteBottom.setImageDrawableColored(R.drawable.ic_quote_top_24dp, quoteColor)
         }
     }
 

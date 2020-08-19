@@ -7,6 +7,7 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentVideo
 import com.tiagohs.helpers.extensions.convertIntToDp
+import kotlinx.android.synthetic.main.adapter_page_video.*
 import kotlinx.android.synthetic.main.adapter_page_video.view.*
 
 class VideoViewHolder(
@@ -19,10 +20,10 @@ class VideoViewHolder(
         val activity = context as? AppCompatActivity ?: return
         val contentVideo = item as? ContentVideo ?: return
 
-        itemView.videoViewer.setupPlayer(activity, contentVideo.videoId)
+        videoViewer.setupPlayer(activity, contentVideo.videoId)
 
         contentVideo.height?.let {
-            itemView.videoViewer.layoutParams = ConstraintLayout.LayoutParams(
+            videoViewer.layoutParams = ConstraintLayout.LayoutParams(
                 ConstraintLayout.LayoutParams.MATCH_PARENT,
                 it.convertIntToDp(context)
             ).apply {

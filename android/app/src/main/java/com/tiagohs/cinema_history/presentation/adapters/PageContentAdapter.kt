@@ -12,6 +12,10 @@ class PageContentAdapter(
     list: List<Content>
 ) : BaseAdapter<Content, BasePageViewHolder>(list) {
 
+    init {
+        setHasStableIds(true)
+    }
+
     var presentScreen: ((Intent) -> Unit)? = null
 
     private var viewHolders: ArrayList<BasePageViewHolder> = ArrayList()
@@ -42,6 +46,8 @@ class PageContentAdapter(
         }
 
     override fun getItemViewType(position: Int): Int = list.getOrNull(position)?.type?.ordinal ?: 0
+
+    override fun getItemId(position: Int): Long = position.toLong()
 
     fun onDestroy() {
 

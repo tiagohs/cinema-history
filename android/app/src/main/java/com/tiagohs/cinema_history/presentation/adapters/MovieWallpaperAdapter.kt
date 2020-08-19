@@ -9,7 +9,7 @@ import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.tmdb.Image
 import com.tiagohs.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.helpers.extensions.loadImage
-import kotlinx.android.synthetic.main.adapter_movie_wallpaper.view.*
+import kotlinx.android.synthetic.main.adapter_movie_wallpaper.*
 
 class MovieWallpaperAdapter(
     list: List<Image>
@@ -27,14 +27,14 @@ class MovieWallpaperAdapter(
             val context = containerView.context ?: return
             val imageUrl = item.filePath?.imageUrlFromTMDB(ImageSize.BACKDROP_300)
 
-            itemView.image.loadImage(imageUrl, null, scaleType = "center_crop")
-            itemView.image.setOnClickListener {
+            image.loadImage(imageUrl, null, scaleType = "center_crop")
+            image.setOnClickListener {
                 StfalconImageViewer.Builder<Image>(context, list) { view, image ->
                     val url = image.filePath?.imageUrlFromTMDB(ImageSize.BACKDROP_ORIGINAL)
                     view.loadImage(url, placeholder = null, scaleType = null)
                 }
                     .allowZooming(true)
-                    .withTransitionFrom(itemView.image)
+                    .withTransitionFrom(image)
                     .withStartPosition(position)
                     .show()
             }

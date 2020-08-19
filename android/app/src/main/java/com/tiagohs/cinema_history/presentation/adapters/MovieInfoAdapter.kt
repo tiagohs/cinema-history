@@ -9,7 +9,8 @@ import com.tiagohs.entities.enums.MovieInfoType
 import com.tiagohs.entities.movie_info.MovieInfo
 
 class MovieInfoAdapter(
-    list: List<MovieInfo>
+    list: List<MovieInfo>,
+    private val appLanguage: String
 ) : BaseAdapter<MovieInfo, BaseViewHolder<MovieInfo>>(list) {
 
     var onPersonClicked: ((personId: Int) -> Unit)? = null
@@ -32,7 +33,7 @@ class MovieInfoAdapter(
                 onPersonClicked
             )
             MovieInfoType.INFO_HEADER.ordinal -> MovieInfoHeaderViewHolder(view)
-            MovieInfoType.INFO_SUMMARY.ordinal -> MovieInfoSummaryViewHolder(view, onExtenalLink)
+            MovieInfoType.INFO_SUMMARY.ordinal -> MovieInfoSummaryViewHolder(view, appLanguage, onExtenalLink)
             MovieInfoType.INFO_PRODUCTION.ordinal -> MovieInfoProductionViewHolder(view)
             MovieInfoType.INFO_MIDIAS.ordinal -> MovieInfoMidiaViewHolder(view, onVideoClick)
             else -> object : BaseViewHolder<MovieInfo>(view) {}

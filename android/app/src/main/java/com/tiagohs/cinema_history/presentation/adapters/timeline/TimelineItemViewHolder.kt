@@ -7,6 +7,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.timeline.Timeline
 import com.tiagohs.entities.timeline.TimelineItem
 import com.tiagohs.helpers.extensions.*
+import kotlinx.android.synthetic.main.adapter_timeline_item.*
 import kotlinx.android.synthetic.main.adapter_timeline_item.view.*
 
 class TimelineItemViewHolder(
@@ -24,26 +25,26 @@ class TimelineItemViewHolder(
         val timelineItem = item as? TimelineItem ?: return
         val context = containerView.context ?: return
 
-        itemView.itemDescription.setupLinkableTextView(context)
+        itemDescription.setupLinkableTextView(context)
 
-        itemView.year.setResourceText(timelineItem.year)
-        itemView.itemDescription.setResourceStyledText(timelineItem.description)
+        year.setResourceText(timelineItem.year)
+        itemDescription.setResourceStyledText(timelineItem.description)
 
         timelineItem.title?.let {
-            itemView.titleContainer.show()
+            titleContainer.show()
 
-            itemView.title.setupLinkableTextView(context)
-            itemView.title.setResourceStyledText(it)
+            title.setupLinkableTextView(context)
+            title.setResourceStyledText(it)
         }
 
         val marginTop =
             timelineItem.marginTop?.convertIntToDp(context) ?: 16.convertIntToDp(context)
-        itemView.year.layoutParams = ConstraintLayout.LayoutParams(
+        year.layoutParams = ConstraintLayout.LayoutParams(
             ConstraintLayout.LayoutParams.WRAP_CONTENT,
             ConstraintLayout.LayoutParams.WRAP_CONTENT
         ).apply {
             topToTop = ConstraintLayout.LayoutParams.PARENT_ID
-            endToStart = itemView.guidelineVertical.id
+            endToStart = guidelineVertical.id
             setMargins(0, marginTop, 0, 0)
         }
 
@@ -51,13 +52,13 @@ class TimelineItemViewHolder(
     }
 
     private fun bindImage(timelineItem: TimelineItem) {
-        val image = timelineItem.image ?: return
+        val timelineImage = timelineItem.image ?: return
         val imageTransparent = timelineItem.imageTransparent
 
         if (imageTransparent) {
-            itemView.image.loadImage(image, null)
+            image.loadImage(timelineImage, null)
         } else {
-            itemView.image.loadImageBlackAndWhite(image, null)
+            image.loadImageBlackAndWhite(timelineImage, null)
         }
     }
 
@@ -66,8 +67,8 @@ class TimelineItemViewHolder(
         val context = containerView.context ?: return
         val textColorRes = context.getResourceColor(textColor)
 
-        itemView.textLine.setCardBackgroundColor(textColorRes)
-        itemView.titleContainer.setResourceBackgroundColor(color)
-        itemView.title.setTextColor(textColorRes)
+        textLine.setCardBackgroundColor(textColorRes)
+        titleContainer.setResourceBackgroundColor(color)
+        title.setTextColor(textColorRes)
     }
 }

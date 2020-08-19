@@ -11,19 +11,20 @@ import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.extensions.show
+import kotlinx.android.synthetic.main.adapter_person_info_special_biography.*
 import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.*
 import kotlinx.android.synthetic.main.view_person_department.view.*
 
 class PersonInfoSpecialBiographyViewHolder(
     view: View,
-    var onLinkClick: ((String?) -> Unit)? = null
+    private var onLinkClick: ((String?) -> Unit)? = null
 ) : BaseViewHolder<PersonInfo>(view) {
 
     override fun bind(item: PersonInfo, position: Int) {
         super.bind(item, position)
         val person = item.person
 
-        itemView.personBiography.setResourceText(person.biography)
+        personBiography.setResourceText(person.biography)
 
         bindAwards(person)
         bindBirthdayInfo(person)
@@ -34,8 +35,8 @@ class PersonInfoSpecialBiographyViewHolder(
     private fun bindBirthdayInfo(person: Person) {
 
         if (person.birthdayFormated.isNotBlank()) {
-            itemView.personBirthInfo.show()
-            itemView.personBirthInfo.setResourceText(person.birthdayFormated)
+            personBirthInfo.show()
+            personBirthInfo.setResourceText(person.birthdayFormated)
         }
     }
 
@@ -43,10 +44,10 @@ class PersonInfoSpecialBiographyViewHolder(
         val context = containerView.context ?: return
 
         person.extraInfo?.awards?.let {
-            itemView.awardsContainer.show()
-            itemView.awards.setResourceText(it)
+            awardsContainer.show()
+            awards.setResourceText(it)
 
-            itemView.awardsContainer.setOnClickListener {
+            awardsContainer.setOnClickListener {
                 onLinkClick?.invoke(
                     context.getString(
                         R.string.imdb_awards_link,
@@ -60,26 +61,26 @@ class PersonInfoSpecialBiographyViewHolder(
     private fun bindSocial(person: Person) {
         setupExternalLinkItem(
             person.externalIds?.facebookId,
-            itemView.facebookContainer,
-            itemView.facebookContainerClickable,
+            facebookContainer,
+            facebookContainerClickable,
             R.string.facebook_link
         )
         setupExternalLinkItem(
             person.externalIds?.twitterId,
-            itemView.twitterContainer,
-            itemView.twitterContainerClickable,
+            twitterContainer,
+            twitterContainerClickable,
             R.string.twitter_link
         )
         setupExternalLinkItem(
             person.externalIds?.instagramId,
-            itemView.instagramContainer,
-            itemView.instagramContainerClickable,
+            instagramContainer,
+            instagramContainerClickable,
             R.string.instagram_link
         )
         setupExternalLinkItem(
             person.externalIds?.imdbId,
-            itemView.imdbContainer,
-            itemView.imdbContainerClickable,
+            imdbContainer,
+            imdbContainerClickable,
             R.string.imdb_person_link
         )
     }
@@ -88,7 +89,7 @@ class PersonInfoSpecialBiographyViewHolder(
         val context = containerView.context ?: return
 
         person.departmentsList.forEach {
-            itemView.jobsScrollView.visibility = View.VISIBLE
+            jobsScrollView.show()
 
             val view =
                 LayoutInflater.from(context).inflate(R.layout.view_person_department, null, false)
@@ -101,7 +102,7 @@ class PersonInfoSpecialBiographyViewHolder(
             view.jobName.setResourceText(it)
 
             view.layoutParams = layoutParams
-            itemView.jobsContainer.addView(view)
+            jobsContainer.addView(view)
         }
     }
 

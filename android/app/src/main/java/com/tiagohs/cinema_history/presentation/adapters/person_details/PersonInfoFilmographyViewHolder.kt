@@ -11,6 +11,7 @@ import com.tiagohs.entities.person_info.PersonInfoMovieList
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
+import kotlinx.android.synthetic.main.adapter_movie_info_person_list.*
 import kotlinx.android.synthetic.main.adapter_movie_info_person_list.view.*
 
 
@@ -26,7 +27,7 @@ class PersonInfoFilmographyViewHolder(
         val listTitle = personInfoMovieList.listTitle
         val movieList = personInfoMovieList.movieList
 
-        itemView.personList.apply {
+        personList.apply {
             adapter = MovieItemAdapter(movieList).apply {
                 onMovieClicked = onMovieSelected
             }
@@ -39,7 +40,7 @@ class PersonInfoFilmographyViewHolder(
             )
         }
 
-        itemView.personTitle.setResourceText(listTitle)
+        personTitle.setResourceText(listTitle)
     }
 
     companion object {

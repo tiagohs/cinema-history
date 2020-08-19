@@ -8,7 +8,7 @@ import com.tiagohs.entities.tmdb.person.PersonVideo
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.setResourceText
-import kotlinx.android.synthetic.main.adapter_person_video.view.*
+import kotlinx.android.synthetic.main.adapter_person_video.*
 
 class PersonVideoAdapter(
     list: List<PersonVideo>,
@@ -27,15 +27,15 @@ class PersonVideoAdapter(
             val context = containerView.context ?: return
             val videoId = item.key
 
-            itemView.videoThumb.loadImage(
+            videoThumb.loadImage(
                 context.getString(R.string.youtube_image_link, videoId),
                 null,
                 scaleType = "center_crop"
             )
-            itemView.videoContainer.setOnClickListener { onVideoClick?.invoke(videoId) }
-            itemView.typeName.setResourceText(item.type)
-            itemView.title.setResourceText(item.name)
-            itemView.source.setResourceText(item.source)
+            videoContainer.setOnClickListener { onVideoClick?.invoke(videoId) }
+            typeName.setResourceText(item.type)
+            title.setResourceText(item.name)
+            source.setResourceText(item.source)
         }
     }
 

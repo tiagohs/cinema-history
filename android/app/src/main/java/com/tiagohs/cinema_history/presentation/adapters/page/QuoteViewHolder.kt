@@ -1,13 +1,12 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
 import android.view.View
-import androidx.core.content.ContextCompat
 import com.tiagohs.cinema_history.R
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentQuote
 import com.tiagohs.helpers.extensions.getResourceColor
 import com.tiagohs.helpers.extensions.setResourceText
-import kotlinx.android.synthetic.main.adapter_page_quote.view.*
+import kotlinx.android.synthetic.main.adapter_page_quote.*
 
 class QuoteViewHolder(
     val view: View
@@ -18,8 +17,8 @@ class QuoteViewHolder(
         val context = containerView.context ?: return
         val contentQuote = item as? ContentQuote ?: return
 
-        itemView.quoteText.setResourceText(contentQuote.quote.quote)
-        itemView.quoteTextAuthor.setResourceText(contentQuote.quote.author)
+        quoteText.setResourceText(contentQuote.quote.quote)
+        quoteTextAuthor.setResourceText(contentQuote.quote.author)
 
         val quoteMarkColor = contentQuote.quoteMarkColor
         if (quoteMarkColor != null) {
@@ -31,14 +30,14 @@ class QuoteViewHolder(
     }
 
     private fun bindQuoteColor(color: Int) {
-        val topDrawable = itemView.quoteTop.drawable
-        val bottomDrawable = itemView.quoteBottom.drawable
+        val topDrawable = quoteTop.drawable
+        val bottomDrawable = quoteBottom.drawable
 
         topDrawable.setTint(color)
         bottomDrawable.setTint(color)
 
-        itemView.quoteTop.setImageDrawable(topDrawable)
-        itemView.quoteBottom.setImageDrawable(bottomDrawable)
+        quoteTop.setImageDrawable(topDrawable)
+        quoteBottom.setImageDrawable(bottomDrawable)
     }
 
     companion object {

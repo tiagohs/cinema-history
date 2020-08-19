@@ -9,6 +9,7 @@ import com.tiagohs.helpers.extensions.getResourceColor
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.extensions.setResourceTextColor
+import kotlinx.android.synthetic.main.adapter_department.*
 import kotlinx.android.synthetic.main.adapter_department.view.*
 
 class DepartamentAdapter(
@@ -31,10 +32,10 @@ class DepartamentAdapter(
                 return
             }
 
-            itemView.jobName.setResourceText(item)
-            itemView.jobName.setTextColor(textColor)
+            jobName.setResourceText(item)
+            jobName.setTextColor(textColor)
 
-            itemView.jobName.background = GradientDrawable().apply {
+            jobName.background = GradientDrawable().apply {
                 setColor(containerView.context.getResourceColor(android.R.color.transparent))
                 cornerRadius = 5f
                 setStroke(1, textColor)

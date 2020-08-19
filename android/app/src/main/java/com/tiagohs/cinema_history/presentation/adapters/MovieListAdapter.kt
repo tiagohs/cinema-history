@@ -11,7 +11,7 @@ import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.LocaleUtils
 import com.tiagohs.helpers.utils.MovieUtils
-import kotlinx.android.synthetic.main.adapter_movie_list.view.*
+import kotlinx.android.synthetic.main.adapter_movie_list.*
 
 class MovieListAdapter(
     list: ArrayList<Movie>,
@@ -55,46 +55,46 @@ class MovieListAdapter(
             if (position == 0) {
                 val animation = AnimationUtils.loadAnimation(context, R.anim.slide_in_left)
 
-                itemView.backgroundContent.setResourceBackgroundColor(mainTopic.backgroundColor)
+                backgroundContent.setResourceBackgroundColor(mainTopic.backgroundColor)
 
                 animation.duration = 300
                 animation.startOffset = 150
 
-                itemView.backgroundContent.startAnimation(animation)
+                backgroundContent.startAnimation(animation)
             } else {
-                itemView.backgroundContent.setResourceBackgroundColor(R.color.md_white_1000)
+                backgroundContent.setResourceBackgroundColor(R.color.md_white_1000)
             }
 
             loadImage(item)
 
-            itemView.title.setResourceText(item.title ?: item.originalTitle)
-            itemView.originalTitle.setResourceText(item.originalTitle)
+            title.setResourceText(item.title ?: item.originalTitle)
+            originalTitle.setResourceText(item.originalTitle)
 
             val lang = LocaleUtils.getLanguageName(item.originalLanguage)
             if (item.originalLanguage != null && lang != null) {
-                itemView.language.setResourceText(lang.capitalize())
+                language.setResourceText(lang.capitalize())
             } else {
-                itemView.language.hide()
+                language.hide()
             }
 
             val genreList = MovieUtils.getGenresName(context, item.genreIds)
             if (genreList.isNotEmpty()) {
-                itemView.genre.setResourceText(genreList.firstOrNull())
+                genre.setResourceText(genreList.firstOrNull())
             } else {
-                itemView.genre.hide()
+                genre.hide()
             }
 
             com.tiagohs.helpers.utils.AnimationUtils
-                .createScaleUpAnimation(itemView.languageCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
+                .createScaleUpAnimation(languageCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
             com.tiagohs.helpers.utils.AnimationUtils
-                .createScaleUpAnimation(itemView.genreCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
+                .createScaleUpAnimation(genreCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
 
         }
 
         private fun loadImage(movie: Movie) {
             val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
 
-            itemView.image.loadImage(url)
+            image.loadImage(url)
         }
 
         override fun onClick(v: View?) {

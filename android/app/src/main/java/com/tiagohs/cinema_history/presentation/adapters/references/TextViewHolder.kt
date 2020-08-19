@@ -9,6 +9,7 @@ import com.tiagohs.entities.references.Reference
 import com.tiagohs.entities.references.ReferenceText
 import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.setResourceStyledText
+import kotlinx.android.synthetic.main.adapter_reference_media.*
 import kotlinx.android.synthetic.main.adapter_reference_media.view.*
 
 class TextViewHolder(
@@ -21,12 +22,12 @@ class TextViewHolder(
         val context = containerView.context ?: return
         val referenceBook = item as? ReferenceText ?: return
 
-        itemView.mediaName.setResourceStyledText(referenceBook.text)
-        itemView.mediaName.setupLinkableTextView(context)
+        mediaName.setResourceStyledText(referenceBook.text)
+        mediaName.setupLinkableTextView(context)
 
         val link = referenceBook.link
         if (link != null) {
-            itemView.mediaContainer.setOnClickListener { onLinkClick?.invoke(link) }
+            mediaContainer.setOnClickListener { onLinkClick?.invoke(link) }
         }
     }
 

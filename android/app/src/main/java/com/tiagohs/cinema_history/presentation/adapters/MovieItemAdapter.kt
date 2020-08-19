@@ -10,6 +10,7 @@ import com.tiagohs.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.extensions.show
+import kotlinx.android.synthetic.main.adapter_movie_item.*
 import kotlinx.android.synthetic.main.adapter_movie_item.view.*
 
 class MovieItemAdapter(
@@ -33,19 +34,19 @@ class MovieItemAdapter(
         override fun bind(item: MovieFilmographyDTO, position: Int) {
             super.bind(item, position)
 
-            itemView.movieTitle.setResourceText(item.title)
+            movieTitle.setResourceText(item.title)
 
             if (!(item.departments.isNullOrEmpty())) {
-                itemView.movieDepartments.show()
-                itemView.movieDepartments.setResourceText(containerView.context.getString(R.string.also_format, item.departments))
+                movieDepartments.show()
+                movieDepartments.setResourceText(containerView.context.getString(R.string.also_format, item.departments))
             }
 
             if (!(item.character.isNullOrEmpty())) {
-                itemView.movieCharacter.show()
-                itemView.movieCharacter.setResourceText(containerView.context.getString(R.string.as_format, item.character))
+                movieCharacter.show()
+                movieCharacter.setResourceText(containerView.context.getString(R.string.as_format, item.character))
             }
 
-            itemView.image.loadImage(
+            image.loadImage(
                 item.posterPath?.imageUrlFromTMDB(
                     ImageSize.PROFILE_185
                 )

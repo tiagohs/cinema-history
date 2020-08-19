@@ -18,6 +18,7 @@ import com.tiagohs.helpers.extensions.show
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.helpers.utils.DateUtils
 import com.tiagohs.helpers.utils.LocaleUtils
+import kotlinx.android.synthetic.main.adapter_movie_info_header.*
 import kotlinx.android.synthetic.main.adapter_movie_info_header.view.*
 import kotlin.math.abs
 
@@ -37,10 +38,10 @@ class MovieInfoHeaderViewHolder(
             LocaleUtils.getLanguageName(movie.originalLanguage)?.capitalize() ?: ""
         val releaseDate = DateUtils.formateDate(movie.releaseDate) ?: ""
 
-        bindItem(directors, itemView.movieDirectorsTitle, itemView.movieDirectors)
-        bindItem(writers, itemView.movieScreenplayTitle, itemView.movieScreenplay)
-        bindItem(originalLanguage, itemView.originalLanguageTitle, itemView.movieOriginalLanguage)
-        bindItem(releaseDate, itemView.releaseDateTitle, itemView.movieReleaseDate)
+        bindItem(directors, movieDirectorsTitle, movieDirectors)
+        bindItem(writers, movieScreenplayTitle, movieScreenplay)
+        bindItem(originalLanguage, originalLanguageTitle, movieOriginalLanguage)
+        bindItem(releaseDate, releaseDateTitle, movieReleaseDate)
 
         bindMoviePoster(movie)
         bindMovieRuntime(movie)
@@ -60,9 +61,9 @@ class MovieInfoHeaderViewHolder(
         val hours = abs(runtime / 60)
         val minutes = abs(runtime) % 60
 
-        itemView.movieRuntime.setResourceText(containerView.context.getString(R.string.runtime_format, hours, minutes))
-        itemView.movieRuntime.show()
-        itemView.runtimeTitle.show()
+        movieRuntime.setResourceText(containerView.context.getString(R.string.runtime_format, hours, minutes))
+        movieRuntime.show()
+        runtimeTitle.show()
     }
 
     private fun bindMoviePoster(movie: Movie) {
@@ -70,10 +71,10 @@ class MovieInfoHeaderViewHolder(
         val imageStyle = ImageStyle(resize = ImageResize(itemView.width, 180))
         val image = Image(ImageType.ONLINE, imageUrl, imageStyle = imageStyle)
 
-        itemView.moviePoster.loadImage(image) {
-            itemView.imageCard.alpha = 1f
+        moviePoster.loadImage(image) {
+            imageCard.alpha = 1f
             AnimationUtils.createScaleUpAnimation(
-                itemView.imageCard,
+                imageCard,
                 0f,
                 1f,
                 0f,

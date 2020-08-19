@@ -1,29 +1,23 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.convertIntToDp
-import com.tiagohs.helpers.extensions.getResourceColor
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.dto.MovieFilmographyDTO
+import com.tiagohs.entities.enums.ImageSize
+import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import com.tiagohs.helpers.utils.ColorUtils
-import com.tiagohs.entities.enums.ImageSize
-import com.tiagohs.helpers.extensions.imageUrlFromTMDB
-import com.tiagohs.helpers.extensions.loadImage
-import kotlinx.android.synthetic.main.adapter_movie_special_item.view.*
-import kotlinx.android.synthetic.main.view_line_five_colors.view.*
+import kotlinx.android.synthetic.main.adapter_movie_special_item.*
+import kotlinx.android.synthetic.main.view_line_five_colors.*
 import kotlin.math.abs
 
 class MovieItemSpecialAdapter(
-    val context: Context?,
-    val movies: List<MovieFilmographyDTO>
-): RecyclerView.Adapter<MovieItemSpecialAdapter.MovieItemViewHolder>() {
+    list: List<MovieFilmographyDTO>
+) : BaseAdapter<MovieFilmographyDTO, MovieItemSpecialAdapter.MovieItemViewHolder>(list) {
 
     init {
         setHasStableIds(true)
@@ -31,29 +25,21 @@ class MovieItemSpecialAdapter(
 
     var onMovieClicked: ((movieId: Int) -> Unit)? = null
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieItemViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_movie_special_item, parent, false)
 
-        return MovieItemViewHolder(view)
-    }
+    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_movie_special_item
 
-    override fun getItemCount(): Int = movies.size
+    override fun onCreateViewHolder(viewType: Int, view: View): MovieItemViewHolder =
+        MovieItemViewHolder(view)
 
-    override fun onBindViewHolder(holder: MovieItemViewHolder, position: Int) {
-        val movie = movies[position]
+    override fun getItemId(position: Int): Long = list[position].id?.toLong() ?: position.toLong()
 
-        holder.bind(movie)
-    }
-
-    override fun getItemId(position: Int): Long = movies[position].id?.toLong() ?: position.toLong()
-
-    inner class MovieItemViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
+    inner class MovieItemViewHolder(view: View) : BaseViewHolder<MovieFilmographyDTO>(view),
+        View.OnClickListener {
 
         init {
             itemView.setOnClickListener(this)
         }
 
-        private var movie: MovieFilmographyDTO? = null
         private val interpolator = FastOutLinearInInterpolator()
 
         /**
@@ -67,77 +53,90 @@ class MovieItemSpecialAdapter(
                 val interpolatedValue = interpolator.getInterpolation(abs(field))
                 val translationX = direction * interpolatedValue * itemView.measuredWidth
 
-                itemView.movieName.translationX = translationX
-                itemView.character.translationX = translationX
-                itemView.posterCard.translationX = translationX
+                movieName.translationX = translationX
+                character.translationX = translationX
+                posterCard.translationX = translationX
             }
 
-        fun bind(movie: MovieFilmographyDTO) {
-            this.movie = movie
+        override fun bind(item: MovieFilmographyDTO, position: Int) {
+            super.bind(item, position)
 
             val colorAsset = ColorUtils.getRandomColorAssets()
 
-            itemView.movieName.text = movie.title
-            itemView.overview.text = movie.overview
+            movieName.setResourceText(item.title)
+            overview.setResourceText(item.overview)
 
-            bindCharacters(movie.character)
-            bindDepartaments(movie.departments, colorAsset)
+            bindCharacters(item.character)
+            bindDepartaments(item.departments, colorAsset)
 
-            itemView.moviePoster.loadImage(movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_342))
-            itemView.movieBackdrop.loadImage(movie.backdrop?.imageUrlFromTMDB(ImageSize.BACKDROP_300))
+            moviePoster.loadImage(item.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_342))
+            movieBackdrop.loadImage(item.backdrop?.imageUrlFromTMDB(ImageSize.BACKDROP_300))
 
             bindColor(colorAsset)
         }
 
         private fun bindColor(colorAsset: com.tiagohs.entities.ColorAsset) {
-            val context = context ?: return
+            val context = itemView.context ?: return
             val backgroundColor = context.getResourceColor("md_${colorAsset.colorName}_500")
             val textColor = context.getResourceColor(colorAsset.textColorName)
 
-            itemView.itemContainerCard.setCardBackgroundColor(backgroundColor)
+            itemContainerCard.setCardBackgroundColor(backgroundColor)
 
-            itemView.movieName.setTextColor(textColor)
-            itemView.character.setTextColor(textColor)
-            itemView.overview.setTextColor(textColor)
+            movieName.setTextColor(textColor)
+            character.setTextColor(textColor)
+            overview.setTextColor(textColor)
 
-            itemView.color1.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_500"))
-            itemView.color2.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_600"))
-            itemView.color3.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_700"))
-            itemView.color4.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_800"))
-            itemView.color5.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_900"))
+            color1.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_500"))
+            color2.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_600"))
+            color3.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_700"))
+            color4.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_800"))
+            color5.setBackgroundColor(context.getResourceColor("md_${colorAsset.colorName}_900"))
         }
 
         private fun bindCharacters(characters: String?) {
 
             if (!characters.isNullOrBlank()) {
-                itemView.character.visibility = View.VISIBLE
-                itemView.character.text = "as $characters"
+                character.visibility = View.VISIBLE
+                character.text = itemView.context.getString(R.string.as_format, characters)
             } else {
-                itemView.character.visibility = View.GONE
+                character.hide()
             }
         }
 
-        private fun bindDepartaments(departaments: String?, colorAsset: com.tiagohs.entities.ColorAsset) {
+        private fun bindDepartaments(
+            departaments: String?,
+            colorAsset: com.tiagohs.entities.ColorAsset
+        ) {
 
             if (!departaments.isNullOrBlank()) {
-                val context = context ?: return
-                val listOfDepartments = departaments.split(",").map { it.trim() }.filter { it.isNotBlank() }
+                val context = itemView.context ?: return
+                val listOfDepartments =
+                    departaments.split(",").map { it.trim() }.filter { it.isNotBlank() }
                 val textColor = context.getResourceColor(colorAsset.textColorName)
 
-                itemView.departments.visibility = View.VISIBLE
+                departments.show()
 
-                itemView.departments.adapter = DepartamentAdapter(listOfDepartments, textColor)
-                itemView.departments.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-                itemView.departments.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(context), SpaceOffsetDecoration.LEFT))
+                departments.apply {
+                    adapter = DepartamentAdapter(listOfDepartments, textColor)
+                    layoutManager =
+                        LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+                    addItemDecoration(
+                        SpaceOffsetDecoration(
+                            10.convertIntToDp(context),
+                            SpaceOffsetDecoration.LEFT
+                        )
+                    )
+                }
             } else {
-                itemView.departments.visibility = View.GONE
+                departments.hide()
             }
         }
 
         override fun onClick(v: View?) {
-            val movieId = movie?.id ?: return
+            val movieId = item?.id ?: return
 
             onMovieClicked?.invoke(movieId)
         }
     }
+
 }

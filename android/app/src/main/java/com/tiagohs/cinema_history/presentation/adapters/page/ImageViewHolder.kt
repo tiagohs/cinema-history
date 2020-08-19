@@ -6,7 +6,7 @@ import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentImage
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.setupPreview
-import kotlinx.android.synthetic.main.adapter_image.view.*
+import kotlinx.android.synthetic.main.adapter_page_img.*
 
 class ImageViewHolder(
     val view: View
@@ -16,8 +16,8 @@ class ImageViewHolder(
         super.bind(item, position)
         val contentImage = item as? ContentImage ?: return
 
-        itemView.image.loadImage(contentImage.image)
-        itemView.image.setupPreview(contentImage.image)
+        image.loadImage(contentImage.image)
+        image.setupPreview(contentImage.image)
 
         setupContentFooterInformation(contentImage.information)
     }

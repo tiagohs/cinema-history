@@ -9,7 +9,7 @@ import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.helpers.extensions.imageUrlFromTMDB
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.setResourceText
-import kotlinx.android.synthetic.main.adapter_person.view.*
+import kotlinx.android.synthetic.main.adapter_person.*
 
 class PersonAdapter(
     list: List<PersonDTO>,
@@ -31,10 +31,10 @@ class PersonAdapter(
         override fun bind(item: PersonDTO, position: Int) {
             super.bind(item, position)
 
-            itemView.personName.setResourceText(item.name)
-            itemView.personSubtitle.setResourceText(item.subtitle)
+            personName.setResourceText(item.name)
+            personSubtitle.setResourceText(item.subtitle)
 
-            itemView.personImage.loadImage(
+            personImage.loadImage(
                 item.imagePath?.imageUrlFromTMDB(ImageSize.PROFILE_185),
                 R.drawable.placeholder_movie_person,
                 R.drawable.placeholder_movie_person

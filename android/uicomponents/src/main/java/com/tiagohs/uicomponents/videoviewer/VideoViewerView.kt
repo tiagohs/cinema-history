@@ -2,6 +2,7 @@ package com.tiagohs.uicomponents.videoviewer
 
 import android.content.Context
 import android.util.AttributeSet
+import android.view.LayoutInflater
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -12,10 +13,12 @@ import com.tiagohs.entities.image.Image
 import com.tiagohs.entities.image.ImageStyle
 import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.show
 import com.tiagohs.uicomponents.R
+import kotlinx.android.synthetic.main.view_play_container.view.*
 import kotlinx.android.synthetic.main.view_video_viewer.view.*
-import kotlinx.android.synthetic.main.view_video_viewer.view.playCard
 
 class VideoViewerView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null)
     : ConstraintLayout(context, attrs) {
@@ -33,39 +36,55 @@ class VideoViewerView @JvmOverloads constructor(context: Context, attrs: Attribu
         this.activity = activity
         this.videoId = videoId
 
-        playCard.setOnClickListener {
-            playContainer.visibility = View.GONE
-
-            setupYoutubeViewPlayerView()
-            loadVideo()
-        }
-
-        loadVideoThumbnail()
+        setupPlayContainer()
     }
 
-    private fun loadVideoThumbnail() {
+    private fun loadVideoThumbnail(playContainerView: View) {
         val vieoThumbnailUrl = "https://img.youtube.com/vi/${videoId}/0.jpg"
         val image = Image(ImageType.ONLINE, vieoThumbnailUrl, imageStyle = ImageStyle(scaleType = "center_crop"))
 
-        videoThumb.loadImage(image) {
-            playCard.visibility = View.VISIBLE
-            loadCard.visibility = View.GONE
+        playContainerView.videoThumb.loadImage(image) {
+            playContainerView.playCard.show()
+            playContainerView.loadCard.hide()
         }
     }
 
+    private fun setupPlayContainer() {
+        videoContainer.removeAllViews()
+
+        val playContainerView = LayoutInflater.from(context).inflate(R.layout.view_play_container, null, false).apply {
+            layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT).apply {
+                bottomToBottom = LayoutParams.PARENT_ID
+                topToTop = LayoutParams.PARENT_ID
+                startToStart = LayoutParams.PARENT_ID
+                endToEnd = LayoutParams.PARENT_ID
+            }
+
+            this.playCard.setOnClickListener {
+                this.playContainer.hide()
+
+                setupYoutubeViewPlayerView()
+                loadVideo()
+            }
+
+            loadVideoThumbnail(this)
+        }
+
+        videoContainer.addView(playContainerView)
+    }
+
     private fun setupYoutubeViewPlayerView() {
-        youtubePlayerView = YouTubePlayerView(context)
+        youtubePlayerView = YouTubePlayerView(context).apply {
+            layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT).apply {
+                bottomToBottom = LayoutParams.PARENT_ID
+                topToTop = LayoutParams.PARENT_ID
+                startToStart = LayoutParams.PARENT_ID
+                endToEnd = LayoutParams.PARENT_ID
+                setMargins(16.convertIntToDp(context), 0, 16.convertIntToDp(context), 0)
+            }
 
-        val layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
-
-        layoutParams.bottomToBottom = LayoutParams.PARENT_ID
-        layoutParams.topToTop = LayoutParams.PARENT_ID
-        layoutParams.startToStart = LayoutParams.PARENT_ID
-        layoutParams.endToEnd = LayoutParams.PARENT_ID
-        layoutParams.setMargins(16.convertIntToDp(context), 0, 16.convertIntToDp(context), 0)
-
-        youtubePlayerView.id = View.generateViewId()
-        youtubePlayerView.layoutParams = layoutParams
+            id = View.generateViewId()
+        }
 
         videoContainer.addView(youtubePlayerView)
     }

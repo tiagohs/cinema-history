@@ -13,7 +13,7 @@ import com.tiagohs.helpers.extensions.setResourceBackgroundColor
 import com.tiagohs.helpers.extensions.setResourceTextColor
 import com.tiagohs.helpers.extensions.show
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.adapter_person_info_special_midia.view.*
+import kotlinx.android.synthetic.main.adapter_person_info_special_midia.*
 
 class PersonInfoMidiaViewHolder(
     view: View,
@@ -33,9 +33,9 @@ class PersonInfoMidiaViewHolder(
         val context = containerView.context ?: return
 
         if (person.allImages.isNotEmpty()) {
-            itemView.wallpapersList.show()
+            wallpapersList.show()
 
-            itemView.wallpapersList.apply {
+            wallpapersList.apply {
                 layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                 adapter = MovieWallpaperAdapter(person.allImages)
                 addItemDecoration(
@@ -55,8 +55,8 @@ class PersonInfoMidiaViewHolder(
         if (!person.extraInfo?.videos.isNullOrEmpty()) {
             val allVideos = person.extraInfo?.videos ?: emptyList()
 
-            itemView.videoList.show()
-            itemView.videoList.apply {
+            videoList.show()
+            videoList.apply {
                 layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                 adapter = PersonVideoAdapter(allVideos, onVideoClick)
                 addItemDecoration(
@@ -69,17 +69,17 @@ class PersonInfoMidiaViewHolder(
         }
 
         if (isSpecial) {
-            itemView.personMidiaTitle.setResourceTextColor(R.color.md_grey_300)
-            itemView.personMidiaContainer.setResourceBackgroundColor(R.color.md_black_1000)
-            itemView.videoList.setResourceBackgroundColor(R.color.md_black_1000)
-            itemView.wallpapersList.setResourceBackgroundColor(R.color.md_black_1000)
+            personMidiaTitle.setResourceTextColor(R.color.md_grey_300)
+            personMidiaContainer.setResourceBackgroundColor(R.color.md_black_1000)
+            videoList.setResourceBackgroundColor(R.color.md_black_1000)
+            wallpapersList.setResourceBackgroundColor(R.color.md_black_1000)
             return
         }
 
-        itemView.personMidiaTitle.setResourceTextColor(R.color.md_black_1000)
-        itemView.personMidiaContainer.setResourceBackgroundColor(R.color.md_white_1000)
-        itemView.videoList.setResourceBackgroundColor(R.color.md_white_1000)
-        itemView.wallpapersList.setResourceBackgroundColor(R.color.md_white_1000)
+        personMidiaTitle.setResourceTextColor(R.color.md_black_1000)
+        personMidiaContainer.setResourceBackgroundColor(R.color.md_white_1000)
+        videoList.setResourceBackgroundColor(R.color.md_white_1000)
+        wallpapersList.setResourceBackgroundColor(R.color.md_white_1000)
     }
 
     companion object {

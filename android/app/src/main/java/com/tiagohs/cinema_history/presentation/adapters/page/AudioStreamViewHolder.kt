@@ -4,7 +4,7 @@ import android.view.View
 import com.tiagohs.cinema_history.R
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentAudioStream
-import kotlinx.android.synthetic.main.adapter_page_audio_stream.view.*
+import kotlinx.android.synthetic.main.adapter_page_audio_stream.*
 
 class AudioStreamViewHolder(
     val view: View
@@ -14,15 +14,15 @@ class AudioStreamViewHolder(
         super.bind(item, position)
         val contentAudioStream = item as? ContentAudioStream ?: return
 
-        itemView.audioView.setAudioImage(contentAudioStream.image)
-        itemView.audioView.setAudioUrl(contentAudioStream.path)
-        itemView.audioView.prepare()
+        audioView.setAudioImage(contentAudioStream.image)
+        audioView.setAudioUrl(contentAudioStream.path)
+        audioView.prepare()
 
         setupContentFooterInformation(contentAudioStream.information)
     }
 
     override fun onDestroy() {
-        itemView.audioView
+        audioView.onDestroy()
     }
 
     companion object {

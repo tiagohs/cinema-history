@@ -27,6 +27,7 @@ import com.tiagohs.entities.enums.MovieInfoType
 import com.tiagohs.domain.views.MovieDetailsView
 import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.activity_movie_details.*
+import kotlinx.android.synthetic.main.adapter_movie_info_summary.view.*
 import kotlinx.android.synthetic.main.view_genre_item.view.*
 import javax.inject.Inject
 
@@ -77,10 +78,12 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     override fun bindMovieDetails(movie: Movie) {
         val movieInfoList = generateMovieInfoList(movie)
+        val movieTitle = getMovieTitle(movie)
+        val appLanguage = settingManager.getMovieISOLanguage()
 
-        collapsingToolbar.title = movie.title ?: movie.originalTitle
+        collapsingToolbar.title = movieTitle
         pageContentList.apply {
-            adapter = MovieInfoAdapter(movieInfoList).apply {
+            adapter = MovieInfoAdapter(movieInfoList, appLanguage).apply {
                 onPersonClicked = { onPersonClicked(it) }
                 onExtenalLink = { openLink(it) }
                 onVideoClick = { openLink(getString(R.string.youtube_link,it)) }
@@ -88,7 +91,31 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
             layoutManager = LinearLayoutManager(this@MovieDetailsActivity, LinearLayoutManager.VERTICAL, false)
         }
 
-        bindMovieHeader(movie)
+        bindMovieHeader(movie, movieTitle)
+    }
+
+
+    private fun getMovieTitle(movie: Movie): String {
+        val translations = movie.translations?.translations ?: emptyList()
+        val originalLanguage = movie.originalLanguage
+        val appLanguage = settingManager.getMovieISOLanguage()
+
+        val portugueseTitle = translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.title
+        if (!portugueseTitle.isNullOrBlank() && appLanguage == "pt-BR") {
+            return portugueseTitle
+        }
+
+        val englishTitle = translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.title
+        if (!englishTitle.isNullOrBlank() && appLanguage == "en-US") {
+            return englishTitle
+        }
+
+        val originalTitle = translations.find { it.iso_639_1 == originalLanguage }?.data?.title
+        if (!originalTitle.isNullOrBlank()) {
+            return originalTitle
+        }
+
+        return movie.title ?: movie.originalTitle ?: ""
     }
 
     override fun startLoading() {
@@ -176,11 +203,11 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         startActivityWithSlideAnimation(PersonDetailsActivity.newIntent(this, personId))
     }
 
-    private fun bindMovieHeader(movie: Movie) {
+    private fun bindMovieHeader(movie: Movie, title: String) {
         val genres = movie.genres
         val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_780)
 
-        movieTitle.setResourceText(movie.title)
+        movieTitle.setResourceText(title)
         movieOriginalTitle.text = getString(R.string.original_title_format, movie.originalTitle, DateUtils.getYearByDate(movie.releaseDate))
 
         bindGenres(genres)

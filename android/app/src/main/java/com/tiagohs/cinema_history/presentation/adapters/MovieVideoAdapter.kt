@@ -6,8 +6,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.tmdb.movie.Video
 import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.openLink
-import kotlinx.android.synthetic.main.adapter_movie_video.view.*
+import kotlinx.android.synthetic.main.adapter_movie_video.*
 
 class MovieVideoAdapter(
     list: List<Video>
@@ -28,8 +27,8 @@ class MovieVideoAdapter(
             val videoId = item.key ?: return
             val videoThumbnailUrl = context.getString(R.string.youtube_image_link, videoId)
 
-            itemView.videoThumb.loadImage(videoThumbnailUrl, null, scaleType = "center_crop")
-            itemView.videoContainer.setOnClickListener { onVideoClick?.invoke(videoId) }
+            videoThumb.loadImage(videoThumbnailUrl, null, scaleType = "center_crop")
+            videoContainer.setOnClickListener { onVideoClick?.invoke(videoId) }
         }
     }
 

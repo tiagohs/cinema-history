@@ -8,7 +8,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.image.Image
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.loadImage
-import kotlinx.android.synthetic.main.adapter_image.view.*
+import kotlinx.android.synthetic.main.adapter_image.*
 
 class ImageAdapter(
     list: List<Image>
@@ -31,13 +31,13 @@ class ImageAdapter(
             super.bind(item, position)
 
             item.imageStyle?.height?.let {
-                itemView.image.layoutParams = ConstraintLayout.LayoutParams(
+                image.layoutParams = ConstraintLayout.LayoutParams(
                     ConstraintLayout.LayoutParams.MATCH_PARENT,
                     it.convertIntToDp(itemView.context)
                 )
             }
 
-            itemView.image.loadImage(item)
+            image.loadImage(item)
         }
     }
 }
