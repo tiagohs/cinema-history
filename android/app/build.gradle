@@ -22,6 +22,10 @@ android {
         buildConfigField "String", "THEMOVIEDB_API_KEY", '"dac4d50f24dee29513738d8fa3470a3f"'
     }
 
+    androidExtensions {
+        experimental = true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
