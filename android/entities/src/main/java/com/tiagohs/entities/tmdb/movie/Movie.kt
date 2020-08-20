@@ -1,5 +1,6 @@
 package com.tiagohs.entities.tmdb.movie
 
+import android.content.Context
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.entities.tmdb.ExternalIds
 import com.tiagohs.entities.tmdb.TranslationMovieData
@@ -46,4 +47,49 @@ data class Movie (
 
     val trailerUrlKey: String?
         get() = videos?.videoList?.find { it.type == "Trailer" }?.key ?: videos?.videoList?.firstOrNull()?.key
+
+    fun getMovieTitleFromAppLanguage(appLanguage: String): String {
+        val translations = translations?.translations ?: emptyList()
+        val originalLanguage = originalLanguage
+
+        val portugueseTitle = translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.title
+        if (!portugueseTitle.isNullOrBlank() && appLanguage == "pt-BR") {
+            return portugueseTitle
+        }
+
+        val englishTitle = translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.title
+        if (!englishTitle.isNullOrBlank() && appLanguage == "en-US") {
+            return englishTitle
+        }
+
+        val originalTitle = translations.find { it.iso_639_1 == originalLanguage }?.data?.title
+        if (!originalTitle.isNullOrBlank()) {
+            return originalTitle
+        }
+
+        return title ?: originalTitle ?: ""
+    }
+
+    fun getMovieSummaryFromAppLanguage(defaultSummary: String, appLanguage: String): String {
+        val translations = translations?.translations ?: emptyList()
+        val originalLanguage = originalLanguage
+
+        val portugueseOverview = translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
+        if (!portugueseOverview.isNullOrBlank() && appLanguage == "pt-BR") {
+            return portugueseOverview
+        }
+
+        val englishOverview =
+            translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.overview
+        if (!englishOverview.isNullOrBlank() && appLanguage == "en-US") {
+            return englishOverview
+        }
+
+        val originalOverview = translations.find { it.iso_639_1 == originalLanguage }?.data?.overview
+        if (!originalOverview.isNullOrBlank()) {
+            return originalOverview
+        }
+
+        return originalLanguage ?: defaultSummary
+    }
 }

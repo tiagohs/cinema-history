@@ -78,7 +78,7 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     override fun bindMovieDetails(movie: Movie) {
         val movieInfoList = generateMovieInfoList(movie)
-        val movieTitle = getMovieTitle(movie)
+        val movieTitle = movie.getMovieTitleFromAppLanguage(settingManager.getMovieISOLanguage())
         val appLanguage = settingManager.getMovieISOLanguage()
 
         collapsingToolbar.title = movieTitle
@@ -92,30 +92,6 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         }
 
         bindMovieHeader(movie, movieTitle)
-    }
-
-
-    private fun getMovieTitle(movie: Movie): String {
-        val translations = movie.translations?.translations ?: emptyList()
-        val originalLanguage = movie.originalLanguage
-        val appLanguage = settingManager.getMovieISOLanguage()
-
-        val portugueseTitle = translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.title
-        if (!portugueseTitle.isNullOrBlank() && appLanguage == "pt-BR") {
-            return portugueseTitle
-        }
-
-        val englishTitle = translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.title
-        if (!englishTitle.isNullOrBlank() && appLanguage == "en-US") {
-            return englishTitle
-        }
-
-        val originalTitle = translations.find { it.iso_639_1 == originalLanguage }?.data?.title
-        if (!originalTitle.isNullOrBlank()) {
-            return originalTitle
-        }
-
-        return movie.title ?: movie.originalTitle ?: ""
     }
 
     override fun startLoading() {
