@@ -65,10 +65,12 @@ class BlockSpecialViewHolder(
     private fun bindColor(colorAsset: ColorAsset) {
         val context = containerView.context ?: return
         val backgroundColor = context.getResourceColor("md_${colorAsset.colorName}_500")
+        val linkColor = context.getResourceColor("md_${colorAsset.colorName}_900")
 
         blockSpecialContainerCard.setCardBackgroundColor(backgroundColor)
         blockSpecialTitle.setResourceTextColor(colorAsset.textColorName)
         blockSpecialDescription.setResourceTextColor(colorAsset.textColorName)
+        blockSpecialDescription.setLinkTextColor(linkColor)
         blockSpecialClickHere.setResourceTextColor(colorAsset.textColorName)
 
         color1.setResourceBackgroundColor("md_${colorAsset.colorName}_500")

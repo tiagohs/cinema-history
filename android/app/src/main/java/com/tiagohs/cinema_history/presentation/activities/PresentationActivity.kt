@@ -123,9 +123,11 @@ class PresentationActivity: BaseActivity(), PresentationView {
         quote.backgroundColor?.let {
             quoteCard.setCardBackgroundColor(getResourceColor(it))
         }
-        quote.iconColor?.let {
-            quoteTop.setImageDrawableColored(R.drawable.ic_quote_bottom_24dp, it)
-            quoteBottom.setImageDrawableColored(R.drawable.ic_quote_top_24dp, it)
+
+        val iconColor = quote.iconColor
+        if (iconColor != null) {
+            quoteTop.setResourceImageColor(iconColor)
+            quoteBottom.setResourceImageColor(iconColor)
         }
     }
 

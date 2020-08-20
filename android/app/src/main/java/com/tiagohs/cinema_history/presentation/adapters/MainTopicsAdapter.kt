@@ -236,8 +236,8 @@ class MainTopicsAdapter(
                 quoteText.setResourceTextColor(R.color.md_black_1000)
             }
 
-            quoteTop.setImageDrawableColored(R.drawable.ic_quote_bottom_24dp, quoteColor)
-            quoteBottom.setImageDrawableColored(R.drawable.ic_quote_top_24dp, quoteColor)
+            quoteTop.setResourceImageColor(quoteColor)
+            quoteBottom.setResourceImageColor(quoteColor)
         }
     }
 

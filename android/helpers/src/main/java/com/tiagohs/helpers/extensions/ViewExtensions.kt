@@ -4,6 +4,7 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.view.View
 import android.view.animation.*
+import android.widget.ImageView
 import androidx.core.content.ContextCompat
 
 /***** VISIBILITIES ******/
@@ -67,6 +68,25 @@ fun View?.setResourceBackgroundTint(colorRes: Int) {
     }
 
     backgroundTintList = ContextCompat.getColorStateList(context, colorRes)
+}
+
+fun ImageView?.setResourceImageColor(colorName: String?) {
+    colorName ?: return
+    this ?: return
+
+    val drawable = drawable.mutate()
+    val color = context.getResourceColor(colorName)
+
+    drawable.setTint(color)
+}
+
+fun ImageView?.setResourceImageColor(colorId: Int) {
+    this ?: return
+
+    val drawable =  drawable.mutate()
+    val color = context.getResourceColor(colorId)
+
+    drawable.setTint(color)
 }
 
 /***** ANIMATIONS ******/

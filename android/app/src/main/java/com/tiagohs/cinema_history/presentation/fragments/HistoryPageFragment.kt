@@ -73,7 +73,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
                     SpaceOffsetDecoration.TOP
                 )
             )
-            addOnScrollListener(HidingScrollListener(this@HistoryPageFragment))
+            addOnScrollListener(HidingScrollListener(this@HistoryPageFragment, pageContent.contentList.size - 1))
         }
 
         val tv = TypedValue()
@@ -98,6 +98,10 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
     }
 
     override fun onScrollDown() {
+        (activity as? HistoryPagesActivity)?.showFooter()
+    }
+
+    override fun onLastItemCompletelyVisible() {
         (activity as? HistoryPagesActivity)?.showFooter()
     }
 

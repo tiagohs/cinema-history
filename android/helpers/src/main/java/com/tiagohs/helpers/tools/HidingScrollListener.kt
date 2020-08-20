@@ -1,10 +1,12 @@
 package com.tiagohs.helpers.tools
 
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 
 class HidingScrollListener(
-        private val callback: HidingScrollCallback
+        private val callback: HidingScrollCallback,
+        private val numberOfItens: Int
 ) : RecyclerView.OnScrollListener() {
 
     private val HIDE_THRESHOLD = 20
@@ -27,10 +29,17 @@ class HidingScrollListener(
         if ((controlsVisible && dy > 0) || (!controlsVisible && dy < 0)) {
             scrolledDistance += dy
         }
+
+        val layoutManager = recyclerView.layoutManager as? LinearLayoutManager ?: return
+        if (layoutManager.findLastCompletelyVisibleItemPosition() == numberOfItens) {
+            callback.onLastItemCompletelyVisible()
+        }
+
     }
 
     interface HidingScrollCallback {
         fun onScrollUp()
         fun onScrollDown()
+        fun onLastItemCompletelyVisible()
     }
 }
