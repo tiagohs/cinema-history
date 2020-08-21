@@ -32,21 +32,6 @@
   },
   {
     "id": 3,
-    "title": "O Cinema Fantástico e Sobrenatural",
-    "description": "Logo no início da evolução do cinema, alguns pioneiros perceberam o potencial da sétima arte para apresentar o misterioso, o apavorante, o fantástico e o sobrenatural. Cineastas como F. W. Murnau, Georges Méliès e Benjamin Christensen trouxeram para o cinema obras primas que influenciaram futuras gerações.",
-    "image": {
-      "image_type": "local",
-      "url": "img_nosferatus",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 4,
     "title": "Heroínas e Diretoras do Cinema",
     "description": "O surgimento do termo femme fatale;  a popularização do termo “It Girl” e Alice Guy-Blaché, uma das mais importantes pioneiras do cinema, mesmo que, por muito tempo, tenha sido esquecida pela história. ",
     "image": {
@@ -61,7 +46,37 @@
     }
   },
   {
+    "id": 4,
+    "title": "Race Films: Pioneiros Afro-americanos",
+    "description": "Homens que desafiaram o estereótipo e o racismo. Diretores (a), produtores (a), atores e atrizes que acreditavam na força da sua comunidade, se tornaram pioneiros e produziram grandes filmes, mostrando que se trabalharmos muito, não há obstáculo que não possamos superar.",
+    "image": {
+      "image_type": "local",
+      "url": "img_oscar_micheaux",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
     "id": 5,
+    "title": "O Cinema Fantástico e Sobrenatural",
+    "description": "Logo no início da evolução do cinema, alguns pioneiros perceberam o potencial da sétima arte para apresentar o misterioso, o apavorante, o fantástico e o sobrenatural. Cineastas como F. W. Murnau, Georges Méliès e Benjamin Christensen trouxeram para o cinema obras primas que influenciaram futuras gerações.",
+    "image": {
+      "image_type": "local",
+      "url": "img_nosferatus",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
     "title": "A Comédia Muda",
     "description": "Os primeiros inventores, sonhadores e artistas.",
     "image": {
@@ -76,7 +91,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "A \"Era de Ouro\" do Cinema Mudo",
     "description": "Os primeiros inventores, sonhadores e artistas.",
     "image": {
@@ -91,7 +106,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Surrealismo nas Telas",
     "description": "Os primeiros inventores, sonhadores e artistas.",
     "image": {
@@ -106,7 +121,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "O Início da Era dos Filmes Falados",
     "description": "Os primeiros inventores, sonhadores e artistas.",
     "image": {

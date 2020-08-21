@@ -1,0 +1,26 @@
+{
+  "number": 8,
+  "content_list": [
+    {
+      "type": "block_special",
+      "title": "Timeline de Acontecimentos: 1895 a 1929",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "0"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "A primeira exibição pelos irmãos Lumière, o primeiro beijo nas telonas, as invenções e descobertas, o inicio de Hollywood. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1895 e 1929."
+    }
+  ]
+}

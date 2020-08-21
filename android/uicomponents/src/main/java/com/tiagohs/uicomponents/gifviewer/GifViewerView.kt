@@ -61,7 +61,7 @@ class GifViewerView @JvmOverloads constructor(context: Context, attrs: Attribute
             }
 
             this.playCard.setOnClickListener {
-                this.playContainer.show()
+                this.playContainer.hide()
 
                 setupVideoView()
                 loadGif()
