@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
 import android.view.View
+import com.tiagohs.cinema_history.extensions.setupLinkableTextView
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentInformation
@@ -16,6 +17,7 @@ abstract class BasePageViewHolder(view: View) : BaseViewHolder<Content>(view) {
     fun setupContentFooterInformation(information: ContentInformation) {
         footerTitle?.setResourceText(information.contentTitle)
         footerText?.setResourceStyledText(information.contentText)
+        footerText?.setupLinkableTextView(containerView.context)
 
         if (information.source.isNullOrEmpty()) {
             footerReference.hide();

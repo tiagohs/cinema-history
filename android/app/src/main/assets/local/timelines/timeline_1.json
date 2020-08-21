@@ -25,12 +25,40 @@
     },
     {
       "type": "item",
+      "year": "18\n95",
+      "title": "A primeira companhia cinematográfica do mundo",
+      "description": "<i>Comptoir Général de Photographie</i>, sob o nome de <strong>Gaumont</strong>, surgia a primeira companhia cinematográfica do mundo – e a mais antiga ainda em atividade. Foi aqui que <a href=\"https://_{type: 'screen', 'id': 1071403, 'screen_type': person}\">Alice Guy Blaché</a> começou como secretária, antes de se tornar uma das diretoras mais importantes do cinema.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_gaumont.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
       "year": "18\n96",
       "title": "Um Beijo Polêmico",
       "description": "<a href=\"https://_{'type': 'screen', 'id': 239027, 'screen_type': 'person'}\">Thomas Edison</a>, o pai do cinetoscópio, lança aquela que pode ser a primeira grande polêmica na história do cinema, <a href=\"https://_{type: 'screen', 'id': 94570, 'screen_type': 'movie'}\">The Kiss</a> (BR: O Beijo, 1896), dirigido por <a href=\"https://_{'type': 'screen', 'id': 110348, 'screen_type': 'person'}\">William Heise</a>, o primeiro filme a filmar um beijo para as grandes telas.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_the_kiss.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "18\n96",
+      "title": "O Início da Narrativa",
+      "description": "Em 1896, Alice Guy Blaché lança o primeiro filme de não-ficção do mundo. <a href=\"https://_{type: 'screen', 'id': 774, 'screen_type': movie}\">La Fée aux choux</a> (BR: A Fada dos Repolhos, 1896), com duração de apenas um minuto, foi escrito, produzido e dirigido por ela. O filme de Alice Guy traz cenários, cortes, efeitos especiais e uma narrativa, ainda que breve.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_alice",
         "style": {
           "scale_type": "center_crop"
         }
@@ -53,7 +81,7 @@
       "type": "item",
       "year": "19\n00",
       "title": "Complexidade na Narrativa",
-      "description": "O filme <a href=\"https://_{type: 'screen', 'id': 179546, 'screen_type': 'movie'}\">Attack on a China Mission - Bluejackets to the Rescue</a> (BR: Ataque a uma missão chinesa – Soldados navais ao resgate, 1900) é exibido na câmara Municipal de Hove, no condado de Sussex. Um divisor de águas para o cinema, <a href=\"https://_{'type': 'screen', 'id': 1037369, 'screen_type': 'person'}\"> James Williamson</a> (1855-1933) criou uma das narrativas mais complexas da época.",
+      "description": "Alguns anos após o filme de Alice ser lançado, o filme <a href=\"https://_{type: 'screen', 'id': 179546, 'screen_type': 'movie'}\">Attack on a China Mission - Bluejackets to the Rescue</a> (BR: Ataque a uma missão chinesa – Soldados navais ao resgate, 1900) é exibido na câmara Municipal de Hove, no condado de Sussex. Um divisor de águas para o cinema, <a href=\"https://_{'type': 'screen', 'id': 1037369, 'screen_type': 'person'}\"> James Williamson</a> (1855-1933) criou uma das narrativas mais complexas da época.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_attack_china_mission.webp",

@@ -7,7 +7,7 @@
     android:layout_marginTop="@dimen/activity_vertical_margin_2.5x"
     android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x">
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageListContainer"
@@ -20,6 +20,10 @@
             android:layout_height="@dimen/page_slide_height"
             android:id="@+id/imageList"
             android:nestedScrollingEnabled="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
         />
 
         <cz.intik.overflowindicator.OverflowPagerIndicator
@@ -30,9 +34,12 @@
             android:layout_gravity="center_horizontal|bottom"
             app:dotFillColor="@color/md_white_1000"
             app:dotStrokeColor="@color/md_white_1000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             />
 
-    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
         android:layout_width="match_parent"

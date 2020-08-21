@@ -11,7 +11,6 @@ import com.tiagohs.entities.contents.ContentSlide
 import com.tiagohs.helpers.extensions.convertIntToDp
 import cz.intik.overflowindicator.SimpleSnapHelper
 import kotlinx.android.synthetic.main.adapter_page_slide.*
-import kotlinx.android.synthetic.main.adapter_page_slide.view.*
 
 
 class SlideViewHolder(
@@ -34,11 +33,18 @@ class SlideViewHolder(
             adapter = ImageAdapter(contentSlide.images)
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
-            imageListIndicator.attachToRecyclerView(this)
-            SimpleSnapHelper(imageListIndicator).attachToRecyclerView(this)
-
             setupParallaxScrollListener()
         }
+
+        imageList.onFlingListener = null
+        imageListIndicator.attachToRecyclerView(imageList)
+        SimpleSnapHelper(imageListIndicator).attachToRecyclerView(imageList)
+
+        setupContentFooterInformation(contentSlide.information)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
     }
 
     private fun RecyclerView.setupParallaxScrollListener() {

@@ -1,126 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/coordinator"
     android:fitsSystemWindows="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/pagesContainer"
-        android:fitsSystemWindows="true"
-        android:alpha="0"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        tools:alpha="1">
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/sumarioContentViewPager"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
+        android:fitsSystemWindows="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="?attr/actionBarSize"
-            android:id="@+id/footerContent"
-            android:background="@color/md_black_1000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pagesContainer"
+            android:fitsSystemWindows="true"
+            android:alpha="0"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:alpha="1">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/toolbarImageCardContainer"
-            app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
-            app:cardElevation="@dimen/activity_vertical_margin_0.5x"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
-            android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sumarioContentViewPager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/footerContent"
                 android:background="@color/md_black_1000"
-                android:id="@+id/toolbarImageContainer"
-                android:padding="@dimen/activity_vertical_margin_0.5x">
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/toolbarImageCard"
-                    android:layout_width="@dimen/page_toolbar_bottom_image_card_width"
-                    android:layout_height="@dimen/page_toolbar_bottom_image_card_height"
-                    app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbarImageCardContainer"
+                app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
+                app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
 
-                    <ImageView
-                        android:id="@+id/toolbarImage"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/md_black_1000"
-                        android:scaleType="centerCrop" />
-
-                </androidx.cardview.widget.CardView>
-
-                <TextView
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/sumario"
-                    android:textSize="@dimen/text_size_zeplin_18pt"
-                    android:textColor="@color/md_white_1000"
-                    android:fontFamily="@font/proxima_nova_bold"
-                    android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
-                    android:textAllCaps="true"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/toolbarImageCard"
-                    />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:background="@color/md_black_1000"
+                    android:id="@+id/toolbarImageContainer"
+                    android:padding="@dimen/activity_vertical_margin_0.5x">
 
-        </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/toolbarImageCard"
+                        android:layout_width="@dimen/page_toolbar_bottom_image_card_width"
+                        android:layout_height="@dimen/page_toolbar_bottom_image_card_height"
+                        app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="?attr/actionBarSize"
-            android:id="@+id/toolbarNextButton"
-            android:text="@string/next"
-            android:fontFamily="@font/proxima_nova_regular"
-            android:background="@android:color/transparent"
-            android:elevation="0dp"
-            android:textColor="@color/md_white_1000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
+                        <ImageView
+                            android:id="@+id/toolbarImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/md_black_1000"
+                            android:scaleType="centerCrop" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sumario"
+                        android:textSize="@dimen/text_size_zeplin_18pt"
+                        android:textColor="@color/md_white_1000"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                        android:textAllCaps="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/toolbarImageCard"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbarNextButton"
+                android:text="@string/next"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:background="@android:color/transparent"
+                android:elevation="0dp"
+                android:textColor="@color/md_white_1000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/loadView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:shimmer_duration="800"
+            android:fitsSystemWindows="true"
+            tools:visibility="gone">
+
+            <include layout="@layout/load_view_history_pages" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/loadView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        app:shimmer_duration="800"
-        android:fitsSystemWindows="true"
-        tools:visibility="gone">
-
-        <include layout="@layout/load_view_history_pages" />
-
-    </com.facebook.shimmer.ShimmerFrameLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
