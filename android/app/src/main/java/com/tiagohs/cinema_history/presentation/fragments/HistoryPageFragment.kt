@@ -123,7 +123,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
             }
         }
 
-        pageHeaderImage.loadImage(image)
+        pageHeaderImage.loadImage(image, placeholder = null)
 
         appBar.addOnOffsetChangedListener(onOffsetChangedListener())
     }
