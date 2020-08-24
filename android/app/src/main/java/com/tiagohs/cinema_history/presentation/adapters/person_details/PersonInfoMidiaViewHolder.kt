@@ -37,7 +37,7 @@ class PersonInfoMidiaViewHolder(
 
             wallpapersList.apply {
                 layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-                adapter = MovieWallpaperAdapter(person.allImages)
+                adapter = MovieWallpaperAdapter(person.allImages, person.name)
                 addItemDecoration(
                     SpaceOffsetDecoration(
                         10.convertIntToDp(context),

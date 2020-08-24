@@ -17,6 +17,9 @@ class TimelineTitle(
     @SerializedName("next")
     val next: String? = null,
 
+    @SerializedName("coming_soon")
+    val comingSoon: Boolean? = null,
+
     @SerializedName("previous")
     val previous: String? = null
 ): Timeline(), Serializable

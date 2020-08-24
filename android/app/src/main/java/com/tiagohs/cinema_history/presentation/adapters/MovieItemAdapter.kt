@@ -49,7 +49,8 @@ class MovieItemAdapter(
             image.loadImage(
                 item.posterPath?.imageUrlFromTMDB(
                     ImageSize.PROFILE_185
-                )
+                ),
+                contentDescription = containerView.context.getString(R.string.movie_poster_description, item.title)
             )
         }
 

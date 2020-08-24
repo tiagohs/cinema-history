@@ -12,6 +12,7 @@ import com.tiagohs.entities.image.ImageStyle
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.entities.enums.MainTopicsType
+import com.tiagohs.helpers.extensions.getResourceString
 import kotlinx.android.synthetic.main.activity_home.*
 
 
@@ -63,7 +64,7 @@ class HomeActivity: BaseActivity() {
 
     private fun setupMilMovies() {
         val imageStyle = ImageStyle(resize = ImageResize(height = 500), scaleType = "center_crop")
-        val milMoviesImage = Image(ImageType.LOCAL,"img_godfather",null, imageStyle)
+        val milMoviesImage = Image(ImageType.LOCAL,"img_godfather", getResourceString(R.string.mil_movies_image_description), null, imageStyle)
 
         moviesImage.loadImage(milMoviesImage, null)
 
@@ -72,7 +73,7 @@ class HomeActivity: BaseActivity() {
 
     private fun setupTimeline() {
         val imageStyle = ImageStyle(resize = ImageResize(height = 350), scaleType = "center_crop")
-        val timelineImageObject = Image(ImageType.LOCAL,"img_film_faixa",null, imageStyle)
+        val timelineImageObject = Image(ImageType.LOCAL,"img_film_faixa", getResourceString(R.string.timeline_image_description),null, imageStyle)
 
         timelineImage.loadImage(timelineImageObject, null)
 
@@ -81,7 +82,7 @@ class HomeActivity: BaseActivity() {
 
     private fun setupDirectors() {
         val imageStyle = ImageStyle(resize = ImageResize(height = 450), scaleType = "center_crop")
-        val image = Image(ImageType.LOCAL,"img_david_fincher",null, imageStyle)
+        val image = Image(ImageType.LOCAL,"img_david_fincher", getResourceString(R.string.directors_image_description),null, imageStyle)
 
         directorsImage.loadImage(image, null)
 

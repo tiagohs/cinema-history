@@ -1,96 +1,107 @@
 <resources>
-    <string name="app_name">História do Cinema</string>
+    <string name="app_name">History of Cinema</string>
 
-    <string name="quotes">\"\"</string>
+    <string name="quotes" translatable="false">\"\"</string>
 
     <string name="unknown_error">An error occurred, please try again.</string>
     <string name="copy_right" translatable="false">Copyrights © %1$d</string>
 
-    <string name="youtube_link">https://www.youtube.com/watch?v=%1s</string>
-    <string name="youtube_image_link">https://img.youtube.com/vi/%1s/0.jpg</string>
-    <string name="twitter_link">https://twitter.com/%1s</string>
-    <string name="instagram_link">https://instagram.com/%1s</string>
-    <string name="facebook_link">https://www.facebook.com/%1s</string>
-    <string name="imdb_link">https://www.imdb.com/title/%1s</string>
-    <string name="imdb_person_link">https://www.imdb.com/name/%1s</string>
-    <string name="imdb_awards_link">https://www.imdb.com/name/%1s/awards</string>
+    <string name="youtube_link" translatable="false">https://www.youtube.com/watch?v=%1s</string>
+    <string name="youtube_image_link" translatable="false">https://img.youtube.com/vi/%1s/0.jpg</string>
+    <string name="twitter_link" translatable="false">https://twitter.com/%1s</string>
+    <string name="instagram_link" translatable="false">https://instagram.com/%1s</string>
+    <string name="facebook_link" translatable="false">https://www.facebook.com/%1s</string>
+    <string name="imdb_link" translatable="false">https://www.imdb.com/title/%1s</string>
+    <string name="imdb_person_link" translatable="false">https://www.imdb.com/name/%1s</string>
+    <string name="imdb_awards_link" translatable="false">https://www.imdb.com/name/%1s/awards</string>
 
-    <string name="history_cinema_title">Historia do Cinema</string>
-    <string name="mil_movies_title">1001 Filmes</string>
-    <string name="mil_movies_title_v2">1001 Filmes para Ver antes de Morrer</string>
-    <string name="timeline_title">Timeline do Cinema</string>
-    <string name="directors_title">Diretores</string>
+    <string name="history_cinema_title">History of Cinema</string>
+    <string name="mil_movies_title">1001 Movies</string>
+    <string name="mil_movies_title_v2">1001 Movies you Must see Before you Die</string>
+    <string name="timeline_title">Timeline Of Cinema</string>
+    <string name="directors_title">Directors</string>
 
-    <string name="start">Iniciar</string>
-    <string name="try_again">Tente Novamente</string>
-    <string name="comingsoon">Em Breve</string>
-    <string name="movies">Filmes</string>
+    <string name="start">Start</string>
+    <string name="try_again">Try Again</string>
+    <string name="comingsoon">Coming Soon</string>
+    <string name="movies">Movies</string>
     <string name="timeline">Timeline</string>
 
     <!-- History Pages -->
 
-    <string name="sumario">Sumário</string>
-    <string name="next">Próximo</string>
-    <string name="click_here_to_go">Clique aqui para acessar</string>
+    <string name="sumario">Summary</string>
+    <string name="next">Next</string>
+    <string name="click_here_to_go">Click here to access</string>
 
     <!-- Settings -->
-    <string name="action_about">Sobre</string>
-    <string name="action_reference">Referências</string>
-    <string name="action_settings">Configurações</string>
-    <string name="activity_settings">Configurações</string>
-    <string name="activity_references">Referências</string>
+    <string name="action_about">About</string>
+    <string name="action_reference">References</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_settings">Settings</string>
+    <string name="activity_references">References</string>
 
     <!-- About -->
-    <string name="activity_about">Sobre</string>
-    <string name="buy">Comprar</string>
-    <string name="contact_us">Entre em contato</string>
-    <string name="sugestions">Críticas ou sugestões</string>
-    <string name="version">Versão %1s</string>
-    <string name="responsable">Desenvolvimento e Pesquisa por Tiago Silva</string>
-    <string name="terms">Termos</string>
-    <string name="app_description">%1s é um aplicativo grátis que busca, de uma forma divertida e intuitiva, levar a história da sétima arte a todos. Através de imagens, vídeos, entrevistas e infográficos, apresentaremos a trajetória do cinema desde a primeira exibição dos irmãos Lumière até os dias de hoje. Nos baseamos na literatura e em documentários e traduzimos para essa nova mídia. Divirta-se!</string>
+    <string name="activity_about">About</string>
+    <string name="buy">Buy</string>
+    <string name="contact_us">Get in Touch</string>
+    <string name="sugestions">Feedback or suggestions</string>
+    <string name="version">Version %1s</string>
+    <string name="responsable">App Development and Search by Tiago Silva</string>
+    <string name="terms">Terms</string>
+    <string name="app_description">%1s is a free application that seeks, in a fun and intuitive way, to bring the history of the film to everyone. Through images, videos, gifs, interviews, classifications and infographics, we present the trajectory of cinema from the first screening of the Lumière brothers to the present day. We rely on literature and documentaries and translate for this new media. Have a good time!</string>
 
     <!-- Home -->
-    <string name="start_journey">Começar a Jornada</string>
-    <string name="home_title_1">A História do</string>
+    <string name="start_journey">Start the Journey</string>
+    <string name="home_title_1">The History of</string>
     <string name="home_title_2">Cinema</string>
-    <string name="home_milmovies_title">1001 Filmes</string>
-    <string name="home_milmovies_subtitle">PARA VER ANTES DE MORRER</string>
-    <string name="home_milmovies_description">Do clássico ao underground, do cult ao noir, do terror ao romance, veja aqui os filmes que marcaram época e emocionaram pratéias no mundo todo.</string>
-    <string name="home_timeline_title">TIMELINE DO CINEMA</string>
-    <string name="home_timeline_description">Os principais acontecimentos no mundo do cinema organizada cronologicamente.</string>
-    <string name="home_directors_title">Os Mestres das Telas</string>
-    <string name="home_directors_description">Conheça em Detalhes os maiores diretores do Cinema</string>
+    <string name="home_milmovies_title">1001 Movies</string>
+    <string name="home_milmovies_subtitle">you Must see Before you Die</string>
+    <string name="home_milmovies_description">From the classic to the underground, cult to the noir, terror to the romance, see here the greatest films of all time that touched peoples around the world.</string>
+    <string name="home_timeline_title">Timeline of Cinema</string>
+    <string name="home_timeline_description">The main events in the world of cinema organized chronologically.</string>
+    <string name="home_directors_title">Masters of Cinema</string>
+    <string name="home_directors_description">Get to know in detail the greatest cinema directors</string>
 
-    <string name="runtime_format">%1dh %2dm</string>
     <string name="also_format">also %1s</string>
     <string name="as_format">as %1s</string>
-    <string name="country_format">País: %1s</string>
-    <string name="original_title_format">%1s (%2d)</string>
-    <string name="directors">Dirigido por: </string>
-    <string name="write_by">Escrito por: </string>
-    <string name="language_original">Idioma Original: </string>
-    <string name="duration">Duração: </string>
-    <string name="release">Lançamento: </string>
-    <string name="media">Mídia</string>
-    <string name="cast">Elenco</string>
-    <string name="crew">Equipe Técnica</string>
-    <string name="production">Produção</string>
-    <string name="sinopsys">Sinopse</string>
-    <string name="orcamento">Orçamento</string>
-    <string name="receita">Receita</string>
-    <string name="biography">Biografia</string>
-    <string name="filmography">Filmografia</string>
-    <string name="director_profile">Perfil do Diretor</string>
-    <string name="interviews">Entrevista</string>
-    <string name="no_summary">Esse filme não possui uma sinopse disponível.</string>
+    <string name="runtime_format" translatable="false">%1dh %2dm</string>
+    <string name="country_format">Country: %1s</string>
+    <string name="original_title_format" translatable="false">%1s (%2d)</string>
+    <string name="directors">Directed by: </string>
+    <string name="write_by">Writer by: </string>
+    <string name="language_original">Original Language: </string>
+    <string name="duration">Duration: </string>
+    <string name="release">Release: </string>
+    <string name="media">Media</string>
+    <string name="cast">Cast</string>
+    <string name="crew">Crew</string>
+    <string name="production">Production</string>
+    <string name="sinopsys">Plot</string>
+    <string name="orcamento">Budget</string>
+    <string name="receita">Box Office</string>
+    <string name="biography">Biography</string>
+    <string name="filmography">Filmography</string>
+    <string name="director_profile">Director Profile</string>
+    <string name="interviews">Interviews</string>
+    <string name="no_summary">The plot is unknown.</string>
+
+    <!-- Descriptions -->
+    <string name="description_logo_app">Application Logo</string>
+    <string name="mil_movies_image_description">Poster from the movie Godfather, with one hand holding a rope, using it on puppet dolls.</string>
+    <string name="directors_image_description">Personalized poster with the face of David Fincher, mixed with several characters from his films.</string>
+    <string name="timeline_image_description">Photo of a roll film.</string>
+    <string name="movie_backdrop_description">Photo or scene from the movie %1s.</string>
+    <string name="movie_poster_description">Poster from the movie %1s.</string>
+    <string name="movie_video_description">Picture of a Scene from the trailer of %1s.</string>
+    <string name="movie_company_image_description">Logo from the Company %1s.</string>
+    <string name="person_photo_description">Profile picture of %1s.</string>
 
     <!-- Arrays -->
     <string-array name="app_language_values">
-        <item>Português Brasil</item>
+        <item>Portuguese Brazil</item>
     </string-array>
     <string-array name="movie_language_values">
-        <item>Português Brasil</item>
-        <item>Inglês</item>
+        <item>Portuguese Brazil</item>
+        <item>English</item>
     </string-array>
 </resources>

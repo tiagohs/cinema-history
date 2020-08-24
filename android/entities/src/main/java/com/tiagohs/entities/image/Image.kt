@@ -12,6 +12,9 @@ class Image(
     @SerializedName("url")
     val url: String,
 
+    @SerializedName("content_description")
+    var contentDescription: String? = null,
+
     @SerializedName("animation")
     val animation: Animation? = null,
 

@@ -10,6 +10,7 @@
     "image": {
       "image_type": "local",
       "url": "img_voyage",
+      "content_description": "Cena do filme Viagem a Lua, onde uma lua, com feições humanas, é atingida no olho direito por um foguete.",
       "animation": {
         "type": "shake_vertical",
         "duration": 1300
@@ -24,6 +25,7 @@
     "presentation_image": {
       "image_type": "local",
       "url": "img_cabinet",
+      "content_description": "Cena do filme O gabinete do doutor Caligari, onde um homem verifica, desconfiado, o corpo de uma mulher no chão.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -50,6 +52,7 @@
     "image": {
       "image_type": "local",
       "url": "img_snow_white",
+      "content_description": "Foto promocional do filme Branca de Neve, com a personagem segurando uma maça.",
       "style": {
         "scale_type": "center_crop",
         "resize": {
@@ -60,6 +63,7 @@
     "presentation_image": {
       "image_type": "local",
       "url": "img_wizard_oz",
+      "content_description": "Foto do filme O Mágico de Oz, com os quatro personagens principais andando de mãos dadas.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -94,6 +98,7 @@
     "image": {
       "image_type": "local",
       "url": "img_sevensamurais",
+      "content_description": "Cena do filme Os Sete Samurais, com todos os personagens olhando em uma direção, apostos.",
       "style": {
         "scale_type": "center_crop",
         "resize": {
@@ -104,6 +109,7 @@
     "presentation_image": {
       "image_type": "local",
       "url": "img_singin_in_the_rain",
+      "content_description": "Cena do cantando na chuva, com o personagem título cantando no meio da chuva.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -130,6 +136,7 @@
     "image": {
       "image_type": "local",
       "url": "img_2001_hal",
+      "content_description": "Foto do HAll 9000, do filme 2001: Uma Odisseia no Espaço.",
       "animation": {
         "type": "blink",
         "duration": 1000
@@ -144,6 +151,7 @@
     "presentation_image": {
       "image_type": "local",
       "url": "img_bonnie_clyde",
+      "content_description": "Foto de perfil do casal Bonnie e Clyde, no filme Bonnie e Clyde - Uma Rajada de Balas.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -170,6 +178,7 @@
     "image": {
       "image_type": "local",
       "url": "img_exorcist",
+      "content_description": "Foto da personagem Regan possúida pelo demônio, em O Exorcista.",
       "style": {
         "scale_type": "center_crop",
         "resize": {
@@ -180,6 +189,7 @@
     "presentation_image": {
       "image_type": "local",
       "url": "img_taxi_driver",
+      "content_description": "Foto do personagem Travis Bickle, em Táxi Driver.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -213,6 +223,7 @@
     "image": {
       "image_type": "local",
       "url": "img_pulp_fiction",
+      "content_description": "Foto dos personagem Vincent e Julius de costas um para o outro, em Pulp Fiction: Tempo de Violência.",
       "style": {
         "scale_type": "center_crop",
         "resize": {
@@ -223,6 +234,7 @@
     "presentation_image": {
       "image_type": "local",
       "url": "img_walle",
+      "content_description": "Foto do personagem Wall-E olhando para as estrelas.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -249,6 +261,7 @@
     "image": {
       "image_type": "local",
       "url": "img_iron_man",
+      "content_description": "Foto de perfil do personagem Homem de Ferro.",
       "animation": {
         "type": "blink",
         "duration": 1000
@@ -264,6 +277,7 @@
     "presentation_image": {
       "image_type": "local",
       "url": "img_baby_driver",
+      "content_description": "Foto do personagem Baby, no filme Em Ritmo de Fuga.",
       "style": {
         "scale_type": "center_crop"
       }

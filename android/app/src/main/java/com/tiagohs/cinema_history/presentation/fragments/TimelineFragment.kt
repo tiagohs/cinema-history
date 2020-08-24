@@ -26,6 +26,7 @@ class TimelineFragment: BaseFragment(), TimelineView {
     lateinit var presenter: TimelinePresenter
 
     private var timelineId: Int = 1
+    private var totalOfTimelines: Int = 0
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -45,14 +46,17 @@ class TimelineFragment: BaseFragment(), TimelineView {
 
     override fun setupArguments() {
         timelineId = arguments?.getInt(TIMELINE_ID) ?: 0
+        totalOfTimelines = arguments?.getInt(TOTAL_TIMELINES) ?: 0
     }
 
     override fun bindTimeline(timelines: TimelineResult) {
         timelineList.apply {
             layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
-            timelineList.adapter = TimelineAdapter(timelines.timelineList, timelines.color, timelines.titleTextColor).apply {
+            timelineList.adapter = TimelineAdapter(timelines.timelineList, totalOfTimelines, timelines.color, timelines.titleTextColor).apply {
                 onNextClicked = { setNextPage() }
                 onPreviousClicked = { setPreviousPage() }
+                onUpClicked = { goToFirstItem() }
+                onDownClicked = { goToLastItem(timelines.timelineList.size - 1) }
             }
         }
 
@@ -65,6 +69,14 @@ class TimelineFragment: BaseFragment(), TimelineView {
 
     private fun setPreviousPage() {
         (activity as? TimelineActivity)?.setPreviousPage()
+    }
+
+    private fun goToFirstItem() {
+        (timelineList.layoutManager as? LinearLayoutManager)?.scrollToPosition(0)
+    }
+
+    private fun goToLastItem(lastItemIndex: Int) {
+        (timelineList.layoutManager as? LinearLayoutManager)?.scrollToPosition(lastItemIndex)
     }
 
     override fun startLoading() {
@@ -84,11 +96,13 @@ class TimelineFragment: BaseFragment(), TimelineView {
     companion object {
 
         const val TIMELINE_ID = "TIMELINE_ID"
+        const val TOTAL_TIMELINES = "TOTAL_TIMELINES"
 
-        fun newInstance(timelineId: Int): TimelineFragment {
+        fun newInstance(timelineId: Int, totalOfTimelines: Int): TimelineFragment {
             val timelineFragment = TimelineFragment()
             timelineFragment.arguments = Bundle().apply {
                 putInt(TIMELINE_ID, timelineId)
+                putInt(TOTAL_TIMELINES, totalOfTimelines)
             }
 
             return timelineFragment

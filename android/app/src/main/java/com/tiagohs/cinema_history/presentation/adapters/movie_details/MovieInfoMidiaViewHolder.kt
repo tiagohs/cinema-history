@@ -36,7 +36,7 @@ class MovieInfoMidiaViewHolder(
 
         wallpapersList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = MovieWallpaperAdapter(allImages)
+            adapter = MovieWallpaperAdapter(allImages, movie.originalTitle)
             addItemDecoration(
                 SpaceOffsetDecoration(
                     10.convertIntToDp(context),
@@ -51,7 +51,7 @@ class MovieInfoMidiaViewHolder(
 
         videoList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = MovieVideoAdapter(allVideos).apply {
+            adapter = MovieVideoAdapter(allVideos, movie).apply {
                 onVideoClick = this@MovieInfoMidiaViewHolder.onVideoClick
             }
             addItemDecoration(

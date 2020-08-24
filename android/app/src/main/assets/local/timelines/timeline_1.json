@@ -18,6 +18,7 @@
       "image": {
         "image_type": "local",
         "url": "img_lumiere_brothers",
+        "content_description": "Foto de Auguste e Louis Lumière",
         "style": {
           "scale_type": "center_crop"
         }
@@ -32,6 +33,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_gaumont.webp",
+        "content_description": "Foto com a logo da Companhia Comptoir Général de Photographie",
         "style": {
           "scale_type": "center_crop"
         }
@@ -45,6 +47,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_the_kiss.webp",
+        "content_description": "Cena do filme The Kiss, com os dois personagens principais se beijando.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -59,6 +62,7 @@
       "image": {
         "image_type": "local",
         "url": "img_alice",
+        "content_description": "Foto de perfil da diretora Alice Guy Blaché, ao lado de uma câmera.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -72,6 +76,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_phantom_ride.webp",
+        "content_description": "Foto de George Albert Smith durante as filmagens do seu filme, sentado na frente de um trem, tentando realizar o Phantom Ride.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -85,6 +90,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_attack_china_mission.webp",
+        "content_description": "Cena do filme Ataque a uma missão chinesa, com os soldados saindo correndo do local pegando fogo.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -98,6 +104,7 @@
       "image": {
         "image_type": "local",
         "url": "img_voyage_2",
+        "content_description": "Cena do filme Viagem a Lua, onde uma lua, com feições humanas, é atingida no olho direito por um foguete.",
         "style": {
           "scale_type": "fit_center"
         }
@@ -111,6 +118,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_movie_roll.webp",
+        "content_description": "Foto de um rolo de filmes.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -124,6 +132,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_sick_kitten.webp",
+        "content_description": "Close de um gato sentado no colo de uma mulher.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -137,6 +146,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_life_american_fireman.webp",
+        "content_description": "Cena do filme A vida de um bombeiro americano, com o bombeiro subindo uma escada.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -150,6 +160,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_story_kelly.webp",
+        "content_description": "cena do filme The story of the Kelly Gang, com um homem usando uma mascara de ferro.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -163,6 +174,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_hollywood_1910.webp",
+        "content_description": "Foto do terreno onde futuramente seria Hollywood.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -176,6 +188,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_famous_players.webp",
+        "content_description": "Foto do logo da produtora Famous Players Film Company.",
         "style": {
           "scale_type": "fit_center"
         }
@@ -189,6 +202,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_vampire_dancing.webp",
+        "content_description": "Foto de Clara Pontoppidan dançando em cena durante o filme O vampiro dançarino.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -202,6 +216,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_cabiria.webp",
+        "content_description": "Cena do filme Cabiria, com uma multidão em volta de um antigo monumento.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -215,6 +230,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_chaplin_vagabundo.webp",
+        "content_description": "Foto com o rosto de Charlie Chaplin.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -228,6 +244,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_birth_nation.webp",
+        "content_description": "Cena do filme O nascimento de uma nação, com um homem afro-americano sendo capturado por membros do Ku Klux Klan.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -241,6 +258,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_first_porn.webp",
+        "content_description": "Cena do filme A Free Ride, com um carro andando ao lado de umas mulheres.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -254,6 +272,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_russian_school.webp",
+        "content_description": "Foto da logo do Instituto de Cinematografia Estatal.",
         "style": {
           "scale_type": "center_inside"
         }
@@ -267,6 +286,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_cabinet_caligari.webp",
+        "content_description": "Cena do filme O gabinete do Dr. Caligari, com um senhor de idade olhando em uma direção, com a sua sombra refletida na parete.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -280,6 +300,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_zorro.webp",
+        "content_description": "Foto de perfil do personagem Zorro.",
         "style": {
           "scale_type": "center_inside"
         }
@@ -293,6 +314,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_nosferatu.webp",
+        "content_description": "Cena do filme Nosferatu, com o Vampiro olhando diretamente para a tela.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -306,6 +328,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_rodolfo.webp",
+        "content_description": "Foto de perfil do ator Rodolfo Valentino.",
         "style": {
           "scale_type": "center_inside"
         }
@@ -319,6 +342,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_homem_mosca.webp",
+        "content_description": "Cena do filme O homem-mosca, com o personagem The Boy pindurado no ponteiro de um gigante relógio.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -332,6 +356,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_alice_disney.webp",
+        "content_description": "Cena do filme Alice's Wonderland, com a personagem Alice encima de um elefante animado, com vários outros animais envolta.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -345,6 +370,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_big_parade.webp",
+        "content_description": "Cena do filme O grande desfile, com a personagem Melisandre dando um beijo no rosto de James.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -358,6 +384,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_gold_rush.webp",
+        "content_description": "Cena do filme Em busca do ouro, com o personagem O Vagabundo fazendo uma dança com pães presos em um garfo.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -371,6 +398,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_eisenstein.webp",
+        "content_description": "Foto de perfil do Diretor Sergei Eisenstein.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -384,6 +412,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_black_pirate.webp",
+        "content_description": "Foto de perfil do personagem Jamie, em O Pirata Negro.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -397,6 +426,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_the_general.webp",
+        "content_description": "Cena do filme A General, com Buster Keaton encima de uma locomotiva.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -410,6 +440,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_pagina_loucura.webp",
+        "content_description": "Cena do filme Uma Página de Loucura, com dois personagens utilizando máscaras.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -423,6 +454,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_it.webp",
+        "content_description": "Foto com o rosto da personagem Betty, interpretada pela atriz Clara Bow.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -436,6 +468,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_metropolis.webp",
+        "content_description": "Cena do filme Metropolis, com o robo de pé em uma sala vazia.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -449,6 +482,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_cao_andaluz.webp",
+        "content_description": "Cena do filme Um cão andaluz, com um barbeiro prestes a cortar o olho de uma mulher, olhando fixamente para a tela.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -462,6 +496,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_jazz_singer.webp",
+        "content_description": "Cena do filme O cantor de Jazz, com um personagem cantando uma musica para uma mulher junto ao piano.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -475,6 +510,7 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_oscar.webp",
+        "content_description": "Foto da primeira noite do oscar, em um salão de festas.",
         "style": {
           "scale_type": "center_crop"
         }

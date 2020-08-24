@@ -73,11 +73,12 @@ fun ImageView.setImageDrawableColored(drawable: Drawable, color: Int) {
 }
 
 fun ImageView.loadImage(url: String?,
+                        contentDescription: String? = null,
                         placeholder: Int? = R.drawable.placeholder_movie_poster,
                         errorPlaceholder: Int? = R.drawable.placeholder_movie_poster,
                         scaleType: String? = "center_crop",
                         oonLoadSuccess: (() -> Unit)? = null) {
-    loadImage(Image(ImageType.ONLINE, url ?: "", imageStyle = ImageStyle(scaleType = scaleType)), placeholder, errorPlaceholder, oonLoadSuccess)
+    loadImage(Image(ImageType.ONLINE, url ?: "", contentDescription = contentDescription, imageStyle = ImageStyle(scaleType = scaleType)), placeholder, errorPlaceholder, oonLoadSuccess)
 }
 
 @SuppressLint("CheckResult")
@@ -144,6 +145,8 @@ fun ImageView.loadImage(
     glideRequest.into(this)
 
     scaleType = ImageScaleType.getImageViewScaleType(image.imageStyle?.scaleType)
+
+    image.contentDescription?.let { this.contentDescription = it }
 }
 
 @SuppressLint("CheckResult")

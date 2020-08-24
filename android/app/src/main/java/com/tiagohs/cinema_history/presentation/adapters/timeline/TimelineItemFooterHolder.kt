@@ -1,9 +1,11 @@
 package com.tiagohs.cinema_history.presentation.adapters.timeline
 
 import android.view.View
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.timeline.Timeline
 import com.tiagohs.entities.timeline.TimelineFooter
+import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.show
 import kotlinx.android.synthetic.main.adapter_timeline_footer.*
 import kotlinx.android.synthetic.main.adapter_timeline_footer.view.*
@@ -11,6 +13,8 @@ import kotlinx.android.synthetic.main.adapter_timeline_footer.view.*
 class TimelineItemFooterHolder(
     private val onNextClicked: (() -> Unit)?,
     private val onPreviousClicked: (() -> Unit)?,
+    private val onUpClicked: (() -> Unit)?,
+    private val numberOfItens: Int,
     view: View
 ) : BaseViewHolder<Timeline>(view) {
 
@@ -22,14 +26,23 @@ class TimelineItemFooterHolder(
     }
 
     private fun bindDirectionButtons(timeline: TimelineFooter) {
-        timeline.next?.let {
-            nextContainer.show()
-            nextContainer?.setOnClickListener { onNextClicked?.invoke() }
+        bindButton(nextContainer, timeline.next != null && positionItem < numberOfItens) {
+            onNextClicked?.invoke()
         }
-        timeline.previous?.let {
-            previousContainer.show()
-            previousContainer?.setOnClickListener { onPreviousClicked?.invoke() }
+        bindButton(previousContainer, timeline.previous != null && positionItem == 0) {
+            onPreviousClicked?.invoke()
         }
+
+        upButton.setOnClickListener { onUpClicked?.invoke() }
     }
 
+    private fun bindButton(view: ConstraintLayout?, isToShow: Boolean, onClicked: () -> Unit) {
+        if (!isToShow) {
+            view.hide()
+            return
+        }
+
+        view.show()
+        view?.setOnClickListener { onClicked.invoke() }
+    }
 }

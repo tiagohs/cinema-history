@@ -69,8 +69,8 @@ class MovieItemSpecialAdapter(
             bindCharacters(item.character)
             bindDepartaments(item.departments, colorAsset)
 
-            moviePoster.loadImage(item.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_342))
-            movieBackdrop.loadImage(item.backdrop?.imageUrlFromTMDB(ImageSize.BACKDROP_300))
+            moviePoster.loadImage(item.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_342), contentDescription = containerView.context.getString(R.string.movie_poster_description, item.title))
+            movieBackdrop.loadImage(item.backdrop?.imageUrlFromTMDB(ImageSize.BACKDROP_300), contentDescription = containerView.context.getString(R.string.movie_backdrop_description, item.title))
 
             bindColor(colorAsset)
         }

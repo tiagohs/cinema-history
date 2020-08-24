@@ -36,6 +36,7 @@ class PersonAdapter(
 
             personImage.loadImage(
                 item.imagePath?.imageUrlFromTMDB(ImageSize.PROFILE_185),
+                containerView.context.getString(R.string.person_photo_description, item.name),
                 R.drawable.placeholder_movie_person,
                 R.drawable.placeholder_movie_person
             )

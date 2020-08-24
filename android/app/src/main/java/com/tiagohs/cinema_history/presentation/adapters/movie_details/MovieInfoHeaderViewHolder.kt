@@ -11,10 +11,7 @@ import com.tiagohs.entities.image.ImageResize
 import com.tiagohs.entities.image.ImageStyle
 import com.tiagohs.entities.movie_info.MovieInfo
 import com.tiagohs.entities.tmdb.movie.Movie
-import com.tiagohs.helpers.extensions.imageUrlFromTMDB
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.setResourceText
-import com.tiagohs.helpers.extensions.show
+import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.helpers.utils.DateUtils
 import com.tiagohs.helpers.utils.LocaleUtils
@@ -69,7 +66,7 @@ class MovieInfoHeaderViewHolder(
     private fun bindMoviePoster(movie: Movie) {
         val imageUrl = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_185) ?: return
         val imageStyle = ImageStyle(resize = ImageResize(itemView.width, 180))
-        val image = Image(ImageType.ONLINE, imageUrl, imageStyle = imageStyle)
+        val image = Image(ImageType.ONLINE, imageUrl, imageStyle = imageStyle, contentDescription = containerView.context.getString(R.string.movie_poster_description, movie.originalTitle))
 
         moviePoster.loadImage(image) {
             imageCard.alpha = 1f

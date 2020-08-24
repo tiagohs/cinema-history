@@ -86,7 +86,11 @@ class PersonDetailsFragment: BaseFragment() {
     private fun bindPersonProfileImage(person: Person) {
         val profilePath = person.profilePath?.imageUrlFromTMDB(ImageSize.PROFILE_632) ?: return
 
-        personImage.loadImage(profilePath, R.drawable.placeholder_movie_person, R.drawable.placeholder_movie_person) {
+        personImage.loadImage(
+            profilePath,
+            getString(R.string.person_photo_description, person.name),
+            R.drawable.placeholder_movie_person,
+            R.drawable.placeholder_movie_person) {
             personImage.alpha = 1f
             val animation = AnimationUtils.createFadeInAnimation(200) {
                 personImageDegrade.alpha = 1f

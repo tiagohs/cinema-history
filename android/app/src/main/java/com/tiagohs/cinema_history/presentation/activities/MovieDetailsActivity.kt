@@ -181,14 +181,13 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     private fun bindMovieHeader(movie: Movie, title: String) {
         val genres = movie.genres
-        val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_780)
 
         movieTitle.setResourceText(title)
         movieOriginalTitle.text = getString(R.string.original_title_format, movie.originalTitle, DateUtils.getYearByDate(movie.releaseDate))
 
         bindGenres(genres)
         bindTrailer(movie)
-        bindBackdrop(backdropPath)
+        bindBackdrop(movie, title)
     }
 
     private fun bindGenres(genres: List<Genres>?) {
@@ -221,8 +220,10 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         playContainer.setOnClickListener { openLink(getString(R.string.youtube_link, trailerUrlKey)) }
     }
 
-    private fun bindBackdrop(backdropPath: String?) {
-        movieBackdrop.loadImage(backdropPath, R.drawable.placeholder_movie_poster, R.drawable.placeholder_movie_poster) {
+    private fun bindBackdrop(movie: Movie, title: String) {
+        val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_780)
+
+        movieBackdrop.loadImage(backdropPath, getString(R.string.movie_backdrop_description, title), R.drawable.placeholder_movie_poster, R.drawable.placeholder_movie_poster) {
             movieBackdrop.alpha = 1f
 
             AnimationUtils.createShowCircularReveal(movieBackdrop) {

@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">História do Cinema</string>
+
+    <string name="unknown_error">Algo de errado aconteceu, por favor tente novamente</string>
+
+    <string name="history_cinema_title">História do Cinema</string>
+    <string name="mil_movies_title">1001 Filmes</string>
+    <string name="mil_movies_title_v2">1001 Filmes para Ver antes de Morrer</string>
+    <string name="timeline_title">Timeline do Cinema</string>
+    <string name="directors_title">Diretores</string>
+
+    <string name="start">Iniciar</string>
+    <string name="try_again">Tente Novamente</string>
+    <string name="comingsoon">Em Breve</string>
+    <string name="movies">Filmes</string>
+    <string name="timeline">Timeline</string>
+
+    <!-- History Pages -->
+
+    <string name="sumario">Sumário</string>
+    <string name="next">Próximo</string>
+    <string name="click_here_to_go">Clique aqui para acessar</string>
+
+    <!-- Settings -->
+    <string name="action_about">Sobre</string>
+    <string name="action_reference">Referências</string>
+    <string name="action_settings">Configurações</string>
+    <string name="activity_settings">Configurações</string>
+    <string name="activity_references">Referências</string>
+
+    <!-- About -->
+    <string name="activity_about">Sobre</string>
+    <string name="buy">Comprar</string>
+    <string name="contact_us">Entre em contato</string>
+    <string name="sugestions">Críticas ou sugestões</string>
+    <string name="version">Versão %1s</string>
+    <string name="responsable">Desenvolvimento e Pesquisa por Tiago Silva</string>
+    <string name="terms">Termos</string>
+    <string name="app_description">%1s é um aplicativo grátis que busca, de uma forma divertida e intuitiva, levar a história da sétima arte a todos. Através de imagens, vídeos, entrevistas e infográficos, apresentaremos a trajetória do cinema desde a primeira exibição dos irmãos Lumière até os dias de hoje. Nos baseamos na literatura e em documentários e traduzimos para essa nova mídia. Divirta-se!</string>
+
+    <!-- Home -->
+    <string name="start_journey">Começar a Jornada</string>
+    <string name="home_title_1">A História do</string>
+    <string name="home_title_2">Cinema</string>
+    <string name="home_milmovies_title">1001 Filmes</string>
+    <string name="home_milmovies_subtitle">para Ver antes de Morrer</string>
+    <string name="home_milmovies_description">Do clássico ao underground, do cult ao noir, do terror ao romance, veja aqui os filmes que marcaram época e emocionaram pratéias no mundo todo.</string>
+    <string name="home_timeline_title">TIMELINE DO CINEMA</string>
+    <string name="home_timeline_description">Os principais acontecimentos no mundo do cinema organizada cronologicamente.</string>
+    <string name="home_directors_title">Os Mestres das Telas</string>
+    <string name="home_directors_description">Conheça em Detalhes os maiores diretores do Cinema</string>
+
+    <string name="also_format">além de %1s</string>
+    <string name="as_format">como %1s</string>
+    <string name="country_format">País: %1s</string>
+    <string name="directors">Dirigido por: </string>
+    <string name="write_by">Escrito por: </string>
+    <string name="language_original">Idioma Original: </string>
+    <string name="duration">Duração: </string>
+    <string name="release">Lançamento: </string>
+    <string name="media">Mídia</string>
+    <string name="cast">Elenco</string>
+    <string name="crew">Equipe Técnica</string>
+    <string name="production">Produção</string>
+    <string name="sinopsys">Sinopse</string>
+    <string name="orcamento">Orçamento</string>
+    <string name="receita">Receita</string>
+    <string name="biography">Biografia</string>
+    <string name="filmography">Filmografia</string>
+    <string name="director_profile">Perfil do Diretor</string>
+    <string name="interviews">Entrevista</string>
+    <string name="no_summary">Esse filme não possui uma sinopse disponível.</string>
+
+    <!-- Descriptions -->
+    <string name="description_logo_app">Logo do Aplicativo</string>
+    <string name="mil_movies_image_description">Poster do filme o poderoso chefão, com uma mão segurando um controlador de marionete de corda.</string>
+    <string name="directors_image_description">Poster personalizado com o rosto de david fincher, misturado a diversos personagens dos seus filmes.</string>
+    <string name="timeline_image_description">Foto de um rolo de filmes.</string>
+    <string name="movie_backdrop_description">Foto promocional ou cena do filme %1s.</string>
+    <string name="movie_poster_description">Poster do movie %1s.</string>
+    <string name="movie_video_description">Foto de uma Cena do filme %1s.</string>
+    <string name="movie_company_image_description">Logo da Empresa %1s.</string>
+    <string name="person_photo_description">Foto de %1s.</string>
+
+    <!-- Arrays -->
+    <string-array name="app_language_values">
+        <item>Portuguese Bra</item>
+    </string-array>
+    <string-array name="movie_language_values">
+        <item>Português Brasil</item>
+        <item>Inglês</item>
+    </string-array>
+</resources>

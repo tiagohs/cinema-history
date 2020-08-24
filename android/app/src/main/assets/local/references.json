@@ -8,7 +8,8 @@
     "mediaType": "Livro",
     "image": {
       "image_type": "online",
-      "url": "https://images-na.ssl-images-amazon.com/images/I/51HxDGyMZ3L._SX401_BO1,204,203,200_.jpg"
+      "url": "https://images-na.ssl-images-amazon.com/images/I/51HxDGyMZ3L._SX401_BO1,204,203,200_.jpg",
+      "content_description": "Capa do Livro O livro do cinema"
     }
   },
   {
@@ -20,7 +21,8 @@
     "mediaType": "Livro",
     "image": {
       "image_type": "online",
-      "url": "https://images-na.ssl-images-amazon.com/images/I/41hO4sH7-0L._SX349_BO1,204,203,200_.jpg"
+      "url": "https://images-na.ssl-images-amazon.com/images/I/41hO4sH7-0L._SX349_BO1,204,203,200_.jpg",
+      "content_description": "Capa do Livro Tudo sobre cinema"
     }
   },
   {
@@ -32,7 +34,8 @@
     "mediaType": "Livro",
     "image": {
       "image_type": "online",
-      "url": "https://images-na.ssl-images-amazon.com/images/I/51YS8sYqh-L._SX393_BO1,204,203,200_.jpg"
+      "url": "https://images-na.ssl-images-amazon.com/images/I/51YS8sYqh-L._SX393_BO1,204,203,200_.jpg",
+      "content_description": "Capa do Livro 1001 Filmes Para Ver Antes De Morrer"
     }
   },
   {
@@ -44,7 +47,8 @@
     "mediaType": "Livro",
     "image": {
       "image_type": "online",
-      "url": "https://images-na.ssl-images-amazon.com/images/I/4193EnREauL._SX338_BO1,204,203,200_.jpg"
+      "url": "https://images-na.ssl-images-amazon.com/images/I/4193EnREauL._SX338_BO1,204,203,200_.jpg",
+      "content_description": "Capa do Livro História do Cinema: Dos Clássicos Mudos ao Cinema Moderno"
     }
   }
 ]

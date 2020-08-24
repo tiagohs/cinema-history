@@ -12,12 +12,15 @@ import com.tiagohs.entities.timeline.Timeline
 
 class TimelineAdapter(
     list: List<Timeline>,
+    val totalOfTimelines: Int,
     val color: String,
     val textColor: String
 ) : BaseAdapter<Timeline, BaseViewHolder<Timeline>>(list) {
 
     var onNextClicked: (() -> Unit)? = null
     var onPreviousClicked: (() -> Unit)? = null
+    var onUpClicked: (() -> Unit)? = null
+    var onDownClicked: (() -> Unit)? = null
 
     init {
         setHasStableIds(true)
@@ -37,12 +40,16 @@ class TimelineAdapter(
                 color,
                 onNextClicked,
                 onPreviousClicked,
+                onDownClicked,
+                totalOfTimelines,
                 view
             )
             TimelineType.ITEM.ordinal -> TimelineItemViewHolder(color, textColor, view)
             TimelineType.FOOTER.ordinal -> TimelineItemFooterHolder(
                 onNextClicked,
                 onPreviousClicked,
+                onUpClicked,
+                totalOfTimelines,
                 view
             )
             else -> object : BaseViewHolder<Timeline>(view) {}

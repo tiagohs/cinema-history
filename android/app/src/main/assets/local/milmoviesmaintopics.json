@@ -8,6 +8,7 @@
     "image": {
       "image_type": "local",
       "url": "img_the_gold_rush",
+      "content_description": "Foto do personagem Vagabundo abrindo uma porta na neve, no Filme em Busca do Ouro.",
       "style": {
         "height": 400,
         "scale_type": "center_crop",
@@ -28,6 +29,7 @@
     "image": {
       "image_type": "local",
       "url": "img_frankenstein",
+      "content_description": "Foto promossional do filme Frankenstein, com o rosto triste do personagem Frankenstein.",
       "style": {
         "height": 500,
         "scale_type": "center_crop",
@@ -56,6 +58,7 @@
     "image": {
       "image_type": "local",
       "url": "img_casablanca",
+      "content_description": "Foto promossional do filme Casablanca, com o rosto dos personagens Rick e Ilsa.",
       "style": {
         "height": 500,
         "scale_type": "center_crop",
@@ -76,6 +79,7 @@
     "image": {
       "image_type": "local",
       "url": "img_ben_hur",
+      "content_description": "Cena do filme Ben Hur, com um cavaleiro encima de uma biga.",
       "style": {
         "height": 500,
         "scale_type": "center_crop",
@@ -96,6 +100,7 @@
     "image": {
       "image_type": "local",
       "url": "img_the_uggly",
+      "content_description": "Foto promocional de uma cena do filme Três homens em conflito, com os três personagens principais se olhando durante um duelo.",
       "style": {
         "height": 500,
         "scale_type": "center_crop",
@@ -124,6 +129,7 @@
     "image": {
       "image_type": "local",
       "url": "img_jaws",
+      "content_description": "Foto promocional do filme Tubarão, com o tubarão indo em direção a uma mulher nadando no mar aberto.",
       "style": {
         "height": 500,
         "scale_type": "center_crop",
@@ -141,6 +147,7 @@
     "id": 8,
     "list_id": "124917",
     "title": "De 1980 a 1989",
+    "content_description": "Foto promocional do filme De Volta para o Futuro, com o carro futurista sobrevoando o chão.",
     "image": {
       "image_type": "local",
       "url": "img_back_future",
@@ -164,6 +171,7 @@
     "image": {
       "image_type": "local",
       "url": "img_silence",
+      "content_description": "Foto promocional do filme Silêncio dos Inocentes, focando nos olhos do Hannibal Lecter.",
       "style": {
         "height": 500,
         "scale_type": "center_crop",
@@ -192,6 +200,7 @@
     "image": {
       "image_type": "local",
       "url": "img_cidade_deus",
+      "content_description": "Foto promocional do filme Cidade de Deus, mostrando o personagem do Zé pequeno criança rindo enquanto aponta uma arma.",
       "style": {
         "height": 500,
         "scale_type": "center_crop",
@@ -212,6 +221,7 @@
     "image": {
       "image_type": "local",
       "url": "img_black_panther",
+      "content_description": "Foto promocional do filme Pantera Negra, com todos os personagens principais aparecendo na foto.",
       "style": {
         "height": 500,
         "scale_type": "center_crop",
