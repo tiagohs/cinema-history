@@ -42,12 +42,13 @@ class BlockSpecialViewHolder(
         }
 
         blockSpecialClickHere.hide()
-        blockSpecialContainerCard.setOnClickListener(null)
+        blockSpecialContainer.setOnClickListener(null)
     }
 
     private fun bindClick(click: Click) {
         blockSpecialClickHere.show()
-        blockSpecialContainerCard.setOnClickListener {
+        blockSpecialClickHere.setResourceText(click.buttonText ?: containerView.context.getString(R.string.click_here_to_go))
+        blockSpecialContainer.setOnClickListener {
             when (click.screen) {
                 Screen.TIMELINE_SCREEN -> {
                     val intent = TimelineActivity.newIntent(itemView.context).apply {
@@ -57,6 +58,11 @@ class BlockSpecialViewHolder(
                     }
 
                     presentScreen?.invoke(intent)
+                }
+                Screen.LINK_ONLINE -> {
+                    val link = click.parameters?.firstOrNull()?.value
+
+                    containerView.context.openLink(link)
                 }
             }
         }

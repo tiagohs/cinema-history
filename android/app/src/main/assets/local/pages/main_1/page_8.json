@@ -2,6 +2,148 @@
   "number": 8,
   "content_list": [
     {
+      "type": "text",
+      "content_text": "<strong>André Breton</strong>, o fundador do surrealismo, via o cinema como uma maneira de liberar o subconsciente. Conforme escreveu seu colaborador <i>Philippe Soupault</i>: \"<i>Nós acreditávamos que o cinema poderia apresentar possibilidades extraordinárias de se expressar, transfigurar e realizar sonho</i>”."
+    },
+    {
+      "type": "text",
+      "content_text": "Em 1924, Breton escreveu o <strong>Manifesto Surrealista</strong> e, no mesmo ano, o cineasta <a href=\"https://_{type: 'screen', 'id': 33166, 'screen_type': person}\">Rene Clair</a> (1898-1981) dirigiu <a href=\"https://_{type: 'screen', 'id': 44473, 'screen_type': movie}\">Entr'acte</a> (BR: Entreato, 1924), uma mistura de comedia-pastelão logica onírica. Feito para ser exibido durante o intervalo do balé <i>Reldche</i>, de <i>Francis Picabia</i>, em cartaz no <i>Théâtre des Champs-Elysées</i> de Paris, o filme traz participações especiais de Picabia e dos artistas <a href=\"https://_{type: 'screen', 'id': 150602, 'screen_type': person}\"> Man Ray </a> (1890-1976) e <a href=\"https://_{type: 'screen', 'id': 150601, 'screen_type': person}\"> Marcel Duchamp </a> (1887-1968)."
+    },
+    {
+      "type": "block_special",
+      "title": "O Manifesto Surrealista",
+      "click": {
+        "screen": "link_online",
+        "button_text": "Clique aqui para ler o Manifesto em português",
+        "parameters": [
+          {
+            "key": "LINK",
+            "value": "http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=2320"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_surrealim_manifesto",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Publicado em 1924 por <i>André Breton</i>, O <strong>Manifesto Surrealista</strong> trouxe para o mundo um novo modo de encarar a arte. <br/> <br/> \n\nSeguido do <i>dadaísmo</i> (movimento que propunha a oposição por qualquer tipo de equilíbrio), o surrealismo impunha o chamado <strong>automatismo psíquico</strong>, \"estado puro, mediante o qual se propunha transmitir verbalmente, por escrito, ou por qualquer outro meio o funcionamento do pensamento; ditado do pensamento, suspenso qualquer controle exercido pela razão, alheio a qualquer preocupação estética ou moral\". <br/> <br/> \n\nSegundo Breton, ele e o escritor <i>Soupault</i>, deram o nome de surrealismo ao novo modo de expressão que tinham a seu alcance, em homenagem a <i>Guillaume Apollinaire</i>. <br/> <br/> \n\nNeste manifesto, os princípios surrealistas são declarados, tais como a isenção da lógica, a adoção de uma realidade superior, chamada \"maravilhosa\"."
+    },
+    {
+      "type": "text",
+      "content_text": "Picabia concebeu o filme em parceria com Claire pretendia que ele fosse um ataque a Breton, porém Entreato é considerado uma película surrealista. Ele começa com uma superposição de imagens e se vale de uma montagem habilidosa para criar efeitos surpreendentes: uma bailarina se transforma em um homem barbado e um carro funerário viaja pelos trilhos de uma montanha russa."
+    },
+    {
+      "type": "gif",
+      "gif_image": {
+        "image_type": "local",
+        "url": "entreato_bale",
+        "thumbnail": {
+          "image_type": "online",
+          "url": "https://img.youtube.com/vi/Fif9e6THwOI/0.jpg",
+          "style": {
+            "scale_type": "center_crop"
+          }
+        },
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Cenas de Entreato (1924)",
+        "contentText": "Clair utilizou superposições de diversas imagens em Entreato, como está, de uma bailarina filmada por baixo para criar um efeito pertubardor."
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Embora a diretora <a href=\"https://_{type: 'screen', 'id': 997694, 'screen_type': person}\"> Germaine Dulac</a> (1882-1942) nunca tenha feito parte do movimento, ela também se interessava pelo inconsciente e utilizou o roteiro surrealista de <i>Antonin Artaud</i> para <a href=\"https://_{type: 'screen', 'id': 118014, 'screen_type': movie}\"> La coquille et le clergyman </a> (BR: A concha e o clérigo, 1928), uma narrativa fragmentada e lírica centrada nas alucinações eróticas de um clérigo. No entanto, Artaud achou que o trabalho de câmera fluido e os efeitos óticos de Dulac eram incompatíveis com o surrealismo e promoveu um protesto clamoroso com outros artistas na estreia do filme."
+    },
+    {
+      "type": "gif",
+      "gif_image": {
+        "image_type": "local",
+        "url": "la_coquille",
+        "thumbnail": {
+          "image_type": "online",
+          "url": "https://img.youtube.com/vi/-NqrwaxzP_U/0.jpg",
+          "style": {
+            "scale_type": "center_crop"
+          }
+        },
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Cenas de A concha e o clérigo (1928)",
+        "contentText": "As imagens provocadoras de <i>A concha e o clérigo</i>, de Dulac, misturam a fantasia para explorar o subconsciente."
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "<i>A concha e o clérigo</i> foi ofuscado pelo aclamadíssimo <a href=\"https://_{type: 'screen', 'id': 626, 'screen_type': movie}\"> Un chien andalou</a> (BR: Um cão andaluz, 1929), dirigido por <a href=\"https://_{type: 'screen', 'id': 793, 'screen_type': person}\"> Luis Buñuel </a> (1900-1983), que também escreveu o roteiro, em parceria com <a href=\"https://_{type: 'screen', 'id': 8988, 'screen_type': person}\"> Salvador Dali</a>. O filme ajudou os dois a serem aceitos como surrealistas e o segundo filme de Buñuel, <a href=\"https://_{type: 'screen', 'id': 5729, 'screen_type': movie}\">L'Âge d'Or</a> (BR: A idade do ouro, 1930), também foi fiel ao movimento."
+    },
+    {
+      "type": "text",
+      "content_text": "O filme gerou escândalo e houve tumulto durante a estreia, depois da qual ele foi proibido por quase 50 anos. Buñuel rompeu com os surrealistas em 1932, mas continuou a produzir filmes do gênero ao longo de sua carreira. Embora mais tarde tenha se exilado de sua Espanha natal, em 1960 aceitou um convite do governo de Francisco Franco para realizar uma película."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "O surrealismo é baseado na crença na realidade superior de certas formas de associações anteriormente negligenciadas, na onipotência do sonho (...).",
+        "author": "André Breton"
+      },
+      "quote_mark_color": "md_blue_600"
+    },
+    {
+      "type": "text",
+      "content_text": "O diretor demonstrou não ter perdido nada de sua verve subversiva e o filme, <a href=\"https://_{type: 'screen', 'id': 4497, 'screen_type': movie}\">Viridiana</a> (1961) - com sua paródia do quadro <i>A Última Ceia</i>, de Leonardo da Vinci, com um bando de vagabundos arruaceiros no lugar dos apóstolos - foi banido do país até a morte de Franco."
+    },
+    {
+      "type": "text",
+      "content_text": "O surrealismo aos poucos chegou ao cinema comercial. Em 1945, Dal foi contratado para realizar uma sequência de sonho para o thriller freudiano <a href=\"https://_{type: 'screen', 'id': 4174, 'screen_type': movie}\"> Spellbound</a> (BR: Quando fala o coração, 1945), de <a href=\"https://_{type: 'screen', 'id': 2636, 'screen_type': person}\"> Alfred Hitchcock</a> (1899 -1980). No ano seguinte, colaborou com <a href=\"https://_{type: 'screen', 'id': 2106, 'screen_type': person}\"> Walt Disney</a> (1901-1966) em um curta de animação, <a href=\"https://_{type: 'screen', 'id': 35114, 'screen_type': movie}\">Destino</a> (2003), que ficou engavetado até 2003, quando foi enfim concluído por animadores do estúdio."
+    },
+    {
+      "type": "text",
+      "content_text": "A influência do cinema surrealista é significativa e sua imagística onírica, os <i>non sequiturs</i>, a utilização da simbologia freudiana e as sobreposições bizarras estão presentes nos filmes de diretores como <a href=\"https://_{type: 'screen', 'id': 4415, 'screen_type': person}\"> Federico Fellini </a> (1970-1993), <a href=\"https://_{type: 'screen', 'id': 146964, 'screen_type': person}\"> Kenneth Anger </a> (1927) e <a href=\"https://_{type: 'screen', 'id': 5602, 'screen_type': person}\"> David Lynch </a> (1946)."
+    },
+    {
+      "type": "text",
+      "content_text": "No verão de 1929, uma plateia parisiense se reuniu para a exibição de um novo filme. Nos bastidores, o diretor esperava com um balde cheio de pedras para atirar nos espectadores caso a película fosse mal recebida. ",
+      "content_title": "Um marco para o movimento que o inspirou "
+    },
+    {
+      "type": "video",
+      "video_id": "SJndr9mRGgE",
+      "information": {
+        "contentTitle": "Era uma vez...",
+        "contentText": " Em uma sacada iluminada pelo luar, um homem (Buñuel) afia sua navalha. Ele então segura a cabeça de uma Jovem (Simone Mareuil) e usa a lâmina para cortar seu globo ocular, fazendo o humor vítreo escorrer pelo rosto. Buñuel disse ter usado o olho de um bezerro morto para a cena.",
+        "source": "Youtube: Canal <i> losteyeways </i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Na tela, una navalha é amolada em um afiador de couro. Um homem com um cigarro pendurado na boca testa a lâmina no polegar, vertendo sangue. Uma jovem encara uma plateia invisível, inexpressiva. A mão do homem separa suas pálpebras. Uma Lua cheia paira no céu e uma nuvem pontuda passa por ela. A navalha corta o globo ocular."
+    },
+    {
+      "type": "text",
+      "content_text": "Em sua autobiografia, <strong>Luis Buñuel</strong> descreve como ele e o artista <i>Salvador Dali</i> trabalharam em <strong>Um cão andaluz</strong>: \"<i>Nossa única regra era muito simples: não aceitaríamos nenhuma ideia ou imagem que pudesse se prestar a uma explicação racional de qualquer espécie. Precisávamos abrir todas as portas da irracionalidade e manter apenas as imagens que nos surpreendem, sem tentamos explicar por que</i>”. O filme oferece a ilusão de uma narrativa: ele começa com a mais simples de todas as invocações de uma história, \"<i>Era uma vez...</i> \", e esse intertítulo impõe uma cronologia arbitrária e sem sentido."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "O surrealismo é destrutivo, mas destrói apenas o que considera ser algemas que limitam nossa visão.",
+        "author": "Salvador Dalí"
+      },
+      "quote_mark_color": "md_red_700"
+    },
+    {
+      "type": "text",
+      "content_text": "A película é um fluxo de imagens subversivas: um homem semitravestido, com uma touca e um saiote sobre um terno, anda de bicicleta pelas ruas de Paris; uma jovem enigmática cutuca uma mão decepada caída na rua; formigas saem de um buraco na palma da mão de uma pessoa viva; para alcançar o objeto do seu desejo um homem precisa puxar arreios presos a dois padres e dois pianos de cauda, cada qual com um jumento morto em cima. Um cão andaluz pode não ter sido o primeiro filme surrealista, mas é um marco para o movimento que o inspirou."
+    },
+    {
       "type": "block_special",
       "title": "Timeline de Acontecimentos: 1895 a 1929",
       "click": {

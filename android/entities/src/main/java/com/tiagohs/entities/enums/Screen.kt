@@ -6,5 +6,8 @@ enum class Screen(
     val screenName: String
 ) {
     @SerializedName("timeline")
-    TIMELINE_SCREEN("timeline")
+    TIMELINE_SCREEN("timeline"),
+
+    @SerializedName("link_online")
+    LINK_ONLINE("link_online")
 }

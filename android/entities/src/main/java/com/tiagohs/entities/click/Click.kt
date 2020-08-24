@@ -7,7 +7,10 @@ data class Click(
     @SerializedName("screen")
     var screen: Screen? = null,
 
-    @SerializedName("video_id")
+    @SerializedName("button_text")
+    var buttonText: String? = null,
+
+    @SerializedName("parameters")
     val parameters: List<ScreenParameter>? = null
 ) {
 }
