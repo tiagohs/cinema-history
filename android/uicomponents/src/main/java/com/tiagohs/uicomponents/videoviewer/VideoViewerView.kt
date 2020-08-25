@@ -41,7 +41,7 @@ class VideoViewerView @JvmOverloads constructor(context: Context, attrs: Attribu
 
     private fun loadVideoThumbnail(playContainerView: View) {
         val vieoThumbnailUrl = "https://img.youtube.com/vi/${videoId}/0.jpg"
-        val image = Image(ImageType.ONLINE, vieoThumbnailUrl, imageStyle = ImageStyle(scaleType = "center_crop"))
+        val image = Image(ImageType.ONLINE, url = vieoThumbnailUrl, imageStyle = ImageStyle(scaleType = "center_crop"))
 
         playContainerView.videoThumb.loadImage(image) {
             playContainerView.playCard.show()
