@@ -3,6 +3,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -34,7 +35,8 @@
                 android:id="@+id/contentContainer"
                 android:alpha="0"
                 android:background="@color/md_white_1000"
-                android:fitsSystemWindows="true">
+                android:fitsSystemWindows="true"
+                tools:alpha="1">
 
                 <androidx.constraintlayout.widget.Guideline
                     android:layout_width="wrap_content"
@@ -120,6 +122,22 @@
                         />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="false"
+                    android:text="@string/powerd_tmdb"
+                    android:textColor="@color/md_grey_600"
+                    android:fontFamily="@font/proxima_nova_bold_italic"
+                    android:textSize="@dimen/text_size_zeplin_18pt"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guidelineRight"
+                    app:layout_constraintEnd_toEndOf="parent"
+                />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -38,7 +38,6 @@ class MovieInfoSummaryViewHolder(
         )
     }
 
-
     private fun setupExternalLinks(movie: Movie) {
         setupExternalLinkItem(
             movie.externalIds?.facebookId,

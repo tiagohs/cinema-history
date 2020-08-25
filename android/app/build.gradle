@@ -4,10 +4,21 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
+apply plugin: 'com.google.firebase.crashlytics'
+
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
     compileSdkVersion globalConfiguration["compileSDK"]
+
+    signingConfigs {
+        config {
+            keyAlias 'CineHistory'
+            keyPassword '14789632'
+            storeFile file('../keystore/keystore.keystore')
+            storePassword '14789632'
+        }
+    }
 
     defaultConfig {
         applicationId "com.tiagohs.cinema_history"
@@ -20,6 +31,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String", "THEMOVIEDB_API_KEY", '"dac4d50f24dee29513738d8fa3470a3f"'
+
+        signingConfig signingConfigs.config
     }
 
     androidExtensions {
@@ -89,6 +102,7 @@ dependencies {
     implementation dependencies.firebaseStorage
     implementation dependencies.firebaseAnalytics
     implementation dependencies.firebaseUiStorage
+    implementation dependencies.firebaseCrashlytics
 
     // Preference
     implementation dependencies.preference

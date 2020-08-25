@@ -39,6 +39,7 @@
     <string name="version">Versão %1s</string>
     <string name="responsable">Desenvolvimento e Pesquisa por Tiago Silva</string>
     <string name="terms">Termos</string>
+    <string name="privacy">Política de Privacidade</string>
     <string name="app_description">%1s é um aplicativo grátis que busca, de uma forma divertida e intuitiva, levar a história da sétima arte a todos. Através de imagens, vídeos, entrevistas e infográficos, apresentaremos a trajetória do cinema desde a primeira exibição dos irmãos Lumière até os dias de hoje. Nos baseamos na literatura e em documentários e traduzimos para essa nova mídia. Divirta-se!</string>
 
     <!-- Home -->
@@ -87,7 +88,7 @@
 
     <!-- Arrays -->
     <string-array name="app_language_values">
-        <item>Portuguese Bra</item>
+        <item>Português Brasil</item>
     </string-array>
     <string-array name="movie_language_values">
         <item>Português Brasil</item>

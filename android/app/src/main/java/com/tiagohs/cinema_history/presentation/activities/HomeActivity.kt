@@ -14,6 +14,7 @@ import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.helpers.extensions.getResourceString
 import kotlinx.android.synthetic.main.activity_home.*
+import java.lang.RuntimeException
 
 
 class HomeActivity: BaseActivity() {

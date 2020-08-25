@@ -33,9 +33,11 @@ class AboutActivty : AppCompatActivity() {
         }
         val termsElement = Element().apply {
             title = getResourceString(R.string.terms)
-            onClickListener = View.OnClickListener {
-
-            }
+            onClickListener = View.OnClickListener { openLink(getResourceString(R.string.terms_link)) }
+        }
+        val politicsElement = Element().apply {
+            title = getResourceString(R.string.privacy)
+            onClickListener = View.OnClickListener { openLink(getResourceString(R.string.privacy_link)) }
         }
         val commonsCreativeElement = Element().apply {
             title = getResourceString(R.string.creative_commons)
@@ -82,7 +84,8 @@ class AboutActivty : AppCompatActivity() {
             .addItem(adsElement)
             .addItem(referencesElement)
             .addEmail(getResourceString(R.string.email), getResourceString(R.string.contact_us))
-            //.addItem(termsElement)
+            .addItem(termsElement)
+            .addItem(politicsElement)
             .addGroup(getResourceString(R.string.credits_terms))
             .addItem(commonsCreativeElement)
             .addItem(tmdbTermesDescriptionElement)
