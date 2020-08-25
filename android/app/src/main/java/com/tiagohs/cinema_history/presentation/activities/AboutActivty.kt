@@ -36,6 +36,12 @@ class AboutActivty : AppCompatActivity() {
 
             }
         }
+        val referencesElement = Element().apply {
+            title = getResourceString(R.string.activity_references)
+            onClickListener = View.OnClickListener {
+                startActivity(ReferenceActivity.newIntent(this@AboutActivty))
+            }
+        }
         val copyRightsElement = Element().apply {
             val copyrights = String.format(getString(R.string.copy_right), Calendar.getInstance().get(Calendar.YEAR))
 
@@ -58,6 +64,7 @@ class AboutActivty : AppCompatActivity() {
             .addItem(Element().setTitle(getString(R.string.version, BuildConfig.VERSION_NAME)))
             .addItem(adsElement)
             .addItem(termsElement)
+            .addItem(referencesElement)
             .addGroup(getResourceString(R.string.sugestions))
             .addEmail("tiago.hsilva@gmail.com", getResourceString(R.string.contact_us))
             .addItem(copyRightsElement)

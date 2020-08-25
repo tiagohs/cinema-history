@@ -5,11 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/activity_vertical_margin_2x"
-    android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
-    android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
-    android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -18,14 +14,18 @@
         app:cardElevation="@dimen/activity_vertical_margin_1.2x"
         app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
         android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/mediaDescription"
+            android:id="@+id/textReference"
             android:textColor="@color/md_black_1000"
             android:textSize="@dimen/text_size_zeplin_22pt"
             android:fontFamily="@font/proxima_nova_regular"

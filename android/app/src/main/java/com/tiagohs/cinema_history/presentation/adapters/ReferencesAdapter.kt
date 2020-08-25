@@ -24,7 +24,7 @@ class ReferencesAdapter(
     override fun onCreateViewHolder(viewType: Int, view: View): BaseViewHolder<Reference> =
         when (viewType) {
             ReferenceType.MEDIA.ordinal -> MediaViewHolder(view, onLinkClick)
-            ReferenceType.TEXT.ordinal -> TextViewHolder(view, onLinkClick)
+            ReferenceType.TEXT.ordinal -> TextViewHolder(view)
             else -> object : BaseViewHolder<Reference>(view) {}
         }
 

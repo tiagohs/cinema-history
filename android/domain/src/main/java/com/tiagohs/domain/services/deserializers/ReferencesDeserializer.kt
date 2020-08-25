@@ -4,6 +4,7 @@ import com.google.gson.*
 import com.tiagohs.entities.enums.ReferenceType
 import com.tiagohs.entities.references.Reference
 import com.tiagohs.entities.references.ReferenceBook
+import com.tiagohs.entities.references.ReferenceText
 import java.lang.reflect.Type
 
 class ReferencesDeserializer: JsonDeserializer<Reference> {
@@ -18,7 +19,7 @@ class ReferencesDeserializer: JsonDeserializer<Reference> {
 
         return when (type) {
             ReferenceType.MEDIA -> Gson().fromJson(obj, ReferenceBook::class.java)
-            ReferenceType.TEXT -> Gson().fromJson(obj, ReferenceBook::class.java)
+            ReferenceType.TEXT -> Gson().fromJson(obj, ReferenceText::class.java)
         }
     }
 }

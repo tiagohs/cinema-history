@@ -7,8 +7,5 @@ import java.io.Serializable
 
 class ReferenceText(
     @SerializedName("text")
-    var text: String,
-
-    @SerializedName("link")
-    var link: String? = null
+    var text: String
 ): Reference(), Serializable
