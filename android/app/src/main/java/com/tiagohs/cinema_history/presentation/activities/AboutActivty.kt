@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.tiagohs.cinema_history.BuildConfig
 import com.tiagohs.cinema_history.R
 import com.tiagohs.helpers.extensions.getResourceString
+import com.tiagohs.helpers.extensions.openLink
 import mehdi.sakout.aboutpage.AboutPage
 import mehdi.sakout.aboutpage.Element
 import java.util.*
@@ -35,6 +36,22 @@ class AboutActivty : AppCompatActivity() {
             onClickListener = View.OnClickListener {
 
             }
+        }
+        val commonsCreativeElement = Element().apply {
+            title = getResourceString(R.string.creative_commons)
+            onClickListener = View.OnClickListener { openLink(getResourceString(R.string.creative_commons_link)) }
+        }
+        val tmdbTermesDescriptionElement = Element().apply {
+            title = getResourceString(R.string.tmdb_terms_description)
+            onClickListener = View.OnClickListener { }
+        }
+        val tmdbTermesLinkElement = Element().apply {
+            title = getResourceString(R.string.tmdb_terms_title)
+            onClickListener = View.OnClickListener { openLink(getResourceString(R.string.tmdb_terms_link)) }
+        }
+        val tmdbApiTermesLinkElement = Element().apply {
+            title = getResourceString(R.string.tmdb_api_terms_title)
+            onClickListener = View.OnClickListener { openLink(getResourceString(R.string.tmdb_api_terms_link)) }
         }
         val referencesElement = Element().apply {
             title = getResourceString(R.string.activity_references)
@@ -63,10 +80,14 @@ class AboutActivty : AppCompatActivity() {
             .setDescription(getString(R.string.app_description, getResourceString(R.string.app_name)))
             .addItem(Element().setTitle(getString(R.string.version, BuildConfig.VERSION_NAME)))
             .addItem(adsElement)
-            .addItem(termsElement)
             .addItem(referencesElement)
-            .addGroup(getResourceString(R.string.sugestions))
-            .addEmail("tiago.hsilva@gmail.com", getResourceString(R.string.contact_us))
+            .addEmail(getResourceString(R.string.email), getResourceString(R.string.contact_us))
+            //.addItem(termsElement)
+            .addGroup(getResourceString(R.string.credits_terms))
+            .addItem(commonsCreativeElement)
+            .addItem(tmdbTermesDescriptionElement)
+            .addItem(tmdbTermesLinkElement)
+            .addItem(tmdbApiTermesLinkElement)
             .addItem(copyRightsElement)
             .create()
     }

@@ -32,7 +32,10 @@
     <string name="activity_about">Sobre</string>
     <string name="buy">Comprar</string>
     <string name="contact_us">Entre em contato</string>
-    <string name="sugestions">Críticas ou sugestões</string>
+    <string name="credits_terms">Créditos e Termos</string>
+    <string name="tmdb_terms_description">As informações dos filmes, atores, diretores e as imagens são fornecidas pela API TMDb mas não é endossado ou certificado pelo TMDb</string>
+    <string name="tmdb_terms_title">TMDB Termos de Uso</string>
+    <string name="tmdb_api_terms_title">TMDB API Termos de Uso</string>
     <string name="version">Versão %1s</string>
     <string name="responsable">Desenvolvimento e Pesquisa por Tiago Silva</string>
     <string name="terms">Termos</string>
