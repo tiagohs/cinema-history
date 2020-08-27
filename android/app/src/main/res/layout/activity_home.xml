@@ -373,7 +373,6 @@
                             android:layout_height="@dimen/home_directors_card_height"
                             android:scaleType="centerCrop"
                             android:id="@+id/directorsImage"
-                            android:src="@drawable/img_david_fincher"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
