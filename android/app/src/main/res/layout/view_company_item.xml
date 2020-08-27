@@ -18,7 +18,7 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/company_image_height"
         android:id="@+id/companyImage"
-        android:src="@drawable/ic_local_movies_black_24dp"
+        app:srcCompat="@drawable/ic_local_movies_black_24dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

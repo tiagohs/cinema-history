@@ -9,7 +9,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:id="@+id/controlButton"
-        android:src="@drawable/ic_pause_black_24dp"
+        app:srcCompat="@drawable/ic_pause_black_24dp"
         android:background="?selectableItemBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

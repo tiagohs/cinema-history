@@ -133,7 +133,7 @@
                     <ImageView
                         android:layout_width="@dimen/home_icon_size"
                         android:layout_height="@dimen/home_icon_size"
-                        android:src="@drawable/ic_logo_light"
+                        app:srcCompat="@drawable/ic_logo_light"
                         android:contentDescription="@string/description_logo_app"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"

@@ -30,7 +30,7 @@
                 android:layout_height="@dimen/messageview_icon_size"
                 android:layout_marginStart="@dimen/activity_vertical_margin_0.5x"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:src="@drawable/ic_error"
+                app:srcCompat="@drawable/ic_error"
                 android:tint="@color/md_white_1000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

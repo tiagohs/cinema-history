@@ -179,7 +179,7 @@
                             android:focusable="true"
                             android:clickable="true"
                             android:background="?selectableItemBackground"
-                            android:src="@drawable/ic_facebook_grey" />
+                            app:srcCompat="@drawable/ic_facebook_grey" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -199,7 +199,7 @@
                             android:focusable="true"
                             android:clickable="true"
                             android:background="?selectableItemBackground"
-                            android:src="@drawable/ic_twitter_grey" />
+                            app:srcCompat="@drawable/ic_twitter_grey" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -218,7 +218,7 @@
                             android:focusable="true"
                             android:clickable="true"
                             android:background="?selectableItemBackground"
-                            android:src="@drawable/ic_instagram_grey" />
+                            app:srcCompat="@drawable/ic_instagram_grey" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
