@@ -2,6 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinator"
@@ -98,6 +99,19 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/shareButton"
+                app:srcCompat="@drawable/ic_share"
+                android:background="?selectableItemBackground"
+                android:layout_marginEnd="@dimen/activity_vertical_margin_0.5x"
+                android:paddingEnd="@dimen/activity_vertical_margin_0.5x"
+                android:paddingStart="@dimen/activity_vertical_margin_0.5x"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/toolbarNextButton"
+            />
 
             <Button
                 android:layout_width="wrap_content"

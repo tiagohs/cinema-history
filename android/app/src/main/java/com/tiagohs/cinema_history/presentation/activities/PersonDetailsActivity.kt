@@ -4,6 +4,7 @@ import android.animation.Animator
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.view.animation.AccelerateInterpolator
 import com.tiagohs.cinema_history.R
@@ -22,7 +23,7 @@ import javax.inject.Inject
 class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_person_details
-    override fun onGetMenuLayoutId(): Int = 0
+    override fun onGetMenuLayoutId(): Int = R.menu.menu_person
 
     @Inject
     lateinit var presenter: PersonDetailsPresenter
@@ -39,6 +40,18 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
 
         presenter.onBindView(this)
         presenter.fetchPersonDetails(personId, settingManager.getMovieISOLanguage())
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.action_share -> {
+
+                return true
+            }
+            else -> return false
+        }
+
     }
 
     private fun setupSettingsManager() {

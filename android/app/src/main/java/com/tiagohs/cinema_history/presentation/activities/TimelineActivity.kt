@@ -3,6 +3,7 @@ package com.tiagohs.cinema_history.presentation.activities
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.core.view.size
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
@@ -10,6 +11,7 @@ import com.tiagohs.domain.presenter.TimelinePagePresenter
 import com.tiagohs.cinema_history.presentation.adapters.TimelinePagerAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.views.TimelinePageView
+import com.tiagohs.helpers.extensions.startActivityWithSlideAnimation
 import kotlinx.android.synthetic.main.activity_timeline.*
 import javax.inject.Inject
 
@@ -17,7 +19,7 @@ import javax.inject.Inject
 class TimelineActivity: BaseActivity(), TimelinePageView {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_timeline
-    override fun onGetMenuLayoutId(): Int = 0
+    override fun onGetMenuLayoutId(): Int = R.menu.menu_timeline
 
     @Inject
     lateinit var presenter: TimelinePagePresenter
@@ -35,6 +37,18 @@ class TimelineActivity: BaseActivity(), TimelinePageView {
         startIndex = intent?.extras?.getString(VIEWPAGER_INDEX)?.toInt() ?: 0
 
         presenter.fetchTimelineItems()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.action_share -> {
+
+                return true
+            }
+            else -> return false
+        }
+
     }
 
     override fun bindTimelineIDs(list: List<Int>) {

@@ -110,12 +110,14 @@ class HistoryPagesActivity: BaseActivity() {
     fun showFooter() {
         animate(footerContent, 0f, DecelerateInterpolator(2f))
         animate(toolbarNextButton, 0f, DecelerateInterpolator(2f))
+        animate(shareButton, 0f, DecelerateInterpolator(2f))
         animate(toolbarImageCardContainer, 0f, DecelerateInterpolator(4f))
     }
 
     fun hideFooter() {
         animate(footerContent, footerContent.height.toFloat(), AccelerateInterpolator(2f))
         animate(toolbarNextButton, toolbarNextButton.height.toFloat(), AccelerateInterpolator(2f))
+        animate(shareButton, shareButton.height.toFloat(), AccelerateInterpolator(2f))
         animate(toolbarImageCardContainer, toolbarImageCardContainer.height.toFloat() + 10.convertIntToDp(this), AccelerateInterpolator(2f))
     }
 

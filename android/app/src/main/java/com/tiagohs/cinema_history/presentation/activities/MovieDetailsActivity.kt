@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
@@ -34,7 +35,7 @@ import javax.inject.Inject
 class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_movie_details
-    override fun onGetMenuLayoutId(): Int = 0
+    override fun onGetMenuLayoutId(): Int = R.menu.menu_movie
 
     @Inject
     lateinit var presenter: MovieDetailsPresenter
@@ -53,6 +54,18 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
         presenter.onBindView(this)
         presenter.fetchMovieDetails(movieId, settingManager.getMovieISOLanguage())
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.action_share -> {
+
+                return true
+            }
+            else -> return false
+        }
+
     }
 
     private fun setupSettingsManager() {
