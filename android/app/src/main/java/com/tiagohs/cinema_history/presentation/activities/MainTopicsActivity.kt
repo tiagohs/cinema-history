@@ -54,7 +54,12 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
     }
 
     override fun setupArguments() {
-        mainTopicsType = intent.getSerializableExtra(MAIN_TOPIC_TYPE) as? MainTopicsType
+        val type = intent.getStringExtra(MAIN_TOPIC_TYPE)
+
+        if (type != null) {
+            mainTopicsType = MainTopicsType.getContentType(type)
+        }
+
         isDarkMode = intent.getBooleanExtra(DARK_MODE, false)
     }
 
@@ -157,7 +162,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
         fun newIntent(mainTopicType: MainTopicsType, context: Context, darkMode: Boolean = false) : Intent {
             val intent = Intent(context, MainTopicsActivity::class.java)
 
-            intent.putExtra(MAIN_TOPIC_TYPE, mainTopicType)
+            intent.putExtra(MAIN_TOPIC_TYPE, mainTopicType.type)
             intent.putExtra(DARK_MODE, darkMode)
 
             return intent

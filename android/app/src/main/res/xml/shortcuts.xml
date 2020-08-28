@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="ShortcutHistory"
+        android:icon="@mipmap/ic_shorcut_history_round"
+        android:shortcutShortLabel="@string/history_cinema_title">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.tiagohs.cinema_history"
+            android:targetClass="com.tiagohs.cinema_history.presentation.activities.MainTopicsActivity">
+            <extra android:name="MAIN_TOPIC_TYPE" android:value="history_cinema" />
+            <extra android:name="DARK_MODE" android:value="true" />
+        </intent>
+        <categories
+            android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="ShortcutMilMovies"
+        android:icon="@mipmap/ic_shorcut_milmovies_round"
+        android:shortcutShortLabel="@string/mil_movies_title">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.tiagohs.cinema_history"
+            android:targetClass="com.tiagohs.cinema_history.presentation.activities.MainTopicsActivity">
+            <extra android:name="MAIN_TOPIC_TYPE" android:value="mil_movies" />
+            <extra android:name="DARK_MODE" android:value="false" />
+        </intent>
+        <categories
+            android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="ShortcutTimeline"
+        android:icon="@mipmap/ic_shorcut_timeline_round"
+        android:shortcutShortLabel="@string/timeline_title">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.tiagohs.cinema_history"
+            android:targetClass="com.tiagohs.cinema_history.presentation.activities.TimelineActivity" />
+        <categories
+            android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="ShortcutDirectors"
+        android:icon="@mipmap/ic_shorcut_directors_round"
+        android:shortcutShortLabel="@string/directors_title">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.tiagohs.cinema_history"
+            android:targetClass="com.tiagohs.cinema_history.presentation.activities.MainTopicsActivity">
+            <extra android:name="MAIN_TOPIC_TYPE" android:value="directors" />
+            <extra android:name="DARK_MODE" android:value="false" />
+        </intent>
+        <categories
+            android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+<!--    <shortcut-->
+<!--        android:shortcutId="ShortcutTheaters"-->
+<!--        android:icon="@mipmap/ic_shortcut_theaters"-->
+<!--        android:shortcutShortLabel="@string/shortcut_theater_list_label">-->
+<!--        <intent-->
+<!--            android:action="android.intent.action.VIEW"-->
+<!--            android:targetPackage="com.ingresso.cinemas"-->
+<!--            android:targetClass="br.com.ingresso.ui.activities.ShortcutActivity"-->
+<!--            android:data="ingressocinema://theaters"/>-->
+<!--        <categories-->
+<!--            android:name="android.shortcut.conversation"/>-->
+<!--    </shortcut>-->
+
+<!--    <shortcut-->
+<!--        android:shortcutId="ShortcutMovies"-->
+<!--        android:icon="@mipmap/ic_shortcut_movies"-->
+<!--        android:shortcutShortLabel="@string/shortcut_movie_list_label">-->
+<!--        <intent-->
+<!--            android:action="android.intent.action.VIEW"-->
+<!--            android:targetPackage="com.ingresso.cinemas"-->
+<!--            android:targetClass="br.com.ingresso.ui.activities.ShortcutActivity"-->
+<!--            android:data="ingressocinema://movies"/>-->
+<!--        <categories-->
+<!--            android:name="android.shortcut.conversation"/>-->
+<!--    </shortcut>-->
+
+</shortcuts>
