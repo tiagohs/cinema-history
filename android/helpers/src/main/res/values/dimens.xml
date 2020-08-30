@@ -67,6 +67,7 @@
     <dimen name="person_profile_item_inner_circle_size">6dp</dimen>
     <dimen name="person_profile_item_inner_circle_radius">3dp</dimen>
 
+    <dimen name="viewpager_indicator_size">6dp</dimen>
     <!-- =========== SCREENS =========== -->
 
     <!-- HOME -->

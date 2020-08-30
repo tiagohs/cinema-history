@@ -10,6 +10,7 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.Interpolator
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayoutMediator
 import com.tiagohs.cinema_history.R
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.loadImage
@@ -142,6 +143,9 @@ class HistoryPagesActivity: BaseActivity() {
             adapter = adapterPager
             currentItem = itemSelectedPosition
         }
+
+        TabLayoutMediator(sumarioContentTabLayout, sumarioContentViewPager)
+        { tab, position ->}.attach()
     }
 
     companion object {

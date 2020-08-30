@@ -100,6 +100,20 @@
 
             </androidx.cardview.widget.CardView>
 
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/sumarioContentTabLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:tabBackground="@drawable/tab_pager_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/activity_vertical_margin_3x"
+                android:layout_marginEnd="@dimen/activity_vertical_margin_3x"
+                app:layout_constraintStart_toEndOf="@id/toolbarImageCardContainer"
+                app:layout_constraintEnd_toStartOf="@id/shareButton"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="?attr/actionBarSize"
