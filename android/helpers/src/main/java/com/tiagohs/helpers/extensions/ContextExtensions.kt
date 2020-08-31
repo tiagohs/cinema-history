@@ -71,18 +71,26 @@ val Context?.screenHeight: Int
 /***** RESOURCES ******/
 
 fun Context.getResourceColor(colorName: String?): Int {
-    val colorIdentifier = resources.getIdentifier(colorName, "color", packageName)
+    return try {
+        val colorIdentifier = resources.getIdentifier(colorName, "color", packageName)
 
-    return getResourceColor(colorIdentifier)
+        getResourceColor(colorIdentifier)
+    } catch (ex: Exception) {
+        R.color.md_white_1000
+    }
 }
 
 @Suppress("DEPRECATION")
 fun Context.getResourceColor(resource: Int): Int {
 
-    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-        getColor(resource)
-    } else {
-        resources.getColor(resource)
+    return try {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getColor(resource)
+        } else {
+            resources.getColor(resource)
+        }
+    } catch (ex: Exception) {
+        R.color.md_white_1000
     }
 }
 
@@ -91,9 +99,13 @@ fun Context?.getResourceDrawable(name: String): Drawable? {
         return null
     }
 
-    val drawableIdentifier = resources.getIdentifier(name, "drawable", packageName)
+    return try {
+        val drawableIdentifier = resources.getIdentifier(name, "drawable", packageName)
 
-    return getResourceDrawable(drawableIdentifier)
+        getResourceDrawable(drawableIdentifier)
+    } catch (ex: Exception) {
+        null
+    }
 }
 
 @Suppress("DEPRECATION")
@@ -102,10 +114,14 @@ fun Context?.getResourceDrawable(resource: Int): Drawable? {
         return null
     }
 
-    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-        getDrawable(resource)
-    } else {
-        resources.getDrawable(resource)
+    return try {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getDrawable(resource)
+        } else {
+            resources.getDrawable(resource)
+        }
+    } catch (ex: Exception) {
+        null
     }
 }
 
@@ -115,7 +131,11 @@ fun Context?.getResourceString(resource: Int?): String {
     }
     resource ?: return ""
 
-    return resources.getString(resource)
+    return try {
+        resources.getString(resource)
+    } catch (ex: Exception) {
+        ""
+    }
 }
 
 fun Context?.getResourceString(name: String?): String {
@@ -124,9 +144,13 @@ fun Context?.getResourceString(name: String?): String {
     }
     name ?: return ""
 
-    val stringIdentifier = resources.getIdentifier(name, "string", packageName)
+    return try {
+        val stringIdentifier = resources.getIdentifier(name, "string", packageName)
 
-    return getResourceString(stringIdentifier)
+        getResourceString(stringIdentifier)
+    } catch (ex: Exception) {
+        ""
+    }
 }
 
 fun Context?.getResourceArrayString(resource: Int?): List<String> {

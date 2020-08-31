@@ -28,6 +28,12 @@
     <string name="action_share">Compartilhar</string>
     <string name="activity_settings">Configurações</string>
     <string name="activity_references">Referências</string>
+    <string name="language_title">Idioma</string>
+    <string name="language_app_title">Idioma do conteúdo História do Cinema</string>
+    <string name="language_movie_title">Idioma do Filme</string>
+    <string name="general_title">Geral</string>
+    <string name="references_bibliographic_title">Referência Bibliográfica</string>
+    <string name="references_bibliographic_description">Livros, links, artigos. A referência utilizada no desenvolvimento do conteúdo.</string>
 
     <!-- About -->
     <string name="activity_about">Sobre</string>
@@ -88,11 +94,13 @@
     <string name="person_photo_description">Foto de %1s.</string>
 
     <!-- Arrays -->
-    <string-array name="app_language_values">
-        <item>Português Brasil</item>
-    </string-array>
-    <string-array name="movie_language_values">
-        <item>Português Brasil</item>
-        <item>Inglês</item>
-    </string-array>
+<!--    <string-array name="app_language_values">-->
+<!--        <item>Português Brasil</item>-->
+<!--    </string-array>-->
+<!--    <string-array name="movie_language_values">-->
+<!--        <item>Português Brasil</item>-->
+<!--        <item>Inglês</item>-->
+<!--    </string-array>-->
+
+
 </resources>

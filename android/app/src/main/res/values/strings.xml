@@ -42,6 +42,12 @@
     <string name="action_share">Share</string>
     <string name="activity_settings">Settings</string>
     <string name="activity_references">References</string>
+    <string name="language_title">Language</string>
+    <string name="language_app_title">History Pages Language</string>
+    <string name="language_movie_title">Movie Language</string>
+    <string name="general_title">General</string>
+    <string name="references_bibliographic_title">References</string>
+    <string name="references_bibliographic_description">Books, links, articles. The base reference for this app.</string>
 
     <!-- About -->
     <string name="activity_about">About</string>
@@ -112,10 +118,14 @@
 
     <!-- Arrays -->
     <string-array name="app_language_values">
-        <item>Portuguese Brazil</item>
+        <item>@string/pt_br_country_name</item>
+    </string-array>
+    <string-array name="movie_language_entries">
+        <item>@string/pt_br_country_name</item>
+        <item>@string/en_us_country_name</item>
     </string-array>
     <string-array name="movie_language_values">
-        <item>Portuguese Brazil</item>
-        <item>English</item>
+        <item>pt-BR</item>
+        <item>en-US</item>
     </string-array>
 </resources>

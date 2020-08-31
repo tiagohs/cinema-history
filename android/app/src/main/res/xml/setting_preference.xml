@@ -5,42 +5,42 @@
 
     <androidx.preference.PreferenceCategory
         app:key="language_category"
-        app:title="Idioma">
+        app:title="@string/language_title">
 
         <androidx.preference.ListPreference
             app:key="language_app"
-            app:title="Idioma do App"
-            app:summary="Português Brasil"
+            app:title="@string/language_app_title"
+            app:summary="%s"
             app:icon="@drawable/ic_language_grey_24dp"
             android:entryValues="@array/app_language_values"
             android:entries="@array/app_language_values"
-            app:defaultValue="pt-BR"/>
+            app:defaultValue="Português Brasil"/>
 
         <androidx.preference.ListPreference
             app:key="language_movies"
-            app:title="Idioma do Filme"
-            app:summary="Português Brasil"
+            app:title="@string/language_movie_title"
+            app:summary="%s"
             app:icon="@drawable/ic_language_grey_24dp"
             android:entryValues="@array/movie_language_values"
-            android:entries="@array/movie_language_values"
-            app:defaultValue="pt-BR"/>
+            android:entries="@array/movie_language_entries"
+            app:defaultValue="pt_BR"/>
 
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory
         app:key="help_category"
-        app:title="Geral">
+        app:title="@string/general_title">
 
         <androidx.preference.Preference
             app:key="references"
-            app:summary="Livros, links, artigos. A referência utilizada no desenvolvimento do conteúdo."
-            app:title="Referência Bibliográfica"
+            app:summary="@string/references_bibliographic_description"
+            app:title="@string/references_bibliographic_title"
             app:icon="@drawable/ic_open_book_grey_24dp"
             app:selectable="true" />
 
         <androidx.preference.Preference
             app:key="about"
-            app:title="Sobre"
+            app:title="@string/action_about"
             app:icon="@drawable/ic_info_grey_24dp"
             app:selectable="true"/>
 

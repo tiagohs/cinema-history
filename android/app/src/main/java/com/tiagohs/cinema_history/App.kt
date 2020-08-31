@@ -16,8 +16,7 @@ class App: Application() {
         appContext = applicationContext
 
         configureDagger()
-
-        Timber.plant(Timber.DebugTree())
+        configureTimber()
 
         // MobileAds.initialize(this, BuildConfig.ADMOB_APP_ID);
     }
@@ -27,6 +26,13 @@ class App: Application() {
         appComponent = DaggerAppComponent.builder()
             .appModule(AppModule(this))
             .build()
+    }
+
+    private fun configureTimber() {
+        if (BuildConfig.DEBUG) {
+            Timber.plant(Timber.DebugTree())
+        }
+
     }
 
     companion object {

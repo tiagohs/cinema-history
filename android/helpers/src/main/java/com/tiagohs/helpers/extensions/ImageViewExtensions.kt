@@ -94,7 +94,9 @@ fun ImageView.loadImage(
             glide.load(image.url)
         }
         ImageType.LOCAL -> {
-            glide.load(context.getResourceDrawable(image.url))
+            val img = context.getResourceDrawable(image.url) ?: return
+
+            glide.load(img)
         }
         ImageType.ONLINE_FIREBASE -> {
             val storage = FirebaseStorage.getInstance()

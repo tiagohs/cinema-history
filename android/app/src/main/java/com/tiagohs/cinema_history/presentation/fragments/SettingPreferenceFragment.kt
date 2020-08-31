@@ -40,17 +40,17 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
         aboutLanguage = findPreference(ABOUT_KEY)
         referencesLanguage = findPreference(REFERENCES_KEY)
 
-        appLanguage?.summary = settingManager.getAppLanguage()
+        appLanguage?.summary = settingManager.getNameLanguage(settingManager.getAppLanguage())
         appLanguage?.setOnPreferenceChangeListener { preference, newLanguage ->
             settingManager.updateAppLanguage(newLanguage as String)
-            preference.summary = settingManager.getAppLanguage()
+            preference.summary = settingManager.getNameLanguage(settingManager.getAppLanguage())
 
             true
         }
-        moviesLanguage?.summary = settingManager.getMovieLanguage()
+        moviesLanguage?.summary = settingManager.getNameLanguage(settingManager.getMovieLanguage())
         moviesLanguage?.setOnPreferenceChangeListener { preference, newLanguage ->
             settingManager.updateMovieLanguage(newLanguage as String)
-            preference.summary = settingManager.getMovieLanguage()
+            preference.summary = settingManager.getNameLanguage(settingManager.getMovieLanguage())
 
             true
         }

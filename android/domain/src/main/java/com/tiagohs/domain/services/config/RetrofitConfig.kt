@@ -4,6 +4,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
 import com.google.gson.*
+import com.tiagohs.domain.BuildConfig
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.timeline.Timeline
@@ -73,13 +74,16 @@ class RetrofitConfig(
                 .readTimeout(30, TimeUnit.SECONDS)
                 .writeTimeout(30, TimeUnit.SECONDS)
 
-        httpClient.addInterceptor(getLoggingInterceptor())
         httpClient.addInterceptor(getTMDBIntercaptor())
         httpClient.addInterceptor(
             getCacheInterceptor(
                 context
             )
         )
+
+        if (BuildConfig.DEBUG) {
+            httpClient.addInterceptor(getLoggingInterceptor())
+        }
 
         return httpClient.build()
     }

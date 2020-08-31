@@ -39,6 +39,12 @@ class TimelineActivity: BaseActivity(), TimelinePageView {
         presenter.fetchTimelineItems()
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
