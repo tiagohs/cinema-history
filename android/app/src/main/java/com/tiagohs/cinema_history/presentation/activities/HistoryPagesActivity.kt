@@ -3,6 +3,7 @@ package com.tiagohs.cinema_history.presentation.activities
 import android.animation.Animator
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
@@ -10,19 +11,21 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.Interpolator
 import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.tabs.TabLayoutMediator
+import com.google.firebase.dynamiclinks.DynamicLink
+import com.google.firebase.dynamiclinks.FirebaseDynamicLinks
+import com.tiagohs.cinema_history.BuildConfig
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.convertIntToDp
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.entities.image.ImageResize
-import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.cinema_history.presentation.adapters.PagePagerAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
+import com.tiagohs.entities.image.ImageResize
+import com.tiagohs.entities.main_topics.MainTopicItem
+import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.show
 import kotlinx.android.synthetic.main.activity_history_pages.*
 
 
-class HistoryPagesActivity: BaseActivity() {
+class HistoryPagesActivity : BaseActivity() {
 
     var mainTopic: MainTopicItem? = null
     var adapterPager: PagePagerAdapter? = null
@@ -41,7 +44,7 @@ class HistoryPagesActivity: BaseActivity() {
         setupPagesContainer()
         setupFooter()
 
-        Handler().postDelayed( {
+        Handler().postDelayed({
             hideLoading()
         }, 1000)
     }
@@ -89,7 +92,11 @@ class HistoryPagesActivity: BaseActivity() {
 
     private fun setupFooter() {
         val image = mainTopic?.image ?: return
-        image.imageStyle?.resize = ImageResize(width = 60.convertIntToDp(this), height = 80.convertIntToDp(this))
+        image.imageStyle?.resize = ImageResize(
+            width = 60.convertIntToDp(this), height = 80.convertIntToDp(
+                this
+            )
+        )
         image.imageStyle?.scaleType = "center_crop"
 
         toolbarImage.loadImage(image)
@@ -100,6 +107,25 @@ class HistoryPagesActivity: BaseActivity() {
         toolbarNextButton.setOnClickListener {
             setNextPage()
         }
+
+        shareButton.setOnClickListener { onShareClicked() }
+    }
+
+    private fun onShareClicked() {
+        val baseUrl = Uri.parse("https://thshoc.link/?mainTopicId=1")
+
+        val shortLink = FirebaseDynamicLinks.getInstance()
+            .createDynamicLink()
+            .setLink(baseUrl)
+            .setDomainUriPrefix("https://cinemahistory.page.link")
+            .setAndroidParameters(DynamicLink.AndroidParameters.Builder(BuildConfig.APPLICATION_ID).build())
+            .buildDynamicLink()
+
+        val intent = Intent(Intent.ACTION_SEND)
+        intent.type = "text/plain"
+        intent.putExtra(Intent.EXTRA_TEXT, shortLink.uri.toString())
+
+        startActivity(Intent.createChooser(intent, "Share Link"))
     }
 
     private fun setNextPage() {
@@ -119,7 +145,13 @@ class HistoryPagesActivity: BaseActivity() {
         animate(footerContent, footerContent.height.toFloat(), AccelerateInterpolator(2f))
         animate(toolbarNextButton, toolbarNextButton.height.toFloat(), AccelerateInterpolator(2f))
         animate(shareButton, shareButton.height.toFloat(), AccelerateInterpolator(2f))
-        animate(toolbarImageCardContainer, toolbarImageCardContainer.height.toFloat() + 10.convertIntToDp(this), AccelerateInterpolator(2f))
+        animate(
+            toolbarImageCardContainer,
+            toolbarImageCardContainer.height.toFloat() + 10.convertIntToDp(
+                this
+            ),
+            AccelerateInterpolator(2f)
+        )
     }
 
     private fun animate(view: View, translationY: Float, interpolator: Interpolator) {
@@ -136,7 +168,11 @@ class HistoryPagesActivity: BaseActivity() {
 
     private fun setupPagesContainer() {
         val mainTopic = this.mainTopic ?: return
-        adapterPager = PagePagerAdapter(supportFragmentManager, lifecycle, mainTopic.sumarioList ?: emptyList())
+        adapterPager = PagePagerAdapter(
+            supportFragmentManager,
+            lifecycle,
+            mainTopic.sumarioList ?: emptyList()
+        )
 
         sumarioContentViewPager.apply {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
@@ -144,16 +180,28 @@ class HistoryPagesActivity: BaseActivity() {
             currentItem = itemSelectedPosition
         }
 
-        TabLayoutMediator(sumarioContentTabLayout, sumarioContentViewPager)
-        { tab, position ->}.attach()
+        sumarioContentIndicator.attachToViewPager2(sumarioContentViewPager)
+
+        sumarioContentViewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+
+                sumarioContentIndicator.onPageSelected(position)
+            }
+        })
     }
+
 
     companion object {
 
         const val MAIN_TOPIC = "MAIN_TOPIC"
         const val ITEM_SELECTED_POSITION = "ITEM_SELECTED_POSITION"
 
-        fun newIntent(context: Context, mainTopic: MainTopicItem, itemSelectedPosition: Int): Intent {
+        fun newIntent(
+            context: Context,
+            mainTopic: MainTopicItem,
+            itemSelectedPosition: Int
+        ): Intent {
             val intent = Intent(context, HistoryPagesActivity::class.java)
 
             intent.putExtra(ITEM_SELECTED_POSITION, itemSelectedPosition)

@@ -1,11 +1,9 @@
 package com.tiagohs.cinema_history.dagger
 
-import com.tiagohs.cinema_history.dagger.modules.AppModule
-import com.tiagohs.cinema_history.dagger.modules.PresenterModule
-import com.tiagohs.cinema_history.dagger.modules.RetrofitModule
-import com.tiagohs.cinema_history.dagger.modules.ServiceModule
+import com.tiagohs.cinema_history.dagger.modules.*
 import com.tiagohs.cinema_history.presentation.activities.*
 import com.tiagohs.cinema_history.presentation.fragments.HistoryPageFragment
+import com.tiagohs.cinema_history.presentation.fragments.SettingPreferenceFragment
 import com.tiagohs.cinema_history.presentation.fragments.TimelineFragment
 import dagger.Component
 import javax.inject.Singleton
@@ -14,7 +12,8 @@ import javax.inject.Singleton
     AppModule::class,
     PresenterModule::class,
     ServiceModule::class,
-    RetrofitModule::class])
+    RetrofitModule::class,
+    ManagerModule::class])
 @Singleton
 interface AppComponent {
 
@@ -29,4 +28,5 @@ interface AppComponent {
     fun inject(timelineActivity: TimelineActivity)
     fun inject(timelineFragment: TimelineFragment)
     fun inject(referenceActivity: ReferenceActivity)
+    fun inject(settingPreferenceFragment: SettingPreferenceFragment)
 }

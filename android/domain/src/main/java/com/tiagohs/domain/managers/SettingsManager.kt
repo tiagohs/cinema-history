@@ -2,8 +2,14 @@ package com.tiagohs.domain.managers
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.tiagohs.domain.services.LocalService
+import javax.inject.Inject
 
-class SettingsManager:
+class SettingsManager
+@Inject constructor(
+    val context: Context,
+    val sharedPreferences: SharedPreferences
+):
     SharedPreferences.OnSharedPreferenceChangeListener {
 
     val APP_LANGUAGE_DEFAULT = "Português Brasil"
@@ -11,15 +17,6 @@ class SettingsManager:
 
     private val APP_LANGUAGE_KEY = "APP_LANGUAGE_KEY"
     private val MOVIE_LANGUAGE_KEY = "MOVIE_LANGUAGE_KEY"
-
-    private var PRIVATE_MODE = 0
-    private val PREF_SETTINGS_NAME = "settings"
-
-    var sharedPreferences: SharedPreferences? = null
-
-    fun setupSharedPreferences(context: Context?) {
-        sharedPreferences = context?.getSharedPreferences(PREF_SETTINGS_NAME, PRIVATE_MODE)
-    }
 
     fun getAppLanguage(): String = sharedPreferences?.getString(APP_LANGUAGE_KEY, APP_LANGUAGE_DEFAULT) ?: APP_LANGUAGE_DEFAULT
 

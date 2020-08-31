@@ -100,19 +100,31 @@
 
             </androidx.cardview.widget.CardView>
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/sumarioContentTabLayout"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:tabBackground="@drawable/tab_pager_selector"
-                app:tabGravity="center"
-                app:tabIndicatorHeight="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/sumarioContentIndicatorContainer"
                 android:layout_gravity="bottom"
-                android:layout_marginStart="@dimen/activity_vertical_margin_3x"
-                android:layout_marginEnd="@dimen/activity_vertical_margin_3x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2x"
                 app:layout_constraintStart_toEndOf="@id/toolbarImageCardContainer"
                 app:layout_constraintEnd_toStartOf="@id/shareButton"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.tiagohs.helpers.tools.ViewPagerOverflowPagerIndicator
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+                    android:id="@+id/sumarioContentIndicator"
+                    android:layout_gravity="center_horizontal|bottom"
+                    app:dotFillColor="@color/md_white_1000"
+                    app:dotStrokeColor="@color/md_white_1000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <ImageButton
                 android:layout_width="wrap_content"

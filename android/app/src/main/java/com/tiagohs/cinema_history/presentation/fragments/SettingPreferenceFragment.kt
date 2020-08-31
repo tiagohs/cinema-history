@@ -4,19 +4,23 @@ import android.os.Bundle
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
+import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.R
 import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.cinema_history.presentation.activities.AboutActivty
 import com.tiagohs.cinema_history.presentation.activities.ReferenceActivity
+import javax.inject.Inject
 
 class SettingPreferenceFragment: PreferenceFragmentCompat() {
+
+    @Inject
+    lateinit var settingManager: SettingsManager
 
     private val APP_LANGUAGE_KEY = "language_app"
     private val MOVIE_LANGUAGE_KEY = "language_movies"
     private val ABOUT_KEY = "about"
     private val REFERENCES_KEY = "references"
 
-    private lateinit var settingManager: SettingsManager
     private var appLanguage: ListPreference? = null
     private var moviesLanguage: ListPreference? = null
     private var aboutLanguage: Preference? = null
@@ -25,13 +29,9 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.setting_preference, rootKey)
 
-        setupSettingsManager()
-        setupPreferences()
-    }
+        (activity?.application as? App)?.appComponent?.inject(this)
 
-    private fun setupSettingsManager() {
-        settingManager = SettingsManager()
-        settingManager.setupSharedPreferences(context)
+        setupPreferences()
     }
 
     private fun setupPreferences() {

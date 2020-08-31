@@ -2,6 +2,7 @@ package com.tiagohs.cinema_history.dagger.modules
 
 import android.app.Application
 import android.content.Context
+import android.content.SharedPreferences
 import dagger.Module
 import dagger.Provides
 

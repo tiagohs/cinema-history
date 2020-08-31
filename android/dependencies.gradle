@@ -54,6 +54,7 @@ ext {
             firebaseAnalytics           : 'com.google.firebase:firebase-analytics:17.4.3',
             firebaseUiStorage           : 'com.firebaseui:firebase-ui-storage:6.0.2',
             firebaseCrashlytics         : 'com.google.firebase:firebase-crashlytics:17.2.1',
+            firebaseDynamicLinks        : 'com.google.firebase:firebase-dynamic-links:19.1.0',
 
             preference                  : "androidx.preference:preference:$preferenceVersion",
             preferenceKtx               : "androidx.preference:preference-ktx:$preferenceVersion",

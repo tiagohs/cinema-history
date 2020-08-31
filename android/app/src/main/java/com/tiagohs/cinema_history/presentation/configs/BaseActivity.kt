@@ -55,6 +55,12 @@ abstract class BaseActivity : AppCompatActivity() {
         }
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
     fun getApplicationComponent(): AppComponent? {
         val application = application ?: return null
 

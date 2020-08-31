@@ -39,7 +39,9 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     @Inject
     lateinit var presenter: MovieDetailsPresenter
-    private lateinit var settingManager: SettingsManager
+
+    @Inject
+    lateinit var settingManager: SettingsManager
 
     var movieId: Int = 0
     var movie: Movie? = null
@@ -50,7 +52,6 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         getApplicationComponent()?.inject(this)
 
         setupToolbar(toolbar)
-        setupSettingsManager()
 
         presenter.onBindView(this)
         presenter.fetchMovieDetails(movieId, settingManager.getMovieISOLanguage())
@@ -66,11 +67,6 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
             else -> return false
         }
 
-    }
-
-    private fun setupSettingsManager() {
-        settingManager = SettingsManager()
-        settingManager.setupSharedPreferences(this)
     }
 
     override fun onDestroy() {

@@ -27,7 +27,9 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
 
     @Inject
     lateinit var presenter: PersonDetailsPresenter
-    private lateinit var settingManager: SettingsManager
+
+    @Inject
+    lateinit var settingManager: SettingsManager
 
     var personId: Int = 0
 
@@ -35,8 +37,6 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
         super.onCreate(savedInstanceState)
 
         getApplicationComponent()?.inject(this)
-
-        setupSettingsManager()
 
         presenter.onBindView(this)
         presenter.fetchPersonDetails(personId, settingManager.getMovieISOLanguage())
@@ -52,11 +52,6 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
             else -> return false
         }
 
-    }
-
-    private fun setupSettingsManager() {
-        settingManager = SettingsManager()
-        settingManager.setupSharedPreferences(this)
     }
 
     override fun setupArguments() {

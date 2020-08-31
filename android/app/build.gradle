@@ -105,6 +105,7 @@ dependencies {
     implementation dependencies.firebaseAnalytics
     implementation dependencies.firebaseUiStorage
     implementation dependencies.firebaseCrashlytics
+    implementation dependencies.firebaseDynamicLinks
 
     // Preference
     implementation dependencies.preference

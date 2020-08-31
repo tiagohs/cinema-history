@@ -42,6 +42,7 @@ dependencies {
     implementation dependencies.browser
     implementation dependencies.androidMaterial
     implementation dependencies.imageViewer
+    implementation dependencies.overflowPager
 
     // Tools
     implementation dependencies.timber

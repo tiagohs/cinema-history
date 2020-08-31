@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,18 @@ class AboutActivty : AppCompatActivity() {
         supportActionBar?.setDisplayShowTitleEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = getResourceString(R.string.activity_about)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+
+            else -> return false
+        }
     }
 
     private fun setupContentView(): View {
@@ -93,12 +106,6 @@ class AboutActivty : AppCompatActivity() {
             .addItem(tmdbApiTermesLinkElement)
             .addItem(copyRightsElement)
             .create()
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
     }
 
     companion object {

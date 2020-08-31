@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.view_audio_player.view.*
 class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null)
     : ConstraintLayout(context, attrs) {
 
-    private val audioManager: AudioManager
+    val audioManager: AudioManager
     private var isReady: Boolean = false
 
     init {
