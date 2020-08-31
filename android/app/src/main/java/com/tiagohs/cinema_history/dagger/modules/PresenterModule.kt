@@ -35,4 +35,7 @@ class PresenterModule {
 
     @Provides
     fun providerReferencePresenter(localService: LocalService): ReferencePresenter = ReferencePresenterImpl(localService)
+
+    @Provides
+    fun providerUniversalLinkPresenter(localService: LocalService): UniversalLinkPresenter = UniversalLinkPresenterImpl(localService)
 }

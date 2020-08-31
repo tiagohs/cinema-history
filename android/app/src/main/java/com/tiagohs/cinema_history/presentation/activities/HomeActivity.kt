@@ -1,11 +1,13 @@
 package com.tiagohs.cinema_history.presentation.activities
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import com.tiagohs.cinema_history.R
 import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.startActivityWithSlideAnimation
+import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
 import com.tiagohs.entities.image.Image
 import com.tiagohs.entities.image.ImageResize
 import com.tiagohs.entities.image.ImageStyle
@@ -14,7 +16,6 @@ import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.helpers.extensions.getResourceString
 import kotlinx.android.synthetic.main.activity_home.*
-import java.lang.RuntimeException
 
 
 class HomeActivity: BaseActivity() {
@@ -36,15 +37,15 @@ class HomeActivity: BaseActivity() {
 
         when (item.itemId) {
             R.id.action_settings -> {
-                startActivityWithSlideAnimation(SettingActivity.newIntent(this))
+                startActivityWithSlideRightToLeftAnimation(SettingActivity.newIntent(this))
                 return true
             }
             R.id.action_about -> {
-                startActivityWithSlideAnimation(AboutActivty.newIntent(this))
+                startActivityWithSlideRightToLeftAnimation(AboutActivty.newIntent(this))
                 return true
             }
             R.id.action_references -> {
-                startActivityWithSlideAnimation(ReferenceActivity.newIntent(this))
+                startActivityWithSlideRightToLeftAnimation(ReferenceActivity.newIntent(this))
                 return true
             }
 
@@ -92,25 +93,29 @@ class HomeActivity: BaseActivity() {
 
     private fun onHistoryCinemaClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivityWithSlideAnimation(MainTopicsActivity.newIntent(MainTopicsType.HISTORY_CINEMA, this, darkMode = true))
+            startActivityWithSlideRightToLeftAnimation(MainTopicsActivity.newIntent(MainTopicsType.HISTORY_CINEMA, this, darkMode = true))
         }
     }
 
     private fun onMilMoviesClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivityWithSlideAnimation(MainTopicsActivity.newIntent(MainTopicsType.MIL_MOVIES, this))
+            startActivityWithSlideRightToLeftAnimation(MainTopicsActivity.newIntent(MainTopicsType.MIL_MOVIES, this))
         }
     }
 
     private fun onTimelineCinemaClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivityWithSlideAnimation(TimelineActivity.newIntent(this))
+            startActivityWithSlideRightToLeftAnimation(TimelineActivity.newIntent(this))
         }
     }
 
     private fun onDirectorsClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivityWithSlideAnimation(MainTopicsActivity.newIntent(MainTopicsType.DIRECTORS, this))
+            startActivityWithSlideRightToLeftAnimation(MainTopicsActivity.newIntent(MainTopicsType.DIRECTORS, this))
         }
+    }
+
+    companion object {
+        fun newIntent(context: Context): Intent = Intent(context, HomeActivity::class.java)
     }
 }

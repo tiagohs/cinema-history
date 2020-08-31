@@ -28,4 +28,6 @@
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 
+    <include layout="@layout/view_screen_blocked" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

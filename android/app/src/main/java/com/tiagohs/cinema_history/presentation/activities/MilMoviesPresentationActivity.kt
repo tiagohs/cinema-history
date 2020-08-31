@@ -165,7 +165,7 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
     private fun onMovieSelected(movie: Movie) {
         val id = movie.id ?: return
 
-        startActivityWithSlideAnimation(MovieDetailsActivity.newIntent(this, id))
+        startActivityWithSlideRightToLeftAnimation(MovieDetailsActivity.newIntent(this, id))
     }
 
     companion object {

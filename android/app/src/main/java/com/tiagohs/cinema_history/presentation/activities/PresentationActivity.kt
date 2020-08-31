@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.tiagohs.cinema_history.R
 import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.setImageDrawableColored
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.entities.main_topics.MainTopicItem
@@ -138,12 +137,12 @@ class PresentationActivity: BaseActivity(), PresentationView {
             layoutManager = LinearLayoutManager(this@PresentationActivity, RecyclerView.VERTICAL, false)
             adapter = SumarioPresentationAdapter(mainTopic.sumarioList ?: emptyList()).apply {
                 onSumarioClick = { _,  position ->
-                    startActivityWithSlideAnimation(HistoryPagesActivity.newIntent(this@PresentationActivity, mainTopic, position))
+                    startActivityWithSlideRightToLeftAnimation(HistoryPagesActivity.newIntent(this@PresentationActivity, mainTopic, position))
                 }
             }
         }
 
-        startButton.setOnClickListener { startActivityWithSlideAnimation(HistoryPagesActivity.newIntent(this, mainTopic, 0)) }
+        startButton.setOnClickListener { startActivityWithSlideRightToLeftAnimation(HistoryPagesActivity.newIntent(this, mainTopic, 0)) }
     }
 
     private fun loadImage(mainTopic: MainTopicItem?) {

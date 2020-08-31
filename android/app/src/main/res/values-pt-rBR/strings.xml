@@ -14,12 +14,15 @@
     <string name="comingsoon">Em Breve</string>
     <string name="movies">Filmes</string>
     <string name="timeline">Timeline</string>
+    <string name="share_title">Compartilhar com:</string>
 
     <!-- History Pages -->
 
     <string name="sumario">Sumário</string>
     <string name="next">Próximo</string>
     <string name="click_here_to_go">Clique aqui para acessar</string>
+    <string name="share_history_page_description">Venha saber mais sobre %1s no app História do Cinema. %2s</string>
+    <string name="share_timeline_description">Venha conhecer os principais acontecimentos do cinema no app História do Cinema. %1s</string>
 
     <!-- Settings -->
     <string name="action_about">Sobre</string>

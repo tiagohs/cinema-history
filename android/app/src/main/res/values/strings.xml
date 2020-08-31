@@ -28,12 +28,15 @@
     <string name="comingsoon">Coming Soon</string>
     <string name="movies">Movies</string>
     <string name="timeline">Timeline</string>
+    <string name="share_title">Share with:</string>
 
     <!-- History Pages -->
 
     <string name="sumario">Summary</string>
     <string name="next">Next</string>
     <string name="click_here_to_go">Click here to access</string>
+    <string name="share_history_page_description">Know more about %1s on the History of Cinema App. %2s</string>
+    <string name="share_timeline_description">Know more about the main events on the History of Cinema App. %1s</string>
 
     <!-- Settings -->
     <string name="action_about">About</string>

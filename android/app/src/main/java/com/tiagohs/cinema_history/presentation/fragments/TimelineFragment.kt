@@ -50,6 +50,7 @@ class TimelineFragment: BaseFragment(), TimelineView {
     }
 
     override fun bindTimeline(timelines: TimelineResult) {
+
         timelineList.apply {
             layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
             timelineList.adapter = TimelineAdapter(timelines.timelineList, totalOfTimelines, timelines.color, timelines.titleTextColor).apply {

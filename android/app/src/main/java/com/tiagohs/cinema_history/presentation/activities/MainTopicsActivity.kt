@@ -3,13 +3,11 @@ package com.tiagohs.cinema_history.presentation.activities
 import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
-import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.firebase.dynamiclinks.FirebaseDynamicLinks
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.MainTopicsAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
@@ -175,7 +173,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             else -> return
         }
 
-        startActivityWithSlideAnimation(intent)
+        startActivityWithSlideRightToLeftAnimation(intent)
     }
 
     override fun startLoading() {

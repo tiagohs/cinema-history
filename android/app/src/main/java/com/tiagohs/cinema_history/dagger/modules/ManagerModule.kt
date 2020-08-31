@@ -2,6 +2,7 @@ package com.tiagohs.cinema_history.dagger.modules
 
 import android.content.Context
 import com.tiagohs.domain.managers.AudioManager
+import com.tiagohs.domain.managers.DynamicLinkManager
 import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.helpers.Constants
 import dagger.Module
@@ -19,4 +20,7 @@ class ManagerModule {
 
         return SettingsManager(context, sharedPreferences)
     }
+
+    @Provides
+    fun providesDynamicLinkManager(context: Context): DynamicLinkManager = DynamicLinkManager(context)
 }

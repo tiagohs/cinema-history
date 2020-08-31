@@ -11,7 +11,7 @@ import com.tiagohs.entities.enums.TextViewUrlType
 import com.tiagohs.entities.textview_url.TextViewLinkOnline
 import com.tiagohs.entities.textview_url.TextViewLinkScreen
 import com.tiagohs.helpers.extensions.openLink
-import com.tiagohs.helpers.extensions.startActivityWithSlideAnimation
+import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
 import me.saket.bettermovementmethod.BetterLinkMovementMethod
 import org.json.JSONObject
 
@@ -40,7 +40,7 @@ fun TextView.setupLinkableTextView(globalContext: Context?) {
                     }
 
                     val activity = context as? Activity ?: return@setOnLinkClickListener false
-                    activity.startActivityWithSlideAnimation(intent)
+                    activity.startActivityWithSlideRightToLeftAnimation(intent)
 
                     return@setOnLinkClickListener true
                 }

@@ -29,4 +29,5 @@ interface AppComponent {
     fun inject(timelineFragment: TimelineFragment)
     fun inject(referenceActivity: ReferenceActivity)
     fun inject(settingPreferenceFragment: SettingPreferenceFragment)
+    fun inject(universalLinkActivity: UniversalLinkActivity)
 }

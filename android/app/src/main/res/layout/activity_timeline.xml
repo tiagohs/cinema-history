@@ -24,4 +24,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <include layout="@layout/view_screen_blocked" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

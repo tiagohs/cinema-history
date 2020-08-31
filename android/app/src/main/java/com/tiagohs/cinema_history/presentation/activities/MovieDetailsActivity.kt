@@ -11,6 +11,7 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.tiagohs.cinema_history.R
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.helpers.utils.DateUtils
@@ -21,15 +22,19 @@ import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.domain.presenter.MovieDetailsPresenter
 import com.tiagohs.cinema_history.presentation.adapters.MovieInfoAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
+import com.tiagohs.domain.managers.DynamicLinkManager
 import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.entities.dto.PersonDTO
 import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.enums.MovieInfoType
 import com.tiagohs.domain.views.MovieDetailsView
+import com.tiagohs.entities.enums.MessageViewType
+import com.tiagohs.helpers.Constants
 import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.activity_movie_details.*
-import kotlinx.android.synthetic.main.adapter_movie_info_summary.view.*
 import kotlinx.android.synthetic.main.view_genre_item.view.*
+import kotlinx.android.synthetic.main.view_screen_blocked.*
+import java.lang.Exception
 import javax.inject.Inject
 
 class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
@@ -38,13 +43,18 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     override fun onGetMenuLayoutId(): Int = R.menu.menu_movie
 
     @Inject
+    lateinit var dynamicLinkManager: DynamicLinkManager
+
+    @Inject
     lateinit var presenter: MovieDetailsPresenter
 
     @Inject
     lateinit var settingManager: SettingsManager
 
+
     var movieId: Int = 0
     var movie: Movie? = null
+    private var isFromUniversalLink = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,12 +71,44 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
         when (item.itemId) {
             R.id.action_share -> {
-
+                onShareClicked()
                 return true
             }
             else -> return false
         }
 
+    }
+
+    private fun onShareClicked() {
+        showScreenBlocked()
+
+        dynamicLinkManager.buildMoviePageLink(
+            movieId,
+            onComplete = { onBuildPageLinkComplete(it) },
+            onError = { onBuildPageLinkError(it) }
+        )
+    }
+
+    private fun onBuildPageLinkComplete(shorLink: String) {
+        val movieTitle = movie?.getMovieTitleFromAppLanguage(settingManager.getMovieISOLanguage())
+
+        shareContent(getString(R.string.share_history_page_description, movieTitle, shorLink), getResourceString(R.string.share_title))
+
+        hideScreenBlocked()
+    }
+
+    private fun onBuildPageLinkError(exception: Exception) {
+        hideScreenBlocked()
+
+        onError(exception, R.string.unknown_error, MessageViewType.ERROR, Snackbar.LENGTH_SHORT)
+    }
+
+    fun showScreenBlocked() {
+        screenBlocked.show()
+    }
+
+    fun hideScreenBlocked() {
+        screenBlocked.hide()
     }
 
     override fun onDestroy() {
@@ -76,6 +118,12 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     }
 
     override fun onBackPressed() {
+        if (isFromUniversalLink) {
+            startActivityWithSlideRightToLeftAnimation(HomeActivity.newIntent(this))
+            finish()
+            return
+        }
+
         super.onBackPressed()
 
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
@@ -83,9 +131,12 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
     override fun setupArguments() {
         movieId = intent.getIntExtra(MOVIE_ID, 0)
+        isFromUniversalLink = intent.getBooleanExtra(Constants.IS_FROM_UNIVERSAL_LINK, false)
     }
 
     override fun bindMovieDetails(movie: Movie) {
+        this.movie = movie
+
         val movieInfoList = generateMovieInfoList(movie)
         val movieTitle = movie.getMovieTitleFromAppLanguage(settingManager.getMovieISOLanguage())
         val appLanguage = settingManager.getMovieISOLanguage()
@@ -185,7 +236,7 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     }
 
     private fun onPersonClicked(personId: Int) {
-        startActivityWithSlideAnimation(PersonDetailsActivity.newIntent(this, personId))
+        startActivityWithSlideRightToLeftAnimation(PersonDetailsActivity.newIntent(this, personId))
     }
 
     private fun bindMovieHeader(movie: Movie, title: String) {
@@ -257,10 +308,11 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
         const val MOVIE_ID = "MOVIE_ID"
 
-        fun newIntent(context: Context, movieId: Int): Intent {
+        fun newIntent(context: Context, movieId: Int, isFromUniversalLink: Boolean = false): Intent {
             val intent = Intent(context, MovieDetailsActivity::class.java)
 
             intent.putExtra(MOVIE_ID, movieId)
+            intent.putExtra(Constants.IS_FROM_UNIVERSAL_LINK, isFromUniversalLink)
 
             return intent
         }
