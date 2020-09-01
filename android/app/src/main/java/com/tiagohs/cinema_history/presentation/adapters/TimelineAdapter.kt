@@ -7,6 +7,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.cinema_history.presentation.adapters.timeline.TimelineItemFooterHolder
 import com.tiagohs.cinema_history.presentation.adapters.timeline.TimelineItemViewHolder
 import com.tiagohs.cinema_history.presentation.adapters.timeline.TimelineTitleViewHolder
+import com.tiagohs.cinema_history.presentation.fragments.TimelineCallbacks
 import com.tiagohs.entities.enums.TimelineType
 import com.tiagohs.entities.timeline.Timeline
 
@@ -14,7 +15,8 @@ class TimelineAdapter(
     list: List<Timeline>,
     val totalOfTimelines: Int,
     val color: String,
-    val textColor: String
+    val textColor: String,
+    val callback: TimelineCallbacks
 ) : BaseAdapter<Timeline, BaseViewHolder<Timeline>>(list) {
 
     var onNextClicked: (() -> Unit)? = null
@@ -42,6 +44,7 @@ class TimelineAdapter(
                 onPreviousClicked,
                 onDownClicked,
                 totalOfTimelines,
+                callback,
                 view
             )
             TimelineType.ITEM.ordinal -> TimelineItemViewHolder(color, textColor, view)
@@ -50,6 +53,7 @@ class TimelineAdapter(
                 onPreviousClicked,
                 onUpClicked,
                 totalOfTimelines,
+                callback,
                 view
             )
             else -> object : BaseViewHolder<Timeline>(view) {}

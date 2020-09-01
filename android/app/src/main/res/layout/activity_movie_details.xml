@@ -61,7 +61,7 @@
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="210dp"
+                        android:layout_height="@dimen/movie_degrade_height"
                         android:id="@+id/movieBackdropDegrade"
                         android:background="@drawable/background_degrade_bottom"
                         android:layout_gravity="bottom"
@@ -69,7 +69,19 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         tools:alpha="1"
-                        />
+                    />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/movie_degrade_height"
+                        android:id="@+id/movieBackdropDegradeTop"
+                        android:background="@drawable/background_degrade_top"
+                        android:layout_gravity="top"
+                        android:alpha="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:alpha="1"
+                    />
 
                 </androidx.cardview.widget.CardView>
 

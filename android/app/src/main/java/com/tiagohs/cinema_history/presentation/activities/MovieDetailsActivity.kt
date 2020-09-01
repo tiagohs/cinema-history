@@ -294,9 +294,11 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
                 val animation = AnimationUtils.createFadeInAnimation(150) {
                     movieBackdropDegrade.alpha = 1f
                     genresScrollView.alpha = 1f
+                    movieBackdropDegradeTop.alpha = 1f
                 }
 
                 movieBackdropDegrade.startAnimation(animation)
+                movieBackdropDegradeTop.startAnimation(animation)
 
                 AnimationUtils.createPulseAnimation(movieTitle)
                 AnimationUtils.createPulseAnimation(movieOriginalTitle)

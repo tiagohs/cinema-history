@@ -86,6 +86,7 @@
     <dimen name="movie_appbar_height">350dp</dimen>
     <dimen name="movie_play_size">50dp</dimen>
     <dimen name="movie_play_radius">25dp</dimen>
+    <dimen name="movie_degrade_height">210dp</dimen>
 
     <!-- PRESENTATION -->
     <dimen name="presentation_appbar_margin_bottom">120dp</dimen>

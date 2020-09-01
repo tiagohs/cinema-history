@@ -17,7 +17,7 @@ import com.tiagohs.helpers.extensions.show
 import kotlinx.android.synthetic.main.fragment_timeline.*
 import javax.inject.Inject
 
-class TimelineFragment: BaseFragment(), TimelineView {
+class TimelineFragment: BaseFragment(), TimelineView, TimelineCallbacks {
 
     override fun getViewID(): Int = R.layout.fragment_timeline
     override fun onErrorAction() {}
@@ -49,11 +49,15 @@ class TimelineFragment: BaseFragment(), TimelineView {
         totalOfTimelines = arguments?.getInt(TOTAL_TIMELINES) ?: 0
     }
 
+    override fun isFirst() = (activity as? TimelineActivity)?.isFirst() ?: false
+
+    override fun isLast() = (activity as? TimelineActivity)?.isLast() ?: false
+
     override fun bindTimeline(timelines: TimelineResult) {
 
         timelineList.apply {
             layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
-            timelineList.adapter = TimelineAdapter(timelines.timelineList, totalOfTimelines, timelines.color, timelines.titleTextColor).apply {
+            timelineList.adapter = TimelineAdapter(timelines.timelineList, totalOfTimelines, timelines.color, timelines.titleTextColor, this@TimelineFragment).apply {
                 onNextClicked = { setNextPage() }
                 onPreviousClicked = { setPreviousPage() }
                 onUpClicked = { goToFirstItem() }
@@ -109,4 +113,10 @@ class TimelineFragment: BaseFragment(), TimelineView {
             return timelineFragment
         }
     }
+
+}
+
+interface TimelineCallbacks {
+    fun isLast(): Boolean
+    fun isFirst(): Boolean
 }

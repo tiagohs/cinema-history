@@ -37,6 +37,7 @@ class TimelineActivity : BaseActivity(), TimelinePageView {
     private var startIndex: Int = 0
     private var currentIndex: Int = 0
     private var isFromUniversalLink = false
+    private var listOfTimelineIndex: List<Int> = emptyList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -114,6 +115,7 @@ class TimelineActivity : BaseActivity(), TimelinePageView {
     }
 
     override fun bindTimelineIDs(list: List<Int>) {
+        this.listOfTimelineIndex = list
         adapterPager = TimelinePagerAdapter(supportFragmentManager, lifecycle, list)
 
         timelineContentViewPager.apply {
@@ -129,6 +131,10 @@ class TimelineActivity : BaseActivity(), TimelinePageView {
             }
         })
     }
+
+    fun isLast() = currentIndex == listOfTimelineIndex.size - 1
+
+    fun isFirst() = currentIndex == 0
 
     fun setNextPage() {
         val currentPosition = timelineContentViewPager.currentItem

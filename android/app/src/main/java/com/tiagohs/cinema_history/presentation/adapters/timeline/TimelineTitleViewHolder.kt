@@ -1,8 +1,10 @@
 package com.tiagohs.cinema_history.presentation.adapters.timeline
 
 import android.view.View
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.cinema_history.presentation.fragments.TimelineCallbacks
 import com.tiagohs.entities.timeline.Timeline
 import com.tiagohs.entities.timeline.TimelineTitle
 import com.tiagohs.helpers.extensions.getResourceColor
@@ -17,6 +19,7 @@ class TimelineTitleViewHolder(
     private val onPreviousClicked: (() -> Unit)?,
     private val onDownClicked: (() -> Unit)? = null,
     private val numberOfItens: Int,
+    val callback: TimelineCallbacks,
     view: View
 ) : BaseViewHolder<Timeline>(view) {
 
@@ -41,17 +44,33 @@ class TimelineTitleViewHolder(
     }
 
     private fun bindDirectionButtons(timeline: TimelineTitle) {
-        bindButton(nextContainer, timeline.next != null && positionItem < numberOfItens) {
+        bindButton(
+            nextContainer,
+            nextText,
+            timeline.next,
+            timeline.next != null && !callback.isLast()
+        ) {
             onNextClicked?.invoke()
         }
-        bindButton(previousContainer, timeline.previous != null && positionItem == 0) {
+        bindButton(
+            previousContainer,
+            previousText,
+            timeline.previous,
+            timeline.previous != null && !callback.isFirst()
+        ) {
             onPreviousClicked?.invoke()
         }
 
         downButton.setOnClickListener { onDownClicked?.invoke() }
     }
 
-    private fun bindButton(view: ConstraintLayout?, isToShow: Boolean, onClicked: () -> Unit) {
+    private fun bindButton(
+        view: ConstraintLayout?,
+        textView: TextView,
+        text: String?,
+        isToShow: Boolean,
+        onClicked: () -> Unit
+    ) {
         if (!isToShow) {
             view.hide()
             return
@@ -59,6 +78,8 @@ class TimelineTitleViewHolder(
 
         view.show()
         view?.setOnClickListener { onClicked.invoke() }
+
+        textView.setResourceStyledText(text)
     }
 
     private fun bindColors() {
