@@ -21,6 +21,8 @@ import com.tiagohs.entities.image.ImageResize
 import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.helpers.Constants
 import com.tiagohs.helpers.extensions.*
+import com.tiagohs.helpers.tools.SliderTransformer
+import com.tiagohs.helpers.tools.ZoomOutPageTransformer
 import kotlinx.android.synthetic.main.activity_history_pages.*
 import kotlinx.android.synthetic.main.view_screen_blocked.*
 import java.lang.Exception
@@ -215,17 +217,20 @@ class HistoryPagesActivity : BaseActivity() {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             adapter = adapterPager
             currentItem = itemSelectedPosition
+
+            setPageTransformer(ZoomOutPageTransformer())
+
+            sumarioContentIndicator.attachToViewPager2(this)
+            registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+                override fun onPageSelected(position: Int) {
+                    super.onPageSelected(position)
+                    currentPosition = position
+
+                    sumarioContentIndicator.onPageSelected(position)
+                }
+            })
         }
 
-        sumarioContentIndicator.attachToViewPager2(sumarioContentViewPager)
-        sumarioContentViewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-                currentPosition = position
-
-                sumarioContentIndicator.onPageSelected(position)
-            }
-        })
     }
 
     companion object {

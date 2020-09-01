@@ -70,7 +70,7 @@ class PersonDetailsFragment: BaseFragment() {
     private fun onMovieSelected(movieId: Int) {
         val context = context ?: return
 
-        startActivity(MovieDetailsActivity.newIntent(context, movieId))
+        activity?.startActivityWithSlideRightToLeftAnimation(MovieDetailsActivity.newIntent(context, movieId))
     }
 
     private fun bindHeader(person: Person) {

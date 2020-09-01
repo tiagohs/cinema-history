@@ -89,7 +89,7 @@ class PersonDetailsSpecialFragment: BaseFragment() {
     private fun onMovieSelected(movieId: Int) {
         val context = context ?: return
 
-        startActivity(MovieDetailsActivity.newIntent(context, movieId))
+        activity?.startActivityWithSlideRightToLeftAnimation(MovieDetailsActivity.newIntent(context, movieId))
     }
 
     private fun generatePersonInfoList(person: Person): List<PersonInfo> {

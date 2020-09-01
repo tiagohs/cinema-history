@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinatorLayout"
+    android:background="@color/md_white_1000"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -143,6 +144,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/pageContentList"
+        android:background="@color/md_white_1000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

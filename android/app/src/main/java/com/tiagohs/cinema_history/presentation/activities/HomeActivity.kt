@@ -76,6 +76,8 @@ class HomeActivity : BaseActivity(), HomeView {
             offscreenPageLimit = 4
 
             setPageTransformer(SliderTransformer(4))
+
+            contentIndicator.attachToViewPager2(this)
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
                     contentIndicator.onPageSelected(position)
@@ -83,7 +85,6 @@ class HomeActivity : BaseActivity(), HomeView {
             })
         }
 
-        contentIndicator.attachToViewPager2(homeViewPager)
     }
 
     private fun onHomeItemClicked(homeContentItem: HomeContentItem) {

@@ -4,20 +4,20 @@
     tools:context="com.tiagohs.cinema_history.MainActivity">
 
     <item
-        android:id="@+id/action_settings"
-        android:icon="@drawable/ic_settings_white_24dp"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
-
-    <item
         android:id="@+id/action_references"
         android:icon="@drawable/ic_open_book_white_24dp"
         android:title="@string/action_reference"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_about"
         android:icon="@drawable/ic_info_white_24dp"
         android:title="@string/action_about"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
 </menu>
