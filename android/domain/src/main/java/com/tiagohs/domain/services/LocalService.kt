@@ -3,6 +3,7 @@ package com.tiagohs.domain.services
 import com.tiagohs.domain.services.config.BaseService
 import com.tiagohs.domain.services.config.RetrofitConfig
 import com.tiagohs.domain.services.retrofit.LocalServiceRetrofit
+import com.tiagohs.entities.HomeContentItem
 import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
 import com.tiagohs.entities.main_topics.MainTopic
@@ -12,6 +13,8 @@ import com.tiagohs.entities.tmdb.person.PersonExtraInfo
 import io.reactivex.Observable
 
 class LocalService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) {
+
+    fun getHomeContent(): Observable<List<HomeContentItem>> = buildLocalService(LocalServiceRetrofit::class.java).getHomeContent()
 
     fun getSumarioByMainTopicID(mainTopicId: Int): Observable<List<Sumario>> = buildLocalService(LocalServiceRetrofit::class.java).getSumarioByMainTopicID(mainTopicId)
 

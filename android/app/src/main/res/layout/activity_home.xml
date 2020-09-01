@@ -6,116 +6,101 @@
     android:id="@+id/coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
     android:background="@color/md_white_1000">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="match_parent"
         android:id="@+id/appBar"
-        android:fitsSystemWindows="true"
+        app:elevation="0dp"
+        android:fitsSystemWindows="false"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/home_appbar_height"
-            android:fitsSystemWindows="true"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingToolbar"
+            android:fitsSystemWindows="false"
+            app:layout_scrollFlags="noScroll"
             app:contentScrim="@color/colorPrimary"
             app:titleEnabled="false">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/cinemaImageContainer"
-                app:layout_collapseMode="parallax"
-                app:layout_collapseParallaxMultiplier="0.8">
+                android:id="@+id/contentContainer"
+                android:alpha="0"
+                android:background="@color/md_white_1000"
+                android:fitsSystemWindows="false"
+                tools:alpha="1">
 
-                <ImageView
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:id="@+id/historyMovieImage"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/home_appbar_degrade_height"
-                    android:background="@drawable/background_degrade_top"
+                    android:layout_marginTop="?attr/actionBarSize"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/contentIndicator">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/homeSlideTitle"
+                        android:text="@string/pick_your_journey"
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_zeplin_28pt"
+                        android:fontFamily="@font/oswald_bold"
+                        android:lineSpacingMultiplier="1.1"
+                        android:ellipsize="end"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+                        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:id="@+id/homeViewPager"
+                        android:fitsSystemWindows="false"
+                        android:paddingEnd="@dimen/home_slide_padding_end"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        app:layout_constraintTop_toBottomOf="@id/homeSlideTitle"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                     />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/home_appbar_degrade_height"
-                    android:background="@drawable/background_degrade_bottom"
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guidelineGlobalBottom"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent=".8"
+                />
+
+                <com.tiagohs.helpers.tools.ViewPagerOverflowPagerIndicator
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contentIndicator"
+                    android:layout_gravity="center_horizontal|bottom"
+                    app:dotFillColor="@color/md_black_1000"
+                    app:dotStrokeColor="@color/md_grey_700"
+                    android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/cinemaFooterContainer"
-                app:layout_collapseMode="parallax"
-                app:layout_collapseParallaxMultiplier="0.3">
-
-                <Button
-                    android:id="@+id/startHistoryButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/home_start_history_button_height"
-                    android:text="@string/start_journey"
-                    android:fontFamily="@font/proxima_nova_bold"
-                    android:background="@android:color/transparent"
-                    android:paddingStart="@dimen/activity_vertical_margin_2.5x"
-                    android:paddingEnd="@dimen/activity_vertical_margin_2.5x"
-                    android:textColor="@color/md_white_1000"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin_5x"
-                    android:layout_marginEnd="@dimen/activity_vertical_margin_2.5x"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"  />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cinemaTitleContainer"
-                app:layout_collapseMode="parallax"
-                app:layout_collapseParallaxMultiplier="0.4">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/historyLogoTitle1"
-                    android:text="@string/home_title_1"
-                    android:textColor="@color/md_white_1000"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/text_size_zeplin_26pt"
-                    android:fontFamily="@font/oswald_bold"
-                    android:layout_marginTop="20dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/home_title_2"
-                    android:textColor="@color/md_white_1000"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/text_size_home_title"
-                    android:fontFamily="@font/billionairemediumgrunge"
-                    app:layout_constraintTop_toBottomOf="@id/historyLogoTitle1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -124,6 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
+                android:background="@color/md_black_1000"
                 app:popupTheme="@style/AppTheme.PopupOverlay">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -147,284 +133,21 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.core.widget.NestedScrollView
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/loadView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/appBar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:shimmer_duration="800"
+        android:visibility="invisible"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fitsSystemWindows="true">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:orientation="vertical">
+        <include layout="@layout/load_home" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/moviesCard"
-                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
-                android:layout_marginStart="@dimen/activity_vertical_margin_2x"
-                android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
-                android:backgroundTint="@color/md_black_1000"
-                app:cardCornerRadius="@dimen/activity_vertical_margin_2x"
-                android:clickable="true"
-                android:focusable="true"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+    </com.facebook.shimmer.ShimmerFrameLayout>
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/moviesImageContainer"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/home_milmovies_card_height"
-                            android:scaleType="center"
-                            android:id="@+id/moviesImage"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/home_milmovies_degrade_height"
-                            android:background="@drawable/background_degrade_bottom"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/moviesTitle1"
-                            android:text="@string/home_milmovies_title"
-                            android:textSize="@dimen/text_size_zeplin_40pt"
-                            android:textColor="@color/md_white_1000"
-                            android:fontFamily="@font/bigshouldersdisplay_bold"
-                            app:layout_constraintBottom_toTopOf="@id/moviesTitle2"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/moviesTitle2"
-                            android:text="@string/home_milmovies_subtitle"
-                            android:textSize="@dimen/text_size_zeplin_22pt"
-                            android:textColor="@color/md_white_1000"
-                            android:fontFamily="@font/oswald_bold"
-                            android:textAllCaps="true"
-                            android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"/>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/moviesImageContainer"
-                        app:layout_constraintBottom_toBottomOf="parent">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/md_white_1000"
-                            android:fontFamily="@font/proxima_nova_regular"
-                            android:textSize="@dimen/text_size_zeplin_22pt"
-                            android:text="@string/home_milmovies_description"
-                            android:paddingStart="@dimen/activity_vertical_margin_2x"
-                            android:paddingEnd="@dimen/activity_vertical_margin_2x"
-                            android:gravity="center"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/timelineCard"
-                android:layout_marginTop="@dimen/activity_vertical_margin_2.5x"
-                android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x"
-                app:cardCornerRadius="@dimen/activity_vertical_margin_2x"
-                app:cardElevation="0dp"
-                android:elevation="0dp"
-                android:clickable="true"
-                android:focusable="true">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/home_timeline_card_height"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/timelineImage"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        />
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/timelineImage"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/timelineTitle"
-                            android:text="@string/home_timeline_title"
-                            android:textSize="@dimen/text_size_zeplin_40pt"
-                            android:textColor="@color/md_black_1000"
-                            android:fontFamily="@font/oswald_bold"
-                            android:textAllCaps="true"
-                            android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/md_black_1000"
-                            android:fontFamily="@font/proxima_nova_regular"
-                            android:textSize="@dimen/text_size_zeplin_22pt"
-                            android:textAlignment="center"
-                            android:text="@string/home_timeline_description"
-                            android:paddingStart="@dimen/activity_vertical_margin_2x"
-                            android:paddingEnd="@dimen/activity_vertical_margin_2x"
-                            android:paddingBottom="@dimen/activity_vertical_margin_1.2x"
-                            app:layout_constraintTop_toBottomOf="@id/timelineTitle"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/directorsCard"
-                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
-                android:layout_marginStart="@dimen/activity_vertical_margin_2x"
-                android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
-                android:backgroundTint="@color/md_black_1000"
-                app:cardCornerRadius="@dimen/activity_vertical_margin_2x"
-                android:clickable="true"
-                android:focusable="true">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/directorsImageContainer"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/home_directors_card_height"
-                            android:scaleType="centerCrop"
-                            android:id="@+id/directorsImage"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/home_directors_degrade_height"
-                            android:background="@drawable/background_degrade_bottom"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                        />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/directorsTitle1"
-                            android:text="@string/home_directors_title"
-                            android:textSize="@dimen/text_size_zeplin_40pt"
-                            android:textColor="@color/md_white_1000"
-                            android:fontFamily="@font/bigshouldersdisplay_bold"
-                            app:layout_constraintBottom_toTopOf="@id/directorsTitle2"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/directorsTitle2"
-                            android:text="@string/home_directors_description"
-                            android:textSize="@dimen/text_size_zeplin_22pt"
-                            android:textColor="@color/md_white_1000"
-                            android:fontFamily="@font/proxima_nova_regular"
-                            android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
-                            android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
-                            android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
-                            android:textAlignment="center"
-                            android:gravity="center"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"/>
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-    </androidx.core.widget.NestedScrollView>
+    <include layout="@layout/view_error" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

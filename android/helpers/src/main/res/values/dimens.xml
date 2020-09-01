@@ -75,11 +75,12 @@
     <dimen name="home_milmovies_card_height">500dp</dimen>
     <dimen name="home_timeline_card_height">350dp</dimen>
     <dimen name="home_directors_card_height">450dp</dimen>
-    <dimen name="home_appbar_degrade_height">200dp</dimen>
+    <dimen name="home_appbar_degrade_height">250dp</dimen>
     <dimen name="home_milmovies_degrade_height">250dp</dimen>
     <dimen name="home_directors_degrade_height">250dp</dimen>
     <dimen name="home_start_history_button_height">40dp</dimen>
     <dimen name="home_icon_size">30dp</dimen>
+    <dimen name="home_slide_padding_end">70dp</dimen>
 
     <!-- MOVIE -->
     <dimen name="movie_appbar_height">350dp</dimen>
@@ -122,7 +123,7 @@
 
     <!-- MAIN TOPIC -->
     <dimen name="main_topic_card_image_height">250dp</dimen>
-    <dimen name="main_topic_card_full_image_height">380dp</dimen>
+    <dimen name="main_topic_card_full_image_height">350dp</dimen>
     <dimen name="main_topic_degrade_bottom">200dp</dimen>
 
     <!-- MAIN TOPIC -->

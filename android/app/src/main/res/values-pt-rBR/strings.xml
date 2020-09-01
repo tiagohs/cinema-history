@@ -63,6 +63,7 @@
     <string name="home_timeline_description">Os principais acontecimentos no mundo do cinema organizada cronologicamente.</string>
     <string name="home_directors_title">Os Mestres das Telas</string>
     <string name="home_directors_description">Conheça em Detalhes os maiores diretores do Cinema</string>
+    <string name="pick_your_journey">Escolha a sua jornada:</string>
 
     <string name="also_format">além de %1s</string>
     <string name="as_format">como %1s</string>
@@ -87,6 +88,7 @@
 
     <!-- Descriptions -->
     <string name="description_logo_app">Logo do Aplicativo</string>
+    <string name="hitory_image_description">Poster do filme Chinatown, com o personagem de costas.</string>
     <string name="mil_movies_image_description">Poster do filme o poderoso chefão, com uma mão segurando um controlador de marionete de corda.</string>
     <string name="directors_image_description">Poster personalizado com o rosto de david fincher, misturado a diversos personagens dos seus filmes.</string>
     <string name="timeline_image_description">Foto de um rolo de filmes.</string>

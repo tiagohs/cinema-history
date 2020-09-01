@@ -84,6 +84,7 @@
     <string name="home_timeline_description">The main events in the world of cinema organized chronologically.</string>
     <string name="home_directors_title">Masters of Cinema</string>
     <string name="home_directors_description">Get to know in detail the greatest cinema directors</string>
+    <string name="pick_your_journey">Pick your Journey</string>
 
     <string name="also_format">also %1s</string>
     <string name="as_format">as %1s</string>
@@ -110,6 +111,7 @@
 
     <!-- Descriptions -->
     <string name="description_logo_app">Application Logo</string>
+    <string name="hitory_image_description">Poster from the movie Chinatown, with the main character.</string>
     <string name="mil_movies_image_description">Poster from the movie Godfather, with one hand holding a rope, using it on puppet dolls.</string>
     <string name="directors_image_description">Personalized poster with the face of David Fincher, mixed with several characters from his films.</string>
     <string name="timeline_image_description">Photo of a roll film.</string>

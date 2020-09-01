@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/homeTimelineItemCard"
+        app:cardCornerRadius="@dimen/activity_vertical_margin_2x"
+        app:cardElevation="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guidelineBottom"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".9"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/timelineImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_appbar_degrade_height"
+                android:background="@drawable/background_degrade_blue_bottom"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timelineTitle"
+                android:text="@string/home_timeline_title"
+                android:textSize="@dimen/text_size_zeplin_40pt"
+                android:textColor="@color/md_white_1000"
+                android:fontFamily="@font/oswald_bold"
+                android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/timelineDescription"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timelineDescription"
+                android:textColor="@color/md_white_1000"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="@dimen/text_size_zeplin_22pt"
+                android:textAlignment="center"
+                android:text="@string/home_timeline_description"
+                android:paddingStart="@dimen/activity_vertical_margin_2x"
+                android:paddingEnd="@dimen/activity_vertical_margin_2x"
+                android:paddingBottom="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"-->
+<!--                android:layout_marginBottom="@dimen/activity_vertical_margin_2x"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/moviesImageContainer"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/md_white_1000"-->
+<!--                    android:fontFamily="@font/proxima_nova_regular"-->
+<!--                    android:textSize="@dimen/text_size_zeplin_22pt"-->
+<!--                    android:text="@string/home_milmovies_description"-->
+<!--                    android:paddingStart="@dimen/activity_vertical_margin_2x"-->
+<!--                    android:paddingEnd="@dimen/activity_vertical_margin_2x"-->
+<!--                    android:gravity="center"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

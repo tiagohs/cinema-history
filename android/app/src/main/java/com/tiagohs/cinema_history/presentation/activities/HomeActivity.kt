@@ -5,32 +5,39 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
+import android.view.animation.DecelerateInterpolator
+import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
-import com.tiagohs.entities.image.Image
-import com.tiagohs.entities.image.ImageResize
-import com.tiagohs.entities.image.ImageStyle
+import com.tiagohs.cinema_history.presentation.adapters.HomeAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
-import com.tiagohs.entities.enums.ImageType
+import com.tiagohs.domain.presenter.HomePresenter
+import com.tiagohs.domain.views.HomeView
+import com.tiagohs.entities.HomeContentItem
 import com.tiagohs.entities.enums.MainTopicsType
-import com.tiagohs.helpers.extensions.getResourceString
+import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
+import com.tiagohs.helpers.tools.SliderTransformer
+import kotlinx.android.synthetic.main.activity_home.toolbar
 import kotlinx.android.synthetic.main.activity_home.*
+import javax.inject.Inject
 
 
-class HomeActivity: BaseActivity() {
+class HomeActivity : BaseActivity(), HomeView {
+
+    @Inject
+    lateinit var presenter: HomePresenter
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_home
     override fun onGetMenuLayoutId(): Int = R.menu.menu_main
 
+    private var adapter: HomeAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setupToolbar(toolbar, displayHomeAsUpEnabled = false, displayShowTitleEnabled = false)
-        setupHistoryCinema()
-        setupMilMovies()
-        setupTimeline()
-        setupDirectors()
+        getApplicationComponent()?.inject(this)
+
+        presenter.onBindView(this)
+        presenter.fetchHomeContent()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -54,52 +61,81 @@ class HomeActivity: BaseActivity() {
 
     }
 
-    private fun setupHistoryCinema() {
-        val historyImage = Image(ImageType.LOCAL, "img_chinatown",null)
-        historyMovieImage.loadImage(historyImage, null)
-
-        cinemaImageContainer.setOnClickListener(onHistoryCinemaClick())
-        cinemaTitleContainer.setOnClickListener(onHistoryCinemaClick())
-        cinemaFooterContainer.setOnClickListener(onHistoryCinemaClick())
-        startHistoryButton.setOnClickListener(onHistoryCinemaClick())
+    override fun setupContentView() {
+        setupToolbar(toolbar, displayHomeAsUpEnabled = false, displayShowTitleEnabled = false)
     }
 
-    private fun setupMilMovies() {
-        val imageStyle = ImageStyle(resize = ImageResize(height = 500), scaleType = "center_crop")
-        val milMoviesImage = Image(ImageType.LOCAL,"img_godfather", getResourceString(R.string.mil_movies_image_description), null, imageStyle)
+    override fun bindHomeContent(homeContentList: List<HomeContentItem>) {
+        adapter = HomeAdapter(homeContentList).apply {
+            onItemClicked = { onHomeItemClicked(it) }
+        }
 
-        moviesImage.loadImage(milMoviesImage, null)
+        homeViewPager.apply {
+            adapter = this@HomeActivity.adapter
+            orientation = ViewPager2.ORIENTATION_HORIZONTAL
+            offscreenPageLimit = 4
 
-        moviesCard.setOnClickListener(onMilMoviesClick())
+            setPageTransformer(SliderTransformer(4))
+            registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+                override fun onPageSelected(position: Int) {
+                    contentIndicator.onPageSelected(position)
+                }
+            })
+        }
+
+        contentIndicator.attachToViewPager2(homeViewPager)
     }
 
-    private fun setupTimeline() {
-        val imageStyle = ImageStyle(resize = ImageResize(height = 350), scaleType = "center_crop")
-        val timelineImageObject = Image(ImageType.LOCAL,"img_film_faixa", getResourceString(R.string.timeline_image_description),null, imageStyle)
+    private fun onHomeItemClicked(homeContentItem: HomeContentItem) {
+        if (homeContentItem.mainTopicType == MainTopicsType.TIMELINE) {
+            startActivityWithSlideRightToLeftAnimation(TimelineActivity.newIntent(this))
+            return
+        }
 
-        timelineImage.loadImage(timelineImageObject, null)
-
-        timelineCard.setOnClickListener(onTimelineCinemaClick())
+        startActivityWithSlideRightToLeftAnimation(
+            MainTopicsActivity.newIntent(
+                homeContentItem.mainTopicType,
+                this,
+                darkMode = homeContentItem.darkMode
+            )
+        )
     }
 
-    private fun setupDirectors() {
-        val imageStyle = ImageStyle(resize = ImageResize(height = 450), scaleType = "center_crop")
-        val image = Image(ImageType.LOCAL,"img_david_fincher", getResourceString(R.string.directors_image_description),null, imageStyle)
+    override fun startLoading() {
+        loadView.startShimmer()
+    }
 
-        directorsImage.loadImage(image, null)
+    override fun hideLoading() {
+        loadView.stopShimmer()
 
-        directorsCard.setOnClickListener(onDirectorsClick())
+        contentContainer
+            .animate()
+            .alpha(1f)
+            .setDuration(200)
+            .setInterpolator(DecelerateInterpolator(2f))
+            .start()
     }
 
     private fun onHistoryCinemaClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivityWithSlideRightToLeftAnimation(MainTopicsActivity.newIntent(MainTopicsType.HISTORY_CINEMA, this, darkMode = true))
+            startActivityWithSlideRightToLeftAnimation(
+                MainTopicsActivity.newIntent(
+                    MainTopicsType.HISTORY_CINEMA,
+                    this,
+                    darkMode = true
+                )
+            )
         }
     }
 
     private fun onMilMoviesClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivityWithSlideRightToLeftAnimation(MainTopicsActivity.newIntent(MainTopicsType.MIL_MOVIES, this))
+            startActivityWithSlideRightToLeftAnimation(
+                MainTopicsActivity.newIntent(
+                    MainTopicsType.MIL_MOVIES,
+                    this
+                )
+            )
         }
     }
 
@@ -111,7 +147,12 @@ class HomeActivity: BaseActivity() {
 
     private fun onDirectorsClick(): View.OnClickListener {
         return View.OnClickListener {
-            startActivityWithSlideRightToLeftAnimation(MainTopicsActivity.newIntent(MainTopicsType.DIRECTORS, this))
+            startActivityWithSlideRightToLeftAnimation(
+                MainTopicsActivity.newIntent(
+                    MainTopicsType.DIRECTORS,
+                    this
+                )
+            )
         }
     }
 

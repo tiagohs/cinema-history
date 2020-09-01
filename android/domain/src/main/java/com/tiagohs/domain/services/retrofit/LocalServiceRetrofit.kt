@@ -1,5 +1,6 @@
 package com.tiagohs.domain.services.retrofit
 
+import com.tiagohs.entities.HomeContentItem
 import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
@@ -11,6 +12,9 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface LocalServiceRetrofit {
+
+    @GET("homecontent")
+    fun getHomeContent(): Observable<List<HomeContentItem>>
 
     @GET("main_{mainTopicId}/page_{pageNumber}")
     fun getPage(@Path("mainTopicId") mainTopicId: Int, @Path("pageNumber") pageNumber: Int): Observable<com.tiagohs.entities.Page>

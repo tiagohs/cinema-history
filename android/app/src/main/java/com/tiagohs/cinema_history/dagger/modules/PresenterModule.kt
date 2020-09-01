@@ -10,7 +10,10 @@ import dagger.Provides
 class PresenterModule {
 
     @Provides
-    fun providerHomePresenter(localService: LocalService): MainTopicsPresenter = MainTopicsPresenterImpl(localService)
+    fun providerHomePresenter(localService: LocalService): HomePresenter = HomePresenterImpl(localService)
+
+    @Provides
+    fun providerMainTopicsPresenter(localService: LocalService): MainTopicsPresenter = MainTopicsPresenterImpl(localService)
 
     @Provides
     fun providerMilMoviesPresentationPresenter(tmdbService: TMDBService): MilMoviesPresentationPresenter = MilMoviesPresentationPresenterImpl(tmdbService)
