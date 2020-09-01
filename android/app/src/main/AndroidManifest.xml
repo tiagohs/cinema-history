@@ -36,7 +36,7 @@
 
         <activity
             android:name=".presentation.activities.UniversalLinkActivity">
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
@@ -45,6 +45,13 @@
                     android:pathPattern=".*"
                     android:scheme="https"/>
                 <data android:scheme="https"
+                    android:pathPattern=".*"
+                    android:host="thshoc.com" />
+                <data
+                    android:host="cinemahistory.page.link"
+                    android:pathPattern=".*"
+                    android:scheme="http"/>
+                <data android:scheme="http"
                     android:pathPattern=".*"
                     android:host="thshoc.com" />
             </intent-filter>
