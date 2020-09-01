@@ -51,7 +51,6 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     @Inject
     lateinit var settingManager: SettingsManager
 
-
     var movieId: Int = 0
     var movie: Movie? = null
     private var isFromUniversalLink = false
@@ -70,6 +69,10 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
             R.id.action_share -> {
                 onShareClicked()
                 return true
@@ -123,7 +126,6 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
             finish()
             return
         }
-
         super.onBackPressed()
 
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)

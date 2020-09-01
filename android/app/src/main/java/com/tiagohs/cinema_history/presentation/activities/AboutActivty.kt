@@ -40,6 +40,12 @@ class AboutActivty : AppCompatActivity() {
         }
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
     private fun setupContentView(): View {
         val adsElement = Element().apply {
             title = getResourceString(R.string.responsable)

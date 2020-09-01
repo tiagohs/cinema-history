@@ -55,6 +55,10 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
             R.id.action_share -> {
                 onShareClicked()
                 return true
