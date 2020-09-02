@@ -76,6 +76,7 @@
     <string name="media">Mídia</string>
     <string name="cast">Elenco</string>
     <string name="crew">Equipe Técnica</string>
+    <string name="reviews">Críticas e Reviews</string>
     <string name="production">Produção</string>
     <string name="sinopsys">Sinopse</string>
     <string name="orcamento">Orçamento</string>
@@ -85,6 +86,7 @@
     <string name="director_profile">Perfil do Diretor</string>
     <string name="interviews">Entrevista</string>
     <string name="no_summary">Esse filme não possui uma sinopse disponível.</string>
+    <string name="review_click_here">Clique aqui e leia a crítica completa</string>
 
     <!-- Descriptions -->
     <string name="description_logo_app">Logo do Aplicativo</string>

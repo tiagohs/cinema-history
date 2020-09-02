@@ -3,6 +3,7 @@
 package com.tiagohs.helpers.utils
 
 import android.content.res.Resources
+import com.tiagohs.helpers.R
 
 import java.util.ArrayList
 import java.util.Collections
@@ -54,6 +55,15 @@ object LocaleUtils {
     fun getLocaleCountryISO(locale: Locale): String {
         return locale.country
     }
+
+    fun getCountryName(languageIso: String?): Int {
+        return when (languageIso) {
+            "pt-BR" -> R.string.brazil
+            "en-US" -> R.string.eua
+            else -> R.string.eua
+        }
+    }
+
 
     fun getLanguageName(languageIso: String?): String? {
         val all = Locale.getAvailableLocales()

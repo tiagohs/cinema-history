@@ -228,9 +228,8 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
             listOfMovieList.add(MovieInfoPersonList(MovieInfoType.INFO_CREW, movie, crewList, getResourceString(R.string.crew)))
         }
 
-        if (!movie.productionCompanies.isNullOrEmpty()) {
-            listOfMovieList.add(MovieInfo(MovieInfoType.INFO_PRODUCTION, movie))
-        }
+        movie.extraInfo?.reviewResults?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_REVIEWS, movie)) }
+        movie.productionCompanies?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_PRODUCTION, movie)) }
 
         listOfMovieList.add(MovieInfo(MovieInfoType.INFO_MIDIAS, movie))
 

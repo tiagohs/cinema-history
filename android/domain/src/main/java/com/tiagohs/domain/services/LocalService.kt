@@ -9,6 +9,7 @@ import com.tiagohs.entities.Sumario
 import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.references.Reference
 import com.tiagohs.entities.timeline.TimelineResult
+import com.tiagohs.entities.tmdb.movie.MovieExtraInfo
 import com.tiagohs.entities.tmdb.person.PersonExtraInfo
 import io.reactivex.Observable
 
@@ -34,4 +35,5 @@ class LocalService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) 
 
     fun getSpecialPersons(): Observable<List<PersonExtraInfo>> = buildLocalService(LocalServiceRetrofit::class.java).getSpecialPersons()
 
+    fun getSpecialMovies(): Observable<List<MovieExtraInfo>> = buildLocalService(LocalServiceRetrofit::class.java).getSpecialMovies()
 }

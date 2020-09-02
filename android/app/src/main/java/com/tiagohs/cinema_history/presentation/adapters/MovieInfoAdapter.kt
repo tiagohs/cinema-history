@@ -21,6 +21,7 @@ class MovieInfoAdapter(
         MovieInfoType.INFO_CAST.ordinal, MovieInfoType.INFO_CREW.ordinal -> MovieInfoPersonListViewHolder.LAYOUT_ID
         MovieInfoType.INFO_HEADER.ordinal -> MovieInfoHeaderViewHolder.LAYOUT_ID
         MovieInfoType.INFO_SUMMARY.ordinal -> MovieInfoSummaryViewHolder.LAYOUT_ID
+        MovieInfoType.INFO_REVIEWS.ordinal -> MovieInfoReviewsViewHolder.LAYOUT_ID
         MovieInfoType.INFO_PRODUCTION.ordinal -> MovieInfoProductionViewHolder.LAYOUT_ID
         MovieInfoType.INFO_MIDIAS.ordinal -> MovieInfoMidiaViewHolder.LAYOUT_ID
         else -> R.layout.adapter_empty
@@ -34,6 +35,7 @@ class MovieInfoAdapter(
             )
             MovieInfoType.INFO_HEADER.ordinal -> MovieInfoHeaderViewHolder(view)
             MovieInfoType.INFO_SUMMARY.ordinal -> MovieInfoSummaryViewHolder(view, appLanguage, onExtenalLink)
+            MovieInfoType.INFO_REVIEWS.ordinal -> MovieInfoReviewsViewHolder(view, onExtenalLink, appLanguage)
             MovieInfoType.INFO_PRODUCTION.ordinal -> MovieInfoProductionViewHolder(view)
             MovieInfoType.INFO_MIDIAS.ordinal -> MovieInfoMidiaViewHolder(view, onVideoClick)
             else -> object : BaseViewHolder<MovieInfo>(view) {}

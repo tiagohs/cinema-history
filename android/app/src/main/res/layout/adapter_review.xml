@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/mediaContainer2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediaContainer"
+        app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+        app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="100dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewAuthorName"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/text_size_zeplin_22pt"
+                android:fontFamily="@font/oswald_bold"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Tiago H. Silva"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewDetails"
+                android:textColor="@color/md_grey_500"
+                android:textSize="@dimen/text_size_zeplin_18pt"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_marginTop="@dimen/activity_vertical_margin_0.2x"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                app:layout_constraintTop_toBottomOf="@id/reviewAuthorName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="03/08/2020 - Plano Crítico - Brasil"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewDescription"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/text_size_zeplin_22pt"
+                android:textColorLink="@color/md_blue_500"
+                android:lineSpacingMultiplier="1.1"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_1.5x"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintTop_toBottomOf="@id/reviewDetails"
+                app:layout_constraintBottom_toTopOf="@+id/clickHere"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Author do Livro Author do Livro Author do Livro Author do Livro Author do Livro"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/clickHere"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/text_size_zeplin_22pt"
+                android:text="@string/review_click_here"
+                android:padding="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:background="@drawable/background_review_button"
+                tools:text="@string/review_click_here"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+        android:elevation="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/reviewImageContainer"
+            app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+            app:cardCornerRadius="40dp"
+            app:cardBackgroundColor="@color/md_black_1000"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/reviewImage"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                tools:src="@drawable/img_logo_plano_critico"
+            />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.willy.ratingbar.BaseRatingBar
+            android:id="@+id/reviewRatingBar"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:srb_numStars="5"
+            app:srb_minimumStars="1"
+            app:srb_rating="2.5"
+            app:srb_starWidth="10dp"
+            app:srb_starHeight="10dp"
+            app:srb_starPadding="15dp"
+            app:srb_stepSize="0.5"
+            app:srb_isIndicator="false"
+            app:srb_clickable="false"
+            app:srb_scrollable="false"
+            app:srb_clearRatingEnabled="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reviewImageContainer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

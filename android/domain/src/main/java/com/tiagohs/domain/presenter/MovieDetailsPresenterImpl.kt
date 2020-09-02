@@ -4,8 +4,10 @@ import com.tiagohs.entities.tmdb.Result
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.entities.tmdb.movie.Video
 import com.tiagohs.domain.presenter.configs.BasePresenter
+import com.tiagohs.domain.services.LocalService
 import com.tiagohs.domain.services.TMDBService
 import com.tiagohs.domain.views.MovieDetailsView
+import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.helpers.R
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -13,7 +15,8 @@ import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 class MovieDetailsPresenterImpl @Inject constructor(
-    val tmdbService: TMDBService
+    val tmdbService: TMDBService,
+    val localService: LocalService
 ): BasePresenter<MovieDetailsView>(), MovieDetailsPresenter {
 
     lateinit var movie: Movie
@@ -31,6 +34,7 @@ class MovieDetailsPresenterImpl @Inject constructor(
         add(tmdbService.getMovieDetails(movieId, languageToUse, appendToResponse)
             .concatMap { fetchVideos(it, languageToUse) }
             .map { this.movie }
+            .concatMap { fetchExtraInfo(it) }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
@@ -79,4 +83,16 @@ class MovieDetailsPresenterImpl @Inject constructor(
 
         return this.movie
     }
+
+    private fun fetchExtraInfo(movie: Movie): Observable<Movie> =
+        localService.getSpecialMovies()
+            .map {  movieExtraInfoList ->
+                movieExtraInfoList.find {
+                        movieExtra -> movieExtra.id == movie.id
+                }?.let {
+                    movie.extraInfo = it
+                }
+
+                movie
+            }
 }

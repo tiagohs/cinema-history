@@ -98,6 +98,7 @@
     <string name="release">Release: </string>
     <string name="media">Media</string>
     <string name="cast">Cast</string>
+    <string name="reviews">Critic Reviews</string>
     <string name="crew">Crew</string>
     <string name="production">Production</string>
     <string name="sinopsys">Plot</string>
@@ -108,6 +109,8 @@
     <string name="director_profile">Director Profile</string>
     <string name="interviews">Interviews</string>
     <string name="no_summary">The plot is unknown.</string>
+    <string name="review_details_format" translatable="false">%1s - %2s | %3s</string>
+    <string name="review_click_here">Click here to read the full Review</string>
 
     <!-- Descriptions -->
     <string name="description_logo_app">Application Logo</string>

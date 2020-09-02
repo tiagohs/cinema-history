@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Entities</string>
+
+    <!-- Reviewers Site -->
+    <string name="omelete" translatable="false" >Omelete</string>
+    <string name="plano_critico" translatable="false" >Plano Crítico</string>
+    <string name="adoro_cinema" translatable="false" >Adoro Cinema</string>
+
+    <string name="brazil">Brazil</string>
+    <string name="eua">United States</string>
 </resources>

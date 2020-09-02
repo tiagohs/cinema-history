@@ -6,6 +6,7 @@ import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
 import com.tiagohs.entities.references.Reference
 import com.tiagohs.entities.timeline.TimelineResult
+import com.tiagohs.entities.tmdb.movie.MovieExtraInfo
 import com.tiagohs.entities.tmdb.person.PersonExtraInfo
 import io.reactivex.Observable
 import retrofit2.http.GET
@@ -42,4 +43,7 @@ interface LocalServiceRetrofit {
 
     @GET("special_persons")
     fun getSpecialPersons(): Observable<List<PersonExtraInfo>>
+
+    @GET("special_movies")
+    fun getSpecialMovies(): Observable<List<MovieExtraInfo>>
 }
