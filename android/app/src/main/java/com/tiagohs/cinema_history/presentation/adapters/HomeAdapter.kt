@@ -43,6 +43,7 @@ class HomeAdapter(
             super.bind(item, position)
             val historyLogoTitle1 = containerView.findViewById<TextView>(R.id.title1)
             val historyLogoTitle2 = containerView.findViewById<TextView>(R.id.title2)
+            val image = containerView.findViewById<ImageView>(R.id.image)
 
             when (item.mainTopicType) {
                 MainTopicsType.HISTORY_CINEMA -> {
@@ -60,19 +61,19 @@ class HomeAdapter(
                         .setDuration(400)
                         .setStartDelay(400)
                         .setInterpolator(AccelerateDecelerateInterpolator())
-                        .withEndAction { historyMovieImage.loadImage(item.image, null) }
+                        .withEndAction { image.loadImage(item.image, null) }
                         .start()
 
                     homeItemCard.setOnClickListener { onItemClicked?.invoke(item) }
                 }
                 MainTopicsType.TIMELINE -> {
-                    bindItem(item, timelineImage, homeTimelineItemCard)
+                    bindItem(item, image, homeTimelineItemCard)
                 }
                 MainTopicsType.MIL_MOVIES -> {
-                    bindItem(item, moviesImage, homeMillMoviesItemCard)
+                    bindItem(item, image, homeMillMoviesItemCard)
                 }
                 MainTopicsType.DIRECTORS -> {
-                    bindItem(item, directorsImage, homeDirectorsItemCard)
+                    bindItem(item, image, homeDirectorsItemCard)
                 }
                 else -> { }
             }
