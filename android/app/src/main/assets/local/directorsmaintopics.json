@@ -2,6 +2,24 @@
   {
     "main_topic_type": "directors",
     "layout_type": "card_full",
+    "person_id": 1071403,
+    "title": "Alice Guy Blaché",
+    "image": {
+      "image_type": "local",
+      "url": "img_alice_2",
+      "content_description": "Fotografia de Alice Guy Blaché com uma camera.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
     "person_id": 138,
     "title": "Quentin Tarantino",
     "image": {
