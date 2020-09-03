@@ -36,7 +36,7 @@ fun ImageView?.setupPreview(image: Image, list: List<Image> = emptyList()) {
         StfalconImageViewer.Builder<Image>(context, finalList) { view, image ->
             image?.imageStyle?.scaleType = null
             image?.imageStyle?.resize = null
-            view.loadImage(image, null)
+            view.loadImage(image, placeholder = null)
         }
             .allowZooming(true)
             .withTransitionFrom(this)
@@ -70,6 +70,14 @@ fun ImageView.setImageDrawableColored(drawable: Drawable, color: Int) {
     DrawableCompat.setTint(wrappedDrawable, context.getResourceColor(color))
 
     setImageDrawable(wrappedDrawable)
+}
+
+fun ImageView?.setResourceImageDrawable(imageId: Int) {
+    if (this == null) {
+        return
+    }
+
+    setImageDrawable(context.getResourceDrawable(imageId))
 }
 
 fun ImageView.loadImage(url: String?,
@@ -146,7 +154,9 @@ fun ImageView.loadImage(
 
     glideRequest.into(this)
 
-    scaleType = ImageScaleType.getImageViewScaleType(image.imageStyle?.scaleType)
+    image.imageStyle?.scaleType?.let {
+        scaleType = ImageScaleType.getImageViewScaleType(image.imageStyle?.scaleType)
+    }
 
     image.contentDescription?.let { this.contentDescription = it }
 }

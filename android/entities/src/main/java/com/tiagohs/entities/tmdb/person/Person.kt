@@ -52,6 +52,7 @@ data class Person (
         departmentsList = departmentList
 	}
 
+
     fun setupPersonImages() {
         allImages = ArrayList(images?.profiles ?: emptyList())
         allImages.addAll(taggedImages?.results ?: emptyList())

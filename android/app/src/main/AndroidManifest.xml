@@ -23,6 +23,7 @@
 
         <activity
             android:name=".presentation.activities.HomeActivity"
+            android:theme="@style/AppTheme.AppThemeWithStatusTransparent"
             android:label="@string/app_name" />
         <activity
             android:name=".presentation.activities.SplashScreenActivity"

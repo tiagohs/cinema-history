@@ -1,6 +1,7 @@
 package com.tiagohs.entities.tmdb.movie
 
 import com.google.gson.annotations.SerializedName
+import com.tiagohs.entities.dto.MovieFilmographyDTO
 import com.tiagohs.entities.tmdb.ExternalIds
 import com.tiagohs.entities.tmdb.TranslationMovieData
 import com.tiagohs.entities.tmdb.TranslationsResult
@@ -12,6 +13,7 @@ data class Movie(
     @SerializedName("adult") val adult: Boolean? = null,
     @SerializedName("backdrop_path") val backdropPath: String? = null,
     @SerializedName("budget") val budget: Long? = null,
+    @SerializedName("belongs_to_collection") val belongsToCollection: Collection? = null,
     @SerializedName("genres") val genres: List<Genres>? = null,
     @SerializedName("homepage") val homepage: String? = null,
     @SerializedName("id") val id: Int? = null,
@@ -49,6 +51,8 @@ data class Movie(
             ?: videos?.videoList?.firstOrNull()?.key
 
     var extraInfo: MovieExtraInfo? = null
+    var directorMovies: List<MovieFilmographyDTO>? = null
+    var movieCollection: Collection? = null
 
     fun getMovieTitleFromAppLanguage(appLanguage: String): String {
         val translations = translations?.translations ?: emptyList()

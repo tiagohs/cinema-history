@@ -6,7 +6,7 @@
     android:id="@+id/coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="false"
+    android:fitsSystemWindows="true"
     android:background="@color/md_white_1000">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -14,14 +14,14 @@
         android:layout_height="match_parent"
         android:id="@+id/appBar"
         app:elevation="0dp"
-        android:fitsSystemWindows="false"
+        android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/collapsingToolbar"
-            android:fitsSystemWindows="false"
+            android:fitsSystemWindows="true"
             app:layout_scrollFlags="noScroll"
             app:contentScrim="@color/colorPrimary"
             app:titleEnabled="false">
@@ -33,17 +33,17 @@
                 android:id="@+id/contentContainer"
                 android:alpha="0"
                 android:background="@color/md_white_1000"
-                android:fitsSystemWindows="false"
+                android:fitsSystemWindows="true"
                 tools:alpha="1">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_marginTop="?attr/actionBarSize"
+                    android:fitsSystemWindows="true"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toTopOf="@id/contentIndicator">
+                    app:layout_constraintBottom_toBottomOf="parent">
 
                     <TextView
                         android:layout_width="0dp"
@@ -55,7 +55,9 @@
                         android:textSize="@dimen/text_size_zeplin_28pt"
                         android:fontFamily="@font/oswald_bold"
                         android:lineSpacingMultiplier="1.1"
+                        android:visibility="gone"
                         android:ellipsize="end"
+                        android:fitsSystemWindows="true"
                         android:layout_marginTop="@dimen/activity_vertical_margin_2x"
                         android:layout_marginStart="@dimen/activity_vertical_margin_2x"
                         android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
@@ -67,12 +69,10 @@
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:id="@+id/homeViewPager"
-                        android:fitsSystemWindows="false"
-                        android:paddingEnd="@dimen/home_slide_padding_end"
+                        android:fitsSystemWindows="true"
                         android:clipChildren="false"
                         android:clipToPadding="false"
-                        app:layout_constraintTop_toBottomOf="@id/homeSlideTitle"
-                        android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
+                        app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,10 +93,11 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/contentIndicator"
                     android:layout_gravity="center_horizontal|bottom"
-                    app:dotFillColor="@color/md_black_1000"
-                    app:dotStrokeColor="@color/md_grey_700"
+                    app:dotFillColor="@color/md_white_1000"
+                    app:dotStrokeColor="@color/md_grey_400"
+                    android:fitsSystemWindows="true"
                     android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin_3x"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -109,17 +110,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                android:background="@color/md_black_1000"
+                android:fitsSystemWindows="false"
                 app:popupTheme="@style/AppTheme.PopupOverlay">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="false">
 
                     <ImageView
                         android:layout_width="@dimen/home_icon_size"
                         android:layout_height="@dimen/home_icon_size"
                         app:srcCompat="@drawable/ic_logo_light"
+                        android:fitsSystemWindows="false"
                         android:contentDescription="@string/description_logo_app"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"

@@ -8,7 +8,11 @@ import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.domain.services.config.BaseService
 import com.tiagohs.domain.services.config.RetrofitConfig
 import com.tiagohs.domain.services.retrofit.TMDBServiceRetrofit
+import com.tiagohs.entities.tmdb.movie.Collection
+import com.tiagohs.entities.tmdb.person.PersonMovieCredits
 import io.reactivex.Observable
+import retrofit2.http.Path
+import retrofit2.http.Query
 
 class TMDBService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) {
 
@@ -24,7 +28,11 @@ class TMDBService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) {
         return buildTMDB3Service(TMDBServiceRetrofit::class.java).getPersonDetails(personId, languageToUse, appendToResponse.joinToString(","))
     }
 
+    fun getPersonMovieCredits(personId: Int, language: String): Observable<PersonMovieCredits> = buildTMDB3Service(TMDBServiceRetrofit::class.java).getPersonMovieCredits(personId, language)
+
     fun getList(listId: String, page: Int): Observable<TMDBList> {
         return buildTMDB4Service(TMDBServiceRetrofit::class.java).getList(listId, page, "null")
     }
+
+    fun getCollection(collectionId: Int, language: String): Observable<Collection> = buildTMDB3Service(TMDBServiceRetrofit::class.java).getCollection(collectionId, "null")
 }

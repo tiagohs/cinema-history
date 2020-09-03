@@ -7,8 +7,10 @@ import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.services.LocalService
 import com.tiagohs.domain.services.TMDBService
 import com.tiagohs.domain.views.MovieDetailsView
+import com.tiagohs.entities.tmdb.movie.Collection
 import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.helpers.R
+import com.tiagohs.helpers.utils.MovieUtils
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -35,6 +37,16 @@ class MovieDetailsPresenterImpl @Inject constructor(
             .concatMap { fetchVideos(it, languageToUse) }
             .map { this.movie }
             .concatMap { fetchExtraInfo(it) }
+            .concatMap { movie ->
+                val directorId = movie.credits?.crew?.filter { it.job == "Director" }?.firstOrNull()?.id ?: return@concatMap Observable.just(movie)
+
+                fetchDirectorMovies(movie, directorId, languageToUse)
+            }
+            .concatMap { movie ->
+                val collectionId = movie.belongsToCollection?.id ?: return@concatMap Observable.just(movie)
+
+                fetchCollection(movie, collectionId, languageToUse)
+            }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
@@ -92,6 +104,22 @@ class MovieDetailsPresenterImpl @Inject constructor(
                 }?.let {
                     movie.extraInfo = it
                 }
+
+                movie
+            }
+
+    private fun fetchCollection(movie: Movie, collectionId: Int, languageToUse: String) : Observable<Movie> =
+        tmdbService.getCollection(collectionId, languageToUse)
+            .map {
+                movie.movieCollection = it
+
+                movie
+            }
+
+    private fun fetchDirectorMovies(movie: Movie, directorId: Int, languageToUse: String) : Observable<Movie> =
+        tmdbService.getPersonMovieCredits(directorId, languageToUse)
+            .map {
+                movie.directorMovies = MovieUtils.generatePersonMovieCredits(it)
 
                 movie
             }

@@ -87,6 +87,8 @@
     <string name="interviews">Entrevista</string>
     <string name="no_summary">Esse filme não possui uma sinopse disponível.</string>
     <string name="review_click_here">Clique aqui e leia a crítica completa</string>
+    <string name="director_collection_title">O diretor %1s é conhecido (a) por…</string>
+    <string name="collection_title">Franquia %1s</string>
 
     <!-- Descriptions -->
     <string name="description_logo_app">Logo do Aplicativo</string>

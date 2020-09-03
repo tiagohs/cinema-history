@@ -10,11 +10,8 @@
         android:layout_height="0dp"
         android:id="@+id/homeItemCard"
         android:backgroundTint="@color/md_black_1000"
-        app:cardCornerRadius="@dimen/activity_vertical_margin_2x"
         android:clickable="true"
         android:focusable="true"
-        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
-        android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -71,13 +68,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/historyLogoTitle1"
+                android:id="@+id/title1"
                 android:text="@string/home_title_1"
                 android:textColor="@color/md_white_1000"
                 android:textStyle="bold"
                 android:textSize="@dimen/text_size_zeplin_26pt"
                 android:fontFamily="@font/oswald_bold"
                 android:layout_marginTop="20dp"
+                android:alpha="0"
                 app:layout_constraintTop_toBottomOf="@+id/guidelineTop"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
@@ -85,12 +83,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/title2"
                 android:text="@string/home_title_2"
                 android:textColor="@color/md_white_1000"
                 android:textStyle="bold"
                 android:textSize="@dimen/text_size_home_title"
+                android:alpha="0"
                 android:fontFamily="@font/billionairemediumgrunge"
-                app:layout_constraintTop_toBottomOf="@id/historyLogoTitle1"
+                app:layout_constraintTop_toBottomOf="@id/title1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 

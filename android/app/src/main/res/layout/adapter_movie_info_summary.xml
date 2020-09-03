@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/transparent">
@@ -70,7 +71,8 @@
                     android:id="@+id/facebookContainer"
                     android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
-                    android:background="@drawable/background_border_rectangle_grey_dark_1dp">
+                    android:background="@drawable/background_border_rectangle_grey_dark_1dp"
+                    tools:visibility="visible">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -101,7 +103,8 @@
                     android:id="@+id/twitterContainer"
                     android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
-                    android:background="@drawable/background_border_rectangle_grey_dark_1dp">
+                    android:background="@drawable/background_border_rectangle_grey_dark_1dp"
+                    tools:visibility="visible">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -132,7 +135,8 @@
                     android:id="@+id/instagramContainer"
                     android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
-                    android:background="@drawable/background_border_rectangle_grey_dark_1dp">
+                    android:background="@drawable/background_border_rectangle_grey_dark_1dp"
+                    tools:visibility="visible">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -163,7 +167,8 @@
                     android:id="@+id/linkContainer"
                     android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
-                    android:background="@drawable/background_border_rectangle_grey_dark_1dp">
+                    android:background="@drawable/background_border_rectangle_grey_dark_1dp"
+                    tools:visibility="visible">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -193,7 +198,8 @@
                     android:id="@+id/imdbContainer"
                     android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
-                    android:background="@drawable/background_border_rectangle_grey_dark_1dp">
+                    android:background="@drawable/background_border_rectangle_grey_dark_1dp"
+                    tools:visibility="visible">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -246,6 +252,7 @@
                 app:layout_constraintTop_toBottomOf="@id/summaryTitle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Um dos primeiros filmes produzidos no cinema americano, notável como um dos primeiros filmes que apresentou uma narrativa, que contou uma história. O funcionário da estação de trem é assaltado e deixado amarrado por quatro homens, em seguida, eles roubam o trem ameaçando o operador. Eles roubam todo o dinheiro e atiram num passageiro antes de fugir. Uma menina descobre o funcionário amarrado e avisa ao xerife, que sai junto com seus homens à caça dos bandidos. Algumas cópias do filme tem algumas cenas colorizadas a mão."
                 />
 
             <TextView

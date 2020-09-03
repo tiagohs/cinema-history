@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Rect
 import android.net.Uri
+import android.util.DisplayMetrics
 import android.view.WindowManager
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.content.ContextCompat
@@ -12,6 +13,16 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.tiagohs.helpers.R
 
+
+fun Activity?.getScreenWidth(): Int {
+    if (this == null) return 0
+    val displayMetrics = DisplayMetrics()
+
+    windowManager.defaultDisplay.getMetrics(displayMetrics)
+    val screenHeight = displayMetrics.heightPixels
+
+    return displayMetrics.widthPixels
+}
 
 fun Activity.setScreenBackgroundColor(color: String) {
     setScreenBackgroundColor(applicationContext.getResourceColor(color))

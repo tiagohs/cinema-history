@@ -109,8 +109,11 @@
     <string name="director_profile">Director Profile</string>
     <string name="interviews">Interviews</string>
     <string name="no_summary">The plot is unknown.</string>
-    <string name="review_details_format" translatable="false">%1s - %2s | %3s</string>
+    <string name="review_details_format" translatable="false">%1s | %3s</string>
+    <string name="review_details_format_with_date" translatable="false">%1s - %2s | %3s</string>
     <string name="review_click_here">Click here to read the full Review</string>
+    <string name="director_collection_title">The director %1s is known for…</string>
+    <string name="collection_title">%1s Collection</string>
 
     <!-- Descriptions -->
     <string name="description_logo_app">Application Logo</string>

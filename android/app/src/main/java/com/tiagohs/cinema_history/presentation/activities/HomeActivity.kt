@@ -6,9 +6,11 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.DecelerateInterpolator
+import android.widget.TextView
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.HomeAdapter
+import com.tiagohs.cinema_history.presentation.adapters.decorators.ScaleMovieImageTransformer
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.presenter.HomePresenter
 import com.tiagohs.domain.views.HomeView
@@ -19,6 +21,7 @@ import com.tiagohs.helpers.tools.SliderTransformer
 import kotlinx.android.synthetic.main.activity_home.toolbar
 import kotlinx.android.synthetic.main.activity_home.*
 import javax.inject.Inject
+import kotlin.math.abs
 
 
 class HomeActivity : BaseActivity(), HomeView {
@@ -73,9 +76,21 @@ class HomeActivity : BaseActivity(), HomeView {
         homeViewPager.apply {
             adapter = this@HomeActivity.adapter
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
-            offscreenPageLimit = 4
+            //offscreenPageLimit = 4
 
-            setPageTransformer(SliderTransformer(4))
+            // setPageTransformer(SliderTransformer(4))
+            setPageTransformer { page, position ->
+                page.apply {
+                    val viewHolder = adapter
+                    if (position >= -1 && position <= 1) { // [-1,1]
+                        page.findViewById<TextView>(R.id.title1)?.translationX = (position) * (width / 4).toFloat()
+                        page.findViewById<TextView>(R.id.title2)?.translationX = (position) * (width / 2).toFloat()
+                    } else {
+                        page.findViewById<TextView>(R.id.title2)?.translationX = (position) * (width / 4).toFloat()
+                        page.findViewById<TextView>(R.id.title2)?.translationX = (position) * (width / 2).toFloat()
+                    }
+                }
+            }
 
             contentIndicator.attachToViewPager2(this)
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {

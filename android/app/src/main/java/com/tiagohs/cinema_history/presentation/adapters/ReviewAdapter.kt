@@ -34,7 +34,13 @@ class ReviewAdapter(
             super.bind(item, position)
 
             reviewAuthorName.setResourceText(item.reviewerName)
-            reviewDetails.setResourceText(containerView.context.getString(R.string.review_details_format, item.dateFormated, item.reviewerSiteName, countryName))
+
+            if (item.dateFormated != null) {
+                reviewDetails.setResourceText(containerView.context.getString(R.string.review_details_format_with_date, item.dateFormated, item.reviewerSiteName, countryName))
+            } else {
+                reviewDetails.setResourceText(containerView.context.getString(R.string.review_details_format, item.reviewerSiteName, countryName))
+            }
+
             reviewDescription.setResourceText(item.reviewDescription)
 
             reviewRatingBar.rating = item.reviewRating

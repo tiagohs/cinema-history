@@ -1,7 +1,10 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
 import android.view.View
+import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.cardview.widget.CardView
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
@@ -38,10 +41,29 @@ class HomeAdapter(
 
         override fun bind(item: HomeContentItem, position: Int) {
             super.bind(item, position)
+            val historyLogoTitle1 = containerView.findViewById<TextView>(R.id.title1)
+            val historyLogoTitle2 = containerView.findViewById<TextView>(R.id.title2)
 
             when (item.mainTopicType) {
                 MainTopicsType.HISTORY_CINEMA -> {
-                    bindItem(item, historyMovieImage, homeItemCard)
+                    historyLogoTitle1
+                        .animate()
+                        .alpha(1f)
+                        .setStartDelay(200)
+                        .setDuration(300)
+                        .setInterpolator(AccelerateDecelerateInterpolator())
+                        .start()
+
+                    historyLogoTitle2
+                        .animate()
+                        .alpha(1f)
+                        .setDuration(400)
+                        .setStartDelay(400)
+                        .setInterpolator(AccelerateDecelerateInterpolator())
+                        .withEndAction { historyMovieImage.loadImage(item.image, null) }
+                        .start()
+
+                    homeItemCard.setOnClickListener { onItemClicked?.invoke(item) }
                 }
                 MainTopicsType.TIMELINE -> {
                     bindItem(item, timelineImage, homeTimelineItemCard)

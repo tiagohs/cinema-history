@@ -6,6 +6,7 @@ import com.tiagohs.helpers.R
 import com.tiagohs.entities.dto.RatingDTO
 import com.tiagohs.entities.tmdb.movie.Country
 import com.tiagohs.entities.tmdb.person.Person
+import com.tiagohs.entities.tmdb.person.PersonMovieCredits
 
 import java.util.Calendar
 import java.util.GregorianCalendar
@@ -101,10 +102,8 @@ object MovieUtils {
         person.birthdayFormated = "${DateUtils.formateDate(birthdayDate!!, "MMMM dd, yyyy")} in $placeOfBirth"
     }
 
-    fun generatePersonFilmography(person: Person?) {
-        person ?: return
-
-        val castMovies = person.movieCredits?.castCredits?.map {
+    fun generatePersonMovieCredits(movieCredits : PersonMovieCredits?): List<MovieFilmographyDTO> {
+        val castMovies = movieCredits?.castCredits?.map {
             MovieFilmographyDTO(
                 it.id,
                 it.title ?: it.originalTitle,
@@ -116,7 +115,7 @@ object MovieUtils {
                 year = if (it.releaseDate != null) DateUtils.getYearByDate(it.releaseDate) else null
             )
         } ?: emptyList()
-        val crewMovies = person.movieCredits?.crewCredits?.groupBy { it.id }?.entries?.map { moviesGrouped ->
+        val crewMovies = movieCredits?.crewCredits?.groupBy { it.id }?.entries?.map { moviesGrouped ->
             MovieFilmographyDTO(
                 moviesGrouped.value.firstOrNull()?.id,
                 moviesGrouped.value.firstOrNull()?.title
@@ -131,7 +130,7 @@ object MovieUtils {
         } ?: emptyList()
         val allMovies = listOf(castMovies, crewMovies).flatten()
 
-        person.personFilmography = allMovies.groupBy { it.id }.entries.map { moviesGrouped ->
+        return allMovies.groupBy { it.id }.entries.map { moviesGrouped ->
             MovieFilmographyDTO(
                 moviesGrouped.value.firstOrNull()?.id,
                 moviesGrouped.value.firstOrNull()?.title,

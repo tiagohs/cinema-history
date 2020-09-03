@@ -145,15 +145,20 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
         collapsingToolbar.title = movieTitle
         pageContentList.apply {
-            adapter = MovieInfoAdapter(movieInfoList, appLanguage).apply {
+            adapter = MovieInfoAdapter(movieInfoList, this@MovieDetailsActivity, appLanguage).apply {
                 onPersonClicked = { onPersonClicked(it) }
                 onExtenalLink = { openLink(it) }
                 onVideoClick = { openLink(getString(R.string.youtube_link,it)) }
+                onMovieClicked = { onMovieSelected(it) }
             }
             layoutManager = LinearLayoutManager(this@MovieDetailsActivity, LinearLayoutManager.VERTICAL, false)
         }
 
         bindMovieHeader(movie, movieTitle)
+    }
+
+    private fun onMovieSelected(movieId: Int) {
+        startActivityWithSlideRightToLeftAnimation(newIntent(this, movieId))
     }
 
     override fun startLoading() {
@@ -229,9 +234,13 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         }
 
         movie.extraInfo?.reviewResults?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_REVIEWS, movie)) }
+        movie.directorMovies?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_DIRECTORS_MOVIE, movie)) }
+
         movie.productionCompanies?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_PRODUCTION, movie)) }
 
         listOfMovieList.add(MovieInfo(MovieInfoType.INFO_MIDIAS, movie))
+
+        movie.movieCollection?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_COLLECTION, movie)) }
 
         return listOfMovieList
     }

@@ -33,6 +33,7 @@ class MovieWallpaperAdapter(
             image.setOnClickListener {
                 StfalconImageViewer.Builder<Image>(context, list) { view, image ->
                     val url = image.filePath?.imageUrlFromTMDB(ImageSize.BACKDROP_ORIGINAL)
+
                     view.loadImage(url, contentDescription = containerView.context.getString(R.string.movie_backdrop_description, contentTitle), placeholder = null, scaleType = null)
                 }
                     .allowZooming(true)

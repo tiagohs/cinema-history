@@ -9,12 +9,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/homeTimelineItemCard"
-        app:cardCornerRadius="@dimen/activity_vertical_margin_2x"
         app:cardElevation="0dp"
         android:clickable="true"
         android:focusable="true"
-        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
-        android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -56,7 +53,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/timelineTitle"
+                android:id="@+id/title1"
                 android:text="@string/home_timeline_title"
                 android:textSize="@dimen/text_size_zeplin_40pt"
                 android:textColor="@color/md_white_1000"
@@ -65,12 +62,12 @@
                 android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/timelineDescription"/>
+                app:layout_constraintBottom_toTopOf="@id/title2"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/timelineDescription"
+                android:id="@+id/title2"
                 android:textColor="@color/md_white_1000"
                 android:fontFamily="@font/proxima_nova_regular"
                 android:textSize="@dimen/text_size_zeplin_22pt"
@@ -82,7 +79,7 @@
                 android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/guidelineBottom"
             />
 
 <!--            <androidx.constraintlayout.widget.ConstraintLayout-->

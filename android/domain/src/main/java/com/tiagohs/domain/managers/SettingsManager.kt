@@ -14,7 +14,7 @@ class SettingsManager
 ): SharedPreferences.OnSharedPreferenceChangeListener {
 
     val APP_LANGUAGE_DEFAULT = "Português Brasil"
-    val MOVIE_LANGUAGE_DEFAULT = "Inglês"
+    val MOVIE_LANGUAGE_DEFAULT = "Português Brasil"
 
     private val APP_LANGUAGE_KEY = "APP_LANGUAGE_KEY"
     private val MOVIE_LANGUAGE_KEY = "MOVIE_LANGUAGE_KEY"
@@ -42,7 +42,7 @@ class SettingsManager
 
     }
 
-    fun getMovieLanguage(): String = sharedPreferences?.getString(MOVIE_LANGUAGE_KEY, MOVIE_LANGUAGE_DEFAULT) ?: context.getResourceString(R.string.en_us_country_name)
+    fun getMovieLanguage(): String = sharedPreferences?.getString(MOVIE_LANGUAGE_KEY, MOVIE_LANGUAGE_DEFAULT) ?: context.getResourceString(R.string.pt_br_country_name)
 
     fun getMovieISOLanguage(): String = getMovieLanguage()
 

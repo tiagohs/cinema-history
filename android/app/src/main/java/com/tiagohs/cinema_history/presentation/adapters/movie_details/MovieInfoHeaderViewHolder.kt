@@ -29,7 +29,7 @@ class MovieInfoHeaderViewHolder(
 
         val directors = movie.credits?.crew?.filter { it.job == "Director" }?.map { it.name }
             ?.joinToString(", ") ?: ""
-        val writers = movie.credits?.crew?.filter { it.job == "Screenplay" || it.job == "Writer" }
+        val writers = movie.credits?.crew?.filter { it.job == "Screenplay" || it.job == "Writer" || it.job == "Writing" }
             ?.map { it.name }?.joinToString(", ") ?: ""
         val originalLanguage =
             LocaleUtils.getLanguageName(movie.originalLanguage)?.capitalize() ?: ""
