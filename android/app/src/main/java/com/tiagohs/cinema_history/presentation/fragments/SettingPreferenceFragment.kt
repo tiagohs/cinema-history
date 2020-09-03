@@ -9,6 +9,7 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.cinema_history.presentation.activities.AboutActivty
 import com.tiagohs.cinema_history.presentation.activities.ReferenceActivity
+import com.tiagohs.helpers.extensions.getResourceString
 import javax.inject.Inject
 
 class SettingPreferenceFragment: PreferenceFragmentCompat() {
@@ -40,10 +41,10 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
         aboutLanguage = findPreference(ABOUT_KEY)
         referencesLanguage = findPreference(REFERENCES_KEY)
 
-        appLanguage?.summary = settingManager.getNameLanguage(settingManager.getAppLanguage())
+        appLanguage?.summary = context.getResourceString(R.string.pt_br_country_name)
         appLanguage?.setOnPreferenceChangeListener { preference, newLanguage ->
             settingManager.updateAppLanguage(newLanguage as String)
-            preference.summary = settingManager.getNameLanguage(settingManager.getAppLanguage())
+            preference.summary = context.getResourceString(R.string.pt_br_country_name)
 
             true
         }
