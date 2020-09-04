@@ -39,7 +39,7 @@
                 />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="?attr/actionBarSize"
                 android:id="@+id/footerContent"
                 android:background="@color/md_black_1000"
