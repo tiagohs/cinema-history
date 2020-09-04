@@ -33,6 +33,8 @@ android {
         buildConfigField "String", "THEMOVIEDB_API_KEY", '"dac4d50f24dee29513738d8fa3470a3f"'
 
         vectorDrawables.useSupportLibrary = true
+        renderscriptTargetApi globalConfiguration["targetSDK"]
+        renderscriptSupportModeEnabled true
     }
 
     androidExtensions {
@@ -98,6 +100,7 @@ dependencies {
 
     // Glide
     implementation dependencies.glide
+    implementation dependencies.glide_transformations
     kapt dependencies.glideCompiler
     kapt dependencies.lifecycleCompiler
 

@@ -43,6 +43,7 @@ dependencies {
     implementation dependencies.gson
     implementation dependencies.timber
     implementation dependencies.javaxAnnotation
+    implementation dependencies.glide_transformations
 
     // Rx
     implementation dependencies.rxAndroid

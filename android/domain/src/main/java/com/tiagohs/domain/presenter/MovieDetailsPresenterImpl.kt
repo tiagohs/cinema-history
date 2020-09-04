@@ -34,6 +34,7 @@ class MovieDetailsPresenterImpl @Inject constructor(
 
         view?.startLoading()
         add(tmdbService.getMovieDetails(movieId, languageToUse, appendToResponse)
+            .doOnNext { it.setupImages() }
             .concatMap { fetchVideos(it, languageToUse) }
             .map { this.movie }
             .concatMap { fetchExtraInfo(it) }

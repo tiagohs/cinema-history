@@ -238,7 +238,9 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
         movie.productionCompanies?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_PRODUCTION, movie)) }
 
-        listOfMovieList.add(MovieInfo(MovieInfoType.INFO_MIDIAS, movie))
+        if (!movie.allImages.isNullOrEmpty() || !movie.videos?.videoList.isNullOrEmpty()) {
+            listOfMovieList.add(MovieInfo(MovieInfoType.INFO_MIDIAS, movie))
+        }
 
         movie.movieCollection?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_COLLECTION, movie)) }
 

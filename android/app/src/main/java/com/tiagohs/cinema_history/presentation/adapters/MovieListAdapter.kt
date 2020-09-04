@@ -1,6 +1,9 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
+import android.R.attr.radius
+import android.app.Activity
 import android.view.View
+import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
@@ -13,12 +16,15 @@ import com.tiagohs.helpers.utils.LocaleUtils
 import com.tiagohs.helpers.utils.MovieUtils
 import kotlinx.android.synthetic.main.adapter_movie_list.*
 
+
 class MovieListAdapter(
     list: ArrayList<Movie>,
+    val activity: Activity,
     val mainTopic: MilMoviesMainTopic
 ) : BaseAdapter<Movie, MovieListAdapter.MovieListViewHolder>(list) {
 
     var onMovieSelected: ((movie: Movie, position: Int) -> Unit)? = null
+    var onLoadBackdrop: ((url: String?) -> Unit)? = null
 
     override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_movie_list
 
@@ -62,7 +68,7 @@ class MovieListAdapter(
 
                 backgroundContent.startAnimation(animation)
             } else {
-                backgroundContent.setResourceBackgroundColor(R.color.md_white_1000)
+                backgroundContent.setResourceBackgroundColor(R.color.transparent)
             }
 
             loadImage(item)
@@ -95,6 +101,8 @@ class MovieListAdapter(
             val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
 
             image.loadImage(url)
+
+            onLoadBackdrop?.invoke(url)
         }
 
         override fun onClick(v: View?) {

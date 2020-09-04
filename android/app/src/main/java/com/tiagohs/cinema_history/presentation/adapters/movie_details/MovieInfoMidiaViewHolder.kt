@@ -31,8 +31,7 @@ class MovieInfoMidiaViewHolder(
     }
 
     private fun bindImages(context: Context, movie: Movie) {
-        val allImages = ArrayList<Image>(movie.images?.backdrops ?: emptyList())
-        allImages.addAll(movie.images?.posters ?: emptyList())
+        val allImages = movie.allImages ?: emptyList()
 
         wallpapersList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)

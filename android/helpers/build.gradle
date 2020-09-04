@@ -18,6 +18,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
+
+        renderscriptTargetApi globalConfiguration["targetSDK"]
+        renderscriptSupportModeEnabled true
     }
 
     buildTypes {
@@ -66,6 +69,7 @@ dependencies {
 
     // Glide
     implementation dependencies.glide
+    implementation dependencies.glide_transformations
     kapt dependencies.glideCompiler
     kapt dependencies.lifecycleCompiler
 

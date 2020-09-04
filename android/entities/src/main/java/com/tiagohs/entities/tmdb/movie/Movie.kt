@@ -3,6 +3,7 @@ package com.tiagohs.entities.tmdb.movie
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.entities.dto.MovieFilmographyDTO
 import com.tiagohs.entities.tmdb.ExternalIds
+import com.tiagohs.entities.tmdb.Image
 import com.tiagohs.entities.tmdb.TranslationMovieData
 import com.tiagohs.entities.tmdb.TranslationsResult
 import java.io.Serializable
@@ -53,6 +54,15 @@ data class Movie(
     var extraInfo: MovieExtraInfo? = null
     var directorMovies: List<MovieFilmographyDTO>? = null
     var movieCollection: Collection? = null
+
+    var allImages: List<Image>? = null
+
+    fun setupImages() {
+        val allImages = ArrayList<Image>(images?.backdrops ?: emptyList())
+        allImages.addAll(images?.posters ?: emptyList())
+
+        this.allImages = allImages
+    }
 
     fun getMovieTitleFromAppLanguage(appLanguage: String): String {
         val translations = translations?.translations ?: emptyList()

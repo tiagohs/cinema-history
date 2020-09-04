@@ -1,6 +1,7 @@
 package com.tiagohs.helpers.extensions
 
 import android.annotation.SuppressLint
+import android.graphics.Bitmap
 import android.graphics.ColorMatrix
 import android.graphics.ColorMatrixColorFilter
 import android.graphics.drawable.Drawable
@@ -9,6 +10,7 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestManager
 import com.bumptech.glide.load.DataSource
+import com.bumptech.glide.load.Transformation
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
@@ -85,8 +87,9 @@ fun ImageView.loadImage(url: String?,
                         placeholder: Int? = R.drawable.placeholder_movie_poster,
                         errorPlaceholder: Int? = R.drawable.placeholder_movie_poster,
                         scaleType: String? = "center_crop",
+                        transform: Transformation<Bitmap>? = null,
                         oonLoadSuccess: (() -> Unit)? = null) {
-    loadImage(Image(ImageType.ONLINE, url ?: "", contentDescription = contentDescription, imageStyle = ImageStyle(scaleType = scaleType)), placeholder, errorPlaceholder, oonLoadSuccess)
+    loadImage(Image(ImageType.ONLINE, url ?: "", contentDescription = contentDescription, imageStyle = ImageStyle(scaleType = scaleType)), placeholder, errorPlaceholder, transform, oonLoadSuccess)
 }
 
 @SuppressLint("CheckResult")
@@ -94,6 +97,7 @@ fun ImageView.loadImage(
     image: Image,
     placeholder: Int? = R.drawable.placeholder_movie_poster,
     errorPlaceholder: Int? = R.drawable.placeholder_movie_poster,
+    transform: Transformation<Bitmap>? = null,
     onFinished: (() -> Unit)? = null) {
 
     val glide = GlideApp.with(context)
@@ -151,6 +155,8 @@ fun ImageView.loadImage(
             return false
         }
     })
+
+    transform?.let { glideRequest.transform(it) }
 
     glideRequest.into(this)
 

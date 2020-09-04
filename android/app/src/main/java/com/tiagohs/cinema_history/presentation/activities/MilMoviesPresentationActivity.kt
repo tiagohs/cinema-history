@@ -15,10 +15,12 @@ import com.tiagohs.cinema_history.presentation.adapters.decorators.ScaleMovieIma
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.presenter.MilMoviesPresentationPresenter
 import com.tiagohs.domain.views.MilMoviesPresentationView
+import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.main_topics.MilMoviesMainTopic
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
+import jp.wasabeef.glide.transformations.BlurTransformation
 import kotlinx.android.synthetic.main.activity_mil_movies_presentation.*
 import javax.inject.Inject
 
@@ -66,9 +68,9 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
     }
 
     override fun bindMovieList(list: List<Movie>) {
-        adapter = MovieListAdapter(ArrayList(list), mainTopic)
-
-        adapter?.onMovieSelected = { movie, _ -> onMovieSelected(movie) }
+        adapter = MovieListAdapter(ArrayList(list), this, mainTopic).apply {
+            onMovieSelected = { movie, _ -> onMovieSelected(movie) }
+        }
 
         moviesViewPager.apply {
             adapter = this@MilMoviesPresentationActivity.adapter
@@ -78,6 +80,8 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
                     val movieList = this@MilMoviesPresentationActivity.adapter?.list ?: return
+
+                    movieList.getOrNull(position)?.let { loadBackdrop(it) }
 
                     if (position == movieList.size - 3 && !isSearching && presenter.hasMorePages()) {
                         loadingProgress.show()
@@ -117,6 +121,12 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
 
         presentationTitle.startAnimation(AnimationUtils.createFadeInAnimation(200, 350))
         presentationSubtitle.startAnimation(AnimationUtils.createFadeInAnimation(200, 350))
+    }
+
+    private fun loadBackdrop(movie: Movie) {
+        val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
+
+        backdropImage.loadImage(url, placeholder = null, transform = BlurTransformation(35, 3))
     }
 
     override fun bindMoreMovies(movies: List<Movie>) {

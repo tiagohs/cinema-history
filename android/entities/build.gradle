@@ -38,6 +38,7 @@ dependencies {
     // Tools
     implementation dependencies.gson
     implementation dependencies.javaxAnnotation
+    implementation dependencies.glide_transformations
 
     // Okhttp3
     implementation 'com.squareup.okhttp3:okhttp:4.7.2'
