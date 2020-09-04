@@ -2,7 +2,6 @@ package com.tiagohs.cinema_history.presentation.adapters
 
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -12,11 +11,6 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.HomeContentItem
 import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.helpers.extensions.loadImage
-import kotlinx.android.synthetic.main.adapter_home_directors_item.*
-import kotlinx.android.synthetic.main.adapter_home_history_item.*
-import kotlinx.android.synthetic.main.adapter_home_millmovies_item.*
-import kotlinx.android.synthetic.main.adapter_home_millmovies_item.homeMillMoviesItemCard
-import kotlinx.android.synthetic.main.adapter_home_timeline_item.*
 
 class HomeAdapter(
     list: List<HomeContentItem>
@@ -41,50 +35,48 @@ class HomeAdapter(
 
         override fun bind(item: HomeContentItem, position: Int) {
             super.bind(item, position)
-            val historyLogoTitle1 = containerView.findViewById<TextView>(R.id.title1)
-            val historyLogoTitle2 = containerView.findViewById<TextView>(R.id.title2)
+            val title1 = containerView.findViewById<TextView>(R.id.title1)
+            val title2 = containerView.findViewById<TextView>(R.id.title2)
+            val startJourney = containerView.findViewById<TextView>(R.id.startJourney)
             val image = containerView.findViewById<ImageView>(R.id.image)
+            val card = containerView.findViewById<CardView>(R.id.card)
 
-            when (item.mainTopicType) {
-                MainTopicsType.HISTORY_CINEMA -> {
-                    historyLogoTitle1
-                        .animate()
-                        .alpha(1f)
-                        .setStartDelay(200)
-                        .setDuration(300)
-                        .setInterpolator(AccelerateDecelerateInterpolator())
-                        .start()
-
-                    historyLogoTitle2
-                        .animate()
-                        .alpha(1f)
-                        .setDuration(400)
-                        .setStartDelay(400)
-                        .setInterpolator(AccelerateDecelerateInterpolator())
-                        .withEndAction { image.loadImage(item.image, null) }
-                        .start()
-
-                    homeItemCard.setOnClickListener { onItemClicked?.invoke(item) }
-                }
-                MainTopicsType.TIMELINE -> {
-                    bindItem(item, image, homeTimelineItemCard)
-                }
-                MainTopicsType.MIL_MOVIES -> {
-                    bindItem(item, image, homeMillMoviesItemCard)
-                }
-                MainTopicsType.DIRECTORS -> {
-                    bindItem(item, image, homeDirectorsItemCard)
-                }
-                else -> { }
-            }
+            bindItem(item, title1, title2, startJourney, image, card)
         }
 
         private fun bindItem(
             item: HomeContentItem,
+            title1: TextView,
+            title2: TextView,
+            startJourney: TextView,
             imageView: ImageView,
             itemContainerCard: CardView
         ) {
-            imageView.loadImage(item.image, null)
+            title1
+                .animate()
+                .alpha(1f)
+                .setStartDelay(200)
+                .setDuration(300)
+                .setInterpolator(AccelerateDecelerateInterpolator())
+                .start()
+
+            title2
+                .animate()
+                .alpha(1f)
+                .setDuration(400)
+                .setStartDelay(400)
+                .setInterpolator(AccelerateDecelerateInterpolator())
+                .withEndAction {
+                    imageView.loadImage(item.image, null).apply {
+                        startJourney.animate()
+                            .alpha(1f)
+                            .setStartDelay(200)
+                            .setDuration(300)
+                            .setInterpolator(AccelerateDecelerateInterpolator())
+                            .start()
+                    }
+                }
+                .start()
 
             itemContainerCard.setOnClickListener { onItemClicked?.invoke(item) }
         }
