@@ -98,7 +98,7 @@ class HomeActivity : BaseActivity(), HomeView {
                 override fun onPageSelected(position: Int) {
                     contentIndicator.onPageSelected(position)
 
-                    if (homeViewPager.currentItem < homeContentList.size) {
+                    if (homeViewPager.currentItem < homeContentList.size - 1) {
                         nextButton.show()
                     } else {
                         nextButton.hide()
