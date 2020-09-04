@@ -2,6 +2,7 @@ package com.tiagohs.cinema_history.dagger.modules
 
 import com.tiagohs.domain.presenter.*
 import com.tiagohs.domain.services.LocalService
+import com.tiagohs.domain.services.OMDBService
 import com.tiagohs.domain.services.TMDBService
 import dagger.Module
 import dagger.Provides
@@ -25,7 +26,7 @@ class PresenterModule {
     fun providerHistoryPagePresenter(localService: LocalService): HistoryPagePresenter = HistoryPagePresenterImpl(localService)
 
     @Provides
-    fun providerMovieDetailsPresenter(tmdbService: TMDBService, localService: LocalService): MovieDetailsPresenter = MovieDetailsPresenterImpl(tmdbService, localService)
+    fun providerMovieDetailsPresenter(tmdbService: TMDBService, localService: LocalService, omdbService: OMDBService): MovieDetailsPresenter = MovieDetailsPresenterImpl(tmdbService, omdbService, localService)
 
     @Provides
     fun providerPersonDetailsPresenter(tmdbService: TMDBService, localService: LocalService): PersonDetailsPresenter = PersonDetailsPresenterImpl(tmdbService, localService)

@@ -5,6 +5,7 @@ import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.entities.tmdb.movie.Video
 import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.services.LocalService
+import com.tiagohs.domain.services.OMDBService
 import com.tiagohs.domain.services.TMDBService
 import com.tiagohs.domain.views.MovieDetailsView
 import com.tiagohs.entities.tmdb.movie.Collection
@@ -13,11 +14,14 @@ import com.tiagohs.helpers.R
 import com.tiagohs.helpers.utils.MovieUtils
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.functions.Function4
+import io.reactivex.functions.Function5
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 class MovieDetailsPresenterImpl @Inject constructor(
     val tmdbService: TMDBService,
+    val omdbService: OMDBService,
     val localService: LocalService
 ): BasePresenter<MovieDetailsView>(), MovieDetailsPresenter {
 
@@ -35,18 +39,22 @@ class MovieDetailsPresenterImpl @Inject constructor(
         view?.startLoading()
         add(tmdbService.getMovieDetails(movieId, languageToUse, appendToResponse)
             .doOnNext { it.setupImages() }
-            .concatMap { fetchVideos(it, languageToUse) }
-            .map { this.movie }
-            .concatMap { fetchExtraInfo(it) }
             .concatMap { movie ->
-                val directorId = movie.credits?.crew?.filter { it.job == "Director" }?.firstOrNull()?.id ?: return@concatMap Observable.just(movie)
+                this.movie = movie
 
-                fetchDirectorMovies(movie, directorId, languageToUse)
-            }
-            .concatMap { movie ->
-                val collectionId = movie.belongsToCollection?.id ?: return@concatMap Observable.just(movie)
+                val imdbObservable =  if (movie.imdbId != null) fetchOMDBResult(movie, movie.imdbId!!) else Observable.just(movie)
+                val directorId = movie.credits?.crew?.filter { it.job == "Director" }?.firstOrNull()?.id
+                val directorSource = if (directorId != null) fetchDirectorMovies(movie, directorId, languageToUse) else  Observable.just(movie)
+                val collectionSource = if (movie.belongsToCollection?.id != null) fetchCollection(movie, movie.belongsToCollection?.id!!, languageToUse) else Observable.just(movie)
 
-                fetchCollection(movie, collectionId, languageToUse)
+                return@concatMap Observable.zip<Movie, Movie, Movie, Movie, Movie, Movie>(
+                    fetchVideos(movie, languageToUse).subscribeOn(Schedulers.io()),
+                    fetchExtraInfo(movie).subscribeOn(Schedulers.io()),
+                    imdbObservable.subscribeOn(Schedulers.io()),
+                    directorSource.subscribeOn(Schedulers.io()),
+                    collectionSource.subscribeOn(Schedulers.io()),
+                    Function5 { _, _, _, _, _ -> return@Function5 movie }
+                )
             }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
@@ -68,9 +76,8 @@ class MovieDetailsPresenterImpl @Inject constructor(
         )
     }
 
-    private fun fetchVideos(movie: Movie, languageToUse: String): Observable<Result<Video>> {
-        this.movie = movie
-        val id = movie.id ?: return Observable.just(Result(results = movie.videos?.videoList))
+    private fun fetchVideos(movie: Movie, languageToUse: String): Observable<Movie> {
+        val id = movie.id ?: return Observable.just(movie)
 
         val listOfObservables = ArrayList<Observable<Result<Video>>>()
         val translation = movie.translations?.translations?.find { it.iso_639_1 != "pt" && it.iso_639_1 != "en" && it.iso_639_1 == movie.originalLanguage }
@@ -85,7 +92,8 @@ class MovieDetailsPresenterImpl @Inject constructor(
         listOfObservables.add(tmdbService.getMovieVideos(id, "en-US"))
 
         return Observable.concat(listOfObservables)
-                    .doOnNext { mapMovieWithVideos(it) }
+                    .map { mapMovieWithVideos(it) }
+                    .onErrorResumeNext { error: Throwable -> return@onErrorResumeNext Observable.just(movie) }
     }
 
     private fun mapMovieWithVideos(videos: Result<Video>): Movie {
@@ -116,6 +124,16 @@ class MovieDetailsPresenterImpl @Inject constructor(
 
                 movie
             }
+            .onErrorResumeNext { _: Throwable -> Observable.just(movie) }
+
+    private fun fetchOMDBResult(movie: Movie, imdbID: String) : Observable<Movie> =
+        omdbService.getMovie(imdbID)
+            .map {
+                movie.omdbResult = it
+
+                movie
+            }
+            .onErrorResumeNext { _: Throwable -> Observable.just(movie) }
 
     private fun fetchDirectorMovies(movie: Movie, directorId: Int, languageToUse: String) : Observable<Movie> =
         tmdbService.getPersonMovieCredits(directorId, languageToUse)
@@ -124,4 +142,5 @@ class MovieDetailsPresenterImpl @Inject constructor(
 
                 movie
             }
+            .onErrorResumeNext { _: Throwable -> Observable.just(movie) }
 }

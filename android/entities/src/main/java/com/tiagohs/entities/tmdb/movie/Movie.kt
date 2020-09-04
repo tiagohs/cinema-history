@@ -2,6 +2,7 @@ package com.tiagohs.entities.tmdb.movie
 
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.entities.dto.MovieFilmographyDTO
+import com.tiagohs.entities.omdb.OMDBResult
 import com.tiagohs.entities.tmdb.ExternalIds
 import com.tiagohs.entities.tmdb.Image
 import com.tiagohs.entities.tmdb.TranslationMovieData
@@ -51,6 +52,7 @@ data class Movie(
         get() = videos?.videoList?.find { it.type == "Trailer" }?.key
             ?: videos?.videoList?.firstOrNull()?.key
 
+    var omdbResult: OMDBResult? = null
     var extraInfo: MovieExtraInfo? = null
     var directorMovies: List<MovieFilmographyDTO>? = null
     var movieCollection: Collection? = null

@@ -4,6 +4,7 @@ import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.services.LocalService
 import com.tiagohs.domain.views.PresentationView
+import com.tiagohs.helpers.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
@@ -30,7 +31,7 @@ class PresentationPresenterImpl @Inject constructor(
 
                 view?.bindMainTopicPresentation(mainTopic)
             }, {
-                view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                view?.onError(it, R.string.error_unknown)
             })
         )
     }

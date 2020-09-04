@@ -5,6 +5,7 @@ import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.services.LocalService
 import com.tiagohs.domain.services.TMDBService
 import com.tiagohs.domain.views.PersonDetailsView
+import com.tiagohs.helpers.R
 import com.tiagohs.helpers.utils.MovieUtils
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -23,7 +24,8 @@ class PersonDetailsPresenterImpl @Inject constructor(
     }
 
     override fun fetchPersonDetails(personId: Int, languageToUse: String) {
-        val appendToResponse = listOf("tagged_images", "images", "movie_credits", "external_ids", "translations")
+        val appendToResponse =
+            listOf("tagged_images", "images", "movie_credits", "external_ids", "translations")
 
         view?.startLoading()
 
@@ -35,7 +37,7 @@ class PersonDetailsPresenterImpl @Inject constructor(
             .subscribe({
                 view?.bindPersonDetails(it)
             }, {
-                view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                view?.onError(it, R.string.error_unknown)
                 view?.hideLoading()
             })
         )
@@ -54,13 +56,14 @@ class PersonDetailsPresenterImpl @Inject constructor(
 
     private fun fetchExtraInfo(person: Person): Observable<Person> =
         localService.getSpecialPersons()
-            .map {  personExtraInfoList ->
-                personExtraInfoList.find {
-                        personExtra -> personExtra.id == person.id
+            .map { personExtraInfoList ->
+                personExtraInfoList.find { personExtra ->
+                    personExtra.id == person.id
                 }?.let {
                     person.extraInfo = it
                 }
 
                 person
             }
+            .onErrorResumeNext { _: Throwable -> return@onErrorResumeNext Observable.just(person) }
 }

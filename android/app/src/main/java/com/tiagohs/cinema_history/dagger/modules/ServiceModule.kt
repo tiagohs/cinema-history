@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.dagger.modules
 
 import com.tiagohs.domain.services.LocalService
+import com.tiagohs.domain.services.OMDBService
 import com.tiagohs.domain.services.TMDBService
 import com.tiagohs.domain.services.config.RetrofitConfig
 import dagger.Module
@@ -19,5 +20,9 @@ class ServiceModule {
         return TMDBService(retrofitConfig)
     }
 
+    @Provides
+    fun provideOMDBService(retrofitConfig: RetrofitConfig): OMDBService {
+        return OMDBService(retrofitConfig)
+    }
 
 }

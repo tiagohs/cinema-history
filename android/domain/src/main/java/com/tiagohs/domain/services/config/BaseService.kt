@@ -13,4 +13,8 @@ abstract class BaseService(val retrofitConfig: RetrofitConfig) {
     fun <T> buildLocalService(mClass: Class<T>): T {
         return retrofitConfig.localBuild().create(mClass)
     }
+
+    fun <T> buildOMDBService(mClass: Class<T>): T {
+        return retrofitConfig.omdbBuild().create(mClass)
+    }
 }

@@ -9,35 +9,36 @@ import android.view.MenuItem
 import android.view.View
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
+import android.widget.TextView
 import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.tiagohs.cinema_history.R
-import com.tiagohs.helpers.utils.AnimationUtils
-import com.tiagohs.helpers.utils.DateUtils
-import com.tiagohs.entities.movie_info.MovieInfo
-import com.tiagohs.entities.movie_info.MovieInfoPersonList
-import com.tiagohs.entities.tmdb.movie.Genres
-import com.tiagohs.entities.tmdb.movie.Movie
-import com.tiagohs.domain.presenter.MovieDetailsPresenter
 import com.tiagohs.cinema_history.presentation.adapters.MovieInfoAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.managers.DynamicLinkManager
 import com.tiagohs.domain.managers.SettingsManager
+import com.tiagohs.domain.presenter.MovieDetailsPresenter
+import com.tiagohs.domain.views.MovieDetailsView
 import com.tiagohs.entities.dto.PersonDTO
 import com.tiagohs.entities.enums.ImageSize
-import com.tiagohs.entities.enums.MovieInfoType
-import com.tiagohs.domain.views.MovieDetailsView
 import com.tiagohs.entities.enums.MessageViewType
+import com.tiagohs.entities.enums.MovieInfoType
+import com.tiagohs.entities.enums.RatingType
+import com.tiagohs.entities.movie_info.MovieInfo
+import com.tiagohs.entities.movie_info.MovieInfoPersonList
+import com.tiagohs.entities.tmdb.movie.Genres
+import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.Constants
 import com.tiagohs.helpers.extensions.*
+import com.tiagohs.helpers.utils.AnimationUtils
+import com.tiagohs.helpers.utils.DateUtils
 import kotlinx.android.synthetic.main.activity_movie_details.*
 import kotlinx.android.synthetic.main.view_genre_item.view.*
 import kotlinx.android.synthetic.main.view_screen_blocked.*
-import java.lang.Exception
 import javax.inject.Inject
 
-class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
+class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
 
     override fun onGetLayoutViewId(): Int = R.layout.activity_movie_details
     override fun onGetMenuLayoutId(): Int = R.menu.menu_movie
@@ -95,7 +96,12 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
     private fun onBuildPageLinkComplete(shorLink: String) {
         val movieTitle = movie?.getMovieTitleFromAppLanguage(settingManager.getMovieISOLanguage())
 
-        shareContent(getString(R.string.share_history_page_description, movieTitle, shorLink), getResourceString(R.string.share_title))
+        shareContent(
+            getString(R.string.share_history_page_description, movieTitle, shorLink),
+            getResourceString(
+                R.string.share_title
+            )
+        )
 
         hideScreenBlocked()
     }
@@ -145,13 +151,18 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
         collapsingToolbar.title = movieTitle
         pageContentList.apply {
-            adapter = MovieInfoAdapter(movieInfoList, this@MovieDetailsActivity, appLanguage).apply {
-                onPersonClicked = { onPersonClicked(it) }
-                onExtenalLink = { openLink(it) }
-                onVideoClick = { openLink(getString(R.string.youtube_link,it)) }
-                onMovieClicked = { onMovieSelected(it) }
-            }
-            layoutManager = LinearLayoutManager(this@MovieDetailsActivity, LinearLayoutManager.VERTICAL, false)
+            adapter =
+                MovieInfoAdapter(movieInfoList, this@MovieDetailsActivity, appLanguage).apply {
+                    onPersonClicked = { onPersonClicked(it) }
+                    onExtenalLink = { openLink(it) }
+                    onVideoClick = { openLink(getString(R.string.youtube_link, it)) }
+                    onMovieClicked = { onMovieSelected(it) }
+                }
+            layoutManager = LinearLayoutManager(
+                this@MovieDetailsActivity,
+                LinearLayoutManager.VERTICAL,
+                false
+            )
         }
 
         bindMovieHeader(movie, movieTitle)
@@ -226,23 +237,63 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         listOfMovieList.add(MovieInfo(MovieInfoType.INFO_SUMMARY, movie))
 
         if (castList.isNotEmpty()) {
-            listOfMovieList.add(MovieInfoPersonList(MovieInfoType.INFO_CAST, movie, castList, getResourceString(R.string.cast)))
+            listOfMovieList.add(
+                MovieInfoPersonList(
+                    MovieInfoType.INFO_CAST, movie, castList, getResourceString(
+                        R.string.cast
+                    )
+                )
+            )
         }
 
         if (crewList.isNotEmpty()) {
-            listOfMovieList.add(MovieInfoPersonList(MovieInfoType.INFO_CREW, movie, crewList, getResourceString(R.string.crew)))
+            listOfMovieList.add(
+                MovieInfoPersonList(
+                    MovieInfoType.INFO_CREW, movie, crewList, getResourceString(
+                        R.string.crew
+                    )
+                )
+            )
         }
 
-        movie.extraInfo?.reviewResults?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_REVIEWS, movie)) }
-        movie.directorMovies?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_DIRECTORS_MOVIE, movie)) }
+        movie.extraInfo?.reviewResults?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_REVIEWS,
+                    movie
+                )
+            )
+        }
+        movie.directorMovies?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_DIRECTORS_MOVIE,
+                    movie
+                )
+            )
+        }
 
-        movie.productionCompanies?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_PRODUCTION, movie)) }
+        movie.productionCompanies?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_PRODUCTION,
+                    movie
+                )
+            )
+        }
 
         if (!movie.allImages.isNullOrEmpty() || !movie.videos?.videoList.isNullOrEmpty()) {
             listOfMovieList.add(MovieInfo(MovieInfoType.INFO_MIDIAS, movie))
         }
 
-        movie.movieCollection?.let { listOfMovieList.add(MovieInfo(MovieInfoType.INFO_COLLECTION, movie)) }
+        movie.movieCollection?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_COLLECTION,
+                    movie
+                )
+            )
+        }
 
         return listOfMovieList
     }
@@ -255,11 +306,16 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         val genres = movie.genres
 
         movieTitle.setResourceText(title)
-        movieOriginalTitle.text = getString(R.string.original_title_format, movie.originalTitle, DateUtils.getYearByDate(movie.releaseDate))
+        movieOriginalTitle.text = getString(
+            R.string.original_title_format, movie.originalTitle, DateUtils.getYearByDate(
+                movie.releaseDate
+            )
+        )
 
         bindGenres(genres)
         bindTrailer(movie)
         bindBackdrop(movie, title)
+        bindRatings(movie)
     }
 
     private fun bindGenres(genres: List<Genres>?) {
@@ -268,7 +324,10 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
 
             it.forEach { genre ->
                 val view = LayoutInflater.from(this).inflate(R.layout.view_genre_item, null, false)
-                val layoutParams = Constraints.LayoutParams(Constraints.LayoutParams.WRAP_CONTENT, Constraints.LayoutParams.WRAP_CONTENT).apply {
+                val layoutParams = Constraints.LayoutParams(
+                    Constraints.LayoutParams.WRAP_CONTENT,
+                    Constraints.LayoutParams.WRAP_CONTENT
+                ).apply {
                     setMargins(0, 0, 10.convertIntToDp(this@MovieDetailsActivity), 0)
                 }
 
@@ -289,13 +348,25 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
             return
         }
 
-        playContainer.setOnClickListener { openLink(getString(R.string.youtube_link, trailerUrlKey)) }
+        playContainer.setOnClickListener {
+            openLink(
+                getString(
+                    R.string.youtube_link,
+                    trailerUrlKey
+                )
+            )
+        }
     }
 
     private fun bindBackdrop(movie: Movie, title: String) {
         val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_780)
 
-        movieBackdrop.loadImage(backdropPath, getString(R.string.movie_backdrop_description, title), R.drawable.placeholder_movie_poster, R.drawable.placeholder_movie_poster) {
+        movieBackdrop.loadImage(
+            backdropPath,
+            getString(R.string.movie_backdrop_description, title),
+            R.drawable.placeholder_movie_poster,
+            R.drawable.placeholder_movie_poster
+        ) {
             movieBackdrop.alpha = 1f
 
             AnimationUtils.createShowCircularReveal(movieBackdrop) {
@@ -318,11 +389,67 @@ class MovieDetailsActivity: BaseActivity(), MovieDetailsView {
         }
     }
 
+    private fun bindRatings(movie: Movie) {
+        movie.omdbResult?.ratings?.forEach { omdbResult ->
+            when (omdbResult.source) {
+                RatingType.INTERNET_MOVIE_DATABASE -> bindRating(
+                    omdbResult.value,
+                    getString(R.string.imdb_link, movie.externalIds?.imdbId),
+                    imdbRating,
+                    imdbContainer
+                )
+                RatingType.METACRITIC -> bindRating(
+                    omdbResult.value,
+                    getResourceString(R.string.metacritic_link),
+                    metacriticRating,
+                    metacriticContainer
+                )
+                RatingType.TOMATOES -> bindRating(
+                    omdbResult.value,
+                    getResourceString(R.string.tomatoes_link),
+                    tomatoesRating,
+                    tomatoesContainer
+                )
+                else -> {
+                }
+            }
+        }
+
+        movie.voteAverage?.let {
+            bindRating(
+                getString(
+                    R.string.tmdb_vote,
+                    String.format("%.1f", it)
+                ),
+                getString(R.string.tmdb_link, movie.id),
+                tmdbRating, tmdbContainer
+            )
+        }
+    }
+
+    private fun bindRating(
+        ratingValue: String?,
+        textLink: String,
+        textView: TextView,
+        containerView: View
+    ) {
+        ratingValue?.let {
+            containerView.show()
+            textView.setResourceText(it)
+
+            containerView.setOnClickListener { openLink(textLink) }
+        } ?: containerView.hide()
+    }
+
     companion object {
 
         const val MOVIE_ID = "MOVIE_ID"
 
-        fun newIntent(context: Context, movieId: Int, isFromUniversalLink: Boolean = false): Intent {
+        fun newIntent(
+            context: Context,
+            movieId: Int,
+            isFromUniversalLink: Boolean = false
+        ): Intent {
             val intent = Intent(context, MovieDetailsActivity::class.java)
 
             intent.putExtra(MOVIE_ID, movieId)

@@ -50,7 +50,7 @@ dependencies {
 
     // Android Core / Material
     implementation dependencies.appcompat
-    implementation 'androidx.core:core-ktx:1.3.0'
+    implementation dependencies.androidxCore
     implementation dependencies.constrantlayout
     implementation dependencies.browser
     implementation dependencies.androidMaterial
@@ -62,7 +62,6 @@ dependencies {
 
     // YoutubePlayer
     implementation dependencies.youtubePlayer
-    implementation dependencies.youtubePlayerChromecast
 
     // Test Tools
     testImplementation dependencies.junit

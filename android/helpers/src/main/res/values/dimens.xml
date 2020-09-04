@@ -83,10 +83,13 @@
     <dimen name="home_slide_padding_end">70dp</dimen>
 
     <!-- MOVIE -->
-    <dimen name="movie_appbar_height">350dp</dimen>
+    <dimen name="movie_appbar_height">380dp</dimen>
     <dimen name="movie_play_size">50dp</dimen>
     <dimen name="movie_play_radius">25dp</dimen>
-    <dimen name="movie_degrade_height">210dp</dimen>
+    <dimen name="movie_degrade_height">250dp</dimen>
+    <dimen name="movie_rating_container_min_width">100dp</dimen>
+    <dimen name="movie_rating_icon_size">40dp</dimen>
+    <dimen name="movie_rating_icon_metacritic_width">35dp</dimen>
 
     <!-- PRESENTATION -->
     <dimen name="presentation_appbar_margin_bottom">120dp</dimen>

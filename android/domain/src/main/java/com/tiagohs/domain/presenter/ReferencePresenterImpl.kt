@@ -4,6 +4,7 @@ import com.tiagohs.domain.services.LocalService
 import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.views.ReferenceView
 import com.tiagohs.domain.views.TimelineView
+import com.tiagohs.helpers.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
@@ -20,7 +21,7 @@ class ReferencePresenterImpl @Inject constructor(
                 view?.hideLoading()
                 view?.bindReference(it)
             }, {
-                view?.onError(it, "Houve um erro inesperado, tente novamente.")
+                view?.onError(it, R.string.error_unknown)
                 view?.hideLoading()
             })
         )

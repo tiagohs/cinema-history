@@ -97,11 +97,11 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin_4.5x"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin_0.5x"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/separatorVertical"
-                    app:layout_constraintBottom_toBottomOf="parent">
+                    app:layout_constraintBottom_toTopOf="@id/ratingContainer">
 
                     <TextView
                         android:layout_width="0dp"
@@ -213,6 +213,192 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingContainer"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin_4.5x"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    app:layout_constraintEnd_toStartOf="@id/separatorVertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:flexWrap="wrap"
+                    app:alignItems="stretch"
+                    app:alignContent="stretch" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="@dimen/movie_rating_container_min_width"
+                        android:id="@+id/imdbContainer"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="@dimen/movie_rating_icon_size"
+                            android:layout_height="@dimen/movie_rating_icon_size"
+                            app:srcCompat="@drawable/ic_logo_imdb"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/movie_rating_icon_size"
+                            android:id="@+id/imdbRating"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="@dimen/text_size_zeplin_28pt"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/activity_vertical_margin"
+                            tools:text="7.5/10"
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="@dimen/movie_rating_container_min_width"
+                        android:id="@+id/tmdbContainer"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?selectableItemBackground"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="@dimen/movie_rating_icon_size"
+                            android:layout_height="@dimen/movie_rating_icon_size"
+                            app:srcCompat="@drawable/ic_logo_tmdb"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/movie_rating_icon_size"
+                            android:id="@+id/tmdbRating"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="@dimen/text_size_zeplin_28pt"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/activity_vertical_margin"
+                            tools:text="8/10"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="@dimen/movie_rating_container_min_width"
+                        android:id="@+id/tomatoesContainer"
+                        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?selectableItemBackground"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imdbContainer"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="@dimen/movie_rating_icon_size"
+                            android:layout_height="@dimen/movie_rating_icon_size"
+                            app:srcCompat="@drawable/ic_logo_tomatoes"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/movie_rating_icon_size"
+                            android:id="@+id/tomatoesRating"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="@dimen/text_size_zeplin_28pt"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/activity_vertical_margin"
+                            tools:text="71%"
+                        />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="@dimen/movie_rating_container_min_width"
+                        android:id="@+id/metacriticContainer"
+                        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?selectableItemBackground"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imdbContainer"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="@dimen/movie_rating_icon_metacritic_width"
+                            android:layout_height="@dimen/movie_rating_icon_size"
+                            app:srcCompat="@drawable/ic_logo_metacritic"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/movie_rating_icon_size"
+                            android:id="@+id/metacriticRating"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="@dimen/text_size_zeplin_28pt"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/activity_vertical_margin"
+                            tools:text="69/100"
+                        />
+
+                    </LinearLayout>
+
+                </com.google.android.flexbox.FlexboxLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

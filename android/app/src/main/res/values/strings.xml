@@ -12,6 +12,9 @@
     <string name="instagram_link" translatable="false">https://instagram.com/%1s</string>
     <string name="facebook_link" translatable="false">https://www.facebook.com/%1s</string>
     <string name="imdb_link" translatable="false">https://www.imdb.com/title/%1s</string>
+    <string name="tomatoes_link" translatable="false">https://www.rottentomatoes.com/</string>
+    <string name="tmdb_link" translatable="false">https://www.themoviedb.org/movie/%1d</string>
+    <string name="metacritic_link" translatable="false">http://www.metacritic.com/</string>
     <string name="imdb_person_link" translatable="false">https://www.imdb.com/name/%1s</string>
     <string name="imdb_awards_link" translatable="false">https://www.imdb.com/name/%1s/awards</string>
 
@@ -63,6 +66,9 @@
     <string name="tmdb_terms_title">TMDB Terms of Use</string>
     <string name="tmdb_api_terms_title">TMDB API Terms Of Use</string>
     <string name="tmdb_api_terms_link" translatable="false">https://www.themoviedb.org/documentation/api/terms-of-use</string>
+    <string name="omdb_api_terms_title">OMDB API Terms Of Use</string>
+    <string name="omdb_api_terms_link" translatable="false">http://www.omdbapi.com/legal.htm</string>
+
     <string name="version">Version %1s</string>
     <string name="responsable">App Development and Search by Tiago Silva</string>
     <string name="terms">Terms of Use</string>
@@ -114,6 +120,7 @@
     <string name="review_click_here">Click here to read the full Review</string>
     <string name="director_collection_title">The director %1s is known for…</string>
     <string name="collection_title">%1s Collection</string>
+    <string name="tmdb_vote" translatable="false">%1s/10</string>
 
     <!-- Descriptions -->
     <string name="description_logo_app">Application Logo</string>

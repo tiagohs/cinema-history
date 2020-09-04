@@ -31,6 +31,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String", "THEMOVIEDB_API_KEY", '"dac4d50f24dee29513738d8fa3470a3f"'
+        buildConfigField "String", "OMDB_API_KEY", '"de9f93c2"'
 
         vectorDrawables.useSupportLibrary = true
         renderscriptTargetApi globalConfiguration["targetSDK"]
@@ -82,8 +83,6 @@ dependencies {
     // Components and Tools
     implementation dependencies.customTabs
     implementation dependencies.betterLinkMovement
-    implementation dependencies.diagonalImageView
-    implementation dependencies.diagonalLayout
     implementation dependencies.circleProgressAd
     implementation dependencies.constrantlayout
     implementation dependencies.overflowPager
@@ -91,6 +90,7 @@ dependencies {
     implementation dependencies.shimmer
     implementation dependencies.androidAboutPage
     implementation dependencies.simpleRatingBar
+    implementation dependencies.flexbox
 
     // Tools
     implementation dependencies.volley

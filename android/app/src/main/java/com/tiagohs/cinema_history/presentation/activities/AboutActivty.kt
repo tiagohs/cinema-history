@@ -74,6 +74,10 @@ class AboutActivty : AppCompatActivity() {
             title = getResourceString(R.string.tmdb_api_terms_title)
             onClickListener = View.OnClickListener { openLink(getResourceString(R.string.tmdb_api_terms_link)) }
         }
+        val omdbApiTermesLinkElement = Element().apply {
+            title = getResourceString(R.string.omdb_api_terms_title)
+            onClickListener = View.OnClickListener { openLink(getResourceString(R.string.omdb_api_terms_link)) }
+        }
         val referencesElement = Element().apply {
             title = getResourceString(R.string.activity_references)
             onClickListener = View.OnClickListener {
@@ -110,6 +114,7 @@ class AboutActivty : AppCompatActivity() {
             .addItem(tmdbTermesDescriptionElement)
             .addItem(tmdbTermesLinkElement)
             .addItem(tmdbApiTermesLinkElement)
+            .addItem(omdbApiTermesLinkElement)
             .addItem(copyRightsElement)
             .create()
     }

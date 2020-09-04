@@ -4,6 +4,10 @@
     "text": "As informações dos filmes, atores, diretores e as imagens são fornecidas pela <strong>API TMDb</strong> mas não é endossado ou certificado pelo TMDb. <br/><br/><a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.themoviedb.org/terms-of-use'}\">Termos de Uso</a> \n\n<br/><a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.themoviedb.org/documentation/api/terms-of-use'}\">Termos de Uso da API </a>"
   },
   {
+    "type": "text",
+    "text": "As informações de classificação dos filmes (Rotten Tomatoes, Metacritic, IMDB) são fornecidas pela <strong>API OMDB</strong> mas não é endossado ou certificado pelo OMDB, Rotten Tomatoes, Metacritic ou IMDB . <br/><br/><a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'http://www.omdbapi.com/legal.htm'}\">Termos de Uso da API</a>"
+  },
+  {
     "type": "media",
     "title": "O livro do cinema",
     "subtitle": "Danny Leigh, Louis Baxter, Kieran Gant, John Farndon, Damon Wise (Colaboradores)",

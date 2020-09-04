@@ -18,6 +18,6 @@ class RetrofitModule {
 
     @Provides
     fun providerRetrofitConfig(context: Context): RetrofitConfig {
-        return RetrofitConfig(context, BuildConfig.THEMOVIEDB_API_KEY)
+        return RetrofitConfig(context, BuildConfig.THEMOVIEDB_API_KEY, BuildConfig.OMDB_API_KEY)
     }
 }

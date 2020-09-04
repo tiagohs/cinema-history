@@ -90,7 +90,8 @@
                     android:focusable="true"
                     android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toTopOf="@id/guidelineGlobalBottom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
                 />
 
                 <ImageView
@@ -104,7 +105,8 @@
                     android:focusable="true"
                     android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toTopOf="@id/guidelineGlobalBottom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
                 />
 
                 <androidx.constraintlayout.widget.Guideline

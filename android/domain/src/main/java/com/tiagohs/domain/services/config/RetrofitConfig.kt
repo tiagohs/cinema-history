@@ -24,7 +24,8 @@ import java.util.concurrent.TimeUnit
 
 class RetrofitConfig(
     val context: Context?,
-    val tmdbApiKey: String
+    val tmdbApiKey: String,
+    val omdbApiKey: String
 ) {
 
     fun localBuild(): Retrofit {
@@ -40,28 +41,56 @@ class RetrofitConfig(
             .build()
     }
 
-    fun tmdb4Build(): Retrofit =
-        tmdbBuild(
-            "https://api.themoviedb.org/4/"
-        )
+    fun tmdb4Build(): Retrofit {
+        val builder = tmdbBuild("https://api.themoviedb.org/4/").apply {
+            val clients = client().apply {
+                addInterceptor(getTMDBIntercaptor())
+            }
 
-    fun tmdb3Build(): Retrofit =
-        tmdbBuild(
-            "https://api.themoviedb.org/3/"
-        )
+            client(clients.build())
+        }
 
-    fun tmdbBuild(url: String): Retrofit {
+        return builder.build()
+    }
+
+
+    fun tmdb3Build(): Retrofit {
+        val builder = tmdbBuild("https://api.themoviedb.org/3/").apply {
+            val clients = client().apply {
+                addInterceptor(getTMDBIntercaptor())
+            }
+
+            client(clients.build())
+        }
+
+        return builder.build()
+    }
+
+    fun omdbBuild(): Retrofit {
+        val builder = tmdbBuild("http://www.omdbapi.com/").apply {
+            val clients = client().apply {
+                addInterceptor(getOMDBIntercaptor())
+            }
+
+            client(clients.build())
+        }
+
+        return builder.build()
+    }
+
+    fun tmdbBuild(url: String): Retrofit.Builder {
         val client = client()
 
-        return Retrofit.Builder()
+        val builder = Retrofit.Builder()
                 .baseUrl(url)
                 .addConverterFactory(GsonConverterFactory.create(gsonBuilder()))
                 .addCallAdapterFactory(RxErrorHandlingCallAdapterFactory.create())
-                .client(client)
-                .build()
+
+
+        return builder
     }
 
-    private fun client(): OkHttpClient {
+    private fun client(): OkHttpClient.Builder {
         val httpClient = OkHttpClient.Builder()
         val cacheSize = 10 * 1024 * 1024 // 30 MB
 
@@ -74,7 +103,6 @@ class RetrofitConfig(
                 .readTimeout(30, TimeUnit.SECONDS)
                 .writeTimeout(30, TimeUnit.SECONDS)
 
-        httpClient.addInterceptor(getTMDBIntercaptor())
         httpClient.addInterceptor(
             getCacheInterceptor(
                 context
@@ -85,7 +113,7 @@ class RetrofitConfig(
             httpClient.addInterceptor(getLoggingInterceptor())
         }
 
-        return httpClient.build()
+        return httpClient
     }
 
     private fun getCacheInterceptor(context: Context?): Interceptor {
@@ -144,6 +172,19 @@ class RetrofitConfig(
                 return chain.proceed(builder.url(newUrl).build())
             }
 
+        }
+    }
+
+    private fun getOMDBIntercaptor(): Interceptor {
+        return object : Interceptor {
+            override fun intercept(chain: Interceptor.Chain): Response {
+                val original = chain.request()
+
+                val builder = original.newBuilder()
+                val newUrl = original.url.toString() + "&apikey=" + omdbApiKey
+
+                return chain.proceed(builder.url(newUrl).build())
+            }
         }
     }
 
