@@ -6,6 +6,9 @@
 
     <color name="transparent">@android:color/transparent</color>
 
+    <!-- LOGO COLORS -->
+    <color name="prime_video_color">#3A9BD3</color>
+
     <!-- Rating List Colors - BR -->
     <color name="rating_br_livre">#0B9446</color>
     <color name="rating_br_10">#0E7DC2</color>

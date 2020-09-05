@@ -121,6 +121,8 @@
     <string name="director_collection_title">The director %1s is known for…</string>
     <string name="collection_title">%1s Collection</string>
     <string name="tmdb_vote" translatable="false">%1s/10</string>
+    <string name="watch_on">Watch on</string>
+    <string name="did_you_know">Did yout Know?</string>
 
     <!-- Descriptions -->
     <string name="description_logo_app">Application Logo</string>

@@ -107,11 +107,16 @@ class MovieDetailsPresenterImpl @Inject constructor(
 
     private fun fetchExtraInfo(movie: Movie): Observable<Movie> =
         localService.getSpecialMovies()
-            .map {  movieExtraInfoList ->
-                movieExtraInfoList.find {
-                        movieExtra -> movieExtra.id == movie.id
-                }?.let {
-                    movie.extraInfo = it
+            .map {  movieExtraInfoListResult ->
+                movieExtraInfoListResult.find { moviesExtras ->
+                    val movieExtra = moviesExtras.movies?.find { moviesExtra -> moviesExtra.id == movie.id }
+
+                    if (movieExtra != null) {
+                        movie.extraInfo = movieExtra
+                        return@find true
+                    }
+
+                    return@find false
                 }
 
                 movie

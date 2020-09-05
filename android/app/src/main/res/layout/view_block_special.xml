@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/blockSpecialContainerCard"
+    app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+    app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+    app:cardBackgroundColor="@color/md_orange_500"
+    android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginTop="@dimen/activity_vertical_margin_2.5x"
+    android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/blockSpecialContainer">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/blockSpecialTitle"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/text_size_zeplin_28pt"
+            android:fontFamily="@font/oswald_bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+            android:lineSpacingMultiplier="0.8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Teste de Titulo"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/blockSpecialDescription"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/text_size_zeplin_22pt"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:lineSpacingMultiplier="1.1"
+            android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+            app:layout_constraintTop_toBottomOf="@id/blockSpecialTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição Teste de Descrição"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomContainer"
+            app:layout_constraintTop_toBottomOf="@id/blockSpecialDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/blockSpecialCredits"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/text_size_zeplin_18pt"
+                android:fontFamily="@font/proxima_nova_regular_italic"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+                android:lineSpacingMultiplier="0.8"
+                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/blockSpecialClickHere"
+                tools:text="Teste de Titulo"
+                tools:visibility="visible"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/blockSpecialClickHere"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/text_size_zeplin_24pt"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:visibility="gone"
+                android:text="@string/click_here_to_go"
+                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+                android:lineSpacingMultiplier="1.1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Clique aqui para acessar"
+                tools:visibility="visible"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movie_special_item_line_height"
+            android:id="@+id/line"
+            android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+            app:layout_constraintTop_toBottomOf="@id/bottomContainer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <include layout="@layout/view_line_five_colors" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movie_special_item_backdrop_height"
+            android:id="@+id/blockSpecialImage"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:src="@drawable/img_ben_hur"
+            tools:visibility="visible"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

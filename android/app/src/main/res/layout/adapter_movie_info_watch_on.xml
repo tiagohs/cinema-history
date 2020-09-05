@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pageContentListContainer"
+        app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+        app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_2x">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/midiaTitle"
+                android:text="@string/watch_on"
+                android:textSize="@dimen/text_size_zeplin_34pt"
+                android:textColor="@color/md_black_1000"
+                android:fontFamily="@font/oswald_regular"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
+                android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+            />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/watchOnScrollView"
+                android:requiresFadingEdge="horizontal"
+                android:fadingEdgeLength="@dimen/activity_vertical_margin_2x"
+                android:scrollbars="none"
+                app:layout_constraintTop_toBottomOf="@id/midiaTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/watchOnContainer"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/movieOriginalTitle"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

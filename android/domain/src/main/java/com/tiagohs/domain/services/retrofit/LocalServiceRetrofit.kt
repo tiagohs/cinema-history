@@ -6,6 +6,7 @@ import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
 import com.tiagohs.entities.references.Reference
 import com.tiagohs.entities.timeline.TimelineResult
+import com.tiagohs.entities.tmdb.MovieExtraInfoResult
 import com.tiagohs.entities.tmdb.movie.MovieExtraInfo
 import com.tiagohs.entities.tmdb.person.PersonExtraInfo
 import io.reactivex.Observable
@@ -27,7 +28,7 @@ interface LocalServiceRetrofit {
     fun getReferences(): Observable<List<Reference>>
 
     @GET("hmt_sumario_{mainTopicId}")
-    fun getSumarioByMainTopicID(@Path("mainTopicId") mainTopicId: Int): Observable<List<com.tiagohs.entities.Sumario>>
+    fun getSumarioByMainTopicID(@Path("mainTopicId") mainTopicId: Int): Observable<List<Sumario>>
 
     @GET("milmoviesmaintopics")
     fun getMilMoviesMainTopics(): Observable<List<MainTopic>>
@@ -45,5 +46,5 @@ interface LocalServiceRetrofit {
     fun getSpecialPersons(): Observable<List<PersonExtraInfo>>
 
     @GET("special_movies")
-    fun getSpecialMovies(): Observable<List<MovieExtraInfo>>
+    fun getSpecialMovies(): Observable<List<MovieExtraInfoResult>>
 }

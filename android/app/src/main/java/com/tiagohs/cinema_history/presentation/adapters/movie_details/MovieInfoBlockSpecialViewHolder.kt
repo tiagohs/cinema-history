@@ -1,36 +1,37 @@
-package com.tiagohs.cinema_history.presentation.adapters.page
+package com.tiagohs.cinema_history.presentation.adapters.movie_details
 
-import android.content.Intent
 import android.view.View
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
-import com.tiagohs.cinema_history.presentation.activities.TimelineActivity
+import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.ColorAsset
 import com.tiagohs.entities.click.Click
-import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentBlockSpecial
-import com.tiagohs.entities.enums.Screen
+import com.tiagohs.entities.enums.ImageSize
+import com.tiagohs.entities.enums.ImageType
+import com.tiagohs.entities.image.Image
+import com.tiagohs.entities.image.ImageStyle
+import com.tiagohs.entities.movie_info.MovieInfo
+import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.ColorUtils
 import kotlinx.android.synthetic.main.view_block_special.*
 import kotlinx.android.synthetic.main.view_line_five_colors.*
 
+class MovieInfoBlockSpecialViewHolder(
+    view: View
+) : BaseViewHolder<MovieInfo>(view) {
 
-class BlockSpecialViewHolder(
-    val view: View,
-    private val presentScreen: ((Intent) -> Unit)? = null
-) : BasePageViewHolder(view) {
-
-    override fun bind(item: Content, position: Int) {
+    override fun bind(item: MovieInfo, position: Int) {
         super.bind(item, position)
+        val contentBlockSpecial = item.movie.extraInfo?.blockSpecial ?: return
         val context = containerView.context ?: return
-        val contentBlockSpecial = item as? ContentBlockSpecial ?: return
         val colorAsset = ColorUtils.getRandomColorAssets()
 
         blockSpecialDescription.setResourceStyledText(contentBlockSpecial.description)
         blockSpecialDescription.setupLinkableTextView(context)
 
-        bindImage(contentBlockSpecial)
+        bindMoviePoster(item.movie)
         bindTitle(contentBlockSpecial)
         bindCredits(contentBlockSpecial)
         bindColor(colorAsset)
@@ -46,10 +47,14 @@ class BlockSpecialViewHolder(
         blockSpecialContainer.setOnClickListener(null)
     }
 
-    private fun bindImage(contentBlockSpecial: ContentBlockSpecial) {
-        val image = contentBlockSpecial.image
+    private fun bindMoviePoster(movie: Movie) {
+        val posterPath = movie.posterPath
 
-        if (image != null) {
+        if (posterPath != null) {
+            val imageUrl = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
+            val imageStyle = ImageStyle(scaleType = "center_crop")
+            val image = Image(ImageType.ONLINE, imageUrl, imageStyle = imageStyle, contentDescription = containerView.context.getString(R.string.movie_poster_description, movie.originalTitle))
+
             blockSpecialImage.show()
             blockSpecialImage.loadImage(image, null)
             return
@@ -70,13 +75,14 @@ class BlockSpecialViewHolder(
         blockSpecialTitle.hide()
     }
 
-
     private fun bindCredits(contentBlockSpecial: ContentBlockSpecial) {
         val credits = contentBlockSpecial.credits
+        val context = containerView.context ?: return
 
         if (credits != null) {
             blockSpecialCredits.show()
             blockSpecialCredits.setResourceStyledText(credits)
+            blockSpecialCredits.setupLinkableTextView(context)
             return
         }
 
@@ -88,24 +94,6 @@ class BlockSpecialViewHolder(
         blockSpecialClickHere.setResourceText(
             click.buttonText ?: containerView.context.getString(R.string.click_here_to_go)
         )
-        blockSpecialContainer.setOnClickListener {
-            when (click.screen) {
-                Screen.TIMELINE_SCREEN -> {
-                    val intent = TimelineActivity.newIntent(itemView.context).apply {
-                        click.parameters?.forEach { parameter ->
-                            putExtra(parameter.key, parameter.value)
-                        }
-                    }
-
-                    presentScreen?.invoke(intent)
-                }
-                Screen.LINK_ONLINE -> {
-                    val link = click.parameters?.firstOrNull()?.value
-
-                    containerView.context.openLink(link)
-                }
-            }
-        }
     }
 
     private fun bindColor(colorAsset: ColorAsset) {
@@ -118,6 +106,7 @@ class BlockSpecialViewHolder(
         blockSpecialDescription.setResourceTextColor(colorAsset.textColorName)
         blockSpecialDescription.setLinkTextColor(linkColor)
         blockSpecialClickHere.setResourceTextColor(colorAsset.textColorName)
+        blockSpecialCredits.setResourceTextColor(colorAsset.textColorName)
 
         color1.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
         color2.setResourceBackgroundColor("md_${colorAsset.colorName}_600")
@@ -127,6 +116,6 @@ class BlockSpecialViewHolder(
     }
 
     companion object {
-        const val LAYOUT_ID = R.layout.adapter_page_block_special
+        const val LAYOUT_ID = R.layout.adapter_movie_info_block_special
     }
 }

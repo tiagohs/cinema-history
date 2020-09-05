@@ -26,9 +26,13 @@ class MovieInfoAdapter(
         MovieInfoType.INFO_SUMMARY.ordinal -> MovieInfoSummaryViewHolder.LAYOUT_ID
         MovieInfoType.INFO_REVIEWS.ordinal -> MovieInfoReviewsViewHolder.LAYOUT_ID
         MovieInfoType.INFO_COLLECTION.ordinal -> MovieInfoCollectionViewHolder.LAYOUT_ID
+        MovieInfoType.INFO_QUOTE.ordinal -> MovieInfoQuoteViewHolder.LAYOUT_ID
         MovieInfoType.INFO_DIRECTORS_MOVIE.ordinal -> MovieInfoDirectorFilmsViewHolder.LAYOUT_ID
         MovieInfoType.INFO_PRODUCTION.ordinal -> MovieInfoProductionViewHolder.LAYOUT_ID
         MovieInfoType.INFO_MIDIAS.ordinal -> MovieInfoMidiaViewHolder.LAYOUT_ID
+        MovieInfoType.INFO_BLOCK_SPECIAL.ordinal -> MovieInfoBlockSpecialViewHolder.LAYOUT_ID
+        MovieInfoType.INFO_WATCH_ON.ordinal -> MovieInfoWatchOnViewHolder.LAYOUT_ID
+        MovieInfoType.INFO_DID_YOUT_KNOW.ordinal -> MovieInfoDidYouKnowViewHolder.LAYOUT_ID
         else -> R.layout.adapter_empty
     }
 
@@ -42,9 +46,13 @@ class MovieInfoAdapter(
             MovieInfoType.INFO_SUMMARY.ordinal -> MovieInfoSummaryViewHolder(view, appLanguage, onExtenalLink)
             MovieInfoType.INFO_REVIEWS.ordinal -> MovieInfoReviewsViewHolder(view, onExtenalLink, appLanguage)
             MovieInfoType.INFO_DIRECTORS_MOVIE.ordinal -> MovieInfoDirectorFilmsViewHolder(view, activity, onMovieClicked, onPersonClicked)
+            MovieInfoType.INFO_QUOTE.ordinal -> MovieInfoQuoteViewHolder(view)
             MovieInfoType.INFO_COLLECTION.ordinal -> MovieInfoCollectionViewHolder(view, appLanguage, onMovieClicked)
             MovieInfoType.INFO_PRODUCTION.ordinal -> MovieInfoProductionViewHolder(view)
             MovieInfoType.INFO_MIDIAS.ordinal -> MovieInfoMidiaViewHolder(view, onVideoClick)
+            MovieInfoType.INFO_BLOCK_SPECIAL.ordinal -> MovieInfoBlockSpecialViewHolder(view)
+            MovieInfoType.INFO_WATCH_ON.ordinal -> MovieInfoWatchOnViewHolder(view)
+            MovieInfoType.INFO_DID_YOUT_KNOW.ordinal -> MovieInfoDidYouKnowViewHolder(view)
             else -> object : BaseViewHolder<MovieInfo>(view) {}
         }
 

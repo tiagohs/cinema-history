@@ -7,13 +7,16 @@ import java.io.Serializable
 
 class ContentBlockSpecial(
     @SerializedName("title")
-    val title: String,
+    val title: String? = null,
 
     @SerializedName("description")
     val description: String,
 
+    @SerializedName("credits")
+    val credits: String? = null,
+
     @SerializedName("image")
-    val image: Image,
+    val image: Image? = null,
 
     @SerializedName("click")
     val click: Click? = null

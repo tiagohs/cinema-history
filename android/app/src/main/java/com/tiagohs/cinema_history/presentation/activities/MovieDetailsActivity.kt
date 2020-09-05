@@ -236,6 +236,23 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
         listOfMovieList.add(MovieInfo(MovieInfoType.INFO_HEADER, movie))
         listOfMovieList.add(MovieInfo(MovieInfoType.INFO_SUMMARY, movie))
 
+        movie.extraInfo?.watchOn?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_WATCH_ON,
+                    movie
+                )
+            )
+        }
+        movie.extraInfo?.blockSpecial?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_BLOCK_SPECIAL,
+                    movie
+                )
+            )
+        }
+
         if (castList.isNotEmpty()) {
             listOfMovieList.add(
                 MovieInfoPersonList(
@@ -256,6 +273,14 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
             )
         }
 
+        movie.extraInfo?.quote?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_QUOTE,
+                    movie
+                )
+            )
+        }
         movie.extraInfo?.reviewResults?.let {
             listOfMovieList.add(
                 MovieInfo(
@@ -273,6 +298,19 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
             )
         }
 
+        if (!movie.allImages.isNullOrEmpty() || !movie.videos?.videoList.isNullOrEmpty()) {
+            listOfMovieList.add(MovieInfo(MovieInfoType.INFO_MIDIAS, movie))
+        }
+
+        movie.extraInfo?.didYouKnowList?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_DID_YOUT_KNOW,
+                    movie
+                )
+            )
+        }
+
         movie.productionCompanies?.let {
             listOfMovieList.add(
                 MovieInfo(
@@ -280,10 +318,6 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
                     movie
                 )
             )
-        }
-
-        if (!movie.allImages.isNullOrEmpty() || !movie.videos?.videoList.isNullOrEmpty()) {
-            listOfMovieList.add(MovieInfo(MovieInfoType.INFO_MIDIAS, movie))
         }
 
         movie.movieCollection?.let {
@@ -444,6 +478,7 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
     companion object {
 
         const val MOVIE_ID = "MOVIE_ID"
+        const val MAIN_TOPIC = "MAIN_TOPIC"
 
         fun newIntent(
             context: Context,
