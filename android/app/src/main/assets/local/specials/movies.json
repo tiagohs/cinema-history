@@ -39,6 +39,10 @@
             "type": "prime_video",
             "name": "Amazon Prime Video",
             "link": "https://www.amazon.com/gp/video/detail/B07DPF8HJV"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=xLVChRVfZ74"
           }
         ],
         "did_you_know_list": [
@@ -71,15 +75,37 @@
       },
       {
         "id": 5698,
-        "title": "The Great Train Robbery"
+        "title": "The Great Train Robbery",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=zuto7qWrplc"
+          }
+        ]
       },
       {
         "id": 618,
-        "title": "The Birth of a Nation"
+        "title": "The Birth of a Nation",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/birth-nation-0"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=nGQaAddwjxg"
+          }
+        ]
       },
       {
         "id": 29082,
-        "title": "Les Vampires"
+        "title": "Les Vampires",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=H6PWYIwf1PU"
+          }
+        ]
       },
       {
         "id": 3059,

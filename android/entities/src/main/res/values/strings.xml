@@ -6,6 +6,10 @@
     <string name="plano_critico" translatable="false" >Plano Crítico</string>
     <string name="adoro_cinema" translatable="false" >Adoro Cinema</string>
 
+    <string name="youtube" translatable="false">Youtube</string>
+    <string name="prime_video" translatable="false">Amazon Prime Video</string>
+    <string name="kanopy" translatable="false">Kanopy</string>
+
     <string name="brazil">Brazil</string>
     <string name="eua">United States</string>
 </resources>

@@ -5,6 +5,7 @@ import android.view.View
 import androidx.constraintlayout.widget.Constraints
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
+import com.tiagohs.entities.enums.NetworkType
 import com.tiagohs.entities.movie_info.MovieInfo
 import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.adapter_movie_info_watch_on.*
@@ -29,13 +30,17 @@ class MovieInfoWatchOnViewHolder(
                 val layoutParams = Constraints.LayoutParams(
                     Constraints.LayoutParams.WRAP_CONTENT,
                     Constraints.LayoutParams.WRAP_CONTENT
-                ).apply {
-                    setMargins(14.convertIntToDp(containerView.context), 0, 10.convertIntToDp(containerView.context), 0)
-                }
+                )
 
                 view.layoutParams = layoutParams
-                view.networkName.setResourceText(network.name)
                 view.networkName.setResourceTextColor(textColor)
+
+                if (network.type == NetworkType.UNKNOWN) {
+                    view.networkName.setResourceText(network.name)
+                } else {
+                    network.type.networkName?.let { view.networkName.setResourceText(it) }
+                }
+
                 view.networkContainer.setOnClickListener {
                     containerView.context.openLink(network.link)
                 }
