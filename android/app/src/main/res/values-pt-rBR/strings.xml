@@ -15,6 +15,7 @@
     <string name="movies">Filmes</string>
     <string name="timeline">Timeline</string>
     <string name="share_title">Compartilhar com:</string>
+    <string name="selected_reference_type">Selecione o tipo:</string>
 
     <!-- History Pages -->
 
@@ -30,7 +31,7 @@
     <string name="action_settings">Configurações</string>
     <string name="action_share">Compartilhar</string>
     <string name="activity_settings">Configurações</string>
-    <string name="activity_references">Referências</string>
+    <string name="activity_references">Referências e Sugestões</string>
     <string name="language_title">Idioma</string>
     <string name="language_app_title">Idioma do conteúdo História do Cinema</string>
     <string name="language_movie_title">Idioma do Filme</string>

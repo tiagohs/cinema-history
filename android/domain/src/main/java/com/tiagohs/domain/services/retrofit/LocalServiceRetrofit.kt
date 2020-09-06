@@ -5,6 +5,7 @@ import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
 import com.tiagohs.entities.references.Reference
+import com.tiagohs.entities.references.ReferenceResult
 import com.tiagohs.entities.timeline.TimelineResult
 import com.tiagohs.entities.tmdb.MovieExtraInfoResult
 import com.tiagohs.entities.tmdb.movie.MovieExtraInfo
@@ -25,7 +26,7 @@ interface LocalServiceRetrofit {
     fun getMainTopics(): Observable<List<MainTopic>>
 
     @GET("references")
-    fun getReferences(): Observable<List<Reference>>
+    fun getReferences(): Observable<List<ReferenceResult>>
 
     @GET("hmt_sumario_{mainTopicId}")
     fun getSumarioByMainTopicID(@Path("mainTopicId") mainTopicId: Int): Observable<List<Sumario>>

@@ -11,41 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/movie_details/MovieInfoLinkTopicsViewHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/page/LinkScreenViewHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_degrade_blue_end.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_degrade_brown_end.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_degrade_deep_orange_end.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_degrade_deep_purple_end.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_degrade_green_end.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_degrade_red_end.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/background_degrade_yellow_end.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_link_topics.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_page_link_screen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_link_topics.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/contents/ContentLinkScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/movie/MainTopicExtraInfo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/references/ReferenceResult.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/page_9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/MovieDetailsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/MovieDetailsActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/MovieInfoAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/MovieInfoAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/PageContentAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/PageContentAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/movie_details/MovieInfoDirectorFilmsViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/movie_details/MovieInfoDirectorFilmsViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_director_films.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_director_films.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/deserializers/PageContentDeserializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/deserializers/PageContentDeserializer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/ContentType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/ContentType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/MovieInfoType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/MovieInfoType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/src/main/java/com/tiagohs/helpers/utils/ColorUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/src/main/java/com/tiagohs/helpers/utils/ColorUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/references.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/references.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/ReferenceActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/ReferenceActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_references.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_references.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-pt-rBR/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-pt-rBR/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/LocalService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/LocalService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/retrofit/LocalServiceRetrofit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/retrofit/LocalServiceRetrofit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/views/ReferenceView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/views/ReferenceView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,16 +329,16 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="100" y="100" width="1720" height="880" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598540043064" />
-    <state x="579" y="23" width="895" height="1044" key="find.popup" timestamp="1599425510129">
+    <state x="579" y="23" width="895" height="1044" key="find.popup" timestamp="1599427263401">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="579" y="23" width="895" height="1044" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599425510129" />
+    <state x="579" y="23" width="895" height="1044" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599427263401" />
     <state x="579" y="13" width="764" height="1005" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285923944" />
     <state x="2383" y="10" width="611" height="804" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@1920.0.1536.832" timestamp="1594772873800" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1599425188502">
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1599428368763">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599425188502" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599428368763" />
     <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1599239259474" />
   </component>
   <component name="XDebuggerManager">

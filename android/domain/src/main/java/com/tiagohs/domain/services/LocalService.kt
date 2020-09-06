@@ -8,6 +8,7 @@ import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
 import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.references.Reference
+import com.tiagohs.entities.references.ReferenceResult
 import com.tiagohs.entities.timeline.TimelineResult
 import com.tiagohs.entities.tmdb.MovieExtraInfoResult
 import com.tiagohs.entities.tmdb.movie.MovieExtraInfo
@@ -22,7 +23,7 @@ class LocalService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) 
 
     fun getPage(mainTopicId: Int, sumarioId: Int): Observable<Page> = buildLocalService(LocalServiceRetrofit::class.java).getPage(mainTopicId, sumarioId)
 
-    fun getReferences(): Observable<List<Reference>> = buildLocalService(LocalServiceRetrofit::class.java).getReferences()
+    fun getReferences(): Observable<List<ReferenceResult>> = buildLocalService(LocalServiceRetrofit::class.java).getReferences()
 
     fun getMainTopics(): Observable<List<MainTopic>> = buildLocalService(LocalServiceRetrofit::class.java).getMainTopics()
 
