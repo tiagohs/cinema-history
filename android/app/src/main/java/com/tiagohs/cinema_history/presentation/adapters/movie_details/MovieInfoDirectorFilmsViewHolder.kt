@@ -40,13 +40,13 @@ class MovieInfoDirectorFilmsViewHolder(
             )
 
             imageSpecial.loadImage(
-                director.profilePath.imageUrlFromTMDB(ImageSize.PROFILE_632),
+                director.profilePath?.imageUrlFromTMDB(ImageSize.PROFILE_632),
                 contentDescription = containerView.context.getString(
                     R.string.person_photo_description,
                     director.name
                 ),
-                placeholder = R.drawable.placeholder_movie_person,
-                errorPlaceholder = R.drawable.placeholder_movie_person
+                placeholder = null,
+                errorPlaceholder = null
             )
 
             scriptsSpecialListRecyclerView.layoutManager =
@@ -58,7 +58,11 @@ class MovieInfoDirectorFilmsViewHolder(
                 )
             )
 
-            headerViewClickable.setOnClickListener { onPersonClicked?.invoke(director.id) }
+            headerViewClickable.setOnClickListener {
+                val id = director.id ?: return@setOnClickListener
+
+                onPersonClicked?.invoke(id)
+            }
 
             scriptsSpecialListRecyclerView.adapter = MovieItemAdapter(
                 movie.directorMovies ?: emptyList()

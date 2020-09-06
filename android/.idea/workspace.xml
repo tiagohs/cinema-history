@@ -6,19 +6,17 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/maintopics.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/maintopics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/milmoviesmaintopics.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/milmoviesmaintopics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/specials/movies.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/specials/movies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/person_details/PersonInfoSpecialFilmographyViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/person_details/PersonInfoSpecialFilmographyViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/MovieDetailsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/MovieDetailsActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/movie_details/MovieInfoDirectorFilmsViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/movie_details/MovieInfoDirectorFilmsViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_details.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/PersonDetailsPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/PersonDetailsPresenterImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/MovieExtraInfoResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/MovieExtraInfoResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/movie/MovieExtraInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/movie/MovieExtraInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/movie/Crew.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/movie/Crew.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,10 +331,10 @@
     <state x="579" y="23" width="895" height="1044" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599363380524" />
     <state x="579" y="13" width="764" height="1005" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285923944" />
     <state x="2383" y="10" width="611" height="804" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@1920.0.1536.832" timestamp="1594772873800" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1599363297700">
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1599364965450">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599363297700" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599364965450" />
     <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1599239259474" />
   </component>
   <component name="XDebuggerManager">
@@ -351,6 +349,11 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/timeline/TimelineItemFooterHolder.kt</url>
           <line>31</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt</url>
+          <line>66</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

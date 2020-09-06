@@ -115,8 +115,8 @@ class MovieDetailsPresenterImpl @Inject constructor(
 
                     if (movieExtra != null) {
                         movie.extraInfo = movieExtra
-                        movie.extraInfo?.historyMainTopic = localService.getMainTopics().map { mainTopics -> mainTopics.find { mainTopic -> (mainTopic as? MainTopicItem)?.id == moviesExtras.historyMainTopicID } as? MainTopicItem }.blockingFirst()
-                        movie.extraInfo?.milMoviesMainTopic = localService.getMilMoviesMainTopics().map { mainTopics -> mainTopics.find { mainTopic -> (mainTopic as? MilMoviesMainTopic)?.id == moviesExtras.milMoviesMainTopicID } as? MilMoviesMainTopic }.blockingFirst()
+                        movie.extraInfo?.historyMainTopic = localService.getMainTopics().map { mainTopics -> mainTopics.find { mainTopic -> (mainTopic as? MainTopicItem)?.id == moviesExtras.historyMainTopicID } as? MainTopicItem }?.blockingFirst()
+                        movie.extraInfo?.milMoviesMainTopic = localService.getMilMoviesMainTopics().map { mainTopics -> mainTopics.find { mainTopic -> (mainTopic as? MilMoviesMainTopic)?.id == moviesExtras.milMoviesMainTopicID } as? MilMoviesMainTopic }?.blockingFirst()
 
                         return@find true
                     }
@@ -126,6 +126,7 @@ class MovieDetailsPresenterImpl @Inject constructor(
 
                 movie
             }
+            .onErrorResumeNext { _: Throwable -> Observable.just(movie) }
 
     private fun fetchCollection(movie: Movie, collectionId: Int, languageToUse: String) : Observable<Movie> =
         tmdbService.getCollection(collectionId, languageToUse)

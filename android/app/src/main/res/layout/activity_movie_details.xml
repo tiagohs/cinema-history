@@ -28,6 +28,7 @@
             app:expandedTitleTextAppearance="@style/AppTheme.Expansed"
             app:collapsedTitleTextAppearance="@style/AppTheme.Collalpsed"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:background="@color/md_black_1000"
             app:contentScrim="@color/colorPrimary"
             app:statusBarScrim="@color/md_black_1000"
             app:titleEnabled="true">
@@ -43,6 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fitsSystemWindows="true"
+                    app:cardBackgroundColor="@color/md_black_1000"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

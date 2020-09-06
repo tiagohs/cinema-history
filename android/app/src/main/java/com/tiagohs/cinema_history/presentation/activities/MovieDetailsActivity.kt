@@ -311,7 +311,7 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
             )
         }
 
-        movie.productionCompanies?.let {
+        if (!movie.productionCompanies.isNullOrEmpty()) {
             listOfMovieList.add(
                 MovieInfo(
                     MovieInfoType.INFO_PRODUCTION,
