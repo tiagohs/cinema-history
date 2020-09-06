@@ -20,8 +20,7 @@ class PersonInfoSpecialFilmographyViewHolder(
         super.bind(item, position)
         val context = containerView.context ?: return
         val person = item.person
-        val filmography =
-            person.personFilmography.filter { !it.posterPath.isNullOrBlank() && !it.backdrop.isNullOrBlank() }
+        val filmography = person.personFilmography
         val personAdapter = MovieItemSpecialAdapter(filmography)
 
         personAdapter.onMovieClicked = onMovieSelected

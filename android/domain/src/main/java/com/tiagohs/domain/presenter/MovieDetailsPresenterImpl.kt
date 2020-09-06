@@ -8,6 +8,8 @@ import com.tiagohs.domain.services.LocalService
 import com.tiagohs.domain.services.OMDBService
 import com.tiagohs.domain.services.TMDBService
 import com.tiagohs.domain.views.MovieDetailsView
+import com.tiagohs.entities.main_topics.MainTopicItem
+import com.tiagohs.entities.main_topics.MilMoviesMainTopic
 import com.tiagohs.entities.tmdb.movie.Collection
 import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.helpers.R
@@ -113,6 +115,9 @@ class MovieDetailsPresenterImpl @Inject constructor(
 
                     if (movieExtra != null) {
                         movie.extraInfo = movieExtra
+                        movie.extraInfo?.historyMainTopic = localService.getMainTopics().map { mainTopics -> mainTopics.find { mainTopic -> (mainTopic as? MainTopicItem)?.id == moviesExtras.historyMainTopicID } as? MainTopicItem }.blockingFirst()
+                        movie.extraInfo?.milMoviesMainTopic = localService.getMilMoviesMainTopics().map { mainTopics -> mainTopics.find { mainTopic -> (mainTopic as? MilMoviesMainTopic)?.id == moviesExtras.milMoviesMainTopicID } as? MilMoviesMainTopic }.blockingFirst()
+
                         return@find true
                     }
 

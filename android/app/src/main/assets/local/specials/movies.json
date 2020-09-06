@@ -1,6 +1,8 @@
 [
   {
     "list":  "DECADE 1",
+    "milMoviesMainTopicID": 1,
+    "historyMainTopicID": 1,
     "movies": [
       {
         "id": 775,
@@ -324,7 +326,3686 @@
     ]
   },
   {
+    "list": "DECADE 2",
+    "milMoviesMainTopicID": 2,
+    "historyMainTopicID": 2,
+    "movies": [
+      {
+        "id": 27899,
+        "original_title": "Little Caesar"
+      },
+      {
+          "id": 228,
+          "title": "The Blue Angel"
+      },
+      {
+          "id": 143,
+          "original_title": "All Quiet on the Western Front"
+      },
+      {
+          "id": 5729,
+          "original_title": "L'Âge d'Or"
+      },
+      {
+          "id": 334507,
+          "title": "The Earth is Thirsty"
+      },
+      {
+          "id": 31514,
+          "title": "À Nous la Liberté"
+      },
+      {
+          "id": 8353,
+          "title": "Limite"
+      },
+      {
+          "id": 977,
+          "original_title": "Tabu"
+      },
+      {
+          "id": 901,
+          "title": "City Lights"
+      },
+      {
+          "id": 138,
+          "original_title": "Dracula"
+      },
+      {
+          "id": 3035,
+          "original_title": "Frankenstein"
+      },
+      {
+          "id": 17687,
+          "title": "The Public Enemy"
+      },
+      {
+          "id": 832,
+          "original_title": "M - Eine Stadt sucht einen Mörder"
+      },
+      {
+          "id": 779,
+          "original_title": "Vampyr - Der Traum des Allan Grey"
+      },
+      {
+          "id": 29740,
+          "original_title": "I Am a Fugitive from a Chain Gang"
+      },
+      {
+          "id": 48365,
+          "title": "Boudu Saved from Drowning"
+      },
+      {
+          "id": 31532,
+          "title": "Love Me Tonight"
+      },
+      {
+          "id": 875,
+          "title": "Shanghai Express"
+      },
+      {
+          "id": 195,
+          "original_title": "Trouble in Paradise"
+      },
+      {
+          "id": 877,
+          "original_title": "Scarface"
+      },
+      {
+        "id": 136,
+        "original_title": "Freaks"
+      },
+      {
+          "id": 3062,
+          "title": "42nd Street"
+      },
+      {
+          "id": 28432,
+          "title": "Footlight Parade"
+      },
+      {
+          "id": 34187,
+          "original_title": "The Bitter Tea of General Yen"
+      },
+      {
+          "id": 43595,
+          "title": "She Done Him Wrong"
+      },
+      {
+          "id": 3063,
+          "title": "Duck Soup"
+      },
+      {
+          "id": 44494,
+          "original_title": "Zéro de conduite : Jeunes diables au collège"
+      },
+      {
+          "id": 31511,
+          "original_title": "Gold Diggers of 1933"
+      },
+      {
+          "id": 244,
+          "title": "King Kong"
+      },
+      {
+          "id": 91,
+          "title": "Land Without Bread"
+      },
+      {
+          "id": 43128,
+          "original_title": "Sons of the Desert"
+      },
+      {
+          "id": 31526,
+          "original_title": "Queen Christina"
+      },
+      {
+          "id": 39266,
+          "title": "Triumph of the Will"
+      },
+      {
+          "id": 28001,
+          "title": "It's a Gift"
+      },
+      {
+          "id": 112698,
+          "title": "The Goddess"
+      },
+      {
+          "id": 3078,
+          "original_title": "It Happened One Night"
+      },
+      {
+          "id": 43904,
+          "original_title": "L'Atalante"
+      },
+      {
+          "id": 24106,
+          "original_title": "The Black Cat"
+      },
+      {
+          "id": 3529,
+          "title": "The Thin Man"
+      },
+      {
+          "id": 12311,
+          "title": "Mutiny on the Bounty"
+      },
+      {
+        "id": 260,
+        "title": "The 39 Steps"
+      },
+      {
+          "id": 37719,
+          "title": "A Night at the Opera"
+      },
+      {
+          "id": 229,
+          "original_title": "The Bride of Frankenstein"
+      },
+      {
+          "id": 16905,
+          "original_title": "Captain Blood"
+      },
+      {
+          "id": 3080,
+          "title": "Top Hat"
+      },
+      {
+          "id": 57412,
+          "original_title": "Peter Ibbetson"
+      },
+      {
+          "id": 3082,
+          "title": "Modern Times"
+      },
+      {
+          "id": 20325,
+          "title": "Swing Time"
+      },
+      {
+          "id": 24807,
+          "title": "Mr. Deeds Goes to Town"
+      },
+      {
+          "id": 13562,
+          "original_title": "My Man Godfrey"
+      },
+      {
+          "id": 65642,
+          "original_title": "Le roman d'un tricheur"
+      },
+      {
+          "id": 43874,
+          "original_title": "Camille"
+      },
+      {
+          "id": 3596,
+          "original_title": "Things to Come"
+      },
+      {
+          "id": 31507,
+          "title": "Dodsworth"
+      },
+      {
+          "id": 43878,
+          "original_title": "Partie de campagne"
+      },
+      {
+          "id": 26252,
+          "original_title": "Pépé le Moko"
+      },
+      {
+          "id": 41059,
+          "original_title": "Make Way for Tomorrow"
+      },
+      {
+          "id": 777,
+          "title": "Grand Illusion"
+      },
+      {
+          "id": 43865,
+          "original_title": "Stella Dallas"
+      },
+      {
+          "id": 30992,
+          "title": "Song at Midnight"
+      },
+      {
+          "id": 408,
+          "original_title": "Snow White and the Seven Dwarfs"
+      },
+      {
+          "id": 16515,
+          "title": "Captains Courageous"
+      },
+      {
+          "id": 14675,
+          "original_title": "The Awful Truth"
+      },
+      {
+          "id": 43278,
+          "original_title": "The Life of Emile Zola"
+      },
+      {
+          "id": 1976,
+          "title": "Jezebel"
+      },
+      {
+          "id": 10907,
+          "original_title": "The Adventures of Robin Hood"
+      },
+      {
+          "id": 13696,
+          "title": "Angels with Dirty Faces"
+      },
+      {
+          "id": 43844,
+          "original_title": "La Femme du boulanger"
+      },
+      {
+          "id": 900,
+          "original_title": "Bringing Up Baby"
+      },
+      {
+          "id": 677,
+          "original_title": "Olympia - Fest der Völker"
+      },
+      {
+          "id": 940,
+          "title": "The Lady Vanishes"
+      },
+      {
+          "id": 3084,
+          "original_title": "Wuthering Heights"
+      },
+      {
+          "id": 3083,
+          "original_title": "Mr. Smith Goes to Washington"
+      },
+      {
+          "id": 995,
+          "original_title": "Stagecoach"
+      },
+      {
+          "id": 43832,
+          "title": "Only Angels Have Wings"
+      },
+      {
+          "id": 43828,
+          "original_title": "Destry Rides Again"
+      },
+      {
+          "id": 770,
+          "title": "Gone with the Wind"
+      },
+      {
+          "id": 27053,
+          "original_title": "Le Jour Se Lève"
+      },
+      {
+          "id": 24965,
+          "original_title": "Gunga Din"
+      },
+      {
+          "id": 1859,
+          "title": "Ninotchka"
+      },
+      {
+        "id": 630,
+        "original_title": "The Wizard of Oz"
+      },
+      {
+          "id": 776,
+          "original_title": "La Règle du jeu"
+      },
+      {
+          "id": 46069,
+          "title": "The Story of the Last Chrysanthemum"
+      }
+    ]
+  },
+  {
+    "list": "DECADE 3",
+    "milMoviesMainTopicID": 3,
+    "historyMainTopicID": 3,
+    "movies": [
+      {
+        "id": 3085,
+        "original_title": "His Girl Friday"
+      },
+      {
+          "id": 756,
+          "original_title": "Fantasia"
+      },
+      {
+          "id": 223,
+          "original_title": "Rebecca"
+      },
+      {
+          "id": 981,
+          "original_title": "The Philadelphia Story"
+      },
+      {
+          "id": 596,
+          "title": "The Grapes of Wrath"
+      },
+      {
+          "id": 989,
+          "title": "The Mortal Storm"
+      },
+      {
+          "id": 911,
+          "title": "The Bank Dick"
+      },
+      {
+          "id": 10895,
+          "original_title": "Pinocchio"
+      },
+      {
+          "id": 15,
+          "original_title": "Citizen Kane"
+      },
+      {
+          "id": 16442,
+          "original_title": "Sergeant York"
+      },
+      {
+          "id": 3086,
+          "title": "The Lady Eve"
+      },
+      {
+          "id": 13666,
+          "original_title": "The Wolf Man"
+      },
+      {
+          "id": 27725,
+          "original_title": "High Sierra"
+      },
+      {
+          "id": 43266,
+          "original_title": "How Green Was My Valley"
+      },
+      {
+          "id": 16305,
+          "original_title": "Sullivan's Travels"
+      },
+      {
+          "id": 963,
+          "title": "The Maltese Falcon"
+      },
+      {
+          "id": 11360,
+          "original_title": "Dumbo"
+      },
+      {
+          "id": 32255,
+          "original_title": "The Palm Beach Story"
+      },
+      {
+          "id": 32847,
+          "original_title": "Now, Voyager"
+      },
+      {
+          "id": 198,
+          "original_title": "To Be or Not to Be"
+      },
+      {
+        "id": 965,
+        "original_title": "The Magnificent Ambersons"
+      },
+      {
+          "id": 3087,
+          "original_title": "Yankee Doodle Dandy"
+      },
+      {
+          "id": 27367,
+          "original_title": "Mrs. Miniver"
+      },
+      {
+          "id": 289,
+          "original_title": "Casablanca"
+      },
+      {
+          "id": 25508,
+          "original_title": "Cat People"
+      },
+      {
+          "id": 84656,
+          "original_title": "Fires Were Started"
+      },
+      {
+          "id": 980,
+          "original_title": "The Ox-Bow Incident"
+      },
+      {
+          "id": 25037,
+          "title": "The Life and Death of Colonel Blimp"
+      },
+      {
+          "id": 27040,
+          "title": "Meshes of the Afternoon"
+      },
+      {
+          "id": 20945,
+          "title": "The Seventh Victim"
+      },
+      {
+          "id": 41996,
+          "original_title": "The Man in Grey"
+      },
+      {
+          "id": 21734,
+          "title": "Shadow of a Doubt"
+      },
+      {
+          "id": 5155,
+          "title": "Ossessione"
+      },
+      {
+          "id": 1939,
+          "title": "Laura"
+      },
+      {
+          "id": 909,
+          "original_title": "Meet Me in St. Louis"
+      },
+      {
+          "id": 22584,
+          "original_title": "To Have and Have Not"
+      },
+      {
+          "id": 13528,
+          "original_title": "Gaslight"
+      },
+      {
+          "id": 22638,
+          "title": "Henry V"
+      },
+      {
+          "id": 996,
+          "original_title": "Double Indemnity"
+      },
+      {
+          "id": 1834,
+          "original_title": "Murder, My Sweet"
+      },
+      {
+        "id": 9797,
+        "title": "Ivan the Terrible, Part I"
+      },
+      {
+          "id": 3309,
+          "original_title": "Mildred Pierce"
+      },
+      {
+          "id": 20367,
+          "title": "Detour"
+      },
+      {
+          "id": 56137,
+          "title": "I Know Where I'm Going!"
+      },
+      {
+          "id": 28580,
+          "title": "The Lost Weekend"
+      },
+      {
+          "id": 2457,
+          "original_title": "Les Enfants du Paradis"
+      },
+      {
+          "id": 84701,
+          "original_title": "San Pietro"
+      },
+      {
+          "id": 851,
+          "title": "Brief Encounter"
+      },
+      {
+          "id": 307,
+          "original_title": "Roma città aperta"
+      },
+      {
+          "id": 887,
+          "title": "The Best Years of Our Lives"
+      },
+      {
+          "id": 8429,
+          "original_title": "Paisà"
+      },
+      {
+          "id": 25736,
+          "title": "The Postman Always Rings Twice"
+      },
+      {
+          "id": 648,
+          "title": "Beauty and the Beast"
+      },
+      {
+          "id": 14638,
+          "original_title": "The Killers"
+      },
+      {
+          "id": 1585,
+          "original_title": "It's a Wonderful Life"
+      },
+      {
+          "id": 910,
+          "title": "The Big Sleep"
+      },
+      {
+          "id": 3767,
+          "title": "Gilda"
+      },
+      {
+          "id": 28162,
+          "original_title": "A Matter of Life and Death"
+      },
+      {
+          "id": 14320,
+          "original_title": "Great Expectations"
+      },
+      {
+          "id": 3088,
+          "original_title": "My Darling Clementine"
+      },
+      {
+        "id": 303,
+        "title": "Notorious"
+      },
+      {
+          "id": 16391,
+          "original_title": "Black Narcissus"
+      },
+      {
+          "id": 678,
+          "original_title": "Out of the Past"
+      },
+      {
+          "id": 30588,
+          "original_title": "Monsieur Verdoux"
+      },
+      {
+          "id": 43461,
+          "title": "Odd Man Out"
+      },
+      {
+          "id": 5156,
+          "original_title": "Ladri di biciclette"
+      },
+      {
+          "id": 946,
+          "title": "Letter from an Unknown Woman"
+      },
+      {
+          "id": 560,
+          "original_title": "Secret Beyond the Door"
+      },
+      {
+          "id": 26744,
+          "original_title": "Force of Evil"
+      },
+      {
+          "id": 21058,
+          "title": "Spring in a Small Town"
+      },
+      {
+          "id": 3089,
+          "title": "Red River"
+      },
+      {
+          "id": 17804,
+          "original_title": "The Paleface"
+      },
+      {
+          "id": 62694,
+          "title": "The Snake Pit"
+      },
+      {
+          "id": 3766,
+          "original_title": "The Lady from Shanghai"
+      },
+      {
+          "id": 1580,
+          "title": "Rope"
+      },
+      {
+          "id": 19542,
+          "original_title": "The Red Shoes"
+      },
+      {
+          "id": 3090,
+          "title": "The Treasure of the Sierra Madre"
+      },
+      {
+          "id": 70447,
+          "original_title": "Louisiana Story"
+      },
+      {
+          "id": 28007,
+          "original_title": "The Reckless Moment"
+      },
+      {
+          "id": 15794,
+          "original_title": "White Heat"
+      },
+      {
+        "id": 25431,
+        "title": "Adam's Rib"
+      },
+      {
+          "id": 28571,
+          "original_title": "The Heiress"
+      },
+      {
+          "id": 1092,
+          "original_title": "The Third Man"
+      },
+      {
+          "id": 11898,
+          "original_title": "Kind Hearts and Coronets"
+      },
+      {
+          "id": 16665,
+          "original_title": "Whisky Galore!"
+      },
+      {
+          "id": 31516,
+          "title": "On the Town"
+      }
+    ]
+  },
+  {
+    "list": "DECADE 4",
+    "milMoviesMainTopicID": 4,
+    "historyMainTopicID": 3,
+    "movies": [
+      {
+        "id": 18671,
+        "title": "Gun Crazy"
+      },
+      {
+          "id": 4558,
+          "original_title": "Orphée"
+      },
+      {
+          "id": 16958,
+          "original_title": "The Asphalt Jungle"
+      },
+      {
+          "id": 548,
+          "title": "Rashomon"
+      },
+      {
+          "id": 705,
+          "original_title": "All About Eve"
+      },
+      {
+          "id": 14551,
+          "original_title": "Winchester '73"
+      },
+      {
+          "id": 11617,
+          "original_title": "Rio Grande"
+      },
+      {
+          "id": 599,
+          "original_title": "Sunset Boulevard"
+      },
+      {
+          "id": 800,
+          "original_title": "Los olvidados"
+      },
+      {
+          "id": 17057,
+          "original_title": "In a Lonely Place"
+      },
+      {
+          "id": 25364,
+          "title": "Ace in the Hole"
+      },
+      {
+          "id": 845,
+          "original_title": "Strangers on a Train"
+      },
+      {
+          "id": 702,
+          "original_title": "A Streetcar Named Desire"
+      },
+      {
+          "id": 2769,
+          "original_title": "An American in Paris"
+      },
+      {
+          "id": 38688,
+          "original_title": "Pandora and the Flying Dutchman"
+      },
+      {
+          "id": 488,
+          "original_title": "The African Queen"
+      },
+      {
+          "id": 25673,
+          "original_title": "A Place in the Sun"
+      },
+      {
+          "id": 32961,
+          "original_title": "The Lavender Hill Mob"
+      },
+      {
+          "id": 43376,
+          "original_title": "Journal d'un curé de campagne"
+      },
+      {
+          "id": 828,
+          "original_title": "The Day the Earth Stood Still"
+      },
+      {
+        "id": 3109,
+        "title": "The Quiet Man"
+      },
+      {
+          "id": 5000,
+          "original_title": "Jeux interdits"
+      },
+      {
+          "id": 41464,
+          "title": "Europe '51"
+      },
+      {
+          "id": 872,
+          "title": "Singin' in the Rain"
+      },
+      {
+          "id": 32499,
+          "original_title": "The Bad and the Beautiful"
+      },
+      {
+          "id": 3782,
+          "title": "Ikiru"
+      },
+      {
+          "id": 833,
+          "original_title": "Umberto D."
+      },
+      {
+          "id": 288,
+          "original_title": "High Noon"
+      },
+      {
+          "id": 56167,
+          "original_title": "Le carrosse d'or"
+      },
+      {
+          "id": 47735,
+          "title": "Summer with Monika"
+      },
+      {
+          "id": 25955,
+          "original_title": "Pickup on South Street"
+      },
+      {
+          "id": 29376,
+          "original_title": "The Band Wagon"
+      },
+      {
+          "id": 778,
+          "title": "Monsieur Hulot's Holiday"
+      },
+      {
+          "id": 27030,
+          "original_title": "Madame de…"
+      },
+      {
+          "id": 204,
+          "title": "The Wages of Fear"
+      },
+      {
+          "id": 74122,
+          "original_title": "The Bigamist"
+      },
+      {
+          "id": 20442,
+          "original_title": "The Naked Spur"
+      },
+      {
+          "id": 18148,
+          "title": "Tokyo Story"
+      },
+      {
+          "id": 11426,
+          "original_title": "From Here to Eternity"
+      },
+      {
+          "id": 14696,
+          "title": "Ugetsu"
+      },
+      {
+        "id": 2748,
+        "original_title": "Viaggio in Italia"
+      },
+      {
+          "id": 3110,
+          "original_title": "Shane"
+      },
+      {
+          "id": 759,
+          "original_title": "Gentlemen Prefer Blondes"
+      },
+      {
+          "id": 804,
+          "title": "Roman Holiday"
+      },
+      {
+          "id": 14580,
+          "original_title": "The Big Heat"
+      },
+      {
+          "id": 654,
+          "original_title": "On the Waterfront"
+      },
+      {
+          "id": 405,
+          "original_title": "La strada"
+      },
+      {
+          "id": 827,
+          "title": "Diabolique"
+      },
+      {
+          "id": 3111,
+          "original_title": "A Star Is Born"
+      },
+      {
+          "id": 567,
+          "original_title": "Rear Window"
+      },
+      {
+          "id": 43195,
+          "original_title": "Senso"
+      },
+      {
+          "id": 20532,
+          "title": "Sansho the Bailiff"
+      },
+      {
+          "id": 27443,
+          "original_title": "Silver Lode"
+      },
+      {
+          "id": 34689,
+          "original_title": "The Barefoot Contessa"
+      },
+      {
+          "id": 346,
+          "title": "Seven Samurai"
+      },
+      {
+          "id": 51044,
+          "title": "Carmen Jones"
+      },
+      {
+          "id": 26596,
+          "original_title": "Johnny Guitar"
+      },
+      {
+          "id": 23620,
+          "original_title": "Salt of the Earth"
+      },
+      {
+          "id": 35987,
+          "original_title": "Lola Montès"
+      },
+      {
+          "id": 5801,
+          "title": "Pather Panchali"
+      },
+      {
+        "id": 48035,
+        "original_title": "Ordet"
+      },
+      {
+          "id": 15919,
+          "original_title": "Marty"
+      },
+      {
+          "id": 43317,
+          "original_title": "Artists and Models"
+      },
+      {
+          "id": 221,
+          "title": "Rebel Without a Cause"
+      },
+      {
+          "id": 84820,
+          "original_title": "Les maîtres fous"
+      },
+      {
+          "id": 84850,
+          "title": "Hill 24 Doesn't Answer"
+      },
+      {
+          "id": 14554,
+          "title": "Bad Day at Black Rock"
+      },
+      {
+          "id": 803,
+          "title": "Night and Fog"
+      },
+      {
+          "id": 35956,
+          "original_title": "The Phenix City Story"
+      },
+      {
+          "id": 541,
+          "original_title": "The Man with the Golden Arm"
+      },
+      {
+          "id": 18030,
+          "title": "Kiss Me Deadly"
+      },
+      {
+          "id": 4825,
+          "original_title": "Guys and Dolls"
+      },
+      {
+          "id": 3112,
+          "original_title": "The Night of the Hunter"
+      },
+      {
+          "id": 5506,
+          "title": "The Ladykillers"
+      },
+      {
+          "id": 13936,
+          "original_title": "Oklahoma!"
+      },
+      {
+          "id": 11700,
+          "original_title": "Sommarnattens leende"
+      },
+      {
+          "id": 26030,
+          "original_title": "Bob le flambeur"
+      },
+      {
+          "id": 43316,
+          "title": "All That Heaven Allows"
+      },
+      {
+          "id": 6844,
+          "title": "The Ten Commandments"
+      },
+      {
+          "id": 3114,
+          "title": "The Searchers"
+      },
+      {
+        "id": 33319,
+        "title": "The Burmese Harp"
+      },
+      {
+          "id": 830,
+          "original_title": "Forbidden Planet"
+      },
+      {
+          "id": 69605,
+          "title": "Written on the Wind"
+      },
+      {
+          "id": 15244,
+          "title": "A Man Escaped"
+      },
+      {
+          "id": 26036,
+          "original_title": "Bigger Than Life"
+      },
+      {
+          "id": 11549,
+          "title": "Invasion of the Body Snatchers"
+      },
+      {
+          "id": 1712,
+          "original_title": "Giant"
+      },
+      {
+          "id": 22527,
+          "original_title": "The Wrong Man"
+      },
+      {
+          "id": 11424,
+          "original_title": "High Society"
+      },
+      {
+          "id": 3777,
+          "title": "Throne of Blood"
+      },
+      {
+          "id": 975,
+          "title": "Paths of Glory"
+      },
+      {
+          "id": 8356,
+          "original_title": "An Affair to Remember"
+      },
+      {
+          "id": 490,
+          "title": "The Seventh Seal"
+      },
+      {
+          "id": 389,
+          "original_title": "12 Angry Men"
+      },
+      {
+          "id": 614,
+          "title": "Wild Strawberries"
+      },
+      {
+          "id": 31682,
+          "original_title": "The Incredible Shrinking Man"
+      },
+      {
+          "id": 22201,
+          "title": "Gunfight at the O.K. Corral"
+      },
+      {
+          "id": 19426,
+          "title": "Nights of Cabiria"
+      },
+      {
+          "id": 38360,
+          "title": "The Cranes Are Flying"
+      },
+      {
+          "id": 897,
+          "title": "Aparajito"
+      },
+      {
+        "id": 826,
+        "title": "The Bridge on the River Kwai"
+      },
+      {
+          "id": 976,
+          "title": "Sweet Smell of Success"
+      },
+      {
+          "id": 917,
+          "title": "Mother India"
+      },
+      {
+          "id": 1480,
+          "original_title": "Touch of Evil"
+      },
+      {
+          "id": 17281,
+          "original_title": "Gigi"
+      },
+      {
+          "id": 11414,
+          "original_title": "The Defiant Ones"
+      },
+      {
+          "id": 14674,
+          "original_title": "Man of the West"
+      },
+      {
+          "id": 426,
+          "title": "Vertigo"
+      },
+      {
+          "id": 5055,
+          "original_title": "Popiól i diament"
+      },
+      {
+          "id": 47324,
+          "title": "Cairo Station"
+      },
+      {
+          "id": 822,
+          "title": "The Music Room"
+      },
+      {
+          "id": 427,
+          "original_title": "Mon oncle"
+      },
+      {
+          "id": 38724,
+          "original_title": "Some Came Running"
+      },
+      {
+          "id": 11868,
+          "title": "Dracula"
+      },
+      {
+          "id": 239,
+          "title": "Some Like It Hot"
+      },
+      {
+          "id": 213,
+          "original_title": "North by Northwest"
+      },
+      {
+          "id": 147,
+          "original_title": "Les Quatre Cents Coups"
+      },
+      {
+          "id": 225883,
+          "original_title": "O Batedor de Carteiras"
+      },
+      {
+          "id": 5544,
+          "original_title": "Hiroshima mon amour"
+      },
+      {
+          "id": 27644,
+          "title": "Ride Lonesome"
+      },
+      {
+        "id": 40423,
+        "title": "Black Orpheus"
+      },
+      {
+          "id": 665,
+          "title": "Ben-Hur"
+      },
+      {
+          "id": 93,
+          "title": "Anatomy of a Murder"
+      },
+      {
+          "id": 15484,
+          "title": "Shadows"
+      },
+      {
+          "id": 896,
+          "title": "The World of Apu"
+      },
+      {
+          "id": 301,
+          "original_title": "Rio Bravo"
+      },
+      {
+          "id": 46918,
+          "title": "Floating Weeds"
+      }
+    ]
+  },
+  {
+    "list": "DECADE 5",
+    "milMoviesMainTopicID": 5,
+    "historyMainTopicID": 4,
+    "movies": [
+      {
+        "id": 31417,
+        "original_title": "Les Yeux sans visage"
+      },
+      {
+          "id": 37230,
+          "original_title": "Saturday Night and Sunday Morning"
+      },
+      {
+          "id": 439,
+          "original_title": "La dolce vita"
+      },
+      {
+          "id": 29259,
+          "original_title": "Le Trou"
+      },
+      {
+          "id": 8422,
+          "title": "Rocco and His Brothers"
+      },
+      {
+          "poster_path": "\/c6hdG99CsskD9V0QDyS2l6gDOJa.jpg"
+      },
+      {
+          "id": 269,
+          "original_title": "À bout de souffle"
+      },
+      {
+          "id": 967,
+          "original_title": "Spartacus"
+      },
+      {
+          "id": 284,
+          "title": "The Apartment"
+      },
+      {
+          "id": 42506,
+          "title": "The Housemaid"
+      },
+      {
+          "id": 59239,
+          "title": "The Cloud-Capped Star"
+      },
+      {
+          "id": 539,
+          "original_title": "Psycho"
+      },
+      {
+          "id": 1818,
+          "title": "Shoot the Piano Player"
+      },
+      {
+          "id": 11167,
+          "original_title": "Peeping Tom"
+      },
+      {
+          "id": 27632,
+          "title": "Black Sunday"
+      },
+      {
+          "id": 28569,
+          "original_title": "Splendor in the Grass"
+      },
+      {
+          "id": 4497,
+          "original_title": "Viridiana"
+      },
+      {
+          "id": 662,
+          "original_title": "La Jetée"
+      },
+      {
+          "id": 164,
+          "original_title": "Breakfast at Tiffany's"
+      },
+      {
+          "id": 40641,
+          "title": "Lola"
+      },
+      {
+        "id": 84249,
+        "original_title": "The Exiles"
+      },
+      {
+          "id": 41050,
+          "original_title": "La notte"
+      },
+      {
+          "id": 1725,
+          "original_title": "West Side Story"
+      },
+      {
+          "id": 990,
+          "original_title": "The Hustler"
+      },
+      {
+          "id": 28333,
+          "original_title": "The Ladies Man"
+      },
+      {
+          "id": 11602,
+          "original_title": "Såsom i en spegel"
+      },
+      {
+          "id": 84972,
+          "original_title": "Chronique d'un été (Paris 1960)"
+      },
+      {
+          "id": 4024,
+          "original_title": "L'Année dernière à Marienbad"
+      },
+      {
+          "id": 499,
+          "original_title": "Cléo de cinq à sept"
+      },
+      {
+          "id": 85110,
+          "title": "Dog Star Man: Part I"
+      },
+      {
+          "id": 1626,
+          "title": "Vivre Sa Vie"
+      },
+      {
+          "id": 50759,
+          "title": "An Autumn Afternoon"
+      },
+      {
+          "id": 802,
+          "original_title": "Lolita"
+      },
+      {
+          "id": 11697,
+          "original_title": "The Man Who Shot Liberty Valance"
+      },
+      {
+          "id": 85428,
+          "title": "No. 12: Heaven and Earth Magic"
+      },
+      {
+          "id": 947,
+          "title": "Lawrence of Arabia"
+      },
+      {
+          "id": 595,
+          "title": "To Kill a Mockingbird"
+      },
+      {
+          "id": 59990,
+          "original_title": "O Pagador de Promessas"
+      },
+      {
+          "id": 21135,
+          "title": "L'Eclisse"
+      },
+      {
+          "id": 32688,
+          "original_title": "Mondo Cane"
+      },
+      {
+        "id": 29264,
+        "original_title": "El ángel exterminador"
+      },
+      {
+          "id": 1628,
+          "original_title": "Jules et Jim"
+      },
+      {
+          "id": 982,
+          "original_title": "The Manchurian Candidate"
+      },
+      {
+          "id": 10242,
+          "original_title": "What Ever Happened to Baby Jane?"
+      },
+      {
+          "id": 422,
+          "original_title": "8½"
+      },
+      {
+          "id": 571,
+          "original_title": "The Birds"
+      },
+      {
+          "id": 25939,
+          "title": "Passenger"
+      },
+      {
+          "id": 42987,
+          "original_title": "The Servant"
+      },
+      {
+          "id": 47122,
+          "original_title": "Flaming Creatures"
+      },
+      {
+          "id": 44065,
+          "title": "The House Is Black"
+      },
+      {
+          "id": 24748,
+          "original_title": "Hud"
+      },
+      {
+          "id": 1040,
+          "title": "The Leopard"
+      },
+      {
+          "id": 836,
+          "title": "Barren Lives"
+      },
+      {
+          "id": 25504,
+          "title": "Shock Corridor"
+      },
+      {
+          "id": 266,
+          "title": "Contempt"
+      },
+      {
+          "id": 85479,
+          "original_title": "Blonde Cobra"
+      },
+      {
+          "id": 85521,
+          "title": "The Cool World"
+      },
+      {
+          "id": 18331,
+          "original_title": "The Nutty Professor"
+      },
+      {
+          "id": 5925,
+          "original_title": "The Great Escape"
+      },
+      {
+          "id": 85834,
+          "original_title": "Méditerranée"
+      },
+      {
+        "id": 27197,
+        "title": "An Actor's Revenge"
+      },
+      {
+          "id": 11772,
+          "title": "The Haunting"
+      },
+      {
+          "id": 658,
+          "original_title": "Goldfinger"
+      },
+      {
+          "id": 11113,
+          "original_title": "My Fair Lady"
+      },
+      {
+          "id": 26638,
+          "original_title": "Il deserto rosso"
+      },
+      {
+          "id": 16672,
+          "title": "Woman in the Dunes"
+      },
+      {
+          "id": 26782,
+          "title": "Shadows of Forgotten Ancestors"
+      },
+      {
+          "id": 46787,
+          "title": "Scorpio Rising"
+      },
+      {
+          "id": 506,
+          "title": "Marnie"
+      },
+      {
+          "id": 25319,
+          "title": "The Masque of the Red Death"
+      },
+      {
+          "id": 42788,
+          "original_title": "Prima della rivoluzione"
+      },
+      {
+          "id": 935,
+          "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb"
+      },
+      {
+          "id": 67612,
+          "title": "Black God, White Devil"
+      },
+      {
+          "id": 704,
+          "title": "A Hard Day's Night"
+      },
+      {
+          "id": 5967,
+          "original_title": "Les Parapluies de Cherbourg"
+      },
+      {
+          "id": 34181,
+          "title": "Gertrud"
+      },
+      {
+          "id": 433,
+          "title": "Mary Poppins"
+      },
+      {
+          "id": 3763,
+          "title": "Onibaba"
+      },
+      {
+          "id": 24192,
+          "title": "The Gospel According to Matthew"
+      },
+      {
+          "id": 25905,
+          "title": "The Shop on Main Street"
+      },
+      {
+        "id": 907,
+        "original_title": "Doctor Zhivago"
+      },
+      {
+          "id": 26508,
+          "original_title": "The War Game"
+      },
+      {
+          "id": 43618,
+          "title": "Tokyo Olympiad"
+      },
+      {
+          "id": 19120,
+          "title": "Juliet of the Spirits"
+      },
+      {
+          "id": 17295,
+          "original_title": "La battaglia di Algeri"
+      },
+      {
+          "id": 15121,
+          "original_title": "The Sound of Music"
+      },
+      {
+          "id": 86482,
+          "original_title": "De man die zijn haar kort liet knippen"
+      },
+      {
+          "id": 8072,
+          "original_title": "Alphaville, une étrange aventure de Lemmy Caution"
+      },
+      {
+          "id": 986,
+          "original_title": "Campanadas a medianoche"
+      },
+      {
+          "id": 315,
+          "original_title": "Faster, Pussycat! Kill! Kill!"
+      },
+      {
+          "id": 85871,
+          "original_title": "Vinyl"
+      },
+      {
+          "id": 8785,
+          "original_title": "Rekopis znaleziony w Saragossie"
+      },
+      {
+          "id": 11481,
+          "title": "Repulsion"
+      },
+      {
+          "id": 2786,
+          "original_title": "Pierrot le fou"
+      },
+      {
+          "id": 86303,
+          "title": "Subarnarekha"
+      },
+      {
+          "id": 86811,
+          "title": "Hold Me While I'm Naked"
+      },
+      {
+          "id": 396,
+          "title": "Who's Afraid of Virginia Woolf?"
+      },
+      {
+          "id": 1052,
+          "original_title": "Blow-Up"
+      },
+      {
+          "id": 46919,
+          "original_title": "Sedmikrásky"
+      },
+      {
+          "id": 26259,
+          "title": "Come Drink with Me"
+      },
+      {
+        "id": 20620,
+        "original_title": "Seconds"
+      },
+      {
+          "id": 429,
+          "title": "The Good, the Bad and the Ugly"
+      },
+      {
+          "id": 797,
+          "original_title": "Persona"
+      },
+      {
+          "id": 20108,
+          "title": "Au Hasard Balthazar"
+      },
+      {
+          "id": 4710,
+          "title": "Masculin Féminin"
+      },
+      {
+          "id": 87981,
+          "title": "Report"
+      },
+      {
+          "id": 8074,
+          "title": "2 or 3 Things I Know About Her"
+      },
+      {
+          "id": 649,
+          "original_title": "Belle de jour"
+      },
+      {
+          "id": 903,
+          "original_title": "Cool Hand Luke"
+      },
+      {
+          "id": 10227,
+          "original_title": "PlayTime"
+      },
+      {
+          "id": 52885,
+          "original_title": "Csillagosok, Katonák"
+      },
+      {
+          "id": 37247,
+          "original_title": "The Graduate"
+      },
+      {
+          "id": 26039,
+          "original_title": "Point Blank"
+      },
+      {
+          "id": 2433,
+          "original_title": "Les demoiselles de Rochefort"
+      },
+      {
+          "id": 5511,
+          "title": "Le Samouraï"
+      },
+      {
+          "id": 88421,
+          "title": "Wavelength"
+      },
+      {
+          "id": 789,
+          "title": "Closely Watched Trains"
+      },
+      {
+          "id": 67062,
+          "title": "Entranced Earth"
+      },
+      {
+          "id": 10633,
+          "original_title": "In the Heat of the Night"
+      },
+      {
+          "id": 25904,
+          "original_title": "Marketa Lazarová"
+      },
+      {
+        "id": 38442,
+        "title": "The Firemen's Ball"
+      },
+      {
+          "id": 9325,
+          "original_title": "The Jungle Book"
+      },
+      {
+          "id": 475,
+          "title": "Bonnie and Clyde"
+      },
+      {
+          "id": 57230,
+          "title": "Viy"
+      },
+      {
+          "id": 43984,
+          "title": "The Cow"
+      },
+      {
+          "id": 335,
+          "original_title": "C'era una volta il West"
+      },
+      {
+          "id": 753,
+          "title": "Faces"
+      },
+      {
+          "id": 871,
+          "original_title": "Planet of the Apes"
+      },
+      {
+          "id": 805,
+          "original_title": "Rosemary's Baby"
+      },
+      {
+          "id": 14794,
+          "original_title": "if...."
+      },
+      {
+          "id": 85535,
+          "original_title": "David Holzman's Diary"
+      },
+      {
+          "id": 47576,
+          "original_title": "Memorias del subdesarrollo"
+      },
+      {
+          "id": 60315,
+          "original_title": "High School"
+      },
+      {
+          "id": 18333,
+          "original_title": "Vargtimmen"
+      },
+      {
+          "id": 62,
+          "original_title": "2001: A Space Odyssey"
+      },
+      {
+          "id": 10331,
+          "original_title": "Night of the Living Dead"
+      },
+      {
+          "id": 19383,
+          "title": "Targets"
+      },
+      {
+          "id": 26372,
+          "original_title": "Skammen"
+      },
+      {
+          "id": 30197,
+          "title": "The Producers"
+      },
+      {
+          "id": 2721,
+          "title": "Z"
+      },
+      {
+        "id": 11163,
+        "title": "Fellini Satyricon"
+      },
+      {
+          "id": 895,
+          "title": "Andrei Rublev"
+      },
+      {
+          "id": 26302,
+          "title": "The Color of Pomegranates"
+      },
+      {
+          "id": 3116,
+          "original_title": "Midnight Cowboy"
+      },
+      {
+          "id": 642,
+          "original_title": "Butch Cassidy and the Sundance Kid"
+      },
+      {
+          "id": 624,
+          "title": "Easy Rider"
+      },
+      {
+          "id": 13384,
+          "original_title": "Kes"
+      },
+      {
+          "id": 88591,
+          "original_title": "Lucía"
+      },
+      {
+          "id": 63951,
+          "title": "In the Year of the Pig"
+      },
+      {
+          "id": 576,
+          "original_title": "The Wild Bunch"
+      },
+      {
+          "id": 48831,
+          "original_title": "Ma nuit chez Maud"
+      },
+      {
+          "id": 42611,
+          "original_title": "Le chagrin et la pitié"
+      }
+    ]
+  },
+  {
+    "list": "DECADE 6",
+    "milMoviesMainTopicID": 6,
+    "historyMainTopicID": 5,
+    "movies": [
+      {
+        "id": 44154,
+        "title": "A Touch of Zen"
+      },
+      {
+          "id": 35838,
+          "original_title": "Tristana"
+      },
+      {
+          "id": 8416,
+          "original_title": "Il conformista"
+      },
+      {
+          "id": 2912,
+          "original_title": "Le Boucher"
+      },
+      {
+          "id": 13041,
+          "original_title": "El Topo"
+      },
+      {
+          "id": 26617,
+          "original_title": "Five Easy Pieces"
+      },
+      {
+          "id": 59408,
+          "original_title": "Deep End"
+      },
+      {
+          "id": 42595,
+          "title": "The Spider's Stratagem"
+      },
+      {
+          "id": 88953,
+          "title": "The Ear"
+      },
+      {
+          "id": 11040,
+          "original_title": "Little Big Man"
+      },
+      {
+          "id": 11202,
+          "original_title": "Patton"
+      },
+      {
+          "id": 20345,
+          "original_title": "L'uccello dalle piume di cristallo"
+      },
+      {
+          "id": 651,
+          "original_title": "M*A*S*H"
+      },
+      {
+          "id": 2998,
+          "original_title": "Zabriskie Point"
+      },
+      {
+          "id": 26606,
+          "original_title": "Performance"
+      },
+      {
+          "id": 9459,
+          "title": "Woodstock"
+      },
+      {
+          "id": 132,
+          "title": "Gimme Shelter"
+      },
+      {
+          "id": 4789,
+          "original_title": "Il giardino dei Finzi Contini"
+      },
+      {
+          "id": 984,
+          "title": "Dirty Harry"
+      },
+      {
+          "id": 185,
+          "original_title": "A Clockwork Orange"
+      },
+      {
+        "id": 29005,
+        "original_title": "McCabe & Mrs. Miller"
+      },
+      {
+          "id": 252,
+          "original_title": "Willy Wonka & the Chocolate Factory"
+      },
+      {
+          "id": 355528,
+          "original_title": "Os Demónios de Alcácer Quibir"
+      },
+      {
+          "id": 42522,
+          "original_title": "The Hired Hand"
+      },
+      {
+          "id": 42529,
+          "original_title": "W.R. - Misterije organizma"
+      },
+      {
+          "id": 36040,
+          "title": "Walkabout"
+      },
+      {
+          "id": 466,
+          "original_title": "Klute"
+      },
+      {
+          "id": 343,
+          "original_title": "Harold and Maude"
+      },
+      {
+          "id": 1051,
+          "title": "The French Connection"
+      },
+      {
+          "id": 86732,
+          "original_title": "Még kér a nép"
+      },
+      {
+          "id": 1485,
+          "original_title": "Get Carter"
+      },
+      {
+          "id": 482,
+          "original_title": "Shaft"
+      },
+      {
+          "id": 5822,
+          "original_title": "Sweet Sweetback's Baadasssss Song"
+      },
+      {
+          "id": 25188,
+          "title": "The Last Picture Show"
+      },
+      {
+          "id": 80560,
+          "title": "Wanda",
+          "release_date": "1971-02-20"
+      },
+      {
+          "id": 42501,
+          "title": "Murmur of the Heart"
+      },
+      {
+          "id": 994,
+          "original_title": "Straw Dogs"
+      },
+      {
+          "id": 27236,
+          "original_title": "Two-Lane Blacktop"
+      },
+      {
+          "id": 26405,
+          "title": "Wake in Fright"
+      },
+      {
+          "id": 10669,
+          "title": "Deliverance"
+      },
+      {
+        "id": 2000,
+        "original_title": "Aguirre, der Zorn Gottes"
+      },
+      {
+          "id": 10784,
+          "title": "Cabaret"
+      },
+      {
+          "id": 593,
+          "title": "Solaris"
+      },
+      {
+          "id": 10238,
+          "original_title": "Viskningar och rop"
+      },
+      {
+          "id": 4593,
+          "title": "The Discreet Charm of the Bourgeoisie"
+      },
+      {
+          "id": 238,
+          "original_title": "The Godfather"
+      },
+      {
+          "id": 1643,
+          "title": "Last Tango in Paris"
+      },
+      {
+          "id": 10310,
+          "title": "The Bitter Tears of Petra von Kant"
+      },
+      {
+          "id": 16993,
+          "original_title": "Fat City"
+      },
+      {
+          "id": 40687,
+          "original_title": "The Heartbreak Kid"
+      },
+      {
+          "id": 573,
+          "original_title": "Frenzy"
+      },
+      {
+          "id": 692,
+          "original_title": "Pink Flamingos"
+      },
+      {
+          "id": 993,
+          "original_title": "Sleuth"
+      },
+      {
+          "id": 21968,
+          "original_title": "Super Fly"
+      },
+      {
+          "id": 9277,
+          "title": "The Sting"
+      },
+      {
+          "id": 48693,
+          "original_title": "La maman et la putain"
+      },
+      {
+          "id": 11901,
+          "title": "High Plains Drifter"
+      },
+      {
+          "id": 3133,
+          "original_title": "Badlands"
+      },
+      {
+          "id": 838,
+          "original_title": "American Graffiti"
+      },
+      {
+          "id": 5924,
+          "original_title": "Papillon"
+      },
+      {
+        "id": 1847,
+        "title": "The Long Goodbye"
+      },
+      {
+          "id": 16307,
+          "title": "The Wicker Man"
+      },
+      {
+          "id": 9461,
+          "title": "Enter the Dragon"
+      },
+      {
+          "id": 9040,
+          "title": "Serpico"
+      },
+      {
+          "id": 931,
+          "original_title": "Don't Look Now"
+      },
+      {
+          "id": 1675,
+          "original_title": "La Nuit américaine"
+      },
+      {
+          "id": 203,
+          "original_title": "Mean Streets"
+      },
+      {
+          "id": 11561,
+          "original_title": "Sleeper"
+      },
+      {
+          "id": 9552,
+          "original_title": "The Exorcist"
+      },
+      {
+          "id": 43003,
+          "original_title": "Vérités et Mensonges"
+      },
+      {
+          "id": 11577,
+          "original_title": "Pat Garrett & Billy the Kid"
+      },
+      {
+          "id": 21035,
+          "title": "Turkish Delight"
+      },
+      {
+          "id": 4495,
+          "title": "The Spirit of the Beehive"
+      },
+      {
+          "id": 7514,
+          "title": "The Harder They Come"
+      },
+      {
+          "id": 16306,
+          "title": "Fantastic Planet"
+      },
+      {
+          "id": 7857,
+          "title": "Amarcord"
+      },
+      {
+          "id": 5919,
+          "title": "The Towering Inferno"
+      },
+      {
+          "id": 11942,
+          "original_title": "Bring Me the Head of Alfredo Garcia"
+      },
+      {
+          "id": 9764,
+          "title": "Dersu Uzala"
+      },
+      {
+          "id": 240,
+          "original_title": "The Godfather: Part II"
+      },
+      {
+        "id": 592,
+        "original_title": "The Conversation"
+      },
+      {
+          "id": 1396,
+          "title": "Mirror"
+      },
+      {
+          "id": 829,
+          "original_title": "Chinatown"
+      },
+      {
+          "id": 29845,
+          "original_title": "A Woman Under the Influence"
+      },
+      {
+          "id": 3034,
+          "original_title": "Young Frankenstein"
+      },
+      {
+          "id": 30497,
+          "original_title": "The Texas Chain Saw Massacre"
+      },
+      {
+          "id": 11072,
+          "original_title": "Blazing Saddles"
+      },
+      {
+          "id": 27019,
+          "title": "Céline and Julie Go Boating"
+      },
+      {
+          "id": 216,
+          "title": "Ali: Fear Eats the Soul"
+      },
+      {
+          "id": 3175,
+          "original_title": "Barry Lyndon"
+      },
+      {
+          "id": 36685,
+          "title": "The Rocky Horror Picture Show"
+      },
+      {
+          "id": 44012,
+          "original_title": "Jeanne Dielman, 23, Quai du Commerce 1080 Bruxelles"
+      },
+      {
+          "id": 689,
+          "title": "The Travelling Players"
+      },
+      {
+          "id": 762,
+          "original_title": "Monty Python and the Holy Grail"
+      },
+      {
+          "id": 22460,
+          "title": "Deewaar"
+      },
+      {
+          "id": 968,
+          "original_title": "Dog Day Afternoon"
+      },
+      {
+          "id": 510,
+          "original_title": "One Flew Over the Cuckoo's Nest"
+      },
+      {
+          "id": 447982,
+          "title": "Manila... A Filipino Film"
+      },
+      {
+          "id": 42254,
+          "original_title": "Faustrecht der Freiheit"
+      },
+      {
+          "id": 3121,
+          "original_title": "Nashville"
+      },
+      {
+        "id": 5336,
+        "original_title": "Salò o le 120 giornate di Sodoma"
+      },
+      {
+          "id": 51857,
+          "original_title": "Cría cuervos…"
+      },
+      {
+          "id": 11020,
+          "original_title": "Picnic at Hanging Rock"
+      },
+      {
+          "id": 85927,
+          "adult": false,
+          "original_title": "India Song"
+      },
+      {
+          "id": 578,
+          "original_title": "Jaws"
+      },
+      {
+          "id": 991,
+          "original_title": "The Man Who Fell to Earth"
+      },
+      {
+          "id": 891,
+          "original_title": "All the President's Men"
+      },
+      {
+          "id": 10747,
+          "original_title": "The Outlaw Josey Wales"
+      },
+      {
+          "id": 32040,
+          "original_title": "The Killing of a Chinese Bookie"
+      },
+      {
+          "id": 10774,
+          "title": "Network"
+      },
+      {
+          "id": 7340,
+          "title": "Carrie"
+      },
+      {
+          "id": 103,
+          "original_title": "Taxi Driver"
+      },
+      {
+          "id": 1366,
+          "title": "Rocky"
+      },
+      {
+          "id": 5879,
+          "title": "In the Realm of the Senses"
+      },
+      {
+          "id": 50183,
+          "title": "The Ascent"
+      },
+      {
+          "id": 840,
+          "title": "Close Encounters of the Third Kind"
+      },
+      {
+          "id": 72277,
+          "title": "The Last Wave"
+      },
+      {
+          "id": 11,
+          "original_title": "Star Wars"
+      },
+      {
+          "id": 11698,
+          "title": "Stroszek"
+      },
+      {
+          "id": 97029,
+          "original_title": "Ceddo"
+      },
+      {
+        "id": 11222,
+        "title": "The American Friend"
+      },
+      {
+          "id": 703,
+          "original_title": "Annie Hall"
+      },
+      {
+          "id": 11906,
+          "title": "Suspiria"
+      },
+      {
+          "id": 37582,
+          "original_title": "Sleeping Dogs"
+      },
+      {
+          "id": 97030,
+          "title": "Last Chants for a Slow Dance"
+      },
+      {
+          "id": 224,
+          "original_title": "Człowiek z marmuru"
+      },
+      {
+          "id": 11009,
+          "original_title": "Saturday Night Fever"
+      },
+      {
+          "id": 27432,
+          "original_title": "Killer of Sheep"
+      },
+      {
+          "id": 985,
+          "title": "Eraserhead"
+      },
+      {
+          "id": 633,
+          "title": "Soldier of Orange"
+      },
+      {
+          "id": 12262,
+          "original_title": "The Hills Have Eyes"
+      },
+      {
+          "id": 16642,
+          "original_title": "Days of Heaven"
+      },
+      {
+          "id": 948,
+          "original_title": "Halloween"
+      },
+      {
+          "id": 31542,
+          "original_title": "L'albero degli zoccoli"
+      },
+      {
+          "id": 69069,
+          "title": "The Chant of Jimmie Blacksmith"
+      },
+      {
+          "id": 11778,
+          "title": "The Deer Hunter"
+      },
+      {
+          "id": 923,
+          "title": "Dawn of the Dead"
+      },
+      {
+          "id": 11455,
+          "title": "Up in Smoke"
+      },
+      {
+          "id": 621,
+          "title": "Grease"
+      },
+      {
+          "id": 11841,
+          "title": "The 36th Chamber of Shaolin"
+      },
+      {
+        "id": 16659,
+        "original_title": "My Brilliant Career"
+      },
+      {
+          "id": 661,
+          "original_title": "Die Ehe der Maria Braun"
+      },
+      {
+          "id": 6404,
+          "original_title": "Nosferatu - Phantom der Nacht"
+      },
+      {
+          "id": 1398,
+          "title": "Stalker"
+      },
+      {
+          "id": 583,
+          "title": "Life of Brian"
+      },
+      {
+          "id": 20283,
+          "title": "Breaking Away"
+      },
+      {
+          "id": 348,
+          "original_title": "Alien"
+      },
+      {
+          "id": 10322,
+          "title": "Being There"
+      },
+      {
+          "id": 696,
+          "title": "Manhattan"
+      },
+      {
+          "id": 28,
+          "original_title": "Apocalypse Now"
+      },
+      {
+          "id": 16858,
+          "original_title": "All That Jazz"
+      },
+      {
+          "id": 11176,
+          "title": "The Muppet Movie"
+      },
+      {
+          "id": 42169,
+          "original_title": "Cristo si è fermato a Eboli"
+      },
+      {
+          "id": 9659,
+          "title": "Mad Max"
+      },
+      {
+          "id": 659,
+          "original_title": "Die Blechtrommel"
+      },
+      {
+          "id": 6471,
+          "title": "The Jerk"
+      },
+      {
+          "id": 12102,
+          "original_title": "Kramer vs. Kramer"
+      }
+    ]
+  },
+  {
+    "list": "DECADE 7",
+    "milMoviesMainTopicID": 7,
+    "historyMainTopicID": 5,
+    "movies": [
+      {
+        "id": 1891,
+        "title": "The Empire Strikes Back"
+      },
+      {
+          "id": 23954,
+          "original_title": "Atlantic City"
+      },
+      {
+          "id": 1716,
+          "title": "The Last Metro"
+      },
+      {
+          "id": 694,
+          "original_title": "The Shining"
+      },
+      {
+          "id": 1955,
+          "title": "The Elephant Man"
+      },
+      {
+          "id": 16121,
+          "title": "The Big Red One"
+      },
+      {
+          "id": 39415,
+          "original_title": "Loulou"
+      },
+      {
+          "id": 1578,
+          "title": "Raging Bull"
+      },
+      {
+          "id": 813,
+          "original_title": "Airplane!"
+      },
+      {
+          "id": 814,
+          "original_title": "An American Werewolf in London"
+      },
+      {
+          "id": 4485,
+          "original_title": "Diva"
+      },
+      {
+          "id": 85,
+          "original_title": "Raiders of the Lost Ark"
+      },
+      {
+          "id": 387,
+          "original_title": "Das Boot"
+      },
+      {
+          "id": 11646,
+          "title": "Gallipoli"
+      },
+      {
+          "id": 9443,
+          "original_title": "Chariots of Fire"
+      },
+      {
+          "id": 14412,
+          "original_title": "Body Heat"
+      },
+      {
+          "id": 225,
+          "title": "Man of Iron"
+      },
+      {
+          "id": 18254,
+          "title": "Reds"
+      },
+      {
+          "id": 601,
+          "original_title": "E.T. the Extra-Terrestrial"
+      },
+      {
+          "id": 764,
+          "original_title": "The Evil Dead"
+      },
+      {
+        "id": 13342,
+        "title": "Fast Times at Ridgemont High"
+      },
+      {
+          "id": 97032,
+          "title": "Too Early\/Too Late"
+      },
+      {
+          "id": 609,
+          "original_title": "Poltergeist"
+      },
+      {
+          "id": 52556,
+          "title": "Yol"
+      },
+      {
+          "id": 78,
+          "original_title": "Blade Runner"
+      },
+      {
+          "id": 13776,
+          "title": "Diner"
+      },
+      {
+          "id": 9576,
+          "title": "Tootsie"
+      },
+      {
+          "id": 9343,
+          "title": "Fitzcarraldo"
+      },
+      {
+          "id": 783,
+          "original_title": "Gandhi"
+      },
+      {
+          "id": 1091,
+          "original_title": "The Thing"
+      },
+      {
+          "id": 5961,
+          "title": "Fanny and Alexander"
+      },
+      {
+          "id": 42130,
+          "title": "The Night of the Shooting Stars"
+      },
+      {
+          "id": 96529,
+          "title": "A Question of Silence"
+      },
+      {
+          "id": 10831,
+          "original_title": "The Draughtsman's Contract"
+      },
+      {
+          "id": 850,
+          "title": "A Christmas Story"
+      },
+      {
+          "id": 42112,
+          "original_title": "L'Argent"
+      },
+      {
+          "id": 9549,
+          "title": "The Right Stuff"
+      },
+      {
+          "id": 12560,
+          "title": "The Big Chill"
+      },
+      {
+          "id": 1563,
+          "title": "Sans Soleil"
+      },
+      {
+          "id": 1892,
+          "original_title": "Return of the Jedi"
+      },
+      {
+        "id": 42113,
+        "title": "The Ballad of Narayama"
+      },
+      {
+          "id": 11050,
+          "original_title": "Terms of Endearment"
+      },
+      {
+          "id": 17435,
+          "title": "El Norte"
+      },
+      {
+          "id": 29140,
+          "original_title": "De vierde man"
+      },
+      {
+          "id": 837,
+          "title": "Videodrome"
+      },
+      {
+          "id": 11314,
+          "title": "Koyaanisqatsi"
+      },
+      {
+          "id": 111,
+          "original_title": "Scarface"
+      },
+      {
+          "id": 262,
+          "title": "The King of Comedy"
+      },
+      {
+          "id": 11235,
+          "original_title": "Local Hero"
+      },
+      {
+          "id": 311,
+          "title": "Once Upon a Time in America"
+      },
+      {
+          "id": 218,
+          "original_title": "The Terminator"
+      },
+      {
+          "id": 11393,
+          "original_title": "The Natural"
+      },
+      {
+          "id": 620,
+          "title": "Ghostbusters"
+      },
+      {
+          "id": 655,
+          "original_title": "Paris, Texas"
+      },
+      {
+          "id": 377,
+          "original_title": "A Nightmare on Elm Street"
+      },
+      {
+          "id": 11031,
+          "original_title": "This Is Spinal Tap"
+      },
+      {
+          "id": 15927,
+          "original_title": "A Passage to India"
+      },
+      {
+          "id": 90,
+          "original_title": "Beverly Hills Cop"
+      },
+      {
+          "id": 625,
+          "title": "The Killing Fields"
+      },
+      {
+          "id": 410051,
+          "original_title": "Stranger Than Paradise"
+      },
+      {
+        "id": 279,
+        "original_title": "Amadeus"
+      },
+      {
+          "id": 2075,
+          "original_title": "Prizzi's Honor"
+      },
+      {
+          "id": 45999,
+          "title": "The Time to Live and the Time to Die"
+      },
+      {
+          "id": 2108,
+          "original_title": "The Breakfast Club"
+      },
+      {
+          "id": 25237,
+          "title": "Come and See"
+      },
+      {
+          "id": 27064,
+          "original_title": "Mishima: A Life in Four Chapters"
+      },
+      {
+          "id": 606,
+          "title": "Out of Africa"
+      },
+      {
+          "id": 105,
+          "original_title": "Back to the Future"
+      },
+      {
+          "id": 68,
+          "original_title": "Brazil"
+      },
+      {
+          "id": 11703,
+          "original_title": "Kiss of the Spider Woman"
+      },
+      {
+          "id": 10176,
+          "original_title": "The Quiet Earth"
+      },
+      {
+          "id": 10849,
+          "original_title": "The Purple Rose of Cairo"
+      },
+      {
+          "id": 44018,
+          "title": "Vagabond"
+      },
+      {
+          "id": 42044,
+          "title": "Shoah"
+      },
+      {
+          "id": 873,
+          "original_title": "The Color Purple"
+      },
+      {
+          "id": 11257,
+          "original_title": "A Room with a View"
+      },
+      {
+          "id": 11454,
+          "original_title": "Manhunter"
+      },
+      {
+          "id": 793,
+          "original_title": "Blue Velvet"
+      },
+      {
+          "id": 5143,
+          "title": "Hannah and Her Sisters"
+      },
+      {
+        "id": 1890,
+        "original_title": "Children of a Lesser God"
+      },
+      {
+          "id": 20537,
+          "title": "Caravaggio"
+      },
+      {
+          "id": 6106,
+          "title": "Salvador"
+      },
+      {
+          "id": 792,
+          "original_title": "Platoon"
+      },
+      {
+          "id": 1554,
+          "original_title": "Down by Law"
+      },
+      {
+          "id": 18499,
+          "original_title": "Le déclin de l'empire américain"
+      },
+      {
+          "id": 39776,
+          "title": "Peking Opera Blues"
+      },
+      {
+          "id": 679,
+          "title": "Aliens"
+      },
+      {
+          "id": 9377,
+          "original_title": "Ferris Bueller's Day Off"
+      },
+      {
+          "id": 9426,
+          "title": "The Fly"
+      },
+      {
+          "id": 744,
+          "original_title": "Top Gun"
+      },
+      {
+          "id": 41480,
+          "title": "Sherman's March"
+      },
+      {
+          "id": 235,
+          "original_title": "Stand by Me"
+      },
+      {
+          "id": 11830,
+          "title": "Tampopo"
+      },
+      {
+          "id": 42018,
+          "title": "The Horse Thief"
+      },
+      {
+          "id": 1786,
+          "title": "Au Revoir les Enfants"
+      },
+      {
+          "id": 378,
+          "title": "Raising Arizona"
+      },
+      {
+          "id": 71329,
+          "original_title": "Yeelen"
+      },
+      {
+          "id": 21521,
+          "title": "Project A: Part II"
+      },
+      {
+          "id": 144,
+          "original_title": "Der Himmel über Berlin"
+      },
+      {
+        "id": 13446,
+        "title": "Withnail & I"
+      },
+      {
+          "id": 2493,
+          "original_title": "The Princess Bride"
+      },
+      {
+          "id": 30421,
+          "title": "A Chinese Ghost Story"
+      },
+      {
+          "id": 600,
+          "original_title": "Full Metal Jacket"
+      },
+      {
+          "id": 12626,
+          "original_title": "Broadcast News"
+      },
+      {
+          "id": 11832,
+          "original_title": "Babettes gæstebud"
+      },
+      {
+          "id": 801,
+          "original_title": "Good Morning, Vietnam"
+      },
+      {
+          "id": 2039,
+          "title": "Moonstruck"
+      },
+      {
+          "id": 10673,
+          "title": "Wall Street"
+      },
+      {
+          "id": 117,
+          "title": "The Untouchables"
+      },
+      {
+          "id": 42006,
+          "title": "Red Sorghum"
+      },
+      {
+          "id": 10998,
+          "title": "Fatal Attraction"
+      },
+      {
+          "id": 39507,
+          "original_title": "The Dead"
+      },
+      {
+          "id": 287,
+          "title": "Bull Durham"
+      },
+      {
+          "id": 41954,
+          "original_title": "Hôtel Terminus: The Life and Times of Klaus Barbie"
+      },
+      {
+          "id": 4203,
+          "title": "Women on the Verge of a Nervous Breakdown"
+      },
+      {
+          "id": 8740,
+          "title": "The Vanishing"
+      },
+      {
+          "id": 18917,
+          "title": "Alice"
+      },
+      {
+          "id": 2,
+          "original_title": "Ariel"
+      },
+      {
+          "id": 14285,
+          "original_title": "The Thin Blue Line"
+      },
+      {
+        "id": 149,
+        "title": "Akira"
+      },
+      {
+          "id": 623,
+          "original_title": "A Fish Called Wanda"
+      },
+      {
+          "id": 97035,
+          "title": "A Tale of the Wind"
+      },
+      {
+          "id": 37136,
+          "original_title": "The Naked Gun: From the Files of Police Squad!"
+      },
+      {
+          "id": 11216,
+          "original_title": "Nuovo Cinema Paradiso"
+      },
+      {
+          "id": 12477,
+          "title": "Grave of the Fireflies"
+      },
+      {
+          "id": 2280,
+          "original_title": "Big"
+      },
+      {
+          "id": 856,
+          "original_title": "Who Framed Roger Rabbit"
+      },
+      {
+          "id": 380,
+          "original_title": "Rain Man"
+      },
+      {
+          "id": 562,
+          "title": "Die Hard"
+      },
+      {
+          "id": 859,
+          "title": "Dangerous Liaisons"
+      },
+      {
+          "id": 9540,
+          "title": "Dead Ringers"
+      },
+      {
+          "id": 5548,
+          "title": "RoboCop"
+      },
+      {
+          "id": 41799,
+          "title": "Distant Voices, Still Lives"
+      },
+      {
+          "id": 41975,
+          "original_title": "Une Affaire de femmes"
+      },
+      {
+          "id": 639,
+          "original_title": "When Harry Met Sally..."
+      },
+      {
+          "id": 11562,
+          "original_title": "Crimes and Misdemeanors"
+      },
+      {
+          "id": 268,
+          "original_title": "Batman"
+      },
+      {
+          "id": 2323,
+          "title": "Field of Dreams"
+      },
+      {
+        "id": 9665,
+        "original_title": "Glory"
+      },
+      {
+          "id": 7452,
+          "original_title": "The Cook, the Thief, His Wife & Her Lover"
+      },
+      {
+          "id": 10161,
+          "title": "My Left Foot: The Story of Christy Brown"
+      },
+      {
+          "id": 10835,
+          "title": "The Killer"
+      },
+      {
+          "id": 476,
+          "original_title": "Drugstore Cowboy"
+      },
+      {
+          "id": 97039,
+          "title": "The Asthenic Syndrome"
+      },
+      {
+          "id": 925,
+          "original_title": "Do the Right Thing"
+      },
+      {
+          "id": 38545,
+          "title": "The Unbelievable Truth"
+      },
+      {
+          "id": 1779,
+          "original_title": "Roger & Me"
+      },
+      {
+          "id": 1412,
+          "original_title": "Sex, Lies, and Videotape"
+      },
+      {
+          "id": 49982,
+          "title": "A City of Sadness"
+      },
+      {
+          "id": 97049,
+          "original_title": "Tongues Untied"
+      }
+    ]
+  },
+  {
+    "list": "DECADE 8",
+    "milMoviesMainTopicID": 8,
+    "historyMainTopicID": 6,
+    "movies": [
+      {
+        "id": 37291,
+        "original_title": "Trust"
+      },
+      {
+          "id": 97041,
+          "title": "No Fear, No Die"
+      },
+      {
+          "id": 769,
+          "title": "GoodFellas"
+      },
+      {
+          "id": 30017,
+          "title": "Close-Up"
+      },
+      {
+          "id": 9558,
+          "original_title": "King of New York"
+      },
+      {
+          "id": 114,
+          "original_title": "Pretty Woman"
+      },
+      {
+          "id": 581,
+          "title": "Dances with Wolves"
+      },
+      {
+          "id": 10692,
+          "title": "Henry: Portrait of a Serial Killer"
+      },
+      {
+          "id": 85559,
+          "original_title": "Archangel"
+      },
+      {
+          "id": 861,
+          "original_title": "Total Recall"
+      },
+      {
+          "id": 162,
+          "original_title": "Edward Scissorhands"
+      },
+      {
+          "id": 8996,
+          "title": "Europa Europa"
+      },
+      {
+          "id": 650,
+          "original_title": "Boyz n the Hood"
+      },
+      {
+          "id": 12627,
+          "original_title": "La Belle Noiseuse"
+      },
+      {
+          "id": 1411,
+          "original_title": "The Rapture"
+      },
+      {
+          "id": 15804,
+          "title": "A Brighter Summer Day"
+      },
+      {
+          "id": 820,
+          "original_title": "JFK"
+      },
+      {
+          "id": 14022,
+          "original_title": "Slacker"
+      },
+      {
+          "id": 10617,
+          "title": "Once Upon a Time in China"
+      },
+      {
+          "id": 1541,
+          "original_title": "Thelma & Louise"
+      },
+      {
+        "id": 468,
+        "original_title": "My Own Private Idaho"
+      },
+      {
+          "id": 280,
+          "original_title": "Terminator 2: Judgment Day"
+      },
+      {
+          "id": 892,
+          "original_title": "Delicatessen"
+      },
+      {
+          "id": 1600,
+          "original_title": "La double vie de Véronique"
+      },
+      {
+          "id": 10404,
+          "title": "Raise the Red Lantern"
+      },
+      {
+          "id": 4539,
+          "title": "Hearts of Darkness: A Filmmaker's Apocalypse"
+      },
+      {
+          "id": 10412,
+          "original_title": "Romper Stomper"
+      },
+      {
+          "id": 10409,
+          "title": "Strictly Ballroom"
+      },
+      {
+          "id": 10403,
+          "original_title": "The Player"
+      },
+      {
+          "id": 500,
+          "title": "Reservoir Dogs"
+      },
+      {
+          "id": 9504,
+          "original_title": "Glengarry Glen Ross"
+      },
+      {
+          "id": 10241,
+          "original_title": "Conte d'hiver"
+      },
+      {
+          "id": 33,
+          "original_title": "Unforgiven"
+      },
+      {
+          "id": 68004,
+          "title": "Center Stage"
+      },
+      {
+          "id": 10086,
+          "original_title": "C'est arrivé près de chez vous"
+      },
+      {
+          "id": 44162,
+          "title": "The Blue Kite"
+      },
+      {
+          "id": 9800,
+          "title": "Philadelphia"
+      },
+      {
+          "id": 96712,
+          "title": "The Puppetmaster"
+      },
+      {
+          "id": 695,
+          "title": "Short Cuts"
+      },
+      {
+          "id": 424,
+          "original_title": "Schindler's List"
+      },
+      {
+        "id": 108,
+        "original_title": "Trois couleurs : Bleu"
+      },
+      {
+          "id": 10997,
+          "title": "Farewell My Concubine"
+      },
+      {
+          "id": 137,
+          "original_title": "Groundhog Day"
+      },
+      {
+          "id": 713,
+          "title": "The Piano"
+      },
+      {
+          "id": 9261,
+          "title": "The Wedding Banquet"
+      },
+      {
+          "id": 20967,
+          "title": "Thirty Two Short Films About Glenn Gould"
+      },
+      {
+          "id": 329,
+          "original_title": "Jurassic Park"
+      },
+      {
+          "id": 8587,
+          "original_title": "The Lion King"
+      },
+      {
+          "id": 25284,
+          "title": "The Last Seduction"
+      },
+      {
+          "id": 26933,
+          "title": "Wild Reeds"
+      },
+      {
+          "id": 26564,
+          "title": "Crumb"
+      },
+      {
+          "id": 1024,
+          "original_title": "Heavenly Creatures"
+      },
+      {
+          "id": 680,
+          "original_title": "Pulp Fiction"
+      },
+      {
+          "id": 110,
+          "title": "Three Colors: Red"
+      },
+      {
+          "id": 241,
+          "title": "Natural Born Killers"
+      },
+      {
+          "id": 236,
+          "original_title": "Muriel's Wedding"
+      },
+      {
+          "id": 2759,
+          "title": "The Adventures of Priscilla, Queen of the Desert"
+      },
+      {
+          "id": 14275,
+          "original_title": "Hoop Dreams"
+      },
+      {
+          "id": 31414,
+          "title": "Satantango"
+      },
+      {
+          "id": 2292,
+          "original_title": "Clerks"
+      },
+      {
+        "id": 712,
+        "original_title": "Four Weddings and a Funeral"
+      },
+      {
+          "id": 13,
+          "original_title": "Forrest Gump"
+      },
+      {
+          "id": 47104,
+          "title": "Through the Olive Trees"
+      },
+      {
+          "id": 278,
+          "title": "The Shawshank Redemption"
+      },
+      {
+          "id": 25403,
+          "original_title": "Caro diario"
+      },
+      {
+          "id": 11104,
+          "title": "Chungking Express"
+      },
+      {
+          "id": 22137,
+          "title": "The Kingdom"
+      },
+      {
+          "id": 197,
+          "original_title": "Braveheart"
+      },
+      {
+          "id": 97046,
+          "title": "Deseret"
+      },
+      {
+          "id": 9598,
+          "original_title": "Babe"
+      },
+      {
+          "id": 807,
+          "original_title": "Se7en"
+      },
+      {
+          "id": 10149,
+          "original_title": "Smoke"
+      },
+      {
+          "id": 46785,
+          "title": "The White Balloon"
+      },
+      {
+          "id": 11902,
+          "original_title": "Podzemlje"
+      },
+      {
+          "id": 19404,
+          "title": "Dilwale Dulhania Le Jayenge"
+      },
+      {
+          "id": 36266,
+          "original_title": "Xích lô"
+      },
+      {
+          "id": 9603,
+          "original_title": "Clueless"
+      },
+      {
+          "id": 32646,
+          "original_title": "Safe"
+      },
+      {
+          "id": 949,
+          "original_title": "Heat"
+      },
+      {
+          "id": 862,
+          "original_title": "Toy Story"
+      },
+      {
+        "id": 922,
+        "original_title": "Dead Man"
+      },
+      {
+          "id": 629,
+          "title": "The Usual Suspects"
+      },
+      {
+          "id": 85589,
+          "title": "Zero Kelvin"
+      },
+      {
+          "id": 627,
+          "original_title": "Trainspotting"
+      },
+      {
+          "id": 275,
+          "title": "Fargo"
+      },
+      {
+          "id": 43771,
+          "title": "Gabbeh"
+      },
+      {
+          "id": 55049,
+          "title": "Three Lives and Only One Death"
+      },
+      {
+          "id": 7863,
+          "original_title": "Shine"
+      },
+      {
+          "id": 4232,
+          "original_title": "Scream"
+      },
+      {
+          "id": 11159,
+          "title": "Secrets & Lies"
+      },
+      {
+          "id": 409,
+          "original_title": "The English Patient"
+      },
+      {
+          "id": 26748,
+          "original_title": "Lone Star"
+      },
+      {
+          "id": 145,
+          "original_title": "Breaking the Waves"
+      },
+      {
+          "id": 602,
+          "original_title": "Independence Day"
+      },
+      {
+          "id": 68924,
+          "title": "The Ice Storm"
+      },
+      {
+          "id": 5910,
+          "title": "Fireworks"
+      },
+      {
+          "id": 4995,
+          "original_title": "Boogie Nights"
+      },
+      {
+          "id": 2118,
+          "original_title": "L.A. Confidential"
+      },
+      {
+          "id": 10234,
+          "original_title": "Funny Games"
+      },
+      {
+          "id": 1902,
+          "original_title": "Abre los ojos"
+      },
+      {
+        "id": 10217,
+        "title": "The Sweet Hereafter"
+      },
+      {
+          "id": 597,
+          "original_title": "Titanic"
+      },
+      {
+          "id": 30020,
+          "title": "Taste of Cherry"
+      },
+      {
+          "id": 857,
+          "original_title": "Saving Private Ryan"
+      },
+      {
+          "id": 104,
+          "original_title": "Lola rennt"
+      },
+      {
+          "id": 11545,
+          "original_title": "Rushmore"
+      },
+      {
+          "id": 309,
+          "title": "The Celebration"
+      },
+      {
+          "id": 2671,
+          "title": "Ringu"
+      },
+      {
+          "id": 10683,
+          "title": "Happiness"
+      },
+      {
+          "id": 8741,
+          "original_title": "The Thin Red Line"
+      },
+      {
+          "id": 2667,
+          "original_title": "The Blair Witch Project"
+      },
+      {
+          "id": 492,
+          "original_title": "Being John Malkovich"
+      },
+      {
+          "id": 745,
+          "original_title": "The Sixth Sense"
+      },
+      {
+          "id": 550,
+          "original_title": "Fight Club"
+      },
+      {
+          "id": 11075,
+          "title": "Audition"
+      },
+      {
+          "id": 14,
+          "title": "American Beauty"
+      },
+      {
+          "id": 14626,
+          "title": "Beau Travail"
+      },
+      {
+          "id": 99,
+          "original_title": "Todo sobre mi madre"
+      },
+      {
+          "id": 603,
+          "title": "The Matrix"
+      }
+    ]
+  },
+  {
+    "list": "DECADE 9",
+    "milMoviesMainTopicID": 9,
+    "historyMainTopicID": 6,
+    "movies": [
+      {
+        "id": 44379,
+        "original_title": "Les Glaneurs et la Glaneuse"
+      },
+      {
+          "id": 843,
+          "title": "In the Mood for Love"
+      },
+      {
+          "id": 98,
+          "original_title": "Gladiator"
+      },
+      {
+          "id": 641,
+          "title": "Requiem for a Dream"
+      },
+      {
+          "id": 77,
+          "title": "Memento"
+      },
+      {
+          "id": 146,
+          "title": "Crouching Tiger, Hidden Dragon"
+      },
+      {
+          "id": 120,
+          "original_title": "The Lord of the Rings: The Fellowship of the Ring"
+      },
+      {
+          "id": 129,
+          "title": "Spirited Away"
+      },
+      {
+          "id": 16646,
+          "title": "Russian Ark"
+      },
+      {
+          "id": 3131,
+          "original_title": "Gangs of New York"
+      },
+      {
+          "id": 1430,
+          "title": "Bowling for Columbine"
+      },
+      {
+          "id": 598,
+          "original_title": "Cidade de Deus"
+      },
+      {
+          "id": 1807,
+          "original_title": "Elephant"
+      },
+      {
+          "id": 37088,
+          "original_title": "Aileen: Life and Death of a Serial Killer"
+      },
+      {
+          "id": 670,
+          "title": "Oldboy"
+      },
+      {
+          "id": 338,
+          "original_title": "Good Bye Lenin!"
+      },
+      {
+          "id": 14757,
+          "original_title": "Osama"
+      },
+      {
+          "id": 363,
+          "original_title": "Gegen die Wand"
+      },
+      {
+          "id": 39504,
+          "original_title": "Moolaadé"
+      },
+      {
+          "id": 613,
+          "title": "Downfall"
+      },
+      {
+        "id": 142,
+        "title": "Brokeback Mountain"
+      },
+      {
+          "id": 1417,
+          "original_title": "El laberinto del fauno"
+      },
+      {
+          "id": 582,
+          "original_title": "Das Leben der Anderen"
+      },
+      {
+          "id": 23827,
+          "original_title": "Paranormal Activity"
+      },
+      {
+          "id": 7345,
+          "original_title": "There Will Be Blood"
+      },
+      {
+          "id": 12162,
+          "original_title": "The Hurt Locker"
+      },
+      {
+          "id": 155,
+          "original_title": "The Dark Knight"
+      },
+      {
+          "id": 13310,
+          "title": "Let the Right One In"
+      },
+      {
+          "id": 18094,
+          "title": "Anvil! The Story of Anvil"
+      },
+      {
+          "id": 17654,
+          "title": "District 9"
+      },
+      {
+          "id": 19995,
+          "original_title": "Avatar"
+      }
+    ]
+  },
+  {
     "list":  "DECADE 10",
+    "milMoviesMainTopicID": 10,
+    "historyMainTopicID": 7,
     "movies": [
       {
           "id": 72721,

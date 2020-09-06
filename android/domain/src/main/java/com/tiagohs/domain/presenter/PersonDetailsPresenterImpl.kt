@@ -44,12 +44,13 @@ class PersonDetailsPresenterImpl @Inject constructor(
     }
 
     private fun setupPersonDetails(person: Person): Person {
-        person.personFilmography = MovieUtils.generatePersonMovieCredits(person.movieCredits)
         MovieUtils.setupBirthdayInfo(person)
 
         person.generatePersonDepartmentsList()
         person.setupPersonSummmary()
         person.setupPersonImages()
+
+        person.personFilmography = MovieUtils.generatePersonMovieCredits(person.movieCredits)
 
         return person
     }
