@@ -29,6 +29,7 @@ class PageContentAdapter(
         ContentType.QUOTE.ordinal -> QuoteViewHolder.LAYOUT_ID
         ContentType.SLIDE.ordinal -> SlideViewHolder.LAYOUT_ID
         ContentType.VIDEO.ordinal -> VideoViewHolder.LAYOUT_ID
+        ContentType.LINK_SCREEN.ordinal -> LinkScreenViewHolder.LAYOUT_ID
         else -> R.layout.adapter_empty
     }
 
@@ -42,6 +43,7 @@ class PageContentAdapter(
             ContentType.QUOTE.ordinal -> QuoteViewHolder(view)
             ContentType.SLIDE.ordinal -> SlideViewHolder(view)
             ContentType.VIDEO.ordinal -> VideoViewHolder(view)
+            ContentType.LINK_SCREEN.ordinal -> LinkScreenViewHolder(view, presentScreen)
             else -> object : BasePageViewHolder(view) {}
         }
 

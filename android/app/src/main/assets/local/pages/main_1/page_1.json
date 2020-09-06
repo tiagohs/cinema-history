@@ -119,8 +119,9 @@
       "content_text": "O apetite pelo espetáculo continuou a ser explorado em épicos como <a href=\"https://_{type: 'screen', 'id': 30266, 'screen_type': 'movie'}\">The Ten Commandments</a> (BR: Os dez mandamentos, 1923) e <a href=\"https://_{type: 'screen', 'id': 31510, 'screen_type': 'movie'}\">Ben-Hur</a> (1925), formando o que posteriormente seria conhecido como o género sword-and-sandal (espada e sandálias). O filme se mostrou uma produção atribulada e cara para a <i>Metro-Goldwyn-Mayer</i>, que havia acabado de realizar sua fusão. Para tornar a corrida de bigas mais emocionante, o estúdio estipulou um prêmio de 100 dólares para o vencedor, o acidente terrível que resultou disso permaneceu na cópia final do filme. É possível vislumbrar o espírito do diretor pioneiro <i>Georges Mélies</i> nesses épicos dos anos 1920 e, mais tarde, nos efeitos especiais criados por <a href=\"https://_{type: 'screen', 'id': 66758, 'screen_type': person}\">Ray Harryhausen</a> nas décadas de 1950 e 1960. As técnicas cinematográficas se tornaram mais complexas e as estruturas narrativas, cada vez mais sofisticadas, porém o fundamento criativo do cinema - reinventar e reinterpretar a realidade permaneceu uma constante desde seus primórdios."
     },
     {
-      "type": "block_special",
-      "title": "Timeline de Acontecimentos: 1895 a 1929",
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 1895 a 1929",
       "click": {
         "screen": "timeline",
         "parameters": [

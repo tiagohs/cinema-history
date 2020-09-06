@@ -165,8 +165,9 @@
       "content_text": "Com o advento do som, a produção de filmes tornou-se tecnicamente mais complexa e cara, e empresas, como a Lincoln, que sempre existiram nas margens, foram cada vez mais afastadas. O fato de tão poucos desses filmes sobreviverem também é em parte uma função do escasso financeiro dessas empresas. O resultado disso, combinado com um subfinanciamento consistente na produção de filmes afro-americanos, é de que muitas pessoas simplesmente não sabem da existência de <i>race films</i>. Sendo que, na verdade, cineastas afro-americanos vêm praticando o ofício desde o início do meio."
     },
     {
-      "type": "block_special",
-      "title": "Timeline de Acontecimentos: 1895 a 1929",
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 1895 a 1929",
       "click": {
         "screen": "timeline",
         "parameters": [

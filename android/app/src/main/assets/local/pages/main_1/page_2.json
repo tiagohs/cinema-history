@@ -90,8 +90,9 @@
       "content_text": "O nascimento de uma nação é sem dúvida uma poderosa propaganda, muito embora sua mensagem política seja de revirar o estômago. O filme parece dizer que apenas a puritana <i>Ku Klux Klan</i> pode manter a unidade da nação. Não é de surpreender que, mesmo na sua época, o filme tenha sido visto com indignação. Recebeu protestos da <strong>Associação Nacional para o Progresso das Pessoas de Cor</strong> (NAACP, na sigla em inglês), gerou manifestações e, posteriormente, forçou o próprio Griffith a responder às críticas com seu ainda mais ambicioso <a href=\"https://_{type: 'screen', 'id': 3059, 'screen_type': 'movie'}\">Intolerance: Love's Struggle Throughout the Ages</a> (BR: Intolerância, 1916). Ainda assim, o fato de o nascimento de uma nação ser respeitado e estudado até os dias de hoje - apesar do seu tema - revela sua importância duradoura."
     },
     {
-      "type": "block_special",
-      "title": "Timeline de Acontecimentos: 1895 a 1929",
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 1895 a 1929",
       "click": {
         "screen": "timeline",
         "parameters": [

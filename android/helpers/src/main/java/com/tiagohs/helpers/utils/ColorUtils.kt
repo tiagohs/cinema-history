@@ -1,7 +1,7 @@
 package com.tiagohs.helpers.utils
 
-import android.graphics.drawable.ColorDrawable
 import android.content.res.ColorStateList
+import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.RippleDrawable
 import com.tiagohs.entities.ColorAsset
 
@@ -31,7 +31,7 @@ object ColorUtils {
         return ColorDrawable(color)
     }
 
-    fun getRandomColorAssets(): com.tiagohs.entities.ColorAsset {
+    fun getRandomColorAssets(): ColorAsset {
         val listOfColors = listOf(
             com.tiagohs.entities.ColorAsset("red", "md_white_1000"),
             com.tiagohs.entities.ColorAsset("pink", "md_white_1000"),
@@ -51,6 +51,21 @@ object ColorUtils {
             com.tiagohs.entities.ColorAsset("brown", "md_white_1000"),
             com.tiagohs.entities.ColorAsset("grey", "md_white_1000"),
             com.tiagohs.entities.ColorAsset("blue_grey", "md_white_1000")
+        )
+
+        return listOfColors.random()
+    }
+
+
+    fun getRandomColorForDegradeAssets(): ColorAsset {
+        val listOfColors = listOf(
+            com.tiagohs.entities.ColorAsset("red", "md_white_1000"),
+            com.tiagohs.entities.ColorAsset("deep_purple", "md_white_1000"),
+            com.tiagohs.entities.ColorAsset("blue", "md_white_1000"),
+            com.tiagohs.entities.ColorAsset("green", "md_white_1000"),
+            com.tiagohs.entities.ColorAsset("yellow", "md_black_1000"),
+            com.tiagohs.entities.ColorAsset("deep_orange", "md_white_1000"),
+            com.tiagohs.entities.ColorAsset("brown", "md_white_1000")
         )
 
         return listOfColors.random()

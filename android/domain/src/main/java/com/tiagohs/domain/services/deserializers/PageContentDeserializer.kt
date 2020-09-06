@@ -25,6 +25,7 @@ class PageContentDeserializer: JsonDeserializer<Content> {
             ContentType.IMAGE -> Gson().fromJson(obj, ContentImage::class.java)
             ContentType.QUOTE -> Gson().fromJson(obj, ContentQuote::class.java)
             ContentType.AUDIO_STREAM -> Gson().fromJson(obj, ContentAudioStream::class.java)
+            ContentType.LINK_SCREEN -> Gson().fromJson(obj, ContentLinkScreen::class.java)
             ContentType.VIDEO -> Gson().fromJson(obj, ContentVideo::class.java)
         }
     }

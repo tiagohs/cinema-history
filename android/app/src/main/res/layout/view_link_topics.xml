@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/blockSpecialContainerCard"
+    app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+    app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginTop="@dimen/activity_vertical_margin_2.5x"
+    android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@color/md_black_1000"
+        android:id="@+id/blockSpecialContainer">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/mainTopicImage"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/md_black_1000"
+            android:alpha=".6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/subtitle"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/text_size_zeplin_18pt"
+            android:fontFamily="@font/oswald_light"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+            android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+            android:lineSpacingMultiplier="1.1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Teste de Titulo"
+            tools:visibility="visible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textColor="@color/md_red_500"
+            android:textSize="@dimen/text_size_zeplin_26pt"
+            android:fontFamily="@font/oswald_bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+            android:lineSpacingMultiplier="1.1"
+            app:layout_constraintTop_toBottomOf="@id/subtitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="1001 Filmes para ver antes de morrer de 1985 a 1929"
+            tools:visibility="visible"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/text_size_zeplin_18pt"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+            android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+            android:lineSpacingMultiplier="1.1"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="A primeira exibição pelos irmãos Lumière, o primeiro beijo nas telonas, as invenções e descobertas, o inicio de Hollywood. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1895 e 1929."
+            tools:visibility="visible" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linkButtonContainerCard"
+            app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+            app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
+            android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+            app:cardBackgroundColor="@color/md_red_500"
+            app:layout_constraintTop_toBottomOf="@id/description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="?selectableItemBackground"
+                android:id="@+id/linkButtonContainer">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linkButtonText"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/text_size_zeplin_22pt"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:text="@string/start_journey"
+                    android:textAllCaps="true"
+                    android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+                    android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+                    android:lineSpacingMultiplier="1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

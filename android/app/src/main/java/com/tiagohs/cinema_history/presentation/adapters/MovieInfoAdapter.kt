@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
+import android.content.Intent
 import android.view.View
 import androidx.fragment.app.FragmentActivity
 import com.tiagohs.cinema_history.R
@@ -18,6 +19,7 @@ class MovieInfoAdapter(
     var onPersonClicked: ((personId: Int) -> Unit)? = null
     var onVideoClick: ((String?) -> Unit)? = null
     var onExtenalLink: ((String?) -> Unit)? = null
+    var onScreenLink: ((Intent) -> Unit)? = null
     var onMovieClicked: ((movieId: Int) -> Unit)? = null
 
     override fun getLayoutResId(viewType: Int): Int = when (viewType) {
@@ -33,15 +35,14 @@ class MovieInfoAdapter(
         MovieInfoType.INFO_BLOCK_SPECIAL.ordinal -> MovieInfoBlockSpecialViewHolder.LAYOUT_ID
         MovieInfoType.INFO_WATCH_ON.ordinal -> MovieInfoWatchOnViewHolder.LAYOUT_ID
         MovieInfoType.INFO_DID_YOUT_KNOW.ordinal -> MovieInfoDidYouKnowViewHolder.LAYOUT_ID
+        MovieInfoType.INFO_HISTORY.ordinal -> MovieInfoLinkTopicsViewHolder.LAYOUT_ID
+        MovieInfoType.INFO_MIL_MOVIES.ordinal -> MovieInfoLinkTopicsViewHolder.LAYOUT_ID
         else -> R.layout.adapter_empty
     }
 
     override fun onCreateViewHolder(viewType: Int, view: View): BaseViewHolder<MovieInfo> =
         when (viewType) {
-            MovieInfoType.INFO_CAST.ordinal, MovieInfoType.INFO_CREW.ordinal -> MovieInfoPersonListViewHolder(
-                view,
-                onPersonClicked
-            )
+            MovieInfoType.INFO_CAST.ordinal, MovieInfoType.INFO_CREW.ordinal -> MovieInfoPersonListViewHolder(view, onPersonClicked)
             MovieInfoType.INFO_HEADER.ordinal -> MovieInfoHeaderViewHolder(view)
             MovieInfoType.INFO_SUMMARY.ordinal -> MovieInfoSummaryViewHolder(view, appLanguage, onExtenalLink)
             MovieInfoType.INFO_REVIEWS.ordinal -> MovieInfoReviewsViewHolder(view, onExtenalLink, appLanguage)
@@ -53,6 +54,9 @@ class MovieInfoAdapter(
             MovieInfoType.INFO_BLOCK_SPECIAL.ordinal -> MovieInfoBlockSpecialViewHolder(view)
             MovieInfoType.INFO_WATCH_ON.ordinal -> MovieInfoWatchOnViewHolder(view)
             MovieInfoType.INFO_DID_YOUT_KNOW.ordinal -> MovieInfoDidYouKnowViewHolder(view)
+            MovieInfoType.INFO_HISTORY.ordinal -> MovieInfoLinkTopicsViewHolder(view, appLanguage, MovieInfoType.INFO_HISTORY, onScreenLink)
+            MovieInfoType.INFO_MIL_MOVIES.ordinal -> MovieInfoLinkTopicsViewHolder(view, appLanguage, MovieInfoType.INFO_MIL_MOVIES, onScreenLink)
+
             else -> object : BaseViewHolder<MovieInfo>(view) {}
         }
 

@@ -162,8 +162,9 @@
       "content_text": "Em busca do ouro é considerado uma das mais perfeitas realizações de Chaplin. Embora seu gosto pelo próprio trabalho tenha mudado com o tempo, no fim da vida ele declararia diversas vezes que este era o filme pelo qual gostaria de ser lembrado."
     },
     {
-      "type": "block_special",
-      "title": "Timeline de Acontecimentos: 1895 a 1929",
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 1895 a 1929",
       "click": {
         "screen": "timeline",
         "parameters": [

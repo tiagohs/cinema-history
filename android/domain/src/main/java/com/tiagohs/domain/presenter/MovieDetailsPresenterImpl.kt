@@ -115,7 +115,13 @@ class MovieDetailsPresenterImpl @Inject constructor(
 
                     if (movieExtra != null) {
                         movie.extraInfo = movieExtra
-                        movie.extraInfo?.historyMainTopic = localService.getMainTopics().map { mainTopics -> mainTopics.find { mainTopic -> (mainTopic as? MainTopicItem)?.id == moviesExtras.historyMainTopicID } as? MainTopicItem }?.blockingFirst()
+
+                        val historyMainTopic = localService.getMainTopics().map { mainTopics -> mainTopics.find { mainTopic -> (mainTopic as? MainTopicItem)?.id == moviesExtras.historyMainTopicID } as? MainTopicItem }?.blockingFirst()
+                        val isBlocked = historyMainTopic?.blocked ?: false
+                        if (historyMainTopic != null && !isBlocked) {
+                            movie.extraInfo?.historyMainTopic = historyMainTopic
+                        }
+
                         movie.extraInfo?.milMoviesMainTopic = localService.getMilMoviesMainTopics().map { mainTopics -> mainTopics.find { mainTopic -> (mainTopic as? MilMoviesMainTopic)?.id == moviesExtras.milMoviesMainTopicID } as? MilMoviesMainTopic }?.blockingFirst()
 
                         return@find true

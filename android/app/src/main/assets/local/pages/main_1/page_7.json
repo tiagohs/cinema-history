@@ -86,8 +86,9 @@
       "content_text": "Até meados dessa década, o cinema soviético continuou a produzir ótimos filmes mudos, como o clássico <a href=\"https://_{type: 'screen', 'id': 643, 'screen_type': movie}\">Bronenosets Potyomkin</a> (BR: O Encouraçado Potemkin, 1925), de <a href=\"https://_{type: 'screen', 'id': 9603, 'screen_type': person}\">Sergei M. Eisenstein</a> (1898-1948), um dos diretores mais influentes na história do cinema. No Japão, onde os filmes falados eram raros até 1935, cineastas como <a href=\"https://_{type: 'screen', 'id': 125690, 'screen_type': person}\">Mikio Naruse</a> (1905-1969) e <a href=\"https://_{type: 'screen', 'id': 233660, 'screen_type': person}\">Hiroshi Shimizu</a> (1903-1966) mesclaram tradições locais com o estilo extravagante dos mestres ocidentais do final da era do cinema mudo. Em filmes como <a href=\"https://_{type: 'screen', 'id': 28268, 'screen_type': movie}\">Rakudai Wa Shita Keredo</a> (BR: Fui Reprovado, Mas…, 1932), <a href=\"https://_{type: 'screen', 'id': 95501, 'screen_type': person}\">Yasujiro Ozu</a> (1903-1963) mostrou que o cinema mudo era capaz de um realismo tão autêntico quanto aquele alcançado com o som nos filmes neorrealistas da Itália do pós-guerra."
     },
     {
-      "type": "block_special",
-      "title": "Timeline de Acontecimentos: 1895 a 1929",
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 1895 a 1929",
       "click": {
         "screen": "timeline",
         "parameters": [

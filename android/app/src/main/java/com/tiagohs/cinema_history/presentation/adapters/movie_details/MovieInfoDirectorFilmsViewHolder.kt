@@ -29,6 +29,9 @@ class MovieInfoDirectorFilmsViewHolder(
         super.bind(item, position)
         val movie = item.movie
         val context = containerView.context
+        val colorAsset = ColorUtils.getRandomColorForDegradeAssets()
+        val colorBackgroundName = "md_${colorAsset.colorName}_500"
+        val degradeColorName = "background_degrade_${colorAsset.colorName}_end"
         val director = movie.credits?.crew?.filter { it.job == "Director" }?.firstOrNull() ?: return
 
         if (!isSetup) {
@@ -38,6 +41,11 @@ class MovieInfoDirectorFilmsViewHolder(
                     director.name
                 )
             )
+            scriptsSpecialListTitle.setResourceTextColor(colorAsset.textColorName)
+            backgroundColor.setResourceBackgroundColor(colorBackgroundName)
+            scriptsSpecialListContainer.setResourceBackgroundColor(colorBackgroundName)
+
+            degradeEnd.background = context.getResourceDrawable(degradeColorName)
 
             imageSpecial.loadImage(
                 director.profilePath?.imageUrlFromTMDB(ImageSize.PROFILE_632),

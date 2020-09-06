@@ -28,7 +28,10 @@ enum class ContentType(
     QUOTE("quote"),
 
     @SerializedName("block_special")
-    BLOCK_SPECIAL("block_special");
+    BLOCK_SPECIAL("block_special"),
+
+    @SerializedName("link_screen")
+    LINK_SCREEN("link_screen");
 
     companion object {
         fun getContentType(type: String): ContentType {

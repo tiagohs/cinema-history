@@ -157,6 +157,7 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
                     onExtenalLink = { openLink(it) }
                     onVideoClick = { openLink(getString(R.string.youtube_link, it)) }
                     onMovieClicked = { onMovieSelected(it) }
+                    onScreenLink = { startActivityWithSlideRightToLeftAnimation(it) }
                 }
             layoutManager = LinearLayoutManager(
                 this@MovieDetailsActivity,
@@ -236,6 +237,15 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
         listOfMovieList.add(MovieInfo(MovieInfoType.INFO_HEADER, movie))
         listOfMovieList.add(MovieInfo(MovieInfoType.INFO_SUMMARY, movie))
 
+        movie.extraInfo?.historyMainTopic?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_HISTORY,
+                    movie
+                )
+            )
+        }
+
         movie.extraInfo?.watchOn?.let {
             listOfMovieList.add(
                 MovieInfo(
@@ -281,6 +291,16 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
                 )
             )
         }
+
+        movie.extraInfo?.milMoviesMainTopic?.let {
+            listOfMovieList.add(
+                MovieInfo(
+                    MovieInfoType.INFO_MIL_MOVIES,
+                    movie
+                )
+            )
+        }
+
         movie.extraInfo?.reviewResults?.let {
             listOfMovieList.add(
                 MovieInfo(

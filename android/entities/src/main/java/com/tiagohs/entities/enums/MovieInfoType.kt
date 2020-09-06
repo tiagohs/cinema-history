@@ -13,5 +13,7 @@ enum class MovieInfoType {
     INFO_QUOTE,
     INFO_BLOCK_SPECIAL,
     INFO_WATCH_ON,
-    INFO_DID_YOUT_KNOW;
+    INFO_DID_YOUT_KNOW,
+    INFO_HISTORY,
+    INFO_MIL_MOVIES;
 }

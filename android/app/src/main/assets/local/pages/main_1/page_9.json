@@ -151,8 +151,9 @@
       "content_text": "Contratado pela Paramount devido ao vigor de suas inventivas produções teatrais, seu primeiro filme, <a href=\"https://_{type: 'screen', 'id': 120833, 'screen_type': movie}\">Applause</a> (1929) estendeu as fronteiras criativas dos filmes sonoros. O enredo do filme não era inovador - uma artista de teatro decadente sacrifica sua carreira pela filha -, mas algumas cenas-chave fizeram a indústria parar e prestar atenção. Um exemplo é o contraste entre a atmosfera silenciosa do convento em que estava a filha e a confusão do tráfego e dos sons da rua da efervescente Nova York quando ela visita sua mãe, Mamoulian usou o contraste sonoro para refletir as sensações da filha desorientada."
     },
     {
-      "type": "block_special",
-      "title": "Timeline de Acontecimentos: 1895 a 1929",
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 1895 a 1929",
       "click": {
         "screen": "timeline",
         "parameters": [
