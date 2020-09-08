@@ -50,7 +50,7 @@ class MovieDetailsPresenterImpl @Inject constructor(
                 val collectionSource = if (movie.belongsToCollection?.id != null) fetchCollection(movie, movie.belongsToCollection?.id!!, languageToUse) else Observable.just(movie)
 
                 return@concatMap Observable.zip<Movie, Movie, Movie, Movie, Movie, Movie, Movie>(
-                    fetchVideos(movie, languageToUse).subscribeOn(Schedulers.io()),
+                    fetchVideos(movie).subscribeOn(Schedulers.io()),
                     fetchImages(movie, languageToUse).subscribeOn(Schedulers.io()),
                     fetchExtraInfo(movie).subscribeOn(Schedulers.io()),
                     imdbObservable.subscribeOn(Schedulers.io()),
@@ -79,23 +79,10 @@ class MovieDetailsPresenterImpl @Inject constructor(
         )
     }
 
-    private fun fetchVideos(movie: Movie, languageToUse: String): Observable<Movie> {
+    private fun fetchVideos(movie: Movie): Observable<Movie> {
         val id = movie.id ?: return Observable.just(movie)
 
-        val listOfObservables = ArrayList<Observable<Result<Video>>>()
-        val translation = movie.translations?.translations?.find { it.iso_639_1 != "pt" && it.iso_639_1 != "en" && it.iso_639_1 == movie.originalLanguage }
-
-        translation?.let {
-            val originalLanguage = "${it.iso_639_1}-${it.iso_3166_1}"
-
-            listOfObservables.add(tmdbService.getMovieVideos(id, originalLanguage))
-        }
-
-        listOfObservables.add(tmdbService.getMovieVideos(id, languageToUse))
-        listOfObservables.add(tmdbService.getMovieVideos(id, "en-US"))
-        listOfObservables.add(tmdbService.getMovieVideos(id, "null"))
-
-        return Observable.concat(listOfObservables)
+        return tmdbService.getMovieVideos(id, "en,pt-BR,${movie.originalLanguage},null")
                     .map { mapMovieWithVideos(it) }
                     .onErrorResumeNext { error: Throwable -> return@onErrorResumeNext Observable.just(movie) }
     }

@@ -77,6 +77,11 @@
       {
         "id": 5698,
         "title": "The Great Train Robbery",
+        "block_special": {
+          "type": "block_special",
+          "description": "O grande roubo do trem é considerado o primeiro faroeste já feito, iniciando o que se tornaria, dentro de poucos anos, o gênero mais popular de cinema nos Estados Unidos. Produzido pela <i>Edison Company</i> em novembro de 1903, foi o filme mais bem-sucedido comercialmente do período <i>pré-Griffith</i> do cinema americano e gerou inúmeras imitações. <br/><br/> \n\nO que torna o filme de <i>Edwin S. Porter</i> excepcional é seu grau de sofisticação narrativa, se levarmos em conta a época em que foi feito. Existem mais de uma dúzia de cenas distintas, cada qual aprofundando mais o enredo. <br/><br/> \n\nUm dos atores de <strong>O grande roubo do trem</strong> foi <i>G. M. Anderson</i> (seu nome verdadeiro era <i>Max Aronson</i>). Entre outros papeis ele interpretou o passageiro que leva um tiro. Anderson logo se tornaria o primeiro astro do faroeste aparecendo como <i>Bronco Billy</i> em mais de 100 filmes a partir de 1907. <br/><br/>  \n\nAnos mais tarde, houve quem contestasse a afirmação de que o grande roubo do trem fosse o primeiro faroeste já feito, alegando que não foi o primeiro ou que não era um faroeste. Sem dúvida houve filmes anteriores que faziam uso do tema, como <a href=\"https://_{type: 'screen', 'id': 105169, 'screen_type': 'movie'}\">Cripple Creek Bar-Room Scene</a> (1899), porém eles não possuem a unidade narrativa do filme de Porter. <br/><br/> \n\nPode-se afirmar que suas raízes se encontram tanto em peças de teatro que possuem cenas espetaculares em ferrovias, como em outros filmes sobre roubos audaciosos que não pertenciam ao gênero. Tampouco se pode sustentar que ele seja um verdadeiro faroeste tendo por base suas locações autenticas, uma vez que O Grande roubo do trem foi filmado na ferrovia <i>Delaware-Lackawanna</i> em Nova Jersey. No entanto, desde os tempos de <i>Jesse James</i> roubos de trem fazem parte da mitologia deste tipo de filme, e outros elementos simbólicos como revólveres de seis tiros, chapéus de caubóis e cavalos dão ao filme uma genuína atmosfera de faroeste.",
+          "credits": "Análise original de <strong>Edward Buscombe</strong>, adaptada do livro <i>1001 filmes para ver antes de morrer</i>"
+        },
         "watchOn": [
           {
             "type": "youtube",
@@ -1004,15 +1009,45 @@
       },
       {
           "id": 901,
-          "title": "City Lights"
+          "title": "City Lights",
+          "watchOn": [
+            {
+              "type": "kanopy",
+              "link": "https://www.kanopy.com/product/city-lights"
+            },
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B004DH7XF6/ref=atv_dl_rdr"
+            },
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/us/movie/city-lights/id592889171"
+            }
+          ]
       },
       {
           "id": 138,
-          "original_title": "Dracula"
+          "original_title": "Dracula",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/us/movie/dracula-1931/id322443654"
+            }
+          ]
       },
       {
           "id": 3035,
-          "original_title": "Frankenstein"
+          "original_title": "Frankenstein",
+          "watchOn": [
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B002RXZF6C/ref=atv_dl_rdr"
+            },
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/us/movie/frankenstein-1931/id332166136"
+            }
+          ]
       },
       {
           "id": 17687,
@@ -1052,7 +1087,13 @@
       },
       {
         "id": 136,
-        "original_title": "Freaks"
+        "original_title": "Freaks",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/freaks/id289885878"
+          }
+        ]
       },
       {
           "id": 3062,
@@ -1084,7 +1125,17 @@
       },
       {
           "id": 244,
-          "title": "King Kong"
+          "title": "King Kong",
+          "watchOn": [
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B001R6AW18/ref=atv_dl_rdr"
+            },
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/us/movie/king-kong-1933/id353883051"
+            }
+          ]
       },
       {
           "id": 91,

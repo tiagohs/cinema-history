@@ -12,25 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/references.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/references.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/specials/movies.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/specials/movies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/movie_details/MovieInfoQuoteViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/movie_details/MovieInfoQuoteViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/references/MediaViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/references/MediaViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_references.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_references.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_watch_on.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_watch_on.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_network_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_network_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-pt-rBR/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-pt-rBR/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/timelines/timeline_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/timelines/timeline_1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/TMDBService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/TMDBService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/retrofit/TMDBServiceRetrofit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/retrofit/TMDBServiceRetrofit.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/contents/ContentQuote.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/contents/ContentQuote.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/NetworkType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/NetworkType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/movie/Movie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/movie/Movie.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,49 +271,49 @@
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597101002103" />
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597101515055" />
-    <state width="1878" height="233" key="GridCell.Tab.0.bottom" timestamp="1599532099572">
+    <state width="1878" height="233" key="GridCell.Tab.0.bottom" timestamp="1599593309719">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099572" />
+    <state width="1878" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599593309719" />
     <state width="1878" height="311" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1599238192909" />
     <state width="1877" height="278" key="GridCell.Tab.0.bottom/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736724" />
-    <state width="1878" height="233" key="GridCell.Tab.0.center" timestamp="1599532099570">
+    <state width="1878" height="233" key="GridCell.Tab.0.center" timestamp="1599593309716">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099570" />
+    <state width="1878" height="233" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599593309716" />
     <state width="1878" height="311" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1599238192908" />
     <state width="1877" height="278" key="GridCell.Tab.0.center/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736723" />
-    <state width="1878" height="233" key="GridCell.Tab.0.left" timestamp="1599532099569">
+    <state width="1878" height="233" key="GridCell.Tab.0.left" timestamp="1599593309715">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099569" />
+    <state width="1878" height="233" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599593309715" />
     <state width="1878" height="311" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1599238192907" />
     <state width="1877" height="278" key="GridCell.Tab.0.left/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736723" />
-    <state width="1878" height="233" key="GridCell.Tab.0.right" timestamp="1599532099571">
+    <state width="1878" height="233" key="GridCell.Tab.0.right" timestamp="1599593309718">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099571" />
+    <state width="1878" height="233" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599593309718" />
     <state width="1878" height="311" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1599238192908" />
     <state width="1877" height="278" key="GridCell.Tab.0.right/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736723" />
-    <state width="1878" height="233" key="GridCell.Tab.1.bottom" timestamp="1599532099575">
+    <state width="1878" height="233" key="GridCell.Tab.1.bottom" timestamp="1599593309722">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099575" />
+    <state width="1878" height="233" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599593309722" />
     <state width="1878" height="233" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1598906924514" />
-    <state width="1878" height="233" key="GridCell.Tab.1.center" timestamp="1599532099573">
+    <state width="1878" height="233" key="GridCell.Tab.1.center" timestamp="1599593309721">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099573" />
+    <state width="1878" height="233" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599593309721" />
     <state width="1878" height="233" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1598906924513" />
-    <state width="1878" height="233" key="GridCell.Tab.1.left" timestamp="1599532099572">
+    <state width="1878" height="233" key="GridCell.Tab.1.left" timestamp="1599593309720">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099572" />
+    <state width="1878" height="233" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599593309720" />
     <state width="1878" height="233" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1598906924513" />
-    <state width="1878" height="233" key="GridCell.Tab.1.right" timestamp="1599532099574">
+    <state width="1878" height="233" key="GridCell.Tab.1.right" timestamp="1599593309721">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099574" />
+    <state width="1878" height="233" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599593309721" />
     <state width="1878" height="233" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1598906924514" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1599530404698">
       <screen x="0" y="23" width="1920" height="1057" />
@@ -349,10 +333,10 @@
     <state x="579" y="23" width="895" height="1044" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599532652110" />
     <state x="579" y="13" width="764" height="1005" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285923944" />
     <state x="2383" y="10" width="611" height="804" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@1920.0.1536.832" timestamp="1594772873800" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1599535706443">
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1599592271950">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599535706443" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599592271950" />
     <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1599239259474" />
   </component>
   <component name="XDebuggerManager">
