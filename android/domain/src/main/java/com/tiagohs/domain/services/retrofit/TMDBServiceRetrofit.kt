@@ -4,6 +4,7 @@ import com.tiagohs.entities.tmdb.Result
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.entities.tmdb.TMDBList
 import com.tiagohs.entities.tmdb.movie.Collection
+import com.tiagohs.entities.tmdb.movie.MovieImages
 import com.tiagohs.entities.tmdb.movie.Video
 import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.entities.tmdb.person.PersonMovieCredits
@@ -26,6 +27,13 @@ interface TMDBServiceRetrofit {
         @Path("movie_id") movieId: Int,
         @Query("language") language: String
     ): Observable<Result<Video>>
+
+    @GET("movie/{movie_id}/images")
+    fun getMovieImages(
+        @Path("movie_id") movieId: Int,
+        @Query("language") language: String,
+        @Query("include_image_language") includeImageLanguage: String
+    ): Observable<MovieImages>
 
     @GET("person/{personId}")
     fun getPersonDetails(

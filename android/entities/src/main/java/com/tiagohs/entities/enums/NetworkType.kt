@@ -20,6 +20,15 @@ enum class NetworkType(
     @SerializedName("kanopy")
     KANOPY("kanopy", R.string.kanopy, "kanopy_color", "md_white_1000"),
 
+    @SerializedName("apple_tv")
+    APPLE_TV("apple_tv", R.string.apple_tv, "apple_tv_color", "md_white_1000"),
+
+    @SerializedName("amazon_video")
+    AMAZON_VIDEO("amazon_video", R.string.amazon_video, "md_black_1000", "amazon_color"),
+
+    @SerializedName("hbo_max")
+    HBO_MAX("hbo_max", R.string.hbo_max, "hbo_max", "md_white_1000"),
+
     @SerializedName("unknown")
     UNKNOWN("unknown", color = "md_black_1000", textColor =  "md_white_1000");
 

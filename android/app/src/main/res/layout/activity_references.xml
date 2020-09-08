@@ -20,7 +20,7 @@
             android:layout_height="?attr/actionBarSize"
             android:id="@+id/collapsingToolbar"
             android:fitsSystemWindows="true"
-            app:layout_scrollFlags="scroll"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
             app:contentScrim="@color/colorPrimary"
             app:collapsedTitleTextAppearance="@style/TextAppearance.CollapsedTitle"
             app:titleEnabled="false">

@@ -9,19 +9,22 @@ import com.tiagohs.domain.services.config.BaseService
 import com.tiagohs.domain.services.config.RetrofitConfig
 import com.tiagohs.domain.services.retrofit.TMDBServiceRetrofit
 import com.tiagohs.entities.tmdb.movie.Collection
+import com.tiagohs.entities.tmdb.movie.MovieImages
 import com.tiagohs.entities.tmdb.person.PersonMovieCredits
 import io.reactivex.Observable
-import retrofit2.http.Path
-import retrofit2.http.Query
 
 class TMDBService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) {
 
     fun getMovieDetails(movieId: Int, languageToUse: String, appendToResponse: List<String>): Observable<Movie> {
-        return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieDetails(movieId, "${languageToUse},en-US,null", appendToResponse.joinToString(","))
+        return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieDetails(movieId, languageToUse, appendToResponse.joinToString(","))
     }
 
     fun getMovieVideos(movieId: Int, languages: String): Observable<Result<Video>> {
         return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieVideos(movieId, languages)
+    }
+
+    fun getMovieImages(movieId: Int, languages: String, includeImageLanguage: String): Observable<MovieImages> {
+        return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieImages(movieId, languages, includeImageLanguage)
     }
 
     fun getPersonDetails(personId: Int, languageToUse: String, appendToResponse: List<String>): Observable<Person> {

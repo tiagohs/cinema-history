@@ -10,5 +10,5 @@ data class ContentQuote(
     var quote: Quote,
 
     @SerializedName("quote_mark_color")
-    var quoteMarkColor: String?
+    var quoteMarkColor: String? = null
 ): Content(), Serializable

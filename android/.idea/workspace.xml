@@ -6,21 +6,31 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/references/ReferenceResult.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/references.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/references.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/ReferenceActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/ReferenceActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/specials/movies.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/specials/movies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/movie_details/MovieInfoQuoteViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/movie_details/MovieInfoQuoteViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/references/MediaViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/references/MediaViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_references.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_references.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_watch_on.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_movie_info_watch_on.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_network_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_network_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values-pt-rBR/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-pt-rBR/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/LocalService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/LocalService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/retrofit/LocalServiceRetrofit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/retrofit/LocalServiceRetrofit.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/views/ReferenceView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/views/ReferenceView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/TMDBService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/TMDBService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/retrofit/TMDBServiceRetrofit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/retrofit/TMDBServiceRetrofit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/contents/ContentQuote.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/contents/ContentQuote.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/NetworkType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/NetworkType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/movie/Movie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/movie/Movie.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,10 +258,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="739" y="263" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1598903910291" />
-    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599419479191">
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599527769493">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599419479191" />
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599527769493" />
     <state x="521" y="211" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1599338792555">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -277,50 +287,54 @@
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597101002103" />
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597101515055" />
-    <state width="1878" height="233" key="GridCell.Tab.0.bottom" timestamp="1599425848867">
+    <state width="1878" height="233" key="GridCell.Tab.0.bottom" timestamp="1599532099572">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599425848867" />
+    <state width="1878" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099572" />
     <state width="1878" height="311" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1599238192909" />
     <state width="1877" height="278" key="GridCell.Tab.0.bottom/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736724" />
-    <state width="1878" height="233" key="GridCell.Tab.0.center" timestamp="1599425848865">
+    <state width="1878" height="233" key="GridCell.Tab.0.center" timestamp="1599532099570">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599425848865" />
+    <state width="1878" height="233" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099570" />
     <state width="1878" height="311" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1599238192908" />
     <state width="1877" height="278" key="GridCell.Tab.0.center/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736723" />
-    <state width="1878" height="233" key="GridCell.Tab.0.left" timestamp="1599425848864">
+    <state width="1878" height="233" key="GridCell.Tab.0.left" timestamp="1599532099569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599425848864" />
+    <state width="1878" height="233" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099569" />
     <state width="1878" height="311" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1599238192907" />
     <state width="1877" height="278" key="GridCell.Tab.0.left/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736723" />
-    <state width="1878" height="233" key="GridCell.Tab.0.right" timestamp="1599425848866">
+    <state width="1878" height="233" key="GridCell.Tab.0.right" timestamp="1599532099571">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599425848866" />
+    <state width="1878" height="233" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099571" />
     <state width="1878" height="311" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1599238192908" />
     <state width="1877" height="278" key="GridCell.Tab.0.right/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285736723" />
-    <state width="1878" height="233" key="GridCell.Tab.1.bottom" timestamp="1599425848871">
+    <state width="1878" height="233" key="GridCell.Tab.1.bottom" timestamp="1599532099575">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599425848871" />
+    <state width="1878" height="233" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099575" />
     <state width="1878" height="233" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1598906924514" />
-    <state width="1878" height="233" key="GridCell.Tab.1.center" timestamp="1599425848869">
+    <state width="1878" height="233" key="GridCell.Tab.1.center" timestamp="1599532099573">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599425848869" />
+    <state width="1878" height="233" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099573" />
     <state width="1878" height="233" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1598906924513" />
-    <state width="1878" height="233" key="GridCell.Tab.1.left" timestamp="1599425848868">
+    <state width="1878" height="233" key="GridCell.Tab.1.left" timestamp="1599532099572">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599425848868" />
+    <state width="1878" height="233" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099572" />
     <state width="1878" height="233" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1598906924513" />
-    <state width="1878" height="233" key="GridCell.Tab.1.right" timestamp="1599425848870">
+    <state width="1878" height="233" key="GridCell.Tab.1.right" timestamp="1599532099574">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="233" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599425848870" />
+    <state width="1878" height="233" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599532099574" />
     <state width="1878" height="233" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1598906924514" />
+    <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1599530404698">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="960" height="540" key="XDebugger.FullValuePopup/0.23.1920.1057@0.23.1920.1057" timestamp="1599530404698" />
     <state x="737" y="325" key="chooseDestDirectoryDialog" timestamp="1597944694075">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -329,16 +343,16 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="100" y="100" width="1720" height="880" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598540043064" />
-    <state x="579" y="23" width="895" height="1044" key="find.popup" timestamp="1599427263401">
+    <state x="579" y="23" width="895" height="1044" key="find.popup" timestamp="1599532652110">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="579" y="23" width="895" height="1044" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599427263401" />
+    <state x="579" y="23" width="895" height="1044" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599532652110" />
     <state x="579" y="13" width="764" height="1005" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597285923944" />
     <state x="2383" y="10" width="611" height="804" key="find.popup/1920.0.1536.832/-1920.0.1920.1040/0.0.1920.1040@1920.0.1536.832" timestamp="1594772873800" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1599428368763">
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1599535706443">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599428368763" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1599535706443" />
     <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1599239259474" />
   </component>
   <component name="XDebuggerManager">
@@ -353,16 +367,6 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/timeline/TimelineItemFooterHolder.kt</url>
           <line>31</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/presenter/MovieDetailsPresenterImpl.kt</url>
-          <line>66</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/MovieDetailsActivity.kt</url>
-          <line>294</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

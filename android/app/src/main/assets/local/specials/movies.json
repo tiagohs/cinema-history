@@ -71,8 +71,7 @@
           "quote": {
             "quote": "Méliès era verdadeiramente um magico... Ele compreendeu as possibilidades de uma câmera cinematográfica.",
             "author": "Martin Scorsese"
-          },
-          "quote_mark_color": "md_red_500"
+          }
         }
       },
       {
@@ -83,7 +82,36 @@
             "type": "youtube",
             "link": "https://www.youtube.com/watch?v=zuto7qWrplc"
           }
-        ]
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Um passo importante na produção de filmes",
+            "description": "O filme usa técnicas simples de edição (cada cena é uma única tomada) e a história é bastante linear, representando um passo importante na produção de um filme. É também um dos primeiros filmes \"narrativos\"."
+          },
+          {
+            "title": "Plateias assustadas",
+            "description": "A cena final que a arma dispara na câmera teve um profundo efeito nas audiências. Como o cinema estava bem no começo, muitas pessoas se assustaram com o tiro, porque pensaram que seriam atingidas."
+          },
+          {
+            "title": "O famoso tiro",
+            "description": "O filme foi originalmente distribuído com um bilhete dizendo que o tão falado tiro que o bandido dispara contra a câmera podia ser colocado no início ou no final do filme. Ele acabou por ficar no final mesmo."
+          },
+          {
+            "title": "O negativo do filme em perfeito estado",
+            "description": "O negativo do filme ainda existe e está em excelente condição. A Livraria do Congresso, que possui o negativo, ainda pode fazer novas cópias."
+          },
+          {
+            "title": "Primeiro filme de Tom London",
+            "description": "Esta é a primeira das outras 20 aparições do ator Tom London, um veterano de filmes de faroeste. Ele foi escalado para fazer o papel do condutor da locomotiva, seu verdadeiro trabalho na época."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Consideramos, em todos os aspectos, o melhor filme de imagem em movimento já feito.",
+            "author": "Catálogo Edison Company"
+          }
+        }
       },
       {
         "id": 618,
@@ -97,7 +125,32 @@
             "type": "youtube",
             "link": "https://www.youtube.com/watch?v=nGQaAddwjxg"
           }
-        ]
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Sem Roteiro",
+            "description": "O diretor D.W. Griffith visualizou todo o filme em sua mente, não tendo escrito um roteiro ou feito anotações sobre as cenas."
+          },
+          {
+            "title": "100 minutos",
+            "description": "Foi o 1º filme na história a ultrapassar os 100 minutos de duração."
+          },
+          {
+            "title": "Um filme caro",
+            "description": "Estreou em Nova York com os ingressos custando US$ 2 cada, um valor astronômico para a época. Apesar disto, o filme permaneceu um ano em cartaz e levou mais de um milhão de pessoas aos cinemas."
+          },
+          {
+            "title": "Conteúdo racista",
+            "description": "Devido ao seu conteúdo racista, O Nascimento de uma Nação foi banido em várias cidades importantes dos Estados Unidos, como Los Angeles."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "É o que realizei de mais grandioso, mas não estarei satisfeito até fazer algo mais... Eu sou, como todos os seres humanos, movido pela perfeição.",
+            "author": "D. W. Griffith"
+          }
+        }
       },
       {
         "id": 29082,
@@ -107,31 +160,202 @@
             "type": "youtube",
             "link": "https://www.youtube.com/watch?v=H6PWYIwf1PU"
           }
-        ]
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Dispensa de dublês",
+            "description": "Musidora era uma acrobata, então ela fez todas as cenas e dispensou os dublês."
+          },
+          {
+            "title": "Para ver antes de morrer",
+            "description": "Está incluído no livro editado por Steven Jay Schneider 1001 Filmes Para Ver Antes de Morrer."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Um filme não é um sermão, nem uma conferência... mas uma maneira de entreter os olhos e o espirito.",
+            "author": "Louis Feuillade"
+          }
+        }
       },
       {
         "id": 3059,
-        "title": "Intolerance: Love's Struggle Throughout the Ages"
+        "title": "Intolerance: Love's Struggle Throughout the Ages",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/birth-nation-0"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=nGQaAddwjxg"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "A intolerância contra Griffith",
+            "description": "A inspiração para esse filme veio quando D.W. Griffith se surpreendeu com os protestos contra o seu filme anterior, O Nascimento de uma Nação. Em resposta ao ataques que vinha sofrendo, ele quis mostrar o problema da intolerância de diversos pontos de vista."
+          },
+          {
+            "title": "A Muralha de Hollywood",
+            "description": "A Muralha da Babilônia foi construída em tamanho equivalente à original apenas para o filme, e ficou durante muito tempo na esquina da Sunset Boulevard com a Hollywood Boulevard, na Califórnia. Ela se tornou um notável ponto de referência durante os anos de ouro de Hollywood. A réplica foi o primeiro cenário ao ar livre já feito em Hollywood. Apenas depois de muitos anos, quando já estava desgastada, foi colocada abaixo. Muitos anos depois foi contruída uma réplica da réplica que ficou no complexo de montanhas de Hollywood, e foi inaugurada em 2001."
+          },
+          {
+            "title": "Sob a supervisão de um rabino",
+            "description": "As cenas de casamento na parte da vida de Cristo foram gravadas de acordo com a tradição judaica, sob a supervisão do rabino Myers. Ele era o pai de Carmel Myers, que interpretou uma escrava nas cenas da Babilônia."
+          },
+          {
+            "title": "60 feridos no hospital da produção",
+            "description": "Durante as filmagens da sequência de batalha, muitos figurantes entraram tão a fundo nos personagens que eles machucaram uns aos outros. Ao final de um dia, um total de 60 feridos foram tratados no hospital improvisado da produção."
+          },
+          {
+            "title": "Poucos romanos",
+            "description": "D.W. Griffith foi forçado a refilmar a sequencia da crucificação porque algumas organizações disseram que Griffith tinha filmado muitos figurantes judeus em volta da cruz, e poucos romanos. Griffith então atendeu à reclamação e colocou mais romanos na filmagem."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "The fragrant mystery of your body is greater than the mystery of life.",
+            "author": "Intolerance, Entretítulo"
+          }
+        }
       },
       {
         "id": 234,
-        "title": "The Cabinet of Dr. Caligari"
+        "title": "The Cabinet of Dr. Caligari",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/cabinet-dr-caligari"
+          },
+          {
+            "type": "prime_video",
+            "link": "https://www.amazon.com/gp/video/detail/B078WHTMXT"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/the-cabinet-of-dr-caligari/id924269868"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=IP0KB2XC29o"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "O primeiro do gênero",
+            "description": "É por muitos considerado o primeiro filme de horror da história."
+          },
+          {
+            "title": "Fritz Lang cotado como diretor",
+            "description": "O produtor Erich Pommer queria que Fritz Lang fosse o diretor. Lang até ficou interessado, mas decidiu trabalhar em outro filme."
+          },
+          {
+            "title": "Outra atriz no lugar da namorada de Hans",
+            "description": "Hans Janowitz escreveu o papel feminino principal para a sua namorada Gilda Langer, uma atriz de teatro em Berlim, mas foi Lil Dagover que ficou com o papel."
+          },
+          {
+            "title": "Um filme feito de papel e tinta",
+            "description": "As locações foram feitas de papel, e as sombras pintadas nas paredes."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Wiene lidava com o figurino como se fosse decoração. Ele chegou a usar algo parecido com um emplastro como maquiagem para sugerir um fantasma.",
+            "author": "David Thomsom, crítico"
+          }
+        }
       },
       {
         "id": 899,
-        "title": "Broken Blossoms"
+        "title": "Broken Blossoms",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/broken-blossoms"
+          },
+          {
+            "type": "prime_video",
+            "link": "https://www.amazon.com/gp/video/detail/B07HQ5G6G5"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004D4SALK"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Filmagens à noite",
+            "description": "As filmagens levaram 18 dias e noites. As cenas de Donald Crisp foram filmadas à noite porque ele estava dirigindo outro filme durante o dia."
+          },
+          {
+            "title": "A compra de Griffith",
+            "description": "O filme foi originalmente feito para Adolph Zukor na Paramount Pictures. D.W. Griffith comprou para poder lançá-lo na sua nova companhia, a United Artists."
+          },
+          {
+            "title": "Selecionado para a Livraria do Congresso",
+            "description": "O filme foi selecionado para o National Film Registry, Livraria do Congresso, em 1996."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Sua beleza por tanto tempo escondida, brilha como um poema.",
+            "author": "Broken Blossoms, Entretítulo"
+          }
+        }
       },
       {
         "id": 77621,
-        "title": "Within Our Gates"
+        "title": "Within Our Gates",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01C6CJ6KO/ref=atv_dl_rdr?tag=justus1ktp"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Perdido por 70 anos",
+            "description": "O filme ficou perdido por mais de 70 anos e, depois de achado na Filmoteca Espanhola, foi restaurado."
+          },
+          {
+            "title": "Cenas fortes",
+            "description": "O filme foi editado diversas vezes, porque as cenas de estupro e linchamento foram consideradas fortes demais em vista dos protestos raciais que aconteceram em 1919 em Chicago."
+          },
+          {
+            "title": "O primeiro \"filme negro\"",
+            "description": "Este é um dos filmes mais antigos que se tem conhecimento que foi feito por um americano de origem africana, e também com um elenco majoritariamente negro."
+          }
+        ]
       },
       {
         "id": 42511,
-        "title": "Orphans of the Storm"
+        "title": "Orphans of the Storm",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/orphans-storm-0"
+          },
+          {
+            "type": "prime_video",
+            "link": "https://www.amazon.com/gp/video/detail/B07M7XHHLG"
+          }
+        ]
       },
       {
         "id": 58129,
-        "title": "Körkarlen"
+        "title": "Körkarlen",
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Eu fiquei intimamente agitado com esse filme... Fui tocado por sua enorme potência cinematográfica.",
+            "author": "Ingmar Bergman"
+          }
+        }
       },
       {
         "id": 49452,
@@ -143,15 +367,96 @@
       },
       {
         "id": 669,
-        "title": "Nanook of the North"
+        "title": "Nanook of the North",
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Ao lado deste filme, o roteiro comum torna-se tão fino e branco quanto o papel em que foi impresso.",
+            "author": "The New York Times"
+          }
+        }
       },
       {
         "id": 653,
-        "title": "Nosferatu, eine Symphonie des Grauens"
+        "title": "Nosferatu, eine Symphonie des Grauens",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/nosferatu-2"
+          },
+          {
+            "type": "prime_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001O94E76"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/nosferatu-remastered/id918711927"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=SWEuP1OGx6A"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Drácula de Stoker",
+            "description": "Originalmente, o título de Nosferatu seria \"Drácula\", assim como o livro de Bram Stoker em que foi inspirado. Porém, como o próprio Stoker não autorizou o uso do nome, o diretor Friedrich-Wilhelm Murnau resolveu alterá-lo para o título atual."
+          },
+          {
+            "title": "História inédita",
+            "description": "Nosferatu é a primeira versão da clássica história do Conde Drácula nos cinemas."
+          },
+          {
+            "title": "Maldição do sol",
+            "description": "O conceito popular de que a luz do sol mata os vampiros é baseado nesta história. Nosferatu foi o primeiro filme do cinema a mostrar um vampiro morrendo desta forma."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Não pode sair agora. O lobisomem passeia pelas florestas.",
+            "author": "Nosferatu, Wirt"
+          }
+        }
       },
       {
         "id": 57283,
-        "title": "Häxan"
+        "title": "Häxan",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/haxan"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/haxan/id470898999"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=CkXlXc0lA9c"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Sem a ajuda de historiadores",
+            "description": "O diretor Benjamin Christensen originalmente planejou escrever o roteiro com a ajuda de historiadores, mas o plano foi por água abaixo quando ele soube que a maioria dos estudiosos que ele tinha em mente, era contra o filme."
+          },
+          {
+            "title": "Os \"efeitos especiais\" do filme",
+            "description": "Para fazerem a cena em que as bruxas estão voando em cima de telhados da cidade, Benjamin Christensen e seu cameraman Johan Ankerstjerne fotografaram uma cidade miniatura (cada casa tinha aproximadamente 2 metros de altura) em uma enorme maquete, que foi toda feita manualmente e precisou de 20 homens para deixá-la pronta. Depois, diversos atores caracterizados e em cima de vassouras foram fotografados contra um fundo preto. Para fazer as vestes voarem com o vento, foi necessário um motor de avião. Um total de 75 bruxas foram fotografadas, cada uma individualmente, e depois uma impressora ótica especial foi construída por Johan para colocar as bruxas juntas."
+          },
+          {
+            "title": "A atmosfera sombria das filmagens",
+            "description": "Apesar da maior parte das cenas do filme terem sido filmadas em estúdios fechados (isso porque Benjamin acreditava que os atores se sairiam melhores se fossem influenciados por uma atmosfera mais escura, sombria), o filme também contou com cenas externas. A maior parte dessas cenas foram filmadas à noite, o que era algo impensável para a época."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Nós não queimamos mais nossos velhos e pobres, mas será que eles já não sofrem cruelmente?",
+            "author": "Häxan, Entretítulo"
+          }
+        }
       },
       {
         "id": 35227,
@@ -171,11 +476,57 @@
       },
       {
         "id": 44967,
-        "title": "Стачка"
+        "title": "Стачка",
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Sem a organização das massas, o proletariado não é nada. Organizado, é tudo.",
+            "author": "Lenin, Entretítulo"
+          }
+        }
       },
       {
         "id": 992,
-        "title": "Sherlock Jr."
+        "title": "Sherlock Jr.",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/sherlock-jr-0"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B085R9HSH6/ref=atv_dl_rdr"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/sherlock-jr/id1490472341"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=fZuqWxITq38"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "A polêmica em torno do diretor",
+            "description": "Algumas fontes citam Roscoe \"Fatty\" Arbuckle como codiretor do filme. Se isso é verdade, não se sabe. Buster Keaton originalmente queria que Arbuckle trabalhasse como codiretor, mas Arbuckle estava ainda bastante deprimido com o escândalo de dois anos antes, que quase arruinou sua carreira, e tinha se tornado uma pessoa difícil de lidar. Doris Deane, a segunda esposa de Arbuckle, disse depois que seu marido havia dirigido o filme todo. Entretanto, existe uma polêmica em torno do quanto ele fez."
+          },
+          {
+            "title": "A produção do filme dentro do filme",
+            "description": "Quando Buster Keaton adormece enquanto projeta um filme, ele sonha e começa um filme dentro do filme. É informado então que o filme foi produzido por \"Veronal Film Company\", um nome bastante apropriado pois Veronal foi o primeiro remédio para dormir do mundo."
+          },
+          {
+            "title": "As acrobacias de Keaton",
+            "description": "Buster Keaton, o ator-diretor bastante comparado a Chaplin, fez ele próprio todas as acrobacias do filme."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Keaton costumava dizer: \"Nunca faça uma cena louca com algo que não seja a realidade\". Ele era sempre intensamente e exageradamente verdadeiro.",
+            "author": "Mel Brooks"
+          }
+        }
       },
       {
         "id": 84880,
@@ -183,7 +534,42 @@
       },
       {
         "id": 1405,
-        "title": "Greed"
+        "title": "Greed",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.justwatch.com/us/movie/greed"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/greed/id318535582"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "O sofrido processo de edição",
+            "description": "A versão original tinha 42 rolos, com mais de nove horas de filme. Com a ajuda de um amigo, Von Stroheim o diminuiu para quatro horas. Só que o filme foi tomado do diretor e os executivos da MGM o reduziram para 140 minutos. A edição foi feita por Joseph Farnham, que, sem ler o livro ou o script, o reduziu para 10 rolos. O filme foi lançado depois desta edição e nenhuma versão mais longa foi feita na época. Mas, em 1999, o restaurador Rick Schimidden lançou uma versão de quatro horas do filme, reconstruída a partir dos stills de produção originais e do roteiro de filmagem de Von Stroheim."
+          },
+          {
+            "title": "A insatisfação do diretor",
+            "description": "Poucas pessoas assistiram à versão original de 9 horas do filme. Depois que o filme foi editado por Stroheim e um amigo, e por último pela MGM, Stroheim se mostrou muito insatisfeito com a versão final, a que foi lançada. Ele a chamava de \"uma mutilação do meu trabalho sincero pelas mãos dos executivos da MGM\"."
+          },
+          {
+            "title": "A perda de grande parte do filme",
+            "description": "Nenhuma cópia da primeira versão foi feita, e grande parte dos rolos que não foram usados na versão lançada foram destruídos para que a prata da celulose pudesse ser extraída. Assim, uma boa parte do filme ficou perdida para sempre, e consta no American Film Institute como um dos 10 filmes mais importantes que foram perdidos."
+          },
+          {
+            "title": "Os problemas no Vale da Morte",
+            "description": "Para se chegar ao Vale da Morte da Califórnia foi necessário um dia inteiro em diversos carros e cavalos. Na locação a água teve de ser racionada, e as temperaturas em Agosto no meio do deserto chegavam a 48 graus celsius. As câmeras ficaram tão superaquecidas que tiveram que ser enroladas em toalhas geladas."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "O mais importante filme já feito na América... Numa época que os filmes geravam uma ganância que não poderia mais ser desprezada.",
+            "author": "New York Herald Tribune"
+          }
+        }
       },
       {
         "id": 372903,
@@ -195,19 +581,119 @@
       },
       {
         "id": 964,
-        "title": "The Phantom of the Opera"
+        "title": "The Phantom of the Opera",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/phantom-opera-1"
+          },
+          {
+            "type": "prime_video",
+            "link": "https://www.amazon.com/gp/video/detail/B006JISTWI/ref=atv_dl_rdr"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "O decorador dos sets",
+            "description": "Ben Carré foi chamado para decorar os sets. Ele já tinha trabalhado no Paris Opera House, e também havia morado na California fazendo locações para filmes, o que lhe deu experiência."
+          },
+          {
+            "title": "Discussão entre a equipe",
+            "description": "Edward Sedgwick dirigiu algumas cenas depois que o diretor Rupert Julian abandonou o set depois de uma discussão calorosa com a equipe e com o elenco."
+          },
+          {
+            "title": "As diversas cores do filme",
+            "description": "Diversas sequências foram filmadas em vários processos de cores. Technocolor foi usado nas cenas de Fausto e de Bal Masque, as sequências em Prizmacolor foram filmadas para a introdução, e Hanschiegel (um processo que usa carimbos para colorir) em outros lugares. Apenas a sequência em Technocolor de Bal Masque sobreviveu."
+          }
+        ]
       },
       {
         "id": 643,
-        "title": "Battleship Potemkin"
+        "title": "Battleship Potemkin",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/battleship-potemkin"
+          },
+          {
+            "type": "prime_video",
+            "link": "https://www.amazon.com/gp/video/detail/B074WBBMYC/ref=atv_dl_rdr"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/battleship-potemkin/id1355539037"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Escadarias de Odessa",
+            "description": "A famosa sequência das escadarias de Odessa não estava no roteiro original de O Encouraçado Potemkin, tendo sido incluída no filme durante sua produção"
+          },
+          {
+            "title": "Diversas versões",
+            "description": "Existem várias edições distintas de O Encouraçado Potemkin, com cenas cortadas da versão original ou com as cenas do filme rearranjadas ao longo de sua duração."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Sua virtuosidade continua deslumbrante e está a serviço de um fervor revolucionário que ainda pode ser experimentado.",
+            "author": "Philip French, crítico"
+          }
+        }
       },
       {
         "id": 962,
-        "title": "The Gold Rush"
+        "title": "The Gold Rush",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/gold-rush-1"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00CJ35GZA/ref=atv_dl_rdr"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Grandes Cenas",
+            "description": "O filme reúne algumas das cenas antológicas do cinema, como a da famosa dança dos pãezinhos, ou a que mostra o devaneio do aventureiro \"Big Jim\" que, alucinado pela fome, vê \"Carlitos\" metamorfoseado em frango. A mais célebre, porém, é a do cozido das botinas de \"Carlitos\" onde, com ares de gourmet, o personagem faz dos cordões um delicioso espaguete, das solas um fino e saboroso pássaro de caça, e dos pregos seus ossinhos delicados."
+          },
+          {
+            "title": "Cena das botinas",
+            "description": "\"Carlitos\" e seu companheiro de cena realmente comeram as botinas, feitas de alcaçuz por um confeiteiro especialmente contratado para a tarefa. Perfeccionista, Chaplin fez dezenas de tomadas e mais de vinte pares de botinas saírem do forno, antes de a cena ser aprovada."
+          },
+          {
+            "title": "Gorgia",
+            "description": "A personagem \"Georgia\" foi escrita por Chaplin especialmente para sua nova esposa, Lita Grey, que posteriormente teve que desistir da personagem por ter engravidado."
+          },
+          {
+            "title": "As duas versões",
+            "description": "Há duas versões de The Gold Rush, a primeira de 1925 e a outra de 1942. A versão sem som tem 82 minutos de duração, enquanto a versão sonorisada tem 74 minutos de duração."
+          },
+          {
+            "title": "2500 homens de rua",
+            "description": "Os 2500 homens que interpretam garimpeiros são, na verdade, homens de rua, que aceitaram participar do filme em troca de um dia de salário."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Por trás de tudo isso - das roupas engraçadas, do bigode e dos pés grandes - eu gastaria de produzier algo que mexesse com as pessoas.",
+            "author": "Charlie Chaplin"
+          }
+        }
       },
       {
         "id": 3060,
-        "title": "The Big Parade"
+        "title": "The Big Parade",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B086B7PRZ9/ref=atv_dl_rdr"
+          }
+        ]
       },
       {
         "id": 19354,
@@ -215,15 +701,108 @@
       },
       {
         "id": 19,
-        "title": "Metropolis"
+        "title": "Metropolis",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/metropolis-0"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004R0LJ5E/ref=atv_dl_rdr"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Uma versão perdida",
+            "description": "A primeira versão de Metrópolis tinha mais de três horas de duração, mas se perdeu"
+          },
+          {
+            "title": "Um filme caro",
+            "description": "Foi um dos filmes mais caros da história do cinema, tendo custado na época cinco milhões de marcos, e quase levou a Universum Film S.A. à falência;"
+          },
+          {
+            "title": "Inspiração",
+            "description": "Diversos filmes de ficção-científica utilizaram como inspiração a torre de Metropolis, como por exemplo \"Buck Rogers in the 25th Century\" (1979)"
+          },
+          {
+            "title": "C-3PO",
+            "description": "O androide C-3PO da saga de filmes de George Lucas, \"Star Wars\" teve o seu visual inspirado pela ginoide."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "A roupa de um robô sobre a pele humana produz uma emoção maior do que qualquer um possa desejar.",
+            "author": "Iris Barry"
+          }
+        }
       },
       {
         "id": 631,
-        "title": "Sunrise: A Song of Two Humans"
+        "title": "Sunrise: A Song of Two Humans",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/general"
+          },
+          {
+            "type": "prime_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01LAQEFZS/ref=atv_dl_rdr"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Camilla Horn fora do filme",
+            "description": "O diretor F.W. Murnau queria que Camilla Horn (com quem ele já havia trabalhado na Alemanha em Fausto) fizesse o papel da esposa, mas ela já estava contratada no estúdio alemão UFA naquela época e eles se recusaram a deixá-la participar do filme, então o papel ficou para Janet Gaynor."
+          },
+          {
+            "title": "Um dos melhores filmes de todos os tempos",
+            "description": "Em 2007, o American Film Institute o nomeou como o 82° melhor filme de todos os tempos. Foi a primeira vez que este filme entrou na lista."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Com Aurora, a câmera cinematográfica - por tanto tempo pesada e primitiva - finalmente aprendeu a voar.",
+            "author": "Todd Ludy, crítico"
+          }
+        }
       },
       {
         "id": 961,
-        "title": "The General"
+        "title": "The General",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B019R6PL6A"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/sunrise/id1041301013"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Incêndio durante as filmagens",
+            "description": "A cena da batalha final provocou um pequeno incêndio em uma floresta perto do rio. Buster Keaton e toda a equipe tiveram de parar de filmar para lutar contra o fogo."
+          },
+          {
+            "title": "A verdadeira General",
+            "description": "Buster Keaton queria usar a verdadeira locomotiva General que estava em Nashville, e a companhia da ferrovia inicialmente permitiu que ele usasse. Entretanto, quando se ficou sabendo que o filme era uma comédia, a ferrovia retirou a permissão, e Keaton teve que procurar por um trem em outro lugar."
+          },
+          {
+            "title": "Uma surpresa para Marion",
+            "description": "Na cena em que Johnny e Annabelle enchem o reservatório de água do trem, Marion Mack disse em uma entrevista anos depois que ela não tinha a mínima ideia de que seria ensopada. Buster Keaton não a contou que isso aconteceria, para que o choque da atriz fosse bem genuíno."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Nenhum outro comediante poderia fazer tanto e com tamanha cara de pau.",
+            "author": "James Agee, crítico"
+          }
+        }
       },
       {
         "id": 27503,
@@ -231,11 +810,49 @@
       },
       {
         "id": 697,
-        "title": "October (Ten Days that Shook the World)"
+        "title": "October (Ten Days that Shook the World)",
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Como eu gostaria de ter feito um fracasso poderoso assim.",
+            "author": "Vsevolod Pudovkin"
+          }
+        }
       },
       {
         "id": 939,
-        "title": "The Jazz Singer"
+        "title": "The Jazz Singer",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00KVWH04G"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/the-jazz-singer/id325064183"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Irmão Warner",
+            "description": "Sam Warner, o Irmão Warner, que foi apelidado de \"Pai dos Falados\", porque insistiu que o discurso de Al Jolson fosse incluído no filme, morreu na quarta-feira, 5 de outubro de 1927, apenas um dia antes que filme estreasse para o elenco remanescente e a equipe."
+          },
+          {
+            "title": "Você não ouviu nada ainda",
+            "description": "A famosa fala de Al Jolson (como Jack Robin) \"Você não ouviu nada ainda.\" foi um improviso. A intenção era de que o filme só sincronizasse a música, não a fala, mas Jolson soltou essa fala após a música \"Dirty Hands, Dirty Face\" e o diretor sabiamente a deixou dentro."
+          },
+          {
+            "title": "Nomes cogitados",
+            "description": "George Jessel, estrela da versão teatral, foi convidado para interpretar o mesmo papel no filme, mas recusou devido a uma disputa salarial. Eddie Cantor também foi convidado, e também recusou o papel."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "Esperem um minuto, esperem um minuto! Vocês ainda não ouviram nada!",
+            "author": "The Jazz Singer, Jack Robin"
+          }
+        }
       },
       {
         "id": 42536,
@@ -255,11 +872,58 @@
       },
       {
         "id": 780,
-        "title": "The Passion of Joan of Arc"
+        "title": "The Passion of Joan of Arc",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/passion-joan-arc"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B07CZSTWCG/ref=atv_dl_rdr"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Filme redescoberto depois de meio século",
+            "description": "Uma cópia da versão original, que estava perdida há meio século, foi redescoberta na década de 80 em um hospício em Oslo, na Noruega. Outras cópias foram destruídas quando o depósito em que estavam guardadas pegou fogo."
+          },
+          {
+            "title": "Sangue de verdade",
+            "description": "Sangue de verdade de um machucado foi usado na cena em que cortam o braço de Joana, mas o sangue era de uma dublê e não de Falconetti."
+          },
+          {
+            "title": "Sem maquiagem",
+            "description": "Nenhum dos atores usou maquiagem, o que era impensável na época. Dreyer achava que a lente da câmera favorecia o rosto dos atores."
+          }
+        ],
+        "quote": {
+          "type": "quote",
+          "quote": {
+            "quote": "A atuação de Joana d'Arc de Renée Falconetti pode ser considerada a melhor performance já registrada em um filme.",
+            "author": "Pauline Kael, crítico"
+          }
+        }
       },
       {
         "id": 626,
-        "title": "Un chien andalou"
+        "title": "Un chien andalou",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=cB7gd_t6WMQ"
+          }
+        ],
+        "did_you_know_list": [
+          {
+            "title": "Participação do criador",
+            "description": "O padre arrastado junto com um piano é Salvador Dalí, idealizador do filme junto com Buñuel."
+          },
+          {
+            "title": "O choque",
+            "description": "Um olho de vaca foi utilizado na impactante cena do corte."
+          }
+        ]
       },
       {
         "id": 25768,
@@ -275,7 +939,21 @@
       },
       {
         "id": 26317,
-        "title": "Man with a Movie Camera"
+        "title": "Man with a Movie Camera",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.justwatch.com/us/movie/man-with-a-movie-camera"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/man-with-a-movie-camera/id1404166673"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/man-movie-camera"
+          }
+        ]
       },
       {
         "id": 905,
@@ -284,44 +962,6 @@
       {
         "id": 543,
         "title": "Blackmail"
-      },
-
-
-      {
-        "id": 0,
-        "review_results": [
-          {
-            "language": "pt-BR",
-            "reviews": [
-              {
-                "reviewer": "plano_critico",
-                "reviewer_site_name": "Plano Crítico",
-                "date_formated": "",
-                "reviewer_name": "",
-                "review_url": "",
-                "review_description": "",
-                "review_rating": 5.0
-              },
-              {
-                "reviewer": "omelete",
-                "reviewer_site_name": "Omelete",
-                "date_formated": "",
-                "reviewer_name": "",
-                "review_url": "",
-                "review_description": "",
-                "review_rating": 5.0
-              },
-              {
-                "reviewer": "adoro_cinema",
-                "reviewer_site_name": "Adoro Cinema",
-                "reviewer_name": "",
-                "review_url": "",
-                "review_description": "",
-                "review_rating": 5.0
-              }
-            ]
-          }
-        ]
       }
     ]
   },

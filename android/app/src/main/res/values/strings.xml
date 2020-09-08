@@ -143,10 +143,8 @@
     </string-array>
     <string-array name="movie_language_entries">
         <item>@string/pt_br_country_name</item>
-        <item>@string/en_us_country_name</item>
     </string-array>
     <string-array name="movie_language_values">
         <item>pt-BR</item>
-        <item>en-US</item>
     </string-array>
 </resources>

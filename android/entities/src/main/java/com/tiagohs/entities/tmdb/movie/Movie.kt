@@ -38,7 +38,7 @@ data class Movie(
     @SerializedName("vote_average") val voteAverage: Double? = null,
     @SerializedName("vote_count") val voteCount: Int? = null,
     @SerializedName("videos") val videos: MovieVideos? = null,
-    @SerializedName("images") val images: MovieImages? = null,
+    @SerializedName("images") var images: MovieImages? = null,
     @SerializedName("keywords") val keywords: KeywordList? = null,
     @SerializedName("releases") val releases: Releases? = null,
     @SerializedName("similar_movies") val similarMovies: SimilarMovies? = null,

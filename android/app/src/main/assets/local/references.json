@@ -109,6 +109,76 @@
     ]
   },
   {
+    "name": "Youtube",
+    "references": [
+      {
+        "type": "media",
+        "title": "Every Frame a Painting",
+        "subtitle": "Canal Youtube em Inglês",
+        "description": "Every Frame a Painting was a series of video essays about film form, made from April 2014 to September 2016, by Taylor Ramos and Tony Zhou.",
+        "link": "https://www.youtube.com/c/everyframeapainting",
+        "mediaType": "Youtube",
+        "image": {
+          "image_type": "online",
+          "url": "https://yt3.ggpht.com/a/AATXAJy743KGmO_cq_JdChzZ3afQcy5m_u9dzZuAxCh2=s88-c-k-c0x00ffffff-no-rj",
+          "content_description": "Every Frame a Painting Logo"
+        }
+      },
+      {
+        "type": "media",
+        "title": "StudioBinder",
+        "subtitle": "Canal Youtube em Inglês",
+        "description": "StudioBinder is a production management solution that helps video and photo productions create call sheets, shot lists, shooting schedules, breakdowns, storyboards, moodboards and more.",
+        "link": "https://www.youtube.com/c/StudioBinder",
+        "mediaType": "Youtube",
+        "image": {
+          "image_type": "online",
+          "url": "https://yt3.ggpht.com/a/AATXAJzmrjZ1w3OtOHpEYAEdRh4USetkiPLRVs321x5O8w=s88-c-k-c0x00ffffff-no-rj",
+          "content_description": "StudioBinder Logo"
+        }
+      },
+      {
+        "type": "media",
+        "title": "kaptainkristian",
+        "subtitle": "Canal Youtube em Inglês",
+        "description": "A series of video-essays created by Kristian Williams about his favorite pieces of media.",
+        "link": "https://www.youtube.com/c/kaptainkristian",
+        "mediaType": "Youtube",
+        "image": {
+          "image_type": "online",
+          "url": "https://yt3.ggpht.com/a/AATXAJzd9KflwAK7z0gXChZe7APM9iGUmGv43593iUddWA=s88-c-k-c0x00ffffff-no-rj",
+          "content_description": "kaptainkristian Logo"
+        }
+      },
+      {
+        "type": "media",
+        "title": "Nerdwriter1",
+        "subtitle": "Canal Youtube em Inglês",
+        "description": "The Nerdwriter is a weekly video essay series that puts ideas to work.",
+        "link": "https://www.youtube.com/user/Nerdwriter1",
+        "mediaType": "Youtube",
+        "image": {
+          "image_type": "online",
+          "url": "https://yt3.ggpht.com/a/AATXAJyw3qOSD9nT_lIjGnoVF8whNP_Agw-z2ruQxLHysA=s88-c-k-c0x00ffffff-no-rj",
+          "content_description": "Nerdwriter1 Logo"
+        }
+      },
+      {
+        "type": "media",
+        "title": "Lessons from the Screenplay",
+        "subtitle": "Canal Youtube em Inglês",
+        "description": "I believe that a more informed audience raises the bar for storytelling. That examining the techniques used to tell great stories makes your own writing better and your appreciation for the stories deeper.\n\nWith Lessons from the Screenplay, I make videos that analyze movie scripts to examine exactly how and why they are so good at telling their stories. Part educational series and part love letter to awesome films, Lessons from the Screenplay aims to be a fun way to learn more about your favorite films and help us all become better storytellers.\n\nI’ll be releasing new videos every couple weeks, and taking suggestions about what scripts I should look at in future episodes.",
+        "link": "https://www.youtube.com/c/LessonsfromtheScreenplay",
+        "mediaType": "Youtube",
+        "image": {
+          "image_type": "online",
+          "url": "https://yt3.ggpht.com/a/AATXAJwaJhVPu260mmSsjCX7uvoxMPRUEC2967u7KCyWdw=s88-c-k-c0x00ffffff-no-rj",
+          "content_description": "Lessons from the Screenplay Logo"
+        }
+      }
+    ]
+  },
+  {
     "name": "Links",
     "references": [
       {
