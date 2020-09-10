@@ -35,6 +35,9 @@ data class MainTopicItem(
     @SerializedName("title_background_color")
     val titleBackgroundColor: String? = null,
 
+    @SerializedName("color")
+    val color: String? = null,
+
     @SerializedName("quote_position")
     val quotePosition: ViewPosition,
 

@@ -21,6 +21,7 @@ import com.tiagohs.entities.Sumario
 import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.loadImage
+import com.tiagohs.helpers.extensions.setResourceBackgroundColor
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.tools.HidingScrollListener
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
@@ -107,6 +108,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
 
     override fun setupHeader() {
         mainTopicName.setResourceText(mainTopic?.title)
+        mainTopic?.color?.let { mainTopicName.setResourceBackgroundColor(it) }
         pageTitle.setResourceText(sumario?.title)
         pageDescription.setResourceText(sumario?.description)
 
