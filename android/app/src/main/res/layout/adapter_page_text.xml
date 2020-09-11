@@ -54,8 +54,37 @@
         android:lineSpacingMultiplier="1.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/contentCreditsContainer"
         tools:text="Teste de Titulo Teste de Titulo Teste de Titulo Teste de Titulo"
     />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentCreditsContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentCredits"
+            android:textSize="@dimen/text_size_zeplin_18pt"
+            android:textColor="@color/md_grey_800"
+            android:textColorLink="@color/md_blue_500"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:lineSpacingMultiplier="1.1"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Teste de Titulo Teste de Titulo Teste de Titulo Teste de Titulo"
+            tools:visibility="visible"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

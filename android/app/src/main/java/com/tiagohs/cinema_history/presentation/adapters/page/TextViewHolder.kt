@@ -26,6 +26,7 @@ class TextViewHolder(
         contentText.setResourceFont(contentTextItem.font)
 
         setupTitle(contentTextItem)
+        setupCredits(contentTextItem)
     }
 
     private fun setupTitle(contentText: ContentText) {
@@ -42,6 +43,20 @@ class TextViewHolder(
 
         contentTitle.hide()
         separator.hide()
+    }
+
+    private fun setupCredits(contentText: ContentText) {
+        val context = containerView.context ?: return
+        val credits = contentText.contentCredits
+
+        if (credits != null) {
+            contentCredits.show()
+            contentCredits.setupLinkableTextView(context)
+            contentCredits.setResourceStyledText(credits)
+            return
+        }
+
+        contentCredits.hide()
     }
 
     companion object {

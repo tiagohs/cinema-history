@@ -11,6 +11,9 @@ data class ContentText(
     @SerializedName("content_title")
     var contentTitle: String? = null,
 
+    @SerializedName("content_credits")
+    var contentCredits: String? = null,
+
     @SerializedName("font")
     var font: String?
 ): Content(), Serializable
