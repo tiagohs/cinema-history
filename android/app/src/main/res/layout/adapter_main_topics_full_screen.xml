@@ -60,13 +60,23 @@
                     android:id="@+id/title"
                     android:transitionName="mainTopicTitleTransition"
                     android:fontFamily="@font/oswald_bold"
-                    android:textSize="29sp"
+                    android:textSize="@dimen/text_size_zeplin_38pt"
                     android:textColor="@color/md_white_1000"
                     android:textAllCaps="true"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     />
+
+                <ImageView
+                    android:layout_width="@dimen/main_topic_next_button_width"
+                    android:layout_height="0dp"
+                    android:id="@+id/nextButton"
+                    app:srcCompat="@drawable/ic_navigate_next_white_24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/title"
+                    app:layout_constraintBottom_toBottomOf="@id/title"
+                />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

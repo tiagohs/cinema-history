@@ -127,8 +127,9 @@
 
     <!-- MAIN TOPIC -->
     <dimen name="main_topic_card_image_height">250dp</dimen>
-    <dimen name="main_topic_card_full_image_height">350dp</dimen>
+    <dimen name="main_topic_card_full_image_height">300dp</dimen>
     <dimen name="main_topic_degrade_bottom">200dp</dimen>
+    <dimen name="main_topic_next_button_width">40dp</dimen>
 
     <!-- MAIN TOPIC -->
     <dimen name="main_topic_quote_image_width">100dp</dimen>
