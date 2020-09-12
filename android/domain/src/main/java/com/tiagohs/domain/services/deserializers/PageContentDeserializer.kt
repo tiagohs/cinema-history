@@ -29,6 +29,7 @@ class PageContentDeserializer: JsonDeserializer<Content> {
             ContentType.VIDEO -> Gson().fromJson(obj, ContentVideo::class.java)
             ContentType.MOVIE_LIST -> Gson().fromJson(obj, ContentMovieList::class.java)
             ContentType.PERSON_LIST -> Gson().fromJson(obj, ContentPersonList::class.java)
+            ContentType.MOVIE_LIST_SPECIAL -> Gson().fromJson(obj, ContentMovieListSpecial::class.java)
         }
     }
 }

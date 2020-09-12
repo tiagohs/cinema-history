@@ -37,7 +37,10 @@ enum class ContentType(
     MOVIE_LIST("movie_list"),
 
     @SerializedName("person_list")
-    PERSON_LIST("person_list");
+    PERSON_LIST("person_list"),
+
+    @SerializedName("movie_list_special")
+    MOVIE_LIST_SPECIAL("movie_list_special");
 
     companion object {
         fun getContentType(type: String): ContentType {

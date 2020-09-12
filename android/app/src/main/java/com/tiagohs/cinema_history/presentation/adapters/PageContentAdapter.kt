@@ -35,6 +35,7 @@ class PageContentAdapter(
         ContentType.LINK_SCREEN.ordinal -> LinkScreenViewHolder.LAYOUT_ID
         ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder.LAYOUT_ID
         ContentType.PERSON_LIST.ordinal -> PersonListViewHolder.LAYOUT_ID
+        ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder.LAYOUT_ID
         else -> R.layout.adapter_empty
     }
 
@@ -51,6 +52,7 @@ class PageContentAdapter(
             ContentType.LINK_SCREEN.ordinal -> LinkScreenViewHolder(view, presentScreen)
             ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder(view, appLanguage, onMovieClicked)
             ContentType.PERSON_LIST.ordinal -> PersonListViewHolder(view, onPersonClicked)
+            ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder(view, onMovieClicked)
             else -> object : BasePageViewHolder(view) {}
         }
 

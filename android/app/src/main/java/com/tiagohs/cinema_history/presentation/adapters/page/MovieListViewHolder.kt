@@ -44,8 +44,6 @@ class MovieListViewHolder(
                 setPageTransformer(SliderTransformer(4))
             }
 
-
-
             isSetup = true
         }
     }
