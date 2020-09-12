@@ -48,7 +48,7 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
 
             true
         }
-        moviesLanguage?.summary = settingManager.getNameLanguage(settingManager.getMovieLanguage())
+        moviesLanguage?.summary = context.getResourceString(R.string.pt_br_country_name)
         moviesLanguage?.setOnPreferenceChangeListener { preference, newLanguage ->
             settingManager.updateMovieLanguage(newLanguage as String)
             preference.summary = settingManager.getNameLanguage(settingManager.getMovieLanguage())

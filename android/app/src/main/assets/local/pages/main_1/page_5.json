@@ -207,6 +207,214 @@
       "content_text": "<a href=\"https://_{type: 'screen', 'id': 19, 'screen_type': 'movie'}\">Metropolis</a> (BR: Metrópolis, 1927), de <i>Friz Lang</i>, também é considerado um dos mais famosos filmes do Expressionismo e do cinema mudo como um todo. O longa-metragem mistura elementos góticos com uma estética futurista que ainda hoje inspira o gênero de ficção científica. Sua visão extremista de uma sociedade movida pela luta de classes, com os ricos vivendo no topo iluminado da cidade e os pobres embaixo, nas sombras, o filme revela as desigualdades econômicas da Alemanha na República Weimar, mesclando angústias pessoais com crítica social. A própria multidão de operários é uma parte essencial da estética visual do filme, movendo-se de maneira simétrica e mecânica, como a máquina gigante à qual servem."
     },
     {
+      "type": "movie_list",
+      "movies": [
+        {
+          "poster_path": "\/jHKzGYwf7P34vz8MhJBTN6cnaYD.jpg",
+          "popularity": 15.365,
+          "vote_count": 412,
+          "video": false,
+          "media_type": "movie",
+          "id": 6404,
+          "adult": false,
+          "backdrop_path": "\/h3wvrOtDI8saCxNAgadiZOSG0Rg.jpg",
+          "original_language": "de",
+          "original_title": "Nosferatu - Phantom der Nacht",
+          "genre_ids": [
+            18,
+            27
+          ],
+          "title": "Nosferatu the Vampyre",
+          "vote_average": 7.4,
+          "overview": "Jonathan Harker, a real estate agent, goes to Transylvania to visit the mysterious Count Dracula and formalize the purchase of a property in Wismar. Once Jonathan is caught under his evil spell, Dracula travels to Wismar where he meets the beautiful Lucy, Jonathan's wife, while a plague spreads through the town, now ruled by death.",
+          "release_date": "1979-01-17"
+        },
+        {
+          "poster_path": "\/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+          "popularity": 13.613,
+          "vote_count": 820,
+          "video": false,
+          "media_type": "movie",
+          "id": 234,
+          "adult": false,
+          "backdrop_path": "\/bd7d9owGqoNHy2kBtwK3tbdDHI6.jpg",
+          "original_language": "de",
+          "original_title": "Das Cabinet des Dr. Caligari",
+          "genre_ids": [
+            80,
+            18,
+            27,
+            53
+          ],
+          "title": "The Cabinet of Dr. Caligari",
+          "vote_average": 7.9,
+          "overview": "Francis, a young man, recalls in his memory the horrible experiences he and his fiancée Jane recently went through. Francis and his friend Alan visit The Cabinet of Dr. Caligari, an exhibit where the mysterious doctor shows the somnambulist Cesare, and awakens him for some moments from his death-like sleep.",
+          "release_date": "1920-02-27"
+        },
+        {
+          "poster_path": "\/o61cxCGlLdPxzv7BPYitmbDfaeA.jpg",
+          "popularity": 4.566,
+          "vote_count": 87,
+          "video": false,
+          "media_type": "movie",
+          "id": 133063,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "fr",
+          "original_title": "Le manoir du diable",
+          "genre_ids": [
+            14,
+            27
+          ],
+          "title": "The Haunted Castle",
+          "vote_average": 6.4,
+          "overview": "Le Manoir du diable or The House of the Devil, released in the United States as The Haunted Castle and in Britain as The Devil's Castle, is an 1896 French short silent film directed by Georges Méliès. The film tells the story of an encounter with the Devil and various attendant phantoms. It is intended to evoke amusement and wonder from its audiences, rather than fear. However, because of its themes and characters, it has been considered to technically be the first horror film, as well as potentially the first vampire film.  The film opens with a large bat flying into a medieval castle, circling a room, and then suddenly changing into the Devil. Producing a cauldron, Mephistopheles conjures up a young girl and various supernatural creatures in an effort to scare two cavaliers, eventually succeeding in causing one to flee. Ultimately the remaining cavalier is confronted face-to-face by the Devil before reaching for and brandishing a large crucifix, which causes the Devil to vanish.",
+          "release_date": "1896-12-24"
+        },
+        {
+          "vote_count": 99,
+          "popularity": 6.31,
+          "id": 2929,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6,
+          "title": "Frankenstein",
+          "release_date": "1910-03-18",
+          "original_language": "en",
+          "original_title": "Frankenstein",
+          "genre_ids": [
+            27,
+            878,
+            14
+          ],
+          "backdrop_path": "\/vqZEHv2KxjyVXjbtMhIDIZ6xoLf.jpg",
+          "adult": false,
+          "overview": "Frankenstein, a young medical student, trying to create the perfect human being, instead creates a misshapen monster. Made ill by what he has done, Frankenstein is comforted by his fiancée; but on his wedding night he is visited by the monster.",
+          "poster_path": "\/xPzF7qW6FFZEzfsnsKqNOncxJNU.jpg"
+        },
+        {
+          "poster_path": "\/v53aFWdXYwZJCiblIsC0ZqiS90r.jpg",
+          "popularity": 8.944,
+          "vote_count": 167,
+          "video": false,
+          "media_type": "movie",
+          "id": 57283,
+          "adult": false,
+          "backdrop_path": "\/ek9kwqeN0YjH2Wc2ZdROwMMHCL7.jpg",
+          "original_language": "sv",
+          "original_title": "Häxan",
+          "genre_ids": [
+            99,
+            27
+          ],
+          "title": "Häxan",
+          "vote_average": 7.4,
+          "overview": "Grave robbing, torture, possessed nuns, and a satanic Sabbath: Benjamin Christensen's legendary film uses a series of dramatic vignettes to explore the scientific hypothesis that the witches of the Middle Ages suffered the same hysteria as turn-of-the-century psychiatric patients. But the film itself is far from serious-- instead it's a witches' brew of the scary, gross, and darkly humorous.",
+          "release_date": "1922-09-18"
+        },
+        {
+          "poster_path": "\/4vVU6N5va5DWBigpkINNrc7pvW.jpg",
+          "popularity": 1.636,
+          "vote_count": 13,
+          "video": false,
+          "media_type": "movie",
+          "id": 174178,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "fr",
+          "original_title": "La folie du Docteur Tube",
+          "genre_ids": [
+            35,
+            878
+          ],
+          "title": "The Madness of Dr. Tube",
+          "vote_average": 5.5,
+          "overview": "A scientist develops a powder that he believes will have the effect of distorting reality for those who take it. To test its effect tries it out on his assistant, a dog, himself and two young couples.",
+          "release_date": "1915-01-01"
+        },
+        {
+          "poster_path": "\/itfhSxbIgsan85iY1NrquIx7qxo.jpg",
+          "popularity": 8.443,
+          "vote_count": 191,
+          "video": false,
+          "media_type": "movie",
+          "id": 964,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Phantom of the Opera",
+          "genre_ids": [
+            18,
+            27
+          ],
+          "title": "The Phantom of the Opera",
+          "vote_average": 7.2,
+          "overview": "A grotesquely disfigured composer known as \"The Phantom\" haunts Paris' opera house, where he's secretly grooming Christine Daae to be an opera diva. Luring her to his remote underground lair, The Phantom declares his love. But Christine loves Raoul de Chagny and plans to elope with him. When The Phantom learns this, he abducts Christine.",
+          "release_date": "1925-09-22"
+        },
+        {
+          "poster_path": "\/m79FfxGQtlvVLQkLXaeeqZgedPW.jpg",
+          "popularity": 6.048,
+          "vote_count": 93,
+          "video": false,
+          "media_type": "movie",
+          "id": 27517,
+          "adult": false,
+          "backdrop_path": "\/6NbBZmqOToN2oj9EvmxpgMkaQ6z.jpg",
+          "original_language": "en",
+          "original_title": "The Man Who Laughs",
+          "genre_ids": [
+            18,
+            27
+          ],
+          "title": "The Man Who Laughs",
+          "vote_average": 7.2,
+          "overview": "Gwynplaine, son of Lord Clancharlie, has a permanent smile carved on his face by the King, in revenge for Gwynplaine's father's treachery. Gwynplaine is adopted by a travelling showman and becomes a popular idol. He falls in love with the blind Dea. The king dies, and his evil jester tries to destroy or corrupt Gwynplaine.",
+          "release_date": "1928-04-27"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 9076,
+          "profile_path": "\/dYsDlJg7XMM8knC7y8ndeIHMA9F.jpg",
+          "name": "F.W. Murnau"
+        },
+        {
+          "id": 11523,
+          "profile_path": "\/ba3Kfc01Dbigt41lyuFoZR7gmv1.jpg",
+          "name": "Georges Méliès"
+        },
+        {
+          "id": 89674,
+          "profile_path": "\/ueWByfcQgvCPDm5L5jNNJB4m0Wu.jpg",
+          "name": "Benjamin Christensen"
+        },
+        {
+          "id": 14481,
+          "profile_path": "\/3wZ0n7Yt0JSMju2UAyWYOtLgUzG.jpg",
+          "name": "Lon Chaney"
+        },
+        {
+          "id": 29720,
+          "profile_path": "\/fVtRZuYJkt9YFgK4Y2OnCfGFsAu.jpg",
+          "name": "Abel Gance"
+        },
+        {
+          "id": 68,
+          "profile_path": "\/np94pnm3x4PBjxCZ4KG5BfAib2A.jpg",
+          "name": "Fritz Lang"
+        },
+        {
+          "id": 3001,
+          "profile_path": "\/5PvSGqd3ZR9hjLE0Wo5yUPnKgPx.jpg",
+          "name": "Conrad Veidt"
+        }
+      ]
+    },
+    {
       "type": "link_screen",
       "subtitle": "Os acontecimentos que marcaram o mundo",
       "title": "Timeline de Acontecimentos de 1895 a 1929",

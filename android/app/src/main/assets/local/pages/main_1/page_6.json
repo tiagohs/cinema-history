@@ -162,6 +162,174 @@
       "content_text": "Em busca do ouro é considerado uma das mais perfeitas realizações de Chaplin. Embora seu gosto pelo próprio trabalho tenha mudado com o tempo, no fim da vida ele declararia diversas vezes que este era o filme pelo qual gostaria de ser lembrado."
     },
     {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 900,
+          "popularity": 15.046,
+          "id": 962,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 8,
+          "title": "The Gold Rush",
+          "release_date": "1925-07-12",
+          "original_language": "en",
+          "original_title": "The Gold Rush",
+          "genre_ids": [
+            12,
+            35,
+            18
+          ],
+          "backdrop_path": "\/jIqp5xXY2aw1kxnBPyCXkKQBOJ3.jpg",
+          "adult": false,
+          "overview": "A lone prospector ventures into Alaska looking for gold. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.",
+          "poster_path": "\/eQRFo1qwRREYwj47Yoe1PisgOle.jpg"
+        },
+        {
+          "poster_path": "\/tmyxr4ZkUKtcUwBc7ptyIWdLZEH.jpg",
+          "popularity": 12.435,
+          "vote_count": 624,
+          "video": false,
+          "media_type": "movie",
+          "id": 961,
+          "adult": false,
+          "backdrop_path": "\/dYocWQoWk3Y6vBa0pGc0OQ8GLqn.jpg",
+          "original_language": "en",
+          "original_title": "The General",
+          "genre_ids": [
+            28,
+            12,
+            35,
+            18,
+            10752
+          ],
+          "title": "The General",
+          "vote_average": 8.1,
+          "overview": "During America’s Civil War, Union spies steal engineer Johnnie Gray's beloved locomotive, 'The General'—with Johnnie's lady love aboard an attached boxcar—and he single-handedly must do all in his power to both get The General back and to rescue Annabelle.",
+          "release_date": "1926-12-25"
+        },
+        {
+          "poster_path": "\/jWoeNjQPtRZJbS0LRPesY9uizgS.jpg",
+          "popularity": 9.425,
+          "vote_count": 229,
+          "video": false,
+          "media_type": "movie",
+          "id": 22596,
+          "adult": false,
+          "backdrop_path": "\/oC6EnuxAE4ZR15rUPqV5nFNCLLB.jpg",
+          "original_language": "en",
+          "original_title": "Safety Last!",
+          "genre_ids": [
+            28,
+            35,
+            10749
+          ],
+          "title": "Safety Last!",
+          "vote_average": 7.8,
+          "overview": "When a store clerk organizes a contest to climb the outside of a tall building, circumstances force him to make the perilous climb himself.",
+          "release_date": "1923-04-01"
+        },
+        {
+          "vote_count": 4,
+          "popularity": 0.961,
+          "id": 133647,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6,
+          "title": "Hands Up!",
+          "release_date": "1926-01-11",
+          "original_language": "en",
+          "original_title": "Hands Up!",
+          "genre_ids": [
+            35,
+            36
+          ],
+          "backdrop_path": "\/4cOcshhSPSfdvsF8xtPeyFfPLZO.jpg",
+          "adult": false,
+          "overview": "Jack, a southern spy during the Civil War, must try to capture a shipment of gold. His task is complicated by the two sisters, Native Americans, and a firing squad.",
+          "poster_path": "\/b8qPwexilzpxpKyWciuG2yKTSSh.jpg"
+        },
+        {
+          "vote_count": 1189,
+          "popularity": 10.367,
+          "id": 10098,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 8.2,
+          "title": "The Kid",
+          "release_date": "1921-01-21",
+          "original_language": "en",
+          "original_title": "The Kid",
+          "genre_ids": [
+            35,
+            18
+          ],
+          "backdrop_path": "\/qxUd8WgfkKIoxlmKFWTjddAOJDz.jpg",
+          "adult": false,
+          "overview": "A tramp cares for a boy after he's abandoned as a newborn by his mother. Later the mother has a change of heart and aches to be reunited with her son.",
+          "poster_path": "\/drgMcyTsySQBnUPGaBThCHGdlWT.jpg"
+        },
+        {
+          "vote_count": 172,
+          "popularity": 7.927,
+          "id": 25768,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.7,
+          "title": "Steamboat Bill, Jr.",
+          "release_date": "1928-05-09",
+          "original_language": "en",
+          "original_title": "Steamboat Bill, Jr.",
+          "genre_ids": [
+            35,
+            18,
+            28,
+            10751,
+            10749
+          ],
+          "backdrop_path": "\/erHwsN4OrN8FReP24Pv315vzArD.jpg",
+          "adult": false,
+          "overview": "The just out of college effete son of a no-nonsense steamboat captain comes to visit his father whom he's not seen since he was little.",
+          "poster_path": "\/zygJMsmXxeyDc1N67OCZc8xtq4I.jpg"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 13848,
+          "profile_path": "\/lRI9Ky1SMOehn04OqhYJ5hQfgIK.jpg",
+          "name": "Charlie Chaplin"
+        },
+        {
+          "id": 8635,
+          "profile_path": "\/kEybBFkO5AX83o3WKyNDfuvfVrn.jpg",
+          "name": "Buster Keaton"
+        },
+        {
+          "id": 88953,
+          "profile_path": "\/er4ZNznuum2v8vqeZr2fT3Friqo.jpg",
+          "name": "Harold Lloyd"
+        },
+        {
+          "id": 1167399,
+          "profile_path": "\/prazmRnbuIUeHO6McGOUQHDUeOd.jpg",
+          "name": "André Deed"
+        },
+        {
+          "id": 1016035,
+          "profile_path": "\/b3PKyHuw6OyOATZeyOPJkC000mY.jpg",
+          "name": "Max Linder"
+        },
+        {
+          "id": 1022678,
+          "profile_path": "\/qqfgQXxUjhhaBL91h7eWCMnkWl9.jpg",
+          "name": "Harry Langdon"
+        }
+      ]
+    },
+    {
       "type": "link_screen",
       "subtitle": "Os acontecimentos que marcaram o mundo",
       "title": "Timeline de Acontecimentos de 1895 a 1929",

@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
 import android.view.View
+import android.widget.FrameLayout
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -23,8 +24,8 @@ class SlideViewHolder(
         val contentSlide = item as? ContentSlide ?: return
 
         contentSlide.height?.let {
-            imageList.layoutParams = ConstraintLayout.LayoutParams(
-                ConstraintLayout.LayoutParams.MATCH_PARENT,
+            imageList.layoutParams = FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.MATCH_PARENT,
                 it.convertIntToDp(context)
             )
         }

@@ -165,6 +165,174 @@
       "content_text": "Com o advento do som, a produção de filmes tornou-se tecnicamente mais complexa e cara, e empresas, como a Lincoln, que sempre existiram nas margens, foram cada vez mais afastadas. O fato de tão poucos desses filmes sobreviverem também é em parte uma função do escasso financeiro dessas empresas. O resultado disso, combinado com um subfinanciamento consistente na produção de filmes afro-americanos, é de que muitas pessoas simplesmente não sabem da existência de <i>race films</i>. Sendo que, na verdade, cineastas afro-americanos vêm praticando o ofício desde o início do meio."
     },
     {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 0,
+          "popularity": 0.6,
+          "id": 273439,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 0,
+          "title": "The Homesteader",
+          "release_date": "1919-01-02",
+          "original_language": "en",
+          "original_title": "The Homesteader",
+          "genre_ids": [],
+          "backdrop_path": "\/wB3vVHx6SamXA8yIYFqWq62ayr6.jpg",
+          "adult": false,
+          "overview": "Directed by Oscar Micheaux and Jerry Mills.",
+          "poster_path": "\/e8SLRFhakgia458jZKpwLCvXSh5.jpg"
+        },
+        {
+          "poster_path": "\/fpYu6zTCaAHMX0t8HGAD5q9syWz.jpg",
+          "popularity": 3.644,
+          "vote_count": 41,
+          "video": false,
+          "media_type": "movie",
+          "id": 77621,
+          "adult": false,
+          "backdrop_path": "\/eGhQXfGeNdJfywH6ZmjRwN3f1X8.jpg",
+          "original_language": "en",
+          "original_title": "Within Our Gates",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "Within Our Gates",
+          "vote_average": 5.7,
+          "overview": "Abandoned by her fiancé, an educated negro woman with a shocking past dedicates herself to helping a near bankrupt school for impoverished negro youths.",
+          "release_date": "1920-01-12"
+        },
+        {
+          "poster_path": "\/1FtWJ7X42rMNeSxb2CDfvtJCTyi.jpg",
+          "popularity": 1.4,
+          "vote_count": 7,
+          "video": false,
+          "media_type": "movie",
+          "id": 175226,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Symbol of the Unconquered",
+          "genre_ids": [
+            18
+          ],
+          "title": "The Symbol of the Unconquered",
+          "vote_average": 5.4,
+          "overview": "Racists learn that the land a negro owns lies over a vast oil field, and threaten his life when he refuses to sell.",
+          "release_date": "1920-11-28"
+        },
+        {
+          "poster_path": "\/rLPrttxRyYtkcQEGXjsTXp1Glh4.jpg",
+          "popularity": 3.969,
+          "vote_count": 12,
+          "video": false,
+          "media_type": "movie",
+          "id": 86955,
+          "adult": false,
+          "backdrop_path": "\/v5B596E3IvllVvIJc3EpJJj0VwM.jpg",
+          "original_language": "en",
+          "original_title": "Body and Soul",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "Body and Soul",
+          "vote_average": 6.4,
+          "overview": "A minister is malevolent and sinister behind his righteous facade. He consorts with, and later extorts from, the owner of a gambling house, and betrays an honest girl, eventually driving them both to ruin.",
+          "release_date": "1925-11-09"
+        },
+        {
+          "poster_path": "\/pfs9ctsTyqLJ1wCTzkot13CMkuB.jpg",
+          "popularity": 2.466,
+          "vote_count": 6,
+          "video": false,
+          "media_type": "movie",
+          "id": 22750,
+          "adult": false,
+          "backdrop_path": "\/5kMI0SzaSh2e979HNgFjylTDX9T.jpg",
+          "original_language": "en",
+          "original_title": "The Blood of Jesus",
+          "genre_ids": [
+            18,
+            14,
+            10402
+          ],
+          "title": "The Blood of Jesus",
+          "vote_average": 5,
+          "overview": "Razz accidentally shoots his wife Martha when his hunting rifle drops on the floor and discharges. The church congregation gathers at Martha’s bedside to pray for her recovery, and during this period an angel arrives to take Martha’s spirit from her body, but she is tempted by the slick Judas Green, who is an agent for Satan.",
+          "release_date": "1941-04-26"
+        },
+        {
+          "poster_path": "\/tu3CIhMajqmGwUseSxsPPdVx7yv.jpg",
+          "popularity": 0.6,
+          "vote_count": 0,
+          "video": false,
+          "media_type": "movie",
+          "id": 289526,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Harlem on the Prairie",
+          "genre_ids": [
+            28,
+            35,
+            10402,
+            37
+          ],
+          "title": "Harlem on the Prairie",
+          "vote_average": 0,
+          "overview": "A cowboy helps a pretty young woman find lost gold.",
+          "release_date": "1937-12-09"
+        },
+        {
+          "poster_path": "\/kdUp7FXe8mGBEszzDENrANUS1kv.jpg",
+          "popularity": 0.6,
+          "vote_count": 0,
+          "video": false,
+          "media_type": "movie",
+          "id": 273129,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Birth of a Race",
+          "genre_ids": [
+            18
+          ],
+          "title": "The Birth of a Race",
+          "vote_average": 0,
+          "overview": "Following the \"Birth of the Human Race\" section, the film had epic scenes of Ancient Egypt with Nubian soldiers and the rescue of infant Moses in the river. A later scene portrayed Simon of Cyrene helping Jesus carry his cross on the Via Dolorosa and the signing of the Declaration of Independence. The film then shifted to World War I, with two white brothers in a German-American family going to war on the Western Front, one fighting for the United States, and the other fighting for Germany.",
+          "release_date": "1918-01-02"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 3247,
+          "profile_path": "\/ktN2dIxPBTdt7RqpFoWD0upCbUp.jpg",
+          "name": "Noble Johnson"
+        },
+        {
+          "id": 253152,
+          "profile_path": "\/3vCDPYK5zdbvrjPkNROtYSUWAO.jpg",
+          "name": "Oscar Micheaux"
+        },
+        {
+          "id": 98568,
+          "profile_path": "\/9Mu2bol7MeJeFjeWc38UQ74DZKO.jpg",
+          "name": "Paul Robeson"
+        },
+        {
+          "id": 1328101,
+          "profile_path": "\/7MR2m8pEhihPa6KuXhjDGEjM5f1.jpg",
+          "name": "William Foster"
+        }
+      ]
+    },
+    {
       "type": "link_screen",
       "subtitle": "Os acontecimentos que marcaram o mundo",
       "title": "Timeline de Acontecimentos de 1895 a 1929",

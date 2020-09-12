@@ -72,13 +72,13 @@ data class Movie(
 
         val portugueseTitle =
             translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.title
-        if (!portugueseTitle.isNullOrBlank() && appLanguage == "pt-BR") {
+        if (!portugueseTitle.isNullOrBlank() && appLanguage == "Português Brasil") {
             return portugueseTitle
         }
 
         val englishTitle =
             translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.title
-        if (!englishTitle.isNullOrBlank() && appLanguage == "en-US") {
+        if (!englishTitle.isNullOrBlank() && appLanguage == "Inglês") {
             return englishTitle
         }
 
@@ -96,13 +96,13 @@ data class Movie(
 
         val portugueseOverview =
             translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
-        if (!portugueseOverview.isNullOrBlank() && appLanguage == "pt-BR") {
+        if (!portugueseOverview.isNullOrBlank() && appLanguage == "Português Brasil") {
             return portugueseOverview
         }
 
         val englishOverview =
             translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.overview
-        if (!englishOverview.isNullOrBlank() && appLanguage == "en-US") {
+        if (!englishOverview.isNullOrBlank() && appLanguage == "Inglês") {
             return englishOverview
         }
 

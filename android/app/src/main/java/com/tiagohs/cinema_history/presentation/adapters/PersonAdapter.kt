@@ -6,9 +6,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.dto.PersonDTO
 import com.tiagohs.entities.enums.ImageSize
-import com.tiagohs.helpers.extensions.imageUrlFromTMDB
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.setResourceText
+import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.adapter_person.*
 
 class PersonAdapter(
@@ -32,14 +30,24 @@ class PersonAdapter(
             super.bind(item, position)
 
             personName.setResourceText(item.name)
-            personSubtitle.setResourceText(item.subtitle)
-
             personImage.loadImage(
                 item.imagePath?.imageUrlFromTMDB(ImageSize.PROFILE_185),
                 containerView.context.getString(R.string.person_photo_description, item.name),
                 R.drawable.placeholder_movie_person,
                 R.drawable.placeholder_movie_person
             )
+
+            setupSubtitle(item)
+        }
+
+        private fun setupSubtitle(item: PersonDTO) {
+            val subtitle = item.subtitle
+            if (subtitle != null) {
+                personSubtitle.show()
+                personSubtitle.setResourceText(subtitle)
+            }
+
+            personSubtitle.hide()
         }
 
         override fun onClick(v: View?) {

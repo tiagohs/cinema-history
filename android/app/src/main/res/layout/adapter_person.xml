@@ -48,26 +48,38 @@
                 android:textAlignment="textStart"
                 android:layout_marginStart="@dimen/activity_vertical_margin"
                 android:layout_marginEnd="@dimen/activity_vertical_margin"
-                app:layout_constraintBottom_toTopOf="@id/personSubtitle"
+                app:layout_constraintBottom_toTopOf="@id/personSubtitleContainer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 />
 
-            <TextView
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/personSubtitle"
-                android:textColor="@color/md_white_1000"
-                android:textSize="@dimen/text_size_zeplin_18pt"
-                android:fontFamily="@font/proxima_nova_regular"
-                android:textAlignment="textStart"
+                android:id="@+id/personSubtitleContainer"
                 android:layout_marginStart="@dimen/activity_vertical_margin_0.5x"
                 android:layout_marginEnd="@dimen/activity_vertical_margin_0.5x"
                 android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-            />
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/personSubtitle"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/text_size_zeplin_18pt"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:textAlignment="textStart"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

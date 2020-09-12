@@ -12,17 +12,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.appbar.AppBarLayout
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.activities.HistoryPagesActivity
+import com.tiagohs.cinema_history.presentation.activities.MovieDetailsActivity
+import com.tiagohs.cinema_history.presentation.activities.PersonDetailsActivity
 import com.tiagohs.cinema_history.presentation.adapters.PageContentAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseFragment
+import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.domain.presenter.HistoryPagePresenter
 import com.tiagohs.domain.views.HistoryPageView
 import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
 import com.tiagohs.entities.main_topics.MainTopicItem
-import com.tiagohs.helpers.extensions.convertIntToDp
-import com.tiagohs.helpers.extensions.loadImage
-import com.tiagohs.helpers.extensions.setResourceBackgroundColor
-import com.tiagohs.helpers.extensions.setResourceText
+import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.tools.HidingScrollListener
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import kotlinx.android.synthetic.main.fragment_history_page.*
@@ -32,6 +32,9 @@ import kotlin.math.abs
 
 class HistoryPageFragment : BaseFragment(), HistoryPageView,
     HidingScrollListener.HidingScrollCallback {
+
+    @Inject
+    lateinit var settingManager: SettingsManager
 
     private var pageContent: Page? = null
     private var sumario: Sumario? = null
@@ -65,8 +68,10 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
 
         pageContentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-            adapter = PageContentAdapter(pageContent.contentList).apply {
+            adapter = PageContentAdapter(pageContent.contentList, settingManager.getMovieLanguage()).apply {
                 presentScreen = { presentScreen(it) }
+                onMovieClicked = { onMovieSelected(it) }
+                onPersonClicked = { onPersonClicked(it) }
             }
             addItemDecoration(
                 SpaceOffsetDecoration(
@@ -163,6 +168,18 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
 
     private fun presentScreen(intent: Intent) {
         startActivity(intent)
+    }
+
+    private fun onMovieSelected(movieId: Int) {
+        val context = context ?: return
+
+        activity?.startActivityWithSlideRightToLeftAnimation(MovieDetailsActivity.newIntent(context, movieId))
+    }
+
+    private fun onPersonClicked(personId: Int) {
+        val context = context ?: return
+
+        activity?.startActivityWithSlideRightToLeftAnimation(PersonDetailsActivity.newIntent(context, personId))
     }
 
     override fun setupArguments() {

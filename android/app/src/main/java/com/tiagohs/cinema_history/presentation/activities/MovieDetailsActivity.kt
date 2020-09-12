@@ -94,7 +94,7 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
     }
 
     private fun onBuildPageLinkComplete(shorLink: String) {
-        val movieTitle = movie?.getMovieTitleFromAppLanguage(settingManager.getMovieISOLanguage())
+        val movieTitle = movie?.getMovieTitleFromAppLanguage(settingManager.getMovieLanguage())
 
         shareContent(
             getString(R.string.share_history_page_description, movieTitle, shorLink),
@@ -146,8 +146,8 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
         this.movie = movie
 
         val movieInfoList = generateMovieInfoList(movie)
-        val movieTitle = movie.getMovieTitleFromAppLanguage(settingManager.getMovieISOLanguage())
-        val appLanguage = settingManager.getMovieISOLanguage()
+        val movieTitle = movie.getMovieTitleFromAppLanguage(settingManager.getMovieLanguage())
+        val appLanguage = settingManager.getMovieLanguage()
 
         collapsingToolbar.title = movieTitle
         pageContentList.apply {

@@ -9,7 +9,8 @@ import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.enums.ContentType
 
 class PageContentAdapter(
-    list: List<Content>
+    list: List<Content>,
+    private val appLanguage: String
 ) : BaseAdapter<Content, BasePageViewHolder>(list) {
 
     init {
@@ -17,6 +18,8 @@ class PageContentAdapter(
     }
 
     var presentScreen: ((Intent) -> Unit)? = null
+    var onMovieClicked: ((movieId: Int) -> Unit)? = null
+    var onPersonClicked: ((personId: Int) -> Unit)? = null
 
     private var viewHolders: ArrayList<BasePageViewHolder> = ArrayList()
 
@@ -30,6 +33,8 @@ class PageContentAdapter(
         ContentType.SLIDE.ordinal -> SlideViewHolder.LAYOUT_ID
         ContentType.VIDEO.ordinal -> VideoViewHolder.LAYOUT_ID
         ContentType.LINK_SCREEN.ordinal -> LinkScreenViewHolder.LAYOUT_ID
+        ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder.LAYOUT_ID
+        ContentType.PERSON_LIST.ordinal -> PersonListViewHolder.LAYOUT_ID
         else -> R.layout.adapter_empty
     }
 
@@ -44,6 +49,8 @@ class PageContentAdapter(
             ContentType.SLIDE.ordinal -> SlideViewHolder(view)
             ContentType.VIDEO.ordinal -> VideoViewHolder(view)
             ContentType.LINK_SCREEN.ordinal -> LinkScreenViewHolder(view, presentScreen)
+            ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder(view, appLanguage, onMovieClicked)
+            ContentType.PERSON_LIST.ordinal -> PersonListViewHolder(view, onPersonClicked)
             else -> object : BasePageViewHolder(view) {}
         }
 

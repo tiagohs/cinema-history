@@ -44,7 +44,7 @@ class SettingsManager
 
     fun getMovieLanguage(): String = sharedPreferences?.getString(MOVIE_LANGUAGE_KEY, MOVIE_LANGUAGE_DEFAULT) ?: context.getResourceString(R.string.pt_br_country_name)
 
-    fun getMovieISOLanguage(): String = getMovieLanguage()
+    fun getMovieISOLanguage(): String = getISOLanguage(sharedPreferences?.getString(MOVIE_LANGUAGE_KEY, MOVIE_LANGUAGE_DEFAULT) ?: context.getResourceString(R.string.pt_br_country_name)) ?: "pt-BR"
 
     fun updateMovieLanguage(newLanguage: String) {
         val sharedEdit = sharedPreferences?.edit() ?: return

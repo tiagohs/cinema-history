@@ -141,6 +141,262 @@
       "content_text": "Acredita-se que a diretora tenha trabalhado em mais de mil produções cinematográficas, embora apenas 130 delas tenham sido encontradas até hoje. Com o tempo, muitos de seus filmes foram creditados a homens, enquanto outros levavam apenas o nome da produtora. Sua obra passou a ser recuperada nos anos 80, após o lançamento póstumo de sua autobiografia, escrita no final dos anos 40. No livro, Alice detalha uma lista dos filmes que produziu, na esperança de um dia receber o devido crédito pelas obras e conquistar um espaço que sempre foi seu: o de pioneira do cinema."
     },
     {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 17,
+          "popularity": 1.178,
+          "id": 120026,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.4,
+          "title": "The Consequences of Feminism",
+          "release_date": "1906-01-01",
+          "original_language": "fr",
+          "original_title": "Les résultats du féminisme",
+          "genre_ids": [
+            35
+          ],
+          "backdrop_path": "\/nnI3jjqhvFl0lY7xI2qbEoxEhTr.jpg",
+          "adult": false,
+          "overview": "It's a society in which gender roles are switched. Will men stand to be unequal?",
+          "poster_path": "\/ecF7Kpz6B4CFrrkVY9JLAtq02kJ.jpg"
+        },
+        {
+          "poster_path": "\/otUrt8q6ghKw0FeDnBl1ay5AJLI.jpg",
+          "popularity": 2.036,
+          "vote_count": 16,
+          "video": false,
+          "media_type": "movie",
+          "id": 38730,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "A Fool There Was",
+          "genre_ids": [
+            18
+          ],
+          "title": "A Fool There Was",
+          "vote_average": 5.3,
+          "overview": "John Schuyler, a happily married lawyer, is appointed diplomat and sent to England; but, due to an unfortunate accident, his wife and child can not come along with him. Then, on the ship, he meets the Vampire, a notorious woman, a relentless gold digger, who lives off men whom seduces and ruins.",
+          "release_date": "1915-01-12"
+        },
+        {
+          "vote_count": 24,
+          "popularity": 3.354,
+          "id": 82283,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.7,
+          "title": "It",
+          "release_date": "1927-02-05",
+          "original_language": "xx",
+          "original_title": "It",
+          "genre_ids": [
+            18,
+            35,
+            10749
+          ],
+          "backdrop_path": "\/ygMZ9DamhPIgQOT5WjacsfvPXIX.jpg",
+          "adult": false,
+          "overview": "A flapper shopgirl woos her rich boss with animal magnetism, otherwise known as \"it.\"",
+          "poster_path": "\/nkkhsKik9GILqn3S5BxoZdyml21.jpg"
+        },
+        {
+          "poster_path": "\/30nI26oGkZiJ3YAOEYLI45XwbTB.jpg",
+          "popularity": 2.094,
+          "vote_count": 2,
+          "video": false,
+          "media_type": "movie",
+          "id": 39950,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Cleopatra",
+          "genre_ids": [
+            18,
+            36
+          ],
+          "title": "Cleopatra",
+          "vote_average": 5.5,
+          "overview": "The story of Cleopatra, the fabulous queen of Egypt, and the epic romances between her and the greatest men of Rome, Julius Caesar and Antony. (IMDb) Only a fragment of this film is known to still exist.",
+          "release_date": "1917-10-14"
+        },
+        {
+          "poster_path": "\/wMmFRq9X9fHPgzxinExdZQdpS2J.jpg",
+          "popularity": 0.952,
+          "vote_count": 0,
+          "video": false,
+          "media_type": "movie",
+          "id": 488823,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Upstairs and Down",
+          "genre_ids": [],
+          "title": "Upstairs and Down",
+          "vote_average": 0,
+          "overview": "Alice Chesterton is described as a \"Baby Vamp\" by the social set and engaged to boring Tom Carey. She flirts with many of the male guests idling at the Ives' Long Island house party, then encourages Terence O'Keefe, a playboy polo player from Ireland, to rendezvous with her in the city; they are seen together at the \"Midnight Frolic\". Because of this, Mrs. Ives convinces Alice's newly-arrived sister Betty to look after Alice.",
+          "release_date": "1919-06-08"
+        },
+        {
+          "vote_count": 27,
+          "popularity": 3.94,
+          "id": 38687,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.5,
+          "title": "Flesh and the Devil",
+          "release_date": "1926-12-25",
+          "original_language": "en",
+          "original_title": "Flesh and the Devil",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "backdrop_path": "\/ygxfZuDXsjq0GGZhjgHYjyamjK0.jpg",
+          "adult": false,
+          "overview": "As lifelong best friends Leo and Ulrich return home following completion of their military training, Leo sees stunning Felicitas at the railway station and, mesmerized by her beauty, is smitten. A scandal follows, for which Leo is sent away. Returning home three years later, he discovers that much has changed.",
+          "poster_path": "\/crbsj3275H5Q0accBiql7GyKTQW.jpg"
+        },
+        {
+          "poster_path": "\/sh3HAWciDIzdDUlzqxp4hvN7jdb.jpg",
+          "popularity": 3.084,
+          "vote_count": 8,
+          "video": false,
+          "media_type": "movie",
+          "id": 42614,
+          "adult": false,
+          "backdrop_path": "\/44c3n8032AIXsSNF92ITAlMwFr.jpg",
+          "original_language": "en",
+          "original_title": "Our Dancing Daughters",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "Our Dancing Daughters",
+          "vote_average": 6.8,
+          "overview": "A flapper sets her hat for a man with a hard-drinking wife.",
+          "release_date": "1928-09-01"
+        },
+        {
+          "poster_path": "\/keqscEvY0oZqbtiYf8odccmHlll.jpg",
+          "popularity": 8.319,
+          "vote_count": 114,
+          "video": false,
+          "media_type": "movie",
+          "id": 905,
+          "adult": false,
+          "backdrop_path": "\/yjgNdYsVpfU2m89Pr7YuZ34Jd4i.jpg",
+          "original_language": "de",
+          "original_title": "Die Büchse der Pandora",
+          "genre_ids": [
+            80,
+            18,
+            10749
+          ],
+          "title": "Pandora's Box",
+          "vote_average": 7.7,
+          "overview": "Lulu is a young woman so beautiful and alluring that few can resist her siren charms. The men drawn into her web include respectable newspaper publisher Dr. Ludwig Schön, his musical producer son Alwa, circus performer Rodrigo Quast and Lulu's seedy old friend, Schigolch. When Lulu's charms inevitably lead to tragedy, the downward spiral encompasses them all.",
+          "release_date": "1929-01-30"
+        },
+        {
+          "poster_path": "\/r5vX68LwHbjHg65j1b2AdEPuPM5.jpg",
+          "popularity": 3.982,
+          "vote_count": 9,
+          "video": false,
+          "media_type": "movie",
+          "id": 95956,
+          "adult": false,
+          "backdrop_path": "\/3GCrCj4vLIFCt9VvqBTzhIk2YqY.jpg",
+          "original_language": "en",
+          "original_title": "The Temptress",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "The Temptress",
+          "vote_average": 6.6,
+          "overview": "A seductive woman forsakes her husband and lover to pursue a young engineer.",
+          "release_date": "1926-10-03"
+        },
+        {
+          "vote_count": 50,
+          "popularity": 3.031,
+          "id": 147554,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.1,
+          "title": "The Cabbage-Patch Fairy",
+          "release_date": "1896-03-31",
+          "original_language": "xx",
+          "original_title": "La fée aux choux",
+          "genre_ids": [
+            14
+          ],
+          "backdrop_path": "\/5kDLi7DWgpBWxDV3hqlTIc885lJ.jpg",
+          "adult": false,
+          "overview": "A brief fantasy tale involving a strange fairy who can produce and deliver babies coming out of cabbages.",
+          "poster_path": "\/76YuxRmZbXqm9022EdQo2Hcm6MR.jpg"
+        },
+        {
+          "poster_path": "\/901rvPkRUZs4mpIzP9iQf41TPdc.jpg",
+          "popularity": 1.96,
+          "vote_count": 7,
+          "video": false,
+          "media_type": "movie",
+          "id": 120015,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "fr",
+          "original_title": "La Vie du Christ",
+          "genre_ids": [
+            18,
+            36
+          ],
+          "title": "The Birth, the Life and the Death of Christ",
+          "vote_average": 6.1,
+          "overview": "The stations of Christ's life are segmented into a series of performative tableaux.",
+          "release_date": "1906-01-01"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 1071403,
+          "profile_path": "\/hB02YDXjW1fIiLICsEw08TEwMsN.jpg",
+          "name": "Alice Guy-Blaché"
+        },
+        {
+          "id": 123584,
+          "profile_path": "\/hSr3fS8MGyFLZEsHB2DFy0xMiLe.jpg",
+          "name": "Theda Bara"
+        },
+        {
+          "id": 1086710,
+          "profile_path": "\/sb2HWOJuTYYSfl168DLz5s1h3vl.jpg",
+          "name": "Florence Lawrence"
+        },
+        {
+          "id": 8828,
+          "profile_path": "\/6DCWtvv654sc8p2OPnxGbKvl2qC.jpg",
+          "name": "Lillian Gish"
+        },
+        {
+          "id": 102499,
+          "profile_path": "\/gt3m6XcULHedwr3fT8Oaxfwl1QF.jpg",
+          "name": "Clara Bow"
+        },
+        {
+          "id": 8629,
+          "profile_path": "\/akmlp75ESHjtGOVtOCfJYxkX4eo.jpg",
+          "name": "Gloria Swanson"
+        }
+      ]
+    },
+    {
       "type": "link_screen",
       "subtitle": "Os acontecimentos que marcaram o mundo",
       "title": "Timeline de Acontecimentos de 1895 a 1929",

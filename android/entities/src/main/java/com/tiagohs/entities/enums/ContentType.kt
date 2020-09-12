@@ -31,7 +31,13 @@ enum class ContentType(
     BLOCK_SPECIAL("block_special"),
 
     @SerializedName("link_screen")
-    LINK_SCREEN("link_screen");
+    LINK_SCREEN("link_screen"),
+
+    @SerializedName("movie_list")
+    MOVIE_LIST("movie_list"),
+
+    @SerializedName("person_list")
+    PERSON_LIST("person_list");
 
     companion object {
         fun getContentType(type: String): ContentType {

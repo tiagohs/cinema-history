@@ -112,11 +112,214 @@
     },
     {
       "type": "text",
-      "content_text": "A oportunidade de se realizar filmes mais longos, o surgimento dos estúdios de Hollywood e orçamentos maiores encorajaram os cineastas a produzir adaptações literárias como <a href=\"https://_{type: 'screen', 'id': 30266, 'screen_type': 'movie'}\">20000 Leagues Under the Sea</a> (BR: Vinte mil léguos submarinas, 1916), dirigido por <a href=\"https://_{type: 'screen', 'id': 119672, 'screen_type': person}\">Stuart Paton</a> (1883-1944), baseado no romance de 1869 de <i>Júlio Verne<i>, cujo livro <i>A ilha misteriosa</i> (1874) também foi adaptado para o cinema. Paton uniu forças com dois outros imigrantes britânicos nos Estados Unidos, os irmãos <i>John</i> e <i>George Williamson</i>, para criar <strong>o primeiro filme com algumas sequencias debaixo d'água</strong>."
+      "content_text": "A oportunidade de se realizar filmes mais longos, o surgimento dos estúdios de Hollywood e orçamentos maiores encorajaram os cineastas a produzir adaptações literárias como <a href=\"https://_{type: 'screen', 'id': 30266, 'screen_type': 'movie'}\">20000 Leagues Under the Sea</a> (BR: Vinte mil léguos submarinas, 1916), dirigido por <a href=\"https://_{type: 'screen', 'id': 119672, 'screen_type': person}\">Stuart Paton</a> (1883-1944), baseado no romance de 1869 de <i>Júlio Verne</i>, cujo livro <i>A ilha misteriosa</i> (1874) também foi adaptado para o cinema. Paton uniu forças com dois outros imigrantes britânicos nos Estados Unidos, os irmãos <i>John</i> e <i>George Williamson</i>, para criar <strong>o primeiro filme com algumas sequencias debaixo d'água</strong>."
     },
     {
       "type": "text",
       "content_text": "O apetite pelo espetáculo continuou a ser explorado em épicos como <a href=\"https://_{type: 'screen', 'id': 30266, 'screen_type': 'movie'}\">The Ten Commandments</a> (BR: Os dez mandamentos, 1923) e <a href=\"https://_{type: 'screen', 'id': 31510, 'screen_type': 'movie'}\">Ben-Hur</a> (1925), formando o que posteriormente seria conhecido como o género sword-and-sandal (espada e sandálias). O filme se mostrou uma produção atribulada e cara para a <i>Metro-Goldwyn-Mayer</i>, que havia acabado de realizar sua fusão. Para tornar a corrida de bigas mais emocionante, o estúdio estipulou um prêmio de 100 dólares para o vencedor, o acidente terrível que resultou disso permaneceu na cópia final do filme. É possível vislumbrar o espírito do diretor pioneiro <i>Georges Mélies</i> nesses épicos dos anos 1920 e, mais tarde, nos efeitos especiais criados por <a href=\"https://_{type: 'screen', 'id': 66758, 'screen_type': person}\">Ray Harryhausen</a> nas décadas de 1950 e 1960. As técnicas cinematográficas se tornaram mais complexas e as estruturas narrativas, cada vez mais sofisticadas, porém o fundamento criativo do cinema - reinventar e reinterpretar a realidade permaneceu uma constante desde seus primórdios."
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 978,
+          "popularity": 15.385,
+          "id": 775,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 8,
+          "title": "A Trip to the Moon",
+          "release_date": "1902-04-17",
+          "original_language": "fr",
+          "original_title": "Le Voyage dans la Lune",
+          "genre_ids": [
+            12,
+            14,
+            878
+          ],
+          "backdrop_path": "\/jeC1kzwWnZTuXl7xF4E5D70BD8c.jpg",
+          "adult": false,
+          "overview": "Professor Barbenfouillis and five of his colleagues from the Academy of Astronomy travel to the Moon aboard a rocket propelled by a giant cannon. Once on the lunar surface, the bold explorers face the many perils hidden in the caves of the mysterious satellite.",
+          "poster_path": "\/aaNIFWrq6eGi259APbB5yaqBFdm.jpg"
+        },
+        {
+          "vote_count": 338,
+          "popularity": 9.838,
+          "id": 5698,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7,
+          "title": "The Great Train Robbery",
+          "release_date": "1903-12-07",
+          "original_language": "en",
+          "original_title": "The Great Train Robbery",
+          "genre_ids": [
+            80,
+            28,
+            37
+          ],
+          "backdrop_path": "\/99uGRUGS2qxNvPARiM8dkuTrUnW.jpg",
+          "adult": false,
+          "overview": "The clerk at the train station is assaulted and left tied by four men, then they rob the train threatening the operator. (They) take all the money and shoot a passenger when trying to run away. A little girl discovers the clerk tied and gives notice to the sheriff, who at once goes along with his men hunting the bandits.",
+          "poster_path": "\/uf7Hr1wuUh4T83Ifg5pVpwTqRdI.jpg"
+        },
+        {
+          "poster_path": "\/zLiH13o01ymKj5brsfvALKLX1iJ.jpg",
+          "popularity": 0.6,
+          "vote_count": 2,
+          "video": false,
+          "media_type": "movie",
+          "id": 124043,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "fr",
+          "original_title": "À la Conquête de l'Air",
+          "genre_ids": [
+            878
+          ],
+          "title": "Conquering the Skies",
+          "vote_average": 4,
+          "overview": "A man flies his plane \"Fend l'Air\" over Paris.",
+          "release_date": "1906-04-01"
+        },
+        {
+          "poster_path": "\/cDJdmESCIptAIZ3woR5qxgRlquR.jpg",
+          "popularity": 1.728,
+          "vote_count": 8,
+          "video": false,
+          "media_type": "movie",
+          "id": 129555,
+          "adult": false,
+          "backdrop_path": "\/3Z14R5pmLaExe1ivI1Gg1wuboHb.jpg",
+          "original_language": "mr",
+          "original_title": "Raja Harishchandra",
+          "genre_ids": [
+            18,
+            36
+          ],
+          "title": "Raja Harishchandra",
+          "vote_average": 5.6,
+          "overview": "The first feature-length Indian film is based on the legend of Raja Harishchandra, recounted in the Ramayana and Mahabharata. It revolves around the noble and righteous king, Harishchandra, who first sacrifices his kingdom, followed by his wife and eventually his children to honour his promise to the sage Vishwamitra. Though, in the end, pleased by his high morals, the Gods restore his former glory, and further bestow him with divine blessings.",
+          "release_date": "1913-04-21"
+        },
+        {
+          "poster_path": "\/m5SabcjoTRBamf44HCGF8fbLISz.jpg",
+          "popularity": 2.433,
+          "vote_count": 18,
+          "video": false,
+          "media_type": "movie",
+          "id": 319287,
+          "adult": false,
+          "backdrop_path": "\/apmrRJVaWGme6C2IdWIkLyF6qDK.jpg",
+          "original_language": "fr",
+          "original_title": "Fantômas",
+          "genre_ids": [
+            80,
+            18,
+            53
+          ],
+          "title": "Fantômas",
+          "vote_average": 6.9,
+          "overview": "A French silent saga which follows the exploits and crimes of the archvillain Fantômas, who commits crimes while eluding Inspector Juve's tireless persecution.",
+          "release_date": "1913-05-09"
+        },
+        {
+          "vote_count": 50,
+          "popularity": 8.593,
+          "id": 29082,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.8,
+          "title": "Les Vampires",
+          "release_date": "1915-11-13",
+          "original_language": "fr",
+          "original_title": "Les Vampires",
+          "genre_ids": [
+            80,
+            28
+          ],
+          "backdrop_path": "\/sVEhbH5PyE36t1lMDQLzkdTKQiu.jpg",
+          "adult": false,
+          "overview": "Two journalists attempt to uncover the truth behind the criminal organisation, known as The Vampires, who are terrorizing Paris.",
+          "poster_path": "\/n3nNd3219kTmMWzOQB7vp3ixsX0.jpg"
+        },
+        {
+          "poster_path": "\/sv8LaZwJPMNUah2CurnOxmqlbS5.jpg",
+          "popularity": 3.578,
+          "vote_count": 22,
+          "video": false,
+          "media_type": "movie",
+          "id": 30266,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "20,000 Leagues Under the Sea",
+          "genre_ids": [
+            28,
+            12,
+            18,
+            878
+          ],
+          "title": "20,000 Leagues Under the Sea",
+          "vote_average": 6.1,
+          "overview": "Captain Nemo has built a fantastic submarine for his mission of revenge. He has traveled over 20,000 leagues in search of Charles Denver - a man who caused the death of Princess Daaker. Seeing what he had done, Denver took the daughter to his yacht and sailed away.",
+          "release_date": "1916-12-24"
+        },
+        {
+          "poster_path": "\/uQNsUtxDp5G3qq1a2Wc1ycjF5AL.jpg",
+          "popularity": 6.509,
+          "vote_count": 37,
+          "video": false,
+          "media_type": "movie",
+          "id": 24805,
+          "adult": false,
+          "backdrop_path": "\/h8K6HH3lyyXRYCG81Bto4kyQ82r.jpg",
+          "original_language": "en",
+          "original_title": "The Ten Commandments",
+          "genre_ids": [
+            18
+          ],
+          "title": "The Ten Commandments",
+          "vote_average": 6.8,
+          "overview": "The first part tells the story of Moses leading the Jews from Egypt to the Promised Land, his receipt of the tablets and the worship of the golden calf. The second part shows the efficacy of the commandments in modern life through a story set in San Francisco. Two brothers, rivals for the love of Mary, also come into conflict when John discovers Dan used shoddy materials to construct a cathedral.",
+          "release_date": "1923-11-23"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 11523,
+          "name": "Georges Méliès",
+          "profile_path": "\/ba3Kfc01Dbigt41lyuFoZR7gmv1.jpg"
+        },
+        {
+          "id": 1071403,
+          "profile_path": "\/hB02YDXjW1fIiLICsEw08TEwMsN.jpg",
+          "name": "Alice Guy-Blaché"
+        },
+        {
+          "id": 44866,
+          "profile_path": "\/bTgG38TsfKSQb7MGYk8j3dusyAR.jpg",
+          "name": "Edwin S. Porter"
+        },
+        {
+          "id": 102844,
+          "profile_path": "\/6pwcFyr5UI6RHYdIfO91za66tJX.jpg",
+          "name": "Louis Feuillade"
+        },
+        {
+          "id": 53631,
+          "profile_path": "\/yGA3GfBYrftqLDVy613nM8JJ4Fv.jpg",
+          "name": "Dhundiraj Govind Phalke"
+        },
+        {
+          "id": 68,
+          "profile_path": "\/np94pnm3x4PBjxCZ4KG5BfAib2A.jpg",
+          "name": "Fritz Lang"
+        }
+      ]
     },
     {
       "type": "link_screen",

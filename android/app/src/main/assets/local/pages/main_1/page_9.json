@@ -151,6 +151,93 @@
       "content_text": "Contratado pela Paramount devido ao vigor de suas inventivas produções teatrais, seu primeiro filme, <a href=\"https://_{type: 'screen', 'id': 120833, 'screen_type': movie}\">Applause</a> (1929) estendeu as fronteiras criativas dos filmes sonoros. O enredo do filme não era inovador - uma artista de teatro decadente sacrifica sua carreira pela filha -, mas algumas cenas-chave fizeram a indústria parar e prestar atenção. Um exemplo é o contraste entre a atmosfera silenciosa do convento em que estava a filha e a confusão do tráfego e dos sons da rua da efervescente Nova York quando ela visita sua mãe, Mamoulian usou o contraste sonoro para refletir as sensações da filha desorientada."
     },
     {
+      "type": "movie_list",
+      "movies": [
+        {
+          "poster_path": "\/hO3pM0Pf8eGnkt8049aKYr8yqJF.jpg",
+          "popularity": 7.277,
+          "vote_count": 105,
+          "video": false,
+          "media_type": "movie",
+          "id": 939,
+          "adult": false,
+          "backdrop_path": "\/7B2b1qhbnWFzsRbMDBn0LMWWahI.jpg",
+          "original_language": "en",
+          "original_title": "The Jazz Singer",
+          "genre_ids": [
+            18,
+            10402
+          ],
+          "title": "The Jazz Singer",
+          "vote_average": 6.6,
+          "overview": "A young Jewish man is torn between tradition and individuality when his old-fashioned family objects to his career as a jazz singer. This is the first full length feature film to use synchronized sound, and is the original film musical.",
+          "release_date": "1927-10-06"
+        },
+        {
+          "vote_count": 1195,
+          "popularity": 14.147,
+          "id": 832,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 8.1,
+          "title": "M",
+          "release_date": "1931-05-11",
+          "original_language": "de",
+          "original_title": "M - Eine Stadt sucht einen Mörder",
+          "genre_ids": [
+            18,
+            28,
+            53,
+            80
+          ],
+          "backdrop_path": "\/aVxrtohncrguh49qXNQMzMzVtiB.jpg",
+          "adult": false,
+          "overview": "In this classic German thriller, Hans Beckert, a serial killer who preys on children, becomes the focus of a massive Berlin police manhunt. Beckert's heinous crimes are so repellant and disruptive to city life that he is even targeted by others in the seedy underworld network. With both cops and criminals in pursuit, the murderer soon realizes that people are on his trail, sending him into a tense, panicked attempt to escape justice.",
+          "poster_path": "\/6hg2UClwHGnBojemFrLgiF1WK8A.jpg"
+        },
+        {
+          "vote_count": 40,
+          "popularity": 4.913,
+          "id": 31532,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.6,
+          "title": "Love Me Tonight",
+          "release_date": "1932-08-18",
+          "original_language": "en",
+          "original_title": "Love Me Tonight",
+          "genre_ids": [
+            35,
+            10749
+          ],
+          "backdrop_path": "\/2jthMFoYBUnnhY4uIHbyboxcbO2.jpg",
+          "adult": false,
+          "overview": "A Parisian tailor finds himself posing as a baron in order to collect a sizeable bill from an aristocrat, only to fall in love with an aloof young princess.",
+          "poster_path": "\/7D7BIQifOIivpuRfDRONy9poJae.jpg"
+        },
+        {
+          "vote_count": 7,
+          "popularity": 1.752,
+          "id": 173689,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.4,
+          "title": "Lights of New York",
+          "release_date": "1928-07-18",
+          "original_language": "en",
+          "original_title": "Lights of New York",
+          "genre_ids": [
+            80,
+            18
+          ],
+          "backdrop_path": "\/6M8WEIPcdHG6UPWmpZlgg7GfsN1.jpg",
+          "adult": false,
+          "overview": "Eddie is conned into fronting a speakeasy for a local gangster who intends to frame him for the murder of a cop.",
+          "poster_path": "\/tvYTBogwe8oHsy62XRMFtZKBZsd.jpg"
+        }
+      ]
+    },
+    {
       "type": "link_screen",
       "subtitle": "Os acontecimentos que marcaram o mundo",
       "title": "Timeline de Acontecimentos de 1895 a 1929",

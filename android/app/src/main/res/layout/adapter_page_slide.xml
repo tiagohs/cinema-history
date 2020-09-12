@@ -15,16 +15,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.tiagohs.helpers.tools.NestedScrollableHost
             android:layout_width="match_parent"
-            android:layout_height="@dimen/page_slide_height"
-            android:id="@+id/imageList"
-            android:nestedScrollingEnabled="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-        />
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/page_slide_height"
+                android:id="@+id/imageList"
+                android:nestedScrollingEnabled="true"
+                />
+
+        </com.tiagohs.helpers.tools.NestedScrollableHost>
 
         <cz.intik.overflowindicator.OverflowPagerIndicator
             android:layout_width="wrap_content"
@@ -37,7 +44,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+        />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -16,7 +16,7 @@ import io.reactivex.Observable
 class TMDBService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) {
 
     fun getMovieDetails(movieId: Int, languageToUse: String, appendToResponse: List<String>): Observable<Movie> {
-        return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieDetails(movieId, languageToUse, appendToResponse.joinToString(","))
+        return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieDetails(movieId, "${languageToUse},en,pt-BR,null", appendToResponse.joinToString(","))
     }
 
     fun getMovieVideos(movieId: Int, languages: String): Observable<Result<Video>> {
