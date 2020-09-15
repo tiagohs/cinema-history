@@ -76,6 +76,21 @@
   },
   {
     "id": 6,
+    "title": "Hollywood e a sombra da Guerra",
+    "description": "Mesmo antes da entrada dos Estados Unidos na guerra, Hollywood vinha seduzindo uma série de obras com tendências propagandistas e, Semanas antes de Pearl Harbor, já estará realizando filmes de guerra patrióticos.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_dictator",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
     "title": "Musicais na época da Depressão",
     "description": "Os musicais dominaram os cinemas nas primeiras décadas do cinema, e na década de 1930 eles capturaram a temeridade e a energia febril que as pessoas exibiam diante da Grande Depressão.",
     "image": {
@@ -90,9 +105,9 @@
     }
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "O Som e a Comédia",
-    "description": "Quando os filmes falados substituiram o cinema mudo na década de 1990 os comediantes tomaram atitudes radicais para se adaptar as novas possibilidades, e novos mestres da comédia ganharam os holofotes.",
+    "description": "Quando os filmes falados substituíram o cinema mudo na década de 1990 os comediantes tomaram atitudes radicais para se adaptar as novas possibilidades, e novos mestres da comédia ganharam os holofotes.",
     "image": {
       "image_type": "local",
       "url": "img_laurel_and_hardy",
@@ -105,7 +120,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "A Comédia Romântica dos Anos 1930",
     "description": "Faz todo o sentido que o nome do mais americano de todos os gêneros de cinema venha do beisebol. O tipo de filme conhecido como screwball comedy, ou comédia maluca, espécie de avô das comédias românticas, consiste em uma série de películas ágeis e irreverentes e teve seu auge nas décadas de 1930 e 1940.",
     "image": {
