@@ -2,6 +2,201 @@
   "number": 1,
   "content_list": [
     {
+      "type": "movie_list",
+      "movies": [
+        {
+          "poster_path": "\/jFpc9w3RmYeaOXMEfrtgshwVf4u.jpg",
+          "popularity": 22.283,
+          "vote_count": 849,
+          "video": false,
+          "media_type": "movie",
+          "id": 3035,
+          "adult": false,
+          "backdrop_path": "\/5gcgkq5oQkrXqUJt6vrmTkUWG4a.jpg",
+          "original_language": "en",
+          "original_title": "Frankenstein",
+          "genre_ids": [
+            18,
+            27,
+            878
+          ],
+          "title": "Frankenstein",
+          "vote_average": 7.5,
+          "overview": "Dr Henry Frankenstein is obsessed with assembling a living being from parts of several exhumed corpses.",
+          "release_date": "1931-11-21"
+        },
+        {
+          "poster_path": "\/j2dwljljOrLTcnwfKeUBBeNB8t7.jpg",
+          "popularity": 15.312,
+          "vote_count": 634,
+          "video": false,
+          "media_type": "movie",
+          "id": 136,
+          "adult": false,
+          "backdrop_path": "\/yukdRXb2bhpwDtCHKvQpQ0q77pd.jpg",
+          "original_language": "en",
+          "original_title": "Freaks",
+          "genre_ids": [
+            18,
+            27
+          ],
+          "title": "Freaks",
+          "vote_average": 7.8,
+          "overview": "A circus' beautiful trapeze artist agrees to marry the leader of side-show performers, but his deformed friends discover she is only marrying him for his inheritance.",
+          "release_date": "1932-02-12"
+        },
+        {
+          "vote_count": 837,
+          "popularity": 19.561,
+          "id": 244,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.6,
+          "title": "King Kong",
+          "release_date": "1933-03-15",
+          "original_language": "en",
+          "original_title": "King Kong",
+          "genre_ids": [
+            12,
+            18,
+            27
+          ],
+          "backdrop_path": "\/7hDdW3C17pi4MdSeYXs8bwIVA78.jpg",
+          "adult": false,
+          "overview": "A film crew discovers the \"eighth wonder of the world,\" a giant prehistoric ape, and brings him back to New York, where he wreaks havoc.",
+          "poster_path": "\/lHlnxKL5GbgRibyRFI7n1Ey850i.jpg"
+        },
+        {
+          "vote_count": 644,
+          "popularity": 16.66,
+          "id": 138,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.2,
+          "title": "Dracula",
+          "release_date": "1931-02-12",
+          "original_language": "en",
+          "original_title": "Dracula",
+          "genre_ids": [
+            27,
+            14
+          ],
+          "backdrop_path": "\/cemjdP7HrUyJAry85vRT19Hidbi.jpg",
+          "adult": false,
+          "overview": "A powerful and ruthless vampire named Count Dracula arrives in London to prey on young, socialite women. Standing in the vampire's way, is a group of concerned men and the enigmatic Dr. Abraham Van Helsing.",
+          "poster_path": "\/aq3lliuEZEgNCTLZokDt4ofCNvP.jpg"
+        },
+        {
+          "poster_path": "\/qhbTi2Tzuzuh4m4WFsRtn0SrJN8.jpg",
+          "popularity": 15.862,
+          "vote_count": 500,
+          "video": false,
+          "media_type": "movie",
+          "id": 229,
+          "adult": false,
+          "backdrop_path": "\/haPU3dCyYUTRN34ceyJrX4DAjZq.jpg",
+          "original_language": "en",
+          "original_title": "The Bride of Frankenstein",
+          "genre_ids": [
+            27
+          ],
+          "title": "The Bride of Frankenstein",
+          "vote_average": 7.5,
+          "overview": "Bride of Frankenstein begins where James Whale's Frankenstein from 1931 ended. Dr. Frankenstein has not been killed as previously portrayed and now he wants to get away from the mad experiments. Yet when his wife is kidnapped by his creation, Frankenstein agrees to help him create a new monster, this time a woman.",
+          "release_date": "1935-04-20"
+        },
+        {
+          "poster_path": "\/qu18Ka164PAV4geTSSLcJkT63jb.jpg",
+          "popularity": 8.994,
+          "vote_count": 148,
+          "video": false,
+          "media_type": "movie",
+          "id": 3019,
+          "adult": false,
+          "backdrop_path": "\/i2Wb6QsKg14tl4p9HgJENfUCqhh.jpg",
+          "original_language": "en",
+          "original_title": "Dr. Jekyll and Mr. Hyde",
+          "genre_ids": [
+            27,
+            878
+          ],
+          "title": "Dr. Jekyll and Mr. Hyde",
+          "vote_average": 7.2,
+          "overview": "Based on the story by Robert Louis Stevenson, Dr. Henry Jekyll believes that there are two distinct sides to men - a good and an evil side. He believes that by separating the two, man can become liberated. He succeeds in his experiments with chemicals to accomplish this and transforms into Hyde to commit horrendous crimes. When he discontinues use of the drug, it is already too late.",
+          "release_date": "1932-01-02"
+        },
+        {
+          "poster_path": "\/vSKpbZVvzqQcw6htiyEinbCY9vq.jpg",
+          "popularity": 13.268,
+          "vote_count": 297,
+          "video": false,
+          "media_type": "movie",
+          "id": 15849,
+          "adult": false,
+          "backdrop_path": "\/nbUNY5dKHtRIeTkO9z66ITFxM9E.jpg",
+          "original_language": "en",
+          "original_title": "The Mummy",
+          "genre_ids": [
+            27
+          ],
+          "title": "The Mummy",
+          "vote_average": 6.9,
+          "overview": "An ancient Egyptian priest named Imhotep is revived when an archaeological expedition finds his mummy and one of the archaeologists accidentally reads an ancient life-giving spell. Imhotep escapes from the field site and searches for the reincarnation of the soul of his lover.",
+          "release_date": "1932-01-01"
+        },
+        {
+          "poster_path": "\/a8WoUk92OLHnU5sODmdGaOi5iaH.jpg",
+          "popularity": 10.992,
+          "vote_count": 396,
+          "video": false,
+          "media_type": "movie",
+          "id": 10787,
+          "adult": false,
+          "backdrop_path": "\/zDn6FKwG7V5SuJcA6M8xggS0Z41.jpg",
+          "original_language": "en",
+          "original_title": "The Invisible Man",
+          "genre_ids": [
+            27,
+            878
+          ],
+          "title": "The Invisible Man",
+          "vote_average": 7.5,
+          "overview": "Working in Dr. Cranley’s laboratory, scientist Jack Griffin was always given the latitude to conduct some of his own experiments. His sudden departure, however, has Cranley’s daughter Flora worried about him. Griffin has taken a room at the nearby Lion’s Head Inn, hoping to reverse an experiment he conducted on himself that made him invisible. But the experimental drug has also warped his mind, making him aggressive and dangerous. He’s prepared to do whatever it takes to restore his appearance.",
+          "release_date": "1933-11-03"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 2922,
+          "name": "Boris Karloff",
+          "profile_path": "\/fVi0QkiziavXB8HnWk5NzRcnCO1.jpg"
+        },
+        {
+          "id": 2917,
+          "name": "James Whale",
+          "profile_path": "\/cJcOH8Nt16n4ucp7j7u22I3Uxa3.jpg"
+        },
+        {
+          "id": 3242,
+          "name": "Fay Wray",
+          "profile_path": "\/dfpwqfEulBX06hOrX56fLhGSWAz.jpg"
+        },
+        {
+          "id": 1496,
+          "name": "Tod Browning",
+          "profile_path": "\/rNbA1xBxMTBznQ8JAYxd7NIjXz6.jpg"
+        },
+        {
+          "id": 13576,
+          "name": "Fredric March",
+          "profile_path": "\/3QzMI2O7NP2j45XBCoBl7o1KogN.jpg"
+        }
+      ]
+    },
+    {
       "type": "link_screen",
       "subtitle": "Os acontecimentos que marcaram o mundo",
       "title": "Timeline de Acontecimentos de 1830 a 1939",

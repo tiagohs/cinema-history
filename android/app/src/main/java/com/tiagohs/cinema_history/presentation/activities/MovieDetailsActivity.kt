@@ -468,17 +468,19 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
                 }
             }
         }
-
-        movie.voteAverage?.let {
+        val voteAverage = movie.voteAverage
+        if (voteAverage != null && voteAverage > 0) {
             bindRating(
                 getString(
                     R.string.tmdb_vote,
-                    String.format("%.1f", it)
+                    String.format("%.1f", voteAverage)
                 ),
                 getString(R.string.tmdb_link, movie.id),
                 tmdbRating, tmdbContainer
             )
         }
+
+        tmdbContainer.hide()
     }
 
     private fun bindRating(

@@ -2,6 +2,16 @@
   "number": 2,
   "content_list": [
     {
+      "type": "movie_list",
+      "movies": []
+    },
+    {
+      "type": "person_list",
+      "persons": [
+
+      ]
+    },
+    {
       "type": "link_screen",
       "subtitle": "Os acontecimentos que marcaram o mundo",
       "title": "Timeline de Acontecimentos de 1830 a 1939",
