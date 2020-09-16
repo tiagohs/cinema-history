@@ -26,6 +26,9 @@ data class MainTopicItem(
     @SerializedName("blocked")
     val blocked: Boolean,
 
+    @SerializedName("is_new")
+    val isNew: Boolean,
+
     @SerializedName("presentation_image")
     val presentationImage: Image? = null,
 

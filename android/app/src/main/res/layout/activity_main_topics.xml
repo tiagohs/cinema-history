@@ -59,7 +59,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mainTopicsList"
-        android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x"
         app:layout_constraintTop_toBottomOf="@id/appBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
