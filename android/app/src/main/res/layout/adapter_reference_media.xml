@@ -138,6 +138,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/amazon_text"
+            android:id="@+id/buyButonText"
             android:textSize="@dimen/text_size_zeplin_22pt"
             android:text="@string/buy"
             android:padding="@dimen/activity_vertical_margin"

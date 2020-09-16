@@ -87,6 +87,32 @@
           "url": "https://images-na.ssl-images-amazon.com/images/I/71+GFINJ4ZL._SX300_.jpg",
           "content_description": "Capa do Filme The Story of Film: An Odyssey"
         }
+      },
+      {
+        "type": "media",
+        "title": "The Movies",
+        "subtitle": "Tom Hanks, Mark Herzog e Gary Goetzman (Produtores)",
+        "description": "The Movies explora, com rico material de arquivo, o contexto social que moldou o cinema americano. Neste episódio, a diversa geração de realizadores que faz o cinema dos anos 2000 e a explosão das franquias de filmes baseados em quadrinhos.",
+        "link": "https://www.hbobrasil.com/series/detail/the-movies/14936/ttl751980",
+        "mediaType": "Série",
+        "image": {
+          "image_type": "online",
+          "url": "https://m.media-amazon.com/images/M/MV5BNzU4NWEwNDItMzMzYy00ZDYyLWIxZjMtMDlkYWVjNjQwYzBjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+          "content_description": "Capa da série The Movies"
+        }
+      },
+      {
+        "type": "media",
+        "title": "Filmes que Marcam Época",
+        "subtitle": "Brian Volk-Weiss (Diretor)",
+        "description": "As mentes por trás dos mais icônicos filmes da nossa geração, que marcaram fortemente a cultura pop.",
+        "link": "https://www.netflix.com/br/title/80990849",
+        "mediaType": "Série",
+        "image": {
+          "image_type": "online",
+          "url": "https://media.fstatic.com/X-DBQHhdLVGAxV6temip3IIIGOE=/210x312/smart/media/movies/covers/2019/12/kowlD5nELdhoJcQY6J8JZUTeNXN.jpg",
+          "content_description": "Capa da série Filmes que Marcam Época"
+        }
       }
     ]
   },
@@ -105,8 +131,21 @@
           "url": "https://images-na.ssl-images-amazon.com/images/I/71NLgUSfRfL._SX300_.jpg",
           "content_description": "Capa do Filme Be Natural: The Untold Story of Alice Guy-Blaché"
         }
+      },
+      {
+        "type": "media",
+        "title": "Cidade de Deus: 10 Anos Depois",
+        "subtitle": "Cavi Borges, Luciano Vidigal (Diretor)",
+        "description": "Como o próprio título já diz, resgata os dez anos passados desde o lançamento de Cidade de Deus (2002), longa de Fernando Meirelles e Kátia Lund que recebeu quatro indicações ao Oscar. Procura mostrar as transformações vividas pelos atores do longa na última década. Deram entrevistas atores como Seu Jorge, Alice Braga, Leandro Firmino da Hora, Darlan Cunha, Roberta Rodrigues, dentre outros.",
+        "link": "https://www.netflix.com/br/title/80116761",
+        "mediaType": "Filme",
+        "image": {
+          "image_type": "online",
+          "url": "http://br.web.img2.acsta.net/r_1920_1080/medias/nmedia/18/90/57/86/20103253.jpg",
+          "content_description": "Capa do Filme Cidade de Deus: 10 Anos Depois"
+        }
       }
-    ]
+    ],
   },
   {
     "name": "Youtube",
