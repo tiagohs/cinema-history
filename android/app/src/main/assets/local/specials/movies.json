@@ -4700,7 +4700,17 @@
     "movies": [
       {
           "id": 72721,
-          "title": "Nostalgia de la luz"
+          "title": "Nostalgia de la luz",
+          "watchOn": [
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B005NWSC1O/ref=atv_dl_rdr?tag=justus1ktp-20"
+            },
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/us/movie/nostalgia-for-the-light/id1343442528?ign-mpt=uo%3D4"
+            }
+          ]
       },
       {
           "id": 27205,
@@ -4736,6 +4746,20 @@
                   "review_rating": 5.0
                 }
               ]
+            }
+          ],
+          "watchOn": [
+            {
+              "type": "netflix",
+              "link": "https://www.netflix.com/br/title/70131314"
+            },
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/us/movie/inception/id400763833"
+            },
+            {
+              "type": "prime_video",
+              "link": "https://www.amazon.com/gp/video/detail/B0047WJ11G/ref=atv_dl_rdr?tag=justus1ktp-20"
             }
           ]
       },
@@ -4774,11 +4798,27 @@
                 }
               ]
             }
+          ],
+          "watchOn": [
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B004HWR406/ref=atv_dl_rdr?tag=justus1ktp-20"
+            },
+            {
+              "type": "apple_tv",
+              "link": "https://play.google.com/store/movies/details/A_Rede_Social?gl=BR&hl=en&id=WjDAnVx0a6A"
+            }
           ]
       },
       {
           "id": 74643,
-          "title": "The Artist"
+          "title": "The Artist",
+          "watchOn": [
+            {
+              "type": "prime_video",
+              "link": "https://www.primevideo.com/detail/amzn1.dv.gti.d8b2d814-de19-8a29-1070-63c84759438d?ie=UTF8&linkCode=xm2"
+            }
+          ]
       },
       {
           "id": 22970,
@@ -4798,11 +4838,31 @@
                 }
               ]
             }
+          ],
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/o-segredo-da-cabana-the-cabin-in-the-woods-legendado/id604761533?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/o-segredo-da-cabana"
+            }
           ]
       },
       {
           "id": 129112,
-          "title": "Wadjda"
+          "title": "Wadjda",
+          "watchOn": [
+            {
+              "type": "globo_play",
+              "link": "https://globoplay.globo.com/o-sonho-de-wadjda/t/JXDRCdSyZh/"
+            },
+            {
+              "type": "play_store",
+              "link": "https://itunes.apple.com/br/movie/wadjda/id925132470?l=en&ign-mpt=uo%3D4"
+            }
+          ]
       },
       {
           "id": 49047,
@@ -4839,15 +4899,53 @@
                 }
               ]
             }
+          ],
+          "watchOn": [
+            {
+              "type": "netflix",
+              "link": "https://www.netflix.com/br/title/70274337"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/gravidade"
+            },
+            {
+              "type": "play_store",
+              "link": "https://itunes.apple.com/br/movie/gravity/id708338403?l=en&ign-mpt=uo%3D4"
+            }
           ]
       },
       {
           "id": 152584,
-          "title": "Blue Is the Warmest Color"
+          "title": "Blue Is the Warmest Color",
+          "watchOn": [
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/Azul_E_A_Cor_Mais_Quente_10620"
+            },
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/azul-%C3%A9-a-cor-mais-quente/id826606888?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Azul_%C3%A9_a_Cor_Mais_Quente?gl=BR&hl=en&id=tJMtaDkKWi8"
+            }
+          ]
       },
       {
           "id": 179144,
-          "title": "La grande bellezza"
+          "title": "La grande bellezza",
+          "watchOn": [
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/a-grande-beleza"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/A_Grande_Beleza?gl=BR&hl=en&id=IzOtxFiJTWM"
+            }
+          ]
       },
       {
           "id": 76203,
@@ -4884,135 +4982,541 @@
                 }
               ]
             }
+          ],
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/12-anos-de-escravid%C3%A3o/id879120106?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/12_Anos_de_Escravid%C3%A3o?gl=BR&hl=en&id=ycgMvoDqL6M"
+            }
           ]
       },
       {
           "id": 85350,
-          "title": "Boyhood"
+          "title": "Boyhood",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/boyhood/id915551560?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "prime_video",
+              "link": "https://www.primevideo.com/detail/amzn1.dv.gti.56b3665f-e6fe-f86b-f8ee-b37c2d830c27?ie=UTF8&linkCode=xm2"
+            },
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/Boyhood_Da_Infancia_A_Juventude_19086"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/boyhood-da-infancia-a-juventude"
+            }
+          ]
       },
       {
           "id": 194662,
-          "title": "Birdman or (The Unexpected Virtue of Ignorance)"
+          "title": "Birdman or (The Unexpected Virtue of Ignorance)",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/birdman/id928582124?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/birdman-ou-a-inesperada-virtude-da-ignorancia"
+            },
+            {
+              "type": "netflix",
+              "link": "https://www.netflix.com/br/title/80000643"
+            }
+          ]
       },
       {
           "id": 120467,
-          "title": "The Grand Budapest Hotel"
+          "title": "The Grand Budapest Hotel",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/the-grand-budapest-hotel/id828777452?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/o-grande-hotel-budapeste"
+            },
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/O_Grande_Hotel_Budapeste_7176"
+            }
+          ]
       },
       {
           "id": 140607,
-          "title": "Star Wars: The Force Awakens"
+          "title": "Star Wars: The Force Awakens",
+          "watchOn": [
+            {
+              "type": "claro_video",
+              "link": "https://www.clarovideo.com/brasil/vcard/homeuser/Star-Wars-Episodio-VII-O-Despertar-da-For-a/721219"
+            },
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/Star_Wars_O_Despertar_Da_Forca_4869"
+            },
+            {
+              "type": "prime_video",
+              "link": "https://www.primevideo.com/detail/amzn1.dv.gti.06b7e31e-c5ee-8d67-b28a-68e0f14061c8?ie=UTF8&linkCode=xm2"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/star-wars-o-despertar-da-forca"
+            }
+          ]
       },
       {
           "id": 336050,
-          "title": "Saul fia"
+          "title": "Saul fia",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/filho-de-saul/id1070659789?ign-mpt=uo%3D4"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/O_Filho_de_Saul_Legendado?gl=BR&hl=en&id=NY6Sgfojs4A"
+            }
+          ]
       },
       {
           "id": 238628,
-          "title": "Mandariinid"
+          "title": "Mandariinid",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/us/movie/tangerines/id1001864154?ign-mpt=uo%3D4"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Tangerines?gl=US&hl=en&id=rENgyr4bKBE&PAffiliateID=110l4uj"
+            },
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B07DP9DGBY/ref=atv_dl_rdr?tag=justus1ktp-20"
+            }
+          ]
       },
       {
           "id": 76341,
-          "title": "Mad Max: Fury Road"
+          "title": "Mad Max: Fury Road",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/mad-max-4-fury-road/id990549112?l=en"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Mad_Max_Estrada_Da_F%C3%BAria_LEG?gl=BR&hl=en&id=5scW57H25iw"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/mad-max-estrada-da-furia"
+            }
+          ]
       },
       {
           "id": 290098,
-          "title": "The Handmaiden"
+          "title": "The Handmaiden",
+          "watchOn": [
+            {
+              "type": "claro_video",
+              "link": "https://www.clarovideo.com/brasil/vcard/homeuser/A-Criada/749677"
+            }
+          ]
       },
       {
           "id": 313369,
-          "title": "La La Land"
+          "title": "La La Land",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/la-la-land/id1193496401?l=en"
+            },
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/La_La_Land_Cantando_Estacoes_6686"
+            },
+            {
+              "type": "netflix",
+              "link": "https://www.netflix.com/br/title/80095365"
+            }
+          ]
       },
       {
           "id": 374475,
-          "title": "Toni Erdmann"
+          "title": "Toni Erdmann",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/toni-erdmann/id1188526512?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "globo_play",
+              "link": "https://globoplay.globo.com/as-faces-de-toni-erdmann/t/g1K5KkCfxk/"
+            },
+            {
+              "type": "claro_video",
+              "link": "https://www.clarovideo.com/brasil/vcard/homeuser/As-Faces-de-Toni-Erdmann/749072"
+            }
+          ]
       },
       {
           "id": 407806,
-          "title": "13th"
+          "title": "13th",
+          "watchOn": [
+            {
+              "type": "netflix",
+              "link": "https://www.netflix.com/br/title/80091741"
+            }
+          ]
       },
       {
           "id": 376867,
-          "title": "Moonlight"
+          "title": "Moonlight",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/moonlight-sob-a-luz-do-luar/id1203097341?ign-mpt=uo%3D4"
+          },
+          {
+            "type": "netflix",
+            "link": "https://www.netflix.com/br/title/80121348"
+          }
+        ]
       },
       {
           "id": 391713,
-          "title": "Lady Bird"
+          "title": "Lady Bird",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/lady-bird/id1348491906?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "prime_video",
+              "link": "https://www.primevideo.com/detail/amzn1.dv.gti.26b6390b-1bc8-ae4e-690f-06a215e3a42d?ie=UTF8&linkCode=xm2"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/lady-bird-a-hora-de-voar"
+            }
+          ]
       },
       {
           "id": 399055,
-          "title": "The Shape of Water"
+          "title": "The Shape of Water",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/the-shape-of-water/id1327151304?l=en"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/A_Forma_da_%C3%81gua_Dublado?gl=BR&hl=en&id=mh8z6xK7-zU"
+            }
+          ]
       },
       {
           "id": 359940,
-          "title": "Three Billboards Outside Ebbing, Missouri"
+          "title": "Three Billboards Outside Ebbing, Missouri",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/three-billboards-outside-ebbing-missouri/id1313649758?l=en"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Tr%C3%AAs_An%C3%BAncios_para_um_Crime_Legendado?gl=BR&hl=en&id=UZhz5V89fJk"
+            }
+          ]
       },
       {
           "id": 398818,
-          "title": "Call Me by Your Name"
+          "title": "Call Me by Your Name",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/call-me-by-your-name/id1300348171?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Me_Chame_Pelo_Seu_Nome_Dublado?gl=BR&hl=en&id=XcEg_dSna_s"
+            },
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/Me_Chame_Pelo_Seu_Nome_17513"
+            }
+          ]
       },
       {
           "id": 381283,
-          "title": "mother!"
+          "title": "mother!",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/mother/id1273360788?l=en"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/m%C3%A3e_Legendado?gl=BR&hl=en&id=dj5q19X9Awc"
+            },
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/Mae_8588"
+            }
+          ]
       },
       {
           "id": 335984,
-          "title": "Blade Runner 2049"
+          "title": "Blade Runner 2049",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/blade-runner-2049/id1287369934?l=en"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Blade_Runner_2049_Dublado?gl=BR&hl=en&id=qbRN3ZD8gI4"
+            },
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B0765L85F8/ref=atv_dl_rdr?tag=justus1ktp-20"
+            }
+          ]
       },
       {
           "id": 419430,
-          "title": "Get Out"
+          "title": "Get Out",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/get-out/id1234800368?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Corra_Legendado?gl=BR&hl=en&id=lsGJOpqE-0k"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/corra"
+            }
+          ]
       },
       {
           "id": 400617,
-          "title": "Phantom Thread"
+          "title": "Phantom Thread",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/phantom-thread/id1348003337?l=en"
+            },
+            {
+              "type": "prime_video",
+              "link": "https://www.primevideo.com/detail/amzn1.dv.gti.52b6390a-2a07-3ddf-ed48-a07adc6c732c?ie=UTF8&linkCode=xm2"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/trama-fantasma"
+            }
+          ]
       },
       {
           "id": 316029,
-          "title": "The Greatest Showman"
+          "title": "The Greatest Showman",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/the-greatest-showman/id1324421600?l=en"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/O_Rei_do_Show_Dublado?gl=BR&hl=en&id=hTLrSTtcrfE"
+            },
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B08GSL61Z4/ref=atv_dl_rdr?tag=justus1ktp-20"
+            }
+          ]
       },
       {
           "id": 284054,
-          "title": "Black Panther"
+          "title": "Black Panther",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/pantera-negra-2018/id1342065788?ign-mpt=uo%3D4"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Pantera_Negra_Dublado?gl=BR&hl=en&id=Hb6X0TQAKvQ"
+            }
+          ]
       },
       {
           "id": 455207,
-          "title": "Crazy Rich Asians"
+          "title": "Crazy Rich Asians",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/crazy-rich-asians/id1420298262?l=en"
+            },
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B07JGJFXBF/ref=atv_dl_rdr?tag=justus1ktp-20"
+            }
+          ]
       },
       {
           "id": 517814,
-          "title": "Capernaum"
+          "title": "Capernaum",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/capernaum/id1449300662?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/cafarnaum"
+            }
+          ]
       },
       {
           "id": 332562,
-          "title": "A Star Is Born"
+          "title": "A Star Is Born",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/a-star-is-born-2018/id1437031362?l=en"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Nasce_uma_Estrela_Vers%C3%A3o_Estendida_Legendado?gl=BR&hl=en&id=Eo0VTD9np3w"
+          }
+        ]
       },
       {
           "id": 299536,
-          "title": "Avengers: Infinity War"
+          "title": "Avengers: Infinity War",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/vingadores-guerra-infinita/id1370224078?ign-mpt=uo%3D4"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Vingadores_Guerra_Infinita_Dublado?gl=BR&hl=en&id=cgNs0UiFLTc"
+            },
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B07CKJXYFM/ref=atv_dl_rdr?tag=justus1ktp-20"
+            }
+          ]
       },
       {
           "id": 426426,
-          "title": "Roma"
+          "title": "Roma",
+          "watchOn": [
+            {
+              "type": "netflix",
+              "link": "https://www.netflix.com/br/title/80240715"
+            }
+          ]
       },
       {
           "id": 493922,
-          "title": "Hereditary"
+          "title": "Hereditary",
+          "watchOn": [
+            {
+              "type": "prime_video",
+              "link": "https://www.primevideo.com/detail/amzn1.dv.gti.a8b6ff1b-ee58-c70c-b072-03743c975ee3?ie=UTF8&linkCode=xm2"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Heredit%C3%A1rio_Legendado?gl=BR&hl=en&id=F6JwlbbGJAc"
+            },
+            {
+              "type": "claro_video",
+              "link": "https://www.clarovideo.com/brasil/vcard/homeuser/Hereditario/774622"
+            }
+          ]
       },
       {
           "id": 375262,
-          "title": "The Favourite"
+          "title": "The Favourite",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/the-favourite/id1445200135?l=en"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/A_Favorita_Dublado?gl=BR&hl=en&id=T-LcDnZ7GT8"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/A_Favorita_16846"
+          }
+        ]
       },
       {
           "id": 424781,
-          "title": "Sorry to Bother You"
+          "title": "Sorry to Bother You",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/sorry-to-bother-you/id1468974214?l=en&ign-mpt=uo%3D4"
+            },
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B07FN4QC7J/ref=atv_dl_rdr?tag=justus1ktp-20"
+            }
+          ]
       },
       {
           "id": 429197,
-          "title": "Vice"
+          "title": "Vice",
+          "watchOn": [
+            {
+              "type": "apple_tv",
+              "link": "https://itunes.apple.com/br/movie/vice/id1458826247?ign-mpt=uo%3D4"
+            },
+            {
+              "type": "play_store",
+              "link": "https://www.justwatch.com/br/filme/vice-2018"
+            },
+            {
+              "type": "looke",
+              "link": "https://www.looke.com.br/filmes/vice"
+            }
+          ]
       },
       {
           "id": 487558,
-          "title": "BlacKkKlansman"
+          "title": "BlacKkKlansman",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/blackkklansman/id1435970816?l=en"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/INFILTRADO_NA_KLAN_Legendado?gl=BR&hl=en&id=Suff-Qf0RdM"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/infiltrado-na-klan"
+          }
+        ]
       }
   ]
   }

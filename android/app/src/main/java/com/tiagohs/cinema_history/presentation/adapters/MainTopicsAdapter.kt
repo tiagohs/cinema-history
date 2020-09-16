@@ -143,15 +143,41 @@ class MainTopicsAdapter(
                 )
             }
 
+            bindButtons(mainTopicItem)
+        }
+
+        private fun bindButtons(mainTopicItem: MainTopicItem) {
+            bindBlockedButton(mainTopicItem)
+            bindIsNewButton(mainTopicItem)
+        }
+
+        private fun bindBlockedButton(mainTopicItem: MainTopicItem) {
             if (mainTopicItem.blocked) {
                 mainTopicsContainer.isClickable = false
                 mainTopicsContainer.alpha = 0.3f
                 comingSoonTagContainer.show()
+
+                comingSoonTag.setResourceText(R.string.comingsoon)
+                comingSoonTagContainer.setCardBackgroundColor(containerView.context.getResourceColor(R.color.md_red_500))
                 return
             }
 
             mainTopicsContainer.isClickable = true
             mainTopicsContainer.alpha = 1f
+            comingSoonTagContainer.hide()
+        }
+
+        private fun bindIsNewButton(mainTopicItem: MainTopicItem) {
+            if (mainTopicItem.isNew) {
+                mainTopicsContainer.isClickable = true
+                mainTopicsContainer.alpha = 1f
+                comingSoonTagContainer.show()
+
+                comingSoonTag.setResourceText(R.string.is_new)
+                comingSoonTagContainer.setCardBackgroundColor(containerView.context.getResourceColor(R.color.md_green_500))
+                return
+            }
+
             comingSoonTagContainer.hide()
         }
 

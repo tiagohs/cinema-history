@@ -46,39 +46,39 @@ class HomeAdapter(
 
         private fun bindItem(
             item: HomeContentItem,
-            title1: TextView,
-            title2: TextView,
-            startJourney: TextView,
-            imageView: ImageView,
-            itemContainerCard: CardView
+            title1: TextView?,
+            title2: TextView?,
+            startJourney: TextView?,
+            imageView: ImageView?,
+            itemContainerCard: CardView?
         ) {
             title1
-                .animate()
-                .alpha(1f)
-                .setStartDelay(200)
-                .setDuration(300)
-                .setInterpolator(AccelerateDecelerateInterpolator())
-                .start()
+                ?.animate()
+                ?.alpha(1f)
+                ?.setStartDelay(200)
+                ?.setDuration(300)
+                ?.setInterpolator(AccelerateDecelerateInterpolator())
+                ?.start()
 
             title2
-                .animate()
-                .alpha(1f)
-                .setDuration(400)
-                .setStartDelay(400)
-                .setInterpolator(AccelerateDecelerateInterpolator())
-                .withEndAction {
-                    imageView.loadImage(item.image, null).apply {
-                        startJourney.animate()
-                            .alpha(1f)
-                            .setStartDelay(200)
-                            .setDuration(300)
-                            .setInterpolator(AccelerateDecelerateInterpolator())
-                            .start()
+                ?.animate()
+                ?.alpha(1f)
+                ?.setDuration(400)
+                ?.setStartDelay(400)
+                ?.setInterpolator(AccelerateDecelerateInterpolator())
+                ?.withEndAction {
+                    imageView?.loadImage(item.image, null).apply {
+                        startJourney?.animate()
+                            ?.alpha(1f)
+                            ?.setStartDelay(200)
+                            ?.setDuration(300)
+                            ?.setInterpolator(AccelerateDecelerateInterpolator())
+                            ?.start()
                     }
                 }
-                .start()
+                ?.start()
 
-            itemContainerCard.setOnClickListener { onItemClicked?.invoke(item) }
+            itemContainerCard?.setOnClickListener { onItemClicked?.invoke(item) }
         }
     }
 
