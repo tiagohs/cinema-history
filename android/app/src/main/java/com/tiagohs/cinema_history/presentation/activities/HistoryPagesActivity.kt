@@ -56,9 +56,7 @@ class HistoryPagesActivity : BaseActivity() {
         setupPagesContainer()
         setupFooter()
 
-        Handler().postDelayed({
-            hideLoading()
-        }, 1000)
+        hideLoading()
     }
 
     override fun onBackPressed() {

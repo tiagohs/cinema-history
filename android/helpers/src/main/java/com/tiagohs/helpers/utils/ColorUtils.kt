@@ -48,7 +48,6 @@ object ColorUtils {
             com.tiagohs.entities.ColorAsset("amber", "md_black_1000"),
             com.tiagohs.entities.ColorAsset("orange", "md_black_1000"),
             com.tiagohs.entities.ColorAsset("deep_orange", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("brown", "md_white_1000"),
             com.tiagohs.entities.ColorAsset("grey", "md_white_1000"),
             com.tiagohs.entities.ColorAsset("blue_grey", "md_white_1000")
         )

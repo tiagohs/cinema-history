@@ -79,8 +79,6 @@ class ReferenceActivity : BaseActivity(), ReferenceView {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
-
-        contentList.addItemDecoration(SpaceOffsetDecoration(10.convertIntToDp(this@ReferenceActivity), SpaceOffsetDecoration.LEFT))
     }
 
     private fun setupReviewList(references: List<Reference>) {

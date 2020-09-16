@@ -7,9 +7,11 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.page.*
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.enums.ContentType
+import com.tiagohs.entities.main_topics.MainTopicItem
 
 class PageContentAdapter(
     list: List<Content>,
+    private val mainTopic: MainTopicItem?,
     private val appLanguage: String
 ) : BaseAdapter<Content, BasePageViewHolder>(list) {
 
@@ -50,7 +52,7 @@ class PageContentAdapter(
             ContentType.SLIDE.ordinal -> SlideViewHolder(view)
             ContentType.VIDEO.ordinal -> VideoViewHolder(view)
             ContentType.LINK_SCREEN.ordinal -> LinkScreenViewHolder(view, presentScreen)
-            ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder(view, appLanguage, onMovieClicked)
+            ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder(view, mainTopic, appLanguage, onMovieClicked)
             ContentType.PERSON_LIST.ordinal -> PersonListViewHolder(view, onPersonClicked)
             ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder(view, onMovieClicked)
             else -> object : BasePageViewHolder(view) {}

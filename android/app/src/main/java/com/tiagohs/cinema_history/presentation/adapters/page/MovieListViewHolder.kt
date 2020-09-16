@@ -6,6 +6,7 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.MovieItemCollectionAdapter
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentMovieList
+import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.helpers.extensions.getResourceColor
 import com.tiagohs.helpers.extensions.setResourceBackgroundColor
 import com.tiagohs.helpers.extensions.setResourceText
@@ -16,6 +17,7 @@ import kotlinx.android.synthetic.main.adapter_page_list_movies.*
 
 class MovieListViewHolder(
     view: View,
+    val mainTopic: MainTopicItem?,
     val appLanguage: String,
     val onMovieClicked: ((movieId: Int) -> Unit)? = null
 ) : BasePageViewHolder(view) {
@@ -29,7 +31,6 @@ class MovieListViewHolder(
         if (!isSetup) {
             val colorAsset = ColorUtils.getRandomColorAssets()
 
-            container.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
             title.setResourceTextColor(colorAsset.textColorName)
             title.setResourceText(R.string.should_see)
             viewPager.apply {
@@ -44,8 +45,25 @@ class MovieListViewHolder(
                 setPageTransformer(SliderTransformer(4))
             }
 
+            bindMovieListBackground()
+
             isSetup = true
         }
+    }
+
+    private fun bindMovieListBackground() {
+        val color = mainTopic?.color
+
+        if (color != null) {
+            container.setResourceBackgroundColor(color)
+            title.setResourceTextColor(R.color.md_white_1000)
+            return
+        }
+
+        val colorAsset = ColorUtils.getRandomColorAssets()
+
+        container.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
+        title.setResourceTextColor(colorAsset.textColorName)
     }
 
     companion object {

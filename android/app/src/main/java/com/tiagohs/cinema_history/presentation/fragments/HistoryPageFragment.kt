@@ -5,6 +5,7 @@ import android.graphics.Rect
 import android.os.Bundle
 import android.util.TypedValue
 import android.view.View
+import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.view.ViewCompat
@@ -68,7 +69,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
 
         pageContentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-            adapter = PageContentAdapter(pageContent.contentList, settingManager.getMovieLanguage()).apply {
+            adapter = PageContentAdapter(pageContent.contentList, mainTopic, settingManager.getMovieLanguage()).apply {
                 presentScreen = { presentScreen(it) }
                 onMovieClicked = { onMovieSelected(it) }
                 onPersonClicked = { onPersonClicked(it) }
@@ -130,9 +131,31 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
             }
         }
 
-        pageHeaderImage.loadImage(image, placeholder = null)
-
         appBar.addOnOffsetChangedListener(onOffsetChangedListener())
+
+        startAlphaAnimation(mainTopicName, 200, 200)
+        startAlphaAnimation(pageTitle, 200, 400)
+        startAlphaAnimation(pageDescription, 200, 600) {
+            pageHeaderImage.loadImage(image, placeholder = null)
+        }
+        startAlphaAnimation(pageContentList, 200, 800)
+    }
+
+    private fun startAlphaAnimation(view: View?, delay: Long, duration: Long, withEndAction: (() -> Unit)? = null) {
+        try {
+            view
+                ?.animate()
+                ?.alpha(1f)
+                ?.setDuration(duration)
+                ?.setStartDelay(delay)
+                ?.setInterpolator(AccelerateDecelerateInterpolator())
+                ?.withEndAction {
+                    withEndAction?.invoke()
+                }
+                ?.start()
+        } catch(ex: Exception) {
+            view?.alpha = 1f
+        }
     }
 
     private fun onOffsetChangedListener(): AppBarLayout.OnOffsetChangedListener {
