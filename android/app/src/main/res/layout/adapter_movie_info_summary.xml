@@ -26,7 +26,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
-            android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
             android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
             android:layout_marginBottom="@dimen/activity_vertical_margin_4x">
 
@@ -36,6 +35,7 @@
                 android:id="@+id/topContainer"
                 android:orientation="horizontal"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
@@ -238,6 +238,7 @@
                 android:fontFamily="@font/oswald_regular"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
                 app:layout_constraintTop_toBottomOf="@id/topContainer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -252,6 +253,7 @@
                 android:fontFamily="@font/proxima_nova_regular"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
                 app:layout_constraintTop_toBottomOf="@id/summaryTitle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -268,6 +270,7 @@
                 android:fontFamily="@font/proxima_nova_regular"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/activity_vertical_margin_2x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
                 app:layout_constraintTop_toBottomOf="@id/movieSummary"
                 app:layout_constraintStart_toStartOf="parent"
             />
@@ -281,6 +284,7 @@
                 android:thumb="@null"
                 android:splitTrack="true"
                 android:layout_marginTop="@dimen/activity_vertical_margin_3x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_0.5x"
                 app:layout_constraintTop_toBottomOf="@id/movieSummarySource"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -290,7 +294,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/budgetContainer"
-                android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2.5x"
                 android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
                 app:layout_constraintTop_toBottomOf="@id/budgetSeekBar"
                 app:layout_constraintStart_toStartOf="parent"
