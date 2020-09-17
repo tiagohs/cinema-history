@@ -4,7 +4,8 @@ import android.view.View
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.references.Reference
-import com.tiagohs.entities.references.ReferenceBook
+import com.tiagohs.entities.references.ReferenceMedia
+import com.tiagohs.helpers.extensions.getResourceColor
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.setResourceBackgroundColor
 import com.tiagohs.helpers.extensions.setResourceText
@@ -17,7 +18,7 @@ class MediaViewHolder(
 
     override fun bind(item: Reference, position: Int) {
         super.bind(item, position)
-        val referenceBook = item as? ReferenceBook ?: return
+        val referenceBook = item as? ReferenceMedia ?: return
 
         mediaName.setResourceText(referenceBook.title)
         mediaAuthor.setResourceText(referenceBook.subtitle)
@@ -28,16 +29,27 @@ class MediaViewHolder(
         mediaContainer.setOnClickListener { onClickListener(referenceBook) }
         buyButon.setOnClickListener { onClickListener(referenceBook) }
 
-        when (referenceBook.mediaType) {
-            "Livro" -> mediaType.setResourceBackgroundColor(R.color.md_red_500)
-            "Série" -> mediaType.setResourceBackgroundColor(R.color.md_deep_orange_500)
-            "Filme" -> mediaType.setResourceBackgroundColor(R.color.md_purple_500)
-            "Youtube" -> mediaType.setResourceBackgroundColor(R.color.md_brown_500)
+        val color = when (referenceBook.mediaType) {
+            "Livro" -> R.color.md_red_500
+            "Série" -> R.color.md_deep_orange_500
+            "Filme" -> R.color.md_purple_500
+            "Youtube" -> R.color.md_brown_500
+            else -> R.color.colorAccent
         }
+        mediaType.setResourceBackgroundColor(color)
+        buyButon.setCardBackgroundColor(containerView.context.getResourceColor(color))
+        
+        val buttonText = referenceBook.buttonText
+        if (buttonText != null) {
+            buyButonText.setResourceText(buttonText)
+            return
+        }
+
+        buyButonText.setResourceText(R.string.buy)
     }
 
-    private fun onClickListener(referenceBook: ReferenceBook) {
-        onLinkClick?.invoke(referenceBook.link)
+    private fun onClickListener(referenceMedia: ReferenceMedia) {
+        onLinkClick?.invoke(referenceMedia.link)
     }
 
     companion object {

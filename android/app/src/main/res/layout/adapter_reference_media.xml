@@ -127,7 +127,6 @@
         android:id="@+id/buyButon"
         app:cardElevation="@dimen/activity_vertical_margin_1.2x"
         app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
-        app:cardBackgroundColor="@color/amazon_background"
         android:layout_marginStart="@dimen/activity_vertical_margin_1.5x"
         android:layout_marginEnd="@dimen/activity_vertical_margin_3x"
         android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
@@ -137,7 +136,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/amazon_text"
+            android:textColor="@color/md_white_1000"
             android:id="@+id/buyButonText"
             android:textSize="@dimen/text_size_zeplin_22pt"
             android:text="@string/buy"

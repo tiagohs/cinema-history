@@ -5,7 +5,7 @@ import com.tiagohs.entities.Quote
 import com.tiagohs.entities.image.Image
 import java.io.Serializable
 
-class ReferenceBook(
+class ReferenceMedia(
     @SerializedName("title")
     var title: String,
 
@@ -22,5 +22,8 @@ class ReferenceBook(
     var mediaType: String,
 
     @SerializedName("link")
-    var link: String
+    var link: String,
+
+    @SerializedName("buttonText")
+    var buttonText: String? = null
 ): Reference(), Serializable
