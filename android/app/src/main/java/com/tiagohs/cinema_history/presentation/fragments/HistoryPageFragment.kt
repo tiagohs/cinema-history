@@ -136,7 +136,10 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
         startAlphaAnimation(mainTopicName, 200, 200)
         startAlphaAnimation(pageTitle, 200, 400)
         startAlphaAnimation(pageDescription, 200, 600) {
-            pageHeaderImage.loadImage(image, placeholder = null)
+            if (pageHeaderImage != null) {
+                pageHeaderImage?.loadImage(image, placeholder = null)
+            }
+
         }
         startAlphaAnimation(pageContentList, 200, 800)
     }

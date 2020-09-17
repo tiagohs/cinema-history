@@ -53,6 +53,9 @@ enum class NetworkType(
     @SerializedName("mubi")
     MUBI("mubi", R.string.mubi, "mubi", "md_white_1000"),
 
+    @SerializedName("vivo_play")
+    VIVO_PLAY("vivo_play", R.string.vivo_play, "vivo_play", "md_white_1000"),
+
     @SerializedName("unknown")
     UNKNOWN("unknown", color = "md_black_1000", textColor =  "md_white_1000");
 

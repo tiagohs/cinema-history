@@ -4848,11 +4848,11 @@
         "watchOn": [
           {
             "type": "amazon_video",
-            "link": ""
+            "link": "https://www.amazon.com/gp/video/detail/B006DKSMBU/ref=atv_dl_rdr?tag=justus1ktp-20"
           },
           {
-            "type": "play_store",
-            "link": ""
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/hoop-dreams-0"
           }
         ]
       },
@@ -4861,12 +4861,8 @@
           "title": "Satantango",
         "watchOn": [
           {
-            "type": "amazon_video",
-            "link": ""
-          },
-          {
-            "type": "play_store",
-            "link": ""
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/satantango"
           }
         ]
       },
@@ -4875,12 +4871,12 @@
           "original_title": "Clerks",
         "watchOn": [
           {
-            "type": "amazon_video",
-            "link": ""
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/o-balconista/id432472838?ign-mpt=uo%3D4"
           },
           {
             "type": "play_store",
-            "link": ""
+            "link": "https://play.google.com/store/movies/details/O_Balconista_Legendado?gl=BR&hl=en&id=u4FLyDoJr8A"
           }
         ]
       },
@@ -4889,12 +4885,8 @@
         "original_title": "Four Weddings and a Funeral",
         "watchOn": [
           {
-            "type": "amazon_video",
-            "link": ""
-          },
-          {
-            "type": "play_store",
-            "link": ""
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/four-weddings-and-a-funeral/id347378363?l=en&ign-mpt=uo%3D4"
           }
         ]
       },
@@ -4903,12 +4895,28 @@
           "original_title": "Forrest Gump",
         "watchOn": [
           {
-            "type": "amazon_video",
-            "link": ""
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.8cac18a7-1751-3b35-5f7c-95b3f1a16ad0?ie=UTF8&linkCode=xm2"
           },
           {
-            "type": "play_store",
-            "link": ""
+            "type": "globo_play",
+            "link": "https://globoplay.globo.com/forrest-gump-o-contador-de-historias/t/xqwwLJmnJk/"
+          },
+          {
+            "type": "netflix",
+            "link": "https://www.netflix.com/br/title/60000724"
+          },
+          {
+            "type": "vivo_play",
+            "link": "https://www.vivoplay.com.br/details/movie/forrest-gump-o-contador-de-historias-legendado-7678632"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Forrest_Gump_O_Contador_De_Historias_4438"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/forrest-gump-o-contador-de-hist%C3%B3rias-legendado/id496009118?l=en"
           }
         ]
       },
@@ -4917,12 +4925,8 @@
           "title": "Through the Olive Trees",
         "watchOn": [
           {
-            "type": "amazon_video",
-            "link": ""
-          },
-          {
-            "type": "play_store",
-            "link": ""
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Atraves_Das_Oliveiras_14741"
           }
         ]
       },
@@ -4931,30 +4935,70 @@
           "title": "The Shawshank Redemption",
         "watchOn": [
           {
-            "type": "amazon_video",
-            "link": ""
+            "type": "hbo_go",
+            "link": "https://br.hbogola.com/content/7e57dce5-4944-11ea-811a-0050569a010f"
           },
           {
             "type": "play_store",
-            "link": ""
+            "link": "https://play.google.com/store/movies/details/Um_Sonho_De_Liberdade?gl=BR&hl=en&id=o1axrUg2hlU"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/um-sonho-de-liberdade"
           }
         ]
       },
       {
           "id": 25403,
-          "original_title": "Caro diario"
+          "original_title": "Caro diario",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B08GL3DNQT/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 11104,
-          "title": "Chungking Express"
+          "title": "Chungking Express",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/Chungking-Express-Blu-ray-Brigitte-Lin/dp/B00O8OB0GW/ref=tmm_blu_swatch_0?_encoding=UTF8&qid=&sr="
+          }
+        ]
       },
       {
           "id": 22137,
-          "title": "The Kingdom"
+          "title": "The Kingdom",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com.br/Kingdom-One-Riget-Ernst-Hugo-J%C3%A4reg%C3%A5rd/dp/B000AYYV74"
+          }
+        ]
       },
       {
           "id": 197,
-          "original_title": "Braveheart"
+          "original_title": "Braveheart",
+        "watchOn": [
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/coracao-valente"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Cora%C3%A7%C3%A3o_Valente_Dublado?gl=BR&hl=en&id=8fbydrnO8uo"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/braveheart/id875149353?l=en"
+          },
+          {
+            "type": "claro_video",
+            "link": "https://www.clarovideo.com/brasil/vcard/homeuser/Cora-o-Valente/843045"
+          }
+        ]
       },
       {
           "id": 97046,
@@ -4962,15 +5006,57 @@
       },
       {
           "id": 9598,
-          "original_title": "Babe"
+          "original_title": "Babe",
+        "watchOn": [
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Babe_O_Porquinho_Atrapalhado_7788"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Babe_O_Porquinho_Atrapalhado?gl=BR&hl=en&id=ecqeLXLz7WU"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/babe-o-porquinho-atrapalhado"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/babe-o-porquinho-atrapalhado-babe-dublado-1995/id569883087?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 807,
-          "original_title": "Se7en"
+          "original_title": "Se7en",
+        "watchOn": [
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/seven-os-sete-crimes-capitais"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Seven_e_os_Sete_Crimes_Capitais_LEG?gl=BR&hl=en&id=kuRlJUeIN64"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/seven/id548170714?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "netflix",
+            "link": "https://www.netflix.com/br/title/950149"
+          }
+        ]
       },
       {
           "id": 10149,
-          "original_title": "Smoke"
+          "original_title": "Smoke",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/Smoke-William-Hurt/dp/B0062ABRDQ"
+          }
+        ]
       },
       {
           "id": 46785,
@@ -4978,187 +5064,667 @@
       },
       {
           "id": 11902,
-          "original_title": "Podzemlje"
+          "original_title": "Podzemlje",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/Underground-Italian-miki-manojlovic/dp/B008GZVI8E/ref=tmm_blu_swatch_0?_encoding=UTF8&qid=&sr="
+          }
+        ]
       },
       {
           "id": 19404,
-          "title": "Dilwale Dulhania Le Jayenge"
+          "title": "Dilwale Dulhania Le Jayenge",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.0cabea87-f67f-d804-5d8e-a5095ae42fb9?ie=UTF8&linkCode=xm2"
+          }
+        ]
       },
       {
           "id": 36266,
-          "original_title": "Xích lô"
+          "original_title": "Xích lô",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/Cyclo-Van-Loc/dp/B0000DIJP0"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=hH7l-geHTws&has_verified=1"
+          }
+        ]
       },
       {
           "id": 9603,
-          "original_title": "Clueless"
+          "original_title": "Clueless",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/as-patricinhas-de-beverly-hills-legendado/id496793580?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/As_Patricinhas_de_Beverly_Hills?gl=BR&hl=en&id=k-tU7SiHxHo"
+          },
+          {
+            "type": "claro_video",
+            "link": "https://www.justwatch.com/br/filme/as-patricinhas-de-beverly-hills"
+          }
+        ]
       },
       {
           "id": 32646,
-          "original_title": "Safe"
+          "original_title": "Safe",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01MR0X15Y/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 949,
-          "original_title": "Heat"
+          "original_title": "Heat",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.6eaf68e1-ff3d-f4fe-2aa6-ee2ad95fd152?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Fogo_Contra_Fogo_Edi%C3%A7%C3%A3o_definitiva_do_Diretor?gl=BR&hl=en&id=LE_X1MvDpRA"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/heat-1995/id1027997396?l=en"
+          }
+        ]
       },
       {
           "id": 862,
-          "original_title": "Toy Story"
+          "original_title": "Toy Story",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.fcb68154-59d6-f7d1-69c9-a26a01dcbce0?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Toy_Story?gl=BR&hl=en&id=MQ9I1tM-f9s"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/toy-story"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/toy-story-dublado/id478416201?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
         "id": 922,
-        "original_title": "Dead Man"
+        "original_title": "Dead Man",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/dead-man-1"
+          }
+        ]
       },
       {
           "id": 629,
-          "title": "The Usual Suspects"
+          "title": "The Usual Suspects",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/Usual-Suspects-Stephen-Baldwin/dp/B00101ZOTA"
+          }
+        ]
       },
       {
           "id": 85589,
-          "title": "Zero Kelvin"
+          "title": "Zero Kelvin",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.co.uk/Zero-Kelvin-Kj%C3%A6rlighetens-kj%C3%B8tere-DVD/dp/B000R2GGUO"
+          }
+        ]
       },
       {
           "id": 627,
-          "original_title": "Trainspotting"
+          "original_title": "Trainspotting",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.e0b4dae6-2227-4691-ea90-2c393094ba60?ie=UTF8&linkCode=xm2"
+          }
+        ]
       },
       {
           "id": 275,
-          "title": "Fargo"
+          "title": "Fargo",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/fargo-1996/id341289724?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 43771,
-          "title": "Gabbeh"
+          "title": "Gabbeh",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.amazon.com/Gabbeh-Shaghayeh-Djodat/dp/B07L52DJV1"
+          }
+        ]
       },
       {
           "id": 55049,
-          "title": "Three Lives and Only One Death"
+          "title": "Three Lives and Only One Death",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=PRri30gVBIw"
+          }
+        ]
       },
       {
           "id": 7863,
-          "original_title": "Shine"
+          "original_title": "Shine",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0010T56J0/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 4232,
-          "original_title": "Scream"
+          "original_title": "Scream",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/p%C3%A2nico/id1520494596?ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Scream?gl=BR&hl=en&id=x_UzBDAM_fo"
+          }
+        ]
       },
       {
           "id": 11159,
-          "title": "Secrets & Lies"
+          "title": "Secrets & Lies",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.co.uk/Secrets-Lies-Timothy-Spall/dp/B018EAJDAK"
+          }
+        ]
       },
       {
           "id": 409,
-          "original_title": "The English Patient"
+          "original_title": "The English Patient",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.3eabea5b-51a3-7814-ed0a-873d214e4a03?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/O_Paciente_Ingl%C3%AAs_Legendado?gl=BR&hl=en&id=aN-i9cbA8kg"
+          }
+        ]
       },
       {
           "id": 26748,
-          "original_title": "Lone Star"
+          "original_title": "Lone Star",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00GNYBEIY/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 145,
-          "original_title": "Breaking the Waves"
+          "original_title": "Breaking the Waves",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00JP5JUAM/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/breaking-waves"
+          }
+        ]
       },
       {
           "id": 602,
-          "original_title": "Independence Day"
+          "original_title": "Independence Day",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/independence-day/id488554197?l=en"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Independence_Day_LEG?gl=BR&hl=en&id=DywtkD1JJE8"
+          }
+        ]
       },
       {
           "id": 68924,
-          "title": "The Ice Storm"
+          "title": "The Ice Storm",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000I9UA7Q/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 5910,
-          "title": "Fireworks"
+          "title": "Fireworks",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B075SJD5GS/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/hana-bi"
+          }
+        ]
       },
       {
           "id": 4995,
-          "original_title": "Boogie Nights"
+          "original_title": "Boogie Nights",
+        "watchOn": [
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Boogie_Nights_Dublado?gl=BR&hl=en&id=5TfvtA3t7pI"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/boogie-nights/id650503069?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "vivo_play",
+            "link": "https://www.vivoplay.com.br/details/movie/boogie-nights-prazer-sem-limites-legendado-2155938"
+          }
+        ]
       },
       {
           "id": 2118,
-          "original_title": "L.A. Confidential"
+          "original_title": "L.A. Confidential",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.6caf691c-f94b-4dfb-4d24-99e04c906286?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/l-a-confidential/id1028632187?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Los_Angeles_Cidade_Proibida_Dublado?gl=BR&hl=en&id=KzQOjWIR1rs"
+          }
+        ]
       },
       {
           "id": 10234,
-          "original_title": "Funny Games"
+          "original_title": "Funny Games",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=lX2pThQ4rYI&has_verified=1"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/funny-games-0"
+          }
+        ]
       },
       {
           "id": 1902,
-          "original_title": "Abre los ojos"
+          "original_title": "Abre los ojos",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.eab9c861-08d4-5157-0e77-9a9df56b6eaa?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Preso_na_Escurid%C3%A3o_LEG?gl=BR&hl=en&id=r1KVBrkgb3g"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/open-your-eyes-1997/id950613316?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
         "id": 10217,
-        "title": "The Sweet Hereafter"
+        "title": "The Sweet Hereafter",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B071JZ1WDW/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 597,
-          "original_title": "Titanic"
+          "original_title": "Titanic",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/titanic/id546572877?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Titanic_Dublado?gl=BR&hl=en&id=bL9r5iv5oeY"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/titanic"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Titanic_7039"
+          },
+          {
+            "type": "vivo_play",
+            "link": "https://www.vivoplay.com.br/details/movie/titanic-legendado-6160322"
+          }
+        ]
       },
       {
           "id": 30020,
-          "title": "Taste of Cherry"
+          "title": "Taste of Cherry",
+        "watchOn": [
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Gosto_De_Cereja_17618"
+          }
+        ]
       },
       {
           "id": 857,
-          "original_title": "Saving Private Ryan"
+          "original_title": "Saving Private Ryan",
+        "watchOn": [
+          {
+            "type": "globo_play",
+            "link": "https://globoplay.globo.com/o-resgate-do-soldado-ryan/t/bfnGhMsqty/"
+          },
+          {
+            "type": "netflix",
+            "link": "https://www.netflix.com/br/title/21878564"
+          },
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.2ab01749-dfe6-47d4-bf44-2cad4f64a5e6?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/saving-private-ryan/id374883182?l=en"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/O_Resgate_Do_Soldado_Ryan_8119"
+          },
+          {
+            "type": "claro_video",
+            "link": "https://www.clarovideo.com/brasil/vcard/homeuser/O-Resgate-do-Soldado-Ryan/574900"
+          },
+          {
+            "type": "vivo_play",
+            "link": "https://www.vivoplay.com.br/details/movie/o-resgate-do-soldado-ryan-legendado-7582985"
+          }
+        ]
       },
       {
           "id": 104,
-          "original_title": "Lola rennt"
+          "original_title": "Lola rennt",
+        "watchOn": [
+          {
+            "type": "hbo_go",
+            "link": "https://www.hbobrasil.com/movies/detail/lola-rennt/cpt079443"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/run-lola-run/id995070180?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 11545,
-          "original_title": "Rushmore"
+          "original_title": "Rushmore",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00AWSQX24/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 309,
-          "title": "The Celebration"
+          "title": "The Celebration",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.co.uk/Festen-Ulrich-Thomsen/dp/B00ET1F5LU"
+          }
+        ]
       },
       {
           "id": 2671,
-          "title": "Ringu"
+          "title": "Ringu",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.ecb7c3a4-cefe-b752-e3e0-d17b591f815e?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/ring-o-chamado"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Ring_O_Chamado_Dublado?gl=BR&hl=en&id=gwow840BkpM"
+          }
+        ]
       },
       {
           "id": 10683,
-          "title": "Happiness"
+          "title": "Happiness",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/Happiness-Lara-Flynn-Boyle/dp/B00N8MC4LA"
+          }
+        ]
       },
       {
           "id": 8741,
-          "original_title": "The Thin Red Line"
+          "original_title": "The Thin Red Line",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/al%C3%A9m-da-linha-vermelha/id492230417?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Alem_Da_Linha_Vermelha_4337"
+          }
+        ]
       },
       {
           "id": 2667,
-          "original_title": "The Blair Witch Project"
+          "original_title": "The Blair Witch Project",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/a-bruxa-de-blair-the-blair-witch-project/id950928979?ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/A_Bruxa_de_Blair_Legendado?gl=BR&hl=en&id=hek_1vQkN5A"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/a-bruxa-de-blair"
+          }
+        ]
       },
       {
           "id": 492,
-          "original_title": "Being John Malkovich"
+          "original_title": "Being John Malkovich",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/quero-ser-john-malkovich/id458571444?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Quero_Ser_John_Malkovich_17261"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/quero-ser-john-malkovich"
+          }
+        ]
       },
       {
           "id": 745,
-          "original_title": "The Sixth Sense"
+          "original_title": "The Sixth Sense",
+        "watchOn": [
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/O_Sexto_Sentido_4341"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/O_Sexto_Sentido_Dublado?gl=BR&hl=en&id=HRM0JJB5984"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/o-sexto-sentido-legendado/id478230206?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 550,
-          "original_title": "Fight Club"
+          "original_title": "Fight Club",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.14b02470-fb0f-7d69-c65e-b9ab1c235283?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Fight_Club_Clube_da_Luta_LEG?gl=BR&hl=en&id=GGgmCKpc5KA"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/fight-club/id290531770?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/clube-da-luta"
+          }
+        ]
       },
       {
           "id": 11075,
-          "title": "Audition"
+          "title": "Audition",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/Audition-English-Subtitled-Ryo-Ishibashi/dp/B003HIC564"
+          }
+        ]
       },
       {
           "id": 14,
-          "title": "American Beauty"
+          "title": "American Beauty",
+        "watchOn": [
+          {
+            "type": "netflix",
+            "link": "https://www.netflix.com/br/title/60000407"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Beleza_Americana?gl=BR&hl=en&id=m-X9he5ZmJ0"
+          }
+        ]
       },
       {
           "id": 14626,
-          "title": "Beau Travail"
+          "title": "Beau Travail",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.co.uk/Beau-Travail-Denis-Lavant/dp/B00IKFYCO2"
+          }
+        ]
       },
       {
           "id": 99,
-          "original_title": "Todo sobre mi madre"
+          "original_title": "Todo sobre mi madre",
+        "watchOn": [
+          {
+            "type": "prime_video",
+            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.08b120c8-acde-f2ee-7363-20cad6bbd984?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/todo-sobre-mi-madre/id1511787057?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Tudo_Sobre_Minha_Mae_7064"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Tudo_Sobre_Minha_M%C3%A3e?gl=BR&hl=en&id=B1uR0wb5y50.P"
+          }
+        ]
       },
       {
           "id": 603,
-          "title": "The Matrix"
+          "title": "The Matrix",
+        "watchOn": [
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Matrix_18642"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Matrix_Dublado?gl=BR&hl=en&id=6tuPsLakiqg"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/the-matrix/id271469518?l=en"
+          },
+          {
+            "type": "vivo_play",
+            "link": "https://www.vivoplay.com.br/details/movie/matrix-dublado-2121177"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/matrix"
+          }
+        ]
       }
     ]
   },
@@ -5202,6 +5768,10 @@
           {
             "type": "prime_video",
             "link": "https://www.primevideo.com/detail/amzn1.dv.gti.34aeab87-fe2a-3c59-8439-01cb5acb7d9b?ie=UTF8&linkCode=xm2"
+          },
+          {
+            "type": "vivo_play",
+            "link": "https://www.vivoplay.com.br/details/movie/gladiador-legendado-7058561"
           }
         ]
       },
@@ -5266,6 +5836,10 @@
           {
             "type": "looke",
             "link": "https://www.looke.com.br/filmes/o-senhor-dos-aneis-a-sociedade-do-anel"
+          },
+          {
+            "type": "vivo_play",
+            "link": "https://vivoplay.com.br/details/movie/o-senhor-dos-aneis-i-a-sociedade-do-anel-dublado-2158558"
           }
         ]
       },
@@ -5522,6 +6096,10 @@
           {
             "type": "play_store",
             "link": "https://play.google.com/store/movies/details/Batman_O_Cavaleiro_das_Trevas_LEG?gl=BR&hl=en&id=e-OEZeUAMmA"
+          },
+          {
+            "type": "vivo_play",
+            "link": "https://www.vivoplay.com.br/details/movie/batman-o-cavaleiro-das-trevas-legendado-1190839"
           },
           {
             "type": "hbo_go",

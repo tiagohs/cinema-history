@@ -45,6 +45,7 @@ class PersonAdapter(
             if (subtitle != null) {
                 personSubtitle.show()
                 personSubtitle.setResourceText(subtitle)
+                return
             }
 
             personSubtitle.hide()
