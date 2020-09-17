@@ -478,6 +478,7 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
                 getString(R.string.tmdb_link, movie.id),
                 tmdbRating, tmdbContainer
             )
+            return
         }
 
         tmdbContainer.hide()

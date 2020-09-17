@@ -13,11 +13,13 @@
     <string name="amazon_video" translatable="false">Amazon Video</string>
     <string name="netflix" translatable="false">Netflix</string>
     <string name="hbo_max" translatable="false">HBO Max</string>
+    <string name="hbo_go" translatable="false">HBO GO</string>
     <string name="looke" translatable="false">Looke</string>
     <string name="globo_play" translatable="false">Globoplay</string>
     <string name="telecine" translatable="false">Telecine</string>
     <string name="claro_video" translatable="false">Claro Vídeo</string>
     <string name="play_store" translatable="false">Google Play</string>
+    <string name="mubi" translatable="false">Mubi</string>
 
 
     <string name="brazil">Brazil</string>

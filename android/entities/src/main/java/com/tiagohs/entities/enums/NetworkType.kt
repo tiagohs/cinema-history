@@ -32,6 +32,9 @@ enum class NetworkType(
     @SerializedName("hbo_max")
     HBO_MAX("hbo_max", R.string.hbo_max, "hbo_max", "md_white_1000"),
 
+    @SerializedName("hbo_go")
+    HBO_GO("hbo_go", R.string.hbo_go, "md_black_1000", "md_white_1000"),
+
     @SerializedName("looke")
     LOOKE("looke", R.string.looke, "looke", "md_white_1000"),
 
@@ -46,6 +49,9 @@ enum class NetworkType(
 
     @SerializedName("claro_video")
     CLARO_VIDEO("claro_video", R.string.claro_video, "claro_video", "md_white_1000"),
+
+    @SerializedName("mubi")
+    MUBI("mubi", R.string.mubi, "mubi", "md_white_1000"),
 
     @SerializedName("unknown")
     UNKNOWN("unknown", color = "md_black_1000", textColor =  "md_white_1000");

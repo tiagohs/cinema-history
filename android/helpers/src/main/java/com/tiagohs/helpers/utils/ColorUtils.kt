@@ -33,23 +33,23 @@ object ColorUtils {
 
     fun getRandomColorAssets(): ColorAsset {
         val listOfColors = listOf(
-            com.tiagohs.entities.ColorAsset("red", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("pink", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("purple", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("deep_purple", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("blue", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("light_blue", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("cyan", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("teal", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("green", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("light_green", "md_black_1000"),
-            com.tiagohs.entities.ColorAsset("lime", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("yellow", "md_black_1000"),
-            com.tiagohs.entities.ColorAsset("amber", "md_black_1000"),
-            com.tiagohs.entities.ColorAsset("orange", "md_black_1000"),
-            com.tiagohs.entities.ColorAsset("deep_orange", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("grey", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("blue_grey", "md_white_1000")
+            ColorAsset("red", "md_white_1000"),
+            ColorAsset("pink", "md_white_1000"),
+            ColorAsset("purple", "md_white_1000"),
+            ColorAsset("deep_purple", "md_white_1000"),
+            ColorAsset("blue", "md_white_1000"),
+            ColorAsset("light_blue", "md_white_1000"),
+            ColorAsset("cyan", "md_white_1000"),
+            ColorAsset("teal", "md_white_1000"),
+            ColorAsset("green", "md_white_1000"),
+            ColorAsset("light_green", "md_black_1000"),
+            ColorAsset("lime", "md_white_1000"),
+            ColorAsset("yellow", "md_black_1000"),
+            ColorAsset("amber", "md_black_1000"),
+            ColorAsset("orange", "md_black_1000"),
+            ColorAsset("deep_orange", "md_white_1000"),
+            ColorAsset("grey", "md_white_1000"),
+            ColorAsset("blue_grey", "md_white_1000")
         )
 
         return listOfColors.random()
@@ -58,13 +58,13 @@ object ColorUtils {
 
     fun getRandomColorForDegradeAssets(): ColorAsset {
         val listOfColors = listOf(
-            com.tiagohs.entities.ColorAsset("red", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("deep_purple", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("blue", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("green", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("yellow", "md_black_1000"),
-            com.tiagohs.entities.ColorAsset("deep_orange", "md_white_1000"),
-            com.tiagohs.entities.ColorAsset("brown", "md_white_1000")
+            ColorAsset("red", "md_white_1000"),
+            ColorAsset("deep_purple", "md_white_1000"),
+            ColorAsset("blue", "md_white_1000"),
+            ColorAsset("green", "md_white_1000"),
+            ColorAsset("yellow", "md_black_1000"),
+            ColorAsset("deep_orange", "md_white_1000"),
+            ColorAsset("brown", "md_white_1000")
         )
 
         return listOfColors.random()
