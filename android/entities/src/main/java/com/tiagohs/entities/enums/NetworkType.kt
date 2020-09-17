@@ -42,7 +42,7 @@ enum class NetworkType(
     GLOBO_PLAY("globo_play", R.string.globo_play, "globo_play", "md_white_1000"),
 
     @SerializedName("play_store")
-    PLAY_STORE("play_store", R.string.play_store, "md_white_1000", "md_black_1000"),
+    PLAY_STORE("play_store", R.string.play_store, "play_store", "md_white_1000"),
 
     @SerializedName("telecine")
     TELECINE("telecine", R.string.telecine, "telecine", "md_white_1000"),
