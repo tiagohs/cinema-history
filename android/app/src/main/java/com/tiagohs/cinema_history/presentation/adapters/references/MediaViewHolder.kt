@@ -38,7 +38,7 @@ class MediaViewHolder(
         }
         mediaType.setResourceBackgroundColor(color)
         buyButon.setCardBackgroundColor(containerView.context.getResourceColor(color))
-        
+
         val buttonText = referenceBook.buttonText
         if (buttonText != null) {
             buyButonText.setResourceText(buttonText)

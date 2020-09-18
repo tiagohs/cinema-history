@@ -55,7 +55,6 @@
                 android:textSize="@dimen/text_size_zeplin_26pt"
                 android:textColor="@color/md_black_1000"
                 android:fontFamily="@font/oswald_regular"
-                android:layout_gravity="bottom"
                 android:layout_marginStart="@dimen/activity_vertical_margin_2.2x"
                 android:layout_marginEnd="@dimen/activity_vertical_margin"
                 app:layout_constraintTop_toTopOf="@id/spinner"
