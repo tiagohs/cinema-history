@@ -56,6 +56,18 @@ enum class NetworkType(
     @SerializedName("vivo_play")
     VIVO_PLAY("vivo_play", R.string.vivo_play, "vivo_play", "md_white_1000"),
 
+    @SerializedName("criterionchannel")
+    CRITERION_CHANNEL("criterionchannel", R.string.vivo_play, "criterionchannel", "md_white_1000"),
+
+    @SerializedName("fandor")
+    FANDOR("fandor", R.string.vivo_play, "fandor", "md_black_1000"),
+
+    @SerializedName("now")
+    NET_NOW("now", R.string.net_now, "net_now", "md_white_1000"),
+
+    @SerializedName("uol_play")
+    UOL_PLAY("uol_play", R.string.uol_play, "uol_play", "md_white_1000"),
+
     @SerializedName("unknown")
     UNKNOWN("unknown", color = "md_black_1000", textColor =  "md_white_1000");
 
