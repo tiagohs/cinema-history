@@ -57,7 +57,7 @@ enum class NetworkType(
     VIVO_PLAY("vivo_play", R.string.vivo_play, "vivo_play", "md_white_1000"),
 
     @SerializedName("criterionchannel")
-    CRITERION_CHANNEL("criterionchannel", R.string.vivo_play, "criterionchannel", "md_white_1000"),
+    CRITERION_CHANNEL("criterionchannel", R.string.criterionchannel, "criterionchannel", "md_white_1000"),
 
     @SerializedName("fandor")
     FANDOR("fandor", R.string.vivo_play, "fandor", "md_black_1000"),
