@@ -39,7 +39,6 @@
         "watchOn": [
           {
             "type": "prime_video",
-            "name": "Amazon Prime Video",
             "link": "https://www.amazon.com/gp/video/detail/B07DPF8HJV"
           },
           {
@@ -364,15 +363,49 @@
       },
       {
         "id": 49452,
-        "title": "The Smiling Madame Beudet"
+        "title": "The Smiling Madame Beudet",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=wjYHxeYa8io"
+          }
+        ]
       },
       {
         "id": 5998,
-        "title": "Dr. Mabuse, der Spieler"
+        "title": "Dr. Mabuse, der Spieler",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=BFLvgfwzz4g"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/dr-mabuse-gambler"
+          }
+        ]
       },
       {
         "id": 669,
         "title": "Nanook of the North",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=v-dQbuW4kY4"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B07BVF4YP7/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/nanook-of-the-north"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/nanook-north-0"
+          }
+        ],
         "quote": {
           "type": "quote",
           "quote": {
@@ -465,23 +498,85 @@
       },
       {
         "id": 35227,
-        "title": "Foolish Wives"
+        "title": "Foolish Wives",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=_bKa6v1PJIE"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/foolish-wives"
+          }
+        ]
       },
       {
         "id": 701,
-        "title": "Our Hospitality"
+        "title": "Our Hospitality",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=cRNObtP_Fgo"
+          }
+        ]
       },
       {
         "id": 50182,
-        "title": "La Roue"
+        "title": "La Roue",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B07FWT61L6/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
         "id": 5991,
-        "title": "Der letzte Mann"
+        "title": "Der letzte Mann",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=TI6RWvkArf0"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002O69HY8/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/der-letzte-mann"
+          },
+          {
+            "type": "mubi",
+            "link": "https://mubi.com/films/the-last-laugh"
+          }
+        ]
       },
       {
         "id": 44967,
         "title": "Стачка",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=VD40vLjRaNA"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B005QWL5V0/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/strike"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/strike"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/a-greve"
+          }
+        ],
         "quote": {
           "type": "quote",
           "quote": {
@@ -577,12 +672,36 @@
         }
       },
       {
-        "id": 372903,
-        "title": "Ladrão de Bagdá"
+        "id": 28963,
+        "title": "Ladrão de Bagdá",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B084CSP6NR/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/thief-bagdad-0"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=fQ8KCfCu23I"
+          }
+        ]
       },
       {
         "id": 98477,
-        "title": "The Eagle"
+        "title": "The Eagle",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000YFT098/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=2E7K596VuSo"
+          }
+        ]
       },
       {
         "id": 964,
@@ -811,11 +930,23 @@
       },
       {
         "id": 27503,
-        "title": "The Unknown"
+        "title": "The Unknown",
+        "watchOn": [
+          {
+            "type": "dailymotion",
+            "link": "https://www.dailymotion.com/video/x245pno"
+          }
+        ]
       },
       {
         "id": 697,
         "title": "October (Ten Days that Shook the World)",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=YVuf3T3k-W0"
+          }
+        ],
         "quote": {
           "type": "quote",
           "quote": {
@@ -865,7 +996,21 @@
       },
       {
         "id": 16661,
-        "title": "The Kid Brother"
+        "title": "The Kid Brother",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=amsoemMsFJ0"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/kid-brother"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-kid-brother"
+          }
+        ]
       },
       {
         "id": 3061,
@@ -873,7 +1018,13 @@
       },
       {
         "id": 885,
-        "title": "The Docks of New York"
+        "title": "The Docks of New York",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=Af_ZYThSC_U"
+          }
+        ]
       },
       {
         "id": 780,
@@ -932,15 +1083,37 @@
       },
       {
         "id": 25768,
-        "title": "Steamboat Bill, Jr."
+        "title": "Steamboat Bill, Jr.",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/steamboat-bill-jr-0"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0159JW70C/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
         "id": 84273,
-        "title": "Storm Over Asia"
+        "title": "Storm Over Asia",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/storm-over-asia"
+          }
+        ]
       },
       {
         "id": 35454,
-        "title": "Prapancha Pash"
+        "title": "Prapancha Pash",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/throw-dice"
+          }
+        ]
       },
       {
         "id": 26317,
@@ -962,11 +1135,36 @@
       },
       {
         "id": 905,
-        "title": "Die Büchse der Pandora"
+        "title": "Die Büchse der Pandora",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/pandoras-box"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/pandora-s-box"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=VuwfU2LekQY"
+          }
+        ]
       },
       {
         "id": 543,
-        "title": "Blackmail"
+        "title": "Blackmail",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00MFDLDI8/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/blackmail"
+          }
+
+        ]
       }
     ]
   },
@@ -977,35 +1175,123 @@
     "movies": [
       {
         "id": 27899,
-        "original_title": "Little Caesar"
+        "original_title": "Little Caesar",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0030U2U4G/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Alma_No_Lodo_LEG?gl=BR&hl=en&id=S8IHrocbZqQ"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/alma-no-lodo/id791883234?ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 228,
-          "title": "The Blue Angel"
+          "title": "The Blue Angel",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B07JLCL4ZW/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/blue-angel-0"
+          }
+        ]
       },
       {
           "id": 143,
-          "original_title": "All Quiet on the Western Front"
+          "original_title": "All Quiet on the Western Front",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002EBYO3W/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/nada-de-novo-no-front/id735265027?ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Nada_de_Novo_no_Front?gl=BR&hl=en&id=VFVs95FC7c4"
+          }
+        ]
       },
       {
           "id": 5729,
-          "original_title": "L'Âge d'Or"
+          "original_title": "L'Âge d'Or",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002QRPTII/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/lage-dor"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=uhcMYwW6uvE"
+          }
+        ]
       },
       {
           "id": 334507,
-          "title": "The Earth is Thirsty"
+          "title": "The Earth is Thirsty",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.youtube.com/watch?v=fInaSOtpqE0"
+          }
+        ]
       },
       {
           "id": 31514,
-          "title": "À Nous la Liberté"
+          "title": "À Nous la Liberté",
+        "watchOn": [
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/a-nous-la-liberte"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=GPJWoJcw0gU"
+          }
+        ]
       },
       {
           "id": 8353,
-          "title": "Limite"
+          "title": "Limite",
+        "watchOn": [
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/limite"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=UeEArblJiMs"
+          }
+        ]
       },
       {
           "id": 977,
-          "original_title": "Tabu"
+          "original_title": "Tabu",
+        "watchOn": [
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/tabu-a-story-of-the-south-seas"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=JRn4WZgE1cA"
+          }
+        ]
       },
       {
           "id": 901,
@@ -1022,6 +1308,14 @@
             {
               "type": "apple_tv",
               "link": "https://itunes.apple.com/us/movie/city-lights/id592889171"
+            },
+            {
+              "type": "criterionchannel",
+              "link": "https://www.criterionchannel.com/city-lights"
+            },
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/Luzes_Da_Cidade_6855"
             }
           ]
       },
@@ -1032,6 +1326,18 @@
             {
               "type": "apple_tv",
               "link": "https://itunes.apple.com/us/movie/dracula-1931/id322443654"
+            },
+            {
+              "type": "amazon_video",
+              "link": "https://www.amazon.com/gp/video/detail/B002MFX238/ref=atv_dl_rdr?tag=justus1ktp-20"
+            },
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/Dracula_(1931)_19217"
+            },
+            {
+              "type": "youtube",
+              "link": "https://www.youtube.com/watch?v=vXbOYflQ0vE"
             }
           ]
       },
@@ -1046,32 +1352,108 @@
             {
               "type": "apple_tv",
               "link": "https://itunes.apple.com/us/movie/frankenstein-1931/id332166136"
+            },
+            {
+              "type": "telecine",
+              "link": "https://www.telecineplay.com.br/filme/Frankenstein_(1931)_19225"
+            },
+            {
+              "type": "play_store",
+              "link": "https://play.google.com/store/movies/details/Frankenstein_Legendado?gl=BR&hl=en&id=tiWbIEF3_wE"
+            },
+            {
+              "type": "youtube",
+              "link": "https://www.youtube.com/watch?v=xA-U1RF87VM"
             }
           ]
       },
       {
           "id": 17687,
-          "title": "The Public Enemy"
+          "title": "The Public Enemy",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0030UKNHW/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 832,
-          "original_title": "M - Eine Stadt sucht einen Mörder"
+          "original_title": "M - Eine Stadt sucht einen Mörder",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0023AO5JC/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/m"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/m-1"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/m-o-vampiro-de-dusseldorf"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=r9RLbwkVPoA"
+          }
+        ]
       },
       {
           "id": 779,
-          "original_title": "Vampyr - Der Traum des Allan Grey"
+          "original_title": "Vampyr - Der Traum des Allan Grey",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0038LF1LQ/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=m8DkP5qXO-s"
+          }
+        ]
       },
       {
           "id": 29740,
-          "original_title": "I Am a Fugitive from a Chain Gang"
+          "original_title": "I Am a Fugitive from a Chain Gang",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004VFMNYQ/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": ""
+          }
+        ]
       },
       {
           "id": 48365,
-          "title": "Boudu Saved from Drowning"
+          "title": "Boudu Saved from Drowning",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.criterionchannel.com/boudu-saved-from-drowning"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/boudu-saved-drowning"
+          }
+        ]
       },
       {
           "id": 31532,
-          "title": "Love Me Tonight"
+          "title": "Love Me Tonight",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=UR9g_8cfA8c"
+          }
+        ]
       },
       {
           "id": 875,
@@ -1079,11 +1461,39 @@
       },
       {
           "id": 195,
-          "original_title": "Trouble in Paradise"
+          "original_title": "Trouble in Paradise",
+        "watchOn": [
+          {
+            "type": "dailymotion",
+            "link": "https://www.dailymotion.com/video/x246hmy"
+          }
+        ]
       },
       {
           "id": 877,
-          "original_title": "Scarface"
+          "original_title": "Scarface",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/scarface-a-vergonha-de-uma-na%C3%A7%C3%A3o/id740729942?ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Scarface_A_Vergonha_de_uma_Na%C3%A7%C3%A3o?gl=BR&hl=en&id=3jpblxgEKCQ"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000N6KC7M/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "claro_video",
+            "link": "https://www.clarovideo.com/brasil/vcard/homeuser/Scarface-A-Vergonha-de-uma-Na-o/684913"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Scarface_A_Vergonha_de_Uma_Nacao_(1932)_19575"
+          }
+        ]
       },
       {
         "id": 136,
@@ -1092,36 +1502,102 @@
           {
             "type": "apple_tv",
             "link": "https://itunes.apple.com/us/movie/freaks/id289885878"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001NA2NM4/ref=atv_dl_rdr?tag=justus1ktp-20"
           }
         ]
       },
       {
           "id": 3062,
-          "title": "42nd Street"
+          "title": "42nd Street",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000HJ106W/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/42nd-street-1933/id575138411?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 28432,
-          "title": "Footlight Parade"
+          "title": "Footlight Parade",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B006QQ1P7O/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/footlight-parade"
+          }
+        ]
       },
       {
           "id": 34187,
-          "original_title": "The Bitter Tea of General Yen"
+          "original_title": "The Bitter Tea of General Yen",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.co.uk/Bitter-Tea-General-Yen/dp/B00FZM7C04"
+          }
+        ]
       },
       {
           "id": 43595,
-          "title": "She Done Him Wrong"
+          "title": "She Done Him Wrong",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0163F8HZ0/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 3063,
-          "title": "Duck Soup"
+          "title": "Duck Soup",
+        "watchOn": [
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/duck-soup"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/duck-soup/id293839271?ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 44494,
-          "original_title": "Zéro de conduite : Jeunes diables au collège"
+          "original_title": "Zéro de conduite : Jeunes diables au collège",
+        "watchOn": [
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/zero-de-conduite"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=YUkW1LBuQcg"
+          }
+        ]
       },
       {
           "id": 31511,
-          "original_title": "Gold Diggers of 1933"
+          "original_title": "Gold Diggers of 1933",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B006GOEABO/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/gold-diggers-of-1933"
+          }
+        ]
       },
       {
           "id": 244,
@@ -1139,19 +1615,51 @@
       },
       {
           "id": 91,
-          "title": "Land Without Bread"
+          "title": "Land Without Bread",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=at-xnnNT8N8"
+          }
+        ]
       },
       {
           "id": 43128,
-          "original_title": "Sons of the Desert"
+          "original_title": "Sons of the Desert",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00ZOSJTX2/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "dailymotion",
+            "link": "https://www.dailymotion.com/video/x27bsho"
+          }
+        ]
       },
       {
           "id": 31526,
-          "original_title": "Queen Christina"
+          "original_title": "Queen Christina",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B06XYV5LDY/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 39266,
-          "title": "Triumph of the Will"
+          "title": "Triumph of the Will",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B019ZZ0FWS/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/o-triunfo-da-vontade"
+          }
+        ]
       },
       {
           "id": 28001,
@@ -1159,91 +1667,315 @@
       },
       {
           "id": 112698,
-          "title": "The Goddess"
+          "title": "The Goddess",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=y_DXMCrB5Q8"
+          }
+        ]
       },
       {
           "id": 3078,
-          "original_title": "It Happened One Night"
+          "original_title": "It Happened One Night",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000MDJH7W/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/aconteceu-naquela-noite"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Aconteceu_Naquela_Noite_Legendado?gl=BR&hl=en&id=g4cPpxq1Sbk"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/aconteceu-naquela-noite/id553389469?ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 43904,
-          "original_title": "L'Atalante"
+          "original_title": "L'Atalante",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00FJUJD6S/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/l-atalante"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/latalante"
+          }
+        ]
       },
       {
           "id": 24106,
-          "original_title": "The Black Cat"
+          "original_title": "The Black Cat",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01F9SR4EW/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 3529,
-          "title": "The Thin Man"
+          "title": "The Thin Man",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004L11LPM/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 12311,
-          "title": "Mutiny on the Bounty"
+          "title": "Mutiny on the Bounty",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004RKZ05O/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
         "id": 260,
-        "title": "The 39 Steps"
+        "title": "The 39 Steps",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002SJ2ZTK/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-39-steps"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/os-39-degraus"
+          }
+        ]
       },
       {
           "id": 37719,
-          "title": "A Night at the Opera"
+          "title": "A Night at the Opera",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004SCMGSU/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Uma_Noite_Na_%C3%93pera_LEG?gl=BR&hl=en&id=MM_yfEjDzQY"
+          }
+        ]
       },
       {
           "id": 229,
-          "original_title": "The Bride of Frankenstein"
+          "original_title": "The Bride of Frankenstein",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000I9VO3K/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 16905,
-          "original_title": "Captain Blood"
+          "original_title": "Captain Blood",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000I3SYUC/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "dailymotion",
+            "link": "https://www.dailymotion.com/video/x3tojqk"
+          }
+        ]
       },
       {
           "id": 3080,
-          "title": "Top Hat"
+          "title": "Top Hat",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004VFK0LY/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/top-hat/id632323410"
+          }
+        ]
       },
       {
           "id": 57412,
-          "original_title": "Peter Ibbetson"
+          "original_title": "Peter Ibbetson",
+        "watchOn": [
+          {
+            "type": "dailymotion",
+            "link": "https://www.dailymotion.com/video/x2r3lku"
+          }
+        ]
       },
       {
           "id": 3082,
-          "title": "Modern Times"
+          "title": "Modern Times",
+        "watchOn": [
+          {
+            "type": "vivo_play",
+            "link": "https://www.vivoplay.com.br/details/movie/tempos-modernos-legendado-1290102"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/modern-times"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004DARF6A/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/modern-times"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/tempos-modernos"
+          },
+          {
+            "type": "play_store",
+            "link": "https://www.telecineplay.com.br/filme/Tempos_Modernos_6652"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=HAPilyrEzC4"
+          }
+        ]
       },
       {
           "id": 20325,
-          "title": "Swing Time"
+          "title": "Swing Time",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002RT2CIA/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "dailymotion",
+            "link": "https://www.dailymotion.com/video/x22cktj"
+          }
+        ]
       },
       {
           "id": 24807,
-          "title": "Mr. Deeds Goes to Town"
+          "title": "Mr. Deeds Goes to Town",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001JF4HOA/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/mr-deeds-goes-to-town/id553399162?l=en"
+          }
+        ]
       },
       {
           "id": 13562,
-          "original_title": "My Man Godfrey"
+          "original_title": "My Man Godfrey",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B075MT8CRG/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=qt2ntYiLYeI"
+          }
+        ]
       },
       {
           "id": 65642,
-          "original_title": "Le roman d'un tricheur"
+          "original_title": "Le roman d'un tricheur",
+        "watchOn": [
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-story-of-a-cheat"
+          }
+        ]
       },
       {
           "id": 43874,
-          "original_title": "Camille"
+          "original_title": "Camille",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001O4XLZC/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 3596,
-          "original_title": "Things to Come"
+          "original_title": "Things to Come",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B07DFV495J/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=atwfWEKz00U"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/things-to-come"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/things-come-1"
+          }
+        ]
       },
       {
           "id": 31507,
-          "title": "Dodsworth"
+          "title": "Dodsworth",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B003U7RRVU/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 43878,
-          "original_title": "Partie de campagne"
+          "original_title": "Partie de campagne",
+        "watchOn": [
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/a-day-in-the-country"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/day-country"
+          }
+        ]
       },
       {
           "id": 26252,
-          "original_title": "Pépé le Moko"
+          "original_title": "Pépé le Moko",
+        "watchOn": [
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/pepe-le-moko"
+          }
+        ]
       },
       {
           "id": 41059,
@@ -1251,39 +1983,117 @@
       },
       {
           "id": 777,
-          "title": "Grand Illusion"
+          "title": "Grand Illusion",
+        "watchOn": [
+          {
+            "type": "dailymotion",
+            "link": "https://www.dailymotion.com/video/x6kn10r"
+          },
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00EVJO2IC/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 43865,
-          "original_title": "Stella Dallas"
+          "original_title": "Stella Dallas",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001NSNGXG/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/stella-dallas"
+          }
+        ]
       },
       {
           "id": 30992,
-          "title": "Song at Midnight"
+          "title": "Song at Midnight",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B07CSD4VLD/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=oYALFe5ipvg"
+          }
+        ]
       },
       {
           "id": 408,
-          "original_title": "Snow White and the Seven Dwarfs"
+          "original_title": "Snow White and the Seven Dwarfs",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01434DFYG/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/snow-white-and-the-seven-dwarfs/id329159473?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Branca_de_Neve_e_os_Sete_An%C3%B5es_Dublado?gl=BR&hl=en&id=5UdE4Q-Agag"
+          }
+        ]
       },
       {
           "id": 16515,
-          "title": "Captains Courageous"
+          "title": "Captains Courageous",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00545DHP6/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 14675,
-          "original_title": "The Awful Truth"
+          "original_title": "The Awful Truth",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000MDHL5M/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 43278,
-          "original_title": "The Life of Emile Zola"
+          "original_title": "The Life of Emile Zola",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004SOUASQ/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 1976,
-          "title": "Jezebel"
+          "title": "Jezebel",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B06XXS64PX/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 10907,
-          "original_title": "The Adventures of Robin Hood"
+          "original_title": "The Adventures of Robin Hood",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001NVIZ3E/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/as-aventuras-de-robin-hood"
+          }
+        ]
       },
       {
           "id": 13696,
@@ -1291,67 +2101,247 @@
       },
       {
           "id": 43844,
-          "original_title": "La Femme du boulanger"
+          "original_title": "La Femme du boulanger",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=AOG56ZO9cGM"
+          }
+        ]
       },
       {
           "id": 900,
-          "original_title": "Bringing Up Baby"
+          "original_title": "Bringing Up Baby",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000I04044/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=5fowrDX2zA0"
+          }
+        ]
       },
       {
           "id": 677,
-          "original_title": "Olympia - Fest der Völker"
+          "original_title": "Olympia - Fest der Völker",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B010S3UL4I/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/olympia-1"
+          }
+        ]
       },
       {
           "id": 940,
-          "title": "The Lady Vanishes"
+          "title": "The Lady Vanishes",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0893C7VYD/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-lady-vanishes"
+          }
+        ]
       },
       {
           "id": 3084,
-          "original_title": "Wuthering Heights"
+          "original_title": "Wuthering Heights",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B003U6KUWO/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=aTANqJjVxrI"
+          }
+        ]
       },
       {
           "id": 3083,
-          "original_title": "Mr. Smith Goes to Washington"
+          "original_title": "Mr. Smith Goes to Washington",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00MX88ZGI/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/A_Mulher_Faz_o_Homem_LEG?gl=BR&hl=en&id=F-Req4XjsSs"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/mr-smith-goes-to-washington/id553399350?l=en"
+          }
+        ]
       },
       {
           "id": 995,
-          "original_title": "Stagecoach"
+          "original_title": "Stagecoach",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00AGYXKLG/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/stagecoach"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/stagecoach"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/no-tempo-das-diligencias"
+          }
+        ]
       },
       {
           "id": 43832,
-          "title": "Only Angels Have Wings"
+          "title": "Only Angels Have Wings",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B003LPM8BK/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/only-angels-have-wings"
+          }
+        ]
       },
       {
           "id": 43828,
-          "original_title": "Destry Rides Again"
+          "original_title": "Destry Rides Again",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002RPI29M/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 770,
-          "title": "Gone with the Wind"
+          "title": "Gone with the Wind",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002W7DSLW/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/gone-with-the-wind/id324708730?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Gone_with_the_Wind?gl=BR&hl=en&id=5FhXsCHssfY.P"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=Ch2dAshn3l0"
+          },
+          {
+            "type": "vivo_play",
+            "link": "https://www.vivoplay.com.br/details/movie/e-o-vento-levou-legendado-1191177"
+          }
+        ]
       },
       {
           "id": 27053,
-          "original_title": "Le Jour Se Lève"
+          "original_title": "Le Jour Se Lève",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/us/movie/le-jour-se-leve/id993978721"
+          }
+        ]
       },
       {
           "id": 24965,
-          "original_title": "Gunga Din"
+          "original_title": "Gunga Din",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002R1SRY6/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 1859,
-          "title": "Ninotchka"
+          "title": "Ninotchka",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002R2E3NE/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://itunes.apple.com/br/movie/ninotchka/id318673138?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
         "id": 630,
-        "original_title": "The Wizard of Oz"
+        "original_title": "The Wizard of Oz",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002QRBB30/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/the-wizard-of-oz/id320384447?l=en"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/O_M%C3%A1gico_de_Oz_Dublado?gl=BR&hl=en&id=hf5cw9C5izU"
+          },
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=cu_bzXaWQiQ"
+          }
+        ]
       },
       {
           "id": 776,
-          "original_title": "La Règle du jeu"
+          "original_title": "La Règle du jeu",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002132GBK/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-rules-of-the-game"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/rules-game-1"
+          }
+        ]
       },
       {
           "id": 46069,
-          "title": "The Story of the Last Chrysanthemum"
+          "title": "The Story of the Last Chrysanthemum",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01LVZ6JDV/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-story-of-the-last-chrysanthemum"
+          }
+        ]
       }
     ]
   },
@@ -1366,29 +2356,69 @@
         "watchOn": [
           {
             "type": "amazon_video",
-            "link": ""
+            "link": "https://www.amazon.com/gp/video/detail/B000HPJITC/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/his-girl-friday"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/jejum-de-amor/id553384480?ign-mpt=uo%3D4"
           },
           {
             "type": "play_store",
-            "link": ""
+            "link": "https://play.google.com/store/movies/details/Jejum_de_Amor_LEG?gl=BR&hl=en&id=lAmn-x3H0tQ"
           }
         ]
       },
       {
           "id": 756,
-          "original_title": "Fantasia"
+          "original_title": "Fantasia",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/fantasia-dublado/id539204017?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Fantasia_1940_Legendado?gl=BR&hl=en&id=hLu9_edRVZg"
+          }
+        ]
       },
       {
           "id": 223,
-          "original_title": "Rebecca"
+          "original_title": "Rebecca",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=YZ_PBT-1vGA"
+          }
+        ]
       },
       {
           "id": 981,
-          "original_title": "The Philadelphia Story"
+          "original_title": "The Philadelphia Story",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001EBWIPE/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/n%C3%BApcias-de-esc%C3%A2ndalo/id601325650?ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 596,
-          "title": "The Grapes of Wrath"
+          "title": "The Grapes of Wrath",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00A32CJQ8/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 989,
@@ -1396,79 +2426,261 @@
       },
       {
           "id": 911,
-          "title": "The Bank Dick"
+          "title": "The Bank Dick",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/WC-Fields-Clips-Bank-Dick/dp/B074MLWFMY"
+          }
+        ]
       },
       {
           "id": 10895,
-          "original_title": "Pinocchio"
+          "original_title": "Pinocchio",
+        "watchOn": [
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/pinocchio/id540283464?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Pin%C3%B3quio_1940_Dublado?gl=BR&hl=en&id=As994N-zhAM"
+          }
+        ]
       },
       {
           "id": 15,
-          "original_title": "Citizen Kane"
+          "original_title": "Citizen Kane",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00GJBCMB4/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Cidad%C3%A3o_Kane?gl=BR&hl=en&id=bu5VOsWpka0"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/cidadao-kane"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/citizen-kane/id517277225?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 16442,
-          "original_title": "Sergeant York"
+          "original_title": "Sergeant York",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00EA08PMQ/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 3086,
-          "title": "The Lady Eve"
+          "title": "The Lady Eve",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000I9S5XW/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 13666,
-          "original_title": "The Wolf Man"
+          "original_title": "The Wolf Man",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002DTI8GE/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 27725,
-          "original_title": "High Sierra"
+          "original_title": "High Sierra",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004VG1152/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 43266,
-          "original_title": "How Green Was My Valley"
+          "original_title": "How Green Was My Valley",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002YU3Q50/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/how-green-was-my-valley/id336983925?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 16305,
-          "original_title": "Sullivan's Travels"
+          "original_title": "Sullivan's Travels",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000N6OLAG/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://www.criterionchannel.com/sullivan-s-travels"
+          }
+        ]
       },
       {
           "id": 963,
-          "title": "The Maltese Falcon"
+          "title": "The Maltese Falcon",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001EBWIRC/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/the-maltese-falcon/id519471349?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 11360,
-          "original_title": "Dumbo"
+          "original_title": "Dumbo",
+        "watchOn": [
+          {
+            "type": "claro_video",
+            "link": "https://www.clarovideo.com/brasil/vcard/homeuser/Dumbo/776786"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Dumbo_Dublado?gl=BR&hl=en&id=1KMEqS-egJ4"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/dumbo-legendado/id512432792?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 32255,
-          "original_title": "The Palm Beach Story"
+          "original_title": "The Palm Beach Story",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000N6QOY2/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 32847,
-          "original_title": "Now, Voyager"
+          "original_title": "Now, Voyager",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B006PJCCCE/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 198,
-          "original_title": "To Be or Not to Be"
+          "original_title": "To Be or Not to Be",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/be-or-not-be"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/to-be-or-not-to-be"
+          }
+        ]
       },
       {
         "id": 965,
-        "original_title": "The Magnificent Ambersons"
+        "original_title": "The Magnificent Ambersons",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00JS35E56/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-magnificent-ambersons"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/soberba"
+          }
+        ]
       },
       {
           "id": 3087,
-          "original_title": "Yankee Doodle Dandy"
+          "original_title": "Yankee Doodle Dandy",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B003X94LH8/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 27367,
-          "original_title": "Mrs. Miniver"
+          "original_title": "Mrs. Miniver",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004HGM5JM/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Rosa_de_Esperan%C3%A7a_LEG?gl=BR&hl=en&id=TQayKa_S9qA"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/rosa-de-esperanca/id595116894?ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 289,
-          "original_title": "Casablanca"
+          "original_title": "Casablanca",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001EBWING/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Casablanca_LEG?gl=BR&hl=en&id=w9wjf1Du67Q"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/casablanca/id282640192?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/casablanca"
+          }
+        ]
       },
       {
           "id": 25508,
-          "original_title": "Cat People"
+          "original_title": "Cat People",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004VFKDV6/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 84656,
@@ -1476,243 +2688,803 @@
       },
       {
           "id": 980,
-          "original_title": "The Ox-Bow Incident"
+          "original_title": "The Ox-Bow Incident",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00FEBZMVC/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 25037,
-          "title": "The Life and Death of Colonel Blimp"
+          "title": "The Life and Death of Colonel Blimp",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00BH1C496/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-life-and-death-of-colonel-blimp"
+          }
+        ]
       },
       {
           "id": 27040,
-          "title": "Meshes of the Afternoon"
+          "title": "Meshes of the Afternoon",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/meshes-afternoon-0"
+          },
+          {
+            "type": "mubi",
+            "link": "https://mubi.com/films/meshes-of-the-afternoon"
+          }
+        ]
       },
       {
           "id": 20945,
-          "title": "The Seventh Victim"
+          "title": "The Seventh Victim",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B07CT3NXW4/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 41996,
-          "original_title": "The Man in Grey"
+          "original_title": "The Man in Grey",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00JJH3TY4/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-man-in-grey"
+          }
+        ]
       },
       {
           "id": 21734,
-          "title": "Shadow of a Doubt"
+          "title": "Shadow of a Doubt",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002RXS1VS/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/a-sombra-de-uma-duvida"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/A_Sombra_De_Uma_Duvida_18660"
+          }
+        ]
       },
       {
           "id": 5155,
-          "title": "Ossessione"
+          "title": "Ossessione",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=oqrP57j6Foc"
+          }
+        ]
       },
       {
           "id": 1939,
-          "title": "Laura"
+          "title": "Laura",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000UL085Q/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 909,
-          "original_title": "Meet Me in St. Louis"
+          "original_title": "Meet Me in St. Louis",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002M84BN0/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/meet-me-in-st-louis-1944/id639128788?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 22584,
-          "original_title": "To Have and Have Not"
+          "original_title": "To Have and Have Not",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004VFQ80Q/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/to-have-and-have-not/id620381039?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 13528,
-          "original_title": "Gaslight"
+          "original_title": "Gaslight",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00546AQ6S/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/gaslight-1944/id593358983?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 22638,
-          "title": "Henry V"
+          "title": "Henry V",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00ADHOIV2/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/henry-v-1"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/henrique-v"
+          }
+        ]
       },
       {
           "id": 996,
-          "original_title": "Double Indemnity"
+          "original_title": "Double Indemnity",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0041G1ZJO/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Pacto_de_Sangue_19229"
+          }
+        ]
       },
       {
           "id": 1834,
-          "original_title": "Murder, My Sweet"
+          "original_title": "Murder, My Sweet",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00GS0XHNS/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
         "id": 9797,
-        "title": "Ivan the Terrible, Part I"
+        "title": "Ivan the Terrible, Part I",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/ivan-terrible-part-1"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/ivan-the-terrible-part-i-1"
+          }
+        ]
       },
       {
           "id": 3309,
-          "original_title": "Mildred Pierce"
+          "original_title": "Mildred Pierce",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004WKH4PS/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/mildred-pierce/id621543598?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 20367,
-          "title": "Detour"
+          "title": "Detour",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B073SFW723/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/curva-do-destino"
+          },
+          {
+            "type": "claro_video",
+            "link": "https://www.clarovideo.com/brasil/vcard/homeuser/Detour/552461"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/detour"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/detour-0"
+          }
+        ]
       },
       {
           "id": 56137,
-          "title": "I Know Where I'm Going!"
+          "title": "I Know Where I'm Going!",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00A5IXIR4/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/i-know-where-i-m-going"
+          }
+        ]
       },
       {
           "id": 28580,
-          "title": "The Lost Weekend"
+          "title": "The Lost Weekend",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01CUQQCUS/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 2457,
-          "original_title": "Les Enfants du Paradis"
+          "original_title": "Les Enfants du Paradis",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00MUJP9HS/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/children-of-paradise"
+          }
+        ]
       },
       {
           "id": 84701,
-          "original_title": "San Pietro"
+          "original_title": "San Pietro",
+        "watchOn": [
+          {
+            "type": "netflix",
+            "link": "https://www.netflix.com/br/title/80119188"
+          }
+        ]
       },
       {
           "id": 851,
-          "title": "Brief Encounter"
+          "title": "Brief Encounter",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B009B5VCC0/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/brief-encounter"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/desencanto"
+          }
+        ]
       },
       {
           "id": 307,
-          "original_title": "Roma città aperta"
+          "original_title": "Roma città aperta",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B016NDTXW8/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/rome-open-city"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/rome-open-city"
+          }
+        ]
       },
       {
           "id": 887,
-          "title": "The Best Years of Our Lives"
+          "title": "The Best Years of Our Lives",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00AMZXZPK/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://www.kanopy.com/product/best-years-our-lives"
+          }
+        ]
       },
       {
           "id": 8429,
-          "original_title": "Paisà"
+          "original_title": "Paisà",
+        "watchOn": [
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/paisan"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/paisan"
+          }
+        ]
       },
       {
           "id": 25736,
-          "title": "The Postman Always Rings Twice"
+          "title": "The Postman Always Rings Twice",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001B152E6/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 648,
-          "title": "Beauty and the Beast"
+          "title": "Beauty and the Beast",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004CV8OGU/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/beauty-and-beast"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/beauty-and-the-beast"
+          }
+        ]
       },
       {
           "id": 14638,
-          "original_title": "The Killers"
+          "original_title": "The Killers",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01L39KK56/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-killers"
+          }
+        ]
       },
       {
           "id": 1585,
-          "original_title": "It's a Wonderful Life"
+          "original_title": "It's a Wonderful Life",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001M432XA/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/a-felicidade-nao-se-compra"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/A_Felicidade_Nao_Se_Compra_3543"
+          }
+        ]
       },
       {
           "id": 910,
-          "title": "The Big Sleep"
+          "title": "The Big Sleep",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001N07MSE/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 3767,
-          "title": "Gilda"
+          "title": "Gilda",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B003AKXCV6/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/gilda-legendado/id566612591?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
           "id": 28162,
-          "original_title": "A Matter of Life and Death"
+          "original_title": "A Matter of Life and Death",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=-t3Xv70vkY8"
+          }
+        ]
       },
       {
           "id": 14320,
-          "original_title": "Great Expectations"
+          "original_title": "Great Expectations",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00KG2OYQI/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/great-expectations"
+          }
+        ]
       },
       {
           "id": 3088,
-          "original_title": "My Darling Clementine"
+          "original_title": "My Darling Clementine",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B009K1WMMY/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
         "id": 303,
-        "title": "Notorious"
+        "title": "Notorious",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=ogdRdeyitLA"
+          }
+        ]
       },
       {
           "id": 16391,
-          "original_title": "Black Narcissus"
+          "original_title": "Black Narcissus",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00D0K025K/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://www.criterionchannel.com/black-narcissus"
+          }
+        ]
       },
       {
           "id": 678,
-          "original_title": "Out of the Past"
+          "original_title": "Out of the Past",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00BP6CQ2I/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 30588,
-          "original_title": "Monsieur Verdoux"
+          "original_title": "Monsieur Verdoux",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00CDTUAEM/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/monsieur-verdoux"
+          }
+        ]
       },
       {
           "id": 43461,
-          "title": "Odd Man Out"
+          "title": "Odd Man Out",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00K0BRIR2/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/odd-man-out"
+          }
+        ]
       },
       {
           "id": 5156,
-          "original_title": "Ladri di biciclette"
+          "original_title": "Ladri di biciclette",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01DCNUWQ8/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/bicycle-thieves"
+          },
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/bicycle-thieves"
+          }
+        ]
       },
       {
           "id": 946,
-          "title": "Letter from an Unknown Woman"
+          "title": "Letter from an Unknown Woman",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=S0R2STZUUNQ"
+          }
+        ]
       },
       {
           "id": 560,
-          "original_title": "Secret Beyond the Door"
+          "original_title": "Secret Beyond the Door",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=3XH59w0-ZB4"
+          }
+        ]
       },
       {
           "id": 26744,
-          "original_title": "Force of Evil"
+          "original_title": "Force of Evil",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.co.uk/Force-Evil-John-Garfield/dp/B017WUSI72"
+          }
+        ]
       },
       {
           "id": 21058,
-          "title": "Spring in a Small Town"
+          "title": "Spring in a Small Town",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01HDX9F7K/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 3089,
-          "title": "Red River"
+          "title": "Red River",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0017VT5G6/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/rio-vermelho"
+          }
+        ]
       },
       {
           "id": 17804,
-          "original_title": "The Paleface"
+          "original_title": "The Paleface",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B01MS4VNDS/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 62694,
-          "title": "The Snake Pit"
+          "title": "The Snake Pit",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B074TT9Y49/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 3766,
-          "original_title": "The Lady from Shanghai"
+          "original_title": "The Lady from Shanghai",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00BUUMWUK/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 1580,
-          "title": "Rope"
+          "title": "Rope",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B002RPI2QK/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "telecine",
+            "link": "https://www.telecineplay.com.br/filme/Festim_Diabolico_18662"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/Festim_Diab%C3%B3lico?gl=BR&hl=en&id=uYN3L9JRzrs"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/festim-diab%C3%B3lico-rope-1948/id763369840?ign-mpt=uo%3D4"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/festim-diabolico"
+          }
+        ]
       },
       {
           "id": 19542,
-          "original_title": "The Red Shoes"
+          "original_title": "The Red Shoes",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B009B6I0SS/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://www.criterionchannel.com/the-red-shoes"
+          }
+        ]
       },
       {
           "id": 3090,
-          "title": "The Treasure of the Sierra Madre"
+          "title": "The Treasure of the Sierra Madre",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B001EBWIUO/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "looke",
+            "link": "https://www.looke.com.br/filmes/o-tesouro-de-sierra-madre"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/the-treasure-of-the-sierra-madre/id538065972?ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/O_Tesouro_De_Sierra_Madre_LEG?gl=BR&hl=en&id=Y0h0LWD9TUQ"
+          }
+        ]
       },
       {
           "id": 70447,
-          "original_title": "Louisiana Story"
+          "original_title": "Louisiana Story",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B000SAQARY/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 28007,
-          "original_title": "The Reckless Moment"
+          "original_title": "The Reckless Moment",
+        "watchOn": [
+          {
+            "type": "youtube",
+            "link": "https://www.youtube.com/watch?v=kRhIlF7zzis"
+          }
+        ]
       },
       {
           "id": 15794,
-          "original_title": "White Heat"
+          "original_title": "White Heat",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B00332MY6K/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "play_store",
+            "link": "https://itunes.apple.com/br/movie/white-heat/id596454874?l=en&ign-mpt=uo%3D4"
+          }
+        ]
       },
       {
         "id": 25431,
-        "title": "Adam's Rib"
+        "title": "Adam's Rib",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B0013V5CIU/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 28571,
-          "original_title": "The Heiress"
+          "original_title": "The Heiress",
+        "watchOn": [
+          {
+            "type": "criterionchannel",
+            "link": "https://www.criterionchannel.com/the-heiress"
+          }
+        ]
       },
       {
           "id": 1092,
-          "original_title": "The Third Man"
+          "original_title": "The Third Man",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/Third-Man-Joseph-Cotten/dp/B002OSA3MQ"
+          },
+          {
+            "type": "apple_tv",
+            "link": "https://itunes.apple.com/br/movie/the-third-man/id1465677924?l=en&ign-mpt=uo%3D4"
+          },
+          {
+            "type": "play_store",
+            "link": "https://play.google.com/store/movies/details/O_terceiro_Homem_Legendado?gl=BR&hl=en&id=ad1PXKaTb2w"
+          }
+        ]
       },
       {
           "id": 11898,
-          "original_title": "Kind Hearts and Coronets"
+          "original_title": "Kind Hearts and Coronets",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B003Y12BU4/ref=atv_dl_rdr?tag=justus1ktp-20"
+          },
+          {
+            "type": "kanopy",
+            "link": "https://www.kanopy.com/product/kind-hearts-and-coronets"
+          }
+        ]
       },
       {
           "id": 16665,
-          "original_title": "Whisky Galore!"
+          "original_title": "Whisky Galore!",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B086PK7DZ1/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       },
       {
           "id": 31516,
-          "title": "On the Town"
+          "title": "On the Town",
+        "watchOn": [
+          {
+            "type": "amazon_video",
+            "link": "https://www.amazon.com/gp/video/detail/B004LS8BEY/ref=atv_dl_rdr?tag=justus1ktp-20"
+          }
+        ]
       }
     ]
   },

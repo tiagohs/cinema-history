@@ -68,6 +68,9 @@ enum class NetworkType(
     @SerializedName("uol_play")
     UOL_PLAY("uol_play", R.string.uol_play, "uol_play", "md_white_1000"),
 
+    @SerializedName("dailymotion")
+    DAILYMOTION("dailymotion", R.string.dailymotion, "dailymotion", "md_white_1000"),
+
     @SerializedName("unknown")
     UNKNOWN("unknown", color = "md_black_1000", textColor =  "md_white_1000");
 
