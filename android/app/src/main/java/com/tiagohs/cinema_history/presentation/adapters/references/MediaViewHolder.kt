@@ -33,7 +33,7 @@ class MediaViewHolder(
             "Livro" -> R.color.md_red_500
             "Série" -> R.color.md_deep_orange_500
             "Filme" -> R.color.md_purple_500
-            "Youtube" -> R.color.md_brown_500
+            "Youtube" -> R.color.md_green_500
             else -> R.color.colorAccent
         }
         mediaType.setResourceBackgroundColor(color)
