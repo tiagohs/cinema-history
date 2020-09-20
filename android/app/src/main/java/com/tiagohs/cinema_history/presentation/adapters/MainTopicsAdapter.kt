@@ -147,8 +147,13 @@ class MainTopicsAdapter(
         }
 
         private fun bindButtons(mainTopicItem: MainTopicItem) {
-            bindBlockedButton(mainTopicItem)
-            bindIsNewButton(mainTopicItem)
+            if (!mainTopicItem.isNew) {
+                bindBlockedButton(mainTopicItem)
+            }
+
+            if (!mainTopicItem.blocked) {
+                bindIsNewButton(mainTopicItem)
+            }
         }
 
         private fun bindBlockedButton(mainTopicItem: MainTopicItem) {
