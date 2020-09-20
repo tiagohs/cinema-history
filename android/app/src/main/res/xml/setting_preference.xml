@@ -39,6 +39,13 @@
             app:selectable="true" />
 
         <androidx.preference.Preference
+            app:key="glossary"
+            app:summary="@string/glossary_description"
+            app:title="@string/activity_glossary"
+            app:icon="@drawable/ic_open_book_grey_24dp"
+            app:selectable="true" />
+
+        <androidx.preference.Preference
             app:key="about"
             app:title="@string/action_about"
             app:icon="@drawable/ic_info_grey_24dp"

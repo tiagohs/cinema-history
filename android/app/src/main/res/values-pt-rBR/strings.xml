@@ -29,16 +29,20 @@
     <!-- Settings -->
     <string name="action_about">Sobre</string>
     <string name="action_reference">Referências</string>
+    <string name="action_glossary">Glossário</string>
     <string name="action_settings">Configurações</string>
     <string name="action_share">Compartilhar</string>
     <string name="activity_settings">Configurações</string>
     <string name="activity_references">Referências e Sugestões</string>
+    <string name="activity_glossary">Glossário</string>
     <string name="language_title">Idioma</string>
     <string name="language_app_title">Idioma do conteúdo História do Cinema</string>
     <string name="language_movie_title">Idioma do Filme</string>
     <string name="general_title">Geral</string>
     <string name="references_bibliographic_title">Referência Bibliográfica</string>
     <string name="references_bibliographic_description">Livros, links, artigos. A referência utilizada no desenvolvimento do conteúdo.</string>
+    <string name="glossary_description">Termos e definições no mundo do cinema.</string>
+    <string name="recomendation">Recomendações e leitura adicional</string>
 
     <!-- About -->
     <string name="activity_about">Sobre</string>

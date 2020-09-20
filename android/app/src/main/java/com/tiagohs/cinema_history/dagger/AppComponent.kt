@@ -30,4 +30,5 @@ interface AppComponent {
     fun inject(referenceActivity: ReferenceActivity)
     fun inject(settingPreferenceFragment: SettingPreferenceFragment)
     fun inject(universalLinkActivity: UniversalLinkActivity)
+    fun inject(glossaryActivity: GlossaryActivity)
 }

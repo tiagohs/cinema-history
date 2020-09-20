@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Cinetoscópio",
+    "content_list": [
+      {
+        "type": "text",
+        "content_text": "O Cinetoscópio é um instrumento de projecção interna de filmes inventado por <strong>William Kennedy Laurie Dickson</strong>, chefe engenheiro da Edison Laboratories de Thomas Edison, em 1891."
+      },
+      {
+        "type": "image",
+        "image": {
+          "image_type": "online",
+          "url": "https://i.pinimg.com/originals/85/74/5b/85745b4b4e07976ec94abc33735e4792.jpg",
+          "style": {
+            "scale_type": "center_crop"
+          }
+        },
+        "information": {
+          "contentTitle": "Ilustração do interior de uma máquina de cinetoscópio.",
+          "source": "Le Kinétoscope d'Edison\" by Gaston Tissandier in La Nature"
+        }
+      },
+      {
+        "type": "text",
+        "content_text": "Possuía um visor individual através do qual se podia assistir, mediante a inserção de uma moeda, à exibição de uma pequena tira de filme em Looping, na qual apareciam imagens em movimento de números cômicos, animais amestrados e bailarinas."
+      },
+      {
+        "type": "text",
+        "content_text": "Os filmes reproduzidos no cinetoscópio (quinetoscópio) eram produzidos pelo cinetógrafo (quinetógrafo), outra invenção patenteada por Thomas Edison. Apesar destas invenções permanecerem no nome de Edison, elas, na verdade, foram produzidas por William K.L. Dickson e uma equipe de técnicos encarregados, por Edison, de criarem máquinas que produzissem e mostrassem fotografias em movimento ( motion picture). Em 1889, Edison decidiu criar a câmera descrita, quando viu a câmera de Étienne-Jules Marey, em Paris."
+      },
+      {
+        "type": "video",
+        "video_id": "sfI0NVC0hLU",
+        "information": {
+          "contentTitle": "The Kinetoscope (O Cinetoscópio)",
+          "contentText": "O Cinetoscópio é um instrumento de projeção interna de filmes inventado por William Kennedy Laurie Dickson, chefe engenheiro da Edison Laboratories de Thomas Edison, em 1891.",
+          "source": "Youtube: Canal <i>AmericanExperiencePBS</i>"
+        }
+      },
+      {
+        "type": "recomendations",
+        "list": [
+          {
+            "title": "O que é um Cinetoscópio?",
+            "subtitle": "cinetoscópio.com",
+            "link": "https://cinetoscopio.com.br/2017/12/22/o-que-e-um-cinetoscopio/"
+          },
+          {
+            "title": "ASC Museum: Kinetoscope",
+            "subtitle": "The American Society of Cinematographers",
+            "link": "https://theasc.com/asc/asc-museum-kinetoscope"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Close-up",
+    "content_list": [
+      {
+        "type": "text",
+        "content_text": "Close-up, ou simplesmente close, em cinema e audiovisual, é um tipo de plano, caracterizado pelo seu enquadramento fechado, mostrando apenas uma parte do objeto ou assunto filmado - em geral o rosto de uma pessoa.  "
+      },
+      {
+        "type": "video",
+        "video_id": "vedJVCvdBgI",
+        "information": {
+          "contentTitle": "The Art of Close-Ups with Edgar Wright ",
+          "source": "Youtube: Canal <i>David Chen</i>"
+        }
+      },
+      {
+        "type": "text",
+        "content_text": "Pode ser obtido por uma grande aproximação da câmara em relação ao objeto ou personagem, ou pelo uso de uma lente objetiva com pequeno ângulo de abertura (e, portanto, grande distância focal). Utilizado pela primeira vez, na língua inglesa, em 1913, o termo close-up é sinônimo de primeiro plano, grande plano e plano fechado."
+      },
+      {
+        "type": "text",
+        "content_text": "Sua origem é o duplo significado da palavra close, que em inglês significa tanto fechar (<i>to close</i>) quanto próximo (<i>close to</i>). Por semelhança, o termo passou a ser usado também em outras artes visuais, como a fotografia, os quadrinhos e até mesmo a pintura, caracterizando imagens fixas com enquadramento fechado, e muito particularmente o rosto humano."
+      },
+      {
+        "type": "video",
+        "video_id": "O5ZCsw22JRk",
+        "information": {
+          "contentTitle": "Close Up Shots that POP | The Best Camera Angles in Film",
+          "contentText": "StudioBinder escolhendo importantes momentos dramáticos, informativos e cômicos, todos acentuados com o Close-Ups.",
+          "source": "Youtube: Canal <i>StudioBinder </i>"
+        }
+      },
+      {
+        "type": "recomendations",
+        "list": [
+          {
+            "title": "What Is a Close-Up Shot?",
+            "subtitle": "masterclass.com",
+            "link": "https://www.masterclass.com/articles/film-101-what-is-a-close-up-shot-how-to-creatively-use-a-close-up-camera-angle-to-convey-emotion "
+          },
+          {
+            "title": "Close-Up Shots: Examples of Camera Movement & Angles",
+            "subtitle": "Studiobinder",
+            "link": "https://www.studiobinder.com/blog/close-up-shot/ "
+          }
+        ]
+      }
+    ]
+  }
+]

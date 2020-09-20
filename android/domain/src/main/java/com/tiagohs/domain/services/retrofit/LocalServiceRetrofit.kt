@@ -1,5 +1,6 @@
 package com.tiagohs.domain.services.retrofit
 
+import com.tiagohs.entities.Glossary
 import com.tiagohs.entities.HomeContentItem
 import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.Page
@@ -27,6 +28,9 @@ interface LocalServiceRetrofit {
 
     @GET("references")
     fun getReferences(): Observable<List<ReferenceResult>>
+
+    @GET("glossary")
+    fun getGlossary(): Observable<List<Glossary>>
 
     @GET("hmt_sumario_{mainTopicId}")
     fun getSumarioByMainTopicID(@Path("mainTopicId") mainTopicId: Int): Observable<List<Sumario>>

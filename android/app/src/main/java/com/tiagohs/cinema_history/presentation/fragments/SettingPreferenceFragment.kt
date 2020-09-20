@@ -8,6 +8,7 @@ import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.R
 import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.cinema_history.presentation.activities.AboutActivty
+import com.tiagohs.cinema_history.presentation.activities.GlossaryActivity
 import com.tiagohs.cinema_history.presentation.activities.ReferenceActivity
 import com.tiagohs.helpers.extensions.getResourceString
 import javax.inject.Inject
@@ -21,11 +22,13 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
     private val MOVIE_LANGUAGE_KEY = "language_movies"
     private val ABOUT_KEY = "about"
     private val REFERENCES_KEY = "references"
+    private val GLOSSARY_KEY = "glossary"
 
     private var appLanguage: ListPreference? = null
     private var moviesLanguage: ListPreference? = null
     private var aboutLanguage: Preference? = null
     private var referencesLanguage: Preference? = null
+    private var glossaryLanguage: Preference? = null
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.setting_preference, rootKey)
@@ -40,6 +43,7 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
         moviesLanguage = findPreference(MOVIE_LANGUAGE_KEY)
         aboutLanguage = findPreference(ABOUT_KEY)
         referencesLanguage = findPreference(REFERENCES_KEY)
+        glossaryLanguage = findPreference(GLOSSARY_KEY)
 
         appLanguage?.summary = context.getResourceString(R.string.pt_br_country_name)
         appLanguage?.setOnPreferenceChangeListener { preference, newLanguage ->
@@ -58,6 +62,7 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
 
         aboutLanguage?.intent = AboutActivty.newIntent(context)
         referencesLanguage?.intent = ReferenceActivity.newIntent(context)
+        glossaryLanguage?.intent = GlossaryActivity.newIntent(context)
     }
 
     override fun onResume() {

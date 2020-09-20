@@ -12,6 +12,7 @@ import com.tiagohs.cinema_history.BuildConfig
 import com.tiagohs.cinema_history.R
 import com.tiagohs.helpers.extensions.getResourceString
 import com.tiagohs.helpers.extensions.openLink
+import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
 import mehdi.sakout.aboutpage.AboutPage
 import mehdi.sakout.aboutpage.Element
 import java.util.*
@@ -81,7 +82,13 @@ class AboutActivty : AppCompatActivity() {
         val referencesElement = Element().apply {
             title = getResourceString(R.string.activity_references)
             onClickListener = View.OnClickListener {
-                startActivity(ReferenceActivity.newIntent(this@AboutActivty))
+                startActivityWithSlideRightToLeftAnimation(ReferenceActivity.newIntent(this@AboutActivty))
+            }
+        }
+        val glossaryElement = Element().apply {
+            title = getResourceString(R.string.action_glossary)
+            onClickListener = View.OnClickListener {
+                startActivityWithSlideRightToLeftAnimation(GlossaryActivity.newIntent(this@AboutActivty))
             }
         }
         val copyRightsElement = Element().apply {
@@ -106,6 +113,7 @@ class AboutActivty : AppCompatActivity() {
             .addItem(Element().setTitle(getString(R.string.version, BuildConfig.VERSION_NAME)))
             .addItem(adsElement)
             .addItem(referencesElement)
+            .addItem(glossaryElement)
             .addEmail(getResourceString(R.string.email), getResourceString(R.string.contact_us))
             .addItem(termsElement)
             .addItem(politicsElement)

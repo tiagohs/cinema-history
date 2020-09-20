@@ -82,6 +82,10 @@
     <dimen name="home_icon_size">30dp</dimen>
     <dimen name="home_slide_padding_end">70dp</dimen>
 
+    <!-- GLOSSARY -->
+    <dimen name="glossary_fast_scroll_thumbView_width">40dp</dimen>
+    <dimen name="glossary_fast_scroll_width">25dp</dimen>
+
     <!-- MOVIE -->
     <dimen name="movie_appbar_height">380dp</dimen>
     <dimen name="movie_play_size">50dp</dimen>

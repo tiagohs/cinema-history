@@ -39,6 +39,9 @@ enum class ContentType(
     @SerializedName("person_list")
     PERSON_LIST("person_list"),
 
+    @SerializedName("recomendations")
+    RECOMENDATIONS("recomendations"),
+
     @SerializedName("movie_list_special")
     MOVIE_LIST_SPECIAL("movie_list_special");
 

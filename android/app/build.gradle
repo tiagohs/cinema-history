@@ -91,6 +91,7 @@ dependencies {
     implementation dependencies.androidAboutPage
     implementation dependencies.simpleRatingBar
     implementation dependencies.flexbox
+    implementation dependencies.indicator_fast_scroll
 
     // Tools
     implementation dependencies.volley

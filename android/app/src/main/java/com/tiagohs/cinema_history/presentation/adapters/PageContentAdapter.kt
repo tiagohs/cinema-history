@@ -34,6 +34,7 @@ class PageContentAdapter(
         ContentType.QUOTE.ordinal -> QuoteViewHolder.LAYOUT_ID
         ContentType.SLIDE.ordinal -> SlideViewHolder.LAYOUT_ID
         ContentType.VIDEO.ordinal -> VideoViewHolder.LAYOUT_ID
+        ContentType.RECOMENDATIONS.ordinal -> RecomendationsViewHolder.LAYOUT_ID
         ContentType.LINK_SCREEN.ordinal -> LinkScreenViewHolder.LAYOUT_ID
         ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder.LAYOUT_ID
         ContentType.PERSON_LIST.ordinal -> PersonListViewHolder.LAYOUT_ID
@@ -51,6 +52,7 @@ class PageContentAdapter(
             ContentType.QUOTE.ordinal -> QuoteViewHolder(view)
             ContentType.SLIDE.ordinal -> SlideViewHolder(view)
             ContentType.VIDEO.ordinal -> VideoViewHolder(view)
+            ContentType.RECOMENDATIONS.ordinal -> RecomendationsViewHolder(view)
             ContentType.LINK_SCREEN.ordinal -> LinkScreenViewHolder(view, presentScreen)
             ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder(view, mainTopic, appLanguage, onMovieClicked)
             ContentType.PERSON_LIST.ordinal -> PersonListViewHolder(view, onPersonClicked)

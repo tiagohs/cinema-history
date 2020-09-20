@@ -81,6 +81,12 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <style name="FastScrollItemStyle">
+        <item name="android:fontFamily">fonts/proxima_nova_bold</item>
+        <item name="fontFamily">fonts/proxima_nova_bold</item>
+        <item name="android:textSize">@dimen/text_size_zeplin_28pt</item>
+    </style>
+
     <style name="ToolBarTitle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
         <item name="android:fontFamily">fonts/proxima_nova_bold</item>
         <item name="fontFamily">fonts/proxima_nova_bold</item>

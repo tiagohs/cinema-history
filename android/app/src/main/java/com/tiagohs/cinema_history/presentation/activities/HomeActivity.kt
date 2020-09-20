@@ -48,6 +48,10 @@ class HomeActivity : BaseActivity(), HomeView {
                 startActivityWithSlideRightToLeftAnimation(SettingActivity.newIntent(this))
                 return true
             }
+            R.id.action_glossary -> {
+                startActivityWithSlideRightToLeftAnimation(GlossaryActivity.newIntent(this))
+                return true
+            }
             R.id.action_about -> {
                 startActivityWithSlideRightToLeftAnimation(AboutActivty.newIntent(this))
                 return true

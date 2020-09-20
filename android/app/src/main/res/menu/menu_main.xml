@@ -7,6 +7,12 @@
         android:id="@+id/action_references"
         android:icon="@drawable/ic_open_book_white_24dp"
         android:title="@string/action_reference"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_glossary"
+        android:icon="@drawable/ic_library_books"
+        android:title="@string/action_glossary"
         app:showAsAction="ifRoom" />
 
     <item

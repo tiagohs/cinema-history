@@ -3,6 +3,7 @@ package com.tiagohs.domain.services
 import com.tiagohs.domain.services.config.BaseService
 import com.tiagohs.domain.services.config.RetrofitConfig
 import com.tiagohs.domain.services.retrofit.LocalServiceRetrofit
+import com.tiagohs.entities.Glossary
 import com.tiagohs.entities.HomeContentItem
 import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
@@ -24,6 +25,8 @@ class LocalService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) 
     fun getPage(mainTopicId: Int, sumarioId: Int): Observable<Page> = buildLocalService(LocalServiceRetrofit::class.java).getPage(mainTopicId, sumarioId)
 
     fun getReferences(): Observable<List<ReferenceResult>> = buildLocalService(LocalServiceRetrofit::class.java).getReferences()
+
+    fun getGlossary(): Observable<List<Glossary>> = buildLocalService(LocalServiceRetrofit::class.java).getGlossary()
 
     fun getMainTopics(): Observable<List<MainTopic>> = buildLocalService(LocalServiceRetrofit::class.java).getMainTopics()
 

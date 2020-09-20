@@ -8,6 +8,7 @@ enum class LocalFiles(
 ) {
     HOME_CONTENT("/homecontent", "local/homecontent.json"),
     REFERENCES("/references", "local/references.json"),
+    GLOSSARY("/glossary", "local/glossary.json"),
 
     TIMELINE_LIST("/timelines", "local/timelines/timeline_list.json"),
     TIMELINE_1("/timeline_1", "local/timelines/timeline_1.json"),

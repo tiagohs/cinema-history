@@ -75,6 +75,7 @@
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <activity android:name=".presentation.activities.TimelineActivity" />
+        <activity android:name=".presentation.activities.GlossaryActivity" />
         <activity android:name=".presentation.activities.SettingActivity" />
         <activity android:name=".presentation.activities.AboutActivty"
             android:theme="@style/AboutTheme"/>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentTitle"
+        android:textSize="@dimen/text_size_zeplin_32pt"
+        android:textColor="@color/md_black_1000"
+        android:textColorLink="@color/md_blue_500"
+        android:fontFamily="@font/oswald_bold"
+        android:lineSpacingMultiplier="1.1"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/separator"
+        tools:text="Teste de Titulo"
+        tools:visibility="visible"
+        />
+
+    <View
+        android:layout_width="@dimen/page_quote_separator_width"
+        android:layout_height="@dimen/activity_vertical_margin_0.5x"
+        android:id="@+id/separator"
+        android:background="@color/md_red_500"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contentTitle"
+        tools:visibility="visible"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentList"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+        app:layout_constraintTop_toBottomOf="@id/separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

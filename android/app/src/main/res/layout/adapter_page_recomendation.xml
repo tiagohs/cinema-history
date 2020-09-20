@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+    android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/iconCheck"
+        android:src="@drawable/ic_check_circle"
+        android:padding="@dimen/activity_vertical_margin_0.5x"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/contentTitle"
+    />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:id="@+id/contentTitle"
+        android:text="@string/recomendation"
+        android:textSize="@dimen/text_size_zeplin_26pt"
+        android:textColor="@color/md_black_1000"
+        android:textColorLink="@color/md_blue_500"
+        android:fontFamily="@font/oswald_bold"
+        android:lineSpacingMultiplier="1.1"
+        app:layout_constraintStart_toEndOf="@id/iconCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recomendationContainer"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+        app:layout_constraintTop_toBottomOf="@id/contentTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
