@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tiagohs.cinema_history.MainActivity">
+
+    <item
+        android:id="@+id/action_references"
+        android:icon="@drawable/ic_open_book_white_24dp"
+        android:title="@string/action_reference"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_glossary"
+        android:icon="@drawable/ic_library_books"
+        android:title="@string/action_glossary"
+        app:showAsAction="never" />
+</menu>

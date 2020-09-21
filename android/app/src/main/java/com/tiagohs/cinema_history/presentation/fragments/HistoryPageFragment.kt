@@ -4,6 +4,9 @@ import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
 import android.util.TypedValue
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -12,10 +15,9 @@ import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.appbar.AppBarLayout
 import com.tiagohs.cinema_history.R
-import com.tiagohs.cinema_history.presentation.activities.HistoryPagesActivity
-import com.tiagohs.cinema_history.presentation.activities.MovieDetailsActivity
-import com.tiagohs.cinema_history.presentation.activities.PersonDetailsActivity
+import com.tiagohs.cinema_history.presentation.activities.*
 import com.tiagohs.cinema_history.presentation.adapters.PageContentAdapter
+import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.cinema_history.presentation.configs.BaseFragment
 import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.domain.presenter.HistoryPagePresenter
@@ -27,6 +29,9 @@ import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.tools.HidingScrollListener
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import kotlinx.android.synthetic.main.fragment_history_page.*
+import kotlinx.android.synthetic.main.fragment_history_page.appBar
+import kotlinx.android.synthetic.main.fragment_history_page.pageContentList
+import kotlinx.android.synthetic.main.fragment_history_page.toolbar
 import javax.inject.Inject
 import kotlin.math.abs
 
@@ -54,6 +59,11 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
 
         getApplicationComponent()?.inject(this)
 
+        (activity as? BaseActivity)?.setupToolbar(toolbar, displayHomeAsUpEnabled = false)
+
+
+        setHasOptionsMenu(true)
+
         presenter.onBindView(this)
         presenter.fetchPageContent(mainTopic?.id, sumario?.id)
     }
@@ -62,6 +72,24 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
         super.onDestroyView()
 
         presenter.onUnbindView()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_history_page, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_glossary -> {
+                activity?.startActivityWithSlideRightToLeftAnimation(GlossaryActivity.newIntent(context))
+                true
+            }
+            R.id.action_references -> {
+                activity?.startActivityWithSlideRightToLeftAnimation(ReferenceActivity.newIntent(context))
+                true
+            }
+            else -> false
+        }
     }
 
     override fun bindPageContent(pageContent: Page) {
