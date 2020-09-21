@@ -2,6 +2,386 @@
   "number": 3,
   "content_list": [
     {
+      "type": "text",
+      "content_text": "A cor fotográfica entrou no cinema aproximadamente ao mesmo tempo que o som, embora, como com o som, vários efeitos de cor tenham sido usados em filmes desde a invenção do meio. <a href=\"https://_{type: 'screen', 'id': 11523, 'screen_type': person}\">Georges Méliès</a> (1861-1938), por exemplo, empregou 21 mulheres em seu estúdio, em <i>Montreuil</i>, para colorir seus filmes quadro a quadro, mas pintar à mão não era custo-efetivo, a menos que os filmes fossem muito curtos."
+    },
+    {
+      "type": "text",
+      "content_text": "Em meados dos anos 1900, quando os filmes começaram a se aproximar de um rolo de comprimento e mais cópias de cada filme foram vendidas, mecanizadas por processos de estêncil foram introduzidos. Na <strong>Pathé’s Pathécolor system</strong>, por exemplo, um estêncil foi recortado para cada cor desejada (até seis) e alinhado com a impressão; a cor foi então aplicada através do estêncil quadro a quadro em alta velocidade. Com o advento do recurso e a conversão da indústria para a produção em massa durante os anos 1910, a pintura quadro a quadro foi substituído pelo mecanizada, de tingimento e tonificação."
+    },
+    {
+      "type": "slide",
+      "images": [
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_dirigeable_fantastique.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_voyage_sur_Jupiter.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_legende_des_ondines.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_physique_diabolique.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        }
+      ],
+      "height": 200,
+      "information": {
+        "contentTitle": "A magia ganha cor no início do cinema",
+        "contentText": "Esses aditivos e técnicas transformaram um meio já mágico em paisagens de sonho transcendentes que foram coloridas por artesãos - principalmente mulheres - que pintaram cada pequena moldura em preto e branco, uma por uma, prefigurando o processo de colorização desenvolvido na década de 1970. Arquivado no <i>Holland’s EYE Filmmuseum</i>, mais de 250 imagens estáticas selecionadas de 96 desses filmes em grande parte esquecidos são apresentadas em um novo livro de arregalar os olhos, <strong>Fantasia of Color in Early Cinema</strong>.",
+        "source": "Dirigeable fantastique, 1906 / Voyage sur Jupiter, 1909 / Légende des ondines, 1911 / Physique diabolique, 1912 - Jonathon Rosen and Joshua Yumibe | The Atlantic"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "A coloração coloriu todas as áreas claras de uma imagem e foi obtida imergindo uma impressão em preto e branco em tinta ou usando uma base de filme colorido para impressão. O processo de tonificação envolveu o tratamento químico da emulsão do filme para colorir as áreas escuras da impressão. Cada processo produzia imagens monocromáticas, cuja cor geralmente era escolhida para corresponder ao clima ou ao cenário da cena. Ocasionalmente, os dois processos eram combinados para produzir elaborados efeitos de duas cores."
+    },
+    {
+      "type": "text",
+      "content_text": "No início da década de 1920, quase todas as características americanas incluíam pelo menos uma sequência colorida; mas depois de 1927, quando foi descoberto que o filme tingido ou tonalizante interferia na transmissão do som óptico, ambas as práticas foram abandonadas temporariamente, deixando o mercado aberto a novos sistemas de fotografia colorida."
+    },
+    {
+      "type": "block_special",
+      "title": "A Timeline histórica do uso de cores no Cinema",
+      "image": {
+        "image_type": "local",
+        "url": "img_color_movies",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "click": {
+        "screen": "link_online",
+        "button_text": "Clique aqui para acessar o Acervo",
+        "parameters": [
+          {
+            "key": "LINK",
+            "value": "https://filmcolors.org/timeline-of-historical-film-colors"
+          }
+        ]
+      },
+      "description": "Criado em 2012, a <strong>Timeline of Historical Film Colors</strong> foi desenvolvida e com curadoria de <i>Barbara Flueckiger</i>, professora do Departamento de Estudos de Cinema da Universidade, de Zurique, para fornecer informações abrangentes sobre processos históricos de cores de filmes inventados desde o final do século 19, incluindo tecnologias específicas de cores de fotografia estática que foram seus predecessores conceituais."
+    },
+    {
+      "type": "text",
+      "content_text": "A cor fotográfica pode ser produzida em filmes usando um processo aditivo ou subtrativo. Os primeiros sistemas a serem desenvolvidos e usados foram todos aditivos, como o <strong>Kinemacolor</strong> (1906) e <strong>Gaumont Cronocromo</strong> (1912). Eles alcançaram vários graus de popularidade, mas nenhum foi inteiramente bem-sucedido, principalmente porque todos os sistemas aditivos envolvem o uso de câmeras e projetores especiais, o que os torna muito complicados e caros para uso industrial generalizado."
+    },
+    {
+      "type": "text",
+      "content_text": "Um dos primeiros processos subtrativos bem-sucedidos foi um bicolor introduzido por <i>Herbert Kalmus</i> em 1922, o <strong>Technicolor</strong>. Usou uma câmera especial e um procedimento complexo para produzir duas impressões positivas separadas que foram então consolidadas em uma única impressão. A impressão final precisava de um manuseio cuidadoso, mas podia ser projetada por meio de equipamentos comuns. Esse processo “positivo cimentado” foi usado com sucesso em recursos como <a href=\"https://_{type: 'screen', 'id': 75804, 'screen_type': movie}\">Toll of the Sea</a> (1922) e <a href=\"https://_{type: 'screen', 'id': 50075, 'screen_type': movie}\">The Black Pirate</a> (BR: O Pirata Negro, 1926) de Fairbanks."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_caligari_color",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Cena de O Gabinete do Dr. Caligari (1920)",
+        "contentText": "Nas cenas do primeiro Ato, em que o <i>Dr. Caligari</i> é apresentado ao público pela primeira vez. A cor cria uma sensação estranha e desconfortável, porque faz os personagens parecerem mais distorcidos e desconfiados.",
+        "source": "The Cabinet of Dr. Caligari / Yinzi's Photo Workshop"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Em 1928, a Technicolor introduziu um processo aprimorado no qual dois positivos de gelatina eram usados como matrizes de relevo para \"imprimir\" a cor em uma única tira de filme. Sua introdução resultou em um aumento significativo na produção do Technicolor entre 1929 e 1932. A reprodução de cores no processo Technicolor de duas cores era boa, mas ainda não era completamente natural. Sua popularidade começou a cair drasticamente em 1932 e o Technicolor o substituiu por um sistema de três cores que empregava os mesmos princípios básicos, mas incluía todas as três cores primárias."
+    },
+    {
+      "type": "text",
+      "content_text": "Nos 25 anos seguintes, quase todos os filmes coloridos feitos foram produzidos com o sistema de três cores da Technicolor . Embora a qualidade do sistema fosse excelente, havia desvantagens. A maior parte da câmera dificultou a filmagem do local. Além disso, o monopólio virtual da Technicolor deu a ela o controle indireto das empresas de produção, que eram obrigadas a alugar - a preços elevados - equipamentos, equipe, consultores e serviços de laboratório da Technicolor cada vez que usavam o sistema. No durante a Depressão, portanto, a conversão para cores era lenta e nunca realmente completa."
+    },
+    {
+      "type": "text",
+      "content_text": "Depois que o Technicolor de três cores foi usado com sucesso no curta de desenho animado da Disney <a href=\"https://_{type: 'screen', 'id': 34463, 'screen_type': movie}\">The Three Little Pigs</a> (BR: Os Três Porquinhos, 1933), o curta de ação ao vivo <a href=\"https://_{type: 'screen', 'id': 177032, 'screen_type': movie}\">La Cucaracha</a> (1934) e o longa-metragem de <a href=\"https://_{type: 'screen', 'id': 43888, 'screen_type': movie}\">Becky Sharp</a> (BR: Vaidade e Beleza, 1935), dirigido por <a href=\"https://_{type: 'screen', 'id': 29595, 'screen_type': person}\">Rouben Mamoulian</a> (1897-1987), gradualmente abriu caminho para a produção de longa-metragem <a href=\"https://_{type: 'screen', 'id': 151848, 'screen_type': movie}\">The Garden of Allah</a> (BR: O Jardim de Allah, 1936), <a href=\"https://_{type: 'screen', 'id': 408, 'screen_type': movie}\">Snow White and the Seven Dwarfs</a> (BR: Branca de Neve e os Sete Anões, 1937), <a href=\"https://_{type: 'screen', 'id': 10907, 'screen_type': movie}\">The Adventures of Robin Hood</a> (BR: As Aventuras de Robin Hood, 1938), <a href=\"https://_{type: 'screen', 'id': 630, 'screen_type': movie}\">The Wizard of Oz</a> (BR: O Mágico de Oz , 1939) e <a href=\"https://_{type: 'screen', 'id': 770, 'screen_type': movie}\">Gone with the Wind</a> (BR: E o Vento Levou, 1939), embora tenha permanecido fortemente associado à fantasia e ao espetáculo."
+    },
+    {
+      "type": "text",
+      "content_text": "Foi relatado que, quando Dorothy saiu pela primeira vez de sua casa em sépia, devastada pelo tornado, no país das maravilhas multicoloridas de <i>Munchkin Country</i>, um suspiro audível percorreu os cinemas de toda a América. Em um instante, o público foi transportado para um mundo <strong>Technicolor</strong>, para nunca mais olhar para trás.  ",
+      "content_title": "Natalie Kalmus, a diretora de cores dos primeiros filmes technicolor de Hollywood"
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_natalie",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Natalie Kalmus",
+        "contentText": "Kalmus tem mais créditos no <i>IMDb</i> fora das câmeras do que Spielberg e Scorsese, com 404 créditos.",
+        "source": "Courtesy of BFI National Archive. Photograph by Barbara Flueckiger. Film: Kino the Girl of Colour (GB 1920, William Friese-Greene, Claude Friese-Greene)"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Hollywood, no entanto, demorou a cruzar o limiar da escala de cinza à colorida - cerca de trinta anos, na verdade. No começo, a cor só era vista como um novo enfeite para um filme, reservada para grandes danças ou sequências de sonho. Visava a “intensidade sensual” ao invés do realismo. Foi a visionária <a href=\"https://_{type: 'screen', 'id': 1361978, 'screen_type': person}\">Natalie Kalmus</a> (1882-1965) quem salvou a cor de ser entendida como mero enfeite. Ela o inseriu na própria estrutura do cinema."
+    },
+    {
+      "type": "text",
+      "content_text": "Quando o revolucionário Technicolor de três cores de seu marido <a href=\"https://_{type: 'screen', 'id': 1435753, 'screen_type': person}\">Herbert Kalmus</a> (1881-1963) surgiu em 1932, ele tinha décadas de bagagem para superar. O verdadeiro desafio de Herbert consistia em convencer uma indústria cética - e de fato, o público que vai ao cinema - de que a cor poderia ser integrada ao vocabulário básico da narrativa cinematográfica."
+    },
+    {
+      "type": "text",
+      "content_text": "O primeiro longa-metragem em Technicolor, <a href=\"https://_{type: 'screen', 'id': 43888, 'screen_type': movie}\">Becky Sharp</a> (BR: Vaidade e Beleza, 1935), estabeleceu o Technicolor como a cor mais verdadeira já vista na tela. No entanto, embora tenha sido uma vitrine persuasiva para a tecnologia, o filme não apresentou um caso convincente de que a cor é essencial para a arte de contar histórias. Seu uso desenfreado de cor atraiu a ira. Um revisor reclamou: “Seus olhos são constantemente desviados das pessoas para as flores”. Outro comentou: “Quando Rawdon expulsa Becky dele, você não a vê tanto quanto vê o vestido que ela usa e o tapete Aubusson no qual ela afunda”."
+    },
+    {
+      "type": "video",
+      "video_id": "x6D8PAGelN8",
+      "information": {
+        "contentTitle": "Dorothy entrando no mundo do Technicolor",
+        "contentText": "Uma das cenas mais icônicas da história do cinema é Dorothy saindo da casa de tons sépia e entrando em um mundo de cores vivas. Isso não poderia ser feito sem a “câmera divisora de feixe DF-24”. Esta câmera exigia o uso de filtros de cores compostos por vermelho, verde e azul. Quando filmaram as cenas, eles usaram fita preta e branca de 35 mm; no processo de revelação da fita eles os unem e criam o filme em cores. Mas a câmera não fez todo o processo em sua fidelidade absoluta. Os responsáveis tiveram que brincar com as cores do figurino e do cenário para que quando eles filmassem e passassem pelo processo de filmagem, não perde a essência de cores vivas que o diretor desejava para o filme. Cada cena precisava de uma tira de teste colorida e eles faziam tomadas duplas ou triplas só para ter certeza disso.",
+        "source": "Youtube: Canal <i>Benjamin Portman</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Tanto os estúdios quanto o público precisavam ser convencidos de que a cor pode ajudar e aprimorar uma narrativa, em vez de oprimi-la. A invenção de Herbert Kalmus estava em terreno instável. Como a crítica da revista Life sobre o filme concluiu, permanecia \"uma questão se a cor pode ou não ser mantida em seu lugar na criação de um longa-metragem\". É aí que Natalie entrou."
+    },
+    {
+      "type": "text",
+      "content_text": "Natalie Dunfee, nascida em 1882, conheceu Herbert Kalmus quando os dois estudavam cores na Universidade de Zurique, na Suíça. Em 1902, Dunfee casou-se com Kalmus e, ao longo dos 10 anos seguintes, os Kalmuses mudaram-se constantemente. Natalie estudou artes em várias instituições na Europa e na América do Norte, e Herbert começou a fazer experiências em seu porão com a noção inovadora do filme colorido. Natalie, igualmente aficionada por cores, aderiu. Em 1915, Herbert Kalmus, junto com Daniel Comstock e Burton Westcott (todos eles ex-alunos do MIT), fundaram a <strong>Technicolor Motion Picture Corporation</strong>."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_natalie_journal",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Artigo do The Southeast Missourian, 16 de abril de 1930",
+        "contentText": "A ascensão meteórica dos Kalmuses aos mais altos escalões da indústria cinematográfica é um verdadeiro conto de Hollywood. O caminho de Natalie, no entanto, foi crivado de uma série de descorteses que perseguiram as mulheres ao longo da história, especialmente aquelas que eram conhecidas do público.",
+        "source": "Arquivo de jornais do Google / The Southeast Missourian"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Aqui, Natalie se tornou a primeira estrela Technicolor do mundo. Ela atuou em seus filmes de teste e também serviu como desenvolvedora, cortadora e dona da câmera. Finalmente, por volta de 1927, a pequena empresa Technicolor fez seu caminho para Hollywood. O Technicolor viria a derrotar dezenas de outras corporações em conflito, incluindo empresas como <i>Kinemacolor</i> e <i>Kodachrome</i>, para se tornar a empresa de cores reinante em Hollywood.  Os primeiros filmes em Technicolor costumavam ser de mau gosto e sombrios, até porque os estúdios, irritados com o alto custo, insistiam em fazer seu dinheiro valer a pena em quantidade - eles queriam todas as cores, o tempo todo. Natalie, com base em seus anos de estudo, decidiu mudar essa atitude. Ela queria empurrar a indústria dessa abordagem direta para uma 'consciência de cor' sensível. Kalmus acreditava que o cinema vinha “tendendo constantemente para um realismo mais completo” e, após a adição do som, a cor era o passo final para a perfeição - se usada corretamente."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "Se você se dedicar de maneira adequada a uma carreira de qualquer tipo, não precisará buscar conselhos sobre isso. Ninguém vai conseguir te impedir de qualquer maneira.",
+        "author": "Natalie Kalmus"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Kalmus recomendou que as cores fossem usadas com sensibilidade, pois o sistema nervoso humano “sofre um choque quando é forçado a se adaptar a qualquer grau de anormalidade na recepção de estímulos externos”. Kalmus estabeleceu algumas diretrizes fundamentais para o uso de cores em filmes. Ela acreditava que a cor deveria servir de suporte para a ação e o diálogo; deve ser sugestivo de humor, em vez de um parceiro igual na comunicação. Ela alertou contra uma “superabundância de cores”, em favor de esquemas de cores mais naturais e neutros. E ela enfatizou “a lei da ênfase”, decretando que detalhes insignificantes em uma imagem não deveriam ser enfatizados."
+    },
+    {
+      "type": "text",
+      "content_text": "Natalie trabalhou em mais de 400 filmes, mas foi seu trabalho como diretora de cores em O Mágico de Oz que finalmente chamou a atenção do mundo. O cinema mudou para sempre quando o filme passou de sépia para colorido. Dos sapatos de rubi de Dorothy ao uso de luzes multicoloridas nas câmaras do mago, o filme é uma ode à magia do Technicolor (A propósito, sépia não era um truque de pós-produção. Na verdade, a casa era pintada em sépia, e o sósia de Judy Garland estava com um vestido em sépia)."
+    },
+    {
+      "type": "video",
+      "video_id": "Mqaobr6w6_I",
+      "information": {
+        "contentTitle": "Como Technicolor mudou o cinema",
+        "contentText": "Vídeo incrível que explica em detalhes o funcionamento do Technicolor, e a importância de Natalie Kalmus na história do cinema em cores.",
+        "source": "Youtube: Canal <i>Vox</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Kalmus não teve uma vida fácil nos sets de filmagem. Os homens se irritaram por ter que se submeter a uma mulher. Enquanto dirigia <a href=\"https://_{type: 'screen', 'id': 2769, 'screen_type': movie}\">An American in Paris</a> (BR: Sinfonia de Paris, 1951), <a href=\"https://_{type: 'screen', 'id': 13980, 'screen_type': person}\">Vincente Minnelli</a> (1903-1986) resmungou que “não conseguia fazer nada certo aos olhos da Sra. Kalmus”. Em resposta à regra de Kalmus sobre cores conflitantes, <a href=\"https://_{type: 'screen', 'id': 8636, 'screen_type': person}\">Cecil DeMille</a> (1881-1959) se irritou: \"Bem, é uma pena que o bom Deus lá em cima não tenha um consultor em Technicolor quando fez maçãs e laranjas!\". Nos sets de filmagem britânica, onde ela enfrentava resistência tanto por seu gênero quanto por sua nacionalidade, ela costumava ser alvo de desprezo por sua aparência, roupas e chapéus (aparentemente para desacreditar seu julgamento estético). O sentimento geral em relação a Kalmus, nutrido pelo clube dos meninos de Hollywood, foi talvez melhor resumido por <a href=\"https://_{type: 'screen', 'id': 93905, 'screen_type': person}\">Alan Dwan</a> (1885-198), um dos diretores mais importantes da era do cinema mudo. “Natalie Kalmus era uma vadia”, disse ele, em uma entrevista em 1980."
+    },
+    {
+      "type": "text",
+      "content_text": "Os filmes têm um efeito sísmico em nosso vocabulário visual coletivo. Aqueles que criam a gramática dos filmes - como eles são iluminados, emoldurados, compostos, filmados e, na verdade, coloridos - são os principais influenciadores da cultura visual. Como a “alta sacerdotisa do Technicolor”, Kalmus não precisa de nenhum qualificador de gênero para ser considerada uma das grandes no cinema de todos os tempos. Dito isso, ela era uma mulher que conduziu a indústria do cinema em uma de suas transições mais difíceis, enfrentando resistência e ceticismo a cada passo do caminho. Como ela fez isso? “Se você se dedicar de maneira adequada a uma carreira de qualquer tipo, não precisará buscar conselhos sobre isso”, disse ela. \"Ninguém vai conseguir te impedir de qualquer maneira\"."
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 3777,
+          "popularity": 29.644,
+          "id": 630,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.6,
+          "title": "The Wizard of Oz",
+          "release_date": "1939-08-15",
+          "original_language": "en",
+          "original_title": "The Wizard of Oz",
+          "genre_ids": [
+            12,
+            14,
+            10751
+          ],
+          "backdrop_path": "\/qAvou7F5P4VcIR72JzzrnKEQSN3.jpg",
+          "adult": false,
+          "overview": "Young Dorothy finds herself in a magical world where she makes friends with a lion, a scarecrow and a tin man as they make their way along the yellow brick road to talk with the Wizard and ask for the things they miss most in their lives. The Wicked Witch of the West is the only thing that could stop them.",
+          "poster_path": "\/pfAZFD7I2hxW9HCChTuAzsdE6UX.jpg"
+        },
+        {
+          "vote_count": 0,
+          "popularity": 0.841,
+          "id": 346444,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 0,
+          "title": "The Gulf Between",
+          "release_date": "1917-09-21",
+          "original_language": "en",
+          "original_title": "The Gulf Between",
+          "genre_ids": [
+            35,
+            18
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "A young woman, who is the daughter of a sea captain, falls in love with a man from a rich family who does not approve of her.",
+          "poster_path": "\/1MxbC81DYLZ4hC0yjXzFkd2BOyR.jpg"
+        },
+        {
+          "poster_path": "\/841WLSvTRN3TQKxiUjD1TY9dc42.jpg",
+          "popularity": 2.842,
+          "vote_count": 25,
+          "video": false,
+          "media_type": "movie",
+          "id": 50075,
+          "adult": false,
+          "backdrop_path": "\/wqY6kakhlHn1FhO8qbTf1uCJLww.jpg",
+          "original_language": "en",
+          "original_title": "The Black Pirate",
+          "genre_ids": [
+            28,
+            12,
+            18
+          ],
+          "title": "The Black Pirate",
+          "vote_average": 7,
+          "overview": "A nobleman vows to avenge the death of his father at the hands of pirates. To this end he infiltrates the pirate band. Acting in character he is instrumental in the capture of a ship, but things are complicated when he finds that there is a young woman on board whom he wishes to protect from the threat of rape.",
+          "release_date": "1926-03-08"
+        },
+        {
+          "poster_path": "\/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+          "popularity": 13.3,
+          "vote_count": 820,
+          "video": false,
+          "media_type": "movie",
+          "id": 234,
+          "adult": false,
+          "backdrop_path": "\/bd7d9owGqoNHy2kBtwK3tbdDHI6.jpg",
+          "original_language": "de",
+          "original_title": "Das Cabinet des Dr. Caligari",
+          "genre_ids": [
+            80,
+            18,
+            27,
+            53
+          ],
+          "title": "The Cabinet of Dr. Caligari",
+          "vote_average": 7.9,
+          "overview": "Francis, a young man, recalls in his memory the horrible experiences he and his fiancée Jane recently went through. Francis and his friend Alan visit The Cabinet of Dr. Caligari, an exhibit where the mysterious doctor shows the somnambulist Cesare, and awakens him for some moments from his death-like sleep.",
+          "release_date": "1920-02-27"
+        },
+        {
+          "vote_count": 222,
+          "popularity": 9.503,
+          "id": 34463,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.8,
+          "title": "Three Little Pigs",
+          "release_date": "1933-05-27",
+          "original_language": "en",
+          "original_title": "Three Little Pigs",
+          "genre_ids": [
+            10402,
+            16,
+            35,
+            10751
+          ],
+          "backdrop_path": "\/mbHXq2pO3FjN0TSsh2DwJjWAzAW.jpg",
+          "adult": false,
+          "overview": "The two pigs building houses of hay and sticks scoff at their brother, building the brick house. But when the wolf comes around and blows their houses down (after trickery like dressing as a foundling sheep fails), they run to their brother's house. And throughout, they sing the classic song, \"Who's Afraid of the Big Bad Wolf?\".",
+          "poster_path": "\/aPmSY3y4A2xMSkF24tdIfDQNKJy.jpg"
+        },
+        {
+          "poster_path": "\/lWdo53h9tmSnlCY9JxeRWPozoPN.jpg",
+          "popularity": 14.113,
+          "vote_count": 404,
+          "video": false,
+          "media_type": "movie",
+          "id": 10907,
+          "adult": false,
+          "backdrop_path": "\/yjnfM8QmrXQkWl8dUimsDGl73el.jpg",
+          "original_language": "en",
+          "original_title": "The Adventures of Robin Hood",
+          "genre_ids": [
+            28,
+            12,
+            10749
+          ],
+          "title": "The Adventures of Robin Hood",
+          "vote_average": 7.5,
+          "overview": "Robin Hood fights nobly for justice against the evil Sir Guy of Gisbourne while striving to win the hand of the beautiful Maid Marian.",
+          "release_date": "1938-05-13"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 1361978,
+          "profile_path": "\/lj8ZQL6PPxKM4Rtg0rf0q5MANhX.jpg",
+          "name": "Natalie Kalmus"
+        },
+        {
+          "id": 29595,
+          "profile_path": "\/cTNDfNgGaBtoGbcrZ9CsNcQyjxW.jpg",
+          "name": "Rouben Mamoulian"
+        },
+        {
+          "id": 9066,
+          "profile_path": "\/dkhMrLSfnqS3fmxWuXaEMwxN0Tf.jpg",
+          "name": "Judy Garland"
+        }
+      ]
+    },
+    {
       "type": "link_screen",
       "subtitle": "Os acontecimentos que marcaram o mundo",
       "title": "Timeline de Acontecimentos de 1930 a 1939",
