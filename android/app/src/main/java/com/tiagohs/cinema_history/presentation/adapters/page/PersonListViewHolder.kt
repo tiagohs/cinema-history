@@ -21,29 +21,35 @@ class PersonListViewHolder(
     private val onPersonClicked: ((personId: Int) -> Unit)?
 ) : BasePageViewHolder(view) {
 
+    private var isSetup = false
+
     override fun bind(item: Content, position: Int) {
         super.bind(item, position)
         val context = containerView.context ?: return
         val contentPersonList = item as? ContentPersonList ?: return
 
-        val persons = contentPersonList.persons?.map {
-            PersonDTO(
-                it.id,
-                it.profilePath,
-                it.name
-            )
-        } ?: emptyList()
-
-        personList.apply {
-            adapter = PersonAdapter(persons, onPersonClicked)
-            layoutManager =
-                LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            addItemDecoration(
-                SpaceOffsetDecoration(
-                    8.convertIntToDp(context),
-                    SpaceOffsetDecoration.LEFT
+        if (!isSetup) {
+            val persons = contentPersonList.persons?.map {
+                PersonDTO(
+                    it.id,
+                    it.profilePath,
+                    it.name
                 )
-            )
+            } ?: emptyList()
+
+            personList.apply {
+                adapter = PersonAdapter(persons, onPersonClicked)
+                layoutManager =
+                    LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+                addItemDecoration(
+                    SpaceOffsetDecoration(
+                        8.convertIntToDp(context),
+                        SpaceOffsetDecoration.LEFT
+                    )
+                )
+            }
+
+            isSetup = true
         }
     }
 
