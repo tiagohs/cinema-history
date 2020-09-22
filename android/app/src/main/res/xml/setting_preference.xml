@@ -42,7 +42,7 @@
             app:key="glossary"
             app:summary="@string/glossary_description"
             app:title="@string/activity_glossary"
-            app:icon="@drawable/ic_library_books"
+            app:icon="@drawable/ic_library_books_grey"
             app:selectable="true" />
 
         <androidx.preference.Preference
