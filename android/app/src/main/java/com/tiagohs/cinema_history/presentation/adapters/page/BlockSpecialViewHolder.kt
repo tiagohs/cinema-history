@@ -118,6 +118,8 @@ class BlockSpecialViewHolder(
         blockSpecialDescription.setResourceTextColor(colorAsset.textColorName)
         blockSpecialDescription.setLinkTextColor(linkColor)
         blockSpecialClickHere.setResourceTextColor(colorAsset.textColorName)
+        blockSpecialClickHere.setResourceTextColor(colorAsset.textColorName)
+        blockSpecialCredits.setResourceTextColor(colorAsset.textColorName)
 
         color1.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
         color2.setResourceBackgroundColor("md_${colorAsset.colorName}_600")
