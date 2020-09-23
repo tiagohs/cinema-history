@@ -69,6 +69,7 @@ class TimelineItemViewHolder(
 
         textLine.setCardBackgroundColor(textColorRes)
         titleContainer.setResourceBackgroundColor(color)
+        itemDescription.setLinkTextColor(context.getResourceColor(color))
         title.setTextColor(textColorRes)
     }
 }

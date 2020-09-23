@@ -1,17 +1,355 @@
 {
   "id": 2,
-  "color": "md_red_A700",
+  "color": "md_purple_A700",
   "title_text_color": "md_white_1000",
   "timeline_list": [
     {
       "type": "title",
       "title": "A História<br/>do Cinema:<br/>1930 a 1939",
       "page_title": "1930 a 1939",
-      "coming_soon": true,
-      "previous": "1895 a 1929"
+      "coming_soon": false,
+      "previous": "1895 a 1929",
+      "next": "1940 a 1959"
+    },
+    {
+      "type": "item",
+      "year": "19\n30",
+      "title": "O Som chega no terror da Universal",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 14473, 'screen_type': 'person'}\">Robert Julian</a> (1879-1943) e <a href=\"https://_{'type': 'screen', 'id': 32136, 'screen_type': 'person'}\">John Willard</a> (1885-1942) dirigem <a href=\"https://_{'type': 'screen', 'id': 84714, 'screen_type': movie}\">The Cat Creeps</a> (BR: Meia Noite em Ponto, 1930), primeiro filme de terror sonoro da Universal.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_cat_creeps.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n30",
+      "title": "O Início dos Gângster nas telas",
+      "description": "O repórter audacioso, estrelado por <a href=\"https://_{'type': 'screen', 'id': 34745, 'screen_type': 'person'}\">Jimmy Durante</a> (1893-1980), é o primeiro de muitos filmes de gângster inspirado pelo romance <i>Colheita sangrenta</i> (1929), de <a href=\"https://_{'type': 'screen', 'id': 5165, 'screen_type': 'person'}\">Dashiell Hammett</a>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_durante.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n30",
+      "title": "Stop-motion",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 90034, 'screen_type': movie}\">Le roman de renard</a> (BR: A história da raposa, 1930) de <a href=\"https://_{'type': 'screen', 'id': 938146, 'screen_type': person}\">Wladyslaw Starevich</a> (1882-1965), é um dos maiores feitos de animação em <i>stop-motion</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_le_roman_de_renard.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n31",
+      "title": "Um Modelo",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 27899, 'screen_type': movie}\">Alma no lodo</a> estabelece o modelo para os futuros filmes de gângster e introduz um novo vocabulário: <i>gats</i> (armas), <i>molls</i> (garotas) e <i>bulls</i> (policiais).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_little_caesar.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n31",
+      "title": "A Guerra no Oscar",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 143, 'screen_type': movie}\">All Quiet on the Western Front </a>(BR: Sem novidades no front, 1930), de <a href=\"https://_{'type': 'screen', 'id': 2000, 'screen_type': person}\">Lewis Milestone</a> (1895-1980), ganha o Oscar de Melhor filme.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_all_quiet_front.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n31",
+      "title": "Desafiando uma revolução",
+      "description": "Chaplin lança o clássico <a href=\"https://_{'type': 'screen', 'id': 901, 'screen_type': 'movie'}\">City Lights</a> (BR: Luzes da Cidade, 1931), desafiando a revolução do cinema falado. Esse foi um dos últimos filmes mudos produzidos nos Estados Unidos, junto a <a href=\"https://_{'type': 'screen', 'id': 977, 'screen_type': 'movie'}\">Tabu</a> (1931), de F. W. Murnau, filmado na Polinésia.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_city_lights.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n31",
+      "title": "Terror gótico",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 138, 'screen_type': 'movie'}\">Drácula</a> e <a href=\"https://_{'type': 'screen', 'id': 3035, 'screen_type': 'movie'}\">Frankenstein</a> são lançados. Eles desencadeiam uma enxurrada de filmes de terror gótico que buscam repetir seu sucesso comercial.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_frankenstein.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n32",
+      "title": "Peludopolis",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 1289536, 'screen_type': person}\">Quirino Cristiani</a>, um dos gigantes esquecidos da animação, realiza <a href=\"https://_{'type': 'screen', 'id': 558154, 'screen_type': movie}\">Peludopolis</a> – o primeiro longa-metragem animado a utilizar som sincronizado. ",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_peludopolis.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n32",
+      "title": "Monstros",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 136, 'screen_type': movie}\">Monstros</a> é lançado pela <strong>MGM</strong>. O filme gera uma série de controvérsias e abrevia a carreira de seu diretor, <a href=\"https://_{'type': 'screen', 'id': 1496, 'screen_type': person}\">Tod Browning</a>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_freaks.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n32",
+      "title": "O Gordo e o Magro",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 44892, 'screen_type': movie}\">Entrega a domicílio</a>, de Laurel e Hardy, ganha o primeiro <strong>Oscar de melhor Curta-metragem</strong> (comédia).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_entrega_docimicilio.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n32",
+      "title": "Betty Boop",
+      "description": "Em <a href=\"https://_{'type': 'screen', 'id': 156464, 'screen_type': movie}\">Betty Boop's Bamboo Isle</a> (BR: Betty Boop na ilha do Bambu, 1932), a personagem do título exibe a promiscuidade de olhos arregalados que lhe é peculiar.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_betty_boops_bamboo_isle.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n33",
+      "title": "Stop-motion e King Kong",
+      "description": "A utilização de <strong>stop-motion</strong> dá um enorme salto evolutivo quando o filme fantástico <a href=\"https://_{'type': 'screen', 'id': 244, 'screen_type': movie}\">King Kong</a> é lançado.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_king_kong_1933.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n33",
+      "title": "Consequências do Nazismo",
+      "description": "<i>Hitler</i> chega ao poder na Alemanha, gerando um êxodo de talentos criativos alemães para <i>Hollywood, Londres e Paris</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_nazismo.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n33",
+      "title": "O gênero musical revitalizado",
+      "description": "A <i>Warner Bros.</i>, realiza <a href=\"https://_{'type': 'screen', 'id': 3062, 'screen_type': movie}\">Rua 42</a> e <a href=\"https://_{'type': 'screen', 'id': 31511, 'screen_type': movie}\">Caçadora de ouro</a>. Eles revitalizam o gênero musical, tornando-se duas das maiores bilheterias do ano.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_42nd_street.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n34",
+      "title": "Os três Patetas",
+      "description": "É lançado <a href=\"https://_{'type': 'screen', 'id': 115771, 'screen_type': movie}\">Odeio mulheres</a>, o primeiro longa-metragem dos <strong>Três Patetas</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_woman_haters.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n35",
+      "title": "A Noiva de Frankenstein",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 229, 'screen_type': movie}\">A Noiva de Frankenstein</a>, de <a href=\"https://_{'type': 'screen', 'id': 2917, 'screen_type': person}\">James Whale</a>, é a primeira continuação do filme original e traz um monstro do sexo feminino. É considerado melhor que seu predecessor.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_bride_of_frankenstein.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n35",
+      "title": "Uma diva mirim",
+      "description": "A diva mirim <a href=\"https://_{'type': 'screen', 'id': 95624, 'screen_type': person}\">Shirley Temple</a> recebe um <strong>Oscar especial</strong> – aos 7 anos. Temple foi a atriz mirim de Hollywood com a maior arrecadação em bilheteria.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_shirley_temple_oscar.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n36",
+      "title": "A resistência ao som",
+      "description": "Quase 10 anos após o primeiro filme com falas, Chaplin lança <a href=\"https://_{'type': 'screen', 'id': 3082, 'screen_type': 'movie'}\">Modern Times</a> (BR: Tempos Modernos, 1936), seu primeiro filme \"sonorizado\". Sem falas, ele contém apenas efeitos sonoros.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_modern_times.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n36",
+      "title": "O picolino",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 3080, 'screen_type': 'movie'}\">O picolino</a> recebe quatro indicações ao Oscar, inclusive os prêmios de Melhor filme e Melhor Direção da Dança.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_picolino.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n36",
+      "title": "Frank Capra",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 2662, 'screen_type': person}\">Frank Capra</a> ganha segundo Oscar pela direção de <a href=\"https://_{'type': 'screen', 'id': 24807, 'screen_type': movie}\">O galante Mr. Deeds</a>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_frank_capra_oscar.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n36",
+      "title": "Fred Astaire e Ginger Rogers",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 30181, 'screen_type': person}\">Fred Astaire</a> e <a href=\"https://_{'type': 'screen', 'id': 30003, 'screen_type': person}\">Ginger Rogers</a> estrelam Ritmo Louco, uma das melhores de suas 10 parceiras nas telas.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ritmo_louco.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n37",
+      "title": "Branca de neve e os sete anões",
+      "description": "É Lançado o filme da Disney <a href=\"https://_{'type': 'screen', 'id': 408, 'screen_type': movie}\">Branca de neve e os sete anões</a>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_snow_white.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n37",
+      "title": "Levada da Breca",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 900, 'screen_type': movie}\">Levada da breca</a>, de <a href=\"https://_{'type': 'screen', 'id': 11435, 'screen_type': person}\">Howard Hawks</a>, é um fracasso de bilheteria, mas com o passar dos anos se torna um adorado clássico do gênero.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_levada_da_breca.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n37",
+      "title": "A Rebeldia",
+      "description": "O filme de gângster urbano <a href=\"https://_{'type': 'screen', 'id': 27973, 'screen_type': movie}\">Beco sem saída</a>, de <a href=\"https://_{'type': 'screen', 'id': 10001, 'screen_type': person}\">William Wyler</a> (1902-1981), apresenta <strong>The Dead End Kids</strong> – possivelmente o primeiro bando de adolescentes rebeldes do cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_dead_end_kids.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
     },
     {
       "type": "footer",
+      "next": "1940 a 1959",
       "previous": "1895 a 1929"
     }
   ]

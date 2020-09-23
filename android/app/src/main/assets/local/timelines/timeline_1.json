@@ -517,6 +517,19 @@
       }
     },
     {
+      "type": "item",
+      "year": "19\n29",
+      "title": "Turma do Pernalonga",
+      "description": "A Warner Bros. lança desenhos da <strong>Turma do Pernalonga</strong> nos cinemas. Esses curtas-metragens são anteriores ao <i>Pernalongas</i>, trazendo os personagens <i>Bosko</i> e <i>Buddy</i> em seu lugar.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_bosko.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
       "type": "footer",
       "next": "1930 a 1939"
     }

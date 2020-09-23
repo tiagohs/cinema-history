@@ -183,7 +183,7 @@
             android:textColor="@color/md_black_1000"
             android:textColorLink="@color/md_yellow_A700"
             android:fontFamily="@font/proxima_nova_regular"
-            android:textSize="@dimen/text_size_zeplin_18pt"
+            android:textSize="@dimen/text_size_zeplin_22pt"
             android:lineSpacingMultiplier="0.8"
             android:textAlignment="textStart"
             android:layout_marginTop="@dimen/activity_vertical_margin"

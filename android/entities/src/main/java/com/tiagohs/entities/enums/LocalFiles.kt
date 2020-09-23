@@ -13,6 +13,7 @@ enum class LocalFiles(
     TIMELINE_LIST("/timelines", "local/timelines/timeline_list.json"),
     TIMELINE_1("/timeline_1", "local/timelines/timeline_1.json"),
     TIMELINE_2("/timeline_2", "local/timelines/timeline_2.json"),
+    TIMELINE_3("/timeline_3", "local/timelines/timeline_3.json"),
 
     MAIN_TOPICS("/maintopics", "local/maintopics.json"),
     MIL_MOVIES_MAIN_TOPICS("/milmoviesmaintopics", "local/milmoviesmaintopics.json"),
