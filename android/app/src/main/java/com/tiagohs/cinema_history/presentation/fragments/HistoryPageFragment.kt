@@ -221,7 +221,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
     }
 
     private fun presentScreen(intent: Intent) {
-        startActivity(intent)
+        activity?.startActivityWithSlideRightToLeftAnimation(intent)
     }
 
     private fun onMovieSelected(movieId: Int) {
