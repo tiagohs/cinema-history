@@ -348,6 +348,20 @@
       }
     },
     {
+      "type": "item",
+      "year": "19\n37",
+      "title": "A Magia do Technicolor",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 630, 'screen_type': movie}\">The Wizard of Oz</a> (BR: O Mágico de Oz , 1939) é lançado nos cinemas, se tornando instantaneamente um clássico e encantando crianças e adultos. Mas junto com o seu lançamento, as plateias presenciaram o poder do <strong>Technicolor</strong> no storytelling, quando, por exemplo, Dorothy sai do seu mundo em sépia para o colorido do mundo de Oz. O que a visionária <a href=\"https://_{type: 'screen', 'id': 1361978, 'screen_type': person}\">Natalie Kalmus</a> idealizava estava se tornando realidade.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_magic_oz.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
       "type": "footer",
       "next": "1940 a 1959",
       "previous": "1895 a 1929"
