@@ -1,0 +1,49 @@
+[
+  {
+    "main_topic_type": "awards",
+    "layout_type": "card_full",
+    "id": 1,
+    "name": "Oscars (Academy Awards)",
+    "country": "Estados Unidos",
+    "presented_by": "Academia de Artes e Ciências Cinematográficas",
+    "first_awarded_date": "16/05/1929",
+    "nominees_id": 1,
+    "image": {
+      "image_type": "local",
+      "url": "img_oscar",
+      "content_description": "Foto com uma mão segurando o Oscar.",
+      "style": {
+        "height": 400,
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 400
+        }
+      }
+    },
+    "history": [
+
+    ],
+    "social_list": [
+      {
+        "type": "site",
+        "link": "https://oscar.go.com/"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/theacademy"
+      },
+      {
+        "type": "instagram",
+        "link": "https://www.instagram.com/theacademy/"
+      },
+      {
+        "type": "facebook",
+        "link": "https://www.facebook.com/TheAcademy"
+      },
+      {
+        "type": "youtube",
+        "link": "https://www.youtube.com/user/Oscars"
+      }
+    ]
+  }
+]

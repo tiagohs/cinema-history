@@ -22,6 +22,7 @@ class HomeAdapter(
         MainTopicsType.HISTORY_CINEMA.ordinal -> R.layout.adapter_home_history_item
         MainTopicsType.TIMELINE.ordinal -> R.layout.adapter_home_timeline_item
         MainTopicsType.DIRECTORS.ordinal -> R.layout.adapter_home_directors_item
+        MainTopicsType.AWARDS.ordinal -> R.layout.adapter_home_awards_item
         MainTopicsType.MIL_MOVIES.ordinal -> R.layout.adapter_home_millmovies_item
         else -> R.layout.adapter_empty
     }

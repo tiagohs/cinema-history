@@ -15,8 +15,10 @@
     <string name="is_new">Novo</string>
     <string name="movies">Filmes</string>
     <string name="timeline">Timeline</string>
+    <string name="awards_title">Premiações do Cinema</string>
     <string name="share_title">Compartilhar com:</string>
     <string name="selected_reference_type">Selecione o tipo:</string>
+    <string name="winner">Vencedor</string>
 
     <!-- History Pages -->
 
@@ -63,6 +65,8 @@
     <string name="start_journey">Iniciar a Jornada</string>
     <string name="home_title_1">A História do</string>
     <string name="home_title_2">Cinema</string>
+    <string name="home_awards_title">Premiações do Cinema</string>
+    <string name="home_awards_subtitle">Conheça os prêmios mais importantes do cinema</string>
     <string name="home_milmovies_title">1001 Filmes</string>
     <string name="home_milmovies_subtitle">para Ver antes de Morrer</string>
     <string name="home_milmovies_description">Do clássico ao underground, do cult ao noir, do terror ao romance, veja aqui os filmes que marcaram época e emocionaram pratéias no mundo todo.</string>
@@ -100,6 +104,9 @@
     <string name="collection_title">Franquia %1s</string>
     <string name="watch_on">Onde assistir</string>
     <string name="did_you_know">Você sabia?</string>
+
+    <!-- Awards -->
+    <string name="best_picture">Melhor Filme</string>
 
     <!-- Descriptions -->
     <string name="description_logo_app">Logo do Aplicativo</string>

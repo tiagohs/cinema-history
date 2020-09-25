@@ -36,6 +36,17 @@
     }
   },
   {
+    "main_topic_type": "awards",
+    "dark_mode": true,
+    "image": {
+      "image_type": "local",
+      "url": "img_awards",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
     "main_topic_type": "directors",
     "dark_mode": false,
     "image": {

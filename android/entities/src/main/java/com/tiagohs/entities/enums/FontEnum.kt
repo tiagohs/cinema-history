@@ -44,7 +44,21 @@ enum class FontEnum(
     MONTSERRAT_LIGHT("montserrat_light.ttf"),
     MONTSERRAT_MEDIUM("montserrat_medium.ttf"),
     MONTSERRAT_REGULAR("montserrat_regular.ttf"),
-    MONTSERRAT_THIN("montserrat_thin.ttf");
+    MONTSERRAT_THIN("montserrat_thin.ttf"),
+    FUTURA_CONDESED_LIGHT("futura_condensed_light.otf"),
+    FUTURA_MEDIUM_ITALIC("futura_medium_italic.ttf"),
+    FUTURA_MEDIUM_CONDESDE_BT("futura_medium_condensed_bt.ttf"),
+    FUTURA_MEDIUM_BT("futura_medium_bt.ttf"),
+    FUTURA_LIGHT_ITALIC_FONT("futura_light_italic_font.ttf"),
+    FUTURA_LIGHT_FONT("futura_light_font.ttf"),
+    FUTURA_LIGHT_BT("futura_light_bt.ttf"),
+    FUTURA_HEAVY_ITALIC_FONT("futura_heavy_italic_font.ttf"),
+    FUTURA_HEAVY_FONT("futura_heavy_font.ttf"),
+    FUTURA_EXTRA_BLACK_FONT("futura_extra_black_font.ttf"),
+    FUTURA_BOOK_ITALIC_FONT("futura_book_italic_font.ttf"),
+    FUTURA_BOOK_FONT("futura_book_font.ttf"),
+    FUTURA_BOLD_ITALIC_FONT("futura_bold_italic_font.ttf"),
+    FUTURA_BOLD_FONT("futura_bold_font.ttf");
 
     val fontWithPath: String
         get() = String.format("fonts/%s", this.fontName)

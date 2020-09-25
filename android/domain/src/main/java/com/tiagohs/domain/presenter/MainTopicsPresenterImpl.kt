@@ -40,6 +40,19 @@ class MainTopicsPresenterImpl @Inject constructor(
                     })
                 )
             }
+            MainTopicsType.AWARDS -> {
+                add(localService.getAwardsMainTopics()
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe({
+                        view?.hideLoading()
+                        view?.bindMainTopics(it)
+                    }, {
+                        view?.onError(it, R.string.error_unknown)
+                        view?.hideLoading()
+                    })
+                )
+            }
             MainTopicsType.MIL_MOVIES -> {
                 add(localService.getMilMoviesMainTopics()
                     .subscribeOn(Schedulers.io())

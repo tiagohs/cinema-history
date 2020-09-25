@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator"
+    android:background="@color/md_white_1000"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true"
+        android:elevation="@dimen/activity_vertical_margin_2.5x"
+        android:alpha="0"
+        android:background="@color/md_white_1000"
+        tools:alpha="1">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingToolbar"
+            android:fitsSystemWindows="true"
+            app:expandedTitleTextAppearance="@style/AppTheme.Expansed"
+            app:collapsedTitleTextAppearance="@style/AppTheme.Collalpsed"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:background="@color/md_white_1000"
+            app:contentScrim="@color/colorPrimary"
+            app:statusBarScrim="@color/md_black_1000"
+            app:titleEnabled="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:cardBackgroundColor="@color/md_black_1000"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:id="@+id/movieBackdrop"
+                        android:scaleType="centerCrop"
+                        android:alpha="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:alpha="1"
+                        tools:src="@drawable/img_ben_hur"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:id="@+id/movieBackdropDegrade"
+                        android:fitsSystemWindows="true"
+                        android:background="@drawable/background_degrade_bottom"
+                        android:layout_gravity="bottom"
+                        android:alpha="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:alpha="1"
+                    />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/movieBackdropDegradeTop"
+                        android:background="@drawable/background_degrade_top"
+                        android:layout_gravity="top"
+                        android:alpha="0"
+                        android:fitsSystemWindows="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:alpha="1"
+                    />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/awardCountry"
+                    android:fontFamily="@font/futura_condensed_light"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/text_size_zeplin_22pt"
+                    android:maxLines="2"
+                    android:fitsSystemWindows="true"
+                    android:ellipsize="end"
+                    android:text="Estados Unidos"
+                    android:elevation="10dp"
+                    android:layout_marginStart="109dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin_0.5x"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin_0.5x"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/socialContainer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/socialContainer"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:fitsSystemWindows="true"
+                    android:elevation="10dp"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin_0.5x"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/awards_details_social_icon_size"
+                        android:layout_height="@dimen/awards_details_social_icon_size"
+                        android:id="@+id/siteImageContainer"
+                        android:visibility="gone"
+                        android:background="@drawable/background_border_oval_2dp"
+                        android:layout_margin="@dimen/activity_vertical_margin_0.2x"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/siteImage"
+                            android:padding="@dimen/activity_vertical_margin_0.5x"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:background="?selectableItemBackground"
+                            app:srcCompat="@drawable/ic_link_grey_dark_24dp"
+                            app:tint="@color/md_white_1000" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/awards_details_social_icon_size"
+                        android:layout_height="@dimen/awards_details_social_icon_size"
+                        android:id="@+id/facebookImageContainer"
+                        android:visibility="gone"
+                        android:background="@drawable/background_border_oval_2dp"
+                        android:layout_margin="@dimen/activity_vertical_margin_0.2x"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/facebookImage"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:background="?selectableItemBackground"
+                            app:srcCompat="@drawable/ic_facebook_grey" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/awards_details_social_icon_size"
+                        android:layout_height="@dimen/awards_details_social_icon_size"
+                        android:id="@+id/twitterImageContainer"
+                        android:visibility="gone"
+                        android:background="@drawable/background_border_oval_2dp"
+                        android:layout_margin="@dimen/activity_vertical_margin_0.2x"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/twitterImage"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:background="?selectableItemBackground"
+                            app:srcCompat="@drawable/ic_twitter_grey" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/awards_details_social_icon_size"
+                        android:layout_height="@dimen/awards_details_social_icon_size"
+                        android:id="@+id/instagramImageContainer"
+                        android:visibility="gone"
+                        android:background="@drawable/background_border_oval_2dp"
+                        android:layout_margin="@dimen/activity_vertical_margin_0.2x"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/instagramImage"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:background="?selectableItemBackground"
+                            app:srcCompat="@drawable/ic_instagram_grey" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/awards_details_social_icon_size"
+                        android:layout_height="@dimen/awards_details_social_icon_size"
+                        android:id="@+id/youtubeImageContainer"
+                        android:visibility="gone"
+                        android:background="@drawable/background_border_oval_2dp"
+                        android:layout_margin="@dimen/activity_vertical_margin_0.2x"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/youtubeImage"
+                            android:padding="@dimen/activity_vertical_margin"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:background="?selectableItemBackground"
+                            app:srcCompat="@drawable/ic_logo_youtube" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.9">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:fitsSystemWindows="true"
+                    android:id="@+id/awardImageContainer"
+                    app:cardBackgroundColor="@color/oscar"
+                    app:cardCornerRadius="40dp"
+                    android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/awardImage"
+                        android:fitsSystemWindows="true"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="@color/md_black_1000"
+                        app:cardCornerRadius="40dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="centerCrop"
+                            tools:src="@drawable/img_ben_hur"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/awardName"
+                    android:fontFamily="@font/futura_condensed_light"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="@dimen/text_size_zeplin_34pt"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:fitsSystemWindows="true"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="45dp"
+                    app:layout_constraintStart_toEndOf="@id/awardImageContainer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Oscar Award"
+                />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/awardPresentedBy"
+                    android:fontFamily="@font/futura_light_font"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="@dimen/text_size_zeplin_22pt"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:fitsSystemWindows="true"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin_0.2x"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+                    app:layout_constraintStart_toEndOf="@id/awardImageContainer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/awardName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:text="Academy of Motion Picture Arts and Sciences"
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:fitsSystemWindows="false"
+                app:layout_collapseParallaxMultiplier="0.8"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pageContentListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:alpha="0"
+        tools:alpha="1">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/movieTabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabbar_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabBackground="@color/md_white_1000"
+            app:tabIndicatorColor="@color/oscar"
+            app:tabIndicatorHeight="@dimen/activity_vertical_margin_0.2x"
+            app:tabSelectedTextColor="@color/oscar"
+            app:tabTextAppearance="@style/AppTheme.TextAppearance"
+            app:tabTextColor="@color/md_black_1000" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/movieViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/movieTabs" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/loadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:shimmer_duration="800"
+        android:fitsSystemWindows="true"
+        tools:visibility="gone">
+
+        <include layout="@layout/load_view_movie_details" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <include layout="@layout/view_error" />
+
+    <include layout="@layout/view_screen_blocked" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

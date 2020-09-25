@@ -14,10 +14,7 @@ import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.presenter.MainTopicsPresenter
 import com.tiagohs.domain.views.MainTopicsView
 import com.tiagohs.entities.enums.MainTopicsType
-import com.tiagohs.entities.main_topics.DirectorsMainTopic
-import com.tiagohs.entities.main_topics.MainTopic
-import com.tiagohs.entities.main_topics.MainTopicItem
-import com.tiagohs.entities.main_topics.MilMoviesMainTopic
+import com.tiagohs.entities.main_topics.*
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import kotlinx.android.synthetic.main.activity_main_topics.*
@@ -67,6 +64,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             MainTopicsType.HISTORY_CINEMA -> R.string.history_cinema_title
             MainTopicsType.MIL_MOVIES -> R.string.mil_movies_title
             MainTopicsType.TIMELINE -> R.string.timeline_title
+            MainTopicsType.AWARDS -> R.string.awards_title
             MainTopicsType.DIRECTORS -> R.string.directors_title
             else -> R.string.history_cinema_title
         }
@@ -164,6 +162,10 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             )
             MainTopicsType.MIL_MOVIES -> MilMoviesPresentationActivity.newIntent(
                 mainTopic as MilMoviesMainTopic,
+                this
+            )
+            MainTopicsType.AWARDS -> AwardActivity.newIntent(
+                mainTopic as AwardMainTopic,
                 this
             )
             MainTopicsType.DIRECTORS -> PersonDetailsActivity.newIntent(

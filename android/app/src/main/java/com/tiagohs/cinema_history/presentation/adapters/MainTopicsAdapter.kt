@@ -9,10 +9,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.Quote
 import com.tiagohs.entities.enums.MainTopicItemLayoutType
 import com.tiagohs.entities.enums.MainTopicsType
-import com.tiagohs.entities.main_topics.DirectorsMainTopic
-import com.tiagohs.entities.main_topics.MainTopic
-import com.tiagohs.entities.main_topics.MainTopicItem
-import com.tiagohs.entities.main_topics.MilMoviesMainTopic
+import com.tiagohs.entities.main_topics.*
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.utils.AnimationUtils
@@ -66,6 +63,11 @@ class MainTopicsAdapter(
                         val mainTopicItem = mainTopic as? MainTopicItem ?: return
 
                         mainTopicHoder.bind(mainTopicItem, position)
+                    }
+                    MainTopicsType.AWARDS -> {
+                        val awardMainTopic = mainTopic as? AwardMainTopic ?: return
+
+                        mainTopicHoder.bindAwardsMainTopic(awardMainTopic)
                     }
                     MainTopicsType.MIL_MOVIES -> {
                         val milMoviesMainTopic = mainTopic as? MilMoviesMainTopic ?: return
@@ -203,6 +205,30 @@ class MainTopicsAdapter(
             }
 
             title.setResourceText(mainTopic.title)
+            mainTopicsContainer.setOnClickListener {
+                val mainTopicItem = mainTopicItem ?: return@setOnClickListener
+
+                onMainTopicSelected?.invoke(mainTopicItem, null)
+            }
+        }
+
+        fun bindAwardsMainTopic(mainTopic: AwardMainTopic) {
+            this.mainTopicItem = mainTopic
+
+            val context = containerView.context ?: return
+
+            mainTopic.image?.imageStyle?.height?.let {
+                mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                    ConstraintLayout.LayoutParams.MATCH_PARENT,
+                    it.convertIntToDp(context)
+                )
+            }
+
+            mainImage.loadImage(mainTopic.image, null) {
+                mainImageDegrade.alpha = 1f
+            }
+
+            title.setResourceText(mainTopic.name)
             mainTopicsContainer.setOnClickListener {
                 val mainTopicItem = mainTopicItem ?: return@setOnClickListener
 

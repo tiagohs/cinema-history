@@ -34,6 +34,7 @@
     <dimen name="text_size_zeplin_38pt">28sp</dimen>
     <dimen name="text_size_zeplin_40pt">30sp</dimen>
     <dimen name="text_size_home_title">100sp</dimen>
+    <dimen name="text_size_home_award_title">42sp</dimen>
     <dimen name="text_size_timeline_title">42sp</dimen>
     <dimen name="text_size_person_special_name">52sp</dimen>
 
@@ -68,6 +69,8 @@
     <dimen name="person_profile_item_inner_circle_radius">3dp</dimen>
 
     <dimen name="viewpager_indicator_size">2dp</dimen>
+
+    <dimen name="tabbar_height">60dp</dimen>
     <!-- =========== SCREENS =========== -->
 
     <!-- HOME -->
@@ -120,6 +123,9 @@
     <dimen name="person_details_special_appbar_height">300dp</dimen>
     <dimen name="person_details_special_quote_size">40dp</dimen>
     <dimen name="person_details_movies_quantity_margin_bottom">-20dp</dimen>
+
+    <!-- AWARDS -->
+    <dimen name="awards_details_social_icon_size">28dp</dimen>
 
     <!-- =========== ADAPTERS =========== -->
 

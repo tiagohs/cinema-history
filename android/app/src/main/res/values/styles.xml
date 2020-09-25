@@ -26,6 +26,13 @@
         <item name="android:fontFamily">@font/proxima_nova_regular</item>
     </style>
 
+    <style name="AppTheme.TextAppearance" parent="TextAppearance.Design.Tab">
+
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_zeplin_32pt</item>
+        <item name="android:fontFamily">fonts/ProximaNova-Bold.otf</item>
+
+    </style>
 
 
     <style name="AppTheme.AppThemeWithStatusTransparent">

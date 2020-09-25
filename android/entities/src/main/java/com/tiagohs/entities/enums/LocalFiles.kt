@@ -18,6 +18,7 @@ enum class LocalFiles(
     MAIN_TOPICS("/maintopics", "local/maintopics.json"),
     MIL_MOVIES_MAIN_TOPICS("/milmoviesmaintopics", "local/milmoviesmaintopics.json"),
     DIRECTORS_MAIN_TOPICS("/directorsmaintopics", "local/directorsmaintopics.json"),
+    AWARDS_MAIN_TOPICS("/awards", "local/awards.json"),
 
     PERSON_SPECIALS("/special_persons", "local/specials/persons.json"),
     MOVIE_SPECIALS("/special_movies", "local/specials/movies.json"),

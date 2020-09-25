@@ -26,6 +26,9 @@ interface LocalServiceRetrofit {
     @GET("maintopics")
     fun getMainTopics(): Observable<List<MainTopic>>
 
+    @GET("awards")
+    fun getAwardsMainTopics(): Observable<List<MainTopic>>
+
     @GET("references")
     fun getReferences(): Observable<List<ReferenceResult>>
 

@@ -15,6 +15,9 @@ enum class MainTopicsType(
     @SerializedName("timeline")
     TIMELINE("timeline"),
 
+    @SerializedName("awards")
+    AWARDS("awards"),
+
     @SerializedName("directors")
     DIRECTORS("directors");
 

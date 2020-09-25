@@ -30,6 +30,8 @@ class LocalService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) 
 
     fun getMainTopics(): Observable<List<MainTopic>> = buildLocalService(LocalServiceRetrofit::class.java).getMainTopics()
 
+    fun getAwardsMainTopics(): Observable<List<MainTopic>> = buildLocalService(LocalServiceRetrofit::class.java).getAwardsMainTopics()
+
     fun getTimeline(id: Int): Observable<TimelineResult> = buildLocalService(LocalServiceRetrofit::class.java).getTimeline(id)
 
     fun getTimelineItems(): Observable<List<Int>> = buildLocalService(LocalServiceRetrofit::class.java).getTimelineItems()

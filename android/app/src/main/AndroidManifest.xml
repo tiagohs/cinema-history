@@ -74,6 +74,9 @@
         <activity android:name=".presentation.activities.MovieDetailsActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
+        <activity android:name=".presentation.activities.AwardActivity"
+            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
+
         <activity android:name=".presentation.activities.TimelineActivity" />
         <activity android:name=".presentation.activities.GlossaryActivity" />
         <activity android:name=".presentation.activities.SettingActivity" />

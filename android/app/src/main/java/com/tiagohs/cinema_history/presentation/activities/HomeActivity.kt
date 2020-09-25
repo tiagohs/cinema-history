@@ -159,46 +159,6 @@ class HomeActivity : BaseActivity(), HomeView {
             .start()
     }
 
-    private fun onHistoryCinemaClick(): View.OnClickListener {
-        return View.OnClickListener {
-            startActivityWithSlideRightToLeftAnimation(
-                MainTopicsActivity.newIntent(
-                    MainTopicsType.HISTORY_CINEMA,
-                    this,
-                    darkMode = true
-                )
-            )
-        }
-    }
-
-    private fun onMilMoviesClick(): View.OnClickListener {
-        return View.OnClickListener {
-            startActivityWithSlideRightToLeftAnimation(
-                MainTopicsActivity.newIntent(
-                    MainTopicsType.MIL_MOVIES,
-                    this
-                )
-            )
-        }
-    }
-
-    private fun onTimelineCinemaClick(): View.OnClickListener {
-        return View.OnClickListener {
-            startActivityWithSlideRightToLeftAnimation(TimelineActivity.newIntent(this))
-        }
-    }
-
-    private fun onDirectorsClick(): View.OnClickListener {
-        return View.OnClickListener {
-            startActivityWithSlideRightToLeftAnimation(
-                MainTopicsActivity.newIntent(
-                    MainTopicsType.DIRECTORS,
-                    this
-                )
-            )
-        }
-    }
-
     companion object {
         fun newIntent(context: Context): Intent = Intent(context, HomeActivity::class.java)
     }

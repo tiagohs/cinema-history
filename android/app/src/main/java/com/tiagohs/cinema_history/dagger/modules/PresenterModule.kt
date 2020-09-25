@@ -14,6 +14,9 @@ class PresenterModule {
     fun providerHomePresenter(localService: LocalService): HomePresenter = HomePresenterImpl(localService)
 
     @Provides
+    fun providerAwardPresenter(localService: LocalService): AwardPresenter = AwardPresenterImpl(localService)
+
+    @Provides
     fun providerGlossaryPresenter(localService: LocalService): GlossaryPresenter = GlossaryPresenterImpl(localService)
 
     @Provides
