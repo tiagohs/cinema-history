@@ -111,6 +111,10 @@
     },
     {
       "type": "text",
+      "content_credits": "Resumo baseado no texto de <i>Philip Kemp</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+    },
+    {
+      "type": "text",
       "content_text": "O Expressionismo alemão é um dos estilos do cinema mudo mais reconhecidos, embora às vezes seja difícil de definir. O movimento expressionista nas artes foi algo que despontou na poesia e na pintura, no início do século 20, influenciando também o teatro, a arquitetura e, naturalmente, o cinema, em especial depois da Primeira Guerra Mundial (1914 a 1918).",
       "content_title": "O Expressionismo Alemão"
     },
@@ -200,11 +204,13 @@
           "scale_type": "center_crop"
         }
       },
-      "description": "O roteiro de <i>Nosferatu, uma sinfonia do horror</i>, de <i>Henrik Galeen</i>, segue em grande parte o enredo do clássico romance de vampiro <strong>Drácula</strong> (1897), de <i>Bram Stoker</i>, embora simplifique a história e elimine ou coloque em segundo plano uma série de personagens. <br/> <br/> \n\nJonathan Harker, o jovem herói, se torna Hutter; o professor Van Helsing, o poderoso antagonista de Drácula, é reduzido ao inútil professor Bulwer. O tema do sacrifício feminino presente no filme (Ellen, a esposa de Hutter, se entrega ao vampiro para destruí-lo) não está no romance. O cenário também muda: Whitby se torna o porto báltico fictício de \"Wisborg\". E o próprio Drácula se torna o \"conde Orlok\", supostamente para disfarçar o fato de os autores do filme terem usado a trama de Stoker sem permissão. <br/> <br/> \n\nCaso tenha sido esse o motivo, não deu certo: a família de Stoker <strong>ganhou um processo de violação de direitos autorais</strong> e uma ordem judicial exige que todas as cópias do filme fossem destruídas. Os estúdios Prana (palavra em sânscrito que significa \"força vital\") foram à falência, o que tornou Nosferatu seu primeiro e único lançamento."
+      "description": "O roteiro de <i>Nosferatu, uma sinfonia do horror</i>, de <i>Henrik Galeen</i>, segue em grande parte o enredo do clássico romance de vampiro <strong>Drácula</strong> (1897), de <i>Bram Stoker</i>, embora simplifique a história e elimine ou coloque em segundo plano uma série de personagens. <br/> <br/> \n\nJonathan Harker, o jovem herói, se torna Hutter; o professor Van Helsing, o poderoso antagonista de Drácula, é reduzido ao inútil professor Bulwer. O tema do sacrifício feminino presente no filme (Ellen, a esposa de Hutter, se entrega ao vampiro para destruí-lo) não está no romance. O cenário também muda: Whitby se torna o porto báltico fictício de \"Wisborg\". E o próprio Drácula se torna o \"conde Orlok\", supostamente para disfarçar o fato de os autores do filme terem usado a trama de Stoker sem permissão. <br/> <br/> \n\nCaso tenha sido esse o motivo, não deu certo: a família de Stoker <strong>ganhou um processo de violação de direitos autorais</strong> e uma ordem judicial exige que todas as cópias do filme fossem destruídas. Os estúdios Prana (palavra em sânscrito que significa \"força vital\") foram à falência, o que tornou Nosferatu seu primeiro e único lançamento.",
+      "credits": "Resumo baseado no texto de <i>Philip Kemp</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
     },
     {
       "type": "text",
-      "content_text": "<a href=\"https://_{type: 'screen', 'id': 19, 'screen_type': 'movie'}\">Metropolis</a> (BR: Metrópolis, 1927), de <i>Friz Lang</i>, também é considerado um dos mais famosos filmes do Expressionismo e do cinema mudo como um todo. O longa-metragem mistura elementos góticos com uma estética futurista que ainda hoje inspira o gênero de ficção científica. Sua visão extremista de uma sociedade movida pela luta de classes, com os ricos vivendo no topo iluminado da cidade e os pobres embaixo, nas sombras, o filme revela as desigualdades econômicas da Alemanha na República Weimar, mesclando angústias pessoais com crítica social. A própria multidão de operários é uma parte essencial da estética visual do filme, movendo-se de maneira simétrica e mecânica, como a máquina gigante à qual servem."
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 19, 'screen_type': 'movie'}\">Metropolis</a> (BR: Metrópolis, 1927), de <i>Friz Lang</i>, também é considerado um dos mais famosos filmes do Expressionismo e do cinema mudo como um todo. O longa-metragem mistura elementos góticos com uma estética futurista que ainda hoje inspira o gênero de ficção científica. Sua visão extremista de uma sociedade movida pela luta de classes, com os ricos vivendo no topo iluminado da cidade e os pobres embaixo, nas sombras, o filme revela as desigualdades econômicas da Alemanha na República Weimar, mesclando angústias pessoais com crítica social. A própria multidão de operários é uma parte essencial da estética visual do filme, movendo-se de maneira simétrica e mecânica, como a máquina gigante à qual servem.",
+      "content_credits": "Resumo baseado no artigo <i>Expressionismo Alemão</i>, de <i>Katia Kreutz</i>"
     },
     {
       "type": "movie_list",
