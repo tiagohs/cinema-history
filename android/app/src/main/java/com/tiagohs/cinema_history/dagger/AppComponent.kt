@@ -2,9 +2,7 @@ package com.tiagohs.cinema_history.dagger
 
 import com.tiagohs.cinema_history.dagger.modules.*
 import com.tiagohs.cinema_history.presentation.activities.*
-import com.tiagohs.cinema_history.presentation.fragments.HistoryPageFragment
-import com.tiagohs.cinema_history.presentation.fragments.SettingPreferenceFragment
-import com.tiagohs.cinema_history.presentation.fragments.TimelineFragment
+import com.tiagohs.cinema_history.presentation.fragments.*
 import dagger.Component
 import javax.inject.Singleton
 
@@ -32,4 +30,6 @@ interface AppComponent {
     fun inject(universalLinkActivity: UniversalLinkActivity)
     fun inject(glossaryActivity: GlossaryActivity)
     fun inject(awardActivity: AwardActivity)
+    fun inject(awardsFragment: AwardsFragment)
+    fun inject(awardsNomineeFragment: AwardsNomineeFragment)
 }

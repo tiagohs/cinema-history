@@ -1,6 +1,7 @@
 package com.tiagohs.entities.contents
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class ContentInformation(
 
@@ -12,5 +13,5 @@ data class ContentInformation(
 
     @SerializedName("source")
     var source: String? = null
-) {
+): Serializable {
 }

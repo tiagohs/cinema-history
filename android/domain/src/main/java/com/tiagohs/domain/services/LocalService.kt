@@ -7,12 +7,13 @@ import com.tiagohs.entities.Glossary
 import com.tiagohs.entities.HomeContentItem
 import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
+import com.tiagohs.entities.awards.NomineeResult
+import com.tiagohs.entities.contents.Content
+import com.tiagohs.entities.contents.ContentNominee
 import com.tiagohs.entities.main_topics.MainTopic
-import com.tiagohs.entities.references.Reference
 import com.tiagohs.entities.references.ReferenceResult
 import com.tiagohs.entities.timeline.TimelineResult
 import com.tiagohs.entities.tmdb.MovieExtraInfoResult
-import com.tiagohs.entities.tmdb.movie.MovieExtraInfo
 import com.tiagohs.entities.tmdb.person.PersonExtraInfo
 import io.reactivex.Observable
 
@@ -23,6 +24,10 @@ class LocalService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) 
     fun getSumarioByMainTopicID(mainTopicId: Int): Observable<List<Sumario>> = buildLocalService(LocalServiceRetrofit::class.java).getSumarioByMainTopicID(mainTopicId)
 
     fun getPage(mainTopicId: Int, sumarioId: Int): Observable<Page> = buildLocalService(LocalServiceRetrofit::class.java).getPage(mainTopicId, sumarioId)
+
+    fun fetchAwardsNominees(awardId: Int): Observable<List<NomineeResult>> = buildLocalService(LocalServiceRetrofit::class.java).fetchAwardsNominees(awardId)
+
+    fun fetchAwardsHistory(awardId: Int): Observable<List<Content>> = buildLocalService(LocalServiceRetrofit::class.java).fetchAwardsHistory(awardId)
 
     fun getReferences(): Observable<List<ReferenceResult>> = buildLocalService(LocalServiceRetrofit::class.java).getReferences()
 

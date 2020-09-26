@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/personTitle"
+                android:id="@+id/awardTitle"
                 android:text="@string/best_picture"
                 android:textSize="@dimen/text_size_zeplin_34pt"
                 android:textColor="@color/oscar"
@@ -41,13 +41,24 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 />
 
+            <View
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:id="@+id/separator"
+                android:background="@color/oscar"
+                android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2.2x"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/awardTitle"
+            />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/personList"
+                android:id="@+id/awardList"
                 android:nestedScrollingEnabled="true"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
-                app:layout_constraintTop_toBottomOf="@id/personTitle"
+                app:layout_constraintTop_toBottomOf="@id/separator"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"

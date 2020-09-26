@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 import com.tiagohs.entities.enums.SocialType
 import java.io.Serializable
 
-class Social(
+data class Social(
     @SerializedName("type")
     val type: SocialType,
 

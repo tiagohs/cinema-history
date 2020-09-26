@@ -1,0 +1,84 @@
+[
+  {
+    "year": "2020",
+    "content": [
+      {
+        "type": "awards_nominees",
+        "name": "Melhor Filme",
+        "nominee_list": [
+          {
+            "type": "movie",
+            "id": 496243,
+            "image_path": "\/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg",
+            "title": "Parasita",
+            "subtitle": "Dirigido por Bong Joon-ho",
+            "winner": true
+          },
+          {
+            "type": "movie",
+            "id": 398978,
+            "image_path": "\/mFyQRQoUh8InlwmE5fRd9LOBRZ1.jpg",
+            "title": "O Irlandês",
+            "subtitle": "Dirigido por Martin Scorsese",
+            "winner": false
+          },
+          {
+            "type": "movie",
+            "id": 398978,
+            "image_path": "\/mFyQRQoUh8InlwmE5fRd9LOBRZ1.jpg",
+            "title": "O Irlandês",
+            "subtitle": "Dirigido por Martin Scorsese",
+            "winner": false
+          },
+          {
+            "type": "movie",
+            "id": 398978,
+            "image_path": "\/mFyQRQoUh8InlwmE5fRd9LOBRZ1.jpg",
+            "title": "O Irlandês",
+            "subtitle": "Dirigido por Martin Scorsese",
+            "winner": false
+          }
+        ]
+      },
+      {
+        "type": "awards_nominees",
+        "name": "Melhor Ator",
+        "nominee_list": [
+          {
+            "type": "person",
+            "id": 73421,
+            "image_path": "\/nXMzvVF6xR3OXOedozfOcoA20xh.jpg",
+            "title": "Joaquin Phoenix",
+            "subtitle": "por Coringa",
+            "winner": true
+          },
+          {
+            "type": "person",
+            "id": 73421,
+            "image_path": "\/nXMzvVF6xR3OXOedozfOcoA20xh.jpg",
+            "title": "Joaquin Phoenix",
+            "subtitle": "por Coringa",
+            "winner": false
+          },
+          {
+            "type": "person",
+            "id": 73421,
+            "image_path": "\/nXMzvVF6xR3OXOedozfOcoA20xh.jpg",
+            "title": "Joaquin Phoenix",
+            "subtitle": "por Coringa",
+            "winner": false
+          },
+          {
+            "type": "person",
+            "id": 73421,
+            "image_path": "\/nXMzvVF6xR3OXOedozfOcoA20xh.jpg",
+            "title": "Joaquin Phoenix",
+            "subtitle": "por Coringa",
+            "winner": false
+          }
+        ]
+      }
+    ]
+  }
+]
+

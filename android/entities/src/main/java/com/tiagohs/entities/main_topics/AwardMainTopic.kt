@@ -1,6 +1,8 @@
 package com.tiagohs.entities.main_topics
 
 import com.google.gson.annotations.SerializedName
+import com.tiagohs.entities.awards.NomineeResult
+import com.tiagohs.entities.contents.ContentNominee
 import com.tiagohs.entities.awards.Social
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.image.Image
@@ -28,9 +30,10 @@ data class AwardMainTopic(
     @SerializedName("nominees_id")
     val nominees_id: Int? = null,
 
-    @SerializedName("history")
-    val history: List<Content>? = null,
-
     @SerializedName("social_list")
     val socialList: List<Social>? = null,
-): MainTopic() , Serializable
+): MainTopic() , Serializable {
+
+    var history: List<Content>? = null
+    var nomineesList: List<NomineeResult>? = null
+}

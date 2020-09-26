@@ -42,6 +42,9 @@ enum class ContentType(
     @SerializedName("recomendations")
     RECOMENDATIONS("recomendations"),
 
+    @SerializedName("awards_nominees")
+    AWARDS_NOMINEES("awards_nominees"),
+
     @SerializedName("movie_list_special")
     MOVIE_LIST_SPECIAL("movie_list_special");
 

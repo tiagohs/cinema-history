@@ -5,6 +5,7 @@ import android.view.View
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.page.*
+import com.tiagohs.entities.awards.Nominee
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.enums.ContentType
 import com.tiagohs.entities.main_topics.MainTopicItem
@@ -22,6 +23,7 @@ class PageContentAdapter(
     var presentScreen: ((Intent) -> Unit)? = null
     var onMovieClicked: ((movieId: Int) -> Unit)? = null
     var onPersonClicked: ((personId: Int) -> Unit)? = null
+    var onNomineeClicked: ((nominee: Nominee) -> Unit)? = null
 
     private var viewHolders: ArrayList<BasePageViewHolder> = ArrayList()
 
@@ -39,6 +41,7 @@ class PageContentAdapter(
         ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder.LAYOUT_ID
         ContentType.PERSON_LIST.ordinal -> PersonListViewHolder.LAYOUT_ID
         ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder.LAYOUT_ID
+        ContentType.AWARDS_NOMINEES.ordinal -> AwardsNomineesViewHolder.LAYOUT_ID
         else -> R.layout.adapter_empty
     }
 
@@ -57,6 +60,7 @@ class PageContentAdapter(
             ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder(view, mainTopic, appLanguage, onMovieClicked)
             ContentType.PERSON_LIST.ordinal -> PersonListViewHolder(view, onPersonClicked)
             ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder(view, onMovieClicked)
+            ContentType.AWARDS_NOMINEES.ordinal -> AwardsNomineesViewHolder(view, onNomineeClicked)
             else -> object : BasePageViewHolder(view) {}
         }
 
