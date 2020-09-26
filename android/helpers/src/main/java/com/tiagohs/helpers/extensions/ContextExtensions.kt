@@ -168,7 +168,7 @@ fun Context.getResourceFont(fontEnum: FontEnum): Typeface {
 }
 
 fun Context.getResourceFont(fontName: String): Typeface {
-    return Typeface.createFromAsset(assets, "fonts/${fontName}${Constants.FONTS.FONT_EXTENSION}")
+    return Typeface.createFromAsset(assets, "fonts/${fontName}")
 }
 
 /***** SHARED PREFERENCE ******/

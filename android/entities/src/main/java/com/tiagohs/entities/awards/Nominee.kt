@@ -4,22 +4,31 @@ import com.google.gson.annotations.SerializedName
 import com.tiagohs.entities.enums.NomineeType
 import java.io.Serializable
 
-data class Nominee(
+class Nominee(
     @SerializedName("type")
-    val type: NomineeType,
+    val type: NomineeType = NomineeType.MOVIE,
 
     @SerializedName("id")
     val id: Int? = null,
 
+    @SerializedName("name")
+    val name: String? = null,
+
     @SerializedName("image_path")
     val imagePath: String? = null,
 
-    @SerializedName("title")
-    val title: String? = null,
-
-    @SerializedName("subtitle")
-    val subtitle: String? = null,
-
     @SerializedName("winner")
-    val winner: Boolean? = null
+    val winner: Boolean? = null,
+
+    @SerializedName("movie")
+    val movie: Nominee? = null,
+
+    @SerializedName("department")
+    val department: String? = null,
+
+    @SerializedName("country")
+    val country: String? = null,
+
+    @SerializedName("director")
+    val director: String? = null
 ) : Serializable

@@ -29,7 +29,7 @@ class AwardPresenterImpl @Inject constructor(
         view?.startLoading()
 
         add(Observable.zip(
-            localService.fetchAwardsNominees(awardId).subscribeOn(Schedulers.io()).onErrorResumeNext { ex: Throwable -> return@onErrorResumeNext Observable.just<List<NomineeResult>>(emptyList()) },
+            localService.fetchAwardsNominees(awardId).subscribeOn(Schedulers.io()),
             localService.fetchAwardsHistory(awardId).subscribeOn(Schedulers.io()).onErrorResumeNext { ex: Throwable -> return@onErrorResumeNext Observable.just<List<Content>>(emptyList()) },
             { awardsNominees: List<NomineeResult>, awardsHistory: List<Content> ->
                 awardMainTopic.nomineesList = awardsNominees

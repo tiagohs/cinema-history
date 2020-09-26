@@ -10,4 +10,19 @@ enum class NomineeType(
 
     @SerializedName("person")
     PERSON("person");
+
+    companion object {
+        fun getContentType(type: String): NomineeType {
+            var typeEnum = MOVIE
+
+            for (typeValue in values()) {
+                if (typeValue.type.equals(type)) {
+                    typeEnum = typeValue
+                    break
+                }
+            }
+
+            return typeEnum
+        }
+    }
 }

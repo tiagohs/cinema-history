@@ -6,6 +6,7 @@ import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.awards.Nominee
 import com.tiagohs.entities.enums.ImageSize
+import com.tiagohs.entities.enums.NomineeType
 import com.tiagohs.helpers.extensions.*
 import kotlinx.android.synthetic.main.adapter_award_nominees_item.*
 
@@ -29,14 +30,71 @@ class NomineeAdapter(
         override fun bind(item: Nominee, position: Int) {
             super.bind(item, position)
 
-            val winner = item.winner
-
             image.loadImage(item.imagePath?.imageUrlFromTMDB(
                 ImageSize.PROFILE_185
             ))
-            nomineesTitle.setResourceText(item.title)
-            nomineesSubtitle.setResourceText(item.subtitle)
+            nomineesTitle.setResourceText(item.name)
 
+            setupNomineeStyle(item)
+            setupNomineeType(item)
+        }
+
+        private fun setupNomineeType(item: Nominee) {
+            when (item.type) {
+                NomineeType.MOVIE -> setupMovieItem(item)
+                NomineeType.PERSON -> setupPersonItem(item)
+            }
+        }
+
+        private fun setupMovieItem(nomineeMovie: Nominee) {
+            containerMovie.hide()
+            degradeTop.hide()
+
+            val director = nomineeMovie.director
+            if (director != null) {
+                nomineesSubtitle.show()
+                nomineesSubtitle.setResourceText(director)
+                return
+            }
+
+            nomineesSubtitle.hide()
+        }
+
+        private fun setupPersonItem(nomineePerson: Nominee) {
+            setupPersonSubtitle(nomineePerson)
+            setupPersonMovie(nomineePerson)
+        }
+
+        private fun setupPersonSubtitle(nomineePerson: Nominee) {
+            val department = nomineePerson.department
+            if (department != null) {
+                nomineesSubtitle.setResourceText(department)
+                nomineesSubtitle.show()
+                return
+            }
+
+            nomineesSubtitle.hide()
+        }
+
+        private fun setupPersonMovie(nomineePerson: Nominee) {
+            val movieNominee = nomineePerson.movie
+            if (movieNominee != null) {
+                movieImage.loadImage(movieNominee.imagePath?.imageUrlFromTMDB(ImageSize.PROFILE_185))
+                movieName.setResourceText(movieNominee.name)
+                movieDirector.setResourceText(movieNominee.director)
+                degradeTop.show()
+                containerMovie.show()
+                containerMovie.setOnClickListener { onNomineeClicked?.invoke(movieNominee) }
+                return
+            }
+
+            degradeTop.hide()
+            containerMovie.hide()
+            containerMovie.setOnClickListener(null)
+        }
+
+        private fun setupNomineeStyle(item: Nominee) {
+            val winner = item.winner
             if (winner == true) {
                 setupWinner()
                 return

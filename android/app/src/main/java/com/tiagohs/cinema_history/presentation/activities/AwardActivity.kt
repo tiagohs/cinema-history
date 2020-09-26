@@ -127,7 +127,7 @@ class AwardActivity : BaseActivity(), AwardView {
         backdrop.loadImage(
             awardMainTopic.image,
             placeholder = null,
-            transform = BlurTransformation(35, 3)
+            transform = BlurTransformation(25, 3)
         ) {
             backdrop.alpha = 1f
 

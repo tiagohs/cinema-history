@@ -3,19 +3,22 @@ package com.tiagohs.domain.services.config
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
-import com.google.gson.*
+import com.google.gson.FieldNamingStrategy
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import com.tiagohs.domain.BuildConfig
+import com.tiagohs.domain.services.deserializers.*
+import com.tiagohs.entities.awards.Nominee
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.main_topics.MainTopic
-import com.tiagohs.entities.timeline.Timeline
-import com.tiagohs.domain.services.deserializers.MainTopicDeserializer
-import com.tiagohs.domain.services.deserializers.PageContentDeserializer
-import com.tiagohs.domain.services.deserializers.ReferencesDeserializer
-import com.tiagohs.domain.services.deserializers.TimelineDeserializer
 import com.tiagohs.entities.references.Reference
+import com.tiagohs.entities.timeline.Timeline
 import com.tiagohs.helpers.network.FakeInterceptor
 import com.tiagohs.helpers.network.RxErrorHandlingCallAdapterFactory
-import okhttp3.*
+import okhttp3.Cache
+import okhttp3.Interceptor
+import okhttp3.OkHttpClient
+import okhttp3.Response
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -82,9 +85,9 @@ class RetrofitConfig(
         val client = client()
 
         val builder = Retrofit.Builder()
-                .baseUrl(url)
-                .addConverterFactory(GsonConverterFactory.create(gsonBuilder()))
-                .addCallAdapterFactory(RxErrorHandlingCallAdapterFactory.create())
+            .baseUrl(url)
+            .addConverterFactory(GsonConverterFactory.create(gsonBuilder()))
+            .addCallAdapterFactory(RxErrorHandlingCallAdapterFactory.create())
 
 
         return builder
@@ -100,8 +103,8 @@ class RetrofitConfig(
         }
 
         httpClient.connectTimeout(30, TimeUnit.SECONDS)
-                .readTimeout(30, TimeUnit.SECONDS)
-                .writeTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .writeTimeout(30, TimeUnit.SECONDS)
 
         httpClient.addInterceptor(
             getCacheInterceptor(
@@ -117,7 +120,7 @@ class RetrofitConfig(
     }
 
     private fun getCacheInterceptor(context: Context?): Interceptor {
-        return object: Interceptor {
+        return object : Interceptor {
             override fun intercept(chain: Interceptor.Chain): Response {
                 var request = chain.request()
 
@@ -145,7 +148,10 @@ class RetrofitConfig(
                 *  The 'max-stale' attribute is responsible for this behavior.
                 *  The 'only-if-cached' attribute indicates to not retrieve new data; fetch the cache only instead.
                 */
-                    request.newBuilder().header("Cache-Control", "public, only-if-cached, max-stale=" + 60 * 60 * 24 * 7).build()
+                    request.newBuilder().header(
+                        "Cache-Control",
+                        "public, only-if-cached, max-stale=" + 60 * 60 * 24 * 7
+                    ).build()
                 // End of if-else statement
 
                 // Add the modified request to the chain.
@@ -167,7 +173,8 @@ class RetrofitConfig(
                 val original = chain.request()
 
                 val builder = original.newBuilder()
-               val newUrl = original.url.toString() + "&api_key=" + tmdbApiKey // BuildConfig.THEMOVIEDB_API_KEY
+                val newUrl =
+                    original.url.toString() + "&api_key=" + tmdbApiKey // BuildConfig.THEMOVIEDB_API_KEY
 
                 return chain.proceed(builder.url(newUrl).build())
             }
@@ -190,7 +197,8 @@ class RetrofitConfig(
 
     fun hasNetwork(context: Context?): Boolean? {
         var isConnected: Boolean? = false
-        val connectivityManager = context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val connectivityManager =
+            context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val activeNetwork: NetworkInfo? = connectivityManager.activeNetworkInfo
         if (activeNetwork != null && activeNetwork.isConnected)
             isConnected = true
@@ -204,10 +212,10 @@ class RetrofitConfig(
         }
 
         return GsonBuilder()
-                .registerTypeAdapter(Content::class.java, PageContentDeserializer())
-                .registerTypeAdapter(MainTopic::class.java, MainTopicDeserializer())
-                .registerTypeAdapter(Timeline::class.java, TimelineDeserializer())
-                .registerTypeAdapter(Reference::class.java, ReferencesDeserializer())
-                .create()
+            .registerTypeAdapter(Content::class.java, PageContentDeserializer())
+            .registerTypeAdapter(MainTopic::class.java, MainTopicDeserializer())
+            .registerTypeAdapter(Timeline::class.java, TimelineDeserializer())
+            .registerTypeAdapter(Reference::class.java, ReferencesDeserializer())
+            .create()
     }
 }

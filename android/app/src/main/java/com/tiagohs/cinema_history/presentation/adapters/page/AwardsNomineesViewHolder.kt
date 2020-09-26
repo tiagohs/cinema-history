@@ -33,7 +33,7 @@ class AwardsNomineesViewHolder(
                     LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                 addItemDecoration(
                     SpaceOffsetDecoration(
-                        8.convertIntToDp(context),
+                        13.convertIntToDp(context),
                         SpaceOffsetDecoration.LEFT
                     )
                 )
