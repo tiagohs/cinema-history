@@ -5,6 +5,7 @@ enum class ShareScreenTypeEnum(
 ) {
     HISTORY_PAGE("historyPage"),
     MOVIE_PAGE("moviePage"),
+    AWARD_PAGE("awardPage"),
     PERSON_PAGE("personPage"),
     TIMELINE_PAGE("timelinePage"),
     UNKNOWN("unknown");

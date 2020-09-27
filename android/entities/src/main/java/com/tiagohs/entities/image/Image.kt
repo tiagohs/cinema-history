@@ -19,5 +19,5 @@ class Image(
     val animation: Animation? = null,
 
     @SerializedName("style")
-    val imageStyle: ImageStyle? = null
+    var imageStyle: ImageStyle? = null
 ): Serializable

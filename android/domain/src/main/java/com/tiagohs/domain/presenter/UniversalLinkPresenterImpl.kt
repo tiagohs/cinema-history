@@ -3,6 +3,7 @@ package com.tiagohs.domain.presenter
 import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.services.LocalService
 import com.tiagohs.domain.views.UniversalLinkView
+import com.tiagohs.entities.main_topics.AwardMainTopic
 import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.helpers.R
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -35,6 +36,19 @@ class UniversalLinkPresenterImpl
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
                 view?.startHistoryPage(it, itemSelectedPosition?.toIntOrNull() ?: 0)
+            }, {
+                view?.startHomeActivity()
+            })
+        )
+    }
+
+    override fun fetchAwardById(awardID: String) {
+        add(localService.getAwardsMainTopics()
+            .map { list -> list.find { (it as? AwardMainTopic)?.id == awardID.toInt() } as? AwardMainTopic ?: list.first() as AwardMainTopic }
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe({
+                view?.startAwardDetails(it)
             }, {
                 view?.startHomeActivity()
             })

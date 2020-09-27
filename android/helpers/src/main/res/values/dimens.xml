@@ -142,10 +142,10 @@
 
     <!-- =========== ADAPTERS =========== -->
     <!-- AWARD ITEM -->
-    <dimen name="award_image_container_width">160dp</dimen>
-    <dimen name="award_image_container_height">230dp</dimen>
-    <dimen name="award_image_width">150dp</dimen>
-    <dimen name="award_image_height">220dp</dimen>
+    <dimen name="award_image_container_width">150dp</dimen>
+    <dimen name="award_image_container_height">220dp</dimen>
+    <dimen name="award_image_width">140dp</dimen>
+    <dimen name="award_image_height">210dp</dimen>
     <dimen name="award_image_movie_size">40dp</dimen>
     <dimen name="award_image_movie_corner_radius">20dp</dimen>
 

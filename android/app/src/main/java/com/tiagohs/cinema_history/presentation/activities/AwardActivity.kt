@@ -18,6 +18,8 @@ import com.tiagohs.domain.views.AwardView
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.enums.MessageViewType
 import com.tiagohs.entities.enums.SocialType
+import com.tiagohs.entities.image.ImageResize
+import com.tiagohs.entities.image.ImageStyle
 import com.tiagohs.entities.main_topics.AwardMainTopic
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
@@ -82,22 +84,22 @@ class AwardActivity : BaseActivity(), AwardView {
 
     private fun onShareClicked() {
         showScreenBlocked()
+        val id = awardMainTopic?.id ?: return
 
-//        dynamicLinkManager.buildMoviePageLink(
-//            onComplete = { onBuildPageLinkComplete(it) },
-//            onError = { onBuildPageLinkError(it) }
-//        )
+        dynamicLinkManager.buildAwardPageLink(
+            id,
+            onComplete = { onBuildPageLinkComplete(it) },
+            onError = { onBuildPageLinkError(it) }
+        )
     }
 
     private fun onBuildPageLinkComplete(shorLink: String) {
-//        val movieTitle = movie?.getMovieTitleFromAppLanguage(settingManager.getMovieLanguage())
-//
-//        shareContent(
-//            getString(R.string.share_history_page_description, movieTitle, shorLink),
-//            getResourceString(
-//                R.string.share_title
-//            )
-//        )
+        shareContent(
+            getString(R.string.share_history_page_description, awardMainTopic?.name, shorLink),
+            getResourceString(
+                R.string.share_title
+            )
+        )
 
         hideScreenBlocked()
     }
@@ -124,38 +126,25 @@ class AwardActivity : BaseActivity(), AwardView {
         val awardMainTopic = awardMainTopic ?: return
 
         collapsingToolbar.title = awardMainTopic.name
+
+        awardMainTopic.image.imageStyle = ImageStyle(
+            height = 150,
+            resize = ImageResize(
+                height = 150
+            )
+        )
         backdrop.loadImage(
             awardMainTopic.image,
             placeholder = null,
-            transform = BlurTransformation(25, 3)
-        ) {
-            backdrop.alpha = 1f
-
-            AnimationUtils.createShowCircularReveal(backdrop) {
-                val animation = AnimationUtils.createFadeInAnimation(150) {
-                    movieBackdropDegrade.alpha = 1f
-                    movieBackdropDegradeTop.alpha = 1f
-                }
-
-                movieBackdropDegrade.startAnimation(animation)
-                movieBackdropDegradeTop.startAnimation(animation)
-
-                awardImage.loadImage(awardMainTopic.logo, placeholder = null) {
-                    awardImageContainer.alpha = 1f
-                    AnimationUtils.createScaleUpAnimation(
-                        awardImageContainer,
-                        0f,
-                        1f,
-                        0f,
-                        1f,
-                        0.5f,
-                        0.5f,
-                        200,
-                        150
-                    )
-                }
-            }
-        }
+            transform = BlurTransformation(25, 3))
+        awardMainTopic.image.imageStyle = ImageStyle(
+            height = 80,
+            resize = ImageResize(
+                width = 80,
+                height = 80
+            )
+        )
+        awardImage.loadImage(awardMainTopic.logo, placeholder = null)
 
         awardName.setResourceText(awardMainTopic.name)
         awardPresentedBy.setResourceText(awardMainTopic.presentedBy)

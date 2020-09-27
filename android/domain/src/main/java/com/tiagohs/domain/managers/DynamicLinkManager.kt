@@ -102,6 +102,22 @@ class DynamicLinkManager
         buildDynamicLink(baseUrl, onComplete, onError)
     }
 
+    fun buildAwardPageLink(
+        awardId: Int,
+        onComplete: (link: String) -> Unit,
+        onError: (ex: Exception) -> Unit
+    ) {
+        val baseUrl = buildUrl(
+            mapOf(
+                Constants.FIREBASE.DYNAMIC_LINK_PARAMETERS_KEY.SCREEN to ShareScreenTypeEnum.AWARD_PAGE.screenName,
+                Constants.FIREBASE.DYNAMIC_LINK_PARAMETERS_KEY.AWARD_ID to awardId.toString()
+            )
+        )
+
+        buildDynamicLink(baseUrl, onComplete, onError)
+    }
+
+
     private fun buildDynamicLink(
         buildBaseUrl: String,
         onComplete: (link: String) -> Unit,

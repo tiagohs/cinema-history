@@ -14,6 +14,7 @@ object Constants {
             const val HISTORY_PAGE_POSITION     = "historyPagePosition"
             const val PERSON_ID                 = "personId"
             const val MOVIE_ID                  = "movieId"
+            const val AWARD_ID                  = "movieId"
             const val TIMELINE_INDEX            = "timelineIndex"
         }
     }

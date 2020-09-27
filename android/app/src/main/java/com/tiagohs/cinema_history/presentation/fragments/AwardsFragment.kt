@@ -36,6 +36,11 @@ class AwardsFragment : BaseFragment() {
         getApplicationComponent()?.inject(this)
 
         setupArguments()
+    }
+
+    override fun onResume() {
+        super.onResume()
+
         setupPageContent()
     }
 

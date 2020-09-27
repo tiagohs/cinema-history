@@ -11,6 +11,7 @@ import com.tiagohs.domain.presenter.UniversalLinkPresenter
 import com.tiagohs.domain.views.UniversalLinkView
 import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.entities.enums.ShareScreenTypeEnum
+import com.tiagohs.entities.main_topics.AwardMainTopic
 import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.helpers.Constants
@@ -62,6 +63,16 @@ class UniversalLinkActivity: BaseActivity(), UniversalLinkView {
                 val pagePosition = deepLink.getQueryParameter(Constants.FIREBASE.DYNAMIC_LINK_PARAMETERS_KEY.HISTORY_PAGE_POSITION)
 
                 presenter.fetchMainTopicById(mainTopicID, pagePosition)
+            }
+            ShareScreenTypeEnum.AWARD_PAGE -> {
+                val awardID = deepLink.getQueryParameter(Constants.FIREBASE.DYNAMIC_LINK_PARAMETERS_KEY.AWARD_ID)
+
+                if (awardID != null) {
+                    presenter.fetchAwardById(awardID)
+                    return
+                }
+
+                startHomeActivity()
             }
             ShareScreenTypeEnum.MOVIE_PAGE -> {
                 val movieId = deepLink.getQueryParameter(Constants.FIREBASE.DYNAMIC_LINK_PARAMETERS_KEY.MOVIE_ID)
@@ -120,6 +131,11 @@ class UniversalLinkActivity: BaseActivity(), UniversalLinkView {
             startActivities()
         }
 
+        finish()
+    }
+
+    override fun startAwardDetails(awardMainTopic: AwardMainTopic) {
+        startActivityWithSlideRightToLeftAnimation(AwardActivity.newIntent(awardMainTopic, this))
         finish()
     }
 

@@ -6,9 +6,9 @@ import java.io.Serializable
 class ImageResize(
 
     @SerializedName("width")
-    val width: Int? = null,
+    var width: Int? = null,
 
     @SerializedName("height")
-    val height: Int? = null
+    var height: Int? = null
 
 ): Serializable
