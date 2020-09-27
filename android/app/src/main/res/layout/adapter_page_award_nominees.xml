@@ -42,8 +42,8 @@
                 />
 
             <View
-                android:layout_width="80dp"
-                android:layout_height="1dp"
+                android:layout_width="@dimen/page_awards_separator_width"
+                android:layout_height="@dimen/page_awards_separator_height"
                 android:id="@+id/separator"
                 android:background="@color/oscar"
                 android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"

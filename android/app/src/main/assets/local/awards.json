@@ -42,5 +42,131 @@
         "link": "https://www.youtube.com/user/Oscars"
       }
     ]
+  },
+  {
+    "main_topic_type": "awards",
+    "layout_type": "card_full",
+    "id": 2,
+    "name": "Globo de Ouro",
+    "country": "Estados Unidos",
+    "presented_by": "Associação de Correspondentes Estrangeiros de Hollywood",
+    "first_awarded_date": "20/01/1944",
+    "nominees_id": 2,
+    "image": {
+      "image_type": "local",
+      "url": "img_golden_globe",
+      "content_description": "Foto com a estatueta do Globo de Ouro.",
+      "style": {
+        "height": 400,
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 400
+        }
+      }
+    },
+    "social_list": [
+      {
+        "type": "site",
+        "link": "https://www.goldenglobes.com/"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/goldenglobes"
+      },
+      {
+        "type": "instagram",
+        "link": "https://instagram.com/goldenglobes/"
+      },
+      {
+        "type": "facebook",
+        "link": "https://www.facebook.com/GoldenGlobes"
+      },
+      {
+        "type": "youtube",
+        "link": "http://www.youtube.com/user/GoldenGlobes"
+      }
+    ]
+  },
+  {
+    "main_topic_type": "awards",
+    "layout_type": "card_full",
+    "id": 3,
+    "name": "BAFTA Film Awards",
+    "country": "Reino Unido",
+    "presented_by": "Academia Britânica de Cinema e Televisão",
+    "first_awarded_date": "29/05/1949",
+    "nominees_id": 3,
+    "image": {
+      "image_type": "local",
+      "url": "img_bafta",
+      "content_description": "Foto com a estatueta do BAFTA.",
+      "style": {
+        "height": 400,
+        "scale_type": "center_crop"
+      }
+    },
+    "social_list": [
+      {
+        "type": "site",
+        "link": "http://www.bafta.org/"
+      },
+      {
+        "type": "twitter",
+        "link": "http://www.twitter.com/BAFTA"
+      },
+      {
+        "type": "instagram",
+        "link": "http://instagram.com/bafta"
+      },
+      {
+        "type": "facebook",
+        "link": "https://www.facebook.com/bafta"
+      },
+      {
+        "type": "youtube",
+        "link": "https://www.youtube.com/user/Baftaonline"
+      }
+    ]
+  },
+  {
+    "main_topic_type": "awards",
+    "layout_type": "card_full",
+    "id": 4,
+    "name": "Critics Choice Awards",
+    "country": "Estados Unidos",
+    "presented_by": "Broadcast Film Critics Association",
+    "first_awarded_date": "22/01/1996",
+    "nominees_id": 4,
+    "image": {
+      "image_type": "local",
+      "url": "img_critics_choice",
+      "content_description": "Foto com a estatueta do Critics Choice Awards.",
+      "style": {
+        "height": 400,
+        "scale_type": "center_crop"
+      }
+    },
+    "social_list": [
+      {
+        "type": "site",
+        "link": "https://www.criticschoice.com/"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/criticschoice"
+      },
+      {
+        "type": "instagram",
+        "link": "https://www.instagram.com/criticschoice"
+      },
+      {
+        "type": "facebook",
+        "link": "https://www.facebook.com/CriticsChoiceAwards"
+      },
+      {
+        "type": "youtube",
+        "link": "https://www.youtube.com/channel/UC-fagRaRl1BLpkWZCmwCHzQ"
+      }
+    ]
   }
 ]

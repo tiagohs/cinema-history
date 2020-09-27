@@ -71,7 +71,20 @@
     <dimen name="viewpager_indicator_size">2dp</dimen>
 
     <dimen name="tabbar_height">60dp</dimen>
+
     <!-- =========== SCREENS =========== -->
+
+    <!-- AWARDS -->
+    <dimen name="awards_appbar_height">150dp</dimen>
+    <dimen name="awards_degrade_height">80dp</dimen>
+    <dimen name="awards_country_margin_start">109dp</dimen>
+    <dimen name="awards_divisor_height">3dp</dimen>
+    <dimen name="awards_header_margin_top">110dp</dimen>
+    <dimen name="award_image_card_size">85dp</dimen>
+    <dimen name="award_image_card_corner_radius">42.5dp</dimen>
+    <dimen name="award_image_size">80dp</dimen>
+    <dimen name="award_image_corner_radius">40dp</dimen>
+    <dimen name="awards_name_margin_top">45dp</dimen>
 
     <!-- HOME -->
     <dimen name="home_appbar_height">500dp</dimen>
@@ -128,6 +141,13 @@
     <dimen name="awards_details_social_icon_size">28dp</dimen>
 
     <!-- =========== ADAPTERS =========== -->
+    <!-- AWARD ITEM -->
+    <dimen name="award_image_container_width">160dp</dimen>
+    <dimen name="award_image_container_height">230dp</dimen>
+    <dimen name="award_image_width">150dp</dimen>
+    <dimen name="award_image_height">220dp</dimen>
+    <dimen name="award_image_movie_size">40dp</dimen>
+    <dimen name="award_image_movie_corner_radius">20dp</dimen>
 
     <!-- DEPARTMENT -->
     <dimen name="department_button_size">30dp</dimen>
@@ -177,6 +197,9 @@
     <!-- MOVIE WALLPAPER ITEM -->
     <dimen name="movie_wallpaper_card_width">180dp</dimen>
     <dimen name="movie_wallpaper_card_height">120dp</dimen>
+
+    <dimen name="page_awards_separator_width">80dp</dimen>
+    <dimen name="page_awards_separator_height">1dp</dimen>
 
     <!-- PAGE GIF -->
     <dimen name="page_gif_height">200dp</dimen>

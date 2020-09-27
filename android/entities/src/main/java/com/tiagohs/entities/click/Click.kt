@@ -2,6 +2,7 @@ package com.tiagohs.entities.click
 
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.entities.enums.Screen
+import java.io.Serializable
 
 data class Click(
     @SerializedName("screen")
@@ -12,5 +13,4 @@ data class Click(
 
     @SerializedName("parameters")
     val parameters: List<ScreenParameter>? = null
-) {
-}
+): Serializable
