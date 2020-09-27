@@ -159,7 +159,7 @@
     "name": "Prêmio do Sindicato dos Atores (SAG)",
     "country": "Estados Unidos",
     "presented_by": "Screen Actors Guild",
-    "first_awarded_date": "25 de fevereiro de 1995",
+    "first_awarded_date": "25/02/1995",
     "nominees_id": 5,
     "logo": {
       "image_type": "local",
@@ -243,6 +243,55 @@
       {
         "type": "youtube",
         "link": "https://www.youtube.com/user/Baftaonline"
+      }
+    ]
+  },
+  {
+    "main_topic_type": "awards",
+    "layout_type": "card_full",
+    "id": 6,
+    "name": "Independent Spirit Awards",
+    "country": "Estados Unidos",
+    "presented_by": "Film Independent",
+    "first_awarded_date": "22/03/1986",
+    "nominees_id": 6,
+    "logo": {
+      "image_type": "local",
+      "url": "img_logo_independent_spirit",
+      "content_description": "Foto com a logo do Independent Spirit Awards.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "image": {
+      "image_type": "local",
+      "url": "img_independent_spirt",
+      "content_description": "Foto com a estatueta do Independent Spirit Awards.",
+      "style": {
+        "height": 400,
+        "scale_type": "center_crop"
+      }
+    },
+    "social_list": [
+      {
+        "type": "site",
+        "link": "https://www.filmindependent.org/spirit-awards/"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/filmindependent"
+      },
+      {
+        "type": "instagram",
+        "link": "http://instagram.com/filmindependent"
+      },
+      {
+        "type": "facebook",
+        "link": "https://www.facebook.com/filmindependent"
+      },
+      {
+        "type": "youtube",
+        "link": "https://www.youtube.com/user/filmindependent"
       }
     ]
   }

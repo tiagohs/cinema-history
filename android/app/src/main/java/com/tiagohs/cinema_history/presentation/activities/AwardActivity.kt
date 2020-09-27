@@ -136,15 +136,29 @@ class AwardActivity : BaseActivity(), AwardView {
         backdrop.loadImage(
             awardMainTopic.image,
             placeholder = null,
-            transform = BlurTransformation(25, 3))
-        awardMainTopic.image.imageStyle = ImageStyle(
-            height = 80,
-            resize = ImageResize(
-                width = 80,
-                height = 80
+            transform = BlurTransformation(25, 3)) {
+            awardMainTopic.image.imageStyle = ImageStyle(
+                height = 80,
+                resize = ImageResize(
+                    width = 80,
+                    height = 80
+                )
             )
-        )
-        awardImage.loadImage(awardMainTopic.logo, placeholder = null)
+            awardImage.loadImage(awardMainTopic.image, placeholder = null) {
+                awardImageContainer.alpha = 1f
+                AnimationUtils.createScaleUpAnimation(
+                    awardImageContainer,
+                    0f,
+                    1f,
+                    0f,
+                    1f,
+                    0.5f,
+                    0.5f,
+                    200,
+                    150
+                )
+            }
+        }
 
         awardName.setResourceText(awardMainTopic.name)
         awardPresentedBy.setResourceText(awardMainTopic.presentedBy)

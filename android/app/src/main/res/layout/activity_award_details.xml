@@ -254,6 +254,7 @@
                     android:layout_height="@dimen/award_image_card_size"
                     android:fitsSystemWindows="true"
                     android:id="@+id/awardImageContainer"
+                    android:alpha="0"
                     app:cardBackgroundColor="@color/oscar"
                     app:cardCornerRadius="@dimen/award_image_card_corner_radius"
                     android:layout_marginStart="@dimen/activity_vertical_margin_2x"
