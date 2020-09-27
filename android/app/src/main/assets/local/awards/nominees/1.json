@@ -1000,7 +1000,7 @@
             "name": "Parasita",
             "image_path": "\/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg",
             "director": "Bong Joon-ho",
-            "winner": true
+            "winner": false
           },
           {
             "type": "movie",
@@ -1075,6 +1075,14 @@
         ]
       },
       {
+        "type": "video",
+        "video_id": "g3HICKj-4Zs",
+        "information": {
+          "contentTitle": "Cynthia Erivo - \"Stand Up\" - Oscars 2020 Performance",
+          "source": "Youtube: Canal <i>Focus Feature</i>"
+        }
+      },
+      {
         "type": "awards_nominees",
         "name": "Melhor Curta Metragem",
         "nominee_list": [
@@ -1121,14 +1129,6 @@
         ]
       },
       {
-        "type": "video",
-        "video_id": "qiiWdTz_MNc",
-        "information": {
-          "contentTitle": "Joaquin Phoenix wins Best Actor",
-          "source": "Youtube: Canal <i>Oscars</i>"
-        }
-      },
-      {
         "type": "awards_nominees",
         "name": "Melhor Edição de Som",
         "nominee_list": [
@@ -1173,6 +1173,14 @@
             "winner": false
           }
         ]
+      },
+      {
+        "type": "video",
+        "video_id": "qiiWdTz_MNc",
+        "information": {
+          "contentTitle": "Joaquin Phoenix wins Best Actor",
+          "source": "Youtube: Canal <i>Oscars</i>"
+        }
       },
       {
         "type": "awards_nominees",

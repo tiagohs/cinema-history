@@ -8,6 +8,14 @@
     "presented_by": "Academia de Artes e Ciências Cinematográficas",
     "first_awarded_date": "16/05/1929",
     "nominees_id": 1,
+    "logo": {
+      "image_type": "local",
+      "url": "img_logo_oscar",
+      "content_description": "Foto com a logo do BAFTA.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
     "image": {
       "image_type": "local",
       "url": "img_oscar",
@@ -52,6 +60,14 @@
     "presented_by": "Associação de Correspondentes Estrangeiros de Hollywood",
     "first_awarded_date": "20/01/1944",
     "nominees_id": 2,
+    "logo": {
+      "image_type": "local",
+      "url": "img_logo_golden_globe",
+      "content_description": "Foto com a logo do BAFTA.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
     "image": {
       "image_type": "local",
       "url": "img_golden_globe",
@@ -90,53 +106,20 @@
   {
     "main_topic_type": "awards",
     "layout_type": "card_full",
-    "id": 3,
-    "name": "BAFTA Film Awards",
-    "country": "Reino Unido",
-    "presented_by": "Academia Britânica de Cinema e Televisão",
-    "first_awarded_date": "29/05/1949",
-    "nominees_id": 3,
-    "image": {
-      "image_type": "local",
-      "url": "img_bafta",
-      "content_description": "Foto com a estatueta do BAFTA.",
-      "style": {
-        "height": 400,
-        "scale_type": "center_crop"
-      }
-    },
-    "social_list": [
-      {
-        "type": "site",
-        "link": "http://www.bafta.org/"
-      },
-      {
-        "type": "twitter",
-        "link": "http://www.twitter.com/BAFTA"
-      },
-      {
-        "type": "instagram",
-        "link": "http://instagram.com/bafta"
-      },
-      {
-        "type": "facebook",
-        "link": "https://www.facebook.com/bafta"
-      },
-      {
-        "type": "youtube",
-        "link": "https://www.youtube.com/user/Baftaonline"
-      }
-    ]
-  },
-  {
-    "main_topic_type": "awards",
-    "layout_type": "card_full",
     "id": 4,
     "name": "Critics Choice Awards",
     "country": "Estados Unidos",
     "presented_by": "Broadcast Film Critics Association",
     "first_awarded_date": "22/01/1996",
     "nominees_id": 4,
+    "logo": {
+      "image_type": "local",
+      "url": "img_logo_critics_choice",
+      "content_description": "Foto com a logo do Critics Choice Awards.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
     "image": {
       "image_type": "local",
       "url": "img_critics_choice",
@@ -166,6 +149,100 @@
       {
         "type": "youtube",
         "link": "https://www.youtube.com/channel/UC-fagRaRl1BLpkWZCmwCHzQ"
+      }
+    ]
+  },
+  {
+    "main_topic_type": "awards",
+    "layout_type": "card_full",
+    "id": 5,
+    "name": "Prêmio do Sindicato dos Atores (SAG)",
+    "country": "Estados Unidos",
+    "presented_by": "Screen Actors Guild",
+    "first_awarded_date": "25 de fevereiro de 1995",
+    "nominees_id": 5,
+    "logo": {
+      "image_type": "local",
+      "url": "img_logo_sag_awards",
+      "content_description": "Foto com a logo do SAG.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "image": {
+      "image_type": "local",
+      "url": "img_sag",
+      "content_description": "Foto com a estatueta do SAG.",
+      "style": {
+        "height": 400,
+        "scale_type": "center_crop"
+      }
+    },
+    "social_list": [
+      {
+        "type": "site",
+        "link": "https://www.sagawards.org/"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/sagawards"
+      },
+      {
+        "type": "instagram",
+        "link": "https://instagram.com/sagawards/"
+      },
+      {
+        "type": "facebook",
+        "link": "https://www.facebook.com/sagawardsofficialpage/"
+      }
+    ]
+  },
+  {
+    "main_topic_type": "awards",
+    "layout_type": "card_full",
+    "id": 3,
+    "name": "BAFTA Film Awards",
+    "country": "Reino Unido",
+    "presented_by": "Academia Britânica de Cinema e Televisão",
+    "first_awarded_date": "29/05/1949",
+    "nominees_id": 3,
+    "logo": {
+      "image_type": "local",
+      "url": "img_logo_bafta",
+      "content_description": "Foto com a logo do BAFTA.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "image": {
+      "image_type": "local",
+      "url": "img_bafta",
+      "content_description": "Foto com a estatueta do BAFTA.",
+      "style": {
+        "height": 400,
+        "scale_type": "center_crop"
+      }
+    },
+    "social_list": [
+      {
+        "type": "site",
+        "link": "http://www.bafta.org/"
+      },
+      {
+        "type": "twitter",
+        "link": "http://www.twitter.com/BAFTA"
+      },
+      {
+        "type": "instagram",
+        "link": "http://instagram.com/bafta"
+      },
+      {
+        "type": "facebook",
+        "link": "https://www.facebook.com/bafta"
+      },
+      {
+        "type": "youtube",
+        "link": "https://www.youtube.com/user/Baftaonline"
       }
     ]
   }

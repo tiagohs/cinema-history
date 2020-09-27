@@ -27,6 +27,9 @@ data class AwardMainTopic(
     @SerializedName("image")
     val image: Image,
 
+    @SerializedName("logo")
+    val logo: Image,
+
     @SerializedName("nominees_id")
     val nominees_id: Int? = null,
 

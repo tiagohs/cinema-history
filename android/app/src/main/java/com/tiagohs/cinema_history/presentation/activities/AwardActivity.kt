@@ -140,9 +140,7 @@ class AwardActivity : BaseActivity(), AwardView {
                 movieBackdropDegrade.startAnimation(animation)
                 movieBackdropDegradeTop.startAnimation(animation)
 
-                awardMainTopic.image.imageStyle?.height = null
-                awardMainTopic.image.imageStyle?.resize = null
-                awardImage.loadImage(awardMainTopic.image, placeholder = null) {
+                awardImage.loadImage(awardMainTopic.logo, placeholder = null) {
                     awardImageContainer.alpha = 1f
                     AnimationUtils.createScaleUpAnimation(
                         awardImageContainer,
