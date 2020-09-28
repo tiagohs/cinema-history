@@ -76,7 +76,7 @@
 
     <!-- AWARDS -->
     <dimen name="awards_appbar_height">150dp</dimen>
-    <dimen name="awards_degrade_height">80dp</dimen>
+    <dimen name="awards_degrade_height">150dp</dimen>
     <dimen name="awards_country_margin_start">109dp</dimen>
     <dimen name="awards_divisor_height">3dp</dimen>
     <dimen name="awards_header_margin_top">110dp</dimen>

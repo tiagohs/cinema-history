@@ -24,20 +24,21 @@ class AwardsNomineesViewHolder(
 
         val contentNominee = item as? ContentNominee ?: return
 
+        awardTitle.setResourceText(item.name)
+        awardList.apply {
+            adapter =
+                NomineeAdapter(contentNominee.nomineeList ?: emptyList(), onNomineeClicked)
+            layoutManager =
+                LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        }
+
         if (!isSetup) {
-            awardTitle.setResourceText(item.name)
-            awardList.apply {
-                adapter =
-                    NomineeAdapter(contentNominee.nomineeList ?: emptyList(), onNomineeClicked)
-                layoutManager =
-                    LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-                addItemDecoration(
-                    SpaceOffsetDecoration(
-                        13.convertIntToDp(context),
-                        SpaceOffsetDecoration.LEFT
-                    )
+            awardList.addItemDecoration(
+                SpaceOffsetDecoration(
+                    13.convertIntToDp(containerView.context),
+                    SpaceOffsetDecoration.LEFT
                 )
-            }
+            )
 
             isSetup = true
         }
