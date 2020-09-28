@@ -6,6 +6,10 @@ import com.tiagohs.entities.tmdb.person.Person
 import java.io.Serializable
 
 data class ContentPersonList(
+
+    @SerializedName("title")
+    var title: String? = null,
+
     @SerializedName("persons")
     var persons: List<Person>? = null
 ): Content(), Serializable

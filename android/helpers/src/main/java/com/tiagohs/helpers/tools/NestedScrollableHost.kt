@@ -25,9 +25,9 @@ class NestedScrollableHost : FrameLayout {
     private var initialX = 0.0f
     private var initialY = 0.0f
     private fun parentViewPager(): ViewPager2? {
-        var v = this.parent as View
-        while (v != null && v !is ViewPager2) v = v.parent as View
-        return v as ViewPager2
+        var v = this.parent as? View
+        while (v != null && v !is ViewPager2) v = v.parent as? View
+        return v as? ViewPager2
     }
 
     private fun child(): View? {

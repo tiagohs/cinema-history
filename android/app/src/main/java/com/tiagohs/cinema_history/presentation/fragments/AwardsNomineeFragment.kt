@@ -20,7 +20,7 @@ import com.tiagohs.entities.main_topics.AwardMainTopic
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.fragment_awards_nominees_content.*
+import kotlinx.android.synthetic.main.fragment_awards_nominees_content.pageContentList
 import kotlinx.android.synthetic.main.fragment_awards_nominees_content.spinner
 import javax.inject.Inject
 
@@ -33,6 +33,8 @@ class AwardsNomineeFragment : BaseFragment() {
 
     private var awardMainTopic: AwardMainTopic? = null
     private var awardsPageType: AwardsPageType? = null
+
+    private var isListSetup = false
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -68,6 +70,17 @@ class AwardsNomineeFragment : BaseFragment() {
     }
 
     private fun setupReviewList(contentList: List<Content>) {
+        if (!isListSetup) {
+            pageContentList.addItemDecoration(
+                SpaceOffsetDecoration(
+                    10.convertIntToDp(context),
+                    SpaceOffsetDecoration.TOP
+                )
+            )
+
+            isListSetup = true
+        }
+
         pageContentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter =
@@ -77,12 +90,6 @@ class AwardsNomineeFragment : BaseFragment() {
                     onPersonClicked = { onPersonClicked(it) }
                     onNomineeClicked = { onNomineeClicked(it) }
                 }
-            addItemDecoration(
-                SpaceOffsetDecoration(
-                    10.convertIntToDp(context),
-                    SpaceOffsetDecoration.TOP
-                )
-            )
         }
     }
 

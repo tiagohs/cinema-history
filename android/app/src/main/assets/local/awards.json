@@ -54,6 +54,55 @@
   {
     "main_topic_type": "awards",
     "layout_type": "card_full",
+    "id": 7,
+    "name": "Festival de Cannes",
+    "country": "Franças",
+    "presented_by": "International Film Festival",
+    "first_awarded_date": "20/09/1946",
+    "nominees_id": 7,
+    "logo": {
+      "image_type": "local",
+      "url": "img_logo_festival_cannes",
+      "content_description": "Foto com a logo do Festival de Cannes.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "image": {
+      "image_type": "local",
+      "url": "img_festival_cannes",
+      "content_description": "Foto com a estatueta do Prêmio Palma de Ouro.",
+      "style": {
+        "height": 500,
+        "scale_type": "center_crop"
+      }
+    },
+    "social_list": [
+      {
+        "type": "site",
+        "link": "https://www.festival-cannes.com/en/"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/festival_cannes"
+      },
+      {
+        "type": "instagram",
+        "link": "https://www.instagram.com/festivaldecannes"
+      },
+      {
+        "type": "facebook",
+        "link": "https://www.facebook.com/festivaldecannes/"
+      },
+      {
+        "type": "youtube",
+        "link": "https://www.youtube.com/channel/UC-PTqxIdpslwlcaj_0dpKQA"
+      }
+    ]
+  },
+  {
+    "main_topic_type": "awards",
+    "layout_type": "card_full",
     "id": 2,
     "name": "Globo de Ouro",
     "country": "Estados Unidos",
@@ -155,51 +204,6 @@
   {
     "main_topic_type": "awards",
     "layout_type": "card_full",
-    "id": 5,
-    "name": "Prêmio do Sindicato dos Atores (SAG)",
-    "country": "Estados Unidos",
-    "presented_by": "Screen Actors Guild",
-    "first_awarded_date": "25/02/1995",
-    "nominees_id": 5,
-    "logo": {
-      "image_type": "local",
-      "url": "img_logo_sag_awards",
-      "content_description": "Foto com a logo do SAG.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    },
-    "image": {
-      "image_type": "local",
-      "url": "img_sag",
-      "content_description": "Foto com a estatueta do SAG.",
-      "style": {
-        "height": 400,
-        "scale_type": "center_crop"
-      }
-    },
-    "social_list": [
-      {
-        "type": "site",
-        "link": "https://www.sagawards.org/"
-      },
-      {
-        "type": "twitter",
-        "link": "https://twitter.com/sagawards"
-      },
-      {
-        "type": "instagram",
-        "link": "https://instagram.com/sagawards/"
-      },
-      {
-        "type": "facebook",
-        "link": "https://www.facebook.com/sagawardsofficialpage/"
-      }
-    ]
-  },
-  {
-    "main_topic_type": "awards",
-    "layout_type": "card_full",
     "id": 3,
     "name": "BAFTA Film Awards",
     "country": "Reino Unido",
@@ -243,6 +247,51 @@
       {
         "type": "youtube",
         "link": "https://www.youtube.com/user/Baftaonline"
+      }
+    ]
+  },
+  {
+    "main_topic_type": "awards",
+    "layout_type": "card_full",
+    "id": 5,
+    "name": "Prêmio do Sindicato dos Atores (SAG)",
+    "country": "Estados Unidos",
+    "presented_by": "Screen Actors Guild",
+    "first_awarded_date": "25/02/1995",
+    "nominees_id": 5,
+    "logo": {
+      "image_type": "local",
+      "url": "img_logo_sag_awards",
+      "content_description": "Foto com a logo do SAG.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "image": {
+      "image_type": "local",
+      "url": "img_sag",
+      "content_description": "Foto com a estatueta do SAG.",
+      "style": {
+        "height": 400,
+        "scale_type": "center_crop"
+      }
+    },
+    "social_list": [
+      {
+        "type": "site",
+        "link": "https://www.sagawards.org/"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/sagawards"
+      },
+      {
+        "type": "instagram",
+        "link": "https://instagram.com/sagawards/"
+      },
+      {
+        "type": "facebook",
+        "link": "https://www.facebook.com/sagawardsofficialpage/"
       }
     ]
   },

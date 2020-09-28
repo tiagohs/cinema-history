@@ -29,28 +29,37 @@ class PersonListViewHolder(
         val contentPersonList = item as? ContentPersonList ?: return
 
         if (!isSetup) {
-            val persons = contentPersonList.persons?.map {
-                PersonDTO(
-                    it.id,
-                    it.profilePath,
-                    it.name
+            personList.addItemDecoration(
+                SpaceOffsetDecoration(
+                    8.convertIntToDp(context),
+                    SpaceOffsetDecoration.LEFT
                 )
-            } ?: emptyList()
-
-            personList.apply {
-                adapter = PersonAdapter(persons, onPersonClicked)
-                layoutManager =
-                    LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-                addItemDecoration(
-                    SpaceOffsetDecoration(
-                        8.convertIntToDp(context),
-                        SpaceOffsetDecoration.LEFT
-                    )
-                )
-            }
+            )
 
             isSetup = true
         }
+        val persons = contentPersonList.persons?.map {
+            PersonDTO(
+                it.id,
+                it.profilePath,
+                it.name
+            )
+        } ?: emptyList()
+
+        personList.apply {
+            adapter = PersonAdapter(persons, onPersonClicked)
+            layoutManager =
+                LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+
+        }
+
+        val contentPersonTitle = contentPersonList.title
+        if (contentPersonTitle != null) {
+            title.setResourceText(contentPersonTitle)
+            return
+        }
+
+        title.setResourceText(R.string.should_know)
     }
 
     companion object {

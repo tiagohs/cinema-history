@@ -27,6 +27,8 @@ enum class LocalFiles(
     AWARDS_HISTORY_5("/awards/history/5", "local/awards/history/5.json"),
     AWARDS_NOMINEES_6("/awards/nominees/6", "local/awards/nominees/6.json"),
     AWARDS_HISTORY_6("/awards/history/6", "local/awards/history/6.json"),
+    AWARDS_NOMINEES_7("/awards/nominees/7", "local/awards/nominees/7.json"),
+    AWARDS_HISTORY_7("/awards/history/7", "local/awards/history/7.json"),
 
     MAIN_TOPICS("/maintopics", "local/maintopics.json"),
     MIL_MOVIES_MAIN_TOPICS("/milmoviesmaintopics", "local/milmoviesmaintopics.json"),

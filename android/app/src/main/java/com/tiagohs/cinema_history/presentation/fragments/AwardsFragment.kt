@@ -30,6 +30,8 @@ class AwardsFragment : BaseFragment() {
     private var awardMainTopic: AwardMainTopic? = null
     private var awardsPageType: AwardsPageType? = null
 
+    private var isListSetup = false
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -55,6 +57,17 @@ class AwardsFragment : BaseFragment() {
             else -> emptyList()
         }
 
+        if (!isListSetup) {
+            pageContentList.addItemDecoration(
+                SpaceOffsetDecoration(
+                    10.convertIntToDp(context),
+                    SpaceOffsetDecoration.TOP
+                )
+            )
+
+            isListSetup = true
+        }
+
         pageContentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter =
@@ -64,12 +77,7 @@ class AwardsFragment : BaseFragment() {
                     onPersonClicked = { onPersonClicked(it) }
                     onNomineeClicked = { onNomineeClicked(it) }
                 }
-            addItemDecoration(
-                SpaceOffsetDecoration(
-                    10.convertIntToDp(context),
-                    SpaceOffsetDecoration.TOP
-                )
-            )
+
         }
     }
 
