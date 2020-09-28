@@ -137,14 +137,14 @@ class AwardActivity : BaseActivity(), AwardView {
             awardMainTopic.image,
             placeholder = null,
             transform = BlurTransformation(25, 3)) {
-            awardMainTopic.image.imageStyle = ImageStyle(
+            awardMainTopic.logo.imageStyle = ImageStyle(
                 height = 80,
                 resize = ImageResize(
                     width = 80,
                     height = 80
                 )
             )
-            awardImage.loadImage(awardMainTopic.image, placeholder = null) {
+            awardImage.loadImage(awardMainTopic.logo, placeholder = null) {
                 awardImageContainer.alpha = 1f
                 AnimationUtils.createScaleUpAnimation(
                     awardImageContainer,
