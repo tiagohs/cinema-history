@@ -45,6 +45,21 @@
     </shortcut>
 
     <shortcut
+        android:shortcutId="ShortcutAwards"
+        android:icon="@mipmap/ic_shorcut_awards_round"
+        android:shortcutShortLabel="@string/awards_title">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.tiagohs.cinema_history"
+            android:targetClass="com.tiagohs.cinema_history.presentation.activities.MainTopicsActivity">
+            <extra android:name="MAIN_TOPIC_TYPE" android:value="awards" />
+            <extra android:name="DARK_MODE" android:value="true" />
+        </intent>
+        <categories
+            android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+    <shortcut
         android:shortcutId="ShortcutDirectors"
         android:icon="@mipmap/ic_shorcut_directors_round"
         android:shortcutShortLabel="@string/directors_title">

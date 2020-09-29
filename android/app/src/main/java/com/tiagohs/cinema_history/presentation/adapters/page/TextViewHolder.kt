@@ -18,15 +18,26 @@ class TextViewHolder(
 
     override fun bind(item: Content, position: Int) {
         super.bind(item, position)
-        val context = containerView.context ?: return
         val contentTextItem = item as? ContentText ?: return
 
-        contentText.setResourceStyledText(contentTextItem.contentText)
-        contentText.setupLinkableTextView(context)
-        contentText.setResourceFont(contentTextItem.font)
-
+        setupText(contentTextItem)
         setupTitle(contentTextItem)
         setupCredits(contentTextItem)
+    }
+
+    private fun setupText(content: ContentText) {
+        val context = containerView.context ?: return
+        val text = content.contentText
+
+        if (text != null) {
+            contentText.setResourceStyledText(text)
+            contentText.setupLinkableTextView(context)
+            contentText.setResourceFont(content.font)
+            contentText.show()
+            return
+        }
+
+        contentText.hide()
     }
 
     private fun setupTitle(contentText: ContentText) {

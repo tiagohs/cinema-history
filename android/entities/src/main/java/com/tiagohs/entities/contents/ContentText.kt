@@ -6,7 +6,7 @@ import java.io.Serializable
 data class ContentText(
 
     @SerializedName("content_text")
-    var contentText: String,
+    var contentText: String? = null,
 
     @SerializedName("content_title")
     var contentTitle: String? = null,

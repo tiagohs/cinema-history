@@ -211,6 +211,8 @@ class HistoryPagesActivity : BaseActivity() {
             mainTopic.sumarioList ?: emptyList()
         )
 
+        setupNextButtonBlocked(itemSelectedPosition)
+
         sumarioContentViewPager.apply {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             adapter = adapterPager
@@ -225,10 +227,24 @@ class HistoryPagesActivity : BaseActivity() {
                     currentPosition = position
 
                     sumarioContentIndicator.onPageSelected(position)
+
+                    setupNextButtonBlocked(currentPosition)
                 }
             })
         }
+    }
 
+    private fun setupNextButtonBlocked(currentPosition: Int) {
+        val numberOfItens = mainTopic?.sumarioList?.size ?: 0
+
+        if (currentPosition == numberOfItens - 1) {
+            toolbarNextButton.alpha = 0.4f
+            toolbarNextButton.isClickable = false
+            return
+        }
+
+        toolbarNextButton.alpha = 1f
+        toolbarNextButton.isClickable = true
     }
 
     companion object {
