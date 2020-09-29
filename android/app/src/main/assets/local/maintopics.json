@@ -98,8 +98,8 @@
     "title": "De 1940 a 1959",
     "subtitle": "Parte 03",
     "description": "O cinema asiático ganha ainda mais destaque com o lançamento de diversas obras primas. O Cinema Noir surge e os musicais continuam ganhando destaque nas telonas. O Faroeste mantém o seu reinado como um dos gêneros mais populares e um dos movimentos mais importantes do cinema acontece na França: o Nouvelle Vague.",
-    "blocked": true,
-    "is_new": false,
+    "blocked": false,
+    "is_new": true,
     "image": {
       "image_type": "local",
       "url": "img_sevensamurais",
@@ -129,7 +129,7 @@
     },
     "title_color": "md_white_1000",
     "title_background_color": "md_grey_700",
-    "color": "md_deep_purple_500"
+    "color": "md_orange_500"
   },
   {
     "main_topic_type": "history_cinema",

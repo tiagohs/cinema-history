@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Cinema Noir",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_double_indeminity",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 450
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "O Cinema Asiático",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rashomon",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Neorrealismo Italiano",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_ladri_di_biciclette",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "O Cinema na França",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_bob_le_flambeur",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Hollywood e o surgimento da Televisão",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_television",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "O Faroeste em Hollywood",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_john_wayne_rio_bravo",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 450
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Hollywood do pós-Guerra",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rear_window",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "A Juventude Rebelde",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rebel_without_a_caust",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "Nouvelle Vague",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_a_bout_de_souffle",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Os Musicais de Hollywood",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_singin_in_the_rain",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "Guerra Fria no Cinema ",
+    "description": "As primeiras décadas da história do cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_it_came_from_outer_space",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]
