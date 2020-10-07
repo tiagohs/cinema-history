@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Cinema Noir",
-    "description": "As primeiras décadas da história do cinema.",
+    "description": "Despontado nos Estados Unidos por volta das décadas de 40 e 50, um dos \"gêneros\" mais importantes do cinema são cheios de subtextos políticos, corrupção, tramas policiais e arquétipos memoráveis – como a femme fatale, por exemplo.",
     "image": {
       "image_type": "local",
       "url": "img_double_indeminity",
@@ -77,21 +77,6 @@
   },
   {
     "id": 6,
-    "title": "Hollywood e o surgimento da Televisão",
-    "description": "As primeiras décadas da história do cinema.",
-    "image": {
-      "image_type": "local",
-      "url": "img_television",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 7,
     "title": "O Faroeste em Hollywood",
     "description": "As primeiras décadas da história do cinema.",
     "image": {
@@ -106,7 +91,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "Hollywood do pós-Guerra",
     "description": "As primeiras décadas da história do cinema.",
     "image": {
@@ -121,7 +106,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 8,
     "title": "A Juventude Rebelde",
     "description": "As primeiras décadas da história do cinema.",
     "image": {
@@ -136,7 +121,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 9,
     "title": "Nouvelle Vague",
     "description": "As primeiras décadas da história do cinema.",
     "image": {
@@ -151,7 +136,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 10,
     "title": "Os Musicais de Hollywood",
     "description": "As primeiras décadas da história do cinema.",
     "image": {
@@ -166,7 +151,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 11,
     "title": "Guerra Fria no Cinema ",
     "description": "As primeiras décadas da história do cinema.",
     "image": {
