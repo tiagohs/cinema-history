@@ -59,7 +59,6 @@
       }
     }
   },
-
   {
     "id": 5,
     "title": "Cinema Nórdico",
@@ -78,7 +77,7 @@
   {
     "id": 6,
     "title": "O Faroeste em Hollywood",
-    "description": "As primeiras décadas da história do cinema.",
+    "description": "O gênero mais americano dos gêneros ganhou ainda mais popularidade nos anos 50, com Hollywood realizando mais de 800 filmes.",
     "image": {
       "image_type": "local",
       "url": "img_john_wayne_rio_bravo",
