@@ -77,5 +77,5 @@ enum class LocalFiles(
     MAIN_3_PAGE_10("/main_3/page_10", "local/pages/main_3/page_10.json"),
     MAIN_3_PAGE_11("/main_3/page_11", "local/pages/main_3/page_11.json");
 
-    fun isValid(request: Request): Boolean = request.url.toUri().path.contains(path, true)
+    fun isValid(request: Request): Boolean = request.url.toUri().path == path
 }
