@@ -362,6 +362,34 @@
       }
     },
     {
+      "type": "item",
+      "year": "19\n39",
+      "title": "Antinazismo em Hollywood",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 99920, 'screen_type': movie}\">Confessions of a Nazi Spy</a> (BR: Confissões de um espião nazista, 1939), sobre o julgamento real de um espião, é o primeiro filme explicitamente antinazista feito em Hollywood.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_confessions_of_a_nazi_spy.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n39",
+      "title": "Ressurgimento dos Faroestes",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 995, 'screen_type': movie}\">Stagecoach</a> (BR: No tempo das diligências, 1939), <a href=\"https://_{type: 'screen', 'id': 43829, 'screen_type': movie}\">Jesse James</a> (1939), <a href=\"https://_{type: 'screen', 'id': 17660, 'screen_type': movie}\">Dodge City</a> (BR: Uma Cidade Que Surge, 1939) e <a href=\"https://_{type: 'screen', 'id': 43828, 'screen_type': movie}\">Destry Rides Again</a> (BR: Atire a primeira pedra, 1939) dão início ao ressurgimento dos filmes de faroestes.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_stagecoach.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
       "type": "footer",
       "next": "1940 a 1959",
       "previous": "1895 a 1929"

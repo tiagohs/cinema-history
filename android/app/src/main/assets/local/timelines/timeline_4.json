@@ -1,0 +1,18 @@
+{
+  "id": 2,
+  "color": "md_orange_500",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "A História<br/>do Cinema:<br/>1960 a 1969",
+      "page_title": "1960 a 1969",
+      "coming_soon": true,
+      "previous": "1940 a 1959"
+    },
+    {
+      "type": "footer",
+      "previous": "1940 a 1959"
+    }
+  ]
+}
