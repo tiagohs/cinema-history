@@ -1,0 +1,27 @@
+{
+  "number": 1,
+  "content_list": [
+    {
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 1960 a 1969",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "3"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "O Brasil chama a atenção do mundo com o seu Cinema novo, a revolução sexual dos anos 60 reflete no cinema, o terror psicológico ganha espaço e a ficção cientifica, com 2001: Uma odisseia no espaço, conquista o público e crítica. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1940 a 1959."
+    }
+  ]
+}

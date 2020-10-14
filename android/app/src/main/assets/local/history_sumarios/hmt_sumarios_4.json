@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "A New Wave Britânica ",
+    "description": "O movimento estimulado por grupo de críticos convertidos em cineastas trouxe grandes filmes que representavam a classe trabalhadora britânica.",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_loneliness_of_the_long_distance_runner",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Cinema Latino-Americano",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_deus_e_o_diabo",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "A Nova Hollywood",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_dr_fantastico",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Sexo e Tabus no Cinema",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_a_primeira_noite_de_um_homem",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Filmes de Espionagem",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_007_sean_connery",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "A Ficção Cientifica no Cinema",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_2001_hal",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "O Terror Contemporâneo no Cinema",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_psicose",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "Faroeste Espaguete ",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_tres_homens_em_conflito",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]
