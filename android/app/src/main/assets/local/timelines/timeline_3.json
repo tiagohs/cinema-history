@@ -446,6 +446,34 @@
       }
     },
     {
+      "type": "item",
+      "year": "19\n59",
+      "title": "Jovens Revoltados",
+      "description": "É lançado <a href=\"https://_{type: 'screen', 'id': , 'screen_type': movie}\">Look Back in Anger</a> (BR: Odeio essa mulher, 1959). O Filme inaugura a era dos \"<i>jovens revoltados</i>\" no cinema britânico.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_look_back.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n59",
+      "title": "As primeiras influências de James Bond",
+      "description": "É lançado <a href=\"https://_{type: 'screen', 'id': 213, 'screen_type': movie}\">North by Northwest</a> (BR: Intriga internacional, 1959), de <a href=\"https://_{type: 'screen', 'id': 2636, 'screen_type': person}\">Alfred Hitchcock</a> (1899-1980), marco do gênero que influenciou os primeiros filmes de <strong>James Bond</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_north_by_northwest.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
       "type": "footer",
       "previous": "1930 a 1939",
       "next": "1960 a 1969"
