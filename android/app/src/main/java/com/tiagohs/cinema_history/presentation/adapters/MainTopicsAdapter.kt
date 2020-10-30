@@ -104,6 +104,7 @@ class MainTopicsAdapter(
 
         override fun bind(item: MainTopic, position: Int) {
             super.bind(item, position)
+            this.mainTopicItem = item
 
             val mainTopicItem = item as? MainTopicItem ?: return
             val context = containerView.context ?: return

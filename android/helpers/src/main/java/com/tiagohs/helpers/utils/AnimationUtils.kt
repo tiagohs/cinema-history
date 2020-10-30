@@ -10,10 +10,10 @@ import com.tiagohs.entities.enums.AnimationType
 
 object AnimationUtils {
 
-    fun createAnimationFromType(type: com.tiagohs.entities.enums.AnimationType, duration: Int): Animation {
+    fun createAnimationFromType(type: AnimationType, duration: Int): Animation {
         return when (type) {
-            com.tiagohs.entities.enums.AnimationType.SHAKE_VERTICAL -> createShakeAnimation(duration)
-            com.tiagohs.entities.enums.AnimationType.BLINK_VERTICAL -> createBlinkAnimation(duration)
+            AnimationType.SHAKE_VERTICAL -> createShakeAnimation(duration)
+            AnimationType.BLINK_VERTICAL -> createBlinkAnimation(duration)
         }
     }
 
