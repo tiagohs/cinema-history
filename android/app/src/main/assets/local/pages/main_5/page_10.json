@@ -1,0 +1,27 @@
+{
+  "number": 1,
+  "content_list": [
+    {
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 1970 a 1989",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "4"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "O exorcista é lançado, fazendo plateias no mundo todo passarem mal e desmaiarem, criando uma histeria global. O primeiro blockbuster é lançado: Tubarão, em paralelo, o cinema autoral ganha cresce com Martin Scorsese e outros grandes diretores. Os anos 80 vem acompanhado com produções de baixo orçamento e suas comédias que marcaram época. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1940 a 1959."
+    }
+  ]
+}

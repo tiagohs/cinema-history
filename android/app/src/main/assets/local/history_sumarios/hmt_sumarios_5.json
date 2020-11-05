@@ -1,0 +1,257 @@
+[
+  {
+    "id": 1,
+    "title": "Cinema da Europa Ocidental",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_gritos_sussurros",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "O Novo Cinema Alemão",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_lagrimas_amargas",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "A Nova Era do Terror",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_halloween_1978",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "O Filmes Policiais dos Anos 70",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_godfather",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Paranoia e Teorias da Conspiração em Hollywood",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_all_the_presidents_men",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Os Complexos Dramas Americanos",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_manhattan",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "O Início dos Blockbusters",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_tubarao",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "O Novo Cinema Australiano",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_crocodilo_dundee",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "Cinema Asiático",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_hsia_nu",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Uma Nova Era para os Musicais",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_flashdance",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "Cinema Africano",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_yeelen",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "title": "Vietnã nos Cinemas",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_apocalypse_now",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "title": "A Nova Era dos Filmes de Ação",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_exterminador_do_futuro",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "title": "As Comédias dos Anos 80",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_clube_do_cinco",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "title": "O Novo Drama Psicológico",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_veludo_azul",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "title": "Cinema Canadense",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_a_mosca",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "title": "Cinema Chinês",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_o_sorgo_vermelho",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]
