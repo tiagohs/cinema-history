@@ -1,6 +1,46 @@
 {
   "number": 1,
   "content_list": [
+
+
+
+
+
+
+
+    {
+      "type": "text",
+      "content_text": ""
+    },
+    {
+      "type": "video",
+      "video_id": "",
+      "information": {
+        "contentTitle": "",
+        "contentText": "",
+        "source": "Youtube: Canal <i></i>"
+      }
+    },
+    {
+      "type": "block_special",
+      "title": "",
+      "image": {
+        "image_type": "local",
+        "url": "",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "",
+      "credits": ""
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "",
+        "author": ""
+      }
+    },
     {
       "type": "link_screen",
       "subtitle": "Os acontecimentos que marcaram o mundo",
