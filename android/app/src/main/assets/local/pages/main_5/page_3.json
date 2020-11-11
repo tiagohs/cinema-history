@@ -81,7 +81,7 @@
     },
     {
       "type": "text",
-      "content_text": "<a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (BR: Tubarão, 1975) e <a href=\"https://_{type: 'screen', 'id': 348, 'screen_type': movie}\">Alien</a> (BR: Alien, O 8º Passageiro, 1979) deram nova vida aos filmes de monstros, ao passo que <a href=\"https://_{type: 'screen', 'id': 694, 'screen_type': movie}\">The Shining</a> (BR: O iluminado, 1980) apresentou cenários deslumbrantes, design de produção extravagante, técnica perfeita e uma ficha técnica encabeçada por nomes como <a href=\"https://_{type: 'screen', 'id': 514, 'screen_type': person}\">Jack Nicholson</a> (n-1937) e <a href=\"https://_{type: 'screen', 'id': 240, 'screen_type': movie}\">Stanley Kubrick</a> (1928-1999)."
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (BR: Tubarão, 1975) e <a href=\"https://_{type: 'screen', 'id': 348, 'screen_type': movie}\">Alien</a> (BR: Alien, O 8º Passageiro, 1979) deram nova vida aos filmes de monstros, ao passo que <a href=\"https://_{type: 'screen', 'id': 694, 'screen_type': movie}\">The Shining</a> (BR: O iluminado, 1980) apresentou cenários deslumbrantes, design de produção extravagante, técnica perfeita e uma ficha técnica encabeçada por nomes como <a href=\"https://_{type: 'screen', 'id': 514, 'screen_type': person}\">Jack Nicholson</a> (n-1937) e <a href=\"https://_{type: 'screen', 'id': 240, 'screen_type': person}\">Stanley Kubrick</a> (1928-1999)."
     },
     {
       "type": "block_special",
@@ -111,7 +111,7 @@
     },
     {
       "type": "text",
-      "content_text": "Superproduções de terror continuaram a aparecer durante a década de 1980, quando os estúdios suavizaram sustos e acrescentaram humor, efeitos especiais e diversão. O resultado foram obras para toda a família como <a href=\"https://_{type: 'screen', 'id': , 'screen_type': movie}\">Poltergeist</a> (BR: Poltergeist - O Fenômeno, 1982) e <a href=\"https://_{type: 'screen', 'id': 620, 'screen_type': movie}\">Ghostbusters</a> (BR: Os Caça-Fantasmas, 1984), que se provaram uma boa alternativa aos repetitivos e sanguinolentos filmes que se seguiram a <a href=\"https://_{type: 'screen', 'id': 948, 'screen_type': movie}\">Halloween</a> (1978)."
+      "content_text": "Superproduções de terror continuaram a aparecer durante a década de 1980, quando os estúdios suavizaram sustos e acrescentaram humor, efeitos especiais e diversão. O resultado foram obras para toda a família como <a href=\"https://_{type: 'screen', 'id': 609, 'screen_type': movie}\">Poltergeist</a> (BR: Poltergeist - O Fenômeno, 1982) e <a href=\"https://_{type: 'screen', 'id': 620, 'screen_type': movie}\">Ghostbusters</a> (BR: Os Caça-Fantasmas, 1984), que se provaram uma boa alternativa aos repetitivos e sanguinolentos filmes que se seguiram a <a href=\"https://_{type: 'screen', 'id': 948, 'screen_type': movie}\">Halloween</a> (1978)."
     },
     {
       "type": "text",
@@ -153,7 +153,7 @@
     },
     {
       "type": "text",
-      "content_text": "Porém, no início do século XX, alguns cineastas perceberam que o recém-nascido gênero do terror não precisava ficar atrelado ao fantástico. Da mesma forma que pequenos folhetins sobre crimes faziam sucesso nas ruas inglesas, cineastas alemães e franceses faziam experiências em adaptar a violência urbana para as telas. De 1915 a 1916, a <i>cineserie</i> <a href=\"https://_{type: 'screen', 'id': , 'screen_type': movie}\">Les Vampires</a> (BR: Os Vampiros, 1915) de <a href=\"https://_{type: 'screen', 'id': 29082, 'screen_type': person}\">Louis Feuillade</a> (1873-1925) se propôs a contar a história de uma gangue de ladrões de residências em Paris, que se vestiam de morcego e roubavam joias, cometendo até alguns homicídios."
+      "content_text": "Porém, no início do século XX, alguns cineastas perceberam que o recém-nascido gênero do terror não precisava ficar atrelado ao fantástico. Da mesma forma que pequenos folhetins sobre crimes faziam sucesso nas ruas inglesas, cineastas alemães e franceses faziam experiências em adaptar a violência urbana para as telas. De 1915 a 1916, a <i>cineserie</i> <a href=\"https://_{type: 'screen', 'id': 29082, 'screen_type': movie}\">Les Vampires</a> (BR: Os Vampiros, 1915) de <a href=\"https://_{type: 'screen', 'id': 102844, 'screen_type': person}\">Louis Feuillade</a> (1873-1925) se propôs a contar a história de uma gangue de ladrões de residências em Paris, que se vestiam de morcego e roubavam joias, cometendo até alguns homicídios."
     },
     {
       "type": "text",
@@ -715,7 +715,61 @@
     {
       "type": "person_list",
       "persons": [
-
+        {
+          "id": 14999,
+          "name": "George A. Romero",
+          "profile_path": "/1Yw5WCVzreBHKbYL5dLXY2NEhhW.jpg"
+        },
+        {
+          "id": 5140,
+          "name": "Wes Craven",
+          "profile_path": "/blQ0LWf54PJLmxMnFFdh7n1as7V.jpg"
+        },
+        {
+          "id": 25826,
+          "name": "Mario Bava",
+          "profile_path": "/cSAQnVsCBfaOTAHoNQVAW55ZWOj.jpg"
+        },
+        {
+          "id": 1150,
+          "name": "Brian De Palma",
+          "profile_path": "/57sJhqM6Sp6WKL3nkA89yZg83bv.jpg"
+        },
+        {
+          "id": 11770,
+          "name": "John Carpenter",
+          "profile_path": "/3Qp0mg61u1qSZNJh30BFEUZrIMG.jpg"
+        },
+        {
+          "id": 10051,
+          "name": "Tobe Hooper",
+          "profile_path": "/rE5TqnAvgaKjWwWZ9AsoU9KcUGU.jpg"
+        },
+        {
+          "id": 15175,
+          "name": "William Friedkin",
+          "profile_path": "/1iBd92izRHpkSH4hOhcUBmF2cv7.jpg"
+        },
+        {
+          "id": 11161,
+          "name": "Tom Savini",
+          "profile_path": "/2eUw64Wi0beunf9GpaITUe4fp4q.jpg"
+        },
+        {
+          "id": 578,
+          "name": "Ridley Scott",
+          "profile_path": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg"
+        },
+        {
+          "id": 31211,
+          "name": "Clive Barker",
+          "profile_path": "/3056HPGCQHE7FmIputLldocuibY.jpg"
+        },
+        {
+          "id": 240,
+          "name": "Stanley Kubrick",
+          "profile_path": "/exfQ6vXXq7rMS5YWb3B88PK39a1.jpg"
+        }
       ]
     },
     {
