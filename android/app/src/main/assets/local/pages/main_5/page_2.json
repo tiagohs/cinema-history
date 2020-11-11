@@ -1,43 +1,859 @@
 {
   "number": 1,
   "content_list": [
-
-
-
-
-
     {
       "type": "text",
-      "content_text": ""
+      "content_text": "As origens dessa época empolgante estavam em 1962, quando o movimento denominado <strong>Novo Cinema Alemão</strong> emergiu, depois do <i>Manifesto Oberhausen</i> assinado naquele ano por diretores como <a href=\"https://_{type: 'screen', 'id': 72908, 'screen_type': person}\">Edgar Reitz</a> (n-1932) e <a href=\"https://_{type: 'screen', 'id': 50870, 'screen_type': person}\">Alexander Kluge</a> (n-1932)."
     },
     {
-      "type": "video",
-      "video_id": "",
-      "information": {
-        "contentTitle": "",
-        "contentText": "",
-        "source": "Youtube: Canal <i></i>"
-      }
+      "type": "text",
+      "content_text": "No fim dos anos 1970, um grupo de diretores alemães - entre eles <a href=\"https://_{type: 'screen', 'id': 2725, 'screen_type': person}\">Rainer Werner Fassbinder</a> (1945-1982), <a href=\"https://_{type: 'screen', 'id': 2303, 'screen_type': person}\">Wim Wenders</a> (n-1945), <a href=\"https://_{type: 'screen', 'id': 10249, 'screen_type': person}\">Volker Schlöndorff</a> (n-1939), <a href=\"https://_{type: 'screen', 'id': 6818, 'screen_type': person}\">Werner Herzog</a> (n-1942), <a href=\"https://_{type: 'screen', 'id': 227824, 'screen_type': person}\">Hans-Jürgen Syberberg</a> (n-1935) - tinha conquistado aprovação e fama internacional e estabelecido o <i>Novo Cinema Alemão</i> (expressão empregada pela primeira vez durante o Festival de Cinema de Nova York em 1967) como uma força das mais dinâmicas e influentes no cenário mundial."
     },
     {
       "type": "block_special",
-      "title": "",
+      "title": "Manifesto Oberhausen",
       "image": {
         "image_type": "local",
-        "url": "",
+        "url": "img_manifesto_oberhausen",
         "style": {
           "scale_type": "center_crop"
         }
       },
-      "description": "",
-      "credits": ""
+      "description": "O Manifesto de Oberhausen foi uma declaração firmada por um grupo de 26 jovens cineastas alemães durante o Festival Internacional do Curta-Metragem de Oberhausen, Renânia do Norte-Vestfália, em 28 de fevereiro de 1962. O manifesto foi uma exortação para o estabelecimento das bases de um \"<i>novo cinema alemão</i>\". Foi iniciado por Haro Senft e, entre os signatários, estavam os realizadores Alexander Kluge e Edgar Reitz. O manifesto foi associado ao motto \"<i>Papas Kino ist tot</i>\" (\"<i>O cinema do papai está morto</i>\"), embora a frase não apareça no manifesto. <br/> <br/> \n\nOs signatários ficaram conhecidos como grupo de Oberhausen e são considerados como os precursores do Novo Cinema Alemão, que teria início mais tarde, na mesma década. O grupo de Oberhausen foi premiado como o <i>Deutscher Filmpreis</i>, em 1982.",
+      "credits": "Resumo baseado no artigo \"Manifesto Oberhausen\", no Wikipédia.com."
+    },
+    {
+      "type": "text",
+      "content_text": "Os críticos geralmente atribuem quatro características essenciais ao Novo Cinema Alemão. Muitos de seus principais nomes eram jovens e tinham pouca experiência em cinema durante a década de 1970. Seguiam o movimento da <i>pós-nouvelle vague francesa</i> em sua ênfase ao controle completo do diretor sobre seu filme e na adoção de tecnologias novas, mais portáteis, e equipes de filmagem mais enxutas."
+    },
+    {
+      "type": "video",
+      "video_id": "PKPJBd7gniw",
+      "information": {
+        "contentTitle": "Cenas do filme Aguirre, a Cólera dos Deuses",
+        "contentText": "Baseado em fatos históricos, o filme se inspirou na expedição de conquistadores espanhóis enviados por Gonzalo Pizarro, governador de Quito, em busca de El Dorado, a lendária cidade de ouro, em 1541-1542. No filme, a expedição se deu em 1561 e foi comandada por Dom Pedro de Urzúa e Lope de Aguirre. Tomando por base a narrativa do diário do Frei Gaspar de Carvajal (que participou da expedição ao El Dorado), na verdade o filme deixa de lado o aspecto histórico e se concentra mais nas teses costumeiras do diretor Herzog, preocupado em mostrar os efeitos mentais e emocionais sofridos por homens em situações-limite, confrontados com a natureza primitiva e desconhecida.",
+        "source": "Youtube: Canal <i>İbrahim Özdemir</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Recebiam influências, positivas e negativas, do cinema americano tanto do clássico quanto do novo. Finalmente, o cinema radical que esse movimento representava era uma reação contra as velhas e desacreditadas obras comprometidas com o nazismo e de caráter comercial da geração anterior de cineastas (chamada de <i>le cinéma de papa</i>) - filmes \"<i>Heimat</i>\" tipicamente nostálgicos, faroestes insossos, thrillers criminais no estilo de <i>Edgar Wallace</i>, romances escapistas, comédias e pornografia soft."
+    },
+    {
+      "type": "text",
+      "content_text": "Essa suposta rebeldia do Novo Cinema Alemão dos anos 1970 tem sido muito debatida pelos críticos, que citam a natureza apolítica e metafisica dos filmes de Herzog, como <a href=\"https://_{type: 'screen', 'id': 2000, 'screen_type': movie}\">Aguirre, der Zorn Gottes</a> (BR: Aguirre, a Cólera dos Deuses, 1972), a crítica a uma mídia em <a href=\"https://_{type: 'screen', 'id': 4762, 'screen_type': movie}\">Die verlorene Ehre der Katharina Blum</a> (BR: A Honra Perdida de Katharina Blum, 1975), ou o fato de evitarem a condenação direta aos colaboradores do nazismo em filmes como <a href=\"https://_{type: 'screen', 'id': 65481, 'screen_type': movie}\">Deutschland bleiche Mutter</a> (BR: Alemanha, Mãe Pálida, 1980)."
+    },
+    {
+      "type": "video",
+      "video_id": "Ce4Cv_HDo0w",
+      "information": {
+        "contentTitle": "Cenas do filme Alice nas Cidades",
+        "contentText": "O filme possui uma semelhança estética com O Garoto, de Charles Chaplin. O filme também influenciou Central do Brasil, produção de 1998, com Fernanda Montenegro, dirigido por Walter Salles. O filme possui estéticas usadas em outros filmes de Wenders, como em Paris, Texas, em que a música e a imagem refletem a solidão e a psicologia dos personagens. O filme foi rodado em preto-e-branco. O filme possui uma estética de simbolismo, parecida com A Doce Vida e Os Incompreendidos.",
+        "source": "Youtube: Canal <i>FinestQualityTrailer</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "No início dos anos 1970, os filmes da Alemanha Ocidental ainda traiam a influência da década anterior, quando os cineastas foram obrigados a se adaptar às condições arriscadas, intelectualmente moribundas da indústria cinematográfica alemã. Este setor ainda se recuperava da Segunda Guerra Mundial e de uma reconstrução feita sob a influência e em nome dos interesses comerciais dos Aliados, dominados pelos Estados Unidos. Também estava enfraquecido por urna baixa histórica (alcançada em 1963) na frequência às salas de exibição do país e pela popularidade precoce da televisão na Alemanha Ocidental."
+    },
+    {
+      "type": "movie_list_special",
+      "movies": [
+        {
+          "vote_count": 7,
+          "popularity": 2.137,
+          "id": 208197,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.6,
+          "title": "Machorka-Muff",
+          "release_date": "1963-02-01",
+          "original_language": "de",
+          "original_title": "Machorka-Muff",
+          "genre_ids": [
+            18,
+            35
+          ],
+          "backdrop_path": "\/lCB0sV3ZTdMtIANaIxrbw1CtJQe.jpg",
+          "adult": false,
+          "overview": "Nas palavras de seus diretores, “Machorka-Muff” é a história de uma violação (a violação de um país, ao qual re­impuseram um exército, no qual um antigo general nazista é convidado a tomar parte num imaginário rearmamento do governo alemão no pós-guerra, após a renúncia política do chanceler Konrad Adenauer.",
+          "poster_path": "\/wJxL8Q2M8DJznPnEFCbPYDjVmZs.jpg"
+        },
+        {
+          "vote_count": 14,
+          "popularity": 5.677,
+          "id": 89785,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.3,
+          "title": "Despedida de Ontem",
+          "release_date": "1966-09-05",
+          "original_language": "de",
+          "original_title": "Abschied von gestern",
+          "genre_ids": [
+            18
+          ],
+          "backdrop_path": "\/gKNYytFLuh1uiLFxguojAfPoPgf.jpg",
+          "adult": false,
+          "overview": "Uma jovem, Anita G., rouba um pulôver para se aquecer. Cumprida a pena, ela faz várias tentativas de começar vida nova. Depois de uma fuga em ziguezague, vai parar de novo na cadeia. Os nazistas tinham levado seus pais. Ela vem do Leste e agora passa frio no Oeste. Três Alemanhas. Prêmio Especial do Júri do Festival de Veneza.",
+          "poster_path": "\/99oEORcsYvXO9771KZeFA7cIxa0.jpg"
+        },
+        {
+          "vote_count": 18,
+          "popularity": 3.881,
+          "id": 45694,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.4,
+          "title": "O Jovem Törless",
+          "release_date": "1966-05-20",
+          "original_language": "de",
+          "original_title": "Der junge Törless",
+          "genre_ids": [
+            18,
+            36,
+            53
+          ],
+          "backdrop_path": "\/ti1t28D4r7nWHoItgqZPsLA5jei.jpg",
+          "adult": false,
+          "overview": "No início do século passado, na Áustria, o jovem estudante Törless, tímido e inteligente observava o comportamento sádico de seus amigos da escola, e não toma nanhuma providência, quando estes escolhem como vítima um colega da sala de aula, até que a tortura vai longe demais. Adaptação do aclamado livro, Young Törless de Robert Musil, esta obra prima, deu internacionalidade ao movimento do Cinema Novo Alemão, e ganhou em 1996 no Festival de Cannes, o Prêmio da Crítica Internacional para o já bastante premiado ciretor, Volker Schlondorff. Estudo intrigante da natureza humana na sociedade moderna.",
+          "poster_path": "\/4zn5KRv59egH0VmOfP8vXqF4YQs.jpg"
+        },
+        {
+          "vote_count": 7,
+          "popularity": 2.661,
+          "id": 154582,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.9,
+          "title": "Os Artistas Sob a Cúpula do Circo",
+          "release_date": "1968-08-29",
+          "original_language": "de",
+          "original_title": "Die Artisten in der Zirkuskuppel: Ratlos",
+          "genre_ids": [
+            18
+          ],
+          "backdrop_path": "\/8ktn3baJBZQTuyXnJUTk4CA0hP.jpg",
+          "adult": false,
+          "overview": "Como seu pai antes dela, a dona de circo Leni Peickert (Hannelore Hoger) também quer levar o desempenho artístico a seu ponto máximo. Ao mesmo tempo, seu ideal é a naturalidade. Ela quer mudar o circo, mas suas inovações levam a empresa à bancarrota. “Se o capitalista faz aquilo de que gosta,\/ e não aquilo que lhe traz vantagem,\/ Não recebe apoio de ninguém”.\r Revigorada, Leni Peickert busca uma segunda chance, agora na televisão comercial",
+          "poster_path": "\/2YD0eb2lxVXLZ2rN6cCAqRcVZQq.jpg"
+        },
+        {
+          "vote_count": 610,
+          "popularity": 11.313,
+          "id": 2000,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.6,
+          "title": "Aguirre, a Cólera dos Deuses",
+          "release_date": "1972-12-29",
+          "original_language": "de",
+          "original_title": "Aguirre, der Zorn Gottes",
+          "genre_ids": [
+            12,
+            18,
+            36
+          ],
+          "backdrop_path": "\/zKakF2CHjm85bFaeyM9LeB2Ssz3.jpg",
+          "adult": false,
+          "overview": "Em 1561 o conquistador espanhol Gonzalo Pizarro parte em uma expedição pelos Andes buscando a lendária cidade de El Dorado, uma lenda contada aos espanhóis pelos índios. Uma expedição de dezenas de pessoas cruzou as montanhas do Peru, e percebendo o cansaço dos soldados e escravos, Pizarro designou um pequeno grupo para explorar a região, nomeando dois nobres como líderes. Conforme buscam El Dorado, a ambição começa a crescer em Lope de Aguirre que trai o companheiro e toma o controle do grupo para si. Em meio às intrigas, nenhum deles contava que a natureza seria o seu inimigo mais poderoso.",
+          "poster_path": "\/aLVcmIl304qsgC9q7FHMTvyby5Z.jpg"
+        },
+        {
+          "vote_count": 83,
+          "popularity": 10.061,
+          "id": 53094,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.3,
+          "title": "O Mundo Por Um Fio",
+          "release_date": "1973-10-14",
+          "original_language": "de",
+          "original_title": "Welt am Draht",
+          "genre_ids": [
+            18,
+            878,
+            53,
+            9648
+          ],
+          "backdrop_path": "\/2yukmDl4zObFzS2boAPHDhuyTKL.jpg",
+          "adult": false,
+          "overview": "No futuro, um computador chamado Simulacron é capaz de simular completamente a realidade. Quando o líder do projeto, Henry Vollmer, morre repentinamente, seu sucessor, Dr. Fred Stiller, começa a experienciar fenômenos estranhos. Poderia Simulacron ser o responsável por trás de tudo isso?",
+          "poster_path": "\/tsirYpihPYjkJ44JAc4deOuCpKk.jpg"
+        },
+        {
+          "vote_count": 199,
+          "popularity": 9.454,
+          "id": 216,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.8,
+          "title": "O Medo Devora a Alma",
+          "release_date": "1974-06-05",
+          "original_language": "de",
+          "original_title": "Angst essen Seele auf",
+          "genre_ids": [
+            10749,
+            18
+          ],
+          "backdrop_path": "\/2Z0kVvHjxC9uFmLNl5IwlGleUit.jpg",
+          "adult": false,
+          "overview": "Emmi, uma viúva de 60 anos entra em um bar de Munique para escapar da chuva.É convidada por Ali, um negro muçulmano e 20 anos mais novo que ela, para dançar.O que leva Emmi a convidar Ali para passar a noite em seu apartamento e depois os dois começam a namorar.Mas todos a sua volta questionam e desprezam o relacionamento de ambos.",
+          "poster_path": "\/7fPoyLxb97ZAHoN1d5Q5fanQhm8.jpg"
+        },
+        {
+          "vote_count": 131,
+          "popularity": 6.603,
+          "id": 2204,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.6,
+          "title": "Alice nas Cidades",
+          "release_date": "1974-05-17",
+          "original_language": "de",
+          "original_title": "Alice in den Städten",
+          "genre_ids": [
+            18
+          ],
+          "backdrop_path": "\/jZjkYpLtJbV0o5EpaEwCBgyezLi.jpg",
+          "adult": false,
+          "overview": "O jornalista alemão Philip Winter adquire a fobia de bloqueio de escritor ao tentar escrever um artigo sobre os Estados Unidos e, então, decide retornar à Alemanha. Ao registrar o vôo, encontra-se com uma mulher alemã e sua filha Alice, de nove anos, assim começando uma longa e duradoura amizade.",
+          "poster_path": "\/An8PTkNf3uvGpVg3VxKZ4DzVure.jpg"
+        },
+        {
+          "poster_path": "\/ivg7KBfHVh6nGMZjkEEO3ZKLGJc.jpg",
+          "popularity": 7.405,
+          "vote_count": 64,
+          "video": false,
+          "media_type": "movie",
+          "id": 42254,
+          "adult": false,
+          "backdrop_path": "\/qYyIiA368SDb9XGvOfw1pBkfKNK.jpg",
+          "original_language": "de",
+          "original_title": "Faustrecht der Freiheit",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "O Direito do Mais Forte é a Liberdade",
+          "vote_average": 7.4,
+          "overview": "Franz Biberkopf é um gay pobre, que viaja com um circo. Consegue ganhar na loteria um milhão de marcos e atrai a atenção de um rapaz que está apenas interessado em seu dinheiro. Será que eles continuarão juntos após acabar a grana?",
+          "release_date": "1975-06-06"
+        },
+        {
+          "vote_count": 51,
+          "popularity": 5.222,
+          "id": 4762,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.1,
+          "title": "A Honra Perdida de Katharina Blum",
+          "release_date": "1975-01-10",
+          "original_language": "de",
+          "original_title": "Die verlorene Ehre der Katharina Blum",
+          "genre_ids": [
+            18,
+            80
+          ],
+          "backdrop_path": "\/49nvRYWmO02QZz1kvLUUitzrq3v.jpg",
+          "adult": false,
+          "overview": "Katharina Blum e Ludwig Göette se apaixonam à primeira vista em uma festa de carnaval e passam a noite juntos. Na manhã seguinte, o apartamento da jovem é invadido pela polícia. Ludwig desapareceu, mas Katharina é levada presa. Ela não sabia que tinha acabado de se envolver com um dos suspeitos de terrorismo mais procurados pela inteligência alemã. De um simples caso de polícia, a história de Katharina vira um escândalo nacional quando o repórter Werner Töetges, do jornal sensacionalista Zeitung, passa a cobrir o caso. Sem escrúpulos e em busca apenas de fatos chocantes para publicar – sendo verdade ou não – o jornalista passa a perseguir todas as pessoas que faziam parte da vida pessoal da jovem.",
+          "poster_path": "\/6ImWuNXUQ3beoCE6TD0qjp2bZxn.jpg"
+        },
+        {
+          "poster_path": "\/gIE9jGbsrYmZn24Yvp4uz7yWTuD.jpg",
+          "popularity": 1.291,
+          "vote_count": 1,
+          "video": false,
+          "media_type": "movie",
+          "id": 131862,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "de",
+          "original_title": "Unter dem Pflaster ist der Strand",
+          "genre_ids": [
+            18
+          ],
+          "title": "Unter dem Pflaster ist der Strand",
+          "vote_average": 5,
+          "overview": "Grischa e Heinrich são dois atores que, após um ensaio, acabam trancados no camarim e acabam se interessando um pelo outro, começando um relacionamento. Heinrich quer ter um filho com Grischa, porém ela não sabe como é conciliar a vida familiar com a profissional, fazendo com que ela comece a entrevistar mulheres trabalhadoras, ouvindo seus depoimentos sobre as dificuldades que encontraram e encontram por serem mulheres.",
+          "release_date": "1975-01-14"
+        },
+        {
+          "poster_path": "\/ycLBbbddEzanI6RJYyDxizb1SX8.jpg",
+          "popularity": 5.895,
+          "vote_count": 43,
+          "video": false,
+          "media_type": "movie",
+          "id": 10834,
+          "adult": false,
+          "backdrop_path": "\/3FwLd7OfHrocHGDWr2LzfV4nG5p.jpg",
+          "original_language": "de",
+          "original_title": "Im Lauf der Zeit",
+          "genre_ids": [
+            18
+          ],
+          "title": "No Decurso do Tempo",
+          "vote_average": 7.8,
+          "overview": "Um técnico de projetores de cinema viaja pela Alemanha visitando cinemas desativados quando encontra um homem recém separado. Eles ficam amigos e resolvem viajar juntos.",
+          "release_date": "1976-03-04"
+        },
+        {
+          "poster_path": "\/5OKIh0O23Jz5TbIOUfstD2I9PNv.jpg",
+          "popularity": 8.087,
+          "vote_count": 181,
+          "video": false,
+          "media_type": "movie",
+          "id": 11222,
+          "adult": false,
+          "backdrop_path": "\/h59F8NcFSlucTK7fUcndD9TB9jg.jpg",
+          "original_language": "de",
+          "original_title": "Der amerikanische Freund",
+          "genre_ids": [
+            18,
+            53
+          ],
+          "title": "O Amigo Americano",
+          "vote_average": 7.1,
+          "overview": "Jonathan Zimmermann (Bruno Ganz) é um pacato moldurista alemão, que tem um áspero contato com um americano, Tom Ripley (Dennis Hopper), em um leilão. Jonathan desconfia que está sofrendo de uma moléstia incurável e recebe uma inacreditável proposta de um gângster: matar um bandido rival, recebendo em troca uma quantia que permitisse que sua família vivesse tranquila após sua morte. Dividido entre a angústia de estar com os dias contados e a hesitação em se tornar um assassino, Jonathan cada vez mais se envolve na trama. Porém o que ele não sabe é que quem está por trás dela é justamente Tom Ripley.",
+          "release_date": "1977-06-26"
+        },
+        {
+          "poster_path": "\/tM0HlqEX6lzR1meB2dLxwlWgSI5.jpg",
+          "popularity": 3.952,
+          "vote_count": 16,
+          "video": false,
+          "media_type": "movie",
+          "id": 12578,
+          "adult": false,
+          "backdrop_path": "\/xOwkSSpzrmR62qjEJ9U8mH2TwAd.jpg",
+          "original_language": "de",
+          "original_title": "Deutschland im Herbst",
+          "genre_ids": [
+            99,
+            18
+          ],
+          "title": "Alemanha no Outono",
+          "vote_average": 6.1,
+          "overview": "",
+          "release_date": "1978-03-03"
+        },
+        {
+          "poster_path": "\/5b2rC6cgglPMab6LbQauTfBJmv2.jpg",
+          "popularity": 3.187,
+          "vote_count": 11,
+          "video": false,
+          "media_type": "movie",
+          "id": 6511,
+          "adult": false,
+          "backdrop_path": "\/xlLghn5EG7QDryBYrptp2WEFv8X.jpg",
+          "original_language": "de",
+          "original_title": "Die Konsequenz",
+          "genre_ids": [
+            18
+          ],
+          "title": "A Consequência",
+          "vote_average": 6,
+          "overview": "Martin é um ator suíço que foi condenado a cumprir pena por ter se envolvido sexualmente com um rapaz ainda menor de idade. Já dentro da prisão, Martin se ocupa de produzir uma pequena peça teatral para os detentos e as suas famílias, e durante os ensaios conhece Thomas, o filho de um carcereiro da prisão. Os dois se apaixonam, mas trata-se de um amor impossível e sujeito à consequências.",
+          "release_date": "1977-12-02"
+        },
+        {
+          "poster_path": "\/bXcokvo8jqKMlacKAJw6JcQ78Yr.jpg",
+          "popularity": 2.032,
+          "vote_count": 5,
+          "video": false,
+          "media_type": "movie",
+          "id": 122524,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "de",
+          "original_title": "Das zweite Erwachen der Christa Klages",
+          "genre_ids": [
+            18
+          ],
+          "title": "O Segundo Despertar de Christa Klages",
+          "vote_average": 5.2,
+          "overview": "Três pessoas assaltam um banco para ajudar uma creche endividada. Wolf é capturado, Werner identificado e a policia suspeita de Christa como terceira participante.",
+          "release_date": "1978-02-24"
+        },
+        {
+          "vote_count": 228,
+          "popularity": 10.921,
+          "id": 659,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.1,
+          "title": "O Tambor",
+          "release_date": "1979-05-02",
+          "original_language": "de",
+          "original_title": "Die Blechtrommel",
+          "genre_ids": [
+            18,
+            36,
+            10752
+          ],
+          "backdrop_path": "\/uZJjc4hMgckb3H3tVkTmbmcBhIT.jpg",
+          "adult": false,
+          "overview": "Oskar Matzerath conta a história de sua vida, desde a forma inusitada como começa a sua família até  a ascensão do Nazismo na Alemanha. O que torna Oskar especial é a decisão que toma aos três anos de idade... Inconformado com o fato de seu nascimento estar relacionado ao triângulo amoroso entre sua mãe, um primo e o marido, e o medo de tornar-se tão \"desprezível\" como os adultos a sua volta, a criança decide que não irá mais crescer. Sempre acompanhado de seu tambor, Oskar tentará encontrar seu lugar em uma sociedade que está cada vez mais próxima dos ideais nazistas.  \"O Tambor\", mesmo tendo ganhado o Oscar e a Palma de Ouro, foi banido em alguns países por conter várias cenas eróticas protagonizadas por uma criança",
+          "poster_path": "\/zIbuSNM2lCY4rbknaY6FHaxXGMn.jpg"
+        },
+        {
+          "poster_path": "\/c4mFvP25JlalYHUJsLiZDrA3f2d.jpg",
+          "popularity": 15.313,
+          "vote_count": 426,
+          "video": false,
+          "media_type": "movie",
+          "id": 6404,
+          "adult": false,
+          "backdrop_path": "\/h3wvrOtDI8saCxNAgadiZOSG0Rg.jpg",
+          "original_language": "de",
+          "original_title": "Nosferatu - Phantom der Nacht",
+          "genre_ids": [
+            18,
+            27
+          ],
+          "title": "Nosferatu, o Vampiro da Noite",
+          "vote_average": 7.5,
+          "overview": "Jonathan Harker é enviado à Transilvânia para completar a negociação de algumas propriedades com um homem chamado Conde Drácula. No caminho encontra camponeses que tentam dissuadi-lo, dizendo que coisas sobrenaturais acontecem no castelo do Conde, mas Harker continua sua missão para concluir a negociação e seu trabalho.",
+          "release_date": "1979-01-17"
+        },
+        {
+          "poster_path": "\/rRDKWGbyJR3JBeOceYiIzrhxNbX.jpg",
+          "popularity": 8.637,
+          "vote_count": 125,
+          "video": false,
+          "media_type": "movie",
+          "id": 661,
+          "adult": false,
+          "backdrop_path": "\/6bPz77XsAB6VamQyFzwJhzd16B.jpg",
+          "original_language": "de",
+          "original_title": "Die Ehe der Maria Braun",
+          "genre_ids": [
+            18
+          ],
+          "title": "O Casamento de Maria Braun",
+          "vote_average": 7.5,
+          "overview": "Durante a Segunda Guerra Mundial, Maria e Hermann Braun se casam apressadamente, mas ficam juntos menos de 24 horas porque Hermann precisa voltar à frente de batalha. Ao final da guerra, ele é dado como desaparecido. Maria se emprega em um bar, conhece um soldado americano e fica grávida. Certa noite, Hermann volta para a casa e a surpreende com o soldado. Enfurecido, ele os agride e acaba sendo preso. Pouco depois, Maria vai trabalhar para um homem de negócios, sendo sua secretária e confidente. Ao sair da prisão, Hermann decide tentar a sorte em outro país. Alguns anos mais tarde, ele e Maria se reencontram e procuram esclarecer seu trágico passado.",
+          "release_date": "1979-03-23"
+        },
+        {
+          "vote_count": 27,
+          "popularity": 5.715,
+          "id": 45560,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.7,
+          "title": "Berlin Alexanderplatz",
+          "release_date": "1980-08-28",
+          "original_language": "de",
+          "original_title": "Berlin Alexanderplatz",
+          "genre_ids": [
+            18,
+            80,
+            10770
+          ],
+          "backdrop_path": "\/kkZ0jFp986EQAUOApGnjmiew8uQ.jpg",
+          "adult": false,
+          "overview": "Baseando-se no grande romance expressionista de Alfred Döblin, Fassbinder nos conta a história de Franz Biberkopf que, após cumprir quatro anos de prisão, decide começar uma vida nova na Berlim do final dos anos 20. Será que Franz conseguirá se tornar um \"homem decente\" na corrosiva paisagem urbana da República de Weimar?",
+          "poster_path": "\/6v4YHcFArQhSAzIMkaeGbuLeRYA.jpg"
+        },
+        {
+          "vote_count": 42,
+          "popularity": 4.063,
+          "id": 2264,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.2,
+          "title": "Lola",
+          "release_date": "1981-08-20",
+          "original_language": "de",
+          "original_title": "Lola",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "backdrop_path": "\/bJd8rcyl6hAt6nDbEFhrxKlBrNJ.jpg",
+          "adult": false,
+          "overview": "Baviera, 1957. Em uma pequena cidade, Schuckert é um magnata corrupto da construção. Quando o novo oficial honesto Herr von Bohm é nomeado, ele tenta se aproximar de Schuckert e ousa entrar no bordel da Villa Fink – o verdadeiro centro da economia da cidade. Até que se apaixona pela prostituta Lola.",
+          "poster_path": "\/oaeZH4Op5INK2KXX4xyCQIdCq8.jpg"
+        },
+        {
+          "vote_count": 22,
+          "popularity": 2.068,
+          "id": 42142,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.3,
+          "title": "Os Anos de Chumbo",
+          "release_date": "1981-09-04",
+          "original_language": "de",
+          "original_title": "Die bleierne Zeit",
+          "genre_ids": [
+            18
+          ],
+          "backdrop_path": "\/39tqKz0Ztpegr0cNgO4Jc10HTvp.jpg",
+          "adult": false,
+          "overview": "",
+          "poster_path": "\/uZNIAskMafXCYq9KIkghV9Q2zAR.jpg"
+        },
+        {
+          "poster_path": "\/rhYRPprXLuHHgfIF57ocVO6I9oN.jpg",
+          "popularity": 5.314,
+          "vote_count": 60,
+          "video": false,
+          "media_type": "movie",
+          "id": 2262,
+          "adult": false,
+          "backdrop_path": "\/ujQmLYoCnGNVBnANdGD7vSy2qPp.jpg",
+          "original_language": "de",
+          "original_title": "Die Sehnsucht der Veronika Voss",
+          "genre_ids": [
+            18
+          ],
+          "title": "O Desespero de Veronika Voss",
+          "vote_average": 7.2,
+          "overview": "Munique, 1955. A estrela de cinema Veronika Voss torna-se uma toxicodependente à mercê da corrupta Dra. Marianne Katz. Depois de conhecer Robert Krohn, ela sonha com um regresso ao estrelato. Quanto mais o relacionamento se intensifica, mais ela toma consciência do quanto o vício a debilitou.",
+          "release_date": "1982-05-13"
+        },
+        {
+          "vote_count": 415,
+          "popularity": 8.109,
+          "id": 9343,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.6,
+          "title": "Fitzcarraldo",
+          "release_date": "1982-03-02",
+          "original_language": "de",
+          "original_title": "Fitzcarraldo",
+          "genre_ids": [
+            18,
+            12
+          ],
+          "backdrop_path": "\/rJTvp1rUp1NWODDOGJj06z0ZSZv.jpg",
+          "adult": false,
+          "overview": "Brian Sweeney Fitzgerald, Fitzcarraldo, fã do tenor italiano Enrico Caruso, sonha em construir uma casa de ópera na remota cidade de Iquitos, no alto Amazonas.",
+          "poster_path": "\/yxhGOYfgobe5nEjISPJxrmvzqUJ.jpg"
+        },
+        {
+          "poster_path": "\/tgw3TJTWgNUYCgL5Pa546VVVvSU.jpg",
+          "popularity": 12.561,
+          "vote_count": 927,
+          "video": false,
+          "media_type": "movie",
+          "id": 655,
+          "adult": false,
+          "backdrop_path": "\/pAKpSMrCv9HQdMKvIdLgTdpKh5f.jpg",
+          "original_language": "en",
+          "original_title": "Paris, Texas",
+          "genre_ids": [
+            18
+          ],
+          "title": "Paris, Texas",
+          "vote_average": 8.1,
+          "overview": "Travis (Harry Dean Stanton) é acolhido por seu irmão que não o via há muito tempo, enquanto vagava sem memória pelo deserto. Aos poucos, vai recuperando sua memória e o relacionamento com sua mulher e filho.",
+          "release_date": "1984-05-19"
+        }
+      ],
+      "information": {
+        "contentTitle": "Filmes do Cinema Novo Alemão",
+        "contentText": "Na época, os 26 revolucionários de Oberhausen prepararam a base por meio do Manifesto. Eles asseguraram que a Alemanha recebesse uma infraestrutura de cinema. Nos anos seguintes surgiram escolas superiores de cinema e salas de exibição, surgiu o fomento à produção cinematográfica. Publicações sobre cinema atingiram um nível internacional e o cinema consolidou-se novamente na consciência do público interessado por cultura. Os signatários do Manifesto de Oberhausen fixaram as raízes do atual do cinema alemão com seu lema: \"<i>O cinema clássico está morto. Nós acreditamos no novo.</i>\""
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Pelo menos até o <i>Acordo do Filme e da Televisão</i> (1974), muitos jovens cineastas trabalhavam em produções estudantis ou em curtas. Os filmes eram produzidos pelos próprios artistas ou recebiam subsídios federais e estaduais, tinham orçamentos reduzidos, eram independentes, na maior parte dos casos, em preto e branco, geralmente com experimentações formais. Entre as obras, encontra-se a primeira colaboração de <i>Wim Wenders</i> com o diretor de fotografia <i>Robby Müller</i>, o trabalho de graduação na Escola de Cinema de Munique, <a href=\"https://_{type: 'screen', 'id': 289718, 'screen_type': movie}\">Summer in the City</a> (BR: Verão na cidade, 1970), um <i>road movie</i> sedutor dominado pelo rock e pela música pop (<i>The Kinks, The Lovin' Spoonful</i>). Com suas divagações existenciais, o senso de deslocamento, o gosto pela obra de cineastas americanos e evocações muito sentidas de tempo e espaço, ele antecipou obsessões temáticas de sua obra posterior, como <a href=\"https://_{type: 'screen', 'id': 2204, 'screen_type': movie}\">Alice in den Städten</a> (BR: Alice nas cidades, 1974)."
+    },
+    {
+      "type": "video",
+      "video_id": "Xqgea3KtikY",
+      "information": {
+        "contentTitle": "Cenas do filme As Lágrimas Amargas de Petra von Kant",
+        "contentText": "O elenco do filme é formado exclusivamente por mulheres e desenrola-se na casa da personagem principal, Petra von Kant. A história acompanha a dinâmica das suas relações com outras mulheres.",
+        "source": "Youtube: Canal <i>Greek Anon</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Os primeiros filmes produzidos pelo próprio <i>Werner Herzog</i> incluíram a anárquica representação de uma rebelião em uma comunidade de anões em <a href=\"https://_{type: 'screen', 'id': 11900, 'screen_type': movie}\">Auch Zwerge Haben Klein Angefangen</a> (BR: Os Anões Também Começaram Pequenos, 1970) e <a href=\"https://_{type: 'screen', 'id': 62437, 'screen_type': movie}\">Land des Schweigens und der Dunkelheit</a> (BR: Terra do Silêncio e da Escuridão, 1971), documentário comovente sobre <i>Fini Straubinger</i>, uma mulher de 56 anos cega e surda."
+    },
+    {
+      "type": "text",
+      "content_text": "Esse setor era amplamente criticado, entre outras coisas, pela restrição do controle autoral e uma censura crescente, uma reação que os diversos setores que forneciam subsídios pós-1968 viam como uma inaceitável posição antissistema de cineastas, que chegaria ao auge no final da década de 1970. Em resposta, Wenders Herzog, Fassbinder, Kluge e outros formaram sua própria organização de produção, distribuição e marketing, a <i>Filmverlag der Autoren</i>, em 1971. Muitos de seus melhores filmes foram feitos sob esta marca, entre eles <a href=\"https://_{type: 'screen', 'id': 2000, 'screen_type': movie}\">Aguirre, der Zorn Gottes</a> (BR: Aguirre, a cólera dos deuses, 1972), <a href=\"https://_{type: 'screen', 'id': 11710, 'screen_type': movie}\">Jeder für Sich und Gott Gegen Alle</a> (BR: O Enigma de Kaspar Hauser, 1974) e <a href=\"https://_{type: 'screen', 'id': 10310, 'screen_type': movie}\">Die bitteren Tränen der Petra von Kant</a> (BR: As lagrimas amargas de Petra von Kant, 1972)."
+    },
+    {
+      "type": "video",
+      "video_id": "3PdNEFRjfdM",
+      "information": {
+        "contentTitle": "Cenas do filme O Enigma de Kaspar Hauser",
+        "contentText": "O filme de Werner Herzog é baseado no livro \"Casper Hauser oder die Trägheit des Herzens\", de Jakob Wassermann, publicado em 1908, que, por sua vez, retrata o caso de um adolescente encarcerado na Alemanha do século XIX até a idade de 16 anos, quando teve seu primeiro contato verbal e social. Somente depois disso, pôde ser observado algum desenvolvimento de Kaspar Hauser na linguagem e na socialização com outros indivíduos.",
+        "source": "Youtube: Canal <i>Mihkel Reha</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Com o avanço da década de 1970, as tarefas assumidas pelos cineastas da Alemanha Ocidental - descrever as realidades enfrentadas pelos alemães no mundo contemporâneo - se tornaram mais focadas ou ganharam uma dimensão mais internacionalista. A situação dos trabalhadores estrangeiros, por exemplo, foi tratada em uma série de filmes de Fassbinder de forma notável e compassiva em <a href=\"https://_{type: 'screen', 'id': 216, 'screen_type': movie}\">Angst essen Seele auf</a> (BR: O medo devora a alma, 1974). O papel das mulheres é analisado em filmes como <a href=\"https://_{type: 'screen', 'id': 188165, 'screen_type': movie}\">Die allseitig reduzierte Persönlichkeit</a> (BR: Personalidades reduzidas de todas as partes, 1978), de <a href=\"https://_{type: 'screen', 'id': 64520, 'screen_type': person}\">Helke Sander</a> (n-1937), e <a href=\"https://_{type: 'screen', 'id': 122524, 'screen_type': movie}\">Das zweite Erwachen der Christa Klages</a> (BR: O segundo despertar de Christa Klages, 1978), de <a href=\"https://_{type: 'screen', 'id': 39298, 'screen_type': person}\">Margarethe von Trotta</a> (n-1942)."
     },
     {
       "type": "quote",
       "quote": {
-        "quote": "",
-        "author": ""
+        "quote": "Sou o grande traidor. Sou a cólera de Deus.",
+        "author": "Don Lope de Aguirre (Klaus Kinski) em Aguirre, a cólera dos deuses"
       }
+    },
+    {
+      "type": "text",
+      "content_text": "Finalmente, o debate sobre a herança nazista foi expandido por <i>Hans Jürgen Syberberg</i> em seu longo filme <a href=\"https://_{type: 'screen', 'id': 58435, 'screen_type': movie}\">Hitler - ein Film aus Deutschland</a> (BR: Hitler: Um filme da Alemanha, 1978), ensaio combinado com espetáculo operístico à <i>la Brecht</i>."
+    },
+    {
+      "type": "video",
+      "video_id": "XEbQikx8dsk",
+      "information": {
+        "contentTitle": "Cenas do filme O Tambor",
+        "contentText": "Em junho de 1997 um grupo de cristãos fundamentalistas de Oklahoma, EUA, entrou na justiça pela proibição do filme. Considerando que a obra continha cenas de pornografia infantil, a polícia passou a confiscar todas as cópias de livrarias, locadoras e até residências particulares. Em outubro de 1998 a justiça federal considerou o ato inconstitucional e em 2001 o filme voltou a circular livremente em Oklahoma.",
+        "source": "Youtube: Canal <i>isimsiz isim</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "O ano de 1977 foi fundamental tanto para o Estado da Alemanha Ocidental quanto para o Novo Cinema Alemão. Ele testemunhou o sequestro e morte do industrial <i>Hanns-Martin Schleyer</i>, o suicídio de <i>Gudrin Ensslin</i> e a morte de outros integrantes da Facção do Exército Vermelho/Baader Meinhof na prisão stammheim - eventos que geralmente são considerados o final da chamada década do terror na Alemanha. No abrangente <a href=\"https://_{type: 'screen', 'id': 12578, 'screen_type': movie}\">Deutschland im Herbst</a> (BR: Alemanha no outono, 1978), diretores como Fassbinder, Reitz e Schlöndorff ofereceram uma reação imediata a esses acontecimentos."
+    },
+    {
+      "type": "text",
+      "content_text": "O Novo Cinema Alemão atingiu o mais alto grau de reconhecimento nesse período. <a href=\"https://_{type: 'screen', 'id': 130544, 'screen_type': movie}\">Palermo Oder Wolfsburg</a> (BR: Palermo ou Wolfsburg, 1980), de <a href=\"https://_{type: 'screen', 'id': 45192, 'screen_type': person}\">Werner Schroeter</a> (1945-2010), levou <strong>Urso de Ouro</strong> do <i>Festival de Cinema de Berlim</i>. <a href=\"https://_{type: 'screen', 'id': 659, 'screen_type': movie}\">Die Blechtrommel</a> (BR: O tambor, 1979), adaptação de Schlöndorff para a obra de <i>Gunter Grass</i>, foi premiado com o <strong>Oscar de Melhor Filme Estrangeiro</strong> em 1980."
+    },
+    {
+      "type": "video",
+      "video_id": "pQGznARA69s",
+      "information": {
+        "contentTitle": "Trailer do filme O Casamento de Maria Braun",
+        "contentText": "O filme não foi a apresentação oficial alemã ao 51º Oscar de Melhor Filme Estrangeiro. Em vez disso, The Glass Cell, de Hans W. Geißendörfer, foi escolhido para ser a apresentação oficial alemã. Quase um ano depois, o filme foi nomeado para um Globo de Ouro de melhor filme em língua estrangeira na 37ª Prémio Globo de Ouro, mas este sucesso foi ofuscado pelo sucesso de Volker Schlöndorff 's The Tin Drum no 52º Academy Awards.",
+        "source": "Youtube: Canal <i>HD Retro Trailers</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "No ano seguinte, uma versão do romance submarino de <i>Lothar Buchheim</i>, <a href=\"https://_{type: 'screen', 'id': 387, 'screen_type': movie}\">Das Boot</a> (BR: O barco - inferno em alto-mar, 1981), dirigida por <a href=\"https://_{type: 'screen', 'id': 5231, 'screen_type': person}\">Wolfgang Petersen</a> (n-1941), conquistou sucesso nacional e internacional. Porém, isso aconteceu bem no momento em que as vozes críticas e dissidentes que haviam ajudado, tão recentemente, a definir o Novo Cinema Alemão se encontravam marginalizadas, com a experimentação formal interrompida e seus cineastas encorajados ou obrigados a cuidar de projetos aceitáveis, capazes de aprimorar ou \"<i>legitimar culturalmente</i>\" a imagem internacional do cinema alemão."
+    },
+    {
+      "type": "text",
+      "content_text": "Alguns cederam às demandas dos investidores estrangeiros. Outros, como Wenders e Herzog, foram para outros países para continuar a filmar. Porém, deve-se destacar a continuidade da rica e persistente colaboração entre cinema e televisão na Alemanha. Em 1980, Fassbinder, sem dúvida o diretor mais original, prolifico e influente do Novo Cinema Alemão, fez sua obra-prima: uma comovente adaptação para as telas de sua grande paixão - o mais primoroso romance de <i>Alfred Doblin</i>, <a href=\"https://_{type: 'screen', 'id': 56318, 'screen_type': movie}\">Berlin Alexanderplatz</a> (1929), filmado na Bavária para ser exibido no canal público de televisão ADR. Fassbinder morreu em 1982, uma data que pode servir de marco, talvez um tanto atrasado, do final de um período que incluiu o audacioso florescimento do cinema alemão nos anos 1970 e o declínio da produção cinematográfica do país, no período que se seguiu.",
+      "content_credits": "Resumo baseado no texto de <i>Wally Hammond</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>."
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "poster_path": "\/6MNqmGe0JjEuGX1PMjRBAEI6aXg.jpg",
+          "popularity": 11.313,
+          "vote_count": 610,
+          "video": false,
+          "media_type": "movie",
+          "id": 2000,
+          "adult": false,
+          "backdrop_path": "\/zKakF2CHjm85bFaeyM9LeB2Ssz3.jpg",
+          "original_language": "de",
+          "original_title": "Aguirre, der Zorn Gottes",
+          "genre_ids": [
+            12,
+            18,
+            36
+          ],
+          "title": "Aguirre, the Wrath of God",
+          "vote_average": 7.6,
+          "overview": "A few decades after the destruction of the Inca Empire, a Spanish expedition led by the infamous Aguirre leaves the mountains of Peru and goes down the Amazon River in search of the lost city of El Dorado. When great difficulties arise, Aguirre’s men start to wonder whether their quest will lead them to prosperity or certain death.",
+          "release_date": "1972-12-29"
+        },
+        {
+          "vote_count": 105,
+          "popularity": 9.264,
+          "id": 10310,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.3,
+          "title": "The Bitter Tears of Petra von Kant",
+          "release_date": "1972-10-05",
+          "original_language": "de",
+          "original_title": "Die bitteren Tränen der Petra von Kant",
+          "genre_ids": [
+            18
+          ],
+          "backdrop_path": "\/kyVtVCs493JAL3lxfSC8UrGbrwS.jpg",
+          "adult": false,
+          "overview": "Petra von Kant is a successful fashion designer -- arrogant, caustic, and self-satisfied. She mistreats Marlene (her secretary, maid, and co-designer). Enter Karin, a 23-year-old beauty who wants to be a model. Petra falls in love with Karin and invites her to move in.",
+          "poster_path": "\/cWd97s0sgw53mYkUdqyRGH4mUCn.jpg"
+        },
+        {
+          "poster_path": "\/tohQfaM4pKvrxP8eSd1HKoSGU0Z.jpg",
+          "popularity": 8.61,
+          "vote_count": 173,
+          "video": false,
+          "media_type": "movie",
+          "id": 11710,
+          "adult": false,
+          "backdrop_path": "\/cV0FFFDbh5dHBgDuWdDiLDRfsi3.jpg",
+          "original_language": "de",
+          "original_title": "Jeder für sich und Gott gegen alle",
+          "genre_ids": [
+            18,
+            36
+          ],
+          "title": "The Enigma of Kaspar Hauser",
+          "vote_average": 7.5,
+          "overview": "The film follows Kaspar Hauser (Bruno S.), who lived the first seventeen years of his life chained in a tiny cellar with only a toy horse to occupy his time, devoid of all human contact except for a man who wears a black overcoat and top hat who feeds him.",
+          "release_date": "1974-11-01"
+        },
+        {
+          "poster_path": "\/lw22wORmENkTZHGXI6bKmAIHxjO.jpg",
+          "popularity": 6.603,
+          "vote_count": 131,
+          "video": false,
+          "media_type": "movie",
+          "id": 2204,
+          "adult": false,
+          "backdrop_path": "\/jZjkYpLtJbV0o5EpaEwCBgyezLi.jpg",
+          "original_language": "de",
+          "original_title": "Alice in den Städten",
+          "genre_ids": [
+            18
+          ],
+          "title": "Alice in the Cities",
+          "vote_average": 7.6,
+          "overview": "German journalist Philip Winter has a case of writer’s block when trying to write an article about the United States. He decides to return to Germany, and while trying to book a flight, encounters a German woman and her nine year old daughter Alice doing the same. The three become friends (almost out of necessity) and while the mother asks Winter to mind Alice temporarily, it quickly becomes apparent that Alice will be his responsibility for longer than he expected. After returning to Europe, the innocent friendship between Winter and Alice grows as they travel together through various European cities on a quest for Alice’s grandmother.",
+          "release_date": "1974-05-17"
+        },
+        {
+          "poster_path": "\/d7Z1gzPkHm29jmiqnjvzXZg2koI.jpg",
+          "popularity": 5.222,
+          "vote_count": 51,
+          "video": false,
+          "media_type": "movie",
+          "id": 4762,
+          "adult": false,
+          "backdrop_path": "\/49nvRYWmO02QZz1kvLUUitzrq3v.jpg",
+          "original_language": "de",
+          "original_title": "Die verlorene Ehre der Katharina Blum",
+          "genre_ids": [
+            18,
+            80
+          ],
+          "title": "The Lost Honor of Katharina Blum",
+          "vote_average": 7.1,
+          "overview": "After a chance encounter with a wanted man, a woman is harassed by the police and press until she takes violent action.",
+          "release_date": "1975-01-10"
+        },
+        {
+          "poster_path": "\/sGHIkZ0l5Yh1sUYyHvcrouYbBna.jpg",
+          "popularity": 3.952,
+          "vote_count": 16,
+          "video": false,
+          "media_type": "movie",
+          "id": 12578,
+          "adult": false,
+          "backdrop_path": "\/xOwkSSpzrmR62qjEJ9U8mH2TwAd.jpg",
+          "original_language": "de",
+          "original_title": "Deutschland im Herbst",
+          "genre_ids": [
+            99,
+            18
+          ],
+          "title": "Germany in Autumn",
+          "vote_average": 6.1,
+          "overview": "Germany in Autumn does not have a plot per se; it mixes documentary footage, along with standard movie scenes, to give the audience the mood of Germany during the late 1970s. The movie covers the two month time period during 1977 when a businessman was kidnapped, and later murdered, by the left-wing terrorists known as the RAF-Rote Armee Fraktion (Red Army Fraction). The businessman had been kidnapped in an effort to secure the release of the orginal leaders of the RAF, also known as the Baader-Meinhof gang. When the kidnapping effort and a plane hijacking effort failed, the three most prominent leaders of the RAF, Andreas Baader, Gudrun Ensslin, and Jan-Carl Raspe, all committed suicide in prison. It has become an article of faith within the left-wing community that these three were actually murdered by the state.",
+          "release_date": "1978-03-03"
+        },
+        {
+          "vote_count": 228,
+          "popularity": 10.921,
+          "id": 659,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.1,
+          "title": "The Tin Drum",
+          "release_date": "1979-05-02",
+          "original_language": "de",
+          "original_title": "Die Blechtrommel",
+          "genre_ids": [
+            18,
+            36,
+            10752
+          ],
+          "backdrop_path": "\/uZJjc4hMgckb3H3tVkTmbmcBhIT.jpg",
+          "adult": false,
+          "overview": "Oskar is born in Germany in 1924 with an advanced intellect. Repulsed by the hypocrisy of adults and the irresponsibility of society, he refuses to grow older after his third birthday.",
+          "poster_path": "\/b4zV75WQL68XcKRYdliCmTk5Jwc.jpg"
+        },
+        {
+          "poster_path": "\/mgX9sExDcdwRx8YxPjL8ngfSTmn.jpg",
+          "popularity": 18.067,
+          "vote_count": 1318,
+          "video": false,
+          "media_type": "movie",
+          "id": 387,
+          "adult": false,
+          "backdrop_path": "\/wsRysp1DpjRdJv8D3eN4lEsGju9.jpg",
+          "original_language": "de",
+          "original_title": "Das Boot",
+          "genre_ids": [
+            18,
+            36,
+            10752
+          ],
+          "title": "Das Boot",
+          "vote_average": 8.1,
+          "overview": "A German submarine hunts allied ships during the Second World War, but it soon becomes the hunted. The crew tries to survive below the surface, while stretching both the boat and themselves to their limits.",
+          "release_date": "1981-09-16"
+        },
+        {
+          "poster_path": "\/tXjZEzlf4WQwZ4Dt53gXeJVuO7p.jpg",
+          "popularity": 8.637,
+          "vote_count": 125,
+          "video": false,
+          "media_type": "movie",
+          "id": 661,
+          "adult": false,
+          "backdrop_path": "\/6bPz77XsAB6VamQyFzwJhzd16B.jpg",
+          "original_language": "de",
+          "original_title": "Die Ehe der Maria Braun",
+          "genre_ids": [
+            18
+          ],
+          "title": "The Marriage of Maria Braun",
+          "vote_average": 7.5,
+          "overview": "Maria marries a young soldier in the last days of World War II, only for him to go missing in the war. She must rely on her beauty and ambition to navigate the difficult post-war years alone.",
+          "release_date": "1979-03-23"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 2725,
+          "name": "Rainer Werner Fassbinder",
+          "profile_path": "/49QLFA6vv28YTnUOXFnxPYsJtWS.jpg"
+        },
+        {
+          "id": 39298,
+          "name": "Margarethe von Trotta",
+          "profile_path": "/rxFG8ZBtXRt0iRzMKiFOq579GD.jpg"
+        },
+        {
+          "id": 10249,
+          "name": "Volker Schlöndorff",
+          "profile_path": "/zk29UzKaYdvgY3AQ6KjpQmdNpNf.jpg"
+        },
+        {
+          "id": 6818,
+          "name": "Werner Herzog",
+          "profile_path": "/qKlz1oM482Xf0jTPfLiR6qXlLYK.jpg"
+        },
+        {
+          "id": 64520,
+          "name": "Helke Sander",
+          "profile_path": "/1kPqchwzORoCTpqYgvAchYN4CE5.jpg"
+        }
+      ]
     },
     {
       "type": "link_screen",

@@ -188,6 +188,10 @@
       "image_type": "local",
       "url": "img_exorcist",
       "content_description": "Foto da personagem Regan possúida pelo demônio, em O Exorcista.",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      },
       "style": {
         "scale_type": "center_crop",
         "resize": {
