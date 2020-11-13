@@ -1,42 +1,1592 @@
 {
-  "number": 1,
+  "number": 5,
   "content_list": [
-
-
-
-
     {
       "type": "text",
-      "content_text": ""
+      "content_text": "Hollywood é branca. É um lugar de homens brancos fazendo filmes com pessoas brancas para públicos de todas as cores assistirem. Diversidade ainda não é uma prioridade nas produções norte-americanas. Atrizes e atores negros, quando estão em tela, muitas vezes acabam com papéis estereotipados e pejorativos. Apesar de termos algumas exceções como, por exemplo, o elenco escolhido para a adaptação live-action de <a href=\"https://_{type: 'screen', 'id': 420818, 'screen_type': movie}\">The Lion King</a> (BR: O Rei Leão, 2019), é preciso entender que o problema ainda parece longe de ser solucionado"
     },
     {
       "type": "video",
-      "video_id": "",
+      "video_id": "pFlsufZj9Fg",
       "information": {
-        "contentTitle": "",
-        "contentText": "",
-        "source": "Youtube: Canal <i></i>"
+        "contentTitle": "Cenas do filme Shaft",
+        "contentText": "Shaft desempenhou um papel crucial no desenvolvimento do cinema afro-americano em Hollywood. Na criação de Shaft, houve uma presença afro-americana significativa, com o diretor Parks, o editor Hugh A. Robertson e o compositor musical Isaac Hayes desempenhando papéis cruciais. Por outro lado, os homens brancos controlavam os outros aspectos importantes da produção de Shaft.",
+        "source": "Youtube: Canal <i>FarOutFunky</i>"
       }
     },
     {
-      "type": "block_special",
-      "title": "",
-      "image": {
-        "image_type": "local",
-        "url": "",
-        "style": {
-          "scale_type": "center_crop"
-        }
-      },
-      "description": "",
-      "credits": ""
+      "type": "text",
+      "content_text": "Uma pesquisa de 2016, da <i>University of Southern California</i> examinou os 800 filmes com maior bilheteria entre 2007 a 2015, analisando 35.205 personagens, e notou que 73,7% são brancos. E apenas 5,5% dos 886 diretores eram negros. Apesar disso, é importante salientar que, mesmo distante do ideal, o movimento negro vem ganhando força no cinema de forma gradual e salutar."
     },
     {
       "type": "quote",
       "quote": {
-        "quote": "",
-        "author": ""
+        "quote": "Você sabia que tínhamos algo realmente emocionante, mas não tínhamos ideia de quão grandioso seria.",
+        "author": "Richard Roundtree sobre Shaft (1971)"
       }
+    },
+    {
+      "type": "text",
+      "content_text": "Esse progresso é fruto de um trabalho exaustivo, construído a duras penas e muito suor por gerações de cineastas negros que batalham por um cinema mais diversificado. Um dos marcos mais emblemáticos dessa luta surgiu no início da década de 1970, quando eclodiam grandes revoluções sociais e políticas em toda a indústria cultural. Nesse período, que é lembrando como um dos mais atribulados e importantes da história recente, surgiu um movimento cinematográfico que finalmente deu voz ao povo negro, o <strong>Blaxploitation</strong>."
+    },
+    {
+      "type": "video",
+      "video_id": "tY8_miMc8go",
+      "information": {
+        "contentTitle": "Cenas do filme Super Fly",
+        "contentText": "Apesar da controvérsia em torno Super Fly, sobre o uso de drogas, a produção do filme resultou em avanços significativos para os afro-americanos em Hollywood. A comunidade do Harlem apoiou financeiramente o filme, e várias empresas negras ajudaram com os custos de produção.",
+        "source": "Youtube: Canal <i>Broken Glass Everywhere</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "O termo, sarcástico, foi cunhado pelo ex-produtor e ex-presidente do <i>Los Angeles National Association of Colored People</i> (NAACP), <i>Junius Griffin</i>, e surgiu do amálgama criado com as palavras black (preto) e exploitation (exploração). O <i>Blaxploitation</i>, ou <i>Blacksploitation</i>, foi um movimento étnico que colocou artistas negros como protagonistas de produções audiovisuais."
+    },
+    {
+      "type": "movie_list_special",
+      "movies": [
+        {
+          "poster_path": "\/mHTHMwFFSIqTkzMu8tUUzpWiJ6w.jpg",
+          "popularity": 5.893,
+          "vote_count": 54,
+          "video": false,
+          "media_type": "movie",
+          "id": 5822,
+          "adult": false,
+          "backdrop_path": "\/rfWjk3uWIQ0tdWudbtOAveDiFAr.jpg",
+          "original_language": "en",
+          "original_title": "Sweet Sweetback's Baadasssss Song",
+          "genre_ids": [
+            28,
+            80,
+            18
+          ],
+          "title": "Sweet Sweetback's Baadasssss Song",
+          "vote_average": 5.3,
+          "overview": "After saving a Black Panther from some racist cops, a black male prostitute goes on the run from \"the man\" with the help of the ghetto community and some disillusioned Hells Angels.",
+          "release_date": "1971-04-23"
+        },
+        {
+          "poster_path": "\/yJChPuu2V339IiDPQDHeIh1SYpA.jpg",
+          "popularity": 10.921,
+          "vote_count": 192,
+          "video": false,
+          "media_type": "movie",
+          "id": 482,
+          "adult": false,
+          "backdrop_path": "\/l01IA7vplyeci8h6sNkOGf9CCRF.jpg",
+          "original_language": "en",
+          "original_title": "Shaft",
+          "genre_ids": [
+            28,
+            80,
+            53
+          ],
+          "title": "Shaft",
+          "vote_average": 6.6,
+          "overview": "Cool black private eye John Shaft is hired by a crime lord to find and retrieve his kidnapped daughter.",
+          "release_date": "1971-06-25"
+        },
+        {
+          "poster_path": "\/zYO2ychL6Sw0Ww9LMFUNdcjZVKg.jpg",
+          "popularity": 5.077,
+          "vote_count": 5,
+          "video": false,
+          "media_type": "movie",
+          "id": 37488,
+          "adult": false,
+          "backdrop_path": "\/9RSnNEsf3mbLdePVn20g1xcjS3c.jpg",
+          "original_language": "en",
+          "original_title": "Hit Man",
+          "genre_ids": [
+            28
+          ],
+          "title": "Hit Man",
+          "vote_average": 5.9,
+          "overview": "Bernie Casey portrays Tyrone and Pamela Grier plays a sultry skin-flick star in this first Americanized remake of the iconic Michael Caine action film Get Carter. From Watts to the West Side, from porno parlors to a high-rise, from motel dives to a crime kingpin’s sprawling pleasure dome, from corner hangouts to a wildlife preserve, Tyrone covers a lot of real estate, busts a lot of heads.",
+          "release_date": "1972-12-20"
+        },
+        {
+          "vote_count": 80,
+          "popularity": 7.815,
+          "id": 21968,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.5,
+          "title": "Super Fly",
+          "release_date": "1972-08-04",
+          "original_language": "en",
+          "original_title": "Super Fly",
+          "genre_ids": [
+            28,
+            80,
+            18,
+            10402,
+            53
+          ],
+          "backdrop_path": "\/468tPHO5kZY6V1ceWxMKXrGMQy4.jpg",
+          "adult": false,
+          "overview": "Super Fly is a cocaine dealer who begins to realize that his life will soon end with either prison or his death. He decides to build an escape from the life by making his biggest deal yet.",
+          "poster_path": "\/nFAD8tGmQ5jDUoOhXXFkUW1Q7z1.jpg"
+        },
+        {
+          "vote_count": 5,
+          "popularity": 3.935,
+          "id": 87788,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.8,
+          "title": "The Legend of Nigger Charley",
+          "release_date": "1972-03-16",
+          "original_language": "en",
+          "original_title": "The Legend of Nigger Charley",
+          "genre_ids": [
+            37,
+            28,
+            80
+          ],
+          "backdrop_path": "\/qvGD7DlHZ206MMqsbtriNmvMJZI.jpg",
+          "adult": false,
+          "overview": "A trio of runaway slaves evade authorities in the Old West.",
+          "poster_path": "\/jkuqSyXSJkQ1YD7ULdLdhJuOFQT.jpg"
+        },
+        {
+          "poster_path": "\/gLP7yzXs2HNY2HSKBDJMBfBDgr4.jpg",
+          "popularity": 4.466,
+          "vote_count": 44,
+          "video": false,
+          "media_type": "movie",
+          "id": 28797,
+          "adult": false,
+          "backdrop_path": "\/93jnUqeGLr4ctSJ3dfnhAl2tqu8.jpg",
+          "original_language": "en",
+          "original_title": "Black Mama, White Mama",
+          "genre_ids": [
+            28
+          ],
+          "title": "Black Mama, White Mama",
+          "vote_average": 5.5,
+          "overview": "When two troublemaking female prisoners (one a revolutionary, the other a former harem-girl) can't seem to get along, they are chained together and extradited for safekeeping. The women, still chained together, stumble, stab, and cat-fight their way across the wilderness, igniting a bloody shootout between gangsters and a group of revolutionaries.",
+          "release_date": "1973-01-19"
+        },
+        {
+          "poster_path": "\/yLqtFeZfRPoUUzzro3ogCdobB6q.jpg",
+          "popularity": 6.043,
+          "vote_count": 85,
+          "video": false,
+          "media_type": "movie",
+          "id": 30566,
+          "adult": false,
+          "backdrop_path": "\/4vCeVuJc6NV50hiEXQCmf3WoMWN.jpg",
+          "original_language": "en",
+          "original_title": "Blacula",
+          "genre_ids": [
+            14,
+            27
+          ],
+          "title": "Blacula",
+          "vote_average": 5.5,
+          "overview": "An 18th century African prince is turned into a vampire while visiting Transylvania. Two centuries later, he rises from his coffin attacking various residents of Los Angeles and meets Tina, a woman who he believes is the reincarnation of his deceased wife.",
+          "release_date": "1972-08-25"
+        },
+        {
+          "poster_path": "\/mYCfkpRAipuBie3WVaiVditHPtc.jpg",
+          "popularity": 3.101,
+          "vote_count": 5,
+          "video": false,
+          "media_type": "movie",
+          "id": 56535,
+          "adult": false,
+          "backdrop_path": "\/cotKZBvc3rxGRkVxO9Z011QIJec.jpg",
+          "original_language": "en",
+          "original_title": "Slaughter",
+          "genre_ids": [
+            28,
+            80,
+            18
+          ],
+          "title": "Slaughter",
+          "vote_average": 6.1,
+          "overview": "Slaughter, a former Green Beret, avenges the killing of loved ones by the Mob, and after being blackmailed by the feds, is forced to head to South America to finish the mobsters off.",
+          "release_date": "1972-08-16"
+        },
+        {
+          "vote_count": 16,
+          "popularity": 3.154,
+          "id": 21949,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.4,
+          "title": "Trouble Man",
+          "release_date": "1972-11-01",
+          "original_language": "en",
+          "original_title": "Trouble Man",
+          "genre_ids": [
+            28,
+            80,
+            18,
+            10749
+          ],
+          "backdrop_path": "\/6ZLsNzP4ActLYt8TV9g2u5ZnNtj.jpg",
+          "adult": false,
+          "overview": "It seems that masked men are knocking over the floating crap games of Chalky and Pete. Chalky and Pete hire the cool, loose, elegant Mr. T to fix things. Then, the masked manipulators set up the death of a collector for a rival gang lord. It looks like it's up to T to hold a gang war from breaking out, keep the police off his back, and earn his fee from Chalky and Pete.",
+          "poster_path": "\/2L6kvxr05nXqnl38YP5IINF5PJJ.jpg"
+        },
+        {
+          "poster_path": "\/yq07GtsZiN1Ot2QkTWsKQypq65m.jpg",
+          "popularity": 5.092,
+          "vote_count": 34,
+          "video": false,
+          "media_type": "movie",
+          "id": 22029,
+          "adult": false,
+          "backdrop_path": "\/fqufSlcxspjyVMsfukNyDtKofrM.jpg",
+          "original_language": "en",
+          "original_title": "Black Caesar",
+          "genre_ids": [
+            28,
+            80,
+            18,
+            53
+          ],
+          "title": "Black Caesar",
+          "vote_average": 6.2,
+          "overview": "Tommy Gibbs is a tough kid, raised in the ghetto, who aspires to be a kingpin criminal. As a young boy, his leg is broken by a bad cop on the take, during a payoff gone bad. Nursing his vengeance, he rises to power in Harlem, New York. Angry at the racist society around him, both criminal and straight, he sees the acquisition of power as the solution to his rage.",
+          "release_date": "1973-02-07"
+        },
+        {
+          "vote_count": 17,
+          "popularity": 3.094,
+          "id": 3162,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 2.9,
+          "title": "Blackenstein",
+          "release_date": "1973-01-01",
+          "original_language": "en",
+          "original_title": "Blackenstein",
+          "genre_ids": [
+            878,
+            28,
+            27
+          ],
+          "backdrop_path": "\/ac2AiHOAxJ3V4GkWl4G23hwBMsy.jpg",
+          "adult": false,
+          "overview": "Eddie is a Vietnam veteran who loses his arms and legs when he steps on a land mine, but a brilliant surgeon is able to attach new limbs. Unfortunately an insanely jealous assistant (who has fallen in love with Eddie's fiance) switches Eddie's DNA injections, transforming him into a gigantic killer.",
+          "poster_path": "\/qUDG9xyeogKzGa2QZu8zRNtu6sH.jpg"
+        },
+        {
+          "vote_count": 40,
+          "popularity": 7.744,
+          "id": 26196,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.9,
+          "title": "Cleopatra Jones",
+          "release_date": "1973-07-13",
+          "original_language": "en",
+          "original_title": "Cleopatra Jones",
+          "genre_ids": [
+            28,
+            80,
+            53
+          ],
+          "backdrop_path": "\/n9dJWCv1SjLxdUVm99nhHHHVkYj.jpg",
+          "adult": false,
+          "overview": "Cleopatra Jones is assigned to crack down on drug trafficking in the United States and abroad. After she burns a Turkish poppy field, the notorious drug lord Mommy is furious at the loss of her supply and vows to destroy her.",
+          "poster_path": "\/2Zb4Ee4osnlpPTI63kqAbFJxict.jpg"
+        },
+        {
+          "vote_count": 128,
+          "popularity": 8.085,
+          "id": 22021,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.9,
+          "title": "Coffy",
+          "release_date": "1973-06-13",
+          "original_language": "en",
+          "original_title": "Coffy",
+          "genre_ids": [
+            53,
+            28,
+            80
+          ],
+          "backdrop_path": "\/ba1xpJs7whFNJj76IW6Wj5VVd66.jpg",
+          "adult": false,
+          "overview": "After her younger sister gets involved in drugs and is severely injured by contaminated heroin, a nurse sets out on a mission of vengeance and vigilante justice, killing drug dealers, pimps, and mobsters who cross her path.",
+          "poster_path": "\/pceYnmWdFxlWYcvFxwZaWPnqJjQ.jpg"
+        },
+        {
+          "vote_count": 17,
+          "popularity": 3.109,
+          "id": 85837,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.7,
+          "title": "Detroit 9000",
+          "release_date": "1973-08-01",
+          "original_language": "en",
+          "original_title": "Detroit 9000",
+          "genre_ids": [
+            18,
+            28,
+            80
+          ],
+          "backdrop_path": "\/3Ys5H8rHg2sV4zmVlKuPJgN8Aha.jpg",
+          "adult": false,
+          "overview": "After a fundraiser for a black politician is robbed, Detroit police put two detectives, one white and one black, on the case, who try to work together under boiling political pressure.",
+          "poster_path": "\/avHNmyZoC3tnX7NZjtb00nujS1F.jpg"
+        },
+        {
+          "vote_count": 0,
+          "popularity": 1.844,
+          "id": 43077,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 0,
+          "title": "Gordon's War",
+          "release_date": "1973-08-09",
+          "original_language": "en",
+          "original_title": "Gordon's War",
+          "genre_ids": [
+            12,
+            28,
+            80
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "A black soldier comes home to Harlem after a tour in Vietnam and discovers that his wife had become a heroin addict and died of an overdose. Infuriated, he gathers three of his ex-GI buddies and they lay out plans to fight the drug dealers.",
+          "poster_path": "\/5dek6HYqfSbNKjXT94Gi3yyRv2V.jpg"
+        },
+        {
+          "vote_count": 1214,
+          "popularity": 19.529,
+          "id": 253,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.5,
+          "title": "Live and Let Die",
+          "release_date": "1973-07-05",
+          "original_language": "en",
+          "original_title": "Live and Let Die",
+          "genre_ids": [
+            12,
+            28,
+            53
+          ],
+          "backdrop_path": "\/v28YYcN5p9hD8PKGAeWLz0ugsfX.jpg",
+          "adult": false,
+          "overview": "James Bond must investigate a mysterious murder case of a British agent in New Orleans. Soon he finds himself up against a gangster boss named Mr. Big.",
+          "poster_path": "\/5PYhSHb8bK7Vnrh3bBEms1N9nM6.jpg"
+        },
+        {
+          "poster_path": "\/xcS9bxWGFzC3cA7qAOjcIjKajSf.jpg",
+          "popularity": 4.824,
+          "vote_count": 38,
+          "video": false,
+          "media_type": "movie",
+          "id": 29515,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Mack",
+          "genre_ids": [
+            18
+          ],
+          "title": "The Mack",
+          "vote_average": 6.6,
+          "overview": "Goldie returns from five years at the state pen and winds up king of the pimping game. Trouble comes in the form of two corrupt white cops and a crime lord who wants him to return to the small time.",
+          "release_date": "1973-04-04"
+        },
+        {
+          "poster_path": "\/fNj2dm4YTboK73uNcctP9ABzl6i.jpg",
+          "popularity": 4.362,
+          "vote_count": 33,
+          "video": false,
+          "media_type": "movie",
+          "id": 42466,
+          "adult": false,
+          "backdrop_path": "\/1Y0aFQ24W3BEWnKO9lqGDIRMO08.jpg",
+          "original_language": "en",
+          "original_title": "Scream Blacula Scream",
+          "genre_ids": [
+            27
+          ],
+          "title": "Scream Blacula Scream",
+          "vote_average": 6,
+          "overview": "After a dying Voodoo queen chooses an adopted apprentice as her successor, her true heir is outraged. Seeking revenge, he buys the bones of Blacula the vampire off of a dealer, and uses voodoo to bring the vampire back to do his bidding. In turn, Blacula turns him into a vampire and makes him his slave. Meanwhile, a police officer with a large collection of African antiques and an interest in the occult investigates the murders caused by Blacula and his vampire horde.",
+          "release_date": "1973-06-27"
+        },
+        {
+          "poster_path": "\/oasYWzvIDcKpyLtjMaz0QGUSeR2.jpg",
+          "popularity": 2.922,
+          "vote_count": 3,
+          "video": false,
+          "media_type": "movie",
+          "id": 56353,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Slaughter's Big Rip Off",
+          "genre_ids": [
+            28,
+            53
+          ],
+          "title": "Slaughter's Big Rip Off",
+          "vote_average": 7,
+          "overview": "Vigilante Slaughter comes under attack from Duncan, a local money launderer whose hit-man traps Slaughter in a car at a cliff, but Slaughter escapes, arms himself, and goes after Duncan's hideout.",
+          "release_date": "1973-08-31"
+        },
+        {
+          "poster_path": "\/bDpkeVZq66vvPQuOCYW2n3DD9Rp.jpg",
+          "popularity": 3.401,
+          "vote_count": 11,
+          "video": false,
+          "media_type": "movie",
+          "id": 62330,
+          "adult": false,
+          "backdrop_path": "\/7dgMnjdRsxvzoZYejz9WiDsSJYs.jpg",
+          "original_language": "en",
+          "original_title": "The Spook Who Sat by the Door",
+          "genre_ids": [
+            28,
+            80,
+            18
+          ],
+          "title": "The Spook Who Sat by the Door",
+          "vote_average": 7,
+          "overview": "A black man plays Uncle Tom in order to gain access to CIA training, then uses that knowledge to plot a new American Revolution.",
+          "release_date": "1973-09-21"
+        },
+        {
+          "poster_path": "\/4bycGGZv8e2REFsGsMq5wW3UVsd.jpg",
+          "popularity": 3.568,
+          "vote_count": 5,
+          "video": false,
+          "media_type": "movie",
+          "id": 22058,
+          "adult": false,
+          "backdrop_path": "\/e8UpxePQDqAwP21wOxfIEnBgMVF.jpg",
+          "original_language": "en",
+          "original_title": "That Man Bolt",
+          "genre_ids": [
+            28,
+            18
+          ],
+          "title": "That Man Bolt",
+          "vote_average": 5.1,
+          "overview": "Fred Williamson chop-sockeys his way through this popular blaxploitation adventure as Jefferson Bolt, a Kung Fu expert assigned to deliver a cool $1 million to Mexico City from Hong Kong with a stop in Los Angeles. When Bolt discovers the cash is dirty mob money and his gal has been killed, he heads back to the Far East to get even.",
+          "release_date": "1973-12-01"
+        },
+        {
+          "vote_count": 4,
+          "popularity": 1.909,
+          "id": 83222,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 4.8,
+          "title": "Trick Baby",
+          "release_date": "1972-12-22",
+          "original_language": "en",
+          "original_title": "Trick Baby",
+          "genre_ids": [
+            80,
+            18
+          ],
+          "backdrop_path": "\/oM90sQp4LxE5nB25FP5gL3G0XON.jpg",
+          "adult": false,
+          "overview": "Two Phildelphia con men try to evade gangsters they have conned and cops who are trying to put them in jail.",
+          "poster_path": "\/r1EiydZ0oMAOgmilu3JnIkXMB5m.jpg"
+        },
+        {
+          "poster_path": "\/4zti0EfEJzicdRwpKEkLLBJbOcv.jpg",
+          "popularity": 3.216,
+          "vote_count": 17,
+          "video": false,
+          "media_type": "movie",
+          "id": 78076,
+          "adult": false,
+          "backdrop_path": "\/syj0bAmGtXR5PJhbRjxsnq64FzU.jpg",
+          "original_language": "en",
+          "original_title": "Hell Up In Harlem",
+          "genre_ids": [
+            28,
+            53
+          ],
+          "title": "Hell Up In Harlem",
+          "vote_average": 5.1,
+          "overview": "Tougher than Shaft and smoother than Superfly, this high-voltage sequel to Black Caesar explodes with enough action to incinerate New York City. Packed with machine-gun mayhem and riveting adventure, Hell Up in Harlem is nothing less than a modern-day tribute to the classic 30s gangster film. Fred Williamson is Tommy Gibbs, a fearless, bulletproof tough guy who blasts his way from the gutter to become the ultimate soul brother boss. Tommy steals a ledger with the name of every crooked cop and man in the city. Enlisting the aid of his father and an army of Harlem hoods, Gibbs goes from defense to offense, launching a deadly attack on his enemies that sets off a violent chain reaction from Harlem all the way to the Caribbean, climaxing in one of the hottest turf-war shoot-outs in Hollywood history.",
+          "release_date": "1973-12-01"
+        },
+        {
+          "poster_path": "\/89DLAEvbG4P2D4tYAoolNXT0U2E.jpg",
+          "popularity": 3.669,
+          "vote_count": 15,
+          "video": false,
+          "media_type": "movie",
+          "id": 78075,
+          "adult": false,
+          "backdrop_path": "\/8CyIuR0gohdDr3gZCFHA7FDCWDp.jpg",
+          "original_language": "en",
+          "original_title": "Abby",
+          "genre_ids": [
+            27
+          ],
+          "title": "Abby",
+          "vote_average": 5.4,
+          "overview": "When a minister's wife becomes posessed by Eshu, the Nigerian god of sexuality, an exorcist is called in to drive the evil spirit away.",
+          "release_date": "1974-12-25"
+        },
+        {
+          "poster_path": "\/b9Cn87tUBJ9xjVnNN4S7NB7Hs3a.jpg",
+          "popularity": 5.746,
+          "vote_count": 37,
+          "video": false,
+          "media_type": "movie",
+          "id": 18257,
+          "adult": false,
+          "backdrop_path": "\/5nKN43rtskfEuXnaGF2KFXUHXFP.jpg",
+          "original_language": "en",
+          "original_title": "Black Belt Jones",
+          "genre_ids": [
+            28,
+            35
+          ],
+          "title": "Black Belt Jones",
+          "vote_average": 6,
+          "overview": "Jones is a secret agent who has gone into semi-retirement, concentrating instead on teaching the martial arts to inner city youths. The karate school is run by a kindly old coot named Pops ,played by Scatman Crothers. His gambling debts, however, bring the local thug, Pinky, down on him. To make matters worse, Pinky is then hired by some white thugs who want to get a hold of the property Pops' school occupies so they can build a shopping mall. When things get heavy, Black Belt Jones leaps into action. Only he's not alone. Pops' daughter, Sidney, shows up to lend a hand, proving herself every bit as agile and powerful a martial artist as Jones.",
+          "release_date": "1974-01-29"
+        },
+        {
+          "poster_path": "\/bxQ9eiK1N3dHyQtERtaRBB0RLwV.jpg",
+          "popularity": 2.838,
+          "vote_count": 1,
+          "video": false,
+          "media_type": "movie",
+          "id": 88390,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Black Eye",
+          "genre_ids": [
+            28,
+            80
+          ],
+          "title": "Black Eye",
+          "vote_average": 7,
+          "overview": "An ex-police officer operating a private detective business comes face to face with a syndicate-backed dope ring.",
+          "release_date": "1974-05-17"
+        },
+        {
+          "poster_path": "\/4B7wQFfKlcAS3QFL95iSnYcdlfJ.jpg",
+          "popularity": 2.021,
+          "vote_count": 6,
+          "video": false,
+          "media_type": "movie",
+          "id": 80755,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Black Godfather",
+          "genre_ids": [
+            28,
+            80,
+            53
+          ],
+          "title": "The Black Godfather",
+          "vote_average": 5.5,
+          "overview": "The heroes in The Black Godfather are members of an African-American criminal organization. Like Brando in The Godfather, they're not averse to robbery and murder, but they do draw the line at narcotics. When the Mafia infiltrates the 'hood with dangerous drugs, the Black Godfather (Rod Perry) orders his minions to put an end to this perfidy.",
+          "release_date": "1974-09-03"
+        },
+        {
+          "poster_path": "\/oA5YBLLjKch6gKsi8U3Rrrsh88N.jpg",
+          "popularity": 1.263,
+          "vote_count": 2,
+          "video": false,
+          "media_type": "movie",
+          "id": 86273,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Black Six",
+          "genre_ids": [
+            28
+          ],
+          "title": "The Black Six",
+          "vote_average": 7,
+          "overview": "A black high school student is caught dating a white girl by the girl's brother. He and his biker gang beat the boy to death. The boy's brother, who is a member of a black biker gang, hears about it and comes to town to avenge his brother's death.",
+          "release_date": "1973-11-02"
+        },
+        {
+          "poster_path": "\/d0K6SWsZi1VrZm6nALMY4Y1PxZq.jpg",
+          "popularity": 7.624,
+          "vote_count": 108,
+          "video": false,
+          "media_type": "movie",
+          "id": 22048,
+          "adult": false,
+          "backdrop_path": "\/fBbaoVkZjzmF3Rea40xz87qwwf3.jpg",
+          "original_language": "en",
+          "original_title": "Foxy Brown",
+          "genre_ids": [
+            28,
+            80,
+            53
+          ],
+          "title": "Foxy Brown",
+          "vote_average": 6.5,
+          "overview": "A voluptuous black woman takes a job as a high-class prostitute in order to get revenge on the mobsters who murdered her boyfriend.",
+          "release_date": "1974-04-05"
+        },
+        {
+          "poster_path": "\/4RVPrkbU6ryTMQ1NaJAkr2Kd6KE.jpg",
+          "popularity": 2.9,
+          "vote_count": 7,
+          "video": false,
+          "media_type": "movie",
+          "id": 252144,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Get Christie Love!",
+          "genre_ids": [
+            28,
+            18,
+            53,
+            10770
+          ],
+          "title": "Get Christie Love!",
+          "vote_average": 6.1,
+          "overview": "Get Christie Love! is a 1974 made-for-television film starring Teresa Graves as an undercover female police detective who is determined to overthrow a drug ring. This film is based on Dorothy Uhnak's crime-thriller novel, The Ledger.",
+          "release_date": "1974-01-22"
+        },
+        {
+          "vote_count": 17,
+          "popularity": 1.955,
+          "id": 16203,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.1,
+          "title": "Space Is the Place",
+          "release_date": "1974-11-01",
+          "original_language": "en",
+          "original_title": "Space Is the Place",
+          "genre_ids": [
+            878
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "Sun Ra and his Solar Myth Arkestra return to Earth after several years in space. Ra proclaims himself \"the alter-destiny\", meets with inner-city youths and battles with the devil himself to save the black race.",
+          "poster_path": "\/xjeJ0g34XeFbVRVoUqlicRi8oMh.jpg"
+        },
+        {
+          "poster_path": "\/cqrbH1trV6RRRcSY1FLjeQ77xu5.jpg",
+          "popularity": 4.145,
+          "vote_count": 29,
+          "video": false,
+          "media_type": "movie",
+          "id": 54008,
+          "adult": false,
+          "backdrop_path": "\/1WSkHgA7k5xDXI5xKZmoNMQjTgr.jpg",
+          "original_language": "en",
+          "original_title": "Sugar Hill",
+          "genre_ids": [
+            28,
+            80,
+            27
+          ],
+          "title": "Sugar Hill",
+          "vote_average": 5.8,
+          "overview": "When her boyfriend is brutally murdered, after refusing to be shaken down by the local gangsters running their protection racket, Sugar Hill, decides not to get mad, but BAD! Calling upon the help of aged voodoo queen Mama Maitresse, Sugar entreats her to call upon Baron Zamedi, the Lord of the Dead, for help in gaining a gruesome revenge. In exchange for her soul, the Dark Master raises up a zombie army to do her bidding. The bad guys who thought they were getting away clean are about to find out that they're DEAD wrong.",
+          "release_date": "1974-02-01"
+        },
+        {
+          "vote_count": 11,
+          "popularity": 5.767,
+          "id": 63340,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.5,
+          "title": "Three the Hard Way",
+          "release_date": "1974-06-26",
+          "original_language": "en",
+          "original_title": "Three the Hard Way",
+          "genre_ids": [
+            28
+          ],
+          "backdrop_path": "\/mtuWOH1OSOkK2eyKB1SCHSxftFJ.jpg",
+          "adult": false,
+          "overview": "The story involves a white supremist plot to taint the United States water supply with a toxin that is harmless to whites but lethal to blacks. The only obstacles that stand in the way of this dastardly plan are Jim Brown, Fred Williamson and Jim Kelly, who shoot, kick and karate chop their way to final victory.",
+          "poster_path": "\/eivHa6jo7iVPNE2meyqBKvWqTAn.jpg"
+        },
+        {
+          "vote_count": 18,
+          "popularity": 3.692,
+          "id": 85673,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.3,
+          "title": "TNT Jackson",
+          "release_date": "1974-06-08",
+          "original_language": "en",
+          "original_title": "TNT Jackson",
+          "genre_ids": [
+            28,
+            53
+          ],
+          "backdrop_path": "\/h5ii4h7cltHwP5BOA11QijfTXMD.jpg",
+          "adult": false,
+          "overview": "A woman encounters thugs and drug dealers after traveling to Hong Kong to search for her missing brother.",
+          "poster_path": "\/fw59WM5KKjB4C1KXf9jMRrTU9cp.jpg"
+        },
+        {
+          "poster_path": "\/bouabIUSehznunTnfFETmHSjRf2.jpg",
+          "popularity": 1.315,
+          "vote_count": 2,
+          "video": false,
+          "media_type": "movie",
+          "id": 86574,
+          "adult": false,
+          "backdrop_path": "\/qigpaAysgFWbxAnCXGA3EPxbr0L.jpg",
+          "original_language": "en",
+          "original_title": "Together Brothers",
+          "genre_ids": [
+            18,
+            53
+          ],
+          "title": "Together Brothers",
+          "vote_average": 6.5,
+          "overview": "A group of ghetto kids try to find out who killed a popular police officer.",
+          "release_date": "1974-08-07"
+        },
+        {
+          "poster_path": "\/lMB0WY73s8AOns9cUmdAT3USreo.jpg",
+          "popularity": 5.695,
+          "vote_count": 23,
+          "video": false,
+          "media_type": "movie",
+          "id": 22121,
+          "adult": false,
+          "backdrop_path": "\/8G8CMiTvfA8sLTPZgpebqTR9oEt.jpg",
+          "original_language": "en",
+          "original_title": "Truck Turner",
+          "genre_ids": [
+            28,
+            18,
+            53
+          ],
+          "title": "Truck Turner",
+          "vote_average": 6.5,
+          "overview": "Truck Turner and his partner Jerry, who make their living as bounty hunters in Los Angeles, are hired to hunt down Gator, a pimp who has skipped bail.",
+          "release_date": "1974-06-26"
+        },
+        {
+          "vote_count": 13,
+          "popularity": 2.38,
+          "id": 46018,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.4,
+          "title": "Willie Dynamite",
+          "release_date": "1973-12-19",
+          "original_language": "en",
+          "original_title": "Willie Dynamite",
+          "genre_ids": [
+            80,
+            18
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "Willie Dynamite is a pimp who operates in New York City. Willie was a big success as a pimp, but now, just as fast as he rose to the top, he has hit bottom. A former prostitute who has become a social worker tries to get Willie to clean up his life while it is still possible.",
+          "poster_path": "\/wwV3dbHl02VxyJBDmEfHtKV2ARP.jpg"
+        },
+        {
+          "poster_path": "\/hRxpK74AbizKDmYNiupWG3ryNNq.jpg",
+          "popularity": 4.084,
+          "vote_count": 17,
+          "video": false,
+          "media_type": "movie",
+          "id": 34459,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Sheba, Baby",
+          "genre_ids": [
+            28,
+            18,
+            53
+          ],
+          "title": "Sheba, Baby",
+          "vote_average": 6,
+          "overview": "Sheba, a Chicago private detective returns back home to Louisville, Kentucky, to help her father fight mobsters.",
+          "release_date": "1975-03-26"
+        },
+        {
+          "vote_count": 11,
+          "popularity": 4.566,
+          "id": 83295,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 4,
+          "title": "The Black Gestapo",
+          "release_date": "1975-03-01",
+          "original_language": "en",
+          "original_title": "The Black Gestapo",
+          "genre_ids": [
+            80
+          ],
+          "backdrop_path": "\/8Qa88kwPvRKdyz7pHkz8xTMxzUu.jpg",
+          "adult": false,
+          "overview": "General Ahmed has started an inner-city People's Army to try and relieve the misery of the citizens of Watts. When the locals are put under increasing pressure by Mafia thugs, Ahmed's second-in-command Colonel Kojah asks for permission to start a protection squad to take more direct action. Ahmed fears this protection squad will just turn into a vigilante mob, and his prediction soon proves correct. Will Ahmed be able to wrest control back from the power-mad Kojah, or will he be the mob's next victim?",
+          "poster_path": "\/9ysv68CF5r9sAfzqGZZw76YPMv2.jpg"
+        },
+        {
+          "poster_path": "\/ldmSYjt9FXqnnJJkmKGDY1MOu1r.jpg",
+          "popularity": 3.447,
+          "vote_count": 10,
+          "video": false,
+          "media_type": "movie",
+          "id": 22020,
+          "adult": false,
+          "backdrop_path": "\/2xmcozLWBDgGBM6yZRRtzK1lsln.jpg",
+          "original_language": "en",
+          "original_title": "Black Shampoo",
+          "genre_ids": [
+            28,
+            35,
+            80,
+            18,
+            53
+          ],
+          "title": "Black Shampoo",
+          "vote_average": 5,
+          "overview": "A black hairdresser's sexual escapades with married customers lead to a confrontation with a jealous mobster.",
+          "release_date": "1976-03-05"
+        },
+        {
+          "poster_path": "\/dWWui5FwGAMlhMp4sVneceq0uuc.jpg",
+          "popularity": 5.006,
+          "vote_count": 38,
+          "video": false,
+          "media_type": "movie",
+          "id": 26905,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Boss Nigger",
+          "genre_ids": [
+            28,
+            80,
+            37
+          ],
+          "title": "Boss Nigger",
+          "vote_average": 7,
+          "overview": "Two black bounty hunters ride into a small town out West in pursuit of an outlaw. They discover that the town has no sheriff, and soon take over that position, much against the will of the mostly white townsfolk.",
+          "release_date": "1975-08-17"
+        },
+        {
+          "vote_count": 60,
+          "popularity": 5.979,
+          "id": 27716,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.2,
+          "title": "Coonskin",
+          "release_date": "1975-08-20",
+          "original_language": "en",
+          "original_title": "Coonskin",
+          "genre_ids": [
+            18,
+            16,
+            35,
+            80
+          ],
+          "backdrop_path": "\/yPowb0aAZxej7dyY0kNXVdhtLPU.jpg",
+          "adult": false,
+          "overview": "Brother Rabbit, Brother Bear, and Preacher Fox rise to the top of the crime ranks in Harlem by going up against a con-man, a racist cop, and the Mafia.",
+          "poster_path": "\/3zrxUkbeLl2KmSIRywNTwiGOZ2y.jpg"
+        },
+        {
+          "poster_path": "\/aIGZ9FAXhP9Vf2AgOv4Salxl0b.jpg",
+          "popularity": 3.741,
+          "vote_count": 11,
+          "video": false,
+          "media_type": "movie",
+          "id": 84062,
+          "adult": false,
+          "backdrop_path": "\/kWdRTm1h9ftexwu2nXq6xsGsw06.jpg",
+          "original_language": "en",
+          "original_title": "Darktown Strutters",
+          "genre_ids": [
+            28,
+            35
+          ],
+          "title": "Darktown Strutters",
+          "vote_average": 5.2,
+          "overview": "When a prominent abortion clinic owner goes missing along with a string of other black community leaders, her singing daughter and her fellow female biker gang members investigate.",
+          "release_date": "1975-10-07"
+        },
+        {
+          "vote_count": 5,
+          "popularity": 3.362,
+          "id": 32322,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5,
+          "title": "Dr. Black, Mr. Hyde",
+          "release_date": "1976-01-01",
+          "original_language": "en",
+          "original_title": "Dr. Black, Mr. Hyde",
+          "genre_ids": [
+            27
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "A doctor (Bernie Casey) in a Watts clinic takes his own medicine and becomes a monstrous white killer of hookers.",
+          "poster_path": "\/yXDuiYicCxfYhYReLRXJN8ndX0o.jpg"
+        },
+        {
+          "poster_path": "\/sAXm4DekviDqETxnxsTQM4druy5.jpg",
+          "popularity": 6.245,
+          "vote_count": 66,
+          "video": false,
+          "media_type": "movie",
+          "id": 19174,
+          "adult": false,
+          "backdrop_path": "\/sytoeq1ScNHTbjUaAPRzshjtN63.jpg",
+          "original_language": "en",
+          "original_title": "Dolemite",
+          "genre_ids": [
+            28,
+            35,
+            80
+          ],
+          "title": "Dolemite",
+          "vote_average": 6.2,
+          "overview": "Dolemite is a pimp who was set up by Willie Greene and the cops, who have planted drugs, stolen furs, and guns in his trunk and got him sentenced to 20 years in jail. One day, Queen B and a warden planned to get him out of Jail and get Willie Green and Mitchell busted for what they did to him.",
+          "release_date": "1975-04-26"
+        },
+        {
+          "poster_path": "\/3lXWCXumFeoJQLgW4YiOtTweilO.jpg",
+          "popularity": 11.088,
+          "vote_count": 42,
+          "video": false,
+          "media_type": "movie",
+          "id": 38027,
+          "adult": false,
+          "backdrop_path": "\/bOgu1ckVQAAIVsQijrbDpR8yNdn.jpg",
+          "original_language": "en",
+          "original_title": "Mandingo",
+          "genre_ids": [
+            28,
+            18,
+            36,
+            10749
+          ],
+          "title": "Mandingo",
+          "vote_average": 6.4,
+          "overview": "A slave owner in the 1840s trains one of his slaves to be a bare-knuckle fighter.",
+          "release_date": "1975-06-06"
+        },
+        {
+          "poster_path": "\/svBHqzeLaIdCibOLr1pIO7UuvQj.jpg",
+          "popularity": 2.133,
+          "vote_count": 1,
+          "video": false,
+          "media_type": "movie",
+          "id": 86462,
+          "adult": false,
+          "backdrop_path": "\/qfPhtDBhBYXzksQrw4RT4jrVeAD.jpg",
+          "original_language": "en",
+          "original_title": "The Candy Tangerine Man",
+          "genre_ids": [
+            28,
+            18
+          ],
+          "title": "The Candy Tangerine Man",
+          "vote_average": 5,
+          "overview": "Sunset Boulevard is a lucrative place to work for the Black Baron, a pimp with a distinctive red and yellow Rolls Royce and plenty of girls on his books. He don't take no mess from his girls, his madam or his competitors and viciously defends his patch. First, he clobbers the Mob who attempt to move in on his patch. Second, he tracks down one of his girls who runs off with a suitcase full of his cash. Third, he disposes of two policemen. But by now he knows his pimping days are numbered, so after a final explosive gun battle he switches to being his alter ego, mild-mannered businessman Ron who lives out in the leafy suburbs with an unsuspecting wife and family.",
+          "release_date": "1975-05-01"
+        },
+        {
+          "vote_count": 3,
+          "popularity": 2.245,
+          "id": 86201,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 3.7,
+          "title": "Welcome Home Brother Charles",
+          "release_date": "1975-11-11",
+          "original_language": "en",
+          "original_title": "Welcome Home Brother Charles",
+          "genre_ids": [
+            28,
+            53,
+            80
+          ],
+          "backdrop_path": "\/fut9hsAgC48KRqWyaDbIXt6iOMQ.jpg",
+          "adult": false,
+          "overview": "After wrongly doing time in prison for murder, a man seeks revenge on a racist law enforcement system and the detective who framed him.",
+          "poster_path": "\/i7ZTJUG5R3OU2NJOhknosLmc0Qd.jpg"
+        },
+        {
+          "poster_path": "\/wJgr5AzNmghpKlqgqiDJou3kdDb.jpg",
+          "popularity": 2.086,
+          "vote_count": 0,
+          "video": false,
+          "media_type": "movie",
+          "id": 93764,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Ebony, Ivory & Jade",
+          "genre_ids": [
+            28,
+            53
+          ],
+          "title": "Ebony, Ivory & Jade",
+          "vote_average": 0,
+          "overview": "An American track team has just arrived in The Philippines for an international competition. Among the competitors are Ginger and Pam, nicknamed \"Ivory\" and \"Ebony\", who meet up with another friend, Jackie, nicknamed \"Jade\". After they arrive at their hotel, a gang of thugs kidnaps them, along with some other girls from the team. To get away, the trio are going to have to use all their fighting skills.",
+          "release_date": "1976-09-24"
+        },
+        {
+          "poster_path": "\/arGiL9XDbCQlAXNcVj9uUlcwApB.jpg",
+          "popularity": 2.459,
+          "vote_count": 12,
+          "video": false,
+          "media_type": "movie",
+          "id": 95565,
+          "adult": false,
+          "backdrop_path": "\/pwzYxImeuU3rrqfAf2wGOtXLOA3.jpg",
+          "original_language": "en",
+          "original_title": "The Muthers",
+          "genre_ids": [
+            18,
+            28
+          ],
+          "title": "The Muthers",
+          "vote_average": 4.9,
+          "overview": "A band of female pirates go undercover at a prison camp on a coffee plantation to rescue their leader's sister.",
+          "release_date": "1976-11-01"
+        },
+        {
+          "poster_path": "\/ezo6M90mFaEanvIOvjbLmrE2qbk.jpg",
+          "popularity": 1.59,
+          "vote_count": 1,
+          "video": false,
+          "media_type": "movie",
+          "id": 80764,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Velvet Smooth",
+          "genre_ids": [
+            80,
+            18,
+            9648
+          ],
+          "title": "Velvet Smooth",
+          "vote_average": 6.5,
+          "overview": "Johnnie Hill plays Velvet Smooth in this soft-core crime meller. The slinky Ms. Smooth is head of a private detective agency, specializing in protecting the unprotectable. Her current client is in deep with a murderous numbers racket. So Velvet Smooth goes undercover (and occasionally under covers) to smash the ring. An \"R\" rating hardly covers it.",
+          "release_date": "1976-06-01"
+        },
+        {
+          "poster_path": "\/xTwLcUMwjktY6XZnUSJZlWGfWt0.jpg",
+          "popularity": 4.285,
+          "vote_count": 27,
+          "video": false,
+          "media_type": "movie",
+          "id": 32100,
+          "adult": false,
+          "backdrop_path": "\/mdiKR993yMmJFWucP3OxfTbnidb.jpg",
+          "original_language": "en",
+          "original_title": "The Human Tornado",
+          "genre_ids": [
+            28,
+            35
+          ],
+          "title": "The Human Tornado",
+          "vote_average": 5.8,
+          "overview": "Dolemite comes to the rescue of Queen Bee, whose Nightclub is threatened by the Mafia.",
+          "release_date": "1976-10-02"
+        },
+        {
+          "poster_path": "\/eXpmXqOwG2Ge3Nx69Usv9c3xUrU.jpg",
+          "popularity": 3.853,
+          "vote_count": 13,
+          "video": false,
+          "media_type": "movie",
+          "id": 44690,
+          "adult": false,
+          "backdrop_path": "\/1CGhgCZ4qMNcbRyz8dPJgnK6tpP.jpg",
+          "original_language": "en",
+          "original_title": "J.D.'s Revenge",
+          "genre_ids": [
+            27,
+            53
+          ],
+          "title": "J.D.'s Revenge",
+          "vote_average": 5.8,
+          "overview": "A college student is possessed by a 40's era gangster.",
+          "release_date": "1976-08-25"
+        },
+        {
+          "vote_count": 7,
+          "popularity": 5.024,
+          "id": 18259,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.4,
+          "title": "Black Samurai",
+          "release_date": "1977-02-15",
+          "original_language": "en",
+          "original_title": "Black Samurai",
+          "genre_ids": [
+            28,
+            12,
+            80,
+            10749
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "Robert Sand, agent of D.R.A.G.O.N. (Defense Reserve Agency Guardian Of Nations), is playing tennis on his vacation with a beautiful black girl, when his commanding officers ask him to save a Chinese girl who happens to be Sand's girlfriend, and the daughter of a top Eastern Ambassador. The ransom for the abduction was the secret for a terrific new weapon - the freeze bomb.",
+          "poster_path": "\/eDPmKzFNm6CNCfAKkgL0qCVVXnT.jpg"
+        },
+        {
+          "poster_path": "\/zF1TXUnHLiqhfVNlSVRs861Bxrn.jpg",
+          "popularity": 1.526,
+          "vote_count": 0,
+          "video": false,
+          "media_type": "movie",
+          "id": 86603,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Bare Knuckles",
+          "genre_ids": [
+            28,
+            12,
+            53
+          ],
+          "title": "Bare Knuckles",
+          "vote_average": 0,
+          "overview": "A bounty hunter in Los Angeles sets out to track down and stop a masked serial killer who murders women by using kung-fu moves.",
+          "release_date": "1977-09-08"
+        },
+        {
+          "vote_count": 15,
+          "popularity": 3.773,
+          "id": 34792,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.6,
+          "title": "Petey Wheatstraw",
+          "release_date": "1977-11-01",
+          "original_language": "en",
+          "original_title": "Petey Wheatstraw",
+          "genre_ids": [
+            14,
+            28,
+            35,
+            27
+          ],
+          "backdrop_path": "\/8UVNTRJzywEjMKzeevhd5GFHEkW.jpg",
+          "adult": false,
+          "overview": "Petey Wheatstraw (Rudy Ray Moore) is a candidate to become the devil's son-in-law. The storyline is a scaffolding on which Rudy Ray Moore's standup humor can be unfolded. Beginning life as the afterbirth to a watermelon, the young Wheatstraw becomes a martial artist, but is unable to best the evil comedy team of Leroy and Skillet, who also indulge in wholesale murder. Satan restores the comedians' victims to life, and charges Petey with the task of marrying his clock-stoppingly ugly daughter to giving him a grandchild. When Petey attempts to default on the deal, he is pursued by the devil's henchmen.",
+          "poster_path": "\/lDt3IjmNnNIdecDT4E25slsyPz3.jpg"
+        },
+        {
+          "poster_path": "\/2glYBCere8Dz5PGtCQg5zYjxedG.jpg",
+          "popularity": 2.071,
+          "vote_count": 4,
+          "video": false,
+          "media_type": "movie",
+          "id": 34465,
+          "adult": false,
+          "backdrop_path": "\/lZZNyoTJTmCRi1KHrKMvf6bf0QZ.jpg",
+          "original_language": "en",
+          "original_title": "Death Dimension",
+          "genre_ids": [
+            28,
+            12,
+            878,
+            53
+          ],
+          "title": "Death Dimension",
+          "vote_average": 7,
+          "overview": "The Pig has a plan to eradicate some people with a freeze bomb that instantly freezes people to death. It is up to Detective Ash to stop him and protect the woman with the secret to the ice bomb embedded in a microdot under the skin of her forehead.",
+          "release_date": "1978-07-01"
+        },
+        {
+          "poster_path": "\/tjHQ0VD4qnb4TFsJlt1MC6hf7V6.jpg",
+          "popularity": 2.245,
+          "vote_count": 12,
+          "video": false,
+          "media_type": "movie",
+          "id": 77403,
+          "adult": false,
+          "backdrop_path": "\/7oonURUE9oDWGX2bjYjj680Bp5R.jpg",
+          "original_language": "en",
+          "original_title": "Disco Godfather",
+          "genre_ids": [
+            28,
+            35,
+            80
+          ],
+          "title": "Disco Godfather",
+          "vote_average": 6,
+          "overview": "Retired cop and celebrity DJ Tucker Williams (aka The Disco Godfather) takes to the streets as a dangerous hallucinogenic drug called Angel Dust begins to take hold of the neighborhood.",
+          "release_date": "1979-09-04"
+        },
+        {
+          "poster_path": "\/ddm2LmnOZJsdXc8rno8hWAAXxdx.jpg",
+          "popularity": 3.125,
+          "vote_count": 16,
+          "video": false,
+          "media_type": "movie",
+          "id": 65448,
+          "adult": false,
+          "backdrop_path": "\/uNbdOhz3oKYG3aVCMA1Z3JeB6RG.jpg",
+          "original_language": "en",
+          "original_title": "Penitentiary",
+          "genre_ids": [
+            28,
+            80,
+            18
+          ],
+          "title": "Penitentiary",
+          "vote_average": 5.3,
+          "overview": "A hitchhiker named Martel Gordone gets in a fight with two bikers over a prostitute, and one of the bikers is killed. Gordone is arrested and sent to prison, where he joins the prison's boxing team in an effort to secure an early parole and to establish his dominance over the prison's toughest gang.",
+          "release_date": "1979-12-01"
+        }
+      ],
+      "information": {
+        "contentTitle": "Os Principais filmes lançados durante os anos 1970",
+        "contentText": "Quando ambientados no Nordeste dos Estados Unidos ou na Costa Oeste dos Estados Unidos, os filmes de blaxploitation são principalmente estabelecidos em bairros urbanos pobres. Os termos usados para personagens brancos, como \"crackers\" e \"honky\", são elementos comuns e de personagens. Os filmes de Blaxploitation ambientados no Sul geralmente lidam com escravidão e miscigenação. Blaxploitation inclui vários subtipos, incluindo crime (Foxy Brown), ação/artes marciais (Three the Hard Way), westerns (Boss Nigger), horror (Abby, Blacula), prisão (Penitentiary), comédia (Uptown Saturday Night), nostalgia (Five on the Black Hand Side), coming-of-age/drama de tribunal (Cooley High Cornbread, Earl and Me) e musical (Sparkle)."
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Eram filmes realizados por cineastas negros, com atrizes e atores negros, para o público negro assistir e se sentir representado. Os longas do <i>Blaxploitation</i> eram ambientados principalmente em bairros urbanos pobres e frequentemente abordava temas como escravidão e miscigenação. Mais do que revolucionar o cinema colocando personagens, até então periféricos, no centro do enredo, esses filmes provocavam o status quo e tirava sarro dos arquétipos usuais dos filmes brancos."
+    },
+    {
+      "type": "video",
+      "video_id": "4mIKHRYpPN8",
+      "information": {
+        "contentTitle": "Cenas do filme Dolemite",
+        "contentText": "Moore desenvolveu o personagem Dolemite pela primeira vez em suas rotinas de comédia stand-up, e mais tarde apareceu em seu álbum de estreia de 1970, Eat Out More Often , que alcançou o top 25 na Billboard 200. Ele lançou vários outros álbuns de comédia usando essa persona. Em 1975, Moore decidiu criar um filme sobre Dolemite, pagando a maior parte da produção de seu próprio bolso e usando muitos de seus amigos e colegas comediantes como elenco e equipe. O filme foi dirigido por D'Urville Martin, que aparece como o vilão Willie Green. A vida do ator e a produção do filme foi retratada no filme <a href=\"https://_{type: 'screen', 'id': 528888, 'screen_type': movie}\">Dolemite is My Name</a> (BR, Meu Nome é Dolemite, 2019).",
+        "source": "Youtube: Canal <i>Movieclips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Uma das primeiras e mais representativas obras do <i>Blaxploitation</i>, <a href=\"https://_{type: 'screen', 'id': 482, 'screen_type': movie}\">Shaft</a> (1971), por exemplo, é situada no Harlem – bairro periférico de Nova York – e acompanha a história de um detetive negro que se envolve com a máfia italiana para encontrar a filha desaparecida de um gângster negro. O filme abordava o movimento <i>Black Power</i>, questões de raça, masculinidade e sexualidade. Baseado em um livro escrito por <i>Ernest Tidyman</i>, cujo protagonista originalmente era branco, o filme teve toda a trama significativamente alterada pela simples escolha do ator <a href=\"https://_{type: 'screen', 'id': 6487, 'screen_type': person}\">Richard Roundtree</a> (n-1942) para interpretar <i>John Shaft</i>. Custando 500 mil dólares, o longa rendeu 13 milhões de faturamento e mostrou para os estúdios tradicionais que aquele era um mercado promissor."
+    },
+    {
+      "type": "block_special",
+      "title": "A representação absoluta de um movimento",
+      "image": {
+        "image_type": "local",
+        "url": "img_shaft",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "\"<i>Ele é cool e durão. E um detetive particular negro, uma máquina de sexo com todas as gatas. Não recebe ordens de ninguém, preto ou branco, mas arriscaria seu próprio pescoço por seu irmão. Estou falando do Shaft. Sacou?</i>\" Esses versos, da música tema de <a href=\"https://_{type: 'screen', 'id': 6542, 'screen_type': person}\">Isaac Hayes</a> (1942-2008), vencedor do Oscar, são a Introdução perfeita para o herói/rebelde ídolo negro americano <i>John Shaft</i>, interpretado por <i>Richard Roundtree</i>, estrela homônima do longa extremamente bem sucedido dirigido por Gordon Parks. <i>Shaft</i> seguiu a trilha aberta por <i>Sweet Sweetback's Baadasssss Song</i> (1971) de <i>Melvin Van Peebles</i> e é amplamente reconhecido como o filme que iniciou a curta (mas afetuosamente lembrada) explosão do cinema <i>blaxploitation</i>.<br/><br/> \n\nO roteiro foi escrito por <a href=\"https://_{type: 'screen', 'id': 6483, 'screen_type': person}\">Ernest Tidyman</a> (1928-1984), autor de uma série popular de histórias de detetive estreladas pelo protagonista do filme. Depois do êxito de <i>Sweetback</i>, a MGM deu a Parks - um negro americano, prestigioso escritor, compositor, fotógrafo e diretor de filmes - a permissão para realizar um projeto a fim de explorar o emergente mercado de público negro. Parks queria uma cara nova para o papel principal e encontrou exatamente o que procurava em Roundtree, um antigo modelo da Ebony e ator de teatro ocasional cujas presença física e forma de atuar continham a combinação exata de machismo, virilidade e confiança necessária para o papel. <br/><br/> \n\nSe já houve um filme no qual a narrativa é simplesmente um veículo para exibir um personagem, este filme é Shaft. Em conjunto, Tidyman, Parks e Roundtree criaram um forte protagonista negro que - pela primeira vez nos filmes de Hollywood - cria as suas próprias regras, não escuta ninguém, dá ordens em vez de recebe-las e não tem o menor receio de fazer piadas à custa das autoridades brancas. Apesar (ou possivelmente por conta) de suas insinuações subversivas e militantes, Shaft foi extremamente rentável tanto entre negros quanto entre brancos, gerando uma receita bruta de mais de 23 milhões de dólares apenas nos Estados Unidos. Um êxito tão amplo pode ser parcialmente explicado pelo fato de Shaft estar perfeitamente à vontade em qualquer situação, com pessoas de todos os tipos, e por seu magnetismo e sua frieza em meio aos tiros transcenderem qualquer limite de cor.",
+      "credits": "Resumo baseado no texto de <i>Steven Jay Schneider</i>, publicado no livro <i>1001 filmes para ver antes de morrer</i>"
+    },
+    {
+      "type": "text",
+      "content_text": "A obra ganhou uma continuação nos anos 2000, estrelada por <a href=\"https://_{type: 'screen', 'id': 2231, 'screen_type': person}\">Samuel L. Jackson</a> (n-1948) e conta a história do sobrinho do Shaft original, um policial que está tentando prender um assassino racista e traficante de drogas que usa o dinheiro para continuar impune."
+    },
+    {
+      "type": "text",
+      "content_text": "Considerado o primeiro herói de ação negro, <i>Roundtree</i> integra, ao lado de <a href=\"https://_{type: 'screen', 'id': 2230, 'screen_type': person}\">Pam Grier</a> (n-1949) e <a href=\"https://_{type: 'screen', 'id': 82832, 'screen_type': person}\">Jim Kelly</a> (1946-2013), o grupo de atores que mais se destacaram no <i>Blaxploitation</i>. Ele se tornou um ícone da indústria cultural, aparecendo, posteriormente em séries como <i>90210</i> e <i>Desperate Housewives</i>, e no filme <a href=\"https://_{type: 'screen', 'id': 807, 'screen_type': movie}\">Se7en</a> (BR: Seven: Os Sete Crimes Capitais, 1995), de <a href=\"https://_{type: 'screen', 'id': 7467, 'screen_type': person}\">David Fincher</a> (n-1962)."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "Eu não faço parte [do blaxploitation]. Não me considero um sociólogo, sou um cineasta, entre outras coisas. Talvez idiota, mas um cineasta.",
+        "author": "Melvin Van Peebles"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "A vida conturbada dos artistas como ativistas pela causa negra se confundia com a obra que estavam ajudando a produzir. O astro de <a href=\"https://_{type: 'screen', 'id': 21968, 'screen_type': movie}\">Super Fly</a> (1972), <a href=\"https://_{type: 'screen', 'id': 55841, 'screen_type': person}\">Ron O’Neal</a> (1937-2004), por exemplo, cresceu em um bairro pobre de <i>Cleveland, Ohio</i>. Perdeu o pai e o irmão aos 16 anos. Durante a vida, trabalhou na companhia de teatro afro-americana mais antiga dos Estados Unidos. O sucesso nas peças o levou à Nova York, onde ensinava aulas de teatro no Harlem, <i>Youth Arts Program</i>, instituição que oferece treinamento artístico e fornece bolsas de ajuda financeira para alunos de baixa-renda."
+    },
+    {
+      "type": "video",
+      "video_id": "0rD1OzJVoWY",
+      "information": {
+        "contentTitle": "Trailer do filme Sweet Sweetback's Baadasssss Song",
+        "contentText": "Van Peebles começou a desenvolver o filme após receber uma oferta de três filmes para a Columbia Pictures. Nenhum estúdio financiaria o filme, então Van Peebles financiou-o sozinho, filmando-o de forma independente durante 19 dias, realizando todas as suas próprias acrobacias e aparecendo em várias cenas de sexo, algumas alegadamente não simuladas. Ele recebeu um empréstimo de $ 50.000 de Bill Cosby para concluir o projeto. As montagens velozes e os cortes do filme eram características únicas no cinema americano da época. A imagem foi censurada em alguns mercados e recebeu críticas mistas. No entanto, deixou uma impressão duradoura no cinema americano.",
+        "source": "Youtube: Canal <i>XenonPictures</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Foi nesse período que ele foi convidado a participar de <i>Super Fly</i>. O longa acompanha um traficante que deseja sair do mundo do crime e, para alcançar seu objetivo, precisa executar a última ação. Sucesso instantâneo, o filme causou grande polêmica pela forma com que os personagens são representados, colocando ainda mais lenha na discussão sobre o papel do <i>Blaxploitation</i>. O <i>Congress for Racial Equality</i> (Congresso para a Igualdade Racial), a <i>National Association for the Advancement of Colored People</i> (Associação Nacional para o Avanço das Pessoas Coloridas) e outras organizações tentaram bloquear a sua distribuição. O <i>Student National Coordinating Committee</i> (Comitê Nacional de Coordenação Estudantil) também protestou contra o filme como uma ferramenta de opressão branca."
+    },
+    {
+      "type": "text",
+      "content_text": "No entanto, apesar de todas as polêmicas, o que mais se destacou no longa foi a trilha sonora produzida pelo cantor e compositor <a href=\"https://_{type: 'screen', 'id': 1239860, 'screen_type': person}\">Curtis Mayfield</a> (1942-1999), que rapidamente se tornou um clássico do cinema norte-americano e até hoje é lembrada como uma das melhores de todos os tempos. As trilhas sonoras do <i>Blaxploitation</i> eram quase todas compostas por músicos negros consagrados da indústria norte-americana, como <i>Quincy Jones, Barry White, Marvin Gaye e James Brown</i>."
+    },
+    {
+      "type": "video",
+      "video_id": "lh3qxTgaa1Y",
+      "information": {
+        "contentTitle": "Cenas do filme Blacula",
+        "contentText": "Blacula foi lançado com críticas mistas nos Estados Unidos, mas foi um dos filmes de maior bilheteria do ano. Foi o primeiro filme a receber o prêmio de Melhor Filme de Terror no Saturn Awards e inspirou uma onda de blaxploitation - filmes de terror temáticos.",
+        "source": "Youtube: Canal <i>Movieclips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "O funk e o jazz eram sempre lembrados, colocando-se como parte significativa do movimento. O reconhecimento foi tão grande que o tema de <i>Shaft</i> ganhou o Oscar de Melhor Música Original, consolidando o compositor Isaac Hayes como o primeiro negro da história a ganhar um Oscar em uma categoria que não fosse de atuação. Estima-se que até o ano de 1976, aproximadamente 200 filmes haviam sido produzidos. Os subgêneros eram bem diversificados, tratando de histórias de crime, artes marciais, prisão, comédia, nostalgia e drama, até westerns musical e terror."
+    },
+    {
+      "type": "text",
+      "content_text": "Porém o enredo costumava sempre trazer à tona algo intrínseco do movimento. Em <a href=\"https://_{type: 'screen', 'id': 30566, 'screen_type': movie}\">Blacula</a> (BR: Blácula, O Vampiro Negro, 1972), o Conde Drácula morde um príncipe africano e o prende em um caixão. O príncipe consegue se libertar séculos depois e assume um novo nome: Blácula. Enquanto mata sua sede de sangue (e diversas pessoas no caminho), ele encontra a uma mulher que é a reencarnação de sua antiga esposa. O filme é um dos longas de terror mais emblemáticos e característicos do <i>Blaxploitation</i>. A ironia usada para desmascarar o preconceito era colocada em prática satirizando os filmes que faziam sucesso naquele período. Os heróis (ou anti-heróis) têm personalidade forte, são atraentes e lutam contra as mazelas e injustiças da sociedade."
+    },
+    {
+      "type": "video",
+      "video_id": "Zn8q0LsO4PA",
+      "information": {
+        "contentTitle": "Cenas do filme Com 007 Viva e Deixe Morrer",
+        "contentText": "A 5 de Julho de 1973, Live and Let Die estreia em Londres e obtém mais um recorde na bilheteria, faturando 36 milhões de dólares nos EUA e 161 milhões no resto do mundo. Muitos criticaram a ênfase exagerada na comédia. No final, os produtores conseguiram fazer a maior proeza de todas: deram ao mundo um novo 007.",
+        "source": "Youtube: Canal <i>JupiterDoc</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Os vilões são, em grande parte, policiais brancos que praticam essas opressões. O resultado não podia ser outro. O público começou a dividir opiniões sobre o gênero. <a href=\"https://_{type: 'screen', 'id': 5822, 'screen_type': movie}\">Sweet Sweetback's Baadasssss Song</a> (1971), por exemplo, conta a história de <i>Sweetback</i>, um garoto de programa que ajuda um desconhecido a escapar da mira de dois policiais racistas. O longa teve diversas cenas censuradas e uma parte da crítica o considerou sensacionalista. Alguns dos grupos que pressionaram o fim do movimento eram formados, inclusive, por negros que acusavam os filmes de reforçar estereótipos negativos. Junius Griffin declarou que eles deviam evitar que os filhos fossem expostos a essas obras, que glorificavam “<i>negros como drogados, cafetões, gângsteres e super machos</i>”."
+    },
+    {
+      "type": "text",
+      "content_text": "Graças às controvérsias e polêmicas que embalavam as divergências de opinião, a popularidade do movimento diminuiu até chegar ao fim. A popularização dessas obras inspirou outros gêneros a criarem personagens negros com características semelhantes. Alguns exemplos famosos são <a href=\"https://_{type: 'screen', 'id': 253, 'screen_type': movie}\">Live and Let Die</a> (BR: Com 007 Viva e Deixe Morrer, 1973) e <a href=\"https://_{type: 'screen', 'id': 9461, 'screen_type': movie}\">Enter the Dragon</a> (BR: Operação Dragão, 1973), com <a href=\"https://_{type: 'screen', 'id': 19429, 'screen_type': person}\">Bruce Lee</a> (1940-1973). A ascensão de artistas negros na década de 1980, como <a href=\"https://_{type: 'screen', 'id': 776, 'screen_type': person}\">Eddie Murphy</a> (n-1961), <a href=\"https://_{type: 'screen', 'id': 5292 , 'screen_type': person}\">Denzel Washington</a> (n-1954), <a href=\"https://_{type: 'screen', 'id': 2231, 'screen_type': person}\">Samuel L. Jackson</a>, <a href=\"https://_{type: 'screen', 'id': 5281, 'screen_type': person}\">Spike Lee</a> (n-1957) e <a href=\"https://_{type: 'screen', 'id': 4587, 'screen_type': person}\">Halle Barry</a> (n-1966), é reflexo do impacto indireto que o <i>Blaxploitation</i> causou."
+    },
+    {
+      "type": "video",
+      "video_id": "TO13YpoLKAM",
+      "information": {
+        "contentTitle": "Trailer do filme Black Mama White Mama",
+        "contentText": "Ashley se lembra de ter ficado infeliz quando a AIP quis mudar o título para Black Mama White Mama. \"Não liguei para isso. No fim das contas, esse foi o filme teatral de mais sucesso que já fiz, em termos de dólares no bolso.\"",
+        "source": "Youtube: Canal <i>Thomas Crommentuyn</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Quentin Tarantino, abertamente grande fã do <i>Blaxploitation</i>, homenageou o movimento em seu terceiro longa. O diretor tirou <a href=\"https://_{type: 'screen', 'id': 2230, 'screen_type': person}\">Pam Grier</a> (n-1949) do ostracismo para participar de <a href=\"https://_{type: 'screen', 'id': 184, 'screen_type': movie}\">Jackie Brown</a> (1997)."
+    },
+    {
+      "type": "block_special",
+      "title": "Um dos Pioneiros do Blaxploitation",
+      "image": {
+        "image_type": "local",
+        "url": "img_sweet_sweetbacks",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "\"Este filme é dedicado a todos os irmãos e irmãs que já estão cheios do Homem\". Com os 70 mil dólares que ganhou por sua comédia de 1970, <a href=\"https://_{type: 'screen', 'id': 42600, 'screen_type': movie}\">Watermelon Man</a> (BR: A Noite em Que o Sol Brilhou, 1970), além de fundos adicionais (inclusive um empréstimo de Bill Cosby), <a href=\"https://_{type: 'screen', 'id': 135650, 'screen_type': person}\">Melvin Van Peebles</a> (n-1932) - um dos primeiros diretores negros americanos a trabalhar em Hollywood - financiou o seu novo projeto, <i>Sweet Sweetbacks Band Song</. Ele escreveu, dirigiu, criou a trilha sonora e estrelou o filme, o que foi uma sábia decisão econômica e também assegurou seu total controle criativo sobre a produção. No início de 1971, <i>Sweetback</i> estreou nos dois únicos cinemas que aceitaram exibi-lo. No final daquele ano, o filme havia se tornado a produção independente mais lucrativa da História. Sucesso em todo os Estados Unidos, gerou uma receita bruta de mais de 15 milhões de dólares. <br/><br/> \n\n<i>Sweetback</i> é tão original em termos de conceito e de realização que desafiou todas as expectativas, promovendo uma alternativa popular ao paradigma dominante em Hollywood. Mas também toma emprestados temas narrativos e convenções de uma variedade de gêneros, incluindo filmes de perseguição de gangster, de motoqueiros e o pornô <i>soft-core</i>. Finalmente, Sweetback é um filme cujo êxito comercial imprevisto assegurou-lhe um lugar à frente de uma explosão de produções voltadas para o mercado de negros, com elencos negros e/ou dirigidos por negros - movimento que logo ficou conhecido pelo nome ambivalente de blaxploitation. <br/><br/> \n\nA primeira cena chocante nos mostra um <i>Sweetback</i> pré-adolescente (interpretado por Mario, filho de Melvin) trabalhando em um bordel, onde uma garota de programa agradecida grita o seu apelido durante um orgasmo. Depois observamos <i>Sweetback</i>, já adulto, atuando como ator pornô em um show de sexo em <i>South Central, Los Angeles</i>. Vendo dois policiais brancos espancarem até quase matar um jovem ativista negro (Hubert Scales), Sweetback ataca os oficiais e por pouco não os mata. O resto do filme segue as desventuras do herói: ele foge e pega caronas em um esforço desesperado para evitar ser capturado. A certa altura, a vida de Sweetback é ameaçada por uma gangue de motociclistas e ele só sobrevive ganhando um duelo sexual público com a líder feminina. Como disse um resenhista, Sweetback \"<i>escapa da polícia estuprando uma mulher negra à ponta de faca, transpassa um policial com um taco de bilhar, mata diversos cães que o seguem, cura-se com a própria urina e arranca a cabeça de um lagarto com uma mordida antes de fugir pela fronteira mexicana para o deserto</i>\". O filme termina com as palavras \"<i>Um negro 'Baadasssss' (barra-pesada) está vindo para cobrar algumas dividas</i>\" passando rapidamente pela tela.<br/><br/> \n\nSeja o que for que cada um conclua sobre a mensagem sociopolítica de Sweetback, a energia e o inovador estilo de direção de Van Peebles dificilmente podem ser negados. Fazendo uso criativo de técnicas como montagem, super posição, imagens congeladas, jump cuts (cortes rápidos), zoom ins, tela dividida, diálogos estilizados, exposição múltipla e uma bela trilha sonora <i>Van Peebles</i> criou um novo território e desafiou espectadores de todas as raças.",
+      "credits": "Resumo baseado no texto de <i> Steven Jay Schneider </i>, publicado no livro <i>1001 filmes para ver antes de morrer</i>."
+    },
+    {
+      "type": "text",
+      "content_text": "A despeito das críticas, muito das fagulhas de representatividade que se vê atualmente no cinema é resultado das revoluções que esses movimentos revolucionários trouxeram. Desde <a href=\"https://_{type: 'screen', 'id': 11498, 'screen_type': person}\">Hattie McDaniel</a> (1893-1952) – a primeira atriz negra vencedora do Oscar (que recebeu o prêmio em um hotel que não permitia a entrada de negros); a ascensão dos <strong>race movies</strong>; o sucesso de <a href=\"https://_{type: 'screen', 'id': 16897, 'screen_type': person}\">Sidney Poitier</a> (n-1927), e até o recente protesto do <i>Oscar so White</i>. Não é possível medir a qualidade do impacto que o <i>Blaxploitation</i> causou no cinema norte-americano. Há quem defenda que foi significativa e necessária para a diversidade nas obras hollywoodianas. Há quem questione a qualidade e relevância dessa inclusão. No entanto, apesar do seu fim ter acontecido há décadas, os ensinamentos e o legado do movimento causam impacto até hoje.",
+      "content_credits": "Resumo baseado no artigo \"Como o Blaxploitation revolucionou o cinema norte-americano\", de Breno Damascena no cinemacomrapadura.com.br."
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "poster_path": "\/yJChPuu2V339IiDPQDHeIh1SYpA.jpg",
+          "popularity": 10.921,
+          "vote_count": 192,
+          "video": false,
+          "media_type": "movie",
+          "id": 482,
+          "adult": false,
+          "backdrop_path": "\/l01IA7vplyeci8h6sNkOGf9CCRF.jpg",
+          "original_language": "en",
+          "original_title": "Shaft",
+          "genre_ids": [
+            28,
+            80,
+            53
+          ],
+          "title": "Shaft",
+          "vote_average": 6.6,
+          "overview": "Cool black private eye John Shaft is hired by a crime lord to find and retrieve his kidnapped daughter.",
+          "release_date": "1971-06-25"
+        },
+        {
+          "poster_path": "\/mHTHMwFFSIqTkzMu8tUUzpWiJ6w.jpg",
+          "popularity": 5.893,
+          "vote_count": 54,
+          "video": false,
+          "media_type": "movie",
+          "id": 5822,
+          "adult": false,
+          "backdrop_path": "\/rfWjk3uWIQ0tdWudbtOAveDiFAr.jpg",
+          "original_language": "en",
+          "original_title": "Sweet Sweetback's Baadasssss Song",
+          "genre_ids": [
+            28,
+            80,
+            18
+          ],
+          "title": "Sweet Sweetback's Baadasssss Song",
+          "vote_average": 5.3,
+          "overview": "After saving a Black Panther from some racist cops, a black male prostitute goes on the run from \"the man\" with the help of the ghetto community and some disillusioned Hells Angels.",
+          "release_date": "1971-04-23"
+        },
+        {
+          "poster_path": "\/sAXm4DekviDqETxnxsTQM4druy5.jpg",
+          "popularity": 6.245,
+          "vote_count": 66,
+          "video": false,
+          "media_type": "movie",
+          "id": 19174,
+          "adult": false,
+          "backdrop_path": "\/sytoeq1ScNHTbjUaAPRzshjtN63.jpg",
+          "original_language": "en",
+          "original_title": "Dolemite",
+          "genre_ids": [
+            28,
+            35,
+            80
+          ],
+          "title": "Dolemite",
+          "vote_average": 6.2,
+          "overview": "Dolemite is a pimp who was set up by Willie Greene and the cops, who have planted drugs, stolen furs, and guns in his trunk and got him sentenced to 20 years in jail. One day, Queen B and a warden planned to get him out of Jail and get Willie Green and Mitchell busted for what they did to him.",
+          "release_date": "1975-04-26"
+        },
+        {
+          "poster_path": "\/yLqtFeZfRPoUUzzro3ogCdobB6q.jpg",
+          "popularity": 6.043,
+          "vote_count": 85,
+          "video": false,
+          "media_type": "movie",
+          "id": 30566,
+          "adult": false,
+          "backdrop_path": "\/4vCeVuJc6NV50hiEXQCmf3WoMWN.jpg",
+          "original_language": "en",
+          "original_title": "Blacula",
+          "genre_ids": [
+            14,
+            27
+          ],
+          "title": "Blacula",
+          "vote_average": 5.5,
+          "overview": "An 18th century African prince is turned into a vampire while visiting Transylvania. Two centuries later, he rises from his coffin attacking various residents of Los Angeles and meets Tina, a woman who he believes is the reincarnation of his deceased wife.",
+          "release_date": "1972-08-25"
+        },
+        {
+          "vote_count": 80,
+          "popularity": 7.815,
+          "id": 21968,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.5,
+          "title": "Super Fly",
+          "release_date": "1972-08-04",
+          "original_language": "en",
+          "original_title": "Super Fly",
+          "genre_ids": [
+            28,
+            80,
+            18,
+            10402,
+            53
+          ],
+          "backdrop_path": "\/468tPHO5kZY6V1ceWxMKXrGMQy4.jpg",
+          "adult": false,
+          "overview": "Super Fly is a cocaine dealer who begins to realize that his life will soon end with either prison or his death. He decides to build an escape from the life by making his biggest deal yet.",
+          "poster_path": "\/nFAD8tGmQ5jDUoOhXXFkUW1Q7z1.jpg"
+        },
+        {
+          "vote_count": 1214,
+          "popularity": 19.529,
+          "id": 253,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.5,
+          "title": "Live and Let Die",
+          "release_date": "1973-07-05",
+          "original_language": "en",
+          "original_title": "Live and Let Die",
+          "genre_ids": [
+            12,
+            28,
+            53
+          ],
+          "backdrop_path": "\/v28YYcN5p9hD8PKGAeWLz0ugsfX.jpg",
+          "adult": false,
+          "overview": "James Bond must investigate a mysterious murder case of a British agent in New Orleans. Soon he finds himself up against a gangster boss named Mr. Big.",
+          "poster_path": "\/5PYhSHb8bK7Vnrh3bBEms1N9nM6.jpg"
+        },
+        {
+          "poster_path": "\/zYO2ychL6Sw0Ww9LMFUNdcjZVKg.jpg",
+          "popularity": 5.077,
+          "vote_count": 5,
+          "video": false,
+          "media_type": "movie",
+          "id": 37488,
+          "adult": false,
+          "backdrop_path": "\/9RSnNEsf3mbLdePVn20g1xcjS3c.jpg",
+          "original_language": "en",
+          "original_title": "Hit Man",
+          "genre_ids": [
+            28
+          ],
+          "title": "Hit Man",
+          "vote_average": 5.9,
+          "overview": "Bernie Casey portrays Tyrone and Pamela Grier plays a sultry skin-flick star in this first Americanized remake of the iconic Michael Caine action film Get Carter. From Watts to the West Side, from porno parlors to a high-rise, from motel dives to a crime kingpin’s sprawling pleasure dome, from corner hangouts to a wildlife preserve, Tyrone covers a lot of real estate, busts a lot of heads.",
+          "release_date": "1972-12-20"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 6558,
+          "name": "Gordon Parks",
+          "profile_path": "/wBcsvgQwaRkIitgUkEcVEwguPPH.jpg"
+        },
+        {
+          "id": 2230,
+          "name": "Pam Grier",
+          "profile_path": "/kt30f8MovSDGy7jKxQaIizz3OwW.jpg"
+        },
+        {
+          "id": 6487,
+          "name": "Richard Roundtree",
+          "profile_path": "/cF7WMpXLQb6pKHconoUXQ46irQE.jpg"
+        },
+        {
+          "id": 82832,
+          "name": "Jim Kelly",
+          "profile_path": "/h47y5UmNxYjoFzichoigXV5e749.jpg"
+        },
+        {
+          "id": 45474,
+          "name": "Rudy Ray Moore",
+          "profile_path": "/oZPKIlSGiuQJU5JXesVGNcDElOd.jpg"
+        },
+        {
+          "id": 55841,
+          "name": "Ron O'Neal",
+          "profile_path": "/aqcIHjX3MfbdViZlb4jPfzaDsEp.jpg"
+        },
+        {
+          "id": 135650,
+          "name": "Melvin Van Peebles",
+          "profile_path": "/xbMvVusUfugvwlX9C6BLE06Gkxo.jpg"
+        }
+      ]
     },
     {
       "type": "link_screen",
