@@ -1,45 +1,352 @@
 {
   "number": 8,
   "content_list": [
-
-
-
-
-
-
-
     {
       "type": "text",
-      "content_text": ""
+      "content_text": "Nos anos 1970, enquanto o mundo diminuía de tamanho graças à facilidade de transporte e de comunicação, Hollywood, paradoxalmente, fez tudo parecer maior do que a realidade. A chegada da superprodução moderna foi um lembrete de que o cinema pode ser a suprema forma de escapismo, bem como uma forma de arte e expressão."
     },
     {
       "type": "video",
-      "video_id": "",
+      "video_id": "S4PYI6TzqYk",
       "information": {
-        "contentTitle": "",
-        "contentText": "",
-        "source": "Youtube: Canal <i></i>"
+        "contentTitle": "Cenas do filme Contatos Imediatos do Terceiro Grau",
+        "contentText": "Close Encounters foi um projeto que Spielberg queria realizar há muito tempo. No final de 1973, ele desenvolveu um acordo com a Columbia Pictures para um filme de ficção científica. Apesar de Spielberg receber crédito único pelo roteiro, ele foi auxiliado por Paul Schrader, John Hill, David Giler, Hal Barwood, Matthew Robbins e Jerry Belson, que contribuíram com o roteiro em vários níveis. O título é tirado da classificação de contatos imediatos com alienígenas criada pelo ufologista J. Allen Hynek, em que o terceiro grau indica observações humanas de verdadeiros alienígenas ou \"seres animados\".",
+        "source": "Youtube: Canal <i>Movieclips</i>"
       }
     },
     {
+      "type": "text",
+      "content_text": "A superprodução talvez possa ser mais bem definida como um filme que usa um estreito conjunto de parâmetros - ficção científica, terror comédia, fantasia, catástrofe ou ação para atrair o maior público possível. Porém, o conceito por trás da superprodução também é importante."
+    },
+    {
       "type": "block_special",
-      "title": "",
+      "title": "Tubarão - O marco inicial dos Blockbusters",
       "image": {
         "image_type": "local",
-        "url": "",
+        "url": "img_tubarao",
         "style": {
           "scale_type": "center_crop"
         }
       },
-      "description": "",
-      "credits": ""
+      "description": "O filme que inventou a \"<i>superprodução de verão (Blockbusters)</i>\" - e o primeiro a ultrapassara famosa marca dos 100 milhões de dólares em bilheteria – foi um fenômeno genuíno. No verão de 1975, todo mundo falava sobre <i>Tubarão</i>. O filme destruiu os hábitos de natação de uma geração e alavancou a carreira de um talentoso e jovem diretor. <br/> <br/> \n\nA filmagem foi reconhecidamente turbulenta, prolongada pelas dificuldades de se trabalhar no mar e pelos problemas de funcionamento do predador mecânico. Ainda assim, <i>Tubarão</i> é um clássico exemplo de narrativa, combinando terror, aventura e a jornada de um herói marginalizado que deve enfrentar a comunidade e seu próprio medo de água. A narrativa lida com a interrupção nas vidas e no ganha-pão dos moradores do balneário de <i>Amity</i> depois que um grande tubarão branco resolve se estabelecer em suas águas. Quando ele ataca durante o Quatro de Julho, o chefe de polícia Martin Brody (Roy Scheider) parte para o mar a bordo do Orca, com o bravo capitão Quint (Robert Shaw) e o ceanógrafo Matt Hooper (Richard Dreyfuss) para matar o algoz de Amity.<br/> <br/> \n\nTubarão deu sinais precoces do puro instinto cinematográfico de Spielberg do usa do ponto de vista do animal para acentuar o suspense, à tomada para a frente e para trás em que Brody percebe que a criatura devorou um menino diante de seus olhos. Porém, o sucesso do filme seria impensável sem a trilha sonora de <a href=\"https://_{type: 'screen', 'id': 491, 'screen_type': person}\">John Williams</a> (n-1932), fundada em duas notas ameaçadoras que servem de tema para o tubarão sem a edição de Verna Field e os desempenhos dos atores. Foi um caco de Roy Scheider que rendeu a Tubarão sua melhor frase: \"<i>Você vai precisar de um barco maior</i>\".",
+      "credits": "Resumo baseado no texto de <i>Demetrios Matheou</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+    },
+    {
+      "type": "text",
+      "content_text": "E se seu melhor amigo fosse um alienígena, como em <a href=\"https://_{type: 'screen', 'id': 601, 'screen_type': movie}\">E.T. the Extra-Terrestrial</a> (BR: E.T. o Extraterrestre, 1982)? O que acontece quando um avião de passageiros atravessa uma tempestade de neve com uma bomba a bordo, assim como em <a href=\"https://_{type: 'screen', 'id': 10671, 'screen_type': movie}\">Airport</a> (BR: Aeroporto, 1970)? Essas ideias eram suficientemente atraentes para convencer os produtores de Hollywood a investir nelas e para grandes plateias pagarem ingressos para assisti-las."
+    },
+    {
+      "type": "video",
+      "video_id": "dXO7P-r1vSE",
+      "information": {
+        "contentTitle": "Cenas do filme Inferno na torre",
+        "contentText": "Após o lançamento de O Destino do Poseidon (1972), o filme-catástrofe voltou a estar em alta em Hollywood. Com isso, a Warner Bros. comprou por US$ 390 mil os direitos da adaptação cinematográfica do livro \"The Tower\", enquanto a Fox comprou por US$ 400 mil os direitos de \"The Glass Inferno\". Como ambos os livros falavam de incêndio em um grande edifício, Warner e Fox resolveram unir forças e dividir os custos da produção de Inferno na Torre, com a distribuição ficando a cargo da Fox nos Estados Unidos e da Warner no restante do planeta.",
+        "source": "Youtube: Canal <i>Movieclips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "A imensa escala e habilidade técnica das superproduções geralmente despertam admiração. A cena da chegada da nave mãe em <a href=\"https://_{type: 'screen', 'id': 840, 'screen_type': movie}\">Close Encounters of the Third Kind</a> (BR: Contatos Imediatos do Terceiro Grau, 1977) é impressionante e filmes como <a href=\"https://_{type: 'screen', 'id': 551, 'screen_type': movie}\">The Poseidon Adventure</a> (BR: O destino do Poseidon, 1972) são emocionantes."
     },
     {
       "type": "quote",
       "quote": {
-        "quote": "",
-        "author": ""
+        "quote": "Algumas pessoas vão à mercenária e fazem luminárias com pinos de boliche. Eu conto histórias sobre alienígenas.",
+        "author": "Steven Spielberg"
       }
+    },
+    {
+      "type": "text",
+      "content_text": "As superproduções de Hollywood combinam espetáculo com o mundo real. Filmes como <a href=\"https://_{type: 'screen', 'id': 5919, 'screen_type': movie}\">The Towering Inferno</a> (BR: Inferno na torre, 1974) filtram possíveis catástrofes do mundo real pelas lentes de Hollywood. É a vida, mas em uma escala grandiosa, reluzente, fantástica. A superprodução valoriza o drama com efeitos especiais e sonoros maiores e melhores. Para o público eles acentuam a sensação de terror ou de encantamento quando o Bem triunfa sobre o Mal ou quando a humanidade sobrevive a todas as dificuldades."
+    },
+    {
+      "type": "video",
+      "video_id": "2I91DJZKRxs",
+      "information": {
+        "contentTitle": "Cenas do filme Tubarão",
+        "contentText": "Filmado em sua maior parte em Martha's Vineyard, Massachusetts, o filme teve uma produção complicada, estourando o orçamento inicial de US$ 4 milhões até chegar a US$9 milhões, sofrendo muitos atrasos e enfrentando problemas com o tubarão mecânico, o que levou muitas cenas a apenas sugerir a presença do predador empregando um tema musical ameaçador e minimalista criado pelo compositor John Williams.",
+        "source": "Youtube: Canal <i>Movieclips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (BR: Tubarão, 1975) é o primeiro filme que se encaixa de maneira perfeita na descrição de superprodução de Hollywood e também foi uma experiencia nova com sua ampla distribuição. Seu sucesso refletiu parcialmente uma mudança na forma de se distribuir e divulgar os filmes. Desde os primeiros tempos do cinema, nos Estados Unidos, a distribuição era feita de cidade a cidade de Los Angeles e Nova York e daí para cidades menores."
+    },
+    {
+      "type": "block_special",
+      "title": "Star Wars - O marco cultural",
+      "image": {
+        "image_type": "local",
+        "url": "img_star_wars",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Ninguém esperava que o filme do roteirista e diretor <i>George Lucas</i> fosse um sucesso. Os chefões do estúdio estavam tão convencidos de que o filme - \"<i>um faroeste de ficção cientifica</i>\" cujo elenco principal era desconhecido (<i>Harrison Ford, Mark Hamill e Carrie Fisher</i>) - iria fracassar que gentilmente cederam a Lucas, de graça, os direitos de <i>merchandising</i> de qualquer produto relacionado a Guerra nas estrelas. Obviamente, não esperaram que fosse gerar 5 continuações, três capítulos \"<i>anteriores</i>\", um derivativo baseado nos <i>Ewoks</i>, desenhos animados, jogos de computador, brinquedos, trilhas sonoras, livros, enormes vendas de vídeos e DVDs, doces, roupas, roupa de cama e até mesmo comida (e inúmeras paródias, especialmente três edições especificas de Guerra nas estrelas do desenho <i>Family Guy</i>). O filme custou 11 milhões de dólares e rendeu mais de 460 milhões, mas não parecia ter o potencial para se tornar um enorme sucesso. <br/><br/> \n\nMas Lucas tinha grandes sonhos. Duas décadas antes que imagens de computador fossem usadas para criar mundos fantásticos, o visionário diretor - usando modelos ultra detalhados, truques inteligentes e locações bem escolhidas - contou a história de outro universo. O maligno Império - dominado por <i>Darth Vader</i> (David Prowse, com a voz de James Earl Jones) - está no controle; as forças rebeldes estão se reunindo para tentar derrubar os tiranos. <br/><br/> \n\nLucas criou uma mitologia que foi abraçada com entusiasmo por pessoas de todas as idades. Além de dar origem a várias criaturas de uma galáxia muito, muito distante, sua linha de narrativa do bem contra o mal nos apresentou a pessoas frases e conceitos que, desde então, tornaram-se parte da consciência coletiva: o <i>Millennium Falcon</i> (a nave espacial de Han Solo, que Lucas originalmente imaginou com o aspecto de um hamburguer voador) os sabres de luz (a arma similar a uma espada, com seu som característico), Os <i>stormtroopers imperiais</i> (\"<i>Que a força esteja com você</i>\") e, naturalmente, os cavaleiros <i>Jedi</i> (hoje uma parte tão integral de nosso inconsciente coletivo que uma campanha via internet sugerindo que as pessoas respondessem \"<i>Jedi</i>\" a um item sobre religião num formulário de recenseamento do Reine Unido teve enorme sucesso).<br/><br/> \n\nAo dar vida a Guerra nas estrelas, Lucas conseguiu criar muito mais do que apenas um filme. Ele criou um mundo, um novo estilo de cinema e uma ópera espacial inesquecível que jamais foi superada.",
+      "credits": "Resumo baseado no texto de <i>Joanna Berry</i>, publicado no livro <i>1001 filmes para ver antes de morrer</i>"
+    },
+    {
+      "type": "text",
+      "content_text": "Espectadores de todo o país viram <i>Tubarão</i> ao mesmo tempo, transformando o lançamento em um acontecimento comentado nacionalmente. Com <a href=\"https://_{type: 'screen', 'id': 11, 'screen_type': movie}\">Star Wars</a> (BR: Guerra nas estrelas, 1977), o equilíbrio entre grandes momentos dos personagens e pura empolgação começou a ser alterado. Personagens como Han Solo (Harrison ford) e Obi-Wan Kenobi (Alec Guiness) continuam importantes - o filme não funcionaria se a plateia não se importasse com quem está na tela -, mas eles nunca têm licença para atrapalhar a ação."
+    },
+    {
+      "type": "video",
+      "video_id": "AA_D__HMuFw",
+      "information": {
+        "contentTitle": "Cenas do filme Guerra nas Estrelas",
+        "contentText": "George Lucas, com Star Wars, torna-se o cineasta independente de maior sucesso do cinema. Lucas colocou praticamente todo dinheiro ganho no primeiro filme, na produção de O Império Contra-Ataca, não se rendendo ao poder dos estúdios. Na verdade, Lucas foi responsável por revitalizar a força daquilo que ele sempre combateu como cineasta independente. A partir desta trilogia, todo um universo de produtos foi desenvolvido, como história em quadrinhos, desenhos animados, brinquedos, roupas, etc. Star Wars se tornou uma febre mundial e mesmo após 30 anos de seu lançamento, em 2007, a franquia continua forte.",
+        "source": "Youtube: Canal <i>JoBlo Movie Clips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 488, 'screen_type': person}\">Steven Spielberg</a> (n-1946) pôs os pés no chão com uma perfeita combinação de verdade emocional e visão épica em <i>Contatos Imediatos do Terceiro Grau</i>, mas a superprodução centrada em personagens, que ele defendia, se tornou cada vez mais secundária. A série <i>Super-Homem</i> é o primeiro exemplo de filme planejado para ter continuações. Grande parte da sequência foi feita simultaneamente ao primeiro filme."
+    },
+    {
+      "type": "text",
+      "content_text": "Ambos os filmes tiveram imenso sucesso. As plateias ainda respondiam bem a uma boa ficção cientifica, como demonstrou o sucesso de <a href=\"https://_{type: 'screen', 'id': 348, 'screen_type': movie}\">Alien</a> (BR: Alien, o oitavo passageiro, 1979) e a continuação de <i>Guerra nas estrelos</i>, <a href=\"https://_{type: 'screen', 'id': 1891, 'screen_type': movie}\">The Empire Strikes Back</a> (BR: Guerra nas Estrelas: O Império Contra-Ataca, 1980)."
+    },
+    {
+      "type": "video",
+      "video_id": "3oIQCt6GVcY",
+      "information": {
+        "contentTitle": "Cenas do filme Superman",
+        "contentText": "Sendo o filme mais caro até esse ponto com um orçamento de US$ 55 milhões, Superman foi lançado em dezembro de 1978 com aclamação crítica e sucesso financeiro, faturando US$ 300 milhões durante a sua rodada teatral original. Os críticos elogiaram particularmente o desempenho de Reeve. Foi indicado a 3 Oscars, incluindo Melhor Edição, Melhor Música e Melhor Mixagem de Som, e venceu em Melhores Efeitos Visuais. Inovador em seu uso de efeitos especiais e narrativa de ficção científica, o legado do filme pressagiou a popularidade predominante das franquias de filmes de super-heróis de Hollywood.",
+        "source": "Youtube: Canal <i>Movieclips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "No entanto, era uma fórmula difícil de ser repetida: diversas tentativas de aproveitar a onda de <i>Guerra nas estrelas</i>, especialmente <a href=\"https://_{type: 'screen', 'id': 152, 'screen_type': movie}\">Star Trek: The Motion Picture</a> (BR: Jornada nas Estrelas: O Filme, 1979) - fracassaram. Spielberg tinha o toque de Midas, porém para cada sucesso, como <a href=\"https://_{type: 'screen', 'id': 620, 'screen_type': movie}\">Ghostbusters</a> (BR: Os Caça-Fantasmas, 1984), havia um fracasso. Os estúdios sabem, no entanto, que um grande sucesso é capaz de pagar por todas as decepções. E, por bem ou por mal, o caso de amor de Hollywood com as superproduções continua firme e forte, principalmente com a onda de filmes de super-heróis nas últimas décadas.",
+      "content_credits": "Resumo baseado no texto de <i>Tom Huddleston</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 6840,
+          "popularity": 46.235,
+          "id": 578,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.6,
+          "title": "Jaws",
+          "release_date": "1975-06-18",
+          "original_language": "en",
+          "original_title": "Jaws",
+          "genre_ids": [
+            27,
+            53,
+            12
+          ],
+          "backdrop_path": "\/3nYlM34QhzdtAvWRV5bN4nLtnTc.jpg",
+          "adult": false,
+          "overview": "When an insatiable great white shark terrorizes the townspeople of Amity Island, the police chief, an oceanographer and a grizzled shark hunter seek to destroy the blood-thirsty beast.",
+          "poster_path": "\/s2xcqSFfT6F7ZXHxowjxfG0yisT.jpg"
+        },
+        {
+          "poster_path": "\/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+          "popularity": 70.339,
+          "vote_count": 14549,
+          "video": false,
+          "media_type": "movie",
+          "id": 11,
+          "adult": false,
+          "backdrop_path": "\/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg",
+          "original_language": "en",
+          "original_title": "Star Wars",
+          "genre_ids": [
+            12,
+            28,
+            878
+          ],
+          "title": "Star Wars",
+          "vote_average": 8.2,
+          "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+          "release_date": "1977-05-25"
+        },
+        {
+          "vote_count": 2753,
+          "popularity": 22.978,
+          "id": 840,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.4,
+          "title": "Close Encounters of the Third Kind",
+          "release_date": "1977-11-18",
+          "original_language": "en",
+          "original_title": "Close Encounters of the Third Kind",
+          "genre_ids": [
+            878,
+            18
+          ],
+          "backdrop_path": "\/iYtvvkuBo6pxLdoIqZZxN97vDzW.jpg",
+          "adult": false,
+          "overview": "After an encounter with UFOs, a line worker feels undeniably drawn to an isolated area in the wilderness where something spectacular is about to happen.",
+          "poster_path": "\/kzD5ng3BvRUxW9vBfCkg61XjITR.jpg"
+        },
+        {
+          "vote_count": 2482,
+          "popularity": 26.512,
+          "id": 1924,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.1,
+          "title": "Superman",
+          "release_date": "1978-12-13",
+          "original_language": "en",
+          "original_title": "Superman",
+          "genre_ids": [
+            878,
+            28,
+            12
+          ],
+          "backdrop_path": "\/v6MVBFnQOscITvmAy5N5ras2JKZ.jpg",
+          "adult": false,
+          "overview": "Mild-mannered Clark Kent works as a reporter at the Daily Planet alongside his crush, Lois Lane. Clark must summon his superhero alter-ego when the nefarious Lex Luthor launches a plan to take over the world.",
+          "poster_path": "\/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg"
+        },
+        {
+          "vote_count": 538,
+          "popularity": 10.846,
+          "id": 5919,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.1,
+          "title": "The Towering Inferno",
+          "release_date": "1974-12-14",
+          "original_language": "en",
+          "original_title": "The Towering Inferno",
+          "genre_ids": [
+            28,
+            53,
+            18
+          ],
+          "backdrop_path": "\/vrGHkXSX6EVVQilI5va6y5CSTJR.jpg",
+          "adult": false,
+          "overview": "At the opening party of a colossal—but poorly constructed—office building, a massive fire breaks out, threatening to destroy the tower and everyone in it.",
+          "poster_path": "\/eyuJrK2IdB01tisl2QKOoGSVXJx.jpg"
+        },
+        {
+          "vote_count": 514,
+          "popularity": 13.824,
+          "id": 551,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.2,
+          "title": "The Poseidon Adventure",
+          "release_date": "1972-12-13",
+          "original_language": "en",
+          "original_title": "The Poseidon Adventure",
+          "genre_ids": [
+            28,
+            12,
+            18,
+            53
+          ],
+          "backdrop_path": "\/5xfJPlUEmGak5Vipu0Zn1La0QgA.jpg",
+          "adult": false,
+          "overview": "When their ocean liner capsizes, a group of passengers struggle to survive and escape.",
+          "poster_path": "\/cOzyaodbRPSQgD6bC6G5QlGFlFV.jpg"
+        },
+        {
+          "vote_count": 8174,
+          "popularity": 29.553,
+          "id": 601,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.5,
+          "title": "E.T. the Extra-Terrestrial",
+          "release_date": "1982-06-11",
+          "original_language": "en",
+          "original_title": "E.T. the Extra-Terrestrial",
+          "genre_ids": [
+            878,
+            12,
+            10751,
+            14
+          ],
+          "backdrop_path": "\/mXLVA0YL6tcXi6SJSuAh9ONXFj5.jpg",
+          "adult": false,
+          "overview": "After a gentle alien becomes stranded on Earth, the being is discovered and befriended by a young boy named Elliott. Bringing the extraterrestrial into his suburban California house, Elliott introduces E.T., as the alien is dubbed, to his brother and his little sister, Gertie, and the children decide to keep its existence a secret. Soon, however, E.T. falls ill, resulting in government intervention and a dire situation for both Elliott and the alien.",
+          "poster_path": "\/pEKStszBzTZCvR0H4tosjqxmE7X.jpg"
+        },
+        {
+          "poster_path": "\/2jMnECLz5pNXGwIUycZjWmMJgCX.jpg",
+          "popularity": 12.108,
+          "vote_count": 207,
+          "video": false,
+          "media_type": "movie",
+          "id": 10671,
+          "adult": false,
+          "backdrop_path": "\/8QGvyqTTWDG8SK4NHxxjWEfgn28.jpg",
+          "original_language": "en",
+          "original_title": "Airport",
+          "genre_ids": [
+            28
+          ],
+          "title": "Airport",
+          "vote_average": 6.4,
+          "overview": "Melodrama about a bomber on board an airplane, an airport almost closed by snow, and various personal problems of the people involved.",
+          "release_date": "1970-03-05"
+        },
+        {
+          "poster_path": "\/7BuH8itoSrLExs2YZSsM01Qk2no.jpg",
+          "popularity": 30.654,
+          "vote_count": 12172,
+          "video": false,
+          "media_type": "movie",
+          "id": 1891,
+          "adult": false,
+          "backdrop_path": "\/dMZxEdrWIzUmUoOz2zvmFuutbj7.jpg",
+          "original_language": "en",
+          "original_title": "The Empire Strikes Back",
+          "genre_ids": [
+            12,
+            28,
+            878
+          ],
+          "title": "The Empire Strikes Back",
+          "vote_average": 8.4,
+          "overview": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.",
+          "release_date": "1980-05-20"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 1,
+          "name": "George Lucas",
+          "profile_path": "/WCSZzWdtPmdRxH9LUCVi2JPCSJ.jpg"
+        },
+        {
+          "id": 491,
+          "name": "John Williams",
+          "profile_path": "/KFyMqUWeiBdP9tJcZyGWOqnrgK.jpg"
+        },
+        {
+          "id": 488,
+          "name": "Steven Spielberg",
+          "profile_path": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Harrison Ford",
+          "profile_path": "/klPehAfaQDatLLQ8dN4lMcb4ESo.jpg"
+        },
+        {
+          "id": 6778,
+          "name": "John Guillermin",
+          "profile_path": "/3MR0AOdquJhgXHRvkew5wbfgYAZ.jpg"
+        },
+        {
+          "id": 13565,
+          "name": "Steve McQueen",
+          "profile_path": "/ddL8NHnuVCPOLSiNGjrmIQK9kdO.jpg"
+        }
+      ]
     },
     {
       "type": "link_screen",

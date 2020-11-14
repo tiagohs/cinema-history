@@ -1,42 +1,470 @@
 {
   "number": 9,
   "content_list": [
-
-
-
-
     {
       "type": "text",
-      "content_text": ""
+      "content_text": "O cinema australiano na década de 1970 e no início dos anos 1980 era um setor nitidamente dividido em duas partes. De um lado, as produções prestigiosas de <a href=\"https://_{type: 'screen', 'id': 64061, 'screen_type': person}\">Fred Schepisi</a> (n-1939), <a href=\"https://_{type: 'screen', 'id': 2690, 'screen_type': person}\">Peter Weir</a> (n-1944) e <a href=\"https://_{type: 'screen', 'id': 58094, 'screen_type': person}\">Gillian Armstrong</a> (n-1950) contavam histórias tipicamente australianas: elaboradas, amorosamente planejadas, ricas em integridade artística e em uma graça serena."
     },
     {
       "type": "video",
-      "video_id": "",
+      "video_id": "xKrZ8eTcdK4",
       "information": {
-        "contentTitle": "",
-        "contentText": "",
-        "source": "Youtube: Canal <i></i>"
+        "contentTitle": "Cenas do filme Violência por Acidente",
+        "contentText": "Peter Weir teve a ideia de fazer o filme enquanto dirigia pela Europa, onde as placas nas principais estradas francesas o desviaram para o que ele percebeu como pequenas aldeias estranhas. Originalmente, começou como uma comédia para estrelar Grahame Bond, mas depois evoluiu. Piers Davies e Keith Gow também contribuíram. Ele então levou o filme para os irmãos McElroy , que já haviam trabalhado em uma grande variedade de posições em vários filmes. A maior parte do orçamento veio da Australian Film Development Corporation com fundos adicionais da Royce Smeal Film Productions em Sydney.",
+        "source": "Youtube: Canal <i>peterweircave</i>"
       }
     },
     {
+      "type": "text",
+      "content_text": "Do outro, a florescente indústria de filmes B oferecia um desfile de comédias grosseiras de cunho sexual, filmes de ação e aventura com muita pancadaria e inventivos filmes de horror sanguinolento, conhecidos coletivamente como <i>Ozploitation</i>."
+    },
+    {
       "type": "block_special",
-      "title": "",
+      "title": "Ozploitation",
       "image": {
         "image_type": "local",
-        "url": "",
+        "url": "img_ozploitation",
         "style": {
           "scale_type": "center_crop"
         }
       },
-      "description": "",
-      "credits": ""
+      "description": "Filmes \"<i>Ozploitation</i>\" são um tipo de horror, comédia e ação, geralmente, de baixo orçamento, feito na Austrália após a introdução da <strong>classificação R</strong>, em 1971.<br/><br/> \n\nOzploitation é muitas vezes considerada uma onda menor dentro do Novo Cinema Australiano. (\"<i>Numa altura em que, a ação de quebrar o pescoço, o horror-de-segunda, a comédia e o 'divertido' sexo vulgar, juntou-se numa onda nova no cinema</i>\"). Vários diretores \"<i>se aventuraram</i>\" bastante nesse gênero, entre eles tem <i>Brian Trenchard-Smith, David Hammings, Tony Williams, Greg Mclean, John V. Soto, Tim Burstall, Sandy Harbutt, Richard Franklin, e George Miller</i>, que se consagrou graças a trilogia \"<i>Mad Max</i>\" (após muito tempo em desenvolvimento, em 2015, 30 anos depois do último filme lançado, o quarto filme da série, \"<i>Fury Road</i>\" foi lançado). <br/><br/> \n\nA origem do termo é creditada ao documentário <a href=\"https://_{type: 'screen', 'id': 16194, 'screen_type': movie}\">Not Quite Hollywood: The Wild, Untold Story of Ozploitation!</a> (2008).",
+      "credits": "Resumo baseado no artigo \"Ozploitation\", no Wikipédia.com."
+    },
+    {
+      "type": "text",
+      "content_text": "No fim dos anos 1960, além de alguns dramas históricos, financiados no estrangeiro em muitos casos, a indústria cinematográfica australiana havia criado pouquíssimas produções próprias. Porém, no início da década de 1970, uma confluência de acontecimentos alterou esse quadro. Uma nova contracultura artística emergiu, o setor de televisão nacional, cada vez mais popular, treinou diretores, atores e produtores: e uma série de iniciativas do governo e incentivos fiscais tornaram a produção de filmes uma atividade bem mais atraente. O resultado foi a onda criativa do cinema do país, batizada de \"<strong>Novo Cinema Australiano</strong>\" pela imprensa."
+    },
+    {
+      "type": "video",
+      "video_id": "dSnosk4tWrg",
+      "information": {
+        "contentTitle": "Cenas do filme Crocodilo Dundee",
+        "contentText": "Uma série de pequenas mudanças foram feitas no filme para seu lançamento nos EUA onde foi lançado nos cinemas pela Paramount Pictures em setembro de 1986. Há duas versões do filme: a versão australiana e uma versão internacional, que teve muitas das gírias australianas substituídas por termos mais comumente entendidos, e uma duração menor. Ele arrecadou US$174,803,506 nas bilheterias dos EUA.",
+        "source": "Youtube: Canal <i>Tomas Tree</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Os primeiros sucessos foram comédias <i>ocker</i> (termo usado para designar australianos rudes), filmes sobre a vida no subúrbio e a frustração sexual que refletiam a nova liberdade cultural, enquanto celebravam e zombavam ao mesmo tempo das noções de masculinidade e cultura australianas."
     },
     {
       "type": "quote",
       "quote": {
-        "quote": "",
-        "author": ""
+        "quote": "Estou com medo, Fit... Olha, apesar de estar fora do caminho, sou um deles, um psicótico mortal...",
+        "author": "Max Rockatansky (Mel Gibson) em Mad Max"
       }
+    },
+    {
+      "type": "text",
+      "content_text": "Curiosamente, o personagem mais importante do período, <a href=\"https://_{type: 'screen', 'id': 2690, 'screen_type': person}\">Peter Weir</a> (n-1944), começou sua carreira com uma obra que não se encaixava nem na produção dos filmes B nem no grupo de prestigio: <a href=\"https://_{type: 'screen', 'id': 62761, 'screen_type': movie}\">The Cars That Ate Paris</a> (BR: Violência por acidente, 1974) é um filme sensacionalista, mas um daqueles que não exibe sexo nem sangue, com claras influências dos filmes de arte europeus."
+    },
+    {
+      "type": "video",
+      "video_id": "YHdNuu3yyA0",
+      "information": {
+        "contentTitle": "Cenas do filme Mad Max",
+        "contentText": "O filme recebeu inicialmente uma recepção polarizada após seu lançamento em abril de 1979, embora tenha ganhado quatro prêmios AACTA e atraído seguidores, enquanto sua reputação na crítica cresceu desde então. Filmado com um orçamento de $ 400.000, ele arrecadou mais de US $ 100 milhões em receita bruta em todo o mundo e manteve o recorde do Guinness de filme mais lucrativo. O sucesso de Mad Max foi creditado por abrir ainda mais o mercado global para os filmes australianos do Cinema Novo Australiano.",
+        "source": "Youtube: Canal <i>Movieclips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "O filme seguinte, <a href=\"https://_{type: 'screen', 'id': 11020, 'screen_type': movie}\">Picnic at Hanging Rock</a> (BR: Picnic na Montanha Misteriosa, 1975), porém, veio definir tudo o que representava o cinema australiano de qualidade: paisagens deslumbrantes cenários de época cuidadosamente reconstituídos, beleza, silêncio e uma sensação de algo terrível à espreita. O filme celebra e questiona, ao mesmo tempo, aspectos da cultura australiana, especificamente a poderosa influência dos britânicos, a silenciosa dependência em um sistema de classes e uma cultura aborígine pisoteada pelo colonialismo."
+    },
+    {
+      "type": "text",
+      "content_text": "Seguindo a deixa de Picnic na Montanha Misteriosa, os cineastas prestigiosos da Austrália usaram o cinema para voltar a explorar os aspectos do passado colonial do pals. <a href=\"https://_{type: 'screen', 'id': 69069, 'screen_type': movie}\">The Chant of Jimmie Blacksmith</a> (BR: O Canto de Jimmie Blacksmith, 1978) evocou a selvageria do nascimento do país, retratando as forças coloniais como capangas assassinos lutando uma guerra para obterem domínio destroçando a população nativa em seu caminho. Enquanto isso, <a href=\"https://_{type: 'screen', 'id': 16659, 'screen_type': movie}\">My Brilliant Career</a> (BR: As Quatro Irmãs, 1979), de <a href=\"https://_{type: 'screen', 'id': 58094, 'screen_type': person}\">Gillian Armstrong</a> (n-1950), e <a href=\"https://_{type: 'screen', 'id': 11646, 'screen_type': movie}\">Gallipoli</a> (1981), de Weir, investigar as tentativas do país de sobreviver ao declínio do Império Britânico."
+    },
+    {
+      "type": "video",
+      "video_id": "K_mYDHAYu90",
+      "information": {
+        "contentTitle": "Cenas do filme Picnic na Montanha Misteriosa",
+        "contentText": "Obras do impressionismo australiano, como Frederick McCubbin 's Lost (1886), inspiraram os temas e o estilo visual do filme.",
+        "source": "Youtube: Canal <i>buri</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "A produção de filmes B também procurava se firmar. <a href=\"https://_{type: 'screen', 'id': 14937, 'screen_type': movie}\">Stone</a> (1974), filme de motoqueiros, usou o modelo dos rebeldes épicos de motocicleta de <i>Roger Corman</i> e acrescentou sexo explícito, violência e uma consciência sagaz sobre a identidade australiana, abrindo caminho para o maior sucesso do país, <a href=\"https://_{type: 'screen', 'id': 9659, 'screen_type': movie}\">Mad Max</a> (1979), êxito de escala mundial. Este último apresentou uma nova estrela internacional: <a href=\"https://_{type: 'screen', 'id': 2461, 'screen_type': person}\">Mel Gibson</a> (n-1956) tinha a aparência e a atitude agressiva de um clássico ícone do cinema, mas com uma dureza adicional e instabilidade emocional. Sua decisão extremamente bem-sucedida de abandonar a Austrália e ir para Hollywood abriu um precedente para incontáveis atores e diretores."
+    },
+    {
+      "type": "block_special",
+      "title": "Mad Max – O Novo Cinema Australiano para o Mundo",
+      "image": {
+        "image_type": "local",
+        "url": "img_mad_max",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Embora a sua continuação costuma receber a maior parte dos elogios da crítica, foi com o impressionante <i>Mad Max</i>, lançado dois anos antes, que tudo começou. Foi nele que Miller primeiro levou às telas sua visão infernal de uma Austrália inóspita dominada por gangues, com o auxílio de um ator novato chamado <i>Mel Gibson</i>. <br/><br/> \n\nGibson tinha apenas 23 anos de idade quando conseguiu o papel de <i>Max Rockatansky</i> (diz a lenda que Gibson fez o teste para o papel um dia depois de se envolver em uma briga de bar, e sua cara marcada por hematomas não saia da cabeça do responsável pela escolha do elenco). Gibson era tão desconhecido que, quando <i>Mad Max</i> estava prestes a ser lançado nos Estados Unidos, ele nem aparecia nos trailers, que exibiam apenas explosões e batidas de carro. Em retrospecto, claro, o anti-herói de casaco de couro construído por Gibson é um elemento fundamental do filme. <br/><br/> \n\nEm uma deteriorada Austrália futurista, <i>Rockatansky</i> é um policial motorizado que tenta manter a ordem em uma sociedade que está se desintegrando rapidamente. Gangues percorrem as estradas abandonadas, estuprando e roubando à vontade, e um desses grupos acaba na casa onde estão a mulher e a filha de Max. Quando são assassinadas, Max quer vingança e dá início a uma onda de violência que envolve espetaculares caçadas de carro, lutas brutais e ação incessante.<br/><br/> \n\nO mais impressionante é o fato de que o filme todo custou apenas 400 mil dólares, um orçamento tão reduzido que dizem que Miller precisou destruir seu próprio carro para fazer uma cena. No final, contudo, acabou rendendo mais de 100 milhões de dólares, o que faz dele um dos filmes mais lucrativos de todos os tempos. <i>Mad Max</i> se tornou merecidamente um sucesso cult em todo o mundo (curiosamente, foi dublado em \"<i>inglês americano</i>\" nos Estados Unidos porque acharam que o público não entenderia o sotaque australiano) e permanece até hoje um filme memorável.",
+      "credits": "Resumo baseado no texto de <i>Joanna Berry</i>, publicado no livro <i>1001 filmes para ver antes de morrer</i>"
+    },
+    {
+      "type": "text",
+      "content_text": "Os filmes B australianos frequentemente superavam seus equivalentes americanos, mais bem financiados. A obra do roteirista <i>Everett Depoche</i>, nascido nos Estados Unidos, em filmes como a ecossátira <i>The Long Weekend</i> (1978), fundia emoções típicas de um filme B de baixo orçamento a diálogos inteligentes e ideias ferinas sobre psicologia, ecologia e paisagem, filtradas pela carinhosa perspectiva de um forasteiro em seu país de adoção."
+    },
+    {
+      "type": "video",
+      "video_id": "K7paJkdRUl0",
+      "information": {
+        "contentTitle": "Cenas do filme My Brilliant Career",
+        "contentText": "My Brilliant Career foi observada por historiadores do cinema como parte do Novo Cinema Australiano. Em um ensaio retrospectivo celebrando a inclusão do filme na Criterion Collection, a estudiosa do cinema Carrie Rickey observa que tanto o filme quanto seu romance original \"<i>se tornaram parte da identidade australiana</i>\".",
+        "source": "Youtube: Canal <i>National Film and Sound Archive of Australia (NFSA)</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Tanto o filão de prestigio quanto o dos filmes B começaram a vacilar em meados dos anos 1980, quando os fundos do governo diminuíram e muitos diretores importantes, como Peter Weir, se dirigiram para Hollywood. (Fred Schepisi ficou tão desiludido com a fraca recepção de <i>O canto de Jimmie Blacksmith</i> em seu país que deixou a Austrália e levou 10 anos para voltar a filmar lá.)"
+    },
+    {
+      "type": "text",
+      "content_text": "A cultura cinematográfica australiana é atualmente pouco diferente daquela proveniente de qualquer pequeno pais ocidental: produz um grande número de modestos dramas, um fluxo constante de talentosos roteiristas, atores e diretores com os olhos voltados para Hollywood e um ou outro sucesso mundial como <a href=\"https://_{type: 'screen', 'id': 9671, 'screen_type': movie}\">Crocodile Dundee</a> (BR: Crocodilo Dundee, 1986). Estrelado e escrito pelo comediante <a href=\"https://_{type: 'screen', 'id': 57147, 'screen_type': person}\">Paul Hogan</a> (n-1939), esse filme (e suas continuações) tinha como objetivo inicial atingir o grande público dos Estados Unidos, mas foi capaz de agradar a plateias internacionais. Embora pareça improvável que os cineastas recuperem o espirito de ousadia e experimentalismo que definiu as décadas de 1970 e 1980, o cinema australiano continua sendo sinónimo de filmes populares, inteligentes e bem realizados.",
+      "content_credits": "Resumo baseado no texto de <i>Tom Huddleston</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 2779,
+          "popularity": 28.597,
+          "id": 9659,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.7,
+          "title": "Mad Max",
+          "release_date": "1979-04-12",
+          "original_language": "en",
+          "original_title": "Mad Max",
+          "genre_ids": [
+            12,
+            28,
+            53,
+            878
+          ],
+          "backdrop_path": "\/oQIBypbvcAwtTVu26G81Xxhd57x.jpg",
+          "adult": false,
+          "overview": "Taking place in a dystopian Australia in the near future, Mad Max tells the story of a highway patrolman cruising the squalid back roads that have become the breeding ground of criminals foraging for gasoline and scraps. After some grisly events at the hands of a motorcycle gang, Max sets out across the barren wastelands in search of revenge.",
+          "poster_path": "\/5LrI4GiCSrChgkdskVZiwv643Kg.jpg"
+        },
+        {
+          "vote_count": 1202,
+          "popularity": 13.891,
+          "id": 9671,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.3,
+          "title": "Crocodile Dundee",
+          "release_date": "1986-09-26",
+          "original_language": "en",
+          "original_title": "Crocodile Dundee",
+          "genre_ids": [
+            12,
+            35
+          ],
+          "backdrop_path": "\/szVyB4EoeaWOwJNvxnDnrY0S3Im.jpg",
+          "adult": false,
+          "overview": "When a New York reporter plucks crocodile hunter Dundee from the Australian Outback for a visit to the Big Apple, it's a clash of cultures and a recipe for good-natured comedy as naïve Dundee negotiates the concrete jungle. Dundee proves that his instincts are quite useful in the city and adeptly handles everything from wily muggers to high-society snoots without breaking a sweat.",
+          "poster_path": "\/pduPduL1ub5kok3lPYT15ryC9L6.jpg"
+        },
+        {
+          "vote_count": 419,
+          "popularity": 9.676,
+          "id": 11020,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.3,
+          "title": "Picnic at Hanging Rock",
+          "release_date": "1975-09-02",
+          "original_language": "en",
+          "original_title": "Picnic at Hanging Rock",
+          "genre_ids": [
+            18,
+            9648
+          ],
+          "backdrop_path": "\/41Mlaj6wfjlF4wQaVH0tjfDXvMi.jpg",
+          "adult": false,
+          "overview": "In the early 1900s, Miranda attends a girls boarding school in Australia. One Valentine's Day, the school's typically strict headmistress treats the girls to a picnic field trip to an unusual but scenic volcanic formation called Hanging Rock. Despite rules against it, Miranda and several other girls venture off. It's not until the end of the day that the faculty realizes the girls and one of the teachers have disappeared mysteriously.",
+          "poster_path": "\/7BAXwmFN4pZDNb9N6kzmAAwdssi.jpg"
+        },
+        {
+          "poster_path": "\/s89ZolmE0tD5stOJhy6Jh4V3txZ.jpg",
+          "popularity": 3.593,
+          "vote_count": 31,
+          "video": false,
+          "media_type": "movie",
+          "id": 16659,
+          "adult": false,
+          "backdrop_path": "\/3QUgGAOm5H1mY468ceneItY3UfS.jpg",
+          "original_language": "en",
+          "original_title": "My Brilliant Career",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "My Brilliant Career",
+          "vote_average": 6.1,
+          "overview": "A young woman who is determined to maintain her independence finds herself at odds with her family who wants her to tame her wild side and get married.",
+          "release_date": "1979-08-17"
+        },
+        {
+          "vote_count": 217,
+          "popularity": 8.625,
+          "id": 36040,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.4,
+          "title": "Walkabout",
+          "release_date": "1971-07-01",
+          "original_language": "en",
+          "original_title": "Walkabout",
+          "genre_ids": [
+            12,
+            18
+          ],
+          "backdrop_path": "\/gfnX6EdaR57rIPmy4LED4vgYqJ5.jpg",
+          "adult": false,
+          "overview": "Under the pretense of having a picnic, a geologist takes his teenage daughter and 6-year-old son into the Australian outback and attempts to shoot them. When he fails, he turns the gun on himself, and the two city-bred children must contend with harsh wilderness alone. They are saved by a chance encounter with an Aborigine boy who shows them how to survive, and in the process underscores the disharmony between nature and modern life.",
+          "poster_path": "\/24vooYt5StgtgcQObVr1GHuM5gy.jpg"
+        },
+        {
+          "poster_path": "\/s9ZmVc8SjP7eNAPLWQXToS6TICX.jpg",
+          "popularity": 2.264,
+          "vote_count": 4,
+          "video": false,
+          "media_type": "movie",
+          "id": 83836,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Stork",
+          "genre_ids": [
+            35
+          ],
+          "title": "Stork",
+          "vote_average": 6.4,
+          "overview": "Stork is a gangly young man, a virgin with an overactive imagination who thinks he’s a revolutionary. Bored with a design job at General Motors Holden in Melbourne, he drops out and moves into a share house with his mate Westy. He daydreams his way through life, bungling job interviews, upsetting ‘respectable’ people, and getting drunk. The only girl in the house, Anna resists Stork’s advances, because she’s already involved with the other two resident males, Tony and Clyde. But when she becomes pregnant and Clyde and Anna decide to marry, Stork, Tony, Clyde and Westy are shocked when they realize that either one of the foursome could be the father. Then the fun begins....",
+          "release_date": "1971-12-27"
+        },
+        {
+          "poster_path": "\/vgSKAGQT45GqNe8EeNvz9T2WgdF.jpg",
+          "popularity": 1.66,
+          "vote_count": 11,
+          "video": false,
+          "media_type": "movie",
+          "id": 24084,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Adventures of Barry McKenzie",
+          "genre_ids": [
+            35
+          ],
+          "title": "The Adventures of Barry McKenzie",
+          "vote_average": 5.1,
+          "overview": "Barry McKenzie sets off for England with his aunt, Edna Everage, to advance his cultural education. Bazza is an innocent abroad, fond of beer, Bondi and beautiful sheilas, but he soon settles into the Australian ghetto in Earls Court, where his old mate Curly has a flat.",
+          "release_date": "1972-01-01"
+        },
+        {
+          "vote_count": 44,
+          "popularity": 3.557,
+          "id": 62761,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.4,
+          "title": "The Cars That Ate Paris",
+          "release_date": "1974-10-10",
+          "original_language": "en",
+          "original_title": "The Cars That Ate Paris",
+          "genre_ids": [
+            35,
+            27,
+            9648,
+            53
+          ],
+          "backdrop_path": "\/LhNAYzoYqJssVojll2eyKLonu6.jpg",
+          "adult": false,
+          "overview": "After the death of his brother on the road, unemployed and unstable drifter Arthur Waldo stays for a while in the rural Australian town of Paris as the guest of the mayor, who hopes he will become a permanent member of the Paris population. Arthur soon realizes the quaint hamlet has a sinister secret: they orchestrate car accidents and rob the victims. Survivors are brought to the local hospital, lobotomized, and used for a local doctor's experiments.",
+          "poster_path": "\/1jAbfwNPSGgCZ68FjGD39XpXsrB.jpg"
+        },
+        {
+          "vote_count": 7,
+          "popularity": 3.273,
+          "id": 78094,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7,
+          "title": "Sunday Too Far Away",
+          "release_date": "1975-06-01",
+          "original_language": "en",
+          "original_title": "Sunday Too Far Away",
+          "genre_ids": [
+            18
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "A hard-drinking but hard-working gun shearer leads a group of Outback sheep herders into striking after wealthy landowners attempt to drive them from their territory.",
+          "poster_path": "\/8nTL4YDnU0AmKOayXpi6nulrf9U.jpg"
+        },
+        {
+          "poster_path": "\/nuvLLLKih9UxVq0pCgdQ84jUYMa.jpg",
+          "popularity": 1.445,
+          "vote_count": 12,
+          "video": false,
+          "media_type": "movie",
+          "id": 38919,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Don's Party",
+          "genre_ids": [
+            35
+          ],
+          "title": "Don's Party",
+          "vote_average": 5.9,
+          "overview": "Don's Party stars John Hargreaves as Don Henderson, a schoolteacher living with his wife, Kath (Jeanie Drynan), in 1969. Out of boredom, he invites a small group of friends to celebrate a predicted Australian Labor Party (ALP) election victory, much to the dismay of his wife.",
+          "release_date": "1976-11-10"
+        },
+        {
+          "poster_path": "\/gdJtIxB777GXnRnWWHIYDbiMHRE.jpg",
+          "popularity": 1.122,
+          "vote_count": 4,
+          "video": false,
+          "media_type": "movie",
+          "id": 88285,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Newsfront",
+          "genre_ids": [
+            18
+          ],
+          "title": "Newsfront",
+          "vote_average": 6,
+          "overview": "Surprisingly adventurous saga of an intrepid group of cinematographers and reporters who risk life and limb to capture footage of breaking news for the movie-going public.",
+          "release_date": "1978-07-29"
+        },
+        {
+          "vote_count": 46,
+          "popularity": 4.649,
+          "id": 17212,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.3,
+          "title": "Patrick",
+          "release_date": "1978-10-01",
+          "original_language": "en",
+          "original_title": "Patrick",
+          "genre_ids": [
+            27,
+            878,
+            53
+          ],
+          "backdrop_path": "\/xCm5hR7onkGXGzGXkkkhzgyeFm1.jpg",
+          "adult": false,
+          "overview": "A comatose hospital patient harasses and kills though his powers of telekinesis to claim his private nurse as his own.",
+          "poster_path": "\/qxydnHE4D5ArBRNtihlVs5rhhO2.jpg"
+        },
+        {
+          "poster_path": "\/un7VCqTmjrq3u75mQ204a8tofD4.jpg",
+          "popularity": 10.526,
+          "vote_count": 268,
+          "video": false,
+          "media_type": "movie",
+          "id": 11646,
+          "adult": false,
+          "backdrop_path": "\/kcK6wlt4TT1ETgr8mJhXgUg3HYE.jpg",
+          "original_language": "en",
+          "original_title": "Gallipoli",
+          "genre_ids": [
+            12,
+            18,
+            36,
+            10752
+          ],
+          "title": "Gallipoli",
+          "vote_average": 7.1,
+          "overview": "As World War I rages, brave and youthful Australians Archy and Frank—both agile runners—become friends and enlist in the Australian and New Zealand Army Corps together. They later find themselves part of the Dardanelles Campaign on the Gallipoli peninsula, a brutal eight-month conflict which pit the British and their allies against the Ottoman Empire and left over 500,000 men dead.",
+          "release_date": "1981-08-13"
+        },
+        {
+          "vote_count": 53,
+          "popularity": 6.246,
+          "id": 39899,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.7,
+          "title": "Turkey Shoot",
+          "release_date": "1982-03-25",
+          "original_language": "en",
+          "original_title": "Turkey Shoot",
+          "genre_ids": [
+            27,
+            878
+          ],
+          "backdrop_path": "\/4u4iFWgBifaSIxgk4PTedwtTwp0.jpg",
+          "adult": false,
+          "overview": "In the near future, after an unspecified holocaust, survivors are herded into prison camps. There, they are hunted for sport by the leaders of the camp. Paul, one of the newest prisoners, is determined not to go down as quietly as the others.",
+          "poster_path": "\/sWHmzveJr3IaLVVFwF4x9bKMdJ1.jpg"
+        },
+        {
+          "poster_path": "\/eThAKG78ypcpyZSysue7exgMuZS.jpg",
+          "popularity": 5.097,
+          "vote_count": 17,
+          "video": false,
+          "media_type": "movie",
+          "id": 19958,
+          "adult": false,
+          "backdrop_path": "\/sy4geqUjHc6YPlFrnul4bPTil5c.jpg",
+          "original_language": "en",
+          "original_title": "The Year My Voice Broke",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "The Year My Voice Broke",
+          "vote_average": 7.4,
+          "overview": "Set in 1962, a young prepubescent boy in rural Australia watches painfully as his best friend and first love blossoms into womanhood and falls for a thuggish rugby player, changing the lives of everyone involved.",
+          "release_date": "1987-01-01"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 20629,
+          "name": "George Miller",
+          "profile_path": "/4FyQESSzuu1VkPup9CmMjdnUyhv.jpg"
+        },
+        {
+          "id": 64061,
+          "name": "Fred Schepisi",
+          "profile_path": "/rNQHONDSt3HG6ekbQeYSOpgOKuG.jpg"
+        },
+        {
+          "id": 2690,
+          "name": "Peter Weir",
+          "profile_path": "/4GxIZX5gtbMpW4ZgHwvGmLSIHOE.jpg"
+        },
+        {
+          "id": 58094,
+          "name": "Gillian Armstrong",
+          "profile_path": "/ysSAJdM0iQvLvWqJigidRkiUK54.jpg"
+        },
+        {
+          "id": 2461,
+          "name": "Mel Gibson",
+          "profile_path": "/hXRZHeFnzrwzVUV0WjDncgSj2xB.jpg"
+        },
+        {
+          "id": 57147,
+          "name": "Paul Hogan",
+          "profile_path": "/1QQURn65Q2yeDCaGIaLktd6kUPx.jpg"
+        }
+      ]
     },
     {
       "type": "link_screen",
