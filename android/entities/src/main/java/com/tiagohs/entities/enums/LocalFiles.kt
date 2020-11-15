@@ -109,7 +109,8 @@ enum class LocalFiles(
     MAIN_5_PAGE_14("/main_5/page_14", "local/pages/main_5/page_14.json"),
     MAIN_5_PAGE_15("/main_5/page_15", "local/pages/main_5/page_15.json"),
     MAIN_5_PAGE_16("/main_5/page_16", "local/pages/main_5/page_16.json"),
-    MAIN_5_PAGE_17("/main_5/page_17", "local/pages/main_5/page_17.json");
+    MAIN_5_PAGE_17("/main_5/page_17", "local/pages/main_5/page_17.json"),
+    MAIN_5_PAGE_18("/main_5/page_18", "local/pages/main_5/page_18.json");
 
     fun isValid(request: Request): Boolean = request.url.toUri().path == path
 }
