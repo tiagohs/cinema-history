@@ -1,0 +1,18 @@
+{
+  "id": 2,
+  "color": "md_teal_500",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "A História<br/>do Cinema:<br/>1990 a 2009",
+      "page_title": "1990 a 2009",
+      "coming_soon": true,
+      "previous": "1970 a 1989"
+    },
+    {
+      "type": "footer",
+      "previous": "1970 a 1989"
+    }
+  ]
+}

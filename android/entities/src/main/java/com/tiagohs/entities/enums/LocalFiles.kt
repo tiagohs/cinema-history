@@ -16,6 +16,7 @@ enum class LocalFiles(
     TIMELINE_3("/timeline_3", "local/timelines/timeline_3.json"),
     TIMELINE_4("/timeline_4", "local/timelines/timeline_4.json"),
     TIMELINE_5("/timeline_5", "local/timelines/timeline_5.json"),
+    TIMELINE_6("/timeline_6", "local/timelines/timeline_6.json"),
 
     AWARDS_NOMINEES_1("/awards/nominees/1", "local/awards/nominees/1.json"),
     AWARDS_HISTORY_1("/awards/history/1", "local/awards/history/1.json"),

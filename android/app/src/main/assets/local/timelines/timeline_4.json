@@ -416,6 +416,19 @@
           "scale_type": "center_crop"
         }
       }
+    },{
+      "type": "item",
+      "year": "19\n69",
+      "title": "Festival em Fespaco",
+      "description": "Acontece a primeira edição do <strong>Festival em Fespaco</strong> em <i>Quagadougou</i>, Burkina Faso. O evento bienal é <strong>crucial</strong> para o futuro do cinema africano.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_fespaco.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
     },
     {
       "type": "footer",
