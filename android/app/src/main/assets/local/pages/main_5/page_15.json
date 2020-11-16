@@ -643,6 +643,71 @@
           "adult": false,
           "overview": "Andie is an outcast, hanging out either with her older boss, who owns the record store where she works, or her quirky high school classmate Duckie, who has a crush on her. When one of the rich and popular kids at school, Blane, asks Andie out, it seems too good to be true. As Andie starts falling for Blane, she begins to realize that dating someone from a different social sphere is not easy.",
           "poster_path": "\/jeFJyzJBufJexpOuywuPp8q2tCJ.jpg"
+        },
+        {
+          "poster_path": "\/4VZtpwdhHQSa4LUkvujyGAHb1hG.jpg",
+          "popularity": 14.392,
+          "vote_count": 571,
+          "video": false,
+          "media_type": "movie",
+          "id": 36819,
+          "adult": false,
+          "backdrop_path": "\/7aJAMZdbCSBeemuq9eHSPitnh8f.jpg",
+          "original_language": "en",
+          "original_title": "Time Bandits",
+          "genre_ids": [
+            10751,
+            14,
+            878,
+            12,
+            35
+          ],
+          "title": "Time Bandits",
+          "vote_average": 6.6,
+          "overview": "Young history buff Kevin can scarcely believe it when six dwarfs emerge from his closet one night. Former employees of the Supreme Being, they've purloined a map charting all of the holes in the fabric of time and are using it to steal treasures from different historical eras. Taking Kevin with them, they variously drop in on Napoleon, Robin Hood and King Agamemnon before the Supreme Being catches up with them.",
+          "release_date": "1981-07-13"
+        },
+        {
+          "vote_count": 36,
+          "popularity": 7.078,
+          "id": 14892,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.3,
+          "title": "The Big Empty",
+          "release_date": "2003-05-16",
+          "original_language": "en",
+          "original_title": "The Big Empty",
+          "genre_ids": [
+            35,
+            18,
+            9648,
+            878
+          ],
+          "backdrop_path": "\/t9s1dSHTRnMwXIAWCVQXSLVTcfk.jpg",
+          "adult": false,
+          "overview": "Struggling actor John Person agrees to drive a blue suitcase from Los Angeles to the small town of Baker, Calif., and hand it over to a mysterious cowboy in return for having his credit card debt of $27,000 paid off. Upon his arrival, John can't find the cowboy but receives an ominously head-shaped package he's supposed to hang onto. While waiting, John gets close to Ruthie, whose psychotic boyfriend, Randy, keeps threatening to kill him.",
+          "poster_path": "\/8lYFJ0LKdhayjfYnX0b1yIvkUx4.jpg"
+        },
+        {
+          "poster_path": "\/jSnGiPE17sgicRyTPrE6UB0pnEU.jpg",
+          "popularity": 12.32,
+          "vote_count": 245,
+          "video": false,
+          "media_type": "movie",
+          "id": 11591,
+          "adult": false,
+          "backdrop_path": "\/wcDvHT3OPCeSDk0GVjXliDpzN0O.jpg",
+          "original_language": "en",
+          "original_title": "The Man with Two Brains",
+          "genre_ids": [
+            35,
+            878
+          ],
+          "title": "The Man with Two Brains",
+          "vote_average": 6.2,
+          "overview": "A story about a brain surgeon who tries to end his unhappy marriage to spend more time with a disembodied brain.",
+          "release_date": "1983-06-10"
         }
       ]
     },
@@ -665,9 +730,9 @@
           "profile_path": "/i9NTMtw5Ydukz0Lu5r7VBuZ7dOj.jpg"
         },
         {
-          "id": 7633,
-          "name": "Leslie Nielsen",
-          "profile_path": "/u5vWl5dw69Nf89f905Qb5JqEVL3.jpg"
+          "id": 67773,
+          "name": "Steve Martin",
+          "profile_path": "/d0KthX8hVWU9BxTCG1QUO8FURRm.jpg"
         },
         {
           "id": 1532,
@@ -688,6 +753,11 @@
           "id": 116100,
           "name": "Richard Williams",
           "profile_path": "/rwgSpbOFQ5A1tBlgsNkY3w0yJNF.jpg"
+        },
+        {
+          "id": 7633,
+          "name": "Leslie Nielsen",
+          "profile_path": "/u5vWl5dw69Nf89f905Qb5JqEVL3.jpg"
         },
         {
           "id": 4756,

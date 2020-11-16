@@ -311,6 +311,28 @@
           "poster_path": "\/lH3dsbxA4wLalWKNYpVldX8zfPP.jpg"
         },
         {
+          "poster_path": "\/nBrDcnNQca88ed1gRwZ1Q5cjNxE.jpg",
+          "popularity": 18.561,
+          "vote_count": 273,
+          "video": false,
+          "media_type": "movie",
+          "id": 15379,
+          "adult": false,
+          "backdrop_path": "\/hXRDREMveK8niPh9o3eD71Dm4HR.jpg",
+          "original_language": "en",
+          "original_title": "Missing in Action",
+          "genre_ids": [
+            28,
+            12,
+            53,
+            10752
+          ],
+          "title": "Missing in Action",
+          "vote_average": 5.8,
+          "overview": "American servicemen are still being held captive in Vietnam and it's up to one man to bring them home in this blistering, fast-paced action\/adventure starring martial arts superstar Chuck Norris.Following a daring escape from a Vietnamese POW camp, Special Forces Colonel James Braddock (Norris) is on a mission to locate and save remaining MIAs.",
+          "release_date": "1984-11-16"
+        },
+        {
           "vote_count": 930,
           "popularity": 20.719,
           "id": 9610,
@@ -392,6 +414,70 @@
           "vote_average": 7,
           "overview": "U.S. soldier Frank Dux has come to Hong Kong to be accepted into the Kumite, a highly secret and extremely violent martial arts competition. While trying to gain access into the underground world of clandestine fighters, he also has to avoid military officers who consider him to be AWOL. After enduring a difficult training and beginning a romance with journalist Janice Kent, Frank is given the opportunity to fight. But can he survive?",
           "release_date": "1988-02-26"
+        },
+        {
+          "poster_path": "\/tJpZdTiD9Yw43oKdlqbvSyy3eHL.jpg",
+          "popularity": 6.961,
+          "vote_count": 49,
+          "video": false,
+          "media_type": "movie",
+          "id": 21376,
+          "adult": false,
+          "backdrop_path": "\/lUyUzRe2S8VxexsotllCanbmuL8.jpg",
+          "original_language": "en",
+          "original_title": "A Force of One",
+          "genre_ids": [
+            28,
+            12,
+            80,
+            18,
+            53
+          ],
+          "title": "A Force of One",
+          "vote_average": 4.7,
+          "overview": "Karate champion Matt Logan is enlisted by the police to train officers in self-defense after narcotics agents are killed by an assailant using the martial arts.",
+          "release_date": "1979-06-01"
+        },
+        {
+          "vote_count": 1051,
+          "popularity": 19.98,
+          "id": 708,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.5,
+          "title": "The Living Daylights",
+          "release_date": "1987-06-29",
+          "original_language": "en",
+          "original_title": "The Living Daylights",
+          "genre_ids": [
+            28,
+            12,
+            53
+          ],
+          "backdrop_path": "\/ebaq0ecL1Tu39rIExfHwE4ToFl2.jpg",
+          "adult": false,
+          "overview": "James Bond helps a Russian General escape into the west. He soon finds out that the KGB wants to kill him for helping the General. A little while later the General is kidnapped from the Secret Service leading 007 to be suspicious.",
+          "poster_path": "\/vIngn15zT32wWd2sg5MNdfVCBE2.jpg"
+        },
+        {
+          "poster_path": "\/1ulQDewUG4KKHOhpXdGKm3GdLFq.jpg",
+          "popularity": 13.233,
+          "vote_count": 1217,
+          "video": false,
+          "media_type": "movie",
+          "id": 9322,
+          "adult": false,
+          "backdrop_path": "\/ciXTaqQgLglDfDB5MIBYZOhMXUs.jpg",
+          "original_language": "fr",
+          "original_title": "Nikita",
+          "genre_ids": [
+            28,
+            53
+          ],
+          "title": "La Femme Nikita",
+          "vote_average": 7.2,
+          "overview": "A beautiful felon, sentenced to life in prison for the murder of a policeman, is given a second chance - as a secret political assassin controlled by the government.",
+          "release_date": "1990-02-21"
         }
       ]
     },
@@ -407,6 +493,11 @@
           "id": 1100,
           "name": "Arnold Schwarzenegger",
           "profile_path": "/xKRwhLM8eJwWHppBqSRvVCNt0Cq.jpg"
+        },
+        {
+          "id": 51576,
+          "name": "Chuck Norris",
+          "profile_path": "/vHUM7KJmapRAKiGO0leQzuJ6um8.jpg"
         },
         {
           "id": 19429,
