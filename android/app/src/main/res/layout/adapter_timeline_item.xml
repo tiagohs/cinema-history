@@ -111,10 +111,9 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/titleContainer"
-            android:maxWidth="@dimen/timeline_title_container_width"
             android:elevation="@dimen/activity_vertical_margin_0.5x"
             android:background="@color/md_yellow_A700"
             app:layout_constraintTop_toTopOf="parent"
@@ -138,6 +137,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:maxWidth="@dimen/timeline_title_container_width"
                 android:id="@+id/title"
                 android:textSize="@dimen/text_size_zeplin_26pt"
                 android:textColor="@color/md_black_1000"
@@ -152,8 +152,8 @@
                 android:paddingBottom="@dimen/activity_vertical_margin_0.5x"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
