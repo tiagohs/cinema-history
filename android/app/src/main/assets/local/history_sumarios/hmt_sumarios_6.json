@@ -268,5 +268,20 @@
         }
       }
     }
+  },
+  {
+    "id": 19,
+    "title": "Drama Americano pós-11/9 ",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_sangue_negro",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
   }
 ]
