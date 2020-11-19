@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "title": "Drama de Época Europeu",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_shakespeare_in_love",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Drama em Hollywood ",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_rescue_of_soldier_ryan",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Cinema Independente Americano",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_pulp_fiction_2",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Cinema Britânico e Irlandês",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_traninspotting",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Cinema Europeu Nos Anos 90 ",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_funny_games",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "CGI e a nova era dos Efeitos Especiais",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_avatar",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Uma Nova Era para o Cinema Afro-Americano",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_malcolm_x",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "O Renascimento das Animações",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_toy_story",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "As Comédias dos Anos 1990s e 2000s ",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_pretty_woman",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Terror: Um Novo Começo ",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_saw",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "Cinema da Ásia Oriental ",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_oldboy",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "title": "Nova Onda do Cinema Iraniano ",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_circle",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "title": "Cinema Latino-Americano",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_cidade_deus_2",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "title": "Blockbusters para a Família",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_harry_potter",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "title": "O Início de uma Febre de Super-Heróis",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_spider_man_2002",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "title": "Cinema Britânico",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_quem_quer_ser_um_milionario",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "title": "Cinema Europeu do Século XXI",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_dancando_no_escuro",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "title": "Bollywood",
+    "description": "",
+    "image": {
+      "image_type": "local",
+      "url": "img_asoka",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

@@ -46,6 +46,7 @@ enum class LocalFiles(
     HISTORY_SUMARIO_3("/hmt_sumario_3", "local/history_sumarios/hmt_sumarios_3.json"),
     HISTORY_SUMARIO_4("/hmt_sumario_4", "local/history_sumarios/hmt_sumarios_4.json"),
     HISTORY_SUMARIO_5("/hmt_sumario_5", "local/history_sumarios/hmt_sumarios_5.json"),
+    HISTORY_SUMARIO_6("/hmt_sumario_6", "local/history_sumarios/hmt_sumarios_6.json"),
 
     // Main Topic 1985 to 1929
     MAIN_1_PAGE_1("/main_1/page_1", "local/pages/main_1/page_1.json"),
@@ -111,7 +112,28 @@ enum class LocalFiles(
     MAIN_5_PAGE_15("/main_5/page_15", "local/pages/main_5/page_15.json"),
     MAIN_5_PAGE_16("/main_5/page_16", "local/pages/main_5/page_16.json"),
     MAIN_5_PAGE_17("/main_5/page_17", "local/pages/main_5/page_17.json"),
-    MAIN_5_PAGE_18("/main_5/page_18", "local/pages/main_5/page_18.json");
+    MAIN_5_PAGE_18("/main_5/page_18", "local/pages/main_5/page_18.json"),
+
+
+    // Main Topic 1990 a 2009
+    MAIN_6_PAGE_1("/main_6/page_1", "local/pages/main_6/page_1.json"),
+    MAIN_6_PAGE_2("/main_6/page_2", "local/pages/main_6/page_2.json"),
+    MAIN_6_PAGE_3("/main_6/page_3", "local/pages/main_6/page_3.json"),
+    MAIN_6_PAGE_4("/main_6/page_4", "local/pages/main_6/page_4.json"),
+    MAIN_6_PAGE_5("/main_6/page_5", "local/pages/main_6/page_5.json"),
+    MAIN_6_PAGE_6("/main_6/page_6", "local/pages/main_6/page_6.json"),
+    MAIN_6_PAGE_7("/main_6/page_7", "local/pages/main_6/page_7.json"),
+    MAIN_6_PAGE_8("/main_6/page_8", "local/pages/main_6/page_8.json"),
+    MAIN_6_PAGE_9("/main_6/page_9", "local/pages/main_6/page_9.json"),
+    MAIN_6_PAGE_10("/main_6/page_10", "local/pages/main_6/page_10.json"),
+    MAIN_6_PAGE_11("/main_6/page_11", "local/pages/main_6/page_11.json"),
+    MAIN_6_PAGE_12("/main_6/page_12", "local/pages/main_6/page_12.json"),
+    MAIN_6_PAGE_13("/main_6/page_13", "local/pages/main_6/page_13.json"),
+    MAIN_6_PAGE_14("/main_6/page_14", "local/pages/main_6/page_14.json"),
+    MAIN_6_PAGE_15("/main_6/page_15", "local/pages/main_6/page_15.json"),
+    MAIN_6_PAGE_16("/main_6/page_16", "local/pages/main_6/page_16.json"),
+    MAIN_6_PAGE_17("/main_6/page_17", "local/pages/main_6/page_17.json"),
+    MAIN_6_PAGE_18("/main_6/page_18", "local/pages/main_6/page_18.json");
 
     fun isValid(request: Request): Boolean = request.url.toUri().path == path
 }
