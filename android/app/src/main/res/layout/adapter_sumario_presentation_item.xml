@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
     android:clickable="true"
@@ -10,9 +10,7 @@
     android:background="?selectableItemBackground"
     android:padding="@dimen/activity_vertical_margin_1.2x"
     android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
-    android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
-    android:paddingStart="@dimen/activity_vertical_margin_2.5x"
-    android:paddingEnd="@dimen/activity_vertical_margin_2.5x">
+    android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x">
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,7 +20,22 @@
         android:textSize="@dimen/text_size_zeplin_28pt"
         android:textColor="@color/md_black_1000"
         android:fontFamily="@font/proxima_nova_bold"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:paddingStart="@dimen/activity_vertical_margin_3x"
+        android:paddingEnd="@dimen/activity_vertical_margin_3x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="@dimen/main_topic_next_button_width"
+        android:layout_height="@dimen/activity_vertical_margin_3x"
+        android:id="@+id/nextButton"
+        app:srcCompat="@drawable/ic_navigate_next_white_24dp"
+        app:tint="@color/md_black_1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sumarioTitle"
+    />
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,6 +45,11 @@
         android:id="@+id/sumarioDescription"
         android:textSize="@dimen/text_size_zeplin_22pt"
         android:textColor="@color/md_black_1000"
-        android:fontFamily="@font/proxima_nova_regular" />
+        android:fontFamily="@font/proxima_nova_regular"
+        android:paddingStart="@dimen/activity_vertical_margin_2.5x"
+        android:paddingEnd="@dimen/activity_vertical_margin_2.5x"
+        app:layout_constraintTop_toBottomOf="@id/sumarioTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
