@@ -1,55 +1,634 @@
 {
   "number": 1,
   "content_list": [
-
-
-
-
-
-
-
-
-
     {
       "type": "text",
-      "content_text": ""
+      "content_text": "Antigamente, um profissional de efeitos especiais no cinema seria como <a href=\"https://_{type: 'screen', 'id': 3484, 'screen_type': person}\">Willis H. O'Brien</a> (1886-1962) e <a href=\"https://_{type: 'screen', 'id': 66758, 'screen_type': person}\">Ray Harryhausen</a> (1920-2013), criadores do gigantesco macaco em <a href=\"https://_{type: 'screen', 'id': 244, 'screen_type': movie}\">King Kong</a> (1933) ou do exército de esqueletos em <a href=\"https://_{type: 'screen', 'id': 11533, 'screen_type': movie}\">Jason and the Argonauts</a> (BR: Jasão e o Velo de Ouro, 1963). O último desses gênios talvez seja <a href=\"https://_{type: 'screen', 'id': 7314, 'screen_type': person}\">Nick Park</a> (n-1958), o homem por trás de <a href=\"https://_{type: 'screen', 'id': 533, 'screen_type': movie}\">Wallace & Gromit: The Curse of the Were-Rabbit</a> (BR: Wallace e Gromit - A Batalha dos Vegetais, 2005)."
     },
     {
       "type": "video",
-      "video_id": "",
+      "video_id": "bhL8WlDHKaY",
       "information": {
-        "contentTitle": "",
-        "contentText": "",
-        "source": "Youtube: Canal <i></i>"
+        "contentTitle": "Cenas do filme O Exterminador do Futuro 2 - O Julgamento Final",
+        "contentText": "Terminator 2: Judgment Day revolucionou ao exibir para o público, pela primeira vez, a captura de movimento natural em um personagem gerado pelo computador, sendo também o primeiro onde o personagem principal é parcialmente produzido por computador.",
+        "source": "Youtube: Canal <i>Flashback FM</i>"
       }
     },
     {
+      "type": "text",
+      "content_text": "No mundo \"<i>DGE</i>\" (\"<i>Depois de Guerra nas estrelas</i>\", 1977), os profissionais de efeitos especiais se tornaram mais parecidos com o centro de controle de missões em Houston - homens sentados à mesa, trabalhando em computadores, manipulando pixels e não massinha, a serviço de um diretor/produtor visionário."
+    },
+    {
       "type": "block_special",
-      "title": "",
+      "title": "Parque dos Dinossauros: Uma nova era de efeitos especiais",
       "image": {
         "image_type": "local",
-        "url": "",
+        "url": "img_dinossauro_animatronico",
         "style": {
           "scale_type": "center_crop"
         }
       },
-      "description": "",
-      "credits": ""
+      "description": "Quando o original —inspirado no livro homônimo de <i>Michael Crichton</i> - foi lançado, em 1993, os efeitos especiais usados por Spielberg inauguraram uma nova era do cinema. Isso porque antes de Jurassic Park havia uma enorme desconfiança sobre o uso de efeitos especiais digitais. <i>Ron Miller</i>, ex-presidente da Walt Disney Productions, conta no livro \"<i>Efeitos especiais: Uma introdução à magia do cinema</i>\" que no início dos anos 1990, apesar de todo o avanço tecnológico que já existia, quem estava à frente das produções não queria se arriscar a usar esses recursos devido aos altos custos e aos retornos de bilheteria não tão satisfatórios. <br/><br/> \n\nDa parte do público, como registrou o jornalista David Morgan, da BBC, a percepção era de que, apesar de elaborados, esses efeitos não transmitiam realidade. Faltava algo a mais. Mas coube a \"<i>Jurassic Park</i>\" acabar com essa pecha. O feito só foi obtido após Spielberg apostar no CGI. Era isso ou ser extinto, pois o projeto inicial do filme se baseava basicamente em robôs e <i>stop-motion</i>, técnica usada em desenhos de animação em massinha. <br/><br/> \n\nMunida de 80 supercomputadores <i>Silicon Graphics</i> de alta resolução, a equipe da <i>Industrial Light & Magic</i>, empresa de efeitos especiais do cineasta George Lucas, de \"<i>Star Wars</i>\", passou a realizar testes secretos. Conseguiu criar animações computadorizadas tão convincentes que, coordenadas com os animatrônicos, renderam nas telas dinossauros perfeitos. O trabalho levou 18 meses e consumiu 250 bilhões de bytes. \"<i>Foi um momento tipo a invenção da lâmpada</i>\", comparou Lucas à época. <br/><br/> \n\nToda essa revolução tecnológica fez \"Jurassic Park\" cair no gosto do povo. O resultado foi mais de US$ 1 bilhão de arrecadação nos cinemas mundiais, patamar só alcançado por <i>Titanic</i>, em 1997. Esse também foi o ano de lançamento de \"<i>O Mundo Perdido</i>\". O filme apresentou dinossauros renderizados em número maior e mais aprimorados que no primeiro, além de efeitos com potencial realista e catastrófico. A evolução do uso do computador, no entanto, não substituiu os animatrônicos. Ao contrário, eles ganharam reforço tecnológico. Antes eles davam pane —como quando o <i>T-Rex</i> se molhou na cena em que ataca o carro das crianças. Mas os dinossauros criados por <i>Stan Winston</i>, o escultor do robô da criatura de <i>Alien</i>, não só ficaram mais modernos como também resistentes à água.",
+      "credits": "Resumo baseado no artigo \"De robô a dublê de dinossauro: veja a evolução tecnológica de Jurassic Park\", de Marcelo Testoni no UOL."
+    },
+    {
+      "type": "text",
+      "content_text": "Como tantos outros, Stan Winston, que manipulou com <a href=\"https://_{type: 'screen', 'id': 218, 'screen_type': movie}\">The Terminator</a> (BR: O Exterminador do Futuro, 1984) depois que a carne de Schwarzenegger era arrancada do <i>endoesqueleto</i>, começou a carreira com maquiagem e bonecos, passando em seguida para os computadores. Ironicamente, quando <a href=\"https://_{type: 'screen', 'id': 1, 'screen_type': person}\">George Lucas</a> (n-1944) relançou Guerra nas estrelas em 1997, ele mexeu em um dos aspectos do filme que todo mundo aplaudiu 20 anos antes - os efeitos especiais."
+    },
+    {
+      "type": "video",
+      "video_id": "WSM8GcShChk",
+      "information": {
+        "contentTitle": "Cenas do filme Jurassic Park: Parque dos Dinossauros",
+        "contentText": "Jurassic Park foi aclamado como um marco na indústria de efeitos especiais, que foram produzidos pela Industrial Light & Magic (com efeitos criados através de computação gráfica) e pela Stan Winston Studios (com efeitos produzidos através de animatrônica). A reconstituição virtual dos dinossauros, para que \"contracenassem\" com os atores em carne e osso, levou a um estrondoso sucesso de bilheteria, o que apenas confirmou o fascínio que essas criaturas extintas exercem sobre a imaginação das pessoas.",
+        "source": "Youtube: Canal <i>HaSanMDD</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "As CGI (do inglês <i>computer-generated imagery</i>, imagens geradas por computador) esgueiraram-se para os filmes de ficção cientifica nos anos 1970. Esse recurso foi empregado pela primeira vez pelo visionário <a href=\"https://_{type: 'screen', 'id': 4782, 'screen_type': person}\">Michael Crichton</a> (1942-2008) em <a href=\"https://_{type: 'screen', 'id': 2362, 'screen_type': movie}\">Westworld</a> (BR: Westworld – Onde ninguém tem alma, 1973). O relativo fracasso comercial de <a href=\"https://_{type: 'screen', 'id': 97, 'screen_type': movie}\">Tron</a> (BR: Tron - Uma Odisséia Eletrônica, 1982) e de <a href=\"https://_{type: 'screen', 'id': 11884, 'screen_type': movie}\">The Last Starfighter</a> (BR: O último guerreiro das estrelas, 1984), primeiros filmes a empregarem em grande escala (e a divulgarem) o uso de CGI, fez com que se deixasse o processo de lado."
     },
     {
       "type": "quote",
       "quote": {
-        "quote": "",
-        "author": ""
+        "quote": "Hoje vamos comemorar nosso dia de independência.",
+        "author": "Presidente Thomas J. Whitmore (Bill Pullman) em Independence Day"
       }
     },
     {
+      "type": "text",
+      "content_text": "Quando <a href=\"https://_{type: 'screen', 'id': 2710, 'screen_type': person}\">James Cameron</a> (n-1954) empregou CGI para criar um tentáculo no rosto de <a href=\"https://_{type: 'screen', 'id': 1161, 'screen_type': person}\">Mary Elizabeth Mastrantonio</a> (n-1958) em <a href=\"https://_{type: 'screen', 'id': 2756, 'screen_type': movie}\">The Abyss</a> (BR: O segredo do abismo, 1989), o efeito foi tão bem executado que, a princípio, o público não percebeu que as técnicas utilizadas tinham relação com o trabalho de computador relativamente tosco de filmes anteriores. <a href=\"https://_{type: 'screen', 'id': 280, 'screen_type': movie}\">Terminator 2: Judgment Day</a> (BR: O Exterminador do Futuro 2: O Dia do Julgamento, 1991) e <a href=\"https://_{type: 'screen', 'id': 329, 'screen_type': movie}\">Jurassic Park</a> (BR: Parque dos dinossauros, 1993) de <a href=\"https://_{type: 'screen', 'id': 488, 'screen_type': person}\">Steven Spielberg</a> (n-1946), foram construídos em torno de efeitos de computador apresentando, respectivamente, um monstro de metal liquido que muda de forma e criaturas pré-históricas vivas com uma verossimilhança capaz de enganar o olho."
+    },
+    {
+      "type": "video",
+      "video_id": "vjFG-4Ge668",
+      "information": {
+        "contentTitle": "Cenas do filme Independence Day",
+        "contentText": "O filme conta a história de uma hipotética invasão alienígena à Terra, focando um grupo heterogêneo de pessoas no deserto de Nevada que, junto com o resto da população mundial, participa da última chance de contra-ataque da humanidade em 4 de julho - mesma data do feriado do Dia da Independência dos Estados Unidos.",
+        "source": "Youtube: Canal <i>Movieclips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Os cineastas passaram a recorrer cada vez mais as CGI. A união óptica que <a href=\"https://_{type: 'screen', 'id': 1243, 'screen_type': person}\">Woody Allen</a> (n-1935) empregou em <a href=\"https://_{type: 'screen', 'id': 11030, 'screen_type': movie}\">Zelig</a> (1983) para aparecer nas cenas do comício de Nuremberg cedeu lugar ao computador que permitiu que <a href=\"https://_{type: 'screen', 'id': 31, 'screen_type': person}\">Tom Hanks</a> (n-1956) se encontrasse com o presidente Kennedy em <a href=\"https://_{type: 'screen', 'id': 13, 'screen_type': movie}\">Forrest Gump</a> (BR: Forrest Gump: O Contador de Histórias, 1994). O diretor de Gump, <a href=\"https://_{type: 'screen', 'id': 24, 'screen_type': person}\">Robert Zemeckis</a> (n-1951), mais tarde abandonaria os filmes de ação tradicionais pela CGI (e 3D) para cenas que poderiam ter sido feitas no estilo de <i>Harryhausen</i>, no passado, como <a href=\"https://_{type: 'screen', 'id': 5255, 'screen_type': movie}\">The Polar Express</a> (BR: O Expresso Polar, 2004) e <a href=\"https://_{type: 'screen', 'id': 17979, 'screen_type': movie}\">A Christmas Carol</a> (BR: Os Fantasmas de Scrooge, 2009)."
+    },
+    {
+      "type": "text",
+      "content_text": "O extenso trabalho de modelagem e os efeitos físicos dos antigos filmes de ficção científica, espetáculos históricos ou filmes catástrofe foram substituídos por CGI em filmes como <a href=\"https://_{type: 'screen', 'id': 602, 'screen_type': movie}\">Independence Day</a> (1996), de <a href=\"https://_{type: 'screen', 'id': 6046, 'screen_type': person}\">Roland Emmerich</a> (n-1955). <a href=\"https://_{type: 'screen', 'id': 2133, 'screen_type': movie}\">The Perfect Storm</a> (BR: Mar em Fúria, 2000), <a href=\"https://_{type: 'screen', 'id': 98, 'screen_type': movie}\">Gladiador</a> (2000), <a href=\"https://_{type: 'screen', 'id': 254, 'screen_type': movie}\">King Kong</a> (2005) e <a href=\"https://_{type: 'screen', 'id': 19995, 'screen_type': movie}\">Avatar</a> (2009). Como se para sublinhar o fato, <i>Tron -O legado</i>, em 3D, apareceu no fim de 2010. Enquanto isso, com seu idiossincrático \"<i>tempo da bala</i>\" e os combates que desafiavam a gravidade, <a href=\"https://_{type: 'screen', 'id': 603, 'screen_type': movie}\">Matrix</a> (1999) foi extremamente marcante."
+    },
+    {
+      "type": "video",
+      "video_id": "iuslUzbJEaw",
+      "information": {
+        "contentTitle": "Cenas do filme Matrix",
+        "contentText": "É creditado a Matrix a popularização de um efeito visual conhecido como \"Bullet-time\", no qual a percepção aumentada de certos personagens é representada permitindo que a ação dentro de um tiro progrida em câmera lenta enquanto o ponto de vista da câmera parece se mover pela cena em velocidade normal.",
+        "source": "Youtube: Canal <i>ymom11</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Nos filmes da trilogia <strong>O Senhor dos Anéis</strong> (2001-2003), <a href=\"https://_{type: 'screen', 'id': 108, 'screen_type': person}\">Peter Jackson</a> (n-1961) foi o primeiro a criar um personagem totalmente em CGI, Gollum (Smeagol). <a href=\"https://_{type: 'screen', 'id': 9296, 'screen_type': movie}\">S1m0ne</a> (BR: Simone, 2002), filme sobre uma estrela de cinema criada em computador, conseguiu prever o futuro de \"<i>atores virtuais</i>\", com <a href=\"https://_{type: 'screen', 'id': 335984, 'screen_type': movie}\">Blade Runner 2049</a> (2017), onde a personagem de <a href=\"https://_{type: 'screen', 'id': 586, 'screen_type': person}\">Sean Young</a> (n-1959) foi trazida de volta do filme original, de 1982."
+    },
+    {
+      "type": "block_special",
+      "title": "Como \"Matrix\" definiu o cinema do novo século",
+      "image": {
+        "image_type": "local",
+        "url": "img_matrix",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Eram meados de 1998 quando o produtor <a href=\"https://_{type: 'screen', 'id': 1091, 'screen_type': person}\">Joel Silver</a> (n-1952) entrou em uma sala de reuniões na Warner, em Los Angeles, e encarou um grupo de executivos apreensivos. Em uma cidade movida a dinheiro, os engravatados queriam saber como andavam as filmagens de uma ficção científica com toques filosóficos e existencialistas, que muitos não entendiam o conceito e na qual o estúdio havia investido US$ 60 milhões. Era muita grana em jogo para um filme que estava sendo rodado na Austrália, literalmente do outro lado do mundo, com dois diretores iniciantes, <a href=\"https://_{type: 'screen', 'id': 9340, 'screen_type': person}\">Lana Wachowski</a> (n-1965) e <a href=\"https://_{type: 'screen', 'id': 9339, 'screen_type': person}\">Lilly Wachowski</a> (n-1967). Silver entregou a cada um dos executivos uma bíblia de 600 páginas com o filme inteiro narrado em <i>storyboards</i>, e exibiu oito minutos de material finalizado. Queixos foram ao chão. Muitos engoliram em seco. O projeto, ao menos do ponto de vista corporativo, estava à salvo. O que ninguém esperava àquela altura era que <i>Matrix</i>, que chegou aos cinemas em 31 de março de 1999, fosse se tornar não só a maior bilheteria do estúdio até então (US$ 460 milhões, soma que foi engolida alguns anos depois por <i>Harry Potter</i>), como também uma da aventura de ficção científica mais influente da história. <br/><br/> \n\nEmbora <i>Matrix</i> seja um filme original, suas influências são explícitas. Assim como <a href=\"https://_{type: 'screen', 'id': 138, 'screen_type': person}\">Quentin Tarantino</a> (n-1963), os Wachowski emprestaram sequências, soluções narrativas e até cenários de outros filmes. O caldeirão de ideias, porém, resultou em uma aventura única, que começava em filosofia (\"<i>Simulacros e Simulação</i>\", de <i>Jean Baudrillard</i>, foi leitura obrigatória antes mesmo de o elenco abrir o script), passava por cyberpunk (<i>William Gibson</i> e seu <i>Neuromancer</i> permeia a narrativa de ponta a ponta) e emprestava muito de anime (principalmente <i>Akira</i> e <i>Ghost in the Shell</i>) e histórias em quadrinhos (<i>Os Invisíveis</i>, de <i>Grant Morrisson</i>, é praticamente um proto-Matrix). Parte dos cenários foram reciclados de Dark City (BR: Cidade das Sombras, 1998), rodado um ano antes na Austrália e que traz conceitos de realidade e ilusão similares. <br/><br/> \n\nChamar o diretor e coreógrafo chinês <a href=\"https://_{type: 'screen', 'id': 18899, 'screen_type': person}\">Yuen Woo-Ping</a> (n-1945) também não foi por acaso, já que parte das sequências de luta são herdeiras diretas de seu trabalho em <a href=\"https://_{type: 'screen', 'id': 17809, 'screen_type': movie}\">Jing Wu Ying Xiong</a> (BR: Lutar ou Morrer, 1994), que <a href=\"https://_{type: 'screen', 'id': 1336, 'screen_type': person}\">Jet Li</a> (n-1963) protagonizou em 1994. As fontes já estavam no mundo, mas ninguém ligou os pontos como <i>Matrix</i>. Depois de seu lançamento, Hollywood se apressou em abraçar suas ideias e soluções. Woo-Ping, por exemplo, foi convocado para coreografar a aventura <a href=\"https://_{type: 'screen', 'id': 4327, 'screen_type': movie}\">Charlie's Angels</a> (BR: As Panteras, 2000) no ano seguinte e <a href=\"https://_{type: 'screen', 'id': 24, 'screen_type': movie}\">Kill Bill: Vol. 1</a> (BR: Kill Bill: Volume 1, 2003) em seguida. O sucesso de <i>Matrix</i> também ampliou a percepção da plateia para seu estilo de artes marciais fantástico que compõe a narrativa de <a href=\"https://_{type: 'screen', 'id': 146, 'screen_type': movie}\">Wo Hu Cang Long</a> (BR: O Tigre e o Dragão, 2000), de <a href=\"https://_{type: 'screen', 'id': 1614, 'screen_type': person}\">Ang Lee</a> (n-1954). <br/><br/> \n\nO boom dos super-heróis modernos também teve nele seu ponto de partida, já que a história é a clássica jornada do herói recheada com conceitos fantásticos, poderes sobrenaturais e visual revolucionário. Os trajes de couro em <a href=\"https://_{type: 'screen', 'id': 36657, 'screen_type': movie}\">X-Men</a> (BR: X-Men: O Filme, 2000), que <a href=\"https://_{type: 'screen', 'id': 9032, 'screen_type': person}\">Bryan Singer</a> (n-1965) dirigiu em 2000, são influência direta do visual de <i>Matrix</i>, bem como a estética sombria e sexy de <a href=\"https://_{type: 'screen', 'id': 277, 'screen_type': movie}\">Underworld</a> (BR: Anjos da Noite: Underworld, 2003), que arriscou uma mistura similar, substituindo a ficção científica pelo cinema de terror. Mas nada celebra mais a influência de <i>Matrix</i> do que o aval de <i>Steven Spielberg</i>, que optou pela ficção científica de cores dessaturadas em <a href=\"https://_{type: 'screen', 'id': 180, 'screen_type': movie}\">Minority Report</a> (BR: Minority Report: A Nova Lei, 2002) e em <a href=\"https://_{type: 'screen', 'id': 74, 'screen_type': movie}\">War of the Worlds</a> (BR: Guerra dos Mundos, 2005). <br/><br/> \n\nDe todas as contribuições de Matrix para a cultura pop do novo século, talvez a maior tenha sido o \"<i>bullet time</i>\", o efeito especial em que o tempo parece congelar, com a câmera circulando livre em torno da ação. Não foi uma criação específica para o filme, mas teve nele sua evolução e popularização. O supervisor de efeitos visuais do longa, John Gaeta, aponta o anime <a href=\"https://_{type: 'screen', 'id': 149, 'screen_type': movie}\">Akira</a> (1988), de <a href=\"https://_{type: 'screen', 'id': 185, 'screen_type': person}\">Katsuhiro Otomo</a> (n-1954), e o trabalho de Michel Gondry em seus videoclipes musicais como maior inspiração artística para o efeito. A inovação de Gaeta foi colocar a câmera em movimento em torno de pessoas e objetos que também se moviam, com resultados revolucionários.",
+      "credits": "Resumo baseado no artigo \"Como Matrix definiu o cinema do novo século há 20 anos\", por Roberto Sadovski no UOL.com."
+    },
+    {
+      "type": "text",
+      "content_text": "Porém, é mais comum que gente de carne e osso represente diante de fundos gerados em computador - <a href=\"https://_{type: 'screen', 'id': 5137, 'screen_type': movie}\">Sky Captain and the World of Tomorrow</a> (BR: Capitão Sky e o Mundo do Amanhã, 2004); <a href=\"https://_{type: 'screen', 'id': 187, 'screen_type': movie}\">Sin City</a> (BR: Sin City: A Cidade do Pecado, 2005); <a href=\"https://_{type: 'screen', 'id': 1271, 'screen_type': movie}\">300</a> (2006)."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "Os irmãos Wachowski são de fato traficantes, você sabe. Sério! Eles pressionam cada ator, cada técnico, ao máximo em seus filmes.",
+        "author": "Keanu Reeves"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "A única área em que o CGI obteve o domínio foi nas animações. <a href=\"https://_{type: 'screen', 'id': 13925, 'screen_type': movie}\">Luxo Jr.</a> (1986), da Pixar, curta gerado por computador que mostrou uma luminária de mesa com personalidade, exibiu a forma, ao passo que <a href=\"https://_{type: 'screen', 'id': 10020, 'screen_type': movie}\">Beauty and the Beast</a> (BR: A Bela e a Fera, 1991), realizado tradicionalmente pela Disney, incluiu uma cena inesquecível criada em computador."
+    },
+    {
+      "type": "video",
+      "video_id": "Fd53_7n-OlA",
+      "information": {
+        "contentTitle": "Cenas do filme Titanic",
+        "contentText": "Cameron queria criar um novo padrão para os efeitos especiais com Titanic, encarregando a Digital Domain para continuar o desenvolvimento da tecnologia digital que o diretor foi pioneiro ao trabalhar em The Abyss e Terminator 2: Judgment Day. Muitos dos filmes anteriores sobre o Titanic filmaram a água em câmera lenta, o que não funcionava convincentemente. Ele encorajou a Digital Domain a filmar sua maquete do navio de 14 m de comprimento como se \"estivéssemos fazendo um comercial para a White Star Line\". Depois disso, água e fumaça digital foram adicionadas, como também figurantes capturados em um estúdio de motion capture. O supervisor de efeitos visuais Rob Legato escaneou os rostos de várias pessoas, incluindo o seu e o de sua família, para os figurantes e dublês digitais. Havia também um modelo de 20 m da popa que poderia ser partido em dois repetidas vezes, a única miniatura usada na água e nas cenas do naufrágio. Para as cenas que se passam na sala de máquinas do navio, imagens dos motores do SS Jeremiah O'Brien foram compostas com atores filmados contra uma tela verde. Para economizar dinheiro, o Salão da Primeira Classe foi um cenário em miniatura incorporado com um fundo verde.",
+        "source": "Youtube: Canal <i>der450</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Depois do sucesso de <a href=\"https://_{type: 'screen', 'id': 862, 'screen_type': movie}\">Toy Story</a> (BR: Toy Story: Um Mundo de Aventuras, 1991), a Pixar se tornou a líder do mercado de animações geradas por computador, apesar da competição com a DreamWorks – <a href=\"https://_{type: 'screen', 'id': 808, 'screen_type': movie}\">Shrek</a> (2001) e outras. O desenho animado criado em computador é tão comum que os cineastas precisam adicionar o 3D à mistura para competir.",
+      "content_credits": "Resumo baseado no texto de <i>Kim Newman</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+    },
+    {
+      "type": "text",
+      "content_text": "Só para termos uma ideia da magnitude do projeto, as duas maiores casas de técnicos de efeitos especiais tiveram de ser contratadas para dar conta do recado. De início, Cameron contratou os serviços da hoje mais inovadora empresa especializada em efeitos especiais, a <i>Weta Digital</i>, criada por <a href=\"https://_{type: 'screen', 'id': 108, 'screen_type': person}\">Peter Jackson</a> (n-1961) e que deixou o mundo todo maravilhado com a qualidade técnica dos efeitos da trilogia <i>O Senhor dos Anéis</i>.",
+      "content_title": "Avatar e a nova era da Captura de Movimentos "
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_avatar_production",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Joe Saldana durante as filmagens",
+        "contentText": "O desenvolvimento de Avatar começou a ser trabalhado por James Cameron em 1994, tendo escrito o rascunho de um roteiro, com cerca de 80 páginas, sendo esse seu primeiro filme após Titanic. As filmagens deveriam ter sido iniciadas logo após esse filme, e Avatar seria lançado em 1999, mas, de acordo com Cameron, a tecnologia necessária para produzir o filme a partir de sua visão ainda não estava disponível.",
+        "source": "@avatarthefilm / Facebook"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "A Weta foi responsável por quase todos os efeitos especiais, desde a renderização dos <i>Na’vi</i> até todo o macrocosmo da lua Pandora. No entanto, com o prolongamento da produção e do tempo de projeção do filme, 40 minutos além do esperado, somado à data da estreia cada vez mais próxima, não restou alternativa a Cameron senão contratar outra casa especializada para ajudar na conclusão do projeto, a <i>Industrial Light & Magic</i>, criada por <a href=\"https://_{type: 'screen', 'id': 1, 'screen_type': person}\">George Lucas</a> (n-1944)."
+    },
+    {
+      "type": "text",
+      "content_text": "A ILM ficou responsável pela renderização (termo usado para descrever a transmutação que o computador faz de um monte de uns e zeros numa imagem fotorrealista) dos veículos terrestres e aéreos utilizados principalmente na batalha final do filme. Foi a primeira vez que essas duas empresas concorrentes trabalharam em conjunto para terminar um filme. Sobre a grana torrada na produção, dizem os boatos que o filme custou aproximadamente US$ 300 milhões, sendo boa parte dessa fortuna usada para os efeitos especiais e desenvolvimento de novas tecnologias. É uma soma astronômica, mas certamente o estúdio investiu prevendo alto retorno em razão não só das bilheterias, mas principalmente das licenças de uso das novas tecnologias. Assim, no fundo, essa quantia nada mais é do que um investimento com lucro certo. A mais intrigante das conquistas de Avatar, em termos de efeitos visuais, é a qualidade fotorrealista de seus personagens digitais. É difícil acreditar que os <i>Na’vi</i> não sejam mesmo reais e não estejam ali naquela cena. Como foi possível?"
+    },
+    {
+      "type": "video",
+      "video_id": "_Y8Buy5b6DQ",
+      "information": {
+        "contentTitle": "Bastidores da Produção Avatar",
+        "contentText": "É a produção mais cara da história do cinema, em sentido técnico, com orçamento estimado em 500 milhões de dólares.",
+        "source": "Youtube: Canal <i>Daily Celebrity</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "A tecnologia atende pelo nome de <i>motion capture</i>, “<i>captura de movimento</i>”. Ela funciona da seguinte maneira: os atores são filmados interpretando seus personagens digitais em um grande estúdio, chamado de “<i>o volume</i>”. Em vez de usarem figurino ou maquiagem, eles são “<i>adornados</i>” com centenas de pontos luminosos espalhados pelo corpo e, principalmente, pelo rosto, para captura de todos os movimentos corpóreos e as nuances das expressões. Câmeras especiais, projetadas para captar os pontos luminosos, são espalhadas por todos os lados do estúdio, inclusive no teto. Depois que tudo é filmado, os vídeos dos mesmos pontinhos filmados em trocentos ângulos diferentes são enviados para um supercomputador, que “<i>mastiga</i>” todos os dados para criar uma interpretação tridimensional de onde estava cada um daqueles pontos luminosos. A cada pontinho no ator corresponde um pontinho no “<i>boneco</i>” do personagem digital. É assim que, no final, sairá um ET azul de 3 metros com rabo."
+    },
+    {
+      "type": "text",
+      "content_text": "Essa foi a mesma técnica usada, por exemplo, para criar <i>Gollum</i>, em <a href=\"https://_{type: 'screen', 'id': 120, 'screen_type': movie}\">The Lord of the Rings: The Fellowship of the Ring</a> (BR: O Senhor dos Anéis: A Sociedade do Anel, 2001). Mas <i>Avatar</i> levou a coisa ao nível seguinte. Um dos diferenciais usados foi uma “<i>pré-mastigação</i>” dos dados em tempo real. Ela possibilitava renderizar os personagens digitais e os ambientes nos monitores que a equipe de produção utilizava para conferir as cenas à medida que eram filmadas. Isso garantiu precisão durante as filmagens, sem a necessidade de muitos retoques na pós-produção. Mas que ninguém se engane ao achar que o trabalho termina por aí."
+    },
+    {
+      "type": "video",
+      "video_id": "6OVxbWZnpiA",
+      "information": {
+        "contentTitle": "Jon Landau – Produtor de Avatar",
+        "contentText": "Jon Landau explica a \"produção virtual\", tecnologia utilizada durante as filmagens de Avatar.",
+        "source": "Youtube: Canal <i>This Week In Startups</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "A captura de movimento, sozinha, não faz milagres, pois todo o processo também envolve as aptas mãos dos artesãos digitais, que, por meio do computador, criam o restante da ilusão. A chave para a criação de um personagem digital realista está nos olhos. Os olhos humanos são muito expressivos, mas essa expressão se dá de maneira muito sutil, difícil de ser captada, não importando a quantidade de pontinhos luminosos que você ponha na cara do sujeito. Em Avatar, pode-se constatar o cuidado que os técnicos tiveram para driblar isso. Os <i>Na’vi</i> têm grandes e expressivos olhos, que transmitem vida e emoções. Não é mesmo moleza tentar reproduzir uma criatura que demonstre emoções humanas. Mas mais difícil ainda é enganar uma plateia humana, acostumada a observar humanos, quando os cineastas tentam criar personagens digitais que são, para todos os efeitos, gente como a gente."
+    },
+    {
+      "type": "text",
+      "content_text": "Pode parecer um esforço estúpido tentar recriar um ser humano no computador, uma vez que é bem mais fácil simplesmente filmá-lo. Agora, pergunte se alguém quer ser filmado caindo de uma altura de vários metros, se estatelando no chão e sendo pisoteado em seguida por um estouro de elefantes, tudo na mesma cena, sem cortes. Pois é, para alguns serviços, uma réplica humana digital vem bem a calhar. Esses chamados dublês digitais já estão por aí, no cinema, há alguns anos. Mas muitas vezes o serviço dos magos de efeitos visuais acaba facilitado pelas circunstâncias. Os técnicos ficam aliviados, por exemplo, quando têm de renderizar um Homem-Aranha, um Homem de Ferro ou um Batman, pois as fantasias ocultam as partes humanas mais difíceis de reproduzir. Quando é um sujeito de cara limpa que precisa ser retratado, a coisa fica feia. Literalmente."
+    },
+    {
+      "type": "video",
+      "video_id": "Vt-XCDjyDNs",
+      "information": {
+        "contentTitle": "Entrevista com James Cameron",
+        "contentText": "Entrevista com James Cameron, diretor de Avatar, contanto suas referências e o processo de construção do filme Avatar.",
+        "source": "Youtube: Canal <i>Discovery</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Avatar usa muito esse recurso, mas sabiamente relegado ao segundo plano, como, por exemplo, para os ocupantes dos veículos terrestres e aéreos vistos de longa distância. Mas é interessante notar no filme que esse limite entre o humano real e o digital está cada vez mais tênue, pois as transições em cena são tão sutis que apenas quem tem olhos clínicos para esses efeitos consegue fazer a distinção. Nunca o cinema viu a criação de um mundo tão completo e surpreendente como o de Pandora. O desenho de produção, trazido à vida pelos técnicos de efeitos especiais, é prodigioso."
+    },
+    {
+      "type": "text",
+      "content_text": "A Terra-Média de <i>O Senhor dos Anéis</i> foi um louvor de técnica, por misturar elementos de verdade com outros artificiais, para reproduzir com espantosa perfeição o mundo criado por <i>J.R.R. Tolkien</i>. Mas <i>Avatar</i> representa uma evolução, pois em Pandora tudo é novo e artificialmente construído. Montanhas flutuantes, árvores gigantescas, dragões voadores, criaturas monstruosas, plantas exóticas e tudo mais. Essa mistureba generalizada pode parecer forçada e pouco convincente no papel, mas, na tela, com todos os avanços técnicos, é ver para crer. Por ter reunido todos esses avanços de efeitos visuais num só filme, <i>Avatar</i> certamente já virou referência na história do cinema.",
+      "content_credits": "Resumo baseado no artigo \"Muito mais do que efeitos especiais\", por Luiz Felipe do Vale Tavares no Super Interessante."
+    },
+    {
       "type": "movie_list",
-      "movies": []
+      "movies": [
+        {
+          "original_language": "en",
+          "original_title": "Avatar",
+          "poster_path": "\/6EiRUJpuoeQPghrs3YNktfnqOVh.jpg",
+          "title": "Avatar",
+          "vote_average": 7.5,
+          "popularity": 91.113,
+          "overview": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+          "release_date": "2009-12-10",
+          "media_type": "movie",
+          "vote_count": 22383,
+          "adult": false,
+          "backdrop_path": "\/wcC7kCICL6x6zHUlUyNp9pWoqW1.jpg",
+          "id": 19995,
+          "genre_ids": [
+            28,
+            12,
+            14,
+            878
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "The Matrix",
+          "poster_path": "\/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+          "title": "The Matrix",
+          "vote_average": 8.1,
+          "popularity": 58.38,
+          "vote_count": 18076,
+          "release_date": "1999-03-30",
+          "media_type": "movie",
+          "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+          "adult": false,
+          "backdrop_path": "\/fNG7i7RqMErkcqhohV2a6cV1Ehy.jpg",
+          "id": 603,
+          "genre_ids": [
+            28,
+            878
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Terminator 2: Judgment Day",
+          "poster_path": "\/5M0j0B18abtBI5gi2RhfjjurTqb.jpg",
+          "title": "Terminator 2: Judgment Day",
+          "vote_average": 8,
+          "popularity": 37.769,
+          "vote_count": 8692,
+          "release_date": "1991-07-03",
+          "media_type": "movie",
+          "overview": "Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.",
+          "adult": false,
+          "backdrop_path": "\/xKb6mtdfI5Qsggc44Hr9CCUDvaj.jpg",
+          "id": 280,
+          "genre_ids": [
+            28,
+            53,
+            878
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Jurassic Park",
+          "poster_path": "\/9i3plLl89DHMz7mahksDaAo7HIS.jpg",
+          "title": "Jurassic Park",
+          "vote_average": 7.9,
+          "popularity": 30.173,
+          "overview": "A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA. Before opening day, he invites a team of experts and his two eager grandchildren to experience the park and help calm anxious investors. However, the park is anything but amusing as the security systems go off-line and the dinosaurs escape.",
+          "release_date": "1993-06-11",
+          "media_type": "movie",
+          "vote_count": 11450,
+          "adult": false,
+          "backdrop_path": "\/9kqA5fe1V2yqCBudUMUTmXbyy3Y.jpg",
+          "id": 329,
+          "genre_ids": [
+            12,
+            878
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Independence Day",
+          "poster_path": "\/p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg",
+          "title": "Independence Day",
+          "vote_average": 6.8,
+          "popularity": 28.091,
+          "vote_count": 6879,
+          "release_date": "1996-06-25",
+          "media_type": "movie",
+          "overview": "On July 2, a giant alien mothership enters orbit around Earth and deploys several dozen saucer-shaped 'destroyer' spacecraft that quickly lay waste to major cities around the planet. On July 3, the United States conducts a coordinated counterattack that fails. On July 4, a plan is devised to gain access to the interior of the alien mothership in space, in order to plant a nuclear missile.",
+          "adult": false,
+          "backdrop_path": "\/uw4SnKFZ453Gxmj5XR5Susj8TNo.jpg",
+          "id": 602,
+          "genre_ids": [
+            28,
+            12,
+            878
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Toy Story",
+          "poster_path": "\/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+          "title": "Toy Story",
+          "vote_average": 7.9,
+          "popularity": 69.688,
+          "vote_count": 13172,
+          "release_date": "1995-10-30",
+          "media_type": "movie",
+          "overview": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences.",
+          "adult": false,
+          "backdrop_path": "\/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
+          "id": 862,
+          "genre_ids": [
+            16,
+            12,
+            10751,
+            35
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+          "poster_path": "\/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+          "title": "The Lord of the Rings: The Fellowship of the Ring",
+          "vote_average": 8.3,
+          "popularity": 54.478,
+          "vote_count": 18036,
+          "release_date": "2001-12-18",
+          "media_type": "movie",
+          "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+          "adult": false,
+          "backdrop_path": "\/vRQnzOn4HjIMX4LBq9nHhFXbsSu.jpg",
+          "id": 120,
+          "genre_ids": [
+            12,
+            14,
+            28
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Tron",
+          "poster_path": "\/hBCSuYpMXXIrP36J6dCjrYJuzxD.jpg",
+          "title": "Tron",
+          "vote_average": 6.6,
+          "popularity": 15.741,
+          "vote_count": 1416,
+          "release_date": "1982-07-09",
+          "media_type": "movie",
+          "overview": "As Kevin Flynn searches for proof that he invented a hit video game, he is 'digitalized' by a laser and finds himself inside 'The Grid', where programs suffer under the tyrannical rule of the Master Control Program (MCP). With the help of a security program called 'TRON', Flynn seeks to free The Grid from the MCP.",
+          "adult": false,
+          "backdrop_path": "\/f4ZlBeiiBaQPNZrHnhXywwXASFS.jpg",
+          "id": 97,
+          "genre_ids": [
+            878,
+            28,
+            12
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "King Kong",
+          "poster_path": "\/qVCZtwBGls866wBb4PAfYtAjyr8.jpg",
+          "title": "King Kong",
+          "vote_average": 6.8,
+          "popularity": 36.439,
+          "vote_count": 5573,
+          "release_date": "2005-12-12",
+          "media_type": "movie",
+          "overview": "In 1933 New York, an overly ambitious movie producer coerces his cast and hired ship crew to travel to mysterious Skull Island, where they encounter Kong, a giant ape who is immediately smitten with the leading lady.",
+          "adult": false,
+          "backdrop_path": "\/mRM2NB0i3wv4HqxXvwIjEVi4Qqq.jpg",
+          "id": 254,
+          "genre_ids": [
+            12,
+            18,
+            28
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "300",
+          "poster_path": "\/96JpmNej77jFcQtghVFYh0gUbhE.jpg",
+          "title": "300",
+          "vote_average": 7.1,
+          "popularity": 36.393,
+          "vote_count": 10000,
+          "release_date": "2007-12-09",
+          "media_type": "movie",
+          "overview": "Based on Frank Miller's graphic novel, \"300\" is very loosely based the 480 B.C. Battle of Thermopylae, where the King of Sparta led his army against the advancing Persians; the battle is said to have inspired all of Greece to band together against the Persians, and helped usher in the world's first democracy.",
+          "adult": false,
+          "backdrop_path": "\/lgBZlJ1LHQel5nneNQMoesmvc7l.jpg",
+          "id": 1271,
+          "genre_ids": [
+            28,
+            12,
+            10752
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Spider-Man",
+          "poster_path": "\/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
+          "title": "Spider-Man",
+          "vote_average": 7.2,
+          "popularity": 71.627,
+          "vote_count": 12611,
+          "release_date": "2002-05-01",
+          "media_type": "movie",
+          "overview": "After being bitten by a genetically altered spider, nerdy high school student Peter Parker is endowed with amazing powers to become the Amazing superhero known as Spider-Man.",
+          "adult": false,
+          "backdrop_path": "\/sWvxBXNtCOaGdtpKNLiOqmwb10N.jpg",
+          "id": 557,
+          "genre_ids": [
+            14,
+            28
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "War of the Worlds",
+          "poster_path": "\/6Biy7R9LfumYshur3YKhpj56MpB.jpg",
+          "title": "War of the Worlds",
+          "vote_average": 6.4,
+          "popularity": 25.981,
+          "vote_count": 5755,
+          "release_date": "2005-06-28",
+          "media_type": "movie",
+          "overview": "Ray Ferrier is a divorced dockworker and less-than-perfect father. Soon after his ex-wife and her new husband drop off his teenage son and young daughter for a rare weekend visit, a strange and powerful lightning storm touches down.",
+          "adult": false,
+          "backdrop_path": "\/vwCc9PP6xkSjnYsSl9lzTABhexe.jpg",
+          "id": 74,
+          "genre_ids": [
+            12,
+            53,
+            878
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Transformers",
+          "poster_path": "\/6eehp9I54syN3x753XMqjKz8M3F.jpg",
+          "title": "Transformers",
+          "vote_average": 6.7,
+          "popularity": 10.943,
+          "vote_count": 8032,
+          "release_date": "2007-06-27",
+          "media_type": "movie",
+          "overview": "Young teenager, Sam Witwicky becomes involved in the ancient struggle between two extraterrestrial factions of transforming robots – the heroic Autobots and the evil Decepticons. Sam holds the clue to unimaginable power and the Decepticons will stop at nothing to retrieve it.",
+          "adult": false,
+          "backdrop_path": "\/77P56ZcL8M9Cw7FIptMIGjhNJoj.jpg",
+          "id": 1858,
+          "genre_ids": [
+            12,
+            878,
+            28
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "District 9",
+          "poster_path": "\/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg",
+          "title": "District 9",
+          "vote_average": 7.4,
+          "popularity": 22.152,
+          "overview": "Thirty years ago, aliens arrive on Earth. Not to conquer or give aid, but to find refuge from their dying planet. Separated from humans in a South African area called District 9, the aliens are managed by Multi-National United, which is unconcerned with the aliens' welfare but will do anything to master their advanced technology. When a company field agent contracts a mysterious virus that begins to alter his DNA, there is only one place he can hide: District 9.",
+          "release_date": "2009-08-05",
+          "media_type": "movie",
+          "vote_count": 6731,
+          "adult": false,
+          "backdrop_path": "\/vR5aTnCCnBrHY33E4robIUmJ4nN.jpg",
+          "id": 17654,
+          "genre_ids": [
+            878
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Titanic",
+          "poster_path": "\/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+          "title": "Titanic",
+          "vote_average": 7.9,
+          "popularity": 72.471,
+          "vote_count": 18080,
+          "release_date": "1997-11-18",
+          "media_type": "movie",
+          "overview": "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic's departure through to its death—on its first and last voyage—on April 15, 1912.",
+          "adult": false,
+          "backdrop_path": "\/6VmFqApQRyZZzmiGOQq2C92jyvH.jpg",
+          "id": 597,
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Forrest Gump",
+          "poster_path": "\/clolk7rB5lAjs41SD0Vt6IXYLMm.jpg",
+          "title": "Forrest Gump",
+          "vote_average": 8.5,
+          "popularity": 48.644,
+          "vote_count": 19280,
+          "release_date": "1994-07-06",
+          "media_type": "movie",
+          "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+          "adult": false,
+          "backdrop_path": "\/7c9UVPPiTPltouxRVY6N9uugaVA.jpg",
+          "id": 13,
+          "genre_ids": [
+            35,
+            18,
+            10749
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "Gladiator",
+          "poster_path": "\/pRn3TJHbAqCAO6U8Dw5DayVUuX3.jpg",
+          "title": "Gladiator",
+          "vote_average": 8.2,
+          "popularity": 36.373,
+          "vote_count": 12733,
+          "release_date": "2000-05-01",
+          "media_type": "movie",
+          "overview": "In the year 180, the death of emperor Marcus Aurelius throws the Roman Empire into chaos.  Maximus is one of the Roman army's most capable and trusted generals and a key advisor to the emperor.  As Marcus' devious son Commodus ascends to the throne, Maximus is set to be executed.  He escapes, but is captured by slave traders.  Renamed Spaniard and forced to become a gladiator, Maximus must battle to the death with other men for the amusement of paying audiences.",
+          "adult": false,
+          "backdrop_path": "\/aZtwH3RQ0L8jbInxr7OSc9tlGMJ.jpg",
+          "id": 98,
+          "genre_ids": [
+            28,
+            18,
+            12
+          ],
+          "video": false
+        },
+        {
+          "original_language": "en",
+          "original_title": "The Curious Case of Benjamin Button",
+          "poster_path": "\/26wEWZYt6yJkwRVkjcbwJEFh9IS.jpg",
+          "title": "The Curious Case of Benjamin Button",
+          "vote_average": 7.5,
+          "popularity": 22.465,
+          "vote_count": 9017,
+          "release_date": "2008-12-25",
+          "media_type": "movie",
+          "overview": "Born under unusual circumstances, Benjamin Button springs into being as an elderly man in a New Orleans nursing home and ages in reverse. Twelve years after his birth, he meets Daisy, a child who flits in and out of his life as she grows up to be a dancer. Though he has all sorts of unusual adventures over the course of his life, it is his relationship with Daisy, and the hope that they will come together at the right time, that drives Benjamin forward.",
+          "adult": false,
+          "backdrop_path": "\/6ZvgyKPAatpcHbVsKknly4K4zC6.jpg",
+          "id": 4922,
+          "genre_ids": [
+            18,
+            14,
+            10749
+          ],
+          "video": false
+        }
+      ]
     },
     {
       "type": "person_list",
-      "persons": []
+      "persons": [
+        {
+          "id": 7314,
+          "name": "Nick Park",
+          "profile_path": "/f7MzwTzd2Wu2JjL74R8t7ixVBLN.jpg"
+        },
+        {
+          "id": 2710,
+          "name": "James Cameron",
+          "profile_path": "/9NAZnTjBQ9WcXAQEzZpKy4vdQto.jpg"
+        },
+        {
+          "id": 488,
+          "name": "Steven Spielberg",
+          "profile_path": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg"
+        },
+        {
+          "id": 15217,
+          "name": "Zack Snyder",
+          "profile_path": "/iD0GDqkvJXDXiNEZej198hjt3Tt.jpg"
+        },
+        {
+          "id": 24,
+          "name": "Robert Zemeckis",
+          "profile_path": "/4tWfclPQ3WAUwotZl2hIneQwWXR.jpg"
+        },
+        {
+          "id": 108,
+          "name": "Peter Jackson",
+          "profile_path": "/4hh7hips4xc6kgpNDQKQH3goRvJ.jpg"
+        },
+        {
+          "id": 9340,
+          "name": "Lana Wachowski",
+          "profile_path": "/5KNV7YBSPTBUAIXGfIcPmbhho9w.jpg"
+        }
+      ]
     },
     {
       "type": "link_screen",

@@ -24,38 +24,37 @@ class MovieListSpecialViewHolder(
         super.bind(item, position)
         val context = containerView.context ?: return
         val contentMovieList = item as? ContentMovieListSpecial ?: return
+        val movies = contentMovieList.movies?.map {
+            MovieFilmographyDTO(
+                it.id,
+                it.title ?: it.originalTitle,
+                it.posterPath,
+                it.backdropPath,
+                it.releaseDate,
+                it.overview,
+                year = if (it.releaseDate != null) DateUtils.getYearByDate(it.releaseDate) else null
+            )
+        } ?: emptyList()
+        val personAdapter = MovieItemSpecialAdapter(movies).apply {
+            onMovieClicked = this@MovieListSpecialViewHolder.onMovieSelected
+        }
+
+        recyclerView.apply {
+            adapter = personAdapter
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        }
+
+        setupContentFooterInformation(contentMovieList.information)
 
         if (!isSetup) {
-            val movies = contentMovieList.movies?.map {
-                MovieFilmographyDTO(
-                    it.id,
-                    it.title ?: it.originalTitle,
-                    it.posterPath,
-                    it.backdropPath,
-                    it.releaseDate,
-                    it.overview,
-                    year = if (it.releaseDate != null) DateUtils.getYearByDate(it.releaseDate) else null
-                )
-            } ?: emptyList()
-            val personAdapter = MovieItemSpecialAdapter(movies).apply {
-                onMovieClicked = this@MovieListSpecialViewHolder.onMovieSelected
-            }
-
             recyclerView.apply {
-                adapter = personAdapter
-                layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-
                 listIndicator.attachToRecyclerView(this)
                 SimpleSnapHelper(listIndicator).attachToRecyclerView(this)
 
                 setupParallaxScrollListener()
             }
-
-            setupContentFooterInformation(contentMovieList.information)
-
             isSetup = true
         }
-
     }
 
     companion object {
