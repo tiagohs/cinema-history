@@ -132,8 +132,11 @@ class MainTopicsAdapter(
                     mainTopicItem.titleBackgroundColor
                 )
             }
-            mainTopicItem.titleColor?.let { description.setResourceTextColor(mainTopicItem.titleColor) }
-            mainTopicItem.titleColor?.let { mainSubtitle.setResourceTextColor(mainTopicItem.titleColor) }
+            mainTopicItem.titleColor?.let {
+                description.setResourceTextColor(mainTopicItem.titleColor)
+                mainSubtitle.setResourceTextColor(mainTopicItem.titleColor)
+                nextButton.setResourceImageColor(mainTopicItem.titleColor)
+            }
 
             mainTopicsContainer.background = GradientDrawable().apply {
                 cornerRadius = 10f
