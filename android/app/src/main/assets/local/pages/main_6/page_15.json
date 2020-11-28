@@ -1,55 +1,596 @@
 {
-  "number": 1,
+  "number": 15,
   "content_list": [
-
-
-
-
-
-
-
-
-
     {
       "type": "text",
-      "content_text": ""
+      "content_text": "Com <a href=\"https://_{type: 'screen', 'id': 11, 'screen_type': movie}\">Star Wars</a> (BR: Guerra nas Estrelas, 1977) e <a href=\"https://_{type: 'screen', 'id': 1924, 'screen_type': movie}\">Superman</a> (BR: Superman: O Filme, 1978), o interesse do público por filmes de fantasia e ficção cientifica aumentou consideravelmente, sendo <i>Superman</i> o primeiro grande filme de herói com grande orçamento, se saindo bem nas bilheterias e com a crítica especializada. Os anos 1980 trouxeram algumas adaptações de sucesso, sendo <a href=\"https://_{type: 'screen', 'id': 5548, 'screen_type': movie}\">Robocop</a> (BR: Robocop: O Policial do Futuro, 1987) e <a href=\"https://_{type: 'screen', 'id': 268, 'screen_type': movie}\">Batman</a> (1989), dirigido por <a href=\"https://_{type: 'screen', 'id': 510, 'screen_type': person}\">Tim Burton</a> (n-1958), os maiores destaque."
     },
     {
       "type": "video",
-      "video_id": "",
+      "video_id": "B5BRjvuDZ4A",
       "information": {
-        "contentTitle": "",
-        "contentText": "",
-        "source": "Youtube: Canal <i></i>"
+        "contentTitle": "Cenas do filme Batman",
+        "contentText": "O tom e os temas do filme foram influenciados em parte por Batman: The Killing Joke, de Alan Moore e Brian Bolland, e The Dark Knight Returns, de Frank Miller. O filme se adapta principalmente à história de origem \"Capuz Vermelho\" para o Joker, em que Batman cria o Joker, deixando-o cair em um tanque com ácido e produtos químicos, resultando em sua transformação em um psicopata, mas adiciona um toque único ao apresentá-lo especificamente como um gângster chamado Jack Napier.",
+        "source": "Youtube: Canal <i>Top Scene4u</i>"
       }
     },
     {
+      "type": "text",
+      "content_text": "Outros filmes foram lançados durante as décadas de 1980 e 1990, incluindo 4 continuações de Superman e outras 3 de Batman, mas poucos atingiram o sucesso que seus filmes antecessores obtiveram. <a href=\"https://_{type: 'screen', 'id': 1498, 'screen_type': movie}\">Teenage Mutant Ninja Turtles</a> (BR: As Tartarugas Ninja, 1990), apesar das críticas mistas e da descrença em investir em pessoas vestidas em trajes de borracha, foi um sucesso e se tornou a produção independente com maior bilheteria até então."
+    },
+    {
       "type": "block_special",
-      "title": "",
+      "title": "O divisor de águas nos filmes de super-heróis",
       "image": {
         "image_type": "local",
-        "url": "",
+        "url": "img_spider_man_2002",
         "style": {
           "scale_type": "center_crop"
         }
       },
-      "description": "",
-      "credits": ""
+      "description": "No começo dos anos 2000, o primeiro <i>Homem-Aranha</i> era lançado nos cinemas, provando de uma vez por todas que filmes baseados em super-heróis espalhafatosos de quadrinhos poderiam funcionar nas telonas. É bem verdade que, dois anos antes, o primeiro <i>X-Men</i> havia sido lançado, recebendo boas críticas e gorda bilheteria. No entanto, <i>X-Men – O Filme</i>, de <i>Bryan Singer</i>, por melhor que ele tivesse sido, ainda era uma obra razoavelmente distante da estética dos quadrinhos, sem cores vibrantes e roupas coloridas. <br/><br/> \n\nO medo, àquela época, era que isso não funcionasse direito perante os espectadores, mesmo considerando os filmes do <i>Super-Homem</i> décadas antes. O Homem-Aranha é um herói que, mesmo que se queira mudar muito sua história de origem e acontecimentos subsequentes, precisava manter algo importantíssimo para sua mística: o uniforme. E temos que convir que as cores vermelha e azul em uma roupa justa cobrindo todo o corpo, com padrões de teia e aranhas no peito e nas costas tinha todas as chances de não funcionar no cinema. No entanto, mudar o uniforme, como Singer fez elegantemente em seu X-Men, significaria que os fãs (e o Homem-Aranha tem várias e várias gerações deles) criariam uma revolta sem precedentes. Não foi à toa, portanto, que Homem-Aranha ficou no chamado <i>development hell</i> por nada mais nada menos que 25 anos. <br/><br/> \n\nSomente quando a Sony, em 1999, comprou os direitos de adaptação cinematográfica da MGM, que já havia encomendado um rascunho de roteiro de <a href=\"https://_{type: 'screen', 'id': 2710, 'screen_type': person}\">James Cameron</a> (n-1954), foi que a versão cinematográfica do amigão da vizinhança realmente decolou. Cameron já não estava mais ligado à obra, mas seu trabalho serviu de base ao roteiro que <a href=\"https://_{type: 'screen', 'id': 508, 'screen_type': person}\">David Koepp</a> (n-1963) - escritor de <a href=\"https://_{type: 'screen', 'id': 954, 'screen_type': movie}\">Mission: Impossible</a> (BR: Missão Impossível, 1996) e <a href=\"https://_{type: 'screen', 'id': 329, 'screen_type': movie}\">Jurassic Park</a> (BR: Parque dos Dinossauros, 1993), dentre vários outros filmes famosos - acabou desenvolvendo. Vários diretores foram pensados para comandar a obra, incluindo <a href=\"https://_{type: 'screen', 'id': 10965, 'screen_type': person}\">Chris Columbus</a> (n-1958) e <a href=\"https://_{type: 'screen', 'id': 7467, 'screen_type': person}\">David Fincher</a> (n-1962). Mas quando <i>Sam Raimi</i> ingressou no projeto é que ele começou a tomar forma definitiva. Raimi foi firme quanto à estrutura do filme, decidindo-se por apenas um vilão, o Duende Verde, enquanto que a ideia original era usar o Dr. Octopus também, em papel secundário. Da mesma maneira, com Raimi, a mudança mais dramática na mitologia do personagem seria feita: os tradicionais lançadores mecânicos de teia foram substituídos pelos controversos lançadores orgânicos, explicados como parte da mutação que Peter Parker sofreria depois de ser mordido por uma aranha geneticamente alterada. A roupa do Aranha foi mantida a mais próxima possível da original dos quadrinhos. Ela ganhou uma aparência emborrachada e teias em relevo, além de ter sido moldada ao corpo do ator quase que como uma peça só. Assim, a transposição das páginas das revistas para o cinema foi perfeita. <br/><br/> \n\nRaimi, àquela época mais conhecido por seu trabalho na série <i>Evil Dead</i>, mas que também já havia feito um dos melhores filmes de super-herói (mas sem ser baseado em quadrinhos), <a href=\"https://_{type: 'screen', 'id': 9556, 'screen_type': movie}\">Darkman</a> (BR: Darkman – Vingança Sem Rosto, 1990), foi a escolha perfeita. Suas decisões no roteiro foram cruciais para o sucesso do filme e, além disso, trabalhou com uma paleta de cores vibrante, carregada em vermelho, laranja e amarelo, para evitar que os uniformes do herói e do vilão se sobressaíssem de maneira exagerada em relação ao ambiente ao redor e também para fazer a mímica dos multicoloridos quadrinhos da Casa das Ideias. O resultado, para o mal ou para o bem, foi que toda a fita acabou com um ar fortemente cartunesco, quase que literalmente arrancado do material que a inspirou. O toque final foi o essencial trabalho do veterano <a href=\"https://_{type: 'screen', 'id': 20925, 'screen_type': person}\">John Dykstra</a> (n-1947), famoso pelos efeitos especiais de Star Wars. A construção digital dos movimentos do aracnídeo talvez hoje pareça ultrapassados, mas isso se dá apenas porque a tecnologia avança a passos enlouquecedores. O fato, porém, permanece que ele conseguiu fazer a versão cinematográfica, de maneira muito eficiente, dos incríveis saltos e malabarismos do herói. <br/><br/> \n\nTudo funciona de maneira muito orgânica no filme ainda que, claro, o tempo necessário para Raimi contar o nascimento do personagem acabe retirando grande parte do potencial de ação da película. Mas a verdade é que Raimi, juntamente com <a href=\"https://_{type: 'screen', 'id': 7187, 'screen_type': person}\">Richard Donner</a> (n-1930) em 1978 e, mais recentemente, <a href=\"https://_{type: 'screen', 'id': 15277, 'screen_type': person}\">Jon Favreau</a> (n-1966) em <i>Homem de Ferro</i>, conta uma das melhores histórias “<i>de origem</i>” de super-heróis, sem deixar o passo esmorecer em momento algum. É uma mistura muito equilibrada entre respeito à obra original, adaptação bem feita e equilíbrio em relação ao resto da projeção. Apesar das atuações insossas de Dunst e Franco, o Peter Parker de <a href=\"https://_{type: 'screen', 'id': 2219, 'screen_type': person}\">Tobey Maguire</a> (n-1975), parte bobão, parte nerd, parte sobrinho amado, mas integralmente herói, tem uma evolução perfeitamente aceitável durante todo o filme. <a href=\"https://_{type: 'screen', 'id': 5293, 'screen_type': person}\">Willem Dafoe</a> (n-1955) faz o vilão caricato dos quadrinhos da maneira como o papel pede, servindo de contraponto às atitudes mais serenas de Parker. O pecado do design de produção fica mesmo com a armadura, digamos, estilo <i>Power Rangers</i> que o Duende ganhou, mas ela não chega a comprometer o resultado. <i>Homem-Aranha</i> continua sendo um dos melhores exemplares de um grande filme de super-heróis. No mínimo, a obra merece o status de ser uma divisora de águas do gênero.",
+      "credits": "Resumo baseado no artigo \"Crítica | Homem-Aranha (2002)\", por Ritter Fan no Plano Crítico."
+    },
+    {
+      "type": "text",
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 9495, 'screen_type': movie}\">The Crown</a> (BR: O Corvo, 1994), dirigido por <a href=\"https://_{type: 'screen', 'id': 21085, 'screen_type': person}\">Alex Proyas</a> (n-1963), acabou se tornando um pioneiro na evolução das adaptações que viriam após o seu lançamento, com uma história mais madura e violenta, focando em um público mais maduro. O sucesso de <i>O Corvo</i> catalisou o lançamento de uma versão cinematográfica de <a href=\"https://_{type: 'screen', 'id': 10336, 'screen_type': movie}\">Spawn</a> (BR: Spawn: O Soldado do Inferno, 1997), personagem principal da <i>Image Comics</i>. O sucesso dos personagens \"<i>mais sombrios</i>\" da <i>Image Comics</i> mudou a direção dos filmes baseado em quadrinhos."
+    },
+    {
+      "type": "video",
+      "video_id": "gHBhKbF2xMA",
+      "information": {
+        "contentTitle": "Cenas do filme Blade: O Caçador de Vampiros",
+        "contentText": "Lançado em 21 de agosto de 1998, Blade foi um sucesso comercial, arrecadando US $ 70 milhões nas bilheterias dos Estados Unidos e US $ 131,2 milhões no mundo todo. O sucesso de Blade deu início ao sucesso da Marvel nos cinemas e preparou o terreno para novas adaptações, como X-Men.",
+        "source": "Youtube: Canal <i>Yoda</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "A <i>Marvel</i>, com <a href=\"https://_{type: 'screen', 'id': 607, 'screen_type': movie}\">Men in Black</a> (BR: Homens de Preto, 1997) e <a href=\"https://_{type: 'screen', 'id': 36647, 'screen_type': movie}\">Blade</a> (BR: Blade: O Caçador de Vampiros, 1998) visou o desenvolvimento de franquias lucrativas. Com a compra da <i>Malibu Comics</i> (dona dos quadrinhos <i>The Men in Black</i>), a Marvel e a <i>Columbia Pictures</i> tratou de adaptar a HQ em 1997, com produção executiva de <a href=\"https://_{type: 'screen', 'id': 488, 'screen_type': person}\">Steven Spielberg</a> (n-1946). O filme tornou-se a primeira adaptação de uma propriedade da Marvel a ganhar um Oscar, feito que só se repetiria em 2002, com <a href=\"https://_{type: 'screen', 'id': 557, 'screen_type': movie}\">Spider-Man</a> (BR: Homem-Aranha, 2002), dirigido por <a href=\"https://_{type: 'screen', 'id': 7623, 'screen_type': person}\">Sam Raimi</a> (n-1959)."
+    },
+    {
+      "type": "text",
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 603, 'screen_type': movie}\">Matrix</a> (BR: Matrix, 1999) teve um impacto gigantesco nos filmes de super-heróis. Influenciado por histórias em quadrinhos, ficção cientifica cyberpunk, animes e filmes de Kung-Fu, <i>Matrix</i> preparou terreno para uma nova era de filmes com super heróis, no século 21."
+    },
+    {
+      "type": "video",
+      "video_id": "YVjyXY_mcl4",
+      "information": {
+        "contentTitle": "Cenas do filme X-Men: O Filme",
+        "contentText": "A produção de X-Men - O Filme foi recheada de problemas. Além da troca de Dougray Scott por Hugh Jackman no papel de Wolverine, a data de estreia do filme foi antecipada pelos executivos da Fox em quase 6 meses, o que fez com que o filme apenas fosse concluído poucas semanas antes da estreia oficial nos cinemas americanos. Além disso, as 500 cenas que utilizaram efeitos especiais foram encomendadas entre várias empresas, para que tudo ficasse pronto a tempo do lançamento.",
+        "source": "Youtube: Canal <i>Movieclips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Após esse boom dos quadrinhos, a primeira década do século 21 trouxe um interesse ainda maior em filmes de super-heróis. O sucesso da série de TV <i>X-Men</i> fez com que a <i>20th Century Fox</i> licencia-se os direitos do filme em 1994. Após o sucesso de <i>Homens de Preto</i>, em 1997, a <i>Columbia Pictures</i> licenciou os direitos do <i>Homem-Aranha</i> em 1999."
     },
     {
       "type": "quote",
       "quote": {
-        "quote": "",
-        "author": ""
+        "quote": "I am Iron Man.",
+        "author": "Tony Stark (Robert Downey Jr.) em Homem de Ferro"
       }
     },
     {
+      "type": "text",
+      "content_text": "O século começaria com o filme <a href=\"https://_{type: 'screen', 'id': 36657, 'screen_type': movie}\">X-Men</a> (BR: X-Men: O Filme, 2000), dirigido por <a href=\"https://_{type: 'screen', 'id': 9032, 'screen_type': person}\">Bryan Singer</a> (n-1965), considerado um marco no subgênero. O filme foi um tremendo sucesso de bilheteria, originando uma longa franquia de filmes, e provou de uma vez por todas que o público estava sedento por novas adaptações de quadrinhos. <a href=\"https://_{type: 'screen', 'id': 11614, 'screen_type': person}\">M. Night Shyamalan</a> (n-1970), no mesmo ano, lançou <a href=\"https://_{type: 'screen', 'id': 9741, 'screen_type': movie}\">Unbreakable</a> (BR: Corpo Fechado, 2000). Indo na contramão dos filmes fantásticos de super heróis, Shyamalan focou em elementos urbanos e no naturalismo."
+    },
+    {
+      "type": "video",
+      "video_id": "EcDVXeB_rY4",
+      "information": {
+        "contentTitle": "Cenas do filme Homem Aranha 2",
+        "contentText": "Homem-Aranha 2 foi lançado nos Estados Unidos em 30 de junho de 2004 nos cinemas convencionais e IMAX. Foi aclamado pela crítica, que elogiou sua direção, suas performances, história, trilha sonora, efeitos visuais e profundidade temática e emocional. Continua a ser destaque com frequência em listas dos melhores filmes de super-heróis de todos os tempos.",
+        "source": "Youtube: Canal <i>TopMovieClips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Em 2002, o fenômeno <i>Homem Aranha</i> chegou aos cinemas, batendo recordes de bilheterias e vendas de DVD. Seu sucesso seguiu uma longa lista de adaptações irregulares de heróis da Marvel e DC, como <a href=\"https://_{type: 'screen', 'id': 9480, 'screen_type': movie}\">Daredevil</a> (BR: Demolidor, 2003), <a href=\"https://_{type: 'screen', 'id': 1927, 'screen_type': movie}\">Hulk</a> (2003), <a href=\"https://_{type: 'screen', 'id': 314, 'screen_type': movie}\">Cat-Woman</a> (BR: Mulher-Gato, 2004), <a href=\"https://_{type: 'screen', 'id': 1487, 'screen_type': movie}\">Hellboy</a> (2004) e <a href=\"https://_{type: 'screen', 'id': 9738, 'screen_type': movie}\">Fantastic Four</a> (BR: O Quarteto Fantástico, 2005). Alguns críticos e especialistas atribuíram o aumento da popularidade das franquias de super-heróis ao clima social e político na sociedade ocidental desde os ataques terroristas de 11 de setembro de 2001, embora outros tenham argumentado que os avanços na tecnologia de efeitos especiais tiveram um papel mais significativo."
+    },
+    {
+      "type": "block_special",
+      "title": "O Batman (e filme) definitivo",
+      "image": {
+        "image_type": "local",
+        "url": "img_batman_cavaleiro_trevas",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Mesmo com todo o sucesso experimentado pela concorrência, poucos filmes alcançaram a excelência de <i>Batman: O Cavaleiro das Trevas</i> – em qualidade e em números. Foi a primeira adaptação de um herói dos quadrinhos a romper a barreira de 1 bilhão de dólares nas bilheterias. Rendeu um Oscar a um de seus protagonistas, <i>Heath Ledger</i>, que entregou a melhor versão do Coringa em qualquer mídia. Estabeleceu um tom e um estilo narrativo que trouxe personagens de fantasia para o \"<i>mundo real</i>\" de maneira crível. Talvez apenas <a href=\"https://_{type: 'screen', 'id': 263115, 'screen_type': movie}\">Logan</a> (2017), entre os super-heróis no cinema, tenha alcançado tamanha profundidade temática, tamanha densidade dramática.<br/><br/> \n\nNolan obviamente não tinha o menor interesse em colocar as mãos em outros heróis do catálogo da DC. Nem passava por sua cabeça a ideia de um \"<i>universo compartilhado</i>\", de usar um filme como mais um tijolo para completar uma muralha. Sua trilogia deixou claro que o interesse era, sim, criar uma alegoria sobre os cantos mais sombrios da mente humana, como medo, obsessão, vingança e loucura. O Batman e os personagens que orbitavam suas aventuras mostrou-se o ponto de partida perfeito para explorar temas muito reais. Uma pegada perfeita, que fez do segundo filme do diretor com o Homem-Morcego um fenômeno mundial, legitimando os \"<i>filmes de super-heróis</i>\" como uma força a ser reconhecida além dos números de bilheteria. <br/><br/> \n\n<i>Batman – O Cavaleiro das Trevas</i> provou, uma década atrás, que a resposta não está na imitação de um modelo, e sim na confiança em seus artistas. Patty Jenkins, quando trabalhou com pouca interferência, entregou <a href=\"https://_{type: 'screen', 'id': 297762, 'screen_type': movie}\">Wonder Woman</a> (BR: Mulher-Maravilha, 2017) e o mundo aplaudiu. Talvez essa seja a melhor herança da aventura que trouxe <a href=\"https://_{type: 'screen', 'id': 3894, 'screen_type': person}\">Christian Bale</a> (n-1974) e <i>Heath Ledger</i> em um duelo menos físico e mais psicológico: nunca é tarde para aprender novos truques.",
+      "credits": "Resumo baseado no artigo \"Nos 10 anos de Batman – O Cavaleiro das Trevas, o que a DC aprendeu?\", por Roberto Sadovski no uol.com."
+    },
+    {
+      "type": "text",
+      "content_text": "Mas foi somente em 2005, com o lançamento de <a href=\"https://_{type: 'screen', 'id': 272, 'screen_type': movie}\">Batman Begins</a> (2005), dirigido por <a href=\"https://_{type: 'screen', 'id': 525, 'screen_type': person}\">Christopher Nolan</a> (n-1970), que as adaptações mantiveram e ampliaram aquela qualidade que <i>Homem Aranha</i> havia apresentado 3 anos antes. A sua sequência, <a href=\"https://_{type: 'screen', 'id': 155, 'screen_type': movie}\">The Dark Knight</a> (BR: Batman: O Cavaleiro das Trevas, 2008) é considerado um dos melhores filmes de super-heróis já lançado, tendo sido indicado a 8 Oscars, ganhando o Oscar de Melhor Ator Coadjuvante por <a href=\"https://_{type: 'screen', 'id': 1810, 'screen_type': person}\">Heath Ledger</a> (1979-2008), algo inédito até então."
+    },
+    {
+      "type": "video",
+      "video_id": "jane6C4rIwc",
+      "information": {
+        "contentTitle": "Cenas do filme Batman: O Cavaleiro das Trevas",
+        "contentText": "Na internet, serviços de venda de ingressos venderam um número exorbitante de ingressos para aproximadamente 3.000 exibições à meia noite e também para exibições na manhã de lançamento do filme, algo muito incomum. Todos os cinemas IMAX que estavam passando The Dark Knight estavam lotados no primeiro fim de semana.",
+        "source": "Youtube: Canal <i>Flashback FM</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Em novembro de 2005, a Marvel ganhou os direitos cinematográficos do Homem de Ferro da New Line Cinema e, em 2008, lança o seu primeiro filme através da <i>Marvel Studios</i>, <a href=\"https://_{type: 'screen', 'id': 1726, 'screen_type': movie}\">Iron Man</a> (BR: Homem de Ferro, 2008), marcando o início daquele que seria conhecido como <i>Universo Cinematográfico Marvel</i>. Uma empreitada que resultaria em mais de 23 filmes interligados, se tornando a franquia mais lucrativa da história do cinema, somando uma média de mais de 21 bilhões de dólares em receita."
+    },
+    {
       "type": "movie_list",
-      "movies": []
+      "movies": [
+        {
+          "video": false,
+          "id": 155,
+          "popularity": 53.897,
+          "vote_count": 23745,
+          "release_date": "2008-07-16",
+          "vote_average": 8.5,
+          "adult": false,
+          "backdrop_path": "\/hkBaDkMWbLaf8B1lsWsKX7Ew3Xq.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            28,
+            80,
+            53
+          ],
+          "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+          "original_language": "en",
+          "original_title": "The Dark Knight",
+          "poster_path": "\/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+          "title": "The Dark Knight"
+        },
+        {
+          "video": false,
+          "vote_average": 7.2,
+          "popularity": 60.472,
+          "overview": "After being bitten by a genetically altered spider, nerdy high school student Peter Parker is endowed with amazing powers to become the Amazing superhero known as Spider-Man.",
+          "release_date": "2002-05-01",
+          "id": 557,
+          "adult": false,
+          "backdrop_path": "\/sWvxBXNtCOaGdtpKNLiOqmwb10N.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            14,
+            28
+          ],
+          "original_language": "en",
+          "title": "Spider-Man",
+          "original_title": "Spider-Man",
+          "poster_path": "\/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
+          "vote_count": 12620
+        },
+        {
+          "video": false,
+          "id": 36657,
+          "popularity": 1.389,
+          "vote_count": 8326,
+          "release_date": "2000-07-13",
+          "vote_average": 7,
+          "adult": false,
+          "backdrop_path": "\/a6MwSrIKmMjs5b8os7eEgQk05yx.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            12,
+            28,
+            878
+          ],
+          "overview": "Two mutants, Rogue and Wolverine, come to a private academy for their kind whose resident superhero team, the X-Men, must oppose a terrorist organization with similar powers.",
+          "original_language": "en",
+          "original_title": "X-Men",
+          "poster_path": "\/hkoAUNLa0lOQ11apLUJ6Oh1EWID.jpg",
+          "title": "X-Men"
+        },
+        {
+          "video": false,
+          "id": 1924,
+          "popularity": 25.435,
+          "overview": "Mild-mannered Clark Kent works as a reporter at the Daily Planet alongside his crush, Lois Lane. Clark must summon his superhero alter-ego when the nefarious Lex Luthor launches a plan to take over the world.",
+          "release_date": "1978-12-13",
+          "vote_count": 2495,
+          "adult": false,
+          "backdrop_path": "\/v6MVBFnQOscITvmAy5N5ras2JKZ.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            878,
+            28,
+            12
+          ],
+          "vote_average": 7.1,
+          "original_language": "en",
+          "original_title": "Superman",
+          "poster_path": "\/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg",
+          "title": "Superman"
+        },
+        {
+          "video": false,
+          "id": 268,
+          "popularity": 28.864,
+          "vote_count": 5119,
+          "release_date": "1989-06-23",
+          "vote_average": 7.2,
+          "adult": false,
+          "backdrop_path": "\/2va32apQP97gvUxaMnL5wYt4CRB.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            14,
+            28
+          ],
+          "overview": "Having witnessed his parents' brutal murder as a child, millionaire philanthropist Bruce Wayne fights crime in Gotham City disguised as Batman, a costumed hero who strikes fear into the hearts of villains. But when a deformed madman who calls himself \"The Joker\" seizes control of Gotham's criminal underworld, Batman must face his most ruthless nemesis ever while protecting both his identity and his love interest, reporter Vicki Vale.",
+          "original_language": "en",
+          "original_title": "Batman",
+          "poster_path": "\/tDexQyu6FWltcd0VhEDK7uib42f.jpg",
+          "title": "Batman"
+        },
+        {
+          "video": false,
+          "id": 36647,
+          "popularity": 26.631,
+          "vote_count": 4013,
+          "release_date": "1998-08-21",
+          "vote_average": 6.7,
+          "adult": false,
+          "backdrop_path": "\/dJMq14I3XoadBFH0nEkZPmWGvhN.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            27,
+            28
+          ],
+          "overview": "When Blade's mother was bitten by a vampire during pregnancy, she did not know that she gave her son a special gift while dying—all the good vampire attributes in combination with the best human skills. Blade and his mentor battle an evil vampire rebel who plans to take over the outdated vampire council, capture Blade and resurrect a voracious blood god.",
+          "original_language": "en",
+          "original_title": "Blade",
+          "poster_path": "\/PDuKQeQkRHkdx7rY147VBVN5Ef.jpg",
+          "title": "Blade"
+        },
+        {
+          "video": false,
+          "id": 9741,
+          "popularity": 21.414,
+          "vote_count": 6629,
+          "release_date": "2000-11-22",
+          "vote_average": 7.1,
+          "adult": false,
+          "backdrop_path": "\/kxXPepFUn59WY2LU9mgxpil9i6c.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            53,
+            18,
+            9648
+          ],
+          "overview": "An ordinary man makes an extraordinary discovery when a train accident leaves his fellow passengers dead — and him unscathed. The answer to this mystery could lie with the mysterious Elijah Price, a man who suffers from a disease that renders his bones as fragile as glass.",
+          "original_language": "en",
+          "original_title": "Unbreakable",
+          "poster_path": "\/d1poWPWvhO0n05xKGTqAjNN37qC.jpg",
+          "title": "Unbreakable"
+        },
+        {
+          "video": false,
+          "id": 272,
+          "popularity": 44.078,
+          "vote_count": 15214,
+          "release_date": "2005-06-10",
+          "vote_average": 7.7,
+          "adult": false,
+          "backdrop_path": "\/lh5lbisD4oDbEKgUxoRaZU8HVrk.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            80,
+            18
+          ],
+          "overview": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
+          "original_language": "en",
+          "original_title": "Batman Begins",
+          "poster_path": "\/1P3ZyEq02wcTMd3iE4ebtLvncvH.jpg",
+          "title": "Batman Begins"
+        },
+        {
+          "video": false,
+          "id": 1726,
+          "popularity": 57.123,
+          "vote_count": 19420,
+          "release_date": "2008-04-30",
+          "vote_average": 7.6,
+          "adult": false,
+          "backdrop_path": "\/A1m5BJznmmsDyj25AnhDyFbBSJJ.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            878,
+            12
+          ],
+          "overview": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+          "original_language": "en",
+          "original_title": "Iron Man",
+          "poster_path": "\/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+          "title": "Iron Man"
+        },
+        {
+          "video": false,
+          "id": 607,
+          "popularity": 29.48,
+          "vote_count": 10090,
+          "release_date": "1997-07-02",
+          "vote_average": 7.1,
+          "adult": false,
+          "backdrop_path": "\/1GJvBE7UWU1WOVi0XREl4JQc7f8.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            12,
+            35,
+            878
+          ],
+          "overview": "After a police chase with an otherworldly being, a New York City cop is recruited as an agent in a top-secret organization established to monitor and police alien activity on Earth: the Men in Black. Agent Kay and new recruit Agent Jay find themselves in the middle of a deadly plot by an intergalactic terrorist who has arrived on Earth to assassinate two ambassadors from opposing galaxies.",
+          "original_language": "en",
+          "original_title": "Men in Black",
+          "poster_path": "\/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
+          "title": "Men in Black"
+        },
+        {
+          "video": false,
+          "id": 10336,
+          "popularity": 19.073,
+          "vote_count": 814,
+          "release_date": "1997-07-31",
+          "vote_average": 5.3,
+          "adult": false,
+          "backdrop_path": "\/lhGLPatKPAKmtBzUbXiz8Foi5zZ.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            12,
+            14,
+            27,
+            878,
+            53
+          ],
+          "overview": "After being murdered by corrupt colleagues in a covert government agency, Al Simmons makes a pact with the devil to be resurrected to see his beloved wife Wanda. In exchange for his return to Earth, Simmons agrees to lead Hell's Army in the destruction of mankind.",
+          "original_language": "en",
+          "original_title": "Spawn",
+          "poster_path": "\/3svvunKXkhRvEKByGDua1Qu0otq.jpg",
+          "title": "Spawn"
+        },
+        {
+          "video": false,
+          "id": 9495,
+          "popularity": 15.813,
+          "vote_count": 2485,
+          "release_date": "1994-05-11",
+          "vote_average": 7.5,
+          "adult": false,
+          "backdrop_path": "\/8v5z3Wa6GbyjqvMxXz11PTmDCwS.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            14,
+            53
+          ],
+          "overview": "Exactly one year after young rock guitarist Eric Draven and his fiancée are brutally killed by a ruthless gang of criminals, Draven -- watched over by a hypnotic crow -- returns from the grave to exact revenge.",
+          "original_language": "en",
+          "original_title": "The Crow",
+          "poster_path": "\/wF2Tnf0bdYrzCKVbWh0mFwPJS6k.jpg",
+          "title": "The Crow"
+        },
+        {
+          "video": false,
+          "id": 1498,
+          "popularity": 17.835,
+          "overview": "A quartet of mutated humanoid turtles clash with an uprising criminal gang of ninjas",
+          "release_date": "1990-03-30",
+          "vote_count": 1100,
+          "adult": false,
+          "backdrop_path": "\/v9HELu91Y1CHivMHmA3LBYgfUMD.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            878,
+            28,
+            12,
+            35,
+            10751
+          ],
+          "vote_average": 6.6,
+          "original_language": "en",
+          "original_title": "Teenage Mutant Ninja Turtles",
+          "poster_path": "\/jKi5Q1kd6azoGI6hUJh0p0RxSmu.jpg",
+          "title": "Teenage Mutant Ninja Turtles"
+        },
+        {
+          "video": false,
+          "id": 13183,
+          "popularity": 26.46,
+          "vote_count": 6397,
+          "release_date": "2009-03-05",
+          "vote_average": 7.3,
+          "adult": false,
+          "backdrop_path": "\/dH7ia3vtkYCa3CBvDnvVjqm9uiQ.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            9648,
+            878
+          ],
+          "overview": "In a gritty and alternate 1985 the glory days of costumed vigilantes have been brought to a close by a government crackdown, but after one of the masked veterans is brutally murdered, an investigation into the killer is initiated. The reunited heroes set out to prevent their own destruction, but in doing so uncover a sinister plot that puts all of humanity in grave danger.",
+          "original_language": "en",
+          "original_title": "Watchmen",
+          "poster_path": "\/aZvOkdo203bm1kpcY0A0Tn074ER.jpg",
+          "title": "Watchmen"
+        },
+        {
+          "video": false,
+          "id": 561,
+          "popularity": 38.519,
+          "vote_count": 4459,
+          "release_date": "2005-02-08",
+          "vote_average": 6.9,
+          "adult": false,
+          "backdrop_path": "\/tIG8FwHRiHLOlWJdizp2oxdkSL2.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            14,
+            27
+          ],
+          "overview": "John Constantine has literally been to Hell and back. When he teams up with a policewoman to solve the mysterious suicide of her twin sister, their investigation takes them through the world of demons and angels that exists beneath the landscape of contemporary Los Angeles.",
+          "original_language": "en",
+          "original_title": "Constantine",
+          "poster_path": "\/vPYgvd2MwHlxTamAOjwVQp4qs1W.jpg",
+          "title": "Constantine"
+        },
+        {
+          "video": false,
+          "id": 1487,
+          "popularity": 22.316,
+          "vote_count": 5028,
+          "release_date": "2004-04-02",
+          "vote_average": 6.6,
+          "adult": false,
+          "backdrop_path": "\/v6ejJREqtrKoveHhX7q0mwP9iUd.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            14,
+            28
+          ],
+          "overview": "In the final days of World War II, the Nazis attempt to use black magic to aid their dying cause. The Allies raid the camp where the ceremony is taking place, but not before a demon—Hellboy—has already been conjured. Joining the Allied forces, Hellboy eventually grows to adulthood, serving the cause of good rather than evil.",
+          "original_language": "en",
+          "original_title": "Hellboy",
+          "poster_path": "\/21hS8mD8uxBVvf8xVYR30LbbmPO.jpg",
+          "title": "Hellboy"
+        },
+        {
+          "video": false,
+          "id": 9480,
+          "popularity": 20.844,
+          "overview": "He dwells in a world of eternal night, but the blackness is filled with sounds and scents, tastes and textures that most cannot perceive. Although attorney Matt Murdock is blind, his other four senses function with superhuman sharpness. By day, Murdock represents the downtrodden. At night he is Daredevil, a masked vigilante stalking the dark streets of the city, a relentless avenger of justice.",
+          "release_date": "2003-02-14",
+          "vote_count": 3568,
+          "adult": false,
+          "backdrop_path": "\/uhEYJOmGuG9ZpyMgI7AeThLce7h.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            14,
+            28,
+            80,
+            878,
+            53
+          ],
+          "vote_average": 5.2,
+          "original_language": "en",
+          "original_title": "Daredevil",
+          "poster_path": "\/oCDBwSkntYamuw8VJIxMRCtDBmi.jpg",
+          "title": "Daredevil"
+        },
+        {
+          "video": false,
+          "id": 1250,
+          "popularity": 32.179,
+          "vote_count": 4111,
+          "release_date": "2007-02-16",
+          "vote_average": 5.5,
+          "adult": false,
+          "backdrop_path": "\/ohfWCHT65P7b3kQvZnoy2BL95MB.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            53,
+            28,
+            14
+          ],
+          "overview": "In order to save his dying father, young stunt cyclist Johnny Blaze sells his soul to Mephistopheles and sadly parts from the pure-hearted Roxanne Simpson, the love of his life. Years later, Johnny's path crosses again with Roxanne, now a go-getting reporter, and also with Mephistopheles, who offers to release Johnny's soul if Johnny becomes the fabled, fiery 'Ghost Rider'.",
+          "original_language": "en",
+          "original_title": "Ghost Rider",
+          "poster_path": "\/1pyU94dAY7npDQCKuxCSyX9KthN.jpg",
+          "title": "Ghost Rider"
+        }
+      ]
     },
     {
       "type": "person_list",
-      "persons": []
+      "persons": [
+        {
+          "id": 7624,
+          "name": "Stan Lee",
+          "profile_path": "/nGjBAc25C3LT23NqeOfY1pCcax8.jpg"
+        },
+        {
+          "id": 20006,
+          "name": "Christopher Reeve",
+          "profile_path": "/vAGrPf3ajy6OVE3FhgABynZfybP.jpg"
+        },
+        {
+          "id": 1810,
+          "name": "Heath Ledger",
+          "profile_path": "/5Y9HnYYa9jF4NunY9lSgJGjSe8E.jpg"
+        },
+        {
+          "id": 510,
+          "name": "Tim Burton",
+          "profile_path": "/yemSBov9u1YcBg93ny14KpuySV2.jpg"
+        },
+        {
+          "id": 525,
+          "name": "Christopher Nolan",
+          "profile_path": "/xuAIuYSmsUzKlUMBFGVZaWsY3DZ.jpg"
+        },
+        {
+          "id": 947,
+          "name": "Hans Zimmer",
+          "profile_path": "/tpQnDeHY15szIXvpnhlprufz4d.jpg"
+        },
+        {
+          "id": 6968,
+          "name": "Hugh Jackman",
+          "profile_path": "/oX6CpXmnXCHLyqsa4NEed1DZAKx.jpg"
+        },
+        {
+          "id": 2888,
+          "name": "Will Smith",
+          "profile_path": "/eze9FO9VuryXLP0aF2cRqPCcibN.jpg"
+        },
+        {
+          "id": 2219,
+          "name": "Tobey Maguire",
+          "profile_path": "/ncF4HivY2W6SQW5dEP3N3I4mfT0.jpg"
+        },
+        {
+          "id": 2387,
+          "name": "Patrick Stewart",
+          "profile_path": "/wEy5qSDT5jT3ZASc2hbwi59voPL.jpg"
+        },
+        {
+          "id": 11614,
+          "name": "M. Night Shyamalan",
+          "profile_path": "/uLgGi0p8qKIvQxi8ESwzkrJJ2Wu.jpg"
+        },
+        {
+          "id": 5293,
+          "name": "Willem Dafoe",
+          "profile_path": "/kX7P78zqsjxj87SiAYzknzJQ3wr.jpg"
+        },
+        {
+          "id": 3894,
+          "name": "Christian Bale",
+          "profile_path": "/b7fTC9WFkgqGOv77mLQtmD4Bwjx.jpg"
+        },
+        {
+          "id": 10814,
+          "name": "Wesley Snipes",
+          "profile_path": "/uBhM3TshYvRhOewXAimtxci9bQo.jpg"
+        },
+        {
+          "id": 488,
+          "name": "Steven Spielberg",
+          "profile_path": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg"
+        },
+        {
+          "id": 15277,
+          "name": "Jon Favreau",
+          "profile_path": "/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg"
+        }
+      ]
     },
     {
       "type": "link_screen",
