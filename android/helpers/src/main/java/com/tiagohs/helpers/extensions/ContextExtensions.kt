@@ -23,6 +23,8 @@ fun Context.toast(@StringRes resource: Int, duration: Int = Toast.LENGTH_SHORT) 
     Toast.makeText(this, resource, duration).show()
 }
 
+fun Context.getDimen(dimenRes: Int): Float = resources.getDimension(dimenRes)
+
 @Suppress("DEPRECATION")
 fun Context?.isNetworkAvailable(): Boolean {
     if (this == null) {

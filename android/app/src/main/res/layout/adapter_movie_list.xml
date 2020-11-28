@@ -77,6 +77,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/imageCard"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
         app:cardCornerRadius="@dimen/activity_vertical_margin_2x"
         app:layout_constraintTop_toBottomOf="@id/guidelineTop"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"

@@ -35,7 +35,7 @@ class MovieInfoPersonListViewHolder(
 
         personTitle.setResourceText(listTitle)
         personList.apply {
-            adapter = PersonAdapter(persons, onPersonClicked)
+            adapter = PersonAdapter(persons, isSpecial = false, onPersonClicked)
             layoutManager =
                 LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             addItemDecoration(

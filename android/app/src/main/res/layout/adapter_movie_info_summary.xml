@@ -45,6 +45,7 @@
                     android:minWidth="@dimen/certification_card_height"
                     android:id="@+id/certificationCard"
                     app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
                     app:cardBackgroundColor="@color/md_black_1000"
                     android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
                     android:visibility="gone"
@@ -81,6 +82,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/facebookContainerClickable"
+                        android:foreground="?android:attr/selectableItemBackgroundBorderless"
                         android:clickable="true"
                         android:focusable="true"
                         android:background="?selectableItemBackground">
@@ -113,6 +115,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/twitterContainerClickable"
+                        android:foreground="?android:attr/selectableItemBackgroundBorderless"
                         android:clickable="true"
                         android:focusable="true"
                         android:background="?selectableItemBackground">
@@ -145,6 +148,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/instagramContainerClickable"
+                        android:foreground="?android:attr/selectableItemBackgroundBorderless"
                         android:clickable="true"
                         android:focusable="true"
                         android:background="?selectableItemBackground">
@@ -177,6 +181,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/linkContainerClickable"
+                        android:foreground="?android:attr/selectableItemBackgroundBorderless"
                         android:clickable="true"
                         android:focusable="true"
                         android:background="?selectableItemBackground">
@@ -208,6 +213,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/imdbContainerClickable"
+                        android:foreground="?android:attr/selectableItemBackgroundBorderless"
                         android:clickable="true"
                         android:focusable="true"
                         android:background="?selectableItemBackground">

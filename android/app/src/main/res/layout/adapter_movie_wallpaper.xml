@@ -12,6 +12,7 @@
         android:scaleType="centerCrop"
         android:id="@+id/image"
         android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
         android:focusable="true"
         android:background="?selectableItemBackground"
     />

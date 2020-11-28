@@ -7,6 +7,7 @@
     android:id="@+id/itemContainerCard"
     app:cardElevation="@dimen/activity_vertical_margin_0.5x"
     app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
     app:cardBackgroundColor="@color/md_orange_500"
     android:layout_margin="@dimen/activity_vertical_margin_1.2x">
 

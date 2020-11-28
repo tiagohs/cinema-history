@@ -219,6 +219,8 @@
     <!-- PERSON ITEM -->
     <dimen name="person_item_width">120dp</dimen>
     <dimen name="person_item_height">180dp</dimen>
+    <dimen name="person_item_width_special">180dp</dimen>
+    <dimen name="person_item_height_special">300dp</dimen>
     <dimen name="person_item_degrade">100dp</dimen>
     <dimen name="person_item_social_image_width">25dp</dimen>
     <dimen name="person_item_social_image_height">25dp</dimen>

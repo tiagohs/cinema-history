@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageCardContainer"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
         app:cardCornerRadius="@dimen/activity_vertical_margin_2x"
         app:cardElevation="@dimen/activity_vertical_margin_0.5x"
         android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"

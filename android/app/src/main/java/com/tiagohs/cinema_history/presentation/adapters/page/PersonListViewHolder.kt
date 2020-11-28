@@ -47,7 +47,7 @@ class PersonListViewHolder(
         } ?: emptyList()
 
         personList.apply {
-            adapter = PersonAdapter(persons, onPersonClicked)
+            adapter = PersonAdapter(persons, isSpecial = true, onPersonClicked)
             layoutManager =
                 LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 

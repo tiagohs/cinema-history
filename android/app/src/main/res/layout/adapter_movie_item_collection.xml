@@ -11,6 +11,7 @@
         android:id="@+id/imageCard"
         app:cardCornerRadius="@dimen/activity_vertical_margin_2x"
         android:layout_margin="@dimen/activity_vertical_margin_2x"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 

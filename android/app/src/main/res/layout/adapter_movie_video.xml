@@ -5,6 +5,7 @@
     android:layout_width="@dimen/movie_video_card_width"
     android:layout_height="@dimen/movie_video_card_height"
     android:id="@+id/videoContainer"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
     android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
     android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
     android:clickable="true"
