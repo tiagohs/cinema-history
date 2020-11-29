@@ -123,6 +123,9 @@ class TimelineActivity : BaseActivity(), TimelinePageView {
             adapter = adapterPager
             currentItem = startIndex
         }
+
+        this.currentIndex = startIndex
+
         timelineContentViewPager.registerOnPageChangeCallback(object :
             ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
@@ -139,7 +142,7 @@ class TimelineActivity : BaseActivity(), TimelinePageView {
     fun setNextPage() {
         val currentPosition = timelineContentViewPager.currentItem
 
-        if (currentPosition < timelineContentViewPager.size) {
+        if (currentPosition < (listOfTimelineIndex.size - 1)) {
             timelineContentViewPager.setCurrentItem(currentPosition + 1, true)
         }
 
@@ -148,7 +151,7 @@ class TimelineActivity : BaseActivity(), TimelinePageView {
     fun setPreviousPage() {
         val currentPosition = timelineContentViewPager.currentItem
 
-        if (currentPosition > 0 && timelineContentViewPager.size > 0) {
+        if (currentPosition > 0 && (listOfTimelineIndex.size - 1) > 0) {
             timelineContentViewPager.setCurrentItem(currentPosition - 1, true)
         }
 

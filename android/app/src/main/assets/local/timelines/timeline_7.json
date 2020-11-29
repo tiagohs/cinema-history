@@ -1,0 +1,18 @@
+{
+  "id": 2,
+  "color": "md_light_blue_500",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "A História<br/>do Cinema:<br/>2010 até Atualmente",
+      "page_title": "2010 até Atualmente",
+      "coming_soon": true,
+      "previous": "1990 a 2009"
+    },
+    {
+      "type": "footer",
+      "previous": "1990 a 2009"
+    }
+  ]
+}

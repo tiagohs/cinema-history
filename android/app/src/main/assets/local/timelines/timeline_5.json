@@ -657,6 +657,20 @@
     },
     {
       "type": "item",
+      "year": "19\n86",
+      "title": "Estúdio Ghibli",
+      "description": "O <strong>Estúdio Ghibli</strong> lança o seu primeiro filme oficialmente, <a href=\"https://_{type: 'screen', 'id': 4935, 'screen_type': movie}\">Hauru no Ugoku Shiro</a> (BR: O Castelo Animado, 2004), após o sucesso de <a href=\"https://_{type: 'screen', 'id': 81, 'screen_type': movie}\">Kaze no Tani no Naushika</a> (BR: Nausicaä do Vale do Vento, 1984).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ghibli.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
       "year": "19\n87",
       "title": "Dirty Dancing",
       "description": "<a href=\"https://_{type: 'screen', 'id': 88, 'screen_type': movie}\">Dirty Dancing</a> (BR: Dirty Dancing: Ritmo quente, 1987) se torna um dos mais emblemáticos filmes dos anos 1980.",
@@ -731,6 +745,20 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_sex_lies.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n89",
+      "title": "Faça a coisa certa",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 925, 'screen_type': movie}\">Do the Right Thing</a> (BR: Faça a Coisa Certa, 1989), de <a href=\"https://_{type: 'screen', 'id': 5281, 'screen_type': person}\">Spike Lee</a> (n-1957), chega aos cinemas, consagrando o diretor como uma das grandes revelações da época. O filme foi um precursor dos filmes focados na periferia e em personagens Afro-Americanos.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_faca_coisa_certa.webp",
         "style": {
           "scale_type": "center_crop"
         }
