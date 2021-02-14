@@ -30,37 +30,15 @@
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_javax_annotation_10_0_b28_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_16_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_logo_SAG_awards.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_logo_sag_awards.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_logo_SAG_awards.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_logo_sag_awards.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_logo_SAG_awards.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_logo_sag_awards.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_logo_SAG_awards.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_logo_sag_awards.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_logo_SAG_awards.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_logo_sag_awards.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_logo_SAG_awards.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_logo_sag_awards.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[0044112202]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -109,10 +87,14 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-28T21:59:37.678Z" />
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
     <property name="ExportApk.BuildVariants" value="release" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ScreenshotViewer.SavePath" value="$PROJECT_DIR$/../screens" />
+    <property name="android-custom-view/Users/tiago.hsilva/Desenvolvimento/cinema-history/android/uicomponents/src/main/java/com/tiagohs/uicomponents/videoviewer/VideoViewerView.kt_SELECTED" value="VideoViewerView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets/local/pages/main_2" />
+    <property name="multi-representation-preview/Users/tiago.hsilva/Desenvolvimento/cinema-history/android/uicomponents/src/main/java/com/tiagohs/uicomponents/videoviewer/VideoViewerView.kt_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -292,10 +274,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="588" y="315" width="615" height="490" key="find.popup" timestamp="1611941885841">
+    <state x="257" y="110" width="1110" height="1010" key="ScreenshotViewer.Dimensions" timestamp="1612648058747">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
+    <state x="257" y="110" width="1110" height="1010" key="ScreenshotViewer.Dimensions/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1612648058747" />
+    <state x="630" y="-776" width="736" height="490" key="find.popup" timestamp="1612194714195">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="630" y="-776" width="736" height="490" key="find.popup/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1612194714195" />
     <state x="588" y="315" width="615" height="490" key="find.popup/0.-1080.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1611941885841" />
+    <state x="625" y="-878" width="670" height="676" key="search.everywhere.popup" timestamp="1612192816723">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="625" y="-878" width="670" height="676" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1792.1120@0.-1080.1920.1080" timestamp="1612192816723" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
