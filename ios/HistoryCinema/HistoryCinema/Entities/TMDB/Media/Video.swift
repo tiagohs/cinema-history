@@ -6,7 +6,6 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
-import ObjectMapper
 
 struct Video: BaseModel {
     var id : String?

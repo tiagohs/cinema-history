@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 struct Translation: BaseModel {
     var id: Int? = UUID().hashValue

@@ -1,6 +1,5 @@
 
 import Foundation
-import ObjectMapper
 
 struct Genre : BaseModel {
 	var id : Int?

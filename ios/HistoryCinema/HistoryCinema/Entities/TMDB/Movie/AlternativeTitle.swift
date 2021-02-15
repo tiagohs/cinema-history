@@ -6,7 +6,6 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
-import ObjectMapper
 
 struct AlternativeTitle: BaseModel {
     var id: Int?

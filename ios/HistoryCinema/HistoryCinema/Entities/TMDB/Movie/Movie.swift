@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 struct Movie: BaseModel {
     var id: Int?

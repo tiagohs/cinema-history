@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 struct Person: BaseModel {
     var id : Int?

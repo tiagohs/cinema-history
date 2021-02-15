@@ -1,5 +1,4 @@
 
-import ObjectMapper
 
 struct ProductionCompany : BaseModel {
 	var id : Int?

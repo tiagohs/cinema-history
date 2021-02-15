@@ -106,9 +106,7 @@
 		A33BCAF125D8A8ED00E0A63D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A33BCAC025D8A8EC00E0A63D /* Roboto-Bold.ttf */; };
 		A33BCAF225D8A8ED00E0A63D /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A33BCAC125D8A8EC00E0A63D /* Montserrat-Italic.ttf */; };
 		A33BCAF325D8A8ED00E0A63D /* Heptaslab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A33BCAC225D8A8ED00E0A63D /* Heptaslab-Regular.ttf */; };
-		A33BCAF625D8ACE000E0A63D /* DateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BCAF525D8ACE000E0A63D /* DateFormatTransform.swift */; };
 		A33BCAF825D8AD5F00E0A63D /* LocaleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BCAF725D8AD5F00E0A63D /* LocaleDTO.swift */; };
-		A33BCAFD25D8B07100E0A63D /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A33BCAFC25D8B07100E0A63D /* ObjectMapper */; };
 		A33BCB0425D9B12700E0A63D /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BCB0125D9B12600E0A63D /* MovieService.swift */; };
 		A33BCB0525D9B12700E0A63D /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BCB0225D9B12700E0A63D /* PersonService.swift */; };
 		A33BCB0625D9B12700E0A63D /* GenreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BCB0325D9B12700E0A63D /* GenreService.swift */; };
@@ -368,7 +366,6 @@
 		A33BCAC025D8A8EC00E0A63D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		A33BCAC125D8A8EC00E0A63D /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		A33BCAC225D8A8ED00E0A63D /* Heptaslab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heptaslab-Regular.ttf"; sourceTree = "<group>"; };
-		A33BCAF525D8ACE000E0A63D /* DateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatTransform.swift; sourceTree = "<group>"; };
 		A33BCAF725D8AD5F00E0A63D /* LocaleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDTO.swift; sourceTree = "<group>"; };
 		A33BCB0125D9B12600E0A63D /* MovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		A33BCB0225D9B12700E0A63D /* PersonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
@@ -510,7 +507,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A33BCAFD25D8B07100E0A63D /* ObjectMapper in Frameworks */,
 				A33BCB1125D9B33100E0A63D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -846,7 +842,6 @@
 		A33BCAF425D8ACC100E0A63D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				A33BCAF525D8ACE000E0A63D /* DateFormatTransform.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1200,7 +1195,6 @@
 			);
 			name = HistoryCinema;
 			packageProductDependencies = (
-				A33BCAFC25D8B07100E0A63D /* ObjectMapper */,
 				A33BCB1025D9B33100E0A63D /* Alamofire */,
 			);
 			productName = HistoryCinema;
@@ -1275,7 +1269,6 @@
 			);
 			mainGroup = A33BC97825D89C4200E0A63D;
 			packageReferences = (
-				A33BCAFB25D8B07100E0A63D /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				A33BCB0F25D9B33100E0A63D /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = A33BC98225D89C4200E0A63D /* Products */;
@@ -1489,7 +1482,6 @@
 				A33BC9BB25D8A21300E0A63D /* URLUtils.swift in Sources */,
 				A33BCC1125DA06AA00E0A63D /* LocalContentService.swift in Sources */,
 				A33BCB1625D9C4D800E0A63D /* HomePresenter.swift in Sources */,
-				A33BCAF625D8ACE000E0A63D /* DateFormatTransform.swift in Sources */,
 				A33BCB2225D9FDBB00E0A63D /* DebugUtils.swift in Sources */,
 				A33BCC2625DA0C6500E0A63D /* ImageStyle.swift in Sources */,
 				A33BCA0625D8A33400E0A63D /* TaggedImages.swift in Sources */,
@@ -1871,14 +1863,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A33BCAFB25D8B07100E0A63D /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.0;
-			};
-		};
 		A33BCB0F25D9B33100E0A63D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -1890,11 +1874,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A33BCAFC25D8B07100E0A63D /* ObjectMapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A33BCAFB25D8B07100E0A63D /* XCRemoteSwiftPackageReference "ObjectMapper" */;
-			productName = ObjectMapper;
-		};
 		A33BCB1025D9B33100E0A63D /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A33BCB0F25D9B33100E0A63D /* XCRemoteSwiftPackageReference "Alamofire" */;

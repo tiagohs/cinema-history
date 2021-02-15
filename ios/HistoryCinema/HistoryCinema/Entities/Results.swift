@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 struct ResultsMovie: BaseModel {
     var id: String? = UUID().uuidString

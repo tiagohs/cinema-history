@@ -1,6 +1,5 @@
 
 import Foundation
-import ObjectMapper
 
 struct SpokenLanguage : BaseModel {
     var id: Int? = UUID().hashValue

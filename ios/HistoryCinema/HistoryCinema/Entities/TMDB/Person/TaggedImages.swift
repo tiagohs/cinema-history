@@ -1,5 +1,4 @@
 
-import ObjectMapper
 import Foundation
 
 struct TaggedImages: BaseModel {

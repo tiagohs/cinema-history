@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 struct TaggedImagesResults: BaseModel {
     var id: Int? = UUID().hashValue

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 struct CreditCrew: BaseModel {
     var id : Int?

@@ -6,7 +6,6 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
-import ObjectMapper
 import Foundation
 
 struct Rating: BaseModel {
