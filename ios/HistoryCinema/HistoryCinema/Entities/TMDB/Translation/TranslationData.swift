@@ -6,17 +6,12 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
+import Foundation
 import ObjectMapper
 
-class TranslationData: BaseModel {
+struct TranslationData: BaseModel {
+    var id: Int? = UUID().hashValue
     var title : String?
     var overview : String?
     var homepage : String?
-    
-    override func mapping(map: Map) {
-        title       <- map["title"]
-        overview    <- map["overview"]
-        homepage    <- map["homepage"]
-    }
-    
 }

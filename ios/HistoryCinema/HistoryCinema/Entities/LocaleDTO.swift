@@ -9,7 +9,7 @@ import Foundation
 
 import Foundation
 
-class LocaleDTO {
+struct LocaleDTO {
     var id: String
     var isoCountry: String
     var displayName: String

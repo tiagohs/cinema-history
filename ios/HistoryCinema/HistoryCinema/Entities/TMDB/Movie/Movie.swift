@@ -9,8 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Movie: BaseModel, Hashable {
-    
+struct Movie: BaseModel {
     var id: Int?
     var adult: Bool?
     var backdropPath: String?
@@ -18,13 +17,14 @@ class Movie: BaseModel, Hashable {
     var budget: Int?
     var homepage: String?
     var imdbID, originalLanguage, originalTitle, overview: String?
-    var popularity: Double?
+    var popularity: Decimal?
     var posterPath: String?
     var revenue, runtime: Int?
     var status, tagline, title: String?
     var video: Bool?
-    var voteAverage: Double?
+    var voteAverage: Decimal?
     var voteCount: Int?
+    private var release_date: String?
     var releaseDate: Date?
     var genreIds: [Int]?
     
@@ -37,11 +37,11 @@ class Movie: BaseModel, Hashable {
     var alternativeTitles: [AlternativeTitle]?
     var credits: MediaCreditList?
     var images: Images?
-    var keywords: [KeywordResults]?
+    var keywords: [ResultsKeyword]?
     var releases: [Release]?
     var videos: VideoResult?
     var translations: [TranslationResults]?
-    var similiarMovies: Results<Movie>?
+    var similiarMovies: ResultsMovie?
     var reviews: [Review]?
     
     var allImages: [Image] = []
@@ -49,46 +49,25 @@ class Movie: BaseModel, Hashable {
     var isWatched: Bool = false
     var isWantToSee: Bool = false
     
-    override func mapping(map: Map) {
-        id                      <-  map["id"]
-        adult                   <-  map["adult"]
-        backdropPath            <-  map["backdrop_path"]
-        belongsToCollection     <-  map["belongs_to_collection"]
-        budget                  <-  map["budget"]
-        genreIds                <-  map["genre_ids"]
-        homepage                <-  map["homepage"]
-        imdbID                  <-  map["imdb_id"]
-        originalLanguage        <-  map["original_language"]
-        originalTitle           <-  map["original_title"]
-        overview                <-  map["overview"]
-        popularity              <-  map["popularity"]
-        posterPath              <-  map["poster_path"]
-        revenue                 <-  map["revenue"]
-        runtime                 <-  map["runtime"]
-        status                  <-  map["status"]
-        tagline                 <-  map["tagline"]
-        title                   <-  map["title"]
-        video                   <-  map["video"]
-        voteAverage             <-  map["vote_average"]
-        voteCount               <-  map["vote_count"]
-        releaseDate             <-  (map["release_date"], DateFormatTransform("yyyy-MM-dd"))
-        genres                  <-  map["genres"]
+    enum CodingKeys: String, CodingKey {
+        case id, adult, budget, homepage, overview, popularity, revenue, runtime, status, title, video, credits, images, keywords, releases, videos, translations, reviews, release_date
+        case backdropPath = "backdrop_path"
+        case belongsToCollection = "belongs_to_collection"
+        case genreIds = "genre_ids"
+        case imdbID = "imdb_id"
+        case originalLanguage = "original_language"
+        case originalTitle = "original_title"
+        case posterPath = "poster_path"
+        case voteAverage = "vote_average"
+        case voteCount = "vote_count"
+        case genres = "genres"
         
-        productionCompanies     <-  map["production_companies"]
-        productionCountries     <-  map["production_countries"]
-        spokenLanguages         <-  map["spoken_languages"]
+        case productionCompanies = "production_companies"
+        case productionCountries = "production_countries"
+        case spokenLanguages = "spoken_languages"
         
-        alternativeTitles       <- map["alternative_titles"]
-        credits                 <- map["credits"]
-        images                  <- map["images"]
-        keywords                <- map["keywords"]
-        releases                <- map["releases"]
-        videos                  <- map["videos"]
-        translations            <- map["translations"]
-        similiarMovies          <- map["similar_movies"]
-        reviews                 <- map["reviews"]
-        
-        allImages               = mergeImages()
+        case alternativeTitles = "alternative_titles"
+        case similiarMovies = "similar_movies"
     }
     
     private func mergeImages() -> [Image] {
@@ -105,10 +84,4 @@ class Movie: BaseModel, Hashable {
     static func == (lhs: Movie, rhs: Movie) -> Bool {
         return (lhs.id == rhs.id)
     }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-    
-    
 }

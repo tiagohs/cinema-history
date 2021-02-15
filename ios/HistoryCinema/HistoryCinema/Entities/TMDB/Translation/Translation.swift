@@ -6,28 +6,21 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
+import Foundation
 import ObjectMapper
 
-class TranslationResults: BaseModel {
-    var translationList : [Translation]?
-    
-    override func mapping(map: Map) {
-        translationList <- map["translations"]
-    }
-}
-
-class Translation: BaseModel {
+struct Translation: BaseModel {
+    var id: Int? = UUID().hashValue
     var iso_3166_1 : String?
     var iso_639_1 : String?
     var name : String?
     var englishName : String?
     var data : TranslationData?
     
-    override func mapping(map: Map) {
-        iso_3166_1 <- map["iso_3166_1"]
-        iso_639_1 <- map["iso_639_1"]
-        name <- map["name"]
-        englishName <- map["english_name"]
-        data <- map["data"]
+    enum CodingKeys: String, CodingKey {
+        case name, data
+        case iso_3166_1 = "iso_3166_1"
+        case iso_639_1 = "iso_639_1"
+        case englishName = "english_name"
     }
 }

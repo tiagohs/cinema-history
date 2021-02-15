@@ -6,18 +6,20 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
+import Foundation
 import ObjectMapper
 
-class Review: BaseModel {
+struct Review: BaseModel {
+    var id: Int? = UUID().hashValue
     var page : Int?
     var reviewsList : [ReviewPerson]?
     var totalPages : Int?
     var totalResults : Int?
     
-    override func mapping(map: Map) {
-        page <- map["page"]
-        reviewsList <- map["results"]
-        totalPages <- map["total_pages"]
-        totalResults <- map["total_results"]
+    enum CodingKeys: String, CodingKey {
+        case page
+        case reviewsList = "results"
+        case totalPages = "total_pages"
+        case totalResults = "total_results"
     }
 }

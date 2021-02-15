@@ -9,13 +9,6 @@
 import Foundation
 import ObjectMapper
 
-class BaseModel: Mappable {
+protocol BaseModel: Decodable, Identifiable, Hashable {
     
-    init() {}
-    
-    required init?(map: Map) {
-    }
-    
-    func mapping(map: Map) {
-    }
 }

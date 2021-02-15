@@ -6,23 +6,10 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
+import Foundation
 import ObjectMapper
 
-class Keyword: BaseModel {
+struct Keyword: BaseModel {
     var id: Int?
     var name: String?
-    
-    override func mapping(map: Map) {
-        id              <- map["id"]
-        name            <- map["name"]
-    }
 }
-
-class KeywordResults: BaseModel {
-    var keywordsList : [Keyword]?
-    
-    override func mapping(map: Map) {
-        keywordsList <- map["keywords"]
-    }
-}
-

@@ -7,9 +7,10 @@
 //
 
 import ObjectMapper
+import Foundation
 
-class MovieOMDB: BaseModel {
-    
+struct MovieOMDB: BaseModel {
+    var id: Int? = UUID().hashValue
     var title : String?
     var year : String?
     var rated : String?
@@ -52,34 +53,33 @@ class MovieOMDB: BaseModel {
             where: { (rating) -> Bool in return rating.source == Rating.METACRITIC_SOURCE_KEY })
     }
     
-    override func mapping(map: Map) { 
-        
-        title <- map["Title"]
-        year <- map["Year"]
-        rated <- map["Rated"]
-        released <- map["Released"]
-        runtime <- map["Runtime"]
-        genre <- map["Genre"]
-        director <- map["Director"]
-        writer <- map["Writer"]
-        actors <- map["Actors"]
-        plot <- map["Plot"]
-        language <- map["Language"]
-        country <- map["Country"]
-        awards <- map["Awards"]
-        poster <- map["Poster"]
-        ratings <- map["Ratings"]
-        metascore <- map["Metascore"]
-        imdbRating <- map["imdbRating"]
-        imdbVotes <- map["imdbVotes"]
-        imdbID <- map["imdbID"]
-        type <- map["Type"]
-        dVD <- map["DVD"]
-        boxOffice <- map["BoxOffice"]
-        production <- map["Production"]
-        website <- map["Website"]
-        response <- map["Response"]
-        tomatoURL <- map["tomatoURL"]
+    enum CodingKeys: String, CodingKey {
+        case title = "Title"
+        case year = "Year"
+        case rated = "Rated"
+        case released = "Released"
+        case runtime = "Runtime"
+        case genre = "Genre"
+        case director = "Director"
+        case writer = "Writer"
+        case actors = "Actors"
+        case plot = "Plot"
+        case language = "Language"
+        case country = "Country"
+        case awards = "Awards"
+        case poster = "Poster"
+        case ratings = "Ratings"
+        case metascore = "Metascore"
+        case imdbRating = "imdbRating"
+        case imdbVotes = "imdbVotes"
+        case imdbID = "imdbID"
+        case type = "Type"
+        case dVD = "DVD"
+        case boxOffice = "BoxOffice"
+        case production = "Production"
+        case website = "Website"
+        case response = "Response"
+        case tomatoURL = "tomatoURL"
     }
     
 }

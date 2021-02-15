@@ -6,17 +6,18 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
+import Foundation
 import ObjectMapper
 
-class Title: BaseModel {
+struct Title: BaseModel {
+    var id: Int? = UUID().hashValue
     var country : String?
     var title : String?
     var type : String?
     
-    override func mapping(map: Map) {
-        country <- map["iso_3166_1"]
-        title <- map["title"]
-        type <- map["type"]
+    enum CodingKeys: String, CodingKey {
+        case title, type
+        case country = "iso_3166_1"
     }
 }
 

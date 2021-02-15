@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PersonItem {
+struct PersonItem {
     var id: Int
     var name: String
     var subtitle: String

@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class MediaCreditCast: BaseModel {
+struct MediaCreditCast: BaseModel {
     var id : Int?
     var name : String?
     var profilePath : String?
@@ -18,14 +18,10 @@ class MediaCreditCast: BaseModel {
     var gender : Int?
     var order : Int?
     
-    override func mapping(map: Map) {
-        castId <- map["cast_id"]
-        character <- map["character"]
-        creditId <- map["credit_id"]
-        gender <- map["gender"]
-        id <- map["id"]
-        name <- map["name"]
-        order <- map["order"]
-        profilePath <- map["profile_path"]
+    enum CodingKeys: String, CodingKey {
+        case id, character, order, name, gender
+        case castId = "cast_id"
+        case creditId = "credit_id"
+        case profilePath = "profile_path"
     }
 }

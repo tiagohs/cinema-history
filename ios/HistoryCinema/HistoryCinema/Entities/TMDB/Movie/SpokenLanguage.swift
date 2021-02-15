@@ -2,13 +2,14 @@
 import Foundation
 import ObjectMapper
 
-class SpokenLanguage : BaseModel {
+struct SpokenLanguage : BaseModel {
+    var id: Int? = UUID().hashValue
 	var country : String?
 	var name : String?
 
-	override func mapping(map: Map) {
-		country <- map["iso_639_1"]
-		name <- map["name"]
+    enum CodingKeys: String, CodingKey {
+        case name
+        case country = "iso_639_1"
 	}
 
 }

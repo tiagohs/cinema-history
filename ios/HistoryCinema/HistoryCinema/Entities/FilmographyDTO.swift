@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FilmographyDTO {
+struct FilmographyDTO {
     var movie: Movie?
     var workingAs: String?
     
@@ -24,7 +24,7 @@ class FilmographyDTO {
     }
 }
 
-class FilmographyMovieItem {
+struct FilmographyMovieItem {
     var movieId: Int?
     var movie: Movie?
     var department: String?

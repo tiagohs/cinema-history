@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UserLocal {
+struct UserLocal {
     
     var name: String?
     var email: String?

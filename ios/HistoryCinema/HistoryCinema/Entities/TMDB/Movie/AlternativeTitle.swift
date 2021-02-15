@@ -8,13 +8,7 @@
 
 import ObjectMapper
 
-class AlternativeTitle: BaseModel {
+struct AlternativeTitle: BaseModel {
     var id: Int?
     var titles : [Title]?
-    
-    override func mapping(map: Map) {
-        id <- map["id"]
-        titles <- map["titles"]
-    }
-
 }

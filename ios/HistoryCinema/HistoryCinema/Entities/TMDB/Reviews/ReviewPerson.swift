@@ -8,16 +8,9 @@
 
 import ObjectMapper
 
-class ReviewPerson: BaseModel {
+struct ReviewPerson: BaseModel {
     var author : String?
     var content : String?
     var id : String?
     var url : String?
-    
-    override func mapping(map: Map) {
-        author <- map["author"]
-        content <- map["content"]
-        id <- map["id"]
-        url <- map["url"]
-    }
 }

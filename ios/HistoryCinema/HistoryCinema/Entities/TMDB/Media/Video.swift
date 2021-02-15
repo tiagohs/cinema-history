@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class Video: BaseModel {
+struct Video: BaseModel {
     var id : String?
     var language : String?
     var country : String?
@@ -18,23 +18,10 @@ class Video: BaseModel {
     var size : Int?
     var type : String?
     
-    override func mapping(map: Map) {
-        id <- map["id"]
-        language <- map["iso_639_1"]
-        country <- map["iso_3166_1"]
-        key <- map["key"]
-        name <- map["name"]
-        site <- map["site"]
-        size <- map["size"]
-        type <- map["type"]
-    }
-}
-
-class VideoResult: BaseModel {
-    var videoResults : [Video]?
-    
-    override func mapping(map: Map) {
-        videoResults <- map["results"]
+    enum CodingKeys: String, CodingKey {
+        case id, key, name, site, size, type
+        case language = "iso_639_1"
+        case country = "iso_3166_1"
     }
 }
 

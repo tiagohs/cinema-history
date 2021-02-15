@@ -6,9 +6,11 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
+import Foundation
 import ObjectMapper
 
-class ExternalIds: BaseModel {
+struct ExternalIds: BaseModel {
+    var id: Int? = UUID().hashValue
     var freebaseId : String?
     var instagramId : String?
     var tvRageId : String?
@@ -17,13 +19,13 @@ class ExternalIds: BaseModel {
     var imdbId : String?
     var facebookId : String?
     
-    override func mapping(map: Map) {
-        freebaseId <- map["freebase_id"]
-        instagramId <- map["instagram_id"]
-        tvRageId <- map["tvrage_id"]
-        twitterId <- map["twitter_id"]
-        freebaseMid <- map["freebase_mid"]
-        imdbId <- map["imdb_id"]
-        facebookId <- map["facebook_id"]
+    enum CodingKeys: String, CodingKey {
+        case freebaseId = "freebase_id"
+        case instagramId = "instagram_id"
+        case tvRageId = "tvrage_id"
+        case twitterId = "twitter_id"
+        case freebaseMid = "freebase_mid"
+        case imdbId = "imdb_id"
+        case facebookId = "facebook_id"
     }
 }

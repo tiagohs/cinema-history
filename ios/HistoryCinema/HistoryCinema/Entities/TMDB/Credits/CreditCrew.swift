@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class CreditCrew: BaseModel {
+struct CreditCrew: BaseModel {
     var id : Int?
     var department : String?
     var originalLanguage : String?
@@ -28,23 +28,16 @@ class CreditCrew: BaseModel {
     var backdropPath : String?
     var posterPath : String?
     
-    override func mapping(map: Map) {
-        id <- map["id"]
-        department <- map["department"]
-        originalLanguage <- map["original_language"]
-        originalTitle <- map["original_title"]
-        job <- map["job"]
-        overview <- map["overview"]
-        genreIds <- map["genre_ids"]
-        video <- map["video"]
-        creditId <- map["credit_id"]
-        releaseDate <- (map["release_date"], DateFormatTransform("yyyy-MM-dd"))
-        popularity <- map["popularity"]
-        voteAverage <- map["vote_average"]
-        voteCount <- map["vote_count"]
-        title <- map["title"]
-        adult <- map["adult"]
-        backdropPath <- map["backdrop_path"]
-        posterPath <- map["poster_path"]
+    enum CodingKeys: String, CodingKey {
+        case id, department, job, overview, video, popularity, title, adult
+        case originalLanguage = "original_language"
+        case originalTitle = "original_title"
+        case genreIds = "genre_ids"
+        case creditId = "credit_id"
+        case releaseDate = "release_date"
+        case voteAverage = "vote_average"
+        case voteCount = "vote_count"
+        case backdropPath = "backdrop_path"
+        case posterPath = "poster_path"
     }
 }

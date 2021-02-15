@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SimpleItem {
+struct SimpleItem {
     var id: Int
     var text: String
     

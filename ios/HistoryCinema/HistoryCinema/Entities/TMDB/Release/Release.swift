@@ -6,12 +6,10 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
+import Foundation
 import ObjectMapper
 
-class Release: BaseModel {
-    var releaseCountries : [ReleaseCountry]?
-    
-    override func mapping(map: Map) {
-        releaseCountries <- map["countries"]
-    }
+struct Release: BaseModel {
+    var id: Int? = UUID().hashValue
+    var countries : [ReleaseCountry]?
 }

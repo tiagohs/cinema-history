@@ -6,14 +6,11 @@
 //  Copyright © 2019 Tiago Silva. All rights reserved.
 //
 
+import Foundation
 import ObjectMapper
 
-class MovieCredits: BaseModel {
+struct MovieCredits: BaseModel {
+    var id: Int? = UUID().hashValue
     var cast : [CreditCast]?
     var crew : [CreditCrew]?
-    
-    override func mapping(map: Map) {
-        cast <- map["cast"]
-        crew <- map["crew"]
-    }
 }

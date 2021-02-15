@@ -8,7 +8,8 @@
 
 import Foundation
 
-class DiscoverMovie {
+struct DiscoverMovie : BaseModel {
+    var id: Int? = UUID().hashValue
     var region: String?
     var sortBy: String?
     var voteCountGte: String?

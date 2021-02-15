@@ -7,12 +7,14 @@
 //
 
 import ObjectMapper
+import Foundation
 
-class Rating: BaseModel {
+struct Rating: BaseModel {
     static let TOMATOES_SOURCE_KEY             = "Rotten Tomatoes"
     static let INTERNET_MOVIE_SOURCE_KEY       = "Internet Movie Database"
     static let METACRITIC_SOURCE_KEY           = "Metacritic"
     
+    var id: Int? = UUID().hashValue
     var source : String?
     var value : String?
     var grade : String? {
@@ -42,10 +44,9 @@ class Rating: BaseModel {
         }
     }
     
-    
-    override func mapping(map: Map) {
-        source <- map["Source"]
-        value <- map["Value"]
+    enum CodingKeys: String, CodingKey {
+        case source = "Source"
+        case value = "Value"
     }
 
 }

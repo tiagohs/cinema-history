@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Person: BaseModel {
+struct Person: BaseModel {
     var id : Int?
     var birthday : Date?
     var knownForDepartment : String?
@@ -35,63 +35,42 @@ class Person: BaseModel {
     var allMovieCredits : [Movie] = []
     var allImages : [Image] = []
     
-    override func mapping(map: Map) {
-        birthday                <- (map["birthday"], DateFormatTransform("yyyy-MM-dd"))
-        knownForDepartment      <- map["known_for_department"]
-        id                      <- map["id"]
-        placeOfBirth            <- map["place_of_birth"]
-        homepage                <- map["homepage"]
-        profilePath             <- map["profile_path"]
-        imdbId                  <- map["imdb_id"]
-        deathday                <- map["deathday"]
-        images                  <- map["images"]
-        externalIds             <- map["external_ids"]
-        name                    <- map["name"]
-        alsoKnownAs             <- map["also_known_as"]
-        biography               <- map["biography"]
-        movieCredits            <- map["movie_credits"]
-        adult                   <- map["adult"]
-        gender                  <- map["gender"]
-        popularity              <- map["popularity"]
-        taggedImages            <- map["tagged_images"]
-        
-        allImages = mergeImages()
-        allMovieCredits = mergeMovies()
+    enum CodingKeys: String, CodingKey {
+        case id, birthday, homepage, deathday, images, name, biography, adult, gender, popularity
+        case knownForDepartment = "known_for_department"
+        case placeOfBirth = "place_of_birth"
+        case profilePath = "profile_path"
+        case imdbId = "imdb_id"
+        case externalIds = "external_ids"
+        case alsoKnownAs = "also_known_as"
+        case movieCredits = "movie_credits"
+        case taggedImages = "tagged_images"
     }
     
-    func mergeMovies() -> [Movie] {
-        let castCredits = self.movieCredits?.cast?.map({ (creditCast) -> Movie in
-            let movie = Movie()
-            
-            movie.id = creditCast.id
-            movie.title = creditCast.title
-            movie.posterPath = creditCast.posterPath
-            movie.backdropPath = creditCast.backdropPath
-            movie.releaseDate = creditCast.releaseDate
-            
-            return movie
-        }) ?? []
-        let crewCredits = self.movieCredits?.crew?.map({ (creditCrew) -> Movie in
-            let movie = Movie()
-            
-            movie.id = creditCrew.id
-            movie.title = creditCrew.title
-            movie.posterPath = creditCrew.posterPath
-            movie.backdropPath = creditCrew.backdropPath
-            movie.releaseDate = creditCrew.releaseDate
-            
-            return movie
-        }) ?? []
-        
-        return Array(Set(castCredits + crewCredits))
-    }
+//    mutating func mergeMovies() -> [Movie] {
+//        let castCredits = self.movieCredits?.cast?.map({ (creditCast) -> Movie in
+//            let movie = Movie(id: creditCast.id, title: creditCast.title, posterPath: creditCast.posterPath, backdropPath: creditCast.backdropPath, releaseDate: creditCast.releaseDate)
+//            
+//            return movie
+//        }) ?? []
+//        let crewCredits = self.movieCredits?.crew?.map({ (creditCrew) -> Movie in
+//            let movie = Movie()
+//            
+//            movie.id = creditCrew.id
+//            movie.title = creditCrew.title
+//            movie.posterPath = creditCrew.posterPath
+//            movie.backdropPath = creditCrew.backdropPath
+//            movie.releaseDate = creditCrew.releaseDate
+//            
+//            return movie
+//        }) ?? []
+//        
+//        return Array(Set(castCredits + crewCredits))
+//    }
     
     func mergeImages() -> [Image] {
         let taggedImages = self.taggedImages?.results?.map({ (taggedImagesResults) -> Image in
-            let image = Image()
-            image.filePath = taggedImagesResults.filePath
-            
-            return image
+            return Image(filePath: taggedImagesResults.filePath)
         }) ?? []
         let profileImages = images?.profiles ?? []
         
