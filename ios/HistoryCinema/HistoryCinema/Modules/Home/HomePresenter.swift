@@ -17,7 +17,7 @@ class HomePresenter {
     private var interactor: HomeInteractorInterface?
     private var wireframe: HomeWireframaInterface?
     
-    @Published var movies: [Movie] = []
+    @Published var homeContent: [HomeContentItem] = []
     
     private var movieService: MovieServiceProtocol
     private var cancalables: Set<AnyCancellable> = []
@@ -30,16 +30,17 @@ class HomePresenter {
 extension HomePresenter: ObservableObject {
     
     func fetchPopularMovies() {
-        let movieService: MovieServiceProtocol = MovieService()
+        let localContentService = LocalContentService()
     
-        movieService.getPopularMovies(page: 1, region: "pt")
+        localContentService.$homeContent
             .sink(receiveCompletion: { completion in
                 switch completion {
                     case .finished: print("🏁 finished")
                     case .failure(let error): print("❗️ failure: \(error)")
                     }
             }, receiveValue: { values in
-                self.movies = values.results ?? []
+                self.homeContent = values
+                print(values)
             })
             .store(in: &cancalables)
     }

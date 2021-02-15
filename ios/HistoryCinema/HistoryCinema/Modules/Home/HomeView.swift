@@ -14,8 +14,8 @@ struct HomeView: View, HomeViewInterface {
     
     var body: some View {
         VStack {
-            ForEach(presenter.movies, id: \.self) { (movie) in
-                Text("\(movie.title!)")
+            ForEach(presenter.homeContent, id: \.self) { (homeContent) in
+                Text("Foi")
             }
         }
         .onAppear { presenter.fetchPopularMovies() }

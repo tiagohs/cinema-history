@@ -12,7 +12,7 @@ class DebugUtils {
     static func debug(_ response: AFDataResponse<Any>) {
         #if DEBUG
             print(response)
-            print(response.request?.url)
+            print(response.request?.url ?? "")
         #endif
     }
 }
