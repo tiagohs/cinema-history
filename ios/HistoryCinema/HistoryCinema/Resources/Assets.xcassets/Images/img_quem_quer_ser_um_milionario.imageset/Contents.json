@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "img_quem_quer_ser_um_milionario.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "img_quem_quer_ser_um_milionario@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "img_quem_quer_ser_um_milionario@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

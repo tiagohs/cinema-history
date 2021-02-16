@@ -10,7 +10,7 @@ import Combine
 
 // MARK: HomePresenter
 
-class HomePresenter {
+class HomePresenter: BasePresenter {
     
     // MARK: Properties
     
@@ -19,20 +19,23 @@ class HomePresenter {
     
     @Published var homeContent: [HomeContentItem] = []
     
-    private var movieService: MovieServiceProtocol
-    private var cancalables: Set<AnyCancellable> = []
+    init(_ interactor: HomeInteractorInterface, _ wireframe: HomeWireframaInterface) {
+        self.interactor = interactor
+        self.wireframe = wireframe
+    }
     
-    init(movieService: MovieServiceProtocol) {
-        self.movieService = movieService
+    override func viewAppears() {
+        
     }
 }
 
-extension HomePresenter: ObservableObject {
+extension HomePresenter {
     
     func fetchPopularMovies() {
         let localContentService = LocalContentService()
-    
-        localContentService.$homeContent
+
+        localContentService.getHomeContent()
+            .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
                     case .finished: print("🏁 finished")

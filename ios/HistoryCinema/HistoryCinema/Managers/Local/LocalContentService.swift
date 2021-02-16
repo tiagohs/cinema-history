@@ -6,9 +6,19 @@
 //
 
 import Foundation
+import Combine
 
 class LocalContentService {
-    @Published var homeContent: [HomeContentItem] = load("homecontent.json")
+    
+    func getHomeContent() -> AnyPublisher<[HomeContentItem], Error> {
+        let homeContent: [HomeContentItem] = load("homecontent.json")
+        
+        return Publishers.Sequence<[HomeContentItem], Error>(sequence: homeContent)
+                        .collect()
+                        .eraseToAnyPublisher()
+    }
+    
+    
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

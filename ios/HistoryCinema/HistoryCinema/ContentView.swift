@@ -17,10 +17,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let movieService = MovieService()
-        let presenter = HomePresenter(movieService: movieService)
-        
         ContentView()
-            .environmentObject(presenter)
     }
 }

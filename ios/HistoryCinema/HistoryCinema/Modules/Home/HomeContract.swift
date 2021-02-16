@@ -27,11 +27,10 @@ protocol HomePresenterInterface: BasePresenterInterface, ObservableObject {
 }
 
 protocol HomeInteractorInterface: BaseInteractorInterface {
-    func fetchPopularMovies() -> AnyPublisher<ResultsMovie, AFError>
+    
 }
 
 protocol HomeWireframaInterface: BaseWireframeInterface {
     
-//    static func buildModule() -> UIViewController
-//    static func buildModuleFromUINavigation() -> UIViewController
+    static func buildPresenter() -> HomePresenter
 }

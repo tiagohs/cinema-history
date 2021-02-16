@@ -74,9 +74,9 @@ class PersonService: PersonServiceProtocol {
                     .eraseToAnyPublisher()
     }
     
-    private func mergeImages(_ taggedImages: TaggedImages) -> [Image] {
-        let taggedImages = taggedImages.results?.map({ (taggedImagesResults) -> Image in
-            return Image(filePath: taggedImagesResults.filePath)
+    private func mergeImages(_ taggedImages: TaggedImages) -> [APIImage] {
+        let taggedImages = taggedImages.results?.map({ (taggedImagesResults) -> APIImage in
+            return APIImage(filePath: taggedImagesResults.filePath)
         }) ?? []
         
         return taggedImages

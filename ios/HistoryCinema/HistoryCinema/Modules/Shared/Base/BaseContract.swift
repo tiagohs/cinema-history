@@ -18,6 +18,7 @@ protocol BasePresenterInterface {
 
 protocol BaseInteractorInterface {
     
+    
 }
 
 protocol BaseWireframeInterface {

@@ -43,7 +43,7 @@ struct Movie: BaseModel {
     var similiarMovies: ResultsMovie?
     var reviews: [Review]?
     
-    var allImages: [Image] = []
+    var allImages: [APIImage] = []
     var isFavorite: Bool = false
     var isWatched: Bool = false
     var isWantToSee: Bool = false
@@ -69,7 +69,7 @@ struct Movie: BaseModel {
         case similiarMovies = "similar_movies"
     }
     
-    private func mergeImages() -> [Image] {
+    private func mergeImages() -> [APIImage] {
         let posters = self.images?.backdrops ?? []
         let backdrop = self.images?.posters ?? []
         

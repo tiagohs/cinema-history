@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct HistoryCinemaApp: App {
-    @StateObject private var homePresenter = HomePresenter(movieService: MovieService())
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(homePresenter)
         }
     }
 }

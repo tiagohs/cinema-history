@@ -32,7 +32,7 @@ struct Person: BaseModel {
     
     //Custom
     var allMovieCredits : [Movie] = []
-    var allImages : [Image] = []
+    var allImages : [APIImage] = []
     
     enum CodingKeys: String, CodingKey {
         case id, birthday, homepage, deathday, images, name, biography, adult, gender, popularity
@@ -67,9 +67,9 @@ struct Person: BaseModel {
 //        return Array(Set(castCredits + crewCredits))
 //    }
     
-    func mergeImages() -> [Image] {
-        let taggedImages = self.taggedImages?.results?.map({ (taggedImagesResults) -> Image in
-            return Image(filePath: taggedImagesResults.filePath)
+    func mergeImages() -> [APIImage] {
+        let taggedImages = self.taggedImages?.results?.map({ (taggedImagesResults) -> APIImage in
+            return APIImage(filePath: taggedImagesResults.filePath)
         }) ?? []
         let profileImages = images?.profiles ?? []
         
