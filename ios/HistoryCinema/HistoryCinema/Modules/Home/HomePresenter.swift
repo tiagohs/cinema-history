@@ -10,22 +10,23 @@ import Combine
 
 // MARK: HomePresenter
 
-class HomePresenter: BasePresenter {
+class HomePresenter: BasePresenter, ObservableObject {
     
     // MARK: Properties
     
     private var interactor: HomeInteractorInterface?
     private var wireframe: HomeWireframaInterface?
     
-    @Published var homeContent: [HomeContentItem] = []
+    @Published var homeContent: [HomeContentItem]
     
     init(_ interactor: HomeInteractorInterface, _ wireframe: HomeWireframaInterface) {
         self.interactor = interactor
         self.wireframe = wireframe
+        self.homeContent = []
     }
     
     override func viewAppears() {
-        
+        fetchPopularMovies()
     }
 }
 

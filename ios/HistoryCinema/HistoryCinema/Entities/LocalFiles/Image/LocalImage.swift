@@ -16,7 +16,7 @@ struct LocalImage: BaseModel {
     var imageStyle: ImageStyle?
     
     enum CodingKeys: String, CodingKey {
-        case id, animation
+        case id, animation, url
         case imageStyle = "style"
         case imageType = "image_type"
         case contentDescription = "content_description"

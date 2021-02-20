@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class BasePresenter: ObservableObject {
+class BasePresenter {
     
     var cancalables: Set<AnyCancellable> = []
     

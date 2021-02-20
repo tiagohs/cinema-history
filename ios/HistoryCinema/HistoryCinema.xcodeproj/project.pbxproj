@@ -243,6 +243,11 @@
 		A33BCC2825DA0C8900E0A63D /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BCC2725DA0C8900E0A63D /* ImageResize.swift */; };
 		A34D8F6A25DC32CA00893A10 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34D8F6925DC32CA00893A10 /* BaseInteractor.swift */; };
 		A34D8F6C25DC338300893A10 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34D8F6B25DC338300893A10 /* BasePresenter.swift */; };
+		A39CD6C325E1A15900860258 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CD6C025E1A15800860258 /* HomePageView.swift */; };
+		A39CD6C425E1A15900860258 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CD6C125E1A15800860258 /* PageControl.swift */; };
+		A39CD6C525E1A15900860258 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CD6C225E1A15800860258 /* PageViewController.swift */; };
+		A39CD6C825E1A9F500860258 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CD6C725E1A9F500860258 /* HomeItem.swift */; };
+		A39CD6CB25E1B24500860258 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CD6CA25E1B24500860258 /* Font+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -504,6 +509,11 @@
 		A33BCC2725DA0C8900E0A63D /* ImageResize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
 		A34D8F6925DC32CA00893A10 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 		A34D8F6B25DC338300893A10 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		A39CD6C025E1A15800860258 /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		A39CD6C125E1A15800860258 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		A39CD6C225E1A15800860258 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		A39CD6C725E1A9F500860258 /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
+		A39CD6CA25E1B24500860258 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -556,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				A33BC98425D89C4200E0A63D /* HistoryCinemaApp.swift */,
+				A39CD6BE25E1A14300860258 /* Components */,
 				A33BC9AF25D89CCF00E0A63D /* Modules */,
 				A33BCAFE25D9B0BC00E0A63D /* Managers */,
 				A33BC9B125D89CF700E0A63D /* Entities */,
@@ -670,6 +681,7 @@
 				A33BC9BF25D8A29000E0A63D /* Dictionary+Extensions.swift */,
 				A33BC9C025D8A29000E0A63D /* Locale+Extensions.swift */,
 				A33BC9BD25D8A29000E0A63D /* String+Extensions.swift */,
+				A39CD6CA25E1B24500860258 /* Font+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -891,6 +903,7 @@
 		A33BCB1225D9C48C00E0A63D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A39CD6C625E1A8A800860258 /* Components */,
 				A33BCB1325D9C4C900E0A63D /* HomeView.swift */,
 				A33BCB1525D9C4D800E0A63D /* HomePresenter.swift */,
 				A33BCB1725D9C4F100E0A63D /* HomeInteractor.swift */,
@@ -1182,6 +1195,40 @@
 				A33BCC2125DA0B1D00E0A63D /* Animation.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		A39CD6BE25E1A14300860258 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A39CD6BF25E1A14C00860258 /* PageView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A39CD6BF25E1A14C00860258 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				A39CD6C125E1A15800860258 /* PageControl.swift */,
+				A39CD6C225E1A15800860258 /* PageViewController.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		A39CD6C625E1A8A800860258 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A39CD6C925E1ABFD00860258 /* HomeItem */,
+				A39CD6C025E1A15800860258 /* HomePageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A39CD6C925E1ABFD00860258 /* HomeItem */ = {
+			isa = PBXGroup;
+			children = (
+				A39CD6C725E1A9F500860258 /* HomeItem.swift */,
+			);
+			path = HomeItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1495,6 +1542,7 @@
 				A33BC9B925D8A1E000E0A63D /* TMDB.swift in Sources */,
 				A33BCA0025D8A33400E0A63D /* Keyword.swift in Sources */,
 				A33BCA0325D8A33400E0A63D /* TranslationData.swift in Sources */,
+				A39CD6C825E1A9F500860258 /* HomeItem.swift in Sources */,
 				A33BC9C425D8A29000E0A63D /* Locale+Extensions.swift in Sources */,
 				A33BC9FF25D8A33400E0A63D /* SpokenLanguage.swift in Sources */,
 				A33BCB0C25D9B1B500E0A63D /* GenreServiceProtocol.swift in Sources */,
@@ -1504,15 +1552,19 @@
 				A33BCA1325D8A33400E0A63D /* APIImage.swift in Sources */,
 				A33BCC2025DA0A6900E0A63D /* ImageType.swift in Sources */,
 				A33BCA0425D8A33400E0A63D /* Person.swift in Sources */,
+				A39CD6C525E1A15900860258 /* PageViewController.swift in Sources */,
+				A39CD6C325E1A15900860258 /* HomePageView.swift in Sources */,
 				A33BC9FA25D8A33400E0A63D /* Movie.swift in Sources */,
 				A33BCA0B25D8A33400E0A63D /* MovieCredits.swift in Sources */,
 				A33BCA0525D8A33400E0A63D /* TaggedImagesResults.swift in Sources */,
 				A33BCA1525D8A33400E0A63D /* SimpleItem.swift in Sources */,
 				A33BCB2025D9C5BB00E0A63D /* BaseContract.swift in Sources */,
 				A33BCA1425D8A33400E0A63D /* Video.swift in Sources */,
+				A39CD6CB25E1B24500860258 /* Font+Extensions.swift in Sources */,
 				A33BCA1C25D8A39C00E0A63D /* Constants.swift in Sources */,
 				A33BCC1E25DA09BB00E0A63D /* LocalImage.swift in Sources */,
 				A33BCA1A25D8A37700E0A63D /* OMDB.swift in Sources */,
+				A39CD6C425E1A15900860258 /* PageControl.swift in Sources */,
 				A33BCA0F25D8A33400E0A63D /* CreditCrew.swift in Sources */,
 				A33BCAF825D8AD5F00E0A63D /* LocaleDTO.swift in Sources */,
 				A33BCA0225D8A33400E0A63D /* Translation.swift in Sources */,

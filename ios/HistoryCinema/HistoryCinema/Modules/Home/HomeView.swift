@@ -13,11 +13,17 @@ struct HomeView: View, HomeViewInterface {
     @ObservedObject private var presenter: HomePresenter = HomeWireframe.buildPresenter()
     
     var body: some View {
-        VStack {
-            Image("im_the_good_the_bad_and_the_ugly_scene")
-                .resizable()
-                .frame(height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .leading) {
+            if (presenter.homeContent.count == 0) {
+                ProgressView()
+            }
+            
+            if !presenter.homeContent.isEmpty {
+                HomePageView(homeContentItemList: presenter.homeContent)
+            }
         }
+        .ignoresSafeArea()
+        .background(Color.black)
         .onAppear { presenter.viewAppears() }
         .onDisappear { presenter.viewDisappears() }
     }
