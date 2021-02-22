@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ImageType: String, Codable {
+enum ImageType: String {
     case local, online
     case onlineFirebase = "online_firebase"
 }

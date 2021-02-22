@@ -6,9 +6,18 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct ImageResize: BaseModel {
-    var id: String? = UUID().uuidString
+class ImageResize: BaseLocalModel {
     var width: Int?
     var height: Int?
+    
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        width       <- map["width"]
+        height      <- map["height"]
+    }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MainTopicsType: String, Codable {
+enum MainTopicsType: String {
     case timeline, awards, directors
     case historyCinema = "history_cinema"
     case milMovies = "mil_movies"

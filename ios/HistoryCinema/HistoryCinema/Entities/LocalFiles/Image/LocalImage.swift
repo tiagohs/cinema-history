@@ -6,19 +6,24 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct LocalImage: BaseModel {
-    var id: String? = UUID().uuidString
+class LocalImage: BaseLocalModel {
     var imageType: ImageType?
     var url: String?
     var contentDescription: String?
     var animation: Animation?
     var imageStyle: ImageStyle?
     
-    enum CodingKeys: String, CodingKey {
-        case id, animation, url
-        case imageStyle = "style"
-        case imageType = "image_type"
-        case contentDescription = "content_description"
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        imageType               <- (map["image_type"], EnumTransform<ImageType>())
+        url                     <- map["url"]
+        contentDescription       <- map["content_description"]
+        animation               <- map["animation"]
+        imageStyle              <- map["style"]
     }
 }

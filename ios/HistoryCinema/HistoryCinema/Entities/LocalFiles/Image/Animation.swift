@@ -6,9 +6,18 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct Animation: BaseModel {
-    var id: String? = UUID().uuidString
-    var type: AnimationType
-    var duration: Int
+class Animation: BaseLocalModel {
+    var type: AnimationType!
+    var duration: Int!
+    
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        type                            <- (map["type"], EnumTransform<AnimationType>())
+        duration                        <- map["duration"]
+    }
 }

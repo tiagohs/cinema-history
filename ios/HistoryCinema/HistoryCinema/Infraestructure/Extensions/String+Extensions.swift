@@ -17,4 +17,22 @@ extension String {
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: self)
     }
+    
+    func toJSONObject() throws -> Any {
+        guard let file = self.toFileURL() else {
+            throw "Could't find \(self) in main bundle"
+        }
+        
+        let data = try (Data(contentsOf: file))
+        
+        return try JSONSerialization.jsonObject(with: data, options: [])
+    }
+    
+    func toFileURL() -> URL? {
+        return Bundle.main.url(forResource: self, withExtension: nil)
+    }
+}
+
+extension String: Error {
+    
 }

@@ -1,61 +1,64 @@
-[
-  {
-    "main_topic_type": "history_cinema",
-    "dark_mode": true,
-    "image": {
-      "image_type": "local",
-      "url": "img_chinatown",
-      "content_description": "Poster do filme Chinatown, com o personagem de costas.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    }
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "dark_mode": false,
-    "image": {
-      "image_type": "local",
-      "url": "img_godfather",
-      "content_description": "Poster do filme o poderoso chefão, com uma mão segurando um controlador de marionete de corda.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    }
-  },
-  {
-    "main_topic_type": "awards",
-    "dark_mode": true,
-    "image": {
-      "image_type": "local",
-      "url": "img_awards",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    }
-  },
-  {
-    "main_topic_type": "timeline",
-    "dark_mode": false,
-    "image": {
-      "image_type": "local",
-      "url": "img_timeline",
-      "content_description": "Poster do filme Chinatown, com o personagem de costas.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    }
-  },
-  {
-    "main_topic_type": "directors",
-    "dark_mode": false,
-    "image": {
-      "image_type": "local",
-      "url": "img_david_fincher",
-      "content_description": "Poster personalizado com o rosto de david fincher, misturado a diversos personagens dos seus filmes.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    }
-  }
-]
+{
+    "results": [
+        {
+          "main_topic_type": "history_cinema",
+          "dark_mode": true,
+          "image": {
+            "image_type": "local",
+            "url": "img_chinatown",
+            "content_description": "Poster do filme Chinatown, com o personagem de costas.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          }
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "dark_mode": false,
+          "image": {
+            "image_type": "local",
+            "url": "img_godfather",
+            "content_description": "Poster do filme o poderoso chefão, com uma mão segurando um controlador de marionete de corda.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          }
+        },
+        {
+          "main_topic_type": "awards",
+          "dark_mode": true,
+          "image": {
+            "image_type": "local",
+            "url": "img_awards",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          }
+        },
+        {
+          "main_topic_type": "timeline",
+          "dark_mode": false,
+          "image": {
+            "image_type": "local",
+            "url": "img_timeline",
+            "content_description": "Poster do filme Chinatown, com o personagem de costas.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          }
+        },
+        {
+          "main_topic_type": "directors",
+          "dark_mode": false,
+          "image": {
+            "image_type": "local",
+            "url": "img_david_fincher",
+            "content_description": "Poster personalizado com o rosto de david fincher, misturado a diversos personagens dos seus filmes.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          }
+        }
+      ]
+
+}

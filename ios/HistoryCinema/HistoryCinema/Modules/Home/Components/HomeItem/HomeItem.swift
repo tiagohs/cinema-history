@@ -26,7 +26,6 @@ struct HomeItemImage: View {
                     height: UIScreen.main.bounds.height - 200
                 )
         }
-        
     }
 }
 
@@ -140,14 +139,10 @@ struct HomeItem: View {
 
 struct HomeItem_Previews: PreviewProvider {
     static var previews: some View {
-        let homeItemList: [HomeContentItem] = load("homecontent.json")
+        let homeItemList: [HomeContentItem] = []
         
         Group {
-            HomeItem(homeContentItem: homeItemList[0])
-            HomeItem(homeContentItem: homeItemList[1])
-            HomeItem(homeContentItem: homeItemList[2])
-            HomeItem(homeContentItem: homeItemList[3])
-            HomeItem(homeContentItem: homeItemList[4])
+            
         }
         
     }

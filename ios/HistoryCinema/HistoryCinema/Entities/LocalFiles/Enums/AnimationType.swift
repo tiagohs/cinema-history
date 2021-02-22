@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum AnimationType: String, Codable {
+enum AnimationType: String {
     case shake_vertical, blink
 }

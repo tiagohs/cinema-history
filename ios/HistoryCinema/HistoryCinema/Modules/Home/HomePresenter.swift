@@ -7,6 +7,9 @@
 
 import Foundation
 import Combine
+import Combine
+import Alamofire
+import ObjectMapper
 
 // MARK: HomePresenter
 
@@ -35,7 +38,7 @@ extension HomePresenter {
     func fetchPopularMovies() {
         let localContentService = LocalContentService()
 
-        localContentService.getHomeContent()
+        localContentService.getPage(mainTopicId: 1, sumarioID: 1)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -43,7 +46,6 @@ extension HomePresenter {
                     case .failure(let error): print("❗️ failure: \(error)")
                     }
             }, receiveValue: { values in
-                self.homeContent = values
                 print(values)
             })
             .store(in: &cancalables)

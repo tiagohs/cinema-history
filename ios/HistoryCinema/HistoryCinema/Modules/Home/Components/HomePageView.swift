@@ -30,7 +30,7 @@ struct HomePageView: View {
 
 struct PageView_Previews: PreviewProvider {
     static var previews: some View {
-        let homeItemList: [HomeContentItem] = load("homecontent.json")
+        let homeItemList: [HomeContentItem] = []
         
         HomePageView(homeContentItemList: homeItemList)
     }

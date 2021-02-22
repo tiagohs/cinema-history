@@ -7,36 +7,39 @@
 
 import Foundation
 import Combine
+import Alamofire
 
-class LocalContentService {
+class LocalContentService: BaseLocalService {
     
-    func getHomeContent() -> AnyPublisher<[HomeContentItem], Error> {
-        let homeContent: [HomeContentItem] = load("homecontent.json")
-        
-        return Publishers.Sequence<[HomeContentItem], Error>(sequence: homeContent)
-                        .collect()
-                        .eraseToAnyPublisher()
+    func getHomeContent() -> AnyPublisher<HomeContentResult, AFError> {
+        return Deferred {
+                Future { promise in
+                    guard let file = "homecontent.json".toFileURL() else {
+                        promise(.failure(AFError.createURLRequestFailed(error: "Could't find homecontent.json in main bundle")))
+                        return
+                    }
+                    
+                    AF.request(file, method: .get)
+                                .validate()
+                                .responseObject { (response: AFDataResponse<HomeContentResult>) in
+                                    promise(response.result)
+                                }
+                }
+            }.eraseToAnyPublisher()
+    }
+    
+    func getPage(mainTopicId: Int, sumarioID: Int) -> AnyPublisher<Page, Error> {
+        return Deferred {
+                Future { promise in
+                    do {
+                        let values = try self.loadPages("main_\(mainTopicId)_page_\(sumarioID).json")
+
+                        promise(.success(values))
+                    } catch {
+                        promise(.failure(error))
+                    }
+                }
+            }.eraseToAnyPublisher()
     }
 }
 
-func load<T: Decodable>(_ filename: String) -> T {
-    let data: Data
-    
-    guard let file = Bundle.main.url(forResource: filename, withExtension: nil) else {
-        fatalError("Could't find \(filename) in main bundle")
-    }
-    
-    do {
-        data = try (Data(contentsOf: file))
-    } catch {
-        fatalError("Could't find \(filename) in main : \n\(error)")
-    }
-    
-    do {
-        let decoder = JSONDecoder()
-        
-        return try decoder.decode(T.self, from: data)
-    } catch {
-        fatalError("Could't find \(filename) in main : \n\(error)")
-    }
-}

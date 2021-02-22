@@ -6,16 +6,23 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct ImageStyle: BaseModel {
-    var id: String? = UUID().uuidString
+class ImageStyle: BaseLocalModel {
     var width: Int?
     var height: Int?
     var resize: ImageResize?
     var scaleType: String?
     
-    enum CodingKeys: String, CodingKey {
-        case width, height, resize
-        case scaleType = "scale_type"
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        width       <- map["width"]
+        height      <- map["height"]
+        resize      <- map["resize"]
+        scaleType   <- map["scale_type"]
     }
 }
+

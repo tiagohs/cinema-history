@@ -6,16 +6,32 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct HomeContentItem: BaseModel {
-    var id: String? = UUID().uuidString
+class HomeContentItem: BaseLocalModel {
     var mainTopicType: MainTopicsType?
     var image: LocalImage?
     var darkMode: Bool?
     
-    enum CodingKeys: String, CodingKey {
-        case image
-        case mainTopicType = "main_topic_type"
-        case darkMode = "dark_mode"
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        mainTopicType                            <- (map["main_topic_type"], EnumTransform<MainTopicsType>())
+        image                                   <- map["image"]
+        darkMode                                <- map["dark_mode"]
+    }
+}
+
+class HomeContentResult: BaseLocalModel {
+    var results: [HomeContentItem]!
+    
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        results                                   <- map["results"]
     }
 }
