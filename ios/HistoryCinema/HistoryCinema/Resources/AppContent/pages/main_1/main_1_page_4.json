@@ -1,0 +1,744 @@
+{
+  "number": 4,
+  "content_list": [
+    {
+      "type": "text",
+      "content_text": "Nos primeiros anos do cinema mudo, os afro-americanos não eram retratados de maneira positiva. Seus personagens eram limitados a papéis muito estereotipados e, na maioria das vezes, se um afro-americano estivesse em um filme, esse papel seria interpretado por um ator branco usando <strong>blackface</strong>. Mas homens como <a href=\"https://_{type: 'screen', 'id': 3247, 'screen_type': person}\">Noble Johnson</a> (1881-1978) e <a href=\"https://_{type: 'screen', 'id': 253152, 'screen_type': person}\">Oscar Micheaux</a> (1884-1951) não se contentavam em simplesmente ficar parados, assistindo continuações e mais continuações dessas visões claramente racistas. Eles sabiam que haviam vários atores e atrizes afro-americanos que eram capazes de atuar se tivessem uma chance."
+    },
+    {
+      "type": "text",
+      "content_text": "Mesmo sabendo que seria um trabalho difícil, esses homens estavam dispostos a se arriscarem. Esses pioneiros do cinema começariam a produzir filmes com um elenco totalmente negro, voltados para a comunidade afro-americana. Esses filmes que foram chamados de <i>black race films</i> (literalmente filmes de raça negra), ou simplesmente <strong>Race Films</strong>, são extremamente importantes na história do cinema."
+    },
+    {
+      "type": "movie_list_special",
+      "movies": [
+        {
+          "vote_count": 0,
+          "popularity": 0.6,
+          "id": 273439,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 0,
+          "title": "The Homesteader",
+          "release_date": "1919-01-02",
+          "original_language": "en",
+          "original_title": "The Homesteader",
+          "genre_ids": [],
+          "backdrop_path": "\/wB3vVHx6SamXA8yIYFqWq62ayr6.jpg",
+          "adult": false,
+          "overview": "Directed by Oscar Micheaux and Jerry Mills.",
+          "poster_path": "\/e8SLRFhakgia458jZKpwLCvXSh5.jpg"
+        },
+        {
+          "poster_path": "\/w4O3qGF1n7LCvzCeUzYsMGbk9b3.jpg",
+          "popularity": 0.6,
+          "vote_count": 0,
+          "video": false,
+          "media_type": "movie",
+          "id": 643211,
+          "adult": false,
+          "backdrop_path": "\/mOCkVVjsPyIJ1VDJhjBMjhbDPO1.jpg",
+          "original_language": "en",
+          "original_title": "The Green Eyed Monster",
+          "genre_ids": [],
+          "title": "The Green Eyed Monster",
+          "vote_average": 0,
+          "overview": "The Green Eyed Monster is a lost[1] 1919 Black and White silent film action adventure with little to scant information as to its release. It was produced by the Norman Film Manufacturing Company, a historic all-black film production company. Various dates of release are quoted in 1919 and 1921.",
+          "release_date": ""
+        },
+        {
+          "poster_path": "\/fpYu6zTCaAHMX0t8HGAD5q9syWz.jpg",
+          "popularity": 3.644,
+          "vote_count": 41,
+          "video": false,
+          "media_type": "movie",
+          "id": 77621,
+          "adult": false,
+          "backdrop_path": "\/eGhQXfGeNdJfywH6ZmjRwN3f1X8.jpg",
+          "original_language": "en",
+          "original_title": "Within Our Gates",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "Within Our Gates",
+          "vote_average": 5.7,
+          "overview": "Abandoned by her fiancé, an educated negro woman with a shocking past dedicates herself to helping a near bankrupt school for impoverished negro youths.",
+          "release_date": "1920-01-12"
+        },
+        {
+          "poster_path": "\/1FtWJ7X42rMNeSxb2CDfvtJCTyi.jpg",
+          "popularity": 1.4,
+          "vote_count": 7,
+          "video": false,
+          "media_type": "movie",
+          "id": 175226,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Symbol of the Unconquered",
+          "genre_ids": [
+            18
+          ],
+          "title": "The Symbol of the Unconquered",
+          "vote_average": 5.4,
+          "overview": "Racists learn that the land a negro owns lies over a vast oil field, and threaten his life when he refuses to sell.",
+          "release_date": "1920-11-28"
+        },
+        {
+          "poster_path": "\/rLPrttxRyYtkcQEGXjsTXp1Glh4.jpg",
+          "popularity": 3.969,
+          "vote_count": 12,
+          "video": false,
+          "media_type": "movie",
+          "id": 86955,
+          "adult": false,
+          "backdrop_path": "\/v5B596E3IvllVvIJc3EpJJj0VwM.jpg",
+          "original_language": "en",
+          "original_title": "Body and Soul",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "Body and Soul",
+          "vote_average": 6.4,
+          "overview": "A minister is malevolent and sinister behind his righteous facade. He consorts with, and later extorts from, the owner of a gambling house, and betrays an honest girl, eventually driving them both to ruin.",
+          "release_date": "1925-11-09"
+        },
+        {
+          "poster_path": "\/edq7xxmNpar6KiYzg0PPNjCnk9u.jpg",
+          "popularity": 1.4,
+          "vote_count": 4,
+          "video": false,
+          "media_type": "movie",
+          "id": 208691,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Exile",
+          "genre_ids": [
+            18
+          ],
+          "title": "The Exile",
+          "vote_average": 5.3,
+          "overview": "An idealistic young man is torn between a sultry nightclub owner in Chicago and a Scottish farmgirl in South Dakota.",
+          "release_date": "1931-05-15"
+        },
+        {
+          "poster_path": "\/676jzPaamXDHe0pJdiiHkt9ZTFd.jpg",
+          "popularity": 3.987,
+          "vote_count": 11,
+          "video": false,
+          "media_type": "movie",
+          "id": 43594,
+          "adult": false,
+          "backdrop_path": "\/tj7xXnxWjqlSAPu7aNzo9zHCWyU.jpg",
+          "original_language": "en",
+          "original_title": "The Emperor Jones",
+          "genre_ids": [
+            18,
+            10402
+          ],
+          "title": "The Emperor Jones",
+          "vote_average": 5.9,
+          "overview": "Unscrupulously ambitious, Brutus Jones escapes from jail after killing a guard and through bluff and bravado he finds himself the emperor of a Caribbean island.",
+          "release_date": "1933-09-29"
+        },
+        {
+          "vote_count": 8,
+          "popularity": 2.116,
+          "id": 95015,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.8,
+          "title": "The Green Pastures",
+          "release_date": "1936-08-01",
+          "original_language": "en",
+          "original_title": "The Green Pastures",
+          "genre_ids": [
+            18
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "God, heaven, and several Old Testament stories, including the Creation and Noah's Ark, are described supposedly using the perspective of rural, black Americans.",
+          "poster_path": "\/rUnMaskKPrF2xbhQtOwvYBGYSDe.jpg"
+        },
+        {
+          "poster_path": "\/tu3CIhMajqmGwUseSxsPPdVx7yv.jpg",
+          "popularity": 0.6,
+          "vote_count": 0,
+          "video": false,
+          "media_type": "movie",
+          "id": 289526,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Harlem on the Prairie",
+          "genre_ids": [
+            28,
+            35,
+            10402,
+            37
+          ],
+          "title": "Harlem on the Prairie",
+          "vote_average": 0,
+          "overview": "A cowboy helps a pretty young woman find lost gold.",
+          "release_date": "1937-12-09"
+        },
+        {
+          "poster_path": "\/kNXwNTpVYxWcRrg71CVmqJvzOUE.jpg",
+          "popularity": 2.02,
+          "vote_count": 4,
+          "video": false,
+          "media_type": "movie",
+          "id": 133255,
+          "adult": false,
+          "backdrop_path": "\/eqGWnSKpxqmcAUBcvrNSfSsIQfJ.jpg",
+          "original_language": "en",
+          "original_title": "Harlem Rides the Range",
+          "genre_ids": [
+            37
+          ],
+          "title": "Harlem Rides the Range",
+          "vote_average": 2,
+          "overview": "A wandering cowboy and his sidekick try to resolve a murder.",
+          "release_date": "1939-02-01"
+        },
+        {
+          "poster_path": "\/ah5Qb0ekaz7UBnKIPKzFMqoqjMm.jpg",
+          "popularity": 0.6,
+          "vote_count": 3,
+          "video": false,
+          "media_type": "movie",
+          "id": 91464,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Lying Lips",
+          "genre_ids": [
+            18
+          ],
+          "title": "Lying Lips",
+          "vote_average": 4.7,
+          "overview": "A nightclub singer refuses to \"date\" customers, so she's framed for the murder of her aunt.",
+          "release_date": "1939-01-02"
+        },
+        {
+          "poster_path": "\/pfs9ctsTyqLJ1wCTzkot13CMkuB.jpg",
+          "popularity": 2.466,
+          "vote_count": 6,
+          "video": false,
+          "media_type": "movie",
+          "id": 22750,
+          "adult": false,
+          "backdrop_path": "\/5kMI0SzaSh2e979HNgFjylTDX9T.jpg",
+          "original_language": "en",
+          "original_title": "The Blood of Jesus",
+          "genre_ids": [
+            18,
+            14,
+            10402
+          ],
+          "title": "The Blood of Jesus",
+          "vote_average": 5,
+          "overview": "Razz accidentally shoots his wife Martha when his hunting rifle drops on the floor and discharges. The church congregation gathers at Martha’s bedside to pray for her recovery, and during this period an angel arrives to take Martha’s spirit from her body, but she is tempted by the slick Judas Green, who is an agent for Satan.",
+          "release_date": "1941-04-26"
+        },
+        {
+          "vote_count": 0,
+          "popularity": 0.6,
+          "id": 735278,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 0,
+          "title": "Brother Martin: Servant of Jesus",
+          "release_date": "",
+          "original_language": "en",
+          "original_title": "Brother Martin: Servant of Jesus",
+          "genre_ids": [
+            18
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "An uncle discusses the life of Martin de Porres with his niece. de Porres was a late sixteenth-century Peruvian who was elevated to sainthood in 1962 by Pope John XXIII.",
+          "poster_path": "\/tra3gxCkSU0whrw408YzQeQwaU5.jpg"
+        },
+        {
+          "poster_path": "\/6MSTz2fS8P7ufuCXIHBFpjqW9tr.jpg",
+          "popularity": 4.475,
+          "vote_count": 24,
+          "video": false,
+          "media_type": "movie",
+          "id": 59964,
+          "adult": false,
+          "backdrop_path": "\/uto1jAibvYI95DNgMVUBQukVBrP.jpg",
+          "original_language": "en",
+          "original_title": "Cabin in the Sky",
+          "genre_ids": [
+            14,
+            10402
+          ],
+          "title": "Cabin in the Sky",
+          "vote_average": 6.5,
+          "overview": "When compulsive gambler Little Joe Jackson dies in a drunken fight, he awakens in purgatory, where he learns that he will be sent back to Earth for six months to prove that he deserves to be in heaven. He awakens, remembering nothing and struggles to do right by his devout wife, Petunia, while an angel known as the General and the devil's son, Lucifer Jr., fight for his soul.",
+          "release_date": "1943-04-09"
+        },
+        {
+          "poster_path": "\/d6XpJ69jXvP5WXzVsKVR4rUJhe1.jpg",
+          "popularity": 3.577,
+          "vote_count": 20,
+          "video": false,
+          "media_type": "movie",
+          "id": 43513,
+          "adult": false,
+          "backdrop_path": "\/7yoJ3hV78s6QqX9PiRiXg4OKmK3.jpg",
+          "original_language": "en",
+          "original_title": "Stormy Weather",
+          "genre_ids": [
+            10402
+          ],
+          "title": "Stormy Weather",
+          "vote_average": 7.2,
+          "overview": "Dancing great Bill Williamson sees his face on the cover of Theatre World magazine and reminisces: Just back from World War I, he meets lovely singer Selina Rogers at a soldiers' ball and promises to come back to her when he \"gets to be somebody.\" Years go by, and Bill and Selina's rising careers intersect only briefly, since Selina is unwilling to settle down. Will she ever change her mind? Concludes with a big all-star show hosted by Cab Calloway.",
+          "release_date": "1943-07-21"
+        },
+        {
+          "poster_path": "\/IHvCPm1YrHHBp5hoL1nMs1cmsS.jpg",
+          "popularity": 0.84,
+          "vote_count": 4,
+          "video": false,
+          "media_type": "movie",
+          "id": 90708,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Go Down, Death!",
+          "genre_ids": [
+            18
+          ],
+          "title": "Go Down, Death!",
+          "vote_average": 3.5,
+          "overview": "The owner of a juke joint arranges to frame an innocent preacher with a scandalous photograph, but his scheme backfires when his own adoptive mother interferes.",
+          "release_date": "1944-01-01"
+        },
+        {
+          "poster_path": null,
+          "popularity": 2.475,
+          "vote_count": 6,
+          "video": false,
+          "media_type": "movie",
+          "id": 43473,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Dirty Gertie from Harlem U.S.A.",
+          "genre_ids": [
+            18
+          ],
+          "title": "Dirty Gertie from Harlem U.S.A.",
+          "vote_average": 4.9,
+          "overview": "Dirty Gertie is a nightclub entertainer from the Harlem neighborhood of New York City. She arrives on the Caribbean island of \"Rinidad\" to perform as the headliner in a revue at the Paradise Hotel. On the island she attracts the attention of several men.",
+          "release_date": "1946-01-01"
+        },
+        {
+          "poster_path": "\/1IcQRFTi6eeRDd4NYr9ageB6TGV.jpg",
+          "popularity": 1.126,
+          "vote_count": 1,
+          "video": false,
+          "media_type": "movie",
+          "id": 275932,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Boy! What a Girl!",
+          "genre_ids": [],
+          "title": "Boy! What a Girl!",
+          "vote_average": 6,
+          "overview": "Two silky-smooth producers line up a potential backer (who'll put up half the cash) for a musical review. The catch is that they must find someone else to put up the other half. Enter cigar-smoking cross-dresser \"Bumpsie\" (Tim Moore), who poses as a wealthy society matron to fool the angel! Features vintage jam sessions with swing drummer Gene Krupa, Big Sid Catlett and his band, The Slam Stewart Trio and The International Jitterbugs.",
+          "release_date": "1947-01-01"
+        },
+        {
+          "poster_path": "\/6hJVHGujXzcFIfspA2uIEec28LG.jpg",
+          "popularity": 2.587,
+          "vote_count": 3,
+          "video": false,
+          "media_type": "movie",
+          "id": 90800,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Hi-De-Ho",
+          "genre_ids": [
+            10402
+          ],
+          "title": "Hi-De-Ho",
+          "vote_average": 6,
+          "overview": "Cab Calloway plays himself in a plot about jealousy, night clubs, and gangsters. Ends with a series of musical numbers.",
+          "release_date": "1947-05-09"
+        },
+        {
+          "poster_path": "\/rbn5IQ3eZFd6OUj001jhc5YkKNp.jpg",
+          "popularity": 0.6,
+          "vote_count": 2,
+          "video": false,
+          "media_type": "movie",
+          "id": 182938,
+          "adult": false,
+          "backdrop_path": "\/4qjnmLHBvHBAklOfMPLLOHvHm9s.jpg",
+          "original_language": "en",
+          "original_title": "Sepia Cinderella",
+          "genre_ids": [
+            10749
+          ],
+          "title": "Sepia Cinderella",
+          "vote_average": 5,
+          "overview": "A struggling songwriter (Billy Daniels) abandons his girlfriend (Sheila Guyse) for a flashy woman (Tondeleyo) after landing a hit.",
+          "release_date": "1947-07-25"
+        }
+      ],
+      "information": {
+        "contentTitle": "Race films que se destacaram na época",
+        "contentText": "Foram produzidos <i>race films</i> de diversos gêneros: faroestes, musicais, dramas policiais, dentre outros. A ideia era simples: oferecer aos afro-americanos a oportunidade de ir e ver um filme em que não fossem retratados da maneira estereotipada."
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "As fronteiras da indústria envolvendo os <i>race films</i> são complicadas e porosas, mas os cineastas, no entanto, constituíram uma comunidade de prática distinta. Poucos desses primeiros filmes sobreviveram, então evidências dessa comunidade de cineastas devem ser extraídas de outras mídias: pôsteres, anúncios em jornais, programas de teatro e, em alguns casos, apenas as anotações manuscritas desses cineastas."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_the_homesteader",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "The Homesteader (1919)",
+        "contentText": "Anúncio para <i>The Homesteader</i> (1919) enfatizando seu elenco negro",
+        "source": "wikipedia.org"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "As obras que os estudiosos geralmente designam de “<strong>Race films</strong>” surgiram durante os primeiros anos do século XX. Esses primeiros filmes, muitos deles produzidos pelo <i>Hampton and Tuskegee Institutes</i>, estavam intimamente alinhados com o movimento de “uplift” afro-americano e seu expoente mais proeminente, <i>Booker T. Washington</i> (1856-1915). <strong>A Trip to Tuskegee</strong> (1909), <strong>John Henry at Hampton</strong> (1913) e <strong>A Day at Tuskegee</strong> (1913) são todos produtos desse momento histórico."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "Uma das maiores tarefas da minha vida foi ensinar o homem de cor que ele pode fazer qualquer coisa.",
+        "author": "Oscar Micheaux"
+      },
+      "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "Simultaneamente com os filmes <i>Hampton / Tuskegee</i>, um grupo de cineastas e empreendedores afro-americanos começaram a se especializar em filmes concebidos ao público afro-americano. <i>The Foster Photoplay Company</i>, fundada em 1913 pelo jornalista e cineasta <a href=\"https://_{type: 'screen', 'id': 1328101, 'screen_type': person}\">William Foster</a> (1884-1940) - também conhecido como Juli Jones - foi uma das primeiras empresas. Os próprios filmes de Foster se inspiram no movimento <i>uplift</i>, contando a história, por exemplo, de um assistente de vagões: <a href=\"https://_{type: 'screen', 'id': 274416, 'screen_type': movie}\">The Railroad Porter</a> (1913), uma posição estimada na comunidade afro-americana."
+    },
+    {
+      "type": "text",
+      "content_text": "Outras produtoras, como a <i>Afro-American Film Company</i>, <i>The Hunter C. Haynes Photoplay Company</i> e <i>The Peter P. Jones Photoplay Company</i> também se especializaram em filmes destinados a esse público nos primeiros anos da segunda década do século XX. Os afro-americanos, como todo mundo, eram cinéfilos ávidos e, como as salas de cinema eram segregadas durante esse período, havia diferentes circuitos de exibição para o público afro-americano e branco. Algumas produtoras conseguiram capitalizar nesse circuito separado, vendendo filmes diretamente aos proprietários de cinemas afro-americanos."
+    },
+    {
+      "type": "block_special",
+      "title": "Blackface",
+      "image": {
+        "image_type": "local",
+        "url": "img_blackface",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "O <i>blackface</i> é uma prática que tem pelo menos 200 anos. Acredita-se que ela tenha se iniciado por volta de 1830 em Nova York. Mas não se trata apenas de pintar a pele de cor diferente. <br/> <br/> \n\nEra uma prática na qual pessoas negras eram ridicularizadas para o entretenimento de brancos. Estereótipos negativos vinham associados às piadas, principalmente nos Estados Unidos e na Europa. No século 19, atores brancos usavam tinta para pintar os rostos de preto em espetáculos humorísticos, se comportando de forma exagerada para ilustrar comportamentos que os brancos associavam aos negros. Também ridicularizavam os sotaques dos personagens que incorporavam nas peças. Isso surgiu numa época em que os negros nem eram autorizados a subir nos palcos e atuar, por causa da cor de sua pele. <br/> <br/> \n\nMesmo no século 20, era muito raro atores negros receberem posição de destaque. Papéis que exigiam uma aparência africana ou asiática eram frequentemente desempenhados por atores brancos usando <i>blackface</i>, ou seja, com a pele tingida. A prática continuou em programas de TV e no teatro por boa parte do século 20. A BBC, por exemplo, teve por 20 anos, entre 1958 e 1978, um programa que usava <i>blackface</i>. O show, que se chamava <strong>The Black and White Minstrel Show</strong>, era extremamente popular, com uma audiência que chegou a atingir 16 milhões de pessoas. O programa ganhou o prestigioso prêmio <i>Golden Rose of Montreux</i>, em 1961. <br/> <br/> \n\nConforme movimentos antirracistas foram crescendo, o <i>blackface</i> foi sendo eliminado do entretenimento e, atualmente, é algo visto como vergonhoso e lamentável. Mas isso não impediu que a prática ainda fosse usada por algumas pessoas.",
+      "credits": "Resumo baseado no artigo <i>O que é 'blackface' e por que é considerado tão ofensivo?</i>"
+    },
+    {
+      "type": "text",
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 618, 'screen_type': movie}\">The Birth of a Nation</a> (BR: O Nascimento de uma nação, 1915), de <a href=\"https://_{type: 'screen', 'id': 100036, 'screen_type': person}\">D. W. Griffith</a> (1875-1948), filme que bateu recordes de bilheteria e arrancou elogios da crítica, apresentou uma história extremamente racista, retratando afro-americanos como estupradores e a Ku Klux Klan como um grupo heroico. Amplamente protestado pelo público afro-americano, o <i>Nascimento de uma nação</i> gerou uma série de respostas cinematográficas - mais obviamente, <a href=\"https://_{type: 'screen', 'id': 273129, 'screen_type': movie}\">Birth of a Race</a> (1918), uma produção famosa e problemática concebida como uma resposta direta ao filme de Griffith."
+    },
+    {
+      "type": "text",
+      "content_text": "O filme de Griffith ajudou a dar um propósito compartilhado (embora certamente não unificado) para que diversas empresas tentassem recuperar a imagem dos afro-americanos nas telas, mesmo que o lucro fosse algo ainda mais importante. Entre eles estavam a <i>Lincoln Motion Picture Company</i> (fundada em 1916) e - a mais famosa de todas as empresas dos <i>race films</i> - a <i>Micheaux Film Corporation</i>, fundada em 1918 pelo autor e cineasta <a href=\"https://_{type: 'screen', 'id': 253152, 'screen_type': person}\">Oscar Micheaux</a> (1884-1951)."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_within_our_gates",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Cena de Within Our Gates",
+        "contentText": "Um dos poucos filmes que chamaram a atenção da imprensa branca, <i>Within Our Gates</i> ficou perdido por mais de 70 anos e, depois de achado na Filmoteca Espanhola, foi restaurado.",
+        "source": "publicdomainreview.org"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Os filmes de Oscar Micheaux, começando com <a href=\"https://_{type: 'screen', 'id': 273439, 'screen_type': movie}\">The Homesteader</a> (1918), foram os <i>race films</i> de maior sucesso na época. O público ansiava pelo lançamento desses filmes, com seus \"elencos coloridos de estrelas\", e <a href=\"https://_{type: 'screen', 'id': 77621, 'screen_type': movie}\">Within Our Gates</a> (BR: Nos Limites dos Portões , 1919) é um dos poucos exemplos de um <i>race film</i> que atraiu a atenção - e um público - da imprensa branca. Enquanto os filmes de Micheaux e Lincoln encontraram um público receptivo, os <i>race films</i> também enfrentaram enormes obstáculos. Embora empresas de produção voltadas para brancos com melhor financiamento pudessem enviar um filme para distribuição enquanto filmavam o seguinte, Micheaux e Johnson tinham que dedicar sua atenção e recursos a um filme por vez."
+    },
+    {
+      "type": "slide",
+      "images": [
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_symbol.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_body_soul.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_blood_of_jesus.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_harlem.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_carib.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        }
+      ],
+      "height": 200,
+      "information": {
+        "contentTitle": "Cena de Within Our Gates",
+        "contentText": "Alguns <i>race films</i> lançado na época. Na ordem: <a href=\"https://_{type: 'screen', 'id': 175226, 'screen_type': movie}\">The Symbol of the Unconquered</a> (1920), <a href=\"https://_{type: 'screen', 'id': 86955, 'screen_type': movie}\">Body and Soul</a> (BR: Corpo e Alma, 1924), <a href=\"https://_{type: 'screen', 'id': 86955, 'screen_type': movie}\">The Blood of Jesus</a> (BR: O Sangue de Jesus, 1914; o primeiro <i>race film</i> adicionado ao Registro Nacional de Filmes dos Estados Unidos, em 1991), <a href=\"https://_{type: 'screen', 'id': 289526, 'screen_type': movie}\">Harlem on the Prairie</a> (1937; Herb Jeffries no primeiro <i>western race film</i>) e <a href=\"https://_{type: 'screen', 'id': 638674, 'screen_type': movie}\">Carib Gold</a> (1957; considerado o ultimo <i>race film </i>)."
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Com o advento do som, a produção de filmes tornou-se tecnicamente mais complexa e cara, e empresas, como a Lincoln, que sempre existiram nas margens, foram cada vez mais afastadas. O fato de tão poucos desses filmes sobreviverem também é em parte uma função do escasso financeiro dessas empresas. O resultado disso, combinado com um subfinanciamento consistente na produção de filmes afro-americanos, é de que muitas pessoas simplesmente não sabem da existência de <i>race films</i>. Sendo que, na verdade, cineastas afro-americanos vêm praticando o ofício desde o início do meio.",
+      "content_credits": "Resumo baseado no artigo <i>Early African American Film – Race Films: History </i>, de <i>Philip Kemp</i>"
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 0,
+          "popularity": 0.6,
+          "id": 273439,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 0,
+          "title": "The Homesteader",
+          "release_date": "1919-01-02",
+          "original_language": "en",
+          "original_title": "The Homesteader",
+          "genre_ids": [],
+          "backdrop_path": "\/wB3vVHx6SamXA8yIYFqWq62ayr6.jpg",
+          "adult": false,
+          "overview": "Directed by Oscar Micheaux and Jerry Mills.",
+          "poster_path": "\/e8SLRFhakgia458jZKpwLCvXSh5.jpg"
+        },
+        {
+          "poster_path": "\/fpYu6zTCaAHMX0t8HGAD5q9syWz.jpg",
+          "popularity": 3.644,
+          "vote_count": 41,
+          "video": false,
+          "media_type": "movie",
+          "id": 77621,
+          "adult": false,
+          "backdrop_path": "\/eGhQXfGeNdJfywH6ZmjRwN3f1X8.jpg",
+          "original_language": "en",
+          "original_title": "Within Our Gates",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "Within Our Gates",
+          "vote_average": 5.7,
+          "overview": "Abandoned by her fiancé, an educated negro woman with a shocking past dedicates herself to helping a near bankrupt school for impoverished negro youths.",
+          "release_date": "1920-01-12"
+        },
+        {
+          "poster_path": "\/1FtWJ7X42rMNeSxb2CDfvtJCTyi.jpg",
+          "popularity": 1.4,
+          "vote_count": 7,
+          "video": false,
+          "media_type": "movie",
+          "id": 175226,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Symbol of the Unconquered",
+          "genre_ids": [
+            18
+          ],
+          "title": "The Symbol of the Unconquered",
+          "vote_average": 5.4,
+          "overview": "Racists learn that the land a negro owns lies over a vast oil field, and threaten his life when he refuses to sell.",
+          "release_date": "1920-11-28"
+        },
+        {
+          "poster_path": "\/rLPrttxRyYtkcQEGXjsTXp1Glh4.jpg",
+          "popularity": 3.969,
+          "vote_count": 12,
+          "video": false,
+          "media_type": "movie",
+          "id": 86955,
+          "adult": false,
+          "backdrop_path": "\/v5B596E3IvllVvIJc3EpJJj0VwM.jpg",
+          "original_language": "en",
+          "original_title": "Body and Soul",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "Body and Soul",
+          "vote_average": 6.4,
+          "overview": "A minister is malevolent and sinister behind his righteous facade. He consorts with, and later extorts from, the owner of a gambling house, and betrays an honest girl, eventually driving them both to ruin.",
+          "release_date": "1925-11-09"
+        },
+        {
+          "poster_path": "\/pfs9ctsTyqLJ1wCTzkot13CMkuB.jpg",
+          "popularity": 2.466,
+          "vote_count": 6,
+          "video": false,
+          "media_type": "movie",
+          "id": 22750,
+          "adult": false,
+          "backdrop_path": "\/5kMI0SzaSh2e979HNgFjylTDX9T.jpg",
+          "original_language": "en",
+          "original_title": "The Blood of Jesus",
+          "genre_ids": [
+            18,
+            14,
+            10402
+          ],
+          "title": "The Blood of Jesus",
+          "vote_average": 5,
+          "overview": "Razz accidentally shoots his wife Martha when his hunting rifle drops on the floor and discharges. The church congregation gathers at Martha’s bedside to pray for her recovery, and during this period an angel arrives to take Martha’s spirit from her body, but she is tempted by the slick Judas Green, who is an agent for Satan.",
+          "release_date": "1941-04-26"
+        },
+        {
+          "poster_path": "\/tu3CIhMajqmGwUseSxsPPdVx7yv.jpg",
+          "popularity": 0.6,
+          "vote_count": 0,
+          "video": false,
+          "media_type": "movie",
+          "id": 289526,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Harlem on the Prairie",
+          "genre_ids": [
+            28,
+            35,
+            10402,
+            37
+          ],
+          "title": "Harlem on the Prairie",
+          "vote_average": 0,
+          "overview": "A cowboy helps a pretty young woman find lost gold.",
+          "release_date": "1937-12-09"
+        },
+        {
+          "poster_path": "\/kdUp7FXe8mGBEszzDENrANUS1kv.jpg",
+          "popularity": 0.6,
+          "vote_count": 0,
+          "video": false,
+          "media_type": "movie",
+          "id": 273129,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "The Birth of a Race",
+          "genre_ids": [
+            18
+          ],
+          "title": "The Birth of a Race",
+          "vote_average": 0,
+          "overview": "Following the \"Birth of the Human Race\" section, the film had epic scenes of Ancient Egypt with Nubian soldiers and the rescue of infant Moses in the river. A later scene portrayed Simon of Cyrene helping Jesus carry his cross on the Via Dolorosa and the signing of the Declaration of Independence. The film then shifted to World War I, with two white brothers in a German-American family going to war on the Western Front, one fighting for the United States, and the other fighting for Germany.",
+          "release_date": "1918-01-02"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 3247,
+          "profile_path": "\/ktN2dIxPBTdt7RqpFoWD0upCbUp.jpg",
+          "name": "Noble Johnson"
+        },
+        {
+          "id": 253152,
+          "profile_path": "\/3vCDPYK5zdbvrjPkNROtYSUWAO.jpg",
+          "name": "Oscar Micheaux"
+        },
+        {
+          "id": 98568,
+          "profile_path": "\/9Mu2bol7MeJeFjeWc38UQ74DZKO.jpg",
+          "name": "Paul Robeson"
+        },
+        {
+          "id": 1328101,
+          "profile_path": "\/7MR2m8pEhihPa6KuXhjDGEjM5f1.jpg",
+          "name": "William Foster"
+        }
+      ]
+    },
+    {
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 1895 a 1929",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "0"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "A primeira exibição pelos irmãos Lumière, o primeiro beijo nas telonas, as invenções e descobertas, o inicio de Hollywood. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1895 e 1929."
+    }
+  ]
+}

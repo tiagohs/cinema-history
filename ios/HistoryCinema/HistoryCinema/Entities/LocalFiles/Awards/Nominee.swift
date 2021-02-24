@@ -35,3 +35,17 @@ class Nominee: BaseLocalModel {
         director                                                <- map["director"]
     }
 }
+
+class NomineeContent: BaseLocalModel {
+    var year: String?
+    var content: [Content]!
+    
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        year                                              <- map["year"]
+        content                                           <- map["content"]
+    }
+}

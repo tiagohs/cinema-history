@@ -1,0 +1,128 @@
+[
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 1071403,
+    "title": "Alice Guy Blaché",
+    "image": {
+      "image_type": "local",
+      "url": "img_alice",
+      "content_description": "Fotografia de Alice Guy Blaché com uma camera.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 138,
+    "title": "Quentin Tarantino",
+    "image": {
+      "image_type": "local",
+      "url": "img_quentin",
+      "content_description": "Fotografia de Quentin Tarantino em preto e branco.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 1032,
+    "title": "Martin Scorsese",
+    "image": {
+      "image_type": "local",
+      "url": "img_scorsese",
+      "content_description": "Fotografia de Martin Scorsese em preto e branco.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 8635,
+    "title": "Buster Keaton",
+    "image": {
+      "image_type": "local",
+      "url": "img_keaton",
+      "content_description": "Fotografia de Buster Keaton em preto e branco.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 525,
+    "title": "Christopher Nolan",
+    "image": {
+      "image_type": "local",
+      "url": "img_nolan",
+      "content_description": "Fotografia de Christopher Nolan.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 11523,
+    "title": "Georges Méliès",
+    "image": {
+      "image_type": "local",
+      "url": "img_georges_melies",
+      "content_description": "Fotografia de Georges Méliès em preto e branco.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 9603,
+    "title": "Sergei Eisenstein",
+    "image": {
+      "image_type": "local",
+      "url": "img_eisenstein",
+      "content_description": "Fotografia de Sergei Eisenstein em preto e branco.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  }
+]

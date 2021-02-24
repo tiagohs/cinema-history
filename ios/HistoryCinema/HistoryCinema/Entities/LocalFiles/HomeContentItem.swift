@@ -23,15 +23,3 @@ class HomeContentItem: BaseLocalModel {
         darkMode                                <- map["dark_mode"]
     }
 }
-
-class HomeContentResult: BaseLocalModel {
-    var results: [HomeContentItem]!
-    
-    required init?(map: Map) {
-        super.init(map: map)
-    }
-
-    override func mapping(map: Map) {
-        results                                   <- map["results"]
-    }
-}

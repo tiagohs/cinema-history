@@ -1,0 +1,170 @@
+{
+    "results": [
+        {
+          "id": 1,
+          "title": "Cinema Noir",
+          "description": "Despontado nos Estados Unidos por volta das décadas de 40 e 50, um dos \"gêneros\" mais importantes do cinema são cheios de subtextos políticos, corrupção, tramas policiais e arquétipos memoráveis – como a femme fatale, por exemplo.",
+          "image": {
+            "image_type": "local",
+            "url": "img_double_indeminity",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 2,
+          "title": "O Cinema Asiático",
+          "description": "O cinema asiático, também conhecido também por \"Cinema do Leste\", ganhou um maior reconhecimento mundial nos anos 1950, com a exibição de Rashomon (1950), de Akira Kurosawa.",
+          "image": {
+            "image_type": "local",
+            "url": "img_rashomon",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 3,
+          "title": "Neorrealismo Italiano",
+          "description": "Um movimento que surgiu nos anos 1940, caracterizado por histórias sobre a classe trabalhadora, filmadas com pouquíssimos recursos, o Neorrealismo italiano foi um importante movimento que buscava representar a condição de vida, opressão e desigualdade na Itália pós-Segunda Guerra.",
+          "image": {
+            "image_type": "local",
+            "url": "img_ladri_di_biciclette",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 4,
+          "title": "O Cinema na França",
+          "description": "Sendo um período agitado para a indústria cinematográfica francesa, a década de 1950 ficou marcada com um conflito edipiano entre a nova geração de cineastas e seus antecessores.",
+          "image": {
+            "image_type": "local",
+            "url": "img_bob_le_flambeur",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 5,
+          "title": "Cinema Nórdico",
+          "description": "A década em que o mundo testemunhou o renascimento do cinema nórdico.",
+          "image": {
+            "image_type": "local",
+            "url": "img_setimo_elo",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 6,
+          "title": "O Faroeste em Hollywood",
+          "description": "O gênero mais americano dos gêneros ganhou ainda mais popularidade nos anos 50, com Hollywood realizando mais de 800 filmes.",
+          "image": {
+            "image_type": "local",
+            "url": "img_john_wayne_rio_bravo",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 7,
+          "title": "Hollywood do pós-Guerra",
+          "description": "Esperava-se que a popularidade dos filmes hollywoodianos no exterior durante o conflito se prolongasse nos anos do pós-guerra. Mas circunstancias econômicas, culturais, sociais e políticas, além do surgimento de um novo formato de entretenimento - a televisão - reduziram o poder e o crescimento de uma das indústrias mais rentáveis dos Estados Unidos.",
+          "image": {
+            "image_type": "local",
+            "url": "img_rear_window",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 8,
+          "title": "A Juventude Rebelde",
+          "description": "Os anos 1950 entrou em uma nova era, com motoqueiros, filmes noir e uma juventude rebelde.",
+          "image": {
+            "image_type": "local",
+            "url": "img_rebel_without_a_caust",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 9,
+          "title": "Nouvelle Vague",
+          "description": "O que foi o movimento cinematográfico, suas principais características estéticas, filmes e cineastas mais importantes e seu legado para o cinema.",
+          "image": {
+            "image_type": "local",
+            "url": "img_a_bout_de_souffle",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 10,
+          "title": "Os Musicais de Hollywood",
+          "description": "A década em que os musicais de Hollywood adotaram um tom militante impudente e vivido.",
+          "image": {
+            "image_type": "local",
+            "url": "img_singin_in_the_rain",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 11,
+          "title": "Guerra Fria no Cinema ",
+          "description": "A paranoia da sociedade americana no pós guerra e durante a Guerra Fria presenteou o cinema com grandes obras.",
+          "image": {
+            "image_type": "local",
+            "url": "img_it_came_from_outer_space",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        }
+      ]
+
+}

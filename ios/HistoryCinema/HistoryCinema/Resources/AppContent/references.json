@@ -1,0 +1,453 @@
+{
+    "results": [
+        {
+          "name": "Tudo",
+          "references": []
+        },
+        {
+          "name": "API",
+          "references": [
+            {
+              "type": "text",
+              "text": "As informações dos filmes, atores, diretores e as imagens são fornecidas pela <strong>API TMDb</strong> mas não é endossado ou certificado pelo TMDb. <br/><br/><a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.themoviedb.org/terms-of-use'}\">Termos de Uso</a> \n\n<br/><a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.themoviedb.org/documentation/api/terms-of-use'}\">Termos de Uso da API </a>"
+            },
+            {
+              "type": "text",
+              "text": "As informações de classificação dos filmes (Rotten Tomatoes, Metacritic, IMDB) são fornecidas pela <strong>API OMDB</strong> mas não é endossado ou certificado pelo OMDB, Rotten Tomatoes, Metacritic ou IMDB . <br/><br/><a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'http://www.omdbapi.com/legal.htm'}\">Termos de Uso da API</a>"
+            }
+          ]
+        },
+        {
+          "name": "Livros",
+          "references": [
+            {
+              "type": "media",
+              "title": "O livro do cinema",
+              "subtitle": "Danny Leigh, Louis Baxter, Kieran Gant, John Farndon, Damon Wise (Colaboradores)",
+              "description": "Será que Chinatown realmente subverteu o gênero noir? Quais os efeitos causados pelo roteiro fragmentado de Pulp Fiction? Como os múltiplos pontos de vista afetam a noção de realidade em Rashomon? Ao exibir os melhores filmes de todos os tempos, este livro responde a estas questões e tantas outras enquanto traz um panorama do mundo do cinema. Escrito em linguagem simples e recheado de imagens icônicas dos filmes, além de pôsteres e infográficos, O livro do cinema explora os personagens, diretores, roteiros e temaschave de mais de cem dos maiores filmes já feitos. Seja você um grande cinéfilo ou um frequentador ocasional das salas de cinema procurando indicações, este livro te dará novas perspectivas sobre seus filmes prediletos ou uma introdução a uma grande quantidade de outras joias que você não pode deixar de ver.",
+              "link": "https://www.amazon.com.br/Livro-do-Cinema-V%C3%A1rios-Autores/dp/8525062421/",
+              "mediaType": "Livro",
+              "image": {
+                "image_type": "online",
+                "url": "https://images-na.ssl-images-amazon.com/images/I/51HxDGyMZ3L._SX401_BO1,204,203,200_.jpg",
+                "content_description": "Capa do Livro O livro do cinema"
+              }
+            },
+            {
+              "type": "media",
+              "title": "Tudo sobre cinema",
+              "subtitle": "Philip Kemp (Autor)",
+              "description": "Se você ama cinema e deseja aprender mais sobre a sétima arte, este livro não pode faltar na sua biblioteca. Organizado cronologicamente e escrito por uma experiente equipe de críticos especializados, este é um guia instigante sobre a história do cinema, incrementado com análises aprofundadas das obras-primas e ilustrado com imagens de cenas inesquecíveis.",
+              "link": "https://www.amazon.com.br/Tudo-Sobre-Cinema-Philip-Kemp/dp/8575426680",
+              "mediaType": "Livro",
+              "image": {
+                "image_type": "online",
+                "url": "https://images-na.ssl-images-amazon.com/images/I/41hO4sH7-0L._SX349_BO1,204,203,200_.jpg",
+                "content_description": "Capa do Livro Tudo sobre cinema"
+              }
+            },
+            {
+              "type": "media",
+              "title": "1001 Filmes Para Ver Antes De Morrer",
+              "subtitle": "Steven Jay Schneider, Ian Haydn Smith (Editores)",
+              "description": "Traduzido para 25 línguas e com mais de um milhã o de exemplares vendidos, 1001 filmes para ver antes de morrer inclui obras de mais de 30 países e revela o que há de melhor no cinema de todos os tempos. Nesta edição atualizada, que conta com sucessos recentes, mais de 50 críticos consagrados selecionaram 1001 filmes imperdíveis e os reuniram neste guia de referência para todos os apaixonados pela sétima arte.",
+              "link": "https://www.amazon.com.br/1001-Movies-You-Must-Before/dp/1438050755",
+              "mediaType": "Livro",
+              "image": {
+                "image_type": "online",
+                "url": "https://images-na.ssl-images-amazon.com/images/I/51YS8sYqh-L._SX393_BO1,204,203,200_.jpg",
+                "content_description": "Capa do Livro 1001 Filmes Para Ver Antes De Morrer"
+              }
+            },
+            {
+              "type": "media",
+              "title": "História do Cinema: Dos Clássicos Mudos ao Cinema Moderno",
+              "subtitle": "Mark Cousins (Autor)",
+              "description": "Do cinema mudo, passando pela engenhosidade do cinema sonoro, até as incríveis inovações da era digital, Mark Cousins apresenta um panorama completo e acessível da história do cinema mundial. Nela são desveladas as técnicas, aspirações e invenções de cada época, em diferentes países e por diversos cineastas que sonharam, imaginaram e trabalharam para que sua mensagem e sua estética fossem transmitidas a um público cada vez mais admirado pela sétima arte e pela rica história que ela comporta.",
+              "link": "https://www.amazon.com.br/Story-Film-Mark-Cousins/dp/186205942X",
+              "mediaType": "Livro",
+              "image": {
+                "image_type": "online",
+                "url": "https://images-na.ssl-images-amazon.com/images/I/4193EnREauL._SX338_BO1,204,203,200_.jpg",
+                "content_description": "Capa do Livro História do Cinema: Dos Clássicos Mudos ao Cinema Moderno"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Séries",
+          "references": [
+            {
+              "type": "media",
+              "title": "The Story of Film: An Odyssey",
+              "subtitle": "Mark Cousins (Diretor)",
+              "description": "The Story of Film: An Odyssey is an epic journey through the history of cinema. Guided by film historian Mark Cousins, this 15-part love letter to the movies spans from the invention of film in the 19th century to the digital industry of the 21st.",
+              "link": "https://www.amazon.com/Story-Film-Odyssey/dp/B00AMPHKJM",
+              "mediaType": "Série",
+              "image": {
+                "image_type": "online",
+                "url": "https://images-na.ssl-images-amazon.com/images/I/71+GFINJ4ZL._SX300_.jpg",
+                "content_description": "Capa do Filme The Story of Film: An Odyssey"
+              }
+            },
+            {
+              "type": "media",
+              "title": "The Movies",
+              "subtitle": "Tom Hanks, Mark Herzog e Gary Goetzman (Produtores)",
+              "description": "The Movies explora, com rico material de arquivo, o contexto social que moldou o cinema americano. Neste episódio, a diversa geração de realizadores que faz o cinema dos anos 2000 e a explosão das franquias de filmes baseados em quadrinhos.",
+              "link": "https://www.hbobrasil.com/series/detail/the-movies/14936/ttl751980",
+              "mediaType": "Série",
+              "buttonText": "Acessar",
+              "image": {
+                "image_type": "online",
+                "url": "https://m.media-amazon.com/images/M/MV5BNzU4NWEwNDItMzMzYy00ZDYyLWIxZjMtMDlkYWVjNjQwYzBjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+                "content_description": "Capa da série The Movies"
+              }
+            },
+            {
+              "type": "media",
+              "title": "Filmes que Marcam Época",
+              "subtitle": "Brian Volk-Weiss (Diretor)",
+              "description": "As mentes por trás dos mais icônicos filmes da nossa geração, que marcaram fortemente a cultura pop.",
+              "link": "https://www.netflix.com/br/title/80990849",
+              "mediaType": "Série",
+              "buttonText": "Acessar",
+              "image": {
+                "image_type": "online",
+                "url": "https://media.fstatic.com/X-DBQHhdLVGAxV6temip3IIIGOE=/210x312/smart/media/movies/covers/2019/12/kowlD5nELdhoJcQY6J8JZUTeNXN.jpg",
+                "content_description": "Capa da série Filmes que Marcam Época"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Filmes",
+          "references": [
+            {
+              "type": "media",
+              "title": "Be Natural: The Untold Story of Alice Guy-Blaché",
+              "subtitle": "Pamela B. Green (Diretor)",
+              "description": "A full feature documentary that rewrites film history, revealing for the first time the full scope of the life and work of cinema's first female director, screenwriter, producer, and studio owner Alice Guy-Blaché.",
+              "link": "https://www.amazon.com/Be-Natural-Untold-Story-Guy-Blach%C3%A9/dp/B07V2B4PLJ",
+              "mediaType": "Filme",
+              "image": {
+                "image_type": "online",
+                "url": "https://images-na.ssl-images-amazon.com/images/I/71NLgUSfRfL._SX300_.jpg",
+                "content_description": "Capa do Filme Be Natural: The Untold Story of Alice Guy-Blaché"
+              }
+            },
+            {
+              "type": "media",
+              "title": "Cidade de Deus: 10 Anos Depois",
+              "subtitle": "Cavi Borges, Luciano Vidigal (Diretor)",
+              "description": "Como o próprio título já diz, resgata os dez anos passados desde o lançamento de Cidade de Deus (2002), longa de Fernando Meirelles e Kátia Lund que recebeu quatro indicações ao Oscar. Procura mostrar as transformações vividas pelos atores do longa na última década. Deram entrevistas atores como Seu Jorge, Alice Braga, Leandro Firmino da Hora, Darlan Cunha, Roberta Rodrigues, dentre outros.",
+              "link": "https://www.netflix.com/br/title/80116761",
+              "mediaType": "Filme",
+              "buttonText": "Acessar",
+              "image": {
+                "image_type": "online",
+                "url": "http://br.web.img2.acsta.net/r_1920_1080/medias/nmedia/18/90/57/86/20103253.jpg",
+                "content_description": "Capa do Filme Cidade de Deus: 10 Anos Depois"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Youtube",
+          "references": [
+            {
+              "type": "media",
+              "title": "Every Frame a Painting",
+              "subtitle": "Canal Youtube em Inglês",
+              "description": "Every Frame a Painting was a series of video essays about film form, made from April 2014 to September 2016, by Taylor Ramos and Tony Zhou.",
+              "link": "https://www.youtube.com/c/everyframeapainting",
+              "mediaType": "Youtube",
+              "buttonText": "Acessar",
+              "image": {
+                "image_type": "online",
+                "url": "https://yt3.ggpht.com/a/AATXAJy743KGmO_cq_JdChzZ3afQcy5m_u9dzZuAxCh2=s88-c-k-c0x00ffffff-no-rj",
+                "content_description": "Every Frame a Painting Logo"
+              }
+            },
+            {
+              "type": "media",
+              "title": "StudioBinder",
+              "subtitle": "Canal Youtube em Inglês",
+              "description": "StudioBinder is a production management solution that helps video and photo productions create call sheets, shot lists, shooting schedules, breakdowns, storyboards, moodboards and more.",
+              "link": "https://www.youtube.com/c/StudioBinder",
+              "mediaType": "Youtube",
+              "buttonText": "Acessar",
+              "image": {
+                "image_type": "online",
+                "url": "https://yt3.ggpht.com/a/AATXAJzmrjZ1w3OtOHpEYAEdRh4USetkiPLRVs321x5O8w=s88-c-k-c0x00ffffff-no-rj",
+                "content_description": "StudioBinder Logo"
+              }
+            },
+            {
+              "type": "media",
+              "title": "kaptainkristian",
+              "subtitle": "Canal Youtube em Inglês",
+              "description": "A series of video-essays created by Kristian Williams about his favorite pieces of media.",
+              "link": "https://www.youtube.com/c/kaptainkristian",
+              "mediaType": "Youtube",
+              "buttonText": "Acessar",
+              "image": {
+                "image_type": "online",
+                "url": "https://yt3.ggpht.com/a/AATXAJzd9KflwAK7z0gXChZe7APM9iGUmGv43593iUddWA=s88-c-k-c0x00ffffff-no-rj",
+                "content_description": "kaptainkristian Logo"
+              }
+            },
+            {
+              "type": "media",
+              "title": "Nerdwriter1",
+              "subtitle": "Canal Youtube em Inglês",
+              "description": "The Nerdwriter is a weekly video essay series that puts ideas to work.",
+              "link": "https://www.youtube.com/user/Nerdwriter1",
+              "mediaType": "Youtube",
+              "buttonText": "Acessar",
+              "image": {
+                "image_type": "online",
+                "url": "https://yt3.ggpht.com/a/AATXAJyw3qOSD9nT_lIjGnoVF8whNP_Agw-z2ruQxLHysA=s88-c-k-c0x00ffffff-no-rj",
+                "content_description": "Nerdwriter1 Logo"
+              }
+            },
+            {
+              "type": "media",
+              "title": "Lessons from the Screenplay",
+              "subtitle": "Canal Youtube em Inglês",
+              "description": "I believe that a more informed audience raises the bar for storytelling. That examining the techniques used to tell great stories makes your own writing better and your appreciation for the stories deeper.\n\nWith Lessons from the Screenplay, I make videos that analyze movie scripts to examine exactly how and why they are so good at telling their stories. Part educational series and part love letter to awesome films, Lessons from the Screenplay aims to be a fun way to learn more about your favorite films and help us all become better storytellers.\n\nI’ll be releasing new videos every couple weeks, and taking suggestions about what scripts I should look at in future episodes.",
+              "link": "https://www.youtube.com/c/LessonsfromtheScreenplay",
+              "mediaType": "Youtube",
+              "buttonText": "Acessar",
+              "image": {
+                "image_type": "online",
+                "url": "https://yt3.ggpht.com/a/AATXAJwaJhVPu260mmSsjCX7uvoxMPRUEC2967u7KCyWdw=s88-c-k-c0x00ffffff-no-rj",
+                "content_description": "Lessons from the Screenplay Logo"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "references": [
+            {
+              "type": "text",
+              "text": "KREUTZ, K. Expressionismo Alemão, 2018. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.aicinema.com.br/expressionismo-alemao-movimentos-cinematograficos'}\">https://www.aicinema.com.br/expressionismo-alemao-movimentos-cinematograficos</a>."
+            },
+            {
+              "type": "text",
+              "text": "Seriado. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://pt.wikipedia.org/wiki/Seriado'}\">https://pt.wikipedia.org/wiki/Seriado</a>."
+            },
+            {
+              "type": "text",
+              "text": "ABREU, K. Quem deu o primeiro beijo na boca em um filme?, 2018. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://super.abril.com.br/mundo-estranho/quem-deu-o-primeiro-beijo-na-boca-em-um-filme'}\">https://super.abril.com.br/mundo-estranho/quem-deu-o-primeiro-beijo-na-boca-em-um-filme</a>."
+            },
+            {
+              "type": "text",
+              "text": "FERNANDO, L. O primeiro filme pornô do cinema, 2016. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://pipocadacinema.wordpress.com/2016/04/19/o-primeiro-filme-porno-do-cinema'}\">https://pipocadacinema.wordpress.com/2016/04/19/o-primeiro-filme-porno-do-cinema</a>."
+            },
+            {
+              "type": "text",
+              "text": "DUTRA, M. Alice Guy Blaché, a pioneira do cinema que a história esqueceu, 2016. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.hypeness.com.br/2019/03/alice-guy-blache-a-pioneira-do-cinema-que-a-historia-esqueceu'}\">https://www.hypeness.com.br/2019/03/alice-guy-blache-a-pioneira-do-cinema-que-a-historia-esqueceu</a>."
+            },
+            {
+              "type": "text",
+              "text": "The Walt Disney Company. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://pt.wikipedia.org/wiki/The_Walt_Disney_Company'}\">https://pt.wikipedia.org/wiki/The_Walt_Disney_Company</a>."
+            },
+            {
+              "type": "text",
+              "text": "O que é 'blackface' e por que é considerado tão ofensivo? 2019. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.bbc.com/portuguese/geral-49769321'}\">https://www.bbc.com/portuguese/geral-49769321</a>."
+            },
+            {
+              "type": "text",
+              "text": "EARLY AFRICAN AMERICAN FILM – Race Films: History. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'http://dhbasecamp.humanities.ucla.edu/afamfilm/whatis/history'}\">http://dhbasecamp.humanities.ucla.edu/afamfilm/whatis/history</a>."
+            },
+            {
+              "type": "text",
+              "text": "Blackface. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://pt.wikipedia.org/wiki/Blackface'}\">https://pt.wikipedia.org/wiki/Blackface</a>."
+            },
+            {
+              "type": "text",
+              "text": "The Hunchback of Notre Dame (1923 film). Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://en.wikipedia.org/wiki/The_Hunchback_of_Notre_Dame_(1923_film)'}\"> https://en.wikipedia.org/wiki/The_Hunchback_of_Notre_Dame_(1923_film)</a>."
+            },
+            {
+              "type": "text",
+              "text": "Código Hays. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://pt.wikipedia.org/wiki/C%C3%B3digo_Hays'}\">https://pt.wikipedia.org/wiki/C%C3%B3digo_Hays</a>."
+            },
+            {
+              "type": "text",
+              "text": "A Era de Ouro dos Monstros da Universal. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://judao.com.br/monstros-da-universal/'}\">https://judao.com.br/monstros-da-universal/</a>."
+            },
+            {
+              "type": "text",
+              "text": "Criado por Mary Shelley, Frankenstein ganhou consagração nas tela. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'http://pioneiro.clicrbs.com.br/rs/cultura-e-tendencias/noticia/2016/06/criado-por-mary-shelley-frankenstein-ganhou-consagracao-nas-telas-5825642.html'}\">http://pioneiro.clicrbs.com.br/rs/cultura-e-tendencias/noticia/2016/06/criado-por-mary-shelley-frankenstein-ganhou-consagracao-nas-telas-5825642.html</a>."
+            },
+            {
+              "type": "text",
+              "text": "The movies and the wettening of America: the media as amplifiers of cultural change. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.robinroom.net/movies.htm'}\">https://www.robinroom.net/movies.htm</a>."
+            },
+            {
+              "type": "text",
+              "text": "Lei Seca nos Estados Unidos. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://pt.wikipedia.org/wiki/Lei_Seca_nos_Estados_Unidos'}\">https://pt.wikipedia.org/wiki/Lei_Seca_nos_Estados_Unidos</a>."
+            },
+            {
+              "type": "text",
+              "text": "Beyond Black and White: The Forgotten History of Color in Silent Movies. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.theatlantic.com/entertainment/archive/2015/06/beyond-black-and-white-the-forgotten-history-of-color-silent-films/396785/'}\">https://www.theatlantic.com/entertainment/archive/2015/06/beyond-black-and-white-the-forgotten-history-of-color-silent-films/396785/</a>."
+            },
+            {
+              "type": "text",
+              "text": "Celebrating Natalie Kalmus, the Color Director Behind Hollywood’s Early Technicolor Films. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://eyeondesign.aiga.org/celebrating-natalie-kalmus-the-color-director-behind-every-initial-technicolor-film-before-the-60s/'}\">https://eyeondesign.aiga.org/celebrating-natalie-kalmus-the-color-director-behind-every-initial-technicolor-film-before-the-60s/</a>."
+            },
+            {
+              "type": "text",
+              "text": "The Hollywood studio system. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.britannica.com/art/history-of-the-motion-picture/The-Hollywood-studio-system'}\">https://www.britannica.com/art/history-of-the-motion-picture/The-Hollywood-studio-system</a>."
+            },
+            {
+              "type": "text",
+              "text": "The History of Warner Bros. Animation. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.liveabout.com/the-history-of-warner-bros-animation-4796601'}\">https://www.liveabout.com/the-history-of-warner-bros-animation-4796601</a>."
+            },
+            {
+              "type": "text",
+              "text": "Disney's Nine Old Men. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://en.wikipedia.org/wiki/Disney%27s_Nine_Old_Men'}\">https://en.wikipedia.org/wiki/Disney%27s_Nine_Old_Men</a>."
+            },
+            {
+              "type": "text",
+              "text": "Get to Know Walt Disney's \"Nine Old Men\". Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'https://www.mentalfloss.com/article/79702/get-know-walt-disneys-nine-old-men'}\">https://www.mentalfloss.com/article/79702/get-know-walt-disneys-nine-old-men</a>."
+            },
+            {
+              "type": "text",
+              "text": "Walt's Nine Old Men. Disponível em: <a href=\"https://_{'type': 'online', 'id': 11523, 'url': 'http://www.thisdayindisneyhistory.com/NineOldMen.html'}\">http://www.thisdayindisneyhistory.com/NineOldMen.html</a>."
+            },
+            {
+              "type": "text",
+              "text": "KREUTZ, K. Cinema Novo, 2018. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.aicinema.com.br/cinema-novo'}\">https://www.aicinema.com.br/cinema-novo</a>."
+            },
+            {
+              "type": "text",
+              "text": "ELOI, A. Noite dos Mortos-Vivos | Como um erro burocrático popularizou os filmes de zumb, 2019. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.omelete.com.br/filmes/noite-dos-mortos-vivos-dominio-publico'}\">https://www.omelete.com.br/filmes/noite-dos-mortos-vivos-dominio-publico</a>."
+            },
+            {
+              "type": "text",
+              "text": "BARRETO, G. Slasher: a ascensão e queda de um subgênero, 2019. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://rotacult.com.br/2019/02/slasher-a-ascensao-e-queda-de-um-subgenero/'}\">https://rotacult.com.br/2019/02/slasher-a-ascensao-e-queda-de-um-subgenero/</a>."
+            },
+            {
+              "type": "text",
+              "text": "DAMASCENA, B. Como o Blaxploitation revolucionou o cinema norte-americano, 2017. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://cinemacomrapadura.com.br/colunas/464950/como-o-blaxpoitation-revolucionou-o-cinema-norte-americano/'}\">https://cinemacomrapadura.com.br/colunas/464950/como-o-blaxpoitation-revolucionou-o-cinema-norte-americano/</a>."
+            },
+            {
+              "type": "text",
+              "text": "WDWAR, R. O Mestre Invencível, 2002. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://cinema.uol.com.br/resenha/teste/1978/o-mestre-invencivel.jhtm'}\">https://cinema.uol.com.br/resenha/teste/1978/o-mestre-invencivel.jhtm</a>."
+            },
+            {
+              "type": "text",
+              "text": "SANGUINO, J. 40 anos de ‘Apocalypse Now’: assim foi o set mais selvagem da história, 2019. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://brasil.elpais.com/brasil/2019/09/12/cultura/1568284135_370751.html'}\">https://brasil.elpais.com/brasil/2019/09/12/cultura/1568284135_370751.html</a>."
+            },
+            {
+              "type": "text",
+              "text": "Velha fórmula ZAZ redefiniu comédia, 2006. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.cmjornal.pt/cultura/detalhe/velha-formula-zaz-redefiniu-comedia?ref=Mais%20Sobre_BlocoMaisSobre'}\">https://www.cmjornal.pt/cultura/detalhe/velha-formula-zaz-redefiniu-comedia?ref=Mais%20Sobre_BlocoMaisSobre</a>."
+            },
+            {
+              "type": "text",
+              "text": "ARYADNE, D. A Herança Oitentista de John Hughes, 2018. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://medium.com/@dandaraaryadne/a-heran%C3%A7a-oitentista-de-john-hughes-808d1fb0ef49'}\">https://medium.com/@dandaraaryadne/a-heran%C3%A7a-oitentista-de-john-hughes-808d1fb0ef49</a>."
+            },
+            {
+              "type": "text",
+              "text": "PRESSE, F. Como 'Último tango em Paris', de Bertolucci, se tornou símbolo da violência sexual no cinema, 2018. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://g1.globo.com/pop-arte/cinema/noticia/2018/11/26/ultimo-tango-em-paris-de-bertolucci-um-simbolo-da-violencia-sexual.ghtml'}\">https://g1.globo.com/pop-arte/cinema/noticia/2018/11/26/ultimo-tango-em-paris-de-bertolucci-um-simbolo-da-violencia-sexual.ghtml</a>."
+            },
+            {
+              "type": "text",
+              "text": "Manifesto de Oberhausen. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://pt.wikipedia.org/wiki/Manifesto_de_Oberhausen'}\">https://pt.wikipedia.org/wiki/Manifesto_de_Oberhausen</a>."
+            },
+            {
+              "type": "text",
+              "text": "New German Cinema. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://en.wikipedia.org/wiki/New_German_Cinema'}\">https://en.wikipedia.org/wiki/New_German_Cinema</a>."
+            },
+            {
+              "type": "text",
+              "text": "Blaxploitation. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://pt.wikipedia.org/wiki/Blaxploitation'}\">https://pt.wikipedia.org/wiki/Blaxploitation</a>."
+            },
+            {
+              "type": "text",
+              "text": "Ozploitation. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://en.wikipedia.org/wiki/Ozploitation'}\">https://en.wikipedia.org/wiki/Ozploitation</a>."
+            },
+            {
+              "type": "text",
+              "text": "Cinema de ação de Hong Kong. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://pt.wikipedia.org/wiki/Cinema_de_a%C3%A7%C3%A3o_de_Hong_Kong'}\">https://pt.wikipedia.org/wiki/Cinema_de_a%C3%A7%C3%A3o_de_Hong_Kong</a>."
+            },
+            {
+              "type": "text",
+              "text": "Mafia film. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://en.wikipedia.org/wiki/Mafia_film'}\">https://en.wikipedia.org/wiki/Mafia_film</a>. "
+            },
+            {
+              "type": "text",
+              "text": "LOURENÇO, I. \"A Vida é Bela\": uma fábula de amor e sobrevivência, 2016. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.dn.pt/artes/a-vida-e-bela-uma-fabula-de-amor-e-sobrevivencia-5105694.html'}\">https://www.dn.pt/artes/a-vida-e-bela-uma-fabula-de-amor-e-sobrevivencia-5105694.html</a>. "
+            },
+            {
+              "type": "text",
+              "text": "FAN, R. Crítica | Clube de Luta, 2014. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.planocritico.com/critica-clube-da-luta/'}\">https://www.planocritico.com/critica-clube-da-luta/</a>. "
+            },
+            {
+              "type": "text",
+              "text": "FAN, R. Crítica | Pul Fiction, 2019. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.planocritico.com/critica-pulp-fiction-tempo-de-violencia/'}\">https://www.planocritico.com/critica-pulp-fiction-tempo-de-violencia/</a>. "
+            },
+            {
+              "type": "text",
+              "text": "CARVALHO, G. Crítica | Pequena Miss Sunshine, 2017. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.planocritico.com/critica-pequena-miss-sunshine-2/'}\">https://www.planocritico.com/critica-pequena-miss-sunshine-2/</a>. "
+            },
+            {
+              "type": "text",
+              "text": "Dogma 95 e a essência do cinema, 2012. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'http://jornalismojunior.com.br/dogma-95-e-a-essencia-do-cinema/'}\">http://jornalismojunior.com.br/dogma-95-e-a-essencia-do-cinema/</a>. "
+            },
+            {
+              "type": "text",
+              "text": "TESTONI, M. De robô a dublê de dinossauro: veja a evolução tecnológica de Jurassic Park, 2020. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'http://uol.com.br/tilt/noticias/redacao/2020/10/03/de-robo-a-duble-de-dinossauro-veja-a-evolucao-tecnologica-de-jurassic-park.htm'}\">http://uol.com.br/tilt/noticias/redacao/2020/10/03/de-robo-a-duble-de-dinossauro-veja-a-evolucao-tecnologica-de-jurassic-park.htm</a>. "
+            },
+            {
+              "type": "text",
+              "text": "Muito mais do que efeitos especiais, 2016. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://super.abril.com.br/tecnologia/muito-mais-do-que-efeitos-especiais/'}\">https://super.abril.com.br/tecnologia/muito-mais-do-que-efeitos-especiais/</a>. "
+            },
+            {
+              "type": "text",
+              "text": "SADOVISKI, R. Como \"Matrix\" definiu o cinema do novo século há 20 anos, 2019. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://entretenimento.uol.com.br/reportagens-especiais/20-anos-do-filme-matrix/'}\">https://entretenimento.uol.com.br/reportagens-especiais/20-anos-do-filme-matrix/</a>. "
+            },
+            {
+              "type": "text",
+              "text": "ROSE, S. Black films matter – how African American cinema fought back against Hollywood, 2016. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.theguardian.com/film/2016/oct/13/do-the-right-thing-how-black-cinema-rose-again'}\">https://www.theguardian.com/film/2016/oct/13/do-the-right-thing-how-black-cinema-rose-again</a>. "
+            },
+            {
+              "type": "text",
+              "text": "SILVIA, E. Estudio Ghibli - Animações com Sentimentos. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'http://lounge.obviousmag.org/back_to_71/2014/01/EstudioGhibli.html'}\">http://lounge.obviousmag.org/back_to_71/2014/01/EstudioGhibli.html</a>. "
+            },
+            {
+              "type": "text",
+              "text": "CARVALHO, G. Crítica | A Bela e a Fera, 2018. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.planocritico.com/critica-a-bela-e-a-fera-1991/'}\">https://www.planocritico.com/critica-a-bela-e-a-fera-1991/</a>. "
+            },
+            {
+              "type": "text",
+              "text": "FIORAVANTE, G, MANTOVANI, G. R.. A história da Pixar e como ela revolucionou o mundo do cinema, 2016. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'http://personaunesp.com.br/historia-pixar-como-revolucionou-mundo-cinema/'}\">http://personaunesp.com.br/historia-pixar-como-revolucionou-mundo-cinema/</a>. "
+            },
+            {
+              "type": "text",
+              "text": "HACKAQ, G. Crítica: para o bem de \"Atividade Paranormal\", é bom que \"Dimensão Fantasma\" seja o último, 2018. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.portalitpop.com/2018/04/critica-para-o-bem-de-atividade.html'}\">https://www.portalitpop.com/2018/04/critica-para-o-bem-de-atividade.html</a>. "
+            },
+            {
+              "type": "text",
+              "text": "Meteoro por Trás da Cena: como Cidade de Deus mudou o cinema brasileiro, 2020. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.uol.com.br/mov/videos/2020/03/13/meteoro-por-tras-da-cena-como-cidade-de-deus-mudou-o-cinema-brasileiro-0402CD99326ADCB96326.htm'}\">https://www.uol.com.br/mov/videos/2020/03/13/meteoro-por-tras-da-cena-como-cidade-de-deus-mudou-o-cinema-brasileiro-0402CD99326ADCB96326.htm</a>. "
+            },
+            {
+              "type": "text",
+              "text": "Superhero film. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://en.wikipedia.org/wiki/Superhero_film'}\">https://en.wikipedia.org/wiki/Superhero_film</a>. "
+            },
+            {
+              "type": "text",
+              "text": "OLIVEIRA, R. W. Crítica | Harry Potter e o Prisioneiro de Askaban, 2012. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.planocritico.com/critica-harry-potter-e-o-prisioneiro-de-azkaban'}\">https://www.planocritico.com/critica-harry-potter-e-o-prisioneiro-de-azkaban/</a>. "
+            },
+            {
+              "type": "text",
+              "text": "FAN, R. Crítica | Homem-Aranha , 2017. Disponível em: <a href=\"https://_{'type': 'online', 'url': 'https://www.planocritico.com/critica-homem-aranha'}\">https://www.planocritico.com/critica-homem-aranha/</a>. "
+            }
+          ]
+        }
+      ]
+
+}

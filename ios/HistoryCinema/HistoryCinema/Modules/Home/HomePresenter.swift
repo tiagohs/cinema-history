@@ -38,7 +38,7 @@ extension HomePresenter {
     func fetchPopularMovies() {
         let localContentService = LocalContentService()
 
-        localContentService.getPage(mainTopicId: 1, sumarioID: 1)
+        localContentService.getGlossary()
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
