@@ -6,18 +6,23 @@
 //
 
 import Foundation
+import Combine
+import Alamofire
 
 // MARK: HomeInteractor: BaseInteractor
 
 class HomeInteractor: BaseInteractor {
-    let movieService: MovieServiceProtocol
+    let localContentService: LocalContentService
     
-    init(_ movieService: MovieServiceProtocol) {
-        self.movieService = movieService
+    init(_ localContentService: LocalContentService) {
+        self.localContentService = localContentService
     }
     
 }
 
-extension HomeInteractor: HomeInteractorInterface {
+extension HomeInteractor {
     
+    func getHomeContent() -> AnyPublisher<HomeContentResult, AFError> {
+        return self.localContentService.getHomeContent()
+    }
 }

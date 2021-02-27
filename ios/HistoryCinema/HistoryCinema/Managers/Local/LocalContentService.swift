@@ -103,10 +103,12 @@ class LocalContentService: BaseLocalService {
             return self.loadMainTopics("awards")
         case .directors:
             return self.loadMainTopics("directorsmaintopics")
-        case .historyCinema:
+        case .history_cinema:
             return self.loadMainTopics("maintopics")
-        case .milMovies:
+        case .mil_movies:
             return self.loadMainTopics("milmoviesmaintopics")
+        default:
+            return self.loadMainTopics("maintopics")
         }
     }
     

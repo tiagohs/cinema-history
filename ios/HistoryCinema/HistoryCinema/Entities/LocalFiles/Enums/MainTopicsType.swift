@@ -8,22 +8,24 @@
 import Foundation
 
 enum MainTopicsType: String {
-    case awards, directors
-    case historyCinema = "history_cinema"
-    case milMovies = "mil_movies"
+    case timeline, awards, directors
+    case history_cinema
+    case mil_movies
     
     static func getMainTopicsType(by name: String) -> MainTopicsType {
         switch name {
         case "awards":
             return .awards
+        case "timeline":
+            return .timeline
         case "directors":
             return .directors
         case "history_cinema":
-            return .historyCinema
+            return .history_cinema
         case "mil_movies":
-            return .milMovies
+            return .mil_movies
         default:
-            return .historyCinema
+            return .history_cinema
         }
     }
 }

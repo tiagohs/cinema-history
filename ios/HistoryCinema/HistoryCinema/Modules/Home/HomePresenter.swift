@@ -7,7 +7,6 @@
 
 import Foundation
 import Combine
-import Combine
 import Alamofire
 import ObjectMapper
 
@@ -17,36 +16,36 @@ class HomePresenter: BasePresenter, ObservableObject {
     
     // MARK: Properties
     
-    private var interactor: HomeInteractorInterface?
-    private var wireframe: HomeWireframaInterface?
+    private var interactor: HomeInteractor?
+    private var wireframe: HomeWireframe?
     
     @Published var homeContent: [HomeContentItem]
+    @Published var showErrorMessage: Bool = false
     
-    init(_ interactor: HomeInteractorInterface, _ wireframe: HomeWireframaInterface) {
+    init(_ interactor: HomeInteractor, _ wireframe: HomeWireframe) {
         self.interactor = interactor
         self.wireframe = wireframe
         self.homeContent = []
     }
     
     override func viewAppears() {
-        fetchPopularMovies()
+        fetchHomeContent()
     }
 }
 
 extension HomePresenter {
     
-    func fetchPopularMovies() {
-        let localContentService = LocalContentService()
-
-        localContentService.getGlossary()
+    func fetchHomeContent() {
+        self.interactor?.getHomeContent()
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
                     case .finished: print("🏁 finished")
-                    case .failure(let error): print("❗️ failure: \(error)")
+                    case .failure:
+                        self.showErrorMessage = true
                     }
-            }, receiveValue: { values in
-                print(values)
+            }, receiveValue: { homeContentResult in
+                self.homeContent = homeContentResult.results
             })
             .store(in: &cancalables)
     }

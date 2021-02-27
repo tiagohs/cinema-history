@@ -8,22 +8,26 @@
 import SwiftUI
 import Combine
 
-struct HomeView: View, HomeViewInterface {
+struct HomeView: View {
     
     @ObservedObject private var presenter: HomePresenter = HomeWireframe.buildPresenter()
     
     var body: some View {
-        ZStack(alignment: .leading) {
+        VStack(alignment: .leading) {
             if (presenter.homeContent.count == 0) {
                 ProgressView()
             }
             
             if !presenter.homeContent.isEmpty {
-                HomePageView(homeContentItemList: presenter.homeContent)
+                HomeListView(homeContentItemList: presenter.homeContent)
             }
         }
-        .ignoresSafeArea()
-        .background(Color.black)
+        .alert(isPresented: $presenter.showErrorMessage, content: {
+            Alert(title: Text("Ops"),
+                  message: Text("Houve algum problema! Por favor, tente novamente."),
+                  dismissButton: .default(Text("Tentar novamente")) { presenter.fetchHomeContent() }
+            )
+        })
         .onAppear { presenter.viewAppears() }
         .onDisappear { presenter.viewDisappears() }
     }

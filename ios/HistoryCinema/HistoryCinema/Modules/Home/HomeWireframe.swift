@@ -7,8 +7,7 @@
 
 import Foundation
 
-class HomeWireframe: HomeWireframaInterface {
-    
+class HomeWireframe {
     
     
 }
@@ -18,8 +17,8 @@ class HomeWireframe: HomeWireframaInterface {
 extension HomeWireframe {
     
     static func buildPresenter() -> HomePresenter {
-        let movieService = MovieService()
-        let interactor = HomeInteractor(movieService)
+        let localContentService = LocalContentService()
+        let interactor = HomeInteractor(localContentService)
         let wireframe = HomeWireframe()
         
         return HomePresenter(interactor, wireframe)

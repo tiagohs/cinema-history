@@ -11,7 +11,7 @@ struct HomeItemImage: View {
     let homeContentItem: HomeContentItem
     
     var body: some View {
-        if homeContentItem.mainTopicType == .milMovies {
+        if homeContentItem.mainTopicType == .mil_movies {
             Image(homeContentItem.image!.url!)
                 .resizable()
                 .frame(
@@ -21,9 +21,9 @@ struct HomeItemImage: View {
         } else {
             Image(homeContentItem.image!.url!)
                 .resizable()
+                .scaledToFill()
                 .frame(
-                    width: UIScreen.main.bounds.width,
-                    height: UIScreen.main.bounds.height - 200
+                    height: 500
                 )
         }
     }
@@ -36,7 +36,7 @@ struct HomeItemTitle: View {
         VStack(alignment: .center) {
             
             switch homeContentItem.mainTopicType {
-            case .historyCinema:
+            case .history_cinema:
                 Text("A História do")
                     .font(.oswaldBold(size: 30))
                     .multilineTextAlignment(.center)
@@ -47,7 +47,7 @@ struct HomeItemTitle: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
             
-            case .milMovies:
+            case .mil_movies:
                 Text("1001 Filmes")
                     .font(.bigshouldersDisplayBold(size: 50))
                     .multilineTextAlignment(.center)
@@ -69,6 +69,7 @@ struct HomeItemTitle: View {
                     .font(.proximaNovaRegular(size: 18))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
+                    .padding(.horizontal, 12)
             case .timeline:
                 Text("Timeline do Cinema")
                     .font(.oswaldBold(size: 32))
@@ -80,6 +81,7 @@ struct HomeItemTitle: View {
                     .font(.proximaNovaRegular(size: 18))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
+                    .padding(.horizontal, 12)
             case .directors:
                 Text("Os Mestres nas telas")
                     .font(.oswaldBold(size: 32))
@@ -91,6 +93,7 @@ struct HomeItemTitle: View {
                     .font(.proximaNovaRegular(size: 18))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
+                    .padding(.horizontal, 12)
             default:
                 Text("")
             }
@@ -99,6 +102,7 @@ struct HomeItemTitle: View {
 }
 
 struct HomeItem: View {
+    
     let homeContentItem: HomeContentItem
     
     var body: some View {
@@ -127,23 +131,26 @@ struct HomeItem: View {
                         .frame(height: 200)
                     }
                 }
-                .ignoresSafeArea()
-                .background(Color.black)
+                .frame(
+                    width: UIScreen.main.bounds.width - 32,
+                    height: 600)
                 
                 HomeItemTitle(homeContentItem: homeContentItem)
                     .padding(.top, 30)
             }
+            .frame(
+                width: UIScreen.main.bounds.width - 32,
+                height: 600)
+            .cornerRadius(25)
         }
     }
 }
 
 struct HomeItem_Previews: PreviewProvider {
     static var previews: some View {
-        let homeItemList: [HomeContentItem] = []
-        
         Group {
-            
+            HomeItem(homeContentItem: HomeContentItem.example(MainTopicsType.mil_movies))
+            HomeItem(homeContentItem: HomeContentItem.example(MainTopicsType.history_cinema))
         }
-        
     }
 }

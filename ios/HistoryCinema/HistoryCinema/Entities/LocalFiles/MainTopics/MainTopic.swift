@@ -27,10 +27,12 @@ class MainTopic: BaseLocalModel {
             return AwardMainTopic(JSON: dictionary)
         case .directors:
             return DirectorsMainTopic(JSON: dictionary)
-        case .historyCinema:
+        case .history_cinema:
             return MainTopicItem(JSON: dictionary)
-        case .milMovies:
+        case .mil_movies:
             return MilMoviesMainTopic(JSON: dictionary)
+        case .timeline:
+            return MainTopic(JSON: dictionary)
         }
     }
 }
