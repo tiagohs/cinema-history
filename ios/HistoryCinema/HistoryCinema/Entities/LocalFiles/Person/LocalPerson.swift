@@ -24,7 +24,6 @@ class LocalPerson: BaseLocalModel {
     var gender : Int?
     var popularity : Double?
     
-    
     required init?(map: Map) {
         super.init(map: map)
     }

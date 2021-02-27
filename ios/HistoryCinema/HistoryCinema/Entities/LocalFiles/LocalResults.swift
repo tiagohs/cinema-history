@@ -92,3 +92,15 @@ class GlossaryResult: BaseLocalModel  {
         results                                   <- map["results"]
     }
 }
+
+class MainTopicsResult: BaseLocalModel  {
+    var results: [MainTopic]!
+    
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        results                                   <- map["results"]
+    }
+}

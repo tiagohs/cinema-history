@@ -146,6 +146,72 @@ class BaseLocalService {
         return contents
     }
     
+    func loadTimeline(_ timelineList: Array<Dictionary<String, Any>>) throws -> [Timeline] {
+        var timelines: [Timeline] = []
+        
+        try timelineList.forEach { dictionary in
+            guard let timelineTypeName = dictionary["type"] as? String else {
+                throw "Could't find timeline type name"
+            }
+            
+            let timelineType = TimelineType.getTimelineType(by: timelineTypeName)
+            
+            guard let timeline = try Timeline.getTimeline(from: dictionary, by: timelineType) else {
+                throw "Could't create Timeline"
+            }
+            
+            timelines.append(timeline)
+        }
+        
+        return timelines
+    }
+    
+    func loadMainTopics(_ filename: String) -> AnyPublisher<MainTopicsResult, Error> {
+        return Deferred {
+                Future { promise in
+                    do {
+                        guard let mainTopicResultJSON = try filename.toJSONObject() as? Dictionary<String, Any> else {
+                            throw "Could't create JSONObject"
+                        }
+                        
+                        guard let mainTopicList = mainTopicResultJSON["results"] as? Array<Dictionary<String, Any>> else {
+                            throw "Could't find results main topics key"
+                        }
+                        
+                        guard let mainTopicResult = MainTopicsResult(JSON: mainTopicResultJSON) else {
+                            throw "Could't create MainTopicsResult"
+                        }
+                        
+                        mainTopicResult.results = try self.loadMainTopics(mainTopicList)
+                        
+                        promise(.success(mainTopicResult))
+                    } catch {
+                        promise(.failure(error))
+                    }
+                }
+            }.eraseToAnyPublisher()
+    }
+    
+    func loadMainTopics(_ mainTopicList: Array<Dictionary<String, Any>>) throws -> [MainTopic] {
+        var mainTopics: [MainTopic] = []
+        
+        try mainTopicList.forEach { dictionary in
+            guard let mainTopicTypeName = dictionary["type"] as? String else {
+                throw "Could't find main topic type name"
+            }
+            
+            let mainTopicType = MainTopicsType.getMainTopicsType(by: mainTopicTypeName)
+            
+            guard let content = try MainTopic.getMainTopic(from: dictionary, by: mainTopicType) else {
+                throw "Could't create MainTopic"
+            }
+            
+            mainTopics.append(content)
+        }
+        
+        return mainTopics
+    }
+    
     func loadReferences(_ referenceList: Array<Dictionary<String, Any>>) throws -> [Reference] {
         var references: [Reference] = []
         

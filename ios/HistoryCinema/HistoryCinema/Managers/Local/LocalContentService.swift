@@ -15,6 +15,14 @@ class LocalContentService: BaseLocalService {
         return getLocalFile("homecontent.json") as AnyPublisher<HomeContentResult, AFError>
     }
     
+    func getSpecialPersons() -> AnyPublisher<PersonExtraInfo, AFError> {
+        return getLocalFile("persons.json") as AnyPublisher<PersonExtraInfo, AFError>
+    }
+    
+    func getSpecialMovies() -> AnyPublisher<MovieExtraInfo, AFError> {
+        return getLocalFile("movies.json") as AnyPublisher<MovieExtraInfo, AFError>
+    }
+    
     func getSummaryBy(mainTopicID: Int) -> AnyPublisher<SummaryResult, AFError> {
         return getLocalFile("hmt_sumarios_\(mainTopicID).json") as AnyPublisher<SummaryResult, AFError>
     }
@@ -88,5 +96,43 @@ class LocalContentService: BaseLocalService {
                 }
             }.eraseToAnyPublisher()
     }
+    
+    func getMainTopicsBy(mainTopicType: MainTopicsType) -> AnyPublisher<MainTopicsResult, Error> {
+        switch mainTopicType {
+        case .awards:
+            return self.loadMainTopics("awards")
+        case .directors:
+            return self.loadMainTopics("directorsmaintopics")
+        case .historyCinema:
+            return self.loadMainTopics("maintopics")
+        case .milMovies:
+            return self.loadMainTopics("milmoviesmaintopics")
+        }
+    }
+    
+    func getTimelinePage(timelineId: Int) -> AnyPublisher<TimelinePage, Error> {
+        return Deferred {
+                Future { promise in
+                    do {
+                        guard let timelinePageJSON = try "timeline_\(timelineId)".toJSONObject() as? Dictionary<String, Any> else {
+                            throw "Could't create JSONObject"
+                        }
+                        
+                        guard let timelineList = timelinePageJSON["timeline_list"] as? Array<Dictionary<String, Any>> else {
+                            throw "Could't find results timeline_list key"
+                        }
+                        
+                        guard let timelinePage = TimelinePage(JSON: timelinePageJSON) else {
+                            throw "Could't create TimelinePage"
+                        }
+                        
+                        timelinePage.timelineList = try self.loadTimeline(timelineList)
+                        
+                        promise(.success(timelinePage))
+                    } catch {
+                        promise(.failure(error))
+                    }
+                }
+            }.eraseToAnyPublisher()
+    }
 }
-

@@ -50,6 +50,5 @@ class Content: BaseLocalModel {
         case .movie_list_special:
             return ContentMovieListSpecial(JSON: dictionary)
         }
-        
     }
 }
