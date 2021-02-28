@@ -200,9 +200,14 @@ class BaseLocalService {
                 throw "Could't find main topic type name"
             }
             
-            let mainTopicType = MainTopicsType.getMainTopicsType(by: mainTopicTypeName)
+            guard let layoutTypeName = dictionary["layout_type"] as? String else {
+                throw "Could't find layout type type name"
+            }
             
-            guard let content = try MainTopic.getMainTopic(from: dictionary, by: mainTopicType) else {
+            let mainTopicType = MainTopicsType.getMainTopicsType(by: mainTopicTypeName)
+            let layoutType = MainTopicItemLayoutType.getMainTopicItemLayoutType(by: layoutTypeName)
+            
+            guard let content = try MainTopic.getMainTopic(from: dictionary, by: mainTopicType, mainTopicItemLayoutType: layoutType) else {
                 throw "Could't create MainTopic"
             }
             

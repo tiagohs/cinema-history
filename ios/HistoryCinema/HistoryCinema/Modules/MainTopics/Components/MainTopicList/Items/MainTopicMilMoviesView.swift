@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainTopicMilMovies: View {
+struct MainTopicMilMoviesView: View {
     let milMoviesMainTopic: MilMoviesMainTopic
     
     var body: some View {
@@ -21,6 +21,6 @@ struct MainTopicMilMovies_Previews: PreviewProvider {
     static var previews: some View {
         let mainTopic = MainTopic.example(MainTopicsType.mil_movies)
         
-        MainTopicMilMovies(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
+        MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
     }
 }

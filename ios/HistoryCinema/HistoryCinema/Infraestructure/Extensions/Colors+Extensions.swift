@@ -45,4 +45,8 @@ extension UIColor {
         )
     }
     
+    public convenience init(colorName: String) {
+        self.init(hex: Constants.colors[colorName]!)
+    }
+    
 }

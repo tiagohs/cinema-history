@@ -21,7 +21,11 @@ class MainTopic: BaseLocalModel {
         mainTopicType                            <- (map["main_topic_type"], EnumTransform<MainTopicsType>())
     }
     
-    static func getMainTopic(from dictionary: Dictionary<String, Any>, by mainTopicsType: MainTopicsType) throws -> MainTopic? {
+    static func getMainTopic(from dictionary: Dictionary<String, Any>, by mainTopicsType: MainTopicsType, mainTopicItemLayoutType: MainTopicItemLayoutType) throws -> MainTopic? {
+        if mainTopicItemLayoutType == .quote {
+            return QuoteMainTopic(JSON: dictionary)
+        }
+        
         switch mainTopicsType {
         case .awards:
             return AwardMainTopic(JSON: dictionary)

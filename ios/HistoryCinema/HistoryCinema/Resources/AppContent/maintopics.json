@@ -86,10 +86,12 @@
   {
     "main_topic_type": "",
     "layout_type": "quote",
-    "id": 1,
-    "quote": "Charlie Chaplin e eu tinhamos uma disputa amigável: quem faria o filme com menos legenda?",
-    "author": "Buster Keaton",
-    "icon_color": "md_white_1000"
+    "quote": {
+        "id": 1,
+        "quote": "Charlie Chaplin e eu tinhamos uma disputa amigável: quem faria o filme com menos legenda?",
+        "author": "Buster Keaton",
+        "icon_color": "md_white_1000"
+      }
   },
   {
     "main_topic_type": "history_cinema",
@@ -221,10 +223,12 @@
   {
     "main_topic_type": "",
     "layout_type": "quote",
-    "id": 2,
-    "quote": "Hoje mais que nunca precisamos ouvir uns aos outros e entender como vemos o mundo, e o cinema é o melhor meio de fazer isso.",
-    "author": "Martin Scorsese",
-    "icon_color": "md_white_1000"
+    "quote": {
+        "id": 2,
+        "quote": "Hoje mais que nunca precisamos ouvir uns aos outros e entender como vemos o mundo, e o cinema é o melhor meio de fazer isso.",
+        "author": "Martin Scorsese",
+        "icon_color": "md_white_1000"
+    }
   },
   {
     "main_topic_type": "history_cinema",

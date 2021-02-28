@@ -15,17 +15,21 @@ struct MainTopicListView: View {
             ForEach(0 ..< mainTopicList.count) { index in
                 let mainTopic = mainTopicList[index]
                 
-                switch mainTopic.mainTopicType {
-                case .awards:
-                    MainTopicAwards(awardMainTopic: mainTopic as! AwardMainTopic)
-                case .directors:
-                    MainTopicDirectors(directorsMainTopic: mainTopic as! DirectorsMainTopic)
-                case .history_cinema:
-                    MainTopicHistoryCinema(mainTopicItem: mainTopic as! MainTopicItem)
-                case .mil_movies:
-                    MainTopicMilMovies(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
-                default:
-                    Text("")
+                if mainTopic.layoutType == .quote {
+                    MainTopicQuoteView(quoteMainTopic: mainTopic as! QuoteMainTopic)
+                } else {
+                    switch mainTopic.mainTopicType {
+                    case .awards:
+                        MainTopicAwardsView(awardMainTopic: mainTopic as! AwardMainTopic)
+                    case .directors:
+                        MainTopicDirectorsView(directorsMainTopic: mainTopic as! DirectorsMainTopic)
+                    case .history_cinema:
+                        MainTopicHistoryCinemaView(mainTopicItem: mainTopic as! MainTopicItem)
+                    case .mil_movies:
+                        MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
+                    default:
+                        Text("")
+                    }
                 }
             }
         }

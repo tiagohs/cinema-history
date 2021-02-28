@@ -44,10 +44,12 @@
   {
     "main_topic_type": "",
     "layout_type": "quote",
-    "id": 1,
-    "quote": "Não pretendo divertir os críticos, vou tentar a sorte com o público.",
-    "author": "Walt Disney",
-    "icon_color": "md_black_1000"
+    "quote": {
+        "id": 1,
+        "quote": "Não pretendo divertir os críticos, vou tentar a sorte com o público.",
+        "author": "Walt Disney",
+        "icon_color": "md_black_1000"
+    }
   },
   {
     "main_topic_type": "mil_movies",
@@ -115,10 +117,12 @@
   {
     "main_topic_type": "",
     "layout_type": "quote",
-    "id": 2,
-    "quote": "Minha sorte na vida foi ser uma pessoa apavorada de verdade. Tenho sorte de ser patife, de ter pouca tolerância ao medo, porque um herói jamais faria um bom filme de suspense.",
-    "author": "Alfred Hitchcock",
-    "icon_color": "md_black_1000"
+    "quote": {
+        "id": 2,
+        "quote": "Minha sorte na vida foi ser uma pessoa apavorada de verdade. Tenho sorte de ser patife, de ter pouca tolerância ao medo, porque um herói jamais faria um bom filme de suspense.",
+        "author": "Alfred Hitchcock",
+        "icon_color": "md_black_1000"
+    }
   },
   {
     "main_topic_type": "mil_movies",
@@ -186,10 +190,12 @@
   {
     "main_topic_type": "",
     "layout_type": "quote",
-    "id": 3,
-    "quote": "Acho que as pessoas são pervertidas, essa é a base da minha carreira.",
-    "author": "David Fincher",
-    "icon_color": "md_black_1000"
+    "quote": {
+        "id": 3,
+        "quote": "Acho que as pessoas são pervertidas, essa é a base da minha carreira.",
+        "author": "David Fincher",
+        "icon_color": "md_black_1000"
+    }
   },
   {
     "main_topic_type": "mil_movies",

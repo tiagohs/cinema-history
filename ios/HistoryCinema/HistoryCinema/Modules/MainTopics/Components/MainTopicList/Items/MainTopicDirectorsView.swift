@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainTopicDirectors: View {
+struct MainTopicDirectorsView: View {
     let directorsMainTopic: DirectorsMainTopic
     
     var body: some View {
@@ -21,6 +21,6 @@ struct MainTopicDirectors_Previews: PreviewProvider {
     static var previews: some View {
         let mainTopic = MainTopic.example(MainTopicsType.directors)
         
-        MainTopicDirectors(directorsMainTopic: mainTopic as! DirectorsMainTopic)
+        MainTopicDirectorsView(directorsMainTopic: mainTopic as! DirectorsMainTopic)
     }
 }

@@ -20,6 +20,11 @@ struct Constants {
         static let WIKI_URL             = "https://en.wikipedia.org/w/"
     }
     
+    static let colors: [String : String] = [
+        "md_white_1000": "#ffffff",
+        "md_black_1000": "#000000"
+    ]
+    
     static let languagesAndCountry: [String] = [
         "af-ZA",
         "am-ET",

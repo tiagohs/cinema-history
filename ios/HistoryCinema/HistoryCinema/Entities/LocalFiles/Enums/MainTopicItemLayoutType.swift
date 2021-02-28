@@ -12,4 +12,19 @@ enum MainTopicItemLayoutType: String {
     case card_full
     case full
     case quote
+    
+    static func getMainTopicItemLayoutType(by name: String) -> MainTopicItemLayoutType {
+        switch name {
+        case "card":
+            return .card
+        case "card_full":
+            return .card_full
+        case "full":
+            return .full
+        case "quote":
+            return .quote
+        default:
+            return .card
+        }
+    }
 }

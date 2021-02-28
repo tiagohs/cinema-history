@@ -28,4 +28,6 @@ class Quote: BaseLocalModel {
         backgroundColor                                    <- map["background_color"]
         textColor                                          <- map["text_color"]
     }
+    
+    static let example = Quote(JSONString: "{\n        \"id\": 2,\n        \"quote\": \"Hoje mais que nunca precisamos ouvir uns aos outros e entender como vemos o mundo, e o cinema é o melhor meio de fazer isso.\",\n        \"author\": \"Martin Scorsese\",\n        \"icon_color\": \"md_white_1000\"\n    }")!
 }
