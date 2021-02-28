@@ -8,10 +8,29 @@
 import SwiftUI
 
 struct MainTopicsView: View {
+    
+    @ObservedObject private var presenter: MainTopicsPresenter = MainTopicsWireframe.buildPresenter()
+    
     let mainTopicType: MainTopicsType
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if (presenter.mainTopics.count == 0) {
+                ProgressView()
+            }
+            
+            if !presenter.mainTopics.isEmpty {
+                MainTopicListView(mainTopicList: presenter.mainTopics)
+            }
+        }
+        .alert(isPresented: $presenter.showErrorMessage, content: {
+            Alert(title: Text("Ops"),
+                  message: Text("Houve algum problema! Por favor, tente novamente."),
+                  dismissButton: .default(Text("Tentar novamente")) { presenter.fetchMainTopicsBy(mainTopicType) }
+            )
+        })
+        .onAppear { presenter.viewAppears() }
+        .onDisappear { presenter.viewDisappears() }
     }
 }
 

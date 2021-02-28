@@ -151,6 +151,9 @@ struct HomeItem_Previews: PreviewProvider {
         Group {
             HomeItem(homeContentItem: HomeContentItem.example(MainTopicsType.mil_movies))
             HomeItem(homeContentItem: HomeContentItem.example(MainTopicsType.history_cinema))
+            HomeItem(homeContentItem: HomeContentItem.example(MainTopicsType.awards))
+            HomeItem(homeContentItem: HomeContentItem.example(MainTopicsType.directors))
+            HomeItem(homeContentItem: HomeContentItem.example(MainTopicsType.timeline))
         }
     }
 }

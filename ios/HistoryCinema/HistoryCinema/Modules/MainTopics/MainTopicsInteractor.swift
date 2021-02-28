@@ -14,5 +14,11 @@ class MainTopicsInteractor: BaseInteractor {
     init(_ localContentService: LocalContentService) {
         self.localContentService = localContentService
     }
+}
+
+extension MainTopicsInteractor {
     
+    func getMainTopicsBy(mainTopicType: MainTopicsType) -> AnyPublisher<MainTopicsResult, Error> {
+        return self.localContentService.getMainTopicsBy(mainTopicType: mainTopicType)
+    }
 }

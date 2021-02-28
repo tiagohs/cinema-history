@@ -45,7 +45,10 @@ struct PageView_Previews: PreviewProvider {
     static var previews: some View {
         let homeItemList: [HomeContentItem] = [
             HomeContentItem.example(MainTopicsType.history_cinema),
-            HomeContentItem.example(MainTopicsType.mil_movies)
+            HomeContentItem.example(MainTopicsType.mil_movies),
+            HomeContentItem.example(MainTopicsType.awards),
+            HomeContentItem.example(MainTopicsType.directors),
+            HomeContentItem.example(MainTopicsType.timeline)
         ]
         
         HomeListView(homeContentItemList: homeItemList)
