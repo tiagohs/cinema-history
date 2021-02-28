@@ -6,35 +6,51 @@
 //
 
 import SwiftUI
+import UIKit
 
-struct MainTopicListView: View {
+struct MainTopicListView<Content : View>: View {
     let mainTopicList: [MainTopic]
     
+    @ViewBuilder var MainTopicItemDestination: (_ mainTopic: MainTopicItem) -> Content
+    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(0 ..< mainTopicList.count) { index in
-                    let mainTopic = mainTopicList[index]
-                    
-                    if mainTopic.layoutType == .quote {
-                        MainTopicQuoteView(quoteMainTopic: mainTopic as! QuoteMainTopic)
-                    } else {
-                        switch mainTopic.mainTopicType {
-                        case .awards:
-                            MainTopicAwardsView(awardMainTopic: mainTopic as! AwardMainTopic)
-                        case .directors:
-                            MainTopicDirectorsView(directorsMainTopic: mainTopic as! DirectorsMainTopic)
-                        case .history_cinema:
-                            MainTopicHistoryCinemaView(mainTopicItem: mainTopic as! MainTopicItem)
-                        case .mil_movies:
-                            MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
-                        default:
-                            Text("")
+        List {
+            ForEach(0 ..< mainTopicList.count) { index in
+                let mainTopic = mainTopicList[index]
+                
+                if mainTopic.layoutType == .quote {
+                    MainTopicQuoteView(quoteMainTopic: mainTopic as! QuoteMainTopic)
+                } else {
+                    switch mainTopic.mainTopicType {
+                    case .awards:
+                        MainTopicAwardsView(awardMainTopic: mainTopic as! AwardMainTopic)
+                    case .directors:
+                        MainTopicDirectorsView(directorsMainTopic: mainTopic as! DirectorsMainTopic)
+                    case .history_cinema:
+                        let mainTopicItem = mainTopic as! MainTopicItem
+                        
+                        NavigationLink(destination: MainTopicItemDestination(mainTopicItem)) {
+                            if (mainTopicItem.layoutType != .full) {
+                                MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
+                                    .padding()
+                                    .listRowInsets(EdgeInsets())
+                                    .transition(.slide)
+                            } else {
+                                MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
+                                    .listRowInsets(EdgeInsets())
+                                    .transition(.slide)
+                            }
                         }
+                        
+                    case .mil_movies:
+                        MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
+                    default:
+                        AnyView(EmptyView())
                     }
                 }
             }
         }
+        .id(UUID())
     }
 }
 
@@ -47,6 +63,9 @@ struct MainTopicListView_Previews: PreviewProvider {
             MainTopic.example(MainTopicsType.mil_movies)
         ]
         
-        MainTopicListView(mainTopicList: mainTopicList)
+        MainTopicListView(mainTopicList: mainTopicList) { _ in
+            AnyView(EmptyView())
+        }
+            .background(Color.black)
     }
 }

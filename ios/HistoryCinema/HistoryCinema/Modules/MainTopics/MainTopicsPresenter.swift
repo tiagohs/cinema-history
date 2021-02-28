@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 // MARK: MainTopicsPresenter
 
@@ -43,5 +44,13 @@ extension MainTopicsPresenter {
                 self.mainTopics = mainTopicsResult.results
             })
             .store(in: &cancalables)
+    }
+}
+
+extension MainTopicsPresenter {
+    
+    @ViewBuilder
+    func presentSummary(_ mainTopic: MainTopicItem) -> some View {
+        self.wireframe?.presentSummary(mainTopic)
     }
 }

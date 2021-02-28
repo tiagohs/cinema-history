@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-class Summary: BaseLocalModel {
+class SummaryModel: BaseLocalModel {
     var id: Int!
     var title: String!
     var description: String!

@@ -18,7 +18,7 @@
               "duration": 1300
             },
             "style": {
-              "scale_type": "center_inside",
+              "scale_type": "fit",
               "resize": {
                 "height": 250
               }
@@ -219,6 +219,7 @@
             "icon_color": "md_black_1000"
           },
           "title_color": "md_white_1000",
+          "title_background_color": "transparent",
           "color": "md_cyan_900"
         },
         {
@@ -313,6 +314,7 @@
             "icon_color": "md_white_1000"
           },
           "title_color": "md_white_1000",
+          "title_background_color": "transparent",
           "color": "md_light_blue_900"
         }
       ]

@@ -6,10 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
 
 class HomeWireframe {
     
-    
+    @ViewBuilder
+    func presentMainTopics(_ mainTopicType: MainTopicsType) -> some View {
+        MainTopicsView(
+            mainTopicType: mainTopicType
+        )
+        .navigationBarTitle("História do Cinema", displayMode: .inline)
+    }
 }
 
 // MARK: build's Module

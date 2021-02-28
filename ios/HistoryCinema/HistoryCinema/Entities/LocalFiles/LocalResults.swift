@@ -24,7 +24,7 @@ class HomeContentResult: BaseLocalModel {
 }
 
 class SummaryResult: BaseLocalModel {
-    var results: [Summary]!
+    var results: [SummaryModel]!
     
     required init?(map: Map) {
         super.init(map: map)

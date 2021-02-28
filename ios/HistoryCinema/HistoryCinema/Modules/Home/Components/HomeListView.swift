@@ -14,8 +14,10 @@ struct ScaleButtonStyle: ButtonStyle {
     }
 }
 
-struct HomeListView: View {
+struct HomeListView<Content : View>: View {
     var homeContentItemList: [HomeContentItem]
+    @ViewBuilder var HomeItemDestination: (_ mainTopicType: MainTopicsType) -> Content
+    
     @State private var currentPage = 0
     
     var body: some View {
@@ -24,7 +26,7 @@ struct HomeListView: View {
                 ForEach(0 ..< homeContentItemList.count) { value in
                     let homeContentItem = homeContentItemList[value]
                     
-                    NavigationLink(destination: MainTopicsView(mainTopicType: homeContentItem.mainTopicType)) {
+                    NavigationLink(destination: HomeItemDestination(homeContentItem.mainTopicType)) {
                         HomeItem(homeContentItem: homeContentItem)
                     }
                 }
@@ -51,6 +53,8 @@ struct PageView_Previews: PreviewProvider {
             HomeContentItem.example(MainTopicsType.timeline)
         ]
         
-        HomeListView(homeContentItemList: homeItemList)
+        HomeListView(homeContentItemList: homeItemList) { _ in
+            AnyView(EmptyView())
+        }
     }
 }

@@ -19,7 +19,12 @@ struct HomeView: View {
             }
             
             if !presenter.homeContent.isEmpty {
-                HomeListView(homeContentItemList: presenter.homeContent)
+                HomeListView(
+                    homeContentItemList: presenter.homeContent,
+                    HomeItemDestination: { mainTopicType in
+                        self.presenter.presentMainTopics(mainTopicType)
+                    }
+                )
             }
         }
         .alert(isPresented: $presenter.showErrorMessage, content: {
@@ -28,6 +33,7 @@ struct HomeView: View {
                   dismissButton: .default(Text("Tentar novamente")) { presenter.fetchHomeContent() }
             )
         })
+        .supportedOrientations(.portrait)
         .onAppear { presenter.viewAppears() }
         .onDisappear { presenter.viewDisappears() }
     }

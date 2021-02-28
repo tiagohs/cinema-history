@@ -17,7 +17,7 @@ struct QuoteView: View {
                     .renderingMode(.template)
                     .resizable()
                     .rotationEffect(Angle(degrees: 180))
-                    .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal)
                     .foregroundColor((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : Color.white)
                 
@@ -56,7 +56,7 @@ struct QuoteView: View {
                 Image("ic_quote_black")
                     .renderingMode(.template)
                     .resizable()
-                    .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal)
                     .foregroundColor((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : Color.white)
             }

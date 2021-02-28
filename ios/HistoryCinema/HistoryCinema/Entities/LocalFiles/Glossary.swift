@@ -17,6 +17,8 @@ class Glossary: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         name                                                    <- map["name"]
         contentList                                             <- map["content_list"]
     }

@@ -16,7 +16,9 @@ struct MainTopicHistoryCinemaView: View {
             title: mainTopicItem.title,
             description: mainTopicItem.description,
             image: mainTopicItem.image,
-            layoutType: mainTopicItem.layoutType
+            layoutType: mainTopicItem.layoutType,
+            titleColor: mainTopicItem.titleColor,
+            titleBackgroundColor: mainTopicItem.titleBackgroundColor
         )
     }
 }

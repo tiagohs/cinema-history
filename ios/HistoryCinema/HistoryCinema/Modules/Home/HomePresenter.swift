@@ -9,6 +9,7 @@ import Foundation
 import Combine
 import Alamofire
 import ObjectMapper
+import SwiftUI
 
 // MARK: HomePresenter
 
@@ -48,5 +49,13 @@ extension HomePresenter {
                 self.homeContent = homeContentResult.results
             })
             .store(in: &cancalables)
+    }
+}
+
+extension HomePresenter {
+    
+    @ViewBuilder
+    func presentMainTopics(_ mainTopicType: MainTopicsType) -> some View {
+        self.wireframe?.presentMainTopics(mainTopicType)
     }
 }

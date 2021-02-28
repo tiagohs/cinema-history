@@ -20,7 +20,12 @@ struct MainTopicsView: View {
             }
             
             if !presenter.mainTopics.isEmpty {
-                MainTopicListView(mainTopicList: presenter.mainTopics)
+                MainTopicListView(
+                    mainTopicList: presenter.mainTopics,
+                    MainTopicItemDestination: { mainTopic in
+                        self.presenter.presentSummary(mainTopic)
+                    }
+                )
             }
         }
         .alert(isPresented: $presenter.showErrorMessage, content: {

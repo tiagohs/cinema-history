@@ -22,7 +22,7 @@ class MainTopicItem: MainTopic {
     var color: String?
     var quotePosition: ViewPosition!
     var quote: Quote!
-    var sumarioList: [Summary]?
+    var sumarioList: [SummaryModel]?
     
     required init?(map: Map) {
         super.init(map: map)
