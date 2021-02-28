@@ -16,6 +16,8 @@ class ReferenceText: Reference {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         text                                                    <- map["text"]
     }
 }

@@ -18,6 +18,8 @@ class ContentImage: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         image                                           <- map["image"]
         height                                          <- map["height"]
         information                                     <- map["information"]

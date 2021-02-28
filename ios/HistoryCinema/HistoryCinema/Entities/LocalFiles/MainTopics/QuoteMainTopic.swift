@@ -16,6 +16,8 @@ class QuoteMainTopic: MainTopic {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         quote   <- map["quote"]
     }
     

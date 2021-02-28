@@ -29,6 +29,8 @@ class LocalPerson: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                                      <- map["id"]
         birthday                                                <- (map["birthday"], DateFormatTransform("yyyy-MM-dd"))
         knownForDepartment                                      <- map["known_for_department"]

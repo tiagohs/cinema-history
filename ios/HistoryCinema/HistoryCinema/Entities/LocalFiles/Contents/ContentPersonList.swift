@@ -17,6 +17,8 @@ class ContentPersonList: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         title                                          <- map["title"]
         persons                                      <- map["persons"]
     }

@@ -17,6 +17,8 @@ class Social: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         type                                          <- (map["quote_position"], EnumTransform<SocialType>())
         link                                          <- map["link"]
     }

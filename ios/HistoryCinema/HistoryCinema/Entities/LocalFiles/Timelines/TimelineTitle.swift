@@ -21,6 +21,8 @@ class TimelineTitle: Timeline {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                      <- map["id"]
         title                                   <- map["title"]
         pageTitle                               <- map["page_title"]

@@ -17,6 +17,8 @@ class TimelineFooter: Timeline {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         next                                    <- map["next"]
         previous                                <- map["previous"]
     }

@@ -10,7 +10,7 @@ import Foundation
 enum MainTopicsType: String {
     case timeline, awards, directors
     case history_cinema
-    case mil_movies
+    case mil_movies;
     
     static func getMainTopicsType(by name: String) -> MainTopicsType {
         switch name {

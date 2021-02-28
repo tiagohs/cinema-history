@@ -22,6 +22,8 @@ class ReferenceMedia: Reference {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         title                                                       <- map["title"]
         subtitle                                                    <- map["subtitle"]
         description                                                 <- map["description"]

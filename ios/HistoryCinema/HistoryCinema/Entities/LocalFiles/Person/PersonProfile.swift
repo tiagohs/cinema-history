@@ -17,6 +17,8 @@ class PersonProfile: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         years                                               <- map["years"]
         content                                             <- map["content"]
     }

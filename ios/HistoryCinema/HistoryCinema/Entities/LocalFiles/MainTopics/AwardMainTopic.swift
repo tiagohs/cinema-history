@@ -27,6 +27,8 @@ class AwardMainTopic: MainTopic {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                                  <- map["id"]
         name                                                <- map["name"]
         country                                             <- map["country"]

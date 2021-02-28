@@ -18,6 +18,8 @@ class DirectorsMainTopic: MainTopic {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         personId                                                <- map["person_id"]
         title                                                   <- map["title"]
         image                                                   <- map["image"]

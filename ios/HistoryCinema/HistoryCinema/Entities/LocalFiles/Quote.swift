@@ -21,6 +21,8 @@ class Quote: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                                  <- map["id"]
         quote                                               <- map["quote"]
         author                                              <- map["author"]

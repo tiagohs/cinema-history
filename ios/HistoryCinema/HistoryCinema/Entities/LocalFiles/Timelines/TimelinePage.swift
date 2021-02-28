@@ -19,6 +19,8 @@ class TimelinePage: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                      <- map["id"]
         color                                   <- map["color"]
         titleTextColor                          <- map["title_text_color"]

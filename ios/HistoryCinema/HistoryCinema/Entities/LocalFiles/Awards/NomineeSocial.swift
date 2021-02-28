@@ -18,6 +18,8 @@ class NomineeSocial: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         type                                    <- (map["type"], EnumTransform<SocialType>())
         link                                    <- map["link"]
     }

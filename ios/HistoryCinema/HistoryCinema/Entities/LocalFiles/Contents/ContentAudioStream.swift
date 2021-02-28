@@ -18,6 +18,8 @@ class ContentAudioStream: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         type <- (map["type"], EnumTransform<ContentType>())
     }
 }

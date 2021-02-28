@@ -18,6 +18,8 @@ class HomeContentItem: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         mainTopicType                            <- (map["main_topic_type"], EnumTransform<MainTopicsType>())
         image                                   <- map["image"]
         darkMode                                <- map["dark_mode"]

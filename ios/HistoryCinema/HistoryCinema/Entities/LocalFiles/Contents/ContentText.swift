@@ -20,6 +20,8 @@ class ContentText: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         contentText         <- map["content_text"]
         contentTitle         <- map["content_title"]
         contentCredits         <- map["content_credits"]

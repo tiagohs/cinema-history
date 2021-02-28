@@ -17,6 +17,8 @@ class Page: BaseLocalModel {
     }
     
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         number                                      <- map["number"]
         contentList                                 <- map["content_list"]
     }

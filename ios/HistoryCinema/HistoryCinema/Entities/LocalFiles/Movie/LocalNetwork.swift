@@ -19,6 +19,8 @@ class LocalNetwork: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         type                                            <- (map["type"], EnumTransform<NetworkType>())
         name                                            <- map["name"]
         link                                            <- map["link"]

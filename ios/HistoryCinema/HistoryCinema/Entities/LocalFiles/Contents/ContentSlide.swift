@@ -18,6 +18,8 @@ class ContentSlide: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         images         <- map["images"]
         height         <- map["height"]
         information         <- map["information"]

@@ -11,24 +11,26 @@ struct MainTopicListView: View {
     let mainTopicList: [MainTopic]
     
     var body: some View {
-        List {
-            ForEach(0 ..< mainTopicList.count) { index in
-                let mainTopic = mainTopicList[index]
-                
-                if mainTopic.layoutType == .quote {
-                    MainTopicQuoteView(quoteMainTopic: mainTopic as! QuoteMainTopic)
-                } else {
-                    switch mainTopic.mainTopicType {
-                    case .awards:
-                        MainTopicAwardsView(awardMainTopic: mainTopic as! AwardMainTopic)
-                    case .directors:
-                        MainTopicDirectorsView(directorsMainTopic: mainTopic as! DirectorsMainTopic)
-                    case .history_cinema:
-                        MainTopicHistoryCinemaView(mainTopicItem: mainTopic as! MainTopicItem)
-                    case .mil_movies:
-                        MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
-                    default:
-                        Text("")
+        NavigationView {
+            List {
+                ForEach(0 ..< mainTopicList.count) { index in
+                    let mainTopic = mainTopicList[index]
+                    
+                    if mainTopic.layoutType == .quote {
+                        MainTopicQuoteView(quoteMainTopic: mainTopic as! QuoteMainTopic)
+                    } else {
+                        switch mainTopic.mainTopicType {
+                        case .awards:
+                            MainTopicAwardsView(awardMainTopic: mainTopic as! AwardMainTopic)
+                        case .directors:
+                            MainTopicDirectorsView(directorsMainTopic: mainTopic as! DirectorsMainTopic)
+                        case .history_cinema:
+                            MainTopicHistoryCinemaView(mainTopicItem: mainTopic as! MainTopicItem)
+                        case .mil_movies:
+                            MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
+                        default:
+                            Text("")
+                        }
                     }
                 }
             }

@@ -19,6 +19,8 @@ class PersonVideo: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         name                                               <- map["name"]
         source                                             <- map["source"]
         type                                               <- map["type"]

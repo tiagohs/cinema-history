@@ -22,6 +22,8 @@ class LocalReview: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         reviewerType                                            <- (map["reviewer"], EnumTransform<ReviewerType>())
         reviewerSiteName                                        <- map["reviewer_site_name"]
         dateFormated                                            <- map["date_formated"]

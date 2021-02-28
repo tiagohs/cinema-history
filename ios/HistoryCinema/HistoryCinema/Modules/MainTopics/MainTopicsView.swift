@@ -29,7 +29,10 @@ struct MainTopicsView: View {
                   dismissButton: .default(Text("Tentar novamente")) { presenter.fetchMainTopicsBy(mainTopicType) }
             )
         })
-        .onAppear { presenter.viewAppears() }
+        .onAppear {
+            presenter.viewAppears()
+            presenter.fetchMainTopicsBy(mainTopicType)
+        }
         .onDisappear { presenter.viewDisappears() }
     }
 }

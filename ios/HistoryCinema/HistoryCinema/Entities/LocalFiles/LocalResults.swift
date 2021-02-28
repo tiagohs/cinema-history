@@ -17,6 +17,8 @@ class HomeContentResult: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         results                                   <- map["results"]
     }
 }
@@ -29,6 +31,8 @@ class SummaryResult: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         results                                   <- map["results"]
     }
 }
@@ -41,6 +45,8 @@ class NomineeResult: BaseLocalModel  {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         results                                   <- map["results"]
     }
 }
@@ -53,6 +59,8 @@ class HistoryResult: BaseLocalModel  {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         results                                   <- map["results"]
     }
 }
@@ -65,6 +73,8 @@ class NomineesResult: BaseLocalModel  {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         results                                   <- map["results"]
     }
 }
@@ -77,6 +87,8 @@ class ReferencesResult: BaseLocalModel  {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         results                                   <- map["results"]
     }
 }
@@ -89,6 +101,8 @@ class GlossaryResult: BaseLocalModel  {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         results                                   <- map["results"]
     }
 }
@@ -101,6 +115,8 @@ class MainTopicsResult: BaseLocalModel  {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         results                                   <- map["results"]
     }
 }

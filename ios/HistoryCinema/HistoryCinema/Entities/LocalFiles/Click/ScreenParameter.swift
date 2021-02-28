@@ -17,6 +17,8 @@ class ScreenParameter: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         key                                     <- map["key"]
         value                                   <- map["value"]
     }

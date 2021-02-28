@@ -196,7 +196,7 @@ class BaseLocalService {
         var mainTopics: [MainTopic] = []
         
         try mainTopicList.forEach { dictionary in
-            guard let mainTopicTypeName = dictionary["type"] as? String else {
+            guard let mainTopicTypeName = dictionary["main_topic_type"] as? String else {
                 throw "Could't find main topic type name"
             }
             

@@ -17,6 +17,8 @@ class DidYouKnow: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         title                                                   <- map["title"]
         description                                             <- map["description"]
     }

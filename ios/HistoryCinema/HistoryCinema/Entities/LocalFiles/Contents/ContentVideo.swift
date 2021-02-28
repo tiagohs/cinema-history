@@ -18,6 +18,8 @@ class ContentVideo: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         videoId         <- map["video_id"]
         height         <- map["height"]
         information         <- map["information"]

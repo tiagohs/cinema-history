@@ -16,6 +16,8 @@ class Timeline: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         type                               <- (map["type"], EnumTransform<TimelineType>())
     }
     

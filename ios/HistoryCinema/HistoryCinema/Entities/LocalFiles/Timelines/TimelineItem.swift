@@ -22,6 +22,8 @@ class TimelineItem: Timeline {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         year                                    <- map["next"]
         description                             <- map["description"]
         imageTransparent                        <- map["image_transparent"]

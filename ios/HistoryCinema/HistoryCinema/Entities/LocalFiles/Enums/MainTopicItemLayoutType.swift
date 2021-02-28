@@ -11,7 +11,7 @@ enum MainTopicItemLayoutType: String {
     case card
     case card_full
     case full
-    case quote
+    case quote;
     
     static func getMainTopicItemLayoutType(by name: String) -> MainTopicItemLayoutType {
         switch name {

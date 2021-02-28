@@ -19,6 +19,8 @@ class Summary: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                                          <- map["id"]
         title                                                       <- map["title"]
         description                                                 <- map["description"]

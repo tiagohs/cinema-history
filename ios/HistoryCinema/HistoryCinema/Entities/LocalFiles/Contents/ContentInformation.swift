@@ -18,6 +18,8 @@ class ContentInformation: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         contentText         <- map["contentText"]
         contentTitle        <- map["contentTitle"]
         source              <- map["source"]

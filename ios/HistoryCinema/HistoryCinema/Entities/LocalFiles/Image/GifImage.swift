@@ -19,6 +19,8 @@ class GifImage: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         imageType                               <- (map["image_type"], EnumTransform<ImageType>())
         imageStyle                              <- map["style"]
         url                                     <- map["url"]

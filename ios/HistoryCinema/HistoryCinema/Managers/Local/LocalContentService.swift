@@ -100,15 +100,15 @@ class LocalContentService: BaseLocalService {
     func getMainTopicsBy(mainTopicType: MainTopicsType) -> AnyPublisher<MainTopicsResult, Error> {
         switch mainTopicType {
         case .awards:
-            return self.loadMainTopics("awards")
+            return self.loadMainTopics("awards.json")
         case .directors:
-            return self.loadMainTopics("directorsmaintopics")
+            return self.loadMainTopics("directorsmaintopics.json")
         case .history_cinema:
-            return self.loadMainTopics("maintopics")
+            return self.loadMainTopics("maintopics.json")
         case .mil_movies:
-            return self.loadMainTopics("milmoviesmaintopics")
+            return self.loadMainTopics("milmoviesmaintopics.json")
         default:
-            return self.loadMainTopics("maintopics")
+            return self.loadMainTopics("maintopics.json")
         }
     }
     

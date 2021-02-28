@@ -17,6 +17,8 @@ class ContentQuote: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         quote                                               <- map["quote"]
         quoteMarkColor                                      <- map["quote_mark_color"]
     }

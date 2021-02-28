@@ -1,242 +1,245 @@
-[
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 1,
-    "list_id": "123858",
-    "title": "De 1900 a 1929",
-    "image": {
-      "image_type": "local",
-      "url": "img_the_gold_rush",
-      "content_description": "Foto do personagem Vagabundo abrindo uma porta na neve, no Filme em Busca do Ouro.",
-      "style": {
-        "height": 400,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 400
+{
+    "results": [
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 1,
+          "list_id": "123858",
+          "title": "De 1900 a 1929",
+          "image": {
+            "image_type": "local",
+            "url": "img_the_gold_rush",
+            "content_description": "Foto do personagem Vagabundo abrindo uma porta na neve, no Filme em Busca do Ouro.",
+            "style": {
+              "height": 400,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 400
+              }
+            }
+          },
+          "title_color": "md_yellow_700",
+          "background_color": "md_black_1000"
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 2,
+          "list_id": "123876",
+          "title": "De 1930 a 1939",
+          "image": {
+            "image_type": "local",
+            "url": "img_frankenstein",
+            "content_description": "Foto promossional do filme Frankenstein, com o rosto triste do personagem Frankenstein.",
+            "style": {
+              "height": 500,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 500
+              }
+            }
+          },
+          "title_color": "md_yellow_900",
+          "background_color": "md_black_1000"
+        },
+        {
+          "main_topic_type": "",
+          "layout_type": "quote",
+          "quote": {
+              "id": 1,
+              "quote": "Não pretendo divertir os críticos, vou tentar a sorte com o público.",
+              "author": "Walt Disney",
+              "icon_color": "md_black_1000"
+          }
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 3,
+          "list_id": "124440",
+          "title": "De 1940 a 1949",
+          "image": {
+            "image_type": "local",
+            "url": "img_casablanca",
+            "content_description": "Foto promossional do filme Casablanca, com o rosto dos personagens Rick e Ilsa.",
+            "style": {
+              "height": 500,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 500
+              }
+            }
+          },
+          "title_color": "md_blue_500",
+          "background_color": "md_black_1000"
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 4,
+          "list_id": "124444",
+          "title": "De 1950 a 1959",
+          "image": {
+            "image_type": "local",
+            "url": "img_ben_hur",
+            "content_description": "Cena do filme Ben Hur, com um cavaleiro encima de uma biga.",
+            "style": {
+              "height": 500,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 500
+              }
+            }
+          },
+          "title_color": "md_red_500",
+          "background_color": "md_black_1000"
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 5,
+          "list_id": "124905",
+          "title": "De 1960 a 1969",
+          "image": {
+            "image_type": "local",
+            "url": "img_the_uggly",
+            "content_description": "Foto promocional de uma cena do filme Três homens em conflito, com os três personagens principais se olhando durante um duelo.",
+            "style": {
+              "height": 500,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 500
+              }
+            }
+          },
+          "title_color": "pink_light",
+          "background_color": "md_black_1000"
+        },
+        {
+          "main_topic_type": "",
+          "layout_type": "quote",
+          "quote": {
+              "id": 2,
+              "quote": "Minha sorte na vida foi ser uma pessoa apavorada de verdade. Tenho sorte de ser patife, de ter pouca tolerância ao medo, porque um herói jamais faria um bom filme de suspense.",
+              "author": "Alfred Hitchcock",
+              "icon_color": "md_black_1000"
+          }
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 6,
+          "list_id": "124907",
+          "title": "De 1970 a 1979",
+          "image": {
+            "image_type": "local",
+            "url": "img_jaws",
+            "content_description": "Foto promocional do filme Tubarão, com o tubarão indo em direção a uma mulher nadando no mar aberto.",
+            "style": {
+              "height": 500,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 500
+              }
+            }
+          },
+          "title_color": "md_green_800",
+          "background_color": "md_black_1000"
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 7,
+          "list_id": "124917",
+          "title": "De 1980 a 1989",
+          "content_description": "Foto promocional do filme De Volta para o Futuro, com o carro futurista sobrevoando o chão.",
+          "image": {
+            "image_type": "local",
+            "url": "img_back_future",
+            "style": {
+              "height": 500,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 500
+              }
+            }
+          },
+          "title_color": "md_deep_purple_700",
+          "background_color": "md_black_1000"
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 8,
+          "list_id": "124918",
+          "title": "De 1990 a 1999",
+          "image": {
+            "image_type": "local",
+            "url": "img_silence",
+            "content_description": "Foto promocional do filme Silêncio dos Inocentes, focando nos olhos do Hannibal Lecter.",
+            "style": {
+              "height": 500,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 500
+              }
+            }
+          },
+          "title_color": "md_red_A700",
+          "background_color": "md_black_1000"
+        },
+        {
+          "main_topic_type": "",
+          "layout_type": "quote",
+          "quote": {
+              "id": 3,
+              "quote": "Acho que as pessoas são pervertidas, essa é a base da minha carreira.",
+              "author": "David Fincher",
+              "icon_color": "md_black_1000"
+          }
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 9,
+          "list_id": "124920",
+          "title": "De 2000 a 2009",
+          "image": {
+            "image_type": "local",
+            "url": "img_cidade_deus",
+            "content_description": "Foto promocional do filme Cidade de Deus, mostrando o personagem do Zé pequeno criança rindo enquanto aponta uma arma.",
+            "style": {
+              "height": 500,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 500
+              }
+            }
+          },
+          "title_color": "md_orange_A200",
+          "background_color": "md_black_1000"
+        },
+        {
+          "main_topic_type": "mil_movies",
+          "layout_type": "card_full",
+          "id": 10,
+          "list_id": "124922",
+          "title": "De 2010 até 2018",
+          "image": {
+            "image_type": "local",
+            "url": "img_black_panther",
+            "content_description": "Foto promocional do filme Pantera Negra, com todos os personagens principais aparecendo na foto.",
+            "style": {
+              "height": 500,
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 500
+              }
+            }
+          },
+          "title_color": "md_light_blue_800",
+          "background_color": "md_black_1000"
         }
-      }
-    },
-    "title_color": "md_yellow_700",
-    "background_color": "md_black_1000"
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 2,
-    "list_id": "123876",
-    "title": "De 1930 a 1939",
-    "image": {
-      "image_type": "local",
-      "url": "img_frankenstein",
-      "content_description": "Foto promossional do filme Frankenstein, com o rosto triste do personagem Frankenstein.",
-      "style": {
-        "height": 500,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 500
-        }
-      }
-    },
-    "title_color": "md_yellow_900",
-    "background_color": "md_black_1000"
-  },
-  {
-    "main_topic_type": "",
-    "layout_type": "quote",
-    "quote": {
-        "id": 1,
-        "quote": "Não pretendo divertir os críticos, vou tentar a sorte com o público.",
-        "author": "Walt Disney",
-        "icon_color": "md_black_1000"
-    }
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 3,
-    "list_id": "124440",
-    "title": "De 1940 a 1949",
-    "image": {
-      "image_type": "local",
-      "url": "img_casablanca",
-      "content_description": "Foto promossional do filme Casablanca, com o rosto dos personagens Rick e Ilsa.",
-      "style": {
-        "height": 500,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 500
-        }
-      }
-    },
-    "title_color": "md_blue_500",
-    "background_color": "md_black_1000"
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 4,
-    "list_id": "124444",
-    "title": "De 1950 a 1959",
-    "image": {
-      "image_type": "local",
-      "url": "img_ben_hur",
-      "content_description": "Cena do filme Ben Hur, com um cavaleiro encima de uma biga.",
-      "style": {
-        "height": 500,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 500
-        }
-      }
-    },
-    "title_color": "md_red_500",
-    "background_color": "md_black_1000"
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 5,
-    "list_id": "124905",
-    "title": "De 1960 a 1969",
-    "image": {
-      "image_type": "local",
-      "url": "img_the_uggly",
-      "content_description": "Foto promocional de uma cena do filme Três homens em conflito, com os três personagens principais se olhando durante um duelo.",
-      "style": {
-        "height": 500,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 500
-        }
-      }
-    },
-    "title_color": "pink_light",
-    "background_color": "md_black_1000"
-  },
-  {
-    "main_topic_type": "",
-    "layout_type": "quote",
-    "quote": {
-        "id": 2,
-        "quote": "Minha sorte na vida foi ser uma pessoa apavorada de verdade. Tenho sorte de ser patife, de ter pouca tolerância ao medo, porque um herói jamais faria um bom filme de suspense.",
-        "author": "Alfred Hitchcock",
-        "icon_color": "md_black_1000"
-    }
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 6,
-    "list_id": "124907",
-    "title": "De 1970 a 1979",
-    "image": {
-      "image_type": "local",
-      "url": "img_jaws",
-      "content_description": "Foto promocional do filme Tubarão, com o tubarão indo em direção a uma mulher nadando no mar aberto.",
-      "style": {
-        "height": 500,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 500
-        }
-      }
-    },
-    "title_color": "md_green_800",
-    "background_color": "md_black_1000"
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 7,
-    "list_id": "124917",
-    "title": "De 1980 a 1989",
-    "content_description": "Foto promocional do filme De Volta para o Futuro, com o carro futurista sobrevoando o chão.",
-    "image": {
-      "image_type": "local",
-      "url": "img_back_future",
-      "style": {
-        "height": 500,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 500
-        }
-      }
-    },
-    "title_color": "md_deep_purple_700",
-    "background_color": "md_black_1000"
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 8,
-    "list_id": "124918",
-    "title": "De 1990 a 1999",
-    "image": {
-      "image_type": "local",
-      "url": "img_silence",
-      "content_description": "Foto promocional do filme Silêncio dos Inocentes, focando nos olhos do Hannibal Lecter.",
-      "style": {
-        "height": 500,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 500
-        }
-      }
-    },
-    "title_color": "md_red_A700",
-    "background_color": "md_black_1000"
-  },
-  {
-    "main_topic_type": "",
-    "layout_type": "quote",
-    "quote": {
-        "id": 3,
-        "quote": "Acho que as pessoas são pervertidas, essa é a base da minha carreira.",
-        "author": "David Fincher",
-        "icon_color": "md_black_1000"
-    }
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 9,
-    "list_id": "124920",
-    "title": "De 2000 a 2009",
-    "image": {
-      "image_type": "local",
-      "url": "img_cidade_deus",
-      "content_description": "Foto promocional do filme Cidade de Deus, mostrando o personagem do Zé pequeno criança rindo enquanto aponta uma arma.",
-      "style": {
-        "height": 500,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 500
-        }
-      }
-    },
-    "title_color": "md_orange_A200",
-    "background_color": "md_black_1000"
-  },
-  {
-    "main_topic_type": "mil_movies",
-    "layout_type": "card_full",
-    "id": 10,
-    "list_id": "124922",
-    "title": "De 2010 até 2018",
-    "image": {
-      "image_type": "local",
-      "url": "img_black_panther",
-      "content_description": "Foto promocional do filme Pantera Negra, com todos os personagens principais aparecendo na foto.",
-      "style": {
-        "height": 500,
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 500
-        }
-      }
-    },
-    "title_color": "md_light_blue_800",
-    "background_color": "md_black_1000"
-  }
-]
+      ]
+
+}

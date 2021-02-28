@@ -16,6 +16,8 @@ class ContentMovieList: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         movies                                           <- map["movies"]
     }
 }

@@ -1,317 +1,320 @@
-[
-  {
-    "main_topic_type": "history_cinema",
-    "layout_type": "full",
-    "id": 1,
-    "title": "De 1895 a 1929",
-    "subtitle": "Parte 01",
-    "description": "Os visionários, inventores, sonhadores. As experimentações e descobertas de Georges Mélies, o humor único de Chaplin e Keaton, o surrealismo na Alemanha, a luta por uma voz com os Race Films, o romantismo e o espetáculo de Hollywood dos anos 20.",
-    "blocked": false,
-    "is_new": false,
-    "image": {
-      "image_type": "local",
-      "url": "img_voyage",
-      "content_description": "Cena do filme Viagem a Lua, onde uma lua, com feições humanas, é atingida no olho direito por um foguete.",
-      "animation": {
-        "type": "shake_vertical",
-        "duration": 1300
-      },
-      "style": {
-        "scale_type": "center_inside",
-        "resize": {
-          "height": 250
-        }
-      }
-    },
-    "presentation_image": {
-      "image_type": "local",
-      "url": "img_cabinet",
-      "content_description": "Cena do filme O gabinete do doutor Caligari, onde um homem verifica, desconfiado, o corpo de uma mulher no chão.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    },
-    "title_color": "md_white_1000",
-    "title_background_color": "md_black_1000",
-    "color": "md_red_500",
-    "quote_position": "bottom_start",
-    "quote": {
-      "quote": "Labor omnia vincit (o trabalho vence tudo)",
-      "author": "Viagem à Lua",
-      "text_color": "md_black_1000",
-      "background_color": "md_white_1000",
-      "icon_color": "md_grey_300"
-    }
-  },
-  {
-    "main_topic_type": "history_cinema",
-    "layout_type": "card",
-    "id": 2,
-    "title": "De 1930 a 1939",
-    "subtitle": "Parte 02",
-    "description": "Com o início dos filmes falados, novas formas de contar histórias foram descobertas. O terror em Hollywood ganha uma das suas eras de ouro com o chamado “terror gótico”. A Disney, após desenvolver diversos curtas, lança o primeiro filme de longa metragem animado. A guerra afeta drasticamente o cinema, a comédia romântica ganha suas primeiras características e os filmes de Gangsters ganham ainda mais destaque nas telonas.",
-    "blocked": false,
-    "is_new": false,
-    "image": {
-      "image_type": "local",
-      "url": "img_snow_white",
-      "content_description": "Foto promocional do filme Branca de Neve, com a personagem segurando uma maça.",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 250
-        }
-      }
-    },
-    "presentation_image": {
-      "image_type": "local",
-      "url": "img_wizard_oz",
-      "content_description": "Foto do filme O Mágico de Oz, com os quatro personagens principais andando de mãos dadas.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    },
-    "quote_position": "top_end",
-    "quote": {
-      "quote": "Tenho a sensação de que não estamos mais no Kansas.",
-      "author": "O Mágico de Oz",
-      "text_color": "md_black_1000",
-      "background_color": "md_yellow_500",
-      "icon_color": "md_black_1000"
-    },
-    "title_color": "md_white_1000",
-    "title_background_color": "purple_snow_shite",
-    "color": "md_purple_500"
-  },
-  {
-    "main_topic_type": "",
-    "layout_type": "quote",
-    "quote": {
-        "id": 1,
-        "quote": "Charlie Chaplin e eu tinhamos uma disputa amigável: quem faria o filme com menos legenda?",
-        "author": "Buster Keaton",
-        "icon_color": "md_white_1000"
-      }
-  },
-  {
-    "main_topic_type": "history_cinema",
-    "layout_type": "card",
-    "id": 3,
-    "title": "De 1940 a 1959",
-    "subtitle": "Parte 03",
-    "description": "O cinema asiático ganha ainda mais destaque com o lançamento de diversas obras primas. O Cinema Noir surge e os musicais continuam ganhando destaque nas telonas. O Faroeste mantém o seu reinado como um dos gêneros mais populares e um dos movimentos mais importantes do cinema acontece na França: o Nouvelle Vague.",
-    "blocked": false,
-    "is_new": false,
-    "image": {
-      "image_type": "local",
-      "url": "img_sevensamurais",
-      "content_description": "Cena do filme Os Sete Samurais, com todos os personagens olhando em uma direção, apostos.",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 250
-        }
-      }
-    },
-    "presentation_image": {
-      "image_type": "local",
-      "url": "img_singin_in_the_rain",
-      "content_description": "Cena do cantando na chuva, com o personagem título cantando no meio da chuva.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    },
-    "quote_position": "bottom_end",
-    "quote": {
-      "quote": "Não há nada entre nós. Nunca houve nós. Apenas ar.",
-      "author": "Cantando na Chuva",
-      "text_color": "md_white_1000",
-      "background_color": "md_indigo_800",
-      "icon_color": "md_white_1000"
-    },
-    "title_color": "md_white_1000",
-    "title_background_color": "md_grey_700",
-    "color": "md_orange_500"
-  },
-  {
-    "main_topic_type": "history_cinema",
-    "layout_type": "full",
-    "id": 4,
-    "title": "De 1960 a 1969",
-    "subtitle": "Parte 04",
-    "description": "O Brasil chama a atenção do mundo com o seu Cinema novo, a revolução sexual dos anos 60 reflete no cinema, o terror psicológico ganha espaço e a ficção cientifica, com 2001: Uma odisseia no espaço, conquista o público e crítica.",
-    "blocked": false,
-    "is_new": false,
-    "image": {
-      "image_type": "local",
-      "url": "img_2001_hal",
-      "content_description": "Foto do HAll 9000, do filme 2001: Uma Odisseia no Espaço.",
-      "animation": {
-        "type": "blink",
-        "duration": 1000
-      },
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 250
-        }
-      }
-    },
-    "presentation_image": {
-      "image_type": "local",
-      "url": "img_bonnie_clyde",
-      "content_description": "Foto de perfil do casal Bonnie e Clyde, no filme Bonnie e Clyde - Uma Rajada de Balas.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    },
-    "quote_position": "bottom_end",
-    "quote": {
-      "quote": "Sua origem e seu propósito são um mistério total.",
-      "author": "Última frase da Missão de Controle",
-      "text_color": "md_black_1000",
-      "background_color": "md_white_1000",
-      "icon_color": "md_grey_500"
-    },
-    "title_color": "md_white_1000",
-    "title_background_color": "md_black_1000",
-    "color": "md_indigo_900"
-  },
-  {
-    "main_topic_type": "history_cinema",
-    "layout_type": "card_full",
-    "id": 5,
-    "title": "De 1970 a 1989",
-    "subtitle": "Parte 05",
-    "description": "O exorcista é lançado, levando os filmes de terror a outro patamar. Tubarão chega aos cinemas e, em paralelo, o cinema autoral cresce com Martin Scorsese e outros grandes diretores. Em seguida, nos anos 80, presenciamos ótimas produções de baixo orçamento e comédias que marcaram época.",
-    "blocked": false,
-    "is_new": false,
-    "image": {
-      "image_type": "local",
-      "url": "img_exorcist",
-      "content_description": "Foto da personagem Regan possúida pelo demônio, em O Exorcista.",
-      "animation": {
-        "type": "blink",
-        "duration": 1000
-      },
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 250
-        }
-      }
-    },
-    "presentation_image": {
-      "image_type": "local",
-      "url": "img_taxi_driver",
-      "content_description": "Foto do personagem Travis Bickle, em Táxi Driver.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    },
-    "quote_position": "bottom_end",
-    "quote": {
-      "quote": "Você está falando comigo?",
-      "author": "Travis Bickle",
-      "text_color": "md_black_1000",
-      "background_color": "md_yellow_A400",
-      "icon_color": "md_black_1000"
-    },
-    "title_color": "md_white_1000",
-    "color": "md_cyan_900"
-  },
-  {
-    "main_topic_type": "",
-    "layout_type": "quote",
-    "quote": {
-        "id": 2,
-        "quote": "Hoje mais que nunca precisamos ouvir uns aos outros e entender como vemos o mundo, e o cinema é o melhor meio de fazer isso.",
-        "author": "Martin Scorsese",
-        "icon_color": "md_white_1000"
-    }
-  },
-  {
-    "main_topic_type": "history_cinema",
-    "layout_type": "card",
-    "id": 6,
-    "title": "De 1990 a 2009",
-    "subtitle": "Parte 06",
-    "description": "O cinema independente dos anos 90 domina as telas e as animações entram em um novo terreno com a Pixar. O CGI atinge um novo patamar com Matrix e os cinemas latino americanos e europeus chamam a atenção do mundo.",
-    "blocked": false,
-    "is_new": true,
-    "image": {
-      "image_type": "local",
-      "url": "img_pulp_fiction",
-      "content_description": "Foto dos personagem Vincent e Julius de costas um para o outro, em Pulp Fiction: Tempo de Violência.",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 250
-        }
-      }
-    },
-    "presentation_image": {
-      "image_type": "local",
-      "url": "img_walle",
-      "content_description": "Foto do personagem Wall-E olhando para as estrelas.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    },
-    "quote_position": "bottom_start",
-    "quote": {
-      "quote": "Eu não quero sobreviver, eu quero viver!",
-      "author": "Wall-E",
-      "text_color": "md_white_1000",
-      "background_color": "brown_presentation",
-      "icon_color": "md_white_1000"
-    },
-    "title_color": "md_black_1000",
-    "title_background_color": "yellow_dark",
-    "color": "md_teal_900"
-  },
-  {
-    "main_topic_type": "history_cinema",
-    "layout_type": "card_full",
-    "id": 7,
-    "title": "De 2010 até Hoje",
-    "subtitle": "Parte 07",
-    "description": "O 3D domina as telonas, uma nova leva de filmes de super-heróis aparece e domina as bilheterias mundiais. O Terror popular ganha uma nova roupagem com Invocação do Mal, e o terror psicológico renasce com grandes obras como A bruxa. O Streaming aparece de mansinho conquistando o público, crítica, e até mesmo os grandes diretores.",
-    "blocked": true,
-    "is_new": false,
-    "image": {
-      "image_type": "local",
-      "url": "img_iron_man",
-      "content_description": "Foto de perfil do personagem Homem de Ferro.",
-      "animation": {
-        "type": "blink",
-        "duration": 1000
-      },
-      "style": {
-        "height": 400,
-        "resize": {
-          "height": 400
+{
+    "results": [
+        {
+          "main_topic_type": "history_cinema",
+          "layout_type": "full",
+          "id": 1,
+          "title": "De 1895 a 1929",
+          "subtitle": "Parte 01",
+          "description": "Os visionários, inventores, sonhadores. As experimentações e descobertas de Georges Mélies, o humor único de Chaplin e Keaton, o surrealismo na Alemanha, a luta por uma voz com os Race Films, o romantismo e o espetáculo de Hollywood dos anos 20.",
+          "blocked": false,
+          "is_new": false,
+          "image": {
+            "image_type": "local",
+            "url": "img_voyage",
+            "content_description": "Cena do filme Viagem a Lua, onde uma lua, com feições humanas, é atingida no olho direito por um foguete.",
+            "animation": {
+              "type": "shake_vertical",
+              "duration": 1300
+            },
+            "style": {
+              "scale_type": "center_inside",
+              "resize": {
+                "height": 250
+              }
+            }
+          },
+          "presentation_image": {
+            "image_type": "local",
+            "url": "img_cabinet",
+            "content_description": "Cena do filme O gabinete do doutor Caligari, onde um homem verifica, desconfiado, o corpo de uma mulher no chão.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          },
+          "title_color": "md_white_1000",
+          "title_background_color": "md_black_1000",
+          "color": "md_red_500",
+          "quote_position": "bottom_start",
+          "quote": {
+            "quote": "Labor omnia vincit (o trabalho vence tudo)",
+            "author": "Viagem à Lua",
+            "text_color": "md_black_1000",
+            "background_color": "md_white_1000",
+            "icon_color": "md_grey_300"
+          }
         },
-        "scale_type": "center_crop"
-      }
-    },
-    "presentation_image": {
-      "image_type": "local",
-      "url": "img_baby_driver",
-      "content_description": "Foto do personagem Baby, no filme Em Ritmo de Fuga.",
-      "style": {
-        "scale_type": "center_crop"
-      }
-    },
-    "quote_position": "bottom_start",
-    "quote": {
-      "quote": "Não há nada de errado em ser meio calado.",
-      "author": "Em Ritmo de Fuga",
-      "text_color": "md_white_1000",
-      "background_color": "md_black_1000",
-      "icon_color": "md_white_1000"
-    },
-    "title_color": "md_white_1000",
-    "color": "md_light_blue_900"
-  }
-]
+        {
+          "main_topic_type": "history_cinema",
+          "layout_type": "card",
+          "id": 2,
+          "title": "De 1930 a 1939",
+          "subtitle": "Parte 02",
+          "description": "Com o início dos filmes falados, novas formas de contar histórias foram descobertas. O terror em Hollywood ganha uma das suas eras de ouro com o chamado “terror gótico”. A Disney, após desenvolver diversos curtas, lança o primeiro filme de longa metragem animado. A guerra afeta drasticamente o cinema, a comédia romântica ganha suas primeiras características e os filmes de Gangsters ganham ainda mais destaque nas telonas.",
+          "blocked": false,
+          "is_new": false,
+          "image": {
+            "image_type": "local",
+            "url": "img_snow_white",
+            "content_description": "Foto promocional do filme Branca de Neve, com a personagem segurando uma maça.",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 250
+              }
+            }
+          },
+          "presentation_image": {
+            "image_type": "local",
+            "url": "img_wizard_oz",
+            "content_description": "Foto do filme O Mágico de Oz, com os quatro personagens principais andando de mãos dadas.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          },
+          "quote_position": "top_end",
+          "quote": {
+            "quote": "Tenho a sensação de que não estamos mais no Kansas.",
+            "author": "O Mágico de Oz",
+            "text_color": "md_black_1000",
+            "background_color": "md_yellow_500",
+            "icon_color": "md_black_1000"
+          },
+          "title_color": "md_white_1000",
+          "title_background_color": "purple_snow_shite",
+          "color": "md_purple_500"
+        },
+        {
+          "main_topic_type": "",
+          "layout_type": "quote",
+          "quote": {
+              "id": 1,
+              "quote": "Charlie Chaplin e eu tinhamos uma disputa amigável: quem faria o filme com menos legenda?",
+              "author": "Buster Keaton",
+              "icon_color": "md_white_1000"
+            }
+        },
+        {
+          "main_topic_type": "history_cinema",
+          "layout_type": "card",
+          "id": 3,
+          "title": "De 1940 a 1959",
+          "subtitle": "Parte 03",
+          "description": "O cinema asiático ganha ainda mais destaque com o lançamento de diversas obras primas. O Cinema Noir surge e os musicais continuam ganhando destaque nas telonas. O Faroeste mantém o seu reinado como um dos gêneros mais populares e um dos movimentos mais importantes do cinema acontece na França: o Nouvelle Vague.",
+          "blocked": false,
+          "is_new": false,
+          "image": {
+            "image_type": "local",
+            "url": "img_sevensamurais",
+            "content_description": "Cena do filme Os Sete Samurais, com todos os personagens olhando em uma direção, apostos.",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 250
+              }
+            }
+          },
+          "presentation_image": {
+            "image_type": "local",
+            "url": "img_singin_in_the_rain",
+            "content_description": "Cena do cantando na chuva, com o personagem título cantando no meio da chuva.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          },
+          "quote_position": "bottom_end",
+          "quote": {
+            "quote": "Não há nada entre nós. Nunca houve nós. Apenas ar.",
+            "author": "Cantando na Chuva",
+            "text_color": "md_white_1000",
+            "background_color": "md_indigo_800",
+            "icon_color": "md_white_1000"
+          },
+          "title_color": "md_white_1000",
+          "title_background_color": "md_grey_700",
+          "color": "md_orange_500"
+        },
+        {
+          "main_topic_type": "history_cinema",
+          "layout_type": "full",
+          "id": 4,
+          "title": "De 1960 a 1969",
+          "subtitle": "Parte 04",
+          "description": "O Brasil chama a atenção do mundo com o seu Cinema novo, a revolução sexual dos anos 60 reflete no cinema, o terror psicológico ganha espaço e a ficção cientifica, com 2001: Uma odisseia no espaço, conquista o público e crítica.",
+          "blocked": false,
+          "is_new": false,
+          "image": {
+            "image_type": "local",
+            "url": "img_2001_hal",
+            "content_description": "Foto do HAll 9000, do filme 2001: Uma Odisseia no Espaço.",
+            "animation": {
+              "type": "blink",
+              "duration": 1000
+            },
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 250
+              }
+            }
+          },
+          "presentation_image": {
+            "image_type": "local",
+            "url": "img_bonnie_clyde",
+            "content_description": "Foto de perfil do casal Bonnie e Clyde, no filme Bonnie e Clyde - Uma Rajada de Balas.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          },
+          "quote_position": "bottom_end",
+          "quote": {
+            "quote": "Sua origem e seu propósito são um mistério total.",
+            "author": "Última frase da Missão de Controle",
+            "text_color": "md_black_1000",
+            "background_color": "md_white_1000",
+            "icon_color": "md_grey_500"
+          },
+          "title_color": "md_white_1000",
+          "title_background_color": "md_black_1000",
+          "color": "md_indigo_900"
+        },
+        {
+          "main_topic_type": "history_cinema",
+          "layout_type": "card_full",
+          "id": 5,
+          "title": "De 1970 a 1989",
+          "subtitle": "Parte 05",
+          "description": "O exorcista é lançado, levando os filmes de terror a outro patamar. Tubarão chega aos cinemas e, em paralelo, o cinema autoral cresce com Martin Scorsese e outros grandes diretores. Em seguida, nos anos 80, presenciamos ótimas produções de baixo orçamento e comédias que marcaram época.",
+          "blocked": false,
+          "is_new": false,
+          "image": {
+            "image_type": "local",
+            "url": "img_exorcist",
+            "content_description": "Foto da personagem Regan possúida pelo demônio, em O Exorcista.",
+            "animation": {
+              "type": "blink",
+              "duration": 1000
+            },
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 250
+              }
+            }
+          },
+          "presentation_image": {
+            "image_type": "local",
+            "url": "img_taxi_driver",
+            "content_description": "Foto do personagem Travis Bickle, em Táxi Driver.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          },
+          "quote_position": "bottom_end",
+          "quote": {
+            "quote": "Você está falando comigo?",
+            "author": "Travis Bickle",
+            "text_color": "md_black_1000",
+            "background_color": "md_yellow_A400",
+            "icon_color": "md_black_1000"
+          },
+          "title_color": "md_white_1000",
+          "color": "md_cyan_900"
+        },
+        {
+          "main_topic_type": "",
+          "layout_type": "quote",
+          "quote": {
+              "id": 2,
+              "quote": "Hoje mais que nunca precisamos ouvir uns aos outros e entender como vemos o mundo, e o cinema é o melhor meio de fazer isso.",
+              "author": "Martin Scorsese",
+              "icon_color": "md_white_1000"
+          }
+        },
+        {
+          "main_topic_type": "history_cinema",
+          "layout_type": "card",
+          "id": 6,
+          "title": "De 1990 a 2009",
+          "subtitle": "Parte 06",
+          "description": "O cinema independente dos anos 90 domina as telas e as animações entram em um novo terreno com a Pixar. O CGI atinge um novo patamar com Matrix e os cinemas latino americanos e europeus chamam a atenção do mundo.",
+          "blocked": false,
+          "is_new": true,
+          "image": {
+            "image_type": "local",
+            "url": "img_pulp_fiction",
+            "content_description": "Foto dos personagem Vincent e Julius de costas um para o outro, em Pulp Fiction: Tempo de Violência.",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 250
+              }
+            }
+          },
+          "presentation_image": {
+            "image_type": "local",
+            "url": "img_walle",
+            "content_description": "Foto do personagem Wall-E olhando para as estrelas.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          },
+          "quote_position": "bottom_start",
+          "quote": {
+            "quote": "Eu não quero sobreviver, eu quero viver!",
+            "author": "Wall-E",
+            "text_color": "md_white_1000",
+            "background_color": "brown_presentation",
+            "icon_color": "md_white_1000"
+          },
+          "title_color": "md_black_1000",
+          "title_background_color": "yellow_dark",
+          "color": "md_teal_900"
+        },
+        {
+          "main_topic_type": "history_cinema",
+          "layout_type": "card_full",
+          "id": 7,
+          "title": "De 2010 até Hoje",
+          "subtitle": "Parte 07",
+          "description": "O 3D domina as telonas, uma nova leva de filmes de super-heróis aparece e domina as bilheterias mundiais. O Terror popular ganha uma nova roupagem com Invocação do Mal, e o terror psicológico renasce com grandes obras como A bruxa. O Streaming aparece de mansinho conquistando o público, crítica, e até mesmo os grandes diretores.",
+          "blocked": true,
+          "is_new": false,
+          "image": {
+            "image_type": "local",
+            "url": "img_iron_man",
+            "content_description": "Foto de perfil do personagem Homem de Ferro.",
+            "animation": {
+              "type": "blink",
+              "duration": 1000
+            },
+            "style": {
+              "height": 400,
+              "resize": {
+                "height": 400
+              },
+              "scale_type": "center_crop"
+            }
+          },
+          "presentation_image": {
+            "image_type": "local",
+            "url": "img_baby_driver",
+            "content_description": "Foto do personagem Baby, no filme Em Ritmo de Fuga.",
+            "style": {
+              "scale_type": "center_crop"
+            }
+          },
+          "quote_position": "bottom_start",
+          "quote": {
+            "quote": "Não há nada de errado em ser meio calado.",
+            "author": "Em Ritmo de Fuga",
+            "text_color": "md_white_1000",
+            "background_color": "md_black_1000",
+            "icon_color": "md_white_1000"
+          },
+          "title_color": "md_white_1000",
+          "color": "md_light_blue_900"
+        }
+      ]
+
+}

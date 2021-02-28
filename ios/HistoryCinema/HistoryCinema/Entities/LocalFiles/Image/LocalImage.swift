@@ -20,6 +20,8 @@ class LocalImage: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         imageType               <- (map["image_type"], EnumTransform<ImageType>())
         url                     <- map["url"]
         contentDescription       <- map["content_description"]

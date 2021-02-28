@@ -35,7 +35,8 @@ extension MainTopicsPresenter {
             .sink(receiveCompletion: { completion in
                 switch completion {
                     case .finished: print("🏁 finished")
-                    case .failure:
+                    case .failure(let error):
+                        print(error)
                         self.showErrorMessage = true
                     }
             }, receiveValue: { mainTopicsResult in

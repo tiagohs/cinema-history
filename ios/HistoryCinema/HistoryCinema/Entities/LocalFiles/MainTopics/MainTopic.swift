@@ -17,6 +17,8 @@ class MainTopic: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         layoutType                               <- (map["layout_type"], EnumTransform<MainTopicItemLayoutType>())
         mainTopicType                            <- (map["main_topic_type"], EnumTransform<MainTopicsType>())
     }

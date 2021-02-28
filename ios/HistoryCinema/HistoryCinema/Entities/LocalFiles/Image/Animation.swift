@@ -17,6 +17,8 @@ class Animation: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         type                            <- (map["type"], EnumTransform<AnimationType>())
         duration                        <- map["duration"]
     }

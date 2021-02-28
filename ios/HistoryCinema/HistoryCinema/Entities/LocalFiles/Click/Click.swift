@@ -18,6 +18,8 @@ class Click: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         screen                                          <- (map["screen"], EnumTransform<Screen>())
         buttonText                                      <- map["button_text"]
         parameters                                      <- map["parameters"]

@@ -21,6 +21,8 @@ class MilMoviesMainTopic: MainTopic {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                              <- map["id"]
         listId                                          <- map["list_id"]
         title                                           <- map["title"]

@@ -24,6 +24,8 @@ class MovieExtraInfo: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                                      <- map["id"]
         reviewResults                                           <- map["review_results"]
         quote                                                   <- map["title"]

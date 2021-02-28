@@ -19,6 +19,8 @@ class ImageStyle: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         width       <- map["width"]
         height      <- map["height"]
         resize      <- map["resize"]

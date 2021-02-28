@@ -24,6 +24,8 @@ class LocalMovie: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                              <- map["movies"]
         adult                                           <- map["adult"]
         backdropPath                                    <- map["backdrop_path"]

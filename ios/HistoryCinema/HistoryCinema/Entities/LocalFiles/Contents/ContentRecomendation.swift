@@ -16,6 +16,8 @@ class ContentRecomendation: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         list         <- map["list"]
     }
 }

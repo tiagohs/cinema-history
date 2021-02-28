@@ -24,6 +24,8 @@ class Nominee: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         type                                                    <- (map["type"], EnumTransform<NomineeType>())
         id                                                      <- map["id"]
         name                                                    <- map["name"]

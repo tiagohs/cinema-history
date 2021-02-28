@@ -29,6 +29,8 @@ class MainTopicItem: MainTopic {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         quotePosition                               <- (map["quote_position"], EnumTransform<ViewPosition>())
         id                                          <- map["id"]
         title                                       <- map["title"]

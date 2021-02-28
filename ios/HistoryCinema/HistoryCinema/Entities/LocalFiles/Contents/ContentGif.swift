@@ -17,6 +17,8 @@ class ContentGif: Content {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         gifImage                                        <- map["gif_image"]
         information                                     <- map["information"]
     }

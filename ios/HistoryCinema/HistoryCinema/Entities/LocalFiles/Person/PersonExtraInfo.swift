@@ -23,6 +23,8 @@ class PersonExtraInfo: BaseLocalModel {
     }
 
     override func mapping(map: Map) {
+        super.mapping(map: map)
+        
         id                                                  <- map["id"]
         name                                                <- map["name"]
         customName                                          <- map["custom_name"]
