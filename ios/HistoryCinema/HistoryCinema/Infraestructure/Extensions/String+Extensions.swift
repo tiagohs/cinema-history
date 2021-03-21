@@ -31,6 +31,25 @@ extension String {
     func toFileURL() -> URL? {
         return Bundle.main.url(forResource: self, withExtension: nil)
     }
+    
+    func htmlAttributedString(fontName: String, size: Int, color: String) -> NSAttributedString? {
+        let modifiedString = "<style>body{font-family: '\(fontName)'; color: \(color); font-size:\(size)px; line-height: 5px; }</style>\(self)";
+        guard let data = modifiedString.data(using: .utf8) else {
+            return nil
+        }
+        do {
+            return try NSAttributedString(data: data,
+                                          options: [
+                                            .documentType: NSAttributedString.DocumentType.html,
+                                            .characterEncoding: String.Encoding.utf8.rawValue
+                                          ],
+                                          documentAttributes: nil)
+        }
+        catch {
+            print(error)
+            return nil
+        }
+    }
 }
 
 extension String: Error {

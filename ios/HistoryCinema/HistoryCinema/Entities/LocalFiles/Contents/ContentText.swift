@@ -23,8 +23,8 @@ class ContentText: Content {
         super.mapping(map: map)
         
         contentText         <- map["content_text"]
-        contentTitle         <- map["content_title"]
-        contentCredits         <- map["content_credits"]
-        font         <- map["font"]
+        contentTitle        <- map["content_title"]
+        contentCredits      <- map["content_credits"]
+        font                <- map["font"]
     }
 }

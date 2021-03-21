@@ -9,6 +9,7 @@ import Foundation
 
 import Foundation
 import Combine
+import Alamofire
 
 class SummaryInteractor: BaseInteractor {
     let localContentService: LocalContentService
@@ -20,4 +21,7 @@ class SummaryInteractor: BaseInteractor {
 
 extension SummaryInteractor {
     
+    func getSummaryBy(_ mainTopicID: Int) -> AnyPublisher<SummaryResult, AFError> {
+        return self.localContentService.getSummaryBy(mainTopicID: mainTopicID)
+    }
 }

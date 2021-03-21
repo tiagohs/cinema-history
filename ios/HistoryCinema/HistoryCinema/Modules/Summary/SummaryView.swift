@@ -17,35 +17,9 @@ struct SummaryView: View {
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            ScrollView {
-                GeometryReader { geometry in
-                    ZStack(alignment: .bottomTrailing) {
-                        if geometry.frame(in: .global).minY <= 0 {
-                            Image("img_cabinet")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: geometry.size.width, height: geometry.size.height)
-                                    .offset(y: geometry.frame(in: .global).minY/9)
-                                    .clipped()
-                                    .shadow(color: .black, radius: 5)
-                            
-                            SummaryQuoteView(quote: mainTopic.quote)
-                                .offset(y: geometry.frame(in: .global).minY/2)
-                        } else {
-                            Image("img_cabinet")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: geometry.size.width, height: geometry.size.height + geometry.frame(in: .global).minY)
-                                    .clipped()
-                                    .shadow(color: .black, radius: 5)
-                                    .offset(y: -geometry.frame(in: .global).minY)
-                            
-                            SummaryQuoteView(quote: mainTopic.quote)
-                                .offset(y: -geometry.frame(in: .global).minY)
-                        }
-                    }
-                }
-                .frame(height: 600)
+            List {
+                SummaryHeader(mainTopic: mainTopic)
+                    .listRowInsets(EdgeInsets())
                 
                 VStack(alignment: .center) {
                     VStack {
@@ -88,100 +62,25 @@ struct SummaryView: View {
                             .padding(.horizontal, 16)
                             .padding(.bottom, 8)
                         
-                        VStack {
-                            HStack {
-                                Text("Visionários")
-                                    .textCase(.uppercase)
-                                    .frame(maxWidth: .infinity, alignment: .center)
-                                    .font(.proximaNovaBold(size: 20))
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.black)
-                                    .padding(.horizontal, 16)
-                            }
-                            
-                            Text("Os primeiros inventores, sonhadores e artistas. Da invenção do cinetoscópio até a primeira exibição conhecida pública de um filme para um público pagante pelos irmãos Lumierè.")
-                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                                .font(.proximaNovaRegular(size: 16))
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.black)
-                                .padding(.horizontal, 16)
-                                .padding(.top, 5)
+                        if (presenter.summaryList.count == 0) {
+                            ProgressView()
                         }
-                        .padding(.vertical, 22)
                         
-                        VStack {
-                            HStack {
-                                Text("Visionários")
-                                    .textCase(.uppercase)
-                                    .frame(maxWidth: .infinity, alignment: .center)
-                                    .font(.proximaNovaBold(size: 20))
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.black)
-                                    .padding(.horizontal, 16)
+                        if !presenter.summaryList.isEmpty {
+                            ForEach(0 ..< presenter.summaryList.count) { index in
+                                SummaryItem(summaryModel: presenter.summaryList[index])
                             }
-                            
-                            Text("Os primeiros inventores, sonhadores e artistas. Da invenção do cinetoscópio até a primeira exibição conhecida pública de um filme para um público pagante pelos irmãos Lumierè.")
-                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                                .font(.proximaNovaRegular(size: 16))
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.black)
-                                .padding(.horizontal, 16)
-                                .padding(.top, 5)
                         }
-                        .padding(.vertical, 22)
-                        
-                        VStack {
-                            HStack {
-                                Text("Visionários")
-                                    .textCase(.uppercase)
-                                    .frame(maxWidth: .infinity, alignment: .center)
-                                    .font(.proximaNovaBold(size: 20))
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.black)
-                                    .padding(.horizontal, 16)
-                            }
-                            
-                            Text("Os primeiros inventores, sonhadores e artistas. Da invenção do cinetoscópio até a primeira exibição conhecida pública de um filme para um público pagante pelos irmãos Lumierè.")
-                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                                .font(.proximaNovaRegular(size: 16))
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.black)
-                                .padding(.horizontal, 16)
-                                .padding(.top, 5)
-                        }
-                        .padding(.vertical, 22)
-                        
-                        VStack {
-                            HStack {
-                                Text("Visionários")
-                                    .textCase(.uppercase)
-                                    .frame(maxWidth: .infinity, alignment: .center)
-                                    .font(.proximaNovaBold(size: 20))
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.black)
-                                    .padding(.horizontal, 16)
-                            }
-                            
-                            Text("Os primeiros inventores, sonhadores e artistas. Da invenção do cinetoscópio até a primeira exibição conhecida pública de um filme para um público pagante pelos irmãos Lumierè.")
-                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                                .font(.proximaNovaRegular(size: 16))
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.black)
-                                .padding(.horizontal, 16)
-                                .padding(.top, 5)
-                        }
-                        .padding(.vertical, 22)
                     }
                     .padding(.top, 20)
                 }
             }
             .edgesIgnoringSafeArea(.top)
-            .background(Color.white)
             
             Button(action: {
                 self.presentationMode.wrappedValue.dismiss()
             }) {
-                Image(systemName: "arrow.left")
+                Image(systemName: "chevron.left")
                     .padding()
                     .background(Color.black)
                     .foregroundColor(Color.white)
@@ -190,6 +89,11 @@ struct SummaryView: View {
             .shadow(color: .black, radius: 5)
             .padding()
         }
+        .onAppear {
+            presenter.viewAppears()
+            presenter.fetchSummaryBy(mainTopicItem: mainTopic)
+        }
+        .onDisappear { presenter.viewDisappears() }
     }
 }
 

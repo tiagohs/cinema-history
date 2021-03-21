@@ -28,4 +28,6 @@ class LocalImage: BaseLocalModel {
         animation               <- map["animation"]
         imageStyle              <- map["style"]
     }
+    
+    static var example = LocalImage(JSONString: "{\n            \"image_type\": \"local\",\n            \"url\": \"img_great_train\",\n            \"style\": {\n              \"scale_type\": \"center_crop\",\n              \"resize\": {\n                \"height\": 350\n              }\n            }\n          }")
 }

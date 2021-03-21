@@ -6,10 +6,9 @@
 //
 
 import Foundation
-
 import Combine
 
-// MARK: MainTopicsPresenter
+// MARK: SummaryPresenter
 
 class SummaryPresenter: BasePresenter, ObservableObject {
     
@@ -18,16 +17,31 @@ class SummaryPresenter: BasePresenter, ObservableObject {
     private var interactor: SummaryInteractor?
     private var wireframe: SummaryWireframe?
     
-    @Published var mainTopics: [MainTopic]
+    @Published var summaryList: [SummaryModel]
     @Published var showErrorMessage: Bool = false
     
     init(_ interactor: SummaryInteractor, _ wireframe: SummaryWireframe) {
         self.interactor = interactor
         self.wireframe = wireframe
-        self.mainTopics = []
+        self.summaryList = []
     }
 }
 
 extension SummaryPresenter {
     
+    func fetchSummaryBy(mainTopicItem: MainTopicItem) {
+        self.interactor?.getSummaryBy(mainTopicItem.id)
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                    case .finished: print("🏁 finished")
+                    case .failure(let error):
+                        print(error)
+                        self.showErrorMessage = true
+                    }
+            }, receiveValue: { summaryListResult in
+                self.summaryList = summaryListResult.results
+            })
+            .store(in: &cancalables)
+    }
 }

@@ -11,7 +11,12 @@ import Combine
 struct ContentView: View {
     
     var body: some View {
-        HomeView()
+        //HomeView()
+        
+        let mainTopicItem = MainTopic.example(.history_cinema) as! MainTopicItem
+        let summary = SummaryModel.example
+        
+        HistoryPageItemView(mainTopic: mainTopicItem, summary: summary)
     }
 }
 

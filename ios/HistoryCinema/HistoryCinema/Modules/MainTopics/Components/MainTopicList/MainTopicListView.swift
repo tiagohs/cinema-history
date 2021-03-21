@@ -33,15 +33,14 @@ struct MainTopicListView<Content : View>: View {
                             if (mainTopicItem.layoutType != .full) {
                                 MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
                                     .padding()
-                                    .listRowInsets(EdgeInsets())
                                     .transition(.slide)
                             } else {
                                 MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
-                                    .listRowInsets(EdgeInsets())
                                     .transition(.slide)
                             }
                         }
-                        
+                        .padding(.trailing, -32.0)
+                        .listRowInsets(EdgeInsets())
                     case .mil_movies:
                         MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
                     default:

@@ -9,18 +9,17 @@ import SwiftUI
 
 struct QuoteView: View {
     let quote: Quote
+    var defaultTextColor: Color? = nil
+    var defaultIconColor: Color? = nil
     
     var body: some View {
         VStack {
             HStack {
-                Image("ic_quote_black")
-                    .renderingMode(.template)
-                    .resizable()
-                    .rotationEffect(Angle(degrees: 180))
+                Icon(name: .quote)
+                    .fill((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : (defaultIconColor ?? Color.white))
                     .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal)
-                    .foregroundColor((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : Color.white)
-                
+                    
                 Spacer()
             }
             
@@ -33,7 +32,8 @@ struct QuoteView: View {
                     .multilineTextAlignment(.center)
                     .padding(.vertical, 12)
                     .padding(.horizontal)
-                    .foregroundColor((quote.textColor != nil) ? Color(UIColor(hex: quote.textColor!)) : Color.white)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .foregroundColor((quote.textColor != nil) ? Color(UIColor(hex: quote.textColor!)) : (defaultTextColor ?? Color.white))
                 
                 Spacer()
             }
@@ -45,7 +45,7 @@ struct QuoteView: View {
                     .frame(maxWidth: .infinity, alignment: .center)
                     .font(.oswaldBold(size: 20))
                     .padding(.horizontal)
-                    .foregroundColor((quote.textColor != nil) ? Color(UIColor(colorName: quote.textColor!)) : Color.white)
+                    .foregroundColor((quote.textColor != nil) ? Color(UIColor(colorName: quote.textColor!)) : (defaultTextColor ?? Color.white))
                 
                 Spacer()
             }
@@ -53,12 +53,11 @@ struct QuoteView: View {
             HStack {
                 Spacer()
                 
-                Image("ic_quote_black")
-                    .renderingMode(.template)
-                    .resizable()
+                Icon(name: .quote)
+                    .fill((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : (defaultIconColor ?? Color.white))
                     .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .rotationEffect(Angle(degrees: 180))
                     .padding(.horizontal)
-                    .foregroundColor((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : Color.white)
             }
         }
         .padding(.vertical, 26)

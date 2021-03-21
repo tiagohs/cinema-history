@@ -14,13 +14,10 @@ struct SummaryQuoteView: View {
         ZStack {
             VStack {
                 HStack(alignment: .top) {
-                    Image("ic_quote_black")
-                        .renderingMode(.template)
-                        .resizable()
-                        .rotationEffect(Angle(degrees: 180))
+                    Icon(name: .quote)
+                        .fill((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : Color.white)
                         .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .padding(.horizontal)
-                        .foregroundColor((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : Color.black)
                     
                     Spacer()
                 }
@@ -42,7 +39,6 @@ struct SummaryQuoteView: View {
                         .padding(.horizontal)
                         .padding(.bottom, 32)
                         .foregroundColor((quote.textColor != nil) ? Color(UIColor(colorName: quote.textColor!)) : Color.white)
-                    
                 }
                 .background((quote.backgroundColor != nil) ? Color(UIColor(colorName: quote.backgroundColor!)) : Color.white)
                 .cornerRadius(10)
@@ -51,12 +47,11 @@ struct SummaryQuoteView: View {
                 HStack {
                     Spacer()
                     
-                    Image("ic_quote_black")
-                        .renderingMode(.template)
-                        .resizable()
+                    Icon(name: .quote)
+                        .fill((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : Color.white)
+                        .rotationEffect(Angle(degrees: 180))
                         .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .padding(.horizontal)
-                        .foregroundColor((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : Color.black)
                 }
                 .offset(x: -10, y: -35)
             }

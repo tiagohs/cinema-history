@@ -9,7 +9,7 @@ import Foundation
 import ObjectMapper
 
 class ContentMovieList: Content {
-    var movies: [Movie]?
+    var movies: [LocalMovie]?
     
     required init?(map: Map) {
         super.init(map: map)

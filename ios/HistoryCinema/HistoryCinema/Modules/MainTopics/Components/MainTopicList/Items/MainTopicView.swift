@@ -39,35 +39,11 @@ struct MainTopicView: View {
     var titleBackgroundColor: String?
     
     var body: some View {
-        let imageUrl = image?.url ?? ""
-        let imageHeight = CGFloat(image?.imageStyle?.resize?.height ?? 400)
         let textColor = (titleColor != nil) ? Color(UIColor(colorName: titleColor!)) : Color.white
         let backgroundColor = (titleBackgroundColor != nil) ? Color(UIColor(colorName: titleBackgroundColor!)) : Color.black
         
         let mainTopicViewContainer = MainTopicContent(layoutType: layoutType) {
-            let imageComponent = Image(imageUrl)
-            
-            if let imageScaleType = image?.imageStyle?.scaleType {
-                if imageScaleType == "center_crop" {
-                    imageComponent
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(height: imageHeight, alignment: .center)
-                } else if imageScaleType == "fit" {
-                    imageComponent
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: imageHeight, alignment: .center)
-                } else {
-                    imageComponent
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(height: imageHeight, alignment: .center)
-                }
-            } else {
-                imageComponent
-                    .frame(height: imageHeight)
-            }
+            CustomImage(image: image)
             
             let textContainer = VStack {
                 if subtitle != nil {
