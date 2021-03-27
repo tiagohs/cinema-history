@@ -357,7 +357,7 @@ struct TMDB {
         struct PROFILE {
             static let w45          = "w45"
             static let w185         = "w185"
-            static let w632         = "w632"
+            static let h632         = "h632"
             static let original     = "original"
         }
         

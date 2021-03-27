@@ -136,4 +136,30 @@ extension UIBezierPath {
         
         return path
     }
+    
+    static var person: UIBezierPath {
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 256, y: 0))
+        path.addCurve(to: CGPoint(x: 121, y: 135), controlPoint1: CGPoint(x: 181.6, y: 0), controlPoint2: CGPoint(x: 121, y: 60.6))
+        path.addCurve(to: CGPoint(x: 256, y: 270), controlPoint1: CGPoint(x: 121, y: 209.4), controlPoint2: CGPoint(x: 181.6, y: 270))
+        path.addCurve(to: CGPoint(x: 391, y: 135), controlPoint1: CGPoint(x: 330.4, y: 270), controlPoint2: CGPoint(x: 391, y: 209.4))
+        path.addCurve(to: CGPoint(x: 256, y: 0), controlPoint1: CGPoint(x: 391, y: 60.6), controlPoint2: CGPoint(x: 330.4, y: 0))
+        path.close()
+        
+        let path2 = UIBezierPath()
+        path2.move(to: CGPoint(x: 424, y: 358.2))
+        path2.addCurve(to: CGPoint(x: 286, y: 300), controlPoint1: CGPoint(x: 387, y: 320.7), controlPoint2: CGPoint(x: 338, y: 300))
+        path2.addLine(to: CGPoint(x: 226, y: 300))
+        path2.addCurve(to: CGPoint(x: 88, y: 358.2), controlPoint1: CGPoint(x: 174, y: 300), controlPoint2: CGPoint(x: 125, y: 320.7))
+        path2.addCurve(to: CGPoint(x: 31, y: 497), controlPoint1: CGPoint(x: 51.3, y: 395.5), controlPoint2: CGPoint(x: 31, y: 444.8))
+        path2.addCurve(to: CGPoint(x: 46, y: 512), controlPoint1: CGPoint(x: 31, y: 505.3), controlPoint2: CGPoint(x: 37.7, y: 512))
+        path2.addLine(to: CGPoint(x: 466, y: 512))
+        path2.addCurve(to: CGPoint(x: 481, y: 497), controlPoint1: CGPoint(x: 474.3, y: 512), controlPoint2: CGPoint(x: 481, y: 505.3))
+        path2.addCurve(to: CGPoint(x: 424, y: 358.2), controlPoint1: CGPoint(x: 481, y: 444.8), controlPoint2: CGPoint(x: 460.7, y: 395.5))
+        path2.close()
+        
+        path.append(path2)
+
+        return path
+    }
 }

@@ -23,6 +23,16 @@ struct PageContentListView: View {
                     ContentQuoteView(contentQuote: contentItem as! ContentQuote)
                 case .movie_list:
                     ContentMovieListView(contentMovieList: contentItem as! ContentMovieList)
+                case .person_list:
+                    ContentPersonListView(contentPersonList: contentItem as! ContentPersonList)
+                case .block_special:
+                    ContentBlockSpecialView(contentBlockSpecial: contentItem as! ContentBlockSpecial)
+                        .padding(.horizontal, 16)
+                        .listRowInsets(EdgeInsets())
+                case .link_screen:
+                    ContentLinkScreenView(contentLinkScreen: contentItem as! ContentLinkScreen)
+                        .padding(.horizontal, 16)
+                        .listRowInsets(EdgeInsets())
                 default:
                     EmptyView()
                 }

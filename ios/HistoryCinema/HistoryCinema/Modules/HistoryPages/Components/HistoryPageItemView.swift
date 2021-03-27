@@ -86,6 +86,7 @@ struct HistoryPageItemView: View {
                 .background(Color.white)
                 .listRowInsets(EdgeInsets())
         }
+        .listRowInsets(EdgeInsets())
     }
 }
 

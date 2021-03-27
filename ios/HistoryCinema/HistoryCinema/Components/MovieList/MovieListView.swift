@@ -21,7 +21,7 @@ struct MovieListView: View {
                     let movie = movieList[index]
                     
                     MovieItemView(movie: movie, posterWidth: posterWidth, posterHeight: posterHeight)
-                        .padding(.leading, 8)
+                        .padding(.leading, index == 0 ? 16 : 8)
                 }
             }
         }

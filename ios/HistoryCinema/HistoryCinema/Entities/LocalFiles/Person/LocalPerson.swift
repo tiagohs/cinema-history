@@ -46,4 +46,6 @@ class LocalPerson: BaseLocalModel {
         gender                                                  <- map["gender"]
         popularity                                              <- map["popularity"]
     }
+    
+    static let example = LocalPerson(JSONString: "{\n          \"id\": 1650,\n          \"name\": \"François Truffaut\",\n          \"profile_path\": \"/3bXLtipaybsje01LlQvHvuUAZNq.jpg\"\n        }")!
 }

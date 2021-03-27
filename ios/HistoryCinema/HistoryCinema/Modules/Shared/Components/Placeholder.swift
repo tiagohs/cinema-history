@@ -28,7 +28,7 @@ struct Placeholder: View {
                     .fill(Color.white)
                     .frame(width: size, height: size)
             case .person:
-                Icon(name: .movie)
+                Icon(name: .person)
                     .fill(Color.white)
                     .frame(width: size, height: size)
             }
@@ -38,6 +38,6 @@ struct Placeholder: View {
 
 struct Placeholder_Previews: PreviewProvider {
     static var previews: some View {
-        Placeholder(type: .movie)
+        Placeholder(type: .person)
     }
 }
