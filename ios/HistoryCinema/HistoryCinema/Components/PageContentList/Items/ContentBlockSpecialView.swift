@@ -72,25 +72,9 @@ struct ContentBlockSpecialView: View {
                         .padding(.bottom, 12)
                         .padding(.horizontal, 16)
                         
-                        HStack(spacing: 0) {
-                            Rectangle()
-                                .fill(Color(UIColor(colorName: "md_\(colorAsset.colorName)_500")))
-                                .frame(height: 20)
-                            Rectangle()
-                                .fill(Color(UIColor(colorName: "md_\(colorAsset.colorName)_600")))
-                                .frame(height: 20)
-                            Rectangle()
-                                .fill(Color(UIColor(colorName: "md_\(colorAsset.colorName)_700")))
-                                .frame(height: 20)
-                            Rectangle()
-                                .fill(Color(UIColor(colorName: "md_\(colorAsset.colorName)_800")))
-                                .frame(height: 20)
-                            Rectangle()
-                                .fill(Color(UIColor(colorName: "md_\(colorAsset.colorName)_900")))
-                                .frame(height: 20)
-                        }
+                        DividerColorView(colorName: colorAsset.colorName)
                         
-                        CustomImage(image: contentBlockSpecial.image, type: .movie)
+                        CustomImage(image: contentBlockSpecial.image, placeholderType: .movie)
                             .frame(width: UIScreen.main.bounds.width, height: 200)
                     }
                     .frame(width: UIScreen.main.bounds.width)

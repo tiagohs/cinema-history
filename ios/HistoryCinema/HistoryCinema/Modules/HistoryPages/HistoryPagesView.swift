@@ -14,8 +14,15 @@ struct HistoryPagesView: View {
     let mainTopic: MainTopicItem
     
     var body: some View {
-        ZStack {
-            
+        let mainTopicItem = MainTopic.example(.history_cinema) as! MainTopicItem
+        let summary = SummaryModel.example
+        
+        ZStack(alignment: .topLeading) {
+            HistoryPageItemView(
+                mainTopic: mainTopicItem,
+                summary: summary
+            )
+            .environment(\.colorScheme, .light)
         }
         .alert(isPresented: $presenter.showErrorMessage, content: {
             Alert(title: Text("Ops"),

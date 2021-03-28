@@ -64,7 +64,7 @@ struct LinkScreenView: View {
             }
         }
         .background(ZStack {
-            CustomImage(image: image, type: .movie)
+            CustomImage(image: image, placeholderType: .movie)
                 .frame(width: UIScreen.main.bounds.width)
             
             Rectangle()

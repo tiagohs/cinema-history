@@ -17,6 +17,8 @@ struct PageContentListView: View {
                 switch contentItem.type {
                 case .text:
                     ContentTextView(contentText: contentItem as! ContentText)
+                case .image:
+                    ContentImageView(contentImage: contentItem as! ContentImage)
                 case .video:
                     ContentVideoView(contentVideo: contentItem as! ContentVideo)
                 case .quote:
@@ -33,10 +35,13 @@ struct PageContentListView: View {
                     ContentLinkScreenView(contentLinkScreen: contentItem as! ContentLinkScreen)
                         .padding(.horizontal, 16)
                         .listRowInsets(EdgeInsets())
+                case .movie_list_special:
+                    ContentMovieListSpecialView(contentMovieListSpecial: contentItem as! ContentMovieListSpecial)
                 default:
                     EmptyView()
                 }
             }
+            .background(Color.white)
     }
 }
 
@@ -44,6 +49,7 @@ struct PageContentListView_Previews: PreviewProvider {
     static var previews: some View {
         let contentList = [
             Content.exampleText,
+            Content.exampleImage,
             Content.exampleVideo,
             Content.exampleQuote,
             Content.exampleMovieList,

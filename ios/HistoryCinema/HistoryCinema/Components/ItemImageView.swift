@@ -18,59 +18,46 @@ struct ItemImageView: View {
     var body: some View {
         let width = imageWidth ?? 200
         let height = imageHeight ?? 280
-        let imageUrl = URL(string: url)
         let type = placeholderType ?? .movie
             
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
-                KFImage.url(imageUrl)
-                    .placeholder {
-                        Placeholder(type: type, iconSize: CGFloat(100))
-                            .cornerRadius(20)
-                            .frame(
-                                width: CGFloat(width),
-                                height: CGFloat(height)
-                            )
-                    }
-                    .appendProcessor(
-                        DownsamplingImageProcessor(
-                            size: CGSize(width: width, height: height)))
-                    .appendProcessor(RoundCornerImageProcessor(cornerRadius: 20))
-                    .loadDiskFileSynchronously()
-                    .resizable()
-                    .cacheMemoryOnly()
-                    .fade(duration: 0.25)
-                    .frame(
-                        width: CGFloat(width),
-                        height: CGFloat(height)
-                    )
                 
-                if title != nil {
-                    LinearGradient(
-                        gradient: Gradient(colors: [.black, .clear, .clear]),
-                        startPoint: .bottom,
-                        endPoint: .top
-                    )
-                    .cornerRadius(20)
-                    .frame(
-                        width: CGFloat(width),
-                        height: CGFloat(height)
-                    )
+            CustomImage(
+                imageUrl: url,
+                imageType: .online,
+                placeholderType: type,
+                width: width,
+                height: height,
+                cornerRadius: 20
+            )
+                
+            if title != nil {
+                LinearGradient(
+                    gradient: Gradient(colors: [.black, .clear, .clear]),
+                    startPoint: .bottom,
+                    endPoint: .top
+                )
+                .cornerRadius(20)
+                .frame(
+                    width: CGFloat(width),
+                    height: CGFloat(height)
+                )
+                
+                HStack {
+                    Text(title!)
+                        .font(.oswaldBold(size: 18))
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(Color.white)
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 16)
                     
-                    HStack {
-                        Text(title!)
-                            .font(.oswaldBold(size: 18))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(Color.white)
-                            .padding(.horizontal, 16)
-                            .padding(.bottom, 16)
-                        
-                        Spacer()
-                    }
-                    .frame(width: CGFloat(width))
-                } else {
-                    EmptyView()
+                    Spacer()
                 }
+                .frame(width: CGFloat(width))
+            } else {
+                EmptyView()
             }
+        }
     }
 }
 

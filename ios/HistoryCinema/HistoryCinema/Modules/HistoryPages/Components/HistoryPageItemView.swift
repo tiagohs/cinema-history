@@ -73,20 +73,21 @@ struct HistoryPageItemView: View {
             .listRowInsets(EdgeInsets())
             
             let contentList = [
+                Content.exampleMovieSpecial,
                 Content.exampleText,
+                Content.exampleImage,
                 Content.exampleVideo,
                 Content.exampleQuote,
                 Content.exampleMovieList,
                 Content.examplePersonList,
                 Content.exampleBlockSpecial,
-                Content.exampleLinkScreen
+                Content.exampleLinkScreen,
+                Content.exampleSlide
             ]
-            
+
             PageContentListView(contentList: contentList)
-                .background(Color.white)
                 .listRowInsets(EdgeInsets())
         }
-        .listRowInsets(EdgeInsets())
     }
 }
 
@@ -96,5 +97,6 @@ struct HistoryPageItemView_Previews: PreviewProvider {
         let summary = SummaryModel.example
         
         HistoryPageItemView(mainTopic: mainTopicItem, summary: summary)
+            .environment(\.colorScheme, .light)
     }
 }

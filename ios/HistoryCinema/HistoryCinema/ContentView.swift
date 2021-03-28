@@ -14,9 +14,9 @@ struct ContentView: View {
         //HomeView()
         
         let mainTopicItem = MainTopic.example(.history_cinema) as! MainTopicItem
-        let summary = SummaryModel.example
         
-        HistoryPageItemView(mainTopic: mainTopicItem, summary: summary)
+        HistoryPagesView(mainTopic: mainTopicItem)
+            .environment(\.colorScheme, .dark)
     }
 }
 
