@@ -18,6 +18,7 @@ struct CustomImage: View {
     var height: Int?
     var cornerRadius: Int?
     var blurRadius: Int?
+    var iconSize: Int?
     
     func setupImageWithScale(_ imageComponent: Image, _ imageUrl: String, scaleType: String) -> some View {
         if scaleType == "center_crop" {
@@ -46,7 +47,7 @@ struct CustomImage: View {
         
         let imageComponent = KFImage.url(URL(string: url))
             .placeholder {
-                Placeholder(type: type, iconSize: CGFloat(100))
+                Placeholder(type: type, iconSize: CGFloat(iconSize ?? 100))
                     .cornerRadius(20)
                     .frame(
                         width: imageWidth,

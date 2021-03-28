@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class SummaryWireframe {
     
@@ -22,5 +23,18 @@ extension SummaryWireframe {
         let wireframe = SummaryWireframe()
         
         return SummaryPresenter(interactor, wireframe)
+    }
+}
+
+extension SummaryWireframe {
+    
+    @ViewBuilder
+    func presentHistoryPages(_ mainTopic: MainTopicItem, _ summaryList: [SummaryModel]) -> some View {
+        HistoryPagesView(
+            mainTopic: mainTopic,
+            summaryList: summaryList
+        )
+        .environment(\.colorScheme, .dark)
+        .navigationBarTitle("")
     }
 }

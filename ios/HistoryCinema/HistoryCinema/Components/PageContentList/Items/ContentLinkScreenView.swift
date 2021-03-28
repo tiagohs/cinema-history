@@ -17,7 +17,9 @@ struct ContentLinkScreenView: View {
                 title: contentLinkScreen.title,
                 description: contentLinkScreen.description,
                 image: contentLinkScreen.image
-            )
+            ) {
+                
+            }
         }
         .padding(.vertical, 16)
     }

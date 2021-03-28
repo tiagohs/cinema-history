@@ -20,8 +20,8 @@ class ContentNominee: Content {
     override func mapping(map: Map) {
         super.mapping(map: map)
         
-        name                                                <- map["movies"]
-        year                                                <- map["information"]
+        name                                                <- map["name"]
+        year                                                <- map["year"]
         nomineeList                                         <- map["nominee_list"]
     }
 }

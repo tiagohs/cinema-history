@@ -60,7 +60,9 @@ struct HTMLStringView: UIViewRepresentable {
   }
 
   func updateUIView(_ uiView: InteractiveLinkLabel, context: Context) {
-    uiView.attributedText = htmlContent.htmlAttributedString(fontName: fontName, size: size, color: color)
+    DispatchQueue.main.async {
+        uiView.attributedText = htmlContent.htmlAttributedString(fontName: fontName, size: size, color: color)
+    }
   }
 }
 

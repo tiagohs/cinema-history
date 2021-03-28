@@ -11,12 +11,7 @@ import Combine
 struct ContentView: View {
     
     var body: some View {
-        //HomeView()
-        
-        let mainTopicItem = MainTopic.example(.history_cinema) as! MainTopicItem
-        
-        HistoryPagesView(mainTopic: mainTopicItem)
-            .environment(\.colorScheme, .dark)
+        HomeView()
     }
 }
 

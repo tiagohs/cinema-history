@@ -13,16 +13,23 @@ struct LinkScreenView: View {
     var description: String?
     var image: LocalImage?
     
+    var onButtonClicked: (() -> Void)?
+    
+    @Environment(\.openURL) var openURL
+
     var body: some View {
-        let color = ColorUtils.getRandomColorAssets()
-        let color = Color(UIColor(colorName: "md_\(color.colorName)_500"))
+        let colorAsset = ColorUtils.getRandomColorAssets()
+        let color = Color(UIColor(colorName: "md_\(colorAsset.colorName)_500"))
+        let textColor = image != nil ? Color.white : Color(UIColor(colorName: colorAsset.textColorName))
+        let titleColor = image != nil ? color : textColor
+        let backgroundColor = Color(UIColor(colorName: "md_\(colorAsset.colorName)_900"))
         
         VStack {
             if subtitle != nil {
                 Text(subtitle ?? "")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(.oswaldLight(size: 12))
-                    .foregroundColor(Color.white)
+                    .foregroundColor(textColor)
                     .padding(.horizontal, 16)
                     .padding(.top, 12)
             }
@@ -31,7 +38,7 @@ struct LinkScreenView: View {
                 Text(title ?? "")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(.oswaldBold(size: 16))
-                    .foregroundColor(color)
+                    .foregroundColor(titleColor)
                     .padding(.horizontal, 16)
                     .padding(.bottom, 5)
             }
@@ -40,7 +47,7 @@ struct LinkScreenView: View {
                 Text(description ?? "")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(.proximaNovaRegular(size: 12))
-                    .foregroundColor(Color.white)
+                    .foregroundColor(textColor)
                     .padding(.horizontal, 16)
                     .padding(.bottom, 5)
             }
@@ -49,29 +56,38 @@ struct LinkScreenView: View {
                 Spacer()
                 
                 Button(action: {
-                    print("Ir Para Pages")
+                    onButtonClicked?()
                 }) {
                     Text("Iniciar a Jornada")
                         .font(.proximaNovaRegular(size: 18))
                         .padding(.horizontal, 22)
                         .padding(.vertical, 12)
-                        .background(color)
-                        .foregroundColor(Color.white)
+                        .background(backgroundColor)
+                        .foregroundColor(textColor)
                         .cornerRadius(5)
                 }
+                .buttonStyle(PlainButtonStyle()) 
                 .padding(.trailing, 16)
                 .padding(.bottom, 12)
             }
         }
-        .background(ZStack {
-            CustomImage(image: image, placeholderType: .movie)
-                .frame(width: UIScreen.main.bounds.width)
-            
-            Rectangle()
-                .fill(Color(UIColor(colorName: "md_black_1000")))
-                .opacity(0.6)
-                .frame(width: UIScreen.main.bounds.width)
-        })
+        .background(
+            VStack {
+                if image != nil {
+                    ZStack {
+                        CustomImage(image: image, placeholderType: .movie)
+                            .frame(width: UIScreen.main.bounds.width)
+                        
+                        Rectangle()
+                            .fill(Color(UIColor(colorName: "md_black_1000")))
+                            .opacity(0.6)
+                            .frame(width: UIScreen.main.bounds.width)
+                    }
+                } else {
+                    Color(UIColor(colorName: "md_\(colorAsset.colorName)_500"))
+                }
+            }
+        )
         .frame(
             width: UIScreen.main.bounds.width - 32)
         .cornerRadius(25)
@@ -80,10 +96,23 @@ struct LinkScreenView: View {
 
 struct LinkScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        LinkScreenView(
-            subtitle: "Os acontecimentos que marcaram o mundo",
-            title: "Timeline de Acontecimentos de 1970 a 1989",
-            description: "O exorcista é lançado, fazendo plateias no mundo todo passarem mal e desmaiarem, criando uma histeria global. O primeiro blockbuster é lançado: Tubarão, em paralelo, o cinema autoral ganha cresce com Martin Scorsese e outros grandes diretores. Os anos 80 vem acompanhado com produções de baixo orçamento e suas comédias que marcaram época. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1940 a 1959."
-        )
+        Group {
+            LinkScreenView(
+                subtitle: "Os acontecimentos que marcaram o mundo",
+                title: "Timeline de Acontecimentos de 1970 a 1989",
+                description: "O exorcista é lançado, fazendo plateias no mundo todo passarem mal e desmaiarem, criando uma histeria global. O primeiro blockbuster é lançado: Tubarão, em paralelo, o cinema autoral ganha cresce com Martin Scorsese e outros grandes diretores. Os anos 80 vem acompanhado com produções de baixo orçamento e suas comédias que marcaram época. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1940 a 1959."
+            ) {
+                
+            }
+            
+            LinkScreenView(
+                subtitle: "Os acontecimentos que marcaram o mundo",
+                title: "Timeline de Acontecimentos de 1970 a 1989",
+                description: "O exorcista é lançado, fazendo plateias no mundo todo passarem mal e desmaiarem, criando uma histeria global. O primeiro blockbuster é lançado: Tubarão, em paralelo, o cinema autoral ganha cresce com Martin Scorsese e outros grandes diretores. Os anos 80 vem acompanhado com produções de baixo orçamento e suas comédias que marcaram época. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1940 a 1959.",
+                image: LocalImage.example
+            ) {
+                
+            }
+        }
     }
 }

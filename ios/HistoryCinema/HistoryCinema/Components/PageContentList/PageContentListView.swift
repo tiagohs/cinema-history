@@ -37,6 +37,10 @@ struct PageContentListView: View {
                         .listRowInsets(EdgeInsets())
                 case .movie_list_special:
                     ContentMovieListSpecialView(contentMovieListSpecial: contentItem as! ContentMovieListSpecial)
+                case .recomendations:
+                    ContentRecomendationView(contentRecomendation: contentItem as! ContentRecomendation)
+                case .awards_nominees:
+                    ContentNomineesView(contentNominee: contentItem as! ContentNominee)
                 default:
                     EmptyView()
                 }
@@ -55,7 +59,10 @@ struct PageContentListView_Previews: PreviewProvider {
             Content.exampleMovieList,
             Content.examplePersonList,
             Content.exampleBlockSpecial,
-            Content.exampleLinkScreen
+            Content.exampleLinkScreen,
+            Content.exampleRecomendation,
+            Content.exampleNomineesMovies,
+            Content.exampleNomineesPersons
         ]
         
         PageContentListView(contentList: contentList)

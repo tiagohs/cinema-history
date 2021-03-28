@@ -10,6 +10,7 @@ import SwiftUI
 struct HistoryPageItemView: View {
     let mainTopic: MainTopicItem
     let summary: SummaryModel
+    let page: Page
     
     var body: some View {
         let mainTopicTimeBackgroundColor = mainTopic.color
@@ -72,20 +73,7 @@ struct HistoryPageItemView: View {
             }
             .listRowInsets(EdgeInsets())
             
-            let contentList = [
-                Content.exampleMovieSpecial,
-                Content.exampleText,
-                Content.exampleImage,
-                Content.exampleVideo,
-                Content.exampleQuote,
-                Content.exampleMovieList,
-                Content.examplePersonList,
-                Content.exampleBlockSpecial,
-                Content.exampleLinkScreen,
-                Content.exampleSlide
-            ]
-
-            PageContentListView(contentList: contentList)
+            PageContentListView(contentList: page.contentList)
                 .listRowInsets(EdgeInsets())
         }
     }
@@ -93,10 +81,12 @@ struct HistoryPageItemView: View {
 
 struct HistoryPageItemView_Previews: PreviewProvider {
     static var previews: some View {
-        let mainTopicItem = MainTopic.example(.history_cinema) as! MainTopicItem
-        let summary = SummaryModel.example
         
-        HistoryPageItemView(mainTopic: mainTopicItem, summary: summary)
+        HistoryPageItemView(
+            mainTopic: MainTopic.example(.history_cinema) as! MainTopicItem,
+            summary: SummaryModel.example,
+            page: Page.example
+        )
             .environment(\.colorScheme, .light)
     }
 }

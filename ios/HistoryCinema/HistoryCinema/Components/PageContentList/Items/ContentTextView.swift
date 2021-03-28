@@ -38,7 +38,6 @@ struct ContentTextView: View {
                     Spacer()
                 }
             }
-            
         } else {
             EmptyView()
         }
@@ -55,6 +54,7 @@ struct ContentTextView: View {
                     fontName: "ProximaNova-Regular",
                     size: 16,
                     color: Constants.colors["md_black_1000"])
+                    .fixedSize(horizontal: false, vertical: true)
                     .padding(.top, 8)
                     .padding(.bottom, 16)
                     .padding(.top, 16)
@@ -78,6 +78,7 @@ struct ContentTextView: View {
                     fontName: "ProximaNova-Regular",
                     size: 12,
                     color: Constants.colors["md_grey_800"])
+                    .fixedSize(horizontal: false, vertical: true)
                     .padding(.top, 8)
                     .padding(.bottom, 16)
                     .padding(.top, 16)

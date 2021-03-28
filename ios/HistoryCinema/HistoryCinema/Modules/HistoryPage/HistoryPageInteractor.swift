@@ -1,15 +1,14 @@
 //
-//  HistoryPagesInteractor.swift
+//  HistoryInteractor.swift
 //  HistoryCinema
 //
-//  Created by Tiago Henrique da Silva on 20/03/21.
+//  Created by Tiago Henrique da Silva on 28/03/21.
 //
 
-import Foundation
 import Combine
 import Alamofire
 
-class HistoryPagesInteractor: BaseInteractor {
+class HistoryPageInteractor: BaseInteractor {
     let localContentService: LocalContentService
     
     init(_ localContentService: LocalContentService) {
@@ -17,7 +16,7 @@ class HistoryPagesInteractor: BaseInteractor {
     }
 }
 
-extension HistoryPagesInteractor {
+extension HistoryPageInteractor {
     
     func getPage(_ mainTopicId: Int, _ sumarioID: Int) -> AnyPublisher<Page, Error> {
         return self.localContentService.getPage(mainTopicId: mainTopicId, sumarioID: sumarioID)

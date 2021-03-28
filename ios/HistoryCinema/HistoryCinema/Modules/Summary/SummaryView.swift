@@ -68,7 +68,10 @@ struct SummaryView: View {
                         
                         if !presenter.summaryList.isEmpty {
                             ForEach(0 ..< presenter.summaryList.count) { index in
-                                SummaryItem(summaryModel: presenter.summaryList[index])
+                                NavigationLink(destination: presenter.presentHistoryPages(mainTopic)) {
+                                    SummaryItem(summaryModel: presenter.summaryList[index])
+                                }
+                                .listRowInsets(EdgeInsets())
                             }
                         }
                     }

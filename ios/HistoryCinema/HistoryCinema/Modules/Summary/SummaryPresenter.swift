@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 // MARK: SummaryPresenter
 
@@ -43,5 +44,13 @@ extension SummaryPresenter {
                 self.summaryList = summaryListResult.results
             })
             .store(in: &cancalables)
+    }
+}
+
+extension SummaryPresenter {
+    
+    @ViewBuilder
+    func presentHistoryPages(_ mainTopic: MainTopicItem) -> some View {
+        self.wireframe?.presentHistoryPages(mainTopic, summaryList)
     }
 }
