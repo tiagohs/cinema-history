@@ -21,7 +21,7 @@ interface LocalServiceRetrofit {
     @GET("homecontent")
     fun getHomeContent(): Observable<List<HomeContentItem>>
 
-    @GET("main_{mainTopicId}/page_{pageNumber}")
+    @GET("main_{mainTopicId}/main_{mainTopicId}_page_{pageNumber}")
     fun getPage(@Path("mainTopicId") mainTopicId: Int, @Path("pageNumber") pageNumber: Int): Observable<Page>
 
     @GET("maintopics")
