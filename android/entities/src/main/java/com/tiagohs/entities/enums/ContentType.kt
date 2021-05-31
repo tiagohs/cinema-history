@@ -46,7 +46,10 @@ enum class ContentType(
     AWARDS_NOMINEES("awards_nominees"),
 
     @SerializedName("movie_list_special")
-    MOVIE_LIST_SPECIAL("movie_list_special");
+    MOVIE_LIST_SPECIAL("movie_list_special"),
+
+    @SerializedName("twitter")
+    TWITTER("twitter");
 
     companion object {
         fun getContentType(type: String): ContentType {

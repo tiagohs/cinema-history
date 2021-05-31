@@ -42,6 +42,7 @@ class PageContentAdapter(
         ContentType.PERSON_LIST.ordinal -> PersonListViewHolder.LAYOUT_ID
         ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder.LAYOUT_ID
         ContentType.AWARDS_NOMINEES.ordinal -> AwardsNomineesViewHolder.LAYOUT_ID
+        ContentType.TWITTER.ordinal -> TwitterViewHolder.LAYOUT_ID
         else -> R.layout.adapter_empty
     }
 
@@ -61,6 +62,7 @@ class PageContentAdapter(
             ContentType.PERSON_LIST.ordinal -> PersonListViewHolder(view, onPersonClicked)
             ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder(view, onMovieClicked)
             ContentType.AWARDS_NOMINEES.ordinal -> AwardsNomineesViewHolder(view, onNomineeClicked)
+            ContentType.TWITTER.ordinal -> TwitterViewHolder(view)
             else -> object : BasePageViewHolder(view) {}
         }
 
