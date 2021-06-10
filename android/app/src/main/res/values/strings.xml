@@ -151,6 +151,7 @@
     <string name="movie_video_description">Picture of a Scene from the trailer of %1s.</string>
     <string name="movie_company_image_description">Logo from the Company %1s.</string>
     <string name="person_photo_description">Profile picture of %1s.</string>
+    <string name="essay_title">Essay</string>
 
     <!-- Arrays -->
     <string-array name="app_language_values">

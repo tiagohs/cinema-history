@@ -13,6 +13,7 @@ import com.tiagohs.domain.presenter.GlossaryPresenter
 import com.tiagohs.domain.views.GlossaryView
 import com.tiagohs.entities.Glossary
 import com.tiagohs.helpers.extensions.hide
+import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.show
 import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
 import kotlinx.android.synthetic.main.activity_glossary.*
@@ -54,6 +55,7 @@ class GlossaryActivity : BaseActivity(), GlossaryView {
                 presentScreen = { presentScreen(it) }
                 onMovieClicked = { onMovieSelected(it) }
                 onPersonClicked = { onPersonClicked(it) }
+                onLinkClicked = { onLinkClicked(it) }
             }
         }
 
@@ -108,6 +110,10 @@ class GlossaryActivity : BaseActivity(), GlossaryView {
 
     private fun onPersonClicked(personId: Int) {
         startActivityWithSlideRightToLeftAnimation(PersonDetailsActivity.newIntent(this, personId))
+    }
+
+    private fun onLinkClicked(url: String) {
+        openLink(url)
     }
 
     companion object {

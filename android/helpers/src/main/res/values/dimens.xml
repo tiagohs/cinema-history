@@ -216,6 +216,9 @@
     <!-- PAGE VIDEO -->
     <dimen name="page_video_height">200dp</dimen>
 
+    <!-- PAGE ESSAY -->
+    <dimen name="page_essay_height">280dp</dimen>
+
     <!-- PERSON ITEM -->
     <dimen name="person_item_width">120dp</dimen>
     <dimen name="person_item_height">180dp</dimen>

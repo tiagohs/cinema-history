@@ -101,6 +101,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
                 presentScreen = { presentScreen(it) }
                 onMovieClicked = { onMovieSelected(it) }
                 onPersonClicked = { onPersonClicked(it) }
+                onLinkClicked = { onLinkClicked(it) }
             }
             addItemDecoration(
                 SpaceOffsetDecoration(
@@ -234,6 +235,10 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
         val context = context ?: return
 
         activity?.startActivityWithSlideRightToLeftAnimation(PersonDetailsActivity.newIntent(context, personId))
+    }
+
+    private fun onLinkClicked(url: String) {
+        context?.openLink(url)
     }
 
     override fun setupArguments() {

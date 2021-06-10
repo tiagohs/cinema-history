@@ -24,6 +24,7 @@ class PageContentAdapter(
     var onMovieClicked: ((movieId: Int) -> Unit)? = null
     var onPersonClicked: ((personId: Int) -> Unit)? = null
     var onNomineeClicked: ((nominee: Nominee) -> Unit)? = null
+    var onLinkClicked: ((url: String) -> Unit)? = null
 
     private var viewHolders: ArrayList<BasePageViewHolder> = ArrayList()
 
@@ -43,6 +44,7 @@ class PageContentAdapter(
         ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder.LAYOUT_ID
         ContentType.AWARDS_NOMINEES.ordinal -> AwardsNomineesViewHolder.LAYOUT_ID
         ContentType.TWITTER.ordinal -> TwitterViewHolder.LAYOUT_ID
+        ContentType.ESSAY.ordinal -> EssayViewHolder.LAYOUT_ID
         else -> R.layout.adapter_empty
     }
 
@@ -63,6 +65,7 @@ class PageContentAdapter(
             ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder(view, onMovieClicked)
             ContentType.AWARDS_NOMINEES.ordinal -> AwardsNomineesViewHolder(view, onNomineeClicked)
             ContentType.TWITTER.ordinal -> TwitterViewHolder(view)
+            ContentType.ESSAY.ordinal -> EssayViewHolder(view, appLanguage, onMovieClicked, onPersonClicked, onLinkClicked)
             else -> object : BasePageViewHolder(view) {}
         }
 

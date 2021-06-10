@@ -18,6 +18,7 @@ import com.tiagohs.entities.enums.AwardsPageType
 import com.tiagohs.entities.enums.NomineeType
 import com.tiagohs.entities.main_topics.AwardMainTopic
 import com.tiagohs.helpers.extensions.convertIntToDp
+import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
 import kotlinx.android.synthetic.main.fragment_awards_nominees_content.pageContentList
@@ -89,6 +90,7 @@ class AwardsNomineeFragment : BaseFragment() {
                     onMovieClicked = { onMovieSelected(it) }
                     onPersonClicked = { onPersonClicked(it) }
                     onNomineeClicked = { onNomineeClicked(it) }
+                    onLinkClicked = { onLinkClicked(it) }
                 }
         }
     }
@@ -126,6 +128,10 @@ class AwardsNomineeFragment : BaseFragment() {
             NomineeType.MOVIE -> onMovieSelected(id)
             NomineeType.PERSON -> onPersonClicked(id)
         }
+    }
+
+    private fun onLinkClicked(url: String) {
+        context?.openLink(url)
     }
 
     override fun onErrorAction() {

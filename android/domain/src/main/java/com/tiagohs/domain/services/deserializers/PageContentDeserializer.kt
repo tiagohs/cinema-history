@@ -33,6 +33,7 @@ class PageContentDeserializer: JsonDeserializer<Content> {
             ContentType.MOVIE_LIST_SPECIAL -> Gson().fromJson(obj, ContentMovieListSpecial::class.java)
             ContentType.RECOMENDATIONS -> Gson().fromJson(obj, ContentRecomendation::class.java)
             ContentType.TWITTER -> Gson().fromJson(obj, ContentTwitter::class.java)
+            ContentType.ESSAY -> Gson().fromJson(obj, ContentEssay::class.java)
         }
     }
 }

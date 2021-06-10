@@ -49,7 +49,10 @@ enum class ContentType(
     MOVIE_LIST_SPECIAL("movie_list_special"),
 
     @SerializedName("twitter")
-    TWITTER("twitter");
+    TWITTER("twitter"),
+
+    @SerializedName("essay")
+    ESSAY("essay");
 
     companion object {
         fun getContentType(type: String): ContentType {

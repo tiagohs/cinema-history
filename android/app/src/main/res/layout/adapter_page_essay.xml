@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_red_500"
+    android:layout_marginTop="@dimen/activity_vertical_margin_2.5x"
+    android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/essayTitle"
+        android:textSize="@dimen/text_size_zeplin_34pt"
+        android:textColor="@color/md_white_1000"
+        android:textColorLink="@color/md_blue_500"
+        android:fontFamily="@font/robotomono_bold"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/essay_title"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/essayChannelImageCard"
+    />
+
+    <View
+        android:layout_width="@dimen/page_quote_separator_width"
+        android:layout_height="1dp"
+        android:id="@+id/essayTitleSeparator"
+        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+        android:background="@color/md_white_1000"
+        app:layout_constraintTop_toBottomOf="@id/essayTitle"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/essayChannelImageCard"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/essayChannelContainer"
+            android:background="?selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/essayChannelImage"
+                android:src="@drawable/img_2001_hal"
+                android:scaleType="centerCrop"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.tiagohs.uicomponents.videoviewer.VideoViewerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_essay_height"
+        android:id="@+id/essayVideoViewer"
+        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+        app:layout_constraintTop_toBottomOf="@id/essayChannelImageCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/essayContent"
+        app:layout_constraintTop_toBottomOf="@id/essayVideoViewer"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/essayMovieContainer"
+            android:background="?selectableItemBackground"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:id="@+id/essayMovieImageCard"
+                app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
+                app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/essayMovieImage"
+                    android:src="@drawable/img_2001_hal"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/essayMovieImageCard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/essayMovieImageCard"
+                app:layout_constraintBottom_toBottomOf="@id/essayMovieImageCard">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/essayMovieName"
+                    android:textSize="@dimen/text_size_zeplin_26pt"
+                    android:textColor="@color/md_white_1000"
+                    android:textColorLink="@color/md_blue_500"
+                    android:fontFamily="@font/oswald_bold"
+                    android:lineSpacingMultiplier="1.1"
+                    android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="Um Lugar Silencioso"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/essayMovieDirector"
+                    android:textSize="@dimen/text_size_zeplin_18pt"
+                    android:textColor="@color/md_white_1000"
+                    android:textColorLink="@color/md_blue_500"
+                    android:fontFamily="@font/oswald_bold"
+                    android:lineSpacingMultiplier="1.1"
+                    android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                    app:layout_constraintTop_toBottomOf="@id/essayMovieName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="John Krasinski"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/essayPersonContainer"
+            android:background="?selectableItemBackground"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/essayPersonImageCard"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="@dimen/activity_vertical_margin_0.5x"
+                android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/essayPersonImage"
+                    android:src="@drawable/img_david_fincher"
+                    android:scaleType="centerCrop"
+                />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/essayPersonImageCard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/essayPersonImageCard"
+                app:layout_constraintBottom_toBottomOf="@id/essayPersonImageCard">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/essayPersonName"
+                    android:textSize="@dimen/text_size_zeplin_26pt"
+                    android:textColor="@color/md_white_1000"
+                    android:textColorLink="@color/md_blue_500"
+                    android:fontFamily="@font/oswald_bold"
+                    android:lineSpacingMultiplier="1.1"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="Bong Joon-ho"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/essayPersonKnownFor"
+                    android:textSize="@dimen/text_size_zeplin_18pt"
+                    android:textColor="@color/md_red_100"
+                    android:textColorLink="@color/md_blue_500"
+                    android:fontFamily="@font/oswald_bold"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.1"
+                    android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+                    app:layout_constraintTop_toBottomOf="@id/essayPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="Conhecido por Memories of Murder (2003), The Host (2006), Mother (2009), and Okja (2017)."
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/essayVideoTitle"
+        android:textSize="@dimen/text_size_zeplin_34pt"
+        android:textColor="@color/md_white_1000"
+        android:textColorLink="@color/md_blue_500"
+        android:fontFamily="@font/futura_book_font"
+        android:lineSpacingMultiplier="1.1"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+        app:layout_constraintTop_toBottomOf="@id/essayContent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Parasite's Perfect Montage"
+    />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/essayVideoDescription"
+        android:textSize="@dimen/text_size_zeplin_22pt"
+        android:textColor="@color/md_red_100"
+        android:textColorLink="@color/md_blue_500"
+        android:fontFamily="@font/opensans_regular"
+        android:lineSpacingMultiplier="1.1"
+        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
+        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+        app:layout_constraintTop_toBottomOf="@id/essayVideoTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Thomas Flight breaks down the opening sequence of A Quiet Place, demonstrating how filmmaker John Krasinski uses minimal exposition to establish the world and builds tension and suspense from the very start of his 2018 thriller."
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

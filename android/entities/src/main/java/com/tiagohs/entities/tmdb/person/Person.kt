@@ -3,6 +3,7 @@ package com.tiagohs.entities.tmdb.person
 import com.google.gson.annotations.SerializedName
 import com.tiagohs.entities.dto.MovieFilmographyDTO
 import com.tiagohs.entities.tmdb.*
+import com.tiagohs.entities.tmdb.movie.Movie
 import java.io.Serializable
 
 data class Person (

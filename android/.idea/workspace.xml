@@ -32,25 +32,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_me_too_march.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_star_wars_despertar_forca.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_time_capa_me_too.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_me_too_march.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_star_wars_despertar_forca.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_time_capa_me_too.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_me_too_march.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_star_wars_despertar_forca.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_time_capa_me_too.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_me_too_march.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_star_wars_despertar_forca.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_time_capa_me_too.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_me_too_march.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_star_wars_despertar_forca.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_time_capa_me_too.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_me_too_march.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_star_wars_despertar_forca.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_time_capa_me_too.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/page/EssayViewHolder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_a_bruxa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_guilherme_afonso_alejandro.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_harvey_weinstein.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_kevin_spacey.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_pirataria_numeros.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_remakes.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_top_boxoffice.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_a_bruxa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_guilherme_afonso_alejandro.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_harvey_weinstein.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_kevin_spacey.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_pirataria_numeros.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_remakes.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/img_top_boxoffice.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_a_bruxa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_guilherme_afonso_alejandro.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_harvey_weinstein.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_kevin_spacey.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_pirataria_numeros.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_remakes.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_top_boxoffice.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_a_bruxa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_guilherme_afonso_alejandro.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_harvey_weinstein.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_kevin_spacey.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_pirataria_numeros.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_remakes.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_top_boxoffice.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_a_bruxa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_guilherme_afonso_alejandro.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_harvey_weinstein.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_kevin_spacey.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_pirataria_numeros.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_remakes.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_top_boxoffice.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_a_bruxa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_guilherme_afonso_alejandro.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_harvey_weinstein.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_kevin_spacey.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_pirataria_numeros.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_remakes.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_top_boxoffice.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_page_essay.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/contents/ContentEssay.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/essays/EssayChannel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_15.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_15.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/GlossaryActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/activities/GlossaryActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/GlossaryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/GlossaryAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/PageContentAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/PageContentAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/fragments/AwardsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/fragments/AwardsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/fragments/AwardsNomineeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/fragments/AwardsNomineeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/fragments/HistoryPageFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/fragments/HistoryPageFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/deserializers/PageContentDeserializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/tiagohs/domain/services/deserializers/PageContentDeserializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/ContentType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/ContentType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/person/Person.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/tmdb/person/Person.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/src/main/res/values/dimens.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +142,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="BundleExportedModule" value="cinema-history-app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="710KPWQ0309409" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-28T21:59:37.678Z" />
@@ -113,7 +155,7 @@
     <property name="android-custom-view/Users/tiago.hsilva/Desenvolvimento/cinema-history/android/uicomponents/src/main/java/com/tiagohs/uicomponents/videoviewer/VideoViewerView.kt_SELECTED" value="VideoViewerView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/essays" />
     <property name="multi-representation-preview/Users/tiago.hsilva/Desenvolvimento/cinema-history/android/uicomponents/src/main/java/com/tiagohs/uicomponents/gifviewer/GifViewerView.kt_selected" value="Custom views" />
     <property name="multi-representation-preview/Users/tiago.hsilva/Desenvolvimento/cinema-history/android/uicomponents/src/main/java/com/tiagohs/uicomponents/videoviewer/VideoViewerView.kt_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Suggestions" />
@@ -121,29 +163,30 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-      <recent name="D:\Desenvolvimento\cinema-history\android\app\src\main\assets\local\pages\main_2" />
-      <recent name="D:\Desenvolvimento\cinema-history\android\app\src\main\assets\local\history_sumarios" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/uicomponents/src/main/res/drawable" />
-    </key>
-    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="com.tiagohs.entities.contents" />
-      <recent name="com.tiagohs.cinema_history.presentation.adapters.page" />
-      <recent name="com.tiagohs.cinema_history.presentation.adapters.movie_details" />
-      <recent name="com.tiagohs.cinema_history.presentation.adapters" />
-      <recent name="com.tiagohs.uicomponents.ratingview" />
-    </key>
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.tiagohs.entities.enums" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/omdb" />
       <recent name="$PROJECT_DIR$/helpers/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/audioplayer/res/layout" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.tiagohs.cinema_history.presentation.adapters.page" />
+      <recent name="com.tiagohs.entities.essays" />
+      <recent name="com.tiagohs.entities.enums" />
+      <recent name="com.tiagohs.entities.contents" />
+      <recent name="com.tiagohs.cinema_history.presentation.adapters.movie_details" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.tiagohs.entities.contents" />
+      <recent name="com.tiagohs.entities.enums" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/essays" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="D:\Desenvolvimento\cinema-history\android\app\src\main\assets\local\pages\main_2" />
+      <recent name="D:\Desenvolvimento\cinema-history\android\app\src\main\assets\local\history_sumarios" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -302,10 +345,23 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="421" y="296" key="#PSD/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1617388190808" />
-    <state x="-1820" y="100" width="1720" height="880" key="AVDManager" timestamp="1616423574539">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="669" y="276" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1623354383276">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="669" y="276" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1623354383276" />
+    <state x="530" y="355" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1623354835498">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="530" y="355" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1623354835498" />
+    <state x="93" y="104" width="1606" height="913" key="AVDManager" timestamp="1623359755967">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="-1820" y="100" width="1720" height="880" key="AVDManager/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1616423574539" />
+    <state x="93" y="104" width="1606" height="913" key="AVDManager/0.0.1792.1120@0.0.1792.1120" timestamp="1623359755967" />
+    <state x="685" y="341" key="AndroidCreateXmlResourceDialog" timestamp="1623352137358">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="685" y="341" key="AndroidCreateXmlResourceDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1623352137358" />
     <state width="1750" height="291" key="GridCell.Tab.0.bottom" timestamp="1618499352914">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -322,17 +378,18 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1750" height="291" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1618499352913" />
-    <state x="588" y="315" width="811" height="509" key="find.popup" timestamp="1617981467088">
+    <state x="588" y="315" width="811" height="509" key="find.popup" timestamp="1623359109134">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="-1290" y="304" width="868" height="490" key="find.popup/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1616361723628" />
     <state x="588" y="315" width="811" height="509" key="find.popup/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1617981467088" />
-    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup" timestamp="1622652670941">
+    <state x="588" y="315" width="811" height="509" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1623359109134" />
+    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup" timestamp="1623358961113">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="-1295" y="202" width="670" height="676" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1792.1120@-1920.0.1920.1080" timestamp="1616866569296" />
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1617981160874" />
-    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1622652670941" />
+    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1623358961113" />
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.25.1792.1010@0.25.1792.1010" timestamp="1618700736302" />
   </component>
   <component name="XDebuggerManager">

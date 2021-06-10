@@ -22,6 +22,7 @@ class GlossaryAdapter(
     var presentScreen: ((Intent) -> Unit)? = null
     var onMovieClicked: ((movieId: Int) -> Unit)? = null
     var onPersonClicked: ((personId: Int) -> Unit)? = null
+    var onLinkClicked: ((url: String) -> Unit)? = null
 
     override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_glossary
 
@@ -43,6 +44,7 @@ class GlossaryAdapter(
                     presentScreen = this@GlossaryAdapter.presentScreen
                     onMovieClicked = this@GlossaryAdapter.onMovieClicked
                     onPersonClicked = this@GlossaryAdapter.onPersonClicked
+                    onLinkClicked = this@GlossaryAdapter.onLinkClicked
                 }
             }
         }
