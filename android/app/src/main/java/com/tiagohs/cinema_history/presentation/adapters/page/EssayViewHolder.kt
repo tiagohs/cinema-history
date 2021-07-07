@@ -3,12 +3,14 @@ package com.tiagohs.cinema_history.presentation.adapters.page
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.tiagohs.cinema_history.R
+import com.tiagohs.entities.ColorAsset
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentEssay
 import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.helpers.extensions.*
+import com.tiagohs.helpers.utils.ColorUtils
 import kotlinx.android.synthetic.main.adapter_page_essay.*
 
 class EssayViewHolder(
@@ -24,13 +26,19 @@ class EssayViewHolder(
         val context = containerView.context ?: return
         val activity = context as? AppCompatActivity ?: return
         val contentEssay = item as? ContentEssay ?: return
+        val colorAsset = ColorUtils.getRandomColorAssets()
+        val colorName = "md_${colorAsset.colorName}_500"
+
+        essayContainer.setResourceBackgroundColor(colorName)
 
         essayVideoViewer.setupPlayer(activity, contentEssay.videoId)
         essayVideoTitle.setResourceText(contentEssay.title)
         essayVideoDescription.setResourceText(contentEssay.description)
+        essayVideoTitle.setResourceTextColor(colorAsset.textColorName)
+        essayVideoDescription.setResourceTextColor("md_${colorAsset.colorName}_100")
 
         setupChannel(contentEssay)
-        setupContent(contentEssay)
+        setupContent(contentEssay, colorAsset)
     }
 
     private fun setupChannel(contentEssay: ContentEssay) {
@@ -41,22 +49,23 @@ class EssayViewHolder(
             return
         }
 
+        essayChannelImage.loadImage(contentEssay.channel?.url)
         essayChannelContainer.setOnClickListener {
             onLinkClicked?.invoke(essayChannel.url)
         }
     }
 
-    private fun setupContent(contentEssay: ContentEssay) {
+    private fun setupContent(contentEssay: ContentEssay, colorAsset: ColorAsset) {
         if (contentEssay.movie != null) {
-            setupMovieContent(contentEssay.movie!!)
+            setupMovieContent(contentEssay.movie!!, colorAsset)
         }
 
         if (contentEssay.person != null) {
-            setupPersonContent(contentEssay.person!!)
+            setupPersonContent(contentEssay.person!!, colorAsset)
         }
     }
 
-    private fun setupPersonContent(person: Person) {
+    private fun setupPersonContent(person: Person, colorAsset: ColorAsset) {
         essayMovieContainer.hide()
         essayPersonContainer.show()
 
@@ -71,6 +80,9 @@ class EssayViewHolder(
         )
         essayPersonName.setResourceText(personName)
         essayPersonKnownFor.setResourceText(knownForDepartment)
+        essayPersonName.setResourceTextColor(colorAsset.textColorName)
+        essayPersonKnownFor.setResourceTextColor("md_${colorAsset.colorName}_100")
+
         essayPersonContainer.setOnClickListener {
             val id = person.id ?: return@setOnClickListener
 
@@ -78,7 +90,7 @@ class EssayViewHolder(
         }
     }
 
-    private fun setupMovieContent(movie: Movie) {
+    private fun setupMovieContent(movie: Movie, colorAsset: ColorAsset) {
         essayPersonContainer.hide()
         essayMovieContainer.show()
 
@@ -96,6 +108,9 @@ class EssayViewHolder(
 
         essayMovieName.setResourceText(movieName)
         essayMovieDirector.setResourceText(directors)
+        essayMovieName.setResourceTextColor(colorAsset.textColorName)
+        essayMovieDirector.setResourceTextColor("md_${colorAsset.colorName}_100")
+
         essayMovieContainer.setOnClickListener {
             val id = movie.id ?: return@setOnClickListener
 

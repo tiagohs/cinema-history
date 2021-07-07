@@ -1,7 +1,7 @@
 package com.tiagohs.entities.contents
 
 import com.google.gson.annotations.SerializedName
-import com.tiagohs.entities.essays.EssayChannel
+import com.tiagohs.entities.enums.EssayChannel
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.entities.tmdb.person.Person
 import java.io.Serializable

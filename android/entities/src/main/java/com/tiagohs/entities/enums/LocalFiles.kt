@@ -48,6 +48,7 @@ enum class LocalFiles(
     HISTORY_SUMARIO_4("/hmt_sumario_4", "local/history_sumarios/hmt_sumarios_4.json"),
     HISTORY_SUMARIO_5("/hmt_sumario_5", "local/history_sumarios/hmt_sumarios_5.json"),
     HISTORY_SUMARIO_6("/hmt_sumario_6", "local/history_sumarios/hmt_sumarios_6.json"),
+    HISTORY_SUMARIO_7("/hmt_sumario_7", "local/history_sumarios/hmt_sumarios_7.json"),
 
     // Main Topic 1985 to 1929
     MAIN_1_PAGE_1("/main_1/main_1_page_1", "local/pages/main_1/main_1_page_1.json"),
@@ -135,7 +136,19 @@ enum class LocalFiles(
     MAIN_6_PAGE_16("/main_6/main_6_page_16", "local/pages/main_6/main_6_page_16.json"),
     MAIN_6_PAGE_17("/main_6/main_6_page_17", "local/pages/main_6/main_6_page_17.json"),
     MAIN_6_PAGE_18("/main_6/main_6_page_18", "local/pages/main_6/main_6_page_18.json"),
-    MAIN_6_PAGE_19("/main_6/main_6_page_19", "local/pages/main_6/main_6_page_19.json");
+    MAIN_6_PAGE_19("/main_6/main_6_page_19", "local/pages/main_6/main_6_page_19.json"),
+
+    // Main Topic 2010 a atualmente
+    MAIN_7_PAGE_1("/main_7/main_7_page_1", "local/pages/main_7/main_7_page_1.json"),
+    MAIN_7_PAGE_2("/main_7/main_7_page_2", "local/pages/main_7/main_7_page_2.json"),
+    MAIN_7_PAGE_3("/main_7/main_7_page_3", "local/pages/main_7/main_7_page_3.json"),
+    MAIN_7_PAGE_4("/main_7/main_7_page_4", "local/pages/main_7/main_7_page_4.json"),
+    MAIN_7_PAGE_5("/main_7/main_7_page_5", "local/pages/main_7/main_7_page_5.json"),
+    MAIN_7_PAGE_6("/main_7/main_7_page_6", "local/pages/main_7/main_7_page_6.json"),
+    MAIN_7_PAGE_7("/main_7/main_7_page_7", "local/pages/main_7/main_7_page_7.json"),
+    MAIN_7_PAGE_8("/main_7/main_7_page_8", "local/pages/main_7/main_7_page_8.json"),
+    MAIN_7_PAGE_9("/main_7/main_7_page_9", "local/pages/main_7/main_7_page_9.json"),
+    MAIN_7_PAGE_10("/main_7/main_7_page_10", "local/pages/main_7/main_7_page_10.json");
 
     fun isValid(request: Request): Boolean = request.url.toUri().path == path
 }

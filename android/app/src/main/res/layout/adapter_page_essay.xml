@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/essayContainer"
     android:background="@color/md_red_500"
     android:layout_marginTop="@dimen/activity_vertical_margin_2.5x"
     android:layout_marginBottom="@dimen/activity_vertical_margin_2.5x">
@@ -21,22 +22,10 @@
         android:lineSpacingMultiplier="1.1"
         android:text="@string/essay_title"
         android:layout_marginStart="@dimen/activity_vertical_margin_2x"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/essayChannelImageCard"
-    />
-
-    <View
-        android:layout_width="@dimen/page_quote_separator_width"
-        android:layout_height="1dp"
-        android:id="@+id/essayTitleSeparator"
-        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
-        android:layout_marginStart="@dimen/activity_vertical_margin_2x"
-        android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
-        android:background="@color/md_white_1000"
-        app:layout_constraintTop_toBottomOf="@id/essayTitle"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/essayChannelImageCard"
     />
 
     <androidx.cardview.widget.CardView
@@ -45,7 +34,7 @@
         android:id="@+id/essayChannelImageCard"
         app:cardCornerRadius="25dp"
         app:cardElevation="@dimen/activity_vertical_margin_0.5x"
-        android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_3x"
         android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -72,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/page_essay_height"
         android:id="@+id/essayVideoViewer"
-        android:layout_marginTop="@dimen/activity_vertical_margin_0.5x"
+        android:layout_marginTop="@dimen/activity_vertical_margin_2x"
         app:layout_constraintTop_toBottomOf="@id/essayChannelImageCard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -274,7 +263,7 @@
         android:layout_marginStart="@dimen/activity_vertical_margin_2x"
         android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
         android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
-        android:layout_marginBottom="@dimen/activity_vertical_margin_1.2x"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_3x"
         app:layout_constraintTop_toBottomOf="@id/essayVideoTitle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

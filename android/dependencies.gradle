@@ -21,10 +21,10 @@ ext {
     def daggerVersion = '2.33'
     def preferenceVersion = '1.1.1'
 
-    def appcompatVersion = '1.2.0'
-    def coreKtxVersion = '1.3.2'
+    def appcompatVersion = '1.3.0'
+    def coreKtxVersion = '1.6.0'
     def constraintlayoutVersion = '2.0.4'
-    def materialVersion = '1.4.0-alpha02'
+    def materialVersion = '1.4.0-rc01'
     def browserVersion = '1.3.0'
 
     def customtabsVersion = '28.0.0'
@@ -49,23 +49,23 @@ ext {
     def glideTransformationsVersion = '4.1.0'
     def lifecycleCompilerVersion = '1.1.1'
 
-    def firebaseStorageVersion = '19.2.2'
-    def firebaseAnalyticsVersion = '18.0.2'
+    def firebaseStorageVersion = '20.0.0'
+    def firebaseAnalyticsVersion = '19.0.0'
     def firebaseUiStorageVersion = '6.0.2'
-    def firebaseCrashlyticsVersion = '17.4.1'
-    def firebaseDynamicLinksVersion = '19.1.1'
+    def firebaseCrashlyticsVersion = '18.1.0'
+    def firebaseDynamicLinksVersion = '20.1.0'
 
     def picassoVersion = '2.71828'
     def picassoTransformationsVersion = '2.1.0'
 
     def javaxAnnotationVersion = '10.0-b28'
     def rxjava2RxandroidVersion = '2.1.0'
-    def rxjava2RxjavaVersion = '2.2.2'
+    def rxjava2RxjavaVersion = '2.2.7'
     def rxPreferencesVersion = '2.0.1'
 
     def junitVersion = '4.13.2'
-    def testRunnerVersion = '1.3.0'
-    def espressoCoreVersion = '3.3.0'
+    def testRunnerVersion = '1.4.0'
+    def espressoCoreVersion = '3.4.0'
 
     dependencies = [
             appcompat                   : "androidx.appcompat:appcompat:${appcompatVersion}",

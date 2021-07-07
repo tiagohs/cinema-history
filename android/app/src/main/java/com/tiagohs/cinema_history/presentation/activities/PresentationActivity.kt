@@ -48,7 +48,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
         super.onBackPressed()
 
         AnimationUtils.createScaleUpAnimation(startButton, 1f, 0f, 1f, 0f, 0.5f, 0.5f, 200)
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        //overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
     }
 
     override fun onEnterAnimationComplete() {

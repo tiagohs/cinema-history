@@ -1,0 +1,35 @@
+{
+  "number": 1,
+  "content_list": [
+    {
+      "type": "movie_list",
+      "movies": []
+    },
+    {
+      "type": "person_list",
+      "persons": []
+    },
+    {
+      "type": "link_screen",
+      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "title": "Timeline de Acontecimentos de 2010 até atualmente",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "6"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "O terror social ganha as bilheterias com Corra!, de Jordan Peele; o terror clássico de casa mal assombrada e exorcismo se mantém vivo com Invocação do mal e o horror psicológico ganha novas possibilidades com Babadook e A Bruxa. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema de 2010 até hoje."
+    }
+  ]
+}

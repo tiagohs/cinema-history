@@ -74,7 +74,7 @@ dependencies {
     kapt dependencies.lifecycleCompiler
 
     // Firebase
-    implementation 'com.google.firebase:firebase-storage:19.2.2'
+    implementation dependencies.firebaseStorage
     implementation dependencies.firebaseUiStorage
 
     // Test Tools

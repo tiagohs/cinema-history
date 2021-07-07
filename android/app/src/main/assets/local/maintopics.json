@@ -234,7 +234,7 @@
     "subtitle": "Parte 06",
     "description": "O cinema independente dos anos 90 domina as telas e as animações entram em um novo terreno com a Pixar. O CGI atinge um novo patamar com Matrix e os cinemas latino americanos e europeus chamam a atenção do mundo.",
     "blocked": false,
-    "is_new": true,
+    "is_new": false,
     "image": {
       "image_type": "local",
       "url": "img_pulp_fiction",
@@ -273,8 +273,8 @@
     "title": "De 2010 até Hoje",
     "subtitle": "Parte 07",
     "description": "O 3D domina as telonas, uma nova leva de filmes de super-heróis aparece e domina as bilheterias mundiais. O Terror popular ganha uma nova roupagem com Invocação do Mal, e o terror psicológico renasce com grandes obras como A bruxa. O Streaming aparece de mansinho conquistando o público, crítica, e até mesmo os grandes diretores.",
-    "blocked": true,
-    "is_new": false,
+    "blocked": false,
+    "is_new": true,
     "image": {
       "image_type": "local",
       "url": "img_iron_man",

@@ -45,7 +45,7 @@ fun Activity.setStatusBarColor(color: Int) {
 fun Activity.startActivityWithSlideRightToLeftAnimation(intent: Intent) {
     startActivity(intent)
 
-    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+    //overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
 }
 
 val Activity?.statusBarHeight: Int
