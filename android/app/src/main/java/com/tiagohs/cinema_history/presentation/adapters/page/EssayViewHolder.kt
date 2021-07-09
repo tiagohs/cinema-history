@@ -35,7 +35,7 @@ class EssayViewHolder(
         essayVideoTitle.setResourceText(contentEssay.title)
         essayVideoDescription.setResourceText(contentEssay.description)
         essayVideoTitle.setResourceTextColor(colorAsset.textColorName)
-        essayVideoDescription.setResourceTextColor("md_${colorAsset.colorName}_100")
+        essayVideoDescription.setResourceTextColor(colorAsset.textColorName)
 
         setupChannel(contentEssay)
         setupContent(contentEssay, colorAsset)
@@ -49,7 +49,7 @@ class EssayViewHolder(
             return
         }
 
-        essayChannelImage.loadImage(contentEssay.channel?.url)
+        essayChannelImage.loadImage(contentEssay.channel?.imagePath)
         essayChannelContainer.setOnClickListener {
             onLinkClicked?.invoke(essayChannel.url)
         }

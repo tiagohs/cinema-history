@@ -8,5 +8,7 @@ interface HistoryPageView: IView {
     fun setupHeader()
     fun setupArguments()
 
-    fun bindPageContent(pageContent: com.tiagohs.entities.Page)
+    fun bindPageContent(pageContent: Page)
+    fun showLoading()
+    fun hideLoading()
 }

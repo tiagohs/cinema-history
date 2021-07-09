@@ -22,12 +22,15 @@ class HistoryPagePresenterImpl @Inject constructor(
         sumarioId ?: return
         val mainId = mainTopicId ?: return
 
+        view?.showLoading()
         add(localService.getPage(mainId, sumarioId)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
+                view?.hideLoading()
                 view?.bindPageContent(it)
             }, {
+                view?.hideLoading()
                 view?.onError(it, R.string.error_unknown)
             })
         )

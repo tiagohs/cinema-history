@@ -61,11 +61,24 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
 
         (activity as? BaseActivity)?.setupToolbar(toolbar, displayHomeAsUpEnabled = false)
 
-
         setHasOptionsMenu(true)
 
         presenter.onBindView(this)
         presenter.fetchPageContent(mainTopic?.id, sumario?.id)
+    }
+
+    override fun showLoading() {
+        loadHeaderView.showShimmer(true)
+        loadContentView.showShimmer(true)
+        loadHeaderView.show()
+        loadContentView.show()
+    }
+
+    override fun hideLoading() {
+        loadHeaderView.hideShimmer()
+        loadContentView.hideShimmer()
+        loadHeaderView.hide()
+        loadContentView.hide()
     }
 
     override fun onDestroyView() {
