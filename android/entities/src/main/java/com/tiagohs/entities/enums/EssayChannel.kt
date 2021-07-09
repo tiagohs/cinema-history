@@ -58,6 +58,13 @@ enum class EssayChannel(
         url = "https://www.youtube.com/channel/UC6-ymYjG0SU0jUWnWh9ZzEQ",
         channelName = "Wisecrack"
     ),
+    @SerializedName("studio_binder")
+    STUDIO_BINDER(
+        channelType = "studio_binder",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLRj_XKhs2M4hYC0hrfqDP3pU31M8c3a_aBsDgs3fA=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCUFoQUaVRt3MVFxqwPUMLCQ",
+        channelName = "StudioBinder"
+    ),
     NONE("", "", "", "");
 
     companion object {
