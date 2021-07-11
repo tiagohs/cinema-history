@@ -1,81 +1,216 @@
 {
-  "number": 1,
+  "number": 6,
   "content_list": [
-
-
-
-
-
-
-
-
     {
       "type": "text",
-      "content_text": ""
+      "content_text": "Se você acompanha a indústria do cinema, mesmo que seja um mínimo, você já deve ter ouvido falar no <strong>movimento Time's Up</strong> ou ao menos escutou esse termo em algum lugar. Discursos, cartazes e publicações nas redes sociais, por exemplo, se tornaram oportunidades de manifestar os objetivos dessa iniciativa."
     },
     {
-      "type": "text",
-      "content_text": "",
-      "content_credits": ""
-    },
-    {
-      "type": "text",
-      "content_text": "",
-      "content_title": ""
-    },
-    {
-      "type": "quote",
-      "quote": {
-        "quote": "",
-        "author": ""
-      },
-      "quote_mark_color": "md_red_500"
-    },
-    {
-      "type": "video",
-      "video_id": "",
-      "information": {
-        "contentTitle": "",
-        "contentText": "",
-        "source": "Youtube: Canal <i></i>"
-      }
-    },
-    {
-      "type": "block_special",
-      "title": "",
+      "type": "image",
       "image": {
         "image_type": "local",
-        "url": "",
+        "url": "img_me_too_march",
         "style": {
           "scale_type": "center_crop"
         }
       },
-      "description": "",
-      "credits": ""
+      "information": {
+        "contentTitle": "#MeToo, a inspiração para o Times Up.",
+        "contentText": "Protesto de mulheres em favor da campanha do #MeToo nos Estados Unidos.",
+        "source": "Getty Images"
+      }
     },
     {
-      "type": "essay",
-      "video_id": "",
-      "title": "",
-      "description": "",
-      "channel": "lessons_from_the_screenplay",
-      "movie": {}
+      "type": "text",
+      "content_text": "Tudo começou em janeiro de 2018, quando um pequeno grupo de mulheres, todas celebridades de <i>Hollywood</i>, se uniram para fazer denúncias contra <a href=\"https://_{type: 'screen', 'id': 59839, 'screen_type': person}\">Harvey Weinstein</a> (n-1952), um famoso produtor de cinema norte-americano. As denúncias contra ele são longas. Desde estupro a assédio sexual, dezenas de mulheres vieram a público manifestar a sua indignação contra a conduta do produtor, que rapidamente viu a sua carreira chegar ao fim."
     },
     {
-      "type": "movie_list",
-      "movies": []
+      "type": "block_special",
+      "title": "O Caso Harvey Weinstein",
+      "image": {
+        "image_type": "local",
+        "url": "img_harvey_weinstein",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Em 2017, <i>Harvey Weinstein</i> foi acusado de assédio sexual por várias mulheres, incluindo <strong>Angelina Jolie, Gwyneth Paltrow, Mira Sorvino, Rosanna Arquette, Emma de Caunes, Judith Godrèche, Léa Seydoux, Cara Delevingne, Ashley Judd, Rose McGowan, Heather Graham, Brit Marling, Zoe Brock, Lucia Stoller e Louisette Geiss</strong>. Pelo menos três mulheres o acusaram de estupro: a italiana Asia Argento, a atriz Lucia Evans e uma terceira, que continua anônima. O escândalo repercutiu de tal forma que sua esposa, a estilista de moda inglesa Georgina Chapman, pediu divórcio do produtor, com quem estava casada há dez anos. O caso também teve repercussões profissionais: os membros do conselho do Óscar votaram pela expulsão dele da organização e ele também foi demitido da empresa que ele mesmo criou, a <i>The Weinstein Company</i>."
+    },
+    {
+      "type": "text",
+      "content_text": "O movimento <i>Time's Up</i>, na verdade, foi inspirado em outra iniciativa chamada <i>#MeToo</i>, que já existia há bastante tempo e tinha o intuito de acabar com a violência sexual e conscientizar as pessoas sobre o assunto. Com as acusações contra <i>Harvey Weinstein</i>, o movimento finalmente ganhou a notoriedade merecida."
+    },
+    {
+      "type": "video",
+      "video_id": "rIXwgw5olCY",
+      "information": {
+        "contentTitle": "As Mulheres",
+        "contentText": "Entrevista com mulheres que acusarão Harvey Weinstein.",
+        "source": "Youtube: Canal <i>TODAY</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "O <i>#MeToo</i> tem como foco o tratamento e a sobrevivência de pessoas que passaram por esses abusos, criando uma comunidade disposta a seguir em frente, por mais traumática que tenha sido a experiência. <i>Tarana Burke</i>, fundadora do movimento, diz que o projeto é muito mais do que uma <i>hashtag</i> na internet, sendo o início de uma longa conversa para uma comunidade que busca a cura."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "Eu estava lá, eu acredito em você.",
+        "author": "Dizeres de um cartaz durante os protestos"
+      },
+      "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "De acordo com a descrição existente no próprio site do projeto, o <i>#MeeToo</i> foi criado para encorajar milhares de pessoas a se manifestarem contra o assédio e a violência sexual, empoderando através da empatia. A ativista <i>Tarana Burke</i> fundou o <i>#MeToo</i> após ter uma conversa com uma garota de apenas 13 anos que contou ter sido abusada pelas mãos do namorado da mãe, em 1996. Mas foi somente no dia 15 de outubro de 2017 que a iniciativa chegou às redes sociais, tornando-se uma sensação no mundo inteiro após um tweet da atriz <a href=\"https://_{type: 'screen', 'id': 24967, 'screen_type': person}\">Alyssa Milano</a> (n-1972)."
+    },
+    {
+      "type": "twitter",
+      "twitter_html": "<blockquote class=\\\"twitter-tweet\\\"><p lang=\\\"en\\\" dir=\\\"ltr\\\">If you’ve been sexually harassed or assaulted write ‘me too’ as a reply to this tweet. <a href=\\\"https://t.co/k2oeCiUf9n\\\">pic.twitter.com/k2oeCiUf9n</a></p>&mdash; Alyssa Milano (@Alyssa_Milano) <a href=\\\"https://twitter.com/Alyssa_Milano/status/919659438700670976?ref_src=twsrc%5Etfw\\\">October 15, 2017</a></blockquote><script async src=\\\"https://platform.twitter.com/widgets.js\\\" charset=\\\"utf-8\\\"></script>",
+      "twitter_url": "https://twitter.com/alyssa_milano/status/919659438700670976",
+      "information": {
+        "contentTitle": "Onde tudo começou",
+        "contentText": "Sem querer, a partir desse tweet, Alyssa Mylano iniciou um dos maiores movimentos que mudou para sempre Hollywood – para melhor.",
+        "source": "Twitter"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Sem saber do <i>#MeToo</i>, Alyssa <a href=\"https://_{type: 'online', 'url': 'https://www.twitter.com/alyssa_milano/status/919659438700670976'}\">publicou</a> em seu Twitter a frase: \"<i>Se você foi assediada ou abusada sexualmente, escreve 'me too' em resposta a esse tweet</i>\". Na época, mais de 66 mil usuários responderam com a frase. Devido ao sucesso, a atriz foi à televisão falar sobre o caso e, então ciente do projeto que já existia, aproveitou a oportunidade para dar os créditos da iniciativa à Burke."
+    },
+    {
+      "type": "text",
+      "content_text": "Já o <i>Time's Up</i>, que foi inspirado no <i>#MeToo</i>, tem uma proposta e objetivos um pouco diferentes. A iniciativa busca uma solução mais efetiva para o problema do assédio e abuso sexual, exigindo que mudanças concretas aconteçam, sejam referentes à segurança ou a igualdade de direitos em um ambiente de trabalho. O <i>Time's Up</i> foi criado por um grupo de mais de <strong>300 mulheres</strong> de Hollywood, incluindo atrizes como <a href=\"https://_{type: 'screen', 'id': 524, 'screen_type': person}\">Natalie Portman</a> (n-1981) e <a href=\"https://_{type: 'screen', 'id': 368, 'screen_type': person}\">Reese Witherspoon</a> (n-1976) e a produtora e roteirista <a href=\"https://_{type: 'screen', 'id': 25539, 'screen_type': person}\">Shonda Rhimes</a> (n-1970). <a href=\"https://_{type: 'screen', 'id': 1470336, 'screen_type': person}\">Christy Haubegger</a> (n-1968), executiva da <strong>Creative Artists Agency</strong> e uma das mulheres que ajudaram a fundar o movimento, disse que para acabar com o assédio sexual é preciso, antes de tudo, dissolver a desigualdade, pois a falta de equilíbrio no poder é a raiz para o comportamento impróprio."
+    },
+    {
+      "type": "video",
+      "video_id": "ZxBwkrIzn34",
+      "information": {
+        "contentTitle": "O Caso Kevin Spacey",
+        "contentText": "Reportagem sobre as acusações de assédio sexual contra Kevin Spacey",
+        "source": "Youtube: Canal <i>Washington Post</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "\"<i>Isso é o sintoma de desigualdade e padrão de exclusão de mulheres ainda maiores e a falta de equilíbrio no poder de distribuição em nossos negócios. Se você quiser acabar com o assédio sexual, você realmente precisa dissolver essas coisas. Então decidimos focar nesse aspecto</i>\", contou Burke em entrevista à revista TIME. Sendo assim, ambos os grupos agora buscam por mudanças nas políticas e legislações com o objetivo de conquistar a aprovação de leis de paridade de gênero, como salários e ambientes de trabalhos iguais, trazendo ainda mais oportunidades para mulheres de diferentes raças e etnias ou que não são bem pagas."
+    },
+    {
+      "type": "block_special",
+      "title": "O Caso Kevin Spacey",
+      "image": {
+        "image_type": "local",
+        "url": "img_kevin_spacey",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Depois dos escândalos envolvendo <i>Harvey Weistein</i>, as vítimas de abusos sexuais de Hollywood estão cada vez mais vocais quando o assunto é denunciar seus agressores. Acusado por diversos rapazes de assédio, o ator Kevin Spacey perdeu seu emprego, se assumiu gay publicamente, foi removido completamente de um filme pela primeira vez na história de Hollywood — tudo isso em aproximadamente uma semana.<br/><br/> \n\nAnthony Rapp, ator de Star Trek: Discovery e Rent, revelou que Spacey havia tentado coagi-lo a praticar atividades sexuais quando Rapp tinha apenas 14 anos. Depois de grande repercussão do caso, Spacey escreveu um pedido de desculpas em seu Twitter, no qual também se assumiu homossexual. Tendo em vista a acusação, a Netflix anunciou que a próxima temporada de House of Cards, a sexta, seria a última da série. Um dia após a denúncia, a Academia Internacional de Artes e Ciências Televisivas declarou que não iria mais homenagear Spacey durante o Emmy Internacional. Além disso, a série This is Us removeu uma referência que faria ao ator em um de seus episódios e a produção da sexta e última temporada de House of Cards foi suspensa por tempo indeterminado. <br/><br/> \n\nO ator mexicano Roberto Cavazos deu seu depoimento via Facebook, afirmando que Spacey “<i>se sentia livre em tocar qualquer homem desde que ele tivesse menos de 30 anos</i>”, e que episódios de assédio eram comuns no tempo em que Spacey foi diretor artístico do teatro londrino Old Vic. O teatro abriu um processo confidencial de reclamações para seus funcionários e atores. Além da acusação de Cavazos,  o cineasta Tony Montana também contou, no mesmo dia, que foi assediado por Spacey. “<i>Kevin chegou abraçando e logo depois já estava insistindo para ir com ele para sua casa. Ele colocou sua mão na minha virilha</i>”. Um homem desconhecido afirma que acordou com Spacey dormindo em cima dele em meados dos anos 80, e diz que tinha 17 anos na época. O ex-barman Daniel Beal também afirma que sofreu assédio do ator, que mostrou suas partes íntimas para ele e tentou forçá-lo a pegar em seu pênis. Spacey comprou o silêncio do barman com um relógio avaliado em US$ 5 mil (R$ 15,6 mil aproximadamente). <br/><br/> \n\nEngana-se quem pensa que os casos são antigos e que o ator mudou seu comportamento. Oito membros da equipe de House of Cards, série estrelada por Spacey, também relataram ter presenciado casos de assédio por parte do ator. Um dos assistentes de produção relatou que Spacey colocou a mão por baixo de sua calça. “<i>Eu fiquei em um estado de choque. Ele é um homem em uma posição de muito poder [na série] e eu era alguém muito pequeno na cadeia alimentar da produção</i>”, conta ele, que preferiu permanecer anônimo. A MRC, empresa que produz a série, já tinha conhecimento de um caso ocorrido em 2012 e encaminhou Spacey para um treinamento. Depois disso, nenhuma reclamação formal foi feita, mas, segundo um dos câmeras, s membros da equipe nunca denunciavam os casos por medo de perderem seus empregos. “<i>Quem vai acreditar em meros membros da equipe. Nós seriamos demitidos</i>”, afirmou. Também em 3 de novembro, uma representante de Kevin Spacey afirmou que o ator está se reavaliando e buscando tratamento, antes de afirmar que sua empresa não fazia mais parte da assessoria dele. No mesmo dia, um ator que preferiu não ser identificado revelou ao The Sun que acordou com Spacey fazendo sexo oral nele em 2008, enquanto ele trabalhava no Old Vic. <br/><br/> \n\nAs polêmicas e acusações envolvendo o ator foram tão numerosas e graves que o diretor Ridley Scott anunciou que vai remover Spacey de seu novo filme, Todo o Dinheiro do Mundo. Essa é a primeira vez que um ator será completamente removido de um filme já filmado. O longa já estava pronto — já tinha até mesmo trailer e até campanha para indicação ao Oscar, e passará por regravações, colocando Christopher Plummer no papel que antes era de Spacey. Além disso, o ator Jon Bernthal, o Justiceiro na Netflix, contracenou com Spacey no set de Em Ritmo de Fuga e afirmou que perdeu muito do respeito que tinha por ele.",
+      "credits": "Resumo baseado no artigo \"Acompanhe a linha do tempo das denúncias contra Kevin Spacey\" de Priscila Ganiko"
+    },
+    {
+      "type": "text",
+      "content_text": "A chegada do movimento <i>Time's Up</i> na mídia é o motivo pelo qual hoje nós vemos mulheres se posicionando em discursos de premiações e se manifestando contra o assédio sexual e a desigualdade. Com a popularidade do movimento <i>Time's Up</i> na mídia, principalmente norte-americana, e com o apoio das celebridades de Hollywood, não demorou muito para que novas denúncias começassem a surgir. Atualmente, já são mais de 10 atores acusados de assédio moral e abuso sexual, além de estupro."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "Claro que enfrentei o assédio. Não acho que exista uma só mulher no mundo que não o tenha feito. Estou nessa há 30 anos, era muito normalizado quando comecei.",
+        "author": "Reese Witherspoon em uma Rádio Britânica"
+      },
+      "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "Entre eles, por exemplo, está <a href=\"https://_{type: 'screen', 'id': 9032, 'screen_type': person}\">Bryan Singer</a> (n-1965), que acumula denúncias desde 1997. A mais recente, de 2017, foi feita por <i>Cesar Sanchez-Guzman</i>, que processou o diretor por tê-lo estuprado quando ele ainda era um adolescente. A denúncia fez com que ele fosse demitido das gravações do filme <a href=\"https://_{type: 'screen', 'id': 424694, 'screen_type': movie}\">Bohemian Rhapsody</a> (2018). <a href=\"https://_{type: 'screen', 'id': 192, 'screen_type': person}\">Morgan Freeman</a> (n-1937) também entrou na lista, sendo acusada por uma mulher que trabalhou na produção dos filmes do ator. Ela alegou que Freeman a assediou por vários meses em 2015, erguendo sua saia e perguntando se ela estava usando roupas íntimas."
+    },
+    {
+      "type": "text",
+      "content_text": "Enquanto alguns atores continuam sendo sabotados e permanecem fora da mídia, outros, infelizmente, acabam continuando suas vidas normalmente. Mesmo assim, o movimento já conseguiu, em quase dois anos de existência, mostrar às pessoas que esses problemas existem e precisam ser combatidos, seja com a punição ou com a conscientização. É por isso que iniciativa recebeu o nome de <i>Time's Up</i>, que na tradução literal significa que \"<i>o tempo acabou</i>\"."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_time_capa_me_too",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Em destaque",
+        "contentText": "A capa da edição especial Person of the Year da Time de 2017 destacou mulheres que sofreram assédio e abuso sexual que deu origem à campanha com a hashtag #metoo.",
+        "source": "Time"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "O mundo está mudando e as pessoas estão cada vez menos tolerantes com a desigualdade e a injustiça, e hoje é mais difícil que as pessoas que cometem esses crimes saiam ilesas, nem que demore. A tendência, inclusive, é que as denúncias comecem a surgir cada vez mais rápido, visto que ninguém mais sente tanto medo do que pode acontecer."
+    },
+    {
+      "type": "text",
+      "content_text": "A importância dos movimentos <i>Time's Up</i> e <i>#MeToo</i>, inclusive, encerrou a década sendo demonstrada na prática na série <i>The Morning Show</i>, que estreou em novembro junto à plataforma de streaming <strong>Apple TV+</strong>. A série conta a história de um programa de televisão matinal que tem a sua dupla de apresentadores como grandes celebridades. No entanto, tudo muda quando Mitch, interpretado por <a href=\"https://_{type: 'screen', 'id': 4495, 'screen_type': person}\">Steve Carrel</a> (n-1962), é denunciado por ter abusado de colegas de trabalho. A série mostra o que acontece por trás dos bastidores após uma denúncia, como isso afeta a produção, colegas de trabalho e família. A intolerância por trás desses casos se une à hipocrisia e mostra que, daqui em diante, a luta contra o assédio só tende a crescer.",
+      "content_credits": "Resumo baseado no artigo \"Time's Up | Entenda o movimento que mudou Hollywood e marcou o fim da década\", de Natalie Rosa"
     },
     {
       "type": "person_list",
-      "persons": []
-    },
-    {
-      "type": "movie_list",
-      "movies": []
-    },
-    {
-      "type": "person_list",
-      "persons": []
+      "persons": [
+        {
+          "id": 24967,
+          "imdb_id": "nm0000192",
+          "known_for_department": "Acting",
+          "name": "Alyssa Milano",
+          "place_of_birth": "Brooklyn, New York, USA",
+          "popularity": 3.553,
+          "profile_path": "/q5RAaX57dLvlpigAhbX3lCb2dkZ.jpg"
+        },
+        {
+          "id": 524,
+          "imdb_id": "nm0000204",
+          "known_for_department": "Acting",
+          "name": "Natalie Portman",
+          "place_of_birth": "Jerusalem, Israel",
+          "popularity": 6.635,
+          "profile_path": "/7DVcTD3dWPDaunOYEP09Fdca9HG.jpg"
+        },
+        {
+          "id": 19492,
+          "imdb_id": "nm0205626",
+          "known_for_department": "Acting",
+          "name": "Viola Davis",
+          "place_of_birth": "Saint Matthews, South Carolina, USA",
+          "popularity": 4.844,
+          "profile_path": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg"
+        },
+        {
+          "id": 1267329,
+          "imdb_id": "nm2143282",
+          "known_for_department": "Acting",
+          "name": "Lupita Nyong'o",
+          "place_of_birth": "Mexico City, Mexico",
+          "popularity": 2.579,
+          "profile_path": "/y40Wu1T742kynOqtwXASc5Qgm49.jpg"
+        },
+        {
+          "id": 25539,
+          "imdb_id": "nm0722274",
+          "known_for_department": "Writing",
+          "name": "Shonda Rhimes",
+          "place_of_birth": "Chicago, Illinois, USA",
+          "popularity": 2.792,
+          "profile_path": "/pIQbVxfjNwZ0DaAjo3q107nng1b.jpg"
+        },
+        {
+          "id": 368,
+          "imdb_id": "nm0000702",
+          "known_for_department": "Acting",
+          "name": "Reese Witherspoon",
+          "place_of_birth": "New Orleans, Louisiana, USA",
+          "popularity": 4.005,
+          "profile_path": "/hN2PiGapyp3zxMGXSk5Tk9pOo6T.jpg"
+        }
+      ]
     },
     {
       "type": "link_screen",
