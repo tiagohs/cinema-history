@@ -33,7 +33,10 @@
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/page/EssayViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tiagohs/cinema_history/presentation/adapters/page/EssayViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_page_essay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_page_essay.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/EssayChannel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/EssayChannel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,11 +332,11 @@
     </state>
     <state x="588" y="315" width="811" height="509" key="find.popup/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1617981467088" />
     <state x="588" y="315" width="811" height="509" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1625852284639" />
-    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup" timestamp="1625860262970">
+    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup" timestamp="1625930677924">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1617981160874" />
-    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1625860262970" />
+    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1625930677924" />
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.25.1792.1010@0.25.1792.1010" timestamp="1618700736302" />
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/1792.-791.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1625096675585" />
   </component>

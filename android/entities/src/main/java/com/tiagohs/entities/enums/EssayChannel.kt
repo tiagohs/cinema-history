@@ -34,7 +34,7 @@ enum class EssayChannel(
     NOW_YOU_SEE_IT(
         channelType = "now_you_see_it",
         imagePath = "https://8hours-prod.s3.amazonaws.com/uploads/2019/01/user-3411-thumbnail.jpg",
-        url = "https://www.youtube.com/channel/UCWTFGPpNQ0Ms6afXhaWDiRw/about",
+        url = "https://www.youtube.com/channel/UCWTFGPpNQ0Ms6afXhaWDiRw",
         channelName = "Now You See It"
     ),
     @SerializedName("the_midas_touch")
@@ -64,6 +64,41 @@ enum class EssayChannel(
         imagePath = "https://yt3.ggpht.com/ytc/AKedOLRj_XKhs2M4hYC0hrfqDP3pU31M8c3a_aBsDgs3fA=s176-c-k-c0x00ffffff-no-rj",
         url = "https://www.youtube.com/channel/UCUFoQUaVRt3MVFxqwPUMLCQ",
         channelName = "StudioBinder"
+    ),
+    @SerializedName("fames_focus")
+    FAMES_FOCUS(
+        channelType = "fames_focus",
+        imagePath = "https://8hours-prod.s3.amazonaws.com/uploads/2020/02/Fame-Focus_Avatar.jpg",
+        url = "https://www.youtube.com/channel/UCfzuJecdM0uhX7HfICewt3Q",
+        channelName = "Fames Focus"
+    ),
+    @SerializedName("cosmavoid")
+    COSMAVOID(
+        channelType = "cosmavoid",
+        imagePath = "https://8hours-prod.s3.amazonaws.com/uploads/2019/06/Cosmavoid.jpg",
+        url = "https://www.youtube.com/channel/UCcjI2G98kWgw7a-JjWt6kZw",
+        channelName = "Cosmavoid"
+    ),
+    @SerializedName("insider")
+    INSIDER(
+        channelType = "insider",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLQx1K-Ns1FeQwz4s25pqaYzCUJmOOuQ_LiOSeqNag=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCHJuQZuzapBh-CuhRYxIZrg",
+        channelName = "Insider"
+    ),
+    @SerializedName("fandor")
+    FANDOR(
+        channelType = "fandor",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLRozsB_pn8uCJ8a9EtJJ4WPqrgSeHLCi_SLIndG=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCkeBOIrsgk0EyJwg-hHs7MA",
+        channelName = "Insider"
+    ),
+    @SerializedName("just_write")
+    JUST_WRITE(
+        channelType = "just_write",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLSY6-239g14R2bGFOKPT1_j-vXtxv25QOM2cc6rsg=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/user/mythicalsage",
+        channelName = "Just Write"
     ),
     NONE("", "", "", "");
 

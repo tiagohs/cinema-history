@@ -58,10 +58,14 @@ class EssayViewHolder(
     private fun setupContent(contentEssay: ContentEssay, colorAsset: ColorAsset) {
         if (contentEssay.movie != null) {
             setupMovieContent(contentEssay.movie!!, colorAsset)
+        } else {
+            essayMovieContainer.hide()
         }
 
         if (contentEssay.person != null) {
             setupPersonContent(contentEssay.person!!, colorAsset)
+        } else {
+            essayPersonContainer.hide()
         }
     }
 
