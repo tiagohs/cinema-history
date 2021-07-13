@@ -1,81 +1,447 @@
 {
   "number": 7,
   "content_list": [
-
-
-
-
-
-
-
-
     {
       "type": "text",
-      "content_text": ""
-    },
-    {
-      "type": "text",
-      "content_text": "",
-      "content_credits": ""
-    },
-    {
-      "type": "text",
-      "content_text": "",
-      "content_title": ""
-    },
-    {
-      "type": "quote",
-      "quote": {
-        "quote": "",
-        "author": ""
-      },
-      "quote_mark_color": "md_red_500"
+      "content_text": "Em dezembro de 2019, um artigo publicado pela <i>The Verge</i> anunciou que, com o lançamento do filme <a href=\"https://_{type: 'screen', 'id': 181812, 'screen_type': movie}\">Star Wars: The Rise of Skywalker</a> (BR: Star Wars: A Ascensão Skywalker, 2019), a <strong>Disney</strong> havia produzido <strong>80% dos filmes com as maiores bilheterias do ano</strong>. A reação geral foi, compreensivelmente, bastante negativa. Mas esta notícia não foi particularmente surpreendente, já que era apenas o exemplo mais recente da Disney como uma gigante da mídia definitiva e possivelmente detentora de um grande monopólio."
     },
     {
       "type": "video",
-      "video_id": "",
+      "video_id": "L0MK7qz13bU",
       "information": {
-        "contentTitle": "",
-        "contentText": "",
-        "source": "Youtube: Canal <i></i>"
+        "contentTitle": "Cenas de Frozen – uma aventura congelante",
+        "contentText": "Frozen estreou em 27 de novembro de 2013 e foi recebido com aclamação pela crítica e público em geral. O filme foi considerado a melhor animação do estúdio desde a era do Renascimento da Disney e arrecadou mais de 1,2 bilhão de dólares nas bilheterias mundiais.",
+        "source": "Youtube: Canal <i>Disney UK</i>"
       }
     },
     {
+      "type": "essay",
+      "video_id": "EVQflnGcx4k",
+      "title": "Disney - The Magic of Animation",
+      "description": "Um olhar sobre os 12 princípios da animação desenvolvidos pela Disney para dar vida a uma imagem.",
+      "channel": "kaptainkristian"
+    },
+    {
+      "type": "text",
+      "content_text": "Essa porcentagem reflete que a Disney produziu <strong>oito</strong> dos <strong>dez</strong> filmes com maior bilheteria em 2019, feito garantido com <i>Star Wars: A Ascensão Skywalker</i> entrando no top 10 das maiores bilheterias do ano. Os sete outros filmes incluíram uma mistura de filmes da Marvel – <a href=\"https://_{type: 'screen', 'id': 299534, 'screen_type': movie}\">Avengers: Endgame</a> (BR: Vingadores: Ultimato, 2019), <a href=\"https://_{type: 'screen', 'id': 299537, 'screen_type': movie}\">Captain Marvel</a> (BR: Capitão Marvel, 2019), <a href=\"https://_{type: 'screen', 'id': 429617, 'screen_type': movie}\">Spider-Man: Far From Home</a> (BR: Homem-Aranha: Longe de Casa, 2019) -, animações - <a href=\"https://_{type: 'screen', 'id': 301528, 'screen_type': movie}\">Toy Story 4</a> (2019), <a href=\"https://_{type: 'screen', 'id': 330457, 'screen_type': movie}\">Frozen 2</a> (2019) - e remakes live-action – <a href=\"https://_{type: 'screen', 'id': 420818, 'screen_type': movie}\">The Lion King</a> (BR: O Rei Leão, 2019), <a href=\"https://_{type: 'screen', 'id': 420817, 'screen_type': movie}\">Aladdin</a> (2019). Os únicos filmes presentes na lista não lançados pelo estúdio foram <a href=\"https://_{type: 'screen', 'id': 475557, 'screen_type': movie}\">Joker</a> (BR: Coringa, 2019) e <a href=\"https://_{type: 'screen', 'id': 474350, 'screen_type': movie}\">It: Chapter Two</a> (BR: IT: Capítulo 2, 2019)."
+    },
+    {
       "type": "block_special",
-      "title": "",
+      "title": "A volta de uma das maiores franquias do Cinema",
       "image": {
         "image_type": "local",
-        "url": "",
+        "url": "img_star_wars_despertar_forca",
         "style": {
           "scale_type": "center_crop"
         }
       },
-      "description": "",
-      "credits": ""
+      "description": "O desafio de <i>Star Wars - O Despertar da Força</i> era extremo. Rejuvenescer a franquia quase quarentona <strong>Star Wars</strong>, apresentando-a para uma nova geração sem esquecer dos fãs maduros, que continuam mantendo-a uma das maiores e mais lucrativas que já existiram. Mas <a href=\"https://_{type: 'screen', 'id': 15344, 'screen_type': person}\">J.J. Abrams</a> (n-1966) e a equipe da <i>Lucasfilm</i> fizeram escolhas corretas para esse reposicionamento. Acompanhado do roteirista de <a href=\"https://_{type: 'screen', 'id': 1891, 'screen_type': movie}\">The Empire Strikes Back</a> (BR: Guerra nas Estrelas: O Império Contra-Ataca, 1980), <a href=\"https://_{type: 'screen', 'id': 8844, 'screen_type': person}\">Lawrence Kasdan</a> (n-1949), o diretor parte da estrutura essencial estabelecida em <a href=\"https://_{type: 'screen', 'id': 11, 'screen_type': movie}\">Star Wars: Episode IV – A New Hope</a> (BR: Guerra nas Estrelas: Uma Nova Esperança, 1977), a \"<i>Jornada do Herói</i>\" de <a href=\"https://_{type: 'screen', 'id': 1021364, 'screen_type': person}\">Joseph Campbell</a> (1904-1987). Rey (Daisy Ridley) é o Luke Skywalker da vez. Uma jovem abandonada em um planeta deserto, aguardando sua hora pacientemente. Um androide carregando um segredo, porém, cruzará seu caminho - assim com R2-D2 e C-3PO cruzaram o de Luke, dando início à aventura estilo ópera espacial com direito a mestres, vilões mascarados, dilemas familiares, aceitação de seu próprio destino... tudo seguindo à risca o que foi estabelecido em 1977. Até o estilo de introdução dos stormtroopers, Kylo Ren (na posição do tabuleiro que foi de Darth Vader) e a Primeira Ordem (o novo Império) é idêntica.<br/><br/> \n\nA novidade fica por conta dos personagens jovens. Rey é a heroína que os tempos de Katniss Everdeen exigiam. Star Wars sempre teve uma personagem forte no centro, a Princesa Leia (Carrie Fisher), mas nunca deu a ela o protagonismo. Aqui, Rey é a figura ao redor da qual a trama se desenvolve. Suas cenas repercutem em vários níveis, fazendo uma inclusão que a cultura geek, hoje tão abrangente e necessitada de direcionamento pelo preconceito, precisava desesperadamente. E Daisy Ridley talvez seja a melhor atriz que já passou pela saga - já que a excelente Natalie Portman foi subaproveitada sob a direção desinteressada em atuação de George Lucas. Daisy simplesmente domina a tela. <br/><br/> \n\nO mesmo pode ser dito de John Boyega. Ator negro, no foco dos holofotes, entregando uma mistura de pânico e alívio cômico que ele transforma em determinação intensa. É o parceiro ideal para Daisy. Do outro lado da moeda, Adam Driver tem o papel mais difícil do filme. Seu Kylo Ren é uma figura trágica, mas que tem pouco espaço para ser explorada devidamente, já que mal aparece sem o capacete. É fácil confundir seu vilão em desenvolvimento com um personagem mal-desenvolvido. Há potencial ali e muito a ser explorado nos próximos filmes. <br/><br/> \n\nO elenco clássico é mais representado na figura de Han Solo (Harrison Ford), que faz piadas voltadas aos fãs e serve como o mentor/explicador e a figura paterna que foi Obi-Wan Kenobi (Alec Guiness) no original. Ele, Chewbacca e a Millennium Falcon estabelecem a conexão que os fãs esperavam com o passado e fornecem o desejado (e nada gratuito) <i>fan-service</i> que honra a devoção dos seguidores da criação de Lucas. <br/><br/> \n\nO filme não é isento de problemas, porém. E os mais graves deles também são derivados dessa necessidade de repetição. No Star Wars original e suas sequências, há uma série de soluções bastante apressadas e demasiadamente inocentes para problemas muito maiores que os protagonistas. Aqui não é diferente. No momento que a resistência da Nova República descobre a existência de uma arma capaz de fazer empalidecer a Estrela da Morte, bastam 5 minutos e a opinião de um operador de saneamento para que se descubra exatamente como destruí-la. Engenheiros distraídos continuam sendo o grande problema do Reich Espacial, aparentemente. <br/><br/> \n\nAlém disso, não há grande gravidade nos atos da Primeira Ordem - organização que apesar de seguir os passos do Império surge sem grandes explicações, algo que deve ter sido pensado para não alienar demais os potenciais novos fãs. Devastações colossais parecem corriqueiras e não têm o mesmo peso do original. A morte é sempre meio apressada em O Despertar da Força e dá pra sentir falta de Sir Alec Guiness explicando poeticamente como é sentir um \"distúrbio na Força, como se milhões de vozes repentinamente gritassem em terror e fossem inediatamente silenciadas\". A Força, esse componente fundamental a Star Wars, definitivamente despertou, mas ainda está esfregando os olhos. O universo Star Wars, por sua vez, segue mais vivo do que nunca na mistura espetacular de efeitos práticos e computação gráfica que J.J. Abrams fez questão de alcançar. O futuro envelhecido e gasto da Trilogia Original ressurge aqui ainda mais coberto pela pátina do tempo. Pequenas coisas, como as marquinhas de batida em um detonador termal, fazem abrir um sorriso. Tanto que sequências que carregam demais em CGI (como as que envolvem a alienígena Maz Kanata) parecem estranhas. Mérito da equipe de produção, que devolveu a qualidade palpável sobre a qual Star Wars foi construído. <br/><br/> \n\nProblemas à parte, Star Wars - O Despertar da Força é o Guerra nas Estrelas que esperávamos desde O Retorno de Jedi. Um filme que honra o passado, enche o peito para lidar com o presente e estabelece uma base sólida para o que virá a seguir... inspirando juntos os fãs antigos e, esperamos, uma nova geração.",
+      "credits": "Resumo baseado no artigo \"Crítica | Star Wars - O Despertar da Força\", por Érico Borgo no Omelete"
+    },
+    {
+      "type": "text",
+      "content_text": "Mais do que o número de filmes no top 10, a Casa das Ideias se destaca na soma total das bilheterias mundiais. <i>Vingadores: Ultimato</i> arrecadou quase 60% a mais do que o segundo filme de maior bilheteria, que também foi um filme da Disney, e mais de quatro vezes do que <i>It: Capítulo 2</i>. Então, quando olhamos para a receita total de bilheteria, a Disney realmente capturou quase 90% da receita bruta entre os principais filmes."
+    },
+    {
+      "type": "video",
+      "video_id": "syU9DTAGCL0",
+      "information": {
+        "contentTitle": "Cenas de Toy Story 4",
+        "contentText": "O crítico de cinema Márcio Sallem comentou que \"(...) mesmo que Toy Story 4 pareça um mero epílogo para a gangue de brinquedos como um todo, é o desfecho que Woody, o protagonista de toda a série, de fato merecia\". E concluiu afirmando que \"Com a mistura de nostalgia e redescobertas, bem como a sensação de dever cumprido e fechamento, Toy Story 4 é a cereja que faltava a esta franquia irrepreensível e inesquecível\".",
+        "source": "Youtube: Canal <i>JoBlo Animated Videos</i>"
+      }
     },
     {
       "type": "essay",
-      "video_id": "",
-      "title": "",
-      "description": "",
-      "channel": "lessons_from_the_screenplay",
-      "movie": {}
+      "video_id": "DroTM9SqcWI",
+      "title": "What 8 Disney Live-Action Remakes Looked Like Behind The Scenes | Movies Insider",
+      "description": "Os remakes de live-action da Disney de seus clássicos animados se tornaram um grampo de bilheteria ao longo dos anos. Para criar um mundo fotorrealista de animais falantes, “The Jungle Book” e “The Lion King” utilizaram técnicas inovadoras de produção virtual. “Maleficent: Mistress of Evil” fez Angelina Jolie parecer que estava voando pelo ar, e “Mulan” usou um trabalho de arame para permitir que seus heróis fizessem acrobacias que desafiam a gravidade. Em \"Aladdin\", Will Smith vestiu um traje de captura de movimento, o que permitiu ao filme criar o Gênio com CGI enquanto ainda dá ao personagem os movimentos característicos do ator. E “A Bela e a Fera” construiu seus sets do zero sempre que podia.",
+      "channel": "insider"
+    },
+    {
+      "type": "text",
+      "content_text": "Embora 2019 tenha sido um ano grande ano para a Disney, eles sempre tiveram uma participação sólida entre os filmes de maior bilheteria e seu domínio só aumentou na última década. Na verdade, os anos 2010 foram realmente a <i>década da Disney</i>. Dos 50 filmes com maior bilheteria lançados entre 2010 a 2019, a Disney produziu 56% (28) e respondeu por 62% da bilheteria nos EUA. Em comparação, o estúdio que representou a segunda maior quantidade, a <i>Warner Bros.</i>, produziu 18% dos 50 maiores filmes da década de 2010 e respondeu por 15% das bilheterias americana. O fato de que vários grandes estúdios nem chegam perto do poder da Disney é bastante notável e potencialmente alarmante."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "A única forma de chegar ao impossível é acreditar que é possível.",
+        "author": "Alice no País das Maravilhas "
+      },
+      "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "Nem sempre foi assim. Nas décadas anteriores, a Disney teve em média apenas 15% dos filmes com maior bilheteria, o que era muito mais comparável a outros grandes estúdios como <i>Warner Bros.</i> e <i>Universal</i>. Na verdade, antes da década de 2010, a Disney era o principal estúdio apenas na década de 1990, período conhecido como o <strong>Renascimento da Disney</strong>, explicado aqui em capítulos anteriores. E ainda assim, mesmo durante esses anos de expansão com clássicos como <a href=\"https://_{type: 'screen', 'id': 8587, 'screen_type': movie}\">The Lion King</a> (BR: O Rei Leão, 1995), <a href=\"https://_{type: 'screen', 'id': 862, 'screen_type': movie}\">Toy Story</a> (1994) e <a href=\"https://_{type: 'screen', 'id': 10020, 'screen_type': movie}\">Beauty And The Beast</a> (BR: A Bela e a Fera, 1991), a Disney conquistou apenas 25% das bilheterias."
+    },
+    {
+      "type": "video",
+      "video_id": "dE1P4zDhhqw",
+      "information": {
+        "contentTitle": "Cenas de Vingadores: Ultimato",
+        "contentText": "O filme foi amplamente aguardado, com a Disney apoiando o filme com extensas campanhas de marketing. Ele estreou em Los Angeles em 22 de abril de 2019, e nos Estados Unidos em 26 de abril de 2019, nos formatos IMAX e 3D. Foi altamente bem recebido pela crítica, com elogios direcionados para sua direção, atuação, trilha sonora, efeitos visuais, valor de entretenimento e peso emocional, com muitos louvando seu ponto culminante da história de vinte e dois filmes.",
+        "source": "Youtube: Canal <i>BestScene</i>"
+      }
+    },
+    {
+      "type": "essay",
+      "video_id": "04g20M7v0Rk",
+      "title": "Why Do Disney Remakes Keep Making Money?",
+      "description": "Aladdin, Rei Leão, Dumbo, A Bela e a Fera. Estamos todos fartos deles, mas de alguma forma esses filmes continuam a trazer muito dinheiro. Qual é o segredo e por que continuamos nos apaixonando por ele? Por que os remakes da Disney continuam ganhando dinheiro? Descubra neste episódio do Nostalgia Critic.",
+      "channel": "channel_awesome"
+    },
+    {
+      "type": "text",
+      "content_text": "As últimas aquisições realizadas pela Disney refletem esse sucesso. Até então, a <strong>Pixar</strong> sempre foi um destaque no mundo das animações, lançando ano após ano animações de qualidade, o que não mudou após a sua compra pela Disney. Mas duas aquisições mudaram o jogo, e uma terceira terá consequências talvez na década de 2020: o anunciou em 2009 sobre a compra da <strong>Marvel Entertainment</strong> por 4 Bilhões de dólares e, em 2012, a compra da <strong>Lucasfilm</strong>. A terceira aquisição, realizada em 2019, foi encima da <strong>21st Century Fox</strong>, por 71 bilhões de dólares. Hoje o <i>Universo Cinematográfico da Marvel</i> e <i>Star Wars</i> são uma das franquias mais lucrativas da história."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_top_boxoffice",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Top 50 das maiores bilheterias entre 2010 e 2019",
+        "contentText": "A lista com as maiores bilheterias da década de 2010, mostrando o destaque nas produções lançadas pela Disney.",
+        "source": "Box Office Mojo"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Na década de 1940, após anos de comportamento anticompetitivo por parte de grandes estúdios de cinema, a Suprema Corte dos Estados Unidos decidiu quebrar o \"<i>velho sistema de Hollywood</i>\" , visto que limitava a escolha dos consumidores e, por sua vez, sufocava a criatividade da indústria. Embora o dilema atual da Disney seja estruturalmente muito diferente dos casos da década de 1940, as implicações e efeitos prejudiciais para a indústria cinematográfica são bastante semelhantes."
+    },
+    {
+      "type": "video",
+      "video_id": "4CbLXeGSDxg",
+      "information": {
+        "contentTitle": "Trailer de O Rei Leão (2019)",
+        "contentText": "O filme foi lançado nos Estados Unidos no dia 19 de julho. Como era esperado pela Disney, o filme foi gigantesco sucesso de bilheteria arrecadando US$ 531 milhões de dólares na sua abertura mundial, ultrapassando Star Wars: O Despertar da Força que arrecadou US$ 529 milhões em 2015, foi também a 4° maior estreia mundial do cinema na época.",
+        "source": "Youtube: Canal <i>Walt Disney Studios</i>"
+      }
+    },
+    {
+      "type": "essay",
+      "video_id": "CNV3WLx5Ez4",
+      "title": "The Evolution Of Disney (1937-2018)",
+      "description": "Esta é uma compilação de todos os filmes produzidos por Walt Disney Animation Studios Incluí apenas os filmes criados por este estúdio e pela Pixar Animation Studios, incluindo os lançados antes de 2006, quando a Disney comprou a empresa, ignorando os de live action ou feitos apenas para VHS, DVD ou televisão. Esta é uma pequena viagem pela história desta empresa cinematográfica mágica que tem feito sonhar milhões de pessoas em todo o mundo.",
+      "channel": "alex_day"
+    },
+    {
+      "type": "text",
+      "content_text": "Em um mundo cativado por épicos gigantescos de super-heróis e remakes de grandes sucessos, existe o medo de haver uma abertura cada vez menor para a novidade, a estranheza e a produção de filmes originais, especialmente porque os conceitos de filmes originais estão se tornando cada vez mais arriscados na era dos streamings e da pirataria.",
+      "content_credits": "Resumo baseado no artigo \"The Decade of Disney\", de Ben Tanen."
     },
     {
       "type": "movie_list",
-      "movies": []
+      "movies": [
+        {
+          "adult": false,
+          "backdrop_path": "/fydUcbkqLyESCFa9U5XKqi8dIVj.jpg",
+          "genre_ids": [
+            16,
+            12,
+            10751
+          ],
+          "id": 109445,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Frozen",
+          "overview": "Young princess Anna of Arendelle dreams about finding true love at her sister Elsa’s coronation. Fate takes her on a dangerous journey in an attempt to end the eternal winter that has fallen over the kingdom. She's accompanied by ice delivery man Kristoff, his reindeer Sven, and snowman Olaf. On an adventure where she will find out what friendship, courage, family, and true love really means.",
+          "popularity": 87.438,
+          "poster_path": "/mbPrrbt8bSLcHSBCHnRclPlMZPl.jpg",
+          "release_date": "2013-11-20",
+          "title": "Frozen",
+          "video": false,
+          "vote_average": 7.3,
+          "vote_count": 13315
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/k6EOrckWFuz7I4z4wiRwz8zsj4H.jpg",
+          "genre_ids": [
+            28,
+            12,
+            878,
+            14
+          ],
+          "id": 140607,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Star Wars: The Force Awakens",
+          "overview": "Thirty years after defeating the Galactic Empire, Han Solo and his allies face a new threat from the evil Kylo Ren and his army of Stormtroopers.",
+          "popularity": 46.766,
+          "poster_path": "/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg",
+          "release_date": "2015-12-15",
+          "title": "Star Wars: The Force Awakens",
+          "video": false,
+          "vote_average": 7.3,
+          "vote_count": 15939
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/9cGSFGZVVLsrnbs0AFPDh6X2ynl.jpg",
+          "genre_ids": [
+            16,
+            10751,
+            12,
+            18,
+            35
+          ],
+          "id": 150540,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Inside Out",
+          "overview": "Growing up can be a bumpy road, and it's no exception for Riley, who is uprooted from her Midwest life when her father starts a new job in San Francisco. Riley's guiding emotions— Joy, Fear, Anger, Disgust and Sadness—live in Headquarters, the control centre inside Riley's mind, where they help advise her through everyday life and tries to keep things positive, but the emotions conflict on how best to navigate a new city, house and school.",
+          "popularity": 68.642,
+          "poster_path": "/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
+          "release_date": "2015-06-09",
+          "title": "Inside Out",
+          "video": false,
+          "vote_average": 7.9,
+          "vote_count": 16664
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/tB2w4m0rW62MTufTjRj0gFLMVBP.jpg",
+          "genre_ids": [
+            10751,
+            12,
+            18,
+            14
+          ],
+          "id": 278927,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "The Jungle Book",
+          "overview": "A man-cub named Mowgli fostered by wolves. After a threat from the tiger Shere Khan, Mowgli is forced to flee the jungle, by which he embarks on a journey of self discovery with the help of the panther, Bagheera and the free-spirited bear, Baloo.",
+          "popularity": 32.787,
+          "poster_path": "/tOEOlmLP71IojeJ91dyJ9Nsb8O8.jpg",
+          "release_date": "2016-04-07",
+          "title": "The Jungle Book",
+          "video": false,
+          "vote_average": 6.9,
+          "vote_count": 6702
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+          "genre_ids": [
+            12,
+            878,
+            28
+          ],
+          "id": 299534,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Avengers: Endgame",
+          "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+          "popularity": 303.23,
+          "poster_path": "/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+          "release_date": "2019-04-24",
+          "title": "Avengers: Endgame",
+          "video": false,
+          "vote_average": 8.3,
+          "vote_count": 18532
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/20pkC7yJdCV4J1IMKfsCT9QU7zV.jpg",
+          "genre_ids": [
+            10751,
+            14,
+            12
+          ],
+          "id": 12155,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Alice in Wonderland",
+          "overview": "Alice, now 19 years old, returns to the whimsical world she first entered as a child and embarks on a journey to discover her true destiny.",
+          "popularity": 35.701,
+          "poster_path": "/o0kre9wRCZz3jjSjaru7QU0UtFz.jpg",
+          "release_date": "2010-03-03",
+          "title": "Alice in Wonderland",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 11358
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/xjotE7aFdZ0D8aGriYjFOtDayct.jpg",
+          "genre_ids": [
+            14,
+            12,
+            28,
+            10751,
+            10749
+          ],
+          "id": 102651,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Maleficent",
+          "overview": "A beautiful, pure-hearted young woman, Maleficent has an idyllic life growing up in a peaceable forest kingdom, until one day when an invading army threatens the harmony of the land.  Maleficent rises to be the land's fiercest protector, but she ultimately suffers a ruthless betrayal – an act that begins to turn her heart into stone. Bent on revenge, Maleficent faces an epic battle with the invading King's successor and, as a result, places a curse upon his newborn infant Aurora. As the child grows, Maleficent realizes that Aurora holds the key to peace in the kingdom – and to Maleficent's true happiness as well.",
+          "popularity": 67.516,
+          "poster_path": "/ik8PugpL41s137RAWEGTAWu0dPo.jpg",
+          "release_date": "2014-05-28",
+          "title": "Maleficent",
+          "video": false,
+          "vote_average": 7.1,
+          "vote_count": 10995
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/gKZAQ3b9yApxFunUBlS5Mp74QG4.jpg",
+          "genre_ids": [
+            10751,
+            16,
+            14,
+            10402,
+            35,
+            12
+          ],
+          "id": 354912,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Coco",
+          "overview": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+          "popularity": 149.152,
+          "poster_path": "/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
+          "release_date": "2017-10-27",
+          "title": "Coco",
+          "video": false,
+          "vote_average": 8.2,
+          "vote_count": 14127
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/csDxOOSjfcJNNRo4ma8ltVynELV.jpg",
+          "genre_ids": [
+            16,
+            10751,
+            35
+          ],
+          "id": 10193,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Toy Story 3",
+          "overview": "Woody, Buzz, and the rest of Andy's toys haven't been played with in years. With Andy about to go to college, the gang find themselves accidentally left at a nefarious day care center. The toys must band together to escape and return home to Andy.",
+          "popularity": 78.445,
+          "poster_path": "/4cpGytCB0eqvRks4FAlJoUJiFPG.jpg",
+          "release_date": "2010-06-16",
+          "title": "Toy Story 3",
+          "video": false,
+          "vote_average": 7.8,
+          "vote_count": 11555
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/oWU6dgu3RgdSZElkhbZuoPtkWAJ.jpg",
+          "genre_ids": [
+            12,
+            35,
+            10751,
+            16
+          ],
+          "id": 277834,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Moana",
+          "overview": "In Ancient Polynesia, when a terrible curse incurred by Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the demigod to set things right.",
+          "popularity": 22.59,
+          "poster_path": "/4JeejGugONWpJkbnvL12hVoYEDa.jpg",
+          "release_date": "2016-11-23",
+          "title": "Moana",
+          "video": false,
+          "vote_average": 7.6,
+          "vote_count": 9629
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/fGgsIJXTCofFOQydtvWmo9ZIzJX.jpg",
+          "genre_ids": [
+            16,
+            12,
+            10751,
+            35
+          ],
+          "id": 269149,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Zootopia",
+          "overview": "Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.",
+          "popularity": 63.197,
+          "poster_path": "/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg",
+          "release_date": "2016-02-11",
+          "title": "Zootopia",
+          "video": false,
+          "vote_average": 7.7,
+          "vote_count": 13072
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/1TUg5pO1VZ4B0Q1amk3OlXvlpXV.jpg",
+          "genre_ids": [
+            10751,
+            12,
+            16
+          ],
+          "id": 420818,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "The Lion King",
+          "overview": "Simba idolizes his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother—and former heir to the throne—has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his.",
+          "popularity": 100.838,
+          "poster_path": "/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg",
+          "release_date": "2019-07-12",
+          "title": "The Lion King",
+          "video": false,
+          "vote_average": 7.2,
+          "vote_count": 7793
+        }
+      ]
     },
     {
       "type": "person_list",
-      "persons": []
-    },
-    {
-      "type": "movie_list",
-      "movies": []
-    },
-    {
-      "type": "person_list",
-      "persons": []
+      "persons": [
+        {
+          "id": 2106,
+          "imdb_id": "nm0000370",
+          "known_for_department": "Production",
+          "name": "Walt Disney",
+          "place_of_birth": "Hermosa, Chicago, Illinois, USA",
+          "popularity": 3.245,
+          "profile_path": "/rucTIeVtozKer6TmCYBxFr8Wy2q.jpg"
+        },
+        {
+          "id": 1120694,
+          "imdb_id": "nm1601644",
+          "known_for_department": "Writing",
+          "name": "Jennifer Lee",
+          "place_of_birth": "Providence, Rhode Island, USA",
+          "popularity": 3.037,
+          "profile_path": "/pjZY7hdneR7FLrAT0mXNR6RrPfy.jpg"
+        },
+        {
+          "id": 15277,
+          "imdb_id": "nm0269463",
+          "known_for_department": "Acting",
+          "name": "Jon Favreau",
+          "place_of_birth": "Queens, New York, USA",
+          "popularity": 6.812,
+          "profile_path": "/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg"
+        },
+        {
+          "id": 12890,
+          "imdb_id": "nm0230032",
+          "known_for_department": "Writing",
+          "name": "Pete Docter",
+          "place_of_birth": "Bloomington, Minnesota, USA",
+          "popularity": 5.746,
+          "profile_path": "/xz46mHzo8apkVMxmrkMQvqakOL0.jpg"
+        }
+      ]
     },
     {
       "type": "link_screen",

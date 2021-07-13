@@ -100,7 +100,29 @@ enum class EssayChannel(
         url = "https://www.youtube.com/user/mythicalsage",
         channelName = "Just Write"
     ),
+    @SerializedName("kaptainkristian")
+    KAPITAIN_KRISTIAN(
+        channelType = "kaptainkristian",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLQYu1Yql-icWldIbCy5nVZrIMRCb5PypsaCmH_XOA=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCuPgdqQKpq4T4zeqmTelnFg",
+        channelName = "kaptainkristian"
+    ),
+    @SerializedName("channel_awesome")
+    CHANNEL_AWESOME(
+        channelType = "channel_awesome",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLRWM8dxXjyH0VQGSw4DE-y4NKSUriGEAhQOey4xMg=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCiH828EtgQjTyNIMH6YiOSw",
+        channelName = "Channel Awesome"
+    ),
+    @SerializedName("alex_day")
+    ALEX_DAY(
+        channelType = "alex_day",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLQeKRpvQAaNAj0vMJwzf68iAQ8TLj4jdE9EdccZ0A=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCM6hs_4aB32MgKQA96cdo-g",
+        channelName = "Alex Day"
+    ),
     NONE("", "", "", "");
+
 
     companion object {
         fun getContentType(type: String?): EssayChannel {
