@@ -142,6 +142,27 @@ enum class EssayChannel(
         url = "https://www.youtube.com/channel/UC_1tSdT5U1Y2AL6kBFXw8Vw",
         channelName = "StoryStreet"
     ),
+    @SerializedName("variety")
+    VARIETY(
+        channelType = "variety",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLRibilYytD-x9XaThYf3qXRf-a-uUnAUWRHDnNk9w=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCgRQHK8Ttr1j9xCEpCAlgbQ",
+        channelName = "Variety"
+    ),
+    @SerializedName("vox")
+    VOX(
+        channelType = "vox",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLTm7P51YEeoapoU-FYmc8v7YfBeHZpbX8CfPCmxAg=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCLXo7UDZvByw2ixzpQCufnA",
+        channelName = "Vox"
+    ),
+    @SerializedName("the_take")
+    THE_TAKE(
+        channelType = "the_take",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLStOX7cpyDWnj43RYg9CQWqXaPi5i4UDdxmanL8uw=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCVjsbqKtxkLt7bal4NWRjJQ",
+        channelName = "The Take"
+    ),
     NONE("", "", "", "");
 
 
