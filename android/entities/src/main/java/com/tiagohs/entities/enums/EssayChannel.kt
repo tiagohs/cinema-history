@@ -163,7 +163,15 @@ enum class EssayChannel(
         url = "https://www.youtube.com/channel/UCVjsbqKtxkLt7bal4NWRjJQ",
         channelName = "The Take"
     ),
+    @SerializedName("wow_such_gaming")
+    WOW_SUCH_GAMING(
+        channelType = "wow_such_gaming",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLSU27KiMR1ZwceURHP4lFhICpCXWvqUEFUn_cP1EA=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCugqjlk-tkE_uZnG0tDbQyg",
+        channelName = "Wow Such Gaming"
+    ),
     NONE("", "", "", "");
+
 
 
     companion object {
