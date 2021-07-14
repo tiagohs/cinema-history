@@ -121,6 +121,27 @@ enum class EssayChannel(
         url = "https://www.youtube.com/channel/UCM6hs_4aB32MgKQA96cdo-g",
         channelName = "Alex Day"
     ),
+    @SerializedName("rossatron")
+    ROSSATRON(
+        channelType = "rossatron",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLRyf3i1VIAJ9SUZy3gL4iR_sjnLchi2dQFTmatn=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCxUR9wLuzgsvA6mpgKtiqGw",
+        channelName = "Rossatron"
+    ),
+    @SerializedName("like_stories_of_old")
+    LIKE_STORIES_OF_OLD(
+        channelType = "like_stories_of_old",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLRbUKSefnaSbd-gk3LwKysyy2wqOYagw7YFZIL2WQ=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCs7nPQIEba0T3tGOWWsZpJQ",
+        channelName = "Like Stories of Old"
+    ),
+    @SerializedName("storyStreet")
+    STORYSTREET(
+        channelType = "storyStreet",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLRhQ0-uRTVg2jbVFwo_dnGOeXx8rzqypmNxjVwLww=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UC_1tSdT5U1Y2AL6kBFXw8Vw",
+        channelName = "StoryStreet"
+    ),
     NONE("", "", "", "");
 
 
