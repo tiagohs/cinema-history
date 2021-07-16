@@ -136,6 +136,21 @@
   },
   {
     "id": 10,
+    "title": "A revolução do streaming que mudou Hollywood",
+    "description": "Com a popularização das transmissões pela internet, os hábitos mudaram totalmente. Agora é tudo sob demanda, das séries de sucesso aos filmes blockbusters.",
+    "image": {
+      "image_type": "local",
+      "url": "img_streming_netflix",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
     "title": "Fim do Mundo nos Cinemas ",
     "description": "O fim do mundo ganha popularidade nos cinemas.",
     "image": {
