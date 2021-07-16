@@ -170,6 +170,20 @@ enum class EssayChannel(
         url = "https://www.youtube.com/channel/UCugqjlk-tkE_uZnG0tDbQyg",
         channelName = "Wow Such Gaming"
     ),
+    @SerializedName("the_discarded_image")
+    THE_DISCRDED_IMAGE(
+        channelType = "the_discarded_image",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLSQ201BWXEstHt4iBKU2ISs-LjT7GXEzA6HlMo_iw=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCJKLIcSts_4XpVbORwzLZVw",
+        channelName = "The Discarded Image"
+    ),
+    @SerializedName("netflix_film_club")
+    NETFLIX_FILM_CLUB(
+        channelType = "netflix_film_club",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLSabie8tv2pqkRekmUCq0zgB69R_0G0ydh03oiK=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UC_UJdqZuFhRXfeYXYrhwgJA",
+        channelName = "Netflix Film Club"
+    ),
     NONE("", "", "", "");
 
 

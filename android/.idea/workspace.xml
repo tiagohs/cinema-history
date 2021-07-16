@@ -32,14 +32,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_11.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/history_sumarios/hmt_sumarios_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/history_sumarios/hmt_sumarios_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/references.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/references.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/timelines/timeline_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/timelines/timeline_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/EssayChannel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/EssayChannel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/LocalFiles.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/LocalFiles.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/tiago.hsilva/.android/avd/Pixel_4_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@0044112202]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -104,12 +111,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
-      <recent name="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/omdb" />
-      <recent name="$PROJECT_DIR$/helpers/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/audioplayer/res/layout" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets/local/history_sumarios" />
+      <recent name="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/essays" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="D:\Desenvolvimento\cinema-history\android\app\src\main\assets\local\pages\main_2" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.tiagohs.cinema_history.presentation.adapters.page" />
@@ -122,12 +129,12 @@
       <recent name="com.tiagohs.entities.enums" />
       <recent name="com.tiagohs.entities.contents" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/local/history_sumarios" />
-      <recent name="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/essays" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-      <recent name="D:\Desenvolvimento\cinema-history\android\app\src\main\assets\local\pages\main_2" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/omdb" />
+      <recent name="$PROJECT_DIR$/helpers/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/uicomponents/src/main/java/com/tiagohs/uicomponents/audioplayer/res/layout" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -338,17 +345,17 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="881" height="318" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1626039833683" />
-    <state x="588" y="315" width="826" height="509" key="find.popup" timestamp="1626228340535">
+    <state x="588" y="315" width="826" height="509" key="find.popup" timestamp="1626288827021">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="588" y="315" width="811" height="509" key="find.popup/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1617981467088" />
-    <state x="588" y="315" width="826" height="509" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1626228340535" />
-    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup" timestamp="1626228173244">
+    <state x="588" y="315" width="826" height="509" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1626288827021" />
+    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup" timestamp="1626387502659">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1617981160874" />
-    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1626228173244" />
-    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.25.1792.1010@0.25.1792.1010" timestamp="1618700736302" />
+    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1626387502659" />
+    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.25.1792.1010@0.25.1792.1010" timestamp="1626385520680" />
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/1792.-791.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1625096675585" />
   </component>
   <component name="XDebuggerManager">
