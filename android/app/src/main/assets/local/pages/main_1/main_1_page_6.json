@@ -6,16 +6,32 @@
       "content_text": "Desde os primórdios da sétima arte, uma série de filmes - como <a href=\"https://_{type: 'screen', 'id': 82120, 'screen_type': 'movie'}\">L'Arroseur arrosé</a> (BR: O jardineiro regado, 1895), dirigido por <a href=\"https://_{type: 'screen', 'id': 1868, 'screen_type': person}\">Louis Lumière </a> (1864-1948), em que um jardineiro tem uma sucessão de contratempos com sua mangueira de jardim - brincava com gags visuais de uma cena só."
     },
     {
-      "type": "text",
-      "content_text": "Essas primeiras experiências foram um grande sucesso, porém, diversos atores muito populares durante a era do cinema mudo hoje se encontram esquecidos ou ofuscados tanto por <a href=\"https://_{type: 'screen', 'id': 13848, 'screen_type': person}\">Charlie Chaplin</a> (1889-1977) quanto por <a href=\"https://_{type: 'screen', 'id': 8635, 'screen_type': person}\">Buster Keaton</a> (1895-1966). A performance intrépida de <a href=\"https://_{type: 'screen', 'id': 88953, 'screen_type': person}\">Harold Lloyd</a> (1893-1971) em <a href=\"https://_{type: 'screen', 'id': 22596, 'screen_type': movie}\">Safety Last!</a> (BR: O homem-mosca, 1923) e a de <a href=\"https://_{type: 'screen', 'id': 555890, 'screen_type': person}\">Raymond Griffith</a> (1895-1957) em <a href=\"https://_{type: 'screen', 'id': 133647, 'screen_type': movie}\">Hands Up!</a> (BR: Golpes de audácia, 1926) são exemplos típicos de números cómicos criativos, e também servem para nos lembrar de como ícones culturais podem desaparecer da memória do público."
-    },
-    {
       "type": "quote",
       "quote": {
         "quote": "Por trás de tudo isso – das roupas engraçadas, do bigode e dos pés grandes – eu gostaria de produzir algo que mexesse com as pessoas.",
         "author": "Charlie Chaplin"
       },
       "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "Essas primeiras experiências foram um grande sucesso, porém, diversos atores muito populares durante a era do cinema mudo hoje se encontram esquecidos ou ofuscados tanto por <a href=\"https://_{type: 'screen', 'id': 13848, 'screen_type': person}\">Charlie Chaplin</a> (1889-1977) quanto por <a href=\"https://_{type: 'screen', 'id': 8635, 'screen_type': person}\">Buster Keaton</a> (1895-1966). A performance intrépida de <a href=\"https://_{type: 'screen', 'id': 88953, 'screen_type': person}\">Harold Lloyd</a> (1893-1971) em <a href=\"https://_{type: 'screen', 'id': 22596, 'screen_type': movie}\">Safety Last!</a> (BR: O homem-mosca, 1923) e a de <a href=\"https://_{type: 'screen', 'id': 555890, 'screen_type': person}\">Raymond Griffith</a> (1895-1957) em <a href=\"https://_{type: 'screen', 'id': 133647, 'screen_type': movie}\">Hands Up!</a> (BR: Golpes de audácia, 1926) são exemplos típicos de números cómicos criativos, e também servem para nos lembrar de como ícones culturais podem desaparecer da memória do público."
+    },
+    {
+      "type": "essay",
+      "video_id": "UWEjxkkB8Xs",
+      "title": "Buster Keaton - The Art of the Gag",
+      "description": "Antes de Edgar Wright e Wes Anderson, antes de Chuck Jones e Jackie Chan, houve Buster Keaton, um dos fundadores da comédia visual. E mais 100 anos depois de sua primeira aparição na tela, ainda estamos aprendendo com ele. Hoje, Every Frame is a Painting irá falar sobre a arte (e o pensamento) por trás de suas piadas.",
+      "channel": "every_frame_is_a_painting",
+      "person": {
+        "id": 8635,
+        "imdb_id": "nm0000036",
+        "known_for_department": "Acting",
+        "name": "Buster Keaton",
+        "place_of_birth": "Piqua, Kansas, USA",
+        "popularity": 2.239,
+        "profile_path": "/kEybBFkO5AX83o3WKyNDfuvfVrn.jpg"
+      }
     },
     {
       "type": "text",

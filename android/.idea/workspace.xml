@@ -33,14 +33,16 @@
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/main_1_page_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_1/main_1_page_6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_2/main_2_page_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_2/main_2_page_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_3/main_3_page_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_3/main_3_page_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_4/main_4_page_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_4/main_4_page_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_15.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_15.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/EssayChannel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/com/tiagohs/entities/enums/EssayChannel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,16 +348,16 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="881" height="318" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1626039833683" />
-    <state x="588" y="315" width="826" height="509" key="find.popup" timestamp="1626288827021">
+    <state x="588" y="315" width="826" height="509" key="find.popup" timestamp="1626483235157">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="588" y="315" width="811" height="509" key="find.popup/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1617981467088" />
-    <state x="588" y="315" width="826" height="509" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1626288827021" />
-    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup" timestamp="1626387502659">
+    <state x="588" y="315" width="826" height="509" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1626483235157" />
+    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup" timestamp="1626484144880">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1617981160874" />
-    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1626387502659" />
+    <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1626484144880" />
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/0.25.1792.1010@0.25.1792.1010" timestamp="1626385520680" />
     <state x="583" y="209" width="670" height="702" key="search.everywhere.popup/1792.-791.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1625096675585" />
   </component>

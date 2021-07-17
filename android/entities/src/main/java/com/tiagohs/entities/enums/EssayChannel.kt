@@ -184,6 +184,13 @@ enum class EssayChannel(
         url = "https://www.youtube.com/channel/UC_UJdqZuFhRXfeYXYrhwgJA",
         channelName = "Netflix Film Club"
     ),
+    @SerializedName("every_frame_is_a_painting")
+    EVERY_FRAME_IS_A_PAINTING(
+        channelType = "every_frame_is_a_painting",
+        imagePath = "https://yt3.ggpht.com/ytc/AKedOLRHmhqjFHuM12MxD5uUe6mK0a5T-86W7gbNVpf1=s176-c-k-c0x00ffffff-no-rj",
+        url = "https://www.youtube.com/channel/UCjFqcJQXGZ6T6sxyFB-5i6A",
+        channelName = "Every Frame a Painting"
+    ),
     NONE("", "", "", "");
 
 

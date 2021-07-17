@@ -19,6 +19,22 @@
       }
     },
     {
+      "type": "essay",
+      "video_id": "kHpXle4NqWI",
+      "title": "Chuck Jones - The Evolution of an Artist",
+      "description": "Se você cresceu assistindo Looney Tunes, então conhece Chuck Jones, um dos maiores mestres da comédia visual. Nesse video, Taylor fala sobre a evolução das habilidades de Chuck e sua sensibilidade como artista.",
+      "channel": "every_frame_is_a_painting",
+      "person": {
+        "id": 100888,
+        "imdb_id": "nm0005062",
+        "known_for_department": "Directing",
+        "name": "Chuck Jones",
+        "place_of_birth": "Spokane, Washington, USA",
+        "popularity": 1.286,
+        "profile_path": "/akHjjvb13odwWsEBdbAcaYCF7uI.jpg"
+      }
+    },
+    {
       "type": "text",
       "content_text": "Na era de ouro da Disney, <a href=\"https://_{type: 'screen', 'id': 2106, 'screen_type': person}\">Walt Disney</a> (1901-1966) e seus \"<strong>Nine Old Men</strong>\" (\"Os nove veteranos\", principais animadores do estúdio) trabalharam incansavelmente para produzir desenhos animados para as massas e criar o que se tornaria o padrão para os longas-metragens animados do Ocidente."
     },
@@ -34,6 +50,13 @@
         "contentText": "<strong>Betty Boop</strong> é uma personagem de desenho animado criada por <a href=\"https://_{type: 'screen', 'id': 606084, 'screen_type': person}\">Max Fleischer</a> (1883-1972) e desenhada por <i>Grim Natwick</i>. Betty Boop fez sua primeira aparição no desenho animado <i>Dizzy Dishes</i> , lançado em 9 de agosto de 1930, o sétimo episódio da série <i>Talkartoon</i> de Fleischer. Embora <i>Clara Bow</i> seja frequentemente considerada a inspiração para Boop, alguns dizem que ela realmente começou como uma caricatura da cantora <i>Helen Kane</i>, que se apresentava em um estilo compartilhado por muitos artistas da época. A dança de <i>Koko</i> (incluindo alguns movimentos que parecem muito com \"<i>moonwalk</i>\") durante o número de \"<i>St. James</i>\" foi realizada com a técnica de <strong>rotoscopia</strong>, baseada em uma filmagem de <i>Cab Calloway</i>. O filme foi considerado \"<i>culturalmente significativo</i>\" pela <i>Biblioteca do Congresso dos Estados Unidos</i> e selecionado para preservação no <i>National Film Registry</i> em 1994. No mesmo ano, foi eleito nº 19 dos 50 maiores desenhos animados de todos os tempos por membros do campo da animação. O filme agora está em domínio público.",
         "source": "Youtube: Canal <i>SuperRiles</i>"
       }
+    },
+    {
+      "type": "essay",
+      "video_id": "IorZ5VLC1u8",
+      "title": "Bugs Bunny - The Origins of an American Icon",
+      "description": "Uma rápida olhada na história do coelho mais influente da América.",
+      "channel": "kaptainkristian"
     },
     {
       "type": "text",
@@ -2280,6 +2303,13 @@
         "contentText": "Os Nine Old Men's acabaram sendo os mentores diretamente ou indiretamente de diversos animadores contemporâneos na <i>Walt Disney Animation</i> (ou até mesmo em outros estúdios, graças ao livro <i>The Illusion of Life</i>). Por exemplo, <a href=\"https://_{type: 'screen', 'id': 1763023, 'screen_type': person}\">Wayne Unten</a>, o supervisor de animação de Elsa em <a href=\"https://_{type: 'screen', 'id': 109445, 'screen_type': movie}\">Frozen</a> (Frozen: Uma Aventura Congelante, 2013), notou que foi aprendiz de <a href=\"https://_{type: 'screen', 'id': 1995178, 'screen_type': person}\">John Ripa</a>, que por sua vez foi aprendiz de <a href=\"https://_{type: 'screen', 'id': 139474, 'screen_type': person}\">Glen Keane</a> (n. 1954), que por sua vez foi aprendiz de Johnston.",
         "source": "Arquivo de jornais do Google / The Southeast Missourian"
       }
+    },
+    {
+      "type": "essay",
+      "video_id": "EVQflnGcx4k",
+      "title": "Disney - The Magic of Animation",
+      "description": "Um olhar sobre os 12 princípios da animação desenvolvidos pela Disney para dar vida a uma imagem.",
+      "channel": "kaptainkristian"
     },
     {
       "type": "text",
