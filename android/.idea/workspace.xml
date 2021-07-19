@@ -33,16 +33,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60f95dcb-3179-47c2-934c-95b9d1e1b30c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_4/main_4_page_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_4/main_4_page_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_4/main_4_page_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_4/main_4_page_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_15.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_15.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_5/main_5_page_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_14.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_14.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_6/main_6_page_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/local/pages/main_7/main_7_page_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +85,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="BundleExportedModule" value="cinema-history-app" />
+    <property name="ApkExportedModule" value="cinema-history.app" />
+    <property name="BundleExportedModule" value="cinema-history.app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="710KPWQ0309409" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-28T21:59:37.678Z" />
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
