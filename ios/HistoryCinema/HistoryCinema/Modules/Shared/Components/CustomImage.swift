@@ -48,7 +48,7 @@ struct CustomImage: View {
         let imageComponent = KFImage.url(URL(string: url))
             .placeholder {
                 Placeholder(type: type, iconSize: CGFloat(iconSize ?? 100))
-                    .cornerRadius(20)
+                    .cornerRadius(CGFloat(cornerRadius))
                     .frame(
                         width: imageWidth,
                         height: CGFloat(height)

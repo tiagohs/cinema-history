@@ -17,13 +17,11 @@ struct HistoryPagesView: View {
     let summaryList: [SummaryModel]
     
     var body: some View {
-        let mainTopicItem = MainTopic.example(.history_cinema) as! MainTopicItem
-        
         ZStack(alignment: .topLeading) {
             ZStack(alignment: .bottomTrailing) {
                 let pages = summaryList.map {
                     HistoryPageView(
-                        mainTopic: mainTopicItem,
+                        mainTopic: mainTopic,
                         summary: $0
                     )
                 } 
@@ -31,7 +29,12 @@ struct HistoryPagesView: View {
                 PageViewController(pages: pages, currentPage: $currentPage)
             }
         }
-        .navigationBarHidden(true)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) { 
+                HistoryToolbar(mainTopic: mainTopic)
+            }
+        }
         .alert(isPresented: $presenter.showErrorMessage, content: {
             Alert(title: Text("Ops"),
                   message: Text("Houve algum problema! Por favor, tente novamente."),

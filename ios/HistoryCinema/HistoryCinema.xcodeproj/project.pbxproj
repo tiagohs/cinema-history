@@ -12,6 +12,8 @@
 		A30F6032260FC76000FE3B1A /* LinkScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F6031260FC76000FE3B1A /* LinkScreenView.swift */; };
 		A30F6034260FCAA200FE3B1A /* ContentImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F6033260FCAA200FE3B1A /* ContentImageView.swift */; };
 		A33529C327A73EEB00FC23AB /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33529C227A73EEB00FC23AB /* ViewDidLoadModifier.swift */; };
+		A33529C527A849B700FC23AB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33529C427A849B700FC23AB /* LoadingView.swift */; };
+		A33529C727A87C8300FC23AB /* HistoryToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33529C627A87C8300FC23AB /* HistoryToolbar.swift */; };
 		A339AA5F2610EC050006B0C6 /* ContentRecomendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339AA5E2610EC050006B0C6 /* ContentRecomendationView.swift */; };
 		A339AA622610F73C0006B0C6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339AA612610F73C0006B0C6 /* WebView.swift */; };
 		A339AA66261109F90006B0C6 /* ContentNomineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339AA65261109F90006B0C6 /* ContentNomineesView.swift */; };
@@ -417,6 +419,8 @@
 		A30F6031260FC76000FE3B1A /* LinkScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkScreenView.swift; sourceTree = "<group>"; };
 		A30F6033260FCAA200FE3B1A /* ContentImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentImageView.swift; sourceTree = "<group>"; };
 		A33529C227A73EEB00FC23AB /* ViewDidLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoadModifier.swift; sourceTree = "<group>"; };
+		A33529C427A849B700FC23AB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A33529C627A87C8300FC23AB /* HistoryToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryToolbar.swift; sourceTree = "<group>"; };
 		A339AA5E2610EC050006B0C6 /* ContentRecomendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRecomendationView.swift; sourceTree = "<group>"; };
 		A339AA612610F73C0006B0C6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		A339AA65261109F90006B0C6 /* ContentNomineesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNomineesView.swift; sourceTree = "<group>"; };
@@ -1587,6 +1591,7 @@
 				A3C0FEBD2608E5D1009D35E7 /* ItemImageView.swift */,
 				A30F6031260FC76000FE3B1A /* LinkScreenView.swift */,
 				A3F9AB46260FDB21001EC05E /* DividerColorView.swift */,
+				A33529C427A849B700FC23AB /* LoadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1843,6 +1848,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E2380A2606709300191413 /* HistoryPageItemView.swift */,
+				A33529C627A87C8300FC23AB /* HistoryToolbar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -2403,6 +2409,7 @@
 				A33BC9C325D8A29000E0A63D /* Dictionary+Extensions.swift in Sources */,
 				A39CD72325E33F6A00860258 /* ContentText.swift in Sources */,
 				A39CD71925E33DB600860258 /* MainTopic.swift in Sources */,
+				A33529C727A87C8300FC23AB /* HistoryToolbar.swift in Sources */,
 				A3C2381C25EB1F420087D134 /* MainTopicListView.swift in Sources */,
 				A39CD71525E33CB400860258 /* Quote.swift in Sources */,
 				A3C2380425EABA110087D134 /* LocalNetwork.swift in Sources */,
@@ -2412,6 +2419,7 @@
 				A39CD70B25E33A6100860258 /* ContentPersonList.swift in Sources */,
 				A3C2380625EABA2E0087D134 /* NetworkType.swift in Sources */,
 				A36D0D3E26110E2000AFCE4F /* NomineeListView.swift in Sources */,
+				A33529C527A849B700FC23AB /* LoadingView.swift in Sources */,
 				A36D0D4C2611250400AFCE4F /* HistoryPageInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

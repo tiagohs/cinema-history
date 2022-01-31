@@ -14,17 +14,27 @@ struct StyledTextView: View {
     var size: Int? = nil
     var color: String? = nil
     
+    @State var showLoading: Bool = true
+    
     var body: some View {
         let fontN = fontName ?? "ProximaNova-Regular"
         let sizeFont = size ?? 14
         let colorFont = color ?? "#000"
         
-        HTMLStringView(
-            htmlContent: content,
-            fontName: fontN,
-            size: sizeFont,
-            color: colorFont)
-        
+        ZStack(alignment: .center) {
+            if showLoading {
+                LoadingView()
+            }
+            
+            HTMLStringView(
+                htmlContent: content,
+                fontName: fontN,
+                size: sizeFont,
+                color: colorFont,
+                onTextLoaded: {
+                    showLoading = false
+                })
+        }
     }
 }
 
@@ -33,6 +43,7 @@ struct HTMLStringView: UIViewRepresentable {
   var fontName: String
   var size: Int
   var color: String
+  var onTextLoaded: (() -> Void)? = nil
     
   func makeUIView(context: Context) -> InteractiveLinkLabel {
     let label = InteractiveLinkLabel()
@@ -61,9 +72,17 @@ struct HTMLStringView: UIViewRepresentable {
   }
 
   func updateUIView(_ uiView: InteractiveLinkLabel, context: Context) {
-    DispatchQueue.main.async {
-        uiView.attributedText = htmlContent.htmlAttributedString(fontName: fontName, size: size, color: color)
-    }
+      DispatchQueue.global(qos: .userInitiated).async {
+          
+          let text = htmlContent.htmlAttributedString(fontName: fontName, size: size, color: color)
+              
+        DispatchQueue.main.async {
+            uiView.attributedText = text
+            
+            onTextLoaded?()
+        }
+          
+      }
   }
 }
 

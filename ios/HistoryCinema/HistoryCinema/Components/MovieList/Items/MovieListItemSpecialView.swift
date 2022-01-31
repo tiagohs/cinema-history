@@ -46,7 +46,6 @@ struct MovieListItemSpecialView: View {
                             .padding(.horizontal, 32)
                             .padding(.bottom, 16)
                     }
-                    .frame(width: UIScreen.main.bounds.width)
                     
                     CustomImage(
                         imageUrl: posterImageUrl,
@@ -62,8 +61,6 @@ struct MovieListItemSpecialView: View {
                 }
                 .background(backgroundColor)
             }
-            .frame(
-                width: UIScreen.main.bounds.width - 32)
             .background(Color.white)
             .cornerRadius(10)
         }

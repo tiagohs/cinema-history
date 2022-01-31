@@ -31,7 +31,6 @@ struct PageContentListView: View {
                 case .block_special:
                     ContentBlockSpecialView(contentBlockSpecial: contentItem as! ContentBlockSpecial)
                         .padding(.horizontal, 16)
-                        .listRowInsets(EdgeInsets())
                 case .link_screen:
                     ContentLinkScreenView(contentLinkScreen: contentItem as! ContentLinkScreen)
                         .padding(.horizontal, 16)
@@ -63,7 +62,8 @@ struct PageContentListView_Previews: PreviewProvider {
             Content.exampleLinkScreen,
             Content.exampleRecomendation,
             Content.exampleNomineesMovies,
-            Content.exampleNomineesPersons
+            Content.exampleNomineesPersons,
+            Content.exampleMovieSpecial
         ]
         
         PageContentListView(contentList: contentList)

@@ -12,6 +12,7 @@ import UIKit
 // 1
 struct YouTubeView: UIViewRepresentable {
     var videoId: String
+    var autoplay: Bool = false
     
     // 5
     func makeUIView(context: Context) -> YouTubePlayerView {
@@ -22,7 +23,8 @@ struct YouTubeView: UIViewRepresentable {
                     "iv_load_policy": "3",
                     "modestbranding": "1",
                     "rel" : "0",
-                    "playsinline": "1"
+                    "playsinline": "1",
+                    "autoplay": autoplay ? "1" : "0"
                 ] as YouTubePlayerView.YouTubePlayerParameters
 
         let playerView = YouTubePlayerView()

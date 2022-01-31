@@ -13,27 +13,17 @@ struct HistoryPageItemView: View {
     let page: Page
     
     var body: some View {
-        let mainTopicTimeBackgroundColor = mainTopic.color
         let imageHeight = summary.image?.imageStyle?.height
         let imageURL = summary.image?.url
         
         ScrollView {
-            LazyVStack {
+            VStack(alignment: .center) {
                 VStack(alignment: .center) {
-                    ZStack {
-                        Text(mainTopic.title)
-                            .textCase(.uppercase)
-                            .font(.oswaldBold(size: 14))
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
-                    }
-                    .background((mainTopicTimeBackgroundColor != nil) ? Color(UIColor(colorName: mainTopicTimeBackgroundColor!)) : Color.white)
                     
                     Text(summary.title)
                         .textCase(.uppercase)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                        .frame(alignment: .center)
+                        .fixedSize(horizontal: false, vertical: true)
                         .font(.proximaNovaBold(size: 22))
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -41,8 +31,9 @@ struct HistoryPageItemView: View {
                         .padding(.vertical, 8)
                     
                     Text(summary.description)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                        .frame(alignment: .center)
                         .font(.proximaNovaRegular(size: 14))
+                        .fixedSize(horizontal: false, vertical: true)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .padding(.horizontal, 16)

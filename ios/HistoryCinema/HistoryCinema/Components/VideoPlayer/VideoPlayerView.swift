@@ -9,15 +9,16 @@ import SwiftUI
 
 struct VideoPlayerView: View {
     var youtubeVideoId: String?
+    var autoplay: Bool = false
+    
     @State var loadingFinished: Bool = false
 
     var body: some View {
         if youtubeVideoId != nil {
             ZStack {
-                ProgressView("Carregando")
+                LoadingView(scaleAmount: 1.5)
                 
-                YouTubeView(videoId: youtubeVideoId!)
-                    
+                YouTubeView(videoId: youtubeVideoId!, autoplay: autoplay)
             }
             .frame(alignment: .center)
         } else {

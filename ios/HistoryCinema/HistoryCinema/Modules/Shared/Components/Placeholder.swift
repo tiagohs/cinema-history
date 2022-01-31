@@ -10,6 +10,7 @@ import SwiftUI
 enum PlaceholderType {
     case movie
     case person
+    case video
 }
 
 struct Placeholder: View {
@@ -29,6 +30,10 @@ struct Placeholder: View {
                     .frame(width: size, height: size)
             case .person:
                 Icon(name: .person)
+                    .fill(Color.white)
+                    .frame(width: size, height: size)
+            case .video:
+                Icon(name: .video)
                     .fill(Color.white)
                     .frame(width: size, height: size)
             }

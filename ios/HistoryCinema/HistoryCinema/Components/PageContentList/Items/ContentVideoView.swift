@@ -17,7 +17,7 @@ struct ContentVideoView: View {
         
         VStack {
             if showVideoContent {
-                VideoPlayerView(youtubeVideoId: contentVideo.videoId)
+                VideoPlayerView(youtubeVideoId: contentVideo.videoId, autoplay: true)
                     .frame(height: CGFloat(height), alignment: .center)
             } else {
                 ZStack {

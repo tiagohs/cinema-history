@@ -15,7 +15,7 @@ struct SummaryHeader: View {
             GeometryReader { geometry in
                 ZStack(alignment: .bottomTrailing) {
                     if geometry.frame(in: .global).minY <= 0 {
-                        Image("img_cabinet")
+                        Image((mainTopic.presentationImage?.url!)!)
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: geometry.size.width, height: geometry.size.height)
@@ -26,7 +26,7 @@ struct SummaryHeader: View {
                         SummaryQuoteView(quote: mainTopic.quote)
                             .offset(y: geometry.frame(in: .global).minY/2)
                     } else {
-                        Image("img_cabinet")
+                        Image((mainTopic.presentationImage?.url!)!)
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: geometry.size.width, height: geometry.size.height + geometry.frame(in: .global).minY)
