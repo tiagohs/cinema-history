@@ -11,21 +11,12 @@ struct HomeItemImage: View {
     let homeContentItem: HomeContentItem
     
     var body: some View {
-        if homeContentItem.mainTopicType == .mil_movies {
-            Image(homeContentItem.image!.url!)
-                .resizable()
-                .frame(
-                    width: UIScreen.main.bounds.width,
-                    height: UIScreen.main.bounds.height
-                )
-        } else {
-            Image(homeContentItem.image!.url!)
-                .resizable()
-                .scaledToFill()
-                .frame(
-                    height: 500
-                )
-        }
+        CustomImage(
+            image: homeContentItem.image,
+            imageType: .local,
+            placeholderType: .movie,
+            height: 600
+        )
     }
 }
 

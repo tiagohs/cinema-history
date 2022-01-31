@@ -108,7 +108,7 @@ struct MainTopicView_Previews: PreviewProvider {
             MainTopicView(
                 subtitle: "Parte 01",
                 title: "De 1895 a 1929",
-                description: "Os visionários, inventores, sonhadores. As experimentações e descobertas de Georges Mélies, o humor único de Chaplin e Keaton, o surrealismo na Alemanha, a luta por uma voz com os Race Films, o romantismo e o espetáculo de Hollywood dos anos 20.",
+                description: "Os visionários, inventores, sonhadores. As experimentações e descobertas de Georges Mélies, o humor único de Chaplin e Keaton, o surrealismo na Alemanha, a luta por uma voz com os Race Films, o romantismo e o espetáculo de Hollywood dos anos 20. ",
                 image: image,
                 layoutType: MainTopicItemLayoutType.card
             )

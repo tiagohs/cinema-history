@@ -75,4 +75,8 @@ extension View {
         // When rendered, export the requested orientations upward to Root
         preference(key: SupportedOrientationsPreferenceKey.self, value: supportedOrientations)
     }
+    
+    func onLoad(perform action: (() -> Void)? = nil) -> some View {
+            modifier(ViewDidLoadModifier(perform: action))
+    }
 }

@@ -74,7 +74,7 @@ struct ContentInformationView: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             renderTitle()
             renderText()
             renderReference()

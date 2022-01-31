@@ -21,7 +21,7 @@ struct HistoryPagesView: View {
         
         ZStack(alignment: .topLeading) {
             ZStack(alignment: .bottomTrailing) {
-                let pages: [HistoryPageView] = summaryList.map {
+                let pages = summaryList.map {
                     HistoryPageView(
                         mainTopic: mainTopicItem,
                         summary: $0
@@ -29,18 +29,9 @@ struct HistoryPagesView: View {
                 } 
                 
                 PageViewController(pages: pages, currentPage: $currentPage)
-//                PageControl(
-//                    numberOfPages: pages.count,
-//                    currentPage: $currentPage,
-//                    pageIndicatorTintColor: UIColor(colorName: "md_black_1000")
-//                )
-//                    .frame(width: CGFloat(pages.count * 18))
-//                    .padding(.trailing)
             }
-            .edgesIgnoringSafeArea(.all)
-            .background(Color.white)
-            .listRowInsets(EdgeInsets())
         }
+        .navigationBarHidden(true)
         .alert(isPresented: $presenter.showErrorMessage, content: {
             Alert(title: Text("Ops"),
                   message: Text("Houve algum problema! Por favor, tente novamente."),

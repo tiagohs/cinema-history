@@ -32,6 +32,10 @@ extension String {
         return Bundle.main.url(forResource: self, withExtension: nil)
     }
     
+    func toYoutubeUrl() -> String? {
+        return "https://img.youtube.com/vi/\(self)/0.jpg"
+    }
+    
     func htmlAttributedString(fontName: String, size: Int, color: String) -> NSAttributedString? {
         let modifiedString = "<style>body{font-family: '\(fontName)'; color: \(color); font-size:\(size)px; line-height: 5px; }</style>\(self)";
         guard let data = modifiedString.data(using: .utf8) else {

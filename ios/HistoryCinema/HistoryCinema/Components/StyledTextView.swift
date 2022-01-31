@@ -24,6 +24,7 @@ struct StyledTextView: View {
             fontName: fontN,
             size: sizeFont,
             color: colorFont)
+        
     }
 }
 

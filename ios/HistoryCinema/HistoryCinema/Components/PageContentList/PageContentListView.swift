@@ -17,6 +17,7 @@ struct PageContentListView: View {
                 switch contentItem.type {
                 case .text:
                     ContentTextView(contentText: contentItem as! ContentText)
+                        .fixedSize(horizontal: false, vertical: true)
                 case .image:
                     ContentImageView(contentImage: contentItem as! ContentImage)
                 case .video:

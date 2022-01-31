@@ -18,6 +18,7 @@ struct HistoryPageView: View {
         VStack {
             if (presenter.historyPage == nil) {
                 ProgressView()
+                    
             } else {
                 HistoryPageItemView(
                     mainTopic: mainTopic,

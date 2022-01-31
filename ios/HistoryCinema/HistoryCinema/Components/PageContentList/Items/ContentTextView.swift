@@ -21,22 +21,13 @@ struct ContentTextView: View {
                         .font(.oswaldBold(size: 22))
                         .multilineTextAlignment(.leading)
                         .foregroundColor(Color.black)
-                        .padding(.horizontal, 16)
-                        .padding(.top, 16)
                     
                     Spacer()
                 }
                 
-                HStack {
-                    VStack {
-                        Divider()
-                            .frame(width: 150)
-                            .padding(.vertical, 8)
-                            .padding(.leading, 16)
-                    }
-                    
-                    Spacer()
-                }
+                Divider()
+                    .padding(.bottom, 8)
+                    .padding(.top, 8)
             }
         } else {
             EmptyView()
@@ -55,9 +46,6 @@ struct ContentTextView: View {
                     size: 16,
                     color: Constants.colors["md_black_1000"])
                     .fixedSize(horizontal: false, vertical: true)
-                    .padding(.top, 8)
-                    .padding(.bottom, 16)
-                    .padding(.top, 16)
                 
                 Spacer()
             }
@@ -80,8 +68,6 @@ struct ContentTextView: View {
                     color: Constants.colors["md_grey_800"])
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.top, 8)
-                    .padding(.bottom, 16)
-                    .padding(.top, 16)
                 
                 Spacer()
             }
@@ -97,12 +83,19 @@ struct ContentTextView: View {
             renderText()
             renderCredits()
         }
+        .padding(.vertical, 4)
         .padding(.horizontal, 16)
     }
 }
 
 struct ContentTextView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentTextView(contentText: Content.exampleText)
+        Group {
+            ContentTextView(contentText: Content.exampleText)
+            ContentTextView(contentText: Content.exampleText2)
+            ContentTextView(contentText: Content.exampleText3)
+        }
+        
+        
     }
 }

@@ -16,6 +16,8 @@ struct PageControl: UIViewRepresentable {
         Coordinator(self)
     }
     
+    
+    
     func makeUIView(context: Context) -> UIPageControl {
         let control = UIPageControl()
         

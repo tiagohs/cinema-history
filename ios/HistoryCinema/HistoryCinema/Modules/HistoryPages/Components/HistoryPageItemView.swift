@@ -17,8 +17,8 @@ struct HistoryPageItemView: View {
         let imageHeight = summary.image?.imageStyle?.height
         let imageURL = summary.image?.url
         
-        List {
-            Section.init {
+        ScrollView {
+            LazyVStack {
                 VStack(alignment: .center) {
                     ZStack {
                         Text(mainTopic.title)
@@ -56,8 +56,10 @@ struct HistoryPageItemView: View {
                                     width: UIScreen.main.bounds.width,
                                     height: (imageHeight != nil) ? CGFloat(imageHeight!) : 400
                                 )
+                                .shadow(color: .black, radius: 5)
                         } else {
                             Placeholder(type: .movie)
+                                .shadow(color: .black, radius: 5)
                         }
                         
                         LinearGradient(
@@ -65,28 +67,48 @@ struct HistoryPageItemView: View {
                             startPoint: .top,
                             endPoint: .bottom
                         )
-                        .frame(height: 300)
+                        .frame(height: (imageHeight != nil) ? CGFloat(imageHeight!) : 400)
                     }
                 }
                 .padding(.top, 16)
                 .background(Color.black)
+                
+                PageContentListView(contentList: page.contentList)
             }
-            .listRowInsets(EdgeInsets())
-            
-            PageContentListView(contentList: page.contentList)
-                .listRowInsets(EdgeInsets())
         }
+        .background(Color.white)
     }
 }
 
 struct HistoryPageItemView_Previews: PreviewProvider {
+    
+    static func getPage() -> Page {
+        let page = Page.example
+        
+        page.contentList = [
+            Content.exampleText,
+            Content.exampleImage,
+            Content.exampleVideo,
+            Content.exampleQuote,
+            Content.exampleMovieList,
+            Content.examplePersonList,
+            Content.exampleBlockSpecial,
+            Content.exampleLinkScreen,
+            Content.exampleRecomendation,
+            Content.exampleNomineesMovies,
+            Content.exampleNomineesPersons
+        ]
+        
+        return page
+    }
+    
     static var previews: some View {
         
         HistoryPageItemView(
             mainTopic: MainTopic.example(.history_cinema) as! MainTopicItem,
             summary: SummaryModel.example,
-            page: Page.example
+            page: getPage()
         )
-            .environment(\.colorScheme, .light)
+            .environment(\.colorScheme, .dark)
     }
 }

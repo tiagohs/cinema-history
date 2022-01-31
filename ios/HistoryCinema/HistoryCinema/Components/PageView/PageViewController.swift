@@ -41,6 +41,9 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
         init(_ pageViewController: PageViewController) {
             parent = pageViewController
             controllers = parent.pages.map { UIHostingController(rootView: $0) }
+            controllers.forEach { controllers in
+                controllers.navigationController?.setNavigationBarHidden(true, animated: false)
+            }
         }
         
         func pageViewController(
@@ -53,6 +56,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             if index == 0 {
                 return controllers.last
             }
+            
             return controllers[index - 1]
         }
 
@@ -66,14 +70,21 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             if index + 1 == controllers.count {
                 return controllers.first
             }
+            
             return controllers[index + 1]
         }
+        
         
         func pageViewController(
                     _ pageViewController: UIPageViewController,
                     didFinishAnimating finished: Bool,
                     previousViewControllers: [UIViewController],
                     transitionCompleted completed: Bool) {
+            pageViewController.navigationController?.setNavigationBarHidden(true, animated: false)
+            previousViewControllers.forEach { controllers in
+                controllers.navigationController?.setNavigationBarHidden(true, animated: false)
+            }
+                        
             if completed,
                let visibleViewController = pageViewController.viewControllers?.first,
                let index = controllers.firstIndex(of: visibleViewController) {

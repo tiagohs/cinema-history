@@ -14,42 +14,40 @@ struct MainTopicListView<Content : View>: View {
     @ViewBuilder var MainTopicItemDestination: (_ mainTopic: MainTopicItem) -> Content
     
     var body: some View {
-        List {
-            ForEach(0 ..< mainTopicList.count) { index in
-                let mainTopic = mainTopicList[index]
-                
-                if mainTopic.layoutType == .quote {
-                    MainTopicQuoteView(quoteMainTopic: mainTopic as! QuoteMainTopic)
-                } else {
-                    switch mainTopic.mainTopicType {
-                    case .awards:
-                        MainTopicAwardsView(awardMainTopic: mainTopic as! AwardMainTopic)
-                    case .directors:
-                        MainTopicDirectorsView(directorsMainTopic: mainTopic as! DirectorsMainTopic)
-                    case .history_cinema:
-                        let mainTopicItem = mainTopic as! MainTopicItem
-                        
-                        NavigationLink(destination: MainTopicItemDestination(mainTopicItem)) {
-                            if (mainTopicItem.layoutType != .full) {
-                                MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
-                                    .padding()
-                                    .transition(.slide)
-                            } else {
-                                MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
-                                    .transition(.slide)
-                            }
+        ScrollView {
+            LazyVStack {
+                ForEach(0 ..< mainTopicList.count) { index in
+                    let mainTopic = mainTopicList[index]
+                    
+                    if mainTopic.layoutType == .quote {
+                        MainTopicQuoteView(quoteMainTopic: mainTopic as! QuoteMainTopic)
+                    } else {
+                        switch mainTopic.mainTopicType {
+                        case .awards:
+                            MainTopicAwardsView(awardMainTopic: mainTopic as! AwardMainTopic)
+                        case .directors:
+                            MainTopicDirectorsView(directorsMainTopic: mainTopic as! DirectorsMainTopic)
+                        case .history_cinema:
+                            let mainTopicItem = mainTopic as! MainTopicItem
+                            
+                            NavigationLink(destination: MainTopicItemDestination(mainTopicItem)) {
+                                    if (mainTopicItem.layoutType != .full) {
+                                        MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
+                                            .transition(.slide)
+                                    } else {
+                                        MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
+                                            .transition(.slide)
+                                    }
+                                }
+                        case .mil_movies:
+                            MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
+                        default:
+                            AnyView(EmptyView())
                         }
-                        .padding(.trailing, -32.0)
-                        .listRowInsets(EdgeInsets())
-                    case .mil_movies:
-                        MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
-                    default:
-                        AnyView(EmptyView())
                     }
                 }
             }
         }
-        .id(UUID())
     }
 }
 
