@@ -1,167 +1,170 @@
-[
-  {
-    "id": 1,
-    "title": "O Renascimento do Terror",
-    "description": "O terror social ganha as bilheterias com Corra!, de Jordan Peele; o terror clássico de casa mal assombrada e exorcismo se mantém vivo com Invocação do mal e o horror psicológico ganha novas possibilidades com Babadook e A Bruxa.",
-    "image": {
-      "image_type": "local",
-      "url": "img_the_conjuring",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
+{
+    "results": [
+        {
+          "id": 1,
+          "title": "O Renascimento do Terror",
+          "description": "O terror social ganha as bilheterias com Corra!, de Jordan Peele; o terror clássico de casa mal assombrada e exorcismo se mantém vivo com Invocação do mal e o horror psicológico ganha novas possibilidades com Babadook e A Bruxa.",
+          "image": {
+            "image_type": "local",
+            "url": "img_the_conjuring",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 2,
+          "title": "Super Heróis e os Universos Compartilhados ",
+          "description": "A década dos super-heróis: a Disney reina, dona da Marvel Studios. Enquanto a Warner, casa da DC, busca o seu espaço lançando novos filmes e criando o seu – conturbado – DCEU.",
+          "image": {
+            "image_type": "local",
+            "url": "img_avengers_endgame",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 3,
+          "title": "O impacto da pirataria ",
+          "description": "A pirataria viu seu auge nos anos 2000, sendo a década de 2010 um período de metamorfose. Vimos o surgimento da \"Pirataria 3.0\", e mesmo com o impacto dos streamings, o prejuízo que a indústria sofre é enorme.",
+          "image": {
+            "image_type": "local",
+            "url": "img_pirate_bay",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 4,
+          "title": "Dark Comedy",
+          "description": "Os tempos são outros. A polarização política, politicamente correto e os problemas sociais moldou a comédia em Hollywood: mais cínica, crítica e urgente.",
+          "image": {
+            "image_type": "local",
+            "url": "img_parasita",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 5,
+          "title": "A Evolução dos Efeitos Especiais",
+          "description": "Em 2010, David Fincher trouxe uma nova técnica para lidar com gêmeos em cena, interpretados pelo mesmo ator. A captura de movimentos dá um salto gigantesco com Andy Serkis na franquia Planeta dos Macacos e a Disney é a casa de revoluções tecnológica com Mogli e O Rei Leão.",
+          "image": {
+            "image_type": "local",
+            "url": "img_cgi_planeta_macacos",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 6,
+          "title": "Time's Up",
+          "description": "O movimento que mudou Hollywood para sempre.",
+          "image": {
+            "image_type": "local",
+            "url": "img_times_up",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 7,
+          "title": "A Década da Disney",
+          "description": "Star Wars, animações da Pixar, Universo Cinematográfico Marvel, Os Simpsons: o que eles têm em comum? Nada, a não ser que a dona desses gigantescos sucessos seja a Disney. A década de 2010 foi decisiva para a Casa das Ideias se tornar dona das maiores bilheterias do cinema.",
+          "image": {
+            "image_type": "local",
+            "url": "img_disney",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 8,
+          "title": "A Era dos Reboots e Remakes",
+          "description": "Grandes estúdios investem pesado em sequencias, remakes e reboots de grandes títulos do passado.",
+          "image": {
+            "image_type": "local",
+            "url": "img_remakes",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 9,
+          "title": "Diversidade e Representatividade",
+          "description": "A década de 2010 viu um novo avanço na luta pela diversidade nos cinemas. #OscarSoWhite denuncia a falta de indicações negras na premiação, além dos efeitos do #MeToo fazerem com que mais cineastas mulheres ganhassem o destaque que merecem.",
+          "image": {
+            "image_type": "local",
+            "url": "img_moolight_oscar",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 10,
+          "title": "A revolução do streaming que mudou Hollywood",
+          "description": "Com a popularização das transmissões pela internet, os hábitos mudaram totalmente. Agora é tudo sob demanda, das séries de sucesso aos filmes blockbusters.",
+          "image": {
+            "image_type": "local",
+            "url": "img_streming_netflix",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
+        },
+        {
+          "id": 11,
+          "title": "Fim do Mundo nos Cinemas ",
+          "description": "O fim do mundo ganha popularidade nos cinemas.",
+          "image": {
+            "image_type": "local",
+            "url": "img_interstellar",
+            "style": {
+              "scale_type": "center_crop",
+              "resize": {
+                "height": 350
+              }
+            }
+          }
         }
-      }
-    }
-  },
-  {
-    "id": 2,
-    "title": "Super Heróis e os Universos Compartilhados ",
-    "description": "A década dos super-heróis: a Disney reina, dona da Marvel Studios. Enquanto a Warner, casa da DC, busca o seu espaço lançando novos filmes e criando o seu – conturbado – DCEU.",
-    "image": {
-      "image_type": "local",
-      "url": "img_avengers_endgame",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 3,
-    "title": "O impacto da pirataria ",
-    "description": "A pirataria viu seu auge nos anos 2000, sendo a década de 2010 um período de metamorfose. Vimos o surgimento da \"Pirataria 3.0\", e mesmo com o impacto dos streamings, o prejuízo que a indústria sofre é enorme.",
-    "image": {
-      "image_type": "local",
-      "url": "img_pirate_bay",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 4,
-    "title": "Dark Comedy",
-    "description": "Os tempos são outros. A polarização política, politicamente correto e os problemas sociais moldou a comédia em Hollywood: mais cínica, crítica e urgente.",
-    "image": {
-      "image_type": "local",
-      "url": "img_parasita",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 5,
-    "title": "A Evolução dos Efeitos Especiais",
-    "description": "Em 2010, David Fincher trouxe uma nova técnica para lidar com gêmeos em cena, interpretados pelo mesmo ator. A captura de movimentos dá um salto gigantesco com Andy Serkis na franquia Planeta dos Macacos e a Disney é a casa de revoluções tecnológica com Mogli e O Rei Leão.",
-    "image": {
-      "image_type": "local",
-      "url": "img_cgi_planeta_macacos",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 6,
-    "title": "Time's Up",
-    "description": "O movimento que mudou Hollywood para sempre.",
-    "image": {
-      "image_type": "local",
-      "url": "img_times_up",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 7,
-    "title": "A Década da Disney",
-    "description": "Star Wars, animações da Pixar, Universo Cinematográfico Marvel, Os Simpsons: o que eles têm em comum? Nada, a não ser que a dona desses gigantescos sucessos seja a Disney. A década de 2010 foi decisiva para a Casa das Ideias se tornar dona das maiores bilheterias do cinema.",
-    "image": {
-      "image_type": "local",
-      "url": "img_disney",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 8,
-    "title": "A Era dos Reboots e Remakes",
-    "description": "Grandes estúdios investem pesado em sequencias, remakes e reboots de grandes títulos do passado.",
-    "image": {
-      "image_type": "local",
-      "url": "img_remakes",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 9,
-    "title": "Diversidade e Representatividade",
-    "description": "A década de 2010 viu um novo avanço na luta pela diversidade nos cinemas. #OscarSoWhite denuncia a falta de indicações negras na premiação, além dos efeitos do #MeToo fazerem com que mais cineastas mulheres ganhassem o destaque que merecem.",
-    "image": {
-      "image_type": "local",
-      "url": "img_moolight_oscar",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 10,
-    "title": "A revolução do streaming que mudou Hollywood",
-    "description": "Com a popularização das transmissões pela internet, os hábitos mudaram totalmente. Agora é tudo sob demanda, das séries de sucesso aos filmes blockbusters.",
-    "image": {
-      "image_type": "local",
-      "url": "img_streming_netflix",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  },
-  {
-    "id": 11,
-    "title": "Fim do Mundo nos Cinemas ",
-    "description": "O fim do mundo ganha popularidade nos cinemas.",
-    "image": {
-      "image_type": "local",
-      "url": "img_interstellar",
-      "style": {
-        "scale_type": "center_crop",
-        "resize": {
-          "height": 350
-        }
-      }
-    }
-  }
-]
+      ]
+
+}

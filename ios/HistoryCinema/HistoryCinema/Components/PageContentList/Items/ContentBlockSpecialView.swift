@@ -74,8 +74,10 @@ struct ContentBlockSpecialView: View {
                         
                         DividerColorView(colorName: colorAsset.colorName)
                         
-                        CustomImage(image: contentBlockSpecial.image, placeholderType: .movie)
-                            .frame(width: UIScreen.main.bounds.width, height: 200)
+                        CustomImage(
+                            image: contentBlockSpecial.image,
+                            placeholderType: .movie,
+                            height: 200)
                     }
                     .frame(width: UIScreen.main.bounds.width)
                 }

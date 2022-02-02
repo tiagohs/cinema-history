@@ -20,19 +20,23 @@ struct CustomImage: View {
     var blurRadius: Int?
     var iconSize: Int?
     
-    func setupImageWithScale(_ imageComponent: Image, _ imageUrl: String, scaleType: String) -> some View {
+    func setupImageWithScale(_ imageComponent: Image, _ imageUrl: String, scaleType: String, height: CGFloat, width: CGFloat) -> some View {
         if scaleType == "center_crop" {
-            return imageComponent
+            return AnyView(imageComponent
                 .resizable()
                 .aspectRatio(contentMode: .fill)
+                .frame(width: width, height: height, alignment: .center)
+                .clipped())
         } else if scaleType == "fit" {
-            return imageComponent
+            return AnyView(imageComponent
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fit))
         } else {
-            return imageComponent
+            return AnyView(imageComponent
                 .resizable()
                 .aspectRatio(contentMode: .fill)
+                .frame(width: width, height: height, alignment: .center)
+                .clipped())
         }
     }
     
@@ -86,11 +90,12 @@ struct CustomImage: View {
     func getLocalImage() -> some View {
         if let image = image {
             let imageUrl = image.url ?? ""
+            let imageWidth = (width != nil) ? CGFloat(width!) : UIScreen.main.bounds.width
             let imageComponent = Image(imageUrl)
             
             if let imageHeight = image.imageStyle?.resize?.height {
                 if let imageScaleType = image.imageStyle?.scaleType {
-                    setupImageWithScale(imageComponent, imageUrl, scaleType: imageScaleType)
+                    setupImageWithScale(imageComponent, imageUrl, scaleType: imageScaleType, height: CGFloat(imageHeight), width: imageWidth)
                         .frame(height: CGFloat(imageHeight), alignment: .center)
                 } else {
                     imageComponent
@@ -99,7 +104,7 @@ struct CustomImage: View {
             } else {
                 if height != nil {
                     if let imageScaleType = image.imageStyle?.scaleType {
-                        setupImageWithScale(imageComponent, imageUrl, scaleType: imageScaleType)
+                        setupImageWithScale(imageComponent, imageUrl, scaleType: imageScaleType, height: CGFloat(height!), width: imageWidth)
                             .frame(height: CGFloat(height!), alignment: .center)
                     } else {
                         imageComponent
@@ -107,7 +112,7 @@ struct CustomImage: View {
                     }
                 } else {
                     if let imageScaleType = image.imageStyle?.scaleType {
-                        setupImageWithScale(imageComponent, imageUrl, scaleType: imageScaleType)
+                        setupImageWithScale(imageComponent, imageUrl, scaleType: imageScaleType, height: CGFloat(300), width: imageWidth)
                     } else {
                         imageComponent
                     }

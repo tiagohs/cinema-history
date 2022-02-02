@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "img_planeta_dos_macacos_o_confronto@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "img_planeta_dos_macacos_o_confronto@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "img_planeta_dos_macacos_o_confronto@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -15,7 +15,7 @@ struct MainTopicListView<Content : View>: View {
     
     var body: some View {
         ScrollView {
-            LazyVStack {
+            VStack {
                 ForEach(0 ..< mainTopicList.count) { index in
                     let mainTopic = mainTopicList[index]
                     
@@ -31,13 +31,8 @@ struct MainTopicListView<Content : View>: View {
                             let mainTopicItem = mainTopic as! MainTopicItem
                             
                             NavigationLink(destination: MainTopicItemDestination(mainTopicItem)) {
-                                    if (mainTopicItem.layoutType != .full) {
-                                        MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
-                                            .transition(.slide)
-                                    } else {
-                                        MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
-                                            .transition(.slide)
-                                    }
+                                MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
+                                    .transition(.slide)
                                 }
                         case .mil_movies:
                             MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)

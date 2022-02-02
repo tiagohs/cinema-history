@@ -11,7 +11,7 @@ import Alamofire
 import ObjectMapper
 import SwiftUI
 
-// MARK: HomePresenter
+// MARK: HomePresenter: BasePresenter
 
 class HomePresenter: BasePresenter, ObservableObject {
     
@@ -34,6 +34,8 @@ class HomePresenter: BasePresenter, ObservableObject {
     }
 }
 
+// MARK: HomePresenter: Fetchs
+
 extension HomePresenter {
     
     func fetchHomeContent() {
@@ -41,7 +43,7 @@ extension HomePresenter {
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
-                    case .finished: print("🏁 finished")
+                    case .finished: print("")
                     case .failure:
                         self.showErrorMessage = true
                     }
@@ -51,6 +53,8 @@ extension HomePresenter {
             .store(in: &cancalables)
     }
 }
+
+// MARK: HomePresenter: Present Views
 
 extension HomePresenter {
     

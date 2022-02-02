@@ -14,6 +14,18 @@
 		A33529C327A73EEB00FC23AB /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33529C227A73EEB00FC23AB /* ViewDidLoadModifier.swift */; };
 		A33529C527A849B700FC23AB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33529C427A849B700FC23AB /* LoadingView.swift */; };
 		A33529C727A87C8300FC23AB /* HistoryToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33529C627A87C8300FC23AB /* HistoryToolbar.swift */; };
+		A33529CB27A9B18A00FC23AB /* hmt_sumarios_7.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529CA27A9B18900FC23AB /* hmt_sumarios_7.json */; };
+		A33529D827A9B1AB00FC23AB /* main_7_page_8.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529CD27A9B1AB00FC23AB /* main_7_page_8.json */; };
+		A33529D927A9B1AB00FC23AB /* main_7_page_4.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529CE27A9B1AB00FC23AB /* main_7_page_4.json */; };
+		A33529DA27A9B1AB00FC23AB /* main_7_page_5.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529CF27A9B1AB00FC23AB /* main_7_page_5.json */; };
+		A33529DB27A9B1AB00FC23AB /* main_7_page_9.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529D027A9B1AB00FC23AB /* main_7_page_9.json */; };
+		A33529DC27A9B1AB00FC23AB /* main_7_page_2.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529D127A9B1AB00FC23AB /* main_7_page_2.json */; };
+		A33529DD27A9B1AB00FC23AB /* main_7_page_3.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529D227A9B1AB00FC23AB /* main_7_page_3.json */; };
+		A33529DE27A9B1AB00FC23AB /* main_7_page_11.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529D327A9B1AB00FC23AB /* main_7_page_11.json */; };
+		A33529DF27A9B1AB00FC23AB /* main_7_page_1.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529D427A9B1AB00FC23AB /* main_7_page_1.json */; };
+		A33529E027A9B1AB00FC23AB /* main_7_page_10.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529D527A9B1AB00FC23AB /* main_7_page_10.json */; };
+		A33529E127A9B1AB00FC23AB /* main_7_page_6.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529D627A9B1AB00FC23AB /* main_7_page_6.json */; };
+		A33529E227A9B1AB00FC23AB /* main_7_page_7.json in Resources */ = {isa = PBXBuildFile; fileRef = A33529D727A9B1AB00FC23AB /* main_7_page_7.json */; };
 		A339AA5F2610EC050006B0C6 /* ContentRecomendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339AA5E2610EC050006B0C6 /* ContentRecomendationView.swift */; };
 		A339AA622610F73C0006B0C6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339AA612610F73C0006B0C6 /* WebView.swift */; };
 		A339AA66261109F90006B0C6 /* ContentNomineesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339AA65261109F90006B0C6 /* ContentNomineesView.swift */; };
@@ -421,6 +433,18 @@
 		A33529C227A73EEB00FC23AB /* ViewDidLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoadModifier.swift; sourceTree = "<group>"; };
 		A33529C427A849B700FC23AB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A33529C627A87C8300FC23AB /* HistoryToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryToolbar.swift; sourceTree = "<group>"; };
+		A33529CA27A9B18900FC23AB /* hmt_sumarios_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hmt_sumarios_7.json; path = ../../../../../../android/app/src/main/assets/local/history_sumarios/hmt_sumarios_7.json; sourceTree = "<group>"; };
+		A33529CD27A9B1AB00FC23AB /* main_7_page_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_8.json; sourceTree = "<group>"; };
+		A33529CE27A9B1AB00FC23AB /* main_7_page_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_4.json; sourceTree = "<group>"; };
+		A33529CF27A9B1AB00FC23AB /* main_7_page_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_5.json; sourceTree = "<group>"; };
+		A33529D027A9B1AB00FC23AB /* main_7_page_9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_9.json; sourceTree = "<group>"; };
+		A33529D127A9B1AB00FC23AB /* main_7_page_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_2.json; sourceTree = "<group>"; };
+		A33529D227A9B1AB00FC23AB /* main_7_page_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_3.json; sourceTree = "<group>"; };
+		A33529D327A9B1AB00FC23AB /* main_7_page_11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_11.json; sourceTree = "<group>"; };
+		A33529D427A9B1AB00FC23AB /* main_7_page_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_1.json; sourceTree = "<group>"; };
+		A33529D527A9B1AB00FC23AB /* main_7_page_10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_10.json; sourceTree = "<group>"; };
+		A33529D627A9B1AB00FC23AB /* main_7_page_6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_6.json; sourceTree = "<group>"; };
+		A33529D727A9B1AB00FC23AB /* main_7_page_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main_7_page_7.json; sourceTree = "<group>"; };
 		A339AA5E2610EC050006B0C6 /* ContentRecomendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRecomendationView.swift; sourceTree = "<group>"; };
 		A339AA612610F73C0006B0C6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		A339AA65261109F90006B0C6 /* ContentNomineesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNomineesView.swift; sourceTree = "<group>"; };
@@ -834,6 +858,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A33529CC27A9B1AB00FC23AB /* main_7 */ = {
+			isa = PBXGroup;
+			children = (
+				A33529CD27A9B1AB00FC23AB /* main_7_page_8.json */,
+				A33529CE27A9B1AB00FC23AB /* main_7_page_4.json */,
+				A33529CF27A9B1AB00FC23AB /* main_7_page_5.json */,
+				A33529D027A9B1AB00FC23AB /* main_7_page_9.json */,
+				A33529D127A9B1AB00FC23AB /* main_7_page_2.json */,
+				A33529D227A9B1AB00FC23AB /* main_7_page_3.json */,
+				A33529D327A9B1AB00FC23AB /* main_7_page_11.json */,
+				A33529D427A9B1AB00FC23AB /* main_7_page_1.json */,
+				A33529D527A9B1AB00FC23AB /* main_7_page_10.json */,
+				A33529D627A9B1AB00FC23AB /* main_7_page_6.json */,
+				A33529D727A9B1AB00FC23AB /* main_7_page_7.json */,
+			);
+			name = main_7;
+			path = ../../../../../../android/app/src/main/assets/local/pages/main_7;
+			sourceTree = "<group>";
+		};
 		A339AA602610F7210006B0C6 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1388,6 +1431,7 @@
 		A361907E25E5D6B800626763 /* pages */ = {
 			isa = PBXGroup;
 			children = (
+				A33529CC27A9B1AB00FC23AB /* main_7 */,
 				A361907F25E5D6B800626763 /* main_1 */,
 				A361908925E5D6B800626763 /* main_6 */,
 				A361909D25E5D6B800626763 /* main_5 */,
@@ -1523,6 +1567,7 @@
 				A36190D225E5D6B800626763 /* hmt_sumarios_4.json */,
 				A36190D325E5D6B800626763 /* hmt_sumarios_5.json */,
 				A36190D725E5D6B800626763 /* hmt_sumarios_6.json */,
+				A33529CA27A9B18900FC23AB /* hmt_sumarios_7.json */,
 			);
 			path = history_sumarios;
 			sourceTree = "<group>";
@@ -2017,17 +2062,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A361912425E5D6B900626763 /* main_2_page_9.json in Resources */,
+				A33529DA27A9B1AB00FC23AB /* main_7_page_5.json in Resources */,
 				A361913D25E5D6B900626763 /* main_4_page_8.json in Resources */,
 				A361910325E5D6B900626763 /* main_6_page_15.json in Resources */,
 				A361911025E5D6B900626763 /* main_6_page_2.json in Resources */,
 				A361912025E5D6B900626763 /* main_5_page_4.json in Resources */,
 				A33BCAC925D8A8ED00E0A63D /* ProximaNova-Bold.otf in Resources */,
 				A36190F425E5D6B900626763 /* glossary.json in Resources */,
+				A33529E027A9B1AB00FC23AB /* main_7_page_10.json in Resources */,
 				A36190FB25E5D6B900626763 /* main_1_page_9.json in Resources */,
 				A33BCACB25D8A8ED00E0A63D /* FuturaCondensed-Light.otf in Resources */,
 				A361913725E5D6B900626763 /* main_3_page_3.json in Resources */,
 				A361911625E5D6B900626763 /* main_5_page_10.json in Resources */,
 				A361912C25E5D6B900626763 /* main_2_page_6.json in Resources */,
+				A33529DF27A9B1AB00FC23AB /* main_7_page_1.json in Resources */,
 				A33BCADA25D8A8ED00E0A63D /* Heptaslab-Bold.ttf in Resources */,
 				A361911725E5D6B900626763 /* main_5_page_11.json in Resources */,
 				A361914825E5D6B900626763 /* maintopics.json in Resources */,
@@ -2086,15 +2134,19 @@
 				A361912D25E5D6B900626763 /* main_3_page_1.json in Resources */,
 				A33BCAD725D8A8ED00E0A63D /* OpenSans-Italic.ttf in Resources */,
 				A361913025E5D6B900626763 /* main_3_page_7.json in Resources */,
+				A33529D927A9B1AB00FC23AB /* main_7_page_4.json in Resources */,
 				A36190E825E5D6B900626763 /* history6.json in Resources */,
+				A33529DD27A9B1AB00FC23AB /* main_7_page_3.json in Resources */,
 				A361914425E5D6B900626763 /* hmt_sumarios_2.json in Resources */,
 				A36190F825E5D6B900626763 /* main_1_page_8.json in Resources */,
+				A33529E227A9B1AB00FC23AB /* main_7_page_7.json in Resources */,
 				A33BCAEC25D8A8ED00E0A63D /* Montserrat-Bold.ttf in Resources */,
 				A33BCAD325D8A8ED00E0A63D /* BigshouldersDisplay-Light.ttf in Resources */,
 				A33BCAE025D8A8ED00E0A63D /* Futura-Bold.ttf in Resources */,
 				A361913425E5D6B900626763 /* main_3_page_5.json in Resources */,
 				A33BCAE925D8A8ED00E0A63D /* OpenSans-Light.ttf in Resources */,
 				A361912625E5D6B900626763 /* main_2_page_4.json in Resources */,
+				A33529E127A9B1AB00FC23AB /* main_7_page_6.json in Resources */,
 				A361912825E5D6B900626763 /* main_2_page_3.json in Resources */,
 				A361913625E5D6B900626763 /* main_3_page_2.json in Resources */,
 				A36190DC25E5D6B900626763 /* directorsmaintopics.json in Resources */,
@@ -2133,6 +2185,7 @@
 				A33BCAF125D8A8ED00E0A63D /* Roboto-Bold.ttf in Resources */,
 				A33BCAD825D8A8ED00E0A63D /* BillionaireMediumGrunge.ttf in Resources */,
 				A361914725E5D6B900626763 /* hmt_sumarios_6.json in Resources */,
+				A33529DC27A9B1AB00FC23AB /* main_7_page_2.json in Resources */,
 				A33BCADD25D8A8ED00E0A63D /* Roboto-Thin.ttf in Resources */,
 				A33BCAD925D8A8ED00E0A63D /* OpenSans-LightItalic.ttf in Resources */,
 				A36190F625E5D6B900626763 /* main_1_page_2.json in Resources */,
@@ -2140,6 +2193,8 @@
 				A36190FD25E5D6B900626763 /* main_1_page_7.json in Resources */,
 				A361911C25E5D6B900626763 /* main_5_page_3.json in Resources */,
 				A361912525E5D6B900626763 /* main_2_page_5.json in Resources */,
+				A33529CB27A9B18A00FC23AB /* hmt_sumarios_7.json in Resources */,
+				A33529DE27A9B1AB00FC23AB /* main_7_page_11.json in Resources */,
 				A33BCAD225D8A8ED00E0A63D /* OpenSansCondensed-Light.ttf in Resources */,
 				A33BCADC25D8A8ED00E0A63D /* Roboto-Medium.ttf in Resources */,
 				A33BCACD25D8A8ED00E0A63D /* Heptaslab-Thin.ttf in Resources */,
@@ -2158,6 +2213,7 @@
 				A36190ED25E5D6B900626763 /* timeline_6.json in Resources */,
 				A361911825E5D6B900626763 /* main_5_page_1.json in Resources */,
 				A361910925E5D6B900626763 /* main_6_page_10.json in Resources */,
+				A33529D827A9B1AB00FC23AB /* main_7_page_8.json in Resources */,
 				A33BCAEF25D8A8ED00E0A63D /* RobotoMono-Bold.ttf in Resources */,
 				A36190F025E5D6B900626763 /* timeline_3.json in Resources */,
 				A36190F925E5D6B900626763 /* main_1_page_4.json in Resources */,
@@ -2165,6 +2221,7 @@
 				A361912125E5D6B900626763 /* main_5_page_5.json in Resources */,
 				A361912B25E5D6B900626763 /* main_2_page_7.json in Resources */,
 				A36190FE25E5D6B900626763 /* main_1_page_1.json in Resources */,
+				A33529DB27A9B1AB00FC23AB /* main_7_page_9.json in Resources */,
 				A361910C25E5D6B900626763 /* main_6_page_11.json in Resources */,
 				A361913125E5D6B900626763 /* main_3_page_10.json in Resources */,
 				A36190F325E5D6B900626763 /* references.json in Resources */,
