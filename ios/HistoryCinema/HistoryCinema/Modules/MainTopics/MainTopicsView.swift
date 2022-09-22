@@ -28,6 +28,20 @@ struct MainTopicsView: View {
                 )
             }
         }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                HStack(alignment: .center) {
+                    Text("A História do")
+                        .font(.oswaldBold(size: 18))
+                        .foregroundColor(Color.textPrimary)
+                    
+                    Text("Cinema")
+                        .font(.billionaireMediumGrunge(size: 38))
+                        .foregroundColor(Color.textPrimary)
+                }
+            }
+        }
+        .foregroundColor(Color.textPrimary)
         .alert(isPresented: $presenter.showErrorMessage, content: {
             Alert(title: Text("Ops"),
                   message: Text("Houve algum problema! Por favor, tente novamente."),

@@ -13,6 +13,8 @@ struct SummaryView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+    @State private var selection: String? = nil
+    
     let mainTopic: MainTopicItem
     
     var body: some View {
@@ -27,27 +29,30 @@ struct SummaryView: View {
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .font(.oswaldBold(size: 32))
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.textPrimary)
                                 .padding(.horizontal, 16)
                             
                             Text(mainTopic.description!)
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .font(.proximaNovaRegular(size: 16))
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.textPrimary)
                                 .padding(.horizontal, 22)
                                 .padding(.vertical, 8)
                             
-                            Button(action: {
-                                print("Ir Para Pages")
-                            }) {
-                                Text("Iniciar")
-                                    .font(.proximaNovaRegular(size: 18))
-                                    .padding(.horizontal, 22)
-                                    .padding(.vertical, 12)
-                                    .background(Color.black)
-                                    .foregroundColor(Color.white)
+                            NavigationLink(destination: presenter.presentHistoryPages(mainTopic, 0), tag: "HistoryPage", selection: $selection) {
+                                Button(action: {
+                                    selection = "HistoryPage"
+                                }) {
+                                    Text("Iniciar")
+                                        .font(.proximaNovaRegular(size: 18))
+                                        .padding(.horizontal, 22)
+                                        .padding(.vertical, 12)
+                                        .background(Color.cardBackground)
+                                        .foregroundColor(Color.cardTextPrimary)
+                                }
                             }
+                            
                             
                             Divider()
                                 .padding(.horizontal, 32)
@@ -58,7 +63,7 @@ struct SummaryView: View {
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .font(.heptaslabBold(size: 18))
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.textPrimary)
                                 .padding(.horizontal, 16)
                                 .padding(.bottom, 8)
                             
@@ -68,7 +73,7 @@ struct SummaryView: View {
                             
                             if !presenter.summaryList.isEmpty {
                                 ForEach(0 ..< presenter.summaryList.count) { index in
-                                    NavigationLink(destination: presenter.presentHistoryPages(mainTopic)) {
+                                    NavigationLink(destination: presenter.presentHistoryPages(mainTopic, index)) {
                                         SummaryItem(summaryModel: presenter.summaryList[index])
                                     }
                                     .listRowInsets(EdgeInsets())
@@ -79,18 +84,17 @@ struct SummaryView: View {
                     }
                 }
             }
-            .background(Color.white)
             
             Button(action: {
                 self.presentationMode.wrappedValue.dismiss()
             }) {
                 Image(systemName: "chevron.left")
                     .padding()
-                    .background(Color.black)
-                    .foregroundColor(Color.white)
+                    .background(Color.backgroundInverse)
+                    .foregroundColor(Color.textInverse)
                     .clipShape(Circle())
             }
-            .shadow(color: .black, radius: 5)
+            .shadow(color: Color.backgroundInverse, radius: 5)
             .padding()
         }
         .onAppear {

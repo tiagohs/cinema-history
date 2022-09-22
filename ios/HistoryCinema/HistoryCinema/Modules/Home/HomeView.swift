@@ -13,19 +13,31 @@ struct HomeView: View {
     @ObservedObject private var presenter: HomePresenter = HomeWireframe.buildPresenter()
     
     var body: some View {
-        VStack(alignment: .leading) {
-            if (presenter.homeContent.count == 0) {
-                ProgressView()
-            }
-            
-            if !presenter.homeContent.isEmpty {
-                HomeListView(
-                    homeContentItemList: presenter.homeContent,
-                    HomeItemDestination: { mainTopicType in
-                        self.presenter.presentMainTopics(mainTopicType)
+        NavigationView {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    HomeButtonListView(
+                        ReferencesDestination: { AnyView(EmptyView()) },
+                        GlossaryDestination: { AnyView(EmptyView()) },
+                        SettingsDestination: { AnyView(EmptyView()) },
+                        AboutDestination: { AnyView(EmptyView()) }
+                    )
+                    
+                    if (presenter.homeContent.count == 0) {
+                        ProgressView()
                     }
-                )
+                    
+                    if !presenter.homeContent.isEmpty {
+                        HomeListView(
+                            homeContentItemList: presenter.homeContent,
+                            HomeItemDestination: { mainTopicType in
+                                self.presenter.presentMainTopics(mainTopicType)
+                            }
+                        )
+                    }
+                }
             }
+            .navigationBarTitle("Historia do cinema", displayMode: .automatic)
         }
         .alert(isPresented: $presenter.showErrorMessage, content: {
             Alert(title: Text("Ops"),

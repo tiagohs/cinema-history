@@ -67,7 +67,6 @@ struct HistoryPageItemView: View {
                 PageContentListView(contentList: page.contentList)
             }
         }
-        .background(Color.white)
     }
 }
 

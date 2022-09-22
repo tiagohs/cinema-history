@@ -278,6 +278,9 @@
 		A36D0D4C2611250400AFCE4F /* HistoryPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36D0D4B2611250400AFCE4F /* HistoryPageInteractor.swift */; };
 		A36D0D4E2611251200AFCE4F /* HistoryPageWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36D0D4D2611251200AFCE4F /* HistoryPageWireframe.swift */; };
 		A37B675525F6A31000BE7977 /* SummaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B675425F6A31000BE7977 /* SummaryItem.swift */; };
+		A384FB8F28DA5D6B00887FA0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A384FB8E28DA5D6B00887FA0 /* Colors.xcassets */; };
+		A384FB9128DB5E7E00887FA0 /* HomeButtonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384FB9028DB5E7D00887FA0 /* HomeButtonListView.swift */; };
+		A384FB9328DCAAD500887FA0 /* SummaryBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384FB9228DCAAD500887FA0 /* SummaryBody.swift */; };
 		A39CD6C325E1A15900860258 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CD6C025E1A15800860258 /* HomeListView.swift */; };
 		A39CD6C425E1A15900860258 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CD6C125E1A15800860258 /* PageControl.swift */; };
 		A39CD6C525E1A15900860258 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CD6C225E1A15800860258 /* PageViewController.swift */; };
@@ -378,7 +381,6 @@
 		A3C2382425EB2A080087D134 /* MainTopicDirectorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382325EB2A080087D134 /* MainTopicDirectorsView.swift */; };
 		A3C2382625EB2A1C0087D134 /* MainTopicMilMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382525EB2A1C0087D134 /* MainTopicMilMoviesView.swift */; };
 		A3C2382825EB31180087D134 /* Colors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382725EB31180087D134 /* Colors+Extensions.swift */; };
-		A3C2382A25EB386B0087D134 /* MainTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382925EB386B0087D134 /* MainTopicView.swift */; };
 		A3C2382C25EB40180087D134 /* MainTopicQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382B25EB40180087D134 /* MainTopicQuoteView.swift */; };
 		A3C2382E25EB4F260087D134 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382D25EB4F260087D134 /* QuoteView.swift */; };
 		A3E2380226066CED00191413 /* HistoryPagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380126066CED00191413 /* HistoryPagesView.swift */; };
@@ -702,6 +704,9 @@
 		A36D0D4B2611250400AFCE4F /* HistoryPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPageInteractor.swift; sourceTree = "<group>"; };
 		A36D0D4D2611251200AFCE4F /* HistoryPageWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPageWireframe.swift; sourceTree = "<group>"; };
 		A37B675425F6A31000BE7977 /* SummaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryItem.swift; sourceTree = "<group>"; };
+		A384FB8E28DA5D6B00887FA0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A384FB9028DB5E7D00887FA0 /* HomeButtonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonListView.swift; sourceTree = "<group>"; };
+		A384FB9228DCAAD500887FA0 /* SummaryBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryBody.swift; sourceTree = "<group>"; };
 		A39CD6C025E1A15800860258 /* HomeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		A39CD6C125E1A15800860258 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		A39CD6C225E1A15800860258 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -800,7 +805,6 @@
 		A3C2382325EB2A080087D134 /* MainTopicDirectorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopicDirectorsView.swift; sourceTree = "<group>"; };
 		A3C2382525EB2A1C0087D134 /* MainTopicMilMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopicMilMoviesView.swift; sourceTree = "<group>"; };
 		A3C2382725EB31180087D134 /* Colors+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extensions.swift"; sourceTree = "<group>"; };
-		A3C2382925EB386B0087D134 /* MainTopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopicView.swift; sourceTree = "<group>"; };
 		A3C2382B25EB40180087D134 /* MainTopicQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopicQuoteView.swift; sourceTree = "<group>"; };
 		A3C2382D25EB4F260087D134 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		A3E2380126066CED00191413 /* HistoryPagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPagesView.swift; sourceTree = "<group>"; };
@@ -991,6 +995,7 @@
 				A33BCA1D25D8A3D100E0A63D /* Fonts */,
 				A33BC98825D89C4400E0A63D /* Assets.xcassets */,
 				A33BC98B25D89C4400E0A63D /* Preview Assets.xcassets */,
+				A384FB8E28DA5D6B00887FA0 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1655,6 +1660,7 @@
 			children = (
 				A39CD6C925E1ABFD00860258 /* HomeItem */,
 				A39CD6C025E1A15800860258 /* HomeListView.swift */,
+				A384FB9028DB5E7D00887FA0 /* HomeButtonListView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1760,6 +1766,7 @@
 				A37B675425F6A31000BE7977 /* SummaryItem.swift */,
 				A3ADCE1725EC5AE100ACA641 /* SummaryQuoteView.swift */,
 				A3E6F98225FF9D3D00B29AB6 /* SummaryHeader.swift */,
+				A384FB9228DCAAD500887FA0 /* SummaryBody.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1871,7 +1878,6 @@
 				A3C2382125EB29EB0087D134 /* MainTopicAwardsView.swift */,
 				A3C2382325EB2A080087D134 /* MainTopicDirectorsView.swift */,
 				A3C2382525EB2A1C0087D134 /* MainTopicMilMoviesView.swift */,
-				A3C2382925EB386B0087D134 /* MainTopicView.swift */,
 				A3C2382B25EB40180087D134 /* MainTopicQuoteView.swift */,
 			);
 			path = Items;
@@ -2074,6 +2080,7 @@
 				A33BCACB25D8A8ED00E0A63D /* FuturaCondensed-Light.otf in Resources */,
 				A361913725E5D6B900626763 /* main_3_page_3.json in Resources */,
 				A361911625E5D6B900626763 /* main_5_page_10.json in Resources */,
+				A384FB8F28DA5D6B00887FA0 /* Colors.xcassets in Resources */,
 				A361912C25E5D6B900626763 /* main_2_page_6.json in Resources */,
 				A33529DF27A9B1AB00FC23AB /* main_7_page_1.json in Resources */,
 				A33BCADA25D8A8ED00E0A63D /* Heptaslab-Bold.ttf in Resources */,
@@ -2368,6 +2375,7 @@
 				A39CD6C425E1A15900860258 /* PageControl.swift in Sources */,
 				A3C2381F25EB29B00087D134 /* MainTopicHistoryCinemaView.swift in Sources */,
 				A33BCA0F25D8A33400E0A63D /* CreditCrew.swift in Sources */,
+				A384FB9128DB5E7E00887FA0 /* HomeButtonListView.swift in Sources */,
 				A3C0FEB02607FC09009D35E7 /* TextViewLinkOnline.swift in Sources */,
 				A33BCAF825D8AD5F00E0A63D /* LocaleDTO.swift in Sources */,
 				A39CD70325E3375F00860258 /* NomineeType.swift in Sources */,
@@ -2432,6 +2440,7 @@
 				A339AA622610F73C0006B0C6 /* WebView.swift in Sources */,
 				A33BCA1125D8A33400E0A63D /* ReviewPerson.swift in Sources */,
 				A30F6030260FBF6C00FE3B1A /* ContentLinkScreenView.swift in Sources */,
+				A384FB9328DCAAD500887FA0 /* SummaryBody.swift in Sources */,
 				A39CD6F325E333E200860258 /* ContentImage.swift in Sources */,
 				A33BC9FB25D8A33400E0A63D /* Genre.swift in Sources */,
 				A33BC98525D89C4200E0A63D /* HistoryCinemaApp.swift in Sources */,
@@ -2471,7 +2480,6 @@
 				A39CD71525E33CB400860258 /* Quote.swift in Sources */,
 				A3C2380425EABA110087D134 /* LocalNetwork.swift in Sources */,
 				A3C0FEAA2607FACC009D35E7 /* TextViewLink.swift in Sources */,
-				A3C2382A25EB386B0087D134 /* MainTopicView.swift in Sources */,
 				A3C0FEA42607C585009D35E7 /* ContentMovieListView.swift in Sources */,
 				A39CD70B25E33A6100860258 /* ContentPersonList.swift in Sources */,
 				A3C2380625EABA2E0087D134 /* NetworkType.swift in Sources */,
@@ -2564,7 +2572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2619,7 +2627,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -2639,7 +2647,7 @@
 				DEVELOPMENT_TEAM = 2J54AL8AFC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HistoryCinema/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2662,7 +2670,7 @@
 				DEVELOPMENT_TEAM = 2J54AL8AFC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HistoryCinema/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2683,7 +2691,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J54AL8AFC;
 				INFOPLIST_FILE = HistoryCinemaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2705,7 +2713,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J54AL8AFC;
 				INFOPLIST_FILE = HistoryCinemaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -16,6 +16,12 @@ struct HistoryPagesView: View {
     let mainTopic: MainTopicItem
     let summaryList: [SummaryModel]
     
+    init(mainTopic: MainTopicItem, startIndex: Int, summaryList: [SummaryModel]) {
+        currentPage = startIndex
+        self.mainTopic = mainTopic
+        self.summaryList = summaryList
+    }
+    
     var body: some View {
         ZStack(alignment: .topLeading) {
             ZStack(alignment: .bottomTrailing) {
@@ -26,12 +32,53 @@ struct HistoryPagesView: View {
                     )
                 } 
                 
-                PageViewController(pages: pages, currentPage: $currentPage)
+                VStack {
+                    PageViewController(pages: pages, currentPage: $currentPage)
+                    
+                    VStack {
+                        HStack {
+                            Button(action: {
+                                
+                            }) {
+                                Image(systemName: "square.and.arrow.up")
+                                    .padding()
+                                    .foregroundColor(Color.bottomHistoryNavigationTextColor)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                if (currentPage > 0) {
+                                    currentPage = currentPage - 1
+                                }
+                            }) {
+                                Image(systemName: "arrow.left")
+                                    .padding()
+                                    .foregroundColor(Color.bottomHistoryNavigationTextColor)
+                            }
+                            Button(action: {
+                                if (currentPage < (summaryList.count - 1)) {
+                                    currentPage = currentPage + 1
+                                }
+                            }) {
+                                Image(systemName: "arrow.right")
+                                    .padding()
+                                    .foregroundColor(Color.bottomHistoryNavigationTextColor)
+                            }
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
+                    .background(Color.bottomHistoryNavigationBackgroundColor)
+                }
+                
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Color.black, for: .navigationBar, .tabBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .foregroundColor(Color.textPrimary)
         .toolbar {
-            ToolbarItem(placement: .principal) { 
+            ToolbarItem(placement: .principal) {
                 HistoryToolbar(mainTopic: mainTopic)
             }
         }
@@ -61,6 +108,7 @@ struct HistoryPagesView_Previews: PreviewProvider {
         
         HistoryPagesView(
             mainTopic: mainTopicItem,
+            startIndex: 0,
             summaryList: summaryList
         )
     }

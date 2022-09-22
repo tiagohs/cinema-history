@@ -29,12 +29,11 @@ extension SummaryWireframe {
 extension SummaryWireframe {
     
     @ViewBuilder
-    func presentHistoryPages(_ mainTopic: MainTopicItem, _ summaryList: [SummaryModel]) -> some View {
+    func presentHistoryPages(_ mainTopic: MainTopicItem,  _ startIndex: Int, _ summaryList: [SummaryModel]) -> some View {
         HistoryPagesView(
             mainTopic: mainTopic,
+            startIndex: startIndex,
             summaryList: summaryList
         )
-        .environment(\.colorScheme, .dark)
-        .navigationBarTitle("")
     }
 }

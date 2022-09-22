@@ -16,7 +16,7 @@ struct QuoteView: View {
         VStack {
             HStack {
                 Icon(name: .quote)
-                    .fill((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : (defaultIconColor ?? Color.white))
+                    .fill(Color.textPrimary)
                     .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal)
                     
@@ -33,7 +33,7 @@ struct QuoteView: View {
                     .padding(.vertical, 12)
                     .padding(.horizontal)
                     .fixedSize(horizontal: false, vertical: true)
-                    .foregroundColor((quote.textColor != nil) ? Color(UIColor(hex: quote.textColor!)) : (defaultTextColor ?? Color.white))
+                    .foregroundColor(Color.textPrimary)
                 
                 Spacer()
             }
@@ -45,7 +45,7 @@ struct QuoteView: View {
                     .frame(maxWidth: .infinity, alignment: .center)
                     .font(.oswaldBold(size: 20))
                     .padding(.horizontal)
-                    .foregroundColor((quote.textColor != nil) ? Color(UIColor(colorName: quote.textColor!)) : (defaultTextColor ?? Color.white))
+                    .foregroundColor(Color.textPrimary)
                 
                 Spacer()
             }
@@ -54,7 +54,7 @@ struct QuoteView: View {
                 Spacer()
                 
                 Icon(name: .quote)
-                    .fill((quote.iconColor != nil) ? Color(UIColor(colorName: quote.iconColor!)) : (defaultIconColor ?? Color.white))
+                    .fill(Color.textPrimary)
                     .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .rotationEffect(Angle(degrees: 180))
                     .padding(.horizontal)
@@ -67,6 +67,5 @@ struct QuoteView: View {
 struct QuoteView_Previews: PreviewProvider {
     static var previews: some View {
         QuoteView(quote: Quote.example)
-            .background(Color.black)
     }
 }

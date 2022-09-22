@@ -10,21 +10,6 @@ import Combine
 
 struct ContentView: View {
     
-    init() {
-        let navigationAppearance = UINavigationBarAppearance()
-        
-        navigationAppearance.configureWithOpaqueBackground()
-        
-        navigationAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-       
-        UINavigationBar.appearance().standardAppearance = navigationAppearance
-        UINavigationBar.appearance().compactAppearance = navigationAppearance
-        UINavigationBar.appearance().scrollEdgeAppearance = navigationAppearance
-
-        UINavigationBar.appearance().tintColor = .white
-    }
-    
     var body: some View {
         HomeView()
     }

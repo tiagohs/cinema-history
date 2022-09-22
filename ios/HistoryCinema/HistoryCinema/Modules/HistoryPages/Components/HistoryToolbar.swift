@@ -20,7 +20,7 @@ struct HistoryToolbar: View {
                 .padding(.horizontal, 16)
                 .padding(.vertical, 8)
         }
-        .background((mainTopic.color != nil) ? Color(UIColor(colorName: mainTopic.color!)) : Color.white)
+        .background((mainTopic.color != nil) ? Color(UIColor(colorName: mainTopic.color!)) : Color.black)
     }
 }
 

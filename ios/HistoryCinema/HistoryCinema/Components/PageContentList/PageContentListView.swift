@@ -45,7 +45,6 @@ struct PageContentListView: View {
                     EmptyView()
                 }
             }
-            .background(Color.white)
     }
 }
 

@@ -13,7 +13,6 @@ class MainTopicsWireframe {
     @ViewBuilder
     func presentSummary(_ mainTopic: MainTopicItem) -> some View {
         SummaryView(mainTopic: mainTopic)
-            .environment(\.colorScheme, .light)
             .navigationBarTitle("")
             .navigationBarHidden(true)
     }

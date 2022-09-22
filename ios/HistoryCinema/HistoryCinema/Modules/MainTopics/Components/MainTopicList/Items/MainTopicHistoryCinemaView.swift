@@ -11,15 +11,57 @@ struct MainTopicHistoryCinemaView: View {
     let mainTopicItem: MainTopicItem
     
     var body: some View {
-        MainTopicView(
-            subtitle: mainTopicItem.subtitle,
-            title: mainTopicItem.title,
-            description: mainTopicItem.description,
-            image: mainTopicItem.image,
-            layoutType: mainTopicItem.layoutType,
-            titleColor: mainTopicItem.titleColor,
-            titleBackgroundColor: mainTopicItem.titleBackgroundColor
+        let subtitle = mainTopicItem.subtitle
+        let title = mainTopicItem.title
+        let description = mainTopicItem.description
+        let titleColor = mainTopicItem.titleColor
+        let titleBackgroundColor = mainTopicItem.titleBackgroundColor
+        let image = mainTopicItem.image
+        let textColor = (titleColor != nil) ? Color(UIColor(colorName: titleColor!)) : Color.white
+        let backgroundColor = (titleBackgroundColor != nil) ? Color(UIColor(colorName: titleBackgroundColor!)) : Color.black
+        let imageHeight = (image?.imageStyle?.height != nil) ? image!.imageStyle!.height! : 250
+        
+        VStack {
+            Image(image!.url!)
+                .resizable()
+                .frame(height: CGFloat(imageHeight))
+            
+            VStack(alignment: .leading) {
+                if subtitle != nil {
+                    Text(subtitle!)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.oswaldLight(size: 16))
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(textColor)
+                }
+
+                if title != nil {
+                    Text(title!)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.oswaldBold(size: 28))
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(textColor)
+                }
+
+                if description != nil {
+                    Text(description!)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.proximaNovaRegular(size: 14))
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(textColor)
+                        .padding(.top, 5)
+                }
+            }
+            .padding()
+            .background(backgroundColor)
+        }
+        .background(backgroundColor)
+        .cornerRadius(25)
+        .overlay(
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
         )
+        .padding()
     }
 }
 

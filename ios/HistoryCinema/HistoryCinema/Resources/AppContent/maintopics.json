@@ -19,6 +19,7 @@
             },
             "style": {
               "scale_type": "fit",
+              "height": 230,
               "resize": {
                 "height": 250
               }
@@ -59,6 +60,7 @@
             "content_description": "Foto promocional do filme Branca de Neve, com a personagem segurando uma maça.",
             "style": {
               "scale_type": "center_crop",
+              "height": 250,
               "resize": {
                 "height": 250
               }
@@ -197,10 +199,11 @@
             },
             "style": {
               "scale_type": "center_crop",
+              "height": 380,
               "resize": {
-                "height": 250
+                "height": 350
               }
-            }
+            },
           },
           "presentation_image": {
             "image_type": "local",
@@ -219,7 +222,7 @@
             "icon_color": "md_black_1000"
           },
           "title_color": "md_white_1000",
-          "title_background_color": "transparent",
+          "title_background_color": "md_black_1000",
           "color": "md_cyan_900"
         },
         {
@@ -247,6 +250,7 @@
             "content_description": "Foto dos personagem Vincent e Julius de costas um para o outro, em Pulp Fiction: Tempo de Violência.",
             "style": {
               "scale_type": "center_crop",
+              "height": 350,
               "resize": {
                 "height": 250
               }
@@ -314,7 +318,7 @@
             "icon_color": "md_white_1000"
           },
           "title_color": "md_white_1000",
-          "title_background_color": "transparent",
+          "title_background_color": "md_black_1000",
           "color": "md_light_blue_900"
         }
       ]

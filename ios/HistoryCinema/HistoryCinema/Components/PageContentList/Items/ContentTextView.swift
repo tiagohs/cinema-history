@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentTextView: View {
     let contentText: ContentText
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @ViewBuilder
     func renderTitle() -> some View {
         let title = contentText.contentTitle
@@ -20,7 +22,7 @@ struct ContentTextView: View {
                     Text(title!)
                         .font(.oswaldBold(size: 22))
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(.textPrimary)
                     
                     Spacer()
                 }
@@ -44,7 +46,8 @@ struct ContentTextView: View {
                     content: text!,
                     fontName: "ProximaNova-Regular",
                     size: 16,
-                    color: Constants.colors["md_black_1000"])
+                    color: Color.textPrimaryHEX(colorScheme)
+                )
                     .fixedSize(horizontal: false, vertical: true)
                 
                 Spacer()
@@ -65,7 +68,8 @@ struct ContentTextView: View {
                     content: credits!,
                     fontName: "ProximaNova-Regular",
                     size: 12,
-                    color: Constants.colors["md_grey_800"])
+                    color: Color.textSecondaryHEX(colorScheme)
+                )
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.top, 8)
                 

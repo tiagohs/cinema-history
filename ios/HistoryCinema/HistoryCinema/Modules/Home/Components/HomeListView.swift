@@ -14,24 +14,12 @@ struct HomeListView<Content : View>: View {
     @State private var currentPage = 0
     
     var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack {
-                    ForEach(0 ..< homeContentItemList.count) { value in
-                        let homeContentItem = homeContentItemList[value]
-                        
-                        NavigationLink(destination: HomeItemDestination(homeContentItem.mainTopicType)) {
-                            HomeItem(homeContentItem: homeContentItem)
-                        }
-                    }
-                }
-            }
-            .navigationBarTitle("", displayMode: .inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Image("img_logo_app_512")
-                        .resizable()
-                        .frame(width: 40, height: 40, alignment: .center)
+        VStack {
+            ForEach(0 ..< homeContentItemList.count) { value in
+                let homeContentItem = homeContentItemList[value]
+
+                NavigationLink(destination: HomeItemDestination(homeContentItem.mainTopicType)) {
+                    HomeItem(homeContentItem: homeContentItem)
                 }
             }
         }

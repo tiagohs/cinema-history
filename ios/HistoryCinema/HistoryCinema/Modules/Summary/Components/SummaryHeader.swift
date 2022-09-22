@@ -21,7 +21,7 @@ struct SummaryHeader: View {
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                                 .offset(y: geometry.frame(in: .global).minY/9)
                                 .clipped()
-                                .shadow(color: .black, radius: 5)
+                                .shadow(color: Color.backgroundInverse, radius: 5)
                         
                         SummaryQuoteView(quote: mainTopic.quote)
                             .offset(y: geometry.frame(in: .global).minY/2)

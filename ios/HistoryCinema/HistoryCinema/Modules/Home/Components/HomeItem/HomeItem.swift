@@ -23,87 +23,97 @@ struct HomeItemImage: View {
 
 struct HistoryCinemaTitle: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("A História do")
-                .font(.oswaldBold(size: 30))
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
+                .font(.oswaldBold(size: 20))
+                .foregroundColor(Color.cardTextPrimary)
                 
             Text("Cinema")
-                .font(.billionaireMediumGrunge(size: 150))
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
+                .font(.billionaireMediumGrunge(size: 40))
+                .foregroundColor(Color.cardTextPrimary)
+            
+            Text("Entenda em detalhes os momentos cruciais na história da sétima arte!")
+                .font(.proximaNovaRegular(size: 15))
+                .multilineTextAlignment(.leading)
+                .foregroundColor(Color.cardTextPrimary)
+                .padding(.top, 3)
         }
     }
 }
 
 struct OneThousandsMoviesTitle: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("1001 Filmes")
-                .font(.bigshouldersDisplayBold(size: 50))
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
+                .font(.bigshouldersDisplayBold(size: 30))
+                .multilineTextAlignment(.leading)
+                .foregroundColor(Color.cardTextPrimary)
                 
             Text("para Ver antes de Morrer")
-                .font(.oswaldBold(size: 24))
-                .multilineTextAlignment(.center)
+                .font(.oswaldBold(size: 18))
                 .textCase(.uppercase)
-                .foregroundColor(.white)
+                .multilineTextAlignment(.leading)
+                .foregroundColor(Color.cardTextPrimary)
+            
+            Text("Uma seleção especial dos melhores filmes lançados desde os primórdios do cinema.")
+                .font(.proximaNovaRegular(size: 15))
+                .multilineTextAlignment(.leading)
+                .foregroundColor(Color.cardTextPrimary)
+                .padding(.top, 3)
         }
     }
 }
 
 struct AwardsTitle: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Premiações do Cinema")
-                .font(.futuraCondensedLight(size: 32))
-                .multilineTextAlignment(.center)
+                .font(.futuraBold(size: 18))
                 .textCase(.uppercase)
-                .foregroundColor(.white)
+                .multilineTextAlignment(.leading)
+                .foregroundColor(Color.cardTextPrimary)
                 
             Text("Conheça os prêmios mais importantes do cinema")
-                .font(.proximaNovaRegular(size: 18))
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
-                .padding(.horizontal, 12)
+                .font(.proximaNovaRegular(size: 15))
+                .foregroundColor(Color.cardTextPrimary)
+                .multilineTextAlignment(.leading)
+                .padding(.top, 3)
         }
     }
 }
 
 struct TimelineTitleView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Timeline do Cinema")
-                .font(.oswaldBold(size: 32))
-                .multilineTextAlignment(.center)
+                .font(.oswaldBold(size: 20))
                 .textCase(.uppercase)
-                .foregroundColor(.white)
+                .multilineTextAlignment(.leading)
+                .foregroundColor(Color.cardTextPrimary)
                 
             Text("Os principais acontecimentos no mundo do cinema organizada cronologicamente.")
-                .font(.proximaNovaRegular(size: 18))
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
-                .padding(.horizontal, 12)
+                .font(.proximaNovaRegular(size: 15))
+                .foregroundColor(Color.cardTextPrimary)
+                .multilineTextAlignment(.leading)
+                .padding(.top, 3)
         }
     }
 }
 
 struct DirectorsTitle: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Os Mestres nas telas")
-                .font(.oswaldBold(size: 32))
-                .multilineTextAlignment(.center)
+                .font(.oswaldBold(size: 20))
                 .textCase(.uppercase)
-                .foregroundColor(.white)
+                .multilineTextAlignment(.leading)
+                .foregroundColor(Color.cardTextPrimary)
                 
-            Text("Conheça em Detalhes os maiores diretores do Cinema")
-                .font(.proximaNovaRegular(size: 18))
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
-                .padding(.horizontal, 12)
+            Text("Conheça em detalhes os maiores diretores do Cinema")
+                .font(.proximaNovaRegular(size: 15))
+                .foregroundColor(Color.cardTextPrimary)
+                .multilineTextAlignment(.leading)
+                .padding(.top, 3)
         }
     }
 }
@@ -112,7 +122,7 @@ struct HomeItemTitle: View {
     let homeContentItem: HomeContentItem
     
     var body: some View {
-        VStack(alignment: .center) {
+        VStack(alignment: .leading) {
             switch homeContentItem.mainTopicType {
                 case .history_cinema: HistoryCinemaTitle()
                 case .mil_movies: OneThousandsMoviesTitle()
@@ -154,29 +164,39 @@ struct HomeItem: View {
     let homeContentItem: HomeContentItem
     
     var body: some View {
-        let cardHeight = UIScreen.main.bounds.height - (UIScreen.main.bounds.height / 3)
-        
-        ZStack(alignment: Alignment(horizontal: .center, vertical: .top)) {
-            ZStack(alignment: .center) {
-                HomeItemImage(
-                    homeContentItem: homeContentItem,
-                    height: cardHeight
-                )
-                
-                HomeDegrade()
-            }
-            .frame(
-                width: UIScreen.main.bounds.width - 32,
-                height: CGFloat(cardHeight))
+        VStack(alignment: .leading) {
+            Image(homeContentItem.image!.url!)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 250)
             
-            HomeItemTitle(homeContentItem: homeContentItem)
-                .padding(.top, 30)
+            HStack {
+                HomeItemTitle(homeContentItem: homeContentItem)
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }) {
+                    HStack {
+                        Text("Iniciar jornada")
+                            .font(.proximaNovaBold(size: 14))
+                    }
+                    .padding()
+                    .foregroundColor(.cardButtonTextColor)
+                    .background(Color.cardButtonBackgroundColor)
+                    .cornerRadius(40)
+                }
+            }
+            .padding()
+            .background(Color.cardBackground)
         }
-        .frame(
-            width: UIScreen.main.bounds.width - 32,
-            height: CGFloat(cardHeight)
-        )
         .cornerRadius(25)
+        .overlay(
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
+        )
+        .padding()
     }
 }
 

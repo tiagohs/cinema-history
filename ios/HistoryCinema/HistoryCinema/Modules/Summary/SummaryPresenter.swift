@@ -50,7 +50,7 @@ extension SummaryPresenter {
 extension SummaryPresenter {
     
     @ViewBuilder
-    func presentHistoryPages(_ mainTopic: MainTopicItem) -> some View {
-        self.wireframe?.presentHistoryPages(mainTopic, summaryList)
+    func presentHistoryPages(_ mainTopic: MainTopicItem, _ startIndex: Int) -> some View {
+        self.wireframe?.presentHistoryPages(mainTopic, startIndex, summaryList)
     }
 }

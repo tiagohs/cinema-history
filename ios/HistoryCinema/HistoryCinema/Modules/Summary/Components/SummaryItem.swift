@@ -18,7 +18,7 @@ struct SummaryItem: View {
                     .frame(maxWidth: .infinity)
                     .font(.proximaNovaBold(size: 20))
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.textPrimary)
                     .padding(.horizontal, 16)
             }
             
@@ -26,7 +26,7 @@ struct SummaryItem: View {
                 .frame(maxWidth: .infinity)
                 .font(.proximaNovaRegular(size: 16))
                 .multilineTextAlignment(.center)
-                .foregroundColor(Color.black)
+                .foregroundColor(Color.textPrimary)
                 .padding(.horizontal, 16)
                 .padding(.top, 5)
         }
