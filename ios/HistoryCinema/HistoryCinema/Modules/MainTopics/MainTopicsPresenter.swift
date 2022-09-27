@@ -53,4 +53,9 @@ extension MainTopicsPresenter {
     func presentSummary(_ mainTopic: MainTopicItem) -> some View {
         self.wireframe?.presentSummary(mainTopic)
     }
+    
+    @ViewBuilder
+    func presentMilMovies(_ mainTopic: MilMoviesMainTopic) -> some View {
+        self.wireframe?.presentMilMovies(mainTopic)
+    }
 }

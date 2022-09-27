@@ -13,7 +13,7 @@ struct ContentBlockSpecialView: View {
     var body: some View {
         let colorAsset = ColorUtils.getRandomColorAssets()
         let backgroundColor = Color(UIColor(colorName: "md_\(colorAsset.colorName)_500"))
-        let textColor = Constants.colors["md_\(colorAsset.colorName)_900"]
+        let textColor = Constants.colors["md_\(colorAsset.textColorName)_900"]
         
         VStack {
             ZStack {

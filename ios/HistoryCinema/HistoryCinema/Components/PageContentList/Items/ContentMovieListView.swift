@@ -22,9 +22,8 @@ struct ContentMovieListView: View {
                         .font(.oswaldRegular(size: 22))
                         .foregroundColor(textColor)
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(Color.white)
                         .padding(.horizontal, 16)
-                        .padding(.bottom, 16)
+                        .padding(.bottom, 10)
                     
                     Spacer()
                 }

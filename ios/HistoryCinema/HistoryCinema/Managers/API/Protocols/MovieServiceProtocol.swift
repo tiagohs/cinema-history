@@ -24,5 +24,5 @@ protocol MovieServiceProtocol {
     func getNowPlaying(page: Int, region: String) -> AnyPublisher<ResultsMovie, AFError>
     func getTopRated(page: Int, region: String) -> AnyPublisher<ResultsMovie, AFError>
     func getUpcoming(page: Int, region: String) -> AnyPublisher<ResultsMovie, AFError>
-    func getMovieList(url: String, parameters: [String : String]) -> AnyPublisher<ResultsMovie, AFError>
+    func getList(listId: String, page: Int) -> AnyPublisher<ResultsList, AFError>
 }

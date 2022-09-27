@@ -23,22 +23,39 @@ struct MainTopicsView: View {
                 MainTopicListView(
                     mainTopicList: presenter.mainTopics,
                     MainTopicItemDestination: { mainTopic in
-                        self.presenter.presentSummary(mainTopic)
+                        switch mainTopicType {
+                            case .history_cinema:
+                                self.presenter.presentSummary(mainTopic as! MainTopicItem)
+                            case .mil_movies:
+                            self.presenter.presentMilMovies(mainTopic as! MilMoviesMainTopic)
+                            default:
+                                AnyView(EmptyView())
+                        }
                     }
                 )
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                HStack(alignment: .center) {
-                    Text("A História do")
-                        .font(.oswaldBold(size: 18))
-                        .foregroundColor(Color.textPrimary)
-                    
-                    Text("Cinema")
-                        .font(.billionaireMediumGrunge(size: 38))
-                        .foregroundColor(Color.textPrimary)
+                switch mainTopicType {
+                    case .history_cinema:
+                        HStack(alignment: .center) {
+                            Text("A História do")
+                                .font(.oswaldBold(size: 18))
+                                .foregroundColor(Color.textPrimary)
+                            
+                            Text("Cinema")
+                                .font(.billionaireMediumGrunge(size: 38))
+                                .foregroundColor(Color.textPrimary)
+                        }
+                    case .mil_movies:
+                        Text("1001 Filmes")
+                            .font(.bigshouldersDisplayBold(size: 18))
+                            .foregroundColor(Color.textPrimary)
+                    default:
+                        AnyView(EmptyView())
                 }
+                
             }
         }
         .foregroundColor(Color.textPrimary)
@@ -59,5 +76,6 @@ struct MainTopicsView: View {
 struct MainTopicsView_Previews: PreviewProvider {
     static var previews: some View {
         MainTopicsView(mainTopicType: MainTopicsType.history_cinema)
+        MainTopicsView(mainTopicType: MainTopicsType.mil_movies)
     }
 }

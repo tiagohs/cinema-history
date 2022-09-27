@@ -98,6 +98,8 @@ struct ContentTextView_Previews: PreviewProvider {
             ContentTextView(contentText: Content.exampleText)
             ContentTextView(contentText: Content.exampleText2)
             ContentTextView(contentText: Content.exampleText3)
+            ContentTextView(contentText: Content.exampleText3)
+                .preferredColorScheme(.dark)
         }
         
         

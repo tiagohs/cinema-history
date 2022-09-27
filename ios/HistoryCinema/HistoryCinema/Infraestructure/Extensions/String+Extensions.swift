@@ -54,6 +54,15 @@ extension String {
             return nil
         }
     }
+    
+    func toDate(format: String = "yyyy-MM-dd") -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        dateFormatter.timeZone = TimeZone.current
+        dateFormatter.locale = Locale.current
+        
+        return dateFormatter.date(from: self)
+    }
 }
 
 extension String: Error {

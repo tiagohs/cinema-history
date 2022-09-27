@@ -10,7 +10,7 @@ import Combine
 
 struct HomeView: View {
     
-    @ObservedObject private var presenter: HomePresenter = HomeWireframe.buildPresenter()
+    @ObservedObject private var presenter: HomePresenter = HomeWireframe.buildPresenter() 
     
     var body: some View {
         NavigationView {

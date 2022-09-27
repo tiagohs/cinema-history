@@ -11,7 +11,7 @@ import UIKit
 struct MainTopicListView<Content : View>: View {
     let mainTopicList: [MainTopic]
     
-    @ViewBuilder var MainTopicItemDestination: (_ mainTopic: MainTopicItem) -> Content
+    @ViewBuilder var MainTopicItemDestination: (_ mainTopic: MainTopic) -> Content
     
     var body: some View {
         ScrollView {
@@ -30,12 +30,17 @@ struct MainTopicListView<Content : View>: View {
                         case .history_cinema:
                             let mainTopicItem = mainTopic as! MainTopicItem
                             
-                            NavigationLink(destination: MainTopicItemDestination(mainTopicItem)) {
+                            NavigationLink(destination: MainTopicItemDestination(mainTopic)) {
                                 MainTopicHistoryCinemaView(mainTopicItem: mainTopicItem)
                                     .transition(.slide)
                                 }
                         case .mil_movies:
-                            MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
+                            let milMoviesMainTopic = mainTopic as! MilMoviesMainTopic
+                            
+                            NavigationLink(destination: MainTopicItemDestination(mainTopic)) {
+                                MainTopicMilMoviesView(milMoviesMainTopic: mainTopic as! MilMoviesMainTopic)
+                                    .transition(.slide)
+                                }
                         default:
                             AnyView(EmptyView())
                         }

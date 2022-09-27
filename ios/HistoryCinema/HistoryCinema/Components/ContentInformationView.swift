@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentInformationView: View {
     let contentInformation: ContentInformation
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @ViewBuilder
     func renderTitle() -> some View {
         let title = contentInformation.contentTitle
@@ -19,7 +21,7 @@ struct ContentInformationView: View {
                 Text(title!)
                     .font(.proximaNovaBold(size: 16))
                     .multilineTextAlignment(.leading)
-                    .foregroundColor(Color(UIColor(colorName: "md_grey_700")))
+                    .foregroundColor(Color.textSecondary)
                     .padding(.horizontal, 16)
                     .padding(.top, 5)
                 
@@ -40,7 +42,8 @@ struct ContentInformationView: View {
                     content: text!,
                     fontName: "ProximaNova-Regular",
                     size: 14,
-                    color: Constants.colors["md_grey_700"])
+                    color: Color.textSecondaryHEX(colorScheme)
+                )
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.horizontal, 16)
                     .padding(.top, 5)
@@ -62,7 +65,8 @@ struct ContentInformationView: View {
                     content: reference!,
                     fontName: "ProximaNova-Regular",
                     size: 12,
-                    color: Constants.colors["md_grey_900"])
+                    color: Color.textDarkHEX(colorScheme)
+                )
                     .padding(.horizontal, 16)
                     .padding(.top, 5)
                 
@@ -84,6 +88,6 @@ struct ContentInformationView: View {
 
 struct ContentItemHeader_Previews: PreviewProvider {
     static var previews: some View {
-        ContentInformationView(contentInformation: Content.exampleGif.information)
+        ContentInformationView(contentInformation: Content.exampleVideo.information)
     }
 }

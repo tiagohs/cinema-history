@@ -31,6 +31,7 @@ struct HomeButtonListView<Content : View>: View {
                         .background(Color.cardBackground)
                         .cornerRadius(20)
                     }
+                    .shadow(radius: 5)
                 }
                 
                 NavigationLink(destination: GlossaryDestination()) {
@@ -46,6 +47,7 @@ struct HomeButtonListView<Content : View>: View {
                         .background(Color.cardBackground)
                         .cornerRadius(20)
                     }
+                    .shadow(radius: 5)
                 }
                 
                 
@@ -65,11 +67,12 @@ struct HomeButtonListView<Content : View>: View {
                         .background(Color.cardBackground)
                         .cornerRadius(20)
                     }
+                    .shadow(radius: 5)
                 }
                 
                 NavigationLink(destination: AboutDestination(), tag: "AboutDestination", selection: $selection) {
                     Button(action: {
-                        selection = "AboutDestination"
+                        
                     }) {
                         HStack {
                             Text("Sobre")
@@ -80,6 +83,7 @@ struct HomeButtonListView<Content : View>: View {
                         .background(Color.cardBackground)
                         .cornerRadius(20)
                     }
+                    .shadow(radius: 5)
                 }
                 
                 

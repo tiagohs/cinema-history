@@ -19,12 +19,12 @@ struct ContentRecomendationView: View {
             HStack(alignment: .center) {
                 Image(systemName: "checkmark.circle.fill")
                     .font(.system(size: 22))
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.textPrimary)
                 
                 Text("Recomendações e leitura adicional")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(.oswaldBold(size: 16))
-                    .foregroundColor(Color(UIColor(colorName: "md_black_1000")))
+                    .foregroundColor(Color.textPrimary)
             }
             .padding(.horizontal, 16)
             

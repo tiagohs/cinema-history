@@ -54,5 +54,7 @@ struct ContentVideoView: View {
 struct ContentVideoView_Previews: PreviewProvider {
     static var previews: some View {
         ContentVideoView(contentVideo: Content.exampleVideo)
+        ContentVideoView(contentVideo: Content.exampleVideo)
+            .preferredColorScheme(.dark)
     }
 }

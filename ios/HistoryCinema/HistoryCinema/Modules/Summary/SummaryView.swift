@@ -89,6 +89,7 @@ struct SummaryView: View {
                 self.presentationMode.wrappedValue.dismiss()
             }) {
                 Image(systemName: "chevron.left")
+                    .font(.system(size: 16, weight: .bold))
                     .padding()
                     .background(Color.backgroundInverse)
                     .foregroundColor(Color.textInverse)

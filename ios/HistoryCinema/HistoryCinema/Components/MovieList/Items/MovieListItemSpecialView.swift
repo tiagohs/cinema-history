@@ -61,10 +61,7 @@ struct MovieListItemSpecialView: View {
                 }
                 .background(backgroundColor)
             }
-            .background(Color.white)
-            .cornerRadius(10)
         }
-        .background(Color.white)
     }
 }
 

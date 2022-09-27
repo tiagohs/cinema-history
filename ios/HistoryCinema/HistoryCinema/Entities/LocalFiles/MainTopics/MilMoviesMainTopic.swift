@@ -12,6 +12,7 @@ class MilMoviesMainTopic: MainTopic {
     var id: Int!
     var listId: String!
     var title: String!
+    var range: Range!
     var backgroundColor: String?
     var titleColor: String?
     var image: LocalImage!
@@ -27,6 +28,7 @@ class MilMoviesMainTopic: MainTopic {
         listId                                          <- map["list_id"]
         title                                           <- map["title"]
         backgroundColor                                 <- map["background_color"]
+        range                                           <- map["range"]
         image                                           <- map["image"]
         titleColor                                      <- map["title_color"]
     }

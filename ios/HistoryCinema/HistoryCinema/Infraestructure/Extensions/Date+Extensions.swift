@@ -10,6 +10,13 @@ import UIKit
 
 extension Date {
     
+    func formattedDate(format: String) -> String {
+         let dateformat = DateFormatter()
+         dateformat.dateFormat = format
+        
+         return dateformat.string(from: self)
+     }
+    
     var year: String {
         let calendar = NSCalendar.init(calendarIdentifier: NSCalendar.Identifier.gregorian)
         let currentYearInt = (calendar?.component(NSCalendar.Unit.year, from: self))!

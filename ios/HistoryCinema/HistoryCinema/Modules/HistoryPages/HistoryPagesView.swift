@@ -74,8 +74,8 @@ struct HistoryPagesView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
-        .toolbarBackground(Color.black, for: .navigationBar, .tabBar)
-        .toolbarBackground(.visible, for: .navigationBar)
+//        .toolbarBackground(Color.black, for: .navigationBar, .tabBar)
+//        .toolbarBackground(.visible, for: .navigationBar)
         .foregroundColor(Color.textPrimary)
         .toolbar {
             ToolbarItem(placement: .principal) {

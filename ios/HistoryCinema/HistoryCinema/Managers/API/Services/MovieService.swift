@@ -102,6 +102,18 @@ class MovieService: MovieServiceProtocol {
             .eraseToAnyPublisher()
     }
     
+    
+    func getList(listId: String, page: Int) -> AnyPublisher<ResultsList, AFError> {
+        let url = TMDB.URL.MOVIES.buidMovieListUrl(listId: listId)
+        let parameters = TMDB.URL.MOVIES.buildMovieListParameters(page: page)
+        
+        return AF.request(url, method: .get, parameters: parameters)
+            .responseJSON { response in DebugUtils.debug(response) }
+            .publishDecodable(type: ResultsList.self)
+            .value()
+            .eraseToAnyPublisher()
+    }
+    
     func getSimilarMovies(movieId: Int, page: Int, region: String = Locale.getCurrentAppRegion()) -> AnyPublisher<ResultsMovie, AFError> {
         let url = TMDB.URL.MOVIES.buildSimilarMoviesUrl(movieId: movieId)
         
@@ -131,14 +143,6 @@ class MovieService: MovieServiceProtocol {
         
         return buildMovieList(url: url, region: region, page: page)
     }
-    
-    func getMovieList(url: String, parameters: [String : String]) -> AnyPublisher<ResultsMovie, AFError> {
-        return AF.request(url, method: .get, parameters: parameters)
-            .responseJSON { response in DebugUtils.debug(response) }
-            .publishDecodable(type: ResultsMovie.self)
-            .value()
-            .eraseToAnyPublisher()
-    }
 }
 
 // MARK: Helpers Method
@@ -146,7 +150,7 @@ class MovieService: MovieServiceProtocol {
 private extension MovieService {
     
     private func buildMovieList(url: String, region: String, page: Int) -> AnyPublisher<ResultsMovie, AFError> {
-        let parameters = TMDB.URL.MOVIES.buildMovieListParameters(region, page)
+        let parameters = TMDB.URL.MOVIES.buildMovieListParameters(region: region, page: page)
         
         return AF.request(url, method: .get, parameters: parameters)
             .responseJSON { response in DebugUtils.debug(response) }

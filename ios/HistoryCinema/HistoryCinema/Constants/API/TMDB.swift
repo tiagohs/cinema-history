@@ -11,6 +11,7 @@ struct TMDB {
     
     static let API_KEY              = "dac4d50f24dee29513738d8fa3470a3f"
     static let BASE_URL             = "https://api.themoviedb.org/3/"
+    static let BASE_URL_4             = "https://api.themoviedb.org/4/"
     static let BASE_IMAGE_URL       = "https://image.tmdb.org/t/p/"
     
     struct Parameters {
@@ -65,6 +66,11 @@ struct TMDB {
             static let NOW_PLAYING_MOVIES_URL   = "\(BASE_URL)/now_playing"
             static let DISCOVER_MOVIES_URL      = "\(TMDB.BASE_URL)discover/movie"
             static let SEARCH_MOVIES_URL      = "\(TMDB.BASE_URL)search/movie"
+            static let MOVIE_LIST_URL      = "\(TMDB.BASE_URL_4)list"
+            
+            static func buidMovieListUrl(listId: String) -> String {
+                return "\(MOVIE_LIST_URL)/\(String(describing: listId))"
+            }
             
             static func buidMovieDetailsUrl(movieId: Int) -> String {
                 return "\(TMDB.BASE_URL)movie/\(String(describing: movieId))"
@@ -104,7 +110,7 @@ struct TMDB {
                 ]
             }
             
-            static func buildMovieListParameters(_ region: String = Locale.getCurrentAppRegion(),_ page: Int = 1,_ language: String = Locale.getCurrentAppLangAndRegion()) -> [String : String] {
+            static func buildMovieListParameters(region: String = Locale.getCurrentAppRegion(), page: Int = 1,_ language: String = Locale.getCurrentAppLangAndRegion()) -> [String : String] {
                 return [
                     Parameters.apiKey: API_KEY,
                     Parameters.language: language,
@@ -301,7 +307,7 @@ struct TMDB {
             }
             
             static func buildMovieListByGenreParameters(_ region: String = Locale.getCurrentAppRegion(),_ page: Int = 1,_ language: String = Locale.getCurrentAppLangAndRegion()) -> [ String : String ] {
-                return MOVIES.buildMovieListParameters(region, page, language)
+                return MOVIES.buildMovieListParameters(region: region, page: page, language)
             }
         }
         

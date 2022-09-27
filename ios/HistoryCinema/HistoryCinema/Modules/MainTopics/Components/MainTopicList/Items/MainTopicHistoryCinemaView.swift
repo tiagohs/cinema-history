@@ -57,6 +57,7 @@ struct MainTopicHistoryCinemaView: View {
         }
         .background(backgroundColor)
         .cornerRadius(25)
+        .shadow(radius: 5)
         .overlay(
             RoundedRectangle(cornerRadius: 25)
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)

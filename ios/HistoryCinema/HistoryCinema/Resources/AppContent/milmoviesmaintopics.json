@@ -6,15 +6,19 @@
           "id": 1,
           "list_id": "123858",
           "title": "De 1900 a 1929",
+          "range": {
+              "from": 1895,
+              "to": 1929
+          },
           "image": {
             "image_type": "local",
             "url": "img_the_gold_rush",
             "content_description": "Foto do personagem Vagabundo abrindo uma porta na neve, no Filme em Busca do Ouro.",
             "style": {
-              "height": 400,
+              "height": 600,
               "scale_type": "center_crop",
               "resize": {
-                "height": 400
+                "height": 600
               }
             }
           },
@@ -27,6 +31,10 @@
           "id": 2,
           "list_id": "123876",
           "title": "De 1930 a 1939",
+          "range": {
+              "from": 1930,
+              "to": 1939
+          },
           "image": {
             "image_type": "local",
             "url": "img_frankenstein",
@@ -58,6 +66,10 @@
           "id": 3,
           "list_id": "124440",
           "title": "De 1940 a 1949",
+          "range": {
+              "from": 1940,
+              "to": 1949
+          },
           "image": {
             "image_type": "local",
             "url": "img_casablanca",
@@ -79,6 +91,10 @@
           "id": 4,
           "list_id": "124444",
           "title": "De 1950 a 1959",
+          "range": {
+              "from": 1950,
+              "to": 1959
+          },
           "image": {
             "image_type": "local",
             "url": "img_ben_hur",
@@ -100,6 +116,10 @@
           "id": 5,
           "list_id": "124905",
           "title": "De 1960 a 1969",
+          "range": {
+              "from": 1960,
+              "to": 1969
+          },
           "image": {
             "image_type": "local",
             "url": "img_the_uggly",
@@ -131,6 +151,10 @@
           "id": 6,
           "list_id": "124907",
           "title": "De 1970 a 1979",
+          "range": {
+              "from": 1970,
+              "to": 1979
+          },
           "image": {
             "image_type": "local",
             "url": "img_jaws",
@@ -152,6 +176,10 @@
           "id": 7,
           "list_id": "124917",
           "title": "De 1980 a 1989",
+          "range": {
+              "from": 1980,
+              "to": 1989
+          },
           "content_description": "Foto promocional do filme De Volta para o Futuro, com o carro futurista sobrevoando o chão.",
           "image": {
             "image_type": "local",
@@ -173,6 +201,10 @@
           "id": 8,
           "list_id": "124918",
           "title": "De 1990 a 1999",
+          "range": {
+              "from": 1990,
+              "to": 1999
+          },
           "image": {
             "image_type": "local",
             "url": "img_silence",
@@ -204,6 +236,10 @@
           "id": 9,
           "list_id": "124920",
           "title": "De 2000 a 2009",
+          "range": {
+              "from": 2000,
+              "to": 2009
+          },
           "image": {
             "image_type": "local",
             "url": "img_cidade_deus",
@@ -225,6 +261,10 @@
           "id": 10,
           "list_id": "124922",
           "title": "De 2010 até 2018",
+          "range": {
+              "from": 2010,
+              "to": 2018
+          },
           "image": {
             "image_type": "local",
             "url": "img_black_panther",

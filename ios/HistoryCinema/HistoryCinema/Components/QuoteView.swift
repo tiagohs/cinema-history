@@ -9,14 +9,17 @@ import SwiftUI
 
 struct QuoteView: View {
     let quote: Quote
+    
     var defaultTextColor: Color? = nil
     var defaultIconColor: Color? = nil
     
     var body: some View {
+        let iconColor = Color.randomColor
+        
         VStack {
             HStack {
                 Icon(name: .quote)
-                    .fill(Color.textPrimary)
+                    .fill(iconColor)
                     .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal)
                     
@@ -54,7 +57,7 @@ struct QuoteView: View {
                 Spacer()
                 
                 Icon(name: .quote)
-                    .fill(Color.textPrimary)
+                    .fill(iconColor)
                     .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .rotationEffect(Angle(degrees: 180))
                     .padding(.horizontal)

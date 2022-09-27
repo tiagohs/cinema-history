@@ -16,9 +16,8 @@ struct ContentPersonListView: View {
                 HStack {
                     Text(contentPersonList.title ?? "Você deveria conhecer...")
                         .font(.oswaldRegular(size: 22))
-                        .foregroundColor(Color(UIColor.init(colorName: "md_black_1000")))
+                        .foregroundColor(Color.textPrimary)
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(Color.white)
                         .padding(.horizontal, 16)
                         .padding(.bottom, 16)
                     

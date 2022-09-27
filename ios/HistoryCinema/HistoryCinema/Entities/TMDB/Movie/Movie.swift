@@ -24,7 +24,7 @@ struct Movie: BaseModel {
     var voteAverage: Decimal?
     var voteCount: Int?
     private var release_date: String?
-    var releaseDate: Date?
+    var releaseDate: String?
     var genreIds: [Int]?
     
     var genres: [Genre]?
@@ -49,7 +49,8 @@ struct Movie: BaseModel {
     var isWantToSee: Bool = false
     
     enum CodingKeys: String, CodingKey {
-        case id, adult, budget, homepage, overview, popularity, revenue, runtime, status, title, video, credits, images, keywords, releases, videos, translations, reviews, release_date
+        case id, adult, budget, homepage, overview, popularity, revenue, runtime, status, title, video, credits, images, keywords, releases, videos, translations, reviews
+        case releaseDate = "release_date"
         case backdropPath = "backdrop_path"
         case belongsToCollection = "belongs_to_collection"
         case genreIds = "genre_ids"
@@ -83,4 +84,6 @@ struct Movie: BaseModel {
     static func == (lhs: Movie, rhs: Movie) -> Bool {
         return (lhs.id == rhs.id)
     }
+    
+    static let exampleMovie = try! JSONDecoder().decode(Movie.self, from: "{\"adult\":false,\"backdrop_path\":\"/kJSnhBQZyCcbqxMZJuDby8ULcfS.jpg\",\"genre_ids\":[12,878],\"id\":775,\"media_type\":\"movie\",\"original_language\":\"fr\",\"original_title\":\"Le Voyage dans la Lune\",\"overview\":\"Professor Barbenfouillis and five of his colleagues from the Academy of Astronomy travel to the Moon aboard a rocket propelled by a giant cannon. Once on the lunar surface, the bold explorers face the many perils hidden in the caves of the mysterious planet.\",\"popularity\":19.8,\"poster_path\":\"/9o0v5LLFk51nyTBHZSre6OB37n2.jpg\",\"release_date\":\"1902-10-04\",\"title\":\"A Trip to the Moon\",\"video\":false,\"vote_average\":7.9,\"vote_count\":1377}".data(using: .utf8)!)
 }

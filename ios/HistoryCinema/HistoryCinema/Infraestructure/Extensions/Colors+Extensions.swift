@@ -53,6 +53,32 @@ extension UIColor {
 
 extension Color {
     
+    static var randomColor: Color {
+        let colorNames = [
+            "md_red_500",
+            "md_pink_500",
+            "md_purple_500",
+            "md_deep_purple_500",
+            "md_indigo_500",
+            "md_blue_500",
+            "md_light_blue_500",
+            "md_cyan_500",
+            "md_teal_500",
+            "md_green_500",
+            "md_light_green_500",
+            "md_lime_500",
+            "md_yellow_500",
+            "md_amber_500",
+            "md_orange_500",
+            "md_deep_orange_500",
+            "md_brown_500",
+            "md_grey_500",
+            "md_blue_grey_500"
+        ]
+        
+        return Color(UIColor(colorName: colorNames.randomElement() ?? "md_blue_500"))
+    }
+    
     static var textPrimary: Color  {
         return Color("textPrimary")
     }
@@ -71,6 +97,14 @@ extension Color {
     
     static var textInverse: Color  {
         return Color("textInverse")
+    }
+    
+    static var textDark: Color  {
+        return Color("textSecondary")
+    }
+    
+    static func textDarkHEX(_ colorScheme: ColorScheme) -> String {
+        return colorScheme == .dark ? "#F5F5F5" : "#212121"
     }
     
     static var cardTextPrimary: Color  {
