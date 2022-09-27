@@ -18,7 +18,7 @@ struct MilMoviesView: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
             ScrollView {
-                VStack {
+                LazyVStack {
                     MilMoviesHeader(mainTopic: mainTopic)
                     
                     if (!presenter.movieList.isEmpty) {

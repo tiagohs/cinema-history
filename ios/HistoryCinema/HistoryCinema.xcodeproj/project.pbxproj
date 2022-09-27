@@ -331,6 +331,7 @@
 		A3ADCE1325EC333100ACA641 /* SummaryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADCE1225EC333100ACA641 /* SummaryInteractor.swift */; };
 		A3ADCE1525EC333E00ACA641 /* SummaryWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADCE1425EC333E00ACA641 /* SummaryWireframe.swift */; };
 		A3ADCE1825EC5AE100ACA641 /* SummaryQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADCE1725EC5AE100ACA641 /* SummaryQuoteView.swift */; };
+		A3BD92DB28E3B49C0081A397 /* SmoothAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD92DA28E3B49B0081A397 /* SmoothAsyncImageView.swift */; };
 		A3BD9ADB28E22EBF00188858 /* MilMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD9ADA28E22EBF00188858 /* MilMoviesView.swift */; };
 		A3BD9ADD28E22EDA00188858 /* MilMoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD9ADC28E22EDA00188858 /* MilMoviesPresenter.swift */; };
 		A3BD9ADF28E22EEA00188858 /* MilMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD9ADE28E22EEA00188858 /* MilMoviesInteractor.swift */; };
@@ -340,7 +341,6 @@
 		A3BD9AE928E3879700188858 /* MilMoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD9AE828E3879700188858 /* MilMoviesList.swift */; };
 		A3BD9AEB28E3891A00188858 /* MilMoviesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD9AEA28E3891A00188858 /* MilMoviesItem.swift */; };
 		A3BD9AED28E3915900188858 /* MovieUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD9AEC28E3915900188858 /* MovieUtils.swift */; };
-		A3BD9AF028E3978900188858 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = A3BD9AEF28E3978900188858 /* WrappingHStack */; };
 		A3C0FE932607AD66009D35E7 /* ContentQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0FE922607AD66009D35E7 /* ContentQuoteView.swift */; };
 		A3C0FE952607B11D009D35E7 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0FE942607B11D009D35E7 /* ColorUtils.swift */; };
 		A3C0FE972607B153009D35E7 /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0FE962607B153009D35E7 /* ColorAsset.swift */; };
@@ -766,6 +766,7 @@
 		A3ADCE1225EC333100ACA641 /* SummaryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryInteractor.swift; sourceTree = "<group>"; };
 		A3ADCE1425EC333E00ACA641 /* SummaryWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryWireframe.swift; sourceTree = "<group>"; };
 		A3ADCE1725EC5AE100ACA641 /* SummaryQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryQuoteView.swift; sourceTree = "<group>"; };
+		A3BD92DA28E3B49B0081A397 /* SmoothAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothAsyncImageView.swift; sourceTree = "<group>"; };
 		A3BD9ADA28E22EBF00188858 /* MilMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilMoviesView.swift; sourceTree = "<group>"; };
 		A3BD9ADC28E22EDA00188858 /* MilMoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilMoviesPresenter.swift; sourceTree = "<group>"; };
 		A3BD9ADE28E22EEA00188858 /* MilMoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilMoviesInteractor.swift; sourceTree = "<group>"; };
@@ -861,7 +862,6 @@
 				A3E23823260696F400191413 /* SDWebImageSwiftUI in Frameworks */,
 				A39CD6D525E2EFE800860258 /* ObjectMapper in Frameworks */,
 				A33BCB1125D9B33100E0A63D /* Alamofire in Frameworks */,
-				A3BD9AF028E3978900188858 /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1993,6 +1993,7 @@
 				A3E6F98B25FFAF9400B29AB6 /* Icon.swift */,
 				A3E6F98525FF9E5F00B29AB6 /* CustomImage.swift */,
 				A3E6F98F25FFB5DE00B29AB6 /* Placeholder.swift */,
+				A3BD92DA28E3B49B0081A397 /* SmoothAsyncImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -2018,7 +2019,6 @@
 				A39CD6D425E2EFE800860258 /* ObjectMapper */,
 				A3E23822260696F400191413 /* SDWebImageSwiftUI */,
 				A3C0FE9E2607BA83009D35E7 /* Kingfisher */,
-				A3BD9AEF28E3978900188858 /* WrappingHStack */,
 			);
 			productName = HistoryCinema;
 			productReference = A33BC98125D89C4200E0A63D /* HistoryCinema.app */;
@@ -2096,7 +2096,6 @@
 				A39CD6D325E2EFE800860258 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				A3E23821260696F400191413 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				A3C0FE9D2607BA83009D35E7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				A3BD9AEE28E3978900188858 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
 			);
 			productRefGroup = A33BC98225D89C4200E0A63D /* Products */;
 			projectDirPath = "";
@@ -2330,6 +2329,7 @@
 				A3C0FE9A2607B2DB009D35E7 /* MovieListView.swift in Sources */,
 				A3E238192606906000191413 /* PlayerView.swift in Sources */,
 				A33BCB0B25D9B1B500E0A63D /* PersonServiceProtocol.swift in Sources */,
+				A3BD92DB28E3B49C0081A397 /* SmoothAsyncImageView.swift in Sources */,
 				A33BC9F625D8A33400E0A63D /* Rating.swift in Sources */,
 				A3C237E125EAA8A80087D134 /* MainTopicItem.swift in Sources */,
 				A33BC9BB25D8A21300E0A63D /* URLUtils.swift in Sources */,
@@ -2881,14 +2881,6 @@
 				minimumVersion = 4.2.0;
 			};
 		};
-		A3BD9AEE28E3978900188858 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dkk/WrappingHStack";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 		A3C0FE9D2607BA83009D35E7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -2917,11 +2909,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A39CD6D325E2EFE800860258 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
 			productName = ObjectMapper;
-		};
-		A3BD9AEF28E3978900188858 /* WrappingHStack */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A3BD9AEE28E3978900188858 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
-			productName = WrappingHStack;
 		};
 		A3C0FE9E2607BA83009D35E7 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;

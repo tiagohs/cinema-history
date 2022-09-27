@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Kingfisher
-import WrappingHStack
 
 struct MilMoviesItem: View {
     
@@ -32,16 +31,24 @@ struct MilMoviesItem: View {
             .padding(.leading, 8)
             
             VStack {
-                AsyncImage(url: URL(string: imageUrl)) { image in
-                    VStack {
+                SmoothAsyncImageView(url: URL(string: imageUrl)) { phase in
+                    if let image = phase.image {
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                    }
-                } placeholder: {
-                    VStack {
-                        ProgressView()
-                    }
+                      } else if phase.error != nil {
+                          Placeholder(type: .movie, iconSize: CGFloat(100))
+                              .cornerRadius(CGFloat(10))
+                              .frame(
+                                  height: CGFloat(imageHeight)
+                              )
+                      } else {
+                          Placeholder(type: .movie, iconSize: CGFloat(100))
+                              .cornerRadius(CGFloat(10))
+                              .frame(
+                                  height: CGFloat(imageHeight)
+                              )
+                      }
                 }
                     .frame(height: CGFloat(imageHeight))
                     .cornerRadius(10)
@@ -62,6 +69,13 @@ struct MilMoviesItem: View {
                             .font(.oswaldBold(size: 22))
                             .multilineTextAlignment(.leading)
                             .foregroundColor(.textPrimary)
+                        
+                        if !genres.isEmpty {
+                            Text(genres.joined(separator: ", "))
+                                .font(.proximaNovaRegular(size: 12))
+                                .multilineTextAlignment(.leading)
+                                .foregroundColor(.textSecondary)
+                        }
                     }
                     
                     Spacer()
@@ -79,6 +93,7 @@ struct MilMoviesItem: View {
                     .padding(.horizontal)
                 }
                 
+                
                 if let overview = movie.overview {
                     Text(overview)
                         .font(.proximaNovaRegular(size: 14))
@@ -86,22 +101,6 @@ struct MilMoviesItem: View {
                         .foregroundColor(.textPrimary)
                         .padding(.top, 3)
                         .padding(.trailing)
-                }
-                
-                if !genres.isEmpty {
-                    WrappingHStack(genres, id: \.self) { genre in
-                        VStack {
-                            Text(genre)
-                                .font(.proximaNovaBold(size: 12))
-                                .foregroundColor(.textInverse)
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 8)
-                                .background(Color.backgroundInverse)
-                                .cornerRadius(40)
-                        }
-                        .padding(.bottom, 5)
-                        .padding(.trailing, 3)
-                    }
                 }
                 
             }
