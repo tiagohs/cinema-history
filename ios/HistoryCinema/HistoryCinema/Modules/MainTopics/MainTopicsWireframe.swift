@@ -20,8 +20,8 @@ class MainTopicsWireframe {
     @ViewBuilder
     func presentMilMovies(_ mainTopic: MilMoviesMainTopic) -> some View {
         MilMoviesView(mainTopic: mainTopic)
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
+//            .navigationBarTitle("")
+//            .navigationBarHidden(true)
     }
 }
 

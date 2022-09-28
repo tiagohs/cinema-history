@@ -10,7 +10,7 @@ import Foundation
 
 struct OMDB {
     static let API_KEY              = "de9f93c2"
-    static let BASE_URL             = "http://www.omdbapi.com/"
+    static let BASE_URL             = "https://www.omdbapi.com/"
     
     struct Parameters {
         static let apiKey           = "apikey"

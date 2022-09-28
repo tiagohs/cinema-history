@@ -17,7 +17,7 @@ class MovieDetailsPresenter: BasePresenter, ObservableObject {
     
     @Published var movie: Movie? = nil
     @Published var showErrorMessage: Bool = false
-    @Published var isLoading: Bool = false
+    @Published var isLoading: Bool = true
     
     init(_ interactor: MovieDetailsInteractor, _ wireframe: MovieDetailsWireframe) {
         self.interactor = interactor
@@ -32,8 +32,6 @@ class MovieDetailsPresenter: BasePresenter, ObservableObject {
 extension MovieDetailsPresenter {
     
     func fetchMovieDetailsBy(_ movieId: Int) {
-        self.isLoading = true
-        
         self.interactor?.getMovieDetailsBy(movieId)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
@@ -44,13 +42,35 @@ extension MovieDetailsPresenter {
                         self.showErrorMessage = true
                     }
             }, receiveValue: { movie in
-                self.isLoading = false
-                self.movie = movie
+                self.fetchAppendInfos(movie)
             })
             .store(in: &cancalables)
     }
     
-    private func fetchAppendInfos() {
+    private func fetchAppendInfos(_ movie: Movie) {
+        
+        if let imdbId = movie.imdbID {
+            self.interactor?.getMovieRankingBy(imdbId)
+                .receive(on: RunLoop.main)
+                .sink(receiveCompletion: { completion in
+                    switch completion {
+                        case .finished: print("🏁 finished")
+                        case .failure(let error):
+                            print(error)
+                            self.showErrorMessage = true
+                        }
+                }, receiveValue: { movieOMDB in
+                    self.movie = movie
+                    self.movie?.movieRankings = movieOMDB
+                    
+                    self.isLoading = false
+                })
+                .store(in: &cancalables)
+        } else {
+            self.movie = movie
+            self.isLoading = false
+        }
+        
         
     }
 }

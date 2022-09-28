@@ -19,6 +19,10 @@ class MovieDetailsInteractor {
 
 extension MovieDetailsInteractor {
     
+    func getMovieRankingBy(_ imdbId: String) -> AnyPublisher<MovieOMDB, AFError> {
+        return self.movieService.getMovieRankings(imdbId: imdbId)
+    }
+    
     func getMovieDetailsBy(_ id: Int) -> AnyPublisher<Movie, AFError> {
         return self.movieService.getDetails(
             movieId: id,

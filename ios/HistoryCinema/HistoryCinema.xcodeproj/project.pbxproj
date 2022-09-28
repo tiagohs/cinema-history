@@ -398,6 +398,7 @@
 		A3C2382825EB31180087D134 /* Colors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382725EB31180087D134 /* Colors+Extensions.swift */; };
 		A3C2382C25EB40180087D134 /* MainTopicQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382B25EB40180087D134 /* MainTopicQuoteView.swift */; };
 		A3C2382E25EB4F260087D134 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382D25EB4F260087D134 /* QuoteView.swift */; };
+		A3C433A628E4D504005A68DC /* MovieContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C433A528E4D504005A68DC /* MovieContentView.swift */; };
 		A3E2380226066CED00191413 /* HistoryPagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380126066CED00191413 /* HistoryPagesView.swift */; };
 		A3E2380426066CFF00191413 /* HistoryPagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380326066CFF00191413 /* HistoryPagesPresenter.swift */; };
 		A3E2380626066D2F00191413 /* HistoryPagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380526066D2F00191413 /* HistoryPagesInteractor.swift */; };
@@ -837,6 +838,7 @@
 		A3C2382725EB31180087D134 /* Colors+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extensions.swift"; sourceTree = "<group>"; };
 		A3C2382B25EB40180087D134 /* MainTopicQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopicQuoteView.swift; sourceTree = "<group>"; };
 		A3C2382D25EB4F260087D134 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		A3C433A528E4D504005A68DC /* MovieContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieContentView.swift; sourceTree = "<group>"; };
 		A3E2380126066CED00191413 /* HistoryPagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPagesView.swift; sourceTree = "<group>"; };
 		A3E2380326066CFF00191413 /* HistoryPagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPagesPresenter.swift; sourceTree = "<group>"; };
 		A3E2380526066D2F00191413 /* HistoryPagesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPagesInteractor.swift; sourceTree = "<group>"; };
@@ -1821,6 +1823,7 @@
 		A3BD92DD28E3E3170081A397 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A3C433A528E4D504005A68DC /* MovieContentView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -2421,6 +2424,7 @@
 				A3BD9ADB28E22EBF00188858 /* MilMoviesView.swift in Sources */,
 				A33BCC2025DA0A6900E0A63D /* ImageType.swift in Sources */,
 				A3C237E325EAA92B0087D134 /* ViewPosition.swift in Sources */,
+				A3C433A628E4D504005A68DC /* MovieContentView.swift in Sources */,
 				A33BCA0425D8A33400E0A63D /* Person.swift in Sources */,
 				A3ADCE1825EC5AE100ACA641 /* SummaryQuoteView.swift in Sources */,
 				A3C2381425EAE9A90087D134 /* MainTopicsInteractor.swift in Sources */,

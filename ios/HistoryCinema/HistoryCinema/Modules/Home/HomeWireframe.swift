@@ -15,7 +15,6 @@ class HomeWireframe {
         MainTopicsView(
             mainTopicType: mainTopicType
         )
-        .navigationBarTitle("História do Cinema", displayMode: .inline)
     }
 }
 

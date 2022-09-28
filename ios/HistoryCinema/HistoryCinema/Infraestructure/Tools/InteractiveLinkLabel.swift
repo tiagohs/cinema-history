@@ -97,6 +97,8 @@ class InteractiveLinkLabel: UILabel {
                         .replacingOccurrences(of: "https://_", with: "", options: .literal, range: nil)
                         .replacingOccurrences(of: "'", with: "\"", options: .literal, range: nil)
                         .replacingOccurrences(of: "{type", with: "{\"type\"", options: .literal, range: nil)
+                        .replacingOccurrences(of: "movie}", with: "\"movie\"}", options: .literal, range: nil)
+                        .replacingOccurrences(of: "person}", with: "\"person\"}", options: .literal, range: nil)
     
         guard let data = value.data(using: .utf8) else {
             return

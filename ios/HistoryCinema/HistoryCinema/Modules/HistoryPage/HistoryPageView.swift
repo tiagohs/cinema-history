@@ -30,6 +30,14 @@ struct HistoryPageView: View {
                 )
             }
         }
+        .alert(isPresented: $presenter.showErrorMessage, content: {
+            Alert(title: Text("Ops"),
+                  message: Text("Houve algum problema! Por favor, tente novamente."),
+                  dismissButton: .default(Text("Tentar novamente")) {
+                    
+                  }
+            )
+        })
         .onAppear {
             presenter.viewAppears()
             presenter.fetchPageBy(mainTopic, summary)
