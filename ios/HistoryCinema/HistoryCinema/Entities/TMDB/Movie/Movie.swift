@@ -21,7 +21,6 @@ struct Movie: BaseModel {
     var revenue, runtime: Int?
     var status, tagline, title: String?
     var video: Bool?
-    var voteAverage: Decimal?
     var voteCount: Int?
     private var release_date: String?
     var releaseDate: String?
@@ -36,12 +35,11 @@ struct Movie: BaseModel {
     var alternativeTitles: [AlternativeTitle]?
     var credits: MediaCreditList?
     var images: Images?
-    var keywords: [ResultsKeyword]?
-    var releases: [Release]?
+    var keywords: ResultsKeyword?
+    var releases: Release?
     var videos: VideoResult?
-    var translations: [TranslationResults]?
+    var translations: TranslationResults?
     var similiarMovies: ResultsMovie?
-    var reviews: [Review]?
     
     var allImages: [APIImage] = []
     var isFavorite: Bool = false
@@ -49,7 +47,7 @@ struct Movie: BaseModel {
     var isWantToSee: Bool = false
     
     enum CodingKeys: String, CodingKey {
-        case id, adult, budget, homepage, overview, popularity, revenue, runtime, status, title, video, credits, images, keywords, releases, videos, translations, reviews
+        case id, adult, budget, homepage, overview, popularity, revenue, runtime, status, title, video, credits, images, keywords, releases, videos, translations
         case releaseDate = "release_date"
         case backdropPath = "backdrop_path"
         case belongsToCollection = "belongs_to_collection"
@@ -58,7 +56,6 @@ struct Movie: BaseModel {
         case originalLanguage = "original_language"
         case originalTitle = "original_title"
         case posterPath = "poster_path"
-        case voteAverage = "vote_average"
         case voteCount = "vote_count"
         case genres = "genres"
         

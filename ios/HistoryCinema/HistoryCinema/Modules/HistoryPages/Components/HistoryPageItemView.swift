@@ -12,6 +12,8 @@ struct HistoryPageItemView: View {
     let summary: SummaryModel
     let page: Page
     
+    var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
+    
     var body: some View {
         let imageHeight = summary.image?.imageStyle?.height
         let imageURL = summary.image?.url
@@ -64,7 +66,9 @@ struct HistoryPageItemView: View {
                 .padding(.top, 16)
                 .background(Color.black)
                 
-                PageContentListView(contentList: page.contentList)
+                PageContentListView(
+                    contentList: page.contentList,
+                    onClickLink: onClickLink)
             }
         }
     }

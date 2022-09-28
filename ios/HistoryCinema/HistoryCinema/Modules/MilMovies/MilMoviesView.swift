@@ -25,7 +25,7 @@ struct MilMoviesView: View {
                         MilMoviesList(movieList: presenter.movieList) {
                             presenter.fetchMoviesBy(mainTopicItem: mainTopic)
                         } MovieDetailsDestination: { movie in
-                            AnyView(EmptyView())
+                            MovieDetailsView(movieId: movie.id)
                         }
                     }
                     

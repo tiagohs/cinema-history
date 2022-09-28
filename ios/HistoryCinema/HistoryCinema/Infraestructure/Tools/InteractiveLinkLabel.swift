@@ -10,6 +10,8 @@ import UIKit
 
 class InteractiveLinkLabel: UILabel {
     
+    var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         self.configure()
@@ -94,6 +96,7 @@ class InteractiveLinkLabel: UILabel {
                         .replacingOccurrences(of: "%7D", with: "}", options: .literal, range: nil)
                         .replacingOccurrences(of: "https://_", with: "", options: .literal, range: nil)
                         .replacingOccurrences(of: "'", with: "\"", options: .literal, range: nil)
+                        .replacingOccurrences(of: "{type", with: "{\"type\"", options: .literal, range: nil)
     
         guard let data = value.data(using: .utf8) else {
             return
@@ -113,6 +116,7 @@ class InteractiveLinkLabel: UILabel {
         case .screen:
             let textViewLinkScreen = TextViewLinkScreen(JSON: dictionary)
             
+            onClickLink?(textViewLinkScreen)
         case .online:
             let textViewLinkOnline = TextViewLinkOnline(JSON: dictionary)
             

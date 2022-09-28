@@ -13,6 +13,7 @@ struct StyledTextView: View {
     var fontName: String? = nil
     var size: Int? = nil
     var color: String? = nil
+    var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
     
     @State var showLoading: Bool = true
     
@@ -33,7 +34,8 @@ struct StyledTextView: View {
                 color: colorFont,
                 onTextLoaded: {
                     showLoading = false
-                })
+                },
+                onClickLink: onClickLink)
         }
     }
 }
@@ -44,10 +46,12 @@ struct HTMLStringView: UIViewRepresentable {
   var size: Int
   var color: String
   var onTextLoaded: (() -> Void)? = nil
+  var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
     
   func makeUIView(context: Context) -> InteractiveLinkLabel {
     let label = InteractiveLinkLabel()
     
+    label.onClickLink = onClickLink
     label.numberOfLines = 0
     label.lineBreakMode = .byTruncatingTail
     label.textAlignment = .justified

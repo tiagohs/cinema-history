@@ -10,13 +10,18 @@ import SwiftUI
 struct PageContentListView: View {
     let contentList: [Content]
     
+    var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
+    
     var body: some View {
             ForEach(0 ..< contentList.count) { index in
                 let contentItem = contentList[index]
                 
                 switch contentItem.type {
                 case .text:
-                    ContentTextView(contentText: contentItem as! ContentText)
+                    ContentTextView(
+                        contentText: contentItem as! ContentText,
+                        onClickLink: onClickLink
+                    )
                         .fixedSize(horizontal: false, vertical: true)
                 case .image:
                     ContentImageView(contentImage: contentItem as! ContentImage)

@@ -14,16 +14,19 @@ struct MilMoviesList<Content : View>: View {
     
     @ViewBuilder var MovieDetailsDestination: (_ movie: Movie) -> Content
     
+    @State private var showingMovieDetailsSheet = false
+    
     var body: some View {
         ForEach(self.movieList, id: \.self) { movie in
-            NavigationLink(destination: MovieDetailsDestination(movie)) {
-                MilMoviesItem(movie: movie)
-                    .onAppear {
-                        if movie.id == self.movieList.last?.id {
-                            onLastItemAppear()
-                        }
-                   }
-            }
+            MilMoviesItem(movie: movie)
+                .onTapGesture {
+                    self.showingMovieDetailsSheet.toggle()
+                }
+                .onAppear {
+                    if movie.id == self.movieList.last?.id {
+                        onLastItemAppear()
+                    }
+               }
         }
     }
 }

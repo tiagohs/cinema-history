@@ -13,8 +13,7 @@ struct APIImage: BaseModel {
     var aspectRatio : Double?
     var filePath : String?
     var height : Int?
-    var language : Double?
-    var voteAverage : Int?
+    var language : String?
     var voteCount : Int?
     var width : Int?
     
@@ -23,7 +22,6 @@ struct APIImage: BaseModel {
         case aspectRatio = "aspect_ratio"
         case filePath = "file_path"
         case language = "iso_639_1"
-        case voteAverage = "vote_average"
         case voteCount = "vote_count"
     }
 }

@@ -14,6 +14,8 @@ struct HistoryPageView: View {
     let mainTopic: MainTopicItem
     let summary: SummaryModel
     
+    var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
+    
     var body: some View {
         VStack {
             if (presenter.historyPage == nil) {
@@ -23,7 +25,8 @@ struct HistoryPageView: View {
                 HistoryPageItemView(
                     mainTopic: mainTopic,
                     summary: summary,
-                    page: presenter.historyPage!
+                    page: presenter.historyPage!,
+                    onClickLink: onClickLink
                 )
             }
         }

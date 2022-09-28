@@ -12,6 +12,8 @@ struct ContentTextView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
+    var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
+    
     @ViewBuilder
     func renderTitle() -> some View {
         let title = contentText.contentTitle
@@ -46,16 +48,18 @@ struct ContentTextView: View {
                     content: text!,
                     fontName: "ProximaNova-Regular",
                     size: 16,
-                    color: Color.textPrimaryHEX(colorScheme)
+                    color: Color.textPrimaryHEX(colorScheme),
+                    onClickLink: onClickLink
                 )
                     .fixedSize(horizontal: false, vertical: true)
+                    
                 
                 Spacer()
             }
-            
         } else {
             EmptyView()
         }
+        
     }
     
     @ViewBuilder

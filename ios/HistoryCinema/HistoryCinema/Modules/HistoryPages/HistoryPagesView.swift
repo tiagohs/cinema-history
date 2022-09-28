@@ -9,9 +9,12 @@ import SwiftUI
 
 struct HistoryPagesView: View {
     
-    @ObservedObject private var presenter: HistoryPagesPresenter = HistoryPagesWireframe.buildPresenter()
+    @ObservedObject private var presenter: HistoryPagesPresenter
     
     @State private var currentPage = 0
+    
+    @State private var showingMovieDetailsSheet = false
+    @State private var pageLinkModel: PageLinkModel? = nil
     
     let mainTopic: MainTopicItem
     let summaryList: [SummaryModel]
@@ -20,6 +23,8 @@ struct HistoryPagesView: View {
         currentPage = startIndex
         self.mainTopic = mainTopic
         self.summaryList = summaryList
+        
+        presenter = HistoryPagesWireframe.buildPresenter()
     }
     
     var body: some View {
@@ -29,7 +34,11 @@ struct HistoryPagesView: View {
                     HistoryPageView(
                         mainTopic: mainTopic,
                         summary: $0
-                    )
+                    ) { textViewLinkScreen in
+                        if textViewLinkScreen?.screenType == .movie {
+                            self.pageLinkModel = PageLinkModel(textViewLinkScreen?.id, textViewLinkScreen?.screenType)
+                        }
+                    }
                 } 
                 
                 VStack {
@@ -72,6 +81,9 @@ struct HistoryPagesView: View {
                 }
                 
             }
+        }
+        .sheet(item: self.$pageLinkModel) { item in
+            MovieDetailsView(movieId: item.id!)
         }
         .navigationBarTitleDisplayMode(.inline)
 //        .toolbarBackground(Color.black, for: .navigationBar, .tabBar)

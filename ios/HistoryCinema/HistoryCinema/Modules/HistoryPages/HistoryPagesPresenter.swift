@@ -18,6 +18,7 @@ class HistoryPagesPresenter: BasePresenter, ObservableObject {
     private var wireframe: HistoryPagesWireframe?
     
     @Published var showErrorMessage: Bool = false
+    @Published var movieId: Int? = nil
     
     init(_ interactor: HistoryPagesInteractor, _ wireframe: HistoryPagesWireframe) {
         self.interactor = interactor

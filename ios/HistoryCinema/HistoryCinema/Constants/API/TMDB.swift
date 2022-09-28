@@ -165,7 +165,8 @@ struct TMDB {
                 return [
                     Parameters.apiKey: API_KEY,
                     Parameters.language: language,
-                    Parameters.append_to_response: URL.buildParameterListValue(appendToResponse)
+                    Parameters.append_to_response: URL.buildParameterListValue(appendToResponse),
+                    Parameters.include_image_language: "en,pt-BR,null"
                 ]
             }
             
