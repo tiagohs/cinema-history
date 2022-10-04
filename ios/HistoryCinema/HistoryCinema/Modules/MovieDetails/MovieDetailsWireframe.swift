@@ -18,7 +18,8 @@ extension MovieDetailsWireframe {
     
     static func buildPresenter() -> MovieDetailsPresenter {
         let movieService = MovieService()
-        let interactor = MovieDetailsInteractor(movieService)
+        let localContentService = LocalContentService()
+        let interactor = MovieDetailsInteractor(movieService, localContentService)
         let wireframe = MovieDetailsWireframe()
         
         return MovieDetailsPresenter(interactor, wireframe)

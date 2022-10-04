@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class MovieUtils {
     
@@ -107,5 +108,26 @@ class MovieUtils {
         }
         
         return genres
+    }
+    
+    static func getBrazilRatingColor(certificate: String) -> Color {
+        switch (certificate) {
+        case "L":
+            return Color(UIColor.init(hex: "#0B9446"))
+        case "10":
+            return Color(UIColor.init(hex: "#0E7DC2"))
+        case "12":
+            return Color(UIColor.init(hex: "#F8C411"))
+        case "14":
+            return Color(UIColor.init(hex: "#E67823"))
+        case "16":
+            return Color(UIColor.init(hex: "#DB2827"))
+        case "18":
+            return Color.black
+        default:
+            return Color.black
+        }
+        
+        return Color.black
     }
 }

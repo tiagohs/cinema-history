@@ -11,17 +11,17 @@ import Alamofire
 
 class MovieDetailsInteractor {
     let movieService: MovieService
+    let localContentService: LocalContentService
     
-    init(_ movieService: MovieService) {
+    init(_ movieService: MovieService, _ localContentService: LocalContentService) {
         self.movieService = movieService
+        self.localContentService = localContentService
     }
 }
 
 extension MovieDetailsInteractor {
     
-    func getMovieRankingBy(_ imdbId: String) -> AnyPublisher<MovieOMDB, AFError> {
-        return self.movieService.getMovieRankings(imdbId: imdbId)
-    }
+    
     
     func getMovieDetailsBy(_ id: Int) -> AnyPublisher<Movie, AFError> {
         return self.movieService.getDetails(
@@ -37,5 +37,13 @@ extension MovieDetailsInteractor {
                 "translations"
             ]
         )
+    }
+    
+    func getMovieRankingBy(_ imdbId: String) -> AnyPublisher<MovieOMDB, AFError> {
+        return self.movieService.getMovieRankings(imdbId: imdbId)
+    }
+    
+    func getSpecialMovies() -> AnyPublisher<ExtraInfoResult, AFError> {
+        return self.localContentService.getSpecialMovies()
     }
 }

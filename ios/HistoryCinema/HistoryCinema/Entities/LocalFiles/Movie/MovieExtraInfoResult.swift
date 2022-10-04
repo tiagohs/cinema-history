@@ -8,6 +8,20 @@
 import Foundation
 import ObjectMapper
 
+class ExtraInfoResult: BaseLocalModel {
+    var results : [MovieExtraInfoResult]?
+    
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+        
+        results                                              <- map["results"]
+    }
+}
+
 class MovieExtraInfoResult: BaseLocalModel {
     var list : String?
     var milMoviesMainTopicID : Int!

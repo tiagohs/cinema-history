@@ -16,6 +16,7 @@ class MovieDetailsPresenter: BasePresenter, ObservableObject {
     private var wireframe: MovieDetailsWireframe?
     
     @Published var movie: Movie? = nil
+    @Published var movieExtra: MovieExtraInfo? = nil
     @Published var showErrorMessage: Bool = false
     @Published var isLoading: Bool = true
     
@@ -63,14 +64,42 @@ extension MovieDetailsPresenter {
                     self.movie = movie
                     self.movie?.movieRankings = movieOMDB
                     
-                    self.isLoading = false
+                    self.fetchExtraInfo(movie)
                 })
                 .store(in: &cancalables)
         } else {
             self.movie = movie
             self.isLoading = false
         }
+    }
+    
+    private func fetchExtraInfo(_ movie: Movie) {
         
-        
+        self.interactor?.getSpecialMovies()
+            .map { extraResults in
+                extraResults.results?.first { movieExtraResult in
+                    if let movieExtra = movieExtraResult.movies?.first(where: { movieExtra in
+                        movieExtra.id == movie.id
+                    }) {
+                        self.movieExtra = movieExtra
+                        
+                        return true
+                    }
+                    
+                    return false
+                }
+            }
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                    case .finished: print("🏁 finished")
+                    case .failure(let error):
+                        print(error)
+                        self.showErrorMessage = true
+                    }
+            }, receiveValue: {
+                self.isLoading = false
+            })
+            .store(in: &cancalables)
     }
 }

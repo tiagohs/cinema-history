@@ -25,7 +25,10 @@ struct MovieDetailsView: View {
                     }
                     
                     if !presenter.isLoading {
-                        MovieContentView(movie: presenter.movie)
+                        MovieContentView(
+                            movie: presenter.movie,
+                            movieExtra: presenter.movieExtra
+                        )
                     }
                 }
             }

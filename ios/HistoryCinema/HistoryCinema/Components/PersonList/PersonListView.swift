@@ -17,8 +17,10 @@ struct PersonListView: View {
             HStack(alignment: .top, spacing: 0) {
                 ForEach(0 ..< personList.count) { index in
                     let person = personList[index]
+                    let imageUrl = ImageUtils.formatImageUrl(imageID: person.profilePath, imageSize: TMDB.ImageSize.PROFILE.h632) ?? ""
                     
-                    PersonItemView(person: person, imageWidth: 230, imageHeight: 350)
+                    PersonItemView(imageUrl: imageUrl, personName: person.name,
+                                   imageWidth: 230, imageHeight: 350)
                         .padding(.leading, index == 0 ? 16 : 8)
                 }
             }

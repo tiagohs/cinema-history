@@ -9,12 +9,12 @@
 import UIKit
 
 struct PersonItem {
-    var id: Int
-    var name: String
-    var subtitle: String
+    var id: Int?
+    var name: String?
+    var subtitle: String?
     var pictureId: String?
     
-    init(id: Int, name: String, subtitle: String, pictureId: String?) {
+    init(id: Int?, name: String?, subtitle: String?, pictureId: String?) {
         self.id = id
         self.name = name
         self.subtitle = subtitle

@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct PersonItemView: View {
-    let person: LocalPerson
+    let imageUrl: String?
+    let personName: String?
+    
     var imageWidth: Int? = nil
     var imageHeight: Int? = nil
     
     var body: some View {
-        let imageUrl = ImageUtils.formatImageUrl(imageID: person.profilePath, imageSize: TMDB.ImageSize.PROFILE.h632) ?? ""
-        
         ItemImageView(
-            url: imageUrl,
-            title: person.name, 
+            url: imageUrl ?? "",
+            title: personName,
             imageWidth: imageWidth,
             imageHeight: imageHeight,
             placeholderType: .person
@@ -27,6 +27,6 @@ struct PersonItemView: View {
 
 struct PersonItemView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonItemView(person: LocalPerson.example)
+        PersonItemView(imageUrl: "", personName: "teste")
     }
 }

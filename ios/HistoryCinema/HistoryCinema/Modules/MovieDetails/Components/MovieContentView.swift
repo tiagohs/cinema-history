@@ -9,178 +9,39 @@ import SwiftUI
 
 struct MovieContentView: View {
     let movie: Movie!
+    let movieExtra: MovieExtraInfo?
     
     var body: some View {
-        let backdropImageUrl = ImageUtils.formatImageUrl(imageID: movie.backdropPath, imageSize: TMDB.ImageSize.BACKDROP.w780) ?? ""
-        let posterImageUrl = ImageUtils.formatImageUrl(imageID: movie.posterPath, imageSize: TMDB.ImageSize.POSTER.w780) ?? ""
+        let cast = Movie.exampleMovieFull().credits?.cast?.map({ cast in
+            return PersonItem(id: cast.id, name: cast.name, subtitle: cast.character, pictureId: cast.profilePath)
+        }) ?? []
+        let crew = Movie.exampleMovieFull().credits?.crew?.map({ crew in
+            return PersonItem(id: crew.id, name: crew.name, subtitle: crew.department, pictureId: crew.profilePath)
+        }) ?? []
         
         ZStack(alignment: .top) {
-            ZStack(alignment: Alignment(horizontal: .leading, vertical: .bottom)) {
-                CustomImage(
-                    imageUrl: backdropImageUrl,
-                    imageType: .online,
-                    placeholderType: .movie,
-                    height: 350
-                )
-                    .frame(height: 350)
-                
-                Rectangle()
-                    .background(.black)
-                    .opacity(0.2)
-                
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text(movie.title ?? "")
-                            .font(.oswaldBold(size: 22))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.white)
-                        
-                        if let originalTitle = movie.originalTitleWithYear() {
-                            Text(originalTitle)
-                                .font(.proximaNovaRegular(size: 16))
-                                .multilineTextAlignment(.leading)
-                                .foregroundColor(.white)
-                        }
-                        
-                        if let genres = movie.genres {
-                            if !genres.isEmpty {
-                                HStack {
-                                    ForEach(Array(genres.enumerated()), id: \.offset) { index, genre in
-                                        if (index <= 2) {
-                                            Text(genre.name ?? "")
-                                                .font(.oswaldBold(size: 12))
-                                                .multilineTextAlignment(.center)
-                                                .foregroundColor(.white)
-                                                .padding(.horizontal, 16)
-                                                .padding(.vertical, 8)
-                                                .background(.black)
-                                                .cornerRadius(20)
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .padding()
-                    .layoutPriority(100)
-                    
-                    Spacer()
-                    
-                    VStack {
-                        ZStack {
-                            Circle()
-                                .background(Color.backgroundInverse)
-                                .opacity(0.7)
-                                .clipShape(Circle())
-                                
-                            Image(systemName: "play.fill")
-                                .font(.system(size: 26, weight: .bold))
-                                .padding()
-                                .foregroundColor(Color.textInverse)
-                                .clipShape(Circle())
-                        }
-                        .frame(width: 50, height: 50)
-                        .padding(35)
-                    }
-                }
-                .padding(.bottom, 10)
-            }
-            .frame(height: 350)
+            MovideDetailsHeaderView(movie: movie)
             
-            HStack(alignment: .top) {
-                VStack(alignment: .leading) {
-                    if let directors = movie.directors(), !directors.isEmpty {
-                        Text("Dirigido por")
-                            .font(.proximaNovaRegular(size: 14))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textSecondary)
-                        
-                        Text(directors)
-                            .font(.proximaNovaRegular(size: 16))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textPrimary)
-                            .padding(.bottom, 5)
-                    }
-                    
-                    if let writers = movie.writers(), !writers.isEmpty  {
-                        Text("Escrito por")
-                            .font(.proximaNovaRegular(size: 14))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textSecondary)
-                        
-                        Text(writers)
-                            .font(.proximaNovaRegular(size: 16))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textPrimary)
-                            .padding(.bottom, 5)
-                    }
-                    
-                    if let originalLanguage = movie.language(), !originalLanguage.isEmpty {
-                        Text("Idioma original")
-                            .font(.proximaNovaRegular(size: 14))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textSecondary)
-                        
-                        Text(originalLanguage)
-                            .font(.proximaNovaRegular(size: 16))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textPrimary)
-                            .padding(.bottom, 5)
-                    }
-                    
-                    if let runtime = movie.duration(), !runtime.isEmpty {
-                        Text("Duração")
-                            .font(.proximaNovaRegular(size: 14))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textSecondary)
-                        
-                        Text(runtime)
-                            .font(.proximaNovaRegular(size: 16))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textPrimary)
-                            .padding(.bottom, 5)
-                    }
-                    
-                    if let releaseDate = movie.releaseDate?.toDate()?.formatDate(pattner: "dd/MM/yyyy"), !releaseDate.isEmpty {
-                        Text("Lançamento")
-                            .font(.proximaNovaRegular(size: 14))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textSecondary)
-                        
-                        Text(releaseDate)
-                            .font(.proximaNovaRegular(size: 16))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.textPrimary)
-                            .padding(.bottom, 5)
-                    }
-                    
-                    
-                }
-                .padding(.leading, 20)
-                .padding(.vertical, 25)
+            VStack {
+                MovieContentInfoView(movie: movie)
+                    .padding(.top, 340)
                 
-                Spacer()
+                MovieContentSummaryView(movie: movie)
+                    .padding(.vertical, 10)
                 
-                VStack {
-                    CustomImage(
-                        imageUrl: posterImageUrl,
-                        imageType: .online,
-                        placeholderType: .movie,
-                        width: 150,
-                        height: 200,
-                        cornerRadius: 20
-                    )
-                    .frame(width: 150, height: 200)
-                }
-                .padding(.vertical, 35)
-                .padding(.trailing, 20)
+                MovieContentWatchOn(movieExtraInfo: movieExtra)
+                    .padding(.vertical, 10)
+                
+                MovieContentPersonListView(sectionName: "Elenco", personList: cast)
+                    .padding(.vertical, 10)
+                
+                MovieContentPersonListView(sectionName: "Equipe Técnica", personList: crew)
+                    .padding(.vertical, 10)
+                
+                MovieContentMidiaView(movie: movie)
+                    .padding(.vertical, 10)
             }
-            .frame(maxWidth: .infinity)
-            .background(Color.backgroundPrimary)
-            .cornerRadius(12)
-            .shadow(radius: 5)
-            .padding(.horizontal, 10)
-            .padding(.top, 340)
+            .padding(.bottom, 10)
         }
     }
 }
@@ -190,7 +51,10 @@ struct MovieContentView_Previews: PreviewProvider {
         ZStack(alignment: .topLeading) {
             ScrollView {
                 LazyVStack {
-                    MovieContentView(movie: Movie.exampleMovieFull())
+                    MovieContentView(
+                        movie: Movie.exampleMovieFull(),
+                        movieExtra: Movie.exampleMovieExtraInfo
+                    )
                 }
             }
             .edgesIgnoringSafeArea(.all)

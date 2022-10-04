@@ -28,7 +28,7 @@ class MovieExtraInfo: BaseLocalModel {
         
         id                                                      <- map["id"]
         reviewResults                                           <- map["review_results"]
-        quote                                                   <- map["title"]
+        quote                                                   <- map["quote"]
         watchOn                                                 <- map["watchOn"]
         didYouKnowList                                          <- map["did_you_know_list"]
         blockSpecial                                            <- map["block_special"]

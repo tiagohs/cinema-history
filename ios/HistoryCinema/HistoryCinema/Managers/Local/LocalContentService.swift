@@ -19,8 +19,8 @@ class LocalContentService: BaseLocalService {
         return getLocalFile("persons.json") as AnyPublisher<PersonExtraInfo, AFError>
     }
     
-    func getSpecialMovies() -> AnyPublisher<MovieExtraInfo, AFError> {
-        return getLocalFile("movies.json") as AnyPublisher<MovieExtraInfo, AFError>
+    func getSpecialMovies() -> AnyPublisher<ExtraInfoResult, AFError> {
+        return getLocalFile("movies.json") as AnyPublisher<ExtraInfoResult, AFError>
     }
     
     func getSummaryBy(mainTopicID: Int) -> AnyPublisher<SummaryResult, AFError> {
