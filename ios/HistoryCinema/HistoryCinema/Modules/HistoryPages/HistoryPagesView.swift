@@ -27,18 +27,22 @@ struct HistoryPagesView: View {
         presenter = HistoryPagesWireframe.buildPresenter()
     }
     
+    private func onClick(type: TextViewLinkScreenType?, id: Int?) {
+        self.pageLinkModel = PageLinkModel(id, type)
+    }
+    
     var body: some View {
         ZStack(alignment: .topLeading) {
             ZStack(alignment: .bottomTrailing) {
                 let pages = summaryList.map {
                     HistoryPageView(
                         mainTopic: mainTopic,
-                        summary: $0
-                    ) { textViewLinkScreen in
-                        if textViewLinkScreen?.screenType == .movie {
-                            self.pageLinkModel = PageLinkModel(textViewLinkScreen?.id, textViewLinkScreen?.screenType)
+                        summary: $0,
+                        onClickLink: { textViewLinkScreen in
+                            onClick(type: textViewLinkScreen?.screenType, id: textViewLinkScreen?.id)
+                        }) { type, id in
+                            onClick(type: type, id: id)
                         }
-                    }
                 } 
                 
                 VStack {
@@ -83,7 +87,11 @@ struct HistoryPagesView: View {
             }
         }
         .sheet(item: self.$pageLinkModel) { item in
-            MovieDetailsView(movieId: item.id!)
+            if item.type == .movie {
+                MovieDetailsView(movieId: item.id!)
+            } else if item.type == .person {
+                PersonDetailsView(personId: item.id)
+            }
         }
         .navigationBarTitleDisplayMode(.inline)
 //        .toolbarBackground(Color.black, for: .navigationBar, .tabBar)

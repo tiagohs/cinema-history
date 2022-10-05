@@ -18,9 +18,8 @@ struct CreditCrew: BaseModel {
     var genreIds : [Int]?
     var video : Bool?
     var creditId : String?
-    var releaseDate : Date?
+    var releaseDate : String?
     var popularity : Double?
-    var voteAverage : Double?
     var voteCount : Int?
     var title : String?
     var adult : Bool?
@@ -34,7 +33,6 @@ struct CreditCrew: BaseModel {
         case genreIds = "genre_ids"
         case creditId = "credit_id"
         case releaseDate = "release_date"
-        case voteAverage = "vote_average"
         case voteCount = "vote_count"
         case backdropPath = "backdrop_path"
         case posterPath = "poster_path"

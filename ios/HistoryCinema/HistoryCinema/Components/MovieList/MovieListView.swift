@@ -14,6 +14,8 @@ struct MovieListView: View {
     var posterWidth: Int? = nil
     var posterHeight: Int? = nil
     
+    var onClickListLink: ((TextViewLinkScreenType, Int?) -> Void)? = nil
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .top, spacing: 0) {
@@ -22,6 +24,9 @@ struct MovieListView: View {
                     
                     MovieItemView(movie: movie, posterWidth: posterWidth, posterHeight: posterHeight)
                         .padding(.leading, index == 0 ? 16 : 8)
+                        .onTapGesture {
+                            onClickListLink?(TextViewLinkScreenType.movie, movie.id)
+                        }
                 }
             }
         }

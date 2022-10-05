@@ -12,10 +12,10 @@ struct MovieContentView: View {
     let movieExtra: MovieExtraInfo?
     
     var body: some View {
-        let cast = Movie.exampleMovieFull().credits?.cast?.map({ cast in
+        let cast = movie.credits?.cast?.map({ cast in
             return PersonItem(id: cast.id, name: cast.name, subtitle: cast.character, pictureId: cast.profilePath)
         }) ?? []
-        let crew = Movie.exampleMovieFull().credits?.crew?.map({ crew in
+        let crew = movie.credits?.crew?.map({ crew in
             return PersonItem(id: crew.id, name: crew.name, subtitle: crew.department, pictureId: crew.profilePath)
         }) ?? []
         

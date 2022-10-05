@@ -14,11 +14,12 @@ import Alamofire
 
 class PersonService: PersonServiceProtocol {
     
-    func getDetails(personId: Int, appendToResponse: [String], language: String) -> AnyPublisher<Person, AFError> {
+    func getDetails(personId: Int, appendToResponse: [String], language: String = Locale.getCurrentAppLangAndRegion()) -> AnyPublisher<Person, AFError> {
         let url = TMDB.URL.PERSON.buidPersonDetailsUrl(personId: personId)
         let parameters = TMDB.URL.PERSON.buildPersonDetailsParameters(appendToResponse, language)
         
         return AF.request(url, method: .get, parameters: parameters)
+            .responseJSON { response in DebugUtils.debug(response) }
             .publishDecodable(type: Person.self)
             .value()
             .eraseToAnyPublisher()
@@ -27,6 +28,7 @@ class PersonService: PersonServiceProtocol {
     func getPersonList(url: String, parameters: [String : String]) -> AnyPublisher<ResultsPerson, AFError> {
         
         return AF.request(url, method: .get, parameters: parameters)
+            .responseJSON { response in DebugUtils.debug(response) }
             .publishDecodable(type: ResultsPerson.self)
             .value()
             .eraseToAnyPublisher()
@@ -37,6 +39,7 @@ class PersonService: PersonServiceProtocol {
         let parameters = TMDB.URL.PERSON.buildImagesParameters()
         
         return AF.request(url, method: .get, parameters: parameters)
+            .responseJSON { response in DebugUtils.debug(response) }
             .publishDecodable(type: ImageResults.self)
             .value()
             .eraseToAnyPublisher()
@@ -47,6 +50,7 @@ class PersonService: PersonServiceProtocol {
         let parameters = TMDB.URL.PERSON.buildTaggedImagesParameters(language)
         
         return AF.request(url, method: .get, parameters: parameters)
+            .responseJSON { response in DebugUtils.debug(response) }
             .publishDecodable(type: TaggedImages.self)
             .value()
             .eraseToAnyPublisher()
@@ -57,6 +61,7 @@ class PersonService: PersonServiceProtocol {
         let parameters = TMDB.URL.MOVIES.buildTranslationsParameters()
         
         return AF.request(url, method: .get, parameters: parameters)
+            .responseJSON { response in DebugUtils.debug(response) }
             .publishDecodable(type: TranslationResults.self)
             .value()
             .eraseToAnyPublisher()

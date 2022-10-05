@@ -17,7 +17,6 @@ struct TaggedImagesResults: BaseModel {
     var aspectRatio : Double?
     var media : Movie?
     var height : Int?
-    var voteAverage : Double?
     var width : Int?
     
     enum CodingKeys: String, CodingKey {
@@ -27,6 +26,5 @@ struct TaggedImagesResults: BaseModel {
         case mediaType = "media_type"
         case filePath = "file_path"
         case aspectRatio = "aspect_ratio"
-        case voteAverage = "vote_average"
     }
 }

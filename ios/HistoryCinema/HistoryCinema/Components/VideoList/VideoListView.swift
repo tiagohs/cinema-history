@@ -14,7 +14,7 @@ struct VideoListView: View {
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .top, spacing: 0) {
+            LazyHStack(alignment: .top, spacing: 0) {
                 ForEach(0 ..< videoList.count) { index in
                     let video = videoList[index]
                     

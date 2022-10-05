@@ -12,6 +12,8 @@ struct PersonListView: View {
     var imageWidth: Int? = nil
     var imageHeight: Int? = nil
     
+    var onClickLink: ((TextViewLinkScreenType, Int?) -> Void)? = nil
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .top, spacing: 0) {
@@ -22,6 +24,9 @@ struct PersonListView: View {
                     PersonItemView(imageUrl: imageUrl, personName: person.name,
                                    imageWidth: 230, imageHeight: 350)
                         .padding(.leading, index == 0 ? 16 : 8)
+                        .onTapGesture {
+                            onClickLink?(TextViewLinkScreenType.person, person.id)
+                        }
                 }
             }
         }

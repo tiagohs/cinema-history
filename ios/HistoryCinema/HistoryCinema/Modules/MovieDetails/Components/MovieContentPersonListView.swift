@@ -11,6 +11,8 @@ struct MovieContentPersonListView: View {
     let sectionName: String!
     let personList: [PersonItem]!
     
+    @State private var pageLinkModel: PageLinkModel? = nil
+    
     var body: some View {
         if let list = self.personList, !list.isEmpty {
             MovieContentContainer {
@@ -23,7 +25,7 @@ struct MovieContentPersonListView: View {
                         .padding(.leading, 20)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(alignment: .top, spacing: 0) {
+                        LazyHStack(alignment: .top, spacing: 0) {
                             ForEach(0 ..< list.count) { index in
                                 let person = list[index]
                                 let imageUrl = ImageUtils.formatImageUrl(imageID: person.pictureId, imageSize: TMDB.ImageSize.PROFILE.h632) ?? ""
@@ -31,11 +33,17 @@ struct MovieContentPersonListView: View {
                                 PersonItemView(imageUrl: imageUrl, personName: person.name,
                                                imageWidth: 150, imageHeight: 230)
                                     .padding(.leading, index == 0 ? 20 : 8)
+                                    .onTapGesture {
+                                        self.pageLinkModel = PageLinkModel(person.id, .person)
+                                    }
                             }
                         }
                     }
                 }
                 .padding(.vertical, 20)
+            }
+            .sheet(item: $pageLinkModel) { pageLinkModel in
+                PersonDetailsView(personId: pageLinkModel.id)
             }
         } else {
             AnyView(EmptyView())

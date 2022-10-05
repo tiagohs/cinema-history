@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentPersonListView: View {
     let contentPersonList: ContentPersonList
     
+    var onClickLink: ((TextViewLinkScreenType, Int?) -> Void)? = nil
+    
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
@@ -24,7 +26,8 @@ struct ContentPersonListView: View {
                     Spacer()
                 }
                 
-                PersonListView(personList: contentPersonList.persons ?? [])
+                PersonListView(
+                    personList: contentPersonList.persons ?? [], onClickLink: onClickLink)
             }
             .frame(width: UIScreen.main.bounds.width)
             .padding(.vertical, 16)

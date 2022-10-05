@@ -18,7 +18,7 @@ struct ImageListView: View {
         }
         
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .top, spacing: 0) {
+            LazyHStack(alignment: .top, spacing: 0) {
                 ForEach(0 ..< images.count) { index in
                     let image = images[index]
                     

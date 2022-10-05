@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentMovieListView: View {
     let contentMovieList: ContentMovieList
     
+    var onClickListLink: ((TextViewLinkScreenType, Int?) -> Void)? = nil
+
     var body: some View {
         let colorAsset = ColorUtils.getRandomColorAssets()
         let textColor = Color(UIColor(colorName: colorAsset.textColorName))
@@ -28,7 +30,7 @@ struct ContentMovieListView: View {
                     Spacer()
                 }
                 
-                MovieListView(movieList: contentMovieList.movies ?? [])
+                MovieListView(movieList: contentMovieList.movies ?? [], onClickListLink: onClickListLink)
             }
             .frame(width: UIScreen.main.bounds.width)
             .padding(.vertical, 16)

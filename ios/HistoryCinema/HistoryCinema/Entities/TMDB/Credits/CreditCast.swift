@@ -20,9 +20,8 @@ struct CreditCast: BaseModel {
     var originalLanguage : String?
     var title : String?
     var originalTitle : String?
-    var releaseDate : Date?
+    var releaseDate : String?
     var character : String?
-    var voteAverage : Int?
     var overview : String?
     var creditId : String?
     
@@ -35,7 +34,6 @@ struct CreditCast: BaseModel {
         case originalLanguage = "original_language"
         case originalTitle = "original_title"
         case releaseDate = "release_date"
-        case voteAverage = "vote_average"
         case creditId = "credit_id"
     }
 }

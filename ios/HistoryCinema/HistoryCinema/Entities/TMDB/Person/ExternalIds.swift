@@ -12,7 +12,7 @@ struct ExternalIds: BaseModel {
     var id: Int? = UUID().hashValue
     var freebaseId : String?
     var instagramId : String?
-    var tvRageId : String?
+    var tvRageId : Int?
     var twitterId : String?
     var freebaseMid : String?
     var imdbId : String?

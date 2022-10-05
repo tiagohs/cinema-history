@@ -11,6 +11,7 @@ struct PageContentListView: View {
     let contentList: [Content]
     
     var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
+    var onClickListLink: ((TextViewLinkScreenType, Int?) -> Void)? = nil
     
     var body: some View {
             ForEach(0 ..< contentList.count) { index in
@@ -30,9 +31,13 @@ struct PageContentListView: View {
                 case .quote:
                     ContentQuoteView(contentQuote: contentItem as! ContentQuote)
                 case .movie_list:
-                    ContentMovieListView(contentMovieList: contentItem as! ContentMovieList)
+                    ContentMovieListView(
+                        contentMovieList: contentItem as! ContentMovieList,
+                        onClickListLink: onClickListLink)
                 case .person_list:
-                    ContentPersonListView(contentPersonList: contentItem as! ContentPersonList)
+                    ContentPersonListView(
+                        contentPersonList: contentItem as! ContentPersonList,
+                        onClickLink: onClickListLink)
                 case .block_special:
                     ContentBlockSpecialView(contentBlockSpecial: contentItem as! ContentBlockSpecial)
                         .padding(.horizontal, 16)
