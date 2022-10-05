@@ -26,6 +26,7 @@ struct VideoListView: View {
                         .padding(.leading, index == 0 ? 20 : 8)
                 }
             }
+            .frame(height: 240)
         }
         .sheet(item: $videoLinkModel) { videoLinkModel in
             VideoViewerView(youtubeVideoId: videoLinkModel.youtubeKey)

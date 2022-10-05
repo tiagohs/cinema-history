@@ -38,6 +38,7 @@ struct MovieContentPersonListView: View {
                                     }
                             }
                         }
+                        .frame(height: 240)
                     }
                 }
                 .padding(.vertical, 20)
