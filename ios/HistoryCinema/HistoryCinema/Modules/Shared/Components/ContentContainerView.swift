@@ -1,13 +1,13 @@
 //
-//  MovieContentContainer.swift
+//  ContentContainerView.swift
 //  HistoryCinema
 //
-//  Created by Tiago Henrique da Silva on 30/09/22.
+//  Created by Tiago Henrique da Silva on 05/10/22.
 //
 
 import SwiftUI
 
-struct MovieContentContainer<Content : View>: View {
+struct ContentContainer<Content : View>: View {
     @ViewBuilder var content: () -> Content
     
     var body: some View {
@@ -22,9 +22,9 @@ struct MovieContentContainer<Content : View>: View {
     }
 }
 
-struct MovieContentContainer_Previews: PreviewProvider {
+struct ContentContainer_Previews: PreviewProvider {
     static var previews: some View {
-        MovieContentContainer() {
+        ContentContainer() {
             
         }
     }

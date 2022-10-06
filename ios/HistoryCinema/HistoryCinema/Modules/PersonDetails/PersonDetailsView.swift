@@ -63,6 +63,6 @@ struct PersonDetailsView: View {
 
 struct PersonDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonDetailsView(personId: 11523)
+        PersonDetailsView(personId: 3223)
     }
 }

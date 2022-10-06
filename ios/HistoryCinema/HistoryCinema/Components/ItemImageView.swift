@@ -11,6 +11,7 @@ import Kingfisher
 struct ItemImageView: View {
     let url: String
     var title: String? = nil
+    var subtitle: String? = nil
     var imageWidth: Int? = nil
     var imageHeight: Int? = nil
     var placeholderType: PlaceholderType? = nil
@@ -31,32 +32,45 @@ struct ItemImageView: View {
                 cornerRadius: 20
             )
                 
-            if title != nil {
-                LinearGradient(
-                    gradient: Gradient(colors: [.black, .clear, .clear]),
-                    startPoint: .bottom,
-                    endPoint: .top
-                )
-                .cornerRadius(20)
-                .frame(
-                    width: CGFloat(width),
-                    height: CGFloat(height)
-                )
-                
-                HStack {
-                    Text(title!)
-                        .font(.oswaldBold(size: 18))
-                        .multilineTextAlignment(.leading)
-                        .foregroundColor(Color.white)
-                        .padding(.horizontal, 16)
-                        .padding(.bottom, 16)
-                    
-                    Spacer()
+            LinearGradient(
+                gradient: Gradient(colors: [.black, .clear, .clear]),
+                startPoint: .bottom,
+                endPoint: .top
+            )
+            .cornerRadius(20)
+            .frame(
+                width: CGFloat(width),
+                height: CGFloat(height)
+            )
+            
+            VStack {
+                if let movieTitle = self.title {
+                    HStack {
+                        Text(movieTitle)
+                            .font(.oswaldBold(size: 18))
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(Color.white)
+                            .padding(.horizontal, 16)
+                        
+                        Spacer()
+                    }
+                    .frame(width: CGFloat(width))
                 }
-                .frame(width: CGFloat(width))
-            } else {
-                EmptyView()
+                
+                if let movieSubtitle = self.subtitle {
+                    HStack {
+                        Text(movieSubtitle)
+                            .font(.oswaldRegular(size: 14))
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(Color.white)
+                            .padding(.horizontal, 16)
+                        
+                        Spacer()
+                    }
+                    .frame(width: CGFloat(width))
+                }
             }
+            .padding(.bottom, 16)
         }
     }
 }
@@ -65,7 +79,8 @@ struct ItemImageView_Previews: PreviewProvider {
     static var previews: some View {
         ItemImageView(
             url: "https://image.tmdb.org/t/p/w342//aaNIFWrq6eGi259APbB5yaqBFdm.jpg",
-            title: "Teste de Title"
+            title: "Teste de Title",
+            subtitle: "Teste de Subtitulo"
         )
     }
 }

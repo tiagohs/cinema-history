@@ -53,6 +53,11 @@ struct TranslationResults: BaseModel {
     var translations : [Translation]?
 }
 
+struct TranslationPersonResults: BaseModel {
+    var id: Int? = UUID().hashValue
+    var translations : [TranslationPerson]?
+}
+
 struct ImageResults: BaseModel {
     var id: Int?
     var profiles: [APIImage]?

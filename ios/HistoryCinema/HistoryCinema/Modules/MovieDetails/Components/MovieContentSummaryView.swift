@@ -11,7 +11,7 @@ struct MovieContentSummaryView: View {
     let movie: Movie!
     
     var body: some View {
-        MovieContentContainer {
+        ContentContainer {
             VStack(alignment: .leading) {
                 HStack {
                     if let ranting = movie.ranting() {
@@ -57,11 +57,13 @@ struct MovieContentSummaryView: View {
                         .foregroundColor(.textPrimary)
                         .padding(.bottom, 5)
                     
-                    Text(summary)
-                        .font(.proximaNovaRegular(size: 16))
-                        .multilineTextAlignment(.leading)
-                        .foregroundColor(.textPrimary)
-                        .padding(.bottom, 5)
+                    HStack {
+                        Text(summary)
+                            .font(.proximaNovaRegular(size: 16))
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(.textPrimary)
+                            .padding(.bottom, 5)
+                    }.fixedSize(horizontal: false, vertical: true)
                     
                     Text("Fonte: TMDB")
                         .font(.oswaldRegular(size: 12))

@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct MovieItemView: View {
-    let movie: LocalMovie
+    let movie: MovieDTO
     var posterWidth: Int? = nil
     var posterHeight: Int? = nil
     
@@ -18,7 +18,8 @@ struct MovieItemView: View {
             
         ItemImageView(
             url: imageUrl,
-            title: movie.originalTitle,
+            title: movie.title,
+            subtitle: movie.subtitle,
             imageWidth: posterWidth,
             imageHeight: posterHeight)
     }
@@ -26,6 +27,6 @@ struct MovieItemView: View {
 
 struct MovieItemView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieItemView(movie: LocalMovie.exampleMovie)
+        MovieItemView(movie: MovieDTO.fromLocalMovie(LocalMovie.exampleMovie))
     }
 }

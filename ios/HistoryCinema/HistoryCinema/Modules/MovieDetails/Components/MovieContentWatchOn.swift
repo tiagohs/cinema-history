@@ -12,7 +12,7 @@ struct MovieContentWatchOn: View {
     
     var body: some View {
         if let watchOnList = self.movieExtraInfo?.watchOn, !watchOnList.isEmpty {
-            MovieContentContainer {
+            ContentContainer {
                 VStack(alignment: .leading) {
                     Text("Onde assistir")
                         .font(.oswaldRegular(size: 24))

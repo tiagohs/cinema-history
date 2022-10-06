@@ -10,13 +10,30 @@ import SwiftUI
 struct VideoViewerView: View {
     let youtubeVideoId: String?
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
-        VStack {
-            VideoPlayerView(youtubeVideoId: youtubeVideoId, autoplay: true)
-                .frame(height: 300, alignment: .center)
+        ZStack(alignment: .topLeading) {
+            VStack {
+                VideoPlayerView(youtubeVideoId: youtubeVideoId, autoplay: true)
+                    .frame(height: 300, alignment: .center)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.black)
+            
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Image(systemName: "xmark")
+                    .font(.system(size: 16, weight: .bold))
+                    .padding()
+                    .background(Color.backgroundPrimary)
+                    .foregroundColor(Color.textPrimary)
+                    .clipShape(Circle())
+            }
+            .shadow(color: Color.backgroundPrimary, radius: 5)
+            .padding()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
     }
 }
 

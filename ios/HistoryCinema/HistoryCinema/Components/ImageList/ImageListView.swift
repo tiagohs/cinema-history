@@ -35,7 +35,7 @@ struct ImageListView: View {
             .frame(height: 180)
         }
         .sheet(item: $imageLinkModel) { imageLinkModel in
-            ImageSlider(images: imageLinkModel.images, startIndex: imageLinkModel.index)
+            ImageSliderView(images: imageLinkModel.images, startIndex: imageLinkModel.index)
         }
     }
 }

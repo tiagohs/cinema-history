@@ -24,6 +24,13 @@ extension Date {
         return String(currentYearInt)
     }
     
+    var yearInt: Int {
+        let calendar = NSCalendar.init(calendarIdentifier: NSCalendar.Identifier.gregorian)
+        let currentYearInt = (calendar?.component(NSCalendar.Unit.year, from: self))!
+        
+        return currentYearInt
+    }
+    
     var month: String {
         let calendar = NSCalendar.init(calendarIdentifier: NSCalendar.Identifier.gregorian)
         let currentMonthInt = (calendar?.component(NSCalendar.Unit.month, from: self))!

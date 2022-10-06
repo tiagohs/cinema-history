@@ -16,7 +16,7 @@ struct PersonListView: View {
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .top, spacing: 0) {
+            LazyHStack(alignment: .top, spacing: 0) {
                 ForEach(0 ..< personList.count) { index in
                     let person = personList[index]
                     let imageUrl = ImageUtils.formatImageUrl(imageID: person.profilePath, imageSize: TMDB.ImageSize.PROFILE.h632) ?? ""

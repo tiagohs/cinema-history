@@ -14,3 +14,8 @@ struct TranslationData: BaseModel {
     var overview : String?
     var homepage : String?
 }
+
+struct TranslationPersonData: BaseModel {
+    var id: Int? = UUID().hashValue
+    var biography : String?
+}

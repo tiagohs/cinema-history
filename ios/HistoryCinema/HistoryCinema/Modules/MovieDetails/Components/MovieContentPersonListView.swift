@@ -15,7 +15,7 @@ struct MovieContentPersonListView: View {
     
     var body: some View {
         if let list = self.personList, !list.isEmpty {
-            MovieContentContainer {
+            ContentContainer {
                 VStack(alignment: .leading) {
                     Text(sectionName)
                         .font(.oswaldRegular(size: 24))

@@ -10,7 +10,7 @@ import SwiftUI
 import struct Kingfisher.DownsamplingImageProcessor
 
 struct MovieListView: View {
-    let movieList: [LocalMovie]
+    let movieList: [MovieDTO]
     var posterWidth: Int? = nil
     var posterHeight: Int? = nil
     
@@ -18,7 +18,7 @@ struct MovieListView: View {
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .top, spacing: 0) {
+            LazyHStack(alignment: .top, spacing: 0) {
                 ForEach(0 ..< movieList.count) { index in
                     let movie = movieList[index]
                     
@@ -36,10 +36,10 @@ struct MovieListView: View {
 struct MovieListView_Previews: PreviewProvider {
     static var previews: some View {
         let movieList = [
-            LocalMovie.exampleMovie,
-            LocalMovie.exampleMovie,
-            LocalMovie.exampleMovie,
-            LocalMovie.exampleMovie
+            MovieDTO.fromLocalMovie(LocalMovie.exampleMovie),
+            MovieDTO.fromLocalMovie(LocalMovie.exampleMovie),
+            MovieDTO.fromLocalMovie(LocalMovie.exampleMovie),
+            MovieDTO.fromLocalMovie(LocalMovie.exampleMovie)
         ]
         
         MovieListView(movieList: movieList)

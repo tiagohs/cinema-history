@@ -13,7 +13,7 @@ struct MovieContentInfoView: View {
     var body: some View {
         let posterImageUrl = ImageUtils.formatImageUrl(imageID: movie.posterPath, imageSize: TMDB.ImageSize.POSTER.w780) ?? ""
         
-        MovieContentContainer {
+        ContentContainer {
             HStack(alignment: .top) {
                 VStack(alignment: .leading) {
                     if let directors = movie.directors(), !directors.isEmpty {

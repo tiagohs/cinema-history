@@ -17,7 +17,7 @@ struct MovieContentMidiaView: View {
         if allImages.isEmpty && allVideos.isEmpty {
             AnyView(EmptyView())
         } else {
-            MovieContentContainer {
+            ContentContainer {
                 VStack(alignment: .leading) {
                     Text("Mídia")
                         .font(.oswaldRegular(size: 24))

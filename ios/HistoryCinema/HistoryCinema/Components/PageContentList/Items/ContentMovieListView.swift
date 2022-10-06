@@ -16,6 +16,10 @@ struct ContentMovieListView: View {
         let colorAsset = ColorUtils.getRandomColorAssets()
         let textColor = Color(UIColor(colorName: colorAsset.textColorName))
         let backgroundColor = Color(UIColor(colorName: "md_\(colorAsset.colorName)_500"))
+        let movies = contentMovieList.movies ?? []
+        let movieDTOs = movies.map { localMovie in
+            return MovieDTO.fromLocalMovie(localMovie)
+        }
         
         ZStack {
             VStack(alignment: .leading) {
@@ -30,7 +34,7 @@ struct ContentMovieListView: View {
                     Spacer()
                 }
                 
-                MovieListView(movieList: contentMovieList.movies ?? [], onClickListLink: onClickListLink)
+                MovieListView(movieList: movieDTOs, onClickListLink: onClickListLink)
             }
             .frame(width: UIScreen.main.bounds.width)
             .padding(.vertical, 16)
