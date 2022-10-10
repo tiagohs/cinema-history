@@ -17,7 +17,7 @@ struct ContentContainer<Content : View>: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.backgroundPrimary)
         .cornerRadius(12)
-        .shadow(radius: 5)
+        .shadow(color: Color.shadowColor, radius: 5)
         .padding(.horizontal, 10)
     }
 }

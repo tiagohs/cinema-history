@@ -139,6 +139,10 @@ extension Color {
         return Color("bottomHistoryNavigationTextColor")
     }
     
+    static var shadowColor: Color  {
+        return Color("shadowColor")
+    }
+    
     func toHex() -> String? {
             let uic = UIColor(self)
             guard let components = uic.cgColor.components, components.count >= 3 else {
