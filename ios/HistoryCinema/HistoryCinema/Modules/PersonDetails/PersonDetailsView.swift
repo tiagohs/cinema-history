@@ -49,7 +49,7 @@ struct PersonDetailsView: View {
             Alert(title: Text("Ops"),
                   message: Text("Houve algum problema! Por favor, tente novamente."),
                   dismissButton: .default(Text("Tentar novamente")) {
-                    
+                    presenter.fetchPersonDetailsBy(personId)
                   }
             )
         })

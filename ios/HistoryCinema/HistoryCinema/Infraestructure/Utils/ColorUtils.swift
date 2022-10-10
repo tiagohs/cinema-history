@@ -32,4 +32,19 @@ class ColorUtils {
 
         return listOfColors.randomElement() ?? ColorAsset(colorName: "red", textColorName: "md_white_1000")
     }
+    
+    static func getReferenceColorAsset(_ type: String) -> ColorAsset {
+        switch type {
+            case "Livro":
+                return ColorAsset(colorName: "md_red_500", textColorName: "md_white_1000")
+            case "Série":
+                return ColorAsset(colorName: "md_deep_orange_500", textColorName: "md_white_1000")
+            case "Filme":
+                return ColorAsset(colorName: "md_purple_500", textColorName: "md_white_1000")
+            case "Youtube":
+                return ColorAsset(colorName: "md_green_500", textColorName: "md_white_1000")
+            default:
+                return ColorAsset(colorName: "md_blue_500", textColorName: "md_white_1000")
+        }
+    }
 }

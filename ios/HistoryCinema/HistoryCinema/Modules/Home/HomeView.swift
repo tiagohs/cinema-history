@@ -17,10 +17,9 @@ struct HomeView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     HomeButtonListView(
-                        ReferencesDestination: { AnyView(EmptyView()) },
-                        GlossaryDestination: { AnyView(EmptyView()) },
-                        SettingsDestination: { AnyView(EmptyView()) },
-                        AboutDestination: { AnyView(EmptyView()) }
+                        ReferencesDestination: { self.presenter.presentReferences() },
+                        GlossaryDestination: { self.presenter.presentGlossary() },
+                        AboutDestination: { self.presenter.presentReferences() }
                     )
                     
                     if (presenter.homeContent.count == 0) {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PageContentListView: View {
+    
     let contentList: [Content]
     
     var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil

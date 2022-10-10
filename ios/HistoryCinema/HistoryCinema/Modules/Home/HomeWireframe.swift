@@ -16,6 +16,16 @@ class HomeWireframe {
             mainTopicType: mainTopicType
         )
     }
+    
+    @ViewBuilder
+    func presentReferences() -> some View {
+        ReferencesView()
+    }
+    
+    @ViewBuilder
+    func presentGlossary() -> some View {
+        GlossaryView()
+    }
 }
 
 // MARK: build's Module

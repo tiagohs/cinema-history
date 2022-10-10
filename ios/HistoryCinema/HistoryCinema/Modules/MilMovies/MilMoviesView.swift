@@ -42,19 +42,6 @@ struct MilMoviesView: View {
                     }
                 }
                 .edgesIgnoringSafeArea(.all)
-                
-    //            Button(action: {
-    //                self.navPresentationMode.wrappedValue.dismiss()
-    //            }) {
-    //                Image(systemName: "chevron.left")
-    //                    .font(.system(size: 16, weight: .bold))
-    //                    .padding()
-    //                    .background(Color.backgroundInverse)
-    //                    .foregroundColor(Color.textInverse)
-    //                    .clipShape(Circle())
-    //            }
-    //            .shadow(color: Color.backgroundInverse, radius: 5)
-    //            .padding()
             }
         }
         .navigationTitle("")
@@ -65,7 +52,7 @@ struct MilMoviesView: View {
             Alert(title: Text("Ops"),
                   message: Text("Houve algum problema! Por favor, tente novamente."),
                   dismissButton: .default(Text("Tentar novamente")) {
-                    
+                    presenter.fetchMoviesBy(mainTopicItem: mainTopic)
                   }
             )
         })

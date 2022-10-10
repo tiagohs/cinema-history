@@ -7,20 +7,23 @@
 
 import SwiftUI
 
-struct HomeButtonListView<Content : View>: View {
-    @ViewBuilder var ReferencesDestination: () -> Content
-    @ViewBuilder var GlossaryDestination: () -> Content
-    @ViewBuilder var SettingsDestination: () -> Content
-    @ViewBuilder var AboutDestination: () -> Content
+struct HomeButtonListView<
+    ReferencesDestinationView : View,
+    GlossaryDestinationView : View,
+    AboutDestinationView : View
+>: View {
+    @ViewBuilder var ReferencesDestination: () -> ReferencesDestinationView
+    @ViewBuilder var GlossaryDestination: () -> GlossaryDestinationView
+    @ViewBuilder var AboutDestination: () -> AboutDestinationView
     
     @State private var selection: String? = nil
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                NavigationLink(destination: ReferencesDestination()) {
+                NavigationLink(destination: ReferencesDestination(), tag: "ReferencesDestination", selection: $selection) {
                     Button(action: {
-                        
+                        self.selection = "ReferencesDestination"
                     }) {
                         HStack {
                             Text("Referências")
@@ -34,32 +37,12 @@ struct HomeButtonListView<Content : View>: View {
                     .shadow(radius: 5)
                 }
                 
-                NavigationLink(destination: GlossaryDestination()) {
+                NavigationLink(destination: GlossaryDestination(), tag: "GlossaryDestination", selection: $selection) {
                     Button(action: {
-                        
+                        self.selection = "GlossaryDestination"
                     }) {
                         HStack {
                             Text("Glossário")
-                                .font(.proximaNovaBold(size: 18))
-                        }
-                        .padding(20)
-                        .foregroundColor(.cardTextPrimary)
-                        .background(Color.cardBackground)
-                        .cornerRadius(20)
-                    }
-                    .shadow(radius: 5)
-                }
-                
-                
-            }
-            
-            HStack {
-                NavigationLink(destination: SettingsDestination()) {
-                    Button(action: {
-                        
-                    }) {
-                        HStack {
-                            Text("Configurações")
                                 .font(.proximaNovaBold(size: 18))
                         }
                         .padding(20)
@@ -85,8 +68,6 @@ struct HomeButtonListView<Content : View>: View {
                     }
                     .shadow(radius: 5)
                 }
-                
-                
             }
         }
         .padding()
@@ -98,7 +79,6 @@ struct HomeButtonListView_Previews: PreviewProvider {
         HomeButtonListView(
             ReferencesDestination: { AnyView(EmptyView()) },
             GlossaryDestination: { AnyView(EmptyView()) },
-            SettingsDestination: { AnyView(EmptyView()) },
             AboutDestination: { AnyView(EmptyView()) }
         )
     }

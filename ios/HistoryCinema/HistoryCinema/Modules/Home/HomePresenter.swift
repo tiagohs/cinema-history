@@ -62,4 +62,14 @@ extension HomePresenter {
     func presentMainTopics(_ mainTopicType: MainTopicsType) -> some View {
         self.wireframe?.presentMainTopics(mainTopicType)
     }
+    
+    @ViewBuilder
+    func presentReferences() -> some View {
+        self.wireframe?.presentReferences()
+    }
+    
+    @ViewBuilder
+    func presentGlossary() -> some View {
+        self.wireframe?.presentGlossary()
+    }
 }
