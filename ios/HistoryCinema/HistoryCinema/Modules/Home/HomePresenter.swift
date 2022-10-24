@@ -64,6 +64,12 @@ extension HomePresenter {
     }
     
     @ViewBuilder
+    func presentTimeline() -> some View {
+        self.wireframe?.presentTimeline()
+    }
+    
+    
+    @ViewBuilder
     func presentReferences() -> some View {
         self.wireframe?.presentReferences()
     }

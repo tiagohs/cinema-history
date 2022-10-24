@@ -19,8 +19,5 @@ class HistoryPagesInteractor: BaseInteractor {
 
 extension HistoryPagesInteractor {
     
-    func getPage(_ mainTopicId: Int, _ sumarioID: Int) -> AnyPublisher<Page, Error> {
-        return self.localContentService.getPage(mainTopicId: mainTopicId, sumarioID: sumarioID)
-    }
 }
 

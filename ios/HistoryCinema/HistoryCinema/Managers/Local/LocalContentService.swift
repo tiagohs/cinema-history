@@ -116,7 +116,7 @@ class LocalContentService: BaseLocalService {
         return Deferred {
                 Future { promise in
                     do {
-                        guard let timelinePageJSON = try "timeline_\(timelineId)".toJSONObject() as? Dictionary<String, Any> else {
+                        guard let timelinePageJSON = try "timeline_\(timelineId).json".toJSONObject() as? Dictionary<String, Any> else {
                             throw "Could't create JSONObject"
                         }
                         

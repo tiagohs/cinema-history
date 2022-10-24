@@ -432,6 +432,19 @@
 		A3C2382C25EB40180087D134 /* MainTopicQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382B25EB40180087D134 /* MainTopicQuoteView.swift */; };
 		A3C2382E25EB4F260087D134 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2382D25EB4F260087D134 /* QuoteView.swift */; };
 		A3C433A628E4D504005A68DC /* MovieContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C433A528E4D504005A68DC /* MovieContentView.swift */; };
+		A3DFDF4D2905CDA5007FADC4 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF4C2905CDA5007FADC4 /* TimelineView.swift */; };
+		A3DFDF4F2905CDBF007FADC4 /* TimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF4E2905CDBF007FADC4 /* TimelinePresenter.swift */; };
+		A3DFDF512905CDD2007FADC4 /* TimelineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF502905CDD2007FADC4 /* TimelineInteractor.swift */; };
+		A3DFDF532905CE27007FADC4 /* TimelineWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF522905CE27007FADC4 /* TimelineWireframe.swift */; };
+		A3DFDF572905D266007FADC4 /* TimelinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF562905D266007FADC4 /* TimelinesView.swift */; };
+		A3DFDF592905D278007FADC4 /* TimelinesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF582905D278007FADC4 /* TimelinesPresenter.swift */; };
+		A3DFDF5B2905D298007FADC4 /* TimelinesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF5A2905D298007FADC4 /* TimelinesInteractor.swift */; };
+		A3DFDF5D2905D2AB007FADC4 /* TimelinesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF5C2905D2AB007FADC4 /* TimelinesWireframe.swift */; };
+		A3DFDF5F2905D8FA007FADC4 /* TimelineContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF5E2905D8FA007FADC4 /* TimelineContentView.swift */; };
+		A3DFDF622905DB76007FADC4 /* TimelineContentTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF612905DB76007FADC4 /* TimelineContentTitleView.swift */; };
+		A3DFDF642905DB95007FADC4 /* TimelineContentItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF632905DB95007FADC4 /* TimelineContentItemView.swift */; };
+		A3DFDF662905DBB9007FADC4 /* TimelineContentFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF652905DBB9007FADC4 /* TimelineContentFooterView.swift */; };
+		A3DFDF682905F0DF007FADC4 /* TimelineContentTitleNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF672905F0DF007FADC4 /* TimelineContentTitleNavigationView.swift */; };
 		A3E2380226066CED00191413 /* HistoryPagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380126066CED00191413 /* HistoryPagesView.swift */; };
 		A3E2380426066CFF00191413 /* HistoryPagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380326066CFF00191413 /* HistoryPagesPresenter.swift */; };
 		A3E2380626066D2F00191413 /* HistoryPagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380526066D2F00191413 /* HistoryPagesInteractor.swift */; };
@@ -918,6 +931,19 @@
 		A3C2382B25EB40180087D134 /* MainTopicQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopicQuoteView.swift; sourceTree = "<group>"; };
 		A3C2382D25EB4F260087D134 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		A3C433A528E4D504005A68DC /* MovieContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieContentView.swift; sourceTree = "<group>"; };
+		A3DFDF4C2905CDA5007FADC4 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		A3DFDF4E2905CDBF007FADC4 /* TimelinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinePresenter.swift; sourceTree = "<group>"; };
+		A3DFDF502905CDD2007FADC4 /* TimelineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineInteractor.swift; sourceTree = "<group>"; };
+		A3DFDF522905CE27007FADC4 /* TimelineWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineWireframe.swift; sourceTree = "<group>"; };
+		A3DFDF562905D266007FADC4 /* TimelinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinesView.swift; sourceTree = "<group>"; };
+		A3DFDF582905D278007FADC4 /* TimelinesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinesPresenter.swift; sourceTree = "<group>"; };
+		A3DFDF5A2905D298007FADC4 /* TimelinesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinesInteractor.swift; sourceTree = "<group>"; };
+		A3DFDF5C2905D2AB007FADC4 /* TimelinesWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinesWireframe.swift; sourceTree = "<group>"; };
+		A3DFDF5E2905D8FA007FADC4 /* TimelineContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineContentView.swift; sourceTree = "<group>"; };
+		A3DFDF612905DB76007FADC4 /* TimelineContentTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineContentTitleView.swift; sourceTree = "<group>"; };
+		A3DFDF632905DB95007FADC4 /* TimelineContentItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineContentItemView.swift; sourceTree = "<group>"; };
+		A3DFDF652905DBB9007FADC4 /* TimelineContentFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineContentFooterView.swift; sourceTree = "<group>"; };
+		A3DFDF672905F0DF007FADC4 /* TimelineContentTitleNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineContentTitleNavigationView.swift; sourceTree = "<group>"; };
 		A3E2380126066CED00191413 /* HistoryPagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPagesView.swift; sourceTree = "<group>"; };
 		A3E2380326066CFF00191413 /* HistoryPagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPagesPresenter.swift; sourceTree = "<group>"; };
 		A3E2380526066D2F00191413 /* HistoryPagesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPagesInteractor.swift; sourceTree = "<group>"; };
@@ -1079,6 +1105,8 @@
 		A33BC9AF25D89CCF00E0A63D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A3DFDF4A2905CD8A007FADC4 /* Timeline */,
+				A3DFDF542905D22C007FADC4 /* Timelines */,
 				A3AFBCF128F4A516003B5DB7 /* Glossary */,
 				A3EDED6528EF4E6D00FD1DF4 /* References */,
 				A388EBF828ED169200CC048C /* PersonDetails */,
@@ -2165,6 +2193,57 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
+		A3DFDF4A2905CD8A007FADC4 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				A3DFDF4B2905CD92007FADC4 /* Components */,
+				A3DFDF4C2905CDA5007FADC4 /* TimelineView.swift */,
+				A3DFDF4E2905CDBF007FADC4 /* TimelinePresenter.swift */,
+				A3DFDF502905CDD2007FADC4 /* TimelineInteractor.swift */,
+				A3DFDF522905CE27007FADC4 /* TimelineWireframe.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		A3DFDF4B2905CD92007FADC4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A3DFDF602905DB5C007FADC4 /* Items */,
+				A3DFDF5E2905D8FA007FADC4 /* TimelineContentView.swift */,
+				A3DFDF672905F0DF007FADC4 /* TimelineContentTitleNavigationView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A3DFDF542905D22C007FADC4 /* Timelines */ = {
+			isa = PBXGroup;
+			children = (
+				A3DFDF552905D240007FADC4 /* Components */,
+				A3DFDF562905D266007FADC4 /* TimelinesView.swift */,
+				A3DFDF582905D278007FADC4 /* TimelinesPresenter.swift */,
+				A3DFDF5A2905D298007FADC4 /* TimelinesInteractor.swift */,
+				A3DFDF5C2905D2AB007FADC4 /* TimelinesWireframe.swift */,
+			);
+			path = Timelines;
+			sourceTree = "<group>";
+		};
+		A3DFDF552905D240007FADC4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A3DFDF602905DB5C007FADC4 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				A3DFDF612905DB76007FADC4 /* TimelineContentTitleView.swift */,
+				A3DFDF632905DB95007FADC4 /* TimelineContentItemView.swift */,
+				A3DFDF652905DBB9007FADC4 /* TimelineContentFooterView.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 		A3E2380026066CB600191413 /* HistoryPages */ = {
 			isa = PBXGroup;
 			children = (
@@ -2621,6 +2700,7 @@
 				A3E6F98E25FFB1A400B29AB6 /* Path+Extensions.swift in Sources */,
 				A39CD71F25E33EA000860258 /* Recomendation.swift in Sources */,
 				A388EBD928EC7C7200CC048C /* MovieContentPersonListView.swift in Sources */,
+				A3DFDF642905DB95007FADC4 /* TimelineContentItemView.swift in Sources */,
 				A33BCB1625D9C4D800E0A63D /* HomePresenter.swift in Sources */,
 				A3C237EE25EAB2A80087D134 /* Timeline.swift in Sources */,
 				A3AFBCF828F4A54D003B5DB7 /* GlossaryInteractor.swift in Sources */,
@@ -2649,12 +2729,14 @@
 				A39CD6DC25E3097400860258 /* ContentType.swift in Sources */,
 				A388EC0728EDD57C00CC048C /* ImageSliderView.swift in Sources */,
 				A3C0FEBE2608E5D1009D35E7 /* ItemImageView.swift in Sources */,
+				A3DFDF532905CE27007FADC4 /* TimelineWireframe.swift in Sources */,
 				A3C0FEAE2607FBDC009D35E7 /* TextViewUrlType.swift in Sources */,
 				A33BCA0025D8A33400E0A63D /* Keyword.swift in Sources */,
 				A3C0FEB42607FCD4009D35E7 /* TextViewLinkScreenType.swift in Sources */,
 				A3C0FE932607AD66009D35E7 /* ContentQuoteView.swift in Sources */,
 				A33BCA0325D8A33400E0A63D /* TranslationData.swift in Sources */,
 				A3C237FE25EAB8570087D134 /* PersonVideo.swift in Sources */,
+				A3DFDF5F2905D8FA007FADC4 /* TimelineContentView.swift in Sources */,
 				A3C237F225EAB3220087D134 /* TimelineFooter.swift in Sources */,
 				A39CD6C825E1A9F500860258 /* HomeItem.swift in Sources */,
 				A3C2382E25EB4F260087D134 /* QuoteView.swift in Sources */,
@@ -2666,6 +2748,7 @@
 				A33BCB0C25D9B1B500E0A63D /* GenreServiceProtocol.swift in Sources */,
 				A39CD6ED25E330BE00860258 /* ScreenParameter.swift in Sources */,
 				A3C2380825EAC0430087D134 /* Reviews.swift in Sources */,
+				A3DFDF512905CDD2007FADC4 /* TimelineInteractor.swift in Sources */,
 				A3E2382F2606B3B900191413 /* YouTubeView.swift in Sources */,
 				A39CD71025E33BDA00860258 /* DateFormatTransform.swift in Sources */,
 				A33BCA0C25D8A33400E0A63D /* CreditCast.swift in Sources */,
@@ -2692,6 +2775,7 @@
 				A33BC9FA25D8A33400E0A63D /* Movie.swift in Sources */,
 				A33BCA0B25D8A33400E0A63D /* MovieCredits.swift in Sources */,
 				A3C0FE972607B153009D35E7 /* ColorAsset.swift in Sources */,
+				A3DFDF592905D278007FADC4 /* TimelinesPresenter.swift in Sources */,
 				A39CD6F725E334A200860258 /* ContentMovieList.swift in Sources */,
 				A33BCA0525D8A33400E0A63D /* TaggedImagesResults.swift in Sources */,
 				A361915125E5E4D100626763 /* ReferenceText.swift in Sources */,
@@ -2710,6 +2794,7 @@
 				A33BCC1E25DA09BB00E0A63D /* LocalImage.swift in Sources */,
 				A361915325E5E51200626763 /* ReferenceMedia.swift in Sources */,
 				A33BCA1A25D8A37700E0A63D /* OMDB.swift in Sources */,
+				A3DFDF4F2905CDBF007FADC4 /* TimelinePresenter.swift in Sources */,
 				A39CD72525E33FB700860258 /* ContentVideo.swift in Sources */,
 				A3ADCE0F25EC330E00ACA641 /* SummaryView.swift in Sources */,
 				A3C237EB25EAAD220087D134 /* DirectorsMainTopic.swift in Sources */,
@@ -2764,11 +2849,13 @@
 				A33BC9C225D8A29000E0A63D /* Date+Extensions.swift in Sources */,
 				A3E2380826066D3A00191413 /* HistoryPagesWireframe.swift in Sources */,
 				A30F6032260FC76000FE3B1A /* LinkScreenView.swift in Sources */,
+				A3DFDF4D2905CDA5007FADC4 /* TimelineView.swift in Sources */,
 				A3C237FA25EAB7900087D134 /* PersonExtraInfo.swift in Sources */,
 				A33BCA1225D8A33400E0A63D /* MediaCreditList.swift in Sources */,
 				A3AFBCF428F4A530003B5DB7 /* GlossaryView.swift in Sources */,
 				A33BCC1A25DA08E400E0A63D /* MainTopicsType.swift in Sources */,
 				A33BC9F725D8A33400E0A63D /* MovieOMDB.swift in Sources */,
+				A3DFDF5B2905D298007FADC4 /* TimelinesInteractor.swift in Sources */,
 				A3ADCE1125EC331E00ACA641 /* SummaryPresenter.swift in Sources */,
 				A3AFBD0328F4AE63003B5DB7 /* UIApplication+Extensions.swift in Sources */,
 				A3A558AC28E78496000BCE2B /* ExternalLinkDTO.swift in Sources */,
@@ -2791,17 +2878,21 @@
 				A33BCB1425D9C4C900E0A63D /* HomeView.swift in Sources */,
 				A3BD92DF28E3E3290081A397 /* MovieDetailsView.swift in Sources */,
 				A39CD6FC25E3356500860258 /* LocalMovie.swift in Sources */,
+				A3DFDF5D2905D2AB007FADC4 /* TimelinesWireframe.swift in Sources */,
 				A3AFBCFA28F4A55B003B5DB7 /* GlossaryWireframe.swift in Sources */,
 				A361914D25E5E43200626763 /* Reference.swift in Sources */,
 				A3BD92E328E3E34F0081A397 /* MovieDetailsInteractor.swift in Sources */,
 				A33BCB1A25D9C50A00E0A63D /* HomeWireframe.swift in Sources */,
 				A33BCA0725D8A33400E0A63D /* ExternalIds.swift in Sources */,
+				A3DFDF662905DBB9007FADC4 /* TimelineContentFooterView.swift in Sources */,
 				A33529C327A73EEB00FC23AB /* ViewDidLoadModifier.swift in Sources */,
 				A39CD6D825E3087500860258 /* Content.swift in Sources */,
 				A3C0FE952607B11D009D35E7 /* ColorUtils.swift in Sources */,
 				A33BCA0D25D8A33400E0A63D /* MediaCreditCrew.swift in Sources */,
+				A3DFDF572905D266007FADC4 /* TimelinesView.swift in Sources */,
 				A33BCA0E25D8A33400E0A63D /* MediaCreditCast.swift in Sources */,
 				A33BC98725D89C4200E0A63D /* ContentView.swift in Sources */,
+				A3DFDF622905DB76007FADC4 /* TimelineContentTitleView.swift in Sources */,
 				A3C2380225EAB9A70087D134 /* MovieExtraInfo.swift in Sources */,
 				A33BCC2225DA0B1D00E0A63D /* Animation.swift in Sources */,
 				A36D0D4126110E3A00AFCE4F /* NomineeItemView.swift in Sources */,
@@ -2835,6 +2926,7 @@
 				A33BCA0A25D8A33400E0A63D /* Results.swift in Sources */,
 				A3C0FEB62608E178009D35E7 /* ContentPersonListView.swift in Sources */,
 				A3C2382825EB31180087D134 /* Colors+Extensions.swift in Sources */,
+				A3DFDF682905F0DF007FADC4 /* TimelineContentTitleNavigationView.swift in Sources */,
 				A3BD9AEB28E3891A00188858 /* MilMoviesItem.swift in Sources */,
 				A339AA66261109F90006B0C6 /* ContentNomineesView.swift in Sources */,
 				A3EDED6428EF2BBE00FD1DF4 /* PersonDetailsMidiaView.swift in Sources */,

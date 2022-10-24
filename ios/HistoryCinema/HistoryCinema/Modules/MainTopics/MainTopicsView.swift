@@ -55,7 +55,6 @@ struct MainTopicsView: View {
                     default:
                         AnyView(EmptyView())
                 }
-                
             }
         }
         .foregroundColor(Color.textPrimary)

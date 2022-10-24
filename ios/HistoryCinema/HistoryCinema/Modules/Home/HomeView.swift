@@ -30,7 +30,12 @@ struct HomeView: View {
                         HomeListView(
                             homeContentItemList: presenter.homeContent,
                             HomeItemDestination: { mainTopicType in
-                                self.presenter.presentMainTopics(mainTopicType)
+                                switch mainTopicType {
+                                case .timeline:
+                                    self.presenter.presentTimeline()
+                                default:
+                                    self.presenter.presentMainTopics(mainTopicType)
+                                }
                             }
                         )
                     }

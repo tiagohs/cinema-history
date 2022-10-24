@@ -45,6 +45,7 @@ struct HTMLStringView: UIViewRepresentable {
   var fontName: String
   var size: Int
   var color: String
+  var lineSpace: Int? = nil
   var onTextLoaded: (() -> Void)? = nil
   var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
     

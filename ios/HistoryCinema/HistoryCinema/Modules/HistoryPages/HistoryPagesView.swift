@@ -94,8 +94,6 @@ struct HistoryPagesView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
-//        .toolbarBackground(Color.black, for: .navigationBar, .tabBar)
-//        .toolbarBackground(.visible, for: .navigationBar)
         .foregroundColor(Color.textPrimary)
         .toolbar {
             ToolbarItem(placement: .principal) {
@@ -104,8 +102,8 @@ struct HistoryPagesView: View {
         }
         .alert(isPresented: $presenter.showErrorMessage, content: {
             Alert(title: Text("Ops"),
-                  message: Text("Houve algum problema! Por favor, tente novamente."),
-                  dismissButton: .default(Text("Tentar novamente")) {
+                  message: Text("Houve algum problema!"),
+                  dismissButton: .default(Text("Ok")) {
                     
                   }
             )

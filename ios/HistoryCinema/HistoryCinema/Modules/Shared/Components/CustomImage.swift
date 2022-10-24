@@ -89,7 +89,9 @@ struct CustomImage: View {
     @ViewBuilder
     func getLocalImage() -> some View {
         if let image = image {
-            let imageUrl = image.url ?? ""
+            let imageUrl = image.url?
+                .replacingOccurrences(of: "images/", with: "", options: .literal, range: nil)
+                .replacingOccurrences(of: ".webp", with: "", options: .literal, range: nil) ?? ""
             let imageWidth = (width != nil) ? CGFloat(width!) : UIScreen.main.bounds.width
             let imageComponent = Image(imageUrl)
             

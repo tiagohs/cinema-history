@@ -18,6 +18,11 @@ class HomeWireframe {
     }
     
     @ViewBuilder
+    func presentTimeline() -> some View {
+        TimelinesView()
+    }
+    
+    @ViewBuilder
     func presentReferences() -> some View {
         ReferencesView()
     }
