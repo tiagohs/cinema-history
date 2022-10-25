@@ -52,11 +52,9 @@ struct TimelineContentItemView: View {
                         VStack(alignment: .trailing) {
                             // Right
                             ZStack(alignment: .bottomTrailing) {
-                                
-                                
                                 CustomImage(
                                     image: timelineItem.image,
-                                    imageType: .local,
+                                    imageType: timelineItem?.image?.imageType ?? .local,
                                     placeholderType: .movie,
                                     width: 200,
                                     height: 150

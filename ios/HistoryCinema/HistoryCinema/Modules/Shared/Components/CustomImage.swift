@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Kingfisher
+import FirebaseStorage
 
 struct CustomImage: View {
     var image: LocalImage?
@@ -19,6 +20,19 @@ struct CustomImage: View {
     var cornerRadius: Int?
     var blurRadius: Int?
     var iconSize: Int?
+    
+    @State private var firebaseImageURL = URL(string: "")
+    
+    func loadImageFromFirebase() {
+        if let image = image, let imagePath = image.url {
+            let storageRef = Storage.storage()
+                                    .reference(withPath: imagePath)
+            
+            storageRef.downloadURL { url, error in
+                self.firebaseImageURL = url
+            }
+        }
+    }
     
     func setupImageWithScale(_ imageComponent: Image, _ imageUrl: String, scaleType: String, height: CGFloat, width: CGFloat) -> some View {
         if scaleType == "center_crop" {
@@ -41,13 +55,57 @@ struct CustomImage: View {
     }
     
     @ViewBuilder
+    func getFirebaseOnlineImage() -> some View {
+        let type = placeholderType ?? .movie
+        let imageWidth = (width != nil) ? CGFloat(width!) : UIScreen.main.bounds.width
+        let height = height ?? 300
+        let cornerRadius = cornerRadius ?? 0
+        let imageComponent = KFImage.url(firebaseImageURL)
+            .placeholder {
+                Placeholder(type: type, iconSize: CGFloat(iconSize ?? 100))
+                    .cornerRadius(CGFloat(cornerRadius))
+                    .frame(
+                        width: imageWidth,
+                        height: CGFloat(height)
+                    )
+            }
+            .appendProcessor(
+                DownsamplingImageProcessor(
+                    size: CGSize(width: (width != nil) ? Int(width!) : Int(UIScreen.main.bounds.width), height: height)))
+            .appendProcessor(RoundCornerImageProcessor(cornerRadius: CGFloat(cornerRadius)))
+            .appendProcessor(CroppingImageProcessor(size: CGSize(width: (width != nil) ? Int(width!) : Int(UIScreen.main.bounds.width), height: height)))
+            .loadDiskFileSynchronously()
+            .resizable()
+            .cacheMemoryOnly()
+            .fade(duration: 0.25)
+        
+        loadImageFromFirebase()
+        
+        if let blurRadius = blurRadius {
+            return imageComponent
+                .appendProcessor(BlurImageProcessor(blurRadius: CGFloat(blurRadius)))
+                .scaledToFill()
+                .frame(
+                    width: imageWidth,
+                    height: CGFloat(height)
+                )
+        } else {
+            return imageComponent
+                .scaledToFill()
+                .frame(
+                    width: imageWidth,
+                    height: CGFloat(height)
+                )
+        }
+    }
+    
+    @ViewBuilder
     func getOnlineImage() -> some View {
         let url = imageUrl ?? ""
         let type = placeholderType ?? .movie
         let imageWidth = (width != nil) ? CGFloat(width!) : UIScreen.main.bounds.width
         let height = height ?? 300
         let cornerRadius = cornerRadius ?? 0
-        
         
         let imageComponent = KFImage.url(URL(string: url))
             .placeholder {
@@ -89,9 +147,7 @@ struct CustomImage: View {
     @ViewBuilder
     func getLocalImage() -> some View {
         if let image = image {
-            let imageUrl = image.url?
-                .replacingOccurrences(of: "images/", with: "", options: .literal, range: nil)
-                .replacingOccurrences(of: ".webp", with: "", options: .literal, range: nil) ?? ""
+            let imageUrl = image.url ?? ""
             let imageWidth = (width != nil) ? CGFloat(width!) : UIScreen.main.bounds.width
             let imageComponent = Image(imageUrl)
             
@@ -131,6 +187,8 @@ struct CustomImage: View {
             getOnlineImage()
         case .local:
             getLocalImage()
+        case .onlineFirebase:
+            getFirebaseOnlineImage()
         default:
             getLocalImage()
         }

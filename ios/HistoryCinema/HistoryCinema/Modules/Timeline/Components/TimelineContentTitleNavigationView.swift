@@ -13,12 +13,15 @@ struct TimelineContentTitleNavigationView: View {
     let nextTitle: String!
     let previousTitle: String!
     
+    var onNextClicked: ((Int) -> Void)? = nil
+    var onPreviousClicked: (() -> Void)? = nil
+    
     var body: some View {
         HStack {
             if let timelineId = timelinePage.id {
                 if (timelineId > 1) {
                     Button(action: {
-                        
+                        onPreviousClicked?()
                     }) {
                         HStack {
                             Image(systemName: "chevron.left")
@@ -37,7 +40,7 @@ struct TimelineContentTitleNavigationView: View {
                 
                 if timelineId < 7 {
                     Button(action: {
-                        
+                        onNextClicked?(timelinePage.timelineList.count)
                     }) {
                         HStack {
                             Text(nextTitle)

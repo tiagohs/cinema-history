@@ -13,6 +13,9 @@ struct TimelineView: View {
     
     let timelineId: Int!
     
+    let onNextClicked: (Int) -> Void
+    let onPreviousClicked: () -> Void
+    
     @State private var pageLinkModel: PageLinkModel? = nil
     
     var body: some View {
@@ -27,9 +30,15 @@ struct TimelineView: View {
                     ForEach(0 ..< timelineList.count) { index in
                         let timeline = timelineList[index]
                         
-                        TimelineContentView(timelinePage: presenter.timelinePage, timeline: timeline) { textViewLinkScreen in
-                            self.pageLinkModel = PageLinkModel(textViewLinkScreen?.id, textViewLinkScreen?.screenType)
-                        }
+                        TimelineContentView(
+                            timelinePage: presenter.timelinePage,
+                            timeline: timeline,
+                            onClickLink: { textViewLinkScreen in
+                                self.pageLinkModel = PageLinkModel(textViewLinkScreen?.id, textViewLinkScreen?.screenType)
+                            },
+                            onNextClicked: onNextClicked,
+                            onPreviousClicked: onPreviousClicked
+                        )
                     }
                 }
             }
@@ -59,6 +68,10 @@ struct TimelineView: View {
 
 struct TimelineView_Previews: PreviewProvider {
     static var previews: some View {
-        TimelineView(timelineId: 1)
+        TimelineView(timelineId: 1) { totalTimelines in
+            
+        } onPreviousClicked: {
+            
+        }
     }
 }

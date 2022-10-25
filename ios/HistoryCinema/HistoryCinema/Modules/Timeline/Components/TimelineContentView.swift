@@ -13,6 +13,8 @@ struct TimelineContentView: View {
     let timeline: Timeline!
     
     var onClickLink: ((TextViewLinkScreen?) -> Void)? = nil
+    var onNextClicked: ((Int) -> Void)? = nil
+    var onPreviousClicked: (() -> Void)? = nil
     
     var body: some View {
         VStack {
@@ -20,9 +22,18 @@ struct TimelineContentView: View {
             case .item:
                 TimelineContentItemView(timelinePage: timelinePage, timelineItem: timeline as? TimelineItem, onClickLink: onClickLink)
             case .footer:
-                TimelineContentFooterView(timelinePage: timelinePage, timelineFooter: timeline as? TimelineFooter)
+                TimelineContentFooterView(
+                    timelinePage: timelinePage,
+                    timelineFooter: timeline as? TimelineFooter,
+                    onNextClicked: onNextClicked,
+                    onPreviousClicked: onPreviousClicked)
             case .title:
-                TimelineContentTitleView(timelinePage: timelinePage, timelineTitle: timeline as? TimelineTitle)
+                TimelineContentTitleView(
+                    timelinePage: timelinePage,
+                    timelineTitle: timeline as? TimelineTitle,
+                     onNextClicked: onNextClicked,
+                     onPreviousClicked: onPreviousClicked
+                )
             default:
                 AnyView(EmptyView())
             }

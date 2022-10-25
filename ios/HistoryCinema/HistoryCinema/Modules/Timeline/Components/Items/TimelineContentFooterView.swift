@@ -12,6 +12,9 @@ struct TimelineContentFooterView: View {
     let timelinePage: TimelinePage!
     let timelineFooter: TimelineFooter!
     
+    var onNextClicked: ((Int) -> Void)? = nil
+    var onPreviousClicked: (() -> Void)? = nil
+    
     var body: some View {
         let marginStartVerticalLine = 70
         let marginStartContentRight = marginStartVerticalLine + 20
@@ -50,7 +53,9 @@ struct TimelineContentFooterView: View {
             TimelineContentTitleNavigationView(
                 timelinePage: timelinePage,
                 nextTitle: timelineFooter.next ?? "",
-                previousTitle: timelineFooter.previous ?? ""
+                previousTitle: timelineFooter.previous ?? "",
+                onNextClicked: onNextClicked,
+                onPreviousClicked: onPreviousClicked
             )
         }
     }

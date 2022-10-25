@@ -12,6 +12,9 @@ struct TimelineContentTitleView: View {
     let timelinePage: TimelinePage!
     let timelineTitle: TimelineTitle!
     
+    var onNextClicked: ((Int) -> Void)? = nil
+    var onPreviousClicked: (() -> Void)? = nil
+    
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -23,7 +26,9 @@ struct TimelineContentTitleView: View {
             TimelineContentTitleNavigationView(
                 timelinePage: timelinePage,
                 nextTitle: timelineTitle.next ?? "",
-                previousTitle: timelineTitle.previous ?? ""
+                previousTitle: timelineTitle.previous ?? "",
+                onNextClicked: onNextClicked,
+                onPreviousClicked: onPreviousClicked
             )
             
             ZStack(alignment: .topLeading) {
