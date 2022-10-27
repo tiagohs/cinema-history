@@ -78,4 +78,10 @@ extension HomePresenter {
     func presentGlossary() -> some View {
         self.wireframe?.presentGlossary()
     }
+    
+    @ViewBuilder
+    func presentAbout() -> some View {
+        self.wireframe?.presentAbout()
+    }
 }
+

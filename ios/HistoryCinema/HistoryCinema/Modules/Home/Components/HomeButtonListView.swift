@@ -55,7 +55,7 @@ struct HomeButtonListView<
                 
                 NavigationLink(destination: AboutDestination(), tag: "AboutDestination", selection: $selection) {
                     Button(action: {
-                        
+                        self.selection = "AboutDestination"
                     }) {
                         HStack {
                             Text("Sobre")

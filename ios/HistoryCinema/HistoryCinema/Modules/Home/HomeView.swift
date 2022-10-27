@@ -19,7 +19,7 @@ struct HomeView: View {
                     HomeButtonListView(
                         ReferencesDestination: { self.presenter.presentReferences() },
                         GlossaryDestination: { self.presenter.presentGlossary() },
-                        AboutDestination: { self.presenter.presentReferences() }
+                        AboutDestination: { self.presenter.presentAbout() }
                     )
                     
                     if (presenter.homeContent.count == 0) {

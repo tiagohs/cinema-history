@@ -31,6 +31,12 @@ class HomeWireframe {
     func presentGlossary() -> some View {
         GlossaryView()
     }
+    
+    @ViewBuilder
+    func presentAbout() -> some View {
+        AboutView()
+    }
+    
 }
 
 // MARK: build's Module
