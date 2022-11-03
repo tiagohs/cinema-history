@@ -158,6 +158,9 @@
 		A35275D0290AF3D800325CDF /* AboutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35275CF290AF3D800325CDF /* AboutInteractor.swift */; };
 		A35275D2290AF3E300325CDF /* AboutWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35275D1290AF3E300325CDF /* AboutWireframe.swift */; };
 		A35275D4290AFC6A00325CDF /* AboutLinkItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35275D3290AFC6A00325CDF /* AboutLinkItemView.swift */; };
+		A35275D72914502200325CDF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A35275D62914502200325CDF /* FirebaseAnalytics */; };
+		A35275D92914502200325CDF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = A35275D82914502200325CDF /* FirebaseCrashlytics */; };
+		A35275DB2914502200325CDF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A35275DA2914502200325CDF /* FirebaseStorage */; };
 		A3618F7425E5D08F00626763 /* SummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3618F7325E5D08F00626763 /* SummaryModel.swift */; };
 		A36190DC25E5D6B900626763 /* directorsmaintopics.json in Resources */ = {isa = PBXBuildFile; fileRef = A361906025E5D6B600626763 /* directorsmaintopics.json */; };
 		A36190DD25E5D6B900626763 /* nominees_4.json in Resources */ = {isa = PBXBuildFile; fileRef = A361906325E5D6B600626763 /* nominees_4.json */; };
@@ -451,8 +454,6 @@
 		A3DFDF662905DBB9007FADC4 /* TimelineContentFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF652905DBB9007FADC4 /* TimelineContentFooterView.swift */; };
 		A3DFDF682905F0DF007FADC4 /* TimelineContentTitleNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DFDF672905F0DF007FADC4 /* TimelineContentTitleNavigationView.swift */; };
 		A3DFDF6A290721E6007FADC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3DFDF69290721E6007FADC4 /* GoogleService-Info.plist */; };
-		A3DFDF6D29072E4D007FADC4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A3DFDF6C29072E4D007FADC4 /* FirebaseStorage */; };
-		A3DFDF6F29072E4D007FADC4 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A3DFDF6E29072E4D007FADC4 /* FirebaseStorageCombine-Community */; };
 		A3E2380226066CED00191413 /* HistoryPagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380126066CED00191413 /* HistoryPagesView.swift */; };
 		A3E2380426066CFF00191413 /* HistoryPagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380326066CFF00191413 /* HistoryPagesPresenter.swift */; };
 		A3E2380626066D2F00191413 /* HistoryPagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2380526066D2F00191413 /* HistoryPagesInteractor.swift */; };
@@ -1005,8 +1006,9 @@
 				A3C0FE9F2607BA83009D35E7 /* Kingfisher in Frameworks */,
 				A3E23823260696F400191413 /* SDWebImageSwiftUI in Frameworks */,
 				A39CD6D525E2EFE800860258 /* ObjectMapper in Frameworks */,
-				A3DFDF6D29072E4D007FADC4 /* FirebaseStorage in Frameworks */,
-				A3DFDF6F29072E4D007FADC4 /* FirebaseStorageCombine-Community in Frameworks */,
+				A35275D92914502200325CDF /* FirebaseCrashlytics in Frameworks */,
+				A35275DB2914502200325CDF /* FirebaseStorage in Frameworks */,
+				A35275D72914502200325CDF /* FirebaseAnalytics in Frameworks */,
 				A33BCB1125D9B33100E0A63D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2412,8 +2414,9 @@
 				A39CD6D425E2EFE800860258 /* ObjectMapper */,
 				A3E23822260696F400191413 /* SDWebImageSwiftUI */,
 				A3C0FE9E2607BA83009D35E7 /* Kingfisher */,
-				A3DFDF6C29072E4D007FADC4 /* FirebaseStorage */,
-				A3DFDF6E29072E4D007FADC4 /* FirebaseStorageCombine-Community */,
+				A35275D62914502200325CDF /* FirebaseAnalytics */,
+				A35275D82914502200325CDF /* FirebaseCrashlytics */,
+				A35275DA2914502200325CDF /* FirebaseStorage */,
 			);
 			productName = HistoryCinema;
 			productReference = A33BC98125D89C4200E0A63D /* HistoryCinema.app */;
@@ -2491,7 +2494,7 @@
 				A39CD6D325E2EFE800860258 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				A3E23821260696F400191413 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				A3C0FE9D2607BA83009D35E7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				A3DFDF6B29072E4D007FADC4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A35275D52914502200325CDF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = A33BC98225D89C4200E0A63D /* Products */;
 			projectDirPath = "";
@@ -3166,17 +3169,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HistoryCinema/Preview Content\"";
 				DEVELOPMENT_TEAM = 2J54AL8AFC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HistoryCinema/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "History of Cinema";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiagohs.HistoryCinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = on;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3189,17 +3199,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HistoryCinema/Preview Content\"";
 				DEVELOPMENT_TEAM = 2J54AL8AFC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HistoryCinema/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "History of Cinema";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiagohs.HistoryCinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = on;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3340,6 +3357,14 @@
 				minimumVersion = 5.4.1;
 			};
 		};
+		A35275D52914502200325CDF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		A39CD6D325E2EFE800860258 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
@@ -3354,14 +3379,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 6.2.1;
-			};
-		};
-		A3DFDF6B29072E4D007FADC4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
 			};
 		};
 		A3E23821260696F400191413 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
@@ -3380,6 +3397,21 @@
 			package = A33BCB0F25D9B33100E0A63D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
+		A35275D62914502200325CDF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A35275D52914502200325CDF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A35275D82914502200325CDF /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A35275D52914502200325CDF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		A35275DA2914502200325CDF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A35275D52914502200325CDF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 		A39CD6D425E2EFE800860258 /* ObjectMapper */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A39CD6D325E2EFE800860258 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
@@ -3389,16 +3421,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A3C0FE9D2607BA83009D35E7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		A3DFDF6C29072E4D007FADC4 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A3DFDF6B29072E4D007FADC4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		A3DFDF6E29072E4D007FADC4 /* FirebaseStorageCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A3DFDF6B29072E4D007FADC4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageCombine-Community";
 		};
 		A3E23822260696F400191413 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
