@@ -2,30 +2,30 @@ ext {
 
     // Android Config
     minSDK = 21
-    targetSDK = 31
-    compileSDK = 31
+    targetSDK = 33
+    compileSDK = 33
 
     versionCode = 15
     versionName = '2.0.0'
 
-    buildToolsVersion = '29.0.3'
+    buildToolsVersion = '30.0.3'
 
-    kotlinVersion = '1.4.31'
+    kotlinVersion = '1.7.21'
 
-    buildTools = '7.0.4'
-    googleServices = '4.3.2'
-    crashlyticsPluginVersion = '2.5.2'
+    buildTools = '7.4.2'
+    googleServices = '4.3.15'
+    crashlyticsPluginVersion = '2.9.4'
 
     def retrofitVersion = '2.9.0'
     def okHttpVersion = '5.0.0-alpha.2'
-    def daggerVersion = '2.33'
-    def preferenceVersion = '1.1.1'
+    def daggerVersion = '2.45'
+    def preferenceVersion = '1.2.0'
 
-    def appcompatVersion = '1.4.0'
-    def coreKtxVersion = '1.7.0'
-    def constraintlayoutVersion = '2.1.2'
+    def appcompatVersion = '1.6.1'
+    def coreKtxVersion = '1.9.0'
+    def constraintlayoutVersion = '2.1.4'
     def materialVersion = '1.6.0-alpha01'
-    def browserVersion = '1.4.0'
+    def browserVersion = '1.5.0'
 
     def customtabsVersion = '28.0.0'
     def betterLinkMovementMethodVersion = '2.2.0'
@@ -49,11 +49,11 @@ ext {
     def glideTransformationsVersion = '4.1.0'
     def lifecycleCompilerVersion = '1.1.1'
 
-    def firebaseStorageVersion = '20.0.0'
-    def firebaseAnalyticsVersion = '20.0.1'
+    def firebaseStorageVersion = '20.1.0'
+    def firebaseAnalyticsVersion = '21.2.1'
     def firebaseUiStorageVersion = '6.0.2'
-    def firebaseCrashlyticsVersion = '18.2.6'
-    def firebaseDynamicLinksVersion = '21.0.0'
+    def firebaseCrashlyticsVersion = '18.3.6'
+    def firebaseDynamicLinksVersion = '21.1.0'
 
     def picassoVersion = '2.71828'
     def picassoTransformationsVersion = '2.1.0'
@@ -64,8 +64,8 @@ ext {
     def rxPreferencesVersion = '2.0.1'
 
     def junitVersion = '4.13.2'
-    def testRunnerVersion = '1.4.0'
-    def espressoCoreVersion = '3.4.0'
+    def testRunnerVersion = '1.5.2'
+    def espressoCoreVersion = '3.5.1'
 
     dependencies = [
             appcompat                   : "androidx.appcompat:appcompat:${appcompatVersion}",

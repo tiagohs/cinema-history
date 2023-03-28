@@ -202,14 +202,14 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
             .setDuration(200)
             .setInterpolator(AccelerateInterpolator(2f))
             .setListener(object : Animator.AnimatorListener {
-                override fun onAnimationEnd(animation: Animator?) {
+                override fun onAnimationEnd(animation: Animator) {
                     loadView.hideShimmer()
                     loadView.visibility = View.INVISIBLE
                 }
 
-                override fun onAnimationRepeat(animation: Animator?) {}
-                override fun onAnimationCancel(animation: Animator?) {}
-                override fun onAnimationStart(animation: Animator?) {}
+                override fun onAnimationRepeat(animation: Animator) {}
+                override fun onAnimationCancel(animation: Animator) {}
+                override fun onAnimationStart(animation: Animator) {}
 
             })
             .start()

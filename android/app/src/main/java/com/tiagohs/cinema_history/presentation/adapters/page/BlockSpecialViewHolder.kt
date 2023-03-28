@@ -104,6 +104,7 @@ class BlockSpecialViewHolder(
 
                     containerView.context.openLink(link)
                 }
+                else -> {}
             }
         }
     }

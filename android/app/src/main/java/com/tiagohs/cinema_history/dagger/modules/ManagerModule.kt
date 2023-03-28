@@ -16,7 +16,7 @@ class ManagerModule {
 
     @Provides
     fun provideSettingsManager(context: Context): SettingsManager {
-        val sharedPreferences = context?.getSharedPreferences(Constants.SHARED_PREFERENCES.PREF_SETTINGS_NAME, Constants.SHARED_PREFERENCES.PRIVATE_MODE)
+        val sharedPreferences = context.getSharedPreferences(Constants.SHARED_PREFERENCES.PREF_SETTINGS_NAME, Constants.SHARED_PREFERENCES.PRIVATE_MODE)
 
         return SettingsManager(context, sharedPreferences)
     }

@@ -85,6 +85,7 @@ class LinkScreenViewHolder(
 
                 containerView.context.openLink(link)
             }
+            else -> {}
         }
     }
 
