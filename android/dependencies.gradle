@@ -5,8 +5,8 @@ ext {
     targetSDK = 33
     compileSDK = 33
 
-    versionCode = 15
-    versionName = '2.0.0'
+    versionCode = 16
+    versionName = '2.1.0'
 
     buildToolsVersion = '33.0.1'
 
