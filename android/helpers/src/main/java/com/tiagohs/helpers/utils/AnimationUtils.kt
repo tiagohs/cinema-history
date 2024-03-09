@@ -93,19 +93,19 @@ object AnimationUtils {
 
             val anim = ViewAnimationUtils.createCircularReveal(view, cx, cy, 0f, finalRadius.toFloat())
             anim.addListener(object : Animator.AnimatorListener {
-                override fun onAnimationRepeat(animation: Animator) {
+                override fun onAnimationStart(p0: Animator) {
 
                 }
 
-                override fun onAnimationEnd(animation: Animator) {
+                override fun onAnimationEnd(p0: Animator) {
                     onFinished?.invoke()
                 }
 
-                override fun onAnimationCancel(animation: Animator) {
+                override fun onAnimationCancel(p0: Animator) {
                     onFinished?.invoke()
                 }
 
-                override fun onAnimationStart(animation: Animator) {
+                override fun onAnimationRepeat(p0: Animator) {
 
                 }
 

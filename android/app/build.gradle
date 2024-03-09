@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
 
 apply plugin: 'com.google.firebase.crashlytics'
 
@@ -59,6 +60,7 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+    namespace 'com.tiagohs.cinema_history'
 }
 
 dependencies {
@@ -145,5 +147,3 @@ dependencies {
     implementation dependencies.testRunner
     implementation dependencies.espresso
 }
-
-apply plugin: 'com.google.gms.google-services'

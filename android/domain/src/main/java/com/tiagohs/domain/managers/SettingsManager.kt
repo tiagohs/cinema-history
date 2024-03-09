@@ -10,7 +10,7 @@ import javax.inject.Inject
 class SettingsManager
 @Inject constructor(
     val context: Context,
-    val sharedPreferences: SharedPreferences
+    val sharedPreferences: SharedPreferences?
 ): SharedPreferences.OnSharedPreferenceChangeListener {
 
     val APP_LANGUAGE_DEFAULT = "Português Brasil"

@@ -8,11 +8,11 @@ ext {
     versionCode = 15
     versionName = '2.0.0'
 
-    buildToolsVersion = '30.0.3'
+    buildToolsVersion = '33.0.1'
 
     kotlinVersion = '1.7.21'
 
-    buildTools = '7.4.2'
+    buildTools = '8.1.2'
     googleServices = '4.3.15'
     crashlyticsPluginVersion = '2.9.4'
 

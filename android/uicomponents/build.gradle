@@ -35,6 +35,7 @@ android {
             java.srcDir 'java'
         }
     }
+    namespace 'com.tiagohs.uicomponents'
 }
 
 dependencies {
