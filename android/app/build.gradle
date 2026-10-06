@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'com.google.gms.google-services'
 
@@ -14,10 +13,11 @@ android {
 
     signingConfigs {
         config {
-            keyAlias 'CineHistory'
-            keyPassword '14789632'
-            storeFile file('../keystore/keystore.keystore')
-            storePassword '14789632'
+            // No CI os valores vêm de secrets (variáveis de ambiente); localmente usa o keystore do projeto.
+            keyAlias System.getenv('ANDROID_KEY_ALIAS') ?: 'CineHistory'
+            keyPassword System.getenv('ANDROID_KEY_PASSWORD') ?: '14789632'
+            storeFile file(System.getenv('ANDROID_KEYSTORE_PATH') ?: '../keystore/keystore.keystore')
+            storePassword System.getenv('ANDROID_KEYSTORE_PASSWORD') ?: '14789632'
         }
     }
 
@@ -27,7 +27,8 @@ android {
         minSdkVersion globalConfiguration["minSDK"]
         targetSdkVersion globalConfiguration["targetSDK"]
 
-        versionCode globalConfiguration["versionCode"]
+        // O CI pode sobrescrever o versionCode com -PversionCodeOverride=<n>
+        versionCode project.hasProperty('versionCodeOverride') ? project.property('versionCodeOverride').toInteger() : globalConfiguration["versionCode"]
         versionName globalConfiguration["versionName"]
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -35,13 +36,8 @@ android {
         buildConfigField "String", "OMDB_API_KEY", '"de9f93c2"'
 
         vectorDrawables.useSupportLibrary = true
-        renderscriptTargetApi globalConfiguration["targetSDK"]
-        renderscriptSupportModeEnabled true
     }
 
-    androidExtensions {
-        experimental = true
-    }
 
     buildTypes {
         release {
@@ -51,16 +47,17 @@ android {
             signingConfig signingConfigs.config
         }
     }
-
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
-    }
     namespace 'com.tiagohs.cinema_history'
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
 }
 
 dependencies {
@@ -72,9 +69,10 @@ dependencies {
 
     def dependencies = rootProject.ext.dependencies
 
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    implementation platform(dependencies.firebaseBom)
 
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    
     // Android Core / Material
     implementation dependencies.appcompat
     implementation dependencies.androidxCore
@@ -83,7 +81,6 @@ dependencies {
     implementation dependencies.browser
 
     // Components and Tools
-    implementation dependencies.customTabs
     implementation dependencies.betterLinkMovement
     implementation dependencies.circleProgressAd
     implementation dependencies.constrantlayout
@@ -96,7 +93,6 @@ dependencies {
     implementation dependencies.indicator_fast_scroll
 
     // Tools
-    implementation dependencies.volley
     implementation dependencies.gson
     implementation dependencies.timber
     implementation dependencies.javaxAnnotation
@@ -105,26 +101,21 @@ dependencies {
     implementation dependencies.glide
     implementation dependencies.glide_transformations
     kapt dependencies.glideCompiler
-    kapt dependencies.lifecycleCompiler
 
     // Firebase
     implementation dependencies.firebaseStorage
     implementation dependencies.firebaseAnalytics
     implementation dependencies.firebaseUiStorage
     implementation dependencies.firebaseCrashlytics
-    implementation dependencies.firebaseDynamicLinks
 
     // Preference
     implementation dependencies.preference
     implementation dependencies.preferenceKtx
 
     // Picasso
-    implementation dependencies.picasso
-    implementation dependencies.picassoTransformations
 
     // Dagger
     implementation dependencies.dagger
-    annotationProcessor dependencies.daggerCompiler
     kapt dependencies.daggerCompilerKtx
 
     // Rx
@@ -144,6 +135,12 @@ dependencies {
 
     // Test Tools
     testImplementation dependencies.junit
-    implementation dependencies.testRunner
-    implementation dependencies.espresso
+    androidTestImplementation dependencies.testRunner
+    androidTestImplementation dependencies.espresso
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
 }

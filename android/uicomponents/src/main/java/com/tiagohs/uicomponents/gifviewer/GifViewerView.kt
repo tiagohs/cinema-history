@@ -14,9 +14,8 @@ import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.show
-import com.tiagohs.uicomponents.R
-import kotlinx.android.synthetic.main.view_gif_viewer_view.view.*
-import kotlinx.android.synthetic.main.view_play_container.view.*
+import com.tiagohs.uicomponents.databinding.ViewGifViewerViewBinding
+import com.tiagohs.uicomponents.databinding.ViewPlayContainerBinding
 
 class GifViewerView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null)
     : ConstraintLayout(context, attrs) {
@@ -26,9 +25,7 @@ class GifViewerView @JvmOverloads constructor(context: Context, attrs: Attribute
 
     var videoId: Int = 0
 
-    init {
-        View.inflate(context, R.layout.view_gif_viewer_view, this)
-    }
+    private val binding = ViewGifViewerViewBinding.inflate(LayoutInflater.from(context), this, true)
 
     fun setupGif(gifImage: GifImage, gifThumbnail: Image) {
         this.gifImage = gifImage
@@ -40,37 +37,37 @@ class GifViewerView @JvmOverloads constructor(context: Context, attrs: Attribute
         videoView.stopPlayback()
     }
 
-    private fun loadVideoThumbnail(playContainerView: View, gifThumbnail: Image?) {
+    private fun loadVideoThumbnail(playContainer: ViewPlayContainerBinding, gifThumbnail: Image?) {
         val thumbnail = gifThumbnail ?: return
 
-        playContainerView.videoThumb.loadImage(thumbnail) {
-            playContainerView.playCard.show()
-            playContainerView.loadCard.hide()
+        playContainer.videoThumb.loadImage(thumbnail) {
+            playContainer.playCard.show()
+            playContainer.loadCard.hide()
         }
     }
 
     private fun setupPlayContainer(gifThumbnail: Image) {
-        gifContainer.removeAllViews()
+        binding.gifContainer.removeAllViews()
 
-        val playContainerView = LayoutInflater.from(context).inflate(R.layout.view_play_container, null, false).apply {
-            layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT).apply {
-                bottomToBottom = LayoutParams.PARENT_ID
-                topToTop = LayoutParams.PARENT_ID
-                startToStart = LayoutParams.PARENT_ID
-                endToEnd = LayoutParams.PARENT_ID
-            }
+        val playContainerBinding = ViewPlayContainerBinding.inflate(LayoutInflater.from(context), null, false)
 
-            this.playCard.setOnClickListener {
-                this.playContainer.hide()
-
-                setupVideoView()
-                loadGif()
-            }
-
-            loadVideoThumbnail(this, gifThumbnail)
+        playContainerBinding.root.layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT).apply {
+            bottomToBottom = LayoutParams.PARENT_ID
+            topToTop = LayoutParams.PARENT_ID
+            startToStart = LayoutParams.PARENT_ID
+            endToEnd = LayoutParams.PARENT_ID
         }
 
-        gifContainer.addView(playContainerView)
+        playContainerBinding.playCard.setOnClickListener {
+            playContainerBinding.playContainer.hide()
+
+            setupVideoView()
+            loadGif()
+        }
+
+        loadVideoThumbnail(playContainerBinding, gifThumbnail)
+
+        binding.gifContainer.addView(playContainerBinding.root)
     }
 
     private fun setupVideoView() {
@@ -87,7 +84,7 @@ class GifViewerView @JvmOverloads constructor(context: Context, attrs: Attribute
             id = videoId
         }
 
-        gifContainer.addView(videoView)
+        binding.gifContainer.addView(videoView)
     }
 
     private fun loadGif() {

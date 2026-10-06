@@ -16,9 +16,8 @@ import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.show
-import com.tiagohs.uicomponents.R
-import kotlinx.android.synthetic.main.view_play_container.view.*
-import kotlinx.android.synthetic.main.view_video_viewer.view.*
+import com.tiagohs.uicomponents.databinding.ViewPlayContainerBinding
+import com.tiagohs.uicomponents.databinding.ViewVideoViewerBinding
 
 class VideoViewerView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null)
     : ConstraintLayout(context, attrs) {
@@ -28,9 +27,7 @@ class VideoViewerView @JvmOverloads constructor(context: Context, attrs: Attribu
     private lateinit var activity: AppCompatActivity
     private lateinit var videoId: String
 
-    init {
-        View.inflate(context, R.layout.view_video_viewer, this)
-    }
+    private val binding = ViewVideoViewerBinding.inflate(LayoutInflater.from(context), this, true)
 
     fun setupPlayer(activity: AppCompatActivity, videoId: String) {
         this.activity = activity
@@ -39,38 +36,38 @@ class VideoViewerView @JvmOverloads constructor(context: Context, attrs: Attribu
         setupPlayContainer()
     }
 
-    private fun loadVideoThumbnail(playContainerView: View) {
+    private fun loadVideoThumbnail(playContainer: ViewPlayContainerBinding) {
         val vieoThumbnailUrl = "https://img.youtube.com/vi/${videoId}/0.jpg"
         val image = Image(ImageType.ONLINE, url = vieoThumbnailUrl, imageStyle = ImageStyle(scaleType = "center_crop"))
 
-        playContainerView.videoThumb.loadImage(image) {
-            playContainerView.playCard.show()
-            playContainerView.loadCard.hide()
+        playContainer.videoThumb.loadImage(image) {
+            playContainer.playCard.show()
+            playContainer.loadCard.hide()
         }
     }
 
     private fun setupPlayContainer() {
-        videoContainer.removeAllViews()
+        binding.videoContainer.removeAllViews()
 
-        val playContainerView = LayoutInflater.from(context).inflate(R.layout.view_play_container, null, false).apply {
-            layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT).apply {
-                bottomToBottom = LayoutParams.PARENT_ID
-                topToTop = LayoutParams.PARENT_ID
-                startToStart = LayoutParams.PARENT_ID
-                endToEnd = LayoutParams.PARENT_ID
-            }
+        val playContainerBinding = ViewPlayContainerBinding.inflate(LayoutInflater.from(context), null, false)
 
-            this.playCard.setOnClickListener {
-                this.playContainer.hide()
-
-                setupYoutubeViewPlayerView()
-                loadVideo()
-            }
-
-            loadVideoThumbnail(this)
+        playContainerBinding.root.layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT).apply {
+            bottomToBottom = LayoutParams.PARENT_ID
+            topToTop = LayoutParams.PARENT_ID
+            startToStart = LayoutParams.PARENT_ID
+            endToEnd = LayoutParams.PARENT_ID
         }
 
-        videoContainer.addView(playContainerView)
+        playContainerBinding.playCard.setOnClickListener {
+            playContainerBinding.playContainer.hide()
+
+            setupYoutubeViewPlayerView()
+            loadVideo()
+        }
+
+        loadVideoThumbnail(playContainerBinding)
+
+        binding.videoContainer.addView(playContainerBinding.root)
     }
 
     private fun setupYoutubeViewPlayerView() {
@@ -86,7 +83,7 @@ class VideoViewerView @JvmOverloads constructor(context: Context, attrs: Attribu
             id = View.generateViewId()
         }
 
-        videoContainer.addView(youtubePlayerView)
+        binding.videoContainer.addView(youtubePlayerView)
     }
 
     private fun loadVideo() {

@@ -1,7 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
 import android.content.Intent
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterPageLinkScreenBinding
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
 import com.tiagohs.cinema_history.presentation.activities.TimelineActivity
@@ -14,13 +14,12 @@ import com.tiagohs.entities.enums.Screen
 import com.tiagohs.entities.image.Image
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.ColorUtils
-import kotlinx.android.synthetic.main.view_link_topics.*
 
 
 class LinkScreenViewHolder(
-    val view: View,
+    private val binding: AdapterPageLinkScreenBinding,
     private val presentScreen: ((Intent) -> Unit)? = null
-) : BasePageViewHolder(view) {
+) : BasePageViewHolder(binding) {
 
     override fun bind(item: Content, position: Int) {
         super.bind(item, position)
@@ -39,32 +38,32 @@ class LinkScreenViewHolder(
         val colorAsset = ColorUtils.getRandomColorAssets()
         val colorName = "md_${colorAsset.colorName}_500"
 
-        linkButtonContainerCard.setCardBackgroundColor(containerView.context.getResourceColor(colorName))
-        title.setResourceTextColor(colorName)
+        binding.blockSpecialContainerCard.linkButtonContainerCard.setCardBackgroundColor(itemView.context.getResourceColor(colorName))
+        binding.blockSpecialContainerCard.title.setResourceTextColor(colorName)
 
-        image?.let { mainTopicImage.loadImage(it, placeholder = null) }
+        image?.let { binding.blockSpecialContainerCard.mainTopicImage.loadImage(it, placeholder = null) }
 
-        subtitle.setResourceText(subtitleText)
-        subtitle.show()
+        binding.blockSpecialContainerCard.subtitle.setResourceText(subtitleText)
+        binding.blockSpecialContainerCard.subtitle.show()
 
-        title.setResourceText(titleText)
-        title.show()
+        binding.blockSpecialContainerCard.title.setResourceText(titleText)
+        binding.blockSpecialContainerCard.title.show()
 
         if (descriptionText != null) {
-            description.setResourceText(descriptionText)
-            description.show()
+            binding.blockSpecialContainerCard.description.setResourceText(descriptionText)
+            binding.blockSpecialContainerCard.description.show()
         } else {
-            description.hide()
+            binding.blockSpecialContainerCard.description.hide()
         }
 
-        linkButtonContainer.setOnClickListener { onClickListener(click) }
-        linkButtonContainerCard.setOnClickListener { onClickListener(click) }
-        blockSpecialContainer.setOnClickListener { onClickListener(click) }
-        linkButtonText.setResourceText(
-            click?.buttonText ?: containerView.context.getString(R.string.click_here_to_go)
+        binding.blockSpecialContainerCard.linkButtonContainer.setOnClickListener { onClickListener(click) }
+        binding.blockSpecialContainerCard.linkButtonContainerCard.setOnClickListener { onClickListener(click) }
+        binding.blockSpecialContainerCard.blockSpecialContainer.setOnClickListener { onClickListener(click) }
+        binding.blockSpecialContainerCard.linkButtonText.setResourceText(
+            click?.buttonText ?: itemView.context.getString(R.string.click_here_to_go)
         )
 
-        blockSpecialContainer.setOnClickListener { onClickListener(click) }
+        binding.blockSpecialContainerCard.blockSpecialContainer.setOnClickListener { onClickListener(click) }
     }
 
     private fun onClickListener(click: Click?) {
@@ -83,13 +82,9 @@ class LinkScreenViewHolder(
             Screen.LINK_ONLINE -> {
                 val link = click.parameters?.firstOrNull()?.value
 
-                containerView.context.openLink(link)
+                itemView.context.openLink(link)
             }
             else -> {}
         }
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_page_link_screen
     }
 }

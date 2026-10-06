@@ -1,6 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters.references
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterReferenceMediaBinding
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.references.Reference
@@ -9,25 +9,24 @@ import com.tiagohs.helpers.extensions.getResourceColor
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.setResourceBackgroundColor
 import com.tiagohs.helpers.extensions.setResourceText
-import kotlinx.android.synthetic.main.adapter_reference_media.*
 
 class MediaViewHolder(
-    val view: View,
+    private val binding: AdapterReferenceMediaBinding,
     var onLinkClick: ((String?) -> Unit)? = null
-) : BaseViewHolder<Reference>(view) {
+) : BaseViewHolder<Reference>(binding) {
 
     override fun bind(item: Reference, position: Int) {
         super.bind(item, position)
         val referenceBook = item as? ReferenceMedia ?: return
 
-        mediaName.setResourceText(referenceBook.title)
-        mediaAuthor.setResourceText(referenceBook.subtitle)
-        mediaDescription.setResourceText(referenceBook.description)
-        mediaType.setResourceText(referenceBook.mediaType)
-        mediaImage.loadImage(referenceBook.image)
+        binding.mediaName.setResourceText(referenceBook.title)
+        binding.mediaAuthor.setResourceText(referenceBook.subtitle)
+        binding.mediaDescription.setResourceText(referenceBook.description)
+        binding.mediaType.setResourceText(referenceBook.mediaType)
+        binding.mediaImage.loadImage(referenceBook.image)
 
-        mediaContainer.setOnClickListener { onClickListener(referenceBook) }
-        buyButon.setOnClickListener { onClickListener(referenceBook) }
+        binding.mediaContainer.setOnClickListener { onClickListener(referenceBook) }
+        binding.buyButon.setOnClickListener { onClickListener(referenceBook) }
 
         val color = when (referenceBook.mediaType) {
             "Livro" -> R.color.md_red_500
@@ -36,23 +35,19 @@ class MediaViewHolder(
             "Youtube" -> R.color.md_green_500
             else -> R.color.colorAccent
         }
-        mediaType.setResourceBackgroundColor(color)
-        buyButon.setCardBackgroundColor(containerView.context.getResourceColor(color))
+        binding.mediaType.setResourceBackgroundColor(color)
+        binding.buyButon.setCardBackgroundColor(itemView.context.getResourceColor(color))
 
         val buttonText = referenceBook.buttonText
         if (buttonText != null) {
-            buyButonText.setResourceText(buttonText)
+            binding.buyButonText.setResourceText(buttonText)
             return
         }
 
-        buyButonText.setResourceText(R.string.buy)
+        binding.buyButonText.setResourceText(R.string.buy)
     }
 
     private fun onClickListener(referenceMedia: ReferenceMedia) {
         onLinkClick?.invoke(referenceMedia.link)
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_reference_media
     }
 }

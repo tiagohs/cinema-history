@@ -1,7 +1,9 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
 import android.graphics.drawable.GradientDrawable
-import android.view.View
+import android.view.ViewGroup
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.AdapterDepartmentBinding
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
@@ -9,20 +11,16 @@ import com.tiagohs.helpers.extensions.getResourceColor
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.extensions.setResourceTextColor
-import kotlinx.android.synthetic.main.adapter_department.*
-import kotlinx.android.synthetic.main.adapter_department.view.*
 
 class DepartamentAdapter(
     list: List<String>,
     val textColor: Int
 ) : BaseAdapter<String, DepartamentAdapter.DepartamentViewHolder>(list) {
 
-    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_department
+    override fun onCreateViewHolder(viewType: Int, inflater: LayoutInflater, parent: ViewGroup): DepartamentViewHolder =
+        DepartamentViewHolder(AdapterDepartmentBinding.inflate(inflater, parent, false))
 
-    override fun onCreateViewHolder(viewType: Int, view: View): DepartamentViewHolder =
-        DepartamentViewHolder(view)
-
-    inner class DepartamentViewHolder(view: View) : BaseViewHolder<String>(view) {
+    inner class DepartamentViewHolder(private val binding: AdapterDepartmentBinding) : BaseViewHolder<String>(binding) {
 
         override fun bind(item: String, position: Int) {
             super.bind(item, position)
@@ -32,11 +30,11 @@ class DepartamentAdapter(
                 return
             }
 
-            jobName.setResourceText(item)
-            jobName.setTextColor(textColor)
+            binding.jobName.setResourceText(item)
+            binding.jobName.setTextColor(textColor)
 
-            jobName.background = GradientDrawable().apply {
-                setColor(containerView.context.getResourceColor(android.R.color.transparent))
+            binding.jobName.background = GradientDrawable().apply {
+                setColor(itemView.context.getResourceColor(android.R.color.transparent))
                 cornerRadius = 5f
                 setStroke(1, textColor)
             }

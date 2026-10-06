@@ -1,7 +1,10 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.view.View
-import com.tiagohs.cinema_history.R
+import android.view.ViewGroup
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.AdapterReferenceTextBinding
+import com.tiagohs.cinema_history.databinding.AdapterReferenceMediaBinding
+import com.tiagohs.cinema_history.databinding.AdapterEmptyBinding
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.cinema_history.presentation.adapters.references.MediaViewHolder
@@ -15,17 +18,11 @@ class ReferencesAdapter(
 
     var onLinkClick: ((String?) -> Unit)? = null
 
-    override fun getLayoutResId(viewType: Int): Int = when (viewType) {
-        ReferenceType.MEDIA.ordinal -> MediaViewHolder.LAYOUT_ID
-        ReferenceType.TEXT.ordinal -> TextViewHolder.LAYOUT_ID
-        else -> R.layout.adapter_empty
-    }
-
-    override fun onCreateViewHolder(viewType: Int, view: View): BaseViewHolder<Reference> =
+    override fun onCreateViewHolder(viewType: Int, inflater: LayoutInflater, parent: ViewGroup): BaseViewHolder<Reference> =
         when (viewType) {
-            ReferenceType.MEDIA.ordinal -> MediaViewHolder(view, onLinkClick)
-            ReferenceType.TEXT.ordinal -> TextViewHolder(view)
-            else -> object : BaseViewHolder<Reference>(view) {}
+            ReferenceType.MEDIA.ordinal -> MediaViewHolder(AdapterReferenceMediaBinding.inflate(inflater, parent, false), onLinkClick)
+            ReferenceType.TEXT.ordinal -> TextViewHolder(AdapterReferenceTextBinding.inflate(inflater, parent, false))
+            else -> object : BaseViewHolder<Reference>(AdapterEmptyBinding.inflate(inflater, parent, false)) {}
         }
 
     override fun getItemViewType(position: Int): Int = list.get(position).type.ordinal

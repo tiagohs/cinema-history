@@ -2,9 +2,9 @@ package com.tiagohs.cinema_history.presentation.adapters.decorators
 
 import android.graphics.Rect
 import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterMovieListBinding
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import kotlinx.android.synthetic.main.adapter_movie_list.view.*
 import kotlin.math.abs
 
 class ScaleMovieImageTransformer(
@@ -14,20 +14,22 @@ class ScaleMovieImageTransformer(
 
     override fun transformPage(page: View, position: Float) {
 
+        val binding = AdapterMovieListBinding.bind(page)
+
         page.apply {
             val pageTranslationX = spaceBetweenItems + horizontalSpace
 
             translationX = - pageTranslationX * position
 
-            imageCard?.scaleY = (1 - (MIN_SCALE_Y * abs(position)))
-            imageCard?.scaleX = (1 - (MIN_SCALE_X * abs(position)))
+            binding.imageCard.scaleY = (1 - (MIN_SCALE_Y * abs(position)))
+            binding.imageCard.scaleX = (1 - (MIN_SCALE_X * abs(position)))
 
             if (position >= -1 && position <= 1) { // [-1,1]
-                originalTitle.translationX = (position) * (width / 4).toFloat()
-                title.translationX = (position) * (width / 2).toFloat()
+                binding.originalTitle.translationX = (position) * (width / 4).toFloat()
+                binding.title.translationX = (position) * (width / 2).toFloat()
             } else {
-                originalTitle.translationX = (position) * (width / 4).toFloat()
-                title.translationX = (position) * (width / 2).toFloat()
+                binding.originalTitle.translationX = (position) * (width / 4).toFloat()
+                binding.title.translationX = (position) * (width / 2).toFloat()
             }
         }
     }

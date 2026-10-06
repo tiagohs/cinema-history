@@ -176,11 +176,11 @@
         android:visibility="invisible"
         android:fitsSystemWindows="true">
 
-        <include layout="@layout/load_view_mil_movies_presentation" />
+        <include android:id="@+id/imageContainer" layout="@layout/load_view_mil_movies_presentation" />
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 
-    <include layout="@layout/view_error" />
+    <include android:id="@+id/errorContainer" layout="@layout/view_error" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

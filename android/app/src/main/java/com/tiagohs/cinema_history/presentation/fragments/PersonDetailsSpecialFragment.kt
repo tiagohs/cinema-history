@@ -1,6 +1,9 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
 import android.os.Bundle
+import android.view.ViewGroup
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.FragmentPersonDetailsSpecialBinding
 import android.view.View
 import android.view.animation.DecelerateInterpolator
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,11 +19,10 @@ import com.tiagohs.cinema_history.presentation.configs.BaseFragment
 import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.entities.enums.PersonInfoType
 import com.tiagohs.helpers.extensions.*
-import kotlinx.android.synthetic.main.fragment_person_details_special.*
 
-class PersonDetailsSpecialFragment: BaseFragment() {
+class PersonDetailsSpecialFragment: BaseFragment<FragmentPersonDetailsSpecialBinding>() {
 
-    override fun getViewID(): Int = R.layout.fragment_person_details_special
+    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?) = FragmentPersonDetailsSpecialBinding.inflate(inflater, container, false)
     override fun onErrorAction() {}
 
     lateinit var person: Person
@@ -41,7 +43,7 @@ class PersonDetailsSpecialFragment: BaseFragment() {
     private fun bindPersonDetails() {
         val activity = (activity as? PersonDetailsActivity)
 
-        activity?.setupToolbar(toolbar)
+        activity?.setupToolbar(binding.toolbar)
 
         bindHeader()
         bindContentList()
@@ -52,12 +54,12 @@ class PersonDetailsSpecialFragment: BaseFragment() {
     private fun bindHeader() {
         val personExtraInfo = person.extraInfo ?: return
 
-        personName.setupLinkableTextView(context)
-        personQuote.setupLinkableTextView(context)
+        binding.personName.setupLinkableTextView(context)
+        binding.personQuote.setupLinkableTextView(context)
 
-        personName.setResourceStyledText(personExtraInfo.customName)
-        personQuote.setResourceStyledText(personExtraInfo.quote)
-        moviesQuantity.setResourceText(person.personFilmography.size.toString())
+        binding.personName.setResourceStyledText(personExtraInfo.customName)
+        binding.personQuote.setResourceStyledText(personExtraInfo.quote)
+        binding.moviesQuantity.setResourceText(person.personFilmography.size.toString())
 
         bindPersonImage(personExtraInfo.highlight_image)
     }
@@ -75,15 +77,15 @@ class PersonDetailsSpecialFragment: BaseFragment() {
             }
         }
 
-        pageContentList.adapter = adapter
-        pageContentList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
+        binding.pageContentList.adapter = adapter
+        binding.pageContentList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
     }
 
     private fun bindPersonImage(imageName: String?) {
         val imageUrl = imageName ?: return
         val image = Image(ImageType.LOCAL, imageUrl)
 
-        personImage.loadImageBlackAndWhite(image, null)
+        binding.personImage.loadImageBlackAndWhite(image, null)
     }
 
     private fun onMovieSelected(movieId: Int) {
@@ -117,21 +119,21 @@ class PersonDetailsSpecialFragment: BaseFragment() {
     }
 
     private fun startLoading() {
-        pageContentListContainer.alpha = 0f
-        appBar.alpha = 0f
+        binding.pageContentListContainer.alpha = 0f
+        binding.appBar.alpha = 0f
 
         (activity as? PersonDetailsActivity)?.startLoading()
     }
 
     private fun hideLoading() {
-        pageContentListContainer
+        binding.pageContentListContainer
             .animate()
             .alpha(1f)
             .setDuration(200)
             .setInterpolator(DecelerateInterpolator(2f))
             .start()
 
-        appBar
+        binding.appBar
             .animate()
             .alpha(1f)
             .setDuration(200)

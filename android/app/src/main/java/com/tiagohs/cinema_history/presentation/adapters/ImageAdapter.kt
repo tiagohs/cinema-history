@@ -1,14 +1,14 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.view.View
+import android.view.ViewGroup
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.AdapterImageBinding
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.image.Image
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.loadImage
-import kotlinx.android.synthetic.main.adapter_image.*
 
 class ImageAdapter(
     list: List<Image>
@@ -18,26 +18,24 @@ class ImageAdapter(
         setHasStableIds(true)
     }
 
-    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_image
-
-    override fun onCreateViewHolder(viewType: Int, view: View): ImageViewHolder =
-        ImageViewHolder(view)
+    override fun onCreateViewHolder(viewType: Int, inflater: LayoutInflater, parent: ViewGroup): ImageViewHolder =
+        ImageViewHolder(AdapterImageBinding.inflate(inflater, parent, false))
 
     override fun getItemId(position: Int): Long = list[position].hashCode().toLong()
 
-    class ImageViewHolder(view: View) : BaseViewHolder<Image>(view) {
+    class ImageViewHolder(private val binding: AdapterImageBinding) : BaseViewHolder<Image>(binding) {
 
         override fun bind(item: Image, position: Int) {
             super.bind(item, position)
 
             item.imageStyle?.height?.let {
-                image.layoutParams = ConstraintLayout.LayoutParams(
+                binding.image.layoutParams = ConstraintLayout.LayoutParams(
                     ConstraintLayout.LayoutParams.MATCH_PARENT,
                     it.convertIntToDp(itemView.context)
                 )
             }
 
-            image.loadImage(item)
+            binding.image.loadImage(item)
         }
     }
 }

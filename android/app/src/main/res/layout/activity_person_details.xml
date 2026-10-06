@@ -24,10 +24,10 @@
         app:shimmer_duration="800"
         android:fitsSystemWindows="true">
 
-        <include layout="@layout/load_view_person_details" />
+        <include android:id="@+id/loadViewPersonDetails" layout="@layout/load_view_person_details" />
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 
-    <include layout="@layout/view_screen_blocked" />
+    <include android:id="@+id/screenBlocked" layout="@layout/view_screen_blocked" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

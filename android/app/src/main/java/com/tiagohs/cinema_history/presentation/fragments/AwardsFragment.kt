@@ -1,10 +1,12 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
 import android.content.Intent
+import android.view.ViewGroup
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.FragmentAwardsContentBinding
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.activities.MovieDetailsActivity
 import com.tiagohs.cinema_history.presentation.activities.PersonDetailsActivity
 import com.tiagohs.cinema_history.presentation.adapters.PageContentAdapter
@@ -18,15 +20,14 @@ import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.fragment_history_page.*
 import javax.inject.Inject
 
-class AwardsFragment : BaseFragment() {
+class AwardsFragment : BaseFragment<FragmentAwardsContentBinding>() {
 
     @Inject
     lateinit var settingManager: SettingsManager
 
-    override fun getViewID(): Int = R.layout.fragment_awards_content
+    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?) = FragmentAwardsContentBinding.inflate(inflater, container, false)
 
     private var awardMainTopic: AwardMainTopic? = null
     private var awardsPageType: AwardsPageType? = null
@@ -59,7 +60,7 @@ class AwardsFragment : BaseFragment() {
         }
 
         if (!isListSetup) {
-            pageContentList.addItemDecoration(
+            binding.pageContentList.addItemDecoration(
                 SpaceOffsetDecoration(
                     10.convertIntToDp(context),
                     SpaceOffsetDecoration.TOP
@@ -69,7 +70,7 @@ class AwardsFragment : BaseFragment() {
             isListSetup = true
         }
 
-        pageContentList.apply {
+        binding.pageContentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter =
                 PageContentAdapter(contentList, null, settingManager.getMovieLanguage()).apply {

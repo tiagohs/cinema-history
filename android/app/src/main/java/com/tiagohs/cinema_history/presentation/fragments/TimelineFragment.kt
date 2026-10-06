@@ -1,9 +1,11 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
 import android.os.Bundle
+import android.view.ViewGroup
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.FragmentTimelineBinding
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tiagohs.cinema_history.R
 import com.tiagohs.entities.timeline.TimelineResult
 import com.tiagohs.entities.timeline.TimelineTitle
 import com.tiagohs.domain.presenter.TimelinePresenter
@@ -14,12 +16,11 @@ import com.tiagohs.cinema_history.presentation.configs.BaseFragment
 import com.tiagohs.domain.views.TimelineView
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.show
-import kotlinx.android.synthetic.main.fragment_timeline.*
 import javax.inject.Inject
 
-class TimelineFragment: BaseFragment(), TimelineView, TimelineCallbacks {
+class TimelineFragment: BaseFragment<FragmentTimelineBinding>(), TimelineView, TimelineCallbacks {
 
-    override fun getViewID(): Int = R.layout.fragment_timeline
+    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?) = FragmentTimelineBinding.inflate(inflater, container, false)
     override fun onErrorAction() {}
 
     @Inject
@@ -32,7 +33,7 @@ class TimelineFragment: BaseFragment(), TimelineView, TimelineCallbacks {
         super.onViewCreated(view, savedInstanceState)
 
         getApplicationComponent()?.inject(this)
-        (activity as? BaseActivity)?.setupToolbar(toolbar)
+        (activity as? BaseActivity<*>)?.setupToolbar(binding.toolbar)
 
         presenter.onBindView(this)
         presenter.fetchTimeline(timelineId)
@@ -55,9 +56,9 @@ class TimelineFragment: BaseFragment(), TimelineView, TimelineCallbacks {
 
     override fun bindTimeline(timelines: TimelineResult) {
 
-        timelineList.apply {
+        binding.timelineList.apply {
             layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
-            timelineList.adapter = TimelineAdapter(timelines.timelineList, totalOfTimelines, timelines.color, timelines.titleTextColor, this@TimelineFragment).apply {
+            binding.timelineList.adapter = TimelineAdapter(timelines.timelineList, totalOfTimelines, timelines.color, timelines.titleTextColor, this@TimelineFragment).apply {
                 onNextClicked = { setNextPage() }
                 onPreviousClicked = { setPreviousPage() }
                 onUpClicked = { goToFirstItem() }
@@ -65,7 +66,7 @@ class TimelineFragment: BaseFragment(), TimelineView, TimelineCallbacks {
             }
         }
 
-        (timelines.timelineList.firstOrNull() as? TimelineTitle)?.pageTitle?.let { toolbarTitle.text = it }
+        (timelines.timelineList.firstOrNull() as? TimelineTitle)?.pageTitle?.let { binding.toolbarTitle.text = it }
     }
 
     private fun setNextPage() {
@@ -77,25 +78,25 @@ class TimelineFragment: BaseFragment(), TimelineView, TimelineCallbacks {
     }
 
     private fun goToFirstItem() {
-        (timelineList.layoutManager as? LinearLayoutManager)?.scrollToPosition(0)
+        (binding.timelineList.layoutManager as? LinearLayoutManager)?.scrollToPosition(0)
     }
 
     private fun goToLastItem(lastItemIndex: Int) {
-        (timelineList.layoutManager as? LinearLayoutManager)?.scrollToPosition(lastItemIndex)
+        (binding.timelineList.layoutManager as? LinearLayoutManager)?.scrollToPosition(lastItemIndex)
     }
 
     override fun startLoading() {
-        timelineList.hide()
+        binding.timelineList.hide()
 
-        loadView.showShimmer(true)
-        loadView.hide()
+        binding.loadView.showShimmer(true)
+        binding.loadView.hide()
     }
 
     override fun hideLoading() {
-        timelineList.show()
+        binding.timelineList.show()
 
-        loadView.stopShimmer()
-        loadView.hide()
+        binding.loadView.stopShimmer()
+        binding.loadView.hide()
     }
 
     companion object {

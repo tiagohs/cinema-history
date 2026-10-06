@@ -1,9 +1,8 @@
 package com.tiagohs.cinema_history.presentation.adapters.movie_details
 
 import android.content.Context
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterMovieInfoMidiaBinding
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.MovieVideoAdapter
 import com.tiagohs.cinema_history.presentation.adapters.MovieWallpaperAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
@@ -12,19 +11,17 @@ import com.tiagohs.entities.tmdb.Image
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.adapter_movie_info_midia.*
-import kotlinx.android.synthetic.main.adapter_movie_info_midia.view.*
 
 
 class MovieInfoMidiaViewHolder(
-    view: View,
+    private val binding: AdapterMovieInfoMidiaBinding,
     var onVideoClick: ((String?) -> Unit)? = null
-) : BaseViewHolder<MovieInfo>(view) {
+) : BaseViewHolder<MovieInfo>(binding) {
 
     override fun bind(item: MovieInfo, position: Int) {
         super.bind(item, position)
         val movie = item.movie
-        val context = containerView.context
+        val context = itemView.context
 
         bindImages(context, movie)
         bindVideos(context, movie)
@@ -33,7 +30,7 @@ class MovieInfoMidiaViewHolder(
     private fun bindImages(context: Context, movie: Movie) {
         val allImages = movie.allImages ?: emptyList()
 
-        wallpapersList.apply {
+        binding.wallpapersList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = MovieWallpaperAdapter(allImages, movie.originalTitle)
             addItemDecoration(
@@ -48,7 +45,7 @@ class MovieInfoMidiaViewHolder(
     private fun bindVideos(context: Context, movie: Movie) {
         val allVideos = movie.videos?.videoList ?: emptyList()
 
-        videoList.apply {
+        binding.videoList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = MovieVideoAdapter(allVideos, movie).apply {
                 onVideoClick = this@MovieInfoMidiaViewHolder.onVideoClick
@@ -60,9 +57,5 @@ class MovieInfoMidiaViewHolder(
                 )
             )
         }
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_movie_info_midia
     }
 }

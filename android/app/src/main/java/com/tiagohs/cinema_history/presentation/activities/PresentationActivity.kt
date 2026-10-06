@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.content.Context
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityPresentationBinding
 import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
@@ -18,15 +20,14 @@ import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.entities.enums.ViewPosition
 import com.tiagohs.domain.views.PresentationView
 import com.tiagohs.entities.Quote
-import kotlinx.android.synthetic.main.activity_presentation.*
 import javax.inject.Inject
 
 
-class PresentationActivity: BaseActivity(), PresentationView {
+class PresentationActivity: BaseActivity<ActivityPresentationBinding>(), PresentationView {
 
     private var mainTopic: MainTopicItem? = null
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_presentation
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityPresentationBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
 
     @Inject
@@ -36,7 +37,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setupToolbar(toolbar)
+        setupToolbar(binding.toolbar)
 
         getApplicationComponent()?.inject(this)
 
@@ -47,7 +48,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
     override fun onBackPressed() {
         super.onBackPressed()
 
-        AnimationUtils.createScaleUpAnimation(startButton, 1f, 0f, 1f, 0f, 0.5f, 0.5f, 200)
+        AnimationUtils.createScaleUpAnimation(binding.startButton, 1f, 0f, 1f, 0f, 0.5f, 0.5f, 200)
         //overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
     }
 
@@ -55,7 +56,7 @@ class PresentationActivity: BaseActivity(), PresentationView {
         super.onEnterAnimationComplete()
 
         if (isFirstEnter) {
-            AnimationUtils.createScaleUpAnimation(startButton, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200)
+            AnimationUtils.createScaleUpAnimation(binding.startButton, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200)
             isFirstEnter = false
         }
     }
@@ -67,8 +68,8 @@ class PresentationActivity: BaseActivity(), PresentationView {
     override fun bindSumarioHeader() {
         mainTopic ?: return
 
-        mainTopicTitle.setResourceText(mainTopic?.title)
-        mainTopicDescription.setResourceText(mainTopic?.description)
+        binding.mainTopicTitle.setResourceText(mainTopic?.title)
+        binding.mainTopicDescription.setResourceText(mainTopic?.description)
 
         bindQuote(mainTopic)
         loadImage(mainTopic)
@@ -78,8 +79,8 @@ class PresentationActivity: BaseActivity(), PresentationView {
         val position = mainTopic?.quotePosition ?: ViewPosition.BOTTOM_END
         val quote = mainTopic?.quote ?: return
 
-        quoteText.setResourceText(quote.quote)
-        quoteTextAuthor.setResourceText(quote.author)
+        binding.quoteText.setResourceText(quote.quote)
+        binding.quoteTextAuthor.setResourceText(quote.author)
 
         bindQuotePosition(position)
         bindQuoteColor(quote)
@@ -111,29 +112,29 @@ class PresentationActivity: BaseActivity(), PresentationView {
             }
         }
 
-        quoteContainer.layoutParams = layoutParams
+        binding.quoteContainer.layoutParams = layoutParams
     }
 
     private fun bindQuoteColor(quote: Quote) {
         quote.textColor?.let {
-            quoteText.setResourceTextColor(it)
-            quoteTextAuthor.setResourceTextColor(it)
+            binding.quoteText.setResourceTextColor(it)
+            binding.quoteTextAuthor.setResourceTextColor(it)
         }
         quote.backgroundColor?.let {
-            quoteCard.setCardBackgroundColor(getResourceColor(it))
+            binding.quoteCard.setCardBackgroundColor(getResourceColor(it))
         }
 
         val iconColor = quote.iconColor
         if (iconColor != null) {
-            quoteTop.setResourceImageColor(iconColor)
-            quoteBottom.setResourceImageColor(iconColor)
+            binding.quoteTop.setResourceImageColor(iconColor)
+            binding.quoteBottom.setResourceImageColor(iconColor)
         }
     }
 
     override fun bindMainTopicPresentation(mainTopic: MainTopicItem?) {
         this.mainTopic = mainTopic ?: return
 
-        sumarioList.apply {
+        binding.sumarioList.apply {
             layoutManager = LinearLayoutManager(this@PresentationActivity, RecyclerView.VERTICAL, false)
             adapter = SumarioPresentationAdapter(mainTopic.sumarioList ?: emptyList()).apply {
                 onSumarioClick = { _,  position ->
@@ -142,13 +143,13 @@ class PresentationActivity: BaseActivity(), PresentationView {
             }
         }
 
-        startButton.setOnClickListener { startActivityWithSlideRightToLeftAnimation(HistoryPagesActivity.newIntent(this, mainTopic, 0)) }
+        binding.startButton.setOnClickListener { startActivityWithSlideRightToLeftAnimation(HistoryPagesActivity.newIntent(this, mainTopic, 0)) }
     }
 
     private fun loadImage(mainTopic: MainTopicItem?) {
         val presentationImage = mainTopic?.presentationImage ?: return
 
-        image.loadImage(presentationImage, null)
+        binding.image.loadImage(presentationImage, null)
     }
 
     companion object {

@@ -117,7 +117,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <include layout="@layout/view_line_five_colors" />
+            <include android:id="@+id/viewLineFiveColors" layout="@layout/view_line_five_colors" />
 
         </FrameLayout>
 

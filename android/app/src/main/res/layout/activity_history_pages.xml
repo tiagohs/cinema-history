@@ -166,12 +166,12 @@
             android:fitsSystemWindows="true"
             tools:visibility="gone">
 
-            <include layout="@layout/load_view_history_pages" />
+            <include android:id="@+id/coordinatorLayout" layout="@layout/load_view_history_pages" />
 
         </com.facebook.shimmer.ShimmerFrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <include layout="@layout/view_screen_blocked" />
+    <include android:id="@+id/screenBlocked" layout="@layout/view_screen_blocked" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

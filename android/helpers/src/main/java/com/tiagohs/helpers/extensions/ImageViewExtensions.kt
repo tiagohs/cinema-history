@@ -146,11 +146,11 @@ fun ImageView.loadImage(
     glideRequest.diskCacheStrategy(DiskCacheStrategy.ALL)
     glideRequest.transition(DrawableTransitionOptions.withCrossFade(DrawableCrossFadeFactory.Builder().setCrossFadeEnabled(true).build()))
     glideRequest.listener(object : RequestListener<Drawable> {
-        override fun onLoadFailed( e: GlideException?, model: Any?, target: Target<Drawable>?, isFirstResource: Boolean): Boolean {
+        override fun onLoadFailed(e: GlideException?, model: Any?, target: Target<Drawable>, isFirstResource: Boolean): Boolean {
             onFinished?.invoke()
             return false
         }
-        override fun onResourceReady( resource: Drawable?, model: Any?, target: Target<Drawable>?, dataSource: DataSource?, isFirstResource: Boolean): Boolean {
+        override fun onResourceReady(resource: Drawable, model: Any, target: Target<Drawable>?, dataSource: DataSource, isFirstResource: Boolean): Boolean {
             onFinished?.invoke()
             return false
         }

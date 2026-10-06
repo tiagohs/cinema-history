@@ -2,28 +2,39 @@ package com.tiagohs.cinema_history.presentation.configs
 
 import android.net.Uri
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.coordinatorlayout.widget.CoordinatorLayout
-import androidx.fragment.app.Fragment
+import androidx.viewbinding.ViewBinding
 import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.dagger.AppComponent
 import com.tiagohs.entities.enums.MessageViewType
+import com.tiagohs.helpers.edgetoedge.SystemBarsInsets
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.ServerUtils
 import com.tiagohs.uicomponents.alertsnack.AlertSnackBar
-import kotlinx.android.synthetic.main.view_error.*
 
-abstract class BaseActivity : AppCompatActivity() {
+abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
+
+    protected lateinit var binding: VB
+        private set
+
+    abstract fun inflateBinding(inflater: LayoutInflater): VB
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(onGetLayoutViewId())
+        binding = inflateBinding(layoutInflater)
+        setContentView(binding.root)
+
+        SystemBarsInsets.apply(this)
     }
 
     /*fun getConfiguratedAd(adView: AdView) {
@@ -87,20 +98,19 @@ abstract class BaseActivity : AppCompatActivity() {
                        type: MessageViewType,
                        duration: Int,
                        onTryAgainClicked: (() -> Unit)?) {
-        errorContainer.show()
-
+        findViewById<View>(R.id.errorContainer)?.show()
 
         if (message != 0) {
-            errorDescription.setResourceText(message)
+            findViewById<TextView>(R.id.errorDescription)?.setResourceText(message)
         }
 
-        tryAgainButton.setOnClickListener {
+        findViewById<View>(R.id.tryAgainButton)?.setOnClickListener {
             onTryAgainClicked?.invoke()
         }
     }
 
     open fun hideError() {
-        errorContainer.hide()
+        findViewById<View>(R.id.errorContainer)?.hide()
     }
 
     open fun onError(ex: Throwable?, message: Int, type: MessageViewType, duration: Int) {
@@ -120,6 +130,5 @@ abstract class BaseActivity : AppCompatActivity() {
     }
 
 
-    abstract fun onGetLayoutViewId() : Int
     abstract fun onGetMenuLayoutId(): Int
 }

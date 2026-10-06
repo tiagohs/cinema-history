@@ -1,13 +1,11 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
     compileSdkVersion globalConfiguration["compileSDK"]
-    buildToolsVersion globalConfiguration["buildToolsVersion"]
 
     defaultConfig {
         minSdkVersion globalConfiguration["minSDK"]
@@ -24,7 +22,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
     namespace 'com.tiagohs.domain'
+
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {
@@ -34,11 +41,11 @@ dependencies {
 
     def dependencies = rootProject.ext.dependencies
 
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
-    implementation dependencies.androidMaterial
+    implementation platform(dependencies.firebaseBom)
+
+        implementation dependencies.androidMaterial
 
     // Tools
-    implementation dependencies.volley
     implementation dependencies.gson
     implementation dependencies.timber
     implementation dependencies.javaxAnnotation
@@ -51,11 +58,9 @@ dependencies {
 
     // Firebase
     implementation dependencies.firebaseAnalytics
-    implementation dependencies.firebaseDynamicLinks
 
     // Dagger
     implementation dependencies.dagger
-    annotationProcessor dependencies.daggerCompiler
     kapt dependencies.daggerCompilerKtx
 
     // Retrofit
@@ -67,4 +72,10 @@ dependencies {
     // Okhttp3
     implementation dependencies.okhttp3
     implementation dependencies.okhttp3LoggingInterceptor
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
 }

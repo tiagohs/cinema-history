@@ -1,6 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterPageListMoviesBinding
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.MovieItemCollectionAdapter
@@ -13,14 +13,13 @@ import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.extensions.setResourceTextColor
 import com.tiagohs.helpers.tools.SliderTransformer
 import com.tiagohs.helpers.utils.ColorUtils
-import kotlinx.android.synthetic.main.adapter_page_list_movies.*
 
 class MovieListViewHolder(
-    view: View,
+    private val binding: AdapterPageListMoviesBinding,
     val mainTopic: MainTopicItem?,
     val appLanguage: String,
     val onMovieClicked: ((movieId: Int) -> Unit)? = null
-) : BasePageViewHolder(view) {
+) : BasePageViewHolder(binding) {
 
     private var isSetup = false
 
@@ -31,9 +30,9 @@ class MovieListViewHolder(
         if (!isSetup) {
             val colorAsset = ColorUtils.getRandomColorAssets()
 
-            title.setResourceTextColor(colorAsset.textColorName)
-            title.setResourceText(R.string.should_see)
-            viewPager.apply {
+            binding.title.setResourceTextColor(colorAsset.textColorName)
+            binding.title.setResourceText(R.string.should_see)
+            binding.viewPager.apply {
                 adapter = MovieItemCollectionAdapter(
                     contentMovieList.movies ?: emptyList(),
                     appLanguage,
@@ -55,18 +54,14 @@ class MovieListViewHolder(
         val color = mainTopic?.color
 
         if (color != null) {
-            container.setResourceBackgroundColor(color)
-            title.setResourceTextColor(R.color.md_white_1000)
+            binding.container.setResourceBackgroundColor(color)
+            binding.title.setResourceTextColor(R.color.md_white_1000)
             return
         }
 
         val colorAsset = ColorUtils.getRandomColorAssets()
 
-        container.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
-        title.setResourceTextColor(colorAsset.textColorName)
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_page_list_movies
+        binding.container.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
+        binding.title.setResourceTextColor(colorAsset.textColorName)
     }
 }

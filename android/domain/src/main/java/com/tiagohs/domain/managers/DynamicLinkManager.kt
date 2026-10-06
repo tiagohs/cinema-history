@@ -3,8 +3,6 @@ package com.tiagohs.domain.managers
 import android.app.Activity
 import android.content.Context
 import android.net.Uri
-import com.google.firebase.dynamiclinks.DynamicLink
-import com.google.firebase.dynamiclinks.FirebaseDynamicLinks
 import com.tiagohs.entities.enums.ShareScreenTypeEnum
 import com.tiagohs.helpers.Constants
 import javax.inject.Inject
@@ -14,30 +12,31 @@ class DynamicLinkManager
     val context: Context
 ) {
 
+    /**
+     * Firebase Dynamic Links foi desativado pelo Google em 25/08/2025.
+     * Os links agora são App Links simples (https://thshoc.link/?screen=...),
+     * lidos diretamente do Intent.
+     */
     fun findScreenFromLink(
         activity: Activity,
         onComplete: (screenType: ShareScreenTypeEnum, deepLink: Uri) -> Unit,
         onError: (ex: Exception) -> Unit
     ) {
-        FirebaseDynamicLinks.getInstance()
-            .getDynamicLink(activity.intent)
-            .addOnCompleteListener {
+        val deepLink = activity.intent?.data
 
-                if (it.isSuccessful) {
-                    val deepLink = it.result?.link
+        if (deepLink == null) {
+            onError.invoke(Exception("Error to Get Screen Type"))
+            return
+        }
 
-                    if (deepLink != null) {
-                        val screenType =
-                            ShareScreenTypeEnum.getContentType(deepLink.getQueryParameter(Constants.FIREBASE.DYNAMIC_LINK_PARAMETERS_KEY.SCREEN))
-
-                        onComplete.invoke(screenType, deepLink)
-                        return@addOnCompleteListener
-                    }
-                }
-
-                onError.invoke(Exception("Error to Get Screen Type"))
-            }
-            .addOnFailureListener { onError.invoke(it) }
+        try {
+            val screenType = ShareScreenTypeEnum.getContentType(
+                deepLink.getQueryParameter(Constants.FIREBASE.DYNAMIC_LINK_PARAMETERS_KEY.SCREEN)
+            )
+            onComplete.invoke(screenType, deepLink)
+        } catch (ex: Exception) {
+            onError.invoke(ex)
+        }
     }
 
     fun buildHistoryCinemaPageLink(
@@ -123,29 +122,11 @@ class DynamicLinkManager
         onComplete: (link: String) -> Unit,
         onError: (ex: Exception) -> Unit
     ) {
-        val baseUrl = Uri.parse(buildBaseUrl)
-
-        FirebaseDynamicLinks.getInstance()
-            .createDynamicLink()
-            .setLink(baseUrl)
-            .setDomainUriPrefix(Constants.FIREBASE.DOMAIN_URL)
-            .setAndroidParameters(
-                DynamicLink.AndroidParameters.Builder(Constants.APPLICATION_ID).build()
-            )
-            .buildShortDynamicLink()
-            .addOnCompleteListener {
-                if (it.isSuccessful) {
-                    val shortLink = it.result?.shortLink?.toString()
-
-                    if (shortLink != null) {
-                        onComplete.invoke(shortLink)
-                        return@addOnCompleteListener
-                    }
-                }
-
-                onError.invoke(Exception("Error to build URL"))
-            }
-            .addOnFailureListener { onError.invoke(it) }
+        try {
+            onComplete.invoke(Uri.parse(buildBaseUrl).toString())
+        } catch (ex: Exception) {
+            onError.invoke(ex)
+        }
     }
 
     private fun buildUrl(parameters: Map<String, String>): String {

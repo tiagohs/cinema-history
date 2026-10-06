@@ -1,6 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterPagePersonListBinding
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.PersonAdapter
@@ -14,22 +14,21 @@ import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.adapter_page_person_list.*
 
 class PersonListViewHolder(
-    view: View,
+    private val binding: AdapterPagePersonListBinding,
     private val onPersonClicked: ((personId: Int) -> Unit)?
-) : BasePageViewHolder(view) {
+) : BasePageViewHolder(binding) {
 
     private var isSetup = false
 
     override fun bind(item: Content, position: Int) {
         super.bind(item, position)
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val contentPersonList = item as? ContentPersonList ?: return
 
         if (!isSetup) {
-            personList.addItemDecoration(
+            binding.personList.addItemDecoration(
                 SpaceOffsetDecoration(
                     8.convertIntToDp(context),
                     SpaceOffsetDecoration.LEFT
@@ -46,7 +45,7 @@ class PersonListViewHolder(
             )
         } ?: emptyList()
 
-        personList.apply {
+        binding.personList.apply {
             adapter = PersonAdapter(persons, isSpecial = true, onPersonClicked)
             layoutManager =
                 LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
@@ -55,14 +54,10 @@ class PersonListViewHolder(
 
         val contentPersonTitle = contentPersonList.title
         if (contentPersonTitle != null) {
-            title.setResourceText(contentPersonTitle)
+            binding.title.setResourceText(contentPersonTitle)
             return
         }
 
-        title.setResourceText(R.string.should_know)
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_page_person_list
+        binding.title.setResourceText(R.string.should_know)
     }
 }

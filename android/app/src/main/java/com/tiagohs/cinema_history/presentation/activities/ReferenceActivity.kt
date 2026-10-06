@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.content.Context
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityReferencesBinding
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -19,14 +21,11 @@ import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.show
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.activity_references.*
-import kotlinx.android.synthetic.main.activity_setting.toolbar
-import kotlinx.android.synthetic.main.adapter_movie_info_reviews.*
 import javax.inject.Inject
 
-class ReferenceActivity : BaseActivity(), ReferenceView {
+class ReferenceActivity : BaseActivity<ActivityReferencesBinding>(), ReferenceView {
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_references
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityReferencesBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
 
     @Inject
@@ -37,7 +36,7 @@ class ReferenceActivity : BaseActivity(), ReferenceView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setupToolbar(toolbar, displayShowTitleEnabled = true)
+        setupToolbar(binding.toolbar, displayShowTitleEnabled = true)
 
         getApplicationComponent()?.inject(this)
 
@@ -56,8 +55,8 @@ class ReferenceActivity : BaseActivity(), ReferenceView {
 
         val typesSpinnerList = references.map { it.name }
 
-        spinner.adapter = ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, typesSpinnerList)
-        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        binding.spinner.adapter = ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, typesSpinnerList)
+        binding.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val referencesResult = references.getOrNull(position) ?: return
 
@@ -82,7 +81,7 @@ class ReferenceActivity : BaseActivity(), ReferenceView {
     }
 
     private fun setupReviewList(references: List<Reference>) {
-        contentList.apply {
+        binding.contentList.apply {
             layoutManager = LinearLayoutManager(this@ReferenceActivity, LinearLayoutManager.VERTICAL, false)
             adapter = ReferencesAdapter(references).apply {
                 onLinkClick = { openLink(it) }
@@ -91,17 +90,17 @@ class ReferenceActivity : BaseActivity(), ReferenceView {
     }
 
     override fun startLoading() {
-        contentList.hide()
+        binding.contentList.hide()
 
-        loadView.showShimmer(true)
-        loadView.show()
+        binding.loadView.showShimmer(true)
+        binding.loadView.show()
     }
 
     override fun hideLoading() {
-        contentList.show()
+        binding.contentList.show()
 
-        loadView.hideShimmer()
-        loadView.hide()
+        binding.loadView.hideShimmer()
+        binding.loadView.hide()
     }
 
     companion object {

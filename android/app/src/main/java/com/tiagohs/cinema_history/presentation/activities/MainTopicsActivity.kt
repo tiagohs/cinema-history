@@ -1,12 +1,13 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.content.Context
+import com.tiagohs.cinema_history.databinding.ActivityMainTopicsBinding
 import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+import androidx.core.view.WindowCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.MainTopicsAdapter
@@ -17,13 +18,12 @@ import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.entities.main_topics.*
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
-import kotlinx.android.synthetic.main.activity_main_topics.*
 import javax.inject.Inject
 
 
-class MainTopicsActivity: BaseActivity(), MainTopicsView {
+class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsView {
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_main_topics
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityMainTopicsBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
 
     @Inject
@@ -37,7 +37,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
         super.onCreate(savedInstanceState)
 
         getApplicationComponent()?.inject(this)
-        setupToolbar(toolbar)
+        setupToolbar(binding.toolbar)
 
         presenter.onBindView(this)
         presenter.fetchMainTopics(mainTopicsType)
@@ -69,7 +69,7 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
             else -> R.string.history_cinema_title
         }
 
-        toolbarTitle.text = getResourceString(titleRes)
+        binding.toolbarTitle.text = getResourceString(titleRes)
     }
 
     override fun setupScreenLayout() {
@@ -84,14 +84,14 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
     private fun setupDarkScreen() {
         setScreenBackgroundColor(R.color.md_black_1000)
 
-        loadViewContainer.addView(
+        binding.loadViewContainer.addView(
             LayoutInflater.from(this).inflate(
                 R.layout.load_view_main_topics_card_dark,
                 null,
                 false
             )
         )
-        loadViewContainer.addView(
+        binding.loadViewContainer.addView(
             LayoutInflater.from(this).inflate(
                 R.layout.load_view_main_topics_card_dark,
                 null,
@@ -104,27 +104,24 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
         val whiteColor = getResourceColor(R.color.md_white_1000)
         val blackColor = getResourceColor(R.color.md_black_1000)
 
-        toolbar.setBackgroundColor(whiteColor)
-        toolbarTitle.setTextColor(blackColor)
-        toolbar.navigationIcon?.setColorFilter(blackColor, PorterDuff.Mode.SRC_ATOP)
+        binding.toolbar.setBackgroundColor(whiteColor)
+        binding.toolbarTitle.setTextColor(blackColor)
+        binding.toolbar.navigationIcon?.setColorFilter(blackColor, PorterDuff.Mode.SRC_ATOP)
 
-        mainTopicsList.setBackgroundColor(whiteColor)
+        binding.mainTopicsList.setBackgroundColor(whiteColor)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            val decor = window.decorView
-            decor.systemUiVisibility = SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-        }
+        WindowCompat.getInsetsController(window, window.decorView).isAppearanceLightStatusBars = true
 
         setStatusBarColor(R.color.md_white_1000)
 
-        loadViewContainer.addView(
+        binding.loadViewContainer.addView(
             LayoutInflater.from(this).inflate(
                 R.layout.load_view_main_topics_card_light,
                 null,
                 false
             )
         )
-        loadViewContainer.addView(
+        binding.loadViewContainer.addView(
             LayoutInflater.from(this).inflate(
                 R.layout.load_view_main_topics_card_light,
                 null,
@@ -144,14 +141,14 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
         adapter = MainTopicsAdapter(mainTopicsType, mainTopics, isDarkMode)
         adapter?.onMainTopicSelected = { mainTopic, _ -> onMainTopicSelected(mainTopic) }
 
-        mainTopicsList.layoutManager = LinearLayoutManager(
+        binding.mainTopicsList.layoutManager = LinearLayoutManager(
             this,
             LinearLayoutManager.VERTICAL,
             false
         )
-        mainTopicsList.adapter = adapter
+        binding.mainTopicsList.adapter = adapter
 
-        mainTopicsList.startAnimation(AnimationUtils.createFadeInAnimation(300, 200))
+        binding.mainTopicsList.startAnimation(AnimationUtils.createFadeInAnimation(300, 200))
     }
 
     private fun onMainTopicSelected(mainTopic: MainTopic) {
@@ -179,17 +176,17 @@ class MainTopicsActivity: BaseActivity(), MainTopicsView {
     }
 
     override fun startLoading() {
-        mainTopicsList.hide()
+        binding.mainTopicsList.hide()
 
-        loadView.showShimmer(true)
-        loadView.show()
+        binding.loadView.showShimmer(true)
+        binding.loadView.show()
     }
 
     override fun hideLoading() {
-        mainTopicsList.show()
+        binding.mainTopicsList.show()
 
-        loadView.hideShimmer()
-        loadView.hide()
+        binding.loadView.hideShimmer()
+        binding.loadView.hide()
     }
 
     companion object {

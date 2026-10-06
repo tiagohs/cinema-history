@@ -1,7 +1,18 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
 import android.graphics.drawable.GradientDrawable
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.viewbinding.ViewBinding
+import com.tiagohs.cinema_history.databinding.AdapterEmptyBinding
+import com.tiagohs.cinema_history.databinding.AdapterMainTopicsCardBinding
+import com.tiagohs.cinema_history.databinding.AdapterMainTopicsCardFullBinding
+import com.tiagohs.cinema_history.databinding.AdapterMainTopicsFullBinding
+import com.tiagohs.cinema_history.databinding.AdapterMainTopicsInterQuoteBinding
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
@@ -13,15 +24,6 @@ import com.tiagohs.entities.main_topics.*
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.utils.AnimationUtils
-import kotlinx.android.synthetic.main.adapter_main_topics_card.comingSoonTagContainer
-import kotlinx.android.synthetic.main.adapter_main_topics_card.contentBackground
-import kotlinx.android.synthetic.main.adapter_main_topics_card.description
-import kotlinx.android.synthetic.main.adapter_main_topics_card.mainImage
-import kotlinx.android.synthetic.main.adapter_main_topics_card.mainSubtitle
-import kotlinx.android.synthetic.main.adapter_main_topics_card.mainTopicsContainer
-import kotlinx.android.synthetic.main.adapter_main_topics_card.title
-import kotlinx.android.synthetic.main.adapter_main_topics_card_full.*
-import kotlinx.android.synthetic.main.adapter_main_topics_inter_quote.*
 
 class MainTopicsAdapter(
     private val mainTopicsType: MainTopicsType,
@@ -31,21 +33,16 @@ class MainTopicsAdapter(
 
     var onMainTopicSelected: ((mainTopic: MainTopic, view: View?) -> Unit)? = null
 
-    override fun getLayoutResId(viewType: Int): Int = when (viewType) {
-        MainTopicItemLayoutType.QUOTE.ordinal -> R.layout.adapter_main_topics_inter_quote
-        MainTopicItemLayoutType.CARD.ordinal -> R.layout.adapter_main_topics_card
-        MainTopicItemLayoutType.FULL.ordinal -> R.layout.adapter_main_topics_full
-        MainTopicItemLayoutType.CARD_FULL.ordinal -> R.layout.adapter_main_topics_card_full
-        else -> R.layout.adapter_empty
-    }
-
-    override fun onCreateViewHolder(viewType: Int, view: View): BaseViewHolder<MainTopic> =
+    override fun onCreateViewHolder(viewType: Int, inflater: LayoutInflater, parent: ViewGroup): BaseViewHolder<MainTopic> =
         when (viewType) {
-            MainTopicItemLayoutType.QUOTE.ordinal -> QuoteViewHolder(view)
-            MainTopicItemLayoutType.CARD.ordinal -> MainTopicViewHolder(view)
-            MainTopicItemLayoutType.FULL.ordinal -> MainTopicViewHolder(view)
-            MainTopicItemLayoutType.CARD_FULL.ordinal -> MainTopicViewHolder(view)
-            else -> object : BaseViewHolder<MainTopic>(view) {}
+            MainTopicItemLayoutType.QUOTE.ordinal -> QuoteViewHolder(AdapterMainTopicsInterQuoteBinding.inflate(inflater, parent, false))
+            MainTopicItemLayoutType.CARD.ordinal -> AdapterMainTopicsCardBinding.inflate(inflater, parent, false)
+                .let { MainTopicViewHolder(it, MainTopicViews.from(it)) }
+            MainTopicItemLayoutType.FULL.ordinal -> AdapterMainTopicsFullBinding.inflate(inflater, parent, false)
+                .let { MainTopicViewHolder(it, MainTopicViews.from(it)) }
+            MainTopicItemLayoutType.CARD_FULL.ordinal -> AdapterMainTopicsCardFullBinding.inflate(inflater, parent, false)
+                .let { MainTopicViewHolder(it, MainTopicViews.from(it)) }
+            else -> object : BaseViewHolder<MainTopic>(AdapterEmptyBinding.inflate(inflater, parent, false)) {}
         }
 
     override fun onBindViewHolder(holder: BaseViewHolder<MainTopic>, position: Int) {
@@ -97,8 +94,9 @@ class MainTopicsAdapter(
     }
 
     inner class MainTopicViewHolder(
-        val view: View
-    ) : BaseViewHolder<MainTopic>(view) {
+        binding: ViewBinding,
+        private val views: MainTopicViews
+    ) : BaseViewHolder<MainTopic>(binding) {
 
         var mainTopicItem: MainTopic? = null
 
@@ -107,42 +105,42 @@ class MainTopicsAdapter(
             this.mainTopicItem = item
 
             val mainTopicItem = item as? MainTopicItem ?: return
-            val context = containerView.context ?: return
+            val context = itemView.context ?: return
 
-            mainImage.loadImage(mainTopicItem.image, null)
+            views.mainImage.loadImage(mainTopicItem.image, null)
 
             mainTopicItem.image.imageStyle?.height?.let {
-                mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                views.mainImage.layoutParams = ConstraintLayout.LayoutParams(
                     ConstraintLayout.LayoutParams.MATCH_PARENT,
                     it.convertIntToDp(context)
                 )
             }
 
-            title.setResourceText(mainTopicItem.title)
+            views.title.setResourceText(mainTopicItem.title)
 
-            description.setResourceText(mainTopicItem.description)
-            description.show()
+            views.description.setResourceText(mainTopicItem.description)
+            views.description.show()
 
-            mainSubtitle.setResourceText(mainTopicItem.subtitle)
-            mainSubtitle.show()
+            views.mainSubtitle.setResourceText(mainTopicItem.subtitle)
+            views.mainSubtitle.show()
 
-            mainTopicItem.titleColor?.let { title.setResourceTextColor(mainTopicItem.titleColor) }
+            mainTopicItem.titleColor?.let { views.title.setResourceTextColor(mainTopicItem.titleColor) }
             mainTopicItem.titleBackgroundColor?.let {
-                contentBackground.setResourceBackgroundColor(
+                views.contentBackground.setResourceBackgroundColor(
                     mainTopicItem.titleBackgroundColor
                 )
             }
             mainTopicItem.titleColor?.let {
-                description.setResourceTextColor(mainTopicItem.titleColor)
-                mainSubtitle.setResourceTextColor(mainTopicItem.titleColor)
-                nextButton.setResourceImageColor(mainTopicItem.titleColor)
+                views.description.setResourceTextColor(mainTopicItem.titleColor)
+                views.mainSubtitle.setResourceTextColor(mainTopicItem.titleColor)
+                views.nextButton.setResourceImageColor(mainTopicItem.titleColor)
             }
 
-            mainTopicsContainer.background = GradientDrawable().apply {
+            views.mainTopicsContainer.background = GradientDrawable().apply {
                 cornerRadius = 10f
             }
 
-            mainTopicsContainer.setOnClickListener {
+            views.mainTopicsContainer.setOnClickListener {
                 onMainTopicSelected?.invoke(
                     mainTopicItem,
                     itemView
@@ -164,52 +162,52 @@ class MainTopicsAdapter(
 
         private fun bindBlockedButton(mainTopicItem: MainTopicItem) {
             if (mainTopicItem.blocked) {
-                mainTopicsContainer.isClickable = false
-                mainTopicsContainer.alpha = 0.3f
-                comingSoonTagContainer.show()
+                views.mainTopicsContainer.isClickable = false
+                views.mainTopicsContainer.alpha = 0.3f
+                views.comingSoonTagContainer.show()
 
-                comingSoonTag.setResourceText(R.string.comingsoon)
-                comingSoonTagContainer.setCardBackgroundColor(containerView.context.getResourceColor(R.color.md_red_500))
+                views.comingSoonTag.setResourceText(R.string.comingsoon)
+                views.comingSoonTagContainer.setCardBackgroundColor(itemView.context.getResourceColor(R.color.md_red_500))
                 return
             }
 
-            mainTopicsContainer.isClickable = true
-            mainTopicsContainer.alpha = 1f
-            comingSoonTagContainer.hide()
+            views.mainTopicsContainer.isClickable = true
+            views.mainTopicsContainer.alpha = 1f
+            views.comingSoonTagContainer.hide()
         }
 
         private fun bindIsNewButton(mainTopicItem: MainTopicItem) {
             if (mainTopicItem.isNew) {
-                mainTopicsContainer.isClickable = true
-                mainTopicsContainer.alpha = 1f
-                comingSoonTagContainer.show()
+                views.mainTopicsContainer.isClickable = true
+                views.mainTopicsContainer.alpha = 1f
+                views.comingSoonTagContainer.show()
 
-                comingSoonTag.setResourceText(R.string.is_new)
-                comingSoonTagContainer.setCardBackgroundColor(containerView.context.getResourceColor(R.color.md_green_500))
+                views.comingSoonTag.setResourceText(R.string.is_new)
+                views.comingSoonTagContainer.setCardBackgroundColor(itemView.context.getResourceColor(R.color.md_green_500))
                 return
             }
 
-            comingSoonTagContainer.hide()
+            views.comingSoonTagContainer.hide()
         }
 
         fun bindDirectorMainTopic(mainTopic: DirectorsMainTopic) {
             this.mainTopicItem = mainTopic
 
-            val context = containerView.context ?: return
+            val context = itemView.context ?: return
 
             mainTopic.image.imageStyle?.height?.let {
-                mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                views.mainImage.layoutParams = ConstraintLayout.LayoutParams(
                     ConstraintLayout.LayoutParams.MATCH_PARENT,
                     it.convertIntToDp(context)
                 )
             }
 
-            mainImage.loadImage(mainTopic.image, null) {
-                mainImageDegrade.alpha = 1f
+            views.mainImage.loadImage(mainTopic.image, null) {
+                views.mainImageDegrade?.alpha = 1f
             }
 
-            title.setResourceText(mainTopic.title)
-            mainTopicsContainer.setOnClickListener {
+            views.title.setResourceText(mainTopic.title)
+            views.mainTopicsContainer.setOnClickListener {
                 val mainTopicItem = mainTopicItem ?: return@setOnClickListener
 
                 onMainTopicSelected?.invoke(mainTopicItem, null)
@@ -219,21 +217,21 @@ class MainTopicsAdapter(
         fun bindAwardsMainTopic(mainTopic: AwardMainTopic) {
             this.mainTopicItem = mainTopic
 
-            val context = containerView.context ?: return
+            val context = itemView.context ?: return
 
             mainTopic.image?.imageStyle?.height?.let {
-                mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                views.mainImage.layoutParams = ConstraintLayout.LayoutParams(
                     ConstraintLayout.LayoutParams.MATCH_PARENT,
                     it.convertIntToDp(context)
                 )
             }
 
-            mainImage.loadImage(mainTopic.image, null) {
-                mainImageDegrade.alpha = 1f
+            views.mainImage.loadImage(mainTopic.image, null) {
+                views.mainImageDegrade?.alpha = 1f
             }
 
-            title.setResourceText(mainTopic.name)
-            mainTopicsContainer.setOnClickListener {
+            views.title.setResourceText(mainTopic.name)
+            views.mainTopicsContainer.setOnClickListener {
                 val mainTopicItem = mainTopicItem ?: return@setOnClickListener
 
                 onMainTopicSelected?.invoke(mainTopicItem, null)
@@ -243,21 +241,21 @@ class MainTopicsAdapter(
         fun bindMillMainTopic(mainTopic: MilMoviesMainTopic) {
             this.mainTopicItem = mainTopic
 
-            val context = containerView.context ?: return
+            val context = itemView.context ?: return
 
             mainTopic.image.imageStyle?.height?.let {
-                mainImage.layoutParams = ConstraintLayout.LayoutParams(
+                views.mainImage.layoutParams = ConstraintLayout.LayoutParams(
                     ConstraintLayout.LayoutParams.MATCH_PARENT,
                     it.convertIntToDp(context)
                 )
             }
 
-            mainImage.loadImage(mainTopic.image, null) {
-                mainImageDegrade.alpha = 1f
+            views.mainImage.loadImage(mainTopic.image, null) {
+                views.mainImageDegrade?.alpha = 1f
             }
 
-            title.setResourceText(mainTopic.title)
-            mainTopicsContainer.setOnClickListener {
+            views.title.setResourceText(mainTopic.title)
+            views.mainTopicsContainer.setOnClickListener {
                 val mainTopicItem = mainTopicItem ?: return@setOnClickListener
 
                 onMainTopicSelected?.invoke(mainTopicItem, null)
@@ -274,32 +272,67 @@ class MainTopicsAdapter(
                     mainTopicAnimation.duration
                 )
 
-                mainImage.clearAnimation()
-                mainImage.startAnimation(animation)
+                views.mainImage.clearAnimation()
+                views.mainImage.startAnimation(animation)
             }
 
         }
     }
 
     inner class QuoteViewHolder(
-        val view: View
-    ) : BaseViewHolder<MainTopic>(view) {
+        private val binding: AdapterMainTopicsInterQuoteBinding
+    ) : BaseViewHolder<MainTopic>(binding) {
 
         override fun bind(item: MainTopic, position: Int) {
             super.bind(item, position)
             val quote = item as? Quote ?: return
             val quoteColor = if (isDarkMode) R.color.md_white_1000 else R.color.md_black_1000
 
-            quoteText.setResourceText(quote.quote)
-            quoteTextAuthor.setResourceText(quote.author)
+            binding.quoteText.setResourceText(quote.quote)
+            binding.quoteTextAuthor.setResourceText(quote.author)
 
             if (!isDarkMode) {
-                quoteText.setResourceTextColor(R.color.md_black_1000)
+                binding.quoteText.setResourceTextColor(R.color.md_black_1000)
             }
 
-            quoteTop.setResourceImageColor(quoteColor)
-            quoteBottom.setResourceImageColor(quoteColor)
+            binding.quoteTop.setResourceImageColor(quoteColor)
+            binding.quoteBottom.setResourceImageColor(quoteColor)
         }
     }
 
+}
+
+class MainTopicViews(
+    val mainTopicsContainer: ConstraintLayout,
+    val mainImage: ImageView,
+    val mainImageDegrade: View?,
+    val contentBackground: ConstraintLayout,
+    val mainSubtitle: TextView,
+    val title: TextView,
+    val nextButton: ImageView,
+    val description: TextView,
+    val comingSoonTagContainer: CardView,
+    val comingSoonTag: TextView
+) {
+
+    companion object {
+
+        fun from(binding: AdapterMainTopicsCardBinding) = MainTopicViews(
+            binding.mainTopicsContainer, binding.mainImage, null, binding.contentBackground,
+            binding.mainSubtitle, binding.title, binding.nextButton, binding.description,
+            binding.comingSoonTagContainer, binding.comingSoonTag
+        )
+
+        fun from(binding: AdapterMainTopicsFullBinding) = MainTopicViews(
+            binding.mainTopicsContainer, binding.mainImage, null, binding.contentBackground,
+            binding.mainSubtitle, binding.title, binding.nextButton, binding.description,
+            binding.comingSoonTagContainer, binding.comingSoonTag
+        )
+
+        fun from(binding: AdapterMainTopicsCardFullBinding) = MainTopicViews(
+            binding.mainTopicsContainer, binding.mainImage, binding.mainImageDegrade, binding.contentBackground,
+            binding.mainSubtitle, binding.title, binding.nextButton, binding.description,
+            binding.comingSoonTagContainer, binding.comingSoonTag
+        )
+    }
 }

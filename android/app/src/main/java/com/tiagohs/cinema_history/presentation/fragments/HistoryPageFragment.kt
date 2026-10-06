@@ -1,6 +1,9 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
 import android.content.Intent
+import android.view.ViewGroup
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.FragmentHistoryPageBinding
 import android.graphics.Rect
 import android.os.Bundle
 import android.util.TypedValue
@@ -28,15 +31,11 @@ import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.tools.HidingScrollListener
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.fragment_history_page.*
-import kotlinx.android.synthetic.main.fragment_history_page.appBar
-import kotlinx.android.synthetic.main.fragment_history_page.pageContentList
-import kotlinx.android.synthetic.main.fragment_history_page.toolbar
 import javax.inject.Inject
 import kotlin.math.abs
 
 
-class HistoryPageFragment : BaseFragment(), HistoryPageView,
+class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryPageView,
     HidingScrollListener.HidingScrollCallback {
 
     @Inject
@@ -46,7 +45,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
     private var sumario: Sumario? = null
     private var mainTopic: MainTopicItem? = null
 
-    override fun getViewID(): Int = R.layout.fragment_history_page
+    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?) = FragmentHistoryPageBinding.inflate(inflater, container, false)
     override fun onErrorAction() {}
 
     @Inject
@@ -59,7 +58,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
 
         getApplicationComponent()?.inject(this)
 
-        (activity as? BaseActivity)?.setupToolbar(toolbar, displayHomeAsUpEnabled = false)
+        (activity as? BaseActivity<*>)?.setupToolbar(binding.toolbar, displayHomeAsUpEnabled = false)
 
         setHasOptionsMenu(true)
 
@@ -68,17 +67,17 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
     }
 
     override fun showLoading() {
-        loadHeaderView.showShimmer(true)
-        loadContentView.showShimmer(true)
-        loadHeaderView.show()
-        loadContentView.show()
+        binding.loadHeaderView.showShimmer(true)
+        binding.loadContentView.showShimmer(true)
+        binding.loadHeaderView.show()
+        binding.loadContentView.show()
     }
 
     override fun hideLoading() {
-        loadHeaderView.hideShimmer()
-        loadContentView.hideShimmer()
-        loadHeaderView.hide()
-        loadContentView.hide()
+        binding.loadHeaderView.hideShimmer()
+        binding.loadContentView.hideShimmer()
+        binding.loadHeaderView.hide()
+        binding.loadContentView.hide()
     }
 
     override fun onDestroyView() {
@@ -108,7 +107,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
     override fun bindPageContent(pageContent: Page) {
         this.pageContent = pageContent
 
-        pageContentList.apply {
+        binding.pageContentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter = PageContentAdapter(pageContent.contentList, mainTopic, settingManager.getMovieLanguage()).apply {
                 presentScreen = { presentScreen(it) }
@@ -131,7 +130,7 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
         if (activity.theme.resolveAttribute(android.R.attr.actionBarSize, tv, true)) {
             val actionBarHeight =
                 TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
-            pageContentList.addItemDecoration(
+            binding.pageContentList.addItemDecoration(
                 SpaceOffsetDecoration(
                     actionBarHeight,
                     SpaceOffsetDecoration.BOTTOM
@@ -155,15 +154,15 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
     }
 
     override fun setupHeader() {
-        mainTopicName.setResourceText(mainTopic?.title)
-        mainTopic?.color?.let { mainTopicName.setResourceBackgroundColor(it) }
-        pageTitle.setResourceText(sumario?.title)
-        pageDescription.setResourceText(sumario?.description)
+        binding.mainTopicName.setResourceText(mainTopic?.title)
+        mainTopic?.color?.let { binding.mainTopicName.setResourceBackgroundColor(it) }
+        binding.pageTitle.setResourceText(sumario?.title)
+        binding.pageDescription.setResourceText(sumario?.description)
 
         val image = sumario?.image ?: return
 
         image.imageStyle?.height?.let {
-            pageHeaderImage.layoutParams = ConstraintLayout.LayoutParams(
+            binding.pageHeaderImage.layoutParams = ConstraintLayout.LayoutParams(
                 ConstraintLayout.LayoutParams.MATCH_PARENT,
                 it.convertIntToDp(context)
             ).apply {
@@ -173,17 +172,17 @@ class HistoryPageFragment : BaseFragment(), HistoryPageView,
             }
         }
 
-        appBar.addOnOffsetChangedListener(onOffsetChangedListener())
+        binding.appBar.addOnOffsetChangedListener(onOffsetChangedListener())
 
-        startAlphaAnimation(mainTopicName, 200, 200)
-        startAlphaAnimation(pageTitle, 200, 400)
-        startAlphaAnimation(pageDescription, 200, 600) {
-            if (pageHeaderImage != null) {
-                pageHeaderImage?.loadImage(image, placeholder = null)
+        startAlphaAnimation(binding.mainTopicName, 200, 200)
+        startAlphaAnimation(binding.pageTitle, 200, 400)
+        startAlphaAnimation(binding.pageDescription, 200, 600) {
+            if (binding.pageHeaderImage != null) {
+                binding.pageHeaderImage?.loadImage(image, placeholder = null)
             }
 
         }
-        startAlphaAnimation(pageContentList, 200, 800)
+        startAlphaAnimation(binding.pageContentList, 200, 800)
     }
 
     private fun startAlphaAnimation(view: View?, delay: Long, duration: Long, withEndAction: (() -> Unit)? = null) {

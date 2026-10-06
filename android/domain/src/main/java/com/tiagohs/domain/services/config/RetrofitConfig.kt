@@ -208,7 +208,7 @@ class RetrofitConfig(
 
     private fun gsonBuilder(): Gson {
         FieldNamingStrategy {
-            it.name.toLowerCase()
+            it.name.lowercase()
         }
 
         return GsonBuilder()

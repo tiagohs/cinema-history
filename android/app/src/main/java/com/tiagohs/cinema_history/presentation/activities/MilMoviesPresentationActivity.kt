@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.animation.Animator
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityMilMoviesPresentationBinding
 import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
@@ -21,13 +23,12 @@ import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import jp.wasabeef.glide.transformations.BlurTransformation
-import kotlinx.android.synthetic.main.activity_mil_movies_presentation.*
 import javax.inject.Inject
 
 
-class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView {
+class MilMoviesPresentationActivity : BaseActivity<ActivityMilMoviesPresentationBinding>(), MilMoviesPresentationView {
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_mil_movies_presentation
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityMilMoviesPresentationBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
 
     @Inject
@@ -46,7 +47,7 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
         getApplicationComponent()?.inject(this)
         presenter.onBindView(this)
 
-        setupToolbar(toolbar)
+        setupToolbar(binding.toolbar)
         setupArguments()
         presenter.fetchMoviesByListId(mainTopic.list_id)
     }
@@ -72,7 +73,7 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
             onMovieSelected = { movie, _ -> onMovieSelected(movie) }
         }
 
-        moviesViewPager.apply {
+        binding.moviesViewPager.apply {
             adapter = this@MilMoviesPresentationActivity.adapter
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             offscreenPageLimit = 1
@@ -84,7 +85,7 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
                     movieList.getOrNull(position)?.let { loadBackdrop(it) }
 
                     if (position == movieList.size - 3 && !isSearching && presenter.hasMorePages()) {
-                        loadingProgress.show()
+                        binding.loadingProgress.show()
 
                         presenter.fetchMoreMovies(mainTopic.list_id, ++page)
 
@@ -97,14 +98,14 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
         val horizontalSpace = 42.convertIntToDp(this)
         val spaceBetweenItems = 32.convertIntToDp(this)
 
-        moviesViewPager.setPageTransformer(
+        binding.moviesViewPager.setPageTransformer(
             ScaleMovieImageTransformer(
                 horizontalSpace,
                 spaceBetweenItems
             )
         )
 
-        moviesViewPager.addItemDecoration(
+        binding.moviesViewPager.addItemDecoration(
             ScaleMovieImageTransformer.HorizontalMarginItemDecoration(
                 horizontalSpace
             )
@@ -113,24 +114,24 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
         val titleColorRes = resources.getIdentifier(mainTopic.titleColor, "color", packageName)
         val titleColor = getResourceColor(titleColorRes)
 
-        toolbar.navigationIcon?.setColorFilter(titleColor, PorterDuff.Mode.SRC_ATOP)
+        binding.toolbar.navigationIcon?.setColorFilter(titleColor, PorterDuff.Mode.SRC_ATOP)
 
-        presentationTitle.setResourceText(mainTopic.title)
-        presentationTitle.setTextColor(titleColor)
-        presentationSubtitle.setTextColor(titleColor)
+        binding.presentationTitle.setResourceText(mainTopic.title)
+        binding.presentationTitle.setTextColor(titleColor)
+        binding.presentationSubtitle.setTextColor(titleColor)
 
-        presentationTitle.startAnimation(AnimationUtils.createFadeInAnimation(200, 350))
-        presentationSubtitle.startAnimation(AnimationUtils.createFadeInAnimation(200, 350))
+        binding.presentationTitle.startAnimation(AnimationUtils.createFadeInAnimation(200, 350))
+        binding.presentationSubtitle.startAnimation(AnimationUtils.createFadeInAnimation(200, 350))
     }
 
     private fun loadBackdrop(movie: Movie) {
         val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
 
-        backdropImage.loadImage(url, placeholder = null, transform = BlurTransformation(35, 3))
+        binding.backdropImage.loadImage(url, placeholder = null, transform = BlurTransformation(35, 3))
     }
 
     override fun bindMoreMovies(movies: List<Movie>) {
-        loadingProgress.hide()
+        binding.loadingProgress.hide()
 
         adapter?.addMoreMovies(movies)
 
@@ -138,30 +139,30 @@ class MilMoviesPresentationActivity : BaseActivity(), MilMoviesPresentationView 
     }
 
     override fun startLoading() {
-        contentContainer.alpha = 0f
+        binding.contentContainer.alpha = 0f
 
-        loadView.showShimmer(true)
-        loadView.show()
-        loadView.alpha = 1f
+        binding.loadView.showShimmer(true)
+        binding.loadView.show()
+        binding.loadView.alpha = 1f
     }
 
     override fun hideLoading() {
-        contentContainer
+        binding.contentContainer
             .animate()
             .alpha(1f)
             .setDuration(200)
             .setInterpolator(DecelerateInterpolator(2f))
             .start()
 
-        loadView
+        binding.loadView
             .animate()
             .alpha(0f)
             .setDuration(200)
             .setInterpolator(AccelerateInterpolator(2f))
             .setListener(object : Animator.AnimatorListener {
                 override fun onAnimationEnd(animation: Animator) {
-                    loadView.stopShimmer()
-                    loadView.visibility = View.INVISIBLE
+                    binding.loadView.stopShimmer()
+                    binding.loadView.visibility = View.INVISIBLE
                 }
 
                 override fun onAnimationRepeat(animation: Animator) {}

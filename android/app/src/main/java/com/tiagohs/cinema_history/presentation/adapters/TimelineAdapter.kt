@@ -1,6 +1,11 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.view.View
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import com.tiagohs.cinema_history.databinding.AdapterEmptyBinding
+import com.tiagohs.cinema_history.databinding.AdapterTimelineFooterBinding
+import com.tiagohs.cinema_history.databinding.AdapterTimelineItemBinding
+import com.tiagohs.cinema_history.databinding.AdapterTimelineTitleBinding
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
@@ -28,15 +33,7 @@ class TimelineAdapter(
         setHasStableIds(true)
     }
 
-
-    override fun getLayoutResId(viewType: Int): Int = when (viewType) {
-        TimelineType.TITLE.ordinal -> R.layout.adapter_timeline_title
-        TimelineType.ITEM.ordinal -> R.layout.adapter_timeline_item
-        TimelineType.FOOTER.ordinal -> R.layout.adapter_timeline_footer
-        else -> R.layout.adapter_empty
-    }
-
-    override fun onCreateViewHolder(viewType: Int, view: View): BaseViewHolder<Timeline> =
+    override fun onCreateViewHolder(viewType: Int, inflater: LayoutInflater, parent: ViewGroup): BaseViewHolder<Timeline> =
         when (viewType) {
             TimelineType.TITLE.ordinal -> TimelineTitleViewHolder(
                 color,
@@ -45,18 +42,18 @@ class TimelineAdapter(
                 onDownClicked,
                 totalOfTimelines,
                 callback,
-                view
+                AdapterTimelineTitleBinding.inflate(inflater, parent, false)
             )
-            TimelineType.ITEM.ordinal -> TimelineItemViewHolder(color, textColor, view)
+            TimelineType.ITEM.ordinal -> TimelineItemViewHolder(color, textColor, AdapterTimelineItemBinding.inflate(inflater, parent, false))
             TimelineType.FOOTER.ordinal -> TimelineItemFooterHolder(
                 onNextClicked,
                 onPreviousClicked,
                 onUpClicked,
                 totalOfTimelines,
                 callback,
-                view
+                AdapterTimelineFooterBinding.inflate(inflater, parent, false)
             )
-            else -> object : BaseViewHolder<Timeline>(view) {}
+            else -> object : BaseViewHolder<Timeline>(AdapterEmptyBinding.inflate(inflater, parent, false)) {}
         }
 
     override fun getItemId(position: Int): Long = list[position].hashCode().toLong()

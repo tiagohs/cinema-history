@@ -175,11 +175,11 @@
         android:layout_marginTop="?attr/actionBarSize"
         android:fitsSystemWindows="true">
 
-        <include layout="@layout/load_home" />
+        <include android:id="@+id/coordinatorLayout" layout="@layout/load_home" />
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 
-    <include layout="@layout/view_error" />
+    <include android:id="@+id/errorContainer" layout="@layout/view_error" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

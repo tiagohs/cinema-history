@@ -1,10 +1,10 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.app.TaskStackBuilder
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityUniversalLinkBinding
 import android.net.Uri
 import android.os.Bundle
-import com.google.firebase.dynamiclinks.FirebaseDynamicLinks
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.managers.DynamicLinkManager
 import com.tiagohs.domain.presenter.UniversalLinkPresenter
@@ -16,11 +16,10 @@ import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.helpers.Constants
 import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
-import kotlinx.android.synthetic.main.activity_universal_link.*
 import java.lang.Exception
 import javax.inject.Inject
 
-class UniversalLinkActivity: BaseActivity(), UniversalLinkView {
+class UniversalLinkActivity: BaseActivity<ActivityUniversalLinkBinding>(), UniversalLinkView {
 
     @Inject
     lateinit var dynamicLinkManager: DynamicLinkManager
@@ -28,7 +27,7 @@ class UniversalLinkActivity: BaseActivity(), UniversalLinkView {
     @Inject
     lateinit var presenter: UniversalLinkPresenter
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_universal_link
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityUniversalLinkBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {

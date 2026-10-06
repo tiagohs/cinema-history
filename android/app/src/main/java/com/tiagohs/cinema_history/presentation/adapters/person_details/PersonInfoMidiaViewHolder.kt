@@ -1,6 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters.person_details
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterPersonInfoSpecialMidiaBinding
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.MovieWallpaperAdapter
@@ -13,13 +13,12 @@ import com.tiagohs.helpers.extensions.setResourceBackgroundColor
 import com.tiagohs.helpers.extensions.setResourceTextColor
 import com.tiagohs.helpers.extensions.show
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.adapter_person_info_special_midia.*
 
 class PersonInfoMidiaViewHolder(
-    view: View,
+    private val binding: AdapterPersonInfoSpecialMidiaBinding,
     var onVideoClick: ((String?) -> Unit)? = null,
     private val isSpecial: Boolean
-) : BaseViewHolder<PersonInfo>(view) {
+) : BaseViewHolder<PersonInfo>(binding) {
 
     override fun bind(item: PersonInfo, position: Int) {
         super.bind(item, position)
@@ -30,12 +29,12 @@ class PersonInfoMidiaViewHolder(
     }
 
     private fun bindVideos(person: Person) {
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
 
         if (person.allImages.isNotEmpty()) {
-            wallpapersList.show()
+            binding.wallpapersList.show()
 
-            wallpapersList.apply {
+            binding.wallpapersList.apply {
                 layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                 adapter = MovieWallpaperAdapter(person.allImages, person.name)
                 addItemDecoration(
@@ -50,13 +49,13 @@ class PersonInfoMidiaViewHolder(
     }
 
     private fun bindImages(person: Person) {
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
 
         if (!person.extraInfo?.videos.isNullOrEmpty()) {
             val allVideos = person.extraInfo?.videos ?: emptyList()
 
-            videoList.show()
-            videoList.apply {
+            binding.videoList.show()
+            binding.videoList.apply {
                 layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
                 adapter = PersonVideoAdapter(allVideos, onVideoClick)
                 addItemDecoration(
@@ -69,20 +68,16 @@ class PersonInfoMidiaViewHolder(
         }
 
         if (isSpecial) {
-            personMidiaTitle.setResourceTextColor(R.color.md_grey_300)
-            personMidiaContainer.setResourceBackgroundColor(R.color.md_black_1000)
-            videoList.setResourceBackgroundColor(R.color.md_black_1000)
-            wallpapersList.setResourceBackgroundColor(R.color.md_black_1000)
+            binding.personMidiaTitle.setResourceTextColor(R.color.md_grey_300)
+            binding.personMidiaContainer.setResourceBackgroundColor(R.color.md_black_1000)
+            binding.videoList.setResourceBackgroundColor(R.color.md_black_1000)
+            binding.wallpapersList.setResourceBackgroundColor(R.color.md_black_1000)
             return
         }
 
-        personMidiaTitle.setResourceTextColor(R.color.md_black_1000)
-        personMidiaContainer.setResourceBackgroundColor(R.color.md_white_1000)
-        videoList.setResourceBackgroundColor(R.color.md_white_1000)
-        wallpapersList.setResourceBackgroundColor(R.color.md_white_1000)
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_person_info_special_midia
+        binding.personMidiaTitle.setResourceTextColor(R.color.md_black_1000)
+        binding.personMidiaContainer.setResourceBackgroundColor(R.color.md_white_1000)
+        binding.videoList.setResourceBackgroundColor(R.color.md_white_1000)
+        binding.wallpapersList.setResourceBackgroundColor(R.color.md_white_1000)
     }
 }

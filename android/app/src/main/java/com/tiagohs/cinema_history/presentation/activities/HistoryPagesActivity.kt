@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.animation.Animator
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityHistoryPagesBinding
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -23,13 +25,11 @@ import com.tiagohs.helpers.Constants
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.tools.SliderTransformer
 import com.tiagohs.helpers.tools.ZoomOutPageTransformer
-import kotlinx.android.synthetic.main.activity_history_pages.*
-import kotlinx.android.synthetic.main.view_screen_blocked.*
 import java.lang.Exception
 import javax.inject.Inject
 
 
-class HistoryPagesActivity : BaseActivity() {
+class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
 
     @Inject
     lateinit var dynamicLinkManager: DynamicLinkManager
@@ -42,7 +42,7 @@ class HistoryPagesActivity : BaseActivity() {
 
     var currentPosition: Int = 0
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_history_pages
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityHistoryPagesBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -72,30 +72,30 @@ class HistoryPagesActivity : BaseActivity() {
     }
 
     private fun startLoading() {
-        pagesContainer.alpha = 0f
+        binding.pagesContainer.alpha = 0f
 
-        loadView.startShimmer()
-        loadView.show()
-        loadView.alpha = 1f
+        binding.loadView.startShimmer()
+        binding.loadView.show()
+        binding.loadView.alpha = 1f
     }
 
     private fun hideLoading() {
-        pagesContainer
+        binding.pagesContainer
             ?.animate()
             ?.alpha(1f)
             ?.setDuration(200)
             ?.setInterpolator(DecelerateInterpolator(2f))
             ?.start()
 
-        loadView
+        binding.loadView
             ?.animate()
             ?.alpha(0f)
             ?.setDuration(150)
             ?.setInterpolator(AccelerateInterpolator(2f))
             ?.setListener(object : Animator.AnimatorListener {
                 override fun onAnimationEnd(animation: Animator) {
-                    loadView?.hideShimmer()
-                    loadView?.visibility = View.INVISIBLE
+                    binding.loadView?.hideShimmer()
+                    binding.loadView?.visibility = View.INVISIBLE
                 }
 
                 override fun onAnimationRepeat(animation: Animator) {}
@@ -115,16 +115,16 @@ class HistoryPagesActivity : BaseActivity() {
         )
         image.imageStyle?.scaleType = "center_crop"
 
-        toolbarImage.loadImage(image)
-        toolbarImageCardContainer.setOnClickListener {
+        binding.toolbarImage.loadImage(image)
+        binding.toolbarImageCardContainer.setOnClickListener {
             onBackPressed()
         }
 
-        toolbarNextButton.setOnClickListener {
+        binding.toolbarNextButton.setOnClickListener {
             setNextPage()
         }
 
-        shareButton.setOnClickListener { onShareClicked() }
+        binding.shareButton.setOnClickListener { onShareClicked() }
     }
 
     private fun onShareClicked() {
@@ -155,35 +155,35 @@ class HistoryPagesActivity : BaseActivity() {
     }
 
     private fun setNextPage() {
-        val currentPosition = sumarioContentViewPager.currentItem
+        val currentPosition = binding.sumarioContentViewPager.currentItem
 
-        sumarioContentViewPager.setCurrentItem(currentPosition + 1, true)
+        binding.sumarioContentViewPager.setCurrentItem(currentPosition + 1, true)
     }
 
     fun showScreenBlocked() {
-        screenBlocked.show()
+        binding.screenBlocked.root.show()
     }
 
     fun hideScreenBlocked() {
-        screenBlocked.hide()
+        binding.screenBlocked.root.hide()
     }
 
     fun showFooter() {
-        animate(footerContent, 0f, DecelerateInterpolator(2f))
-        animate(toolbarNextButton, 0f, DecelerateInterpolator(2f))
-        animate(shareButton, 0f, DecelerateInterpolator(2f))
-        animate(sumarioContentIndicatorContainer, 0f, DecelerateInterpolator(2f))
-        animate(toolbarImageCardContainer, 0f, DecelerateInterpolator(4f))
+        animate(binding.footerContent, 0f, DecelerateInterpolator(2f))
+        animate(binding.toolbarNextButton, 0f, DecelerateInterpolator(2f))
+        animate(binding.shareButton, 0f, DecelerateInterpolator(2f))
+        animate(binding.sumarioContentIndicatorContainer, 0f, DecelerateInterpolator(2f))
+        animate(binding.toolbarImageCardContainer, 0f, DecelerateInterpolator(4f))
     }
 
     fun hideFooter() {
-        animate(footerContent, footerContent.height.toFloat(), AccelerateInterpolator(2f))
-        animate(toolbarNextButton, toolbarNextButton.height.toFloat(), AccelerateInterpolator(2f))
-        animate(shareButton, shareButton.height.toFloat(), AccelerateInterpolator(2f))
-        animate(sumarioContentIndicatorContainer, shareButton.height.toFloat(), AccelerateInterpolator(2f))
+        animate(binding.footerContent, binding.footerContent.height.toFloat(), AccelerateInterpolator(2f))
+        animate(binding.toolbarNextButton, binding.toolbarNextButton.height.toFloat(), AccelerateInterpolator(2f))
+        animate(binding.shareButton, binding.shareButton.height.toFloat(), AccelerateInterpolator(2f))
+        animate(binding.sumarioContentIndicatorContainer, binding.shareButton.height.toFloat(), AccelerateInterpolator(2f))
         animate(
-            toolbarImageCardContainer,
-            toolbarImageCardContainer.height.toFloat() + 10.convertIntToDp(
+            binding.toolbarImageCardContainer,
+            binding.toolbarImageCardContainer.height.toFloat() + 10.convertIntToDp(
                 this
             ),
             AccelerateInterpolator(2f)
@@ -213,20 +213,20 @@ class HistoryPagesActivity : BaseActivity() {
 
         setupNextButtonBlocked(itemSelectedPosition)
 
-        sumarioContentViewPager.apply {
+        binding.sumarioContentViewPager.apply {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             adapter = adapterPager
             currentItem = itemSelectedPosition
 
             setPageTransformer(ZoomOutPageTransformer())
 
-            sumarioContentIndicator.attachToViewPager2(this)
+            binding.sumarioContentIndicator.attachToViewPager2(this)
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
                     super.onPageSelected(position)
                     currentPosition = position
 
-                    sumarioContentIndicator.onPageSelected(position)
+                    binding.sumarioContentIndicator.onPageSelected(position)
 
                     setupNextButtonBlocked(currentPosition)
                 }
@@ -238,13 +238,13 @@ class HistoryPagesActivity : BaseActivity() {
         val numberOfItens = mainTopic?.sumarioList?.size ?: 0
 
         if (currentPosition == numberOfItens - 1) {
-            toolbarNextButton.alpha = 0.4f
-            toolbarNextButton.isClickable = false
+            binding.toolbarNextButton.alpha = 0.4f
+            binding.toolbarNextButton.isClickable = false
             return
         }
 
-        toolbarNextButton.alpha = 1f
-        toolbarNextButton.isClickable = true
+        binding.toolbarNextButton.alpha = 1f
+        binding.toolbarNextButton.isClickable = true
     }
 
     companion object {

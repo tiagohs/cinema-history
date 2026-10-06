@@ -1,7 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters.config
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
@@ -9,14 +8,10 @@ abstract class BaseAdapter<I, V : BaseViewHolder<I>>(
         var list: List<I>
 ): RecyclerView.Adapter<V>() {
 
-    abstract fun getLayoutResId(viewType: Int): Int
-    abstract fun onCreateViewHolder(viewType: Int, view: View): V
+    abstract fun onCreateViewHolder(viewType: Int, inflater: LayoutInflater, parent: ViewGroup): V
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): V {
-        val view = LayoutInflater.from(parent.context).inflate(getLayoutResId(viewType), parent, false)
-
-        return onCreateViewHolder(viewType, view)
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): V =
+        onCreateViewHolder(viewType, LayoutInflater.from(parent.context), parent)
 
     override fun getItemCount(): Int = list.size
 

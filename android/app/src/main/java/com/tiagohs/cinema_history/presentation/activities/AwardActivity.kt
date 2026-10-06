@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.animation.Animator
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityAwardDetailsBinding
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -24,19 +26,9 @@ import com.tiagohs.entities.main_topics.AwardMainTopic
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import jp.wasabeef.glide.transformations.BlurTransformation
-import kotlinx.android.synthetic.main.activity_award_details.*
-import kotlinx.android.synthetic.main.activity_award_details.appBar
-import kotlinx.android.synthetic.main.activity_award_details.collapsingToolbar
-import kotlinx.android.synthetic.main.activity_award_details.loadView
-import kotlinx.android.synthetic.main.activity_award_details.movieBackdropDegrade
-import kotlinx.android.synthetic.main.activity_award_details.movieBackdropDegradeTop
-import kotlinx.android.synthetic.main.activity_award_details.pageContentListContainer
-import kotlinx.android.synthetic.main.activity_award_details.toolbar
-import kotlinx.android.synthetic.main.activity_movie_details.*
-import kotlinx.android.synthetic.main.view_screen_blocked.*
 import javax.inject.Inject
 
-class AwardActivity : BaseActivity(), AwardView {
+class AwardActivity : BaseActivity<ActivityAwardDetailsBinding>(), AwardView {
 
     @Inject
     lateinit var presenter: AwardPresenter
@@ -47,14 +39,14 @@ class AwardActivity : BaseActivity(), AwardView {
     private var awardMainTopic: AwardMainTopic? = null
     private var awardPagerAdapter: AwardPagerAdapter? = null
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_award_details
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityAwardDetailsBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = R.menu.menu_award
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         getApplicationComponent()?.inject(this)
-        setupToolbar(toolbar)
+        setupToolbar(binding.toolbar)
 
         presenter.onBindView(this)
         presenter.fetchAwardsNominees(awardMainTopic)
@@ -125,7 +117,7 @@ class AwardActivity : BaseActivity(), AwardView {
     private fun setupHeader() {
         val awardMainTopic = awardMainTopic ?: return
 
-        collapsingToolbar.title = awardMainTopic.name
+        binding.collapsingToolbar.title = awardMainTopic.name
 
         awardMainTopic.image.imageStyle = ImageStyle(
             height = 150,
@@ -133,7 +125,7 @@ class AwardActivity : BaseActivity(), AwardView {
                 height = 150
             )
         )
-        backdrop.loadImage(
+        binding.backdrop.loadImage(
             awardMainTopic.image,
             placeholder = null,
             transform = BlurTransformation(25, 3)) {
@@ -144,10 +136,10 @@ class AwardActivity : BaseActivity(), AwardView {
                     height = 80
                 )
             )
-            awardImage.loadImage(awardMainTopic.logo, placeholder = null) {
-                awardImageContainer.alpha = 1f
+            binding.awardImage.loadImage(awardMainTopic.logo, placeholder = null) {
+                binding.awardImageContainer.alpha = 1f
                 AnimationUtils.createScaleUpAnimation(
-                    awardImageContainer,
+                    binding.awardImageContainer,
                     0f,
                     1f,
                     0f,
@@ -160,33 +152,33 @@ class AwardActivity : BaseActivity(), AwardView {
             }
         }
 
-        awardName.setResourceText(awardMainTopic.name)
-        awardPresentedBy.setResourceText(awardMainTopic.presentedBy)
-        awardCountry.setResourceText(awardMainTopic.country)
+        binding.awardName.setResourceText(awardMainTopic.name)
+        binding.awardPresentedBy.setResourceText(awardMainTopic.presentedBy)
+        binding.awardCountry.setResourceText(awardMainTopic.country)
     }
 
     private fun setupSocialLinks() {
         awardMainTopic?.socialList?.forEach { social ->
             when (social.type) {
                 SocialType.FACEBOOK -> {
-                    facebookImageContainer.show()
-                    facebookImage.setOnClickListener { openLink(social.link) }
+                    binding.facebookImageContainer.show()
+                    binding.facebookImage.setOnClickListener { openLink(social.link) }
                 }
                 SocialType.INSTAGRAM -> {
-                    instagramImageContainer.show()
-                    instagramImage.setOnClickListener { openLink(social.link) }
+                    binding.instagramImageContainer.show()
+                    binding.instagramImage.setOnClickListener { openLink(social.link) }
                 }
                 SocialType.SITE -> {
-                    siteImageContainer.show()
-                    siteImage.setOnClickListener { openLink(social.link) }
+                    binding.siteImageContainer.show()
+                    binding.siteImage.setOnClickListener { openLink(social.link) }
                 }
                 SocialType.TWITTER -> {
-                    twitterImageContainer.show()
-                    twitterImage.setOnClickListener { openLink(social.link) }
+                    binding.twitterImageContainer.show()
+                    binding.twitterImage.setOnClickListener { openLink(social.link) }
                 }
                 SocialType.YOUTUBE -> {
-                    youtubeImageContainer.show()
-                    youtubeImage.setOnClickListener { openLink(social.link) }
+                    binding.youtubeImageContainer.show()
+                    binding.youtubeImage.setOnClickListener { openLink(social.link) }
                 }
             }
         }
@@ -197,51 +189,51 @@ class AwardActivity : BaseActivity(), AwardView {
 
         awardPagerAdapter = AwardPagerAdapter(this, awardMainTopic, supportFragmentManager)
 
-        viewPager.adapter = awardPagerAdapter
-        tabs.setupWithViewPager(viewPager)
+        binding.viewPager.adapter = awardPagerAdapter
+        binding.tabs.setupWithViewPager(binding.viewPager)
     }
 
 
     private fun showScreenBlocked() {
-        screenBlocked.show()
+        binding.screenBlocked.root.show()
     }
 
     private fun hideScreenBlocked() {
-        screenBlocked.hide()
+        binding.screenBlocked.root.hide()
     }
 
     override fun startLoading() {
-        pageContentListContainer.alpha = 0f
-        appBar.alpha = 0f
+        binding.pageContentListContainer.alpha = 0f
+        binding.appBar.alpha = 0f
 
-        loadView.showShimmer(true)
-        loadView.show()
+        binding.loadView.showShimmer(true)
+        binding.loadView.show()
     }
 
     override fun hideLoading() {
-        pageContentListContainer
+        binding.pageContentListContainer
             .animate()
             .alpha(1f)
             .setDuration(200)
             .setInterpolator(DecelerateInterpolator(2f))
             .start()
 
-        appBar
+        binding.appBar
             .animate()
             .alpha(1f)
             .setDuration(200)
             .setInterpolator(DecelerateInterpolator(2f))
             .start()
 
-        loadView
+        binding.loadView
             .animate()
             .alpha(0f)
             .setDuration(200)
             .setInterpolator(AccelerateInterpolator(2f))
             .setListener(object : Animator.AnimatorListener {
                 override fun onAnimationEnd(animation: Animator) {
-                    loadView.hideShimmer()
-                    loadView.visibility = View.INVISIBLE
+                    binding.loadView.hideShimmer()
+                    binding.loadView.visibility = View.INVISIBLE
                 }
 
                 override fun onAnimationRepeat(animation: Animator) {}

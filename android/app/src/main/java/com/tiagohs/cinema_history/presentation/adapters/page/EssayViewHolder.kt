@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
 import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterPageEssayBinding
 import androidx.appcompat.app.AppCompatActivity
 import com.tiagohs.cinema_history.R
 import com.tiagohs.entities.ColorAsset
@@ -11,31 +12,30 @@ import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.ColorUtils
-import kotlinx.android.synthetic.main.adapter_page_essay.*
 
 class EssayViewHolder(
-    val view: View,
+    private val binding: AdapterPageEssayBinding,
     private val appLanguage: String,
     private val onMovieClicked: ((movieId: Int) -> Unit)? = null,
     private val onPersonClicked: ((personId: Int) -> Unit)? = null,
     private val onLinkClicked: ((url: String) -> Unit)? = null
-) : BasePageViewHolder(view) {
+) : BasePageViewHolder(binding) {
 
     override fun bind(item: Content, position: Int) {
         super.bind(item, position)
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val activity = context as? AppCompatActivity ?: return
         val contentEssay = item as? ContentEssay ?: return
         val colorAsset = ColorUtils.getRandomColorAssets()
         val colorName = "md_${colorAsset.colorName}_500"
 
-        essayContainer.setResourceBackgroundColor(colorName)
+        binding.essayContainer.setResourceBackgroundColor(colorName)
 
-        essayVideoViewer.setupPlayer(activity, contentEssay.videoId)
-        essayVideoTitle.setResourceText(contentEssay.title)
-        essayVideoDescription.setResourceText(contentEssay.description)
-        essayVideoTitle.setResourceTextColor(colorAsset.textColorName)
-        essayVideoDescription.setResourceTextColor(colorAsset.textColorName)
+        binding.essayVideoViewer.setupPlayer(activity, contentEssay.videoId)
+        binding.essayVideoTitle.setResourceText(contentEssay.title)
+        binding.essayVideoDescription.setResourceText(contentEssay.description)
+        binding.essayVideoTitle.setResourceTextColor(colorAsset.textColorName)
+        binding.essayVideoDescription.setResourceTextColor(colorAsset.textColorName)
 
         setupChannel(contentEssay)
         setupContent(contentEssay, colorAsset)
@@ -45,12 +45,12 @@ class EssayViewHolder(
         val essayChannel = contentEssay.channel
 
         if (essayChannel == null) {
-            essayChannelImageCard.visibility = View.INVISIBLE
+            binding.essayChannelImageCard.visibility = View.INVISIBLE
             return
         }
 
-        essayChannelImage.loadImage(contentEssay.channel?.imagePath)
-        essayChannelContainer.setOnClickListener {
+        binding.essayChannelImage.loadImage(contentEssay.channel?.imagePath)
+        binding.essayChannelContainer.setOnClickListener {
             onLinkClicked?.invoke(essayChannel.url)
         }
     }
@@ -59,35 +59,35 @@ class EssayViewHolder(
         if (contentEssay.movie != null) {
             setupMovieContent(contentEssay.movie!!, colorAsset)
         } else {
-            essayMovieContainer.hide()
+            binding.essayMovieContainer.hide()
         }
 
         if (contentEssay.person != null) {
             setupPersonContent(contentEssay.person!!, colorAsset)
         } else {
-            essayPersonContainer.hide()
+            binding.essayPersonContainer.hide()
         }
     }
 
     private fun setupPersonContent(person: Person, colorAsset: ColorAsset) {
-        essayMovieContainer.hide()
-        essayPersonContainer.show()
+        binding.essayMovieContainer.hide()
+        binding.essayPersonContainer.show()
 
         val knownForDepartment = person.knownForDepartment ?: ""
         val personName = person.name
 
-        essayPersonImage.loadImage(
+        binding.essayPersonImage.loadImage(
             person.profilePath?.imageUrlFromTMDB( ImageSize.PROFILE_185 ),
-            containerView.context.getString(R.string.person_photo_description, person.name),
+            itemView.context.getString(R.string.person_photo_description, person.name),
             R.drawable.placeholder_movie_person,
             R.drawable.placeholder_movie_person
         )
-        essayPersonName.setResourceText(personName)
-        essayPersonKnownFor.setResourceText(knownForDepartment)
-        essayPersonName.setResourceTextColor(colorAsset.textColorName)
-        essayPersonKnownFor.setResourceTextColor("md_${colorAsset.colorName}_100")
+        binding.essayPersonName.setResourceText(personName)
+        binding.essayPersonKnownFor.setResourceText(knownForDepartment)
+        binding.essayPersonName.setResourceTextColor(colorAsset.textColorName)
+        binding.essayPersonKnownFor.setResourceTextColor("md_${colorAsset.colorName}_100")
 
-        essayPersonContainer.setOnClickListener {
+        binding.essayPersonContainer.setOnClickListener {
             val id = person.id ?: return@setOnClickListener
 
             onPersonClicked?.invoke(id)
@@ -95,34 +95,30 @@ class EssayViewHolder(
     }
 
     private fun setupMovieContent(movie: Movie, colorAsset: ColorAsset) {
-        essayPersonContainer.hide()
-        essayMovieContainer.show()
+        binding.essayPersonContainer.hide()
+        binding.essayMovieContainer.show()
 
         val posterUrl = movie.posterPath?.imageUrlFromTMDB( ImageSize.POSTER_342 )
         val movieName = movie.getMovieTitleFromAppLanguage(appLanguage)
         val directors = movie.credits?.crew?.filter { it.job == "Director" }?.map { it.name }
             ?.joinToString(", ") ?: ""
 
-        essayMovieImage.loadImage(
+        binding.essayMovieImage.loadImage(
             posterUrl,
-            containerView.context.getString(R.string.movie_poster_description, movie.title),
+            itemView.context.getString(R.string.movie_poster_description, movie.title),
             R.drawable.placeholder_movie_poster,
             R.drawable.placeholder_movie_poster
         )
 
-        essayMovieName.setResourceText(movieName)
-        essayMovieDirector.setResourceText(directors)
-        essayMovieName.setResourceTextColor(colorAsset.textColorName)
-        essayMovieDirector.setResourceTextColor("md_${colorAsset.colorName}_100")
+        binding.essayMovieName.setResourceText(movieName)
+        binding.essayMovieDirector.setResourceText(directors)
+        binding.essayMovieName.setResourceTextColor(colorAsset.textColorName)
+        binding.essayMovieDirector.setResourceTextColor("md_${colorAsset.colorName}_100")
 
-        essayMovieContainer.setOnClickListener {
+        binding.essayMovieContainer.setOnClickListener {
             val id = movie.id ?: return@setOnClickListener
 
             onMovieClicked?.invoke(id)
         }
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_page_essay
     }
 }

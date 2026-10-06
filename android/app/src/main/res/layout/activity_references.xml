@@ -103,7 +103,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:visibility="gone">
 
-        <include layout="@layout/load_view_references" />
+        <include android:id="@+id/coordinatorLayout" layout="@layout/load_view_references" />
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 

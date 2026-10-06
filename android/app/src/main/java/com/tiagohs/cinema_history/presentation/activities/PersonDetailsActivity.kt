@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.animation.Animator
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityPersonDetailsBinding
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -20,17 +22,15 @@ import com.tiagohs.domain.views.PersonDetailsView
 import com.tiagohs.entities.enums.MessageViewType
 import com.tiagohs.helpers.Constants
 import com.tiagohs.helpers.extensions.*
-import kotlinx.android.synthetic.main.activity_person_details.*
-import kotlinx.android.synthetic.main.view_screen_blocked.*
 import java.lang.Exception
 import javax.inject.Inject
 
-class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
+class PersonDetailsActivity: BaseActivity<ActivityPersonDetailsBinding>(), PersonDetailsView {
 
     @Inject
     lateinit var dynamicLinkManager: DynamicLinkManager
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_person_details
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityPersonDetailsBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = R.menu.menu_person
 
     @Inject
@@ -93,11 +93,11 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
     }
 
     fun showScreenBlocked() {
-        screenBlocked.show()
+        binding.screenBlocked.root.show()
     }
 
     fun hideScreenBlocked() {
-        screenBlocked.hide()
+        binding.screenBlocked.root.hide()
     }
 
     override fun setupArguments() {
@@ -136,20 +136,20 @@ class PersonDetailsActivity: BaseActivity(), PersonDetailsView {
     }
 
     override fun startLoading() {
-        loadView.showShimmer(true)
-        loadView.show()
+        binding.loadView.showShimmer(true)
+        binding.loadView.show()
     }
 
     override fun hideLoading() {
-        loadView
+        binding.loadView
             .animate()
             .alpha(0f)
             .setDuration(200)
             .setInterpolator(AccelerateInterpolator(2f))
             .setListener(object : Animator.AnimatorListener {
                 override fun onAnimationEnd(animation: Animator) {
-                    loadView?.hideShimmer()
-                    loadView?.visibility = View.INVISIBLE
+                    binding.loadView?.hideShimmer()
+                    binding.loadView?.visibility = View.INVISIBLE
                 }
 
                 override fun onAnimationRepeat(animation: Animator) {}

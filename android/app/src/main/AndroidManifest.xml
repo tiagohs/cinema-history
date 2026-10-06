@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:dist="http://schemas.android.com/apk/distribution"
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <dist:module dist:instant="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
 
     <application
         android:name=".App"
@@ -18,7 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
-        android:networkSecurityConfig="@xml/network_config_security">
+        android:networkSecurityConfig="@xml/network_config_security"
+        android:enableOnBackInvokedCallback="false"
+        tools:targetApi="33">
 
         <activity
             android:name=".presentation.activities.HomeActivity"
@@ -42,20 +42,10 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data
-                    android:host="cinemahistory.page.link"
-                    android:pathPattern=".*"
-                    android:scheme="https"/>
-                <data android:scheme="https"
-                    android:pathPattern=".*"
-                    android:host="thshoc.com" />
-                <data
-                    android:host="cinemahistory.page.link"
-                    android:pathPattern=".*"
-                    android:scheme="http"/>
-                <data android:scheme="http"
-                    android:pathPattern=".*"
-                    android:host="thshoc.com" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="thshoc.link" />
+                <data android:host="thshoc.com" />
             </intent-filter>
         </activity>
 
@@ -84,12 +74,6 @@
         <activity android:name=".presentation.activities.AboutActivty"
             android:theme="@style/AboutTheme"/>
         <activity android:name=".presentation.activities.ReferenceActivity" />
-
-
-
-        <meta-data
-            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
-            android:value="com.tiagohs.cinema_history.helpers.tools.CastOptionsProvider" />
 
         <!--        <activity android:name=".ui.activities.PresentationActivity" />-->
     </application>

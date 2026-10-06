@@ -3,7 +3,7 @@ package com.tiagohs.uicomponents.audioplayer
 import android.content.Context
 import android.media.MediaPlayer
 import android.util.AttributeSet
-import android.view.View
+import android.view.LayoutInflater
 import android.widget.SeekBar
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -11,7 +11,7 @@ import com.tiagohs.domain.managers.AudioManager
 import com.tiagohs.entities.image.Image
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.uicomponents.R
-import kotlinx.android.synthetic.main.view_audio_player.view.*
+import com.tiagohs.uicomponents.databinding.ViewAudioPlayerBinding
 
 class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null)
     : ConstraintLayout(context, attrs) {
@@ -19,8 +19,9 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
     val audioManager: AudioManager
     private var isReady: Boolean = false
 
+    private val binding = ViewAudioPlayerBinding.inflate(LayoutInflater.from(context), this, true)
+
     init {
-        View.inflate(context, R.layout.view_audio_player, this)
 
         this.audioManager = AudioManager()
 
@@ -62,11 +63,11 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
     }
 
     fun playOrPause() {
-        this.audioManager.play(progressSeekBar.progress) { isPlaying ->
+        this.audioManager.play(binding.progressSeekBar.progress) { isPlaying ->
             if (isPlaying) {
-                controlButton.setImageDrawable(context.getResourceDrawable(R.drawable.ic_pause_black_24dp))
+                binding.controlButton.setImageDrawable(context.getResourceDrawable(R.drawable.ic_pause_black_24dp))
             } else {
-                controlButton.setImageDrawable(context.getResourceDrawable(R.drawable.ic_play_arrow_grey_24dp))
+                binding.controlButton.setImageDrawable(context.getResourceDrawable(R.drawable.ic_play_arrow_grey_24dp))
             }
         }
     }
@@ -76,8 +77,8 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
     }
 
     fun onUpdateTimer(): (currentPosition: Int, elapsedTime: String) -> Unit = { currentPosition, elapsedTime ->
-        progressSeekBar.progress = currentPosition;
-        progressTime.setResourceText(elapsedTime)
+        binding.progressSeekBar.progress = currentPosition;
+        binding.progressTime.setResourceText(elapsedTime)
     }
 
     fun onError(): (message: String, error: Throwable) -> Unit = { message, error ->
@@ -85,13 +86,13 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
     }
 
     private fun configureControll() {
-        controlButton.setOnClickListener {
+        binding.controlButton.setOnClickListener {
             playOrPause()
         }
     }
 
     private fun configureSeekBar() {
-        progressSeekBar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
+        binding.progressSeekBar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {}
             override fun onStartTrackingTouch(seekBar: SeekBar) {}
             override fun onStopTrackingTouch(seekBar: SeekBar) {
@@ -101,35 +102,35 @@ class AudioPlayerView @JvmOverloads constructor(context: Context, attrs: Attribu
     }
 
     private fun prepareResetLayout() {
-        progressSeekBar.isEnabled = false
-        controlButton.isEnabled = false
+        binding.progressSeekBar.isEnabled = false
+        binding.controlButton.isEnabled = false
     }
 
     private fun startLoading() {
-        audioImageContainer.hide()
-        audioLoadingProgress.show()
+        binding.audioImageContainer.hide()
+        binding.audioLoadingProgress.show()
     }
 
     private fun stopLoading() {
-        audioImageContainer.show()
-        audioLoadingProgress.hide()
+        binding.audioImageContainer.show()
+        binding.audioLoadingProgress.hide()
     }
 
     private fun prepareReadyLayout(totalDuration: Int, displayTotalTime: String, displayElapsedTime: String) {
-        progressSeekBar.isEnabled = true
-        controlButton.isEnabled = true
+        binding.progressSeekBar.isEnabled = true
+        binding.controlButton.isEnabled = true
 
-        progressSeekBar.max = totalDuration
-        controlButton.setImageDrawable(context.getResourceDrawable(R.drawable.ic_play_arrow_grey_24dp))
+        binding.progressSeekBar.max = totalDuration
+        binding.controlButton.setImageDrawable(context.getResourceDrawable(R.drawable.ic_play_arrow_grey_24dp))
 
-        progressTime.setResourceText(displayElapsedTime)
-        totalTime.setResourceText(displayTotalTime)
+        binding.progressTime.setResourceText(displayElapsedTime)
+        binding.totalTime.setResourceText(displayTotalTime)
 
         image?.let { loadImage(it) }
     }
 
     private fun loadImage(image: Image) {
-        audioImage.loadImage(image)
+        binding.audioImage.loadImage(image)
     }
 
 }

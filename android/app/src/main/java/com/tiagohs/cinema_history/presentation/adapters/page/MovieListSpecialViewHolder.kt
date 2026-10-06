@@ -1,8 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterPageMovieListSpecialBinding
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.extensions.setupParallaxScrollListener
 import com.tiagohs.cinema_history.presentation.adapters.MovieItemSpecialAdapter
 import com.tiagohs.entities.contents.Content
@@ -11,18 +10,17 @@ import com.tiagohs.entities.dto.MovieFilmographyDTO
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.utils.DateUtils
 import cz.intik.overflowindicator.SimpleSnapHelper
-import kotlinx.android.synthetic.main.adapter_page_movie_list_special.*
 
 class MovieListSpecialViewHolder(
-    view: View,
+    private val binding: AdapterPageMovieListSpecialBinding,
     private val onMovieSelected: ((movieId: Int) -> Unit)? = null
-) : BasePageViewHolder(view) {
+) : BasePageViewHolder(binding) {
 
     private var isSetup = false
 
     override fun bind(item: Content, position: Int) {
         super.bind(item, position)
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val contentMovieList = item as? ContentMovieListSpecial ?: return
         val movies = contentMovieList.movies?.map {
             MovieFilmographyDTO(
@@ -39,25 +37,21 @@ class MovieListSpecialViewHolder(
             onMovieClicked = this@MovieListSpecialViewHolder.onMovieSelected
         }
 
-        recyclerView.apply {
+        binding.recyclerView.apply {
             adapter = personAdapter
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         }
 
-        setupContentFooterInformation(contentMovieList.information)
+        setupContentFooterInformation(binding.footerContainer, contentMovieList.information)
 
         if (!isSetup) {
-            recyclerView.apply {
-                listIndicator.attachToRecyclerView(this)
-                SimpleSnapHelper(listIndicator).attachToRecyclerView(this)
+            binding.recyclerView.apply {
+                binding.listIndicator.attachToRecyclerView(this)
+                SimpleSnapHelper(binding.listIndicator).attachToRecyclerView(this)
 
                 setupParallaxScrollListener()
             }
             isSetup = true
         }
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_page_movie_list_special
     }
 }

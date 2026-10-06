@@ -1,11 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
     compileSdkVersion globalConfiguration["compileSDK"]
-    buildToolsVersion globalConfiguration["buildToolsVersion"]
 
     defaultConfig {
         minSdkVersion globalConfiguration["minSDK"]
@@ -22,14 +20,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
     namespace 'com.tiagohs.entities'
 }
 
 dependencies {
     def dependencies = rootProject.ext.dependencies
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
-
+    
     // Android Core / Material
     implementation dependencies.appcompat
     implementation dependencies.androidxCore
@@ -45,6 +47,12 @@ dependencies {
 
     // Test Tools
     testImplementation dependencies.junit
-    implementation dependencies.testRunner
-    implementation dependencies.espresso
+    androidTestImplementation dependencies.testRunner
+    androidTestImplementation dependencies.espresso
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
 }

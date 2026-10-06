@@ -1,6 +1,9 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
 import android.content.Intent
+import android.view.ViewGroup
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.FragmentAwardsNomineesContentBinding
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -21,16 +24,14 @@ import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.fragment_awards_nominees_content.pageContentList
-import kotlinx.android.synthetic.main.fragment_awards_nominees_content.spinner
 import javax.inject.Inject
 
-class AwardsNomineeFragment : BaseFragment() {
+class AwardsNomineeFragment : BaseFragment<FragmentAwardsNomineesContentBinding>() {
 
     @Inject
     lateinit var settingManager: SettingsManager
 
-    override fun getViewID(): Int = R.layout.fragment_awards_nominees_content
+    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?) = FragmentAwardsNomineesContentBinding.inflate(inflater, container, false)
 
     private var awardMainTopic: AwardMainTopic? = null
     private var awardsPageType: AwardsPageType? = null
@@ -56,8 +57,8 @@ class AwardsNomineeFragment : BaseFragment() {
         val typesSpinnerList = awardMainTopic?.nomineesList?.map { it.year } ?: return
         val context = activity ?: return
 
-        spinner.adapter = ArrayAdapter<String>(context, R.layout.support_simple_spinner_dropdown_item, typesSpinnerList)
-        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        binding.spinner.adapter = ArrayAdapter<String>(context, R.layout.support_simple_spinner_dropdown_item, typesSpinnerList)
+        binding.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val contents = awardMainTopic?.nomineesList?.getOrNull(position)?.content ?: return
 
@@ -72,7 +73,7 @@ class AwardsNomineeFragment : BaseFragment() {
 
     private fun setupReviewList(contentList: List<Content>) {
         if (!isListSetup) {
-            pageContentList.addItemDecoration(
+            binding.pageContentList.addItemDecoration(
                 SpaceOffsetDecoration(
                     10.convertIntToDp(context),
                     SpaceOffsetDecoration.TOP
@@ -82,7 +83,7 @@ class AwardsNomineeFragment : BaseFragment() {
             isListSetup = true
         }
 
-        pageContentList.apply {
+        binding.pageContentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter =
                 PageContentAdapter(contentList, null, settingManager.getMovieLanguage()).apply {
