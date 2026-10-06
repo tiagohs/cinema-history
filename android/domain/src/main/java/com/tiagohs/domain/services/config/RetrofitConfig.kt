@@ -206,16 +206,5 @@ class RetrofitConfig(
         return isConnected
     }
 
-    private fun gsonBuilder(): Gson {
-        FieldNamingStrategy {
-            it.name.lowercase()
-        }
-
-        return GsonBuilder()
-            .registerTypeAdapter(Content::class.java, PageContentDeserializer())
-            .registerTypeAdapter(MainTopic::class.java, MainTopicDeserializer())
-            .registerTypeAdapter(Timeline::class.java, TimelineDeserializer())
-            .registerTypeAdapter(Reference::class.java, ReferencesDeserializer())
-            .create()
-    }
+    private fun gsonBuilder(): Gson = LocalGson.create()
 }

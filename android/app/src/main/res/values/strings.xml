@@ -163,4 +163,16 @@
     <string-array name="movie_language_values">
         <item>pt-BR</item>
     </string-array>
+
+    <!-- Movie details: links to the app's own topics -->
+    <string name="movie_link_mil_movies_subtitle">%1$s is on the list</string>
+    <string name="movie_link_mil_movies_title">1001 Movies You Must See Before You Die %1$s</string>
+    <string name="movie_link_history_subtitle">Read more about the period when %1$s was released</string>
+    <string name="movie_link_history_title">The History of Cinema %1$s</string>
+
+    <!-- References: media type labels (the JSON keeps a fixed code) -->
+    <string name="reference_media_type_book">Book</string>
+    <string name="reference_media_type_series">Series</string>
+    <string name="reference_media_type_movie">Movie</string>
+    <string name="reference_media_type_youtube">YouTube</string>
 </resources>

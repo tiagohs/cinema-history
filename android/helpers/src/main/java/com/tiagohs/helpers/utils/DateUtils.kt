@@ -1,5 +1,6 @@
 package com.tiagohs.helpers.utils
 
+import android.text.format.DateFormat
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
@@ -59,9 +60,26 @@ object DateUtils {
             return dateString
         }
 
-        dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.US)
+        // Ordem dia/mês conforme o idioma (pt/es: dd/MM/yyyy, en: MM/dd/yyyy).
+        dateFormat = localizedFormat("ddMMyyyy")
 
         return dateFormat.format(date)
+    }
+
+    /** Data por extenso no idioma atual (ex.: "3 de maio de 1950" / "May 3, 1950"). */
+    fun formateDateLong(dateString: String): String {
+        val date: Date = try {
+            SimpleDateFormat("yyyy-MM-dd", Locale.US).parse(dateString) ?: return dateString
+        } catch (e: ParseException) {
+            return dateString
+        }
+
+        return localizedFormat("MMMMdyyyy").format(date)
+    }
+
+    private fun localizedFormat(skeleton: String): SimpleDateFormat {
+        val locale = Locale.getDefault()
+        return SimpleDateFormat(DateFormat.getBestDateTimePattern(locale, skeleton), locale)
     }
 
     fun formateDate(format: String, dateString: String): String {

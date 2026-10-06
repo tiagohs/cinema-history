@@ -60,7 +60,8 @@ class ReferenceActivity : BaseActivity<ActivityReferencesBinding>(), ReferenceVi
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val referencesResult = references.getOrNull(position) ?: return
 
-                if (referencesResult.name == "Tudo") {
+                // A aba "Tudo" não tem referências próprias: agrega as das outras abas (independe do idioma).
+                if (referencesResult.references.isNullOrEmpty()) {
                     val all = ArrayList<Reference>()
 
                     references.forEach {

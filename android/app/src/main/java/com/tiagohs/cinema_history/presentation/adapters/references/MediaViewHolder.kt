@@ -22,7 +22,8 @@ class MediaViewHolder(
         binding.mediaName.setResourceText(referenceBook.title)
         binding.mediaAuthor.setResourceText(referenceBook.subtitle)
         binding.mediaDescription.setResourceText(referenceBook.description)
-        binding.mediaType.setResourceText(referenceBook.mediaType)
+        // mediaType é um código fixo no JSON ("Livro", "Série", "Filme", "Youtube"), igual em todos os idiomas.
+        binding.mediaType.text = mediaTypeLabel(referenceBook.mediaType)
         binding.mediaImage.loadImage(referenceBook.image)
 
         binding.mediaContainer.setOnClickListener { onClickListener(referenceBook) }
@@ -49,5 +50,16 @@ class MediaViewHolder(
 
     private fun onClickListener(referenceMedia: ReferenceMedia) {
         onLinkClick?.invoke(referenceMedia.link)
+    }
+
+    private fun mediaTypeLabel(code: String?): String? {
+        val res = when (code) {
+            "Livro" -> R.string.reference_media_type_book
+            "Série" -> R.string.reference_media_type_series
+            "Filme" -> R.string.reference_media_type_movie
+            "Youtube" -> R.string.reference_media_type_youtube
+            else -> return code
+        }
+        return itemView.context.getString(res)
     }
 }

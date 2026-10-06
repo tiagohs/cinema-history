@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters.movie_details
 
+import com.tiagohs.cinema_history.R
 import android.content.Intent
 import com.tiagohs.cinema_history.databinding.AdapterMovieInfoLinkTopicsBinding
 import com.tiagohs.cinema_history.presentation.activities.MilMoviesPresentationActivity
@@ -34,10 +35,13 @@ class MovieInfoLinkTopicsViewHolder(
     }
 
     private fun bindMilMovies(milMoviesMainTopic: MilMoviesMainTopic?, movie: Movie) {
-        val subtitleText =
-            "O filme ${movie.getMovieTitleFromAppLanguage(appLanguage)} faz parte da lista"
-        val titleText =
-            "1001 Filmes para ver antes de morrer ${milMoviesMainTopic?.title?.replaceFirstChar { it.titlecase() }}"
+        val context = itemView.context
+        val subtitleText = context.getString(
+            R.string.movie_link_mil_movies_subtitle, movie.getMovieTitleFromAppLanguage(appLanguage) ?: ""
+        )
+        val titleText = context.getString(
+            R.string.movie_link_mil_movies_title, milMoviesMainTopic?.title?.replaceFirstChar { it.titlecase() } ?: ""
+        )
         val image = milMoviesMainTopic?.image
         val intent =
             MilMoviesPresentationActivity.newIntent(milMoviesMainTopic!!, itemView.context)
@@ -46,9 +50,13 @@ class MovieInfoLinkTopicsViewHolder(
     }
 
     private fun bindHistory(mainTopicItem: MainTopicItem?, movie: Movie) {
-        val subtitleText =
-            "Leia mais sobre o período em que ${movie.getMovieTitleFromAppLanguage(appLanguage)} foi lançado"
-        val titleText = "A História do cinema ${mainTopicItem?.title?.replaceFirstChar { it.titlecase() }}"
+        val context = itemView.context
+        val subtitleText = context.getString(
+            R.string.movie_link_history_subtitle, movie.getMovieTitleFromAppLanguage(appLanguage) ?: ""
+        )
+        val titleText = context.getString(
+            R.string.movie_link_history_title, mainTopicItem?.title?.replaceFirstChar { it.titlecase() } ?: ""
+        )
         val descriptionText = mainTopicItem?.description
         val image = mainTopicItem?.image
         val intent = PresentationActivity.newInstance(itemView.context, mainTopicItem!!)

@@ -20,6 +20,7 @@ on:
     branches:
       - master
       - "upgrade/**"
+      - "feature/**"
     paths:
       - "android/**"
       - ".github/workflows/android-release.yml"
@@ -96,6 +97,19 @@ jobs:
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
           echo "code=$CODE" >> "$GITHUB_OUTPUT"
           echo "Versão: $NAME ($CODE)"
+
+      - name: Validate content (assets/local)
+        # Lê todos os JSONs com o mesmo Gson do app; falha se algum arquivo/tradução quebrar a estrutura.
+        run: |
+          chmod +x gradlew
+          ./gradlew :domain:testDebugUnitTest --stacktrace
+
+      - name: Upload content test report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-test-report
+          path: android/domain/build/reports/tests/
 
       - name: Build release APK and AAB
         run: |

@@ -30,6 +30,10 @@ android {
     buildFeatures {
         buildConfig true
     }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
@@ -66,6 +70,9 @@ dependencies {
     implementation dependencies.retrofit2GsonConverter
     implementation dependencies.retrofit2RxJavaAdapter
 
+    // Testes (LocalContentTest valida assets/local)
+    testImplementation dependencies.junit
+
     // Okhttp3
     implementation dependencies.okhttp3
     implementation dependencies.okhttp3LoggingInterceptor
@@ -75,4 +82,11 @@ kotlin {
     compilerOptions {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }
+}
+
+// O LocalContentTest lê assets/local do app: declara como entrada para o teste rodar de novo quando o conteúdo mudar.
+tasks.withType(Test).configureEach {
+    inputs.dir("${rootProject.projectDir}/app/src/main/assets/local")
+        .withPropertyName("localContent")
+        .withPathSensitivity(PathSensitivity.RELATIVE)
 }
