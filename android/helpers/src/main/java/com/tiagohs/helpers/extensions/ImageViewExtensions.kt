@@ -24,7 +24,7 @@ import com.tiagohs.entities.image.ImageStyle
 import com.tiagohs.entities.enums.ImageScaleType
 import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.helpers.R
-import com.tiagohs.helpers.tools.GlideApp
+
 
 fun ImageView?.setupPreview(image: Image, list: List<Image> = emptyList()) {
     this ?: return
@@ -100,7 +100,7 @@ fun ImageView.loadImage(
     transform: Transformation<Bitmap>? = null,
     onFinished: (() -> Unit)? = null) {
 
-    val glide = GlideApp.with(context)
+    val glide = Glide.with(context)
     val glideRequest = when (image.imageType) {
         ImageType.ONLINE -> {
             glide.load(image.url)

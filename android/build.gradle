@@ -13,6 +13,7 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$buildTools"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:$kspVersion"
         classpath "com.google.gms:google-services:$googleServices"
         classpath "com.google.firebase:firebase-crashlytics-gradle:$crashlyticsPluginVersion"
     }

@@ -1,14 +1,12 @@
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
-    compileSdkVersion globalConfiguration["compileSDK"]
+    compileSdk globalConfiguration["compileSDK"]
 
     defaultConfig {
-        minSdkVersion globalConfiguration["minSDK"]
-        targetSdkVersion globalConfiguration["targetSDK"]
+        minSdk globalConfiguration["minSDK"]
 
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -17,13 +15,13 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled = false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     namespace 'com.tiagohs.data'
@@ -50,7 +48,6 @@ dependencies {
 
     // Retrofit
     implementation dependencies.retrofit2
-    implementation dependencies.retrofit2JacksonConverter
     implementation dependencies.retrofit2GsonConverter
     implementation dependencies.retrofit2RxJavaAdapter
 

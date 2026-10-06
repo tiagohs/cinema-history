@@ -10,15 +10,16 @@ ext {
 
     buildToolsVersion = '36.0.0'
 
-    kotlinVersion = '2.2.21'
+    kotlinVersion = '2.3.21'
+    kspVersion = '2.3.12'
 
-    buildTools = '8.13.2'
-    googleServices = '4.4.4'
-    crashlyticsPluginVersion = '3.0.6'
+    buildTools = '9.4.1'
+    googleServices = '4.5.0'
+    crashlyticsPluginVersion = '3.0.8'
 
     def retrofitVersion = '2.11.0'
     def okHttpVersion = '4.12.0'
-    def daggerVersion = '2.57.2'
+    def daggerVersion = '2.60.1'
     def preferenceVersion = '1.2.1'
 
     def appcompatVersion = '1.7.1'
@@ -28,7 +29,6 @@ ext {
     def browserVersion = '1.8.0'
 
     def betterLinkMovementMethodVersion = '2.2.0'
-    def circleProgressAdAndroidVersion = '1.0'
     def overflowPagerIndicatorVersion = '3.0.1'
     def stfalconImageviewerVersion = '1.0.1'
     def shimmerVersion = '0.5.0'
@@ -66,7 +66,6 @@ ext {
             browser                     : "androidx.browser:browser:${browserVersion}",
 
             betterLinkMovement          : "me.saket:better-link-movement-method:${betterLinkMovementMethodVersion}",
-            circleProgressAd            : "com.github.Adilhusen:circle-progress-ad-android-:${circleProgressAdAndroidVersion}",
             overflowPager               : "com.github.intik:overflow-pager-indicator:${overflowPagerIndicatorVersion}",
             imageViewer                 : "com.github.stfalcon-studio:StfalconImageViewer:${stfalconImageviewerVersion}",
             shimmer                     : "com.facebook.shimmer:shimmer:${shimmerVersion}",
@@ -83,7 +82,7 @@ ext {
 
             glide                       : "com.github.bumptech.glide:glide:${glideVersion}",
             glide_transformations       : "jp.wasabeef:glide-transformations:${glideTransformationsVersion}",
-            glideCompiler               : "com.github.bumptech.glide:compiler:${glideVersion}",
+            glideKsp                    : "com.github.bumptech.glide:ksp:${glideVersion}",
 
             firebaseBom                 : "com.google.firebase:firebase-bom:${firebaseBomVersion}",
             firebaseStorage             : "com.google.firebase:firebase-storage",
@@ -97,7 +96,6 @@ ext {
 
             dagger                      : "com.google.dagger:dagger:$daggerVersion",
             daggerCompiler              : "com.google.dagger:dagger-compiler:$daggerVersion",
-            daggerCompilerKtx           : "com.google.dagger:dagger-compiler:$daggerVersion",
             javaxAnnotation             : "javax.annotation:javax.annotation-api:${javaxAnnotationVersion}",
 
             rxAndroid                   : "io.reactivex.rxjava2:rxandroid:${rxjava2RxandroidVersion}",
@@ -105,7 +103,6 @@ ext {
             rxPreferences               : "com.f2prateek.rx.preferences2:rx-preferences:${rxPreferencesVersion}",
 
             retrofit2                   : "com.squareup.retrofit2:retrofit:$retrofitVersion",
-            retrofit2JacksonConverter   : "com.squareup.retrofit2:converter-jackson:$retrofitVersion",
             retrofit2GsonConverter      : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
             retrofit2RxJavaAdapter      : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
 

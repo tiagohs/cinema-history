@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Recursos carregados pelo NOME (Resources.getIdentifier), vindo dos JSONs em assets/local
+    ou montado em código (ex.: "md_${cor}_500", "background_degrade_${cor}_end").
+    O shrinkResources não consegue detectar esses usos, então eles precisam ser mantidos aqui.
+    Ao adicionar imagens/GIFs novos referenciados pelos JSONs, siga os prefixos abaixo.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/img_*,@drawable/im_*,@drawable/background_degrade_*,@drawable/background_default_degrade_*,@raw/*,@color/*,@string/*" />

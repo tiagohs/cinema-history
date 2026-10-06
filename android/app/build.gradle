@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.devtools.ksp'
 apply plugin: 'com.google.gms.google-services'
 
 apply plugin: 'com.google.firebase.crashlytics'
@@ -9,7 +8,7 @@ apply plugin: 'com.google.firebase.crashlytics'
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
-    compileSdkVersion globalConfiguration["compileSDK"]
+    compileSdk globalConfiguration["compileSDK"]
 
     signingConfigs {
         config {
@@ -24,12 +23,12 @@ android {
     defaultConfig {
         applicationId "com.tiagohs.cinema_history"
 
-        minSdkVersion globalConfiguration["minSDK"]
-        targetSdkVersion globalConfiguration["targetSDK"]
+        minSdk globalConfiguration["minSDK"]
+        targetSdk globalConfiguration["targetSDK"]
 
         // O CI pode sobrescrever o versionCode com -PversionCodeOverride=<n>
-        versionCode project.hasProperty('versionCodeOverride') ? project.property('versionCodeOverride').toInteger() : globalConfiguration["versionCode"]
-        versionName globalConfiguration["versionName"]
+        versionCode = project.hasProperty('versionCodeOverride') ? project.property('versionCodeOverride').toInteger() : globalConfiguration["versionCode"]
+        versionName = globalConfiguration["versionName"]
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String", "THEMOVIEDB_API_KEY", '"dac4d50f24dee29513738d8fa3470a3f"'
@@ -41,15 +40,17 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            // R8: remove código e recursos não usados, otimiza e ofusca.
+            minifyEnabled = true
+            shrinkResources = true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             signingConfig signingConfigs.config
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     namespace 'com.tiagohs.cinema_history'
@@ -82,7 +83,6 @@ dependencies {
 
     // Components and Tools
     implementation dependencies.betterLinkMovement
-    implementation dependencies.circleProgressAd
     implementation dependencies.constrantlayout
     implementation dependencies.overflowPager
     implementation dependencies.imageViewer
@@ -100,7 +100,6 @@ dependencies {
     // Glide
     implementation dependencies.glide
     implementation dependencies.glide_transformations
-    kapt dependencies.glideCompiler
 
     // Firebase
     implementation dependencies.firebaseStorage
@@ -116,7 +115,7 @@ dependencies {
 
     // Dagger
     implementation dependencies.dagger
-    kapt dependencies.daggerCompilerKtx
+    ksp dependencies.daggerCompiler
 
     // Rx
     implementation dependencies.rxAndroid
@@ -125,7 +124,6 @@ dependencies {
 
     // Retrofit
     implementation dependencies.retrofit2
-    implementation dependencies.retrofit2JacksonConverter
     implementation dependencies.retrofit2GsonConverter
     implementation dependencies.retrofit2RxJavaAdapter
 
