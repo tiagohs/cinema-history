@@ -28,6 +28,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import i18n_lib as L  # noqa: E402
+import regional as R  # noqa: E402
 
 WORK_DIR = os.path.join(L.HERE, "work")
 TMDB_LANG = {"pt": "pt-BR", "en": "en-US", "es": "es-MX"}
@@ -340,6 +341,7 @@ def build_language(lang: str):
     tr = L.load_translations(lang)
     cache = L.load_json(L.TMDB_CACHE) if os.path.exists(L.TMDB_CACHE) else {"movie": {}}
     docs, missing, stale, titles_missing = {}, 0, 0, 0
+    links, watch_cache = R.load_links(lang), R.load_watch_cache()
     for rel in L.iter_json_files(L.SOURCE_LANG):
         src_doc = L.load_json(os.path.join(L.lang_dir(L.SOURCE_LANG), rel))
         doc = copy.deepcopy(src_doc)
@@ -363,7 +365,7 @@ def build_language(lang: str):
                 continue
             container, key = L.resolve_pointer(doc, sp.pointer)
             container[key] = info[lang]
-        docs[rel] = doc
+        docs[rel] = R.regionalize(doc, rel, lang, links, watch_cache)
     return docs, {"missing": missing, "stale": stale, "titles_missing": titles_missing}
 
 
@@ -398,6 +400,7 @@ def cmd_validate(args):
     for rel in sorted(dst_files - src_files):
         errors.append(f"{rel}: sobrando em {args.lang}")
 
+    links, watch_cache = R.load_links(args.lang), R.load_watch_cache()
     for rel in sorted(src_files & dst_files):
         src = L.load_json(os.path.join(L.lang_dir(L.SOURCE_LANG), rel))
         dst = L.load_json(os.path.join(L.lang_dir(args.lang), rel))
@@ -405,7 +408,9 @@ def cmd_validate(args):
         walked = L.walk(src, rel)
         allowed.update(o.pointer for o, _ in walked.texts)
         allowed.update(s.pointer for s in walked.specials)
-        _compare(src, dst, [], allowed, rel, errors)
+        # Base de comparação: pt com as adaptações regionais (links, onde assistir, críticas)
+        expected = R.expected_structure(src, rel, args.lang, links, watch_cache)
+        _compare(expected, dst, [], allowed, rel, errors)
 
     if errors:
         print(f"{len(errors)} problema(s) em '{args.lang}':")
@@ -445,12 +450,31 @@ def _compare(a, b, parts, allowed, rel, errors):
         errors.append(f"{rel} {ptr}: valor não traduzível foi alterado ({str(a)[:40]!r} -> {str(b)[:40]!r})")
 
 
+def cmd_watch(args):
+    """Baixa do TMDB os provedores de streaming por país (cache tmdb/watch.json)."""
+    cache = R.load_watch_cache()
+    ids = R.watch_movie_ids()
+    todo = [i for i in ids if str(i) not in cache or args.refresh]
+    print(f"Filmes com 'onde assistir': {len(ids)}; a buscar: {len(todo)}")
+    key = _tmdb_key()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+        for movie_id, info in zip(todo, pool.map(lambda i: R.fetch_watch(key, i), todo)):
+            if info is not None:
+                cache[str(movie_id)] = info
+    cache = dict(sorted(cache.items(), key=lambda kv: int(kv[0])))
+    L.dump_json(R.WATCH_CACHE, cache)
+    for lang, region in R.REGION.items():
+        with_any = sum(1 for v in cache.values() if (v.get(region) or {}).get("types"))
+        print(f"{lang} ({region}): {with_any}/{len(cache)} filmes com algum provedor conhecido")
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
 
     s = sub.add_parser("status"); s.add_argument("--lang", default="en"); s.set_defaults(fn=cmd_status)
     s = sub.add_parser("tmdb"); s.add_argument("--refresh", action="store_true"); s.set_defaults(fn=cmd_tmdb)
+    s = sub.add_parser("watch"); s.add_argument("--refresh", action="store_true"); s.set_defaults(fn=cmd_watch)
     s = sub.add_parser("export"); s.add_argument("--lang", required=True); s.add_argument("--groups")
     s.add_argument("--max-chars", type=int, default=60000); s.add_argument("--max-batches", type=int, default=0)
     s.add_argument("--start", type=int, default=1); s.set_defaults(fn=cmd_export)

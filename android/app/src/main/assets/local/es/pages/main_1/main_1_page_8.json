@@ -14,11 +14,11 @@
       "title": "El Manifiesto surrealista",
       "click": {
         "screen": "link_online",
-        "button_text": "Haz clic aquí para leer el Manifiesto en portugués",
+        "button_text": "Leer sobre el Manifiesto del surrealismo (Wikipedia)",
         "parameters": [
           {
             "key": "LINK",
-            "value": "http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=2320"
+            "value": "https://es.wikipedia.org/wiki/Manifiesto_del_surrealismo"
           }
         ]
       },

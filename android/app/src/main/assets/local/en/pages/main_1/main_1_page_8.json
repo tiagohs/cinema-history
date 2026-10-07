@@ -14,11 +14,11 @@
       "title": "The Surrealist Manifesto",
       "click": {
         "screen": "link_online",
-        "button_text": "Click here to read the Manifesto in Portuguese",
+        "button_text": "Read about the Surrealist Manifesto (Wikipedia)",
         "parameters": [
           {
             "key": "LINK",
-            "value": "http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=2320"
+            "value": "https://en.wikipedia.org/wiki/Surrealist_Manifesto"
           }
         ]
       },

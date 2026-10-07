@@ -245,7 +245,7 @@ class MovieDetailsActivity : BaseActivity<ActivityMovieDetailsBinding>(), MovieD
             )
         }
 
-        movie.extraInfo?.watchOn?.let {
+        movie.extraInfo?.watchOn?.takeIf { it.isNotEmpty() }?.let {
             listOfMovieList.add(
                 MovieInfo(
                     MovieInfoType.INFO_WATCH_ON,
@@ -300,7 +300,7 @@ class MovieDetailsActivity : BaseActivity<ActivityMovieDetailsBinding>(), MovieD
             )
         }
 
-        movie.extraInfo?.reviewResults?.let {
+        movie.extraInfo?.reviewResults?.takeIf { it.isNotEmpty() }?.let {
             listOfMovieList.add(
                 MovieInfo(
                     MovieInfoType.INFO_REVIEWS,

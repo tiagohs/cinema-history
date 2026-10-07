@@ -44,6 +44,24 @@ python3 content-i18n/i18n.py validate --lang en
 - Nomes de pessoas, canais e veículos não são traduzidos.
 - Espanhol: variante latino-americana neutra.
 
+## Adaptação regional (links, onde assistir, críticas)
+
+Além do texto, o `apply` adapta o que é específico do Brasil (`regional.py`):
+
+- **Onde assistir** (`specials/movies.json → watchOn`): refeito por país com os provedores que o
+  TMDB/JustWatch confirmam (en → EUA, es → México). Links diretos do pt são ajustados ao país
+  (iTunes `/us/`, Google Play `gl=`, Netflix sem `/br/`); sem link direto, aponta para a página
+  "onde assistir" do TMDB no país. Serviços que o app não exibe viram um item "Mais opções".
+  Cache: `tmdb/watch.json` (`python3 content-i18n/i18n.py watch --refresh` para atualizar).
+- **Críticas** (`review_results`): fora do pt, só as críticas em inglês (`en-US`).
+- **Links em português** (livros, glossário, manifesto, séries): `regional/<idioma>.json` mapeia o
+  URL do pt para o equivalente (Amazon do país com a edição local, Wikipedia do idioma etc.) e pode
+  trocar `title`, `subtitle` e `button_text` do item. Edite esse arquivo para ajustar um link.
+- **Bibliografia** (artigos citados em `references.json`) não muda: é a fonte real do texto original.
+
+O `validate` compara cada idioma com o pt já adaptado, então essas diferenças são esperadas e
+qualquer outra continua sendo erro.
+
 ## Liberar um idioma no app
 
 Quando `status` mostrar 100% e a revisão estiver feita:
