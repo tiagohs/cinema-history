@@ -25,7 +25,7 @@ struct AboutLinkItemView: View {
 struct AboutLinkItemView_Previews: PreviewProvider {
     static var previews: some View {
         AboutLinkItemView(
-            link: "https://animated-stickers.s3-sa-east-1.amazonaws.com/history_terms.html",
+            link: "https://website-cb5.pages.dev/cinema-history/termos/",
             text: "Termos do Aplicativo"
         )
     }
