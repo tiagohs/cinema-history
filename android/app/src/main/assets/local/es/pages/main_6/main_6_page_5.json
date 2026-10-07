@@ -424,7 +424,7 @@
     {
       "type": "link_screen",
       "subtitle": "Los acontecimientos que marcaron al mundo",
-      "title": "Timeline de Acontecimentos de 1990 a 2009",
+      "title": "Línea de tiempo de acontecimientos de 1990 a 2009",
       "click": {
         "screen": "timeline",
         "parameters": [
@@ -441,7 +441,7 @@
           "scale_type": "center_crop"
         }
       },
-      "description": "O cinema independente dos anos 90 domina as telas e as animações entram em um novo terreno com a Pixar. O CGI atinge um novo patamar com Matrix e os cinemas latino americanos e europeus chamam a atenção do mundo. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema entre 1940 a 1959."
+      "description": "El cine independiente de los años 90 domina las pantallas y la animación entra en un nuevo terreno con Pixar. El CGI alcanza un nuevo nivel con Matrix y los cines latinoamericano y europeo llaman la atención del mundo. Haz clic aquí y descubre de forma cronológica los principales acontecimientos del cine entre 1990 y 2009."
     }
   ]
 }

@@ -134,13 +134,25 @@ def _fetch_movie(key: str, movie_id: int) -> dict | None:
                     return title
         return None
 
-    return {
+    en = data.get("title") or find("en", "US") or original
+    return _latin_fallback({
         "original": original,
         "year": (data.get("release_date") or "")[:4],
         "pt": find("pt", "BR") or find("pt") or original,
-        "en": data.get("title") or find("en", "US") or original,
+        "en": en,
         "es": find("es", "MX") or find("es") or original,
-    }
+    })
+
+
+_NON_LATIN = re.compile(r"[^\u0000-\u024F\u1E00-\u1EFF\u2000-\u206F\s]")
+
+
+def _latin_fallback(info: dict) -> dict:
+    """Sem título traduzido, o TMDB devolve o original (às vezes em hindi, chinês...): usa o inglês."""
+    for lang in ("pt", "es"):
+        if info.get(lang) and _NON_LATIN.search(info[lang]) and info.get("en") and not _NON_LATIN.search(info["en"]):
+            info[lang] = info["en"]
+    return info
 
 
 def _referenced_movie_ids(entries, specials) -> set[int]:
