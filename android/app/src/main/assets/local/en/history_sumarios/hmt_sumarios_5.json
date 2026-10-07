@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "title": "Western European Cinema",
+    "description": "The 1970s in Europe were marked by a bold, angry and talented new generation making powerful, controversial films.",
+    "image": {
+      "image_type": "local",
+      "url": "img_gritos_sussurros",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "New German Cinema",
+    "description": "In the 1970s, the cinema of the Federal Republic of Germany saw its most exciting renewal since the 1920s.",
+    "image": {
+      "image_type": "local",
+      "url": "img_lagrimas_amargas",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "The New Era of Horror",
+    "description": "In terms of both quantity and quality, the 1970s were the blood meridian of the horror genre.",
+    "image": {
+      "image_type": "local",
+      "url": "img_halloween_1978",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "'70s Crime Films",
+    "description": "The 1970s and 1980s were troubled years in American life, with serial killers and the end of an unpopular war. And that was reflected in the crime films released during the period.",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_godfather",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Blaxploitation Cinema",
+    "description": "The movement that put Black artists in leading roles on screen.",
+    "image": {
+      "image_type": "local",
+      "url": "img_shaft",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Paranoia and Conspiracy Theories in Hollywood",
+    "description": "The 1970s were troubled, paranoid years, and Hollywood couldn't help but mirror that on screen.",
+    "image": {
+      "image_type": "local",
+      "url": "img_all_the_presidents_men",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Complex American Dramas",
+    "description": "With complex, fascinating dramas, the 1970s were one of the best decades of American cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_manhattan",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "The Birth of the Blockbuster",
+    "description": "American blockbusters gained ground in the US with the release of Jaws, catching the attention of the major studios and producers.",
+    "image": {
+      "image_type": "local",
+      "url": "img_tubarao",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "The Australian New Wave",
+    "description": "The new era of Australian cinema, with its superbly produced dramas, Ozploitation and comedies that were hits around the world.",
+    "image": {
+      "image_type": "local",
+      "url": "img_crocodilo_dundee",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Asian Cinema",
+    "description": "1970s: considered both the best and the worst years of Asian cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_hsia_nu",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "A New Era for Musicals",
+    "description": "The 1970s modernized the musical, focusing on subjects the genre had never explored before.",
+    "image": {
+      "image_type": "local",
+      "url": "img_flashdance",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "title": "African Cinema",
+    "description": "The boom of African cinema in the 1970s and 1980s.",
+    "image": {
+      "image_type": "local",
+      "url": "img_yeelen",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "title": "Vietnam on Film",
+    "description": "The legacy of Vietnam in the cinema of the 1970s and 1980s was enormous, inspiring landmark films.",
+    "image": {
+      "image_type": "local",
+      "url": "img_apocalypse_now",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "title": "The New Era of Action Films",
+    "description": "Action films took the spotlight in the 1970s and, above all, in the 1980s.",
+    "image": {
+      "image_type": "local",
+      "url": "img_exterminador_do_futuro",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "title": "'80s Comedies",
+    "description": "The decade in which comedies drew crowds to the movies and defined a generation.",
+    "image": {
+      "image_type": "local",
+      "url": "img_clube_do_cinco",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "title": "The New Psychological Drama",
+    "description": "Psychological dramas took the spotlight in the 1970s and 1980s, with directors such as David Lynch and Bernardo Bertolucci. ",
+    "image": {
+      "image_type": "local",
+      "url": "img_veludo_azul",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "title": "Canadian Cinema",
+    "description": "The new era of Canadian film.",
+    "image": {
+      "image_type": "local",
+      "url": "img_a_mosca",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "title": "Chinese Cinema",
+    "description": "The revolution started by the Fifth Generation of Chinese cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_o_sorgo_vermelho",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

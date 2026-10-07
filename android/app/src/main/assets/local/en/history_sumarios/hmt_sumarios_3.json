@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Film Noir",
+    "description": "Emerging in the United States around the 1940s and '50s, one of cinema's most important \"genres\" is full of political subtext, corruption, crime plots and memorable archetypes – the femme fatale, for example.",
+    "image": {
+      "image_type": "local",
+      "url": "img_double_indeminity",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Asian Cinema",
+    "description": "Asian cinema, also known as \"Eastern cinema\", gained greater worldwide recognition in the 1950s with the screening of Akira Kurosawa's Rashomon (1950).",
+    "image": {
+      "image_type": "local",
+      "url": "img_rashomon",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Italian Neorealism",
+    "description": "Emerging in the 1940s and marked by stories about the working class shot with very few resources, Italian Neorealism was an important movement that sought to portray living conditions, oppression and inequality in post-World War II Italy.",
+    "image": {
+      "image_type": "local",
+      "url": "img_ladri_di_biciclette",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Cinema in France",
+    "description": "A turbulent period for the French film industry, the 1950s were marked by an Oedipal conflict between the new generation of filmmakers and their predecessors.",
+    "image": {
+      "image_type": "local",
+      "url": "img_bob_le_flambeur",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Nordic Cinema",
+    "description": "The decade in which the world witnessed the rebirth of Nordic cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_setimo_elo",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "The Hollywood Western",
+    "description": "The most American of genres grew even more popular in the 1950s, with Hollywood making more than 800 films.",
+    "image": {
+      "image_type": "local",
+      "url": "img_john_wayne_rio_bravo",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Postwar Hollywood",
+    "description": "The popularity Hollywood films enjoyed abroad during the war was expected to continue into the postwar years. But economic, cultural, social and political circumstances, along with the rise of a new form of entertainment - television - curbed the power and growth of one of the most profitable industries in the United States.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rear_window",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "Rebel Youth",
+    "description": "The 1950s ushered in a new era of bikers, film noir and rebellious youth.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rebel_without_a_caust",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "The French New Wave",
+    "description": "What the film movement was, its main aesthetic traits, its most important films and filmmakers, and its legacy for cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_a_bout_de_souffle",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Hollywood Musicals",
+    "description": "The decade in which Hollywood musicals took on a brash, vivid, militant tone.",
+    "image": {
+      "image_type": "local",
+      "url": "img_singin_in_the_rain",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "The Cold War on Film ",
+    "description": "The paranoia of American society after the war and during the Cold War gave cinema some great works.",
+    "image": {
+      "image_type": "local",
+      "url": "img_it_came_from_outer_space",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

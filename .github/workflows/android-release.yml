@@ -129,7 +129,7 @@ jobs:
           chmod +x gradlew
           EXTRA=""
           if [ -n "${{ inputs.version_code }}" ]; then EXTRA="-PversionCodeOverride=${{ inputs.version_code }}"; fi
-          ./gradlew assembleRelease bundleRelease --stacktrace $EXTRA
+          ./gradlew assembleRelease bundleRelease assembleDebug --stacktrace $EXTRA
 
       - name: Collect binaries
         id: files
@@ -139,6 +139,9 @@ jobs:
           cp app/build/outputs/apk/release/*.apk "$GITHUB_WORKSPACE/dist/$BASE.apk"
           cp app/build/outputs/bundle/release/*.aab "$GITHUB_WORKSPACE/dist/$BASE.aab"
           cp app/build/outputs/mapping/release/mapping.txt "$GITHUB_WORKSPACE/dist/$BASE-mapping.txt" 2>/dev/null || true
+          # APK de debug: prévia dos idiomas em tradução (en/es aparecem em Configurações). Não vai para o release.
+          mkdir -p "$GITHUB_WORKSPACE/dist-debug"
+          cp app/build/outputs/apk/debug/*.apk "$GITHUB_WORKSPACE/dist-debug/$BASE-debug-preview.apk"
           ls -la "$GITHUB_WORKSPACE/dist"
 
       - name: Upload workflow artifacts
@@ -146,6 +149,13 @@ jobs:
         with:
           name: cinema-history-v${{ steps.version.outputs.name }}-${{ steps.version.outputs.code }}
           path: dist/*
+          retention-days: 30
+
+      - name: Upload debug preview APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: cinema-history-v${{ steps.version.outputs.name }}-${{ steps.version.outputs.code }}-debug-preview
+          path: dist-debug/*
           retention-days: 30
 
       - name: Create or update draft release

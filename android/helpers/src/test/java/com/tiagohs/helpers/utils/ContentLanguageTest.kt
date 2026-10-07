@@ -24,6 +24,7 @@ class ContentLanguageTest {
 
     @Test
     fun sourceLanguageIsAlwaysEnabled() {
+        assertTrue(ContentLanguage.SOURCE in ContentLanguage.RELEASED)
         assertTrue(ContentLanguage.SOURCE in ContentLanguage.ENABLED)
     }
 }

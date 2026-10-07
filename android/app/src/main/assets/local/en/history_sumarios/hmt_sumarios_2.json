@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Gothic Horror",
+    "description": "The first decades of film history brought many attempts to adapt Gothic novels for the screen, and works such as Frankenstein and Dracula still shape the popular imagination today.",
+    "image": {
+      "image_type": "local",
+      "url": "img_frankenstein_2",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Gangster Films",
+    "description": "The early 1930s, the so-called \"golden age of turbulence\", was a period when censorship was suspended. Mae West was at her peak, wildly surreal musicals were being made and armed gangsters were lurking.",
+    "image": {
+      "image_type": "local",
+      "url": "img_little_caesar",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Color in Film",
+    "description": "In the early days of cinema, films were dominated by black and white. It was a long road from frame-by-frame hand painting to the refinement seen in The Wizard of Oz.",
+    "image": {
+      "image_type": "local",
+      "url": "img_wizard_oz",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "The First Animated Films",
+    "description": "In 1908, Fantasmagorie, by Émile Cohl (1857-1938), fascinated audiences by showing what animation could do. Twenty-nine years later, the first animated feature film was released, opening the doors of imagination on the big screen.",
+    "image": {
+      "image_type": "local",
+      "url": "img_pinoquio",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Society on Screen",
+    "description": "During the economic turmoil of the Great Depression, movies offered an affordable window onto the world for the price of a ticket.",
+    "image": {
+      "image_type": "local",
+      "url": "img_kane",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Hollywood in the Shadow of War",
+    "description": "Even before the United States entered the war, Hollywood had been turning out a series of films with propagandistic leanings and, weeks before Pearl Harbor, was already making patriotic war movies.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_dictator",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Depression-Era Musicals",
+    "description": "Musicals dominated movie theaters in cinema's early decades, and in the 1930s they captured the recklessness and feverish energy people showed in the face of the Great Depression.",
+    "image": {
+      "image_type": "local",
+      "url": "img_top_hat",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "Sound and Comedy",
+    "description": "When talkies replaced silent films in the late 1920s, comedians took radical steps to adapt to the new possibilities, and new masters of comedy took the spotlight.",
+    "image": {
+      "image_type": "local",
+      "url": "img_laurel_and_hardy",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "The Romantic Comedy of the 1930s",
+    "description": "It makes perfect sense that the name of the most American of all film genres comes from baseball. The screwball comedy, a kind of grandfather of the romantic comedy, is made up of fast-paced, irreverent pictures, and it peaked in the 1930s and 1940s.",
+    "image": {
+      "image_type": "local",
+      "url": "img_bringing_up_baby",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

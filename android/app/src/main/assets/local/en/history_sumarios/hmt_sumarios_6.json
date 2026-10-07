@@ -1,0 +1,287 @@
+[
+  {
+    "id": 1,
+    "title": "European Period Drama",
+    "description": "The artistic freedom of the '90s in European period dramas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_shakespeare_in_love",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Drama in Hollywood",
+    "description": "The dramas of the 1990s, with the return of past masters and new critical views of American society.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rescue_of_soldier_ryan",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "American Independent Cinema",
+    "description": "The heyday of American independent cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_pulp_fiction_2",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "British and Irish Cinema",
+    "description": "The decade in which great actors rose to prominence on screens around the world.",
+    "image": {
+      "image_type": "local",
+      "url": "img_traninspotting",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "European Cinema in the '90s",
+    "description": "The diverse European cinema of the '90s.",
+    "image": {
+      "image_type": "local",
+      "url": "img_funny_games",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "CGI and the New Era of Special Effects",
+    "description": "The 1990s brought a new era of special effects, with films that completely changed cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_avatar",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "A New Era for African American Cinema",
+    "description": "One of the most important periods in African American cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_malcolm_x",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "The Animation Renaissance",
+    "description": "With new studios and talent, Disney was no longer the center of animation production, while new technologies emerged.",
+    "image": {
+      "image_type": "local",
+      "url": "img_toy_story",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "Comedies of the 1990s and 2000s",
+    "description": "The new era of romantic comedies and the boom of gross-out comedies.",
+    "image": {
+      "image_type": "local",
+      "url": "img_pretty_woman",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Horror: A New Beginning",
+    "description": "In the 1990s and 2000s, directors sought a new purpose for horror, experimenting with new ways to scare and shock. That experimentation gave rise to subgenres such as found footage, splatter and J-horror.",
+    "image": {
+      "image_type": "local",
+      "url": "img_saw",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "East Asian Cinema ",
+    "description": "Visually poetic martial arts films, together with the new Korean cinema, caught the world's attention.",
+    "image": {
+      "image_type": "local",
+      "url": "img_oldboy",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "title": "The Iranian New Wave",
+    "description": "A generation whose ideas won over audiences around the world.",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_circle",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "title": "Latin American Cinema",
+    "description": "The 1990s and 2000s brought Latin American film classics and the rise of new directors who conquered box offices and awards around the world.",
+    "image": {
+      "image_type": "local",
+      "url": "img_cidade_deus_2",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "title": "Family Blockbusters",
+    "description": "Blockbusters kept dominating the box office, relying more and more on CGI and focusing on content for the whole family.",
+    "image": {
+      "image_type": "local",
+      "url": "img_harry_potter",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "title": "Superhero Movies ",
+    "description": "From Superman to The Dark Knight. How superhero movies evolved over time and became a gold mine for the studios.",
+    "image": {
+      "image_type": "local",
+      "url": "img_spider_man_2002",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "title": "British Cinema",
+    "description": "The diverse British cinema of the 21st century.",
+    "image": {
+      "image_type": "local",
+      "url": "img_quem_quer_ser_um_milionario",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "title": "21st-Century European Cinema",
+    "description": "A portrait of European cinema in the 21st century.",
+    "image": {
+      "image_type": "local",
+      "url": "img_dancando_no_escuro",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "title": "Bollywood",
+    "description": "The new era of Indian cinema.",
+    "image": {
+      "image_type": "local",
+      "url": "img_asoka",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 19,
+    "title": "Post-9/11 American Drama ",
+    "description": "The influence the 9/11 tragedy had on American drama in the early 21st century.",
+    "image": {
+      "image_type": "local",
+      "url": "img_sangue_negro",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

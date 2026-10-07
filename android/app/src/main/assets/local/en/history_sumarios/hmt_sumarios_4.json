@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "The British New Wave ",
+    "description": "Driven by a group of critics turned filmmakers, the movement produced great films portraying the British working class.",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_loneliness_of_the_long_distance_runner",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Latin American Cinema",
+    "description": "The 1960s were a fervent decade for Latin American cinema, led by Cinema Novo in Brazil.",
+    "image": {
+      "image_type": "local",
+      "url": "img_deus_e_o_diabo",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "New Hollywood",
+    "description": "A new era arrived in Hollywood in the 1960s, with new directors who would go on to become landmarks of the craft.",
+    "image": {
+      "image_type": "local",
+      "url": "img_dr_fantastico",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Sex and Taboos on Film",
+    "description": "The effervescent 1960s brought a new attitude toward sex, youth, drugs and personal freedom, influencing the arts as a whole and pushing censorship to its limits.",
+    "image": {
+      "image_type": "local",
+      "url": "img_a_primeira_noite_de_um_homem",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Spy Films",
+    "description": "The decade in which spy films gained great examples such as the 007 series.",
+    "image": {
+      "image_type": "local",
+      "url": "img_007_sean_connery",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Science Fiction on Film",
+    "description": "After a considerable golden age, science fiction films came of age in the 1960s.",
+    "image": {
+      "image_type": "local",
+      "url": "img_2001_hal",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Modern Horror on Film",
+    "description": "Much more than a series of scares and chills, horror films of the 1960s often used the genre as a vehicle to address broader themes.",
+    "image": {
+      "image_type": "local",
+      "url": "img_psicose",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "The Spaghetti Western ",
+    "description": "The decade in which the Western began its rebirth in Europe.",
+    "image": {
+      "image_type": "local",
+      "url": "img_tres_homens_em_conflito",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

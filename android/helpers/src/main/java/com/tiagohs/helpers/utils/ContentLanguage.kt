@@ -25,7 +25,19 @@ object ContentLanguage {
     const val SOURCE = PORTUGUESE
 
     /** Idiomas com conteúdo traduzido, completo e revisado. Adicione ENGLISH/SPANISH quando estiverem prontos. */
-    val ENABLED: List<String> = listOf(PORTUGUESE)
+    val RELEASED: List<String> = listOf(PORTUGUESE)
+
+    /** Idiomas ativos nesta execução: [RELEASED], mais os de prévia em builds de debug (ver [enablePreview]). */
+    var ENABLED: List<String> = RELEASED
+        private set
+
+    /**
+     * Só para builds de DEBUG: libera idiomas ainda em tradução para revisão no aparelho.
+     * Textos ainda não traduzidos aparecem em português.
+     */
+    fun enablePreview(languages: List<String>) {
+        ENABLED = (RELEASED + languages).distinct()
+    }
 
     /** Idioma do conteúdo a usar agora (pt, en ou es). */
     fun current(): String {
