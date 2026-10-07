@@ -215,7 +215,7 @@
     {
       "type": "link_screen",
       "subtitle": "Los acontecimientos que marcaron al mundo",
-      "title": "Timeline de Acontecimentos de 2010 até atualmente",
+      "title": "Cronología de acontecimientos desde 2010 hasta la actualidad",
       "click": {
         "screen": "timeline",
         "parameters": [
@@ -232,7 +232,7 @@
           "scale_type": "center_crop"
         }
       },
-      "description": "O terror social ganha as bilheterias com Corra!, de Jordan Peele; o terror clássico de casa mal assombrada e exorcismo se mantém vivo com Invocação do mal e o horror psicológico ganha novas possibilidades com Babadook e A Bruxa. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema de 2010 até hoje."
+      "description": "El terror social conquista la taquilla con ¡Huye!, de Jordan Peele; el terror clásico de casas embrujadas y exorcismos se mantiene vivo con El conjuro, y el horror psicológico gana nuevas posibilidades con Babadook y La bruja. Haz clic aquí y mira en orden cronológico los principales acontecimientos del cine desde 2010 hasta hoy."
     }
   ]
 }
