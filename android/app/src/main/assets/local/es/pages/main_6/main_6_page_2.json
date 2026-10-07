@@ -4153,7 +4153,7 @@
     {
       "type": "text",
       "content_text": "<a href=\"https://_{type: 'screen', 'id': 39, 'screen_type': person}\">Sam Mendes</a> (n-1965) explodiu para o sucesso em 1999 com <a href=\"https://_{type: 'screen', 'id': 14, 'screen_type': movie}\">American Beauty</a> (BR: Beleza americana, 1999), que deu a <a href=\"https://_{type: 'screen', 'id': 1979, 'screen_type': person}\">Kevin Spacey</a> (n-1959) um dos melhores papeis de sua carreira (junto a Frank Underwood, em <i>House of Cards</i>), e lançou um olhar fatigado em relação à meia-idade e a vida doméstica americana. <a href=\"https://_{type: 'screen', 'id': 4995, 'screen_type': movie}\">Boogie Nights</a> (BR: Boogie Nights - Prazer Sem Limites, 1997), dirigido com segurança notável por <a href=\"https://_{type: 'screen', 'id': 4762, 'screen_type': person}\">Paul Thomas Anderson</a> (n-1970), recriou a cena pornô de Los Angeles nos anos 1970 e 1980, sugerindo a obra que o tornaria um dos cineastas mais originais da década seguinte.",
-      "content_credits": "Resumo baseado no texto de <i>Ian Haydn Smith</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+      "content_credits": "Resumen basado en el texto de <i>Ian Haydn Smith</i>, publicado en el libro \"<i>Todo sobre cine</i>\" de <i>Philip Kemp</i>"
     },
     {
       "type": "movie_list",
@@ -4654,7 +4654,7 @@
     },
     {
       "type": "link_screen",
-      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "subtitle": "Los acontecimientos que marcaron al mundo",
       "title": "Timeline de Acontecimentos de 1990 a 2009",
       "click": {
         "screen": "timeline",

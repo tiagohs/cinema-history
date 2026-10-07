@@ -105,7 +105,7 @@
     {
       "type": "text",
       "content_text": "Este, por sua vez cedeu o posto de produção coreana mais rentável de todos os tempos para <a href=\"https://_{type: 'screen', 'id': 1255, 'screen_type': movie}\">Gwoemul</a> (BR: O hospedeiro, 2006) um filme de monstros com toques políticos. Apesar da globalização, tudo indica que o cinema asiático é capaz de cativar os espectadores de seus próprios paises.",
-      "content_credits": "Resumo baseado no texto de <i>Alexander Jacoby</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+      "content_credits": "Resumen basado en el texto de <i>Alexander Jacoby</i>, publicado en el libro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
     },
     {
       "type": "movie_list",
@@ -382,7 +382,7 @@
     },
     {
       "type": "link_screen",
-      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "subtitle": "Los acontecimientos que marcaron al mundo",
       "title": "Timeline de Acontecimentos de 1990 a 2009",
       "click": {
         "screen": "timeline",

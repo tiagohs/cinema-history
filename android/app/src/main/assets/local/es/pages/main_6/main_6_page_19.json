@@ -69,7 +69,7 @@
     {
       "type": "text",
       "content_text": "Na trilha do 11 de setembro, os cineastas se pegaram olhando para o passado, para a história americana e para as raízes da psique nacional. <a href=\"https://_{type: 'screen', 'id': 4762, 'screen_type': person}\">Paul Thomas Anderson</a> (n-1970) dirigiu <a href=\"https://_{type: 'screen', 'id': 7345, 'screen_type': movie}\">There Will Be Blood</a> (BR: Sangue Negro, 2007) e transmitiu a mensagem que muitos filmes contemporâneos exploraram durante a administração Bush - que o poder corrompe e engendra a paranoia e o medo naqueles que se beneficiam dele. Com <a href=\"https://_{type: 'screen', 'id': 3131, 'screen_type': movie}\">Gangs of New York</a> (BR: Gangues de Nova York, 2002) e <a href=\"https://_{type: 'screen', 'id': 2567, 'screen_type': movie}\">The Aviator</a> (BR: O Aviador, 2004), <a href=\"https://_{type: 'screen', 'id': 1032, 'screen_type': person}\">Martin Scorsese</a> (n-1942) examinou o nascimento dos Estados Unidos moderno - capitalismo, tensões raciais e, nos personagens do brutal Bill, o açougueiro, e do instável milionário Howard Hughes, os perigos da ganancia e do isolacionismo.",
-      "content_credits": "Resumo baseado no texto de <i>Ian Haydn Smith</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+      "content_credits": "Resumen basado en el texto de <i>Ian Haydn Smith</i>, publicado en el libro \"<i>Todo sobre cine</i>\" de <i>Philip Kemp</i>"
     },
     {
       "type": "movie_list",
@@ -348,7 +348,7 @@
     },
     {
       "type": "link_screen",
-      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "subtitle": "Los acontecimientos que marcaron al mundo",
       "title": "Timeline de Acontecimentos de 1990 a 2009",
       "click": {
         "screen": "timeline",

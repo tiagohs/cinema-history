@@ -4091,7 +4091,7 @@
     {
       "type": "text",
       "content_text": "Em <a href=\"https://_{type: 'screen', 'id': 19995, 'screen_type': movie}\">Avatar</a> (2009), o filme mais comercialmente bem-sucedido já feito até o momento (seria ultrapassado dez anos depois, com <a href=\"https://_{type: 'screen', 'id': 299534, 'screen_type': movie}\">Avengers: Endgame</a> (BR: Vingadores: Ultimato, 2019), <a href=\"https://_{type: 'screen', 'id': 2710, 'screen_type': person}\">James Cameron</a> (n-1954) apresentou um espetáculo surpreendente em 3D, iniciando uma tendencia de filmes 3D nos próximos anos, sendo que poucos deles conseguiriam repetir o brilho e bom uso da tecnologia. O filme também trazia uma mensagem sobre a proteção do meio ambiente, em contraste com a maior parte dos sucessos do gênero.",
-      "content_credits": "Resumo baseado no texto de <i>Ian Haydn Smith</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+      "content_credits": "Resumen basado en el texto de <i>Ian Haydn Smith</i>, publicado en el libro \"<i>Todo sobre cine</i>\" de <i>Philip Kemp</i>"
     },
     {
       "type": "movie_list",
@@ -4401,7 +4401,7 @@
     },
     {
       "type": "link_screen",
-      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "subtitle": "Los acontecimientos que marcaron al mundo",
       "title": "Timeline de Acontecimentos de 1990 a 2009",
       "click": {
         "screen": "timeline",

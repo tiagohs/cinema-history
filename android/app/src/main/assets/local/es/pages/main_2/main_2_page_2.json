@@ -123,7 +123,7 @@
     {
       "type": "text",
       "content_text": "En la década de 1950, la Ley Seca ya no estaba en vigor y Estados Unidos atravesaba un momento más próspero. Los gánsteres se convirtieron en la escoria de la sociedad. El nivel de violencia sádica comenzó a aumentar: en <a href=\"https://_{type: 'screen', 'id': 14580, 'screen_type': movie}\">The Big Heat</a> (Los sobornados, 1953), Lee Marvin arroja una taza de café hirviendo en el rostro de <i>Gloria Grahame</i>. En 1973, en <a href=\"https://_{type: 'screen', 'id': 1847, 'screen_type': movie}\">The Long Goodbye</a> (Un largo Adios, 1973), <i>Mark Rydell</i> rompe una botella en el rostro de su novia, no porque ella hubiera hecho algo malo, sino solo para advertir a <i>Philip Marlowe</i>, interpretado por <a href=\"https://_{type: 'screen', 'id': 827, 'screen_type': person}\">Elliott Gould</a>.",
-      "content_credits": "Resumo baseado no texto de <i>Geoffrey Macnab</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>."
+      "content_credits": "Resumen basado en el texto de <i>Geoffrey Macnab</i>, publicado en el libro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>."
     },
     {
       "type": "movie_list",
@@ -309,7 +309,7 @@
     },
     {
       "type": "link_screen",
-      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "subtitle": "Los acontecimientos que marcaron al mundo",
       "title": "Cronología de acontecimientos de 1930 a 1939",
       "click": {
         "screen": "timeline",

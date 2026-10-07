@@ -95,7 +95,7 @@
     {
       "type": "text",
       "content_text": "<a href=\"https://_{type: 'screen', 'id': 11010, 'screen_type': movie}\">Il postino</a> (BR: O Carteiro e o Poeta, 1994), relato fictício do encontro entre <i>Pablo Neruda</i> e um carteiro apaixonado, foi uma das produções italianas mais bem-sucedidas internacionalmente, apesar de logo ter sido ofuscada por <a href=\"https://_{type: 'screen', 'id': 637, 'screen_type': movie}\">La vita è bella</a> (BR: A vida é bela, 1997), filme dirigido e estrelado por <a href=\"https://_{type: 'screen', 'id': 4818, 'screen_type': person}\">Roberto Benigni</a> (n-1952). A comédia dramática ambientada em sua maior parte em um campo de concentração foi um dos maiores sucessos entre os filmes de época da década, embora as opiniões sobre seus méritos permaneçam divididas.",
-      "content_credits": "Resumo baseado no texto de <i>Ian Haydn Smith</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+      "content_credits": "Resumen basado en el texto de <i>Ian Haydn Smith</i>, publicado en el libro \"<i>Todo sobre cine</i>\" de <i>Philip Kemp</i>"
     },
     {
       "type": "movie_list",
@@ -392,7 +392,7 @@
     },
     {
       "type": "link_screen",
-      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "subtitle": "Los acontecimientos que marcaron al mundo",
       "title": "Timeline de Acontecimentos de 1990 a 2009",
       "click": {
         "screen": "timeline",

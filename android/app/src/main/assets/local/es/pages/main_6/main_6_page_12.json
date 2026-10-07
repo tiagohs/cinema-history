@@ -82,7 +82,7 @@
     {
       "type": "text",
       "content_text": "A diretora mais proeminente do Irã é <a href=\"https://_{type: 'screen', 'id': 1061523, 'screen_type': person}\">Rakhshan Bani Etemad</a> (n-1954). Formada pela Faculdade de Artes Dramáticas da Universidade de Teerā, ela trabalhou na televisão antes de dirigir uma série de documentários de curta-metragem. Os primeiros três longas de Etemad, <a href=\"https://_{type: 'screen', 'id': 285544, 'screen_type': movie}\">Kharej az mahdudeh</a> (BR: Zona Proibida, 1986), <a href=\"https://_{type: 'screen', 'id': 524566, 'screen_type': movie}\">Zard-e ghanari </a>(BR: Amarelo-canário, 1988) e <a href=\"https://_{type: 'screen', 'id': 524752, 'screen_type': movie}\">Pul-e khareji</a> (BR: Moeda estrangeira, 1989), se aproximam de seu trabalho como documentarista em sua preocupação com a vida dos menos favorecidos da sociedade.",
-      "content_credits": "Resumo baseado no texto de <i>Ian Haydn Smith</i>, publicado no livro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>"
+      "content_credits": "Resumen basado en el texto de <i>Ian Haydn Smith</i>, publicado en el libro \"<i>Todo sobre cine</i>\" de <i>Philip Kemp</i>"
     },
     {
       "type": "movie_list",
@@ -251,7 +251,7 @@
     },
     {
       "type": "link_screen",
-      "subtitle": "Os acontecimentos que marcaram o mundo",
+      "subtitle": "Los acontecimientos que marcaron al mundo",
       "title": "Timeline de Acontecimentos de 1990 a 2009",
       "click": {
         "screen": "timeline",
