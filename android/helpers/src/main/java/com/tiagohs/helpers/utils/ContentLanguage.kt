@@ -25,7 +25,7 @@ object ContentLanguage {
     const val SOURCE = PORTUGUESE
 
     /** Idiomas com conteúdo traduzido, completo e revisado. Adicione ENGLISH/SPANISH quando estiverem prontos. */
-    val RELEASED: List<String> = listOf(PORTUGUESE)
+    val RELEASED: List<String> = listOf(PORTUGUESE, ENGLISH, SPANISH)
 
     /** Idiomas ativos nesta execução: [RELEASED], mais os de prévia em builds de debug (ver [enablePreview]). */
     var ENABLED: List<String> = RELEASED

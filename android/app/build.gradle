@@ -59,6 +59,14 @@ android {
         viewBinding true
         buildConfig true
     }
+
+    // Gera o locales_config a partir das pastas values-* (pt-BR, es, en-US padrão):
+    // habilita o seletor de idioma do app no Android 13+.
+    androidResources {
+        generateLocaleConfig = true
+        // Mantém só os idiomas do app (remove traduções de bibliotecas em outros idiomas).
+        localeFilters += ["en", "es", "pt"]
+    }
 }
 
 dependencies {

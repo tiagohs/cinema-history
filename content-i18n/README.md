@@ -66,5 +66,5 @@ qualquer outra continua sendo erro.
 
 Quando `status` mostrar 100% e a revisão estiver feita:
 1. `apply --lang <idioma> --require-complete` e `validate --lang <idioma>`;
-2. adicionar o idioma em `ContentLanguage.ENABLED` (helpers);
-3. ativar `androidResources { generateLocaleConfig = true }` para aparecer no seletor do Android 13+.
+2. adicionar o idioma em `ContentLanguage.RELEASED` (helpers);
+3. criar `values-<idioma>/strings.xml` nos módulos (o `generateLocaleConfig` já está ativo e inclui o idioma no seletor do Android 13+).
