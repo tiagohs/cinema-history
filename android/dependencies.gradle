@@ -6,17 +6,16 @@ ext {
     compileSDK = 36
 
     // AdMob - IDs de PRODUÇÃO (release). Debug usa sempre os IDs de teste do Google.
-    // Enquanto estiverem vazios, o release também usa os IDs de teste (não gera receita).
     admob = [
-            appId           : '',
-            nativeLists     : '',
-            nativeChapter   : '',
-            nativeMovie     : '',
-            interstitialChapter: ''
+            appId              : 'ca-app-pub-5405332351907920~7700242563',
+            nativeLists        : 'ca-app-pub-5405332351907920/6083908562',
+            nativeChapter      : 'ca-app-pub-5405332351907920/8578954822',
+            nativeMovie        : 'ca-app-pub-5405332351907920/7628924527',
+            interstitialChapter: 'ca-app-pub-5405332351907920/3203339213'
     ]
 
-    versionCode = 18
-    versionName = '2.3.0'
+    versionCode = 19
+    versionName = '2.4.0'
 
     buildToolsVersion = '36.0.0'
 
