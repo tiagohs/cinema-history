@@ -11,6 +11,7 @@ import com.tiagohs.helpers.utils.ContentLanguage
 import java.util.Locale
 import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.ads.AdsManager
 import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.cinema_history.presentation.activities.AboutActivty
 import com.tiagohs.cinema_history.presentation.activities.GlossaryActivity
@@ -27,6 +28,7 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
     private val ABOUT_KEY = "about"
     private val REFERENCES_KEY = "references"
     private val GLOSSARY_KEY = "glossary"
+    private val AD_PRIVACY_KEY = "ad_privacy"
 
     private var appLanguage: ListPreference? = null
     private var aboutLanguage: Preference? = null
@@ -52,6 +54,20 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
         aboutLanguage?.intent = AboutActivty.newIntent(context)
         referencesLanguage?.intent = ReferenceActivity.newIntent(context)
         glossaryLanguage?.intent = GlossaryActivity.newIntent(context)
+
+        setupAdPrivacyPreference()
+    }
+
+    /** "Privacidade de anúncios": reabre o formulário de consentimento (exigido pelo GDPR). */
+    private fun setupAdPrivacyPreference() {
+        val preference = findPreference<Preference>(AD_PRIVACY_KEY) ?: return
+        val activity = activity ?: return
+
+        preference.isVisible = AdsManager.isPrivacyOptionsRequired(activity)
+        preference.setOnPreferenceClickListener {
+            AdsManager.showPrivacyOptions(activity)
+            true
+        }
     }
 
     /**

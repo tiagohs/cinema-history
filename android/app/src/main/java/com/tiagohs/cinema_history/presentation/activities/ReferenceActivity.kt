@@ -10,6 +10,8 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.ads.AdPlacement
+import com.tiagohs.cinema_history.ads.adapterWithNativeAd
 import com.tiagohs.cinema_history.presentation.adapters.ReferencesAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.presenter.ReferencePresenter
@@ -84,8 +86,10 @@ class ReferenceActivity : BaseActivity<ActivityReferencesBinding>(), ReferenceVi
     private fun setupReviewList(references: List<Reference>) {
         binding.contentList.apply {
             layoutManager = LinearLayoutManager(this@ReferenceActivity, LinearLayoutManager.VERTICAL, false)
-            adapter = ReferencesAdapter(references).apply {
-                onLinkClick = { openLink(it) }
+            adapter = adapterWithNativeAd(references, after = 4, AdPlacement.LISTS, this@ReferenceActivity) { items ->
+                ReferencesAdapter(items).apply {
+                    onLinkClick = { openLink(it) }
+                }
             }
         }
     }

@@ -37,9 +37,32 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
 
+    // AdMob: IDs de teste do Google em debug; em release os de dependencies.gradle (admob), se preenchidos.
+    def admob = rootProject.ext.admob
+    def testIds = [
+            appId              : 'ca-app-pub-3940256099942544~3347511713',
+            nativeLists        : 'ca-app-pub-3940256099942544/2247696110',
+            nativeChapter      : 'ca-app-pub-3940256099942544/2247696110',
+            nativeMovie        : 'ca-app-pub-3940256099942544/2247696110',
+            interstitialChapter: 'ca-app-pub-3940256099942544/1033173712'
+    ]
+    def admobId = { String key, boolean release -> (release && admob[key]) ? admob[key] : testIds[key] }
+
 
     buildTypes {
+        debug {
+            manifestPlaceholders = [admobAppId: admobId('appId', false)]
+            buildConfigField "String", "ADMOB_NATIVE_LISTS", "\"${admobId('nativeLists', false)}\""
+            buildConfigField "String", "ADMOB_NATIVE_CHAPTER", "\"${admobId('nativeChapter', false)}\""
+            buildConfigField "String", "ADMOB_NATIVE_MOVIE", "\"${admobId('nativeMovie', false)}\""
+            buildConfigField "String", "ADMOB_INTERSTITIAL_CHAPTER", "\"${admobId('interstitialChapter', false)}\""
+        }
         release {
+            manifestPlaceholders = [admobAppId: admobId('appId', true)]
+            buildConfigField "String", "ADMOB_NATIVE_LISTS", "\"${admobId('nativeLists', true)}\""
+            buildConfigField "String", "ADMOB_NATIVE_CHAPTER", "\"${admobId('nativeChapter', true)}\""
+            buildConfigField "String", "ADMOB_NATIVE_MOVIE", "\"${admobId('nativeMovie', true)}\""
+            buildConfigField "String", "ADMOB_INTERSTITIAL_CHAPTER", "\"${admobId('interstitialChapter', true)}\""
             // R8: remove código e recursos não usados, otimiza e ofusca.
             minifyEnabled = true
             shrinkResources = true
@@ -88,6 +111,7 @@ dependencies {
     implementation dependencies.constrantlayout
     implementation dependencies.androidMaterial
     implementation dependencies.browser
+    implementation dependencies.recyclerview // ConcatAdapter (anúncios nativos nas listas)
 
     // Components and Tools
     implementation dependencies.betterLinkMovement
@@ -111,6 +135,11 @@ dependencies {
 
     // Firebase
     implementation dependencies.firebaseStorage
+    implementation dependencies.firebaseRemoteConfig
+
+    // Anúncios (AdMob) + consentimento (UMP)
+    implementation dependencies.playServicesAds
+    implementation dependencies.ump
     implementation dependencies.firebaseAnalytics
     implementation dependencies.firebaseUiStorage
     implementation dependencies.firebaseCrashlytics

@@ -1,9 +1,19 @@
 ext {
 
     // Android Config
-    minSDK = 23
+    minSDK = 24 // play-services-ads 25 exige Android 7.0+
     targetSDK = 36
     compileSDK = 36
+
+    // AdMob - IDs de PRODUÇÃO (release). Debug usa sempre os IDs de teste do Google.
+    // Enquanto estiverem vazios, o release também usa os IDs de teste (não gera receita).
+    admob = [
+            appId           : '',
+            nativeLists     : '',
+            nativeChapter   : '',
+            nativeMovie     : '',
+            interstitialChapter: ''
+    ]
 
     versionCode = 18
     versionName = '2.3.0'
@@ -45,6 +55,9 @@ ext {
 
     def glideVersion = '4.16.0'
     def glideTransformationsVersion = '4.3.0'
+    def playServicesAdsVersion = '25.5.0'
+    def umpVersion = '3.2.0'
+    def recyclerviewVersion = '1.4.0'
     def firebaseBomVersion = '34.4.0'
     def firebaseUiStorageVersion = '9.1.1'
 
@@ -86,6 +99,10 @@ ext {
 
             firebaseBom                 : "com.google.firebase:firebase-bom:${firebaseBomVersion}",
             firebaseStorage             : "com.google.firebase:firebase-storage",
+            firebaseRemoteConfig        : "com.google.firebase:firebase-config",
+            playServicesAds             : "com.google.android.gms:play-services-ads:${playServicesAdsVersion}",
+            recyclerview                : "androidx.recyclerview:recyclerview:${recyclerviewVersion}",
+            ump                         : "com.google.android.ump:user-messaging-platform:${umpVersion}",
             firebaseAnalytics           : "com.google.firebase:firebase-analytics",
             firebaseUiStorage           : "com.firebaseui:firebase-ui-storage:${firebaseUiStorageVersion}",
             firebaseCrashlytics         : "com.google.firebase:firebase-crashlytics",

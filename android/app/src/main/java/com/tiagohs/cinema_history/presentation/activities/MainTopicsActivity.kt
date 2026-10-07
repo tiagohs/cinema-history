@@ -10,6 +10,8 @@ import android.view.LayoutInflater
 import androidx.core.view.WindowCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.ads.AdPlacement
+import com.tiagohs.cinema_history.ads.adapterWithNativeAd
 import com.tiagohs.cinema_history.presentation.adapters.MainTopicsAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.presenter.MainTopicsPresenter
@@ -31,7 +33,6 @@ class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsV
 
     private var mainTopicsType: MainTopicsType? = null
     private var isDarkMode = false
-    private var adapter: MainTopicsAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -138,15 +139,19 @@ class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsV
 
     override fun bindMainTopics(mainTopics: List<MainTopic>) {
         val mainTopicsType = mainTopicsType?: return
-        adapter = MainTopicsAdapter(mainTopicsType, mainTopics, isDarkMode)
-        adapter?.onMainTopicSelected = { mainTopic, _ -> onMainTopicSelected(mainTopic) }
+        // Anúncio nativo depois do 3º item da lista (eras, prêmios, 1001 filmes, diretores).
+        val listAdapter = adapterWithNativeAd(mainTopics, after = 3, AdPlacement.LISTS, this) { items ->
+            MainTopicsAdapter(mainTopicsType, items, isDarkMode).apply {
+                onMainTopicSelected = { mainTopic, _ -> onMainTopicSelected(mainTopic) }
+            }
+        }
 
         binding.mainTopicsList.layoutManager = LinearLayoutManager(
             this,
             LinearLayoutManager.VERTICAL,
             false
         )
-        binding.mainTopicsList.adapter = adapter
+        binding.mainTopicsList.adapter = listAdapter
 
         binding.mainTopicsList.startAnimation(AnimationUtils.createFadeInAnimation(300, 200))
     }

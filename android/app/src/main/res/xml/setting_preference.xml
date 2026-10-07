@@ -36,6 +36,15 @@
             app:icon="@drawable/ic_library_books_grey"
             app:selectable="true" />
 
+        <!-- Só aparece para quem está em região que exige (ex.: GDPR). -->
+        <androidx.preference.Preference
+            app:key="ad_privacy"
+            app:summary="@string/ad_privacy_summary"
+            app:title="@string/ad_privacy_title"
+            app:icon="@drawable/ic_info_grey_24dp"
+            app:isPreferenceVisible="false"
+            app:selectable="true" />
+
         <androidx.preference.Preference
             app:key="about"
             app:title="@string/action_about"

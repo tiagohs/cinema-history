@@ -16,6 +16,8 @@ import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.ads.AdPlacement
+import com.tiagohs.cinema_history.ads.adapterWithNativeAd
 import com.tiagohs.cinema_history.presentation.adapters.MovieInfoAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.managers.DynamicLinkManager
@@ -150,14 +152,20 @@ class MovieDetailsActivity : BaseActivity<ActivityMovieDetailsBinding>(), MovieD
 
         binding.collapsingToolbar.title = movieTitle
         binding.pageContentList.apply {
-            adapter =
-                MovieInfoAdapter(movieInfoList, this@MovieDetailsActivity, appLanguage).apply {
+            // Anúncio nativo depois de "Onde assistir" (ou da sinopse, se o filme não tiver onde assistir).
+            val watchOnIndex = movieInfoList.indexOfFirst { it.type == MovieInfoType.INFO_WATCH_ON }
+            val summaryIndex = movieInfoList.indexOfFirst { it.type == MovieInfoType.INFO_SUMMARY }
+            val adAfter = ((if (watchOnIndex >= 0) watchOnIndex else summaryIndex) + 1).coerceAtLeast(2)
+
+            adapter = adapterWithNativeAd(movieInfoList, adAfter, AdPlacement.MOVIE, this@MovieDetailsActivity) { items ->
+                MovieInfoAdapter(items, this@MovieDetailsActivity, appLanguage).apply {
                     onPersonClicked = { onPersonClicked(it) }
                     onExtenalLink = { openLink(it) }
                     onVideoClick = { openLink(getString(R.string.youtube_link, it)) }
                     onMovieClicked = { onMovieSelected(it) }
                     onScreenLink = { startActivityWithSlideRightToLeftAnimation(it) }
                 }
+            }
             layoutManager = LinearLayoutManager(
                 this@MovieDetailsActivity,
                 LinearLayoutManager.VERTICAL,

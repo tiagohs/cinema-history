@@ -136,4 +136,9 @@
     <string name="reference_media_type_series">Serie</string>
     <string name="reference_media_type_movie">Película</string>
     <string name="reference_media_type_youtube">YouTube</string>
+
+    <!-- Anúncios -->
+    <string name="ad_badge">Anuncio</string>
+    <string name="ad_privacy_title">Privacidad de anuncios</string>
+    <string name="ad_privacy_summary">Revisa o cambia tus opciones de consentimiento de anuncios</string>
 </resources>

@@ -14,6 +14,7 @@ import android.view.animation.Interpolator
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.snackbar.Snackbar
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.ads.ChapterInterstitial
 import com.tiagohs.cinema_history.presentation.adapters.PagePagerAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.managers.DynamicLinkManager
@@ -42,6 +43,8 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
 
     var currentPosition: Int = 0
 
+    private val chapterInterstitial by lazy { ChapterInterstitial(this) }
+
     override fun inflateBinding(inflater: LayoutInflater) = ActivityHistoryPagesBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
 
@@ -57,6 +60,8 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
         setupFooter()
 
         hideLoading()
+
+        chapterInterstitial.preload()
     }
 
     override fun onBackPressed() {
@@ -217,6 +222,7 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             adapter = adapterPager
             currentItem = itemSelectedPosition
+            this@HistoryPagesActivity.currentPosition = itemSelectedPosition
 
             setPageTransformer(ZoomOutPageTransformer())
 
@@ -224,7 +230,10 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
                     super.onPageSelected(position)
+                    val chapterChanged = position != currentPosition
                     currentPosition = position
+
+                    if (chapterChanged) chapterInterstitial.onChapterChanged()
 
                     binding.sumarioContentIndicator.onPageSelected(position)
 

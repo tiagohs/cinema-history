@@ -10,6 +10,7 @@ import android.view.animation.DecelerateInterpolator
 import android.widget.TextView
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.ads.AdsManager
 import com.tiagohs.cinema_history.presentation.adapters.HomeAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.presenter.HomePresenter
@@ -39,6 +40,8 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
 
         presenter.onBindView(this)
         presenter.fetchHomeContent()
+
+        AdsManager.gatherConsent(this)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

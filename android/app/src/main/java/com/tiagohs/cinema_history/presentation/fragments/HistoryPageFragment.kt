@@ -17,7 +17,10 @@ import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.appbar.AppBarLayout
+import androidx.recyclerview.widget.ConcatAdapter
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.ads.AdPlacement
+import com.tiagohs.cinema_history.ads.NativeAdAdapter
 import com.tiagohs.cinema_history.presentation.activities.*
 import com.tiagohs.cinema_history.presentation.adapters.PageContentAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
@@ -109,12 +112,14 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
 
         binding.pageContentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-            adapter = PageContentAdapter(pageContent.contentList, mainTopic, settingManager.getMovieLanguage()).apply {
+            val pageAdapter = PageContentAdapter(pageContent.contentList, mainTopic, settingManager.getMovieLanguage()).apply {
                 presentScreen = { presentScreen(it) }
                 onMovieClicked = { onMovieSelected(it) }
                 onPersonClicked = { onPersonClicked(it) }
                 onLinkClicked = { onLinkClicked(it) }
             }
+            // Anúncio nativo no fim do capítulo, depois de todo o texto.
+            adapter = ConcatAdapter(pageAdapter, NativeAdAdapter(AdPlacement.CHAPTER, viewLifecycleOwner))
             addItemDecoration(
                 SpaceOffsetDecoration(
                     10.convertIntToDp(context),

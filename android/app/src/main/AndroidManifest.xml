@@ -75,6 +75,11 @@
             android:theme="@style/AboutTheme"/>
         <activity android:name=".presentation.activities.ReferenceActivity" />
 
+        <!-- AdMob: ID do app (teste em debug; produção em dependencies.gradle → admob.appId) -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="${admobAppId}" />
+
         <!-- Guarda o idioma escolhido no app (AppCompatDelegate.setApplicationLocales) em Android < 13. -->
         <service
             android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
