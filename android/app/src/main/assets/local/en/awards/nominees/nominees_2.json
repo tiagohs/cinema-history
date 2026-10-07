@@ -4,11 +4,11 @@
     "content": [
       {
         "type": "text",
-        "content_text": "*<i>Não está incluido os prêmios para Televisão</i>."
+        "content_text": "*<i>Television awards are not included</i>."
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Drama",
+        "name": "Best Motion Picture – Drama",
         "nominee_list": [
           {
             "type": "movie",
@@ -54,7 +54,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Musical ou Comédia",
+        "name": "Best Motion Picture – Musical or Comedy",
         "nominee_list": [
           {
             "type": "movie",
@@ -100,7 +100,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz em Filme de Drama",
+        "name": "Best Actress in a Motion Picture – Drama",
         "nominee_list": [
           {
             "type": "person",
@@ -181,12 +181,12 @@
         "video_id": "FZ81wEUSmmk",
         "information": {
           "contentTitle": "*FUll SPEECH* Joaquin Phoenix Won ''Best Actor Drama'' Joker | Golden Globe Awards 2020",
-          "source": "Youtube: Canal <i>MeMe Ape</i>"
+          "source": "YouTube: <i>MeMe Ape</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator em Filme de Drama",
+        "name": "Best Actor in a Motion Picture – Drama",
         "nominee_list": [
           {
             "type": "person",
@@ -264,7 +264,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz em Musical ou Comédia",
+        "name": "Best Actress in a Motion Picture – Musical or Comedy",
         "nominee_list": [
           {
             "type": "person",
@@ -345,7 +345,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator em Musical ou Comédia",
+        "name": "Best Actor in a Motion Picture – Musical or Comedy",
         "nominee_list": [
           {
             "type": "person",
@@ -426,7 +426,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz Coadjuvante",
+        "name": "Best Supporting Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -504,7 +504,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator Coadjuvante",
+        "name": "Best Supporting Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -587,12 +587,12 @@
         "video_id": "kB-UNLQn9gk",
         "information": {
           "contentTitle": "All The EMOTIONAL Moments Of The 2020 Golden Globe Awards",
-          "source": "Youtube: Canal <i>Clevver News</i>"
+          "source": "YouTube: <i>Clevver News</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Direção",
+        "name": "Best Director",
         "nominee_list": [
           {
             "type": "person",
@@ -673,7 +673,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro",
+        "name": "Best Screenplay",
         "nominee_list": [
           {
             "type": "person",
@@ -753,7 +753,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme Animado",
+        "name": "Best Animated Feature Film",
         "nominee_list": [
           {
             "type": "movie",
@@ -799,7 +799,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme em Língua Estrangeira",
+        "name": "Best Foreign Language Film",
         "nominee_list": [
           {
             "type": "movie",
@@ -845,7 +845,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Trilha Sonora Original",
+        "name": "Best Original Score",
         "nominee_list": [
           {
             "type": "movie",
@@ -891,7 +891,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Canção Original",
+        "name": "Best Original Song",
         "nominee_list": [
           {
             "type": "movie",

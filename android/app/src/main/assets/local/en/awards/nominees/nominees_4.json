@@ -4,11 +4,11 @@
     "content": [
       {
         "type": "text",
-        "content_text": "*<i>Não está incluido os prêmios para Televisão</i>."
+        "content_text": "*<i>Television awards are not included</i>."
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme",
+        "name": "Best Picture",
         "nominee_list": [
           {
             "type": "movie",
@@ -94,7 +94,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator",
+        "name": "Best Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -203,7 +203,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz",
+        "name": "Best Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -314,12 +314,12 @@
         "video_id": "P0Y4Mm0tezU",
         "information": {
           "contentTitle": "Eddie Murphy Lifetime Achievement, Critics Choice Awards 2020",
-          "source": "Youtube: Canal <i>Saul Munzer</i>"
+          "source": "YouTube: <i>Saul Munzer</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator Coadjuvante",
+        "name": "Best Supporting Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -400,7 +400,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz Coadjuvante",
+        "name": "Best Supporting Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -495,7 +495,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator/Atriz Jovem",
+        "name": "Best Young Actor/Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -591,7 +591,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Elenco",
+        "name": "Best Acting Ensemble",
         "nominee_list": [
           {
             "type": "movie",
@@ -653,7 +653,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Direção",
+        "name": "Best Director",
         "nominee_list": [
           {
             "type": "person",
@@ -767,12 +767,12 @@
         "video_id": "lk_hVilvx7k",
         "information": {
           "contentTitle": "Boong Joon Ho wins best director Critics Choice Awards 2020",
-          "source": "Youtube: Canal <i>Saul Munzer</i>"
+          "source": "YouTube: <i>Saul Munzer</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro Original",
+        "name": "Best Original Screenplay",
         "nominee_list": [
           {
             "type": "person",
@@ -853,7 +853,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro Adaptado",
+        "name": "Best Adapted Screenplay",
         "nominee_list": [
           {
             "type": "person",
@@ -948,7 +948,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Fotografia",
+        "name": "Best Cinematography",
         "nominee_list": [
           {
             "type": "movie",
@@ -1002,7 +1002,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Design de Produção",
+        "name": "Best Production Design",
         "nominee_list": [
           {
             "type": "movie",
@@ -1056,7 +1056,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Edição",
+        "name": "Best Editing",
         "nominee_list": [
           {
             "type": "movie",
@@ -1121,12 +1121,12 @@
         "video_id": "I4uQajLn8BE",
         "information": {
           "contentTitle": "2020 Critics Choice Award for Best Ensemble",
-          "source": "Youtube: Canal <i>Sebastian Maniscalco</i>"
+          "source": "YouTube: <i>Sebastian Maniscalco</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Design de Figurino",
+        "name": "Best Costume Design",
         "nominee_list": [
           {
             "type": "movie",
@@ -1188,7 +1188,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Cabelo e Maquiagem",
+        "name": "Best Makeup and Hairstyling",
         "nominee_list": [
           {
             "type": "movie",
@@ -1250,7 +1250,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhores Efeitos Especiais",
+        "name": "Best Visual Effects",
         "nominee_list": [
           {
             "type": "movie",
@@ -1304,7 +1304,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Animação",
+        "name": "Best Animated Feature",
         "nominee_list": [
           {
             "type": "movie",
@@ -1350,7 +1350,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Ação",
+        "name": "Best Action Movie",
         "nominee_list": [
           {
             "type": "movie",
@@ -1396,7 +1396,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Comédia",
+        "name": "Best Comedy",
         "nominee_list": [
           {
             "type": "movie",
@@ -1450,7 +1450,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Ficção Ciêntifica / Terror",
+        "name": "Best Sci-Fi or Horror Movie",
         "nominee_list": [
           {
             "type": "movie",
@@ -1488,7 +1488,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme em LÍngua Estrangeira",
+        "name": "Best Foreign Language Film",
         "nominee_list": [
           {
             "type": "movie",
@@ -1534,7 +1534,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Música",
+        "name": "Best Song",
         "nominee_list": [
           {
             "type": "movie",
@@ -1596,7 +1596,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Trilha Sonora",
+        "name": "Best Score",
         "nominee_list": [
           {
             "type": "movie",
@@ -1655,11 +1655,11 @@
     "content": [
       {
         "type": "text",
-        "content_text": "*<i>Não está incluido os prêmios para Televisão</i>."
+        "content_text": "*<i>Television awards are not included</i>."
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme",
+        "name": "Best Picture",
         "nominee_list": [
           {
             "type": "movie",
@@ -1745,7 +1745,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator",
+        "name": "Best Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -1856,7 +1856,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz",
+        "name": "Best Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -1967,7 +1967,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator Coadjuvante",
+        "name": "Best Supporting Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -2063,7 +2063,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz Coadjuvante",
+        "name": "Best Supporting Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -2159,7 +2159,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator/Atriz Jovem",
+        "name": "Best Young Actor/Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -2255,7 +2255,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Elenco",
+        "name": "Best Acting Ensemble",
         "nominee_list": [
           {
             "type": "movie",
@@ -2301,7 +2301,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Direção",
+        "name": "Best Director",
         "nominee_list": [
           {
             "type": "person",
@@ -2412,7 +2412,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro Original",
+        "name": "Best Original Screenplay",
         "nominee_list": [
           {
             "type": "movie",
@@ -2458,7 +2458,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro Adaptado",
+        "name": "Best Adapted Screenplay",
         "nominee_list": [
           {
             "type": "movie",
@@ -2512,7 +2512,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Fotografia",
+        "name": "Best Cinematography",
         "nominee_list": [
           {
             "type": "movie",
@@ -2566,7 +2566,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Design de Produção",
+        "name": "Best Production Design",
         "nominee_list": [
           {
             "type": "movie",
@@ -2620,7 +2620,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Edição",
+        "name": "Best Editing",
         "nominee_list": [
           {
             "type": "movie",
@@ -2674,7 +2674,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Design de Figurino",
+        "name": "Best Costume Design",
         "nominee_list": [
           {
             "type": "movie",
@@ -2720,7 +2720,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Cabelo e Maquiagem",
+        "name": "Best Makeup and Hairstyling",
         "nominee_list": [
           {
             "type": "movie",
@@ -2774,7 +2774,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhores Efeitos Especiais",
+        "name": "Best Visual Effects",
         "nominee_list": [
           {
             "type": "movie",
@@ -2828,7 +2828,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Animação",
+        "name": "Best Animated Feature",
         "nominee_list": [
           {
             "type": "movie",
@@ -2882,7 +2882,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Ação",
+        "name": "Best Action Movie",
         "nominee_list": [
           {
             "type": "movie",
@@ -2936,7 +2936,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Comédia",
+        "name": "Best Comedy",
         "nominee_list": [
           {
             "type": "movie",
@@ -2990,7 +2990,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Ficção Ciêntifica / Terror",
+        "name": "Best Sci-Fi or Horror Movie",
         "nominee_list": [
           {
             "type": "movie",
@@ -3036,7 +3036,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme em LÍngua Estrangeira",
+        "name": "Best Foreign Language Film",
         "nominee_list": [
           {
             "type": "movie",
@@ -3082,7 +3082,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Música",
+        "name": "Best Song",
         "nominee_list": [
           {
             "type": "movie",
@@ -3136,7 +3136,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Trilha Sonora",
+        "name": "Best Score",
         "nominee_list": [
           {
             "type": "movie",

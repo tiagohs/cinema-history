@@ -4,7 +4,7 @@
     "content": [
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme",
+        "name": "Best Picture",
         "nominee_list": [
           {
             "type": "movie",
@@ -50,7 +50,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme Britânico",
+        "name": "Outstanding British Film",
         "nominee_list": [
           {
             "type": "movie",
@@ -96,14 +96,14 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Estréia de um Diretor, Produtor ou Roteirista Britânico",
+        "name": "Outstanding Debut by a British Writer, Director or Producer",
         "nominee_list": [
           {
             "type": "person",
             "id": 1540861,
             "image_path": "/dn4FFefjrrnSHl7fMXYisbzHLbT.jpg",
             "name": "Mark Jenkin",
-            "department": "Diretor/Roteirista",
+            "department": "Director/Writer",
             "winner": true,
             "movie": {
               "type": "movie",
@@ -119,7 +119,7 @@
             "id": 2220266,
             "image_path": "/xEWhh4MRvGZ5FZjUHXVNx8Zg1yJ.jpg",
             "name": "Waad Al-Kateab",
-            "department": "Diretor/Produtor",
+            "department": "Director/Producer",
             "winner": false,
             "movie": {
               "type": "movie",
@@ -135,7 +135,7 @@
             "id": 1240791,
             "image_path": "/kWc3Nxd0F76BKlBXAlEdgo2HhNq.jpg",
             "name": "Alex Holmes",
-            "department": "Diretor",
+            "department": "Director",
             "winner": false,
             "movie": {
               "type": "movie",
@@ -151,7 +151,7 @@
             "id": 1705464,
             "image_path": "/AnUG7al7GNGR32SPwszaOeTslu4.jpg",
             "name": "Harry Wootliff ",
-            "department": "Diretor/Roterista",
+            "department": "Director/Writer",
             "winner": false,
             "movie": {
               "type": "movie",
@@ -167,7 +167,7 @@
             "id": 1513715,
             "image_path": "/2dKp3sX4elrX5QH52ZBwp45f3VA.jpg",
             "name": "Alvaro Delgado-Aparicio L.",
-            "department": "Diretor/Roterista",
+            "department": "Director/Writer",
             "winner": true,
             "movie": {
               "type": "movie",
@@ -182,7 +182,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Idimoa Não-Inglês",
+        "name": "Best Film Not in the English Language",
         "nominee_list": [
           {
             "type": "movie",
@@ -231,12 +231,12 @@
         "video_id": "hAh0FSfc4Ls",
         "information": {
           "contentTitle": "Joaquin Phoenix Delivers Powerful Speech After Leading Actor Win for Joker | EE BAFTA Film Awards",
-          "source": "Youtube: Canal <i>BAFTA</i>"
+          "source": "YouTube: <i>BAFTA</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Documentário",
+        "name": "Best Documentary Feature",
         "nominee_list": [
           {
             "type": "movie",
@@ -282,7 +282,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Animação",
+        "name": "Best Animated Feature",
         "nominee_list": [
           {
             "type": "movie",
@@ -320,7 +320,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Diretor",
+        "name": "Best Director",
         "nominee_list": [
           {
             "type": "person",
@@ -401,7 +401,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro Original",
+        "name": "Best Original Screenplay",
         "nominee_list": [
           {
             "type": "person",
@@ -482,7 +482,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro Adaptado",
+        "name": "Best Adapted Screenplay",
         "nominee_list": [
           {
             "type": "person",
@@ -562,7 +562,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator",
+        "name": "Best Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -644,12 +644,12 @@
         "video_id": "JcYID5GQ8nk",
         "information": {
           "contentTitle": "Sam Mendes wins Best Director BAFTA 2020",
-          "source": "Youtube: Canal <i>BBC</i>"
+          "source": "YouTube: <i>BBC</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz",
+        "name": "Best Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -728,7 +728,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator Coadjuvante",
+        "name": "Best Supporting Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -808,7 +808,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz Coadjuvante",
+        "name": "Best Supporting Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -888,7 +888,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Trilha Sonora Original",
+        "name": "Best Original Score",
         "nominee_list": [
           {
             "type": "movie",
@@ -934,7 +934,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Direção de Elenco",
+        "name": "Best Casting",
         "nominee_list": [
           {
             "type": "movie",
@@ -980,7 +980,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Fotografia",
+        "name": "Best Cinematography",
         "nominee_list": [
           {
             "type": "movie",
@@ -1029,12 +1029,12 @@
         "video_id": "JNCmOxgMuqI",
         "information": {
           "contentTitle": "Renée Zellweger Wins Leading Actress for Judy | EE BAFTA Film Awards 2020",
-          "source": "Youtube: Canal <i>BAFTA</i>"
+          "source": "YouTube: <i>BAFTA</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Edição",
+        "name": "Best Editing",
         "nominee_list": [
           {
             "type": "movie",
@@ -1080,7 +1080,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Design de Produção",
+        "name": "Best Production Design",
         "nominee_list": [
           {
             "type": "movie",
@@ -1126,7 +1126,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Figurino",
+        "name": "Best Costume Design",
         "nominee_list": [
           {
             "type": "movie",
@@ -1172,7 +1172,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Maquiagem e Cabelo",
+        "name": "Best Makeup and Hair",
         "nominee_list": [
           {
             "type": "movie",
@@ -1218,7 +1218,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Som",
+        "name": "Best Sound",
         "nominee_list": [
           {
             "type": "movie",
@@ -1264,7 +1264,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Efeitos Visuais",
+        "name": "Best Special Visual Effects",
         "nominee_list": [
           {
             "type": "movie",
@@ -1313,12 +1313,12 @@
         "video_id": "MiEx3UAHWX4",
         "information": {
           "contentTitle": "1917 Wins Best Film | EE BAFTA Film Awards 2020",
-          "source": "Youtube: Canal <i>BBC</i>"
+          "source": "YouTube: <i>BBC</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Curta de Animação Britânico",
+        "name": "Best British Short Animation",
         "nominee_list": [
           {
             "type": "movie",
@@ -1348,7 +1348,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Curta Britânico",
+        "name": "Best British Short Film",
         "nominee_list": [
           {
             "type": "movie",
@@ -1394,7 +1394,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Estrela Revelação",
+        "name": "Rising Star",
         "nominee_list": [
           {
             "type": "person",

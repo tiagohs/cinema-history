@@ -4,14 +4,14 @@
     "layout_type": "card_full",
     "id": 1,
     "name": "Oscars (Academy Awards)",
-    "country": "Estados Unidos",
-    "presented_by": "Academia de Artes e Ciências Cinematográficas",
+    "country": "United States",
+    "presented_by": "Academy of Motion Picture Arts and Sciences",
     "first_awarded_date": "16/05/1929",
     "nominees_id": 1,
     "logo": {
       "image_type": "local",
       "url": "img_logo_oscar",
-      "content_description": "Foto com a logo do BAFTA.",
+      "content_description": "Photo of the BAFTA logo.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -19,7 +19,7 @@
     "image": {
       "image_type": "local",
       "url": "img_oscar",
-      "content_description": "Foto com uma mão segurando o Oscar.",
+      "content_description": "Photo of a hand holding an Oscar.",
       "style": {
         "height": 400,
         "scale_type": "center_crop",
@@ -55,15 +55,15 @@
     "main_topic_type": "awards",
     "layout_type": "card_full",
     "id": 7,
-    "name": "Festival de Cannes",
-    "country": "Franças",
+    "name": "Cannes Film Festival",
+    "country": "France",
     "presented_by": "International Film Festival",
     "first_awarded_date": "20/09/1946",
     "nominees_id": 7,
     "logo": {
       "image_type": "local",
       "url": "img_logo_festival_cannes",
-      "content_description": "Foto com a logo do Festival de Cannes.",
+      "content_description": "Photo of the Cannes Film Festival logo.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -71,7 +71,7 @@
     "image": {
       "image_type": "local",
       "url": "img_festival_cannes",
-      "content_description": "Foto com a estatueta do Prêmio Palma de Ouro.",
+      "content_description": "Photo of the Palme d'Or trophy.",
       "style": {
         "height": 500,
         "scale_type": "center_crop"
@@ -104,15 +104,15 @@
     "main_topic_type": "awards",
     "layout_type": "card_full",
     "id": 2,
-    "name": "Globo de Ouro",
-    "country": "Estados Unidos",
-    "presented_by": "Associação de Correspondentes Estrangeiros de Hollywood",
+    "name": "Golden Globes",
+    "country": "United States",
+    "presented_by": "Hollywood Foreign Press Association",
     "first_awarded_date": "20/01/1944",
     "nominees_id": 2,
     "logo": {
       "image_type": "local",
       "url": "img_logo_golden_globe",
-      "content_description": "Foto com a logo do BAFTA.",
+      "content_description": "Photo of the BAFTA logo.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -120,7 +120,7 @@
     "image": {
       "image_type": "local",
       "url": "img_golden_globe",
-      "content_description": "Foto com a estatueta do Globo de Ouro.",
+      "content_description": "Photo of the Golden Globe statuette.",
       "style": {
         "height": 400,
         "scale_type": "center_crop",
@@ -157,14 +157,14 @@
     "layout_type": "card_full",
     "id": 4,
     "name": "Critics Choice Awards",
-    "country": "Estados Unidos",
+    "country": "United States",
     "presented_by": "Broadcast Film Critics Association",
     "first_awarded_date": "22/01/1996",
     "nominees_id": 4,
     "logo": {
       "image_type": "local",
       "url": "img_logo_critics_choice",
-      "content_description": "Foto com a logo do Critics Choice Awards.",
+      "content_description": "Photo of the Critics Choice Awards logo.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -172,7 +172,7 @@
     "image": {
       "image_type": "local",
       "url": "img_critics_choice",
-      "content_description": "Foto com a estatueta do Critics Choice Awards.",
+      "content_description": "Photo of the Critics Choice Awards statuette.",
       "style": {
         "height": 400,
         "scale_type": "center_crop"
@@ -206,14 +206,14 @@
     "layout_type": "card_full",
     "id": 3,
     "name": "BAFTA Film Awards",
-    "country": "Reino Unido",
-    "presented_by": "Academia Britânica de Cinema e Televisão",
+    "country": "United Kingdom",
+    "presented_by": "British Academy of Film and Television Arts",
     "first_awarded_date": "29/05/1949",
     "nominees_id": 3,
     "logo": {
       "image_type": "local",
       "url": "img_logo_bafta",
-      "content_description": "Foto com a logo do BAFTA.",
+      "content_description": "Photo of the BAFTA logo.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -221,7 +221,7 @@
     "image": {
       "image_type": "local",
       "url": "img_bafta",
-      "content_description": "Foto com a estatueta do BAFTA.",
+      "content_description": "Photo of the BAFTA statuette.",
       "style": {
         "height": 400,
         "scale_type": "center_crop"
@@ -254,15 +254,15 @@
     "main_topic_type": "awards",
     "layout_type": "card_full",
     "id": 5,
-    "name": "Prêmio do Sindicato dos Atores (SAG)",
-    "country": "Estados Unidos",
+    "name": "Screen Actors Guild Awards (SAG)",
+    "country": "United States",
     "presented_by": "Screen Actors Guild",
     "first_awarded_date": "25/02/1995",
     "nominees_id": 5,
     "logo": {
       "image_type": "local",
       "url": "img_logo_sag_awards",
-      "content_description": "Foto com a logo do SAG.",
+      "content_description": "Photo of the SAG logo.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -270,7 +270,7 @@
     "image": {
       "image_type": "local",
       "url": "img_sag",
-      "content_description": "Foto com a estatueta do SAG.",
+      "content_description": "Photo of the SAG statuette.",
       "style": {
         "height": 400,
         "scale_type": "center_crop"
@@ -300,14 +300,14 @@
     "layout_type": "card_full",
     "id": 6,
     "name": "Independent Spirit Awards",
-    "country": "Estados Unidos",
+    "country": "United States",
     "presented_by": "Film Independent",
     "first_awarded_date": "22/03/1986",
     "nominees_id": 6,
     "logo": {
       "image_type": "local",
       "url": "img_logo_independent_spirit",
-      "content_description": "Foto com a logo do Independent Spirit Awards.",
+      "content_description": "Photo of the Independent Spirit Awards logo.",
       "style": {
         "scale_type": "center_crop"
       }
@@ -315,7 +315,7 @@
     "image": {
       "image_type": "local",
       "url": "img_independent_spirt",
-      "content_description": "Foto com a estatueta do Independent Spirit Awards.",
+      "content_description": "Photo of the Independent Spirit Awards statuette.",
       "style": {
         "height": 400,
         "scale_type": "center_crop"

@@ -177,36 +177,66 @@ def cmd_tmdb(args):
 # export / import (lotes de tradução)
 # --------------------------------------------------------------------------------------
 
-def cmd_export(args):
+def _link_titles(e, lang, cache) -> dict[str, dict]:
+    """Para cada marcador de link interno de filme (<tN>), o título em pt e no idioma de destino."""
+    _, tags = L.mask(_unmasked_example(e))
+    out = {}
+    for n, tag in enumerate(tags, start=1):
+        m = HREF_MOVIE_RE.search(tag.partition(L.PAIR_SEP)[0])
+        if m:
+            info = cache["movie"].get(m.group(1))
+            if info:
+                out[f"t{n}"] = {"pt": info["pt"], lang: info[lang], "year": info["year"]}
+    return out
+
+
+def _pending(args):
     entries, _ = collect_source()
     tr = L.load_translations(args.lang)
-    cache = L.load_json(L.TMDB_CACHE) if os.path.exists(L.TMDB_CACHE) else {"movie": {}}
     groups = set(args.groups.split(",")) if args.groups else None
-    items, chars = [], 0
-    # ordem estável: por grupo/arquivo/posição da primeira ocorrência
     ordered = sorted(entries.items(), key=lambda kv: (kv[1]["occurrences"][0].file, kv[1]["occurrences"][0].pointer))
     for eid, e in ordered:
         if eid in tr and tr[eid].get("src") == e["src"]:
             continue
         if groups and not (e["groups"] & groups):
             continue
-        movies = {}
-        for mid in HREF_MOVIE_RE.findall(_unmasked_example(e)):
-            info = cache["movie"].get(mid)
-            if info:
-                movies[mid] = {"pt": info["pt"], args.lang: info[args.lang], "original": info["original"], "year": info["year"]}
-        occ = e["occurrences"][0]
-        item = {"id": eid, "src": e["src"], "where": f"{occ.file} {occ.pointer}", "keys": sorted(e["keys"])}
-        if movies:
-            item["movies"] = movies
-        items.append(item)
+        yield eid, e
+
+
+def cmd_export(args):
+    """Exporta textos pendentes em lotes de texto simples (work/<lang>-NNN.src.txt).
+
+    Formato de cada item:
+        @@@ <id> | <arquivo> | links: {"t1": {"pt": "...", "en": "...", "year": "1972"}}
+        <texto em pt, podendo ter várias linhas>
+    O tradutor devolve um arquivo .txt no mesmo formato (só "@@@ <id>" + tradução).
+    """
+    cache = L.load_json(L.TMDB_CACHE) if os.path.exists(L.TMDB_CACHE) else {"movie": {}}
+    os.makedirs(WORK_DIR, exist_ok=True)
+    batches, current, chars = [], [], 0
+    for eid, e in _pending(args):
+        links = _link_titles(e, args.lang, cache)
+        header = f"@@@ {eid} | {e['occurrences'][0].file}"
+        if links:
+            header += " | links: " + json.dumps(links, ensure_ascii=False)
+        current.append(header + "\n" + e["src"])
         chars += len(e["src"])
         if args.max_chars and chars >= args.max_chars:
-            break
-    os.makedirs(WORK_DIR, exist_ok=True)
-    out = args.out or os.path.join(WORK_DIR, f"{args.lang}-batch.json")
-    L.dump_json(out, {"lang": args.lang, "items": items})
-    print(f"Exportados {len(items)} textos ({chars} caracteres) -> {os.path.relpath(out, L.ROOT)}")
+            batches.append(current)
+            current, chars = [], 0
+            if args.max_batches and len(batches) >= args.max_batches:
+                break
+    if current and not (args.max_batches and len(batches) >= args.max_batches):
+        batches.append(current)
+    start = args.start
+    for k, items in enumerate(batches):
+        path = os.path.join(WORK_DIR, f"{args.lang}-{start + k:03d}.src.txt")
+        with open(path, "w", encoding="utf-8") as fh:
+            fh.write("\n".join(items) + "\n")
+        size = sum(len(x) for x in items)
+        print(f"{os.path.relpath(path, L.ROOT)}: {len(items)} textos, {size} caracteres")
+    if not batches:
+        print("Nada pendente.")
 
 
 _SOURCE_RAW_CACHE: dict[str, object] = {}
@@ -222,29 +252,68 @@ def _unmasked_example(e) -> str:
     return container[key]
 
 
+HEADER_RE = re.compile(r"^@@@ ([0-9a-f]{12})\b.*$")
+
+
+def read_txt_batch(path: str) -> list[tuple[str, str]]:
+    items, eid, lines = [], None, []
+    with open(path, encoding="utf-8") as fh:
+        content = fh.read()
+    for line in content.split("\n"):
+        m = HEADER_RE.match(line)
+        if m:
+            if eid is not None:
+                items.append((eid, "\n".join(lines)))
+            eid, lines = m.group(1), []
+        elif eid is not None:
+            lines.append(line)
+    if eid is not None:
+        items.append((eid, "\n".join(lines)))
+    # A quebra de linha extra no fim do arquivo é tratada no import (comparando com a origem).
+    return items
+
+
+def _keep_outer_whitespace(src: str, text: str) -> str:
+    lead = src[: len(src) - len(src.lstrip(" "))]
+    trail = src[len(src.rstrip(" ")):]
+    return lead + text.strip(" ") + trail
+
+
 def cmd_import(args):
     entries, _ = collect_source()
     tr = L.load_translations(args.lang)
-    data = L.load_json(args.file)
-    items = data["items"] if isinstance(data, dict) else data
-    ok, rejected = 0, []
-    for item in items:
-        eid, text = item["id"], item.get("t")
+    if args.file.endswith(".json"):
+        data = L.load_json(args.file)
+        raw_items = [(it["id"], it.get("t")) for it in (data["items"] if isinstance(data, dict) else data)]
+    else:
+        raw_items = read_txt_batch(args.file)
+    ok, rejected, empty = 0, [], 0
+    for eid, text in raw_items:
         if text is None:
             continue
         e = entries.get(eid)
         if not e:
             rejected.append((eid, "id não existe mais no conteúdo pt"))
             continue
+        # Lote em texto: o item fica entre linhas; ignora sobra de linhas vazias no fim.
+        while text.count("\n") > e["src"].count("\n") and text.endswith("\n"):
+            text = text[:-1]
+        if not text.strip() and e["src"].strip():
+            empty += 1
+            rejected.append((eid, "tradução vazia"))
+            continue
+        text = _keep_outer_whitespace(e["src"], text)
         errors = L.check_markers(e["src"], text)
         if errors:
             rejected.append((eid, "; ".join(errors)))
             continue
         tr[eid] = {"src": e["src"], "t": text}
         ok += 1
-    L.save_translations(args.lang, tr)
-    print(f"Importadas {ok} traduções para '{args.lang}'. Rejeitadas: {len(rejected)}")
-    for eid, why in rejected[:50]:
+    if not args.dry_run:
+        L.save_translations(args.lang, tr)
+    verb = "Válidas" if args.dry_run else "Importadas"
+    print(f"{verb}: {ok} traduções ({args.lang}). Rejeitadas: {len(rejected)}")
+    for eid, why in rejected[:80]:
         print(f"  {eid}: {why}")
     if rejected:
         sys.exit(1)
@@ -371,8 +440,10 @@ def main():
     s = sub.add_parser("status"); s.add_argument("--lang", default="en"); s.set_defaults(fn=cmd_status)
     s = sub.add_parser("tmdb"); s.add_argument("--refresh", action="store_true"); s.set_defaults(fn=cmd_tmdb)
     s = sub.add_parser("export"); s.add_argument("--lang", required=True); s.add_argument("--groups")
-    s.add_argument("--max-chars", type=int, default=0); s.add_argument("--out"); s.set_defaults(fn=cmd_export)
-    s = sub.add_parser("import"); s.add_argument("--lang", required=True); s.add_argument("file"); s.set_defaults(fn=cmd_import)
+    s.add_argument("--max-chars", type=int, default=60000); s.add_argument("--max-batches", type=int, default=0)
+    s.add_argument("--start", type=int, default=1); s.set_defaults(fn=cmd_export)
+    s = sub.add_parser("import"); s.add_argument("--lang", required=True); s.add_argument("file")
+    s.add_argument("--dry-run", action="store_true", help="só valida, não grava"); s.set_defaults(fn=cmd_import)
     s = sub.add_parser("apply"); s.add_argument("--lang", required=True)
     s.add_argument("--require-complete", action="store_true"); s.set_defaults(fn=cmd_apply)
     s = sub.add_parser("validate"); s.add_argument("--lang", required=True); s.set_defaults(fn=cmd_validate)

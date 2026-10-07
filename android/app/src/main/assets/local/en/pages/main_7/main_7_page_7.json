@@ -3,31 +3,31 @@
   "content_list": [
     {
       "type": "text",
-      "content_text": "Em dezembro de 2019, um artigo publicado pela <i>The Verge</i> anunciou que, com o lançamento do filme <a href=\"https://_{type: 'screen', 'id': 181812, 'screen_type': movie}\">Star Wars: The Rise of Skywalker</a> (BR: Star Wars: A Ascensão Skywalker, 2019), a <strong>Disney</strong> havia produzido <strong>80% dos filmes com as maiores bilheterias do ano</strong>. A reação geral foi, compreensivelmente, bastante negativa. Mas esta notícia não foi particularmente surpreendente, já que era apenas o exemplo mais recente da Disney como uma gigante da mídia definitiva e possivelmente detentora de um grande monopólio."
+      "content_text": "In December 2019, an article published by <i>The Verge</i> announced that, with the release of <a href=\"https://_{type: 'screen', 'id': 181812, 'screen_type': movie}\">Star Wars: The Rise of Skywalker</a> (2019), <strong>Disney</strong> had produced <strong>80% of the year's highest-grossing films</strong>. The general reaction was, understandably, quite negative. But this news was not particularly surprising, since it was just the latest example of Disney as the ultimate media giant and possibly the holder of a huge monopoly."
     },
     {
       "type": "video",
       "video_id": "L0MK7qz13bU",
       "information": {
-        "contentTitle": "Cenas de Frozen – uma aventura congelante",
-        "contentText": "Frozen estreou em 27 de novembro de 2013 e foi recebido com aclamação pela crítica e público em geral. O filme foi considerado a melhor animação do estúdio desde a era do Renascimento da Disney e arrecadou mais de 1,2 bilhão de dólares nas bilheterias mundiais.",
-        "source": "Youtube: Canal <i>Disney UK</i>"
+        "contentTitle": "Scenes from Frozen",
+        "contentText": "Frozen premiered on November 27, 2013 and was met with acclaim from critics and audiences alike. The film was considered the studio's best animated film since the Disney Renaissance era and grossed more than $1.2 billion at the worldwide box office.",
+        "source": "YouTube: <i>Disney UK</i> channel"
       }
     },
     {
       "type": "essay",
       "video_id": "EVQflnGcx4k",
       "title": "Disney - The Magic of Animation",
-      "description": "Um olhar sobre os 12 princípios da animação desenvolvidos pela Disney para dar vida a uma imagem.",
+      "description": "A look at the 12 principles of animation developed by Disney to bring an image to life.",
       "channel": "kaptainkristian"
     },
     {
       "type": "text",
-      "content_text": "Essa porcentagem reflete que a Disney produziu <strong>oito</strong> dos <strong>dez</strong> filmes com maior bilheteria em 2019, feito garantido com <i>Star Wars: A Ascensão Skywalker</i> entrando no top 10 das maiores bilheterias do ano. Os sete outros filmes incluíram uma mistura de filmes da Marvel – <a href=\"https://_{type: 'screen', 'id': 299534, 'screen_type': movie}\">Avengers: Endgame</a> (BR: Vingadores: Ultimato, 2019), <a href=\"https://_{type: 'screen', 'id': 299537, 'screen_type': movie}\">Captain Marvel</a> (BR: Capitão Marvel, 2019), <a href=\"https://_{type: 'screen', 'id': 429617, 'screen_type': movie}\">Spider-Man: Far From Home</a> (BR: Homem-Aranha: Longe de Casa, 2019) -, animações - <a href=\"https://_{type: 'screen', 'id': 301528, 'screen_type': movie}\">Toy Story 4</a> (2019), <a href=\"https://_{type: 'screen', 'id': 330457, 'screen_type': movie}\">Frozen 2</a> (2019) - e remakes live-action – <a href=\"https://_{type: 'screen', 'id': 420818, 'screen_type': movie}\">The Lion King</a> (BR: O Rei Leão, 2019), <a href=\"https://_{type: 'screen', 'id': 420817, 'screen_type': movie}\">Aladdin</a> (2019). Os únicos filmes presentes na lista não lançados pelo estúdio foram <a href=\"https://_{type: 'screen', 'id': 475557, 'screen_type': movie}\">Joker</a> (BR: Coringa, 2019) e <a href=\"https://_{type: 'screen', 'id': 474350, 'screen_type': movie}\">It: Chapter Two</a> (BR: IT: Capítulo 2, 2019)."
+      "content_text": "This percentage reflects the fact that Disney produced <strong>eight</strong> of the <strong>ten</strong> highest-grossing films of 2019, a feat secured with <i>Star Wars: The Rise of Skywalker</i> entering the year's top 10 at the box office. The seven other films included a mix of Marvel movies – <a href=\"https://_{type: 'screen', 'id': 299534, 'screen_type': movie}\">Avengers: Endgame</a> (2019), <a href=\"https://_{type: 'screen', 'id': 299537, 'screen_type': movie}\">Captain Marvel</a> (2019), <a href=\"https://_{type: 'screen', 'id': 429617, 'screen_type': movie}\">Spider-Man: Far From Home</a> (2019) –, animated films – <a href=\"https://_{type: 'screen', 'id': 301528, 'screen_type': movie}\">Toy Story 4</a> (2019), <a href=\"https://_{type: 'screen', 'id': 330457, 'screen_type': movie}\">Frozen II</a> (2019) – and live-action remakes – <a href=\"https://_{type: 'screen', 'id': 420818, 'screen_type': movie}\">The Lion King</a> (2019), <a href=\"https://_{type: 'screen', 'id': 420817, 'screen_type': movie}\">Aladdin</a> (2019). The only films on the list not released by the studio were <a href=\"https://_{type: 'screen', 'id': 475557, 'screen_type': movie}\">Joker</a> (2019) and <a href=\"https://_{type: 'screen', 'id': 474350, 'screen_type': movie}\">It Chapter Two</a> (2019)."
     },
     {
       "type": "block_special",
-      "title": "A volta de uma das maiores franquias do Cinema",
+      "title": "The return of one of cinema's biggest franchises",
       "image": {
         "image_type": "local",
         "url": "img_star_wars_despertar_forca",
@@ -35,59 +35,59 @@
           "scale_type": "center_crop"
         }
       },
-      "description": "O desafio de <i>Star Wars - O Despertar da Força</i> era extremo. Rejuvenescer a franquia quase quarentona <strong>Star Wars</strong>, apresentando-a para uma nova geração sem esquecer dos fãs maduros, que continuam mantendo-a uma das maiores e mais lucrativas que já existiram. Mas <a href=\"https://_{type: 'screen', 'id': 15344, 'screen_type': person}\">J.J. Abrams</a> (n-1966) e a equipe da <i>Lucasfilm</i> fizeram escolhas corretas para esse reposicionamento. Acompanhado do roteirista de <a href=\"https://_{type: 'screen', 'id': 1891, 'screen_type': movie}\">The Empire Strikes Back</a> (BR: Guerra nas Estrelas: O Império Contra-Ataca, 1980), <a href=\"https://_{type: 'screen', 'id': 8844, 'screen_type': person}\">Lawrence Kasdan</a> (n-1949), o diretor parte da estrutura essencial estabelecida em <a href=\"https://_{type: 'screen', 'id': 11, 'screen_type': movie}\">Star Wars: Episode IV – A New Hope</a> (BR: Guerra nas Estrelas: Uma Nova Esperança, 1977), a \"<i>Jornada do Herói</i>\" de <a href=\"https://_{type: 'screen', 'id': 1021364, 'screen_type': person}\">Joseph Campbell</a> (1904-1987). Rey (Daisy Ridley) é o Luke Skywalker da vez. Uma jovem abandonada em um planeta deserto, aguardando sua hora pacientemente. Um androide carregando um segredo, porém, cruzará seu caminho - assim com R2-D2 e C-3PO cruzaram o de Luke, dando início à aventura estilo ópera espacial com direito a mestres, vilões mascarados, dilemas familiares, aceitação de seu próprio destino... tudo seguindo à risca o que foi estabelecido em 1977. Até o estilo de introdução dos stormtroopers, Kylo Ren (na posição do tabuleiro que foi de Darth Vader) e a Primeira Ordem (o novo Império) é idêntica.<br/><br/> \n\nA novidade fica por conta dos personagens jovens. Rey é a heroína que os tempos de Katniss Everdeen exigiam. Star Wars sempre teve uma personagem forte no centro, a Princesa Leia (Carrie Fisher), mas nunca deu a ela o protagonismo. Aqui, Rey é a figura ao redor da qual a trama se desenvolve. Suas cenas repercutem em vários níveis, fazendo uma inclusão que a cultura geek, hoje tão abrangente e necessitada de direcionamento pelo preconceito, precisava desesperadamente. E Daisy Ridley talvez seja a melhor atriz que já passou pela saga - já que a excelente Natalie Portman foi subaproveitada sob a direção desinteressada em atuação de George Lucas. Daisy simplesmente domina a tela. <br/><br/> \n\nO mesmo pode ser dito de John Boyega. Ator negro, no foco dos holofotes, entregando uma mistura de pânico e alívio cômico que ele transforma em determinação intensa. É o parceiro ideal para Daisy. Do outro lado da moeda, Adam Driver tem o papel mais difícil do filme. Seu Kylo Ren é uma figura trágica, mas que tem pouco espaço para ser explorada devidamente, já que mal aparece sem o capacete. É fácil confundir seu vilão em desenvolvimento com um personagem mal-desenvolvido. Há potencial ali e muito a ser explorado nos próximos filmes. <br/><br/> \n\nO elenco clássico é mais representado na figura de Han Solo (Harrison Ford), que faz piadas voltadas aos fãs e serve como o mentor/explicador e a figura paterna que foi Obi-Wan Kenobi (Alec Guiness) no original. Ele, Chewbacca e a Millennium Falcon estabelecem a conexão que os fãs esperavam com o passado e fornecem o desejado (e nada gratuito) <i>fan-service</i> que honra a devoção dos seguidores da criação de Lucas. <br/><br/> \n\nO filme não é isento de problemas, porém. E os mais graves deles também são derivados dessa necessidade de repetição. No Star Wars original e suas sequências, há uma série de soluções bastante apressadas e demasiadamente inocentes para problemas muito maiores que os protagonistas. Aqui não é diferente. No momento que a resistência da Nova República descobre a existência de uma arma capaz de fazer empalidecer a Estrela da Morte, bastam 5 minutos e a opinião de um operador de saneamento para que se descubra exatamente como destruí-la. Engenheiros distraídos continuam sendo o grande problema do Reich Espacial, aparentemente. <br/><br/> \n\nAlém disso, não há grande gravidade nos atos da Primeira Ordem - organização que apesar de seguir os passos do Império surge sem grandes explicações, algo que deve ter sido pensado para não alienar demais os potenciais novos fãs. Devastações colossais parecem corriqueiras e não têm o mesmo peso do original. A morte é sempre meio apressada em O Despertar da Força e dá pra sentir falta de Sir Alec Guiness explicando poeticamente como é sentir um \"distúrbio na Força, como se milhões de vozes repentinamente gritassem em terror e fossem inediatamente silenciadas\". A Força, esse componente fundamental a Star Wars, definitivamente despertou, mas ainda está esfregando os olhos. O universo Star Wars, por sua vez, segue mais vivo do que nunca na mistura espetacular de efeitos práticos e computação gráfica que J.J. Abrams fez questão de alcançar. O futuro envelhecido e gasto da Trilogia Original ressurge aqui ainda mais coberto pela pátina do tempo. Pequenas coisas, como as marquinhas de batida em um detonador termal, fazem abrir um sorriso. Tanto que sequências que carregam demais em CGI (como as que envolvem a alienígena Maz Kanata) parecem estranhas. Mérito da equipe de produção, que devolveu a qualidade palpável sobre a qual Star Wars foi construído. <br/><br/> \n\nProblemas à parte, Star Wars - O Despertar da Força é o Guerra nas Estrelas que esperávamos desde O Retorno de Jedi. Um filme que honra o passado, enche o peito para lidar com o presente e estabelece uma base sólida para o que virá a seguir... inspirando juntos os fãs antigos e, esperamos, uma nova geração.",
-      "credits": "Resumo baseado no artigo \"Crítica | Star Wars - O Despertar da Força\", por Érico Borgo no Omelete"
+      "description": "The challenge facing <i>Star Wars: The Force Awakens</i> was extreme: rejuvenating the nearly forty-year-old <strong>Star Wars</strong> franchise, introducing it to a new generation without forgetting the mature fans who keep it one of the biggest and most profitable ever. But <a href=\"https://_{type: 'screen', 'id': 15344, 'screen_type': person}\">J.J. Abrams</a> (b. 1966) and the <i>Lucasfilm</i> team made the right choices for this repositioning. Joined by the screenwriter of <a href=\"https://_{type: 'screen', 'id': 1891, 'screen_type': movie}\">The Empire Strikes Back</a> (1980), <a href=\"https://_{type: 'screen', 'id': 8844, 'screen_type': person}\">Lawrence Kasdan</a> (b. 1949), the director starts from the essential structure established in <a href=\"https://_{type: 'screen', 'id': 11, 'screen_type': movie}\">Star Wars: Episode IV – A New Hope</a> (1977), the \"<i>Hero's Journey</i>\" of <a href=\"https://_{type: 'screen', 'id': 1021364, 'screen_type': person}\">Joseph Campbell</a> (1904-1987). Rey (Daisy Ridley) is this generation's Luke Skywalker: a young woman abandoned on a desert planet, patiently waiting for her moment. A droid carrying a secret, however, will cross her path – just as R2-D2 and C-3PO crossed Luke's – kicking off a space-opera adventure complete with masters, masked villains, family dilemmas, acceptance of one's own destiny... all following to the letter what was established in 1977. Even the way the stormtroopers, Kylo Ren (in the position on the board once held by Darth Vader) and the First Order (the new Empire) are introduced is identical.<br/><br/>\n\nWhat's new comes from the young characters. Rey is the heroine that the age of Katniss Everdeen demanded. Star Wars always had a strong female character at its center, Princess Leia (Carrie Fisher), but never gave her the lead role. Here, Rey is the figure around whom the plot unfolds. Her scenes resonate on several levels, providing an inclusion that geek culture – so far-reaching today and in need of direction because of prejudice – desperately needed. And Daisy Ridley may be the best actress ever to pass through the saga – since the excellent Natalie Portman was underused under George Lucas's direction, which showed little interest in acting. Daisy simply owns the screen. <br/><br/>\n\nThe same can be said of John Boyega. A Black actor in the spotlight, delivering a mix of panic and comic relief that he transforms into intense determination. He is the ideal partner for Daisy. On the other side of the coin, Adam Driver has the hardest role in the film. His Kylo Ren is a tragic figure, but one with little room to be properly explored, since he barely appears without his helmet. It is easy to mistake his still-developing villain for a poorly developed character. There is potential there, and a lot to be explored in the next films. <br/><br/>\n\nThe classic cast is mostly represented by Han Solo (Harrison Ford), who cracks jokes aimed at the fans and serves as the mentor/explainer and father figure that Obi-Wan Kenobi (Alec Guinness) was in the original. He, Chewbacca and the Millennium Falcon establish the connection to the past that fans were hoping for and provide the desired (and far from gratuitous) <i>fan service</i> that honors the devotion of the followers of Lucas's creation. <br/><br/>\n\nThe film is not without problems, however. And the most serious of them also stem from this need for repetition. In the original Star Wars and its sequels, there are a number of very hasty and overly naive solutions to problems much bigger than the protagonists. Here it is no different. When the New Republic's resistance discovers the existence of a weapon capable of making the Death Star pale in comparison, it takes just 5 minutes and the opinion of a sanitation worker to figure out exactly how to destroy it. Absent-minded engineers continue to be the Space Reich's big problem, apparently. <br/><br/>\n\nIn addition, there is no great weight to the actions of the First Order – an organization that, despite following in the Empire's footsteps, appears without much explanation, something that must have been intended to avoid alienating potential new fans too much. Colossal devastation seems commonplace and doesn't carry the same weight as in the original. Death is always somewhat rushed in The Force Awakens, and one misses Sir Alec Guinness poetically explaining what it is like to feel \"a great disturbance in the Force, as if millions of voices suddenly cried out in terror and were suddenly silenced\". The Force, that fundamental component of Star Wars, has definitely awakened, but it is still rubbing its eyes. The Star Wars universe, in turn, is more alive than ever in the spectacular mix of practical effects and computer graphics that J.J. Abrams made a point of achieving. The aged, worn-out future of the Original Trilogy reappears here even more covered in the patina of time. Little things, like the dents on a thermal detonator, bring a smile. So much so that sequences that lean too heavily on CGI (such as those involving the alien Maz Kanata) feel strange. Credit goes to the production team, who restored the tangible quality on which Star Wars was built. <br/><br/>\n\nProblems aside, Star Wars: The Force Awakens is the Star Wars we had been waiting for since Return of the Jedi. A film that honors the past, takes a deep breath to deal with the present and lays a solid foundation for what is to come... inspiring longtime fans and, we hope, a new generation alike.",
+      "credits": "Summary based on the review \"Crítica | Star Wars - O Despertar da Força\" (Review | Star Wars: The Force Awakens), by Érico Borgo in Omelete"
     },
     {
       "type": "text",
-      "content_text": "Mais do que o número de filmes no top 10, a Casa das Ideias se destaca na soma total das bilheterias mundiais. <i>Vingadores: Ultimato</i> arrecadou quase 60% a mais do que o segundo filme de maior bilheteria, que também foi um filme da Disney, e mais de quatro vezes do que <i>It: Capítulo 2</i>. Então, quando olhamos para a receita total de bilheteria, a Disney realmente capturou quase 90% da receita bruta entre os principais filmes."
+      "content_text": "More than the number of films in the top 10, the House of Mouse stands out in the total sum of worldwide box office. <i>Avengers: Endgame</i> grossed almost 60% more than the second highest-grossing film, which was also a Disney film, and more than four times as much as <i>It Chapter Two</i>. So, when we look at total box-office revenue, Disney actually captured almost 90% of the gross revenue among the top films."
     },
     {
       "type": "video",
       "video_id": "syU9DTAGCL0",
       "information": {
-        "contentTitle": "Cenas de Toy Story 4",
-        "contentText": "O crítico de cinema Márcio Sallem comentou que \"(...) mesmo que Toy Story 4 pareça um mero epílogo para a gangue de brinquedos como um todo, é o desfecho que Woody, o protagonista de toda a série, de fato merecia\". E concluiu afirmando que \"Com a mistura de nostalgia e redescobertas, bem como a sensação de dever cumprido e fechamento, Toy Story 4 é a cereja que faltava a esta franquia irrepreensível e inesquecível\".",
-        "source": "Youtube: Canal <i>JoBlo Animated Videos</i>"
+        "contentTitle": "Scenes from Toy Story 4",
+        "contentText": "Film critic Márcio Sallem commented that \"(...) even if Toy Story 4 seems like a mere epilogue for the toy gang as a whole, it is the ending that Woody, the protagonist of the entire series, truly deserved\". And he concluded by stating that \"With its mix of nostalgia and rediscovery, as well as a sense of mission accomplished and closure, Toy Story 4 is the missing cherry on top of this flawless and unforgettable franchise\".",
+        "source": "YouTube: <i>JoBlo Animated Videos</i> channel"
       }
     },
     {
       "type": "essay",
       "video_id": "DroTM9SqcWI",
       "title": "What 8 Disney Live-Action Remakes Looked Like Behind The Scenes | Movies Insider",
-      "description": "Os remakes em live-action da Disney de seus clássicos animados se tornaram um grampo de bilheteria ao longo dos anos. Para criar um mundo fotorrealista de animais falantes, “The Jungle Book” e “The Lion King” utilizaram técnicas inovadoras de produção virtual. “Maleficent: Mistress of Evil” fez Angelina Jolie parecer que estava voando pelo ar, e “Mulan” usou um trabalho de arame para permitir que seus heróis fizessem acrobacias que desafiam a gravidade. Em \"Aladdin\", Will Smith vestiu um traje de captura de movimento, o que permitiu ao filme criar o Gênio com CGI enquanto ainda dá ao personagem os movimentos característicos do ator. E “A Bela e a Fera” construiu seus sets do zero sempre que podia.",
+      "description": "Disney's live-action remakes of its animated classics have become a box-office staple over the years. To create a photorealistic world of talking animals, \"The Jungle Book\" and \"The Lion King\" used innovative virtual production techniques. \"Maleficent: Mistress of Evil\" made Angelina Jolie look like she was flying through the air, and \"Mulan\" used wire work to let its heroes perform gravity-defying stunts. In \"Aladdin\", Will Smith wore a motion-capture suit, which allowed the film to create the Genie with CGI while still giving the character the actor's signature moves. And \"Beauty and the Beast\" built its sets from scratch whenever it could.",
       "channel": "insider"
     },
     {
       "type": "text",
-      "content_text": "Embora 2019 tenha sido um ano grande ano para a Disney, eles sempre tiveram uma participação sólida entre os filmes de maior bilheteria e seu domínio só aumentou na última década. Na verdade, os anos 2010 foram realmente a <i>década da Disney</i>. Dos 50 filmes com maior bilheteria lançados entre 2010 a 2019, a Disney produziu 56% (28) e respondeu por 62% da bilheteria nos EUA. Em comparação, o estúdio que representou a segunda maior quantidade, a <i>Warner Bros.</i>, produziu 18% dos 50 maiores filmes da década de 2010 e respondeu por 15% das bilheterias americana. O fato de que vários grandes estúdios nem chegam perto do poder da Disney é bastante notável e potencialmente alarmante."
+      "content_text": "Although 2019 was a big year for Disney, the studio has always had a solid share of the highest-grossing films, and its dominance has only increased over the last decade. In fact, the 2010s really were the <i>decade of Disney</i>. Of the 50 highest-grossing films released between 2010 and 2019, Disney produced 56% (28) and accounted for 62% of the US box office. By comparison, the studio with the second-largest share, <i>Warner Bros.</i>, produced 18% of the top 50 films of the 2010s and accounted for 15% of the American box office. The fact that several major studios don't even come close to Disney's power is quite remarkable and potentially alarming."
     },
     {
       "type": "quote",
       "quote": {
-        "quote": "A única forma de chegar ao impossível é acreditar que é possível.",
-        "author": "Alice no País das Maravilhas "
+        "quote": "The only way to achieve the impossible is to believe it is possible.",
+        "author": "Alice in Wonderland "
       },
       "quote_mark_color": "md_red_500"
     },
     {
       "type": "text",
-      "content_text": "Nem sempre foi assim. Nas décadas anteriores, a Disney teve em média apenas 15% dos filmes com maior bilheteria, o que era muito mais comparável a outros grandes estúdios como <i>Warner Bros.</i> e <i>Universal</i>. Na verdade, antes da década de 2010, a Disney era o principal estúdio apenas na década de 1990, período conhecido como o <strong>Renascimento da Disney</strong>, explicado aqui em capítulos anteriores. E ainda assim, mesmo durante esses anos de expansão com clássicos como <a href=\"https://_{type: 'screen', 'id': 8587, 'screen_type': movie}\">The Lion King</a> (BR: O Rei Leão, 1995), <a href=\"https://_{type: 'screen', 'id': 862, 'screen_type': movie}\">Toy Story</a> (1994) e <a href=\"https://_{type: 'screen', 'id': 10020, 'screen_type': movie}\">Beauty And The Beast</a> (BR: A Bela e a Fera, 1991), a Disney conquistou apenas 25% das bilheterias."
+      "content_text": "It wasn't always like this. In previous decades, Disney had on average only 15% of the highest-grossing films, which was much more comparable to other major studios such as <i>Warner Bros.</i> and <i>Universal</i>. In fact, before the 2010s, Disney was the leading studio only in the 1990s, a period known as the <strong>Disney Renaissance</strong>, explained here in previous chapters. And even then, during those years of expansion with classics such as <a href=\"https://_{type: 'screen', 'id': 8587, 'screen_type': movie}\">The Lion King</a> (1994), <a href=\"https://_{type: 'screen', 'id': 862, 'screen_type': movie}\">Toy Story</a> (1995) and <a href=\"https://_{type: 'screen', 'id': 10020, 'screen_type': movie}\">Beauty and the Beast</a> (1991), Disney captured only 25% of the box office."
     },
     {
       "type": "video",
       "video_id": "dE1P4zDhhqw",
       "information": {
-        "contentTitle": "Cenas de Vingadores: Ultimato",
-        "contentText": "O filme foi amplamente aguardado, com a Disney apoiando o filme com extensas campanhas de marketing. Ele estreou em Los Angeles em 22 de abril de 2019, e nos Estados Unidos em 26 de abril de 2019, nos formatos IMAX e 3D. Foi altamente bem recebido pela crítica, com elogios direcionados para sua direção, atuação, trilha sonora, efeitos visuais, valor de entretenimento e peso emocional, com muitos louvando seu ponto culminante da história de vinte e dois filmes.",
-        "source": "Youtube: Canal <i>BestScene</i>"
+        "contentTitle": "Scenes from Avengers: Endgame",
+        "contentText": "The film was widely anticipated, with Disney backing it with extensive marketing campaigns. It premiered in Los Angeles on April 22, 2019, and opened in the United States on April 26, 2019, in IMAX and 3D formats. It was very well received by critics, with praise directed at its direction, acting, score, visual effects, entertainment value and emotional weight, with many lauding it as the culmination of a twenty-two-film story.",
+        "source": "YouTube: <i>BestScene</i> channel"
       }
     },
     {
       "type": "essay",
       "video_id": "gsIQa7sH5_Y",
-      "title": "Rogue One vs. O Despertar da Força — A culpa é das Guerras nas Estrelas",
-      "description": "Neste vídeo Lessons from Screeplay examina algumas das falhas e imperfeições em Rogue One e em O Despertar da Força para extrair as lições que podemos aprender sobre mostrar x contar, protagonistas ativos e as consequências significativas.",
+      "title": "Rogue One vs. The Force Awakens — Blame It on Star Wars",
+      "description": "In this video, Lessons from the Screenplay examines some of the flaws and imperfections in Rogue One and The Force Awakens to draw out the lessons we can learn about showing vs. telling, active protagonists and meaningful consequences.",
       "channel": "lessons_from_the_screenplay",
       "movie": {
         "adult": false,
@@ -5924,7 +5924,7 @@
     },
     {
       "type": "text",
-      "content_text": "As últimas aquisições realizadas pela Disney refletem esse sucesso. Até então, a <strong>Pixar</strong> sempre foi um destaque no mundo das animações, lançando ano após ano animações de qualidade, o que não mudou após a sua compra pela Disney. Mas duas aquisições mudaram o jogo, e uma terceira terá consequências talvez na década de 2020: o anunciou em 2009 sobre a compra da <strong>Marvel Entertainment</strong> por 4 Bilhões de dólares e, em 2012, a compra da <strong>Lucasfilm</strong>. A terceira aquisição, realizada em 2019, foi encima da <strong>21st Century Fox</strong>, por 71 bilhões de dólares. Hoje o <i>Universo Cinematográfico da Marvel</i> e <i>Star Wars</i> são uma das franquias mais lucrativas da história."
+      "content_text": "Disney's latest acquisitions reflect this success. Until then, <strong>Pixar</strong> had always stood out in the world of animation, releasing quality animated films year after year, which did not change after its purchase by Disney. But two acquisitions changed the game, and a third will perhaps have consequences in the 2020s: the 2009 announcement of the purchase of <strong>Marvel Entertainment</strong> for $4 billion and, in 2012, the purchase of <strong>Lucasfilm</strong>. The third acquisition, completed in 2019, was of <strong>21st Century Fox</strong>, for $71 billion. Today the <i>Marvel Cinematic Universe</i> and <i>Star Wars</i> are among the most profitable franchises in history."
     },
     {
       "type": "image",
@@ -5936,29 +5936,29 @@
         }
       },
       "information": {
-        "contentTitle": "Top 50 das maiores bilheterias entre 2010 e 2019",
-        "contentText": "A lista com as maiores bilheterias da década de 2010, mostrando o destaque nas produções lançadas pela Disney.",
+        "contentTitle": "Top 50 highest-grossing films between 2010 and 2019",
+        "contentText": "The list of the highest-grossing films of the 2010s, showing the prominence of Disney's releases.",
         "source": "Box Office Mojo"
       }
     },
     {
       "type": "text",
-      "content_text": "Na década de 1940, após anos de comportamento anticompetitivo por parte de grandes estúdios de cinema, a Suprema Corte dos Estados Unidos decidiu quebrar o \"<i>velho sistema de Hollywood</i>\" , visto que limitava a escolha dos consumidores e, por sua vez, sufocava a criatividade da indústria. Embora o dilema atual da Disney seja estruturalmente muito diferente dos casos da década de 1940, as implicações e efeitos prejudiciais para a indústria cinematográfica são bastante semelhantes."
+      "content_text": "In the 1940s, after years of anticompetitive behavior by the major film studios, the United States Supreme Court decided to break up the \"<i>old Hollywood system</i>\", since it limited consumer choice and, in turn, stifled the industry's creativity. Although Disney's current dilemma is structurally very different from the cases of the 1940s, the implications and harmful effects for the film industry are quite similar."
     },
     {
       "type": "video",
       "video_id": "4CbLXeGSDxg",
       "information": {
-        "contentTitle": "Trailer de O Rei Leão (2019)",
-        "contentText": "O filme foi lançado nos Estados Unidos no dia 19 de julho. Como era esperado pela Disney, o filme foi gigantesco sucesso de bilheteria arrecadando US$ 531 milhões de dólares na sua abertura mundial, ultrapassando Star Wars: O Despertar da Força que arrecadou US$ 529 milhões em 2015, foi também a 4° maior estreia mundial do cinema na época.",
-        "source": "Youtube: Canal <i>Walt Disney Studios</i>"
+        "contentTitle": "Trailer for The Lion King (2019)",
+        "contentText": "The film was released in the United States on July 19. As Disney expected, it was a gigantic box-office success, grossing $531 million in its worldwide opening, surpassing Star Wars: The Force Awakens, which grossed $529 million in 2015; it was also the 4th-biggest worldwide opening in film history at the time.",
+        "source": "YouTube: <i>Walt Disney Studios</i> channel"
       }
     },
     {
       "type": "essay",
       "video_id": "ulm7bcB2xvY",
-      "title": "Contando uma história de dentro para fora Divertidamente. ",
-      "description": "Criar uma história muitas vezes é uma jornada, tanto para o escritor, tanto para os personagens. Neste vídeo, Lessons from the Screenplay analisa o processo de escrita de Divertidamente.",
+      "title": "Telling a story from the inside out: Inside Out. ",
+      "description": "Creating a story is often a journey, both for the writer and for the characters. In this video, Lessons from the Screenplay analyzes the writing process of Inside Out.",
       "channel": "lessons_from_the_screenplay",
       "movie": {
         "adult": false,
@@ -11800,8 +11800,8 @@
     },
     {
       "type": "text",
-      "content_text": "Em um mundo cativado por épicos gigantescos de super-heróis e remakes de grandes sucessos, existe o medo de haver uma abertura cada vez menor para a novidade, a estranheza e a produção de filmes originais, especialmente porque os conceitos de filmes originais estão se tornando cada vez mais arriscados na era dos streamings e da pirataria.",
-      "content_credits": "Resumo baseado no artigo \"The Decade of Disney\", de Ben Tanen."
+      "content_text": "In a world captivated by gigantic superhero epics and remakes of big hits, there is a fear that there will be less and less room for novelty, strangeness and original filmmaking, especially since original film concepts are becoming increasingly risky in the era of streaming and piracy.",
+      "content_credits": "Summary based on the article \"The Decade of Disney\", by Ben Tanen."
     },
     {
       "type": "movie_list",
@@ -12114,8 +12114,8 @@
     },
     {
       "type": "link_screen",
-      "subtitle": "Os acontecimentos que marcaram o mundo",
-      "title": "Timeline de Acontecimentos de 2010 até atualmente",
+      "subtitle": "The events that shaped the world",
+      "title": "Timeline of Events from 2010 to Today",
       "click": {
         "screen": "timeline",
         "parameters": [
@@ -12132,7 +12132,7 @@
           "scale_type": "center_crop"
         }
       },
-      "description": "O terror social ganha as bilheterias com Corra!, de Jordan Peele; o terror clássico de casa mal assombrada e exorcismo se mantém vivo com Invocação do mal e o horror psicológico ganha novas possibilidades com Babadook e A Bruxa. Clique aqui e veja de forma cronológica os principais acontecimentos do cinema de 2010 até hoje."
+      "description": "Social horror conquers the box office with Jordan Peele's Get Out; classic haunted house and exorcism horror stays alive with The Conjuring, and psychological horror gains new possibilities with The Babadook and The Witch. Click here to see the main events in cinema from 2010 to today in chronological order."
     }
   ]
 }

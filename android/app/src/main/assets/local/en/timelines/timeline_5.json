@@ -5,17 +5,17 @@
   "timeline_list": [
     {
       "type": "title",
-      "title": "A História<br/>do Cinema:<br/>1970 a 1989",
-      "page_title": "1970 a 1989",
+      "title": "The History<br/>of Cinema:<br/>1970 to 1989",
+      "page_title": "1970 to 1989",
       "coming_soon": false,
-      "previous": "1960 a 1969",
-      "next": "1990 a 2009"
+      "previous": "1960 to 1969",
+      "next": "1990 to 2009"
     },
     {
       "type": "item",
       "year": "19\n70",
-      "title": "A retomada",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 240975, 'screen_type': movie}\">Zhi qu wei hu shan</a> (BR: Tomando a Montanha do Tigre por Estratégia, 1970) é o primeiro filme chinês a ser lançado desde o início da Revolução Cultural.",
+      "title": "The Comeback",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 240975, 'screen_type': movie}\">Zhi qu wei hu shan</a> (Taking Tiger Mountain by Strategy, 1970) is the first Chinese film to be released since the start of the Cultural Revolution.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -28,8 +28,8 @@
     {
       "type": "item",
       "year": "19\n70",
-      "title": "Vietnã no Festival de Cinema de Berlim",
-      "description": "O <strong>Festival de Cinema de Berlim</strong> entra em colapso por causa de <a href=\"https://_{type: 'screen', 'id': 197960, 'screen_type': movie}\">O.K.</a> (1970), filme de <a href=\"https://_{type: 'screen', 'id': 26595, 'screen_type': person}\">Michael Verhoeven</a> (n-1938), que oferece uma polêmica representação das atrocidades dos americanos na <strong>Guerra do Vietnã</strong>.",
+      "title": "Vietnam at the Berlin Film Festival",
+      "description": "The <strong>Berlin Film Festival</strong> collapses over <a href=\"https://_{type: 'screen', 'id': 197960, 'screen_type': movie}\">O.K.</a> (1970), a film by <a href=\"https://_{type: 'screen', 'id': 26595, 'screen_type': person}\">Michael Verhoeven</a> (b. 1938) that offers a controversial depiction of American atrocities in the <strong>Vietnam War</strong>.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -42,8 +42,8 @@
     {
       "type": "item",
       "year": "19\n70",
-      "title": "Um bom início",
-      "description": "A estreia de <a href=\"https://_{type: 'screen', 'id': 586258, 'screen_type': person}\">Med Hondo</a> (n-1936) com <a href=\"https://_{type: 'screen', 'id': 195841, 'screen_type': movie}\">Soleil O</a> (BR: Oh. Sol, 1973) repercute e abre de forma marcante a nova década para o cinema africano.",
+      "title": "A Good Start",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 586258, 'screen_type': person}\">Med Hondo</a>'s (b. 1936) debut with <a href=\"https://_{type: 'screen', 'id': 195841, 'screen_type': movie}\">Soleil O</a> (1973) makes waves and opens the new decade for African cinema in striking fashion.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -56,8 +56,8 @@
     {
       "type": "item",
       "year": "19\n70",
-      "title": "A explosão do Kung Fu",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 62762, 'screen_type': movie}\">Chinese Boxer</a> (BR: A Morte em minhas Mãos, 1970) chega aos cinemas e com ele, a <strong>explosão dos filmes de kung fu</strong>.",
+      "title": "The Kung Fu Explosion",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 62762, 'screen_type': movie}\">The Chinese Boxer</a> (1970) hits theaters, and with it comes the <strong>kung fu film explosion</strong>.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -71,7 +71,7 @@
       "type": "item",
       "year": "19\n71",
       "title": "Do you feel lucky, punk?",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 984, 'screen_type': movie}\">Dirty Harry</a> (BR: Perseguidor Implacável, 1971) chega aos cinemas, no mesmo ano em que <i>Charles Manson</i> e os outros réus são considerados culpados de todos os crimes.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 984, 'screen_type': movie}\">Dirty Harry</a> (1971) hits theaters the same year that <i>Charles Manson</i> and his co-defendants are found guilty on all charges.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -85,7 +85,7 @@
       "type": "item",
       "year": "19\n71",
       "title": "Blaxploitation",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 482, 'screen_type': movie}\">Shaft</a> (1971) e <a href=\"https://_{type: 'screen', 'id': 5822, 'screen_type': movie}\">Sweet Sweetback's Baadasssss Song</a> (1971) são lançados, marcando o <strong>início do Blaxploitation</strong> (também chamado de Blacksploitation).",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 482, 'screen_type': movie}\">Shaft</a> (1971) and <a href=\"https://_{type: 'screen', 'id': 5822, 'screen_type': movie}\">Sweet Sweetback's Baadasssss Song</a> (1971) are released, marking the <strong>beginning of Blaxploitation</strong> (also called Blacksploitation).",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -98,8 +98,8 @@
     {
       "type": "item",
       "year": "19\n71",
-      "title": "As bases dos thrillers de conspiração",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 6349, 'screen_type': person}\">Alan J. Pakula</a> (1928-1998) inicia sua \"<i>trilogia da paranoia</i>\" com <a href=\"https://_{type: 'screen', 'id': 466, 'screen_type': movie}\">Klute</a> (BR: Klute, o passado condena, 1971). O filme estabelece os temas que se tornaram essenciais aos thrillers de conspiração.",
+      "title": "The Foundations of Conspiracy Thrillers",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 6349, 'screen_type': person}\">Alan J. Pakula</a> (1928-1998) begins his \"<i>paranoia trilogy</i>\" with <a href=\"https://_{type: 'screen', 'id': 466, 'screen_type': movie}\">Klute</a> (1971). The film establishes the themes that became essential to conspiracy thrillers.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -112,8 +112,8 @@
     {
       "type": "item",
       "year": "19\n71",
-      "title": "Laranja Mecânica",
-      "description": "Dirigido por <a href=\"https://_{type: 'screen', 'id': 240, 'screen_type': person}\">Stanley Kubrick</a> (1928-1999), <a href=\"https://_{type: 'screen', 'id': 185, 'screen_type': movie}\">A Clockwork Orange</a> (BR: Laranja Mecânica, 1971) levanta questões sobre o pensamento individual, as opções pessoais e a violência.",
+      "title": "A Clockwork Orange",
+      "description": "Directed by <a href=\"https://_{type: 'screen', 'id': 240, 'screen_type': person}\">Stanley Kubrick</a> (1928-1999), <a href=\"https://_{type: 'screen', 'id': 185, 'screen_type': movie}\">A Clockwork Orange</a> (1971) raises questions about individual thought, personal choice and violence.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -126,8 +126,8 @@
     {
       "type": "item",
       "year": "19\n71",
-      "title": "Vigilância eletrônica",
-      "description": "Dirigido por <a href=\"https://_{type: 'screen', 'id': 39996, 'screen_type': person}\">Sidney Lumet</a> (n-1924), <a href=\"https://_{type: 'screen', 'id': 30941, 'screen_type': movie}\">The Anderson Tapes</a> (BR: O golpe de John Anderson, 1971) introduz a presença da vigilância eletrônica como um tema importante.",
+      "title": "Electronic surveillance",
+      "description": "Directed by <a href=\"https://_{type: 'screen', 'id': 39996, 'screen_type': person}\">Sidney Lumet</a> (b. 1924), <a href=\"https://_{type: 'screen', 'id': 30941, 'screen_type': movie}\">The Anderson Tapes</a> (1971) introduces electronic surveillance as a major theme.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -140,8 +140,8 @@
     {
       "type": "item",
       "year": "19\n72",
-      "title": "O Renascimento dos filmes de máfia",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 238, 'screen_type': movie}\">The Godfather</a> (BR: O Poderoso Chefão, 1972) é lançado, fazendo um tremendo sucesso, se tornando um símbolo cultural. Mais do que isso, o filme acaba sendo um dos motores para o renascimento dos filmes de máfia na década de 1970 até 1990.",
+      "title": "The Revival of Mob Movies",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 238, 'screen_type': movie}\">The Godfather</a> (1972) is released, becoming a tremendous success and a cultural symbol. More than that, the film turns out to be one of the driving forces behind the revival of mob movies from the 1970s through the 1990s.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -154,8 +154,8 @@
     {
       "type": "item",
       "year": "19\n72",
-      "title": "Sexo, Manteiga e Brando",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 1643, 'screen_type': movie}\">Ultimo tango a Parigi</a> (BR: O último tango em Paris, 1972) produz mais manchetes internacionais do que qualquer outro filme anterior em idioma diferente do inglês. O filme se torna um dos maiores símbolos de violência sexual no cinema.",
+      "title": "Sex, Butter and Brando",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1643, 'screen_type': movie}\">Ultimo tango a Parigi</a> (Last Tango in Paris, 1972) generates more international headlines than any previous non-English-language film. The film becomes one of the most prominent symbols of sexual violence in cinema.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -168,8 +168,8 @@
     {
       "type": "item",
       "year": "19\n72",
-      "title": "Pornografia na moda",
-      "description": "<i>Garganta Profunda</i> faz a pornografia ficar na moda por um breve tempo e se torna altamente lucrativo.",
+      "title": "Pornography in Vogue",
+      "description": "<i>Deep Throat</i> briefly makes pornography fashionable and becomes highly profitable.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -182,8 +182,8 @@
     {
       "type": "item",
       "year": "19\n72",
-      "title": "Mestre dos desastres",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 7506, 'screen_type': person}\">Irwin Allen</a> (1916-1991), produz e divide a direção de <a href=\"https://_{type: 'screen', 'id': 551, 'screen_type': movie}\">The Poseidon Adventure</a> (BR: O destino do Poseidon, 1972), tornando-se o \"<i>mestre dos desastres</i>\" na década de 1970.",
+      "title": "Master of Disaster",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 7506, 'screen_type': person}\">Irwin Allen</a> (1916-1991) produces and co-directs <a href=\"https://_{type: 'screen', 'id': 551, 'screen_type': movie}\">The Poseidon Adventure</a> (1972), becoming the \"<i>master of disaster</i>\" of the 1970s.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -196,8 +196,8 @@
     {
       "type": "item",
       "year": "19\n73",
-      "title": "Histeria e Medo",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 9552, 'screen_type': movie}\">The Exorcist</a> (BR: O exorcista, 1973) é lançado, gerando uma histeria nos EUA. Notícias de pessoas passando mal e tendo convulsões vira capa dos principais jornais da época. O filme marca o início de uma nova era dos filmes de terror com temática religiosa, como <a href=\"https://_{type: 'screen', 'id': 794, 'screen_type': movie}\">The Omen</a> (BR: A profecia, 1976).",
+      "title": "Hysteria and Fear",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 9552, 'screen_type': movie}\">The Exorcist</a> (1973) is released, causing hysteria in the US. Reports of people feeling sick and having seizures make the front pages of the major newspapers of the time. The film marks the beginning of a new era of religious-themed horror films, such as <a href=\"https://_{type: 'screen', 'id': 794, 'screen_type': movie}\">The Omen</a> (1976).",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -211,7 +211,7 @@
       "type": "item",
       "year": "19\n73",
       "title": "Bruce Lee",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 9461, 'screen_type': movie}\">Enter the Dragon</a> (BR: Operação Dragão, 1973) chega aos cinemas, levando <a href=\"https://_{type: 'screen', 'id': 19429, 'screen_type': person}\">Bruce Lee</a> (1940-1973) ao estrelato e virando um marco cultural e base para os filmes de kung fu lançados desde então.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 9461, 'screen_type': movie}\">Enter the Dragon</a> (1973) hits theaters, propelling <a href=\"https://_{type: 'screen', 'id': 19429, 'screen_type': person}\">Bruce Lee</a> (1940-1973) to stardom and becoming a cultural landmark and the foundation for the kung fu films released ever since.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -224,8 +224,8 @@
     {
       "type": "item",
       "year": "19\n74",
-      "title": "O início dos filmes Slashers",
-      "description": "Primeiro entre os <strong>slasher movies</strong>, <a href=\"https://_{type: 'screen', 'id': 16938, 'screen_type': movie}\">Black Christmas</a> (BR: Noite do Terror, 1974) apresenta tomadas do ponto de vista do assassino. <a href=\"https://_{type: 'screen', 'id': 10051, 'screen_type': person}\">Tobe Hooper</a> (1943-2017) aperfeiçoa a fórmula com <a href=\"https://_{type: 'screen', 'id': 30497, 'screen_type': movie}\">The Texas Chain Saw Massacre</a> (BR: O Massacre da Serra Elétrica, 1974).",
+      "title": "The Beginning of Slasher Films",
+      "description": "The first of the <strong>slasher movies</strong>, <a href=\"https://_{type: 'screen', 'id': 16938, 'screen_type': movie}\">Black Christmas</a> (1974) features shots from the killer's point of view. <a href=\"https://_{type: 'screen', 'id': 10051, 'screen_type': person}\">Tobe Hooper</a> (1943-2017) perfects the formula with <a href=\"https://_{type: 'screen', 'id': 30497, 'screen_type': movie}\">The Texas Chain Saw Massacre</a> (1974).",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -238,8 +238,8 @@
     {
       "type": "item",
       "year": "19\n74",
-      "title": "Conspiração e desconfiança",
-      "description": "Nixon renuncia à presidência. <a href=\"https://_{type: 'screen', 'id': 592, 'screen_type': movie}\">The Conversation</a> (BR: A conversação, 1974) e <a href=\"https://_{type: 'screen', 'id': 17365, 'screen_type': movie}\">The Parallax View</a> (BR: A trama, 1974) examinam temas como conspiração e desconfiança.",
+      "title": "Conspiracy and Distrust",
+      "description": "Nixon resigns the presidency. <a href=\"https://_{type: 'screen', 'id': 592, 'screen_type': movie}\">The Conversation</a> (1974) and <a href=\"https://_{type: 'screen', 'id': 17365, 'screen_type': movie}\">The Parallax View</a> (1974) explore themes such as conspiracy and distrust.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -253,7 +253,7 @@
       "type": "item",
       "year": "19\n74",
       "title": "Neo-noir",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 3556, 'screen_type': person}\">Roman Polanski</a> (n-1933) lança <a href=\"https://_{type: 'screen', 'id': 829, 'screen_type': movie}\">Chinatown</a> (1974), um dos maiores símbolos do <strong>neo-noir</strong> (novo cinema noir).",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 3556, 'screen_type': person}\">Roman Polanski</a> (b. 1933) releases <a href=\"https://_{type: 'screen', 'id': 829, 'screen_type': movie}\">Chinatown</a> (1974), one of the greatest symbols of <strong>neo-noir</strong> (new film noir).",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -267,7 +267,7 @@
       "type": "item",
       "year": "19\n75",
       "title": "Theo Angelopoulos",
-      "description": "O terceiro filme de <a href=\"https://_{type: 'screen', 'id': 10316, 'screen_type': person}\">Theo Angelopoulos</a> (n-1935), <a href=\"https://_{type: 'screen', 'id': 689, 'screen_type': movie}\">O Tiasos</a> (BR: A viagem dos comediantes, 1975), confirma o surgimento de um novo e excepcional talento na Grécia, dono de um notável estilo individual.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 10316, 'screen_type': person}\">Theo Angelopoulos</a>'s (b. 1935) third film, <a href=\"https://_{type: 'screen', 'id': 689, 'screen_type': movie}\">O Thiasos</a> (The Travelling Players, 1975), confirms the emergence of an exceptional new talent in Greece, with a remarkable personal style.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -281,7 +281,7 @@
       "type": "item",
       "year": "19\n75",
       "title": "Blockbusters",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (BR: Tubarão, 1975) é lançado no verão, superando a bilheteria de <a href=\"https://_{type: 'screen', 'id': 238, 'screen_type': movie}\">The Godfather</a> (BR: O poderoso chefão, 1972). Ele se torna o primeiro \"<i>filme-acontecimento</i>\", estabelecendo o padrão dos filmes <strong>blockbusters</strong> desde então.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (1975) is released in the summer, surpassing the box office of <a href=\"https://_{type: 'screen', 'id': 238, 'screen_type': movie}\">The Godfather</a> (1972). It becomes the first \"<i>event movie</i>\", setting the standard for <strong>blockbuster</strong> films ever since.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -294,8 +294,8 @@
     {
       "type": "item",
       "year": "19\n75",
-      "title": "Mulheres no Cinema Africano",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 1298788, 'screen_type': person}\">Safi Faye</a> (n-1943) se torna a primeira diretora da África subsaariana com o longa <a href=\"https://_{type: 'screen', 'id': 204445, 'screen_type': movie}\">Kaddu Beykat</a> (BR: Carta Camponesa, 1975).",
+      "title": "Women in African Cinema",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1298788, 'screen_type': person}\">Safi Faye</a> (b. 1943) becomes the first female director from sub-Saharan Africa with the feature film <a href=\"https://_{type: 'screen', 'id': 204445, 'screen_type': movie}\">Kaddu Beykat</a> (Letter from My Village, 1975).",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -309,7 +309,7 @@
       "type": "item",
       "year": "19\n75",
       "title": "The Rocky Horror Picture Show",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 36685, 'screen_type': movie}\">The Rocky Horror Picture Show</a> (1975) se torna um filme cult, ganhando o posto de filme com maior tempo em cartaz, sendo exibido no mesmo cinema em Munique, na Alemanha, durante todas as semanas por mais de 27 anos.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 36685, 'screen_type': movie}\">The Rocky Horror Picture Show</a> (1975) becomes a cult film, earning the title of longest-running film, screened at the same theater in Munich, Germany, every week for more than 27 years.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -323,7 +323,7 @@
       "type": "item",
       "year": "19\n75",
       "title": "VHS",
-      "description": "Os gravadores de vídeo se difundem nos formatos <strong>betamax</strong> e (um ano depois) <strong>VHS</strong>, que permitem gravar filmes e assisti-los em casa.",
+      "description": "Video recorders spread in the <strong>Betamax</strong> and (a year later) <strong>VHS</strong> formats, allowing people to record films and watch them at home.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -336,8 +336,8 @@
     {
       "type": "item",
       "year": "19\n76",
-      "title": "Heroínas adolescentes e super poderes",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 7340, 'screen_type': movie}\">Carrie</a> (BR: Carrie - a estranha, 1976) lança a onda das heroínas adolescentes, dos protagonistas com poderes psíquicos ou tele cinéticos e das adaptações dos livros de terror do escritor <a href=\"https://_{type: 'screen', 'id': 3027, 'screen_type': person}\">Stephen King</a>.",
+      "title": "Teenage Heroines and Superpowers",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 7340, 'screen_type': movie}\">Carrie</a> (1976) launches the wave of teenage heroines, protagonists with psychic or telekinetic powers, and adaptations of horror novels by writer <a href=\"https://_{type: 'screen', 'id': 3027, 'screen_type': person}\">Stephen King</a>.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -350,8 +350,8 @@
     {
       "type": "item",
       "year": "19\n76",
-      "title": "Escândalos no Governo",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 103, 'screen_type': movie}\">Taxi Driver</a> (1976) e <a href=\"https://_{type: 'screen', 'id': 891, 'screen_type': movie}\">All the President's Men</a> (BR: Todos os homens do presidente, 1976) refletem as cicatrizes psicológicas da <srong>Guerra do Vietnã</strong> e do escândalo de <strong>Watergate</strong> respectivamente.",
+      "title": "Government Scandals",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 103, 'screen_type': movie}\">Taxi Driver</a> (1976) and <a href=\"https://_{type: 'screen', 'id': 891, 'screen_type': movie}\">All the President's Men</a> (1976) reflect the psychological scars of the <srong>Vietnam War</strong> and the <strong>Watergate</strong> scandal, respectively.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -364,8 +364,8 @@
     {
       "type": "item",
       "year": "19\n70",
-      "title": "Que a Força Esteja com Você!",
-      "description": "Estreia <a href=\"https://_{type: 'screen', 'id': 11, 'screen_type': movie}\">Star Wars</a> (BR: Guerra nas Estrelas, 1977), um marco na cultura popular. E mais do que isso, seu sucesso revela o apetite do público por um cinema <i>mainstream</i> mais simples.",
+      "title": "May the Force Be with You!",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 11, 'screen_type': movie}\">Star Wars</a> (1977) is released, a landmark in popular culture. More than that, its success reveals audiences' appetite for simpler <i>mainstream</i> cinema.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -378,8 +378,8 @@
     {
       "type": "item",
       "year": "19\n77",
-      "title": "Discoteca ao som de BeeGees",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 11009, 'screen_type': movie}\">Saturday Night Fever</a> (BR: Os Embalos de Sábado à Noite, 1977) e a discoteca tornam o mundo de assalto. O álbum com as músicas do filme se tornou a trilha sonora mais vendida de todos os tempos.",
+      "title": "Disco to the Sound of the Bee Gees",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 11009, 'screen_type': movie}\">Saturday Night Fever</a> (1977) and disco take the world by storm. The album of songs from the film became the best-selling soundtrack of all time.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -392,8 +392,8 @@
     {
       "type": "item",
       "year": "19\n78",
-      "title": "Assassinos Psicopatas",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 948, 'screen_type': movie}\">Halloween</a> (1978) se inspira em <a href=\"https://_{type: 'screen', 'id': 539, 'screen_type': movie}\">Psycho</a> (BR: Psicose, 1960) e nos <strong>giallo</strong> de <a href=\"https://_{type: 'screen', 'id': 25826, 'screen_type': person}\">Mario Bava</a> (1914-1980) e <a href=\"https://_{type: 'screen', 'id': 4955, 'screen_type': person}\">Dario Argento</a> (n-1940) para consolidar a fórmula do filme com assassinos psicopatas.",
+      "title": "Psychopathic Killers",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 948, 'screen_type': movie}\">Halloween</a> (1978) draws on <a href=\"https://_{type: 'screen', 'id': 539, 'screen_type': movie}\">Psycho</a> (1960) and on the <strong>giallo</strong> films of <a href=\"https://_{type: 'screen', 'id': 25826, 'screen_type': person}\">Mario Bava</a> (1914-1980) and <a href=\"https://_{type: 'screen', 'id': 4955, 'screen_type': person}\">Dario Argento</a> (b. 1940) to cement the formula of the psycho-killer film.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -407,7 +407,7 @@
       "type": "item",
       "year": "19\n78",
       "title": "Jackie Chan",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 11230, 'screen_type': movie}\">Zui quan</a> (BR: O Mestre Invencível, 1978) se torna um sucesso, apresentando o kung fu misturado com a comédia física, algo que se tornou marcante na carreira de <a href=\"https://_{type: 'screen', 'id': 18897, 'screen_type': person}\">Jackie Chan</a> (n-1954).",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 11230, 'screen_type': movie}\">Zui quan</a> (Drunken Master, 1978) becomes a hit, presenting kung fu blended with physical comedy, something that became a hallmark of <a href=\"https://_{type: 'screen', 'id': 18897, 'screen_type': person}\">Jackie Chan</a>'s (b. 1954) career.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -420,8 +420,8 @@
     {
       "type": "item",
       "year": "19\n78",
-      "title": "É um pássaro? Um Avião?",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 1924, 'screen_type': movie}\">Superman</a> (BR: Super Homem, 1978) chega aos cinemas dando à luz o filme de <i>super-heróis</i>.",
+      "title": "Is It a Bird? Is It a Plane?",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1924, 'screen_type': movie}\">Superman</a> (1978) hits theaters, giving birth to the <i>superhero</i> film.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -434,8 +434,8 @@
     {
       "type": "item",
       "year": "19\n79",
-      "title": "Eu adoro o cheiro de napalm pela manhã",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 28, 'screen_type': movie}\">Apocalypse now</a> (1979) é lançado, após uma conturbada produção. O filme ganha a <i>Palma de Ouro</i> no <strong>Festival de Cannes</strong> e é indicado ao <i>Oscar</i> de Melhor filme.",
+      "title": "I love the smell of napalm in the morning",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 28, 'screen_type': movie}\">Apocalypse Now</a> (1979) is released after a troubled production. The film wins the <i>Palme d'Or</i> at the <strong>Cannes Film Festival</strong> and is nominated for the <i>Oscar</i> for Best Picture.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -448,8 +448,8 @@
     {
       "type": "item",
       "year": "19\n79",
-      "title": "Terror e Monstros",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 348, 'screen_type': movie}\">Alien</a> (BR: Alien, O 8º Passageiro, 1979), quatro anos após <a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (BR: Tubarão, 1975), é lançado, trazendo uma nova vida aos filmes de monstros.",
+      "title": "Horror and Monsters",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 348, 'screen_type': movie}\">Alien</a> (1979), released four years after <a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (1975), breathes new life into monster movies.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -463,7 +463,7 @@
       "type": "item",
       "year": "19\n79",
       "title": "Mad Max",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 20629, 'screen_type': person}\">George Miller</a> (n-1945) dirige <a href=\"https://_{type: 'screen', 'id': 9659, 'screen_type': movie}\">Mad Max</a> (1979). O filme se torna o maior sucesso em termos de custo e benefício de todos os tempos e apresenta <a href=\"https://_{type: 'screen', 'id': 2461, 'screen_type': person}\">Mel Gibson</a> (n-1956) ao mundo.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 20629, 'screen_type': person}\">George Miller</a> (b. 1945) directs <a href=\"https://_{type: 'screen', 'id': 9659, 'screen_type': movie}\">Mad Max</a> (1979). The film becomes the most profitable movie of all time relative to its cost and introduces <a href=\"https://_{type: 'screen', 'id': 2461, 'screen_type': person}\">Mel Gibson</a> (b. 1956) to the world.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -477,7 +477,7 @@
       "type": "item",
       "year": "19\n79",
       "title": "Chuck Norris",
-      "description": "O ex-campeão de caratê <a href=\"https://_{type: 'screen', 'id': 51576, 'screen_type': person}\">Chuck Norris</a> estrela o filme de artes marciais <a href=\"https://_{type: 'screen', 'id': 21376, 'screen_type': movie}\">A Force of One</a> (BR: Força destruidora, 1979).",
+      "description": "Former karate champion <a href=\"https://_{type: 'screen', 'id': 51576, 'screen_type': person}\">Chuck Norris</a> stars in the martial arts film <a href=\"https://_{type: 'screen', 'id': 21376, 'screen_type': movie}\">A Force of One</a> (1979).",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -490,8 +490,8 @@
     {
       "type": "item",
       "year": "19\n80",
-      "title": "Sexta-Feira 13",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 4488, 'screen_type': movie}\">Friday the 13th</a> (BR: Sexta-Feira 13, 1980) é lançado, iniciando uma onda ainda maior de filmes <i>slasher</i> nos anos 1980.",
+      "title": "Friday the 13th",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 4488, 'screen_type': movie}\">Friday the 13th</a> (1980) is released, kicking off an even bigger wave of <i>slasher</i> films in the 1980s.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -505,7 +505,7 @@
       "type": "item",
       "year": "19\n80",
       "title": "ZAZ",
-      "description": "A paródia <a href=\"https://_{type: 'screen', 'id': 813, 'screen_type': movie}\">Airplane!</a> (BR: Apertem os Cintos... O Piloto Sumiu!, 1980) recebe indicações ao <i>Globo de Ouro</i> e ao <i>Bafta</i>. O filme marca o início de uma onda de filmes paródias usando a <strong>fórmula ZAZ</strong> nos anos 1980. Essas comédias inspiraram a série <i>Todo mundo em Pânico</i>.",
+      "description": "The parody <a href=\"https://_{type: 'screen', 'id': 813, 'screen_type': movie}\">Airplane!</a> (1980) earns <i>Golden Globe</i> and <i>BAFTA</i> nominations. The film marks the start of a wave of parody films using the <strong>ZAZ formula</strong> in the 1980s. These comedies inspired the <i>Scary Movie</i> series.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -518,8 +518,8 @@
     {
       "type": "item",
       "year": "19\n80",
-      "title": "ET telefone Casa",
-      "description": "Apesar da escala modesta, <a href=\"https://_{type: 'screen', 'id': 601, 'screen_type': movie}\">E.T. the Extra-Terrestrial</a> (BR: E.T. o Extraterrestre, 1982) quebra recordes de bilheteria e se torna o filme mais bem sucedido de todos os tempos.",
+      "title": "E.T. Phone Home",
+      "description": "Despite its modest scale, <a href=\"https://_{type: 'screen', 'id': 601, 'screen_type': movie}\">E.T. the Extra-Terrestrial</a> (1982) breaks box office records and becomes the most successful film of all time.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -533,7 +533,7 @@
       "type": "item",
       "year": "19\n80",
       "title": "Monty Python",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 36819, 'screen_type': movie}\">Time Bandits</a> (BR: Os bandidos do tempo, 1981) se constrói sobre o sucesso dos filmes de Monty Python e explora a demanda crescente por comédias de fantasia para o público de todas as idades.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 36819, 'screen_type': movie}\">Time Bandits</a> (1981) builds on the success of the Monty Python films and taps into the growing demand for fantasy comedies for audiences of all ages.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -546,8 +546,8 @@
     {
       "type": "item",
       "year": "19\n83",
-      "title": "Jerry Buckheimer e Don Simpson",
-      "description": "O sucesso de <a href=\"https://_{type: 'screen', 'id': 535, 'screen_type': movie}\">Flashdance</a> (BR: Flashdance - Em Ritmo de Embalo, 1983) marca o começo do domínio de <a href=\"https://_{type: 'screen', 'id': 770, 'screen_type': person}\"> Jerry Bruckheimer </a> e <a href=\"https://_{type: 'screen', 'id': 771, 'screen_type': person}\">Don Simpson</a> na produção dos filmes de Hollywood voltados para o grande público.",
+      "title": "Jerry Bruckheimer and Don Simpson",
+      "description": "The success of <a href=\"https://_{type: 'screen', 'id': 535, 'screen_type': movie}\">Flashdance</a> (1983) marks the beginning of <a href=\"https://_{type: 'screen', 'id': 770, 'screen_type': person}\">Jerry Bruckheimer</a> and <a href=\"https://_{type: 'screen', 'id': 771, 'screen_type': person}\">Don Simpson</a>'s dominance over the production of mass-market Hollywood films.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -561,7 +561,7 @@
       "type": "item",
       "year": "19\n83",
       "title": "Steve Martin",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 67773, 'screen_type': person}\">Steve Martin</a> é coautor e astro de <a href=\"https://_{type: 'screen', 'id': 11591, 'screen_type': movie}\">The Man with Two Brains</a> (BR: O Médico Erótico, 1983), confirmando sua posição como um dos grandes comediantes em atividade.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 67773, 'screen_type': person}\">Steve Martin</a> co-writes and stars in <a href=\"https://_{type: 'screen', 'id': 11591, 'screen_type': movie}\">The Man with Two Brains</a> (1983), confirming his position as one of the great working comedians.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -574,8 +574,8 @@
     {
       "type": "item",
       "year": "19\n84",
-      "title": "Mockmentary",
-      "description": "É lançado <a href=\"https://_{type: 'screen', 'id': 11031, 'screen_type': movie}\">This is Spinal Tap</a> (BR: Isto é Spinal Tap, 1984), sucesso cômico sobre uma fictícia banda de <i>heavy metal</i> britânica que deu origem ao <strong>gênero mockmentary</strong>.",
+      "title": "Mockumentary",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 11031, 'screen_type': movie}\">This Is Spinal Tap</a> (1984) is released, a comedy hit about a fictional British <i>heavy metal</i> band that gave rise to the <strong>mockumentary genre</strong>.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -589,7 +589,7 @@
       "type": "item",
       "year": "19\n85",
       "title": "I'll be back",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 1100, 'screen_type': person}\">Arnold Schwarzenegger</a> (n-1947) interpreta um robô assassino do futuro no primeiro filme da série <a href=\"https://_{type: 'screen', 'id': 218, 'screen_type': movie}\">Terminator</a> (BR: O Exterminador do Futuro, 1984). O filme é considerado um marco para os filmes de ficção cientifica.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1100, 'screen_type': person}\">Arnold Schwarzenegger</a> (b. 1947) plays a killer robot from the future in the first film of the <a href=\"https://_{type: 'screen', 'id': 218, 'screen_type': movie}\">Terminator</a> series (The Terminator, 1984). The film is considered a landmark of science fiction cinema.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -602,8 +602,8 @@
     {
       "type": "item",
       "year": "19\n85",
-      "title": "Festival de Sundance",
-      "description": "O <strong>Sundance Institute</strong> realiza seu primeiro festival de cinema em Utah, nos EUA, para promover o cinema independente mundial.",
+      "title": "Sundance Film Festival",
+      "description": "The <strong>Sundance Institute</strong> holds its first film festival in Utah, in the US, to promote independent cinema from around the world.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -616,8 +616,8 @@
     {
       "type": "item",
       "year": "19\n85",
-      "title": "De volta para o futuro",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 105, 'screen_type': movie}\">Back to the Future</a> (BR: De volta para o futuro, 1985) define a superprodução da era Reagan.",
+      "title": "Back to the Future",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 105, 'screen_type': movie}\">Back to the Future</a> (1985) defines the blockbuster of the Reagan era.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -630,8 +630,8 @@
     {
       "type": "item",
       "year": "19\n85",
-      "title": "Comédias para Adolescentes",
-      "description": "As comédias adolescentes faturam nas bilheterias com <a href=\"https://_{type: 'screen', 'id': 105, 'screen_type': movie}\">Back to the Future</a> (BR: De volta para o futuro, 1985), <a href=\"https://_{type: 'screen', 'id': 2108, 'screen_type': movie}\">The Breakfast Club</a> (BR: Clube dos Cinco, 1985), <a href=\"https://_{type: 'screen', 'id': 9340, 'screen_type': movie}\">The Goonies</a> (BR: Os Goonies, 1985) e <a href=\"https://_{type: 'screen', 'id': 11814, 'screen_type': movie}\">Weird Science</a> (BR: Mulher nota 1000, 1985).",
+      "title": "Teen Comedies",
+      "description": "Teen comedies rake in box office money with <a href=\"https://_{type: 'screen', 'id': 105, 'screen_type': movie}\">Back to the Future</a> (1985), <a href=\"https://_{type: 'screen', 'id': 2108, 'screen_type': movie}\">The Breakfast Club</a> (1985), <a href=\"https://_{type: 'screen', 'id': 9340, 'screen_type': movie}\">The Goonies</a> (1985) and <a href=\"https://_{type: 'screen', 'id': 11814, 'screen_type': movie}\">Weird Science</a> (1985).",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -645,7 +645,7 @@
       "type": "item",
       "year": "19\n86",
       "title": "Life moves pretty fast...",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 9377, 'screen_type': movie}\">Ferris Bueller's Day Off</a> (BR: Curtindo a vida adoidado, 1986) continua a onda adolescente nos cinemas, e marcando <a href=\"https://_{type: 'screen', 'id': 11505, 'screen_type': person}\">John Hughes</a> (1950-2009) como um dos grandes diretores da década de 1980.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 9377, 'screen_type': movie}\">Ferris Bueller's Day Off</a> (1986) keeps the teen wave going in theaters, establishing <a href=\"https://_{type: 'screen', 'id': 11505, 'screen_type': person}\">John Hughes</a> (1950-2009) as one of the great directors of the 1980s.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -658,8 +658,8 @@
     {
       "type": "item",
       "year": "19\n86",
-      "title": "Estúdio Ghibli",
-      "description": "O <strong>Estúdio Ghibli</strong> lança o seu primeiro filme oficialmente, <a href=\"https://_{type: 'screen', 'id': 4935, 'screen_type': movie}\">Hauru no Ugoku Shiro</a> (BR: O Castelo Animado, 2004), após o sucesso de <a href=\"https://_{type: 'screen', 'id': 81, 'screen_type': movie}\">Kaze no Tani no Naushika</a> (BR: Nausicaä do Vale do Vento, 1984).",
+      "title": "Studio Ghibli",
+      "description": "<strong>Studio Ghibli</strong> officially releases its first film, <a href=\"https://_{type: 'screen', 'id': 4935, 'screen_type': movie}\">Hauru no Ugoku Shiro</a> (Howl's Moving Castle, 2004), following the success of <a href=\"https://_{type: 'screen', 'id': 81, 'screen_type': movie}\">Kaze no Tani no Naushika</a> (Nausicaä of the Valley of the Wind, 1984).",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -673,7 +673,7 @@
       "type": "item",
       "year": "19\n87",
       "title": "Dirty Dancing",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 88, 'screen_type': movie}\">Dirty Dancing</a> (BR: Dirty Dancing: Ritmo quente, 1987) se torna um dos mais emblemáticos filmes dos anos 1980.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 88, 'screen_type': movie}\">Dirty Dancing</a> (1987) becomes one of the most iconic films of the 1980s.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -687,7 +687,7 @@
       "type": "item",
       "year": "19\n87",
       "title": "Good morning, Vietnam! Hey, this is not a test",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 8246, 'screen_type': person}\">Barry Levinson</a> (n-1942) dirige <a href=\"https://_{type: 'screen', 'id': 801, 'screen_type': movie}\">Good Morning, Vietnam</a> (BR: Bom dia, Vietnã, 1987), baseado no trabalho de um locutor de rádio de uma base das forças armadas que ficou popular entre as tropas que serviam o Vietnã.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 8246, 'screen_type': person}\">Barry Levinson</a> (b. 1942) directs <a href=\"https://_{type: 'screen', 'id': 801, 'screen_type': movie}\">Good Morning, Vietnam</a> (1987), based on the work of an armed forces radio DJ who became popular among the troops serving in Vietnam.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -701,7 +701,7 @@
       "type": "item",
       "year": "19\n87",
       "title": "Die Hard!",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 62, 'screen_type': person}\">Bruce Willis</a> (n-1955) usa roupas rasgadas para interpretar o policial <i>John McClane</i> em <a href=\"https://_{type: 'screen', 'id': 562, 'screen_type': movie}\">Die Hard</a> (BR: Duro de matar, 1988).",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 62, 'screen_type': person}\">Bruce Willis</a> (b. 1955) wears torn clothes to play cop <i>John McClane</i> in <a href=\"https://_{type: 'screen', 'id': 562, 'screen_type': movie}\">Die Hard</a> (1988).",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -715,7 +715,7 @@
       "type": "item",
       "year": "19\n87",
       "title": "Bumping the lamp",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 856, 'screen_type': movie}\">Who Framed Roger Rabbit</a> (BR: Uma cilada para Roger Rabbit, 1988) chega aos cinemas, impressionando as plateias na forma em que os desenhos animados estão inseridos nas cenas com atores reais. E pela primeira vez, vemos o Mickey Mouse e Pernalonga na mesma cena.",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 856, 'screen_type': movie}\">Who Framed Roger Rabbit</a> (1988) hits theaters, dazzling audiences with the way its cartoons are integrated into live-action scenes. And for the first time, we see Mickey Mouse and Bugs Bunny in the same scene.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -728,8 +728,8 @@
     {
       "type": "item",
       "year": "19\n89",
-      "title": "Batman de Tim Burton",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 268, 'screen_type': movie}\">Batman</a> (1989) atualiza a superprodução de super-herói - e se torna o primeiro filme a render 100 milhões de dólares nos primeiros 10 dias de exibição.",
+      "title": "Tim Burton's Batman",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 268, 'screen_type': movie}\">Batman</a> (1989) updates the superhero blockbuster - and becomes the first film to gross 100 million dollars in its first 10 days of release.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -742,8 +742,8 @@
     {
       "type": "item",
       "year": "19\n89",
-      "title": "Cinema Independente",
-      "description": "O cinema indie amadurece com <a href=\"https://_{type: 'screen', 'id': 1412, 'screen_type': movie}\">Sex, Lies, and Videotape</a> (BR: Sexo, Mentiras e Videotape, 1989), sucesso que abre caminho para o diretor <a href=\"https://_{type: 'screen', 'id': 1884, 'screen_type': person}\">Steven Soderbergh</a> (n-1963) e o estúdio Miramax.",
+      "title": "Independent Cinema",
+      "description": "Indie cinema comes of age with <a href=\"https://_{type: 'screen', 'id': 1412, 'screen_type': movie}\">sex, lies, and videotape</a> (1989), a hit that paves the way for director <a href=\"https://_{type: 'screen', 'id': 1884, 'screen_type': person}\">Steven Soderbergh</a> (b. 1963) and the Miramax studio.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -756,8 +756,8 @@
     {
       "type": "item",
       "year": "19\n89",
-      "title": "Faça a coisa certa",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 925, 'screen_type': movie}\">Do the Right Thing</a> (BR: Faça a Coisa Certa, 1989), de <a href=\"https://_{type: 'screen', 'id': 5281, 'screen_type': person}\">Spike Lee</a> (n-1957), chega aos cinemas, consagrando o diretor como uma das grandes revelações da época. O filme foi um precursor dos filmes focados na periferia e em personagens Afro-Americanos.",
+      "title": "Do the Right Thing",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 925, 'screen_type': movie}\">Do the Right Thing</a> (1989), by <a href=\"https://_{type: 'screen', 'id': 5281, 'screen_type': person}\">Spike Lee</a> (b. 1957), hits theaters, establishing the director as one of the great breakthroughs of the era. The film was a forerunner of films focused on marginalized urban neighborhoods and African American characters.",
       "image_transparent": false,
       "image": {
         "image_type": "online_firebase",
@@ -769,8 +769,8 @@
     },
     {
       "type": "footer",
-      "previous": "1960 a 1969",
-      "next": "1990 a 2009"
+      "previous": "1960 to 1969",
+      "next": "1990 to 2009"
     }
   ]
 }

@@ -4,7 +4,7 @@
     "content": [
       {
         "type": "person_list",
-        "title": "O Júri",
+        "title": "The Jury",
         "persons": [
           {
             "id": 223,
@@ -55,7 +55,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Palma de Ouro",
+        "name": "Palme d'Or",
         "nominee_list": [
           {
             "type": "movie",
@@ -229,7 +229,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Grande Prêmio",
+        "name": "Grand Prix",
         "nominee_list": [
           {
             "type": "movie",
@@ -403,7 +403,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz",
+        "name": "Best Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -427,12 +427,12 @@
         "video_id": "s0Rc8kAucLY",
         "information": {
           "contentTitle": "La Palme d'Or est attribuée à Parasite de Bong Joon-Ho - Cannes 2019",
-          "source": "Youtube: Canal <i>CANAL+ Cinema</i>"
+          "source": "YouTube: <i>CANAL+ Cinema</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator",
+        "name": "Best Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -453,7 +453,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro",
+        "name": "Best Screenplay",
         "nominee_list": [
           {
             "type": "movie",
@@ -627,7 +627,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Diretor",
+        "name": "Best Director",
         "nominee_list": [
           {
             "type": "person",
@@ -651,12 +651,12 @@
         "video_id": "jACTl84dvaM",
         "information": {
           "contentTitle": "ATLANTIQUE - Rang I - Cannes 2019 - VO",
-          "source": "Youtube: Canal <i>Festival de Cannes (Officiel)</i>"
+          "source": "YouTube: <i>Festival de Cannes (Officiel)</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Prêmio do Júri",
+        "name": "Jury Prize",
         "nominee_list": [
           {
             "type": "movie",
@@ -830,7 +830,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Câmera de Ouro",
+        "name": "Caméra d'Or",
         "nominee_list": [
           {
             "type": "movie",
@@ -844,7 +844,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Palma de Ouro de Curta-Metragem",
+        "name": "Short Film Palme d'Or",
         "nominee_list": [
           {
             "type": "movie",

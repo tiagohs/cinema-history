@@ -4,11 +4,11 @@
     "content": [
       {
         "type": "text",
-        "content_text": "*<i>Não está incluido os prêmios para Televisão</i>."
+        "content_text": "*<i>Television awards are not included</i>."
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme",
+        "name": "Best Picture",
         "nominee_list": [
           {
             "type": "movie",
@@ -54,7 +54,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz",
+        "name": "Best Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -135,12 +135,12 @@
         "video_id": "komTpYKf9FE",
         "information": {
           "contentTitle": "Parasite: Award Acceptance Speech | 26th Annual SAG Awards | TNT",
-          "source": "Youtube: Canal <i>TNT</i>"
+          "source": "YouTube: <i>TNT</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator",
+        "name": "Best Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -220,7 +220,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz Coadjuvante",
+        "name": "Best Supporting Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -299,7 +299,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator Coadjuvante",
+        "name": "Best Supporting Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -383,12 +383,12 @@
         "video_id": "7YDpW-XSuoI",
         "information": {
           "contentTitle": "Joaquin Phoenix: Award Acceptance Speech | 26th Annual SAG Awards | TNT",
-          "source": "Youtube: Canal <i>TNT</i>"
+          "source": "YouTube: <i>TNT</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Elenco de Dublês em Filmes",
+        "name": "Outstanding Performance by a Stunt Ensemble in a Motion Picture",
         "nominee_list": [
           {
             "type": "movie",
@@ -434,7 +434,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Homenageado do Ano",
+        "name": "Honoree of the Year",
         "nominee_list": [
           {
             "type": "person",

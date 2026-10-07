@@ -4,7 +4,7 @@
     "content": [
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme",
+        "name": "Best Picture",
         "nominee_list": [
           {
             "type": "movie",
@@ -50,7 +50,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Diretor",
+        "name": "Best Director",
         "nominee_list": [
           {
             "type": "person",
@@ -131,7 +131,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme de Estréia",
+        "name": "Best First Feature",
         "nominee_list": [
           {
             "type": "movie",
@@ -188,12 +188,12 @@
         "video_id": "QmWn4REiGxs",
         "information": {
           "contentTitle": "BENNY and JOSH SAFDIE wins Best Director for UNCUT GEMS at the 35th Film Independent Spirit Awards",
-          "source": "Youtube: Canal <i>Film Independent</i>"
+          "source": "YouTube: <i>Film Independent</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz",
+        "name": "Best Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -273,7 +273,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator",
+        "name": "Best Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -354,7 +354,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Atriz Coadjuvante",
+        "name": "Best Supporting Actress",
         "nominee_list": [
           {
             "type": "person",
@@ -435,7 +435,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Ator Coadjuvante",
+        "name": "Best Supporting Actor",
         "nominee_list": [
           {
             "type": "person",
@@ -519,12 +519,12 @@
         "video_id": "q4inTgQvyRQ",
         "information": {
           "contentTitle": "BOOKSMART wins Best First Feature at the 35th Film Independent Spirit Awards",
-          "source": "Youtube: Canal <i>Film Independent</i>"
+          "source": "YouTube: <i>Film Independent</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro",
+        "name": "Best Screenplay",
         "nominee_list": [
           {
             "type": "movie",
@@ -570,7 +570,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Roteiro de Estréia",
+        "name": "Best First Screenplay",
         "nominee_list": [
           {
             "type": "movie",
@@ -616,7 +616,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Fotografia",
+        "name": "Best Cinematography",
         "nominee_list": [
           {
             "type": "movie",
@@ -665,12 +665,12 @@
         "video_id": "ihalG3Rw_QA",
         "information": {
           "contentTitle": "ADAM SANDLER wins Best Male Lead for UNCUT GEMS at the 35th Film Independent Spirit Awards",
-          "source": "Youtube: Canal <i>Film Independent</i>"
+          "source": "YouTube: <i>Film Independent</i> channel"
         }
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Montagem",
+        "name": "Best Film Editing",
         "nominee_list": [
           {
             "type": "movie",
@@ -716,7 +716,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Documentário",
+        "name": "Best Documentary Feature",
         "nominee_list": [
           {
             "type": "movie",
@@ -762,7 +762,7 @@
       },
       {
         "type": "awards_nominees",
-        "name": "Melhor Filme Internacional",
+        "name": "Best International Feature Film",
         "nominee_list": [
           {
             "type": "movie",

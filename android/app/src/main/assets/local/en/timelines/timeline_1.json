@@ -27,13 +27,13 @@
     {
       "type": "item",
       "year": "18\n95",
-      "title": "A primeira companhia cinematográfica do mundo",
-      "description": "<i>Comptoir Général de Photographie</i>, sob o nome de <strong>Gaumont</strong>, surgia a primeira companhia cinematográfica do mundo – e a mais antiga ainda em atividade. Foi aqui que <a href=\"https://_{type: 'screen', 'id': 1071403, 'screen_type': person}\">Alice Guy Blaché</a> começou como secretária, antes de se tornar uma das diretoras mais importantes do cinema.",
+      "title": "The world's first film company",
+      "description": "<i>Comptoir Général de Photographie</i>, under the name <strong>Gaumont</strong>, became the world's first film company – and the oldest one still in operation. It was here that <a href=\"https://_{type: 'screen', 'id': 1071403, 'screen_type': person}\">Alice Guy Blaché</a> started out as a secretary, before becoming one of the most important directors in cinema.",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_gaumont.webp",
-        "content_description": "Foto com a logo da Companhia Comptoir Général de Photographie",
+        "content_description": "Photo with the logo of the Comptoir Général de Photographie company",
         "style": {
           "scale_type": "center_crop"
         }
@@ -42,12 +42,12 @@
     {
       "type": "item",
       "year": "18\n96",
-      "title": "Um Beijo Polêmico",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 239027, 'screen_type': 'person'}\">Thomas Edison</a>, o pai do cinetoscópio, lança aquela que pode ser a primeira grande polêmica na história do cinema, <a href=\"https://_{type: 'screen', 'id': 94570, 'screen_type': 'movie'}\">The Kiss</a> (BR: O Beijo, 1896), dirigido por <a href=\"https://_{'type': 'screen', 'id': 110348, 'screen_type': 'person'}\">William Heise</a>, o primeiro filme a filmar um beijo para as grandes telas.",
+      "title": "A Controversial Kiss",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 239027, 'screen_type': 'person'}\">Thomas Edison</a>, the father of the kinetoscope, releases what may be the first major controversy in film history, <a href=\"https://_{type: 'screen', 'id': 94570, 'screen_type': 'movie'}\">The Kiss</a> (1896), directed by <a href=\"https://_{'type': 'screen', 'id': 110348, 'screen_type': 'person'}\">William Heise</a>, the first film to show a kiss on the big screen.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_the_kiss.webp",
-        "content_description": "Cena do filme The Kiss, com os dois personagens principais se beijando.",
+        "content_description": "Scene from The Kiss, with the two main characters kissing.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -56,13 +56,13 @@
     {
       "type": "item",
       "year": "18\n96",
-      "title": "O Início da Narrativa",
-      "description": "Em 1896, Alice Guy Blaché lança o primeiro filme de não-ficção do mundo. <a href=\"https://_{type: 'screen', 'id': 147554, 'screen_type': movie}\">La Fée aux choux</a> (BR: A Fada dos Repolhos, 1896), com duração de apenas um minuto, foi escrito, produzido e dirigido por ela. O filme de Alice Guy traz cenários, cortes, efeitos especiais e uma narrativa, ainda que breve.",
+      "title": "The Beginning of Narrative",
+      "description": "In 1896, Alice Guy Blaché releases the world's first non-fiction film. <a href=\"https://_{type: 'screen', 'id': 147554, 'screen_type': movie}\">La Fée aux choux</a> (The Cabbage-Patch Fairy, 1896), just one minute long, was written, produced and directed by her. Alice Guy's film features sets, cuts, special effects and a narrative, however brief.",
       "image_transparent": false,
       "image": {
         "image_type": "local",
         "url": "img_alice",
-        "content_description": "Foto de perfil da diretora Alice Guy Blaché, ao lado de uma câmera.",
+        "content_description": "Profile photo of director Alice Guy Blaché, next to a camera.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -72,11 +72,11 @@
       "type": "item",
       "year": "18\n99",
       "title": "Phantom Ride",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 1037661, 'screen_type': 'person'}\">George Albert Smith</a> filmou o que passou a ser conhecido como \"phantom ride\" no seu filme <a href=\"https://_{type: 'screen', 'id': 143819, 'screen_type': 'movie'}\">The Kiss in the Tunnel</a> (BR: O beijo no Túneo, 1899). Tratava-se de uma nova experiência visual para o público, obtida pela colocação da câmera na frente de um trem em movimento, como se ela fosse um olho fantasmagórico avançando pelo ar. ",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 1037661, 'screen_type': 'person'}\">George Albert Smith</a> filmed what came to be known as a \"phantom ride\" in his film <a href=\"https://_{type: 'screen', 'id': 143819, 'screen_type': 'movie'}\">The Kiss in the Tunnel</a> (1899). It was a new visual experience for audiences, achieved by placing the camera on the front of a moving train, as if it were a ghostly eye gliding through the air. ",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_phantom_ride.webp",
-        "content_description": "Foto de George Albert Smith durante as filmagens do seu filme, sentado na frente de um trem, tentando realizar o Phantom Ride.",
+        "content_description": "Photo of George Albert Smith during the shooting of his film, sitting on the front of a train, attempting the Phantom Ride.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -85,12 +85,12 @@
     {
       "type": "item",
       "year": "19\n00",
-      "title": "Complexidade na Narrativa",
-      "description": "Alguns anos após o filme de Alice ser lançado, o filme <a href=\"https://_{type: 'screen', 'id': 179546, 'screen_type': 'movie'}\">Attack on a China Mission - Bluejackets to the Rescue</a> (BR: Ataque a uma missão chinesa – Soldados navais ao resgate, 1900) é exibido na câmara Municipal de Hove, no condado de Sussex. Um divisor de águas para o cinema, <a href=\"https://_{'type': 'screen', 'id': 1037369, 'screen_type': 'person'}\"> James Williamson</a> (1855-1933) criou uma das narrativas mais complexas da época.",
+      "title": "Narrative Complexity",
+      "description": "A few years after Alice's film was released, the film <a href=\"https://_{type: 'screen', 'id': 179546, 'screen_type': 'movie'}\">Attack on a China Mission - Bluejackets to the Rescue</a> (1900) is shown at Hove Town Hall, in the county of Sussex. A watershed moment for cinema, <a href=\"https://_{'type': 'screen', 'id': 1037369, 'screen_type': 'person'}\"> James Williamson</a> (1855-1933) created one of the most complex narratives of its time.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_attack_china_mission.webp",
-        "content_description": "Cena do filme Ataque a uma missão chinesa, com os soldados saindo correndo do local pegando fogo.",
+        "content_description": "Scene from Attack on a China Mission, with the soldiers running out of the burning building.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -99,8 +99,8 @@
     {
       "type": "item",
       "year": "19\n02",
-      "title": "Um Novo Padrão",
-      "description": "Em <a href=\"https://_{'type': 'screen', 'id': 775, 'screen_type': 'movie'}\">Le Voyage dans la Lune</a> (BR: Viagem à Lua, 1902), <a href=\"https://_{'type': 'screen', 'id': 11523, 'screen_type': 'person'}\">Georges Méliés</a> estabelece um novo padão de custos de <strong>produção e efeitos especiais</strong>.",
+      "title": "A New Standard",
+      "description": "In <a href=\"https://_{'type': 'screen', 'id': 775, 'screen_type': 'movie'}\">Le Voyage dans la Lune</a> (A Trip to the Moon, 1902), <a href=\"https://_{'type': 'screen', 'id': 11523, 'screen_type': 'person'}\">Georges Méliès</a> sets a new standard for <strong>production and special effects</strong> costs.",
       "image": {
         "image_type": "local",
         "url": "img_voyage_2",
@@ -113,12 +113,12 @@
     {
       "type": "item",
       "year": "19\n02",
-      "title": "Evolução técnica",
-      "description": "A extensão média de um rolo de filme aumenta de <strong>15</strong> para <strong>183</strong> metros, permitindo mais tempo para se desenvolver uma narrativa.",
+      "title": "Technical Evolution",
+      "description": "The average length of a film reel grows from <strong>15</strong> to <strong>183</strong> meters, allowing more time to develop a narrative.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_movie_roll.webp",
-        "content_description": "Foto de um rolo de filmes.",
+        "content_description": "Photo of a film reel.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -128,11 +128,11 @@
       "type": "item",
       "year": "19\n03",
       "title": "Close-up",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 143801, 'screen_type': 'movie'}\">The Sick Kitten</a> (BR: O gato doente, 1903), remake do filme The Little Doctor (1901), ambos de George Albert Smith, é lançado. Neste, vemos primeiro uma sala, duas crianças e um gato, o plano principal. Então, Smith corta para um close-up do gato, recebendo uma colher de remédio. Essa é considerada o <strong>primeiro uso de um close-up</strong> sem o envolvimento de personagens olhando através de alguma coisa.",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 143801, 'screen_type': 'movie'}\">The Sick Kitten</a> (1903), a remake of The Little Doctor (1901), both by George Albert Smith, is released. In it, we first see a room, two children and a cat: the main shot. Then Smith cuts to a close-up of the cat being given a spoonful of medicine. This is considered the <strong>first use of a close-up</strong> that doesn't involve characters looking through something.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_sick_kitten.webp",
-        "content_description": "Close de um gato sentado no colo de uma mulher.",
+        "content_description": "Close-up of a cat sitting on a woman's lap.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -225,12 +225,12 @@
     {
       "type": "item",
       "year": "19\n14",
-      "title": "O \"vagabundo\"",
+      "title": "The \"Tramp\"",
       "description": "O \"vagabundo\" de <a href=\"https://_{'type': 'screen', 'id': 13848, 'screen_type': 'person'}\">Chaplin</a> estreia nas telas em <a href=\"https://_{'type': 'screen', 'id': 22885, 'screen_type': 'movie'}\">Kid Auto Races at Venice</a> (BR: Corrida de automóveis para meninos, 1914).",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_chaplin_vagabundo.webp",
-        "content_description": "Foto com o rosto de Charlie Chaplin.",
+        "content_description": "Photo of Charlie Chaplin's face.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -239,12 +239,12 @@
     {
       "type": "item",
       "year": "19\n15",
-      "title": "Um polêmico marco",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 618, 'screen_type': 'movie'}\">The Birth of a Nation</a> (BR: O nascimento de uma nação, 1915), com seus 190 minutos, quebra o recorde de filme mais longo do cinema. Ao mesmo tempo, o filme reavive o interesse na <strong>Ku Klux Klan</strong>, que àquela altura já havia praticamente desaparecido. Um ano após o lançamento, D. W. Griffith responde a acusação de preconceito realizando o épico <a href=\"https://_{'type': 'screen', 'id': 3059, 'screen_type': 'movie'}\">Intolerance: Love's Struggle Throughout the Ages</a> (BR: Intolerância, 1916).",
+      "title": "A controversial milestone",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 618, 'screen_type': 'movie'}\">The Birth of a Nation</a> (1915), at 190 minutes, breaks the record for the longest film ever made. At the same time, the film revives interest in the <strong>Ku Klux Klan</strong>, which by then had all but disappeared. A year after its release, D. W. Griffith responds to accusations of prejudice by making the epic <a href=\"https://_{'type': 'screen', 'id': 3059, 'screen_type': 'movie'}\">Intolerance: Love's Struggle Throughout the Ages</a> (1916).",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_birth_nation.webp",
-        "content_description": "Cena do filme O nascimento de uma nação, com um homem afro-americano sendo capturado por membros do Ku Klux Klan.",
+        "content_description": "Scene from The Birth of a Nation, with an African American man being captured by members of the Ku Klux Klan.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -253,12 +253,12 @@
     {
       "type": "item",
       "year": "19\n15",
-      "title": "O primeiro filme para adultos do cinema",
-      "description": "A Free Ride (1915) é lançado, sendo considerado o primeiro filme pornô clássico do cinema junto ao El Satario (1907) na Argentina e Am Abend (1910) na Alemanha. O filme, que possui 09 minutos de duração, descreve o trajeto de um motorista que dá carona a duas mulheres na beira da estrada e que mais adiante, se relacionam sexualmente. Pesquisadores afirmam que provavelmente a equipe do filme se esforçou para fazer o elenco não ser identificável, já que o ator usava um grande bigode falso e um chapéu, além do anonimato de suas identidades nos créditos. O próprio diretor também permaneceu no anonimato, usando um pseudônimo de A Wise Guy (um cara sábio), sendo o único nome revelado de Will B. Hard, o cinematógrafo.",
+      "title": "The first adult film in cinema",
+      "description": "A Free Ride (1915) is released and is considered the first classic pornographic film, alongside El Satario (1907) in Argentina and Am Abend (1910) in Germany. The 9-minute film follows a driver who gives a ride to two women by the side of the road, and further along they have sex. Researchers say the crew probably made an effort to keep the cast unidentifiable, since the actor wore a large fake mustache and a hat, and their identities were left anonymous in the credits. The director also remained anonymous, using the pseudonym A Wise Guy, and the only name revealed was that of Will B. Hard, the cinematographer.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_first_porn.webp",
-        "content_description": "Cena do filme A Free Ride, com um carro andando ao lado de umas mulheres.",
+        "content_description": "Scene from A Free Ride, with a car driving alongside some women.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -267,12 +267,12 @@
     {
       "type": "item",
       "year": "19\n19",
-      "title": "Cinema nas salas de aula",
-      "description": "O cinema soviético é nacionalizado e a primeira escola de cinema do mundo, o Instituto de Cinematografia Estatal da União Soviética, é fundada em Moscou",
+      "title": "Cinema in the classroom",
+      "description": "Soviet cinema is nationalized and the world's first film school, the All-Union State Institute of Cinematography, is founded in Moscow",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_russian_school.webp",
-        "content_description": "Foto da logo do Instituto de Cinematografia Estatal.",
+        "content_description": "Photo of the State Institute of Cinematography logo.",
         "style": {
           "scale_type": "center_inside"
         }
@@ -281,12 +281,12 @@
     {
       "type": "item",
       "year": "19\n20",
-      "title": "O expressionismo alemão",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 234, 'screen_type': 'movie'}\">Das Cabinet des Dr. Caligari</a> (BR: O gabinete do Dr. Caligari, 1920), um clássico perturbador do chamado expressionismo alemão, reflete as vivências de seu autor na Primeira Guerra Mundial. Essencial para o desenvolvimento de imaginação, esse filme inaugurou muitos dos principais elementos do cinema de terror.",
+      "title": "German Expressionism",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 234, 'screen_type': 'movie'}\">Das Cabinet des Dr. Caligari</a> (The Cabinet of Dr. Caligari, 1920), a disturbing classic of so-called German Expressionism, reflects its author's experiences in World War I. Essential to the development of the imagination, this film introduced many of the key elements of horror cinema.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_cabinet_caligari.webp",
-        "content_description": "Cena do filme O gabinete do Dr. Caligari, com um senhor de idade olhando em uma direção, com a sua sombra refletida na parete.",
+        "content_description": "Scene from The Cabinet of Dr. Caligari, with an old man looking off in one direction, his shadow cast on the wall.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -295,12 +295,12 @@
     {
       "type": "item",
       "year": "19\n20",
-      "title": "Capa e Espada",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 108106, 'screen_type': 'person'}\">Fred Niblo</a> lança <a href=\"https://_{'type': 'screen', 'id': 42657, 'screen_type': 'movie'}\">The Mark of Zorro</a> (BR: A marca do Zorro, 1920), marcando o início de um novo gênero no cinema: o filme de capa e espada. Zorro foi uma invenção de <a href=\"https://_{'type': 'screen', 'id': 109088, 'screen_type': 'person'}\">Douglas Fairbanks</a>, que produziu e estrelou o filme.",
+      "title": "Swashbuckler",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 108106, 'screen_type': 'person'}\">Fred Niblo</a> releases <a href=\"https://_{'type': 'screen', 'id': 42657, 'screen_type': 'movie'}\">The Mark of Zorro</a> (1920), marking the start of a new film genre: the swashbuckler. Zorro was the brainchild of <a href=\"https://_{'type': 'screen', 'id': 109088, 'screen_type': 'person'}\">Douglas Fairbanks</a>, who produced and starred in the film.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_zorro.webp",
-        "content_description": "Foto de perfil do personagem Zorro.",
+        "content_description": "Profile photo of the character Zorro.",
         "style": {
           "scale_type": "center_inside"
         }
@@ -309,12 +309,12 @@
     {
       "type": "item",
       "year": "19\n22",
-      "title": "Uma Sinfonia do Horror",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 9076, 'screen_type': 'person'}\">F.W. Murnau</a> lança <a href=\"https://_{'type': 'screen', 'id': 653, 'screen_type': 'movie'}\">Nosferatu</a> (1922), adaptação não autorizada de Drácula, de Bram Stroker, quase destruído devido a um processo judicial.",
+      "title": "A Symphony of Horror",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 9076, 'screen_type': 'person'}\">F.W. Murnau</a> releases <a href=\"https://_{'type': 'screen', 'id': 653, 'screen_type': 'movie'}\">Nosferatu</a> (1922), an unauthorized adaptation of Bram Stoker's Dracula, which was nearly destroyed because of a lawsuit.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_nosferatu.webp",
-        "content_description": "Cena do filme Nosferatu, com o Vampiro olhando diretamente para a tela.",
+        "content_description": "Scene from Nosferatu, with the Vampire looking straight at the screen.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -323,12 +323,12 @@
     {
       "type": "item",
       "year": "19\n22",
-      "title": "O primeiro ídolo do Cinema",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 116367, 'screen_type': 'person'}\">Rodolfo Valentino</a> desponta para o estrelato em <a href=\"https://_{'type': 'screen', 'id': 31432, 'screen_type': 'movie'}\">The Four Horsemen of the Apocalypse</a> (BR: Os Quatro Cavaleiros do Apocalipse, 1921). No mesmo ano, atua em <a href=\"https://_{'type': 'screen', 'id': 36841, 'screen_type': 'movie'}\">The sheik</a> (BR: O sheik, 1921), e mulheres desmaiam durante a projeção. Por causa do seu charme exótico, se tornou o primeiro símbolo sexual masculino em Hollywood.",
+      "title": "Cinema's first idol",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 116367, 'screen_type': 'person'}\">Rodolfo Valentino</a> rises to stardom in <a href=\"https://_{'type': 'screen', 'id': 31432, 'screen_type': 'movie'}\">The Four Horsemen of the Apocalypse</a> (1921). That same year, he stars in <a href=\"https://_{'type': 'screen', 'id': 36841, 'screen_type': 'movie'}\">The Sheik</a> (1921), and women faint during screenings. Thanks to his exotic charm, he became Hollywood's first male sex symbol.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_rodolfo.webp",
-        "content_description": "Foto de perfil do ator Rodolfo Valentino.",
+        "content_description": "Profile photo of the actor Rodolfo Valentino.",
         "style": {
           "scale_type": "center_inside"
         }
@@ -337,12 +337,12 @@
     {
       "type": "item",
       "year": "19\n23",
-      "title": "Um dos três reis da comédia",
-      "description": "É lançado <a href=\"https://_{'type': 'screen', 'id': 22596, 'screen_type': 'movie'}\">Safety Last!</a> (BR: O homem-mosca, 1923), estrelado por <a href=\"https://_{'type': 'screen', 'id': 88953, 'screen_type': 'person'}\">Harold Lloyd</a>, considerado um dos três reis da comédia muda, junto a Charlie Chaplin e <a href=\"https://_{'type': 'screen', 'id': 8635, 'screen_type': 'person'}\">Beaton Keaton</a>. É nesse filme que um dos momentos mais icônicos do cinema mudo, onde Lloyd se vê pendurado nos ponteiros de um rológio no alto de um edifício.",
+      "title": "One of the three kings of comedy",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 22596, 'screen_type': 'movie'}\">Safety Last!</a> (1923) is released, starring <a href=\"https://_{'type': 'screen', 'id': 88953, 'screen_type': 'person'}\">Harold Lloyd</a>, considered one of the three kings of silent comedy, alongside Charlie Chaplin and <a href=\"https://_{'type': 'screen', 'id': 8635, 'screen_type': 'person'}\">Buster Keaton</a>. This film contains one of the most iconic moments of silent film, in which Lloyd finds himself hanging from the hands of a clock high up on a building.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_homem_mosca.webp",
-        "content_description": "Cena do filme O homem-mosca, com o personagem The Boy pindurado no ponteiro de um gigante relógio.",
+        "content_description": "Scene from Safety Last!, with the character The Boy hanging from the hand of a giant clock.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -351,12 +351,12 @@
     {
       "type": "item",
       "year": "19\n23",
-      "title": "Walt Disney Company nasce",
-      "description": "No início de 1923, em Kansas City, Missouri, o animador <a href=\"https://_{'type': 'screen', 'id': 2106, 'screen_type': 'person'}\">Walt Disney</a> criou um curta-metragem intitulado <a href=\"https://_{'type': 'screen', 'id': 146730, 'screen_type': 'movie'}\">Alice's Wonderland</a>, que contou com a atriz mirim <a href=\"https://_{'type': 'screen', 'id': 144552, 'screen_type': 'person'}\">Virginia Davis</a> interagindo com personagens animados. Em 1923, após a falência de sua primeira firma, a Laugh-O-Gram Films, Walt Disney mudou-se para Hollywood para se juntar a seu irmão, Roy O. Disney. A distribuidora de filmes, Margaret J. Winkler, da MJ Winkler Productions contactou Disney, com planos para distribuir uma série de <strong>Alice Comedies</strong>, comprada por 1.500 dólares por carretel com Walt Disney sendo um parceiro de produção. Walt e Roy Disney formaram no mesmo ano a <strong>Disney Brothers Animation Studios</strong>. Outros filmes animados seguiram depois de Alice. Em janeiro de 1926, com a conclusão da expansão do estúdio Disney na Hyperion Street, o nome do estúdio foi alterado para <strong>Walt Disney Studios</strong>.",
+      "title": "The Walt Disney Company is born",
+      "description": "In early 1923, in Kansas City, Missouri, animator <a href=\"https://_{'type': 'screen', 'id': 2106, 'screen_type': 'person'}\">Walt Disney</a> created a short film titled <a href=\"https://_{'type': 'screen', 'id': 146730, 'screen_type': 'movie'}\">Alice's Wonderland</a>, featuring child actress <a href=\"https://_{'type': 'screen', 'id': 144552, 'screen_type': 'person'}\">Virginia Davis</a> interacting with animated characters. In 1923, after the bankruptcy of his first company, Laugh-O-Gram Films, Walt Disney moved to Hollywood to join his brother, Roy O. Disney. Film distributor Margaret J. Winkler, of M. J. Winkler Productions, contacted Disney with plans to distribute a series of <strong>Alice Comedies</strong>, purchased for 1,500 dollars per reel, with Walt Disney as a production partner. That same year, Walt and Roy Disney founded the <strong>Disney Brothers Animation Studios</strong>. Other animated films followed Alice. In January 1926, with the completion of the Disney studio's expansion on Hyperion Street, the studio's name was changed to <strong>Walt Disney Studios</strong>.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_alice_disney.webp",
-        "content_description": "Cena do filme Alice's Wonderland, com a personagem Alice encima de um elefante animado, com vários outros animais envolta.",
+        "content_description": "Scene from Alice's Wonderland, with the character Alice on top of an animated elephant, surrounded by several other animals.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -365,12 +365,12 @@
     {
       "type": "item",
       "year": "19\n25",
-      "title": "O Mais lucrativo de sua Era",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 3060, 'screen_type': 'movie'}\">The Big Parade</a> (O grande desfile, 1925), de <a href=\"https://_{'type': 'screen', 'id': 29962, 'screen_type': 'person'}\">King Vidor</a>, é lançado e arrecada 22 milhões de dólares nas bilheterias em todo o mundo, se tornando o filme mudo mais bem-sucedido de todos os tempos.",
+      "title": "The most profitable of its Era",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 3060, 'screen_type': 'movie'}\">The Big Parade</a> (1925), by <a href=\"https://_{'type': 'screen', 'id': 29962, 'screen_type': 'person'}\">King Vidor</a>, is released and grosses 22 million dollars at the box office worldwide, becoming the most successful silent film of all time.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_big_parade.webp",
-        "content_description": "Cena do filme O grande desfile, com a personagem Melisandre dando um beijo no rosto de James.",
+        "content_description": "Scene from The Big Parade, with the character Melisande kissing James on the cheek.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -379,12 +379,12 @@
     {
       "type": "item",
       "year": "19\n25",
-      "title": "Em busca do Ouro",
-      "description": "Chaplin lança <a href=\"https://_{'type': 'screen', 'id': 962, 'screen_type': 'movie'}\">The Gold Rush</a> (BR: Em busca do ouro, 1925), que se torna um dos seus filmes mais icônicos e bem-sucedidos. Trata-se de uma das maiores bilheterias do cinema mudo.",
+      "title": "The Gold Rush",
+      "description": "Chaplin releases <a href=\"https://_{'type': 'screen', 'id': 962, 'screen_type': 'movie'}\">The Gold Rush</a> (1925), which becomes one of his most iconic and successful films. It is one of the highest-grossing films of the silent era.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_gold_rush.webp",
-        "content_description": "Cena do filme Em busca do ouro, com o personagem O Vagabundo fazendo uma dança com pães presos em um garfo.",
+        "content_description": "Scene from The Gold Rush, with the Tramp character doing a dance with bread rolls stuck on forks.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -394,11 +394,11 @@
       "type": "item",
       "year": "19\n25",
       "title": "Eisenstein",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 9603, 'screen_type': 'person'}\">Sergei Eisenstein</a>, considerado um dos maiores e mais importantes diretores do de todos os tempos, realiza seu primeiro longa-metragem: <a href=\"https://_{'type': 'screen', 'id': 44967, 'screen_type': 'movie'}\">Стачка</a> (BR: A Greve, 1925) é lançado em 28 de abril, seguindo por <a href=\"https://_{'type': 'screen', 'id': 643, 'screen_type': 'movie'}\">Броненосец Потёмкин</a> (BR: O encouraçado Potemkin, 1925) em 24 de dezembro.",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 9603, 'screen_type': 'person'}\">Sergei Eisenstein</a>, considered one of the greatest and most important directors of all time, makes his first feature film: <a href=\"https://_{'type': 'screen', 'id': 44967, 'screen_type': 'movie'}\">Стачка</a> (Strike, 1925) is released on April 28, followed by <a href=\"https://_{'type': 'screen', 'id': 643, 'screen_type': 'movie'}\">Броненосец Потёмкин</a> (Battleship Potemkin, 1925) on December 24.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_eisenstein.webp",
-        "content_description": "Foto de perfil do Diretor Sergei Eisenstein.",
+        "content_description": "Profile photo of director Sergei Eisenstein.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -408,11 +408,11 @@
       "type": "item",
       "year": "19\n26",
       "title": "Technicolor",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 50075, 'screen_type': 'movie'}\">The Black Pirate</a> (O Pirata Negro, 1926) é o primeiro filme realizado totalmente no sistema Technicolor de duas cores, um processo caríssimo para a época.",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 50075, 'screen_type': 'movie'}\">The Black Pirate</a> (1926) is the first film made entirely in the two-color Technicolor process, an extremely expensive process at the time.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_black_pirate.webp",
-        "content_description": "Foto de perfil do personagem Jamie, em O Pirata Negro.",
+        "content_description": "Profile photo of the character Jamie, in The Black Pirate.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -421,12 +421,12 @@
     {
       "type": "item",
       "year": "19\n26",
-      "title": "Um clássico da comédia muda",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 8635, 'screen_type': 'person'}\">Buster Keaton</a> finaliza <a href=\"https://_{'type': 'screen', 'id': 961, 'screen_type': 'movie'}\">The General</a> (BR: A general, 1926). Um fracasso de crítica na época, mais tarde o filme seria redescoberto e aclamado como uma das melhores obras da era do cinema mudo.",
+      "title": "A silent comedy classic",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 8635, 'screen_type': 'person'}\">Buster Keaton</a> completes <a href=\"https://_{'type': 'screen', 'id': 961, 'screen_type': 'movie'}\">The General</a> (1926). A critical failure at the time, the film would later be rediscovered and hailed as one of the finest works of the silent era.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_the_general.webp",
-        "content_description": "Cena do filme A General, com Buster Keaton encima de uma locomotiva.",
+        "content_description": "Scene from The General, with Buster Keaton on top of a locomotive.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -435,12 +435,12 @@
     {
       "type": "item",
       "year": "19\n26",
-      "title": "Amadurecimento",
-      "description": "Na UFA, F. W. Murnau realiza <a href=\"https://_{'type': 'screen', 'id': 10728, 'screen_type': 'movie'}\">Faust – Eine deutsche Volkssage</a> (BR: Fausto, 1926), um espetáculo visual. O vanguardista <a href=\"https://_{'type': 'screen', 'id': 94525, 'screen_type': 'movie'}\">Kurutta ippêji</a> (BR: Uma Página de Loucura, 1926), de <a href=\"https://_{'type': 'screen', 'id': 213471, 'screen_type': 'person'}\">Teinosuke Kinugasa</a>, demonstra a maturidade do cinema mudo japonês.",
+      "title": "Coming of age",
+      "description": "At UFA, F. W. Murnau makes <a href=\"https://_{'type': 'screen', 'id': 10728, 'screen_type': 'movie'}\">Faust – Eine deutsche Volkssage</a> (Faust, 1926), a visual spectacle. The avant-garde <a href=\"https://_{'type': 'screen', 'id': 94525, 'screen_type': 'movie'}\">Kurutta ippêji</a> (A Page of Madness, 1926), by <a href=\"https://_{'type': 'screen', 'id': 213471, 'screen_type': 'person'}\">Teinosuke Kinugasa</a>, demonstrates the maturity of Japanese silent film.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_pagina_loucura.webp",
-        "content_description": "Cena do filme Uma Página de Loucura, com dois personagens utilizando máscaras.",
+        "content_description": "Scene from A Page of Madness, with two characters wearing masks.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -450,11 +450,11 @@
       "type": "item",
       "year": "19\n27",
       "title": "\"It Girl\"",
-      "description": "A vendedora interpretada por Clara Bow conquista seu chefe rico em It, cujo título se refere à qualidade definida pela roteirista <a href=\"https://_{'type': 'screen', 'id': 705395, 'screen_type': 'person'}\">Elinor Glyn</a>. E graças a esse filme, Clara Bow se tornou um dos primeiros símbolos sexuais das telas.",
+      "description": "The shopgirl played by Clara Bow wins over her wealthy boss in It, whose title refers to the quality defined by screenwriter <a href=\"https://_{'type': 'screen', 'id': 705395, 'screen_type': 'person'}\">Elinor Glyn</a>. Thanks to this film, Clara Bow became one of the screen's first sex symbols.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_it.webp",
-        "content_description": "Foto com o rosto da personagem Betty, interpretada pela atriz Clara Bow.",
+        "content_description": "Photo of the face of the character Betty, played by actress Clara Bow.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -463,12 +463,12 @@
     {
       "type": "item",
       "year": "19\n27",
-      "title": "Pioneiro na ficção cientifica",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 19, 'screen_type': 'movie'}\">Metropolis</a> (BR: Metrópolis, 1927), de <a href=\"https://_{'type': 'screen', 'id': 68, 'screen_type': 'person'}\">Fritz Lang</a>, é um dos primeiros longas-metragens de ficção cientifica. É uma distopia ambientada num futuro tecnologicamente avançado.",
+      "title": "A science fiction pioneer",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 19, 'screen_type': 'movie'}\">Metropolis</a> (1927), by <a href=\"https://_{'type': 'screen', 'id': 68, 'screen_type': 'person'}\">Fritz Lang</a>, is one of the first science fiction feature films. It is a dystopia set in a technologically advanced future.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_metropolis.webp",
-        "content_description": "Cena do filme Metropolis, com o robo de pé em uma sala vazia.",
+        "content_description": "Scene from Metropolis, with the robot standing in an empty room.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -477,12 +477,12 @@
     {
       "type": "item",
       "year": "19\n27",
-      "title": "Surrealismo",
-      "description": "Um dos maiores clássicos do cinema surrealista, <a href=\"https://_{'type': 'screen', 'id': 626, 'screen_type': 'movie'}\">Un chien andalou</a> (BR: Um cão andaluz, 1929), de <a href=\"https://_{'type': 'screen', 'id': 793, 'screen_type': 'person'}\">Luis Buñuel</a>, roterizado pelo próprio e por <a href=\"https://_{'type': 'screen', 'id': 8988, 'screen_type': 'person'}\">Salvador Dali</a>, estreia em Paris. O filme cai nas graças do público e fica em cartaz por oito meses.",
+      "title": "Surrealism",
+      "description": "One of the greatest classics of surrealist cinema, <a href=\"https://_{'type': 'screen', 'id': 626, 'screen_type': 'movie'}\">Un chien andalou</a> (1929), by <a href=\"https://_{'type': 'screen', 'id': 793, 'screen_type': 'person'}\">Luis Buñuel</a>, written by Buñuel himself and <a href=\"https://_{'type': 'screen', 'id': 8988, 'screen_type': 'person'}\">Salvador Dalí</a>, premieres in Paris. The film wins over audiences and runs for eight months.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_cao_andaluz.webp",
-        "content_description": "Cena do filme Um cão andaluz, com um barbeiro prestes a cortar o olho de uma mulher, olhando fixamente para a tela.",
+        "content_description": "Scene from Un Chien Andalou, with a barber about to slice the eye of a woman staring fixedly at the screen.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -491,12 +491,12 @@
     {
       "type": "item",
       "year": "19\n27",
-      "title": "Uma nova Era",
-      "description": "A era do cinema mudo chega ao fim com o lançamento de <a href=\"https://_{'type': 'screen', 'id': 939, 'screen_type': 'movie'}\">The Jazz Singer</a> (BR: O cantor de Jazz, 1927), o primeiro longa-metragem falado exibido em grande escala.",
+      "title": "A new Era",
+      "description": "The silent film era comes to an end with the release of <a href=\"https://_{'type': 'screen', 'id': 939, 'screen_type': 'movie'}\">The Jazz Singer</a> (1927), the first feature-length talkie shown on a large scale.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_jazz_singer.webp",
-        "content_description": "Cena do filme O cantor de Jazz, com um personagem cantando uma musica para uma mulher junto ao piano.",
+        "content_description": "Scene from The Jazz Singer, with a character singing a song to a woman at the piano.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -505,12 +505,12 @@
     {
       "type": "item",
       "year": "19\n27",
-      "title": "Oscar",
-      "description": "A primeira cerimônia do Oscar é realizada no Hotel Hollywood, em Los Angeles.",
+      "title": "The Oscars",
+      "description": "The first Academy Awards ceremony is held at the Hollywood Hotel in Los Angeles.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_oscar.webp",
-        "content_description": "Foto da primeira noite do oscar, em um salão de festas.",
+        "content_description": "Photo of the first Oscars night, in a banquet hall.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -519,8 +519,8 @@
     {
       "type": "item",
       "year": "19\n29",
-      "title": "Turma do Pernalonga",
-      "description": "A Warner Bros. lança desenhos da <strong>Turma do Pernalonga</strong> nos cinemas. Esses curtas-metragens são anteriores ao <i>Pernalongas</i>, trazendo os personagens <i>Bosko</i> e <i>Buddy</i> em seu lugar.",
+      "title": "Looney Tunes",
+      "description": "Warner Bros. releases <strong>Looney Tunes</strong> cartoons in theaters. These short films predate <i>Bugs Bunny</i>, featuring the characters <i>Bosko</i> and <i>Buddy</i> instead.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_bosko.webp",
