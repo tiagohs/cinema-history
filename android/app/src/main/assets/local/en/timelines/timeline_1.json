@@ -5,20 +5,20 @@
   "timeline_list": [
     {
       "type": "title",
-      "title": "A História<br/>do Cinema:<br/>1895 a 1929",
-      "page_title": "1895 a 1929",
-      "next": "1930 a 1939"
+      "title": "The History<br/>of Cinema:<br/>1895 to 1929",
+      "page_title": "1895 to 1929",
+      "next": "1930 to 1939"
     },
     {
       "type": "item",
       "year": "18\n95",
-      "title": "A Primeira Exibição",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 1867, 'screen_type': 'person'}\">Auguste</a> (1862-1954) e <a href=\"https://_{'type': 'screen', 'id': 1868, 'screen_type': 'person'}\">Louis </a> (1864-1948) Lumière exibem 10 curtas-metragens em Paris para um público pagante, entre eles, <strong><a href=\"https://_{type: 'screen', 'id': 774, 'screen_type': 'movie'}\">A saída dos operários da fábrica Lumière</a></strong>.",
+      "title": "The First Screening",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 1867, 'screen_type': 'person'}\">Auguste</a> (1862-1954) and <a href=\"https://_{'type': 'screen', 'id': 1868, 'screen_type': 'person'}\">Louis </a> (1864-1948) Lumière screened 10 short films in Paris for a paying audience, among them <strong><a href=\"https://_{type: 'screen', 'id': 774, 'screen_type': 'movie'}\">Workers Leaving the Lumière Factory</a></strong>.",
       "image_transparent": true,
       "image": {
         "image_type": "local",
         "url": "img_lumiere_brothers",
-        "content_description": "Foto de Auguste e Louis Lumière",
+        "content_description": "Photo of Auguste and Louis Lumière",
         "style": {
           "scale_type": "center_crop"
         }
@@ -141,12 +141,12 @@
     {
       "type": "item",
       "year": "19\n03",
-      "title": "Continuidade nas telas",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 44341, 'screen_type': 'movie'}\">Life of an American Fireman</a> (A vida de um bombeiro americano, 1903), de <a href=\"https://_{'type': 'screen', 'id': 44866, 'screen_type': 'person'}\">Edwin Porter</a> é lançado. Na sequência onde o bombeiro chega à casa pegando fogo, Edwin corta para um quarto dentro da casa, mostrando o resgate de uma mulher pelo bombeiro e, depois, corta para um plano exterior da mãe na rua. Para muitos historiadores, esse foi o <strong>primeiro exemplo de edição de continuidade</strong>.",
+      "title": "Continuity on Screen",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 44341, 'screen_type': 'movie'}\">Life of an American Fireman</a> (1903), by <a href=\"https://_{'type': 'screen', 'id': 44866, 'screen_type': 'person'}\">Edwin Porter</a>, is released. In the sequence where the fireman arrives at the burning house, Edwin cuts to a room inside the house, showing the fireman rescuing a woman, and then cuts to an exterior shot of the mother in the street. For many historians, this was the <strong>first example of continuity editing</strong>.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_life_american_fireman.webp",
-        "content_description": "Cena do filme A vida de um bombeiro americano, com o bombeiro subindo uma escada.",
+        "content_description": "Scene from the film Life of an American Fireman, with the fireman climbing a ladder.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -155,12 +155,12 @@
     {
       "type": "item",
       "year": "19\n06",
-      "title": "O Primeiro longa-metragem",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 20105, 'screen_type': 'movie'}\">The story of the Kelly Gang</a> (1906), de <a href=\"https://_{'type': 'screen', 'id': 85621, 'screen_type': 'person'}\">Charlie Tait</a> é lançado na Austrália, possuindo mais de uma hora de duração. Sua bobina possuía mais de 1200 metros, se tornando o primeiro longa-metragem da história do cinema.",
+      "title": "The First Feature Film",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 20105, 'screen_type': 'movie'}\">The Story of the Kelly Gang</a> (1906), by <a href=\"https://_{'type': 'screen', 'id': 85621, 'screen_type': 'person'}\">Charles Tait</a>, is released in Australia with a running time of over an hour. Its reel was more than 1,200 meters long, making it the first feature film in the history of cinema.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_story_kelly.webp",
-        "content_description": "cena do filme The story of the Kelly Gang, com um homem usando uma mascara de ferro.",
+        "content_description": "Scene from the film The Story of the Kelly Gang, showing a man wearing an iron mask.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -169,12 +169,12 @@
     {
       "type": "item",
       "year": "19\n10",
-      "title": "O começo de Hollywood",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 100036, 'screen_type': 'person'}\">D.W. Griffith</a> dirige o curta-metragem de 17 minutos <a href=\"https://_{'type': 'screen', 'id': 462398, 'screen_type': 'movie'}\">In Old California</a> (Na velha Califórnia, 1910), a primeira película filmada em <strong>Hollywood<strong>.",
+      "title": "The Beginning of Hollywood",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 100036, 'screen_type': 'person'}\">D.W. Griffith</a> directs the 17-minute short film <a href=\"https://_{'type': 'screen', 'id': 462398, 'screen_type': 'movie'}\">In Old California</a> (1910), the first film shot in <strong>Hollywood<strong>.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_hollywood_1910.webp",
-        "content_description": "Foto do terreno onde futuramente seria Hollywood.",
+        "content_description": "Photo of the land where Hollywood would later stand.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -184,11 +184,11 @@
       "type": "item",
       "year": "19\n12",
       "title": "Famous Players Film Company",
-      "description": "Fundada por Adolph Zukor, <strong>Famous Players Film Company</strong> se torna a primeira produtora americana a se dedicar exclusivamente à produção de longas-metragens.",
+      "description": "Founded by Adolph Zukor, the <strong>Famous Players Film Company</strong> becomes the first American production company devoted exclusively to making feature films.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_famous_players.webp",
-        "content_description": "Foto do logo da produtora Famous Players Film Company.",
+        "content_description": "Photo of the logo of the Famous Players Film Company.",
         "style": {
           "scale_type": "fit_center"
         }
@@ -197,12 +197,12 @@
     {
       "type": "item",
       "year": "19\n12",
-      "title": "A Era Vampe",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 89676, 'screen_type': 'person'}\">Clara Pontoppidan</a> interpreta a primeira vampe do cinema no influente melodrama erótico <a href=\"https://_{'type': 'screen', 'id': 238149, 'screen_type': 'movie'}\">Vampyrdanserinden</a> (BR: O vampiro dançarino, 1912).",
+      "title": "The Vamp Era",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 89676, 'screen_type': 'person'}\">Clara Pontoppidan</a> plays cinema's first vamp in the influential erotic melodrama <a href=\"https://_{'type': 'screen', 'id': 238149, 'screen_type': 'movie'}\">Vampyrdanserinden</a> (The Vampire Dancer, 1912).",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_vampire_dancing.webp",
-        "content_description": "Foto de Clara Pontoppidan dançando em cena durante o filme O vampiro dançarino.",
+        "content_description": "Photo of Clara Pontoppidan dancing in a scene from the film The Vampire Dancer.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -211,12 +211,12 @@
     {
       "type": "item",
       "year": "19\n14",
-      "title": "Superproduções",
-      "description": "<a href=\"https://_{'type': 'screen', 'id': 5153, 'screen_type': 'movie'}\">Cabiria</a> (1914) custa mais de <strong>1 milhão de liras</strong> para ser realizado e se torna o filme mais caro de sua época.",
+      "title": "Blockbusters",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 5153, 'screen_type': 'movie'}\">Cabiria</a> (1914) costs more than <strong>1 million lire</strong> to make and becomes the most expensive film of its time.",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_cabiria.webp",
-        "content_description": "Cena do filme Cabiria, com uma multidão em volta de um antigo monumento.",
+        "content_description": "Scene from the film Cabiria, showing a crowd around an ancient monument.",
         "style": {
           "scale_type": "center_crop"
         }
@@ -226,7 +226,7 @@
       "type": "item",
       "year": "19\n14",
       "title": "The \"Tramp\"",
-      "description": "O \"vagabundo\" de <a href=\"https://_{'type': 'screen', 'id': 13848, 'screen_type': 'person'}\">Chaplin</a> estreia nas telas em <a href=\"https://_{'type': 'screen', 'id': 22885, 'screen_type': 'movie'}\">Kid Auto Races at Venice</a> (BR: Corrida de automóveis para meninos, 1914).",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 13848, 'screen_type': 'person'}\">Chaplin</a>'s \"Tramp\" makes his screen debut in <a href=\"https://_{'type': 'screen', 'id': 22885, 'screen_type': 'movie'}\">Kid Auto Races at Venice</a> (1914).",
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_chaplin_vagabundo.webp",
@@ -531,7 +531,7 @@
     },
     {
       "type": "footer",
-      "next": "1930 a 1939"
+      "next": "1930 to 1939"
     }
   ]
 }
