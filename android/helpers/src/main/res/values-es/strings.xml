@@ -1,0 +1,30 @@
+<resources>
+    <string name="error_title_ops">¡Uy!</string>
+    <string name="error_unknown">Ocurrió un error. Inténtalo de nuevo.</string>
+
+    <!-- Genres -->
+    <string name="genere_action">Acción</string>
+    <string name="genere_adventure">Aventura</string>
+    <string name="genere_animation">Animación</string>
+    <string name="genere_comedy">Comedia</string>
+    <string name="genere_crime">Crimen</string>
+    <string name="genere_documentary">Documental</string>
+    <string name="genere_drama">Drama</string>
+    <string name="genere_family">Familiar</string>
+    <string name="genere_fantasy">Fantasía</string>
+    <string name="genere_history">Historia</string>
+    <string name="genere_horror">Terror</string>
+    <string name="genere_music">Música</string>
+    <string name="genere_mystery">Misterio</string>
+    <string name="genere_romance">Romance</string>
+    <string name="genere_science_fiction">Ciencia ficción</string>
+    <string name="genere_tv_movie">Película para TV</string>
+    <string name="genere_thriller">Suspenso</string>
+    <string name="genere_war">Bélica</string>
+    <string name="genere_western">Western</string>
+    <string name="genres_outros">Otros</string>
+
+    <string name="pt_br_country_name">Portugués (Brasil)</string>
+    <string name="en_us_country_name">Inglés</string>
+    <string name="error_audio_player_setup">No se pudo configurar el reproductor</string>
+</resources>

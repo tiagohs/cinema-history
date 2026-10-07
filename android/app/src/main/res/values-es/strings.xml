@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Historia del Cine</string>
+
+    <string name="unknown_error">Ocurrió un error. Inténtalo de nuevo.</string>
+
+    <string name="history_cinema_title">Historia del Cine</string>
+    <string name="mil_movies_title">1001 películas</string>
+    <string name="mil_movies_title_v2">1001 películas que hay que ver antes de morir</string>
+    <string name="timeline_title">Línea de tiempo del cine</string>
+    <string name="awards_title">Premios</string>
+    <string name="directors_title">Directores</string>
+    <string name="selected_reference_type">Selecciona el tipo de referencia</string>
+    <string name="selected_year">Selecciona el año</string>
+    <string name="winner">Ganador</string>
+
+    <string name="start">Comenzar</string>
+    <string name="try_again">Reintentar</string>
+    <string name="comingsoon">Próximamente</string>
+    <string name="is_new">Nuevo</string>
+    <string name="movies">Películas</string>
+    <string name="timeline">Línea de tiempo</string>
+    <string name="share_title">Compartir con:</string>
+
+    <!-- History Pages -->
+
+    <string name="sumario">Índice</string>
+    <string name="next">Siguiente</string>
+    <string name="click_here_to_go">Haz clic aquí para acceder</string>
+    <string name="share_history_page_description">Conoce más sobre %1s en la app Historia del Cine. %2s</string>
+    <string name="share_timeline_description">Conoce más sobre los principales acontecimientos en la app Historia del Cine. %1s</string>
+    <string name="recomendation">Lecturas adicionales</string>
+
+    <!-- Settings -->
+    <string name="action_about">Acerca de</string>
+    <string name="action_reference">Referencias</string>
+    <string name="action_glossary">Glosario</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_share">Compartir</string>
+    <string name="activity_settings">Configuración</string>
+    <string name="activity_references">Referencias y sugerencias</string>
+    <string name="activity_glossary">Glosario</string>
+    <string name="language_title">Idioma</string>
+    <string name="language_app_title">Idioma del contenido de Historia del Cine</string>
+    <string name="general_title">General</string>
+    <string name="references_bibliographic_title">Referencias</string>
+    <string name="references_bibliographic_description">Libros, enlaces y artículos. La base de referencia de esta app.</string>
+    <string name="glossary_description">Términos y definiciones del mundo del cine.</string>
+
+    <!-- About -->
+    <string name="activity_about">Acerca de</string>
+    <string name="buy">Comprar</string>
+    <string name="contact_us">Contáctanos</string>
+    <string name="credits_terms">Créditos y términos</string>
+    <string name="tmdb_terms_description">La información de películas, actores, directores e imágenes es proporcionada por la API de TMDb, pero no está respaldada ni certificada por TMDb.</string>
+    <string name="tmdb_terms_title">Términos de uso de TMDB</string>
+    <string name="tmdb_api_terms_title">Términos de uso de la API de TMDB</string>
+    <string name="omdb_api_terms_title">Términos de uso de la API de OMDB</string>
+
+    <string name="version">Versión %1s</string>
+    <string name="responsable">Desarrollo e investigación de la app por Tiago Silva</string>
+    <string name="terms">Términos de uso</string>
+    <string name="privacy">Política de privacidad</string>
+    <string name="app_description">%1s es una aplicación gratuita que busca, de forma divertida e intuitiva, acercar la historia del cine a todos. A través de imágenes, videos, gifs, entrevistas, clasificaciones e infografías, presentamos la trayectoria del cine desde la primera proyección de los hermanos Lumière hasta hoy. Nos basamos en libros y documentales y los adaptamos a este nuevo medio. ¡Que lo disfrutes!</string>
+
+    <!-- Home -->
+    <string name="start_journey">Comienza tu recorrido</string>
+    <string name="home_title_1">La historia del</string>
+    <string name="home_title_2">Cine</string>
+    <string name="home_awards_title">Premios</string>
+    <string name="home_awards_subtitle">Las ceremonias de premios de cine más importantes</string>
+    <string name="home_milmovies_title">1001 películas</string>
+    <string name="home_milmovies_subtitle">que hay que ver antes de morir</string>
+    <string name="home_milmovies_description">De lo clásico a lo underground, del culto al noir, del terror al romance: descubre aquí las mejores películas de todos los tiempos, que conmovieron a personas de todo el mundo.</string>
+    <string name="home_timeline_title">Línea de tiempo del cine</string>
+    <string name="home_timeline_description">Los principales acontecimientos del mundo del cine en orden cronológico.</string>
+    <string name="home_directors_title">Maestros del cine</string>
+    <string name="home_directors_description">Conoce en detalle a los más grandes directores de cine</string>
+    <string name="pick_your_journey">Elige tu recorrido</string>
+    <string name="should_see">Deberías ver…</string>
+    <string name="should_know">Deberías conocer…</string>
+
+    <string name="also_format">también %1s</string>
+    <string name="as_format">como %1s</string>
+    <string name="country_format">País: %1s</string>
+    <string name="directors">Dirigida por: </string>
+    <string name="write_by">Escrita por: </string>
+    <string name="language_original">Idioma original: </string>
+    <string name="duration">Duración: </string>
+    <string name="release">Estreno: </string>
+    <string name="media">Multimedia</string>
+    <string name="cast">Reparto</string>
+    <string name="reviews">Reseñas de la crítica</string>
+    <string name="crew">Equipo técnico</string>
+    <string name="production">Producción</string>
+    <string name="sinopsys">Sinopsis</string>
+    <string name="orcamento">Presupuesto</string>
+    <string name="receita">Taquilla</string>
+    <string name="biography">Biografía</string>
+    <string name="filmography">Filmografía</string>
+    <string name="director_profile">Perfil del director</string>
+    <string name="interviews">Entrevistas</string>
+    <string name="no_summary">Sinopsis no disponible.</string>
+    <string name="review_click_here">Haz clic aquí para leer la reseña completa</string>
+    <string name="director_collection_title">El director %1s es conocido por…</string>
+    <string name="collection_title">Colección %1s</string>
+    <string name="watch_on">Ver en</string>
+    <string name="did_you_know">¿Sabías que…?</string>
+
+    <!-- Awards -->
+    <string name="best_picture">Mejor película</string>
+
+    <!-- Descriptions -->
+    <string name="description_logo_app">Logotipo de la aplicación</string>
+    <string name="hitory_image_description">Póster de la película Chinatown, con el personaje principal.</string>
+    <string name="mil_movies_image_description">Póster de la película El padrino, con una mano que sostiene hilos y maneja marionetas.</string>
+    <string name="directors_image_description">Póster personalizado con el rostro de David Fincher, mezclado con varios personajes de sus películas.</string>
+    <string name="timeline_image_description">Foto de un rollo de película.</string>
+    <string name="movie_backdrop_description">Foto o escena de la película %1s.</string>
+    <string name="movie_poster_description">Póster de la película %1s.</string>
+    <string name="movie_video_description">Imagen de una escena del tráiler de %1s.</string>
+    <string name="movie_company_image_description">Logotipo de la empresa %1s.</string>
+    <string name="person_photo_description">Foto de perfil de %1s.</string>
+    <string name="essay_title">Ensayo</string>
+
+    <!-- Arrays -->
+    <string name="language_system">Automático (idioma del dispositivo)</string>
+
+    <!-- Movie details: links to the app's own topics -->
+    <string name="movie_link_mil_movies_subtitle">%1$s está en la lista</string>
+    <string name="movie_link_mil_movies_title">1001 películas que hay que ver antes de morir %1$s</string>
+    <string name="movie_link_history_subtitle">Lee más sobre la época en que se estrenó %1$s</string>
+    <string name="movie_link_history_title">La historia del cine %1$s</string>
+
+    <!-- References: media type labels (the JSON keeps a fixed code) -->
+    <string name="reference_media_type_book">Libro</string>
+    <string name="reference_media_type_series">Serie</string>
+    <string name="reference_media_type_movie">Película</string>
+    <string name="reference_media_type_youtube">YouTube</string>
+</resources>
