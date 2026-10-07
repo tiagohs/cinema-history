@@ -23,6 +23,7 @@ on:
       - "feature/**"
     paths:
       - "android/**"
+      - "content-i18n/**"
       - ".github/workflows/android-release.yml"
 
   pull_request:
@@ -97,6 +98,16 @@ jobs:
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
           echo "code=$CODE" >> "$GITHUB_OUTPUT"
           echo "Versão: $NAME ($CODE)"
+
+      - name: Validate translations (content-i18n)
+        # Idiomas gerados (en/es) precisam ter a mesma estrutura, ids e links do pt.
+        working-directory: ${{ github.workspace }}
+        run: |
+          for lang in en es; do
+            if [ -d "android/app/src/main/assets/local/$lang" ]; then
+              python3 content-i18n/i18n.py validate --lang "$lang"
+            fi
+          done
 
       - name: Validate content (assets/local)
         # Lê todos os JSONs com o mesmo Gson do app; falha se algum arquivo/tradução quebrar a estrutura.
