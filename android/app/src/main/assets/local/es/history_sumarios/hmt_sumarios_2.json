@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Terror gótico",
+    "description": "Las primeras décadas de la historia del cine trajeron varios intentos de adaptar novelas góticas a la pantalla, y obras como Frankenstein y Drácula siguen influyendo hasta hoy en el imaginario popular.",
+    "image": {
+      "image_type": "local",
+      "url": "img_frankenstein_2",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Películas de gánsteres",
+    "description": "El inicio de la década de 1930, la llamada \"edad de oro de la turbulencia\", fue un período en el que la censura estaba en suspenso. Mae West estaba en su apogeo, se producían musicales delirantemente surrealistas y gánsteres armados acechaban.",
+    "image": {
+      "image_type": "local",
+      "url": "img_little_caesar",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "El color en el cine",
+    "description": "En los inicios del cine, las películas estaban dominadas por el blanco y negro. El camino fue largo desde la pintura a mano, cuadro por cuadro, hasta el refinamiento visto en El mago de Oz.",
+    "image": {
+      "image_type": "local",
+      "url": "img_wizard_oz",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Las primeras películas de animación",
+    "description": "En 1908, Fantasmagorie, de Émile Cohl (1857-1938), fascinó al público al mostrar las posibilidades de la animación. 29 años después se estrenó el primer largometraje animado, que abrió las puertas de la imaginación en la pantalla grande.",
+    "image": {
+      "image_type": "local",
+      "url": "img_pinoquio",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "La sociedad en la pantalla",
+    "description": "Durante la época económicamente convulsa de la Gran Depresión, las películas ofrecían una ventana accesible al mundo por el precio de una entrada.",
+    "image": {
+      "image_type": "local",
+      "url": "img_kane",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Hollywood y la sombra de la guerra",
+    "description": "Incluso antes de la entrada de Estados Unidos en la guerra, Hollywood venía produciendo una serie de obras con tendencias propagandísticas y, semanas antes de Pearl Harbor, ya realizaba películas bélicas patrióticas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_dictator",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Musicales en la época de la Depresión",
+    "description": "Los musicales dominaron las salas en las primeras décadas del cine, y en la década de 1930 capturaron la temeridad y la energía febril que las personas mostraban ante la Gran Depresión.",
+    "image": {
+      "image_type": "local",
+      "url": "img_top_hat",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "El sonido y la comedia",
+    "description": "Cuando el cine hablado sustituyó al cine mudo a finales de la década de 1920, los comediantes tomaron medidas radicales para adaptarse a las nuevas posibilidades, y nuevos maestros de la comedia acapararon los reflectores.",
+    "image": {
+      "image_type": "local",
+      "url": "img_laurel_and_hardy",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "La comedia romántica de los años 1930",
+    "description": "Tiene todo el sentido que el nombre del más estadounidense de todos los géneros cinematográficos provenga del béisbol. El tipo de película conocido como screwball comedy, o comedia alocada, especie de abuela de las comedias románticas, consiste en una serie de películas ágiles e irreverentes y tuvo su apogeo en las décadas de 1930 y 1940.",
+    "image": {
+      "image_type": "local",
+      "url": "img_bringing_up_baby",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

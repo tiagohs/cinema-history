@@ -1,0 +1,287 @@
+[
+  {
+    "id": 1,
+    "title": "Drama de época europeo",
+    "description": "La libertad artística de los años 90 con los dramas de época europeos.",
+    "image": {
+      "image_type": "local",
+      "url": "img_shakespeare_in_love",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "El drama en Hollywood",
+    "description": "Los dramas de los años 1990, con el regreso de maestros del pasado y nuevas visiones críticas sobre la sociedad estadounidense.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rescue_of_soldier_ryan",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Cine independiente estadounidense",
+    "description": "El apogeo del cine independiente estadounidense.",
+    "image": {
+      "image_type": "local",
+      "url": "img_pulp_fiction_2",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Cine británico e irlandés",
+    "description": "La década en que grandes actores se destacaron en las pantallas de todo el mundo.",
+    "image": {
+      "image_type": "local",
+      "url": "img_traninspotting",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Cine europeo de los años 90",
+    "description": "El diverso cine europeo de los años 90.",
+    "image": {
+      "image_type": "local",
+      "url": "img_funny_games",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "El CGI y la nueva era de los efectos especiales",
+    "description": "Los años 1990 trajeron una nueva era para los efectos especiales, con películas que cambiaron por completo el cine.",
+    "image": {
+      "image_type": "local",
+      "url": "img_avatar",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Una nueva era para el cine afroamericano",
+    "description": "Uno de los años más importantes del cine afroamericano.",
+    "image": {
+      "image_type": "local",
+      "url": "img_malcolm_x",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "El renacimiento de la animación",
+    "description": "Con nuevos estudios y talentos, Disney deja de ser el centro de la producción de animación, al mismo tiempo que aparecen nuevas tecnologías.",
+    "image": {
+      "image_type": "local",
+      "url": "img_toy_story",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "Las comedias de los años 1990 y 2000",
+    "description": "La nueva era de las comedias románticas y el auge de las comedias disparatadas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_pretty_woman",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Terror: un nuevo comienzo",
+    "description": "En los años 1990 y 2000, los directores buscaban un nuevo propósito en el terror, experimentando nuevas formas de asustar y conmocionar. A partir de esa experimentación surgieron subgéneros como el found footage, el splatter y el J-horror.",
+    "image": {
+      "image_type": "local",
+      "url": "img_saw",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "Cine de Asia Oriental ",
+    "description": "Las películas de artes marciales visualmente poéticas, junto con el nuevo cine coreano, llaman la atención del mundo.",
+    "image": {
+      "image_type": "local",
+      "url": "img_oldboy",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "title": "Nueva ola del cine iraní",
+    "description": "Una generación con ideas que conquistaron al público de todo el mundo.",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_circle",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "title": "Cine latinoamericano",
+    "description": "Los años 1990 y 2000 trajeron clásicos del cine latinoamericano y el ascenso de nuevos directores que dominaron las taquillas y los premios en todo el mundo.",
+    "image": {
+      "image_type": "local",
+      "url": "img_cidade_deus_2",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "title": "Blockbusters para la familia",
+    "description": "Los blockbusters siguen dominando las taquillas, utilizando cada vez más el CGI y enfocándose en contenido para toda la familia.",
+    "image": {
+      "image_type": "local",
+      "url": "img_harry_potter",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "title": "Las películas de superhéroes ",
+    "description": "De Superman a Batman: El caballero de la noche. Cómo las películas de superhéroes evolucionaron con el paso del tiempo hasta convertirse en una mina de oro para los estudios.",
+    "image": {
+      "image_type": "local",
+      "url": "img_spider_man_2002",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "title": "Cine británico",
+    "description": "El diverso cine británico del siglo XXI.",
+    "image": {
+      "image_type": "local",
+      "url": "img_quem_quer_ser_um_milionario",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "title": "Cine europeo del siglo XXI",
+    "description": "El retrato del cine europeo en el siglo XXI.",
+    "image": {
+      "image_type": "local",
+      "url": "img_dancando_no_escuro",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "title": "Bollywood",
+    "description": "La nueva era del cine indio.",
+    "image": {
+      "image_type": "local",
+      "url": "img_asoka",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 19,
+    "title": "Drama estadounidense posterior al 11-S ",
+    "description": "La influencia que la tragedia del 11 de septiembre tuvo en el drama estadounidense a comienzos del siglo XXI.",
+    "image": {
+      "image_type": "local",
+      "url": "img_sangue_negro",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

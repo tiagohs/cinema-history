@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Cine noir",
+    "description": "Surgido en Estados Unidos alrededor de las décadas de 1940 y 1950, uno de los \"géneros\" más importantes del cine está lleno de subtextos políticos, corrupción, tramas policiales y arquetipos memorables, como la femme fatale, por ejemplo.",
+    "image": {
+      "image_type": "local",
+      "url": "img_double_indeminity",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "El cine asiático",
+    "description": "El cine asiático, también conocido como \"cine de Oriente\", obtuvo un mayor reconocimiento mundial en la década de 1950, con la exhibición de Rashomon (1950), de Akira Kurosawa.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rashomon",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Neorrealismo italiano",
+    "description": "Un movimiento que surgió en la década de 1940, caracterizado por historias sobre la clase trabajadora filmadas con poquísimos recursos, el neorrealismo italiano fue un importante movimiento que buscaba representar las condiciones de vida, la opresión y la desigualdad en la Italia de la posguerra.",
+    "image": {
+      "image_type": "local",
+      "url": "img_ladri_di_biciclette",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "El cine en Francia",
+    "description": "Como un período agitado para la industria cinematográfica francesa, la década de 1950 quedó marcada por un conflicto edípico entre la nueva generación de cineastas y sus predecesores.",
+    "image": {
+      "image_type": "local",
+      "url": "img_bob_le_flambeur",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Cine nórdico",
+    "description": "La década en que el mundo presenció el renacimiento del cine nórdico.",
+    "image": {
+      "image_type": "local",
+      "url": "img_setimo_elo",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "El western en Hollywood",
+    "description": "El más estadounidense de los géneros ganó todavía más popularidad en los años 50, con Hollywood realizando más de 800 películas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_john_wayne_rio_bravo",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "El Hollywood de la posguerra",
+    "description": "Se esperaba que la popularidad de las películas de Hollywood en el extranjero durante el conflicto se prolongara en los años de la posguerra. Pero circunstancias económicas, culturales, sociales y políticas, además del surgimiento de un nuevo formato de entretenimiento —la televisión—, redujeron el poder y el crecimiento de una de las industrias más rentables de Estados Unidos.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rear_window",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "La juventud rebelde",
+    "description": "Los años 1950 entraron en una nueva era, con motociclistas, películas noir y una juventud rebelde.",
+    "image": {
+      "image_type": "local",
+      "url": "img_rebel_without_a_caust",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "Nouvelle Vague",
+    "description": "Qué fue este movimiento cinematográfico, sus principales características estéticas, sus películas y cineastas más importantes y su legado para el cine.",
+    "image": {
+      "image_type": "local",
+      "url": "img_a_bout_de_souffle",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Los musicales de Hollywood",
+    "description": "La década en que los musicales de Hollywood adoptaron un tono militante, desenfadado y vívido.",
+    "image": {
+      "image_type": "local",
+      "url": "img_singin_in_the_rain",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "La Guerra Fría en el cine ",
+    "description": "La paranoia de la sociedad estadounidense en la posguerra y durante la Guerra Fría le regaló al cine grandes obras.",
+    "image": {
+      "image_type": "local",
+      "url": "img_it_came_from_outer_space",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

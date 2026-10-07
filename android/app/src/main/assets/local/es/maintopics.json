@@ -1,0 +1,313 @@
+[
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "full",
+    "id": 1,
+    "title": "De 1895 a 1929",
+    "subtitle": "Parte 01",
+    "description": "Los visionarios, inventores, soñadores. Los experimentos y descubrimientos de Georges Méliès, el humor único de Chaplin y Keaton, el surrealismo en Alemania, la lucha por una voz con los Race Films, el romanticismo y el espectáculo de Hollywood en los años 20.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_voyage",
+      "content_description": "Escena de la película Viaje a la Luna, en la que una luna con rasgos humanos recibe un cohete en el ojo derecho.",
+      "animation": {
+        "type": "shake_vertical",
+        "duration": 1300
+      },
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_cabinet",
+      "content_description": "Escena de la película El gabinete del doctor Caligari, en la que un hombre examina con desconfianza el cuerpo de una mujer en el suelo.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_black_1000",
+    "color": "md_red_500",
+    "quote_position": "bottom_start",
+    "quote": {
+      "quote": "Labor omnia vincit (el trabajo todo lo vence)",
+      "author": "Viaje a la Luna",
+      "text_color": "md_black_1000",
+      "background_color": "md_white_1000",
+      "icon_color": "md_grey_300"
+    }
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card",
+    "id": 2,
+    "title": "De 1930 a 1939",
+    "subtitle": "Parte 02",
+    "description": "Con el inicio del cine hablado se descubrieron nuevas formas de contar historias. El terror en Hollywood vive una de sus edades de oro con el llamado “terror gótico”. Disney, tras desarrollar diversos cortometrajes, lanza el primer largometraje animado. La guerra afecta drásticamente al cine, la comedia romántica adquiere sus primeras características y las películas de gánsteres ganan aún más protagonismo en la pantalla grande.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_snow_white",
+      "content_description": "Foto promocional de la película Blancanieves, con la protagonista sosteniendo una manzana.",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_wizard_oz",
+      "content_description": "Foto de la película El mago de Oz, con los cuatro personajes principales caminando tomados de la mano.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "top_end",
+    "quote": {
+      "quote": "Algo me dice que ya no nos encontramos en Kansas.",
+      "author": "El mago de Oz",
+      "text_color": "md_black_1000",
+      "background_color": "md_yellow_500",
+      "icon_color": "md_black_1000"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "purple_snow_shite",
+    "color": "md_purple_500"
+  },
+  {
+    "main_topic_type": "",
+    "layout_type": "quote",
+    "id": 1,
+    "quote": "Charlie Chaplin y yo teníamos una competencia amistosa: ¿quién haría la película con menos intertítulos?",
+    "author": "Buster Keaton",
+    "icon_color": "md_white_1000"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card",
+    "id": 3,
+    "title": "De 1940 a 1959",
+    "subtitle": "Parte 03",
+    "description": "El cine asiático gana todavía más protagonismo con el estreno de diversas obras maestras. Surge el cine noir y los musicales siguen destacándose en la pantalla grande. El western mantiene su reinado como uno de los géneros más populares y uno de los movimientos más importantes del cine tiene lugar en Francia: la Nouvelle Vague.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_sevensamurais",
+      "content_description": "Escena de la película Los siete samuráis, con todos los personajes mirando en una misma dirección, en posición de alerta.",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_singin_in_the_rain",
+      "content_description": "Escena de Cantando bajo la lluvia, con el protagonista cantando en medio de la lluvia.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_end",
+    "quote": {
+      "quote": "Entre nosotros no hay nada. Nunca existió un nosotros. Solo aire.",
+      "author": "Cantando bajo la lluvia",
+      "text_color": "md_white_1000",
+      "background_color": "md_indigo_800",
+      "icon_color": "md_white_1000"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_grey_700",
+    "color": "md_orange_500"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "full",
+    "id": 4,
+    "title": "De 1960 a 1969",
+    "subtitle": "Parte 04",
+    "description": "Brasil atrae la atención del mundo con su Cinema Novo, la revolución sexual de los años 60 se refleja en el cine, el terror psicológico gana espacio y la ciencia ficción, con 2001: Odisea del espacio, conquista al público y a la crítica.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_2001_hal",
+      "content_description": "Foto de HAL 9000, de la película 2001: Odisea del espacio.",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      },
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_bonnie_clyde",
+      "content_description": "Foto de perfil de la pareja Bonnie y Clyde, en la película Bonnie y Clyde.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_end",
+    "quote": {
+      "quote": "Su origen y su propósito son un completo misterio.",
+      "author": "Última frase del Control de Misión",
+      "text_color": "md_black_1000",
+      "background_color": "md_white_1000",
+      "icon_color": "md_grey_500"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_black_1000",
+    "color": "md_indigo_900"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card_full",
+    "id": 5,
+    "title": "De 1970 a 1989",
+    "subtitle": "Parte 05",
+    "description": "Se estrena El exorcista, que lleva las películas de terror a otro nivel. Tiburón llega a los cines y, en paralelo, el cine de autor crece con Martin Scorsese y otros grandes directores. Luego, en los años 80, presenciamos excelentes producciones de bajo presupuesto y comedias que marcaron época.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_exorcist",
+      "content_description": "Foto del personaje Regan poseída por el demonio, en El exorcista.",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      },
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_taxi_driver",
+      "content_description": "Foto del personaje Travis Bickle, en Taxi Driver.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_end",
+    "quote": {
+      "quote": "¿Es conmigo con quien hablas?",
+      "author": "Travis Bickle",
+      "text_color": "md_black_1000",
+      "background_color": "md_yellow_A400",
+      "icon_color": "md_black_1000"
+    },
+    "title_color": "md_white_1000",
+    "color": "md_cyan_900"
+  },
+  {
+    "main_topic_type": "",
+    "layout_type": "quote",
+    "id": 2,
+    "quote": "Hoy más que nunca necesitamos escucharnos unos a otros y entender cómo vemos el mundo, y el cine es el mejor medio para hacerlo.",
+    "author": "Martin Scorsese",
+    "icon_color": "md_white_1000"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card",
+    "id": 6,
+    "title": "De 1990 a 2009",
+    "subtitle": "Parte 06",
+    "description": "El cine independiente de los años 90 domina las pantallas y la animación entra en un nuevo terreno con Pixar. El CGI alcanza un nuevo nivel con Matrix y los cines latinoamericano y europeo atraen la atención del mundo.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_pulp_fiction",
+      "content_description": "Foto de los personajes Vincent y Jules de espaldas uno al otro, en Tiempos violentos.",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_walle",
+      "content_description": "Foto del personaje Wall-E mirando las estrellas.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_start",
+    "quote": {
+      "quote": "¡No quiero solo sobrevivir, quiero vivir!",
+      "author": "Wall-E",
+      "text_color": "md_white_1000",
+      "background_color": "brown_presentation",
+      "icon_color": "md_white_1000"
+    },
+    "title_color": "md_black_1000",
+    "title_background_color": "yellow_dark",
+    "color": "md_teal_900"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card_full",
+    "id": 7,
+    "title": "De 2010 hasta hoy",
+    "subtitle": "Parte 07",
+    "description": "El 3D domina la pantalla grande, aparece una nueva ola de películas de superhéroes que domina las taquillas mundiales. El terror popular adquiere un nuevo ropaje con El conjuro, y el terror psicológico renace con grandes obras como La bruja. El streaming aparece sigilosamente y conquista al público, a la crítica e incluso a los grandes directores.",
+    "blocked": false,
+    "is_new": true,
+    "image": {
+      "image_type": "local",
+      "url": "img_iron_man",
+      "content_description": "Foto de perfil del personaje Iron Man.",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      },
+      "style": {
+        "height": 400,
+        "resize": {
+          "height": 400
+        },
+        "scale_type": "center_crop"
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_baby_driver",
+      "content_description": "Foto del personaje Baby, en la película Baby: El aprendiz del crimen.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_start",
+    "quote": {
+      "quote": "No tiene nada de malo ser algo callado.",
+      "author": "Baby: El aprendiz del crimen",
+      "text_color": "md_white_1000",
+      "background_color": "md_black_1000",
+      "icon_color": "md_white_1000"
+    },
+    "title_color": "md_white_1000",
+    "color": "md_light_blue_900"
+  }
+]
