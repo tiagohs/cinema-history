@@ -58,7 +58,6 @@
     <string name="activity_glossary">Glossary</string>
     <string name="language_title">Language</string>
     <string name="language_app_title">History Pages Language</string>
-    <string name="language_movie_title">Movie Language</string>
     <string name="general_title">General</string>
     <string name="references_bibliographic_title">References</string>
     <string name="references_bibliographic_description">Books, links, articles. The base reference for this app.</string>
@@ -154,15 +153,7 @@
     <string name="essay_title">Essay</string>
 
     <!-- Arrays -->
-    <string-array name="app_language_values">
-        <item>@string/pt_br_country_name</item>
-    </string-array>
-    <string-array name="movie_language_entries">
-        <item>@string/pt_br_country_name</item>
-    </string-array>
-    <string-array name="movie_language_values">
-        <item>pt-BR</item>
-    </string-array>
+    <string name="language_system">Automatic (device language)</string>
 
     <!-- Movie details: links to the app's own topics -->
     <string name="movie_link_mil_movies_subtitle">%1$s is on the list</string>

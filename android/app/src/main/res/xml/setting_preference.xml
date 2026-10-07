@@ -7,23 +7,14 @@
         app:key="language_category"
         app:title="@string/language_title">
 
+        <!-- Opções preenchidas em código a partir de ContentLanguage.ENABLED (SettingPreferenceFragment).
+             Títulos e sinopses de filmes seguem o mesmo idioma. -->
         <androidx.preference.ListPreference
             app:key="language_app"
             app:title="@string/language_app_title"
             app:summary="%s"
             app:icon="@drawable/ic_language_grey_24dp"
-            android:entryValues="@array/app_language_values"
-            android:entries="@array/app_language_values"
-            app:defaultValue="Português Brasil"/>
-
-        <androidx.preference.ListPreference
-            app:key="language_movies"
-            app:title="@string/language_movie_title"
-            app:summary="%s"
-            app:icon="@drawable/ic_language_grey_24dp"
-            android:entryValues="@array/movie_language_values"
-            android:entries="@array/movie_language_entries"
-            app:defaultValue="pt_BR"/>
+            app:persistent="false"/>
 
     </androidx.preference.PreferenceCategory>
 

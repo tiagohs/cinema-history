@@ -40,7 +40,6 @@
     <string name="activity_glossary">Glossário</string>
     <string name="language_title">Idioma</string>
     <string name="language_app_title">Idioma do conteúdo História do Cinema</string>
-    <string name="language_movie_title">Idioma do Filme</string>
     <string name="general_title">Geral</string>
     <string name="references_bibliographic_title">Referência Bibliográfica</string>
     <string name="references_bibliographic_description">Livros, links, artigos. A referência utilizada no desenvolvimento do conteúdo.</string>
@@ -133,4 +132,5 @@
     <string name="reference_media_type_series">Série</string>
     <string name="reference_media_type_movie">Filme</string>
     <string name="reference_media_type_youtube">Youtube</string>
+    <string name="language_system">Automático (idioma do aparelho)</string>
 </resources>

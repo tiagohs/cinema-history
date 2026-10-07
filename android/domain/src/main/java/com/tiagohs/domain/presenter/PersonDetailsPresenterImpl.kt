@@ -1,5 +1,6 @@
 package com.tiagohs.domain.presenter
 
+import com.tiagohs.helpers.utils.ContentLanguage
 import com.tiagohs.entities.tmdb.person.Person
 import com.tiagohs.domain.presenter.configs.BasePresenter
 import com.tiagohs.domain.services.LocalService
@@ -47,7 +48,7 @@ class PersonDetailsPresenterImpl @Inject constructor(
         MovieUtils.setupBirthdayInfo(person)
 
         person.generatePersonDepartmentsList()
-        person.setupPersonSummmary()
+        person.setupPersonSummmary(ContentLanguage.tmdbTag())
         person.setupPersonImages()
 
         person.personFilmography = MovieUtils.generatePersonMovieCredits(person.movieCredits)

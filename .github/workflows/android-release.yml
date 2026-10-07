@@ -102,14 +102,16 @@ jobs:
         # Lê todos os JSONs com o mesmo Gson do app; falha se algum arquivo/tradução quebrar a estrutura.
         run: |
           chmod +x gradlew
-          ./gradlew :domain:testDebugUnitTest --stacktrace
+          ./gradlew :domain:testDebugUnitTest :helpers:testDebugUnitTest --stacktrace
 
       - name: Upload content test report
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: content-test-report
-          path: android/domain/build/reports/tests/
+          path: |
+            android/domain/build/reports/tests/
+            android/helpers/build/reports/tests/
 
       - name: Build release APK and AAB
         run: |

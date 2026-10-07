@@ -1,5 +1,6 @@
 package com.tiagohs.domain.presenter
 
+import com.tiagohs.helpers.utils.ContentLanguage
 import com.tiagohs.entities.tmdb.Result
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.entities.tmdb.movie.Video
@@ -82,7 +83,12 @@ class MovieDetailsPresenterImpl @Inject constructor(
     private fun fetchVideos(movie: Movie): Observable<Movie> {
         val id = movie.id ?: return Observable.just(movie)
 
-        return tmdbService.getMovieVideos(id, "en,pt-BR,${movie.originalLanguage},null")
+        // Vídeos no idioma do app, em inglês, no idioma original do filme ou sem idioma.
+        val language = ContentLanguage.tmdbTag()
+        val includeLanguages = listOfNotNull(language.substringBefore('-'), "en", movie.originalLanguage, "null")
+            .distinct().joinToString(",")
+
+        return tmdbService.getMovieVideos(id, language, includeLanguages)
                     .map { mapMovieWithVideos(it) }
                     .onErrorResumeNext { error: Throwable -> return@onErrorResumeNext Observable.just(movie) }
     }
@@ -90,7 +96,11 @@ class MovieDetailsPresenterImpl @Inject constructor(
     private fun fetchImages(movie: Movie, languageToUse: String): Observable<Movie> {
         val id = movie.id ?: return Observable.just(movie)
 
-        return tmdbService.getMovieImages(id, "${languageToUse},null", "${movie.originalLanguage},en,en-US,pt-BR,null")
+        return tmdbService.getMovieImages(
+            id,
+            languageToUse,
+            listOfNotNull(movie.originalLanguage, "en", languageToUse.substringBefore('-'), "null").distinct().joinToString(",")
+        )
             .map {
                 movie.images = it
 
