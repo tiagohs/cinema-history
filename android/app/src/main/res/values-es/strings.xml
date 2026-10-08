@@ -137,6 +137,8 @@
     <string name="reference_media_type_movie">Película</string>
     <string name="reference_media_type_youtube">YouTube</string>
 
+    <string name="source_tmdb">Fuente: TMDB</string>
+
     <!-- Anúncios -->
     <string name="ad_badge">Anuncio</string>
     <string name="ad_privacy_title">Privacidad de anuncios</string>

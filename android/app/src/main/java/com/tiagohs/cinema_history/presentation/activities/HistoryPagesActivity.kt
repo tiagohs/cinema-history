@@ -126,7 +126,8 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
         }
 
         binding.toolbarNextButton.setOnClickListener {
-            setNextPage()
+            // Intersticial só nesta ação explícita (nunca no swipe), e o capítulo muda depois de fechá-lo.
+            chapterInterstitial.onNextChapterRequested { setNextPage() }
         }
 
         binding.shareButton.setOnClickListener { onShareClicked() }
@@ -222,7 +223,6 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             adapter = adapterPager
             currentItem = itemSelectedPosition
-            this@HistoryPagesActivity.currentPosition = itemSelectedPosition
 
             setPageTransformer(ZoomOutPageTransformer())
 
@@ -230,10 +230,7 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
                     super.onPageSelected(position)
-                    val chapterChanged = position != currentPosition
                     currentPosition = position
-
-                    if (chapterChanged) chapterInterstitial.onChapterChanged()
 
                     binding.sumarioContentIndicator.onPageSelected(position)
 

@@ -123,6 +123,8 @@ class NativeAdAdapter(
             val media = ad.mediaContent
             if (media != null) {
                 binding.adMedia.mediaContent = media
+                // Altura fixa (180dp): o anúncio não ocupa a tela inteira nem gera cliques acidentais.
+                binding.adMedia.setImageScaleType(android.widget.ImageView.ScaleType.CENTER_CROP)
                 binding.adMedia.visibility = View.VISIBLE
             } else {
                 binding.adMedia.visibility = View.GONE

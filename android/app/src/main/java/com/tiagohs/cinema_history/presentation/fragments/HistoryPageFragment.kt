@@ -29,6 +29,8 @@ import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.domain.presenter.HistoryPagePresenter
 import com.tiagohs.domain.views.HistoryPageView
 import com.tiagohs.entities.Page
+import com.tiagohs.entities.contents.Content
+import com.tiagohs.entities.enums.ContentType
 import com.tiagohs.entities.Sumario
 import com.tiagohs.entities.main_topics.MainTopicItem
 import com.tiagohs.helpers.extensions.*
@@ -112,14 +114,23 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
 
         binding.pageContentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-            val pageAdapter = PageContentAdapter(pageContent.contentList, mainTopic, settingManager.getMovieLanguage()).apply {
-                presentScreen = { presentScreen(it) }
-                onMovieClicked = { onMovieSelected(it) }
-                onPersonClicked = { onPersonClicked(it) }
-                onLinkClicked = { onLinkClicked(it) }
+            // Anúncio nativo no meio do capítulo, entre dois parágrafos de texto: longe do rodapé com os
+            // botões de navegação (próximo/compartilhar) e de outros elementos clicáveis.
+            val contentList = pageContent.contentList
+            val adAfter = chapterAdPosition(contentList)
+            val createAdapter = { items: List<Content> ->
+                PageContentAdapter(items, mainTopic, settingManager.getMovieLanguage()).apply {
+                    presentScreen = { presentScreen(it) }
+                    onMovieClicked = { onMovieSelected(it) }
+                    onPersonClicked = { onPersonClicked(it) }
+                    onLinkClicked = { onLinkClicked(it) }
+                }
             }
-            // Anúncio nativo no fim do capítulo, depois de todo o texto.
-            adapter = ConcatAdapter(pageAdapter, NativeAdAdapter(AdPlacement.CHAPTER, viewLifecycleOwner))
+            adapter = if (adAfter == null) createAdapter(contentList) else ConcatAdapter(
+                createAdapter(contentList.take(adAfter)),
+                NativeAdAdapter(AdPlacement.CHAPTER, viewLifecycleOwner),
+                createAdapter(contentList.drop(adAfter))
+            )
             addItemDecoration(
                 SpaceOffsetDecoration(
                     10.convertIntToDp(context),
@@ -144,6 +155,15 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
         }
 
         setupHeader()
+    }
+
+    /** Posição do anúncio: entre dois textos, o mais perto possível do meio. Capítulos curtos ficam sem anúncio. */
+    private fun chapterAdPosition(contents: List<Content>): Int? {
+        if (contents.size < 6) return null
+
+        return (2..contents.size - 2)
+            .filter { contents[it - 1].type == ContentType.TEXT && contents[it].type == ContentType.TEXT }
+            .minByOrNull { kotlin.math.abs(it - contents.size / 2) }
     }
 
     override fun onScrollUp() {

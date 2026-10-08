@@ -13,9 +13,11 @@ import timber.log.Timber
 import java.util.Calendar
 
 /**
- * Intersticial na troca de capítulo (transição natural de conteúdo), com limites conservadores:
+ * Intersticial entre capítulos. Só aparece quando o usuário toca em "próximo capítulo" (pausa natural,
+ * ação explícita): nunca durante o swipe/navegação, nunca ao abrir ou sair do app. O próximo capítulo
+ * só é aberto depois que o anúncio é fechado. Limites conservadores:
  *  - nunca na primeira sessão do app;
- *  - nunca nas primeiras trocas de capítulo da leitura ([AdsConfig.interstitialSkipFirstChapters]);
+ *  - nunca nos primeiros toques em "próximo" da leitura ([AdsConfig.interstitialSkipFirstChapters]);
  *  - no máximo 1 a cada [AdsConfig.interstitialMinIntervalMs] e [AdsConfig.interstitialDailyCap] por dia.
  * O AdMob também aplica o limite de frequência configurado no bloco.
  */
@@ -23,7 +25,7 @@ class ChapterInterstitial(private val activity: Activity) {
 
     private var interstitial: InterstitialAd? = null
     private var loading = false
-    private var chapterChanges = 0
+    private var nextRequests = 0
 
     fun preload() {
         if (loading || interstitial != null || !canEverShow()) return
@@ -47,12 +49,16 @@ class ChapterInterstitial(private val activity: Activity) {
         )
     }
 
-    /** Chamar quando o usuário muda de capítulo. */
-    fun onChapterChanged() {
-        chapterChanges++
+    /**
+     * Chamar no toque do botão "próximo capítulo". [onContinue] abre o próximo capítulo: imediatamente
+     * se não houver anúncio, ou só depois que o anúncio for fechado.
+     */
+    fun onNextChapterRequested(onContinue: () -> Unit) {
+        nextRequests++
 
         val ad = interstitial
         if (ad == null || !canShowNow() || activity.isFinishing || activity.isDestroyed) {
+            onContinue()
             preload()
             return
         }
@@ -64,11 +70,13 @@ class ChapterInterstitial(private val activity: Activity) {
             }
 
             override fun onAdDismissedFullScreenContent() {
+                onContinue()
                 preload()
             }
 
             override fun onAdFailedToShowFullScreenContent(error: AdError) {
                 Timber.d("Interstitial show: %s", error.message)
+                onContinue()
                 preload()
             }
         }
@@ -83,7 +91,7 @@ class ChapterInterstitial(private val activity: Activity) {
 
     private fun canShowNow(): Boolean =
         canEverShow() &&
-            chapterChanges > AdsConfig.interstitialSkipFirstChapters &&
+            nextRequests > AdsConfig.interstitialSkipFirstChapters &&
             System.currentTimeMillis() - AdsHistory.lastInterstitial(activity) >= AdsConfig.interstitialMinIntervalMs
 }
 

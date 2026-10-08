@@ -46,7 +46,9 @@ android {
             nativeMovie        : 'ca-app-pub-3940256099942544/2247696110',
             interstitialChapter: 'ca-app-pub-3940256099942544/1033173712'
     ]
-    def admobId = { String key, boolean release -> (release && admob[key]) ? admob[key] : testIds[key] }
+    // -PtestAds=true gera um release (R8, assinado) com IDs de teste, para testar sem impressões reais.
+    def forceTestAds = project.hasProperty('testAds') && project.property('testAds') == 'true'
+    def admobId = { String key, boolean release -> (release && !forceTestAds && admob[key]) ? admob[key] : testIds[key] }
 
 
     buildTypes {

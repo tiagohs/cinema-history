@@ -25,7 +25,7 @@
     <string name="awards_title">Film award</string>
     <string name="directors_title">Directors</string>
     <string name="powerd_tmdb" translatable="false">powered by TMDB</string>
-    <string name="source_tmdb" translatable="false">Fonte: TMDB</string>
+    <string name="source_tmdb">Source: TMDB</string>
     <string name="selected_reference_type">Select the reference type</string>
     <string name="selected_year">Select the year</string>
     <string name="winner">Winner</string>
