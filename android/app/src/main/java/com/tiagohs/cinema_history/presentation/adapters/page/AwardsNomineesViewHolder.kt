@@ -1,8 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterPageAwardNomineesBinding
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.NomineeAdapter
 import com.tiagohs.entities.awards.Nominee
 import com.tiagohs.entities.contents.Content
@@ -10,12 +9,11 @@ import com.tiagohs.entities.contents.ContentNominee
 import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import kotlinx.android.synthetic.main.adapter_page_award_nominees.*
 
 class AwardsNomineesViewHolder(
-    val view: View,
+    private val binding: AdapterPageAwardNomineesBinding,
     private val onNomineeClicked: ((nominee: Nominee) -> Unit)?
-) : BasePageViewHolder(view) {
+) : BasePageViewHolder(binding) {
 
     private var isSetup = false
 
@@ -24,8 +22,8 @@ class AwardsNomineesViewHolder(
 
         val contentNominee = item as? ContentNominee ?: return
 
-        awardTitle.setResourceText(item.name)
-        awardList.apply {
+        binding.awardTitle.setResourceText(item.name)
+        binding.awardList.apply {
             adapter =
                 NomineeAdapter(contentNominee.nomineeList ?: emptyList(), onNomineeClicked)
             layoutManager =
@@ -33,9 +31,9 @@ class AwardsNomineesViewHolder(
         }
 
         if (!isSetup) {
-            awardList.addItemDecoration(
+            binding.awardList.addItemDecoration(
                 SpaceOffsetDecoration(
-                    13.convertIntToDp(containerView.context),
+                    13.convertIntToDp(itemView.context),
                     SpaceOffsetDecoration.LEFT
                 )
             )
@@ -43,9 +41,5 @@ class AwardsNomineesViewHolder(
             isSetup = true
         }
 
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_page_award_nominees
     }
 }

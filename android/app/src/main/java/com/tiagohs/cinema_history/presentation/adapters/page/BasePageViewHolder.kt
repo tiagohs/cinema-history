@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.view.View
+import androidx.viewbinding.ViewBinding
+import com.tiagohs.cinema_history.databinding.IncludePageContentHeaderBinding
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.contents.Content
@@ -8,22 +9,21 @@ import com.tiagohs.entities.contents.ContentInformation
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.setResourceStyledText
 import com.tiagohs.helpers.extensions.setResourceText
-import kotlinx.android.synthetic.main.include_page_content_header.*
 
-abstract class BasePageViewHolder(view: View) : BaseViewHolder<Content>(view) {
+abstract class BasePageViewHolder(binding: ViewBinding) : BaseViewHolder<Content>(binding) {
 
     open fun onDestroy() {}
 
-    fun setupContentFooterInformation(information: ContentInformation) {
-        footerTitle?.setResourceText(information.contentTitle)
-        footerText?.setResourceStyledText(information.contentText)
-        footerText?.setupLinkableTextView(containerView.context)
+    fun setupContentFooterInformation(footer: IncludePageContentHeaderBinding, information: ContentInformation) {
+        footer.footerTitle.setResourceText(information.contentTitle)
+        footer.footerText.setResourceStyledText(information.contentText)
+        footer.footerText.setupLinkableTextView(itemView.context)
 
         if (information.source.isNullOrEmpty()) {
-            footerReference.hide();
+            footer.footerReference.hide()
             return
         }
 
-        footerReference?.setResourceStyledText(information.source)
+        footer.footerReference.setResourceStyledText(information.source)
     }
 }

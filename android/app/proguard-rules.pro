@@ -1,21 +1,39 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# ----------------------------------------------------------------------------
+# Cinema History - regras do R8
+# As regras dos modelos estão em entities/consumer-rules.pro.
+# Bibliotecas como Retrofit, OkHttp, Gson, Glide, Dagger e Firebase já trazem
+# as próprias regras (consumer rules); aqui ficam só os complementos.
+# ----------------------------------------------------------------------------
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# Stack traces legíveis no Crashlytics (o mapping.txt é enviado pelo plugin).
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Genéricos e anotações usados por Retrofit/Gson (List<T>, Observable<T>, @SerializedName).
+-keepattributes Signature,InnerClasses,EnclosingMethod,*Annotation*
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# Retrofit + RxJava2: com R8 em full mode, os tipos de retorno das interfaces
+# precisam manter a assinatura genérica.
+-keep,allowobfuscation,allowshrinking class io.reactivex.Observable
+-keep,allowobfuscation,allowshrinking class io.reactivex.Single
+-keep,allowobfuscation,allowshrinking class io.reactivex.Flowable
+-keep,allowobfuscation,allowshrinking class io.reactivex.Maybe
+-keep,allowobfuscation,allowshrinking class io.reactivex.Completable
+-keep,allowobfuscation,allowshrinking interface retrofit2.Call
+-keep,allowobfuscation,allowshrinking class retrofit2.Response
+
+# Deserializers customizados do Gson (domain/services/deserializers).
+-keep class * implements com.google.gson.JsonDeserializer
+-keep class * implements com.google.gson.JsonSerializer
+-keep class * extends com.google.gson.TypeAdapter
+-keep class * implements com.google.gson.TypeAdapterFactory
+
+# Glide: módulo registrado por anotação (FirebaseAppStorageModule).
+-keep public class * extends com.bumptech.glide.module.AppGlideModule
+-keep class com.bumptech.glide.GeneratedAppGlideModuleImpl { *; }
+
+# Room (usado pelo WorkManager do SDK de anúncios): o banco gerado (*_Impl) é criado por reflexão.
+# Sem isto, o R8 full mode remove o construtor e o app fecha ao abrir
+# ("Failed to create an instance of androidx.work.impl.WorkDatabase").
+-keep class * extends androidx.room.RoomDatabase { <init>(); }
+-keep class androidx.work.impl.WorkDatabase_Impl { <init>(); }

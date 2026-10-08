@@ -1,14 +1,16 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.content.Context
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityHomeBinding
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.View
 import android.view.animation.DecelerateInterpolator
 import android.widget.TextView
 import androidx.viewpager2.widget.ViewPager2
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.ads.AdsManager
 import com.tiagohs.cinema_history.presentation.adapters.HomeAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.presenter.HomePresenter
@@ -18,16 +20,15 @@ import com.tiagohs.entities.enums.MainTopicsType
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.show
 import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
-import kotlinx.android.synthetic.main.activity_home.*
 import javax.inject.Inject
 
 
-class HomeActivity : BaseActivity(), HomeView {
+class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
 
     @Inject
     lateinit var presenter: HomePresenter
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_home
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityHomeBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = R.menu.menu_main
 
     private var adapter: HomeAdapter? = null
@@ -39,6 +40,8 @@ class HomeActivity : BaseActivity(), HomeView {
 
         presenter.onBindView(this)
         presenter.fetchHomeContent()
+
+        AdsManager.gatherConsent(this)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -67,7 +70,7 @@ class HomeActivity : BaseActivity(), HomeView {
     }
 
     override fun setupContentView() {
-        setupToolbar(toolbar, displayHomeAsUpEnabled = false, displayShowTitleEnabled = false)
+        setupToolbar(binding.toolbar, displayHomeAsUpEnabled = false, displayShowTitleEnabled = false)
     }
 
     override fun bindHomeContent(homeContentList: List<HomeContentItem>) {
@@ -75,7 +78,7 @@ class HomeActivity : BaseActivity(), HomeView {
             onItemClicked = { onHomeItemClicked(it) }
         }
 
-        homeViewPager.apply {
+        binding.homeViewPager.apply {
             adapter = this@HomeActivity.adapter
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             offscreenPageLimit = 1
@@ -97,35 +100,35 @@ class HomeActivity : BaseActivity(), HomeView {
                 }
             }
 
-            contentIndicator.attachToViewPager2(this)
+            binding.contentIndicator.attachToViewPager2(this)
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
-                    contentIndicator.onPageSelected(position)
+                    binding.contentIndicator.onPageSelected(position)
 
-                    if (homeViewPager.currentItem < homeContentList.size - 1) {
-                        nextButton.show()
+                    if (binding.homeViewPager.currentItem < homeContentList.size - 1) {
+                        binding.nextButton.show()
                     } else {
-                        nextButton.hide()
+                        binding.nextButton.hide()
                     }
 
-                    if (homeViewPager.currentItem > 0) {
-                        previousButton.show()
+                    if (binding.homeViewPager.currentItem > 0) {
+                        binding.previousButton.show()
                     } else {
-                        previousButton.hide()
+                        binding.previousButton.hide()
                     }
                 }
             })
         }
 
-        nextButton.setOnClickListener {
-            val currentPosition = homeViewPager.currentItem
+        binding.nextButton.setOnClickListener {
+            val currentPosition = binding.homeViewPager.currentItem
 
-            homeViewPager.setCurrentItem(currentPosition + 1, true)
+            binding.homeViewPager.setCurrentItem(currentPosition + 1, true)
         }
-        previousButton.setOnClickListener {
-            val currentPosition = homeViewPager.currentItem
+        binding.previousButton.setOnClickListener {
+            val currentPosition = binding.homeViewPager.currentItem
 
-            homeViewPager.setCurrentItem(currentPosition - 1, true)
+            binding.homeViewPager.setCurrentItem(currentPosition - 1, true)
         }
     }
 
@@ -145,13 +148,13 @@ class HomeActivity : BaseActivity(), HomeView {
     }
 
     override fun startLoading() {
-        loadView.startShimmer()
+        binding.loadView.startShimmer()
     }
 
     override fun hideLoading() {
-        loadView.stopShimmer()
+        binding.loadView.stopShimmer()
 
-        contentContainer
+        binding.contentContainer
             .animate()
             .alpha(1f)
             .setDuration(200)

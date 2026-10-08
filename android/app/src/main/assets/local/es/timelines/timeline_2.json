@@ -1,0 +1,398 @@
+{
+  "id": 2,
+  "color": "md_purple_A700",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "La historia<br/>del cine:<br/>1930 a 1939",
+      "page_title": "1930 a 1939",
+      "coming_soon": false,
+      "previous": "1895 a 1929",
+      "next": "1940 a 1959"
+    },
+    {
+      "type": "item",
+      "year": "19\n30",
+      "title": "El sonido llega al terror de Universal",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 14473, 'screen_type': 'person'}\">Robert Julian</a> (1879-1943) y <a href=\"https://_{'type': 'screen', 'id': 32136, 'screen_type': 'person'}\">John Willard</a> (1885-1942) dirigen <a href=\"https://_{'type': 'screen', 'id': 84714, 'screen_type': movie}\">The Cat Creeps</a> (1930), la primera película de terror sonora de Universal.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_cat_creeps.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n30",
+      "title": "El inicio de los gánsteres en la pantalla",
+      "description": "Roadhouse Nights, protagonizada por <a href=\"https://_{'type': 'screen', 'id': 34745, 'screen_type': 'person'}\">Jimmy Durante</a> (1893-1980), es la primera de muchas películas de gánsteres inspiradas en la novela <i>Cosecha roja</i> (1929), de <a href=\"https://_{'type': 'screen', 'id': 5165, 'screen_type': 'person'}\">Dashiell Hammett</a>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_durante.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n30",
+      "title": "Stop-motion",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 90034, 'screen_type': movie}\">Le roman de renard</a> (1930), de <a href=\"https://_{'type': 'screen', 'id': 938146, 'screen_type': person}\">Wladyslaw Starevich</a> (1882-1965), es uno de los mayores logros de la animación en <i>stop-motion</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_le_roman_de_renard.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n31",
+      "title": "Un modelo",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 27899, 'screen_type': movie}\">Hampa dorada</a> establece el modelo para las futuras películas de gánsteres e introduce un nuevo vocabulario: <i>gats</i> (armas), <i>molls</i> (chicas) y <i>bulls</i> (policías).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_little_caesar.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n31",
+      "title": "La guerra en los Óscar",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 143, 'screen_type': movie}\">All Quiet on the Western Front </a>(Sin novedad en el frente, 1930), de <a href=\"https://_{'type': 'screen', 'id': 2000, 'screen_type': person}\">Lewis Milestone</a> (1895-1980), gana el Óscar a la Mejor Película.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_all_quiet_front.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n31",
+      "title": "Desafiando una revolución",
+      "description": "Chaplin estrena el clásico <a href=\"https://_{'type': 'screen', 'id': 901, 'screen_type': 'movie'}\">City Lights</a> (Luces de la ciudad, 1931), desafiando la revolución del cine hablado. Fue una de las últimas películas mudas producidas en Estados Unidos, junto con <a href=\"https://_{'type': 'screen', 'id': 977, 'screen_type': 'movie'}\">Tabú</a> (1931), de F. W. Murnau, filmada en la Polinesia.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_city_lights.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n31",
+      "title": "Terror gótico",
+      "description": "Se estrenan <a href=\"https://_{'type': 'screen', 'id': 138, 'screen_type': 'movie'}\">Drácula</a> y <a href=\"https://_{'type': 'screen', 'id': 3035, 'screen_type': 'movie'}\">Frankenstein</a>. Ambas desatan una avalancha de películas de terror gótico que buscan repetir su éxito comercial.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_frankenstein.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n32",
+      "title": "Peludópolis",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 1289536, 'screen_type': person}\">Quirino Cristiani</a>, uno de los gigantes olvidados de la animación, realiza <a href=\"https://_{'type': 'screen', 'id': 558154, 'screen_type': movie}\">Peludópolis</a>, el primer largometraje animado en utilizar sonido sincronizado. ",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_peludopolis.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n32",
+      "title": "Fenómenos",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 136, 'screen_type': movie}\">Fenómenos</a> es estrenada por <strong>MGM</strong>. La película genera una serie de controversias y acorta la carrera de su director, <a href=\"https://_{'type': 'screen', 'id': 1496, 'screen_type': person}\">Tod Browning</a>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_freaks.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n32",
+      "title": "El Gordo y el Flaco",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 44892, 'screen_type': movie}\">Haciendo de las suyas</a>, de Laurel y Hardy, gana el primer <strong>Óscar al Mejor Cortometraje</strong> (comedia).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_entrega_docimicilio.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n32",
+      "title": "Betty Boop",
+      "description": "En <a href=\"https://_{'type': 'screen', 'id': 156464, 'screen_type': movie}\">Betty Boop's Bamboo Isle</a> (1932), la protagonista exhibe la picardía de ojos desorbitados que la caracteriza.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_betty_boops_bamboo_isle.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n33",
+      "title": "Stop-motion y King Kong",
+      "description": "El uso del <strong>stop-motion</strong> da un enorme salto evolutivo con el estreno de la película fantástica <a href=\"https://_{'type': 'screen', 'id': 244, 'screen_type': movie}\">King Kong</a>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_king_kong_1933.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n33",
+      "title": "Consecuencias del nazismo",
+      "description": "<i>Hitler</i> llega al poder en Alemania, lo que provoca un éxodo de talentos creativos alemanes hacia <i>Hollywood, Londres y París</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_nazismo.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n33",
+      "title": "El género musical revitalizado",
+      "description": "<i>Warner Bros.</i> realiza <a href=\"https://_{'type': 'screen', 'id': 3062, 'screen_type': movie}\">La calle 42</a> y <a href=\"https://_{'type': 'screen', 'id': 31511, 'screen_type': movie}\">Vampiresas 1933</a>. Ambas revitalizan el género musical y se convierten en dos de las películas más taquilleras del año.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_42nd_street.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n34",
+      "title": "Los Tres Chiflados",
+      "description": "Se estrena <a href=\"https://_{'type': 'screen', 'id': 115771, 'screen_type': movie}\">Woman Haters</a>, el primer largometraje de <strong>Los Tres Chiflados</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_woman_haters.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n35",
+      "title": "La novia de Frankenstein",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 229, 'screen_type': movie}\">La novia de Frankenstein</a>, de <a href=\"https://_{'type': 'screen', 'id': 2917, 'screen_type': person}\">James Whale</a>, es la primera secuela de la película original y presenta a un monstruo femenino. Se le considera superior a su predecesora.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_bride_of_frankenstein.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n35",
+      "title": "Una pequeña diva",
+      "description": "La pequeña diva <a href=\"https://_{'type': 'screen', 'id': 95624, 'screen_type': person}\">Shirley Temple</a> recibe un <strong>Óscar especial</strong> a los 7 años. Temple fue la actriz infantil de Hollywood con mayor recaudación en taquilla.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_shirley_temple_oscar.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n36",
+      "title": "La resistencia al sonido",
+      "description": "Casi 10 años después de la primera película hablada, Chaplin estrena <a href=\"https://_{'type': 'screen', 'id': 3082, 'screen_type': 'movie'}\">Modern Times</a> (Tiempos modernos, 1936), su primera película \"sonorizada\". Sin diálogos, solo contiene efectos sonoros.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_modern_times.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n36",
+      "title": "Sombrero de copa",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 3080, 'screen_type': 'movie'}\">Sombrero de copa</a> recibe cuatro nominaciones al Óscar, incluidas las de Mejor Película y Mejor Dirección de Baile.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_picolino.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n36",
+      "title": "Frank Capra",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 2662, 'screen_type': person}\">Frank Capra</a> gana su segundo Óscar por la dirección de <a href=\"https://_{'type': 'screen', 'id': 24807, 'screen_type': movie}\">El secreto de vivir</a>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_frank_capra_oscar.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n36",
+      "title": "Fred Astaire y Ginger Rogers",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 30181, 'screen_type': person}\">Fred Astaire</a> y <a href=\"https://_{'type': 'screen', 'id': 30003, 'screen_type': person}\">Ginger Rogers</a> protagonizan Swing Time, una de las mejores de sus 10 colaboraciones en la pantalla.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ritmo_louco.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n37",
+      "title": "Blanca Nieves y los siete enanos",
+      "description": "Se estrena la película de Disney <a href=\"https://_{'type': 'screen', 'id': 408, 'screen_type': movie}\">Blanca Nieves y los siete enanos</a>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_snow_white.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n37",
+      "title": "La adorable revoltosa",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 900, 'screen_type': movie}\">La adorable revoltosa</a>, de <a href=\"https://_{'type': 'screen', 'id': 11435, 'screen_type': person}\">Howard Hawks</a>, es un fracaso de taquilla, pero con el paso de los años se convierte en un clásico adorado del género.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_levada_da_breca.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n37",
+      "title": "La rebeldía",
+      "description": "La película de gánsteres urbana <a href=\"https://_{'type': 'screen', 'id': 27973, 'screen_type': movie}\">Calle sin salida</a>, de <a href=\"https://_{'type': 'screen', 'id': 10001, 'screen_type': person}\">William Wyler</a> (1902-1981), presenta a <strong>The Dead End Kids</strong>, posiblemente la primera pandilla de adolescentes rebeldes del cine.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_dead_end_kids.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n37",
+      "title": "La magia del Technicolor",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 630, 'screen_type': movie}\">The Wizard of Oz</a> (El mago de Oz, 1939) llega a los cines y se convierte al instante en un clásico que encanta a niños y adultos. Pero con su estreno, el público también presenció el poder del <strong>Technicolor</strong> en la narración, por ejemplo cuando Dorothy deja su mundo en sepia para entrar en el colorido mundo de Oz. Lo que la visionaria <a href=\"https://_{type: 'screen', 'id': 1361978, 'screen_type': person}\">Natalie Kalmus</a> imaginaba se estaba haciendo realidad.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_magic_oz.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n39",
+      "title": "Antinazismo en Hollywood",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 99920, 'screen_type': movie}\">Confessions of a Nazi Spy</a> (Confesiones de un espía nazi, 1939), sobre el juicio real a un espía, es la primera película abiertamente antinazi hecha en Hollywood.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_confessions_of_a_nazi_spy.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n39",
+      "title": "Resurgimiento del western",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 995, 'screen_type': movie}\">Stagecoach</a> (La diligencia, 1939), <a href=\"https://_{type: 'screen', 'id': 43829, 'screen_type': movie}\">Jesse James</a> (1939), <a href=\"https://_{type: 'screen', 'id': 17660, 'screen_type': movie}\">Dodge City</a> (Esclavos del oro, 1939) y <a href=\"https://_{type: 'screen', 'id': 43828, 'screen_type': movie}\">Destry Rides Again</a> (Arizona, 1939) dan inicio al resurgimiento del western.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_stagecoach.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "footer",
+      "next": "1940 a 1959",
+      "previous": "1895 a 1929"
+    }
+  ]
+}

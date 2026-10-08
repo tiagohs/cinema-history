@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.adapters.person_details
 
 import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ViewPersonDepartmentBinding
+import com.tiagohs.cinema_history.databinding.AdapterPersonInfoSpecialBiographyBinding
 import android.view.View
 import androidx.constraintlayout.widget.Constraints
 import com.tiagohs.cinema_history.R
@@ -11,20 +13,17 @@ import com.tiagohs.helpers.extensions.convertIntToDp
 import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.setResourceText
 import com.tiagohs.helpers.extensions.show
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.*
-import kotlinx.android.synthetic.main.adapter_person_info_special_biography.view.*
-import kotlinx.android.synthetic.main.view_person_department.view.*
 
 class PersonInfoSpecialBiographyViewHolder(
-    view: View,
+    private val binding: AdapterPersonInfoSpecialBiographyBinding,
     private var onLinkClick: ((String?) -> Unit)? = null
-) : BaseViewHolder<PersonInfo>(view) {
+) : BaseViewHolder<PersonInfo>(binding) {
 
     override fun bind(item: PersonInfo, position: Int) {
         super.bind(item, position)
         val person = item.person
 
-        personBiography.setResourceText(person.biography)
+        binding.personBiography.setResourceText(person.biography)
 
         bindAwards(person)
         bindBirthdayInfo(person)
@@ -35,19 +34,19 @@ class PersonInfoSpecialBiographyViewHolder(
     private fun bindBirthdayInfo(person: Person) {
 
         if (person.birthdayFormated.isNotBlank()) {
-            personBirthInfo.show()
-            personBirthInfo.setResourceText(person.birthdayFormated)
+            binding.personBirthInfo.show()
+            binding.personBirthInfo.setResourceText(person.birthdayFormated)
         }
     }
 
     private fun bindAwards(person: Person) {
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
 
         person.extraInfo?.awards?.let {
-            awardsContainer.show()
-            awards.setResourceText(it)
+            binding.awardsContainer.show()
+            binding.awards.setResourceText(it)
 
-            awardsContainer.setOnClickListener {
+            binding.awardsContainer.setOnClickListener {
                 onLinkClick?.invoke(
                     context.getString(
                         R.string.imdb_awards_link,
@@ -61,48 +60,47 @@ class PersonInfoSpecialBiographyViewHolder(
     private fun bindSocial(person: Person) {
         setupExternalLinkItem(
             person.externalIds?.facebookId,
-            facebookContainer,
-            facebookContainerClickable,
+            binding.facebookContainer,
+            binding.facebookContainerClickable,
             R.string.facebook_link
         )
         setupExternalLinkItem(
             person.externalIds?.twitterId,
-            twitterContainer,
-            twitterContainerClickable,
+            binding.twitterContainer,
+            binding.twitterContainerClickable,
             R.string.twitter_link
         )
         setupExternalLinkItem(
             person.externalIds?.instagramId,
-            instagramContainer,
-            instagramContainerClickable,
+            binding.instagramContainer,
+            binding.instagramContainerClickable,
             R.string.instagram_link
         )
         setupExternalLinkItem(
             person.externalIds?.imdbId,
-            imdbContainer,
-            imdbContainerClickable,
+            binding.imdbContainer,
+            binding.imdbContainerClickable,
             R.string.imdb_person_link
         )
     }
 
     private fun bindPersonDepartments(person: Person) {
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
 
         person.departmentsList.forEach {
-            jobsScrollView.show()
+            binding.jobsScrollView.show()
 
-            val view =
-                LayoutInflater.from(context).inflate(R.layout.view_person_department, null, false)
+            val itemBinding = ViewPersonDepartmentBinding.inflate(LayoutInflater.from(context), null, false)
             val layoutParams = Constraints.LayoutParams(
                 Constraints.LayoutParams.WRAP_CONTENT,
                 Constraints.LayoutParams.WRAP_CONTENT
             )
 
             layoutParams.setMargins(0, 0, 10.convertIntToDp(context), 0)
-            view.jobName.setResourceText(it)
+            itemBinding.jobName.setResourceText(it)
 
-            view.layoutParams = layoutParams
-            jobsContainer.addView(view)
+            itemBinding.root.layoutParams = layoutParams
+            binding.jobsContainer.addView(itemBinding.root)
         }
     }
 
@@ -112,7 +110,7 @@ class PersonInfoSpecialBiographyViewHolder(
         containerClickable: View,
         baseUrl: Int
     ) {
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val externalLinkID = externalLinkId ?: return
 
         if (externalLinkID.isNotBlank()) {
@@ -122,9 +120,5 @@ class PersonInfoSpecialBiographyViewHolder(
             container.show()
             containerClickable.setOnClickListener { onLinkClick?.invoke(externalLink) }
         }
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_person_info_special_biography
     }
 }

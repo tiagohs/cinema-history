@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.content.Context
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityTimelineBinding
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
@@ -17,17 +19,15 @@ import com.tiagohs.entities.enums.MessageViewType
 import com.tiagohs.entities.timeline.TimelineResult
 import com.tiagohs.helpers.Constants
 import com.tiagohs.helpers.extensions.*
-import kotlinx.android.synthetic.main.activity_timeline.*
-import kotlinx.android.synthetic.main.view_screen_blocked.*
 import javax.inject.Inject
 
 
-class TimelineActivity : BaseActivity(), TimelinePageView {
+class TimelineActivity : BaseActivity<ActivityTimelineBinding>(), TimelinePageView {
 
     @Inject
     lateinit var dynamicLinkManager: DynamicLinkManager
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_timeline
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityTimelineBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = R.menu.menu_timeline
 
     @Inject
@@ -107,18 +107,18 @@ class TimelineActivity : BaseActivity(), TimelinePageView {
     }
 
     fun showScreenBlocked() {
-        screenBlocked.show()
+        binding.screenBlocked.root.show()
     }
 
     fun hideScreenBlocked() {
-        screenBlocked.hide()
+        binding.screenBlocked.root.hide()
     }
 
     override fun bindTimelineIDs(list: List<Int>) {
         this.listOfTimelineIndex = list
         adapterPager = TimelinePagerAdapter(supportFragmentManager, lifecycle, list)
 
-        timelineContentViewPager.apply {
+        binding.timelineContentViewPager.apply {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             adapter = adapterPager
             currentItem = startIndex
@@ -126,7 +126,7 @@ class TimelineActivity : BaseActivity(), TimelinePageView {
 
         this.currentIndex = startIndex
 
-        timelineContentViewPager.registerOnPageChangeCallback(object :
+        binding.timelineContentViewPager.registerOnPageChangeCallback(object :
             ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
@@ -140,19 +140,19 @@ class TimelineActivity : BaseActivity(), TimelinePageView {
     fun isFirst() = currentIndex == 0
 
     fun setNextPage() {
-        val currentPosition = timelineContentViewPager.currentItem
+        val currentPosition = binding.timelineContentViewPager.currentItem
 
         if (currentPosition < (listOfTimelineIndex.size - 1)) {
-            timelineContentViewPager.setCurrentItem(currentPosition + 1, true)
+            binding.timelineContentViewPager.setCurrentItem(currentPosition + 1, true)
         }
 
     }
 
     fun setPreviousPage() {
-        val currentPosition = timelineContentViewPager.currentItem
+        val currentPosition = binding.timelineContentViewPager.currentItem
 
         if (currentPosition > 0 && (listOfTimelineIndex.size - 1) > 0) {
-            timelineContentViewPager.setCurrentItem(currentPosition - 1, true)
+            binding.timelineContentViewPager.setCurrentItem(currentPosition - 1, true)
         }
 
     }

@@ -1,0 +1,537 @@
+{
+  "id": 1,
+  "color": "md_yellow_A700",
+  "title_text_color": "md_black_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "The History<br/>of Cinema:<br/>1895 to 1929",
+      "page_title": "1895 to 1929",
+      "next": "1930 to 1939"
+    },
+    {
+      "type": "item",
+      "year": "18\n95",
+      "title": "The First Screening",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 1867, 'screen_type': 'person'}\">Auguste</a> (1862-1954) and <a href=\"https://_{'type': 'screen', 'id': 1868, 'screen_type': 'person'}\">Louis </a> (1864-1948) Lumière screened 10 short films in Paris for a paying audience, among them <strong><a href=\"https://_{type: 'screen', 'id': 774, 'screen_type': 'movie'}\">Workers Leaving the Lumière Factory</a></strong>.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "local",
+        "url": "img_lumiere_brothers",
+        "content_description": "Photo of Auguste and Louis Lumière",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "18\n95",
+      "title": "The world's first film company",
+      "description": "<i>Comptoir Général de Photographie</i>, under the name <strong>Gaumont</strong>, became the world's first film company – and the oldest one still in operation. It was here that <a href=\"https://_{type: 'screen', 'id': 1071403, 'screen_type': person}\">Alice Guy Blaché</a> started out as a secretary, before becoming one of the most important directors in cinema.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_gaumont.webp",
+        "content_description": "Photo with the logo of the Comptoir Général de Photographie company",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "18\n96",
+      "title": "A Controversial Kiss",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 239027, 'screen_type': 'person'}\">Thomas Edison</a>, the father of the kinetoscope, releases what may be the first major controversy in film history, <a href=\"https://_{type: 'screen', 'id': 94570, 'screen_type': 'movie'}\">The Kiss</a> (1896), directed by <a href=\"https://_{'type': 'screen', 'id': 110348, 'screen_type': 'person'}\">William Heise</a>, the first film to show a kiss on the big screen.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_kiss.webp",
+        "content_description": "Scene from The Kiss, with the two main characters kissing.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "18\n96",
+      "title": "The Beginning of Narrative",
+      "description": "In 1896, Alice Guy Blaché releases the world's first non-fiction film. <a href=\"https://_{type: 'screen', 'id': 147554, 'screen_type': movie}\">La Fée aux choux</a> (The Cabbage-Patch Fairy, 1896), just one minute long, was written, produced and directed by her. Alice Guy's film features sets, cuts, special effects and a narrative, however brief.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_alice",
+        "content_description": "Profile photo of director Alice Guy Blaché, next to a camera.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "18\n99",
+      "title": "Phantom Ride",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 1037661, 'screen_type': 'person'}\">George Albert Smith</a> filmed what came to be known as a \"phantom ride\" in his film <a href=\"https://_{type: 'screen', 'id': 143819, 'screen_type': 'movie'}\">The Kiss in the Tunnel</a> (1899). It was a new visual experience for audiences, achieved by placing the camera on the front of a moving train, as if it were a ghostly eye gliding through the air. ",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_phantom_ride.webp",
+        "content_description": "Photo of George Albert Smith during the shooting of his film, sitting on the front of a train, attempting the Phantom Ride.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n00",
+      "title": "Narrative Complexity",
+      "description": "A few years after Alice's film was released, the film <a href=\"https://_{type: 'screen', 'id': 179546, 'screen_type': 'movie'}\">Attack on a China Mission - Bluejackets to the Rescue</a> (1900) is shown at Hove Town Hall, in the county of Sussex. A watershed moment for cinema, <a href=\"https://_{'type': 'screen', 'id': 1037369, 'screen_type': 'person'}\"> James Williamson</a> (1855-1933) created one of the most complex narratives of its time.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_attack_china_mission.webp",
+        "content_description": "Scene from Attack on a China Mission, with the soldiers running out of the burning building.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n02",
+      "title": "A New Standard",
+      "description": "In <a href=\"https://_{'type': 'screen', 'id': 775, 'screen_type': 'movie'}\">Le Voyage dans la Lune</a> (A Trip to the Moon, 1902), <a href=\"https://_{'type': 'screen', 'id': 11523, 'screen_type': 'person'}\">Georges Méliès</a> sets a new standard for <strong>production and special effects</strong> costs.",
+      "image": {
+        "image_type": "local",
+        "url": "img_voyage_2",
+        "content_description": "Scene from A Trip to the Moon, in which a moon with a human face is hit in the right eye by a rocket.",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n02",
+      "title": "Technical Evolution",
+      "description": "The average length of a film reel grows from <strong>15</strong> to <strong>183</strong> meters, allowing more time to develop a narrative.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_movie_roll.webp",
+        "content_description": "Photo of a film reel.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n03",
+      "title": "Close-up",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 143801, 'screen_type': 'movie'}\">The Sick Kitten</a> (1903), a remake of The Little Doctor (1901), both by George Albert Smith, is released. In it, we first see a room, two children and a cat: the main shot. Then Smith cuts to a close-up of the cat being given a spoonful of medicine. This is considered the <strong>first use of a close-up</strong> that doesn't involve characters looking through something.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_sick_kitten.webp",
+        "content_description": "Close-up of a cat sitting on a woman's lap.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n03",
+      "title": "Continuity on Screen",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 44341, 'screen_type': 'movie'}\">Life of an American Fireman</a> (1903), by <a href=\"https://_{'type': 'screen', 'id': 44866, 'screen_type': 'person'}\">Edwin Porter</a>, is released. In the sequence where the fireman arrives at the burning house, Edwin cuts to a room inside the house, showing the fireman rescuing a woman, and then cuts to an exterior shot of the mother in the street. For many historians, this was the <strong>first example of continuity editing</strong>.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_life_american_fireman.webp",
+        "content_description": "Scene from the film Life of an American Fireman, with the fireman climbing a ladder.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n06",
+      "title": "The First Feature Film",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 20105, 'screen_type': 'movie'}\">The Story of the Kelly Gang</a> (1906), by <a href=\"https://_{'type': 'screen', 'id': 85621, 'screen_type': 'person'}\">Charles Tait</a>, is released in Australia with a running time of over an hour. Its reel was more than 1,200 meters long, making it the first feature film in the history of cinema.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_story_kelly.webp",
+        "content_description": "Scene from the film The Story of the Kelly Gang, showing a man wearing an iron mask.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n10",
+      "title": "The Beginning of Hollywood",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 100036, 'screen_type': 'person'}\">D.W. Griffith</a> directs the 17-minute short film <a href=\"https://_{'type': 'screen', 'id': 462398, 'screen_type': 'movie'}\">In Old California</a> (1910), the first film shot in <strong>Hollywood<strong>.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_hollywood_1910.webp",
+        "content_description": "Photo of the land where Hollywood would later stand.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n12",
+      "title": "Famous Players Film Company",
+      "description": "Founded by Adolph Zukor, the <strong>Famous Players Film Company</strong> becomes the first American production company devoted exclusively to making feature films.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_famous_players.webp",
+        "content_description": "Photo of the logo of the Famous Players Film Company.",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n12",
+      "title": "The Vamp Era",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 89676, 'screen_type': 'person'}\">Clara Pontoppidan</a> plays cinema's first vamp in the influential erotic melodrama <a href=\"https://_{'type': 'screen', 'id': 238149, 'screen_type': 'movie'}\">Vampyrdanserinden</a> (The Vampire Dancer, 1912).",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_vampire_dancing.webp",
+        "content_description": "Photo of Clara Pontoppidan dancing in a scene from the film The Vampire Dancer.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n14",
+      "title": "Blockbusters",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 5153, 'screen_type': 'movie'}\">Cabiria</a> (1914) costs more than <strong>1 million lire</strong> to make and becomes the most expensive film of its time.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cabiria.webp",
+        "content_description": "Scene from the film Cabiria, showing a crowd around an ancient monument.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n14",
+      "title": "The \"Tramp\"",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 13848, 'screen_type': 'person'}\">Chaplin</a>'s \"Tramp\" makes his screen debut in <a href=\"https://_{'type': 'screen', 'id': 22885, 'screen_type': 'movie'}\">Kid Auto Races at Venice</a> (1914).",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_chaplin_vagabundo.webp",
+        "content_description": "Photo of Charlie Chaplin's face.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n15",
+      "title": "A controversial milestone",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 618, 'screen_type': 'movie'}\">The Birth of a Nation</a> (1915), at 190 minutes, breaks the record for the longest film ever made. At the same time, the film revives interest in the <strong>Ku Klux Klan</strong>, which by then had all but disappeared. A year after its release, D. W. Griffith responds to accusations of prejudice by making the epic <a href=\"https://_{'type': 'screen', 'id': 3059, 'screen_type': 'movie'}\">Intolerance: Love's Struggle Throughout the Ages</a> (1916).",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_birth_nation.webp",
+        "content_description": "Scene from The Birth of a Nation, with an African American man being captured by members of the Ku Klux Klan.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n15",
+      "title": "The first adult film in cinema",
+      "description": "A Free Ride (1915) is released and is considered the first classic pornographic film, alongside El Satario (1907) in Argentina and Am Abend (1910) in Germany. The 9-minute film follows a driver who gives a ride to two women by the side of the road, and further along they have sex. Researchers say the crew probably made an effort to keep the cast unidentifiable, since the actor wore a large fake mustache and a hat, and their identities were left anonymous in the credits. The director also remained anonymous, using the pseudonym A Wise Guy, and the only name revealed was that of Will B. Hard, the cinematographer.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_first_porn.webp",
+        "content_description": "Scene from A Free Ride, with a car driving alongside some women.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n19",
+      "title": "Cinema in the classroom",
+      "description": "Soviet cinema is nationalized and the world's first film school, the All-Union State Institute of Cinematography, is founded in Moscow",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_russian_school.webp",
+        "content_description": "Photo of the State Institute of Cinematography logo.",
+        "style": {
+          "scale_type": "center_inside"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n20",
+      "title": "German Expressionism",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 234, 'screen_type': 'movie'}\">Das Cabinet des Dr. Caligari</a> (The Cabinet of Dr. Caligari, 1920), a disturbing classic of so-called German Expressionism, reflects its author's experiences in World War I. Essential to the development of the imagination, this film introduced many of the key elements of horror cinema.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cabinet_caligari.webp",
+        "content_description": "Scene from The Cabinet of Dr. Caligari, with an old man looking off in one direction, his shadow cast on the wall.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n20",
+      "title": "Swashbuckler",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 108106, 'screen_type': 'person'}\">Fred Niblo</a> releases <a href=\"https://_{'type': 'screen', 'id': 42657, 'screen_type': 'movie'}\">The Mark of Zorro</a> (1920), marking the start of a new film genre: the swashbuckler. Zorro was the brainchild of <a href=\"https://_{'type': 'screen', 'id': 109088, 'screen_type': 'person'}\">Douglas Fairbanks</a>, who produced and starred in the film.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_zorro.webp",
+        "content_description": "Profile photo of the character Zorro.",
+        "style": {
+          "scale_type": "center_inside"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n22",
+      "title": "A Symphony of Horror",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 9076, 'screen_type': 'person'}\">F.W. Murnau</a> releases <a href=\"https://_{'type': 'screen', 'id': 653, 'screen_type': 'movie'}\">Nosferatu</a> (1922), an unauthorized adaptation of Bram Stoker's Dracula, which was nearly destroyed because of a lawsuit.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_nosferatu.webp",
+        "content_description": "Scene from Nosferatu, with the Vampire looking straight at the screen.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n22",
+      "title": "Cinema's first idol",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 116367, 'screen_type': 'person'}\">Rodolfo Valentino</a> rises to stardom in <a href=\"https://_{'type': 'screen', 'id': 31432, 'screen_type': 'movie'}\">The Four Horsemen of the Apocalypse</a> (1921). That same year, he stars in <a href=\"https://_{'type': 'screen', 'id': 36841, 'screen_type': 'movie'}\">The Sheik</a> (1921), and women faint during screenings. Thanks to his exotic charm, he became Hollywood's first male sex symbol.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_rodolfo.webp",
+        "content_description": "Profile photo of the actor Rodolfo Valentino.",
+        "style": {
+          "scale_type": "center_inside"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n23",
+      "title": "One of the three kings of comedy",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 22596, 'screen_type': 'movie'}\">Safety Last!</a> (1923) is released, starring <a href=\"https://_{'type': 'screen', 'id': 88953, 'screen_type': 'person'}\">Harold Lloyd</a>, considered one of the three kings of silent comedy, alongside Charlie Chaplin and <a href=\"https://_{'type': 'screen', 'id': 8635, 'screen_type': 'person'}\">Buster Keaton</a>. This film contains one of the most iconic moments of silent film, in which Lloyd finds himself hanging from the hands of a clock high up on a building.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_homem_mosca.webp",
+        "content_description": "Scene from Safety Last!, with the character The Boy hanging from the hand of a giant clock.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n23",
+      "title": "The Walt Disney Company is born",
+      "description": "In early 1923, in Kansas City, Missouri, animator <a href=\"https://_{'type': 'screen', 'id': 2106, 'screen_type': 'person'}\">Walt Disney</a> created a short film titled <a href=\"https://_{'type': 'screen', 'id': 146730, 'screen_type': 'movie'}\">Alice's Wonderland</a>, featuring child actress <a href=\"https://_{'type': 'screen', 'id': 144552, 'screen_type': 'person'}\">Virginia Davis</a> interacting with animated characters. In 1923, after the bankruptcy of his first company, Laugh-O-Gram Films, Walt Disney moved to Hollywood to join his brother, Roy O. Disney. Film distributor Margaret J. Winkler, of M. J. Winkler Productions, contacted Disney with plans to distribute a series of <strong>Alice Comedies</strong>, purchased for 1,500 dollars per reel, with Walt Disney as a production partner. That same year, Walt and Roy Disney founded the <strong>Disney Brothers Animation Studios</strong>. Other animated films followed Alice. In January 1926, with the completion of the Disney studio's expansion on Hyperion Street, the studio's name was changed to <strong>Walt Disney Studios</strong>.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_alice_disney.webp",
+        "content_description": "Scene from Alice's Wonderland, with the character Alice on top of an animated elephant, surrounded by several other animals.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n25",
+      "title": "The most profitable of its Era",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 3060, 'screen_type': 'movie'}\">The Big Parade</a> (1925), by <a href=\"https://_{'type': 'screen', 'id': 29962, 'screen_type': 'person'}\">King Vidor</a>, is released and grosses 22 million dollars at the box office worldwide, becoming the most successful silent film of all time.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_big_parade.webp",
+        "content_description": "Scene from The Big Parade, with the character Melisande kissing James on the cheek.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n25",
+      "title": "The Gold Rush",
+      "description": "Chaplin releases <a href=\"https://_{'type': 'screen', 'id': 962, 'screen_type': 'movie'}\">The Gold Rush</a> (1925), which becomes one of his most iconic and successful films. It is one of the highest-grossing films of the silent era.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_gold_rush.webp",
+        "content_description": "Scene from The Gold Rush, with the Tramp character doing a dance with bread rolls stuck on forks.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n25",
+      "title": "Eisenstein",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 9603, 'screen_type': 'person'}\">Sergei Eisenstein</a>, considered one of the greatest and most important directors of all time, makes his first feature film: <a href=\"https://_{'type': 'screen', 'id': 44967, 'screen_type': 'movie'}\">Стачка</a> (Strike, 1925) is released on April 28, followed by <a href=\"https://_{'type': 'screen', 'id': 643, 'screen_type': 'movie'}\">Броненосец Потёмкин</a> (Battleship Potemkin, 1925) on December 24.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_eisenstein.webp",
+        "content_description": "Profile photo of director Sergei Eisenstein.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n26",
+      "title": "Technicolor",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 50075, 'screen_type': 'movie'}\">The Black Pirate</a> (1926) is the first film made entirely in the two-color Technicolor process, an extremely expensive process at the time.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_black_pirate.webp",
+        "content_description": "Profile photo of the character Jamie, in The Black Pirate.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n26",
+      "title": "A silent comedy classic",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 8635, 'screen_type': 'person'}\">Buster Keaton</a> completes <a href=\"https://_{'type': 'screen', 'id': 961, 'screen_type': 'movie'}\">The General</a> (1926). A critical failure at the time, the film would later be rediscovered and hailed as one of the finest works of the silent era.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_general.webp",
+        "content_description": "Scene from The General, with Buster Keaton on top of a locomotive.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n26",
+      "title": "Coming of age",
+      "description": "At UFA, F. W. Murnau makes <a href=\"https://_{'type': 'screen', 'id': 10728, 'screen_type': 'movie'}\">Faust – Eine deutsche Volkssage</a> (Faust, 1926), a visual spectacle. The avant-garde <a href=\"https://_{'type': 'screen', 'id': 94525, 'screen_type': 'movie'}\">Kurutta ippêji</a> (A Page of Madness, 1926), by <a href=\"https://_{'type': 'screen', 'id': 213471, 'screen_type': 'person'}\">Teinosuke Kinugasa</a>, demonstrates the maturity of Japanese silent film.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_pagina_loucura.webp",
+        "content_description": "Scene from A Page of Madness, with two characters wearing masks.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
+      "title": "\"It Girl\"",
+      "description": "The shopgirl played by Clara Bow wins over her wealthy boss in It, whose title refers to the quality defined by screenwriter <a href=\"https://_{'type': 'screen', 'id': 705395, 'screen_type': 'person'}\">Elinor Glyn</a>. Thanks to this film, Clara Bow became one of the screen's first sex symbols.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_it.webp",
+        "content_description": "Photo of the face of the character Betty, played by actress Clara Bow.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
+      "title": "A science fiction pioneer",
+      "description": "<a href=\"https://_{'type': 'screen', 'id': 19, 'screen_type': 'movie'}\">Metropolis</a> (1927), by <a href=\"https://_{'type': 'screen', 'id': 68, 'screen_type': 'person'}\">Fritz Lang</a>, is one of the first science fiction feature films. It is a dystopia set in a technologically advanced future.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_metropolis.webp",
+        "content_description": "Scene from Metropolis, with the robot standing in an empty room.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
+      "title": "Surrealism",
+      "description": "One of the greatest classics of surrealist cinema, <a href=\"https://_{'type': 'screen', 'id': 626, 'screen_type': 'movie'}\">Un chien andalou</a> (1929), by <a href=\"https://_{'type': 'screen', 'id': 793, 'screen_type': 'person'}\">Luis Buñuel</a>, written by Buñuel himself and <a href=\"https://_{'type': 'screen', 'id': 8988, 'screen_type': 'person'}\">Salvador Dalí</a>, premieres in Paris. The film wins over audiences and runs for eight months.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cao_andaluz.webp",
+        "content_description": "Scene from Un Chien Andalou, with a barber about to slice the eye of a woman staring fixedly at the screen.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
+      "title": "A new Era",
+      "description": "The silent film era comes to an end with the release of <a href=\"https://_{'type': 'screen', 'id': 939, 'screen_type': 'movie'}\">The Jazz Singer</a> (1927), the first feature-length talkie shown on a large scale.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_jazz_singer.webp",
+        "content_description": "Scene from The Jazz Singer, with a character singing a song to a woman at the piano.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n27",
+      "title": "The Oscars",
+      "description": "The first Academy Awards ceremony is held at the Hollywood Hotel in Los Angeles.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_oscar.webp",
+        "content_description": "Photo of the first Oscars night, in a banquet hall.",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n29",
+      "title": "Looney Tunes",
+      "description": "Warner Bros. releases <strong>Looney Tunes</strong> cartoons in theaters. These short films predate <i>Bugs Bunny</i>, featuring the characters <i>Bosko</i> and <i>Buddy</i> instead.",
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_bosko.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "footer",
+      "next": "1930 to 1939"
+    }
+  ]
+}

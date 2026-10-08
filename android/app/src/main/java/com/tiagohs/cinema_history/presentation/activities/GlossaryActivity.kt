@@ -1,11 +1,12 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.content.Context
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivityGlossaryBinding
 import android.content.Intent
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.reddit.indicatorfastscroll.FastScrollItemIndicator
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.GlossaryAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.managers.SettingsManager
@@ -16,11 +17,9 @@ import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.show
 import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
-import kotlinx.android.synthetic.main.activity_glossary.*
-import kotlinx.android.synthetic.main.activity_glossary.toolbar
 import javax.inject.Inject
 
-class GlossaryActivity : BaseActivity(), GlossaryView {
+class GlossaryActivity : BaseActivity<ActivityGlossaryBinding>(), GlossaryView {
 
     @Inject
     lateinit var presenter: GlossaryPresenter
@@ -28,13 +27,13 @@ class GlossaryActivity : BaseActivity(), GlossaryView {
     @Inject
     lateinit var settingManager: SettingsManager
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_glossary
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityGlossaryBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setupToolbar(toolbar, displayShowTitleEnabled = true)
+        setupToolbar(binding.toolbar, displayShowTitleEnabled = true)
 
         getApplicationComponent()?.inject(this)
 
@@ -49,7 +48,7 @@ class GlossaryActivity : BaseActivity(), GlossaryView {
     }
 
     override fun bindGlossaryContent(glossaryList: List<Glossary>) {
-        contentList.apply {
+        binding.contentList.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter = GlossaryAdapter(glossaryList, null, settingManager.getMovieLanguage()).apply {
                 presentScreen = { presentScreen(it) }
@@ -59,9 +58,9 @@ class GlossaryActivity : BaseActivity(), GlossaryView {
             }
         }
 
-        fastScrollerView.apply {
+        binding.fastScrollerView.apply {
             setupWithRecyclerView(
-                contentList,
+                binding.contentList,
                 { position ->
                     glossaryList[position]
                         ?.let { item ->
@@ -69,34 +68,34 @@ class GlossaryActivity : BaseActivity(), GlossaryView {
                                 item
                                     .name
                                     .substring(0, 1)
-                                    .toUpperCase()
+                                    .uppercase()
                             )
                         }
                 }
             )
         }
 
-        fastScrollerThumbView.apply {
-            setupWithFastScroller(fastScrollerView)
+        binding.fastScrollerThumbView.apply {
+            setupWithFastScroller(binding.fastScrollerView)
         }
     }
 
     override fun startLoading() {
-        contentList.hide()
+        binding.contentList.hide()
         //fastScrollerView.hide()
         //fastScrollerThumbView.hide()
 
-        loadView.showShimmer(true)
-        loadView.show()
+        binding.loadView.showShimmer(true)
+        binding.loadView.show()
     }
 
     override fun hideLoading() {
-        contentList.show()
+        binding.contentList.show()
         //fastScrollerView.show()
         //fastScrollerThumbView.show()
 
-        loadView.hideShimmer()
-        loadView.hide()
+        binding.loadView.hideShimmer()
+        binding.loadView.hide()
     }
 
 

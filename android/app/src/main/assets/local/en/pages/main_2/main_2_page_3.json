@@ -1,0 +1,409 @@
+{
+  "number": 3,
+  "content_list": [
+    {
+      "type": "text",
+      "content_text": "Photographic color came to the movies at roughly the same time as sound, although, as with sound, various color effects had been used in films since the invention of the medium. <a href=\"https://_{type: 'screen', 'id': 11523, 'screen_type': person}\">Georges Méliès</a> (1861-1938), for example, employed 21 women at his studio in <i>Montreuil</i> to color his films frame by frame, but hand painting was not cost-effective unless the films were very short."
+    },
+    {
+      "type": "text",
+      "content_text": "In the mid-1900s, as films began to approach one reel in length and more prints of each film were sold, mechanized stencil processes were introduced. In <strong>Pathé’s Pathécolor system</strong>, for example, a stencil was cut for each desired color (up to six) and aligned with the print; the color was then applied through the stencil frame by frame at high speed. With the advent of the feature and the industry's conversion to mass production during the 1910s, frame-by-frame painting was replaced by mechanized tinting and toning."
+    },
+    {
+      "type": "slide",
+      "images": [
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_dirigeable_fantastique.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_voyage_sur_Jupiter.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_legende_des_ondines.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        },
+        {
+          "image_type": "online_firebase",
+          "url": "images/img_physique_diabolique.webp",
+          "height": 200,
+          "style": {
+            "scale_type": "center_crop",
+            "resize": {
+              "height": 200
+            }
+          }
+        }
+      ],
+      "height": 200,
+      "information": {
+        "contentTitle": "Magic gains color in early cinema",
+        "contentText": "These additives and techniques turned an already magical medium into transcendent dreamscapes colored by artisans—mostly women—who painted each tiny black-and-white frame, one by one, foreshadowing the colorization process developed in the 1970s. Archived at <i>Holland’s EYE Filmmuseum</i>, more than 250 selected stills from 96 of these largely forgotten films are presented in an eye-popping new book, <strong>Fantasia of Color in Early Cinema</strong>.",
+        "source": "Dirigeable fantastique, 1906 / Voyage sur Jupiter, 1909 / Légende des ondines, 1911 / Physique diabolique, 1912 - Jonathon Rosen and Joshua Yumibe | The Atlantic"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Tinting colored all the light areas of an image and was achieved by immersing a black-and-white print in dye or by using a colored film base for printing. The toning process involved chemically treating the film emulsion to color the dark areas of the print. Each process produced monochromatic images, whose color was usually chosen to match the mood or setting of the scene. Occasionally the two processes were combined to produce elaborate two-color effects."
+    },
+    {
+      "type": "text",
+      "content_text": "By the early 1920s, nearly every American feature included at least one color sequence; but after 1927, when it was discovered that tinted or toned film stock interfered with the transmission of the optical soundtrack, both practices were temporarily abandoned, leaving the market open to new systems of color photography."
+    },
+    {
+      "type": "block_special",
+      "title": "The historical Timeline of color in cinema",
+      "image": {
+        "image_type": "local",
+        "url": "img_color_movies",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "click": {
+        "screen": "link_online",
+        "button_text": "Click here to access the Collection",
+        "parameters": [
+          {
+            "key": "LINK",
+            "value": "https://filmcolors.org/timeline-of-historical-film-colors"
+          }
+        ]
+      },
+      "description": "Created in 2012, the <strong>Timeline of Historical Film Colors</strong> was developed and curated by <i>Barbara Flueckiger</i>, a professor in the Department of Film Studies at the University of Zurich, to provide comprehensive information on the historical film color processes invented since the late 19th century, including the specific color technologies of still photography that were their conceptual predecessors."
+    },
+    {
+      "type": "text",
+      "content_text": "Photographic color can be produced in film using either an additive or a subtractive process. The first systems to be developed and used were all additive, such as <strong>Kinemacolor</strong> (1906) and <strong>Gaumont Chronochrome</strong> (1912). They achieved varying degrees of popularity, but none was entirely successful, mainly because all additive systems involve the use of special cameras and projectors, which makes them too complicated and expensive for widespread industrial use."
+    },
+    {
+      "type": "text",
+      "content_text": "One of the first successful subtractive processes was a two-color system introduced by <i>Herbert Kalmus</i> in 1922: <strong>Technicolor</strong>. It used a special camera and a complex procedure to produce two separate positive prints that were then cemented together into a single print. The final print required careful handling, but it could be projected with ordinary equipment. This “cemented positive” process was used successfully in features such as <a href=\"https://_{type: 'screen', 'id': 75804, 'screen_type': movie}\">The Toll of the Sea</a> (1922) and Fairbanks's <a href=\"https://_{type: 'screen', 'id': 50075, 'screen_type': movie}\">The Black Pirate</a> (1926)."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_caligari_color",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Scene from The Cabinet of Dr. Caligari (1920)",
+        "contentText": "In the scenes of the first act, in which <i>Dr. Caligari</i> is introduced to the audience for the first time, the color creates a strange, uncomfortable feeling, because it makes the characters seem more distorted and suspicious.",
+        "source": "The Cabinet of Dr. Caligari / Yinzi's Photo Workshop"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "In 1928, Technicolor introduced an improved process in which two gelatin positives were used as relief matrices to \"print\" the color onto a single strip of film. Its introduction led to a significant increase in Technicolor production between 1929 and 1932. Color reproduction in the two-color Technicolor process was good, but still not completely natural. Its popularity began to fall sharply in 1932, and Technicolor replaced it with a three-color system that used the same basic principles but included all three primary colors."
+    },
+    {
+      "type": "text",
+      "content_text": "For the next 25 years, nearly every color film made was produced with Technicolor's three-color system. Although the quality of the system was excellent, it had drawbacks. The bulk of the camera made location shooting difficult. Moreover, Technicolor's virtual monopoly gave it indirect control over the production companies, which were required to rent Technicolor's equipment, crews, consultants, and laboratory services—at high prices—every time they used the system. During the Depression, therefore, the conversion to color was slow and never truly complete."
+    },
+    {
+      "type": "text",
+      "content_text": "After three-color Technicolor was used successfully in the Disney cartoon short <a href=\"https://_{type: 'screen', 'id': 34463, 'screen_type': movie}\">Three Little Pigs</a> (1933), the live-action short <a href=\"https://_{type: 'screen', 'id': 177032, 'screen_type': movie}\">La Cucaracha</a> (1934), and the feature film <a href=\"https://_{type: 'screen', 'id': 43888, 'screen_type': movie}\">Becky Sharp</a> (1935), directed by <a href=\"https://_{type: 'screen', 'id': 29595, 'screen_type': person}\">Rouben Mamoulian</a> (1897-1987), it gradually made its way into feature production with <a href=\"https://_{type: 'screen', 'id': 151848, 'screen_type': movie}\">The Garden of Allah</a> (1936), <a href=\"https://_{type: 'screen', 'id': 408, 'screen_type': movie}\">Snow White and the Seven Dwarfs</a> (1937), <a href=\"https://_{type: 'screen', 'id': 10907, 'screen_type': movie}\">The Adventures of Robin Hood</a> (1938), <a href=\"https://_{type: 'screen', 'id': 630, 'screen_type': movie}\">The Wizard of Oz</a> (1939), and <a href=\"https://_{type: 'screen', 'id': 770, 'screen_type': movie}\">Gone with the Wind</a> (1939), although it remained strongly associated with fantasy and spectacle.",
+      "content_credits": "Summary based on the articles \"<i>Beyond Black and White: The Forgotten History of Color in Silent Movies</i>\" by Steven Heller and \"<i>The Hollywood studio system</i>\" by David A. Cook."
+    },
+    {
+      "type": "text",
+      "content_text": "It has been said that when Dorothy first stepped out of her sepia-toned, tornado-ravaged house into the multicolored wonderland of <i>Munchkin Country</i>, an audible gasp swept through movie theaters all across America. In an instant, audiences were transported into a <strong>Technicolor</strong> world, never to look back.  ",
+      "content_title": "Natalie Kalmus, the color director of Hollywood's early Technicolor films"
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_natalie",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Natalie Kalmus",
+        "contentText": "Kalmus has more off-camera credits on <i>IMDb</i> than Spielberg and Scorsese, with 404 credits.",
+        "source": "Courtesy of BFI National Archive. Photograph by Barbara Flueckiger. Film: Kino the Girl of Colour (GB 1920, William Friese-Greene, Claude Friese-Greene)"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Hollywood, however, was slow to cross the threshold from grayscale to color—about thirty years, in fact. At first, color was seen merely as a new embellishment for a film, reserved for big dance numbers or dream sequences. It aimed at “<i>sensual intensity</i>” rather than realism. It was the visionary <a href=\"https://_{type: 'screen', 'id': 1361978, 'screen_type': person}\">Natalie Kalmus</a> (1882-1965) who rescued color from being understood as mere ornament. She wove it into the very structure of filmmaking."
+    },
+    {
+      "type": "text",
+      "content_text": "When the revolutionary three-color Technicolor developed by her husband <a href=\"https://_{type: 'screen', 'id': 1435753, 'screen_type': person}\">Herbert Kalmus</a> (1881-1963) arrived in 1932, it had decades of baggage to overcome. Herbert's real challenge was convincing a skeptical industry—and, indeed, the moviegoing public—that color could be integrated into the basic vocabulary of cinematic storytelling."
+    },
+    {
+      "type": "text",
+      "content_text": "The first Technicolor feature, <a href=\"https://_{type: 'screen', 'id': 43888, 'screen_type': movie}\">Becky Sharp</a> (1935), established Technicolor as the truest color ever seen on screen. Yet while it was a persuasive showcase for the technology, the film did not make a convincing case that color is essential to the art of storytelling. Its unrestrained use of color drew ire. One reviewer complained: “<i>Your eyes are constantly being diverted from the people to the flowers</i>.” Another remarked: “<i>When Rawdon casts Becky off, you don't see her so much as you see the dress she is wearing and the Aubusson carpet on which she sinks</i>.”"
+    },
+    {
+      "type": "video",
+      "video_id": "x6D8PAGelN8",
+      "information": {
+        "contentTitle": "Dorothy entering the world of Technicolor",
+        "contentText": "One of the most iconic scenes in film history is Dorothy stepping out of the sepia-toned house and into a world of vivid color. It could not have been done without the “DF-24 beam-splitter camera.” This camera required the use of color filters made up of red, green, and blue. When they shot the scenes, they used 35mm black-and-white film; in the developing process they combined the strips to create the color film. But the camera did not carry out the whole process with absolute fidelity. The crew had to play with the colors of the costumes and sets so that, once the scenes were shot and went through the process, they would not lose the essence of vivid color the director wanted for the film. Every scene needed a color test strip, and they did double or triple takes just to make sure.",
+        "source": "YouTube: <i>Benjamin Portman</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Both the studios and the public needed to be convinced that color could help and enhance a narrative rather than overwhelm it. Herbert Kalmus's invention was on shaky ground. As Life magazine's review of the film concluded, it remained \"<i>a question whether or not color can be kept in its place in the making of a feature picture</i>.\" That's where Natalie came in."
+    },
+    {
+      "type": "text",
+      "content_text": "Natalie Dunfee, born in 1882, met Herbert Kalmus when the two were studying color at the University of Zurich in Switzerland. In 1902, Dunfee married Kalmus, and over the next 10 years the Kalmuses moved constantly. Natalie studied art at various institutions in Europe and North America, and Herbert began experimenting in their basement with the groundbreaking notion of color film. Natalie, equally passionate about color, joined in. In 1915, Herbert Kalmus, along with <i>Daniel Comstock</i> and <i>Burton Westcott</i> (all of them MIT alumni), founded the <strong>Technicolor Motion Picture Corporation</strong>."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_natalie_journal",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Article from The Southeast Missourian, April 16, 1930",
+        "contentText": "The Kalmuses' meteoric rise to the highest ranks of the film industry is a true Hollywood tale. Natalie's path, however, was riddled with the kinds of indignities that have dogged women throughout history, especially those in the public eye.",
+        "source": "Google News Archive / The Southeast Missourian"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Here, Natalie became the world's first Technicolor star. She acted in their test films and also served as developer, cutter, and camera owner. Finally, around 1927, the small Technicolor company made its way to Hollywood. Technicolor would go on to defeat dozens of other competing corporations, including companies such as <i>Kinemacolor</i> and <i>Kodachrome</i>, to become Hollywood's reigning color company.  Early Technicolor films tended to be garish and murky, not least because the studios, irked by the high cost, insisted on getting their money's worth in quantity—they wanted every color, all the time. Natalie, drawing on her years of study, set out to change that attitude. She wanted to push the industry from this blunt approach toward a sensitive '<i>color consciousness</i>.' Kalmus believed that cinema had been “<i>steadily tending toward a more complete realism</i>” and that, after the addition of sound, color was the final step toward perfection—if used correctly."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "If you apply yourself properly to a career of any kind, you will not need to seek advice about it. No one will be able to stop you anyway.",
+        "author": "Natalie Kalmus"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Kalmus recommended that color be used with sensitivity, because the human nervous system “<i>suffers a shock when it is forced to adapt itself to any degree of abnormality in the reception of external stimuli</i>.” Kalmus laid down some fundamental guidelines for the use of color in film. She believed that color should serve as a support for action and dialogue; it should be suggestive of mood rather than an equal partner in communication. She warned against a “<i>superabundance of color</i>” in favor of more natural, neutral color schemes. And she stressed “<i>the law of emphasis</i>,” decreeing that insignificant details in an image should not be emphasized."
+    },
+    {
+      "type": "text",
+      "content_text": "Natalie worked on more than <strong>400 films</strong>, but it was her work as color director on <i>The Wizard of Oz</i> that finally caught the world's attention. Cinema changed forever when the film went from sepia to color. From Dorothy's ruby slippers to the use of multicolored lights in the wizard's chambers, the film is an ode to the magic of Technicolor (by the way, the sepia wasn't a post-production trick. The house was actually painted sepia, and Judy Garland's double was wearing a sepia dress)."
+    },
+    {
+      "type": "video",
+      "video_id": "Mqaobr6w6_I",
+      "information": {
+        "contentTitle": "How Technicolor changed cinema",
+        "contentText": "An amazing video that explains in detail how Technicolor works and the importance of Natalie Kalmus in the history of color film.",
+        "source": "YouTube: <i>Vox</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Kalmus did not have an easy life on film sets. Men bristled at having to defer to a woman. While directing <a href=\"https://_{type: 'screen', 'id': 2769, 'screen_type': movie}\">An American in Paris</a> (1951), <a href=\"https://_{type: 'screen', 'id': 13980, 'screen_type': person}\">Vincente Minnelli</a> (1903-1986) grumbled that he “<i>couldn't do anything right in Mrs. Kalmus's eyes</i>.” In response to Kalmus's rule about clashing colors, <a href=\"https://_{type: 'screen', 'id': 8636, 'screen_type': person}\">Cecil DeMille</a> (1881-1959) fumed: \"<i>Well, it's a pity the good Lord up above didn't have a Technicolor consultant when he made apples and oranges!</i>\" On British film sets, where she faced resistance for both her gender and her nationality, she was often a target of scorn for her looks, clothes, and hats (apparently to discredit her aesthetic judgment). The general feeling toward Kalmus, nurtured by Hollywood's boys' club, was perhaps best summed up by <a href=\"https://_{type: 'screen', 'id': 93905, 'screen_type': person}\">Alan Dwan</a> (1885-1981), one of the most important directors of the silent era. “<i>Natalie Kalmus was a bitch</i>,” he said in a 1980 interview."
+    },
+    {
+      "type": "text",
+      "content_text": "Films have a seismic effect on our collective visual vocabulary. Those who create the grammar of film—how films are lit, framed, composed, shot, and, indeed, colored—are major influencers of visual culture. As the “<i>high priestess of Technicolor</i>,” Kalmus needs no gender qualifier to be considered one of the greats of cinema of all time. That said, she was a woman who steered the film industry through one of its most difficult transitions, facing resistance and skepticism every step of the way. How did she do it? “<i>If you apply yourself properly to a career of any kind, you will not need to seek advice about it</i>,” she said. \"<i>No one will be able to stop you anyway</i>.\"",
+      "content_credits": "Summary based on the article \"<i>Celebrating Natalie Kalmus, the Color Director Behind Hollywood’s Early Technicolor Films</i>\" by Ananya Khaitan."
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 3777,
+          "popularity": 29.644,
+          "id": 630,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.6,
+          "title": "The Wizard of Oz",
+          "release_date": "1939-08-15",
+          "original_language": "en",
+          "original_title": "The Wizard of Oz",
+          "genre_ids": [
+            12,
+            14,
+            10751
+          ],
+          "backdrop_path": "/qAvou7F5P4VcIR72JzzrnKEQSN3.jpg",
+          "adult": false,
+          "overview": "Young Dorothy finds herself in a magical world where she makes friends with a lion, a scarecrow and a tin man as they make their way along the yellow brick road to talk with the Wizard and ask for the things they miss most in their lives. The Wicked Witch of the West is the only thing that could stop them.",
+          "poster_path": "/pfAZFD7I2hxW9HCChTuAzsdE6UX.jpg"
+        },
+        {
+          "vote_count": 0,
+          "popularity": 0.841,
+          "id": 346444,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 0,
+          "title": "The Gulf Between",
+          "release_date": "1917-09-21",
+          "original_language": "en",
+          "original_title": "The Gulf Between",
+          "genre_ids": [
+            35,
+            18
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "A young woman, who is the daughter of a sea captain, falls in love with a man from a rich family who does not approve of her.",
+          "poster_path": "/1MxbC81DYLZ4hC0yjXzFkd2BOyR.jpg"
+        },
+        {
+          "poster_path": "/841WLSvTRN3TQKxiUjD1TY9dc42.jpg",
+          "popularity": 2.842,
+          "vote_count": 25,
+          "video": false,
+          "media_type": "movie",
+          "id": 50075,
+          "adult": false,
+          "backdrop_path": "/wqY6kakhlHn1FhO8qbTf1uCJLww.jpg",
+          "original_language": "en",
+          "original_title": "The Black Pirate",
+          "genre_ids": [
+            28,
+            12,
+            18
+          ],
+          "title": "The Black Pirate",
+          "vote_average": 7,
+          "overview": "A nobleman vows to avenge the death of his father at the hands of pirates. To this end he infiltrates the pirate band. Acting in character he is instrumental in the capture of a ship, but things are complicated when he finds that there is a young woman on board whom he wishes to protect from the threat of rape.",
+          "release_date": "1926-03-08"
+        },
+        {
+          "poster_path": "/myK9DeIsXWGKgUTZyGXg2IfFk0W.jpg",
+          "popularity": 13.3,
+          "vote_count": 820,
+          "video": false,
+          "media_type": "movie",
+          "id": 234,
+          "adult": false,
+          "backdrop_path": "/bd7d9owGqoNHy2kBtwK3tbdDHI6.jpg",
+          "original_language": "de",
+          "original_title": "Das Cabinet des Dr. Caligari",
+          "genre_ids": [
+            80,
+            18,
+            27,
+            53
+          ],
+          "title": "The Cabinet of Dr. Caligari",
+          "vote_average": 7.9,
+          "overview": "Francis, a young man, recalls in his memory the horrible experiences he and his fiancée Jane recently went through. Francis and his friend Alan visit The Cabinet of Dr. Caligari, an exhibit where the mysterious doctor shows the somnambulist Cesare, and awakens him for some moments from his death-like sleep.",
+          "release_date": "1920-02-27"
+        },
+        {
+          "vote_count": 222,
+          "popularity": 9.503,
+          "id": 34463,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 6.8,
+          "title": "Three Little Pigs",
+          "release_date": "1933-05-27",
+          "original_language": "en",
+          "original_title": "Three Little Pigs",
+          "genre_ids": [
+            10402,
+            16,
+            35,
+            10751
+          ],
+          "backdrop_path": "/mbHXq2pO3FjN0TSsh2DwJjWAzAW.jpg",
+          "adult": false,
+          "overview": "The two pigs building houses of hay and sticks scoff at their brother, building the brick house. But when the wolf comes around and blows their houses down (after trickery like dressing as a foundling sheep fails), they run to their brother's house. And throughout, they sing the classic song, \"Who's Afraid of the Big Bad Wolf?\".",
+          "poster_path": "/aPmSY3y4A2xMSkF24tdIfDQNKJy.jpg"
+        },
+        {
+          "poster_path": "/lWdo53h9tmSnlCY9JxeRWPozoPN.jpg",
+          "popularity": 14.113,
+          "vote_count": 404,
+          "video": false,
+          "media_type": "movie",
+          "id": 10907,
+          "adult": false,
+          "backdrop_path": "/yjnfM8QmrXQkWl8dUimsDGl73el.jpg",
+          "original_language": "en",
+          "original_title": "The Adventures of Robin Hood",
+          "genre_ids": [
+            28,
+            12,
+            10749
+          ],
+          "title": "The Adventures of Robin Hood",
+          "vote_average": 7.5,
+          "overview": "Robin Hood fights nobly for justice against the evil Sir Guy of Gisbourne while striving to win the hand of the beautiful Maid Marian.",
+          "release_date": "1938-05-13"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 1361978,
+          "profile_path": "/lj8ZQL6PPxKM4Rtg0rf0q5MANhX.jpg",
+          "name": "Natalie Kalmus"
+        },
+        {
+          "id": 29595,
+          "profile_path": "/cTNDfNgGaBtoGbcrZ9CsNcQyjxW.jpg",
+          "name": "Rouben Mamoulian"
+        },
+        {
+          "id": 9066,
+          "profile_path": "/dkhMrLSfnqS3fmxWuXaEMwxN0Tf.jpg",
+          "name": "Judy Garland"
+        }
+      ]
+    },
+    {
+      "type": "link_screen",
+      "subtitle": "The events that shaped the world",
+      "title": "Timeline of Events from 1930 to 1939",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "1"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "The first animated feature film in history, the memorable horror films featuring the Universal monsters, screwball comedy. Click here to see the main events in cinema between 1930 and 1939 in chronological order."
+    }
+  ]
+}

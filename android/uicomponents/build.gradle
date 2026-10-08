@@ -1,18 +1,13 @@
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
 
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
-    compileSdkVersion globalConfiguration["compileSDK"]
-    buildToolsVersion globalConfiguration["buildToolsVersion"]
+    compileSdk globalConfiguration["compileSDK"]
 
 
     defaultConfig {
-        minSdkVersion globalConfiguration["minSDK"]
-        targetSdkVersion globalConfiguration["targetSDK"]
+        minSdk globalConfiguration["minSDK"]
 
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -21,7 +16,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled = false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -35,7 +30,16 @@ android {
             java.srcDir 'java'
         }
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
     namespace 'com.tiagohs.uicomponents'
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -45,8 +49,7 @@ dependencies {
 
     def dependencies = rootProject.ext.dependencies
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
-
+    
     // Android Core / Material
     implementation dependencies.appcompat
     implementation dependencies.androidxCore
@@ -57,13 +60,18 @@ dependencies {
 
     implementation dependencies.glide
     implementation dependencies.glide_transformations
-    kapt dependencies.glideCompiler
 
     // YoutubePlayer
     implementation dependencies.youtubePlayer
 
     // Test Tools
     testImplementation dependencies.junit
-    implementation dependencies.testRunner
-    implementation dependencies.espresso
+    androidTestImplementation dependencies.testRunner
+    androidTestImplementation dependencies.espresso
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
 }

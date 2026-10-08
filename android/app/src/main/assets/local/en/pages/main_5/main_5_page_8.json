@@ -1,0 +1,1344 @@
+{
+  "number": 8,
+  "content_list": [
+    {
+      "type": "text",
+      "content_text": "In the 1970s, as the world shrank thanks to the ease of transportation and communication, Hollywood, paradoxically, made everything seem larger than life. The arrival of the modern blockbuster was a reminder that cinema can be the ultimate form of escapism, as well as an art form and a means of expression."
+    },
+    {
+      "type": "video",
+      "video_id": "S4PYI6TzqYk",
+      "information": {
+        "contentTitle": "Scenes from Close Encounters of the Third Kind",
+        "contentText": "Close Encounters was a project Spielberg had long wanted to make. In late 1973, he worked out a deal with Columbia Pictures for a science fiction film. Although Spielberg received sole credit for the screenplay, he was assisted by Paul Schrader, John Hill, David Giler, Hal Barwood, Matthew Robbins, and Jerry Belson, who contributed to the screenplay at various levels. The title is taken from ufologist J. Allen Hynek's classification of close encounters with aliens, in which the third kind denotes human sightings of actual aliens or \"animate beings.\"",
+        "source": "YouTube: <i>Movieclips</i> channel"
+      }
+    },
+    {
+      "type": "essay",
+      "video_id": "ZzMwYb8Z5hA",
+      "title": "Jaws — Assembling a Top-Tier Team",
+      "description": "A well-designed team of characters lets the story's protagonist reach their goal while keeping the story interesting by providing a constant source of conflict. In this video, Michael examines the crew tasked with hunting a great white shark in Jaws to see how each individual's character traits create the ideal balance of harmony and dissonance.",
+      "channel": "lessons_from_the_screenplay",
+      "movie": {
+        "adult": false,
+        "backdrop_path": "/lDxGguxqFy1ch8XElYaNXqw0CuN.jpg",
+        "belongs_to_collection": {
+          "id": 2366,
+          "name": "Jaws Collection",
+          "poster_path": "/fgraZdDCvAtBr0MHczmL6raonHd.jpg",
+          "backdrop_path": "/1e2QvI2u7Q4d2admK6Xw0AjLjVp.jpg"
+        },
+        "budget": 7000000,
+        "genres": [
+          {
+            "id": 27,
+            "name": "Horror"
+          },
+          {
+            "id": 53,
+            "name": "Thriller"
+          },
+          {
+            "id": 12,
+            "name": "Adventure"
+          }
+        ],
+        "homepage": "https://www.uphe.com/movies/jaws",
+        "id": 578,
+        "imdb_id": "tt0073195",
+        "original_language": "en",
+        "original_title": "Jaws",
+        "overview": "When an insatiable great white shark terrorizes the townspeople of Amity Island, the police chief, an oceanographer and a grizzled shark hunter seek to destroy the blood-thirsty beast.",
+        "popularity": 47.47,
+        "poster_path": "/s2xcqSFfT6F7ZXHxowjxfG0yisT.jpg",
+        "production_companies": [
+          {
+            "id": 1865,
+            "logo_path": null,
+            "name": "Zanuck/Brown Productions",
+            "origin_country": "US"
+          },
+          {
+            "id": 33,
+            "logo_path": "/8lvHyhjr8oUKOOy2dKXoALWKdp0.png",
+            "name": "Universal Pictures",
+            "origin_country": "US"
+          }
+        ],
+        "production_countries": [
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          }
+        ],
+        "release_date": "1975-06-18",
+        "revenue": 470653000,
+        "runtime": 124,
+        "spoken_languages": [
+          {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+          }
+        ],
+        "status": "Released",
+        "tagline": "Don't go in the water",
+        "title": "Jaws",
+        "video": false,
+        "vote_average": 7.6,
+        "vote_count": 7537,
+        "credits": {
+          "cast": [
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 6355,
+              "known_for_department": "Acting",
+              "name": "Roy Scheider",
+              "original_name": "Roy Scheider",
+              "popularity": 4.323,
+              "profile_path": "/yyZ0DwUz3qAelJIUGVoOktGgMIh.jpg",
+              "cast_id": 15,
+              "character": "Police Chief Martin Brody",
+              "credit_id": "52fe4255c3a36847f8016071",
+              "order": 0
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8606,
+              "known_for_department": "Acting",
+              "name": "Robert Shaw",
+              "original_name": "Robert Shaw",
+              "popularity": 3.548,
+              "profile_path": "/bU4IJ4J1mgrriRTdQ4BOemoHvtt.jpg",
+              "cast_id": 16,
+              "character": "Quint",
+              "credit_id": "52fe4255c3a36847f8016075",
+              "order": 1
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 3037,
+              "known_for_department": "Acting",
+              "name": "Richard Dreyfuss",
+              "original_name": "Richard Dreyfuss",
+              "popularity": 2.369,
+              "profile_path": "/q2BPu6zWwFtnzQfpl4fgbKqURXM.jpg",
+              "cast_id": 17,
+              "character": "Matt Hooper",
+              "credit_id": "52fe4255c3a36847f8016079",
+              "order": 2
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 8607,
+              "known_for_department": "Acting",
+              "name": "Lorraine Gary",
+              "original_name": "Lorraine Gary",
+              "popularity": 2.11,
+              "profile_path": "/6JKNdZopypnFnD9xSSlDs6YTHMC.jpg",
+              "cast_id": 18,
+              "character": "Ellen Brody",
+              "credit_id": "52fe4255c3a36847f801607d",
+              "order": 3
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8608,
+              "known_for_department": "Acting",
+              "name": "Murray Hamilton",
+              "original_name": "Murray Hamilton",
+              "popularity": 4.246,
+              "profile_path": "/g586NceO9Vcor4LmlqWY5Mv0hTF.jpg",
+              "cast_id": 19,
+              "character": "Mayor Larry Vaughn",
+              "credit_id": "52fe4255c3a36847f8016081",
+              "order": 4
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8555,
+              "known_for_department": "Acting",
+              "name": "Carl Gottlieb",
+              "original_name": "Carl Gottlieb",
+              "popularity": 1.216,
+              "profile_path": "/tXsKWTANoQLwLyXTUteuDcDIc8b.jpg",
+              "cast_id": 20,
+              "character": "Ben Meadows",
+              "credit_id": "52fe4255c3a36847f8016085",
+              "order": 5
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8609,
+              "known_for_department": "Acting",
+              "name": "Jeffrey Kramer",
+              "original_name": "Jeffrey Kramer",
+              "popularity": 0.675,
+              "profile_path": "/tLlMHQtZWhR3qHXBu1RR6NanERX.jpg",
+              "cast_id": 21,
+              "character": "Deputy Leonard 'Lenny' Hendricks",
+              "credit_id": "52fe4255c3a36847f8016089",
+              "order": 6
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 8610,
+              "known_for_department": "Acting",
+              "name": "Susan Backlinie",
+              "original_name": "Susan Backlinie",
+              "popularity": 0.705,
+              "profile_path": "/A0WzKdjIf7MFxyV4adJE5vMRn5J.jpg",
+              "cast_id": 22,
+              "character": "Christine 'Chrissie' Watkins",
+              "credit_id": "52fe4255c3a36847f801608d",
+              "order": 7
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 5286,
+              "known_for_department": "Production",
+              "name": "Jonathan Filley",
+              "original_name": "Jonathan Filley",
+              "popularity": 0.6,
+              "profile_path": null,
+              "cast_id": 23,
+              "character": "Tom Cassidy",
+              "credit_id": "52fe4255c3a36847f8016091",
+              "order": 8
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 8591,
+              "known_for_department": "Acting",
+              "name": "Ted Grossman",
+              "original_name": "Ted Grossman",
+              "popularity": 0.65,
+              "profile_path": "/2L7S57LmXg1EFwVOkI06JS5oAhM.jpg",
+              "cast_id": 32,
+              "character": "Estuary Victim",
+              "credit_id": "55de5a40925141472d00038c",
+              "order": 9
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8611,
+              "known_for_department": "Acting",
+              "name": "Chris Rebello",
+              "original_name": "Chris Rebello",
+              "popularity": 0.974,
+              "profile_path": "/diVAKfphJg7zpgsgaT5o8Lg16aa.jpg",
+              "cast_id": 24,
+              "character": "Michael 'Mike' Brody",
+              "credit_id": "52fe4255c3a36847f8016095",
+              "order": 10
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8612,
+              "known_for_department": "Acting",
+              "name": "Jay Mello",
+              "original_name": "Jay Mello",
+              "popularity": 0.995,
+              "profile_path": null,
+              "cast_id": 25,
+              "character": "Sean Brody",
+              "credit_id": "52fe4255c3a36847f8016099",
+              "order": 11
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 8613,
+              "known_for_department": "Acting",
+              "name": "Lee Fierro",
+              "original_name": "Lee Fierro",
+              "popularity": 0.703,
+              "profile_path": "/mszs36kiWIcoJ5nxegZErKGk5Ry.jpg",
+              "cast_id": 26,
+              "character": "Mrs. Kintner",
+              "credit_id": "52fe4255c3a36847f801609d",
+              "order": 12
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 8614,
+              "known_for_department": "Acting",
+              "name": "Jeffrey Voorhees",
+              "original_name": "Jeffrey Voorhees",
+              "popularity": 0.6,
+              "profile_path": null,
+              "cast_id": 27,
+              "character": "Alex M. Kintner",
+              "credit_id": "52fe4255c3a36847f80160a1",
+              "order": 13
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 8615,
+              "known_for_department": "Acting",
+              "name": "Craig Kingsbury",
+              "original_name": "Craig Kingsbury",
+              "popularity": 1.114,
+              "profile_path": null,
+              "cast_id": 28,
+              "character": "Ben Gardner",
+              "credit_id": "52fe4255c3a36847f80160a5",
+              "order": 14
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8616,
+              "known_for_department": "Acting",
+              "name": "Robert Nevin",
+              "original_name": "Robert Nevin",
+              "popularity": 0.6,
+              "profile_path": null,
+              "cast_id": 29,
+              "character": "Medical Examiner",
+              "credit_id": "52fe4255c3a36847f80160a9",
+              "order": 15
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8554,
+              "known_for_department": "Writing",
+              "name": "Peter Benchley",
+              "original_name": "Peter Benchley",
+              "popularity": 1.095,
+              "profile_path": "/5C9L0wQFxnppIWosv5HrYev6Tip.jpg",
+              "cast_id": 33,
+              "character": "Interviewer",
+              "credit_id": "55de5af4c3a3686e82000411",
+              "order": 16
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 592894,
+              "known_for_department": "Acting",
+              "name": "Belle McDonald",
+              "original_name": "Belle McDonald",
+              "popularity": 0.6,
+              "profile_path": "/eJRqlcurBuKf1bj5V6xWzyklmSD.jpg",
+              "cast_id": 39,
+              "character": "Mrs. Posner (uncredited)",
+              "credit_id": "56ba1c00c3a3681e7d002c03",
+              "order": 17
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 51550,
+              "known_for_department": "Acting",
+              "name": "Dorothy Fielding",
+              "original_name": "Dorothy Fielding",
+              "popularity": 0.989,
+              "profile_path": "/wuZGmmQxOsbolkJFe7pleYwD3eE.jpg",
+              "cast_id": 34,
+              "character": "Girl in Music Store (uncredited)",
+              "credit_id": "55de5b6fc3a3686e7d00039b",
+              "order": 18
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 16224,
+              "known_for_department": "Acting",
+              "name": "Fritzi Jane Courtney",
+              "original_name": "Fritzi Jane Courtney",
+              "popularity": 1.38,
+              "profile_path": "/zu2aAlmeTLvbEUkhj6901JMQWdi.jpg",
+              "cast_id": 37,
+              "character": "Mrs. Taft (uncredited)",
+              "credit_id": "56ba1a9cc3a3681e5900314b",
+              "order": 19
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 197925,
+              "known_for_department": "Writing",
+              "name": "David Engelbach",
+              "original_name": "David Engelbach",
+              "popularity": 0.695,
+              "profile_path": null,
+              "cast_id": 38,
+              "character": "Research Assistant (uncredited)",
+              "credit_id": "56ba1af8c3a3681e6800391a",
+              "order": 20
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 1360008,
+              "known_for_department": "Acting",
+              "name": "Joseph Oliveira",
+              "original_name": "Joseph Oliveira",
+              "popularity": 0.627,
+              "profile_path": null,
+              "cast_id": 40,
+              "character": "Swimmer (uncredited)",
+              "credit_id": "56ba1c6192514106ac002c23",
+              "order": 21
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 1946,
+              "known_for_department": "Acting",
+              "name": "Beverly Powers",
+              "original_name": "Beverly Powers",
+              "popularity": 2.297,
+              "profile_path": null,
+              "cast_id": 41,
+              "character": "Topless Swimmer (uncredited)",
+              "credit_id": "56ba1cbc92514106a4002ac7",
+              "order": 22
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 124243,
+              "known_for_department": "Acting",
+              "name": "Ayn Ruymen",
+              "original_name": "Ayn Ruymen",
+              "popularity": 1.214,
+              "profile_path": "/lxn99XWxt2A400MrRhUWXrUJN2g.jpg",
+              "cast_id": 42,
+              "character": "Nurse (uncredited)",
+              "credit_id": "56ba1cf192514106ac002c3c",
+              "order": 23
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 1081816,
+              "known_for_department": "Acting",
+              "name": "Christopher Sands",
+              "original_name": "Christopher Sands",
+              "popularity": 0.6,
+              "profile_path": null,
+              "cast_id": 43,
+              "character": "Lifeguard (uncredited)",
+              "credit_id": "56ba1d3ec3a3681e5d002d78",
+              "order": 24
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 39039,
+              "known_for_department": "Acting",
+              "name": "Rex Trailer",
+              "original_name": "Rex Trailer",
+              "popularity": 0.6,
+              "profile_path": null,
+              "cast_id": 44,
+              "character": "Scout Master (uncredited)",
+              "credit_id": "56ba1debc3a3681e6d002c28",
+              "order": 25
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 97751,
+              "known_for_department": "Acting",
+              "name": "Denise Cheshire",
+              "original_name": "Denise Cheshire",
+              "popularity": 1.201,
+              "profile_path": "/eO7n62ZNAOXTOFCdnq1hFr7g3ai.jpg",
+              "cast_id": 36,
+              "character": "Swimming Chrissie - First Victim (uncredited)",
+              "credit_id": "56b9559f92514106a4000f03",
+              "order": 26
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 488,
+              "known_for_department": "Directing",
+              "name": "Steven Spielberg",
+              "original_name": "Steven Spielberg",
+              "popularity": 9.273,
+              "profile_path": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
+              "cast_id": 35,
+              "character": "Amity Point Lifestation Worker (voice) (uncredited)",
+              "credit_id": "55de5b88925141472000041e",
+              "order": 27
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 2735328,
+              "known_for_department": "Acting",
+              "name": "Phil Murray",
+              "original_name": "Phil Murray",
+              "popularity": 0.6,
+              "profile_path": "/1DgeK6R49NVxTa70PFPs38lMRjo.jpg",
+              "cast_id": 62,
+              "character": "Mr. Taft",
+              "credit_id": "5f2e6821be7f350036f3a57b",
+              "order": 28
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 2957401,
+              "known_for_department": "Acting",
+              "name": "Joe La Creta",
+              "original_name": "Joe La Creta",
+              "popularity": 0.6,
+              "profile_path": null,
+              "cast_id": 63,
+              "character": "Barwood (uncredited)",
+              "credit_id": "6014a68ed7cd06003e058548",
+              "order": 29
+            }
+          ],
+          "crew": [
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 491,
+              "known_for_department": "Sound",
+              "name": "John Williams",
+              "original_name": "John Williams",
+              "popularity": 2.225,
+              "profile_path": "/KFyMqUWeiBdP9tJcZyGWOqnrgK.jpg",
+              "credit_id": "52fe4255c3a36847f801603d",
+              "department": "Sound",
+              "job": "Original Music Composer"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 488,
+              "known_for_department": "Directing",
+              "name": "Steven Spielberg",
+              "original_name": "Steven Spielberg",
+              "popularity": 9.273,
+              "profile_path": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
+              "credit_id": "52fe4255c3a36847f801601f",
+              "department": "Directing",
+              "job": "Director"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 796,
+              "known_for_department": "Art",
+              "name": "John M. Dwyer",
+              "original_name": "John M. Dwyer",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "52fe4255c3a36847f8016055",
+              "department": "Art",
+              "job": "Set Decoration"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 12865,
+              "known_for_department": "Editing",
+              "name": "Jeff Gourson",
+              "original_name": "Jeff Gourson",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "56ba231ac3a3681e60002bb5",
+              "department": "Editing",
+              "job": "Assistant Editor"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 1044,
+              "known_for_department": "Camera",
+              "name": "Michael Chapman",
+              "original_name": "Michael Chapman",
+              "popularity": 1.159,
+              "profile_path": "/vFFWHlwwIgWoi2NPoVq3uzikCnM.jpg",
+              "credit_id": "609916f38ee49c003e74a7ab",
+              "department": "Camera",
+              "job": "Camera Operator"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 1297,
+              "known_for_department": "Production",
+              "name": "Richard D. Zanuck",
+              "original_name": "Richard D. Zanuck",
+              "popularity": 1.4,
+              "profile_path": null,
+              "credit_id": "52fe4255c3a36847f8016037",
+              "department": "Production",
+              "job": "Producer"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 2287,
+              "known_for_department": "Camera",
+              "name": "Bill Butler",
+              "original_name": "Bill Butler",
+              "popularity": 1.094,
+              "profile_path": "/kiEZlHSzWCTrzpAjc4XjFFVBPkF.jpg",
+              "credit_id": "53807bc5c3a36805a1004d8e",
+              "department": "Camera",
+              "job": "Director of Photography"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 5322,
+              "known_for_department": "Production",
+              "name": "David Brown",
+              "original_name": "David Brown",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "52fe4255c3a36847f8016031",
+              "department": "Production",
+              "job": "Producer"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8554,
+              "known_for_department": "Writing",
+              "name": "Peter Benchley",
+              "original_name": "Peter Benchley",
+              "popularity": 1.095,
+              "profile_path": "/5C9L0wQFxnppIWosv5HrYev6Tip.jpg",
+              "credit_id": "52fe4255c3a36847f80160af",
+              "department": "Writing",
+              "job": "Screenplay"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8554,
+              "known_for_department": "Writing",
+              "name": "Peter Benchley",
+              "original_name": "Peter Benchley",
+              "popularity": 1.095,
+              "profile_path": "/5C9L0wQFxnppIWosv5HrYev6Tip.jpg",
+              "credit_id": "52fe4255c3a36847f8016025",
+              "department": "Writing",
+              "job": "Novel"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8555,
+              "known_for_department": "Acting",
+              "name": "Carl Gottlieb",
+              "original_name": "Carl Gottlieb",
+              "popularity": 1.216,
+              "profile_path": "/tXsKWTANoQLwLyXTUteuDcDIc8b.jpg",
+              "credit_id": "52fe4255c3a36847f801602b",
+              "department": "Writing",
+              "job": "Screenplay"
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 8556,
+              "known_for_department": "Editing",
+              "name": "Verna Fields",
+              "original_name": "Verna Fields",
+              "popularity": 0.6,
+              "profile_path": "/ch981JcAIRYxy7pUvdXchpao48E.jpg",
+              "credit_id": "52fe4255c3a36847f8016049",
+              "department": "Editing",
+              "job": "Editor"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8558,
+              "known_for_department": "Art",
+              "name": "Joe Alves",
+              "original_name": "Joe Alves",
+              "popularity": 1.932,
+              "profile_path": null,
+              "credit_id": "52fe4255c3a36847f801604f",
+              "department": "Art",
+              "job": "Production Design"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8573,
+              "known_for_department": "Directing",
+              "name": "Thomas J. Wright",
+              "original_name": "Thomas J. Wright",
+              "popularity": 1.562,
+              "profile_path": null,
+              "credit_id": "52fe4255c3a36847f801605b",
+              "department": "Art",
+              "job": "Art Department Coordinator"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8573,
+              "known_for_department": "Directing",
+              "name": "Thomas J. Wright",
+              "original_name": "Thomas J. Wright",
+              "popularity": 1.562,
+              "profile_path": null,
+              "credit_id": "56ba2288c3a3681e64002c73",
+              "department": "Art",
+              "job": "Production Illustrator"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8582,
+              "known_for_department": "Sound",
+              "name": "John R. Carter",
+              "original_name": "John R. Carter",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5c2b4de00e0a2655fa38ba85",
+              "department": "Sound",
+              "job": "Sound"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 8586,
+              "known_for_department": "Crew",
+              "name": "Robert A. Mattey",
+              "original_name": "Robert A. Mattey",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "52fe4255c3a36847f8016067",
+              "department": "Crew",
+              "job": "Special Effects"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 8591,
+              "known_for_department": "Acting",
+              "name": "Ted Grossman",
+              "original_name": "Ted Grossman",
+              "popularity": 0.65,
+              "profile_path": "/2L7S57LmXg1EFwVOkI06JS5oAhM.jpg",
+              "credit_id": "52fe4255c3a36847f801606d",
+              "department": "Crew",
+              "job": "Stunts"
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 12435,
+              "known_for_department": "Production",
+              "name": "Shari Rhodes",
+              "original_name": "Shari Rhodes",
+              "popularity": 0.766,
+              "profile_path": "/eXQ9dUdKqqP6NUbpMfUl2xWCcaA.jpg",
+              "credit_id": "56ba24f6c3a3687c9b00002a",
+              "department": "Production",
+              "job": "Casting"
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 12435,
+              "known_for_department": "Production",
+              "name": "Shari Rhodes",
+              "original_name": "Shari Rhodes",
+              "popularity": 0.766,
+              "profile_path": "/eXQ9dUdKqqP6NUbpMfUl2xWCcaA.jpg",
+              "credit_id": "60ec3e63194186002ff23e48",
+              "department": "Production",
+              "job": "Location Casting"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 13521,
+              "known_for_department": "Production",
+              "name": "William S. Gilmore",
+              "original_name": "William S. Gilmore",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "6099180ae263bb003a28a618",
+              "department": "Production",
+              "job": "Production Executive"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 13942,
+              "known_for_department": "Costume & Make-Up",
+              "name": "Del Armstrong",
+              "original_name": "Del Armstrong",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "56ba1e9692514106a1002ad2",
+              "department": "Costume & Make-Up",
+              "job": "Makeup Artist"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 14829,
+              "known_for_department": "Sound",
+              "name": "Robert L. Hoyt",
+              "original_name": "Robert L. Hoyt",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b48e9659251412536001d6c",
+              "department": "Sound",
+              "job": "Sound"
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 17916,
+              "known_for_department": "Directing",
+              "name": "Charlsie Bryant",
+              "original_name": "Charlsie Bryant",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "56ba23d59251417193000012",
+              "department": "Directing",
+              "job": "Script Supervisor"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 66167,
+              "known_for_department": "Sound",
+              "name": "William C. Carruth",
+              "original_name": "William C. Carruth",
+              "popularity": 0.98,
+              "profile_path": null,
+              "credit_id": "56ba22ca9251416872001cf6",
+              "department": "Editing",
+              "job": "Assistant Editor"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 66222,
+              "known_for_department": "Directing",
+              "name": "James Fargo",
+              "original_name": "James Fargo",
+              "popularity": 0.746,
+              "profile_path": null,
+              "credit_id": "56ba20dac3a3681e7d002cd2",
+              "department": "Production",
+              "job": "Unit Production Manager"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 161787,
+              "known_for_department": "Crew",
+              "name": "Dick Ziker",
+              "original_name": "Dick Ziker",
+              "popularity": 2.244,
+              "profile_path": "/28dO89lvvZS6ZOw5Rpusygfbwbu.jpg",
+              "credit_id": "603677c65b370d00413c7374",
+              "department": "Crew",
+              "job": "Stunt Double"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 184662,
+              "known_for_department": "Acting",
+              "name": "Fred Zendar",
+              "original_name": "Fred Zendar",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "6099183aa3d027003b41b55a",
+              "department": "Crew",
+              "job": "Technical Advisor"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 1223613,
+              "known_for_department": "Acting",
+              "name": "Ron Taylor",
+              "original_name": "Ron Taylor",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "609917c705a533003e289cf1",
+              "department": "Camera",
+              "job": "Camera Operator"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 1228010,
+              "known_for_department": "Directing",
+              "name": "Tom Joyner",
+              "original_name": "Tom Joyner",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "6099165c283ed9003d6e9ade",
+              "department": "Directing",
+              "job": "First Assistant Director"
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 1238096,
+              "known_for_department": "Acting",
+              "name": "Valerie Taylor",
+              "original_name": "Valerie Taylor",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "609917dbaf58cb003cb2e428",
+              "department": "Camera",
+              "job": "Camera Operator"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 1416440,
+              "known_for_department": "Directing",
+              "name": "Barbara Bass",
+              "original_name": "Barbara Bass",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "6099164f746457003e5b15f5",
+              "department": "Directing",
+              "job": "Second Assistant Director"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 1430210,
+              "known_for_department": "Costume & Make-Up",
+              "name": "Verne Caruso",
+              "original_name": "Verne Caruso",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "56ba1ecdc3a3681e7d002c7d",
+              "department": "Costume & Make-Up",
+              "job": "Hairstylist"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 1574927,
+              "known_for_department": "Costume & Make-Up",
+              "name": "Jim Gillespie",
+              "original_name": "Jim Gillespie",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "56ba202e92514106b4002c82",
+              "department": "Costume & Make-Up",
+              "job": "Makeup Artist"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 2553356,
+              "known_for_department": "Acting",
+              "name": "Werner Keppler",
+              "original_name": "Werner Keppler",
+              "popularity": 0.728,
+              "profile_path": null,
+              "credit_id": "5e5a5e1955c92600194e997a",
+              "department": "Art",
+              "job": "Sculptor"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 3085710,
+              "known_for_department": "Crew",
+              "name": "Leonard J.V. Compagno",
+              "original_name": "Leonard J.V. Compagno",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "6099184d168ea3003b1559df",
+              "department": "Crew",
+              "job": "Thanks"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "The blockbuster is perhaps best defined as a film that uses a narrow set of parameters (science fiction, horror, comedy, fantasy, disaster or action) to draw the largest possible audience. But the concept behind the blockbuster matters too."
+    },
+    {
+      "type": "block_special",
+      "title": "Jaws: The Starting Point of the Blockbuster",
+      "image": {
+        "image_type": "local",
+        "url": "img_tubarao",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "The film that invented the \"<i>summer blockbuster</i>\", and the first to pass the famous $100 million mark at the box office, was a genuine phenomenon. In the summer of 1975, everyone was talking about <i>Jaws</i>. The film wrecked a generation's swimming habits and launched the career of a talented young director. <br/> <br/>\n\nThe shoot was famously troubled, prolonged by the difficulties of working at sea and by the malfunctioning mechanical predator. Even so, <i>Jaws</i> is a classic example of storytelling, combining horror, adventure and the journey of an outsider hero who must face the community and his own fear of water. The story deals with the disruption to the lives and livelihoods of the residents of the resort town of <i>Amity</i> after a great white shark decides to settle in its waters. When it attacks on the Fourth of July, police chief Martin Brody (Roy Scheider) heads out to sea aboard the Orca, with the brave Captain Quint (Robert Shaw) and oceanographer Matt Hooper (Richard Dreyfuss), to kill Amity's tormentor.<br/> <br/>\n\nJaws gave early signs of Spielberg's pure cinematic instinct, from the use of the animal's point of view to heighten suspense to the push-pull shot in which Brody realizes the creature has devoured a boy before his eyes. But the film's success would have been unthinkable without the score by <a href=\"https://_{type: 'screen', 'id': 491, 'screen_type': person}\">John Williams</a> (b. 1932), built on two menacing notes that serve as the shark's theme, without Verna Fields' editing and without the actors' performances. It was an ad-lib by Roy Scheider that gave Jaws its best line: \"<i>You're gonna need a bigger boat</i>\".",
+      "credits": "Summary based on the text by <i>Demetrios Matheou</i>, published in the book \"<i>Cinema: The Whole Story</i>\" by <i>Philip Kemp</i>"
+    },
+    {
+      "type": "text",
+      "content_text": "What if your best friend were an alien, as in <a href=\"https://_{type: 'screen', 'id': 601, 'screen_type': movie}\">E.T. the Extra-Terrestrial</a> (1982)? What happens when a passenger plane flies through a snowstorm with a bomb on board, as in <a href=\"https://_{type: 'screen', 'id': 10671, 'screen_type': movie}\">Airport</a> (1970)? Ideas like these were appealing enough to persuade Hollywood producers to invest in them, and to get huge audiences to buy tickets to see them."
+    },
+    {
+      "type": "video",
+      "video_id": "dXO7P-r1vSE",
+      "information": {
+        "contentTitle": "Scenes from The Towering Inferno",
+        "contentText": "After the release of The Poseidon Adventure (1972), the disaster film was back in vogue in Hollywood. Warner Bros. then paid US$390,000 for the film rights to the novel \"The Tower,\" while Fox paid US$400,000 for the rights to \"The Glass Inferno.\" Since both books were about a fire in a huge building, Warner and Fox decided to join forces and split the production costs of The Towering Inferno, with Fox handling distribution in the United States and Warner in the rest of the world.",
+        "source": "YouTube: <i>Movieclips</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "The sheer scale and technical skill of blockbusters often inspire awe. The arrival of the mothership in <a href=\"https://_{type: 'screen', 'id': 840, 'screen_type': movie}\">Close Encounters of the Third Kind</a> (1977) is breathtaking, and films like <a href=\"https://_{type: 'screen', 'id': 551, 'screen_type': movie}\">The Poseidon Adventure</a> (1972) are thrilling."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "Some people go to the hardware store and make lamps out of bowling pins. I tell stories about aliens.",
+        "author": "Steven Spielberg"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Hollywood blockbusters blend spectacle with the real world. Films like <a href=\"https://_{type: 'screen', 'id': 5919, 'screen_type': movie}\">The Towering Inferno</a> (1974) filter possible real-world disasters through the Hollywood lens. It's life, but on a grand, glossy, fantastic scale. The blockbuster heightens drama with bigger and better special and sound effects. For audiences, these effects intensify the sense of terror or wonder when Good triumphs over Evil or when humanity survives against all odds."
+    },
+    {
+      "type": "video",
+      "video_id": "2I91DJZKRxs",
+      "information": {
+        "contentTitle": "Scenes from Jaws",
+        "contentText": "Shot mostly on Martha's Vineyard, Massachusetts, the film had a troubled production, blowing through its initial $4 million budget to reach $9 million, suffering many delays, and facing problems with the mechanical shark, which led many scenes to merely suggest the predator's presence using a menacing, minimalist musical theme created by composer John Williams.",
+        "source": "YouTube: <i>Movieclips</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (1975) is the first film to fit the description of a Hollywood blockbuster perfectly, and it was also a new experiment with its wide release. Its success partly reflected a change in the way films were distributed and promoted. Since the early days of cinema in the United States, distribution had been done city by city, from Los Angeles and New York and from there to smaller cities."
+    },
+    {
+      "type": "block_special",
+      "title": "Star Wars - The Cultural Landmark",
+      "image": {
+        "image_type": "local",
+        "url": "img_star_wars",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "No one expected writer-director <i>George Lucas</i>'s film to be a hit. The studio bosses were so convinced that the film, \"<i>a science fiction Western</i>\" whose main cast was unknown (<i>Harrison Ford, Mark Hamill and Carrie Fisher</i>), would flop that they graciously handed Lucas, free of charge, the <i>merchandising</i> rights to any product related to Star Wars. Obviously, they did not expect it to generate 5 sequels, three \"<i>prequel</i>\" chapters, a spin-off based on the <i>Ewoks</i>, cartoons, computer games, toys, soundtracks, books, huge video and DVD sales, candy, clothing, bedding and even food (and countless parodies, notably three specific Star Wars episodes of the cartoon <i>Family Guy</i>). The film cost $11 million and grossed more than $460 million, but it did not seem to have the potential to become a huge hit. <br/><br/>\n\nBut Lucas had big dreams. Two decades before computer imagery was used to create fantastic worlds, the visionary director, using ultra-detailed models, clever tricks and well-chosen locations, told the story of another universe. The evil Empire, dominated by <i>Darth Vader</i> (David Prowse, with the voice of James Earl Jones), is in control; the rebel forces are gathering to try to overthrow the tyrants. <br/><br/>\n\nLucas created a mythology that was enthusiastically embraced by people of all ages. Besides giving rise to various creatures from a galaxy far, far away, his good-versus-evil storyline introduced us to people, phrases and concepts that have since become part of the collective consciousness: the <i>Millennium Falcon</i> (Han Solo's spaceship, which Lucas originally imagined looking like a flying hamburger), lightsabers (the sword-like weapon with its distinctive sound), the <i>Imperial stormtroopers</i> (\"<i>May the Force be with you</i>\") and, of course, the <i>Jedi</i> knights (today such an integral part of our collective unconscious that an internet campaign urging people to answer \"<i>Jedi</i>\" to a question about religion on a United Kingdom census form was hugely successful).<br/><br/>\n\nBy bringing Star Wars to life, Lucas managed to create much more than just a film. He created a world, a new style of filmmaking and an unforgettable space opera that has never been surpassed.",
+      "credits": "Summary based on the text by <i>Joanna Berry</i>, published in the book <i>1001 Movies You Must See Before You Die</i>"
+    },
+    {
+      "type": "text",
+      "content_text": "Audiences across the country saw <i>Jaws</i> at the same time, turning the release into a nationally talked-about event. With <a href=\"https://_{type: 'screen', 'id': 11, 'screen_type': movie}\">Star Wars</a> (1977), the balance between great character moments and pure excitement began to shift. Characters like Han Solo (Harrison Ford) and Obi-Wan Kenobi (Alec Guinness) remain important - the film wouldn't work if the audience didn't care about who is on screen - but they are never allowed to get in the way of the action."
+    },
+    {
+      "type": "video",
+      "video_id": "AA_D__HMuFw",
+      "information": {
+        "contentTitle": "Scenes from Star Wars",
+        "contentText": "With Star Wars, George Lucas became the most successful independent filmmaker in cinema. Lucas put practically all the money he earned from the first film into the production of The Empire Strikes Back, refusing to bow to the power of the studios. In fact, Lucas was responsible for revitalizing the strength of the very thing he had always fought against as an independent filmmaker. From this trilogy, a whole universe of products was developed, such as comic books, cartoons, toys, clothing, etc. Star Wars became a worldwide craze, and even 30 years after its release, in 2007, the franchise remains strong.",
+        "source": "YouTube: <i>JoBlo Movie Clips</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 488, 'screen_type': person}\">Steven Spielberg</a> (b. 1946) kept his feet on the ground with a perfect blend of emotional truth and epic vision in <i>Close Encounters of the Third Kind</i>, but the character-driven blockbuster he championed became increasingly secondary. The <i>Superman</i> series is the first example of a film planned from the start to have sequels. Much of the sequel was shot at the same time as the first film."
+    },
+    {
+      "type": "text",
+      "content_text": "Both films were huge successes. Audiences still responded well to good science fiction, as shown by the success of <a href=\"https://_{type: 'screen', 'id': 348, 'screen_type': movie}\">Alien</a> (1979) and the <i>Star Wars</i> sequel, <a href=\"https://_{type: 'screen', 'id': 1891, 'screen_type': movie}\">The Empire Strikes Back</a> (1980)."
+    },
+    {
+      "type": "video",
+      "video_id": "3oIQCt6GVcY",
+      "information": {
+        "contentTitle": "Scenes from Superman",
+        "contentText": "The most expensive film made up to that point, with a budget of US$55 million, Superman was released in December 1978 to critical acclaim and financial success, grossing US$300 million during its original theatrical run. Critics particularly praised Reeve's performance. It was nominated for 3 Oscars, including Best Film Editing, Best Original Score and Best Sound Mixing, and won for Best Visual Effects. Groundbreaking in its use of special effects and science fiction storytelling, the film's legacy foreshadowed the mainstream popularity of Hollywood's superhero film franchises.",
+        "source": "YouTube: <i>Movieclips</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Still, it was a hard formula to repeat: several attempts to ride the wave of <i>Star Wars</i>, especially <a href=\"https://_{type: 'screen', 'id': 152, 'screen_type': movie}\">Star Trek: The Motion Picture</a> (1979), flopped. Spielberg had the Midas touch, but for every hit, such as <a href=\"https://_{type: 'screen', 'id': 620, 'screen_type': movie}\">Ghostbusters</a> (1984), there was a flop. Studios know, however, that one big hit can pay for all the disappointments. And, for better or worse, Hollywood's love affair with the blockbuster remains alive and well, especially with the wave of superhero films in recent decades.",
+      "content_credits": "Summary based on the text by <i>Tom Huddleston</i>, published in the book \"<i>Cinema: The Whole Story</i>\" by <i>Philip Kemp</i>"
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "vote_count": 6840,
+          "popularity": 46.235,
+          "id": 578,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.6,
+          "title": "Jaws",
+          "release_date": "1975-06-18",
+          "original_language": "en",
+          "original_title": "Jaws",
+          "genre_ids": [
+            27,
+            53,
+            12
+          ],
+          "backdrop_path": "/3nYlM34QhzdtAvWRV5bN4nLtnTc.jpg",
+          "adult": false,
+          "overview": "When an insatiable great white shark terrorizes the townspeople of Amity Island, the police chief, an oceanographer and a grizzled shark hunter seek to destroy the blood-thirsty beast.",
+          "poster_path": "/s2xcqSFfT6F7ZXHxowjxfG0yisT.jpg"
+        },
+        {
+          "poster_path": "/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+          "popularity": 70.339,
+          "vote_count": 14549,
+          "video": false,
+          "media_type": "movie",
+          "id": 11,
+          "adult": false,
+          "backdrop_path": "/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg",
+          "original_language": "en",
+          "original_title": "Star Wars",
+          "genre_ids": [
+            12,
+            28,
+            878
+          ],
+          "title": "Star Wars",
+          "vote_average": 8.2,
+          "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+          "release_date": "1977-05-25"
+        },
+        {
+          "vote_count": 2753,
+          "popularity": 22.978,
+          "id": 840,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.4,
+          "title": "Close Encounters of the Third Kind",
+          "release_date": "1977-11-18",
+          "original_language": "en",
+          "original_title": "Close Encounters of the Third Kind",
+          "genre_ids": [
+            878,
+            18
+          ],
+          "backdrop_path": "/iYtvvkuBo6pxLdoIqZZxN97vDzW.jpg",
+          "adult": false,
+          "overview": "After an encounter with UFOs, a line worker feels undeniably drawn to an isolated area in the wilderness where something spectacular is about to happen.",
+          "poster_path": "/kzD5ng3BvRUxW9vBfCkg61XjITR.jpg"
+        },
+        {
+          "vote_count": 2482,
+          "popularity": 26.512,
+          "id": 1924,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.1,
+          "title": "Superman",
+          "release_date": "1978-12-13",
+          "original_language": "en",
+          "original_title": "Superman",
+          "genre_ids": [
+            878,
+            28,
+            12
+          ],
+          "backdrop_path": "/v6MVBFnQOscITvmAy5N5ras2JKZ.jpg",
+          "adult": false,
+          "overview": "Mild-mannered Clark Kent works as a reporter at the Daily Planet alongside his crush, Lois Lane. Clark must summon his superhero alter-ego when the nefarious Lex Luthor launches a plan to take over the world.",
+          "poster_path": "/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg"
+        },
+        {
+          "vote_count": 538,
+          "popularity": 10.846,
+          "id": 5919,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.1,
+          "title": "The Towering Inferno",
+          "release_date": "1974-12-14",
+          "original_language": "en",
+          "original_title": "The Towering Inferno",
+          "genre_ids": [
+            28,
+            53,
+            18
+          ],
+          "backdrop_path": "/vrGHkXSX6EVVQilI5va6y5CSTJR.jpg",
+          "adult": false,
+          "overview": "At the opening party of a colossal—but poorly constructed—office building, a massive fire breaks out, threatening to destroy the tower and everyone in it.",
+          "poster_path": "/eyuJrK2IdB01tisl2QKOoGSVXJx.jpg"
+        },
+        {
+          "vote_count": 514,
+          "popularity": 13.824,
+          "id": 551,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.2,
+          "title": "The Poseidon Adventure",
+          "release_date": "1972-12-13",
+          "original_language": "en",
+          "original_title": "The Poseidon Adventure",
+          "genre_ids": [
+            28,
+            12,
+            18,
+            53
+          ],
+          "backdrop_path": "/5xfJPlUEmGak5Vipu0Zn1La0QgA.jpg",
+          "adult": false,
+          "overview": "When their ocean liner capsizes, a group of passengers struggle to survive and escape.",
+          "poster_path": "/cOzyaodbRPSQgD6bC6G5QlGFlFV.jpg"
+        },
+        {
+          "vote_count": 8174,
+          "popularity": 29.553,
+          "id": 601,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.5,
+          "title": "E.T. the Extra-Terrestrial",
+          "release_date": "1982-06-11",
+          "original_language": "en",
+          "original_title": "E.T. the Extra-Terrestrial",
+          "genre_ids": [
+            878,
+            12,
+            10751,
+            14
+          ],
+          "backdrop_path": "/mXLVA0YL6tcXi6SJSuAh9ONXFj5.jpg",
+          "adult": false,
+          "overview": "After a gentle alien becomes stranded on Earth, the being is discovered and befriended by a young boy named Elliott. Bringing the extraterrestrial into his suburban California house, Elliott introduces E.T., as the alien is dubbed, to his brother and his little sister, Gertie, and the children decide to keep its existence a secret. Soon, however, E.T. falls ill, resulting in government intervention and a dire situation for both Elliott and the alien.",
+          "poster_path": "/pEKStszBzTZCvR0H4tosjqxmE7X.jpg"
+        },
+        {
+          "poster_path": "/2jMnECLz5pNXGwIUycZjWmMJgCX.jpg",
+          "popularity": 12.108,
+          "vote_count": 207,
+          "video": false,
+          "media_type": "movie",
+          "id": 10671,
+          "adult": false,
+          "backdrop_path": "/8QGvyqTTWDG8SK4NHxxjWEfgn28.jpg",
+          "original_language": "en",
+          "original_title": "Airport",
+          "genre_ids": [
+            28
+          ],
+          "title": "Airport",
+          "vote_average": 6.4,
+          "overview": "Melodrama about a bomber on board an airplane, an airport almost closed by snow, and various personal problems of the people involved.",
+          "release_date": "1970-03-05"
+        },
+        {
+          "poster_path": "/7BuH8itoSrLExs2YZSsM01Qk2no.jpg",
+          "popularity": 30.654,
+          "vote_count": 12172,
+          "video": false,
+          "media_type": "movie",
+          "id": 1891,
+          "adult": false,
+          "backdrop_path": "/dMZxEdrWIzUmUoOz2zvmFuutbj7.jpg",
+          "original_language": "en",
+          "original_title": "The Empire Strikes Back",
+          "genre_ids": [
+            12,
+            28,
+            878
+          ],
+          "title": "The Empire Strikes Back",
+          "vote_average": 8.4,
+          "overview": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.",
+          "release_date": "1980-05-20"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 1,
+          "name": "George Lucas",
+          "profile_path": "/WCSZzWdtPmdRxH9LUCVi2JPCSJ.jpg"
+        },
+        {
+          "id": 491,
+          "name": "John Williams",
+          "profile_path": "/KFyMqUWeiBdP9tJcZyGWOqnrgK.jpg"
+        },
+        {
+          "id": 488,
+          "name": "Steven Spielberg",
+          "profile_path": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Harrison Ford",
+          "profile_path": "/klPehAfaQDatLLQ8dN4lMcb4ESo.jpg"
+        },
+        {
+          "id": 6778,
+          "name": "John Guillermin",
+          "profile_path": "/3MR0AOdquJhgXHRvkew5wbfgYAZ.jpg"
+        },
+        {
+          "id": 13565,
+          "name": "Steve McQueen",
+          "profile_path": "/ddL8NHnuVCPOLSiNGjrmIQK9kdO.jpg"
+        }
+      ]
+    },
+    {
+      "type": "link_screen",
+      "subtitle": "The events that shaped the world",
+      "title": "Timeline of Events from 1970 to 1989",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "4"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "The Exorcist is released, making audiences around the world sick and causing them to faint, creating a global hysteria. The first blockbuster is released: Jaws; meanwhile, auteur cinema grows with Martin Scorsese and other great directors. The '80s arrive with low-budget productions and era-defining comedies. Click here to see, in chronological order, the main events in cinema between 1940 and 1959."
+    }
+  ]
+}

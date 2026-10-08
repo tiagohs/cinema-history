@@ -1,47 +1,45 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterPageSlideBinding
 import android.widget.FrameLayout
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.ImageAdapter
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentSlide
 import com.tiagohs.helpers.extensions.convertIntToDp
 import cz.intik.overflowindicator.SimpleSnapHelper
-import kotlinx.android.synthetic.main.adapter_page_slide.*
 
 
 class SlideViewHolder(
-    val view: View
-) : BasePageViewHolder(view) {
+    private val binding: AdapterPageSlideBinding
+) : BasePageViewHolder(binding) {
 
     override fun bind(item: Content, position: Int) {
         super.bind(item, position)
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val contentSlide = item as? ContentSlide ?: return
 
         contentSlide.height?.let {
-            imageList.layoutParams = FrameLayout.LayoutParams(
+            binding.imageList.layoutParams = FrameLayout.LayoutParams(
                 FrameLayout.LayoutParams.MATCH_PARENT,
                 it.convertIntToDp(context)
             )
         }
 
-        imageList.apply {
+        binding.imageList.apply {
             adapter = ImageAdapter(contentSlide.images)
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
             setupParallaxScrollListener()
         }
 
-        imageList.onFlingListener = null
-        imageListIndicator.attachToRecyclerView(imageList)
-        SimpleSnapHelper(imageListIndicator).attachToRecyclerView(imageList)
+        binding.imageList.onFlingListener = null
+        binding.imageListIndicator.attachToRecyclerView(binding.imageList)
+        SimpleSnapHelper(binding.imageListIndicator).attachToRecyclerView(binding.imageList)
 
-        setupContentFooterInformation(contentSlide.information)
+        setupContentFooterInformation(binding.footerContainer, contentSlide.information)
     }
 
     override fun onDestroy() {
@@ -59,9 +57,5 @@ class SlideViewHolder(
                 }
             }
         })
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_page_slide
     }
 }

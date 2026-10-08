@@ -1,0 +1,440 @@
+{
+  "id": 2,
+  "color": "md_indigo_500",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "The History<br/>of Cinema:<br/>1960 to 1969",
+      "page_title": "1960 to 1969",
+      "coming_soon": false,
+      "previous": "1940 to 1959",
+      "next": "1970 to 1989"
+    },
+    {
+      "type": "item",
+      "year": "19\n60",
+      "title": "Inspiration",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 346, 'screen_type': movie}\">Shichinin no Samurai</a> (Seven Samurai, 1954), by <a href=\"https://_{type: 'screen', 'id': 5026, 'screen_type': person}\">Akira Kurosawa</a> (1910-1998), serves as the inspiration for the Hollywood production <a href=\"https://_{type: 'screen', 'id': 966, 'screen_type': movie}\">The Magnificent Seven</a> (1960).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_magnificent_seven.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n60",
+      "title": "Psycho",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 539, 'screen_type': movie}\">Psycho</a> (1960), by <a href=\"https://_{type: 'screen', 'id': 2636, 'screen_type': person}\">Alfred Hitchcock</a> (1899-1980), changes cinema forever with its approach to violence and sexuality and a never-bettered use of the MacGuffin.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_psicose.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n60",
+      "title": "The \"Evil Children\" Subgenre",
+      "description": "One of the first films in the \"<i>evil children</i>\" subgenre, <a href=\"https://_{type: 'screen', 'id': 12122, 'screen_type': movie}\">Village of the Damned</a> (1960) is a faithful adaptation of <i>John Wyndham</i>'s novel <i>The Midwich Cuckoos</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_village_of_the_damned.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n60",
+      "title": "The French New Wave and the British New Wave",
+      "description": "The <strong>French New Wave</strong> breathes new life into cinema with <a href=\"https://_{type: 'screen', 'id': 269, 'screen_type': movie}\">À bout de souffle</a> (Breathless, 1960), as does the <strong>British New Wave</strong> with <a href=\"https://_{type: 'screen', 'id': 37230, 'screen_type': movie}\">Saturday Night and Sunday Morning</a> (1960).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_a_bout_de_souffle.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n60",
+      "title": "Disregarding Conventional Narrative",
+      "description": "The Italian epic <a href=\"https://_{type: 'screen', 'id': 439, 'screen_type': movie}\">La dolce vita</a> (1960) disregards <strong>conventional narrative</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_la_dolce_vita.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n61",
+      "title": "Fright Break",
+      "description": "Influenced by <a href=\"https://_{type: 'screen', 'id': 539, 'screen_type': movie}\">Psycho</a> (1960), <a href=\"https://_{type: 'screen', 'id': 12011, 'screen_type': person}\">William Castle</a> (1914-1977) releases <a href=\"https://_{type: 'screen', 'id': 29394, 'screen_type': movie}\">Homicidal</a> (1961). This first film of the <strong>Jason genre</strong> includes a \"<i>fright break</i>\" for those too scared to watch.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_homicidal.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n61",
+      "title": "West Side Story",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1725, 'screen_type': movie}\">West Side Story</a> (1961) is released. The following year it wins <i>10 Oscars</i>, more than any other musical.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_west_side_story.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n61",
+      "title": "Spaghetti Western",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 122845, 'screen_type': movie}\">Tierra brutal</a> (The Savage Guns, 1961) marks the arrival of a new genre – <strong>the spaghetti Western</strong>. The film is shot in Almería, a very popular Spanish location.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_tierra_brutal.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n62",
+      "title": "Civil Rights",
+      "description": "In the US, the <strong>civil rights</strong> movement against racism gains momentum, and lawyer <strong>Atticus Finch</strong> comes to the screen in <a href=\"https://_{type: 'screen', 'id': 595, 'screen_type': movie}\">To Kill a Mockingbird</a> (1962).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_to_kill_a_mockingbird.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n62",
+      "title": "Glauber's Debut",
+      "description": "In Brazil, director <a href=\"https://_{type: 'screen', 'id': 544845, 'screen_type': person}\">Glauber Rocha</a> (1939-1981), herald of <strong>Cinema Novo</strong>, makes his debut with <a href=\"https://_{type: 'screen', 'id': 66184, 'screen_type': movie}\">Barravento</a> (The Turning Wind, 1962).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_glauber_rocha.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n62",
+      "title": "The Importance of Spy Films",
+      "description": "<i>United Artists</i> releases two of the most important spy films: <a href=\"https://_{type: 'screen', 'id': 982, 'screen_type': movie}\">The Manchurian Candidate</a> (1962) and Dr. No (1962) (the first James Bond film).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_sean_connery.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n62",
+      "title": "Marilyn Monroe",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 3149, 'screen_type': person}\">Marilyn Monroe</a> (1926-1962) dies. <a href=\"https://_{type: 'screen', 'id': 11536, 'screen_type': movie}\">The Misfits</a> (1961), released the year before, was her last appearance on the big screen.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_marilyn_monroe.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n62",
+      "title": "A Palme d'Or for Brazil",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 59990, 'screen_type': movie}\">O Pagador de Promessas</a> (The Given Word, 1962) wins the <strong>Palme d'Or</strong> at the <i>Cannes Film Festival</i>, something unprecedented for Brazil until then.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_anselmo_duarte.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n63",
+      "title": "Haunted House",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 11772, 'screen_type': movie}\">The Haunting</a> (1963), <a href=\"https://_{type: 'screen', 'id': 1032, 'screen_type': person}\">Martin Scorsese</a>'s (b. 1942) favorite horror film, is the definitive haunted house story. It influenced <a href=\"https://_{type: 'screen', 'id': 11324, 'screen_type': movie}\">Shutter Island</a> (2010).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_haunting.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n63",
+      "title": "Giallo",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 25826, 'screen_type': person}\">Mario Bava</a> (1914-1980) releases what is considered the first <strong>giallo</strong> film (an Italian literary and film genre in which killers are typically pursued by detectives), <a href=\"https://_{type: 'screen', 'id': 28041, 'screen_type': movie}\">La ragazza che sapeva troppo</a> (The Girl Who Knew Too Much, 1963) – a salute to Hitchcock.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_la_donna_che_sapeva_troppo.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n63",
+      "title": "A New Milestone",
+      "description": "In 1963, <a href=\"https://_{type: 'screen', 'id': 16897, 'screen_type': person}\">Sidney Poitier</a> (b. 1927) made history by becoming the first Black actor ever to win the Academy Award for Best Actor, for his performance in the drama <a href=\"https://_{type: 'screen', 'id': 38805, 'screen_type': movie}\">Lilies of the Field</a> (1963).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_sidney_poitier.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n64",
+      "title": "Beating the Censors",
+      "description": "After a hard-fought battle with the censors, <a href=\"https://_{type: 'screen', 'id': 20540, 'screen_type': movie}\">The Pawnbroker</a> (1965), directed by <a href=\"https://_{type: 'screen', 'id': 39996, 'screen_type': person}\">Sidney Lumet</a> (b. 1924), is released. The film features bare breasts.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_pawnbroker.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n64",
+      "title": "Sergio Leone Enters the Scene",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 391, 'screen_type': movie}\">Per un pugno di dollari</a> (A Fistful of Dollars, 1964), by <a href=\"https://_{type: 'screen', 'id': 4385, 'screen_type': person}\">Sergio Leone</a> (1929-1989), is released – to this day the high point of the Spaghetti Western.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_per_un_pugno_di_dollari.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n64",
+      "title": "I Am Cuba",
+      "description": "Soviet director <a href=\"https://_{type: 'screen', 'id': 108764, 'screen_type': person}\">Mikhail Kalatozov</a> (1903-1973) makes <a href=\"https://_{type: 'screen', 'id': 32015, 'screen_type': movie}\">Soy Cuba</a> (I Am Cuba, 1964).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_soy_cuba.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n64",
+      "title": "Spaghetti Western and Comedy",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 60875, 'screen_type': movie}\">Cavalca e uccidi</a> (Ride and Kill, 1964) is one of the <strong>first spaghetti Western comedies</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cavalca_e_uccidi.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n65",
+      "title": "The Last Gasps of the French New Wave",
+      "description": "The <strong>French New Wave</strong> enjoys one last moment of splendor with <a href=\"https://_{type: 'screen', 'id': 8072, 'screen_type': movie}\">Alphaville</a> (1965) and <a href=\"https://_{type: 'screen', 'id': 2786, 'screen_type': movie}\">Pierrot le fou</a> (Pierrot le Fou, 1965), by <a href=\"https://_{type: 'screen', 'id': 3776, 'screen_type': person}\">Jean-Luc Godard</a> (b. 1930).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_alphaville.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n65",
+      "title": "Reinvigorating the Musical",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 15121, 'screen_type': movie}\">The Sound of Music</a> (1965) beats <a href=\"https://_{type: 'screen', 'id': 770, 'screen_type': movie}\">Gone with the Wind</a> (1939) at the box office, reinvigorating the musical genre.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_novica_rebelde.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n66",
+      "title": "The Last Black-and-White Oscar",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 396, 'screen_type': movie}\">Who's Afraid of Virginia Woolf?</a> (1966) is the last film to win an Academy Award in the <strong>Black-and-White</strong> category.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_whos_afraid_of_virginia_woolf.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n66",
+      "title": "Clint Eastwood",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 429, 'screen_type': movie}\">Il buono, il brutto, il cattivo</a> (The Good, the Bad and the Ugly, 1966) cements <a href=\"https://_{type: 'screen', 'id': 190, 'screen_type': person}\">Clint Eastwood</a> (b. 1930) as an icon, \"<i>The Man with No Name</i>\".",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_clint_eastwood.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n67",
+      "title": "Films for the Young",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 37247, 'screen_type': movie}\">The Graduate</a> (1967) and <a href=\"https://_{type: 'screen', 'id': 475, 'screen_type': movie}\">Bonnie and Clyde</a> (1967) represent a new kind of youth-oriented studio film.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_graduate.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n68",
+      "title": "Planet of the Apes",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 871, 'screen_type': movie}\">Planet of the Apes</a> (1968) – at once a <i>Swiftian</i> satire and a <i>Flash Gordon</i> adventure – sets the precedent for future science fiction franchises.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_planet_of_the_apes_1968.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n68",
+      "title": "Zombies",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 10331, 'screen_type': movie}\">Night of the Living Dead</a> (1968) is released, kicking off \"<i>zombie movies</i>\" and making <a href=\"https://_{type: 'screen', 'id': 14999, 'screen_type': person}\">George A. Romero</a> (b. 1940) the father of the subgenre.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_romero.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n68",
+      "title": "Definitive Science Fiction",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 62, 'screen_type': movie}\">2001: A Space Odyssey</a> (1968) premieres. A collaboration between <a href=\"https://_{type: 'screen', 'id': 240, 'screen_type': person}\">Stanley Kubrick</a> (1928-1999) and writer <i>Arthur C. Clarke</i>, it is conceived as the definitive science fiction film.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_2001_space_odyssey.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n68",
+      "title": "Once Upon a Time in the West",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 335, 'screen_type': movie}\">C'era una volta il West</a> (Once Upon a Time in the West, 1968) legitimizes the genre among critics and has since been considered by many to be <a href=\"https://_{type: 'screen', 'id': 4385, 'screen_type': person}\">Sergio Leone</a>'s (1929-1989) best film.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cera_una_volta_il_west.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n69",
+      "title": "Fespaco Festival",
+      "description": "The first edition of the <strong>Fespaco Festival</strong> takes place in <i>Ouagadougou</i>, Burkina Faso. The biennial event is <strong>crucial</strong> to the future of African cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_fespaco.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "footer",
+      "previous": "1940 to 1959",
+      "next": "1970 to 1989"
+    }
+  ]
+}

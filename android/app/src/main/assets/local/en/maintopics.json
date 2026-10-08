@@ -1,0 +1,313 @@
+[
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "full",
+    "id": 1,
+    "title": "From 1895 to 1929",
+    "subtitle": "Part 01",
+    "description": "The visionaries, inventors and dreamers. The experiments and discoveries of Georges Méliès, the unique humor of Chaplin and Keaton, surrealism in Germany, the fight for a voice with the Race Films, and the romance and spectacle of 1920s Hollywood.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_voyage",
+      "content_description": "Scene from A Trip to the Moon, in which a moon with a human face is hit in the right eye by a rocket.",
+      "animation": {
+        "type": "shake_vertical",
+        "duration": 1300
+      },
+      "style": {
+        "scale_type": "center_inside",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_cabinet",
+      "content_description": "Scene from The Cabinet of Dr. Caligari, in which a man suspiciously examines a woman's body on the floor.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_black_1000",
+    "color": "md_red_500",
+    "quote_position": "bottom_start",
+    "quote": {
+      "quote": "Labor omnia vincit (work conquers all)",
+      "author": "A Trip to the Moon",
+      "text_color": "md_black_1000",
+      "background_color": "md_white_1000",
+      "icon_color": "md_grey_300"
+    }
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card",
+    "id": 2,
+    "title": "From 1930 to 1939",
+    "subtitle": "Part 02",
+    "description": "With the arrival of the talkies, new ways of telling stories were discovered. Hollywood horror entered one of its golden ages with so-called “Gothic horror”. After developing many shorts, Disney released the first animated feature film. The war drastically affected cinema, the romantic comedy took its first shape and gangster films grew even more prominent on the big screen.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_snow_white",
+      "content_description": "Promotional photo from Snow White and the Seven Dwarfs, with the title character holding an apple.",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_wizard_oz",
+      "content_description": "Still from The Wizard of Oz, with the four main characters walking arm in arm.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "top_end",
+    "quote": {
+      "quote": "I've a feeling we're not in Kansas anymore.",
+      "author": "The Wizard of Oz",
+      "text_color": "md_black_1000",
+      "background_color": "md_yellow_500",
+      "icon_color": "md_black_1000"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "purple_snow_shite",
+    "color": "md_purple_500"
+  },
+  {
+    "main_topic_type": "",
+    "layout_type": "quote",
+    "id": 1,
+    "quote": "Charlie Chaplin and I had a friendly rivalry: who could make a film with the fewest title cards?",
+    "author": "Buster Keaton",
+    "icon_color": "md_white_1000"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card",
+    "id": 3,
+    "title": "From 1940 to 1959",
+    "subtitle": "Part 03",
+    "description": "Asian cinema gained even more prominence with the release of several masterpieces. Film noir emerged and musicals kept shining on the big screen. The Western held its reign as one of the most popular genres, and one of cinema's most important movements took place in France: the French New Wave.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_sevensamurais",
+      "content_description": "Scene from Seven Samurai, with all the characters looking in one direction, ready for battle.",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_singin_in_the_rain",
+      "content_description": "Scene from Singin' in the Rain, with the main character singing in the rain.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_end",
+    "quote": {
+      "quote": "There's nothing between us. There's never been anything between us. Just air.",
+      "author": "Singin' in the Rain",
+      "text_color": "md_white_1000",
+      "background_color": "md_indigo_800",
+      "icon_color": "md_white_1000"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_grey_700",
+    "color": "md_orange_500"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "full",
+    "id": 4,
+    "title": "From 1960 to 1969",
+    "subtitle": "Part 04",
+    "description": "Brazil caught the world's attention with its Cinema Novo, the sexual revolution of the '60s was reflected on screen, psychological horror gained ground, and science fiction, with 2001: A Space Odyssey, won over audiences and critics.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_2001_hal",
+      "content_description": "Photo of HAL 9000 from 2001: A Space Odyssey.",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      },
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_bonnie_clyde",
+      "content_description": "Profile photo of the couple from Bonnie and Clyde.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_end",
+    "quote": {
+      "quote": "Its origin and purpose, still a total mystery.",
+      "author": "Mission Control's final line",
+      "text_color": "md_black_1000",
+      "background_color": "md_white_1000",
+      "icon_color": "md_grey_500"
+    },
+    "title_color": "md_white_1000",
+    "title_background_color": "md_black_1000",
+    "color": "md_indigo_900"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card_full",
+    "id": 5,
+    "title": "From 1970 to 1989",
+    "subtitle": "Part 05",
+    "description": "The Exorcist was released, taking horror films to another level. Jaws hit theaters and, at the same time, auteur cinema flourished with Martin Scorsese and other great directors. Then, in the '80s, we saw excellent low-budget productions and era-defining comedies.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_exorcist",
+      "content_description": "Photo of Regan possessed by the demon in The Exorcist.",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      },
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_taxi_driver",
+      "content_description": "Photo of Travis Bickle in Taxi Driver.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_end",
+    "quote": {
+      "quote": "You talkin' to me?",
+      "author": "Travis Bickle",
+      "text_color": "md_black_1000",
+      "background_color": "md_yellow_A400",
+      "icon_color": "md_black_1000"
+    },
+    "title_color": "md_white_1000",
+    "color": "md_cyan_900"
+  },
+  {
+    "main_topic_type": "",
+    "layout_type": "quote",
+    "id": 2,
+    "quote": "Today, more than ever, we need to listen to one another and understand how we see the world, and cinema is the best way to do that.",
+    "author": "Martin Scorsese",
+    "icon_color": "md_white_1000"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card",
+    "id": 6,
+    "title": "From 1990 to 2009",
+    "subtitle": "Part 06",
+    "description": "'90s independent cinema dominated the screens, and animation broke new ground with Pixar. CGI reached a new level with The Matrix, and Latin American and European cinema caught the world's attention.",
+    "blocked": false,
+    "is_new": false,
+    "image": {
+      "image_type": "local",
+      "url": "img_pulp_fiction",
+      "content_description": "Photo of Vincent and Jules back to back in Pulp Fiction.",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 250
+        }
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_walle",
+      "content_description": "Photo of WALL·E looking at the stars.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_start",
+    "quote": {
+      "quote": "I don't want to survive. I want to live!",
+      "author": "WALL·E",
+      "text_color": "md_white_1000",
+      "background_color": "brown_presentation",
+      "icon_color": "md_white_1000"
+    },
+    "title_color": "md_black_1000",
+    "title_background_color": "yellow_dark",
+    "color": "md_teal_900"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card_full",
+    "id": 7,
+    "title": "From 2010 to Today",
+    "subtitle": "Part 07",
+    "description": "3D took over the big screen, and a new wave of superhero movies arrived and dominated the global box office. Mainstream horror got a makeover with The Conjuring, and psychological horror was reborn with great works like The Witch. Streaming quietly crept in, winning over audiences, critics and even the great directors.",
+    "blocked": false,
+    "is_new": true,
+    "image": {
+      "image_type": "local",
+      "url": "img_iron_man",
+      "content_description": "Profile photo of Iron Man.",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      },
+      "style": {
+        "height": 400,
+        "resize": {
+          "height": 400
+        },
+        "scale_type": "center_crop"
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_baby_driver",
+      "content_description": "Photo of Baby in Baby Driver.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_start",
+    "quote": {
+      "quote": "There's nothing wrong with being a little quiet.",
+      "author": "Baby Driver",
+      "text_color": "md_white_1000",
+      "background_color": "md_black_1000",
+      "icon_color": "md_white_1000"
+    },
+    "title_color": "md_white_1000",
+    "color": "md_light_blue_900"
+  }
+]

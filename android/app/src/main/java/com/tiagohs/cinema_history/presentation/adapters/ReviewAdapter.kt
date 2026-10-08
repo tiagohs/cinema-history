@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
-import android.view.View
+import android.view.ViewGroup
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.AdapterReviewBinding
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
@@ -9,7 +11,6 @@ import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.entities.image.Image
 import com.tiagohs.entities.tmdb.movie.Review
 import com.tiagohs.helpers.extensions.*
-import kotlinx.android.synthetic.main.adapter_review.*
 
 class ReviewAdapter(
     list: List<Review>,
@@ -21,43 +22,41 @@ class ReviewAdapter(
         setHasStableIds(true)
     }
 
-    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_review
-
-    override fun onCreateViewHolder(viewType: Int, view: View): ReviewViewHolder =
-        ReviewViewHolder(view)
+    override fun onCreateViewHolder(viewType: Int, inflater: LayoutInflater, parent: ViewGroup): ReviewViewHolder =
+        ReviewViewHolder(AdapterReviewBinding.inflate(inflater, parent, false))
 
     override fun getItemId(position: Int): Long = list[position].hashCode().toLong()
 
-    inner class ReviewViewHolder(view: View) : BaseViewHolder<Review>(view) {
+    inner class ReviewViewHolder(private val binding: AdapterReviewBinding) : BaseViewHolder<Review>(binding) {
 
         override fun bind(item: Review, position: Int) {
             super.bind(item, position)
 
-            reviewAuthorName.setResourceText(item.reviewerName)
+            binding.reviewAuthorName.setResourceText(item.reviewerName)
 
             if (item.dateFormated != null) {
-                reviewDetails.setResourceText(containerView.context.getString(R.string.review_details_format_with_date, item.dateFormated, item.reviewerSiteName, countryName))
+                binding.reviewDetails.setResourceText(itemView.context.getString(R.string.review_details_format_with_date, item.dateFormated, item.reviewerSiteName, countryName))
             } else {
-                reviewDetails.setResourceText(containerView.context.getString(R.string.review_details_format, item.reviewerSiteName, countryName))
+                binding.reviewDetails.setResourceText(itemView.context.getString(R.string.review_details_format, item.reviewerSiteName, countryName))
             }
 
-            reviewDescription.setResourceText(item.reviewDescription)
+            binding.reviewDescription.setResourceText(item.reviewDescription)
 
-            reviewRatingBar.rating = item.reviewRating
+            binding.reviewRatingBar.rating = item.reviewRating
 
-            mediaContainer2.setOnClickListener { onExtenalLink?.invoke(item.reviewUrl) }
-            reviewDescription.setOnClickListener { onExtenalLink?.invoke(item.reviewUrl) }
+            binding.mediaContainer2.setOnClickListener { onExtenalLink?.invoke(item.reviewUrl) }
+            binding.reviewDescription.setOnClickListener { onExtenalLink?.invoke(item.reviewUrl) }
 
             val logo = item.reviewer?.logo
             if (logo != null) {
-                reviewImage.setImageDrawable(containerView.context.getDrawable(logo))
+                binding.reviewImage.setImageDrawable(itemView.context.getDrawable(logo))
                 return
             }
 
-            reviewImage.setImageDrawable(containerView.context.getDrawable(R.drawable.ic_placeholder_review))
+            binding.reviewImage.setImageDrawable(itemView.context.getDrawable(R.drawable.ic_placeholder_review))
 
-            val paddingValue = 10.convertIntToDp(containerView.context)
-            reviewImage.setPadding(paddingValue, paddingValue, paddingValue, paddingValue)
+            val paddingValue = 10.convertIntToDp(itemView.context)
+            binding.reviewImage.setPadding(paddingValue, paddingValue, paddingValue, paddingValue)
         }
     }
 }

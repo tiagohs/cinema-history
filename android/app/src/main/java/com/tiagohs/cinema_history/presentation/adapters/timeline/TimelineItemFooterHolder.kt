@@ -1,6 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters.timeline
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterTimelineFooterBinding
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
@@ -10,7 +10,6 @@ import com.tiagohs.entities.timeline.TimelineFooter
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.setResourceStyledText
 import com.tiagohs.helpers.extensions.show
-import kotlinx.android.synthetic.main.adapter_timeline_footer.*
 
 class TimelineItemFooterHolder(
     private val onNextClicked: (() -> Unit)?,
@@ -18,8 +17,8 @@ class TimelineItemFooterHolder(
     private val onUpClicked: (() -> Unit)?,
     private val numberOfItens: Int,
     val callback: TimelineCallbacks,
-    view: View
-) : BaseViewHolder<Timeline>(view) {
+    private val binding: AdapterTimelineFooterBinding
+) : BaseViewHolder<Timeline>(binding) {
 
     override fun bind(item: Timeline, position: Int) {
         super.bind(item, position)
@@ -30,23 +29,23 @@ class TimelineItemFooterHolder(
 
     private fun bindDirectionButtons(timeline: TimelineFooter) {
         bindButton(
-            nextContainer,
-            nextText,
+            binding.nextContainer,
+            binding.nextText,
             timeline.next,
             timeline.next != null && !callback.isLast()
         ) {
             onNextClicked?.invoke()
         }
         bindButton(
-            previousContainer,
-            previousText,
+            binding.previousContainer,
+            binding.previousText,
             timeline.previous,
             timeline.previous != null && !callback.isFirst()
         ) {
             onPreviousClicked?.invoke()
         }
 
-        upButton.setOnClickListener { onUpClicked?.invoke() }
+        binding.upButton.setOnClickListener { onUpClicked?.invoke() }
     }
 
     private fun bindButton(

@@ -1,0 +1,154 @@
+{
+  "_doc": "Links regionais: URL do conteúdo em pt -> substituto neste idioma. Campos opcionais title/subtitle/button_text substituem os textos do item. Aplicado por i18n.py apply/validate.",
+  "links": {
+    "http://www.blogosanosperdidos.com.br/2019/05/o-cinema-mudo-e-as-vamps.html": {
+      "link": "https://es.wikipedia.org/wiki/Theda_Bara",
+      "title": "Theda Bara",
+      "subtitle": "Wikipedia"
+    },
+    "http://www.coxinhanerd.com.br/body-horror-sangue-mutilacao-mutacao-em-um-lugar/": {
+      "link": "https://es.wikipedia.org/wiki/Horror_corporal",
+      "title": "Horror corporal",
+      "subtitle": "Wikipedia"
+    },
+    "http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=2320": {
+      "link": "https://es.wikipedia.org/wiki/Manifiesto_del_surrealismo",
+      "button_text": "Leer sobre el Manifiesto del surrealismo (Wikipedia)"
+    },
+    "http://www.mnemocine.com.br/index.php/cinema-categoria/24-histcinema/185-cinema-epico": {
+      "link": "https://es.wikipedia.org/wiki/Cine_épico",
+      "title": "Cine épico",
+      "subtitle": "Wikipedia"
+    },
+    "http://www.portalbrasileirodecinema.com.br/montagem/ensaios/04_03.php": {
+      "link": "https://es.wikipedia.org/wiki/Montaje",
+      "title": "Montaje",
+      "subtitle": "Wikipedia"
+    },
+    "https://blog.emania.com.br/iluminacao-de-3-pontos/": {
+      "link": "https://es.wikipedia.org/wiki/Iluminación_de_tres_puntos",
+      "title": "Iluminación de tres puntos",
+      "subtitle": "Wikipedia"
+    },
+    "https://cinemaclassico.com/listas/as-maiores-femmes-fatales-do-cinema/": {
+      "link": "https://es.wikipedia.org/wiki/Mujer_fatal",
+      "title": "Mujer fatal",
+      "subtitle": "Wikipedia"
+    },
+    "https://cinetoscopio.com.br/2017/12/22/o-que-e-um-cinetoscopio/": {
+      "link": "https://es.wikipedia.org/wiki/Quinetoscopio",
+      "title": "Quinetoscopio",
+      "subtitle": "Wikipedia"
+    },
+    "https://en.wikipedia.org/wiki/Animation": {
+      "link": "https://es.wikipedia.org/wiki/Animación",
+      "title": "Animación",
+      "subtitle": "Wikipedia"
+    },
+    "https://en.wikipedia.org/wiki/Epic_film": {
+      "link": "https://es.wikipedia.org/wiki/Cine_épico",
+      "title": "Cine épico",
+      "subtitle": "Wikipedia"
+    },
+    "https://en.wikipedia.org/wiki/Motion_Picture_Production_Code": {
+      "link": "https://es.wikipedia.org/wiki/Código_Hays",
+      "title": "Código Hays",
+      "subtitle": "Wikipedia"
+    },
+    "https://en.wikipedia.org/wiki/Serial_film": {
+      "link": "https://es.wikipedia.org/wiki/Cine_serial",
+      "title": "Cine serial",
+      "subtitle": "Wikipedia"
+    },
+    "https://institutodecinema.com.br/mais/conteudo/movimentos-do-cinema-o-que-foi-o-dogma-95": {
+      "link": "https://es.wikipedia.org/wiki/Dogma_95",
+      "title": "Dogma 95",
+      "subtitle": "Wikipedia"
+    },
+    "https://oglobo.globo.com/cultura/filmes/lancado-ha-20-anos-manifesto-dogma-95-lembrado-em-ciclo-de-filmes-16103947": {
+      "link": "https://es.wikipedia.org/wiki/Lars_von_Trier",
+      "title": "Lars von Trier",
+      "subtitle": "Wikipedia"
+    },
+    "https://operamundi.uol.com.br/historia/12822/hoje-na-historia-1905-nickelodeon-de-pittsburgh-introduz-o-cinema-nos-eua": {
+      "link": "https://es.wikipedia.org/wiki/Nickelodeon_(cine)",
+      "title": "Nickelodeon (cine)",
+      "subtitle": "Wikipedia"
+    },
+    "https://super.abril.com.br/mundo-estranho/o-que-e-um-filme-noir/": {
+      "link": "https://es.wikipedia.org/wiki/Cine_negro",
+      "title": "Cine negro",
+      "subtitle": "Wikipedia"
+    },
+    "https://universoretro.com.br/a-estetica-vamp-ocultismo-e-sexualidade-nos-primordios-do-cinema/": {
+      "link": "https://es.wikipedia.org/wiki/Mujer_fatal",
+      "title": "Mujer fatal",
+      "subtitle": "Wikipedia"
+    },
+    "https://www.aicinema.com.br/como-fazer-um-roteiro/": {
+      "link": "https://es.wikipedia.org/wiki/Guion_cinematográfico",
+      "title": "Guion cinematográfico",
+      "subtitle": "Wikipedia"
+    },
+    "https://www.aicinema.com.br/neorrealismo-italiano/": {
+      "link": "https://es.wikipedia.org/wiki/Neorrealismo_italiano",
+      "title": "Neorrealismo italiano",
+      "subtitle": "Wikipedia"
+    },
+    "https://www.amazon.com.br/1001-Movies-You-Must-Before/dp/1438050755": {
+      "link": "https://www.amazon.com.mx/s?k=1001+pel%C3%ADculas+que+hay+que+ver+antes+de+morir",
+      "title": "1001 películas que hay que ver antes de morir"
+    },
+    "https://www.amazon.com.br/Livro-do-Cinema-V%C3%A1rios-Autores/dp/8525062421/": {
+      "link": "https://www.amazon.com.mx/s?k=El+libro+del+cine+DK",
+      "title": "El libro del cine"
+    },
+    "https://www.amazon.com.br/Story-Film-Mark-Cousins/dp/186205942X": {
+      "link": "https://www.amazon.com.mx/s?k=Historia+del+cine+Mark+Cousins",
+      "title": "Historia del cine"
+    },
+    "https://www.amazon.com.br/Tudo-Sobre-Cinema-Philip-Kemp/dp/8575426680": {
+      "link": "https://www.amazon.com.mx/s?k=Cine+toda+la+historia+Philip+Kemp",
+      "title": "Cine: toda la historia"
+    },
+    "https://www.avmakers.com.br/blog/generos-cinematograficos-e-suas-convencoes/": {
+      "link": "https://es.wikipedia.org/wiki/Género_cinematográfico",
+      "title": "Género cinematográfico",
+      "subtitle": "Wikipedia"
+    },
+    "https://www.bbc.com/portuguese/noticias/2015/01/150121_vert_cul_primeira_itgirl_ml": {
+      "link": "https://es.wikipedia.org/wiki/It_girl",
+      "title": "It girl",
+      "subtitle": "Wikipedia"
+    },
+    "https://www.dw.com/pt-br/1884-filme-de-rolo-substitui-a-chapa/a-605730": {
+      "link": "https://es.wikipedia.org/wiki/Película_de_cine",
+      "title": "Película de cine",
+      "subtitle": "Wikipedia"
+    },
+    "https://www.hbobrasil.com/series/detail/the-movies/14936/ttl751980": {
+      "link": "https://www.themoviedb.org/tv/90832/watch?locale=MX"
+    },
+    "https://www.jws.com.br/2020/07/o-surgimento-do-cinemascope/": {
+      "link": "https://es.wikipedia.org/wiki/Cinemascope",
+      "title": "Cinemascope",
+      "subtitle": "Wikipedia"
+    },
+    "https://www.michaeloliveira.com.br/o-que-sao-jump-cuts/": {
+      "link": "https://es.wikipedia.org/wiki/Corte_(cine)",
+      "title": "Corte (cine)",
+      "subtitle": "Wikipedia"
+    },
+    "https://www.netflix.com/br/title/80116761": {
+      "link": "https://www.netflix.com/title/80116761"
+    },
+    "https://www.netflix.com/br/title/80990849": {
+      "link": "https://www.netflix.com/title/80990849"
+    },
+    "https://www.tertulianarrativa.com/post/2016/12/21/protagonista-personagem-principal-e-o-ponto-de-vista-no-cinema": {
+      "link": "https://es.wikipedia.org/wiki/Protagonista",
+      "title": "Protagonista",
+      "subtitle": "Wikipedia"
+    }
+  }
+}

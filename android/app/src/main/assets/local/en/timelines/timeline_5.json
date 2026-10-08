@@ -1,0 +1,776 @@
+{
+  "id": 2,
+  "color": "md_cyan_500",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "The History<br/>of Cinema:<br/>1970 to 1989",
+      "page_title": "1970 to 1989",
+      "coming_soon": false,
+      "previous": "1960 to 1969",
+      "next": "1990 to 2009"
+    },
+    {
+      "type": "item",
+      "year": "19\n70",
+      "title": "The Comeback",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 240975, 'screen_type': movie}\">Zhi qu wei hu shan</a> (Taking Tiger Mountain by Strategy, 1970) is the first Chinese film to be released since the start of the Cultural Revolution.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_tomando_montanha_tigre.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n70",
+      "title": "Vietnam at the Berlin Film Festival",
+      "description": "The <strong>Berlin Film Festival</strong> collapses over <a href=\"https://_{type: 'screen', 'id': 197960, 'screen_type': movie}\">O.K.</a> (1970), a film by <a href=\"https://_{type: 'screen', 'id': 26595, 'screen_type': person}\">Michael Verhoeven</a> (b. 1938) that offers a controversial depiction of American atrocities in the <strong>Vietnam War</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ok.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n70",
+      "title": "A Good Start",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 586258, 'screen_type': person}\">Med Hondo</a>'s (b. 1936) debut with <a href=\"https://_{type: 'screen', 'id': 195841, 'screen_type': movie}\">Soleil O</a> (1973) makes waves and opens the new decade for African cinema in striking fashion.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_soleil_O.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n70",
+      "title": "The Kung Fu Explosion",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 62762, 'screen_type': movie}\">The Chinese Boxer</a> (1970) hits theaters, and with it comes the <strong>kung fu film explosion</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_chinese_boxer.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n71",
+      "title": "Do you feel lucky, punk?",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 984, 'screen_type': movie}\">Dirty Harry</a> (1971) hits theaters the same year that <i>Charles Manson</i> and his co-defendants are found guilty on all charges.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_clint_eastwood_dirty_harry.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n71",
+      "title": "Blaxploitation",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 482, 'screen_type': movie}\">Shaft</a> (1971) and <a href=\"https://_{type: 'screen', 'id': 5822, 'screen_type': movie}\">Sweet Sweetback's Baadasssss Song</a> (1971) are released, marking the <strong>beginning of Blaxploitation</strong> (also called Blacksploitation).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_shaft.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n71",
+      "title": "The Foundations of Conspiracy Thrillers",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 6349, 'screen_type': person}\">Alan J. Pakula</a> (1928-1998) begins his \"<i>paranoia trilogy</i>\" with <a href=\"https://_{type: 'screen', 'id': 466, 'screen_type': movie}\">Klute</a> (1971). The film establishes the themes that became essential to conspiracy thrillers.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_klute.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n71",
+      "title": "A Clockwork Orange",
+      "description": "Directed by <a href=\"https://_{type: 'screen', 'id': 240, 'screen_type': person}\">Stanley Kubrick</a> (1928-1999), <a href=\"https://_{type: 'screen', 'id': 185, 'screen_type': movie}\">A Clockwork Orange</a> (1971) raises questions about individual thought, personal choice and violence.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_laranja_mecanica.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n71",
+      "title": "Electronic surveillance",
+      "description": "Directed by <a href=\"https://_{type: 'screen', 'id': 39996, 'screen_type': person}\">Sidney Lumet</a> (b. 1924), <a href=\"https://_{type: 'screen', 'id': 30941, 'screen_type': movie}\">The Anderson Tapes</a> (1971) introduces electronic surveillance as a major theme.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_anderson_tapes.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n72",
+      "title": "The Revival of Mob Movies",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 238, 'screen_type': movie}\">The Godfather</a> (1972) is released, becoming a tremendous success and a cultural symbol. More than that, the film turns out to be one of the driving forces behind the revival of mob movies from the 1970s through the 1990s.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_marlon_brando_vito_corleone.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n72",
+      "title": "Sex, Butter and Brando",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1643, 'screen_type': movie}\">Ultimo tango a Parigi</a> (Last Tango in Paris, 1972) generates more international headlines than any previous non-English-language film. The film becomes one of the most prominent symbols of sexual violence in cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ultimo_tango_paris.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n72",
+      "title": "Pornography in Vogue",
+      "description": "<i>Deep Throat</i> briefly makes pornography fashionable and becomes highly profitable.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_garganta_profunda.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n72",
+      "title": "Master of Disaster",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 7506, 'screen_type': person}\">Irwin Allen</a> (1916-1991) produces and co-directs <a href=\"https://_{type: 'screen', 'id': 551, 'screen_type': movie}\">The Poseidon Adventure</a> (1972), becoming the \"<i>master of disaster</i>\" of the 1970s.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_destino_poseidon.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n73",
+      "title": "Hysteria and Fear",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 9552, 'screen_type': movie}\">The Exorcist</a> (1973) is released, causing hysteria in the US. Reports of people feeling sick and having seizures make the front pages of the major newspapers of the time. The film marks the beginning of a new era of religious-themed horror films, such as <a href=\"https://_{type: 'screen', 'id': 794, 'screen_type': movie}\">The Omen</a> (1976).",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_o_exorcista.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n73",
+      "title": "Bruce Lee",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 9461, 'screen_type': movie}\">Enter the Dragon</a> (1973) hits theaters, propelling <a href=\"https://_{type: 'screen', 'id': 19429, 'screen_type': person}\">Bruce Lee</a> (1940-1973) to stardom and becoming a cultural landmark and the foundation for the kung fu films released ever since.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_bruce_lee.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n74",
+      "title": "The Beginning of Slasher Films",
+      "description": "The first of the <strong>slasher movies</strong>, <a href=\"https://_{type: 'screen', 'id': 16938, 'screen_type': movie}\">Black Christmas</a> (1974) features shots from the killer's point of view. <a href=\"https://_{type: 'screen', 'id': 10051, 'screen_type': person}\">Tobe Hooper</a> (1943-2017) perfects the formula with <a href=\"https://_{type: 'screen', 'id': 30497, 'screen_type': movie}\">The Texas Chain Saw Massacre</a> (1974).",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_leatherface.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n74",
+      "title": "Conspiracy and Distrust",
+      "description": "Nixon resigns the presidency. <a href=\"https://_{type: 'screen', 'id': 592, 'screen_type': movie}\">The Conversation</a> (1974) and <a href=\"https://_{type: 'screen', 'id': 17365, 'screen_type': movie}\">The Parallax View</a> (1974) explore themes such as conspiracy and distrust.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_a_trama.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n74",
+      "title": "Neo-noir",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 3556, 'screen_type': person}\">Roman Polanski</a> (b. 1933) releases <a href=\"https://_{type: 'screen', 'id': 829, 'screen_type': movie}\">Chinatown</a> (1974), one of the greatest symbols of <strong>neo-noir</strong> (new film noir).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_chinatown.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n75",
+      "title": "Theo Angelopoulos",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 10316, 'screen_type': person}\">Theo Angelopoulos</a>'s (b. 1935) third film, <a href=\"https://_{type: 'screen', 'id': 689, 'screen_type': movie}\">O Thiasos</a> (The Travelling Players, 1975), confirms the emergence of an exceptional new talent in Greece, with a remarkable personal style.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_o_tiasos.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n75",
+      "title": "Blockbusters",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (1975) is released in the summer, surpassing the box office of <a href=\"https://_{type: 'screen', 'id': 238, 'screen_type': movie}\">The Godfather</a> (1972). It becomes the first \"<i>event movie</i>\", setting the standard for <strong>blockbuster</strong> films ever since.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_jaws.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n75",
+      "title": "Women in African Cinema",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1298788, 'screen_type': person}\">Safi Faye</a> (b. 1943) becomes the first female director from sub-Saharan Africa with the feature film <a href=\"https://_{type: 'screen', 'id': 204445, 'screen_type': movie}\">Kaddu Beykat</a> (Letter from My Village, 1975).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_kaddu_beykat.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n75",
+      "title": "The Rocky Horror Picture Show",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 36685, 'screen_type': movie}\">The Rocky Horror Picture Show</a> (1975) becomes a cult film, earning the title of longest-running film, screened at the same theater in Munich, Germany, every week for more than 27 years.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_rocky_horror_picture_show.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n75",
+      "title": "VHS",
+      "description": "Video recorders spread in the <strong>Betamax</strong> and (a year later) <strong>VHS</strong> formats, allowing people to record films and watch them at home.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_vhs.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n76",
+      "title": "Teenage Heroines and Superpowers",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 7340, 'screen_type': movie}\">Carrie</a> (1976) launches the wave of teenage heroines, protagonists with psychic or telekinetic powers, and adaptations of horror novels by writer <a href=\"https://_{type: 'screen', 'id': 3027, 'screen_type': person}\">Stephen King</a>.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_carrie.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n76",
+      "title": "Government Scandals",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 103, 'screen_type': movie}\">Taxi Driver</a> (1976) and <a href=\"https://_{type: 'screen', 'id': 891, 'screen_type': movie}\">All the President's Men</a> (1976) reflect the psychological scars of the <srong>Vietnam War</strong> and the <strong>Watergate</strong> scandal, respectively.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_taxi_driver.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n70",
+      "title": "May the Force Be with You!",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 11, 'screen_type': movie}\">Star Wars</a> (1977) is released, a landmark in popular culture. More than that, its success reveals audiences' appetite for simpler <i>mainstream</i> cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_star_wars.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n77",
+      "title": "Disco to the Sound of the Bee Gees",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 11009, 'screen_type': movie}\">Saturday Night Fever</a> (1977) and disco take the world by storm. The album of songs from the film became the best-selling soundtrack of all time.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_embalados_sabado_noite.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n78",
+      "title": "Psychopathic Killers",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 948, 'screen_type': movie}\">Halloween</a> (1978) draws on <a href=\"https://_{type: 'screen', 'id': 539, 'screen_type': movie}\">Psycho</a> (1960) and on the <strong>giallo</strong> films of <a href=\"https://_{type: 'screen', 'id': 25826, 'screen_type': person}\">Mario Bava</a> (1914-1980) and <a href=\"https://_{type: 'screen', 'id': 4955, 'screen_type': person}\">Dario Argento</a> (b. 1940) to cement the formula of the psycho-killer film.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_halloween.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n78",
+      "title": "Jackie Chan",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 11230, 'screen_type': movie}\">Zui quan</a> (Drunken Master, 1978) becomes a hit, presenting kung fu blended with physical comedy, something that became a hallmark of <a href=\"https://_{type: 'screen', 'id': 18897, 'screen_type': person}\">Jackie Chan</a>'s (b. 1954) career.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_jackie_chan_mestre_invencivel.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n78",
+      "title": "Is It a Bird? Is It a Plane?",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1924, 'screen_type': movie}\">Superman</a> (1978) hits theaters, giving birth to the <i>superhero</i> film.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_superman_1978_christopher_reeves.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n79",
+      "title": "I love the smell of napalm in the morning",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 28, 'screen_type': movie}\">Apocalypse Now</a> (1979) is released after a troubled production. The film wins the <i>Palme d'Or</i> at the <strong>Cannes Film Festival</strong> and is nominated for the <i>Oscar</i> for Best Picture.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_apocalypse_now.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n79",
+      "title": "Horror and Monsters",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 348, 'screen_type': movie}\">Alien</a> (1979), released four years after <a href=\"https://_{type: 'screen', 'id': 578, 'screen_type': movie}\">Jaws</a> (1975), breathes new life into monster movies.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_alien.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n79",
+      "title": "Mad Max",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 20629, 'screen_type': person}\">George Miller</a> (b. 1945) directs <a href=\"https://_{type: 'screen', 'id': 9659, 'screen_type': movie}\">Mad Max</a> (1979). The film becomes the most profitable movie of all time relative to its cost and introduces <a href=\"https://_{type: 'screen', 'id': 2461, 'screen_type': person}\">Mel Gibson</a> (b. 1956) to the world.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_mad_max.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n79",
+      "title": "Chuck Norris",
+      "description": "Former karate champion <a href=\"https://_{type: 'screen', 'id': 51576, 'screen_type': person}\">Chuck Norris</a> stars in the martial arts film <a href=\"https://_{type: 'screen', 'id': 21376, 'screen_type': movie}\">A Force of One</a> (1979).",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_alien.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n80",
+      "title": "Friday the 13th",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 4488, 'screen_type': movie}\">Friday the 13th</a> (1980) is released, kicking off an even bigger wave of <i>slasher</i> films in the 1980s.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_jason_sexta_feira_13.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n80",
+      "title": "ZAZ",
+      "description": "The parody <a href=\"https://_{type: 'screen', 'id': 813, 'screen_type': movie}\">Airplane!</a> (1980) earns <i>Golden Globe</i> and <i>BAFTA</i> nominations. The film marks the start of a wave of parody films using the <strong>ZAZ formula</strong> in the 1980s. These comedies inspired the <i>Scary Movie</i> series.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_apertem_sintos.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n80",
+      "title": "E.T. Phone Home",
+      "description": "Despite its modest scale, <a href=\"https://_{type: 'screen', 'id': 601, 'screen_type': movie}\">E.T. the Extra-Terrestrial</a> (1982) breaks box office records and becomes the most successful film of all time.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_et.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n80",
+      "title": "Monty Python",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 36819, 'screen_type': movie}\">Time Bandits</a> (1981) builds on the success of the Monty Python films and taps into the growing demand for fantasy comedies for audiences of all ages.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_time_bandits.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n83",
+      "title": "Jerry Bruckheimer and Don Simpson",
+      "description": "The success of <a href=\"https://_{type: 'screen', 'id': 535, 'screen_type': movie}\">Flashdance</a> (1983) marks the beginning of <a href=\"https://_{type: 'screen', 'id': 770, 'screen_type': person}\">Jerry Bruckheimer</a> and <a href=\"https://_{type: 'screen', 'id': 771, 'screen_type': person}\">Don Simpson</a>'s dominance over the production of mass-market Hollywood films.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_flashdance.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n83",
+      "title": "Steve Martin",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 67773, 'screen_type': person}\">Steve Martin</a> co-writes and stars in <a href=\"https://_{type: 'screen', 'id': 11591, 'screen_type': movie}\">The Man with Two Brains</a> (1983), confirming his position as one of the great working comedians.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_medico_erotico.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n84",
+      "title": "Mockumentary",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 11031, 'screen_type': movie}\">This Is Spinal Tap</a> (1984) is released, a comedy hit about a fictional British <i>heavy metal</i> band that gave rise to the <strong>mockumentary genre</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_this_is_spinal_tap.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n85",
+      "title": "I'll be back",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1100, 'screen_type': person}\">Arnold Schwarzenegger</a> (b. 1947) plays a killer robot from the future in the first film of the <a href=\"https://_{type: 'screen', 'id': 218, 'screen_type': movie}\">Terminator</a> series (The Terminator, 1984). The film is considered a landmark of science fiction cinema.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_arnold_schwarzenegger_terminator.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n85",
+      "title": "Sundance Film Festival",
+      "description": "The <strong>Sundance Institute</strong> holds its first film festival in Utah, in the US, to promote independent cinema from around the world.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_sundance.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n85",
+      "title": "Back to the Future",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 105, 'screen_type': movie}\">Back to the Future</a> (1985) defines the blockbuster of the Reagan era.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_de_volta_futuro.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n85",
+      "title": "Teen Comedies",
+      "description": "Teen comedies rake in box office money with <a href=\"https://_{type: 'screen', 'id': 105, 'screen_type': movie}\">Back to the Future</a> (1985), <a href=\"https://_{type: 'screen', 'id': 2108, 'screen_type': movie}\">The Breakfast Club</a> (1985), <a href=\"https://_{type: 'screen', 'id': 9340, 'screen_type': movie}\">The Goonies</a> (1985) and <a href=\"https://_{type: 'screen', 'id': 11814, 'screen_type': movie}\">Weird Science</a> (1985).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_breakfast_club.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n86",
+      "title": "Life moves pretty fast...",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 9377, 'screen_type': movie}\">Ferris Bueller's Day Off</a> (1986) keeps the teen wave going in theaters, establishing <a href=\"https://_{type: 'screen', 'id': 11505, 'screen_type': person}\">John Hughes</a> (1950-2009) as one of the great directors of the 1980s.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_curtindo_vida_john_hughes.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n86",
+      "title": "Studio Ghibli",
+      "description": "<strong>Studio Ghibli</strong> officially releases its first film, <a href=\"https://_{type: 'screen', 'id': 4935, 'screen_type': movie}\">Hauru no Ugoku Shiro</a> (Howl's Moving Castle, 2004), following the success of <a href=\"https://_{type: 'screen', 'id': 81, 'screen_type': movie}\">Kaze no Tani no Naushika</a> (Nausicaä of the Valley of the Wind, 1984).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ghibli.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n87",
+      "title": "Dirty Dancing",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 88, 'screen_type': movie}\">Dirty Dancing</a> (1987) becomes one of the most iconic films of the 1980s.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_dirty_dancing.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n87",
+      "title": "Good morning, Vietnam! Hey, this is not a test",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 8246, 'screen_type': person}\">Barry Levinson</a> (b. 1942) directs <a href=\"https://_{type: 'screen', 'id': 801, 'screen_type': movie}\">Good Morning, Vietnam</a> (1987), based on the work of an armed forces radio DJ who became popular among the troops serving in Vietnam.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_good_morning_vietnam.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n87",
+      "title": "Die Hard!",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 62, 'screen_type': person}\">Bruce Willis</a> (b. 1955) wears torn clothes to play cop <i>John McClane</i> in <a href=\"https://_{type: 'screen', 'id': 562, 'screen_type': movie}\">Die Hard</a> (1988).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_duro_matar.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n87",
+      "title": "Bumping the lamp",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 856, 'screen_type': movie}\">Who Framed Roger Rabbit</a> (1988) hits theaters, dazzling audiences with the way its cartoons are integrated into live-action scenes. And for the first time, we see Mickey Mouse and Bugs Bunny in the same scene.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cilada_roger_rabbit.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n89",
+      "title": "Tim Burton's Batman",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 268, 'screen_type': movie}\">Batman</a> (1989) updates the superhero blockbuster - and becomes the first film to gross 100 million dollars in its first 10 days of release.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_batman_1988.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n89",
+      "title": "Independent Cinema",
+      "description": "Indie cinema comes of age with <a href=\"https://_{type: 'screen', 'id': 1412, 'screen_type': movie}\">sex, lies, and videotape</a> (1989), a hit that paves the way for director <a href=\"https://_{type: 'screen', 'id': 1884, 'screen_type': person}\">Steven Soderbergh</a> (b. 1963) and the Miramax studio.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_sex_lies.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n89",
+      "title": "Do the Right Thing",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 925, 'screen_type': movie}\">Do the Right Thing</a> (1989), by <a href=\"https://_{type: 'screen', 'id': 5281, 'screen_type': person}\">Spike Lee</a> (b. 1957), hits theaters, establishing the director as one of the great breakthroughs of the era. The film was a forerunner of films focused on marginalized urban neighborhoods and African American characters.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_faca_coisa_certa.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "footer",
+      "previous": "1960 to 1969",
+      "next": "1990 to 2009"
+    }
+  ]
+}

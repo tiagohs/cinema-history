@@ -168,7 +168,7 @@ class AudioManager {
                 .subscribe({ currentPosition ->
                     this.onUpdateTimer?.invoke(currentPosition, displayElapsedTime())
                 }, {
-                    this.onError?.invoke("Erro ao configurar o Player", it)
+                    this.onError?.invoke(context?.getString(com.tiagohs.helpers.R.string.error_audio_player_setup) ?: "", it)
                 }, {})
         )
     }

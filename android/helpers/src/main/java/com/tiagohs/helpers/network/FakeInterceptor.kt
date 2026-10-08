@@ -2,11 +2,13 @@ package com.tiagohs.helpers.network
 
 import android.content.Context
 import com.tiagohs.entities.enums.LocalFiles
+import com.tiagohs.helpers.utils.ContentLanguage
 import com.tiagohs.helpers.utils.FileUtils
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.ResponseBody.Companion.toResponseBody
 import timber.log.Timber
+import java.io.FileNotFoundException
 import java.io.IOException
 
 
@@ -60,11 +62,23 @@ class FakeInterceptor(
         }
     }
 
+    /**
+     * Lê o conteúdo no idioma atual (assets/local/<idioma>/...).
+     * Se o arquivo não existir nesse idioma, usa o português (idioma de origem).
+     */
     @Throws(IOException::class)
     private fun readFileFromStatus(rawFileName: String): String {
-        return context?.let {
-            FileUtils.readAssetsFile(it, rawFileName, "UTF-8")
-        } ?: ""
+        val context = context ?: return ""
+        val language = ContentLanguage.current()
+
+        return try {
+            FileUtils.readAssetsFile(context, ContentLanguage.assetPath(rawFileName, language), "UTF-8")
+        } catch (e: FileNotFoundException) {
+            if (language == ContentLanguage.SOURCE) throw e
+
+            Timber.w("Conteúdo sem tradução para '%s', usando '%s': %s", language, ContentLanguage.SOURCE, rawFileName)
+            FileUtils.readAssetsFile(context, ContentLanguage.assetPath(rawFileName, ContentLanguage.SOURCE), "UTF-8")
+        }
     }
 
 }

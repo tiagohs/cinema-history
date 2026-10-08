@@ -90,7 +90,7 @@ object MovieUtils {
         if (birthdayDate.isNullOrEmpty() && placeOfBirth.isNullOrEmpty()) { return }
 
         if (placeOfBirth.isNullOrEmpty() && !birthdayDate.isNullOrEmpty()) {
-            person.birthdayFormated = DateUtils.formateDate(birthdayDate, "MMMM dd, yyyy")
+            person.birthdayFormated = DateUtils.formateDateLong(birthdayDate)
             return
         }
 
@@ -99,7 +99,7 @@ object MovieUtils {
             return
         }
 
-        person.birthdayFormated = "${DateUtils.formateDate(birthdayDate!!, "MMMM dd, yyyy")} in $placeOfBirth"
+        person.birthdayFormated = "${DateUtils.formateDateLong(birthdayDate!!)}, $placeOfBirth"
     }
 
     fun generatePersonMovieCredits(movieCredits : PersonMovieCredits?): List<MovieFilmographyDTO> {

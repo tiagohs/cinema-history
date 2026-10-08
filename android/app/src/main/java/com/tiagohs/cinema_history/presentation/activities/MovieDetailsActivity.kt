@@ -1,10 +1,12 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.animation.Animator
+import com.tiagohs.cinema_history.databinding.ActivityMovieDetailsBinding
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ViewGenreItemBinding
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.AccelerateInterpolator
@@ -14,6 +16,8 @@ import androidx.constraintlayout.widget.Constraints
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.ads.AdPlacement
+import com.tiagohs.cinema_history.ads.adapterWithNativeAd
 import com.tiagohs.cinema_history.presentation.adapters.MovieInfoAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.managers.DynamicLinkManager
@@ -33,14 +37,11 @@ import com.tiagohs.helpers.Constants
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.helpers.utils.DateUtils
-import kotlinx.android.synthetic.main.activity_movie_details.*
-import kotlinx.android.synthetic.main.view_genre_item.view.*
-import kotlinx.android.synthetic.main.view_screen_blocked.*
 import javax.inject.Inject
 
-class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
+class MovieDetailsActivity : BaseActivity<ActivityMovieDetailsBinding>(), MovieDetailsView {
 
-    override fun onGetLayoutViewId(): Int = R.layout.activity_movie_details
+    override fun inflateBinding(inflater: LayoutInflater) = ActivityMovieDetailsBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = R.menu.menu_movie
 
     @Inject
@@ -61,7 +62,7 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
 
         getApplicationComponent()?.inject(this)
 
-        setupToolbar(toolbar)
+        setupToolbar(binding.toolbar)
 
         presenter.onBindView(this)
         presenter.fetchMovieDetails(movieId, settingManager.getMovieISOLanguage())
@@ -113,11 +114,11 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
     }
 
     fun showScreenBlocked() {
-        screenBlocked.show()
+        binding.screenBlocked.root.show()
     }
 
     fun hideScreenBlocked() {
-        screenBlocked.hide()
+        binding.screenBlocked.root.hide()
     }
 
     override fun onDestroy() {
@@ -149,16 +150,22 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
         val movieTitle = movie.getMovieTitleFromAppLanguage(settingManager.getMovieLanguage())
         val appLanguage = settingManager.getMovieLanguage()
 
-        collapsingToolbar.title = movieTitle
-        pageContentList.apply {
-            adapter =
-                MovieInfoAdapter(movieInfoList, this@MovieDetailsActivity, appLanguage).apply {
+        binding.collapsingToolbar.title = movieTitle
+        binding.pageContentList.apply {
+            // Anúncio nativo depois de "Onde assistir" (ou da sinopse, se o filme não tiver onde assistir).
+            val watchOnIndex = movieInfoList.indexOfFirst { it.type == MovieInfoType.INFO_WATCH_ON }
+            val summaryIndex = movieInfoList.indexOfFirst { it.type == MovieInfoType.INFO_SUMMARY }
+            val adAfter = ((if (watchOnIndex >= 0) watchOnIndex else summaryIndex) + 1).coerceAtLeast(2)
+
+            adapter = adapterWithNativeAd(movieInfoList, adAfter, AdPlacement.MOVIE, this@MovieDetailsActivity) { items ->
+                MovieInfoAdapter(items, this@MovieDetailsActivity, appLanguage).apply {
                     onPersonClicked = { onPersonClicked(it) }
                     onExtenalLink = { openLink(it) }
                     onVideoClick = { openLink(getString(R.string.youtube_link, it)) }
                     onMovieClicked = { onMovieSelected(it) }
                     onScreenLink = { startActivityWithSlideRightToLeftAnimation(it) }
                 }
+            }
             layoutManager = LinearLayoutManager(
                 this@MovieDetailsActivity,
                 LinearLayoutManager.VERTICAL,
@@ -174,37 +181,37 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
     }
 
     override fun startLoading() {
-        pageContentListContainer.alpha = 0f
-        appBar.alpha = 0f
+        binding.pageContentListContainer.alpha = 0f
+        binding.appBar.alpha = 0f
 
-        loadView.showShimmer(true)
-        loadView.show()
+        binding.loadView.showShimmer(true)
+        binding.loadView.show()
     }
 
     override fun hideLoading() {
-        pageContentListContainer
+        binding.pageContentListContainer
             .animate()
             .alpha(1f)
             .setDuration(200)
             .setInterpolator(DecelerateInterpolator(2f))
             .start()
 
-        appBar
+        binding.appBar
             .animate()
             .alpha(1f)
             .setDuration(200)
             .setInterpolator(DecelerateInterpolator(2f))
             .start()
 
-        loadView
+        binding.loadView
             .animate()
             .alpha(0f)
             .setDuration(200)
             .setInterpolator(AccelerateInterpolator(2f))
             .setListener(object : Animator.AnimatorListener {
                 override fun onAnimationEnd(animation: Animator) {
-                    loadView.hideShimmer()
-                    loadView.visibility = View.INVISIBLE
+                    binding.loadView.hideShimmer()
+                    binding.loadView.visibility = View.INVISIBLE
                 }
 
                 override fun onAnimationRepeat(animation: Animator) {}
@@ -246,7 +253,7 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
             )
         }
 
-        movie.extraInfo?.watchOn?.let {
+        movie.extraInfo?.watchOn?.takeIf { it.isNotEmpty() }?.let {
             listOfMovieList.add(
                 MovieInfo(
                     MovieInfoType.INFO_WATCH_ON,
@@ -301,7 +308,7 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
             )
         }
 
-        movie.extraInfo?.reviewResults?.let {
+        movie.extraInfo?.reviewResults?.takeIf { it.isNotEmpty() }?.let {
             listOfMovieList.add(
                 MovieInfo(
                     MovieInfoType.INFO_REVIEWS,
@@ -359,8 +366,8 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
     private fun bindMovieHeader(movie: Movie, title: String) {
         val genres = movie.genres
 
-        movieTitle.setResourceText(title)
-        movieOriginalTitle.text = getString(
+        binding.movieTitle.setResourceText(title)
+        binding.movieOriginalTitle.text = getString(
             R.string.original_title_format, movie.originalTitle, DateUtils.getYearByDate(
                 movie.releaseDate
             )
@@ -374,10 +381,10 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
 
     private fun bindGenres(genres: List<Genres>?) {
         genres?.let {
-            genresScrollView.show()
+            binding.genresScrollView.show()
 
             it.forEach { genre ->
-                val view = LayoutInflater.from(this).inflate(R.layout.view_genre_item, null, false)
+                val genreBinding = ViewGenreItemBinding.inflate(LayoutInflater.from(this), null, false)
                 val layoutParams = Constraints.LayoutParams(
                     Constraints.LayoutParams.WRAP_CONTENT,
                     Constraints.LayoutParams.WRAP_CONTENT
@@ -385,10 +392,10 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
                     setMargins(0, 0, 10.convertIntToDp(this@MovieDetailsActivity), 0)
                 }
 
-                view.layoutParams = layoutParams
-                view.genreName.setResourceText(genre.name)
+                genreBinding.root.layoutParams = layoutParams
+                genreBinding.genreName.setResourceText(genre.name)
 
-                genresContainer.addView(view)
+                binding.genresContainer.addView(genreBinding.root)
             }
         }
     }
@@ -397,12 +404,12 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
         val trailerUrlKey = movie.trailerUrlKey
 
         if (movie.trailerUrlKey.isNullOrBlank()) {
-            playContainer.hide()
-            separatorVertical.setGuidelinePercent(1f)
+            binding.playContainer.hide()
+            binding.separatorVertical.setGuidelinePercent(1f)
             return
         }
 
-        playContainer.setOnClickListener {
+        binding.playContainer.setOnClickListener {
             openLink(
                 getString(
                     R.string.youtube_link,
@@ -415,30 +422,30 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
     private fun bindBackdrop(movie: Movie, title: String) {
         val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_780)
 
-        movieBackdrop.loadImage(
+        binding.movieBackdrop.loadImage(
             backdropPath,
             getString(R.string.movie_backdrop_description, title),
             R.drawable.placeholder_movie_poster,
             R.drawable.placeholder_movie_poster
         ) {
-            movieBackdrop.alpha = 1f
+            binding.movieBackdrop.alpha = 1f
 
-            AnimationUtils.createShowCircularReveal(movieBackdrop) {
-                playCard.alpha = 1f
+            AnimationUtils.createShowCircularReveal(binding.movieBackdrop) {
+                binding.playCard.alpha = 1f
 
                 val animation = AnimationUtils.createFadeInAnimation(150) {
-                    movieBackdropDegrade.alpha = 1f
-                    genresScrollView.alpha = 1f
-                    movieBackdropDegradeTop.alpha = 1f
+                    binding.movieBackdropDegrade.alpha = 1f
+                    binding.genresScrollView.alpha = 1f
+                    binding.movieBackdropDegradeTop.alpha = 1f
                 }
 
-                movieBackdropDegrade.startAnimation(animation)
-                movieBackdropDegradeTop.startAnimation(animation)
+                binding.movieBackdropDegrade.startAnimation(animation)
+                binding.movieBackdropDegradeTop.startAnimation(animation)
 
-                AnimationUtils.createPulseAnimation(movieTitle)
-                AnimationUtils.createPulseAnimation(movieOriginalTitle)
+                AnimationUtils.createPulseAnimation(binding.movieTitle)
+                AnimationUtils.createPulseAnimation(binding.movieOriginalTitle)
 
-                AnimationUtils.createScaleUpAnimation(playCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200)
+                AnimationUtils.createScaleUpAnimation(binding.playCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200)
             }
         }
     }
@@ -449,20 +456,20 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
                 RatingType.INTERNET_MOVIE_DATABASE -> bindRating(
                     omdbResult.value,
                     getString(R.string.imdb_link, movie.externalIds?.imdbId),
-                    imdbRating,
-                    imdbContainer
+                    binding.imdbRating,
+                    binding.imdbContainer
                 )
                 RatingType.METACRITIC -> bindRating(
                     omdbResult.value,
                     getResourceString(R.string.metacritic_link),
-                    metacriticRating,
-                    metacriticContainer
+                    binding.metacriticRating,
+                    binding.metacriticContainer
                 )
                 RatingType.TOMATOES -> bindRating(
                     omdbResult.value,
                     getResourceString(R.string.tomatoes_link),
-                    tomatoesRating,
-                    tomatoesContainer
+                    binding.tomatoesRating,
+                    binding.tomatoesContainer
                 )
                 else -> {
                 }
@@ -476,12 +483,12 @@ class MovieDetailsActivity : BaseActivity(), MovieDetailsView {
                     String.format("%.1f", voteAverage)
                 ),
                 getString(R.string.tmdb_link, movie.id),
-                tmdbRating, tmdbContainer
+                binding.tmdbRating, binding.tmdbContainer
             )
             return
         }
 
-        tmdbContainer.hide()
+        binding.tmdbContainer.hide()
     }
 
     private fun bindRating(

@@ -1,5 +1,6 @@
 package com.tiagohs.domain.services
 
+import com.tiagohs.helpers.utils.ContentLanguage
 import com.tiagohs.entities.tmdb.Result
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.entities.tmdb.TMDBList
@@ -16,11 +17,12 @@ import io.reactivex.Observable
 class TMDBService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) {
 
     fun getMovieDetails(movieId: Int, languageToUse: String, appendToResponse: List<String>): Observable<Movie> {
-        return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieDetails(movieId, "${languageToUse},en,pt-BR,null", appendToResponse.joinToString(","))
+        return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieDetails(movieId, languageToUse, appendToResponse.joinToString(","))
     }
 
-    fun getMovieVideos(movieId: Int, languages: String): Observable<Result<Video>> {
-        return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieVideos(movieId, languages)
+    /** [language]: idioma da resposta; [includeVideoLanguages]: idiomas aceitos nos vídeos (ex.: "pt,en,null"). */
+    fun getMovieVideos(movieId: Int, language: String, includeVideoLanguages: String): Observable<Result<Video>> {
+        return buildTMDB3Service(TMDBServiceRetrofit::class.java).getMovieVideos(movieId, language, includeVideoLanguages)
     }
 
     fun getMovieImages(movieId: Int, languages: String, includeImageLanguage: String): Observable<MovieImages> {
@@ -34,8 +36,8 @@ class TMDBService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) {
     fun getPersonMovieCredits(personId: Int, language: String): Observable<PersonMovieCredits> = buildTMDB3Service(TMDBServiceRetrofit::class.java).getPersonMovieCredits(personId, language)
 
     fun getList(listId: String, page: Int): Observable<TMDBList> {
-        return buildTMDB4Service(TMDBServiceRetrofit::class.java).getList(listId, page, "null")
+        return buildTMDB4Service(TMDBServiceRetrofit::class.java).getList(listId, page, ContentLanguage.tmdbTag())
     }
 
-    fun getCollection(collectionId: Int, language: String): Observable<Collection> = buildTMDB3Service(TMDBServiceRetrofit::class.java).getCollection(collectionId, "null")
+    fun getCollection(collectionId: Int, language: String): Observable<Collection> = buildTMDB3Service(TMDBServiceRetrofit::class.java).getCollection(collectionId, language)
 }

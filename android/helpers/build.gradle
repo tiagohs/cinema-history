@@ -1,32 +1,30 @@
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.devtools.ksp'
 
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
-    compileSdkVersion globalConfiguration["compileSDK"]
-    buildToolsVersion globalConfiguration["buildToolsVersion"]
+    compileSdk globalConfiguration["compileSDK"]
 
     defaultConfig {
-        minSdkVersion globalConfiguration["minSDK"]
-        targetSdkVersion globalConfiguration["targetSDK"]
+        minSdk globalConfiguration["minSDK"]
 
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
-
-        renderscriptTargetApi globalConfiguration["targetSDK"]
-        renderscriptSupportModeEnabled true
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled = false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
     namespace 'com.tiagohs.helpers'
 }
 
@@ -35,8 +33,9 @@ dependencies {
 
     def dependencies = rootProject.ext.dependencies
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    implementation platform(dependencies.firebaseBom)
 
+    
     // Android Core / Material
     implementation dependencies.appcompat
     implementation dependencies.androidxCore
@@ -56,7 +55,6 @@ dependencies {
 
     // Retrofit
     implementation dependencies.retrofit2
-    implementation dependencies.retrofit2JacksonConverter
     implementation dependencies.retrofit2GsonConverter
     implementation dependencies.retrofit2RxJavaAdapter
 
@@ -69,8 +67,7 @@ dependencies {
     // Glide
     implementation dependencies.glide
     implementation dependencies.glide_transformations
-    kapt dependencies.glideCompiler
-    kapt dependencies.lifecycleCompiler
+    ksp dependencies.glideKsp
 
     // Firebase
     implementation dependencies.firebaseStorage
@@ -78,6 +75,12 @@ dependencies {
 
     // Test Tools
     testImplementation dependencies.junit
-    implementation dependencies.testRunner
-    implementation dependencies.espresso
+    androidTestImplementation dependencies.testRunner
+    androidTestImplementation dependencies.espresso
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
 }

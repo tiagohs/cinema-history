@@ -1,6 +1,8 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
 import android.R.attr.radius
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.AdapterMovieListBinding
 import android.app.Activity
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +16,6 @@ import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.LocaleUtils
 import com.tiagohs.helpers.utils.MovieUtils
-import kotlinx.android.synthetic.main.adapter_movie_list.*
 
 
 class MovieListAdapter(
@@ -26,10 +27,8 @@ class MovieListAdapter(
     var onMovieSelected: ((movie: Movie, position: Int) -> Unit)? = null
     var onLoadBackdrop: ((url: String?) -> Unit)? = null
 
-    override fun getLayoutResId(viewType: Int): Int = R.layout.adapter_movie_list
-
-    override fun onCreateViewHolder(viewType: Int, view: View): MovieListViewHolder =
-        MovieListViewHolder(view)
+    override fun onCreateViewHolder(viewType: Int, inflater: LayoutInflater, parent: ViewGroup): MovieListViewHolder =
+        MovieListViewHolder(AdapterMovieListBinding.inflate(inflater, parent, false))
 
     override fun getItemId(position: Int): Long =
         list.get(position).id?.toLong() ?: position.toLong()
@@ -44,7 +43,7 @@ class MovieListAdapter(
         notifyItemRangeChanged(startPosition, list.size)
     }
 
-    inner class MovieListViewHolder(view: View) : BaseViewHolder<Movie>(view),
+    inner class MovieListViewHolder(private val binding: AdapterMovieListBinding) : BaseViewHolder<Movie>(binding),
         View.OnClickListener {
 
         init {
@@ -55,52 +54,52 @@ class MovieListAdapter(
 
         override fun bind(item: Movie, position: Int) {
             super.bind(item, position)
-            val context = containerView.context ?: return
+            val context = itemView.context ?: return
             this.moviePosition = position
 
             if (position == 0) {
                 val animation = AnimationUtils.loadAnimation(context, R.anim.slide_in_left)
 
-                backgroundContent.setResourceBackgroundColor(mainTopic.backgroundColor)
+                binding.backgroundContent.setResourceBackgroundColor(mainTopic.backgroundColor)
 
                 animation.duration = 300
                 animation.startOffset = 150
 
-                backgroundContent.startAnimation(animation)
+                binding.backgroundContent.startAnimation(animation)
             } else {
-                backgroundContent.setResourceBackgroundColor(R.color.transparent)
+                binding.backgroundContent.setResourceBackgroundColor(R.color.transparent)
             }
 
             loadImage(item)
 
-            title.setResourceText(item.title ?: item.originalTitle)
-            originalTitle.setResourceText(item.originalTitle)
+            binding.title.setResourceText(item.title ?: item.originalTitle)
+            binding.originalTitle.setResourceText(item.originalTitle)
 
             val lang = LocaleUtils.getLanguageName(item.originalLanguage)
             if (item.originalLanguage != null && lang != null) {
-                language.setResourceText(lang.capitalize())
+                binding.language.setResourceText(lang.replaceFirstChar { it.titlecase() })
             } else {
-                language.hide()
+                binding.language.hide()
             }
 
             val genreList = MovieUtils.getGenresName(context, item.genreIds)
             if (genreList.isNotEmpty()) {
-                genre.setResourceText(genreList.firstOrNull())
+                binding.genre.setResourceText(genreList.firstOrNull())
             } else {
-                genre.hide()
+                binding.genre.hide()
             }
 
             com.tiagohs.helpers.utils.AnimationUtils
-                .createScaleUpAnimation(languageCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
+                .createScaleUpAnimation(binding.languageCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
             com.tiagohs.helpers.utils.AnimationUtils
-                .createScaleUpAnimation(genreCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
+                .createScaleUpAnimation(binding.genreCard, 0f, 1f, 0f, 1f, 0.5f, 0.5f, 200, 150)
 
         }
 
         private fun loadImage(movie: Movie) {
             val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
 
-            image.loadImage(url)
+            binding.image.loadImage(url)
 
             onLoadBackdrop?.invoke(url)
         }

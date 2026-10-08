@@ -1,0 +1,948 @@
+{
+  "number": 4,
+  "content_list": [
+    {
+      "type": "text",
+      "content_text": "A comienzos de la década, el director de la <i>New Wave británica</i> <a href=\"https://_{type: 'screen', 'id': 32765, 'screen_type': person}\">Tony Richardson</a> (1928-1991) cambió el realismo social por la comedia de enredos en <a href=\"https://_{type: 'screen', 'id': 5769, 'screen_type': movie}\">Tom Jones</a> (1963), adaptación de la novela de <i>Henry Fielding</i>, escrita en el siglo XVIII. Provocadora y audaz, sigue las aventuras sexuales del joven Tom, interpretado por un <a href=\"https://_{type: 'screen', 'id': 3926, 'screen_type': person}\">Albert Finney</a> (1936-2019) totalmente a gusto en el papel."
+    },
+    {
+      "type": "video",
+      "video_id": "ahFARm2j38c",
+      "information": {
+        "contentTitle": "Escena final de la película El graduado",
+        "contentText": "La película se hizo conocida, entre otras razones, por la banda sonora propuesta por el dúo de músicos folk <i>Simon & Garfunkel</i> (en la que lanzarían canciones que se convertirían en éxitos de la música pop como <i>The Sound of Silence</i> y <i>Mrs. Robinson</i>) y por haber iniciado la carrera del entonces desconocido Dustin Hoffman. Además, algunas de sus escenas se volvieron arquetípicas para diversas películas de género similar producidas hasta la actualidad, e incluso han sido motivo de numerosas parodias en distintos medios.",
+        "source": "Youtube: Canal <i>cinefilikos</i>"
+      }
+    },
+    {
+      "type": "essay",
+      "video_id": "mLo8arZDmDE",
+      "title": "The Graduate Ending Explained — A Masterclass in Directing a Movie",
+      "description": "Un análisis del final de El graduado y de las técnicas de dirección que lo volvieron tan atemporal. El clásico de Mike Nichols es una clase magistral de dirección cinematográfica.",
+      "channel": "studio_binder",
+      "movie": {
+        "adult": false,
+        "backdrop_path": "/28BDy7Zx2jiXJxNSHo4RT71YPSl.jpg",
+        "belongs_to_collection": null,
+        "budget": 3000000,
+        "genres": [
+          {
+            "id": 35,
+            "name": "Comedy"
+          },
+          {
+            "id": 18,
+            "name": "Drama"
+          }
+        ],
+        "homepage": "",
+        "id": 37247,
+        "imdb_id": "tt0061722",
+        "original_language": "en",
+        "original_title": "The Graduate",
+        "overview": "Benjamin, a recent college graduate very worried about his future, finds himself in a love triangle with an older woman and her daughter.",
+        "popularity": 12.115,
+        "poster_path": "/qtVvdSsm2hvau6ItLe4gWdFKe2M.jpg",
+        "production_companies": [
+          {
+            "id": 47557,
+            "logo_path": null,
+            "name": "Lawrence Turman Films, Inc.",
+            "origin_country": ""
+          },
+          {
+            "id": 494,
+            "logo_path": "/ioc65azmsAeL1XQN4dFnrpdJoMO.png",
+            "name": "AVCO Embassy Pictures",
+            "origin_country": "US"
+          }
+        ],
+        "production_countries": [
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          }
+        ],
+        "release_date": "1967-12-21",
+        "revenue": 104945305,
+        "runtime": 106,
+        "spoken_languages": [
+          {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+          }
+        ],
+        "status": "Released",
+        "tagline": "This is Benjamin. He's a little worried about his future.",
+        "title": "The Graduate",
+        "video": false,
+        "vote_average": 7.7,
+        "vote_count": 2364,
+        "credits": {
+          "cast": [
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 10774,
+              "known_for_department": "Acting",
+              "name": "Anne Bancroft",
+              "original_name": "Anne Bancroft",
+              "popularity": 6.424,
+              "profile_path": "/ydabiabIsMBe2HsNmx43gBpqzxx.jpg",
+              "cast_id": 1,
+              "character": "Mrs. Robinson",
+              "credit_id": "52fe46369251416c9104d0a3",
+              "order": 0
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 4483,
+              "known_for_department": "Acting",
+              "name": "Dustin Hoffman",
+              "original_name": "Dustin Hoffman",
+              "popularity": 5.847,
+              "profile_path": "/1bXm1InGd97vxneeE8JkvKXF81P.jpg",
+              "cast_id": 2,
+              "character": "Ben Braddock",
+              "credit_id": "52fe46369251416c9104d0a7",
+              "order": 1
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 9594,
+              "known_for_department": "Acting",
+              "name": "Katharine Ross",
+              "original_name": "Katharine Ross",
+              "popularity": 5.998,
+              "profile_path": "/gHuNkDqVtfKzjkBWLAEvayFlSPG.jpg",
+              "cast_id": 3,
+              "character": "Elaine Robinson",
+              "credit_id": "52fe46369251416c9104d0ab",
+              "order": 2
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8608,
+              "known_for_department": "Acting",
+              "name": "Murray Hamilton",
+              "original_name": "Murray Hamilton",
+              "popularity": 4.246,
+              "profile_path": "/g586NceO9Vcor4LmlqWY5Mv0hTF.jpg",
+              "cast_id": 5,
+              "character": "Mr. Robinson",
+              "credit_id": "52fe46369251416c9104d0af",
+              "order": 3
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 7795,
+              "known_for_department": "Acting",
+              "name": "Buck Henry",
+              "original_name": "Buck Henry",
+              "popularity": 1.928,
+              "profile_path": "/iAOjaj5OHMMXno65MwmDtkqHeb6.jpg",
+              "cast_id": 6,
+              "character": "Taft Hotel Desk Clerk",
+              "credit_id": "52fe46369251416c9104d0b3",
+              "order": 4
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 30050,
+              "known_for_department": "Acting",
+              "name": "Brian Avery",
+              "original_name": "Brian Avery",
+              "popularity": 0.6,
+              "profile_path": "/2JUIGCOgpAgqbpuWtR9tVQjvJZ9.jpg",
+              "cast_id": 7,
+              "character": "Carl Smith",
+              "credit_id": "52fe46369251416c9104d0b7",
+              "order": 5
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 94402,
+              "known_for_department": "Acting",
+              "name": "Walter Brooke",
+              "original_name": "Walter Brooke",
+              "popularity": 1.261,
+              "profile_path": "/wu9mt5ozFqHq1WJTABc76WDKvD9.jpg",
+              "cast_id": 8,
+              "character": "Mr. McGuire",
+              "credit_id": "52fe46369251416c9104d0bb",
+              "order": 6
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 10775,
+              "known_for_department": "Acting",
+              "name": "William Daniels",
+              "original_name": "William Daniels",
+              "popularity": 1.646,
+              "profile_path": "/1SCR6im2maiASfTD5h7r0g9dU78.jpg",
+              "cast_id": 12,
+              "character": "Mr. Braddock",
+              "credit_id": "52fe46369251416c9104d0d1",
+              "order": 7
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 10776,
+              "known_for_department": "Acting",
+              "name": "Elizabeth Wilson",
+              "original_name": "Elizabeth Wilson",
+              "popularity": 0.91,
+              "profile_path": "/p3i4swng6y0s31ktDXMrwjvejM0.jpg",
+              "cast_id": 18,
+              "character": "Mrs. Braddock",
+              "credit_id": "52fe46379251416c9104d0f3",
+              "order": 8
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 14064,
+              "known_for_department": "Acting",
+              "name": "Norman Fell",
+              "original_name": "Norman Fell",
+              "popularity": 0.974,
+              "profile_path": "/uYYqgnea76B8pfFXlPJrmacCjHA.jpg",
+              "cast_id": 19,
+              "character": "Mr. McCleery",
+              "credit_id": "52fe46379251416c9104d0f7",
+              "order": 9
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 8495,
+              "known_for_department": "Acting",
+              "name": "Alice Ghostley",
+              "original_name": "Alice Ghostley",
+              "popularity": 2.713,
+              "profile_path": "/jXaAaXmnO0ozyot4tNnsCBk0dYZ.jpg",
+              "cast_id": 20,
+              "character": "Mrs. Singleman",
+              "credit_id": "52fe46379251416c9104d0fb",
+              "order": 10
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 12501,
+              "known_for_department": "Acting",
+              "name": "Marion Lorne",
+              "original_name": "Marion Lorne",
+              "popularity": 1.22,
+              "profile_path": "/vnKNE0UIQhnzbgpde9ByQ7cG8PB.jpg",
+              "cast_id": 21,
+              "character": "Miss DeWitte",
+              "credit_id": "52fe46379251416c9104d0ff",
+              "order": 11
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 5687,
+              "known_for_department": "Acting",
+              "name": "Eddra Gale",
+              "original_name": "Eddra Gale",
+              "popularity": 0.6,
+              "profile_path": null,
+              "cast_id": 22,
+              "character": "Woman on Bus",
+              "credit_id": "52fe46379251416c9104d103",
+              "order": 12
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 3037,
+              "known_for_department": "Acting",
+              "name": "Richard Dreyfuss",
+              "original_name": "Richard Dreyfuss",
+              "popularity": 2.369,
+              "profile_path": "/q2BPu6zWwFtnzQfpl4fgbKqURXM.jpg",
+              "cast_id": 23,
+              "character": "Boarding House Student",
+              "credit_id": "5aa0d49b0e0a2644d80011ef",
+              "order": 13
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 1208039,
+              "known_for_department": "Acting",
+              "name": "Arthur Tovey",
+              "original_name": "Arthur Tovey",
+              "popularity": 2.181,
+              "profile_path": "/fXDEmUPlWmIt5mic6fPL2r8eXRJ.jpg",
+              "cast_id": 24,
+              "character": "Hotel Guest",
+              "credit_id": "5ae5da4b0e0a2631aa0073fa",
+              "order": 14
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 1176510,
+              "known_for_department": "Acting",
+              "name": "William H. O'Brien",
+              "original_name": "William H. O'Brien",
+              "popularity": 1.4,
+              "profile_path": "/tDqUL7sIoO8BpmCYDH51SNkSmMB.jpg",
+              "cast_id": 25,
+              "character": "Hotel Guest (uncredited)",
+              "credit_id": "5ae5da560e0a2631aa0073ff",
+              "order": 15
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 27164,
+              "known_for_department": "Acting",
+              "name": "Frank Baker",
+              "original_name": "Frank Baker",
+              "popularity": 1.4,
+              "profile_path": "/1uw0SuoHsH5Vyudv0vkppYHp53Y.jpg",
+              "cast_id": 26,
+              "character": "Hotel Guest",
+              "credit_id": "5ae5dabcc3a36835c60084ce",
+              "order": 16
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 86346,
+              "known_for_department": "Acting",
+              "name": "Elisabeth Fraser",
+              "original_name": "Elisabeth Fraser",
+              "popularity": 0.778,
+              "profile_path": "/2SsCVqYjAV7CkpU2QbGwKRYKykA.jpg",
+              "cast_id": 46,
+              "character": "Party Guest",
+              "credit_id": "5c7979c79251412a5a487f37",
+              "order": 17
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 58251,
+              "known_for_department": "Acting",
+              "name": "Elaine May",
+              "original_name": "Elaine May",
+              "popularity": 2.36,
+              "profile_path": "/qUXu479V8UGEzmVny3evw9aHra8.jpg",
+              "cast_id": 47,
+              "character": "Girl with Note for Benjamin",
+              "credit_id": "5c7979dfc3a36844ec1979e4",
+              "order": 18
+            }
+          ],
+          "crew": [
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 8339,
+              "known_for_department": "Art",
+              "name": "George R. Nelson",
+              "original_name": "George R. Nelson",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b365ffc0e0a26400a02e2c7",
+              "department": "Art",
+              "job": "Set Decoration"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 878,
+              "known_for_department": "Sound",
+              "name": "Jack Solomon",
+              "original_name": "Jack Solomon",
+              "popularity": 0.98,
+              "profile_path": null,
+              "credit_id": "5b3660e9c3a368532f030755",
+              "department": "Sound",
+              "job": "Sound"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 1263,
+              "known_for_department": "Production",
+              "name": "Lynn Stalmaster",
+              "original_name": "Lynn Stalmaster",
+              "popularity": 1.01,
+              "profile_path": "/sEV79Z5O7Gyk13C2WqPw5KCuEfA.jpg",
+              "credit_id": "5b366a479251413c9302c71c",
+              "department": "Production",
+              "job": "Casting Consultant"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 5259,
+              "known_for_department": "Production",
+              "name": "George Justin",
+              "original_name": "George Justin",
+              "popularity": 0.652,
+              "profile_path": null,
+              "credit_id": "5b366120c3a368531d02e6f8",
+              "department": "Production",
+              "job": "Production Supervisor"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 5342,
+              "known_for_department": "Directing",
+              "name": "Mike Nichols",
+              "original_name": "Mike Nichols",
+              "popularity": 0.706,
+              "profile_path": "/eJgJEVil7iOJ9sTAXLCVRKfeKKM.jpg",
+              "credit_id": "52fe46369251416c9104d0c1",
+              "department": "Directing",
+              "job": "Director"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 12017,
+              "known_for_department": "Art",
+              "name": "Richard Sylbert",
+              "original_name": "Richard Sylbert",
+              "popularity": 0.84,
+              "profile_path": null,
+              "credit_id": "52fe46379251416c9104d0e9",
+              "department": "Art",
+              "job": "Production Design"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 14681,
+              "known_for_department": "Costume & Make-Up",
+              "name": "Sydney Guilaroff",
+              "original_name": "Sydney Guilaroff",
+              "popularity": 0.644,
+              "profile_path": "/dG7l0ZrYmHN6QLtSikPudw846Zi.jpg",
+              "credit_id": "5b3669a6c3a368532c031c35",
+              "department": "Costume & Make-Up",
+              "job": "Hair Designer"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 18376,
+              "known_for_department": "Directing",
+              "name": "Meta Rebner",
+              "original_name": "Meta Rebner",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b3661760e0a263ff6028e76",
+              "department": "Directing",
+              "job": "Script Supervisor"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 7795,
+              "known_for_department": "Acting",
+              "name": "Buck Henry",
+              "original_name": "Buck Henry",
+              "popularity": 1.928,
+              "profile_path": "/iAOjaj5OHMMXno65MwmDtkqHeb6.jpg",
+              "credit_id": "52fe46369251416c9104d0cd",
+              "department": "Writing",
+              "job": "Screenplay"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 10005,
+              "known_for_department": "Camera",
+              "name": "Robert Surtees",
+              "original_name": "Robert Surtees",
+              "popularity": 1.128,
+              "profile_path": null,
+              "credit_id": "52fe46379251416c9104d0dd",
+              "department": "Camera",
+              "job": "Director of Photography"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 10557,
+              "known_for_department": "Acting",
+              "name": "Paul Simon",
+              "original_name": "Paul Simon",
+              "popularity": 1.024,
+              "profile_path": "/vWOVDx7feNDSpgI2njivbCeFvEu.jpg",
+              "credit_id": "5b366b150e0a26400d02d3b0",
+              "department": "Sound",
+              "job": "Songs"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 10557,
+              "known_for_department": "Acting",
+              "name": "Paul Simon",
+              "original_name": "Paul Simon",
+              "popularity": 1.024,
+              "profile_path": "/vWOVDx7feNDSpgI2njivbCeFvEu.jpg",
+              "credit_id": "5b366b389251413c66030a8e",
+              "department": "Sound",
+              "job": "Music"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 12015,
+              "known_for_department": "Editing",
+              "name": "Sam O'Steen",
+              "original_name": "Sam O'Steen",
+              "popularity": 0.98,
+              "profile_path": null,
+              "credit_id": "52fe46379251416c9104d0e3",
+              "department": "Editing",
+              "job": "Editor"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 12016,
+              "known_for_department": "Editing",
+              "name": "Bob Wyman",
+              "original_name": "Bob Wyman",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b366031c3a368531d02e668",
+              "department": "Editing",
+              "job": "Assistant Editor"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 12018,
+              "known_for_department": "Art",
+              "name": "Joel Schiller",
+              "original_name": "Joel Schiller",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b3665599251413cb5027fad",
+              "department": "Art",
+              "job": "Assistant Production Design"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 10769,
+              "known_for_department": "Writing",
+              "name": "Calder Willingham",
+              "original_name": "Calder Willingham",
+              "popularity": 0.84,
+              "profile_path": null,
+              "credit_id": "52fe46369251416c9104d0c7",
+              "department": "Writing",
+              "job": "Screenplay"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 10771,
+              "known_for_department": "Sound",
+              "name": "Dave Grusin",
+              "original_name": "Dave Grusin",
+              "popularity": 0.98,
+              "profile_path": "/eoJ9EfyGhljpKNdf3NuXlpGVVei.jpg",
+              "credit_id": "5b366a239251413cab024bfe",
+              "department": "Crew",
+              "job": "Additional Music"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 64928,
+              "known_for_department": "Acting",
+              "name": "Art Garfunkel",
+              "original_name": "Art Garfunkel",
+              "popularity": 1.771,
+              "profile_path": "/sNssWMf5FyPmr0Wt9ZYmMemAqsF.jpg",
+              "credit_id": "5b366b400e0a26400402d57e",
+              "department": "Sound",
+              "job": "Music"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 959701,
+              "known_for_department": "Writing",
+              "name": "Charles Webb",
+              "original_name": "Charles Webb",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "52fe46369251416c9104d0d7",
+              "department": "Writing",
+              "job": "Novel"
+            },
+            {
+              "adult": false,
+              "gender": 1,
+              "id": 961075,
+              "known_for_department": "Costume & Make-Up",
+              "name": "Patricia Zipprodt",
+              "original_name": "Patricia Zipprodt",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "52fe46379251416c9104d0ef",
+              "department": "Costume & Make-Up",
+              "job": "Costume Design"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 1343970,
+              "known_for_department": "Costume & Make-Up",
+              "name": "Sherry Wilson",
+              "original_name": "Sherry Wilson",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b3662b4c3a3685326033f49",
+              "department": "Costume & Make-Up",
+              "job": "Hairdresser"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 1379977,
+              "known_for_department": "Lighting",
+              "name": "Earl Gilbert",
+              "original_name": "Earl Gilbert",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b3663b3c3a368532f030904",
+              "department": "Lighting",
+              "job": "Gaffer"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 1404765,
+              "known_for_department": "Camera",
+              "name": "Albert Bettcher",
+              "original_name": "Albert Bettcher",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b3664b29251413c9102ae91",
+              "department": "Camera",
+              "job": "Camera Operator"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 1437471,
+              "known_for_department": "Directing",
+              "name": "Don Kranze",
+              "original_name": "Don Kranze",
+              "popularity": 0.98,
+              "profile_path": null,
+              "credit_id": "5b3660c5c3a368532f030739",
+              "department": "Directing",
+              "job": "Assistant Director"
+            },
+            {
+              "adult": false,
+              "gender": 0,
+              "id": 1537983,
+              "known_for_department": "Costume & Make-Up",
+              "name": "Harry Maret",
+              "original_name": "Harry Maret",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b3662510e0a26401602ed54",
+              "department": "Costume & Make-Up",
+              "job": "Makeup Artist"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 1559944,
+              "known_for_department": "Camera",
+              "name": "George Gordon Nogle",
+              "original_name": "George Gordon Nogle",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b3663fc0e0a263ff6028fc2",
+              "department": "Camera",
+              "job": "Camera Operator"
+            },
+            {
+              "adult": false,
+              "gender": 2,
+              "id": 2074788,
+              "known_for_department": "Camera",
+              "name": "Richard Borland",
+              "original_name": "Richard Borland",
+              "popularity": 0.6,
+              "profile_path": null,
+              "credit_id": "5b3664eb0e0a26400402d213",
+              "department": "Camera",
+              "job": "Grip"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Para el público del siglo XXI, <i>Tom Jones</i> es un relato pudoroso de los encuentros amorosos de Tom, pero en su época la película fue considerada licenciosa. Cuando Jones y la Sra. Waters cenan juntos, Richardson retrata de manera alusiva los deseos lujuriosos de la pareja, que sorbe ostras, desgarra muslos de pollo y se llena la boca de jugosas peras."
+    },
+    {
+      "type": "text",
+      "content_text": "El reexamen de las costumbres sociales por parte del cine no se limitó a la sociedad occidental. En Japón, directores como <a href=\"https://_{type: 'screen', 'id': 20025, 'screen_type': person}\">Shohei Imamura</a> (1926-2006) mostraron el nuevo papel de la mujer y la sexualidad sin inhibiciones en películas como <a href=\"https://_{type: 'screen', 'id': 42984, 'screen_type': movie}\">Nippon konchûki</a> (La mujer insecto, 1963), que cuenta la historia de una joven campesina convertida en <i>geisha</i>, violada por su padrastro y deshonrada por su \"<i>deseo carnal</i>\". La película traza la historia de Japón antes y después de las guerras del siglo XX, cuando la tradición cede su lugar a la sociedad industrial liberal."
+    },
+    {
+      "type": "video",
+      "video_id": "e83L05ptpAE",
+      "information": {
+        "contentTitle": "Escena de la película Soy curiosa (amarillo)",
+        "contentText": "Soy curiosa (amarillo) documentó la revolución sexual en la sociedad sueca a través de las experiencias de una joven rebelde. Contiene escenas de desnudez y de representación del acto sexual.",
+        "source": "Youtube: Canal <i>Ismail</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "En el transcurso de la década, el cine se fue volviendo más abierto a temas prohibidos y más propenso a reflejar los acontecimientos en curso en una sociedad cada vez más liberal. El éxito de <a href=\"https://_{type: 'screen', 'id': 1052, 'screen_type': movie}\">Blow-up</a> (Blow-Up, deseo de una mañana de verano, 1966), dirigida por <a href=\"https://_{type: 'screen', 'id': 15189, 'screen_type': person}\">Michelangelo Antonioni</a> (1912-2007), se debió en parte a sus escenas explícitas de sexo y al tratamiento del abuso de drogas en el Londres <i>fashion</i> contemporáneo."
+    },
+    {
+      "type": "text",
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 649, 'screen_type': movie}\">Belle de jour</a> (Bella de día, 1967) escandalizó al público con la historia de un ama de casa parisina que se prostituye durante el día para cumplir sus fantasías sadomasoquistas. <a href=\"https://_{type: 'screen', 'id': 133471, 'screen_type': person}\">Vilgot Sjöman</a> (1924-2006) causó indignación con su tratamiento directo del sexo y la violencia en <a href=\"https://_{type: 'screen', 'id': 42695, 'screen_type': movie}\">Jag är nyfiken - en film i gult</a> (Soy curiosa (amarillo), 1967), historia de una joven promiscua."
+    },
+    {
+      "type": "video",
+      "video_id": "_zeza1xeWKM",
+      "information": {
+        "contentTitle": "Escena de la película Blow-Up, deseo de una mañana de verano",
+        "contentText": "La película, que obtuvo el Gran Premio del Festival de Cine de Cannes, fue escrita por Antonioni y Tonino Guerra y cuenta en su reparto con <i>David Hemmings, Vanessa Redgrave, Sarah Miles, Jane Birkin</i> (en las primeras escenas de desnudo frontal en una película británica dirigida al gran público) y la supermodelo <i>Veruschka</i>, que se interpreta a sí misma y tiene una escena considerada en su momento como el \"<i>momento cinematográfico más sexy de la historia</i>\" por la revista especializada Premiere.",
+        "source": "Youtube: Canal <i>Movieclips</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "<a href=\"https://_{type: 'screen', 'id': 5342, 'screen_type': person}\">Mike Nichols</a> (n-1931) captó a la perfección los vaivenes de la sociedad estadounidense al borde de la revolución sexual en <a href=\"https://_{type: 'screen', 'id': 37247, 'screen_type': movie}\">The Graduate</a> (El graduado, 1967), un estudio del sexo entre generaciones distintas. Si la mayor parte del cine estadounidense había sido hasta entonces convencional, esta película de Nichols conecta el viejo mundo con el nuevo, anticipando el cine más experimental que llegaría en la década de 1970."
+    },
+    {
+      "type": "block_special",
+      "title": "Banda sonora y cine",
+      "image": {
+        "image_type": "local",
+        "url": "img_mrs_robinson",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Después de pedirle a Paul Simon que produjera material para la película <i>El graduado</i>, Mike Nichols decidió usar canciones de dos álbumes anteriores de <i>Simon & Garfunkel</i>, algunas de la entonces inconclusa \"<i>Mrs. Robinson</i>\", además de la música de <i>Dave Grusin</i>. La película y el cine en general se beneficiaron con el uso de material popular. La banda sonora fue esencial para el éxito de la película y el álbum llegó a la cima de las listas de éxitos antes de ser desplazado por <i>Bookends</i>, el que contiene la versión completa de \"<i>Mrs Robinson</i>\" y otras canciones escritas pero no utilizadas en la película. La manera en que se usó la música también es notable. \"<i>The Sounds (más tarde 'Sound') of Silence</i>\" suena al comienzo, al final y durante la secuencia de Benjamin en casa intercalada con su aventura con la Sra. Robinson. La letra, desde \"<i>Hello darkness, my old friend</i>\", sugiere los pensamientos íntimos de Benjamin aunque nunca se conecta directamente con la narración, y los versos desolados se compensan con el tono animado de la voz."
+    },
+    {
+      "type": "text",
+      "content_text": "A medida que la década de 1960 se acercaba a su fin y las leyes de censura se relajaban, las películas empezaron a escandalizar por escandalizar. En la ciencia ficción <i>kitsch</i> <a href=\"https://_{type: 'screen', 'id': 8069, 'screen_type': movie}\">Barbarella</a> (1968), <a href=\"https://_{type: 'screen', 'id': 6352, 'screen_type': person}\">Jane Fonda</a> (n-1937) interpreta a una astronauta del siglo XX que va al planeta <i>Tau Ceti</i> en busca del científico perdido Durand-Durand."
+    },
+    {
+      "type": "video",
+      "video_id": "NX2hTObHfxM",
+      "information": {
+        "contentTitle": "Escena de la película Barbarella ",
+        "contentText": "Filmada en los estudios del productor <i>Dino De Laurentiis</i>, en Roma, simultáneamente en francés e inglés (versión internacional), la mayoría de los actores interpreta sus papeles en ambos idiomas. Su guion, sin embargo, caótico y adelantado a su tiempo, llevó al fracaso de taquilla y de público en su estreno, a pesar de la gran campaña publicitaria con Jane Fonda, que llegó a posar caracterizada para la revista masculina Penthouse. Con el tiempo, la película y su banda sonora terminaron convirtiéndose en una referencia cultural, con influencias en la cultura pop.",
+        "source": "Youtube: Canal <i>Flickfeast</i>"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Con los constantes e inexplicables cambios de ropa transparente de <i>Barbarella</i>, sus insinuaciones de lesbianismo en los encuentros del personaje con la lasciva Gran Tirana (Anita Pallenberg) y sus escenas con accesorios sexuales, este extravagante filme de culto tiene un sesgo indiscutiblemente sadomasoquista. A finales de la década, <a href=\"https://_{type: 'screen', 'id': 2778, 'screen_type': person}\">Dennis Hopper</a> (1936-2010) compartió con <a href=\"https://_{type: 'screen', 'id': 8949, 'screen_type': person}\">Peter Fonda</a> (1940-2019) el guion y el papel principal de la <i>road movie Buscando mi destino</i> (1969)."
+    },
+    {
+      "type": "text",
+      "content_text": "Interpretan a hippies que emprenden un viaje en motocicleta de Los Ángeles a Nueva Orleans. Sus juergas con mujeres desnudas, impulsadas por las drogas, empiezan inocentes y terminan aterradoras, pero nunca son explícitas. Hopper aprovechó la nueva libertad de la que disponían los cineastas para plantear preguntas perturbadoras a los jóvenes del país. La revolución ya no era sexual, sino de ideas.",
+      "content_credits": "Resumen basado en el texto de <i>Carol King</i>, publicado en el libro \"<i>Tudo Sobre Cinema</i>\" de <i>Philip Kemp</i>."
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "poster_path": "/AuFvrbtWSPiBPIv9ewH2DV4nhCD.jpg",
+          "popularity": 14.353,
+          "vote_count": 2055,
+          "video": false,
+          "media_type": "movie",
+          "id": 37247,
+          "adult": false,
+          "backdrop_path": "/5DRTA4sf3D4FXZjquH8ph7uG7s3.jpg",
+          "original_language": "en",
+          "original_title": "The Graduate",
+          "genre_ids": [
+            35,
+            18
+          ],
+          "title": "The Graduate",
+          "vote_average": 7.7,
+          "overview": "Benjamin, a recent college graduate very worried about his future, finds himself in a love triangle with an older woman and her daughter.",
+          "release_date": "1967-12-21"
+        },
+        {
+          "poster_path": "/jiz91yDheKGIE3tubFnXzYxTyhh.jpg",
+          "popularity": 9.275,
+          "vote_count": 464,
+          "video": false,
+          "media_type": "movie",
+          "id": 649,
+          "adult": false,
+          "backdrop_path": "/z44h4Jza80TMtE1vSYrHITIAuzP.jpg",
+          "original_language": "fr",
+          "original_title": "Belle de jour",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "title": "Belle de Jour",
+          "vote_average": 7.6,
+          "overview": "Beautiful young housewife Séverine Serizy cannot reconcile her masochistic fantasies with her everyday life alongside dutiful husband Pierre. When her lovestruck friend Henri mentions a secretive high-class brothel run by Madame Anais, Séverine begins to work there during the day under the name Belle de Jour. But when one of her clients grows possessive, she must try to go back to her normal life.",
+          "release_date": "1967-05-24"
+        },
+        {
+          "poster_path": "/4LHJm9hhRaI9k7gAU22BIhKekNb.jpg",
+          "popularity": 3.072,
+          "vote_count": 37,
+          "video": false,
+          "media_type": "movie",
+          "id": 42695,
+          "adult": false,
+          "backdrop_path": "/of7GWgB4mPKPC3t6JJjkcU4Cssq.jpg",
+          "original_language": "sv",
+          "original_title": "Jag är nyfiken - en film i gult",
+          "genre_ids": [
+            18
+          ],
+          "title": "I Am Curious (Yellow)",
+          "vote_average": 5.5,
+          "overview": "Lena, aged twenty, wants to know all she can about life and reality. She collects information on everyone and everything, storing her findings in an enormous archive. She experiments with relationships, political activism, and meditation. Meanwhile, the actors, director and crew are shown in a humorous parallel plot about the making of the film and their reactions to the story and each other. Nudity, explicit sex, and controversial politics kept this film from being shown in the US while its seizure by Customs was appealed.",
+          "release_date": "1967-03-10"
+        },
+        {
+          "vote_count": 719,
+          "popularity": 12.431,
+          "id": 1052,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 7.5,
+          "title": "Blow-Up",
+          "release_date": "1966-12-18",
+          "original_language": "en",
+          "original_title": "Blow-Up",
+          "genre_ids": [
+            18,
+            9648,
+            53
+          ],
+          "backdrop_path": "/buMxKBaI6MBYgyhWuWVLgt8WPZV.jpg",
+          "adult": false,
+          "overview": "A successful mod photographer in London whose world is bounded by fashion, pop music, marijuana, and easy sex, feels his life is boring and despairing. But in the course of a single day he accidentally captures on film the commission of a murder. The fact that he has photographed a murder does not occur to him until he studies and then blows up his negatives, uncovering details, blowing up smaller and smaller elements, and finally putting the puzzle together.",
+          "poster_path": "/iVtUdWsT6Ed2DK762zZxjaQAdHy.jpg"
+        },
+        {
+          "vote_count": 382,
+          "popularity": 7.812,
+          "id": 8069,
+          "video": false,
+          "media_type": "movie",
+          "vote_average": 5.9,
+          "title": "Barbarella",
+          "release_date": "1968-10-10",
+          "original_language": "en",
+          "original_title": "Barbarella",
+          "genre_ids": [
+            878,
+            12,
+            35
+          ],
+          "backdrop_path": "/gY8essk1UcNZMK3VRkPpdaUQLDQ.jpg",
+          "adult": false,
+          "overview": "In the far future, a highly sexual woman is tasked with finding and stopping the evil Durand-Durand. Along the way she encounters various unusual people.",
+          "poster_path": "/vHxdpF8fjY6JMvDplzyhA6noIXT.jpg"
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 32765,
+          "profile_path": "/3skJ0HApYH6AgVPqMtexMbTCZMr.jpg",
+          "name": "Tony Richardson"
+        },
+        {
+          "id": 50,
+          "profile_path": "/jo0VZCujz0uDbMch4irFwKQj2d9.jpg",
+          "name": "Catherine Deneuve"
+        },
+        {
+          "id": 3926,
+          "profile_path": "/tAwXUmAbQGka31CTGQ0xS89QNYC.jpg",
+          "name": "Albert Finney"
+        },
+        {
+          "id": 15189,
+          "profile_path": "/aGrzCeNCEZEI1DhLS8HjWDKNude.jpg",
+          "name": "Michelangelo Antonioni"
+        },
+        {
+          "id": 6352,
+          "profile_path": "/cu34I4YohPkt7cvJ2Z8bVjzty7x.jpg",
+          "name": "Jane Fonda"
+        },
+        {
+          "id": 5342,
+          "profile_path": "/eJgJEVil7iOJ9sTAXLCVRKfeKKM.jpg",
+          "name": "Mike Nichols"
+        },
+        {
+          "id": 4483,
+          "profile_path": "/zN03MlLSFeTFT5TtX282mHD1rqF.jpg",
+          "name": "Dustin Hoffman"
+        }
+      ]
+    },
+    {
+      "type": "link_screen",
+      "subtitle": "Los acontecimientos que marcaron al mundo",
+      "title": "Cronología de acontecimientos de 1960 a 1969",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "3"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Brasil llama la atención del mundo con su Cinema Novo, la revolución sexual de los años 60 se refleja en el cine, el terror psicológico gana espacio y la ciencia ficción, con 2001: Odisea del espacio, conquista al público y a la crítica. Haz clic aquí y ve de forma cronológica los principales acontecimientos del cine entre 1960 y 1969."
+    }
+  ]
+}

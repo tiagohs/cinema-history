@@ -25,7 +25,8 @@ interface TMDBServiceRetrofit {
     @GET("movie/{movie_id}/videos")
     fun getMovieVideos(
         @Path("movie_id") movieId: Int,
-        @Query("language") language: String
+        @Query("language") language: String,
+        @Query("include_video_language") includeVideoLanguage: String
     ): Observable<Result<Video>>
 
     @GET("movie/{movie_id}/images")

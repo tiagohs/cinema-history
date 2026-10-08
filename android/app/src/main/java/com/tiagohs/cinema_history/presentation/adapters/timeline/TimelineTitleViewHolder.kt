@@ -1,6 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters.timeline
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterTimelineTitleBinding
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
@@ -11,7 +11,6 @@ import com.tiagohs.helpers.extensions.getResourceColor
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.setResourceStyledText
 import com.tiagohs.helpers.extensions.show
-import kotlinx.android.synthetic.main.adapter_timeline_title.*
 
 class TimelineTitleViewHolder(
     val color: String,
@@ -20,8 +19,8 @@ class TimelineTitleViewHolder(
     private val onDownClicked: (() -> Unit)? = null,
     private val numberOfItens: Int,
     val callback: TimelineCallbacks,
-    view: View
-) : BaseViewHolder<Timeline>(view) {
+    private val binding: AdapterTimelineTitleBinding
+) : BaseViewHolder<Timeline>(binding) {
 
     init {
         bindColors()
@@ -31,37 +30,37 @@ class TimelineTitleViewHolder(
         super.bind(item, position)
         val timeline = item as? TimelineTitle ?: return
 
-        title1.setResourceStyledText(timeline.title)
+        binding.title1.setResourceStyledText(timeline.title)
 
         bindDirectionButtons(timeline)
 
         if (timeline.comingSoon == true) {
-            comingSoonTagContainer.show()
+            binding.comingSoonTagContainer.show()
             return
         }
 
-        comingSoonTagContainer.hide()
+        binding.comingSoonTagContainer.hide()
     }
 
     private fun bindDirectionButtons(timeline: TimelineTitle) {
         bindButton(
-            nextContainer,
-            nextText,
+            binding.nextContainer,
+            binding.nextText,
             timeline.next,
             timeline.next != null && !callback.isLast()
         ) {
             onNextClicked?.invoke()
         }
         bindButton(
-            previousContainer,
-            previousText,
+            binding.previousContainer,
+            binding.previousText,
             timeline.previous,
             timeline.previous != null && !callback.isFirst()
         ) {
             onPreviousClicked?.invoke()
         }
 
-        downButton.setOnClickListener { onDownClicked?.invoke() }
+        binding.downButton.setOnClickListener { onDownClicked?.invoke() }
     }
 
     private fun bindButton(
@@ -83,10 +82,10 @@ class TimelineTitleViewHolder(
     }
 
     private fun bindColors() {
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val colorRes = context.getResourceColor(color)
 
-        textLine.setCardBackgroundColor(colorRes)
-        title2.setTextColor(colorRes)
+        binding.textLine.setCardBackgroundColor(colorRes)
+        binding.title2.setTextColor(colorRes)
     }
 }

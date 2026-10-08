@@ -1,0 +1,45 @@
+[
+  {
+    "type": "text",
+    "content_text": "The <i>British Academy Film Awards</i>, or <i>BAFTA Film Awards</i>, are an annual awards ceremony held by the <strong>British Academy of Film and Television Arts</strong> (BAFTA) to honor the best British and international contributions to film. Between 2008 and 2016, the ceremony was held in central London at the <i>Royal Opera House</i>. Its 72nd edition was held on February 10, 2019, at the Royal Albert Hall."
+  },
+  {
+    "type": "text",
+    "content_text": "The British Academy of Film and Television Arts was founded in 1947 as the British Film Academy by David Lean, Alexander Korda, Carol Reed, Charles Laughton, Roger Manvell and others. In 1958, the Academy merged with the <i>Guild of Television Producers</i> and Directors to form <i>The Society of Film and Television</i>, which became the British Academy of Film and Television Arts in 1976. "
+  },
+  {
+    "type": "video",
+    "video_id": "XTXfcFe4Tbc",
+    "information": {
+      "contentTitle": "Rebel Wilson steals the show with HILARIOUS unexpected BAFTA 2020 speech",
+      "source": "YouTube: <i>BBC</i> channel"
+    }
+  },
+  {
+    "type": "text",
+    "content_text": "BAFTA states that its charitable purpose is \"to support, develop and promote the art forms of the moving image, by identifying and rewarding excellence, inspiring practitioners and benefiting the public.\" In addition to high-profile awards ceremonies, BAFTA runs a year-round program of educational events, including film screenings and tribute evenings. BAFTA is supported by a membership of about 6,000 people from the film, television and video game industries."
+  },
+  {
+    "type": "text",
+    "content_text": "The Academy's awards depict a theatrical mask designed by American sculptor Mitzi Cunliffe, which was commissioned by the Guild of Television Producers in 1955. "
+  },
+  {
+    "type": "block_special",
+    "title": "Events",
+    "click": {
+      "screen": "link_online",
+      "button_text": "Click here to visit",
+      "parameters": [
+        {
+          "key": "LINK",
+          "value": "https://heritage.bafta.org/viewall"
+        }
+      ]
+    },
+    "description": "Key events since BAFTA was founded."
+  },
+  {
+    "type": "text",
+    "content_credits": "Wikipedia.com"
+  }
+]

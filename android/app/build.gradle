@@ -1,8 +1,6 @@
 apply plugin: 'com.android.application'
 
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.devtools.ksp'
 apply plugin: 'com.google.gms.google-services'
 
 apply plugin: 'com.google.firebase.crashlytics'
@@ -10,57 +8,90 @@ apply plugin: 'com.google.firebase.crashlytics'
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
-    compileSdkVersion globalConfiguration["compileSDK"]
+    compileSdk globalConfiguration["compileSDK"]
 
     signingConfigs {
         config {
-            keyAlias 'CineHistory'
-            keyPassword '14789632'
-            storeFile file('../keystore/keystore.keystore')
-            storePassword '14789632'
+            // No CI os valores vêm de secrets (variáveis de ambiente); localmente usa o keystore do projeto.
+            keyAlias System.getenv('ANDROID_KEY_ALIAS') ?: 'CineHistory'
+            keyPassword System.getenv('ANDROID_KEY_PASSWORD') ?: '14789632'
+            storeFile file(System.getenv('ANDROID_KEYSTORE_PATH') ?: '../keystore/keystore.keystore')
+            storePassword System.getenv('ANDROID_KEYSTORE_PASSWORD') ?: '14789632'
         }
     }
 
     defaultConfig {
         applicationId "com.tiagohs.cinema_history"
 
-        minSdkVersion globalConfiguration["minSDK"]
-        targetSdkVersion globalConfiguration["targetSDK"]
+        minSdk globalConfiguration["minSDK"]
+        targetSdk globalConfiguration["targetSDK"]
 
-        versionCode globalConfiguration["versionCode"]
-        versionName globalConfiguration["versionName"]
+        // O CI pode sobrescrever o versionCode com -PversionCodeOverride=<n>
+        versionCode = project.hasProperty('versionCodeOverride') ? project.property('versionCodeOverride').toInteger() : globalConfiguration["versionCode"]
+        versionName = globalConfiguration["versionName"]
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String", "THEMOVIEDB_API_KEY", '"dac4d50f24dee29513738d8fa3470a3f"'
         buildConfigField "String", "OMDB_API_KEY", '"de9f93c2"'
 
         vectorDrawables.useSupportLibrary = true
-        renderscriptTargetApi globalConfiguration["targetSDK"]
-        renderscriptSupportModeEnabled true
     }
 
-    androidExtensions {
-        experimental = true
-    }
+    // AdMob: IDs de teste do Google em debug; em release os de dependencies.gradle (admob), se preenchidos.
+    def admob = rootProject.ext.admob
+    def testIds = [
+            appId              : 'ca-app-pub-3940256099942544~3347511713',
+            nativeLists        : 'ca-app-pub-3940256099942544/2247696110',
+            nativeChapter      : 'ca-app-pub-3940256099942544/2247696110',
+            nativeMovie        : 'ca-app-pub-3940256099942544/2247696110',
+            interstitialChapter: 'ca-app-pub-3940256099942544/1033173712'
+    ]
+    // -PtestAds=true gera um release (R8, assinado) com IDs de teste, para testar sem impressões reais.
+    def forceTestAds = project.hasProperty('testAds') && project.property('testAds') == 'true'
+    def admobId = { String key, boolean release -> (release && !forceTestAds && admob[key]) ? admob[key] : testIds[key] }
+
 
     buildTypes {
+        debug {
+            manifestPlaceholders = [admobAppId: admobId('appId', false)]
+            buildConfigField "String", "ADMOB_NATIVE_LISTS", "\"${admobId('nativeLists', false)}\""
+            buildConfigField "String", "ADMOB_NATIVE_CHAPTER", "\"${admobId('nativeChapter', false)}\""
+            buildConfigField "String", "ADMOB_NATIVE_MOVIE", "\"${admobId('nativeMovie', false)}\""
+            buildConfigField "String", "ADMOB_INTERSTITIAL_CHAPTER", "\"${admobId('interstitialChapter', false)}\""
+        }
         release {
-            minifyEnabled false
+            manifestPlaceholders = [admobAppId: admobId('appId', true)]
+            buildConfigField "String", "ADMOB_NATIVE_LISTS", "\"${admobId('nativeLists', true)}\""
+            buildConfigField "String", "ADMOB_NATIVE_CHAPTER", "\"${admobId('nativeChapter', true)}\""
+            buildConfigField "String", "ADMOB_NATIVE_MOVIE", "\"${admobId('nativeMovie', true)}\""
+            buildConfigField "String", "ADMOB_INTERSTITIAL_CHAPTER", "\"${admobId('interstitialChapter', true)}\""
+            // R8: remove código e recursos não usados, otimiza e ofusca.
+            minifyEnabled = true
+            shrinkResources = true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             signingConfig signingConfigs.config
         }
     }
-
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
-    }
     namespace 'com.tiagohs.cinema_history'
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    // Gera o locales_config a partir das pastas values-* (pt-BR, es, en-US padrão):
+    // habilita o seletor de idioma do app no Android 13+.
+    androidResources {
+        generateLocaleConfig = true
+        // Mantém só os idiomas do app (remove traduções de bibliotecas em outros idiomas).
+        localeFilters += ["en", "es", "pt", "pt-rBR"]
+    }
 }
 
 dependencies {
@@ -72,20 +103,22 @@ dependencies {
 
     def dependencies = rootProject.ext.dependencies
 
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    implementation platform(dependencies.firebaseBom)
 
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    
     // Android Core / Material
     implementation dependencies.appcompat
     implementation dependencies.androidxCore
     implementation dependencies.constrantlayout
     implementation dependencies.androidMaterial
     implementation dependencies.browser
+    // WorkManager atualizado (o play-services-ads traz a 2.7.0, com Room antigo sem regras para o R8 full mode)
+    implementation dependencies.workRuntime
+    implementation dependencies.recyclerview // ConcatAdapter (anúncios nativos nas listas)
 
     // Components and Tools
-    implementation dependencies.customTabs
     implementation dependencies.betterLinkMovement
-    implementation dependencies.circleProgressAd
     implementation dependencies.constrantlayout
     implementation dependencies.overflowPager
     implementation dependencies.imageViewer
@@ -96,7 +129,6 @@ dependencies {
     implementation dependencies.indicator_fast_scroll
 
     // Tools
-    implementation dependencies.volley
     implementation dependencies.gson
     implementation dependencies.timber
     implementation dependencies.javaxAnnotation
@@ -104,28 +136,27 @@ dependencies {
     // Glide
     implementation dependencies.glide
     implementation dependencies.glide_transformations
-    kapt dependencies.glideCompiler
-    kapt dependencies.lifecycleCompiler
 
     // Firebase
     implementation dependencies.firebaseStorage
+    implementation dependencies.firebaseRemoteConfig
+
+    // Anúncios (AdMob) + consentimento (UMP)
+    implementation dependencies.playServicesAds
+    implementation dependencies.ump
     implementation dependencies.firebaseAnalytics
     implementation dependencies.firebaseUiStorage
     implementation dependencies.firebaseCrashlytics
-    implementation dependencies.firebaseDynamicLinks
 
     // Preference
     implementation dependencies.preference
     implementation dependencies.preferenceKtx
 
     // Picasso
-    implementation dependencies.picasso
-    implementation dependencies.picassoTransformations
 
     // Dagger
     implementation dependencies.dagger
-    annotationProcessor dependencies.daggerCompiler
-    kapt dependencies.daggerCompilerKtx
+    ksp dependencies.daggerCompiler
 
     // Rx
     implementation dependencies.rxAndroid
@@ -134,7 +165,6 @@ dependencies {
 
     // Retrofit
     implementation dependencies.retrofit2
-    implementation dependencies.retrofit2JacksonConverter
     implementation dependencies.retrofit2GsonConverter
     implementation dependencies.retrofit2RxJavaAdapter
 
@@ -144,6 +174,12 @@ dependencies {
 
     // Test Tools
     testImplementation dependencies.junit
-    implementation dependencies.testRunner
-    implementation dependencies.espresso
+    androidTestImplementation dependencies.testRunner
+    androidTestImplementation dependencies.espresso
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
 }

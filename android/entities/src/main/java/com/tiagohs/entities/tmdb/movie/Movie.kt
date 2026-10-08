@@ -5,6 +5,7 @@ import com.tiagohs.entities.dto.MovieFilmographyDTO
 import com.tiagohs.entities.omdb.OMDBResult
 import com.tiagohs.entities.tmdb.ExternalIds
 import com.tiagohs.entities.tmdb.Image
+import com.tiagohs.entities.tmdb.Translation
 import com.tiagohs.entities.tmdb.TranslationMovieData
 import com.tiagohs.entities.tmdb.TranslationsResult
 import java.io.Serializable
@@ -66,23 +67,12 @@ data class Movie(
         this.allImages = allImages
     }
 
+    /** Título no idioma do app. [appLanguage] é uma tag como "pt-BR", "en-US" ou "es-MX". */
     fun getMovieTitleFromAppLanguage(appLanguage: String): String {
-        val translations = translations?.translations ?: emptyList()
-        val originalLanguage = originalLanguage
+        val translated = findTranslation(appLanguage) { it.data?.title }
+        if (!translated.isNullOrBlank()) return translated
 
-        val portugueseTitle =
-            translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.title
-        if (!portugueseTitle.isNullOrBlank() && appLanguage == "Português Brasil") {
-            return portugueseTitle
-        }
-
-        val englishTitle =
-            translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.title
-        if (!englishTitle.isNullOrBlank() && appLanguage == "Inglês") {
-            return englishTitle
-        }
-
-        val originalTitle = translations.find { it.iso_639_1 == originalLanguage }?.data?.title
+        val originalTitle = translations?.translations?.find { it.iso_639_1 == originalLanguage }?.data?.title
         if (!originalTitle.isNullOrBlank()) {
             return originalTitle
         }
@@ -90,28 +80,29 @@ data class Movie(
         return title ?: originalTitle ?: ""
     }
 
+    /** Sinopse no idioma do app. [appLanguage] é uma tag como "pt-BR", "en-US" ou "es-MX". */
     fun getMovieSummaryFromAppLanguage(defaultSummary: String, appLanguage: String): String {
-        val translations = translations?.translations ?: emptyList()
-        val originalLanguage = originalLanguage
-
-        val portugueseOverview =
-            translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
-        if (!portugueseOverview.isNullOrBlank() && appLanguage == "Português Brasil") {
-            return portugueseOverview
-        }
-
-        val englishOverview =
-            translations.find { it.iso_639_1 == "en" && it.iso_3166_1 == "US" }?.data?.overview
-        if (!englishOverview.isNullOrBlank() && appLanguage == "Inglês") {
-            return englishOverview
-        }
+        val translated = findTranslation(appLanguage) { it.data?.overview }
+        if (!translated.isNullOrBlank()) return translated
 
         val originalOverview =
-            translations.find { it.iso_639_1 == originalLanguage }?.data?.overview
+            translations?.translations?.find { it.iso_639_1 == originalLanguage }?.data?.overview
         if (!originalOverview.isNullOrBlank()) {
             return originalOverview
         }
 
         return originalLanguage ?: defaultSummary
+    }
+
+    /** Procura a tradução exata (idioma + país) e, se não houver, qualquer país do mesmo idioma. */
+    private fun findTranslation(languageTag: String, field: (Translation<TranslationMovieData>) -> String?): String? {
+        val all = translations?.translations ?: return null
+        val language = languageTag.substringBefore('-')
+        val country = languageTag.substringAfter('-', "")
+
+        val exact = all.find { it.iso_639_1 == language && it.iso_3166_1 == country }?.let(field)
+        if (!exact.isNullOrBlank()) return exact
+
+        return all.filter { it.iso_639_1 == language }.firstNotNullOfOrNull { t -> field(t)?.takeIf { it.isNotBlank() } }
     }
 }

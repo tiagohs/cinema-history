@@ -59,12 +59,16 @@ data class Person (
         allImages.addAll(taggedImages?.results ?: emptyList())
     }
 
-    fun setupPersonSummmary() {
+    /** Biografia no idioma do app ([languageTag] como "pt-BR"), depois inglês, depois a primeira disponível. */
+    fun setupPersonSummmary(languageTag: String = "pt-BR") {
         val translations = translations?.translations ?: emptyList()
+        val language = languageTag.substringBefore('-')
+        val country = languageTag.substringAfter('-', "")
 
-        val portugueseOverview = translations.find { it.iso_639_1 == "pt" && it.iso_3166_1 == "BR" }?.data?.overview
-        if (!portugueseOverview.isNullOrBlank()) {
-            biography = portugueseOverview
+        val preferred = translations.find { it.iso_639_1 == language && it.iso_3166_1 == country }?.data?.overview
+            ?: translations.find { it.iso_639_1 == language && !it.data?.overview.isNullOrBlank() }?.data?.overview
+        if (!preferred.isNullOrBlank()) {
+            biography = preferred
             return
         }
 

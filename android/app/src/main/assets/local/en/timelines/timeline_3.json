@@ -1,0 +1,482 @@
+{
+  "id": 2,
+  "color": "md_orange_500",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "The History<br/>of Cinema:<br/>1940 to 1959",
+      "page_title": "1940 to 1959",
+      "coming_soon": false,
+      "previous": "1930 to 1939",
+      "next": "1960 to 1969"
+    },
+    {
+      "type": "item",
+      "year": "19\n40",
+      "title": "Challenging a Society",
+      "description": "In 1940, <a href=\"https://_{type: 'screen', 'id': 11498, 'screen_type': person}\">Hattie McDaniel</a> (1893-1952) wins the Oscar for Best Supporting Actress for <a href=\"https://_{type: 'screen', 'id': 770, 'screen_type': movie}\">Gone with the Wind</a> (1939), becoming the first Black actress in history to win an Oscar. When the film was released, she was barred from attending the premiere; at the awards ceremony, she was not allowed to sit at the same table as her castmates, sitting in the kitchen with the staff of the time; she was relegated to maid roles by white people and rejected by Black people, who did not understand her acceptance of the stereotype to which Hollywood had reduced her race.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_hattie_mcdaniel.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n40",
+      "title": "Bugs Bunny",
+      "description": "Amid a wave of classic short films, <a href=\"https://_{type: 'screen', 'id': 144904, 'screen_type': movie}\">A Wild Hare</a> (1940) is released, featuring the first appearance of Bugs Bunny.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_a_wild_hare.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n40",
+      "title": "The Great Dictator",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 914, 'screen_type': movie}\">The Great Dictator</a> (1940) is a comic attack on Hitler. The film is banned in Germany, although Hitler confiscated a print and screened it twice.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_great_dictator.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n41",
+      "title": "Citizen Kane",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 15, 'screen_type': movie}\">Citizen Kane</a> (1941) is released. Unable to prevent the film from being made, <i>William Randolph Hearst</i> tries to discredit it.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_citizen_kane.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n41",
+      "title": "The Beginning of Film Noir",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 6593, 'screen_type': person}\">John Huston</a>'s (1906-1987) version of <a href=\"https://_{type: 'screen', 'id': 963, 'screen_type': movie}\">The Maltese Falcon</a> (1941) is released. It is now recognized as the first distinctly <i>noir</i> film.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_maltese_falcon.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n43",
+      "title": "Hitchcock",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 2636, 'screen_type': person}\">Alfred Hitchcock</a>'s (1899-1980) first film <i>noir</i> is <a href=\"https://_{type: 'screen', 'id': 21734, 'screen_type': movie}\">Shadow of a Doubt</a> (1943).",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_alfred_hitchcock.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n43",
+      "title": "The Beginning of Italian Neorealism",
+      "description": "Considered one of the first Neorealist films, <a href=\"https://_{type: 'screen', 'id': 5155, 'screen_type': movie}\">Ossessione</a> (Obsession, 1943), directed by <a href=\"https://_{type: 'screen', 'id': 15127, 'screen_type': person}\">Luchino Visconti</a> (1906-1976), falls into the clutches of Italy's Fascist censors, who destroy the film's negative. But Visconti saves a print.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ossessione.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n44",
+      "title": "The Revival of Swedish Cinema",
+      "description": "In Sweden, <a href=\"https://_{type: 'screen', 'id': 48566, 'screen_type': person}\">Alf Sjöberg</a> (1903-1980) directs <a href=\"https://_{type: 'screen', 'id': 51144, 'screen_type': movie}\">Hets</a> (Torment, 1944), from a screenplay by <a href=\"https://_{type: 'screen', 'id': 6648, 'screen_type': person}\">Ingmar Bergman</a> (1918-2007); its international success sparks the revival of Swedish cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_torment_1944.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n45",
+      "title": "Censorship Code in Japan",
+      "description": "During the American occupation of Japan, a censorship code is created to impose liberal and democratic values on Japanese cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_japain_censorship.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n46",
+      "title": "The Emergence of the Term 'Noir'",
+      "description": "Hollywood films are shown in Paris and called \"<strong>noir</strong>\". <a href=\"https://_{type: 'screen', 'id': 16090, 'screen_type': movie}\">The Blue Dahlia</a> (1946) and <a href=\"https://_{type: 'screen', 'id': 25736, 'screen_type': movie}\">The Postman Always Rings Twice</a> (1946) are released, as is <a href=\"https://_{type: 'screen', 'id': 910, 'screen_type': movie}\">The Big Sleep</a> (1946).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_blue_dahlia.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n46",
+      "title": "Golden Years of American Cinema",
+      "description": "Audiences pack American movie theaters like never before. <a href=\"https://_{type: 'screen', 'id': 887, 'screen_type': movie}\">The Best Years of Our Lives</a> (1946) dominates the Oscars and the Golden Globes.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_best_years_of_our_lives.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n47",
+      "title": "House Un-American Activities Committee",
+      "description": "<strong>The House Un-American Activities Committee</strong> arrives in Los Angeles. Influential people in the industry condemn McCarthyism and the Hollywood blacklist.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_house_un_american_activities_Committee.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n47",
+      "title": "Marilyn Monroe",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 3149, 'screen_type': person}\">Marilyn Monroe</a> (1926-1962) makes her film debut in <a href=\"https://_{type: 'screen', 'id': 87667, 'screen_type': movie}\">Dangerous Years</a> (1947).",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_marilyn_monroe.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n48",
+      "title": "The End of the Golden Age",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 13980, 'screen_type': person}\">Vincente Minnelli</a> (1903-1986) directs <a href=\"https://_{type: 'screen', 'id': 35032, 'screen_type': movie}\">The Pirate</a> (1948). That year would later be regarded as the last of Hollywood's Golden Age.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_pirate.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n48",
+      "title": "The Closest Thing to Neorealism",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 15127, 'screen_type': person}\">Luchino Visconti</a> (1906-1976) directs <a href=\"https://_{type: 'screen', 'id': 43445, 'screen_type': movie}\">La Terra Trema</a> (1948). Its style comes close to what is now considered Neorealism.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_la_terra_trema.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n49",
+      "title": "The End of Classic Gangster Films",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 8823, 'screen_type': person}\">Raoul Walsh</a> (1887-1980) directs <a href=\"https://_{type: 'screen', 'id': 15794, 'screen_type': movie}\">White Heat</a> (1949), which marks the end of the classic gangster films.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_white_heat .webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n49",
+      "title": "The Nationalization of Cinema in China",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1112331, 'screen_type': person}\">Junli Zheng</a> (1911-1969) directs <a href=\"https://_{type: 'screen', 'id': 100914, 'screen_type': movie}\">Wuya yu maque</a> (Crows and Sparrows, 1949) in Shanghai. That same year, the dictator Mao nationalizes the Chinese film industry.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_wuya_yu_maque.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n50",
+      "title": "New Technologies",
+      "description": "Hollywood introduces the world to <strong>widescreen</strong> and new tricks, such as <strong>3D</strong>, to compete with a growing new medium: television.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_widescreen.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n50",
+      "title": "Rashomon",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 548, 'screen_type': movie}\">Rashomon</a> (1950), by <a href=\"https://_{type: 'screen', 'id': 5026, 'screen_type': person}\">Akira Kurosawa</a> (1910-1998), presents four different versions of the story of a crime, in a format that would go on to be widely imitated in cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_rashomon.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n51",
+      "title": "Cold War Paranoia ",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 828, 'screen_type': movie}\">The Day the Earth Stood Still</a> (1951) is the first of many science fiction films reflecting the fears stirred up by the Cold War.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_day_the_earth_stood_still.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n52",
+      "title": "Singin' in the Rain",
+      "description": "Donen and Gene Kelly direct <a href=\"https://_{type: 'screen', 'id': 872, 'screen_type': movie}\">Singin' in the Rain</a> (1952) for producer <i>Arthur Freed</i>'s unit at MGM, at the height of the studio's creativity.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_dancando_na_chuva.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n53",
+      "title": "Ida Lupino",
+      "description": "Actress Ida Lupino becomes the first woman to direct a film <i>noir</i>, <a href=\"https://_{type: 'screen', 'id': 41462, 'screen_type': movie}\">The Hitch-Hiker</a> (1953).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ida_lupino.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n53",
+      "title": "The Leather-Jacketed Rebel",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 28696, 'screen_type': movie}\">The Wild One</a> (1953) immortalizes <a href=\"https://_{type: 'screen', 'id': 3084, 'screen_type': person}\">Marlon Brando</a> (1924-2004) as the leather-jacketed rebel.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_marlon_brando.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n54",
+      "title": "Seven Samurai",
+      "description": "Japan's Toho studio releases the first of the <i>Godzilla</i> monster movies. <a href=\"https://_{type: 'screen', 'id': 5026, 'screen_type': person}\">Akira Kurosawa</a> (1910-1998) redefines the Western with <a href=\"https://_{type: 'screen', 'id': 346, 'screen_type': movie}\">Shichinin no Samurai</a> (Seven Samurai, 1954).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_akira_kurosawa.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n55",
+      "title": "Finnish Cinema",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 48035, 'screen_type': movie}\">Ordet</a> (1955), by <a href=\"https://_{type: 'screen', 'id': 11572, 'screen_type': person}\">Carl Dreyer</a> (1889-1968), is probably the greatest Danish film of the 1950s. <a href=\"https://_{type: 'screen', 'id': 36439, 'screen_type': movie}\">Tuntematon sotilas</a> (The Unknown Soldier, 1955), by <a href=\"https://_{type: 'screen', 'id': 150977, 'screen_type': person}\">Edvin Laine</a> (1905-1989), is released – the biggest hit in Finnish cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_a_palavra.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n55",
+      "title": "James Dean",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 220, 'screen_type': movie}\">East of Eden</a> (1955) and <a href=\"https://_{type: 'screen', 'id': 221, 'screen_type': movie}\">Rebel Without a Cause</a> (1955) are released. <a href=\"https://_{type: 'screen', 'id': 2749, 'screen_type': person}\">James Dean</a> (1931-1955) dies in a car crash at age 24, becoming immortalized on screen.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_james_dean.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n56",
+      "title": "Elvis Presley",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 21457, 'screen_type': person}\">Elvis Presley</a> (1935-1977) releases his first hit, \"<i>Heartbreak Hotel</i>,\" and appears on national television for the first time.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_elvis_plesley.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n56",
+      "title": "References",
+      "description": "Hollywood removes racial slurs from films and allows references to drugs, abortion, and prostitution.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_shirley_temple_blackface.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n57",
+      "title": "Norwegian Cinema",
+      "description": "Bergman directs <a href=\"https://_{type: 'screen', 'id': 490, 'screen_type': movie}\">Det sjunde inseglet</a> (The Seventh Seal, 1957) and <a href=\"https://_{type: 'screen', 'id': 614, 'screen_type': movie}\">Smultronstället</a> (Wild Strawberries, 1957). <a href=\"https://_{type: 'screen', 'id': 20372, 'screen_type': movie}\">Ni Liv</a> (Nine Lives, 1957), by <a href=\"https://_{type: 'screen', 'id': 224783, 'screen_type': person}\">Arne Skouen</a> (1913-2003), draws international attention to Norwegian cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_o_setimo_selo.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n58",
+      "title": "French New Wave",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 5562, 'screen_type': movie}\">Le Beau Serge</a> (1958) is released and is considered the first film of the <strong>French New Wave</strong> movement.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_le_beau_serge.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n59",
+      "title": "The Great Epics",
+      "description": "The Oscar record-holder <a href=\"https://_{type: 'screen', 'id': 665, 'screen_type': movie}\">Ben-Hur</a> (1959) marks the apotheosis of epic films. Rawhide, starring <a href=\"https://_{type: 'screen', 'id': 190, 'screen_type': person}\">Clint Eastwood</a> (b. 1930), premieres on CBS.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ben_hur.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n59",
+      "title": "Angry Young Men",
+      "description": "<a href=\"https://_{type: 'screen', 'id': , 'screen_type': movie}\">Look Back in Anger</a> (1959) is released. The film ushers in the era of the \"<i>angry young men</i>\" in British cinema.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_look_back.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n59",
+      "title": "The First Influences on James Bond",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 213, 'screen_type': movie}\">North by Northwest</a> (1959), by <a href=\"https://_{type: 'screen', 'id': 2636, 'screen_type': person}\">Alfred Hitchcock</a> (1899-1980), is released, a landmark of the genre that influenced the early <strong>James Bond</strong> films.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_north_by_northwest.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "footer",
+      "previous": "1930 to 1939",
+      "next": "1960 to 1969"
+    }
+  ]
+}

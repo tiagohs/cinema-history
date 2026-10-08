@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters.page
 
 import android.content.ActivityNotFoundException
+import com.tiagohs.cinema_history.databinding.AdapterPageTwitterBinding
 import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
@@ -11,16 +12,14 @@ import android.webkit.WebChromeClient
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import com.tiagohs.cinema_history.R
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentTwitter
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.show
-import kotlinx.android.synthetic.main.adapter_page_twitter.*
 
 class TwitterViewHolder(
-    val view: View
-) : BasePageViewHolder(view) {
+    private val binding: AdapterPageTwitterBinding
+) : BasePageViewHolder(binding) {
 
     override fun bind(item: Content, position: Int) {
         super.bind(item, position)
@@ -28,18 +27,18 @@ class TwitterViewHolder(
 
         handleInWebiew(contentTwitter)
 
-        setupContentFooterInformation(contentTwitter.information)
+        setupContentFooterInformation(binding.footerContainer, contentTwitter.information)
     }
 
     private fun handleInWebiew(contentTwitter: ContentTwitter) {
         val value = contentTwitter.twitterHtml
 
-        webView.apply {
-            loadingProgress.show()
+        binding.webView.apply {
+            binding.loadingProgress.show()
 
             visibility = View.INVISIBLE
 
-            webView.webChromeClient = WebChromeClient()
+            binding.webView.webChromeClient = WebChromeClient()
 
             settings.apply {
                 javaScriptEnabled = true
@@ -57,12 +56,12 @@ class TwitterViewHolder(
 
             setOnTouchListener { _: View?, event: MotionEvent -> event.action == MotionEvent.ACTION_MOVE }
 
-            webView.webViewClient = object : WebViewClient() {
+            binding.webView.webViewClient = object : WebViewClient() {
                 override fun onPageFinished(view: WebView?, url: String?) {
 
                     Handler().postDelayed({
-                        loadingProgress.hide()
-                        webView?.visibility = View.VISIBLE
+                        binding.loadingProgress.hide()
+                        binding.webView?.visibility = View.VISIBLE
                     }, 3000)
                 }
 
@@ -88,13 +87,9 @@ class TwitterViewHolder(
         }
 
         try {
-            webView.loadDataWithBaseURL("https://twitter.com", value, "text/html", "utf-8", null)
+            binding.webView.loadDataWithBaseURL("https://twitter.com", value, "text/html", "utf-8", null)
         } catch (e: Exception) {
             e.printStackTrace()
         }
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_page_twitter
     }
 }

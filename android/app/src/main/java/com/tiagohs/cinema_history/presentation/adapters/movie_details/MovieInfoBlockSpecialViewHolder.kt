@@ -1,6 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters.movie_details
 
-import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterMovieInfoBlockSpecialBinding
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.extensions.setupLinkableTextView
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
@@ -15,21 +15,19 @@ import com.tiagohs.entities.movie_info.MovieInfo
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.ColorUtils
-import kotlinx.android.synthetic.main.view_block_special.*
-import kotlinx.android.synthetic.main.view_line_five_colors.*
 
 class MovieInfoBlockSpecialViewHolder(
-    view: View
-) : BaseViewHolder<MovieInfo>(view) {
+    private val binding: AdapterMovieInfoBlockSpecialBinding
+) : BaseViewHolder<MovieInfo>(binding) {
 
     override fun bind(item: MovieInfo, position: Int) {
         super.bind(item, position)
         val contentBlockSpecial = item.movie.extraInfo?.blockSpecial ?: return
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val colorAsset = ColorUtils.getRandomColorAssets()
 
-        blockSpecialDescription.setResourceStyledText(contentBlockSpecial.description)
-        blockSpecialDescription.setupLinkableTextView(context)
+        binding.blockSpecialContainerCard.blockSpecialDescription.setResourceStyledText(contentBlockSpecial.description)
+        binding.blockSpecialContainerCard.blockSpecialDescription.setupLinkableTextView(context)
 
         bindMoviePoster(item.movie)
         bindTitle(contentBlockSpecial)
@@ -43,8 +41,8 @@ class MovieInfoBlockSpecialViewHolder(
             return
         }
 
-        blockSpecialClickHere.hide()
-        blockSpecialContainer.setOnClickListener(null)
+        binding.blockSpecialContainerCard.blockSpecialClickHere.hide()
+        binding.blockSpecialContainerCard.blockSpecialContainer.setOnClickListener(null)
     }
 
     private fun bindMoviePoster(movie: Movie) {
@@ -53,69 +51,65 @@ class MovieInfoBlockSpecialViewHolder(
         if (posterPath != null) {
             val imageUrl = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
             val imageStyle = ImageStyle(scaleType = "center_crop")
-            val image = Image(ImageType.ONLINE, imageUrl, imageStyle = imageStyle, contentDescription = containerView.context.getString(R.string.movie_poster_description, movie.originalTitle))
+            val image = Image(ImageType.ONLINE, imageUrl, imageStyle = imageStyle, contentDescription = itemView.context.getString(R.string.movie_poster_description, movie.originalTitle))
 
-            blockSpecialImage.show()
-            blockSpecialImage.loadImage(image, null)
+            binding.blockSpecialContainerCard.blockSpecialImage.show()
+            binding.blockSpecialContainerCard.blockSpecialImage.loadImage(image, null)
             return
         }
 
-        blockSpecialImage.hide()
+        binding.blockSpecialContainerCard.blockSpecialImage.hide()
     }
 
     private fun bindTitle(contentBlockSpecial: ContentBlockSpecial) {
         val title = contentBlockSpecial.title
 
         if (title != null) {
-            blockSpecialTitle.show()
-            blockSpecialTitle.setResourceStyledText(title)
+            binding.blockSpecialContainerCard.blockSpecialTitle.show()
+            binding.blockSpecialContainerCard.blockSpecialTitle.setResourceStyledText(title)
             return
         }
 
-        blockSpecialTitle.hide()
+        binding.blockSpecialContainerCard.blockSpecialTitle.hide()
     }
 
     private fun bindCredits(contentBlockSpecial: ContentBlockSpecial) {
         val credits = contentBlockSpecial.credits
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
 
         if (credits != null) {
-            blockSpecialCredits.show()
-            blockSpecialCredits.setResourceStyledText(credits)
-            blockSpecialCredits.setupLinkableTextView(context)
+            binding.blockSpecialContainerCard.blockSpecialCredits.show()
+            binding.blockSpecialContainerCard.blockSpecialCredits.setResourceStyledText(credits)
+            binding.blockSpecialContainerCard.blockSpecialCredits.setupLinkableTextView(context)
             return
         }
 
-        blockSpecialCredits.hide()
+        binding.blockSpecialContainerCard.blockSpecialCredits.hide()
     }
 
     private fun bindClick(click: Click) {
-        blockSpecialClickHere.show()
-        blockSpecialClickHere.setResourceText(
-            click.buttonText ?: containerView.context.getString(R.string.click_here_to_go)
+        binding.blockSpecialContainerCard.blockSpecialClickHere.show()
+        binding.blockSpecialContainerCard.blockSpecialClickHere.setResourceText(
+            click.buttonText ?: itemView.context.getString(R.string.click_here_to_go)
         )
     }
 
     private fun bindColor(colorAsset: ColorAsset) {
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val backgroundColor = context.getResourceColor("md_${colorAsset.colorName}_500")
         val linkColor = context.getResourceColor("md_${colorAsset.colorName}_900")
 
-        blockSpecialContainerCard.setCardBackgroundColor(backgroundColor)
-        blockSpecialTitle.setResourceTextColor(colorAsset.textColorName)
-        blockSpecialDescription.setResourceTextColor(colorAsset.textColorName)
-        blockSpecialDescription.setLinkTextColor(linkColor)
-        blockSpecialClickHere.setResourceTextColor(colorAsset.textColorName)
-        blockSpecialCredits.setResourceTextColor(colorAsset.textColorName)
+        binding.blockSpecialContainerCard.root.setCardBackgroundColor(backgroundColor)
+        binding.blockSpecialContainerCard.blockSpecialTitle.setResourceTextColor(colorAsset.textColorName)
+        binding.blockSpecialContainerCard.blockSpecialDescription.setResourceTextColor(colorAsset.textColorName)
+        binding.blockSpecialContainerCard.blockSpecialDescription.setLinkTextColor(linkColor)
+        binding.blockSpecialContainerCard.blockSpecialClickHere.setResourceTextColor(colorAsset.textColorName)
+        binding.blockSpecialContainerCard.blockSpecialCredits.setResourceTextColor(colorAsset.textColorName)
 
-        color1.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
-        color2.setResourceBackgroundColor("md_${colorAsset.colorName}_600")
-        color3.setResourceBackgroundColor("md_${colorAsset.colorName}_700")
-        color4.setResourceBackgroundColor("md_${colorAsset.colorName}_800")
-        color5.setResourceBackgroundColor("md_${colorAsset.colorName}_900")
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_movie_info_block_special
+        binding.blockSpecialContainerCard.viewLineFiveColors.color1.setResourceBackgroundColor("md_${colorAsset.colorName}_500")
+        binding.blockSpecialContainerCard.viewLineFiveColors.color2.setResourceBackgroundColor("md_${colorAsset.colorName}_600")
+        binding.blockSpecialContainerCard.viewLineFiveColors.color3.setResourceBackgroundColor("md_${colorAsset.colorName}_700")
+        binding.blockSpecialContainerCard.viewLineFiveColors.color4.setResourceBackgroundColor("md_${colorAsset.colorName}_800")
+        binding.blockSpecialContainerCard.viewLineFiveColors.color5.setResourceBackgroundColor("md_${colorAsset.colorName}_900")
     }
 }

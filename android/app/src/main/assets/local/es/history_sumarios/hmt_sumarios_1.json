@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "title": "Visionarios",
+    "description": "Los primeros inventores, soñadores y artistas. Desde la invención del kinetoscopio hasta la primera exhibición pública conocida de una película ante un público que pagó su entrada, a cargo de los hermanos Lumière.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_train",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Las primeras épicas",
+    "description": "Las épicas son conocidas por sus cuantiosos presupuestos, escenarios grandiosos, elencos enormes, mirada abarcadora y, a veces, por sus efectos especiales. En los inicios del cine, la tecnología rudimentaria limitaba la capacidad de producción de los cineastas; sin embargo, a medida que esta se desarrolló, los directores pudieron dar rienda suelta a su imaginación.",
+    "image": {
+      "image_type": "local",
+      "url": "img_cabiria",
+      "style": {
+        "scale_type": "center_crop",
+        "height": 250,
+        "resize": {
+          "height": 250
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Heroínas y directoras del cine",
+    "description": "El surgimiento del término femme fatale; la popularización del término “It Girl” y Alice Guy-Blaché, una de las pioneras más importantes del cine, aunque durante mucho tiempo haya sido olvidada por la historia. ",
+    "image": {
+      "image_type": "local",
+      "url": "img_alice",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Race Films: pioneros afroamericanos",
+    "description": "Hombres y mujeres que desafiaron los estereotipos y el racismo. Directores y directoras, productores y productoras, actores y actrices que creían en la fuerza de su comunidad, se convirtieron en pioneros y produjeron grandes películas, demostrando que, si trabajamos duro, no hay obstáculo que no podamos superar.",
+    "image": {
+      "image_type": "local",
+      "url": "img_oscar_micheaux",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "El cine fantástico y sobrenatural",
+    "description": "Desde el comienzo de la evolución del cine, algunos pioneros percibieron el potencial del séptimo arte para presentar lo misterioso, lo aterrador, lo fantástico y lo sobrenatural. Cineastas como F. W. Murnau, Georges Méliès y Benjamin Christensen llevaron al cine obras maestras que influyeron en las generaciones futuras.",
+    "image": {
+      "image_type": "local",
+      "url": "img_nosferatus",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "La comedia muda",
+    "description": "Uno de los primeros y más populares géneros del cine, la comedia está presente en él desde el principio. Nombres como Charlie Chaplin, Harold Lloyd y Buster Keaton quedaron marcados para siempre en la historia e influyeron en los futuros comediantes de la pantalla grande.",
+    "image": {
+      "image_type": "local",
+      "url": "img_harold_clock",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "La \"Edad de Oro\" del cine mudo",
+    "description": "Durante ese tiempo, la inversión se duplicó. Surgieron grandes estudios, que invertían cada vez más en la producción de películas, y grandes directores realizaron filmes memorables.",
+    "image": {
+      "image_type": "local",
+      "url": "img_fausto",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "Surrealismo en la pantalla",
+    "description": "La realidad racional abre paso a la realidad superior de los sueños y del deseo sin censura. ",
+    "image": {
+      "image_type": "local",
+      "url": "img_cao_andaluz",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "El inicio de la era del cine hablado",
+    "description": "El 23 de octubre de 1927, “You Ain't Heard Nothin' Yet” se escucha por primera vez en una sala de cine, y comienza la era del cine sonoro. De repente, la imagen ya no era lo principal.",
+    "image": {
+      "image_type": "local",
+      "url": "img_jazz_singer",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

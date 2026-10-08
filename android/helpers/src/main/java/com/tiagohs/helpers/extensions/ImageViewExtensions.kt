@@ -24,7 +24,7 @@ import com.tiagohs.entities.image.ImageStyle
 import com.tiagohs.entities.enums.ImageScaleType
 import com.tiagohs.entities.enums.ImageType
 import com.tiagohs.helpers.R
-import com.tiagohs.helpers.tools.GlideApp
+
 
 fun ImageView?.setupPreview(image: Image, list: List<Image> = emptyList()) {
     this ?: return
@@ -100,7 +100,7 @@ fun ImageView.loadImage(
     transform: Transformation<Bitmap>? = null,
     onFinished: (() -> Unit)? = null) {
 
-    val glide = GlideApp.with(context)
+    val glide = Glide.with(context)
     val glideRequest = when (image.imageType) {
         ImageType.ONLINE -> {
             glide.load(image.url)
@@ -146,11 +146,11 @@ fun ImageView.loadImage(
     glideRequest.diskCacheStrategy(DiskCacheStrategy.ALL)
     glideRequest.transition(DrawableTransitionOptions.withCrossFade(DrawableCrossFadeFactory.Builder().setCrossFadeEnabled(true).build()))
     glideRequest.listener(object : RequestListener<Drawable> {
-        override fun onLoadFailed( e: GlideException?, model: Any?, target: Target<Drawable>?, isFirstResource: Boolean): Boolean {
+        override fun onLoadFailed(e: GlideException?, model: Any?, target: Target<Drawable>, isFirstResource: Boolean): Boolean {
             onFinished?.invoke()
             return false
         }
-        override fun onResourceReady( resource: Drawable?, model: Any?, target: Target<Drawable>?, dataSource: DataSource?, isFirstResource: Boolean): Boolean {
+        override fun onResourceReady(resource: Drawable, model: Any, target: Target<Drawable>?, dataSource: DataSource, isFirstResource: Boolean): Boolean {
             onFinished?.invoke()
             return false
         }

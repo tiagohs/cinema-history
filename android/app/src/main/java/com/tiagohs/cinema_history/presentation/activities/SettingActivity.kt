@@ -1,22 +1,23 @@
 package com.tiagohs.cinema_history.presentation.activities
 
 import android.content.Context
+import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ActivitySettingBinding
 import android.content.Intent
 import android.os.Bundle
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.cinema_history.presentation.fragments.SettingPreferenceFragment
 import com.tiagohs.helpers.extensions.startFragment
-import kotlinx.android.synthetic.main.activity_setting.*
 
-class SettingActivity: BaseActivity() {
-    override fun onGetLayoutViewId(): Int = R.layout.activity_setting
+class SettingActivity: BaseActivity<ActivitySettingBinding>() {
+    override fun inflateBinding(inflater: LayoutInflater) = ActivitySettingBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setupToolbar(toolbar, displayShowTitleEnabled = true)
+        setupToolbar(binding.toolbar, displayShowTitleEnabled = true)
 
         startFragment(R.id.container, SettingPreferenceFragment())
     }

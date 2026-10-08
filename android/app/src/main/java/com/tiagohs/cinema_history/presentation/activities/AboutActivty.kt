@@ -23,6 +23,7 @@ class AboutActivty : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(setupContentView())
+        com.tiagohs.helpers.edgetoedge.SystemBarsInsets.apply(this)
 
         supportActionBar?.setDisplayShowTitleEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

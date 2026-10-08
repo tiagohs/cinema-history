@@ -40,7 +40,6 @@
     <string name="activity_glossary">Glossário</string>
     <string name="language_title">Idioma</string>
     <string name="language_app_title">Idioma do conteúdo História do Cinema</string>
-    <string name="language_movie_title">Idioma do Filme</string>
     <string name="general_title">Geral</string>
     <string name="references_bibliographic_title">Referência Bibliográfica</string>
     <string name="references_bibliographic_description">Livros, links, artigos. A referência utilizada no desenvolvimento do conteúdo.</string>
@@ -121,4 +120,24 @@
     <string name="movie_company_image_description">Logo da Empresa %1s.</string>
     <string name="person_photo_description">Foto de %1s.</string>
 
+
+    <!-- Detalhes do filme: links para os tópicos do app -->
+    <string name="movie_link_mil_movies_subtitle">O filme %1$s faz parte da lista</string>
+    <string name="movie_link_mil_movies_title">1001 Filmes para ver antes de morrer %1$s</string>
+    <string name="movie_link_history_subtitle">Leia mais sobre o período em que %1$s foi lançado</string>
+    <string name="movie_link_history_title">A História do cinema %1$s</string>
+
+    <!-- Referências: rótulos do tipo de mídia (o JSON guarda um código fixo) -->
+    <string name="reference_media_type_book">Livro</string>
+    <string name="reference_media_type_series">Série</string>
+    <string name="reference_media_type_movie">Filme</string>
+    <string name="reference_media_type_youtube">Youtube</string>
+    <string name="language_system">Automático (idioma do aparelho)</string>
+
+    <string name="source_tmdb">Fonte: TMDB</string>
+
+    <!-- Anúncios -->
+    <string name="ad_badge">Anúncio</string>
+    <string name="ad_privacy_title">Privacidade de anúncios</string>
+    <string name="ad_privacy_summary">Revise ou altere suas escolhas de consentimento de anúncios</string>
 </resources>

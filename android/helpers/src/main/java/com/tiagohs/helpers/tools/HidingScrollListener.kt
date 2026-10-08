@@ -31,7 +31,7 @@ class HidingScrollListener(
         }
 
         val layoutManager = recyclerView.layoutManager as? LinearLayoutManager ?: return
-        if (layoutManager.findLastCompletelyVisibleItemPosition() == numberOfItens) {
+        if (layoutManager.findLastCompletelyVisibleItemPosition() >= numberOfItens) {
             callback.onLastItemCompletelyVisible()
         }
 

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "La New Wave británica ",
+    "description": "El movimiento impulsado por un grupo de críticos convertidos en cineastas trajo grandes películas que representaban a la clase trabajadora británica.",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_loneliness_of_the_long_distance_runner",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Cine latinoamericano",
+    "description": "La década de 1960 fue una década fervorosa para el cine latinoamericano, con el Cinema Novo de Brasil en primer plano.",
+    "image": {
+      "image_type": "local",
+      "url": "img_deus_e_o_diabo",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "El Nuevo Hollywood",
+    "description": "Una nueva era llega a Hollywood en los años 1960, con nuevos directores que en el futuro se convertirían en referentes.",
+    "image": {
+      "image_type": "local",
+      "url": "img_dr_fantastico",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Sexo y tabúes en el cine",
+    "description": "La efervescente década de 1960 trajo consigo una nueva actitud frente al sexo, la juventud, las drogas y la libertad personal, que influyó en las artes en general y llevó la censura a su límite.",
+    "image": {
+      "image_type": "local",
+      "url": "img_a_primeira_noite_de_um_homem",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Películas de espionaje",
+    "description": "La década en que el cine de espionaje dio grandes ejemplos, como la serie 007.",
+    "image": {
+      "image_type": "local",
+      "url": "img_007_sean_connery",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "La ciencia ficción en el cine",
+    "description": "Tras una considerable edad de oro, las películas de ciencia ficción alcanzan la madurez en los años 1960.",
+    "image": {
+      "image_type": "local",
+      "url": "img_2001_hal",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "El terror contemporáneo en el cine",
+    "description": "Mucho más que secuencias de sustos y escalofríos, las películas de terror de la década de 1960 usaron muchas veces el género como vehículo para abordar temas más amplios.",
+    "image": {
+      "image_type": "local",
+      "url": "img_psicose",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "Spaghetti western ",
+    "description": "La década en que el western comenzó su renacimiento en Europa.",
+    "image": {
+      "image_type": "local",
+      "url": "img_tres_homens_em_conflito",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

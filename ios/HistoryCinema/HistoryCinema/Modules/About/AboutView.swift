@@ -47,7 +47,7 @@ struct AboutView: View {
                 // Termos e Créditos
                 Section("Termos e Créditos") {
                     AboutLinkItemView(
-                        link: "https://animated-stickers.s3-sa-east-1.amazonaws.com/history_terms.html",
+                        link: "https://website-cb5.pages.dev/cinema-history/termos/",
                         text: "Termos do Aplicativo"
                     )
                     AboutLinkItemView(
@@ -63,7 +63,7 @@ struct AboutView: View {
                         text: "OMDB API Termos de Uso"
                     )
                     AboutLinkItemView(
-                        link: "https://animated-stickers.s3-sa-east-1.amazonaws.com/history_privacy_politics.html",
+                        link: "https://website-cb5.pages.dev/cinema-history/privacidade/",
                         text: "Política de Privacidade"
                     )
                     AboutLinkItemView(

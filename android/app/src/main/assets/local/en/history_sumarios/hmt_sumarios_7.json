@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "The Horror Renaissance",
+    "description": "Social horror conquered the box office with Jordan Peele's Get Out; classic haunted-house and exorcism horror stayed alive with The Conjuring, and psychological horror found new possibilities with The Babadook and The Witch.",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_conjuring",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Superheroes and Shared Universes ",
+    "description": "The decade of superheroes: Disney reigns as owner of Marvel Studios, while Warner, home of DC, fights for its place by releasing new films and building its – troubled – DCEU.",
+    "image": {
+      "image_type": "local",
+      "url": "img_avengers_endgame",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "The Impact of Piracy ",
+    "description": "Piracy peaked in the 2000s, and the 2010s were a period of metamorphosis. We saw the rise of \"Piracy 3.0\", and even with the impact of streaming services, the losses the industry suffers are enormous.",
+    "image": {
+      "image_type": "local",
+      "url": "img_pirate_bay",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Dark Comedy",
+    "description": "Times have changed. Political polarization, political correctness and social problems shaped Hollywood comedy: more cynical, critical and urgent.",
+    "image": {
+      "image_type": "local",
+      "url": "img_parasita",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "The Evolution of Special Effects",
+    "description": "In 2010, David Fincher introduced a new technique for twins on screen played by the same actor. Motion capture took a giant leap with Andy Serkis in the Planet of the Apes franchise, and Disney became home to technological revolutions with The Jungle Book and The Lion King.",
+    "image": {
+      "image_type": "local",
+      "url": "img_cgi_planeta_macacos",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Time's Up",
+    "description": "The movement that changed Hollywood forever.",
+    "image": {
+      "image_type": "local",
+      "url": "img_times_up",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "The Disney Decade",
+    "description": "Star Wars, Pixar films, the Marvel Cinematic Universe, The Simpsons: what do they have in common? Nothing, except that the owner of these gigantic hits is Disney. The 2010s were decisive in making the House of Mouse the owner of the biggest box-office hits in film history.",
+    "image": {
+      "image_type": "local",
+      "url": "img_disney",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "The Age of Reboots and Remakes",
+    "description": "Major studios invest heavily in sequels, remakes and reboots of great titles from the past.",
+    "image": {
+      "image_type": "local",
+      "url": "img_remakes",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "Diversity and Representation",
+    "description": "The 2010s saw new progress in the fight for diversity in film. #OscarsSoWhite denounced the lack of Black nominees at the awards, and the effects of #MeToo helped more women filmmakers gain the recognition they deserve.",
+    "image": {
+      "image_type": "local",
+      "url": "img_moolight_oscar",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "The Streaming Revolution That Changed Hollywood",
+    "description": "As internet streaming became popular, viewing habits changed completely. Now everything is on demand, from hit series to blockbuster movies.",
+    "image": {
+      "image_type": "local",
+      "url": "img_streming_netflix",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "The End of the World at the Movies ",
+    "description": "The end of the world becomes popular at the movies.",
+    "image": {
+      "image_type": "local",
+      "url": "img_interstellar",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

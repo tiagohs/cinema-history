@@ -1,0 +1,718 @@
+{
+  "id": 2,
+  "color": "md_light_blue_500",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "La historia<br/>del cine:<br/>2010 a la actualidad",
+      "page_title": "2010 a la actualidad",
+      "coming_soon": false,
+      "previous": "1990 a 2009"
+    },
+    {
+      "type": "item",
+      "year": "20\n10",
+      "title": "Un buen comienzo",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 510, 'screen_type': person}\">Tim Burton</a> (n. 1958) estrena <a href=\"https://_{type: 'screen', 'id': 12155, 'screen_type': movie}\">Tim Burton's Alice in Wonderland</a> (Alicia en el país de las maravillas, 2010) utilizando la <strong>tecnología 3D</strong>, redescubierta por el público con <a href=\"https://_{type: 'screen', 'id': 19995, 'screen_type': movie}\">Avatar</a> (2009), con <a href=\"https://_{type: 'screen', 'id': 85, 'screen_type': person}\">Johnny Depp</a> (n. 1963) como el <i>Sombrerero Loco</i>. La película sería el inicio de los remakes en <strong>live action</strong> basados en los personajes clásicos de Disney.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_alice_in_wonderland_tim.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n10",
+      "title": "El buen western en su esencia",
+      "description": "El remake de aventuras PG-13 de los <i>hermanos Coen</i>, <a href=\"https://_{type: 'screen', 'id': 44264, 'screen_type': movie}\">True Grit</a> (Temple de acero, 2010), protagonizado por Jeff Bridges, pronto se convirtió en el mayor éxito del dúo de directores y en el western más taquillero desde <a href=\"https://_{type: 'screen', 'id': 8487, 'screen_type': movie}\">Wild Wild West</a> (Wild Wild West: Las aventuras de Jim West, 1999).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_true_grit.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n11",
+      "title": "La evolución de los efectos especiales",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 37799, 'screen_type': movie}\">Rango</a> (2011), un wéstern animado protagonizado por un camaleón / lagarto con la voz de <a href=\"https://_{type: 'screen', 'id': 85, 'screen_type': person}\">Johnny Depp</a> (n-1963), fue el primer largometraje animado generado por la empresa de efectos especiales de <a href=\"https://_{type: 'screen', 'id': 1, 'screen_type': person}\">George Lucas</a> (n-1944), <i>Industrial Light & Magic</i> (ILM).",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_rango.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n11",
+      "title": "Facebook en la pantalla grande",
+      "description": "El programador y empresario <i>Mark Zuckerberg</i>, joven fundador de <strong>Facebook</strong> en 2004 y protagonista de la película <a href=\"https://_{type: 'screen', 'id': 37799, 'screen_type': movie}\">The Social Network</a> (Red Social, 2010), acaparó titulares filantrópicos al donar US$ 100 millones de sus acciones personales de Facebook el 22 de septiembre de 2010 al sistema escolar de Newark, Nueva Jersey, posiblemente para contrarrestar el retrato negativo que la película hacía de él. La revista Time lo nombra \"<i>Persona del Año</i>\".",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_rede_social.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n11",
+      "title": "El gran regreso de la franquicia",
+      "description": "La precuela de la saga El planeta de los simios, <a href=\"https://_{type: 'screen', 'id': 61791, 'screen_type': movie}\">Rise of the Planet of the Apes</a> (El planeta de los simios: (R)evolución, 2011) de Fox, fue un éxito inesperado: recaudó US$ 481,2 millones (a nivel mundial) y US$ 176,7 millones (a nivel nacional) y cosechó elogios de la crítica.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_planeta_macacos_origem_cesar.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n11",
+      "title": "Símbolo de la Época de Oro del cine",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 3635, 'screen_type': person}\">Elizabeth Taylor</a> (n-1932), una de las más grandes actrices de la <strong>Época de Oro</strong> del cine de Hollywood, muere a los 79 años.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_elizabeth_taylor.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n11",
+      "title": "Los primeros pasos del gigante del streaming",
+      "description": "En una medida polémica que irritó a su base de clientes, la empresa de alquiler de DVD por correo <strong>Netflix</strong> aumentó el precio de sus servicios combinados (streaming y DVD). También anunció que separaría ambos servicios. Sería uno de los primeros pasos que llevarían a la empresa a convertirse en el gigante del streaming en los años siguientes.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_netflix_logo.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n11",
+      "title": "El furor del 3D",
+      "description": "El número de estrenos en 3D pasó de 20 en 2009 a 45 en 2011. Tras el éxito de <a href=\"https://_{type: 'screen', 'id': 19995, 'screen_type': movie}\">Avatar</a> (2009) y <a href=\"https://_{type: 'screen', 'id': 12155, 'screen_type': movie}\">Tim Burton's Alice in Wonderland</a> (Alicia en el país de las maravillas, 2010) en 3D, los estudios adoptaron la innovadora tecnología.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_avatar_3d.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n12",
+      "title": "Los cuentos de hadas llegan a Pixar",
+      "description": "El 13.º largometraje animado de Pixar, la épica de fantasía medieval <a href=\"https://_{type: 'screen', 'id': 62177, 'screen_type': movie}\">Brave</a> (Valiente, 2012), fue el primero en los 25 años de historia del estudio en tener una protagonista femenina. También fue la primera película de cuento de hadas y de época del estudio.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_brave.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n12",
+      "title": "La lucha contra la piratería",
+      "description": "Dos polémicos proyectos de ley ante el Congreso, la <strong>Ley de Protección de la Propiedad Intelectual</strong> (PIPA) y la <strong>Ley para Detener la Piratería en Línea</strong> (SOPA), fueron suspendidos. La legislación antipiratería propuesta fue elaborada por partidarios en Hollywood (entre ellos la <i>Motion Picture Association of America</i>) para reprimir a los sitios extranjeros que distribuían películas y programas de TV piratas, y que supuestamente le cuestan miles de millones de dólares al año a la industria del entretenimiento.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_pirataria.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n12",
+      "title": "El primer apogeo del MCU",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 24428, 'screen_type': movie}\">The Avengers</a> (Avengers: Los Vengadores, 2012), producida por <i>Marvel Studios</i>, propiedad de <i>Disney</i>, estableció una cifra sin precedentes de 207,4 millones de dólares en su fin de semana de estreno. La película fue la confirmación del exitoso <strong>MCU</strong>, iniciado en 2008 con <a href=\"https://_{type: 'screen', 'id': 1726, 'screen_type': movie}\">Iron Man</a> (Iron Man: El hombre de hierro, 2008).",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_avengers_1.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n13",
+      "title": "¡Django!",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 68718, 'screen_type': movie}\">Django Unchained</a> (Django sin cadenas, 2012) se convirtió en la película más taquillera de la carrera del director <a href=\"https://_{type: 'screen', 'id': 138, 'screen_type': person}\">Quentin Tarantino</a> (n. 1963).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_django_livre.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n13",
+      "title": "Revolución en la producción",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 49047, 'screen_type': movie}\">Gravity</a> (Gravedad, 2013) implicó la iluminación más extensa de todos los tiempos en un set de filmación. Las escenas de \"<i>gravedad cero</i>\" se filmaron en una caja de luz personalizada que contenía 1,8 millones de LED de alta potencia. La estructura de la caja de luz tenía la forma de un cubo hueco, dentro del cual los actores permanecían suspendidos. Los LED eran controlados individualmente por el equipo de efectos especiales de la película para recrear la luz natural y las sombras de la fotografía espacial. El estreno de este sistema de efectos, en el que la iluminación se calculaba digitalmente y luego se proyectaba sobre los rostros de los actores en el mundo real, fue revolucionario.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_gravity.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n13",
+      "title": "El terror recobra aliento",
+      "description": "Dos de las mayores películas de terror de bajo presupuesto del verano, ambas originales, fueron <a href=\"https://_{type: 'screen', 'id': 138843, 'screen_type': movie}\">The Conjuring</a> (El conjuro, 2013) y <a href=\"https://_{type: 'screen', 'id': 158015, 'screen_type': movie}\">The Purge</a> (La noche de la expiación, 2013), películas de terror de bajo presupuesto que marcarían el género en la década, además de destacar a <a href=\"https://_{type: 'screen', 'id': 2127, 'screen_type': person}\">James Wan</a> (n. 1977) como uno de los mejores directores del género.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_invocacao_mal.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n13",
+      "title": "Let it Go!",
+      "description": "Al ganar el Óscar a la Mejor Película Animada, el exitoso musical de Disney <a href=\"https://_{type: 'screen', 'id': 109445, 'screen_type': movie}\">Frozen</a> (Frozen: Una aventura congelada, 2013) se convirtió en la primera película de <i>Walt Disney Animation Studios</i> no perteneciente a <i>Pixar</i> en ganar el premio a la Mejor Película Animada desde que se creó la categoría en 2001. La película representó el inicio de un nuevo renacimiento de las animaciones del estudio.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_frozen.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n13",
+      "title": "Netflix entra en el juego",
+      "description": "Netflix cambia las reglas del juego en la forma en que se estrenan y distribuyen las películas, al pasar de su plataforma original de distribución de videos a una plataforma de adquisición y producción. El <strong>VOD</strong> (o <i>Video-on-Demand</i>) y el streaming en línea crecieron enormemente en los últimos años, como lo ejemplifica la preeminencia de Netflix. El plan de negocios de Netflix consistía en asociarse con grandes estudios establecidos para crear contenido exclusivo y luego ofrecerlo a sus suscriptores. Netflix buscó agresivamente aumentar su contenido original (<i>House of Cards, Orange Is the New Black y Marco Polo</i>) y logró sortear los canales de distribución tradicionales. Su documental <a href=\"https://_{type: 'screen', 'id': 159037, 'screen_type': movie}\">The Square</a> (The Square (El Midan), 2013), sobre la <strong>Revolución egipcia</strong> de 2011, obtuvo la primera nominación al Óscar para una producción de streaming.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_square.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n14",
+      "title": "Ataques a Sony",
+      "description": "El FBI confirma que Corea del Norte estaba detrás de los ciberataques a <i>Sony Pictures</i>. Sony fue atacada por hackers (que se hacían llamar '<strong>Guardianes de la Paz</strong>') el 24 de noviembre en respuesta al estreno previsto de la comedia satírica de <i>Columbia Pictures</i> (propiedad de Sony) <a href=\"https://_{type: 'screen', 'id': 228967, 'screen_type': movie}\">The Interview</a> (Una loca entrevista, 2014), sobre un plan para asesinar al dictador norcoreano <i>Kim Jong-un</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_the_interview.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n14",
+      "title": "¡El rey de los monstruos!",
+      "description": "Con el estreno de <a href=\"https://_{type: 'screen', 'id': 124905, 'screen_type': movie}\">Godzilla</a> (2014), la serie de monstruos japoneses se convirtió en la franquicia cinematográfica más larga y continua de todos los tiempos. Los <i>Toho Studios</i> de Japón impulsaron la franquicia Gojira durante casi 60 años. La película original, <a href=\"https://_{type: 'screen', 'id': 1678, 'screen_type': movie}\">Gojira</a> (Godzilla, 1954), fue estrenada en 1954 por el director <a href=\"https://_{type: 'screen', 'id': 18598, 'screen_type': person}\">Ishirô Honda</a> (1911-1993).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_godzilla.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n15",
+      "title": "La Fuerza está de vuelta",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 140607, 'screen_type': movie}\">Star Wars: Episode VII - The Force Awakens</a> (Star Wars: El despertar de la fuerza, 2015) llega a los cines y marca el regreso de la franquicia a la pantalla grande.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_star_wars_2015.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n15",
+      "title": "Justicia",
+      "description": "El cineasta estadounidense <a href=\"https://_{type: 'screen', 'id': 77121, 'screen_type': person}\">Randall Miller</a> (n. 1962) se convierte en el primer cineasta en ir a prisión por una acusación de homicidio culposo relacionada con una película, ocurrido en febrero de 2014. Durante el rodaje de la película biográfica de <i>Gregg Allman</i>, <a href=\"https://_{type: 'screen', 'id': 243693, 'screen_type': movie}\">Midnight Rider</a> (2014), murió la asistente de cámara <i>Sarah Jones</i>, de 27 años. La última vez que un caso de homicidio culposo había llegado ante un jurado fue casi 30 años antes, en 1982, en el infame caso de <a href=\"https://_{type: 'screen', 'id': 15301, 'screen_type': movie}\">Twilight Zone: The Movie</a> (Dimensión desconocida: la película, 1983), cuando el actor <a href=\"https://_{type: 'screen', 'id': 83810, 'screen_type': person}\">Vic Morrow</a> (1929-1982) y dos actores infantiles murieron en un accidente de helicóptero en el set; sin embargo, el director <a href=\"https://_{type: 'screen', 'id': 4610, 'screen_type': person}\">John Landis</a> (n. 1950) y otros cuatro coacusados fueron absueltos de homicidio involuntario en 1987 tras un juicio de 10 meses.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_randall_miller.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n15",
+      "title": "Terror psicológico",
+      "description": "Con el estreno de <a href=\"https://_{type: 'screen', 'id': 310131, 'screen_type': movie}\">The Witch</a> (La bruja, 2015), dirigida por <a href=\"https://_{type: 'screen', 'id': 138781, 'screen_type': person}\">Robert Eggers</a> (n. 1983), la popularidad de las películas de terror psicológico regresa al cine, con <i>A24</i> como una de las protagonistas de ese regreso.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_a_bruxa.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n15",
+      "title": "Grandes estrenos",
+      "description": "Netflix, junto con el director <a href=\"https://_{type: 'screen', 'id': 87257, 'screen_type': person}\">Cary Fukunaga</a> (n. 1977), estrena <a href=\"https://_{type: 'screen', 'id': 283587, 'screen_type': movie}\">Beasts of No Nation</a> (Bestias sin patria, 2015), el primer largometraje lanzado por el servicio. Amazon Prime también debuta en el mundo del cine con <a href=\"https://_{type: 'screen', 'id': 340275, 'screen_type': movie}\">Chi-Raq</a> (2015), de <a href=\"https://_{type: 'screen', 'id': 5281, 'screen_type': person}\">Spike Lee</a> (n. 1957).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_beasts_of_no_nation.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n15",
+      "title": "Primera persona",
+      "description": "Se estrena la primera película de acción rodada íntegramente con cámaras <i>GoPro Hero3 Black Edition</i>: <a href=\"https://_{type: 'screen', 'id': 325348, 'screen_type': movie}\">Hardcore Henry</a> (Hardcore: Misión extrema, 2015), dirigida y coescrita por <a href=\"https://_{type: 'screen', 'id': 1169024, 'screen_type': person}\">Ilya Naishuller</a> (n-1983). Fue filmada en Rusia desde el punto de vista del protagonista.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_hardcore_henry.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n16",
+      "title": "Cine en casa",
+      "description": "La industria cinematográfica se vio sacudida por un nuevo plan revolucionario. La <i>start-up</i> llamada <i>Screening Room</i> (desarrollada por el empresario y magnate de la tecnología Sean Parker) ofrecía a los consumidores la posibilidad de ver los nuevos estrenos de Hollywood en sus propias casas el mismo día de su estreno en cines. El costo era de US$ 150 por un decodificador y US$ 50 por el alquiler de cada película (con un período de visualización de 48 horas). La estrategia ganaría popularidad y sería adoptada por los grandes estudios años después, con <i>Disney+</i> y <i>HBO Max</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_theater.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n16",
+      "title": "Error histórico",
+      "description": "Durante la ceremonia del Óscar se produjo una confusión histórica y embarazosa con el premio a Mejor Película, anunciado originalmente para <a href=\"https://_{type: 'screen', 'id': 313369, 'screen_type': movie}\">La La Land</a> (La La Land: Una historia de amor, 2016), que finalmente fue otorgado, como correspondía, al drama afroamericano de iniciación <a href=\"https://_{type: 'screen', 'id': 376867, 'screen_type': movie}\">Moonlight</a> (Luz de luna, 2016).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_la_la_land_error.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n17",
+      "title": "Influencia en las cifras",
+      "description": "Algunos ejecutivos de estudios y expertos de la industria se quejan de que las caídas en taquilla de algunas películas se atribuyeron en parte al sitio de agregación de críticas <strong>Rotten Tomatoes</strong>. El sitio, propiedad de <i>Fandango</i>, tuvo un aumento considerable de visitantes mensuales en un grupo demográfico importante que tomaba decisiones de gasto. Según el <i>National Research Group</i>, el 34 % de los adolescentes estadounidenses consulta Rotten Tomatoes antes de comprar una entrada, frente al 23 % en 2014.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_rotten.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n17",
+      "title": "Terror social",
+      "description": "La película independiente de terror de bajo presupuesto <a href=\"https://_{type: 'screen', 'id': 419430, 'screen_type': movie}\">Get Out</a> (¡Huye!, 2017), escrita y dirigida por <a href=\"https://_{type: 'screen', 'id': 291263, 'screen_type': person}\">Jordan Peele</a> (n-1979), se convierte en la película más rentable del año. La cinta marcaría el inicio de un nuevo subgénero del terror: el terror social.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_get_out.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n17",
+      "title": "Talento",
+      "description": "Con la nominación y el triunfo de <i>¡Huye!</i> en el Óscar, <i>Jordan Peele</i> se convierte en el primer afroamericano en ganar el premio a Mejor Guion Original.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_jordan_peele.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n17",
+      "title": "Wonder power!",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 297762, 'screen_type': movie}\">Wonder Woman</a> (Mujer Maravilla, 2017), dirigida por <a href=\"https://_{type: 'screen', 'id': 6884, 'screen_type': person}\">Patty Jenkins</a> (n-1971), se convierte en el mayor éxito de taquilla jamás dirigido por una mujer.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_wonder_woman.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n17",
+      "title": "Acoso en Hollywood",
+      "description": "Uno de los productores más influyentes de la industria cinematográfica, <a href=\"https://_{type: 'screen', 'id': 59839, 'screen_type': person}\">Harvey Weinstein</a> (n-1952), de 65 años, cayó de su posición de poder e influencia debido a acusaciones de acoso sexual, mala conducta y comportamiento depredador. Las acusaciones contra Weinstein reflejaron una larga historia de abusos sexuales infligidos a muchas mujeres (artistas de primer nivel y estrellas de cine extranjeras) y a otras empleadas (o aspirantes) de la empresa. Después de que Weinstein fuera expulsado como miembro de la AMPAS, también surgieron cuestionamientos sobre otros actores como <a href=\"https://_{type: 'screen', 'id': 3556, 'screen_type': person}\">Roman Polanski</a> (n-1933), <a href=\"https://_{type: 'screen', 'id': 51962, 'screen_type': person}\">Bill Cosby</a> (n-1937) y <a href=\"https://_{type: 'screen', 'id': 4483, 'screen_type': person}\">Dustin Hoffman</a> (n-1957). Otros también fueron examinados, entre ellos el guionista y director de Hollywood <a href=\"https://_{type: 'screen', 'id': 56381, 'screen_type': person}\">James Toback</a> (n-1944) y el actor <a href=\"https://_{type: 'screen', 'id': 1979, 'screen_type': person}\">Kevin Spacey</a> (n-1959).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_harvey_weinstein.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n17",
+      "title": "Los Tres Amigos",
+      "description": "De 2013 a 2017, cineastas mexicanos —<a href=\"https://_{type: 'screen', 'id': 10828, 'screen_type': person}\">Guillermo del Toro</a> (n-1964), <a href=\"https://_{type: 'screen', 'id': 223, 'screen_type': person}\">Alejandro González Iñárritu</a> (n-1963) y <a href=\"https://_{type: 'screen', 'id': 11218, 'screen_type': person}\">Alfonso Cuarón</a> (n-1961)— ganaron el Óscar a Mejor Director en cuatro de los cinco años. Del Toro se convierte en el tercer cineasta mexicano en ganar el premio.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_guilherme_afonso_alejandro.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n17",
+      "title": "Reconocimiento en el Óscar",
+      "description": "Netflix obtiene su primer Óscar por un largometraje: <a href=\"https://_{type: 'screen', 'id': 432976, 'screen_type': movie}\">Icarus</a> (Ícaro, 2017), en la categoría de Mejor Documental.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_icaro.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n18",
+      "title": "#TimesUp",
+      "description": "300 mujeres de Hollywood firmaron una iniciativa conocida como \"<strong>Time's Up</strong>\" para combatir el acoso sexual.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_times_up.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n18",
+      "title": "Pantera Negra en el Óscar",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 284054, 'screen_type': movie}\">Black Panther</a> (Pantera Negra, 2018) se convierte en la primera película de superhéroes nominada a Mejor Película en el Óscar. Además, es la primera gran película de superhéroes dirigida y protagonizada por afrodescendientes.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_black_panther_cast.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n18",
+      "title": "Aclamación",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 426426, 'screen_type': movie}\">Roma</a> (2018), de <i>Alfonso Cuarón</i> y estrenada por Netflix, recibe 10 nominaciones al Óscar. La película de Cuarón fue el primer proyecto de Netflix nominado en la categoría de Mejor Película.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_roma.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n18",
+      "title": "¡Infinity War!",
+      "description": "La película de Disney-Marvel <a href=\"https://_{type: 'screen', 'id': 299536, 'screen_type': movie}\">Avengers: Infinity War</a> (Vengadores: Infinity War, 2018), la 19.ª película del Universo Cinematográfico de Marvel, se convirtió en la película más rápida de todos los tiempos en superar los US$ 1000 millones a nivel mundial, en apenas 11 días desde su estreno. La película fue la primera parte de la conclusión de más de 10 años de construcción del MCU.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_avengers_infinity_war.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n18",
+      "title": "Asia en Hollywood",
+      "description": "Llega a los cines una de las pocas películas de Hollywood en la que todos los actores principales son de ascendencia asiática: <a href=\"https://_{type: 'screen', 'id': 455207, 'screen_type': movie}\">Crazy Rich Asians</a> (Locamente millonarios, 2018), dirigida por <a href=\"https://_{type: 'screen', 'id': 54507, 'screen_type': person}\">Jon M. Chu</a> (n-1979). Es la primera película de un gran estudio en 25 años protagonizada por actores asiático-estadounidenses en los papeles principales.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_crazy_rich_asians.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n18",
+      "title": "eeee oooh!",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 424694, 'screen_type': movie}\">Bohemian Rhapsody</a> (2018), sobre el vocalista de Queen, <i>Freddie Mercury</i>, se convierte en la película biográfica musical y de temática gay / lésbica más taquillera de todos los tiempos. <a href=\"https://_{type: 'screen', 'id': 17838, 'screen_type': person}\">Rami Malek</a> (n-1981), de ascendencia egipcia, se convirtió en el primer árabe-estadounidense en ganar el Óscar a Mejor Actor.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_bohemian_rhapsody.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n18",
+      "title": "Finalmente",
+      "description": "La crítica a la supremacía blanca del director <i>Spike Lee</i>, <a href=\"https://_{type: 'screen', 'id': 487558, 'screen_type': movie}\">BlacKkKlansman</a> (El infiltrado del KKKlan, 2018), marcaría la primera victoria de <i>Spike Lee</i> en el Óscar en más de tres décadas, por Mejor Guion Adaptado.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_spike_lee_oscar.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n18",
+      "title": "Cooper y Gaga",
+      "description": "El debut como director del actor <a href=\"https://_{type: 'screen', 'id': 51329, 'screen_type': person}\">Bradley Cooper</a> (n-1975) con el drama musical <a href=\"https://_{type: 'screen', 'id': 332562, 'screen_type': movie}\">A Star Is Born</a> (Nace una estrella, 2018) de <i>Warner Bros.</i>, protagonizado por <a href=\"https://_{type: 'screen', 'id': 237405, 'screen_type': person}\">Lady Gaga</a> (n-1986) y el propio Cooper, fue la cuarta adaptación del romance musical (realizado antes en 1937, 1954 y 1976) y obtuvo un enorme éxito, sobre todo gracias a las poderosas interpretaciones de Gaga en <i>Shallow</i> y <i>I'll Never Love Again</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_star_born.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n19",
+      "title": "Guasón",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 475557, 'screen_type': movie}\">Joker</a> (Guasón, 2019) se convierte en la película para adultos más taquillera de todos los tiempos (a nivel mundial), con una recaudación bruta de más de US$ 1000 millones (a nivel mundial), y también en la primera película para adultos en superar la marca de los mil millones de dólares.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_joker.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n19",
+      "title": "Disney en el mundo del streaming",
+      "description": "Llega al mercado <i>Disney+</i>, un nuevo servicio de streaming lanzado a mediados de noviembre. Algún tiempo antes, el estudio había adquirido muchos de los activos de <i>21st Century Fox</i>, lo que le proporcionó más programas y propiedad intelectual para el contenido del servicio de <i>streaming</i>.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_disney_plus.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n19",
+      "title": "La guerra del streaming",
+      "description": "Los servicios de streaming se multiplican y se consolidan, incluidas las ofertas de los principales <i>Netflix y Hulu</i>, que ahora compiten con <i>Disney+, Apple TV, HBO Max, GloboPlay, Quibi y NBCUniversal</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_streaming_fight.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n19",
+      "title": "¡Adelante!",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 299534, 'screen_type': movie}\">Avengers: Endgame</a> (Vengadores: Endgame, 2019) llega a los cines. Se convirtió en la quinta película en recaudar US$ 2000 millones en todo el mundo. Su recaudación bruta mundial fue de US$ 2800 millones, superando a <a href=\"https://_{type: 'screen', 'id': 597, 'screen_type': movie}\">Titanic</a> (1997).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_avengers_endgame.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n19",
+      "title": "¡Un premio merecido!",
+      "description": "La película surcoreana <a href=\"https://_{type: 'screen', 'id': 496243, 'screen_type': movie}\">Parasite</a> (Parásitos, 2019), con una nominación a Mejor Película entre sus seis nominaciones, fue la primera película de habla no inglesa en ganar el premio principal, el de Mejor Película.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_parasita.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "El impacto de la pandemia",
+      "description": "La <strong>pandemia de coronavirus</strong> causa numerosos estragos en la industria cinematográfica. Los estudios de Hollywood se ven obligados a posponer el estreno de grandes éxitos y a alterar drásticamente los calendarios de sus producciones en todo el mundo. Además, los rodajes y producciones fueron especialmente susceptibles a las restricciones, incluidas las advertencias contra las reuniones de grupos, y varios de ellos fueron interrumpidos, modificados o cancelados. La industria cinematográfica mundial llega a perder US$ 32 000 millones en 2020 debido a la pandemia, una reducción del 71,5 % en los ingresos de taquilla en comparación con 2019.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_coronavirus.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "La competencia se intensifica",
+      "description": "Con el coronavirus, las principales empresas de medios, entre ellas <i>Disney, WarnerMedia, Viacom y Comcast</i>, dedicaron considerable atención a sus ofertas de programación por suscripción o streaming, y las guerras del streaming se intensificaron considerablemente frente a <strong>Netflix y Amazon</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_straming_fight_2.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "Disney+: un éxito",
+      "description": "Tras un año de existencia, <strong>Disney+</strong> resultó ser un éxito incomparable para <i>The Walt Disney Company</i>. El servicio ya contaba con 86,8 millones de suscriptores, poco menos de la meta de 90 millones que se había fijado para 2024. En comparación, Netflix tenía 190 millones de suscriptores, incluidos 73 millones en Estados Unidos.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_disney_plus.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "Estrenos simultáneos",
+      "description": "El estudio Warner Bros. anuncia que toda su lista de películas para 2021 se estrenaría simultáneamente en <strong>HBO Max y en los cines</strong>. La medida revolucionaria se interpretó como un gran esfuerzo para aumentar el número de suscriptores de HBO Max. Sin embargo, cineastas tradicionalistas como Christopher Nolan y Denis Villeneuve condenaron públicamente a la empresa por perjudicar a sus socios exhibidores sin previo aviso.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_hbo_max.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n21",
+      "title": "La pelea de gigantes atrae al público",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 399566, 'screen_type': movie}\">Godzilla vs. Kong</a> (2021) se convirtió en la primera película en alcanzar casi US$ 100 millones en Estados Unidos y Canadá desde el inicio de la pandemia.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_godzilla_kong.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "footer",
+      "previous": "1990 a 2009"
+    }
+  ]
+}

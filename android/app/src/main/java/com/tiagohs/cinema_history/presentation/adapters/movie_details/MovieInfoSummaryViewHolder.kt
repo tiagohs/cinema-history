@@ -1,6 +1,7 @@
 package com.tiagohs.cinema_history.presentation.adapters.movie_details
 
 import android.view.View
+import com.tiagohs.cinema_history.databinding.AdapterMovieInfoSummaryBinding
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.movie_info.MovieInfo
@@ -8,14 +9,13 @@ import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.helpers.utils.MovieUtils
-import kotlinx.android.synthetic.main.adapter_movie_info_summary.*
 
 
 class MovieInfoSummaryViewHolder(
-    view: View,
+    private val binding: AdapterMovieInfoSummaryBinding,
     private val appLanguage: String,
     var onExtenalLink: ((String?) -> Unit)?
-) : BaseViewHolder<MovieInfo>(view) {
+) : BaseViewHolder<MovieInfo>(binding) {
 
     override fun bind(item: MovieInfo, position: Int) {
         super.bind(item, position)
@@ -28,8 +28,8 @@ class MovieInfoSummaryViewHolder(
     }
 
     private fun setupMovieSummmary(movie: Movie) {
-        movieSummary.startAnimation(AnimationUtils.createFadeInAnimation(150, 200))
-        movieSummary.setResourceText(
+        binding.movieSummary.startAnimation(AnimationUtils.createFadeInAnimation(150, 200))
+        binding.movieSummary.setResourceText(
             movie.getMovieSummaryFromAppLanguage(
                 itemView.context.getResourceString(
                     R.string.no_summary
@@ -41,32 +41,32 @@ class MovieInfoSummaryViewHolder(
     private fun setupExternalLinks(movie: Movie) {
         setupExternalLinkItem(
             movie.externalIds?.facebookId,
-            facebookContainer,
-            facebookContainerClickable,
+            binding.facebookContainer,
+            binding.facebookContainerClickable,
             R.string.facebook_link
         )
         setupExternalLinkItem(
             movie.externalIds?.twitterId,
-            twitterContainer,
-            twitterContainerClickable,
+            binding.twitterContainer,
+            binding.twitterContainerClickable,
             R.string.twitter_link
         )
         setupExternalLinkItem(
             movie.externalIds?.instagramId,
-            instagramContainer,
-            instagramContainerClickable,
+            binding.instagramContainer,
+            binding.instagramContainerClickable,
             R.string.instagram_link
         )
         setupExternalLinkItem(
             movie.externalIds?.imdbId,
-            imdbContainer,
-            imdbContainerClickable,
+            binding.imdbContainer,
+            binding.imdbContainerClickable,
             R.string.imdb_link
         )
         setupExternalLinkItem(
             movie.homepage,
-            linkContainer,
-            linkContainerClickable,
+            binding.linkContainer,
+            binding.linkContainerClickable,
             0
         )
     }
@@ -77,7 +77,7 @@ class MovieInfoSummaryViewHolder(
         containerClickable: View,
         baseUrl: Int
     ) {
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val externalLinkID = externalLinkId ?: return
 
         if (externalLinkID.isNotBlank()) {
@@ -95,31 +95,27 @@ class MovieInfoSummaryViewHolder(
         val revenue = movie.revenue
 
         if (budget == null || revenue == null || budget == 0L || revenue == 0L) {
-            budgetSeekBar.hide()
-            budgetContainer.hide()
+            binding.budgetSeekBar.hide()
+            binding.budgetContainer.hide()
             return
         }
 
-        budgetSeekBar.setOnTouchListener { _, _ -> false }
-        budgetSeekBar.max = budget.toInt() + revenue.toInt()
-        budgetSeekBar.progress = revenue.toInt()
+        binding.budgetSeekBar.setOnTouchListener { _, _ -> false }
+        binding.budgetSeekBar.max = budget.toInt() + revenue.toInt()
+        binding.budgetSeekBar.progress = revenue.toInt()
 
-        movieBudget.setResourceText(budget.toCurrency())
-        movieRevenue.setResourceText(revenue.toCurrency())
+        binding.movieBudget.setResourceText(budget.toCurrency())
+        binding.movieRevenue.setResourceText(revenue.toCurrency())
     }
 
     private fun setupRating(movie: Movie) {
-        val context = containerView.context ?: return
+        val context = itemView.context ?: return
         val rating = MovieUtils.getRating(movie.releases?.countries) ?: return
 
-        certificationCard.show()
+        binding.certificationCard.show()
 
-        certificationCard.setCardBackgroundColor(context.getResourceColor(rating.backgroundColor))
-        certification.setResourceTextColor(rating.textColor)
-        certification.setResourceText(rating.rating)
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_movie_info_summary
+        binding.certificationCard.setCardBackgroundColor(context.getResourceColor(rating.backgroundColor))
+        binding.certification.setResourceTextColor(rating.textColor)
+        binding.certification.setResourceText(rating.rating)
     }
 }

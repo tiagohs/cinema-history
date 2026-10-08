@@ -445,12 +445,12 @@
         android:fitsSystemWindows="true"
         tools:visibility="gone">
 
-        <include layout="@layout/load_view_movie_details" />
+        <include android:id="@+id/loadViewMovieDetails" layout="@layout/load_view_movie_details" />
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 
-    <include layout="@layout/view_error" />
+    <include android:id="@+id/errorContainer" layout="@layout/view_error" />
 
-    <include layout="@layout/view_screen_blocked" />
+    <include android:id="@+id/screenBlocked" layout="@layout/view_screen_blocked" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

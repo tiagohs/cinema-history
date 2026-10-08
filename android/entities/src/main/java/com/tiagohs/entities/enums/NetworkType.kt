@@ -60,7 +60,7 @@ enum class NetworkType(
     CRITERION_CHANNEL("criterionchannel", R.string.criterionchannel, "criterionchannel", "md_white_1000"),
 
     @SerializedName("fandor")
-    FANDOR("fandor", R.string.vivo_play, "fandor", "md_black_1000"),
+    FANDOR("fandor", R.string.fandor, "fandor", "md_black_1000"),
 
     @SerializedName("now")
     NET_NOW("now", R.string.net_now, "net_now", "md_white_1000"),
@@ -70,6 +70,10 @@ enum class NetworkType(
 
     @SerializedName("dailymotion")
     DAILYMOTION("dailymotion", R.string.dailymotion, "dailymotion", "md_white_1000"),
+
+    /** Página "onde assistir" do país (TMDB/JustWatch) com os serviços que o app não exibe individualmente. */
+    @SerializedName("more_options")
+    MORE_OPTIONS("more_options", R.string.more_watch_options, "md_grey_800", "md_white_1000"),
 
     @SerializedName("unknown")
     UNKNOWN("unknown", color = "md_black_1000", textColor =  "md_white_1000");

@@ -37,9 +37,15 @@ fun Activity.setScreenBackgroundColor(color: Int) {
 fun Activity.setStatusBarColor(color: Int) {
     val window = getWindow()
 
+    val resolvedColor = ContextCompat.getColor(this, color)
+
     window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
     window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-    window.setStatusBarColor(ContextCompat.getColor(this, color))
+    @Suppress("DEPRECATION")
+    window.setStatusBarColor(resolvedColor)
+
+    // Android 15+ (edge-to-edge): a cor é pintada pelo próprio app.
+    com.tiagohs.helpers.edgetoedge.SystemBarsInsets.updateStatusBarColor(this, resolvedColor)
 }
 
 fun Activity.startActivityWithSlideRightToLeftAnimation(intent: Intent) {

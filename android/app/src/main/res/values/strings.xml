@@ -25,7 +25,7 @@
     <string name="awards_title">Film award</string>
     <string name="directors_title">Directors</string>
     <string name="powerd_tmdb" translatable="false">powered by TMDB</string>
-    <string name="source_tmdb" translatable="false">Fonte: TMDB</string>
+    <string name="source_tmdb">Source: TMDB</string>
     <string name="selected_reference_type">Select the reference type</string>
     <string name="selected_year">Select the year</string>
     <string name="winner">Winner</string>
@@ -58,7 +58,6 @@
     <string name="activity_glossary">Glossary</string>
     <string name="language_title">Language</string>
     <string name="language_app_title">History Pages Language</string>
-    <string name="language_movie_title">Movie Language</string>
     <string name="general_title">General</string>
     <string name="references_bibliographic_title">References</string>
     <string name="references_bibliographic_description">Books, links, articles. The base reference for this app.</string>
@@ -81,9 +80,9 @@
     <string name="version">Version %1s</string>
     <string name="responsable">App Development and Search by Tiago Silva</string>
     <string name="terms">Terms of Use</string>
-    <string name="terms_link" translatable="false">https://animated-stickers.s3-sa-east-1.amazonaws.com/history_terms.html</string>
+    <string name="terms_link" translatable="false">https://website-cb5.pages.dev/cinema-history/termos/</string>
     <string name="privacy">Privacy Politics</string>
-    <string name="privacy_link" translatable="false">https://animated-stickers.s3-sa-east-1.amazonaws.com/history_privacy_politics.html</string>
+    <string name="privacy_link" translatable="false">https://website-cb5.pages.dev/cinema-history/privacidade/</string>
     <string name="creative_commons" translatable="false">Creative Commons — Atribuição 3.0 Brasil — CC BY 3.0 BR</string>
     <string name="creative_commons_link" translatable="false">https://creativecommons.org/licenses/by/3.0/br/</string>
     <string name="app_description">%1s is a free application that seeks, in a fun and intuitive way, to bring the history of the film to everyone. Through images, videos, gifs, interviews, classifications and infographics, we present the trajectory of cinema from the first screening of the Lumière brothers to the present day. We rely on literature and documentaries and translate for this new media. Have a good time!</string>
@@ -154,13 +153,22 @@
     <string name="essay_title">Essay</string>
 
     <!-- Arrays -->
-    <string-array name="app_language_values">
-        <item>@string/pt_br_country_name</item>
-    </string-array>
-    <string-array name="movie_language_entries">
-        <item>@string/pt_br_country_name</item>
-    </string-array>
-    <string-array name="movie_language_values">
-        <item>pt-BR</item>
-    </string-array>
+    <string name="language_system">Automatic (device language)</string>
+
+    <!-- Movie details: links to the app's own topics -->
+    <string name="movie_link_mil_movies_subtitle">%1$s is on the list</string>
+    <string name="movie_link_mil_movies_title">1001 Movies You Must See Before You Die %1$s</string>
+    <string name="movie_link_history_subtitle">Read more about the period when %1$s was released</string>
+    <string name="movie_link_history_title">The History of Cinema %1$s</string>
+
+    <!-- References: media type labels (the JSON keeps a fixed code) -->
+    <string name="reference_media_type_book">Book</string>
+    <string name="reference_media_type_series">Series</string>
+    <string name="reference_media_type_movie">Movie</string>
+    <string name="reference_media_type_youtube">YouTube</string>
+
+    <!-- Anúncios -->
+    <string name="ad_badge">Ad</string>
+    <string name="ad_privacy_title">Ad privacy</string>
+    <string name="ad_privacy_summary">Review or change your ad consent choices</string>
 </resources>

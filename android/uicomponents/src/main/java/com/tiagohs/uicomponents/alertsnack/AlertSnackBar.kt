@@ -13,7 +13,6 @@ import com.tiagohs.helpers.extensions.getResourceDrawable
 import com.tiagohs.helpers.extensions.getResourceString
 import com.tiagohs.helpers.extensions.setResourceBackgroundColor
 import com.tiagohs.helpers.extensions.setResourceText
-import kotlinx.android.synthetic.main.layout_snackbar_base_alert.view.*
 
 class AlertSnackBar(
     parent: ViewGroup,
@@ -72,17 +71,17 @@ class AlertSnackBar(
 
                 when (type) {
                     MessageViewType.ERROR -> {
-                        customView.messageContainer.setResourceBackgroundColor(R.color.md_red_500)
-                        customView.icon.setImageDrawable(context.getResourceDrawable(com.tiagohs.uicomponents.R.drawable.ic_error))
+                        customView.binding.messageContainer.setResourceBackgroundColor(R.color.md_red_500)
+                        customView.binding.icon.setImageDrawable(context.getResourceDrawable(com.tiagohs.uicomponents.R.drawable.ic_error))
                     }
                     else -> {
-                        customView.messageContainer.setResourceBackgroundColor(R.color.md_green_500)
-                        customView.icon.setImageDrawable(context.getResourceDrawable(com.tiagohs.uicomponents.R.drawable.ic_check))
+                        customView.binding.messageContainer.setResourceBackgroundColor(R.color.md_green_500)
+                        customView.binding.icon.setImageDrawable(context.getResourceDrawable(com.tiagohs.uicomponents.R.drawable.ic_check))
                     }
                 }
 
-                title?.let { customView.title.setResourceText(it) }
-                description?.let { customView.description.setResourceText(it) }
+                title?.let { customView.binding.title.setResourceText(it) }
+                description?.let { customView.binding.description.setResourceText(it) }
 
                 return AlertSnackBar(
                     parent,

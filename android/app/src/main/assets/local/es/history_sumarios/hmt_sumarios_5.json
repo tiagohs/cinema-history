@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "title": "Cine de Europa Occidental",
+    "description": "Los años 1970 en Europa estuvieron marcados por una nueva generación valiente, furiosa y talentosa, con películas poderosas y polémicas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_gritos_sussurros",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "El Nuevo Cine Alemán",
+    "description": "El cine de la República Federal de Alemania vivió en los años 1970 su renovación más emocionante desde los años 1920.",
+    "image": {
+      "image_type": "local",
+      "url": "img_lagrimas_amargas",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "La nueva era del terror",
+    "description": "En cantidad y en calidad, los años 1970 marcan el meridiano de sangre del género de terror.",
+    "image": {
+      "image_type": "local",
+      "url": "img_halloween_1978",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Las películas policiales de los años 70",
+    "description": "Los años 1970 y 1980 fueron años convulsos en la vida de los estadounidenses, con asesinos en serie y el fin de una guerra impopular. Y eso se reflejó en las películas policiales estrenadas en ese período.",
+    "image": {
+      "image_type": "local",
+      "url": "img_the_godfather",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "El cine negro blaxploitation",
+    "description": "El movimiento que puso a artistas negros como protagonistas de las producciones audiovisuales.",
+    "image": {
+      "image_type": "local",
+      "url": "img_shaft",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Paranoia y teorías de la conspiración en Hollywood",
+    "description": "Los años 1970 fueron años convulsos y paranoicos, y Hollywood no podía dejar de reflejarlo en la pantalla.",
+    "image": {
+      "image_type": "local",
+      "url": "img_all_the_presidents_men",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Los complejos dramas estadounidenses",
+    "description": "Con dramas complejos y fascinantes, los años 1970 fueron una de las mejores épocas del cine estadounidense.",
+    "image": {
+      "image_type": "local",
+      "url": "img_manhattan",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "El inicio de los blockbusters",
+    "description": "Las superproducciones ganan terreno en Estados Unidos con el estreno de Tiburón, que atrae la atención de los grandes estudios y productores.",
+    "image": {
+      "image_type": "local",
+      "url": "img_tubarao",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "El nuevo cine australiano",
+    "description": "La nueva era del cine australiano, con sus dramas muy bien producidos, el Ozploitation y comedias que tuvieron éxito en todo el mundo.",
+    "image": {
+      "image_type": "local",
+      "url": "img_crocodilo_dundee",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Cine asiático",
+    "description": "1970: la década considerada como los mejores y también los peores años del cine asiático.",
+    "image": {
+      "image_type": "local",
+      "url": "img_hsia_nu",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "title": "Una nueva era para los musicales",
+    "description": "Los años 1970 modernizaron los musicales, enfocándose en temas antes no explorados en el género.",
+    "image": {
+      "image_type": "local",
+      "url": "img_flashdance",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "title": "Cine africano",
+    "description": "La explosión del cine africano en los años 1970 y 1980.",
+    "image": {
+      "image_type": "local",
+      "url": "img_yeelen",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "title": "Vietnam en el cine",
+    "description": "El legado de Vietnam en el cine de los años 1970 y 1980 fue enorme y sirvió de inspiración para obras memorables.",
+    "image": {
+      "image_type": "local",
+      "url": "img_apocalypse_now",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "title": "La nueva era de las películas de acción",
+    "description": "Las películas de acción acapararon los reflectores en los años 1970 y, sobre todo, en los años 1980.",
+    "image": {
+      "image_type": "local",
+      "url": "img_exterminador_do_futuro",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "title": "Las comedias de los años 80",
+    "description": "La década en que las comedias llevaron multitudes al cine y marcaron a una generación.",
+    "image": {
+      "image_type": "local",
+      "url": "img_clube_do_cinco",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "title": "El nuevo drama psicológico",
+    "description": "Los dramas psicológicos acapararon los reflectores en los años 1970 y 1980, con directores como David Lynch y Bernardo Bertolucci. ",
+    "image": {
+      "image_type": "local",
+      "url": "img_veludo_azul",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "title": "Cine canadiense",
+    "description": "La nueva era del cine canadiense.",
+    "image": {
+      "image_type": "local",
+      "url": "img_a_mosca",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "title": "Cine chino",
+    "description": "La revolución iniciada con la Quinta Generación del cine chino.",
+    "image": {
+      "image_type": "local",
+      "url": "img_o_sorgo_vermelho",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

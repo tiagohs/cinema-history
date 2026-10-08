@@ -1,7 +1,10 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
 import android.os.Bundle
+import android.view.ViewGroup
+import com.tiagohs.cinema_history.databinding.FragmentPersonDetailsBinding
 import android.view.LayoutInflater
+import com.tiagohs.cinema_history.databinding.ViewPersonDepartmentBinding
 import android.view.View
 import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
@@ -20,12 +23,10 @@ import com.tiagohs.cinema_history.presentation.configs.BaseFragment
 import com.tiagohs.entities.enums.ImageSize
 import com.tiagohs.entities.enums.PersonInfoType
 import com.tiagohs.helpers.extensions.*
-import kotlinx.android.synthetic.main.fragment_person_details.*
-import kotlinx.android.synthetic.main.view_person_department.view.*
 
-class PersonDetailsFragment: BaseFragment() {
+class PersonDetailsFragment: BaseFragment<FragmentPersonDetailsBinding>() {
 
-    override fun getViewID(): Int = R.layout.fragment_person_details
+    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?) = FragmentPersonDetailsBinding.inflate(inflater, container, false)
     override fun onErrorAction() {}
 
     lateinit var person: Person
@@ -47,9 +48,9 @@ class PersonDetailsFragment: BaseFragment() {
         val activity = (activity as? PersonDetailsActivity)
         val personInfoContentList = generatePersonInfoList(person)
 
-        activity?.setupToolbar(toolbar)
+        activity?.setupToolbar(binding.toolbar)
 
-        pageContentList.apply {
+        binding.pageContentList.apply {
             adapter = PersonInfoAdapter(personInfoContentList, false).apply {
                 onMovieSelected = { onMovieSelected(it) }
                 onLinkClick = { activity?.openLink(it) }
@@ -78,28 +79,28 @@ class PersonDetailsFragment: BaseFragment() {
         bindPersonDepartments(person)
         bindSocial(person)
 
-        collapsingToolbar.title = person.name
-        personName.setResourceText(person.name)
-        personBirthInfo.setResourceText(person.birthdayFormated)
+        binding.collapsingToolbar.title = person.name
+        binding.personName.setResourceText(person.name)
+        binding.personBirthInfo.setResourceText(person.birthdayFormated)
     }
 
     private fun bindPersonProfileImage(person: Person) {
         val profilePath = person.profilePath?.imageUrlFromTMDB(ImageSize.PROFILE_632) ?: return
 
-        personImage.loadImage(
+        binding.personImage.loadImage(
             profilePath,
             getString(R.string.person_photo_description, person.name),
             R.drawable.placeholder_movie_person,
             R.drawable.placeholder_movie_person) {
-            personImage.alpha = 1f
+            binding.personImage.alpha = 1f
             val animation = AnimationUtils.createFadeInAnimation(200) {
-                personImageDegrade.alpha = 1f
+                binding.personImageDegrade.alpha = 1f
 
-                AnimationUtils.createPulseAnimation(personName, 1.1f, 1.1f)
-                personBirthInfo.startAnimation(AnimationUtils.createFadeInAnimation(200))
+                AnimationUtils.createPulseAnimation(binding.personName, 1.1f, 1.1f)
+                binding.personBirthInfo.startAnimation(AnimationUtils.createFadeInAnimation(200))
             }
 
-            personImage.startAnimation(animation)
+            binding.personImage.startAnimation(animation)
         }
 
     }
@@ -107,16 +108,16 @@ class PersonDetailsFragment: BaseFragment() {
     private fun bindPersonDepartments(person: Person) {
 
         person.departmentsList.forEach {
-            jobsScrollView.show()
+            binding.jobsScrollView.show()
 
-            val view = LayoutInflater.from(activity).inflate(R.layout.view_person_department, null, false)
+            val departmentBinding = ViewPersonDepartmentBinding.inflate(LayoutInflater.from(activity), null, false)
             val layoutParams = Constraints.LayoutParams(Constraints.LayoutParams.WRAP_CONTENT, Constraints.LayoutParams.WRAP_CONTENT)
 
             layoutParams.setMargins(0, 0, 10.convertIntToDp(activity), 0)
-            view.jobName.setResourceText(it)
+            departmentBinding.jobName.setResourceText(it)
 
-            view.layoutParams = layoutParams
-            jobsContainer.addView(view)
+            departmentBinding.root.layoutParams = layoutParams
+            binding.jobsContainer.addView(departmentBinding.root)
         }
     }
 
@@ -125,12 +126,12 @@ class PersonDetailsFragment: BaseFragment() {
         val twitterLink = person.externalIds?.twitterId?.let { getString(R.string.twitter_link, it) }
         val instagramLink = person.externalIds?.instagramId?.let { getString(R.string.instagram_link, it) }
 
-        bindSocialItem(facebookImageContainer, facebookImage, facebookLink)
-        bindSocialItem(twitterImageContainer, twitterImage, twitterLink)
-        bindSocialItem(instagramImageContainer, instagramImage, instagramLink)
+        bindSocialItem(binding.facebookImageContainer, binding.facebookImage, facebookLink)
+        bindSocialItem(binding.twitterImageContainer, binding.twitterImage, twitterLink)
+        bindSocialItem(binding.instagramImageContainer, binding.instagramImage, instagramLink)
 
         if (facebookLink.isNullOrEmpty() && twitterLink.isNullOrEmpty() && instagramLink.isNullOrEmpty()) {
-            separatorVertical.setGuidelinePercent(1f)
+            binding.separatorVertical.setGuidelinePercent(1f)
         }
     }
 
@@ -165,21 +166,21 @@ class PersonDetailsFragment: BaseFragment() {
     }
 
     private fun startLoading() {
-        pageContentListContainer.alpha = 0f
-        appBar.alpha = 0f
+        binding.pageContentListContainer.alpha = 0f
+        binding.appBar.alpha = 0f
 
         (activity as? PersonDetailsActivity)?.startLoading()
     }
 
     private fun hideLoading() {
-        pageContentListContainer
+        binding.pageContentListContainer
             .animate()
             .alpha(1f)
             .setDuration(200)
             .setInterpolator(DecelerateInterpolator(2f))
             .start()
 
-        appBar
+        binding.appBar
             .animate()
             .alpha(1f)
             .setDuration(200)

@@ -1,0 +1,88 @@
+{
+  "number": 3,
+  "content_list": [
+    {
+      "type": "text",
+      "content_text": "Film is generally considered the art form most dominated by corporate interests. Writers, directors, actors and actresses are often forced to make artistic compromises to satisfy the commercial demands of the media companies and executives who finance their films. You've probably read, seen or heard countless stories of a filmmaker furious about studio interference."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_pirataria_numeros",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "The Impact in Brazil",
+        "contentText": "The numbers of piracy in Brazil.",
+        "source": "Associação Anti-Pirataria Cinema e Música (Anti-Piracy Association for Film and Music) and Associação Brasileira dos Produtores de Disco (Brazilian Association of Record Producers)"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "This is, obviously, a banal and inaccurate version of reality. If you think about it, there's something rather subversive about the way the film industry works. A few times a year, film studios - owned by multibillion-dollar media conglomerates - finance art. Great films such as <a href=\"https://_{type: 'screen', 'id': 60308, 'screen_type': movie}\">Moneyball</a> (2011), <a href=\"https://_{type: 'screen', 'id': 37799, 'screen_type': movie}\">The Social Network</a> (2010), <a href=\"https://_{type: 'screen', 'id': 376867, 'screen_type': movie}\">Moonlight</a> (2016) and <a href=\"https://_{type: 'screen', 'id': 281957, 'screen_type': movie}\">The Revenant</a> (2015) only came to be because of large production and marketing investments from big companies."
+    },
+    {
+      "type": "text",
+      "content_text": "From Hollywood's risk-and-reward standpoint, these kinds of films are the riskiest, most emotional and taste-based decisions that studio executives have to make. Perhaps the biggest risk of all is that these smaller films have to turn out really well. In Hollywood jargon, they're 100% \"<i>execution-dependent</i>\". Any rational businessperson is rightfully wary of such leaps."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "Brazil is the world leader in online piracy consumption. The illegal market for pirating cable TV signals and films causes billions in losses for those who produce content legally and create jobs",
+        "author": "Band News"
+      },
+      "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "However, for many reasons - the <i>halo effect</i> of winning an Oscar; the desire to cultivate talent relationships, ego; and, yes, the financial upside that comes with success - studios take on these risks when they produce smaller films. When these films turn out badly, they are often devastating. Not good enough to justify an aggressive marketing campaign without Oscar buzz, they become little more than an exercise in damage control. If, by some miracle, they work, they become more than the sum of their financial returns. They can impact the world through the artistic and passionate way in which these unique stories are told."
+    },
+    {
+      "type": "text",
+      "content_text": "For example, <a href=\"https://_{type: 'screen', 'id': 318846, 'screen_type': movie}\">The Big Short</a> (2015), by <a href=\"https://_{type: 'screen', 'id': 55710, 'screen_type': person}\">Adam McKay</a> (b. 1968), put an exclamation point on the financial crisis in a way no other work had. Even though Hollywood has its problems, there is still a small business and creative ecosystem that still invests millions of dollars so that people can tell this kind of story."
+    },
+    {
+      "type": "video",
+      "video_id": "vL4V9chsazA",
+      "information": {
+        "contentTitle": "Report from Fantástico",
+        "contentText": "Film and TV series piracy causes losses of more than R$ 15 billion a year to Brazil.",
+        "source": "YouTube: <i>Fantástico</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "But this ecosystem is facing a dire threat. And it's not because of the standard villains usually blamed for the decline in quality and in the adult side of the film industry, such as the rise of high-quality television programming, streaming services, the dominance of blockbusters (or superhero films) or the prevalence of sequels. The number one threat to the companies that finance these sophisticated art films is <strong>piracy</strong>. Every year, millions of piracy \"<i>transactions</i>\" take place, representing an incalculable loss of revenue for those who actually paid to make and distribute these films. And these piracy numbers keep growing and evolving. In recent years, a new kind of piracy, called \"<i>Piracy 3.0</i>\", has been growing worldwide. Its premise is to offer streaming services for free, at no additional cost."
+    },
+    {
+      "type": "text",
+      "content_text": "streaming services, at no additional cost.\n\nAt some point, the numbers will become unsustainable and studios will have to cut back on their bets. They won't cut back on their franchises (where they make real money) or low-budget horror films. They'll cut back on the art films that are risky and have no easy path to profitability. Soon, it's very likely that films like <i>The Big Short</i> may no longer be made.",
+      "content_credits": "Summary based on the article \"Piracy is the biggest threat facing the film industry as we know it — but not in the way you think\", by Jason Blum in Vox."
+    },
+    {
+      "type": "link_screen",
+      "subtitle": "The events that shaped the world",
+      "title": "Timeline of Events from 2010 to Today",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "6"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Social horror conquers the box office with Jordan Peele's Get Out; classic haunted house and exorcism horror stays alive with The Conjuring, and psychological horror gains new possibilities with The Babadook and The Witch. Click here to see the main events in cinema from 2010 to today in chronological order."
+    }
+  ]
+}

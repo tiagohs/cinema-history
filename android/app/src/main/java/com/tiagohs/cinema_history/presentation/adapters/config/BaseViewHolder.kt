@@ -1,10 +1,9 @@
 package com.tiagohs.cinema_history.presentation.adapters.config
 
-import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.extensions.LayoutContainer
+import androidx.viewbinding.ViewBinding
 
-abstract class BaseViewHolder<T>(override val containerView: View): RecyclerView.ViewHolder(containerView), LayoutContainer {
+abstract class BaseViewHolder<T>(binding: ViewBinding) : RecyclerView.ViewHolder(binding.root) {
 
     var item: T? = null
     var positionItem = 0

@@ -1,0 +1,608 @@
+{
+  "id": 2,
+  "color": "md_teal_500",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "La historia<br/>del cine:<br/>1990 a 2009",
+      "page_title": "1990 a 2009",
+      "coming_soon": false,
+      "previous": "1970 a 1989",
+      "next": "2010 a la actualidad"
+    },
+    {
+      "type": "item",
+      "year": "19\n90",
+      "title": "El Scorsese de siempre",
+      "description": "Con <a href=\"https://_{type: 'screen', 'id': 769, 'screen_type': movie}\">GoodFellas</a> (Buenos muchachos, 1990), se considera que <a href=\"https://_{type: 'screen', 'id': 1032, 'screen_type': person}\">Martin Scorsese</a> (n. 1942) recuperó su mejor forma.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_goodfellas.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n90",
+      "title": "El encanto de Julia Roberts conquista el mundo",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 114, 'screen_type': movie}\">Pretty Woman</a> (Mujer bonita, 1990) llega a los cines con un éxito tremendo y da a conocer a <a href=\"https://_{type: 'screen', 'id': 1204, 'screen_type': person}\">Julia Roberts</a> (n. 1967) al mundo. La película fue precursora de una nueva era de comedias románticas en los años noventa y dos mil.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_linda_mulher.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n90",
+      "title": "Nueva Zelanda para el mundo",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 2891, 'screen_type': movie}\">An Angel at My Table</a> (Un ángel en mi mesa, 1990) es la primera película de Nueva Zelanda en exhibirse en el Festival de Cine de Venecia. Recibe el Gran Premio Especial del Jurado.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_anjo_a_minha_mesa.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n91",
+      "title": "Una realidad cruda",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 650, 'screen_type': movie}\">Boyz N the Hood</a> (Los dueños de la calle, 1991), de <a href=\"https://_{type: 'screen', 'id': 6482, 'screen_type': person}\">John Singleton</a> (1968-2019), es una de las mejores películas afroamericanas de la década.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_donos_rua.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n91",
+      "title": "El renacimiento de Disney",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 10020, 'screen_type': movie}\">Beauty and the Beast</a> (La bella y la bestia, 1991) llega a los cines y recibe la nominación a mejor película, algo inédito para una película animada. La película también marcó el inicio de una nueva edad de oro de las animaciones producidas por Walt Disney.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_bela_fera.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n91",
+      "title": "El poder del CGI llama la atención",
+      "description": "El asesino de metal líquido, capaz de adoptar diferentes formas, en <a href=\"https://_{type: 'screen', 'id': 280, 'screen_type': movie}\">Terminator 2: Judgment Day</a> (Terminator 2: El juicio final, 1991) demuestra que el <strong>CGI</strong> puede crear grandes monstruos.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_terminator_2_cgi.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n91",
+      "title": "Festival de Cine de Sundance",
+      "description": "El Festival de Cine de Utah adopta el nombre de <strong>Festival de Cine de Sundance</strong>: nace una marca.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_festival_cinema_sundance.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n92",
+      "title": "Malcolm X a través de la lente de Spike Lee",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1883, 'screen_type': movie}\"> Malcolm X</a> (1992), poderosa biografía cinematográfica firmada por <a href=\"https://_{type: 'screen', 'id': 5281, 'screen_type': person}\">Spike Lee</a> (n. 1957), coquetea con la polémica al utilizar, en los créditos iniciales, imágenes de la violencia contra Rodney King.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_malcolm_x.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n92",
+      "title": "El cine de Quentin Tarantino",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 138, 'screen_type': person}\">Quentin Tarantino</a> (n. 1963) realiza <a href=\"https://_{type: 'screen', 'id': 500, 'screen_type': movie}\">Reservoir Dogs</a> (Perros de reserva, 1992) y se convierte en uno de los cineastas más influyentes de la década.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_caes_aluguel.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n93",
+      "title": "Dinosaurios como nunca antes se habían visto",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 329, 'screen_type': movie}\">Jurassic Park</a> (Parque Jurásico, 1993) llega a los cines y recibe 3 nominaciones al Óscar. Hasta el día de hoy, la película impresiona con sus efectos especiales.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_parque_dinossauros_rex.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n93",
+      "title": "El prestigio de Spielberg",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 424, 'screen_type': movie}\">Schindler's List</a> (La lista de Schindler, 1993) domina la ceremonia de los Óscar y <a href=\"https://_{type: 'screen', 'id': 488, 'screen_type': person}\">Steven Spielberg</a> (n. 1946) por fin es reconocido como un cineasta serio.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_lista_schindler.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n94",
+      "title": "¡Hakuna Matata!",
+      "description": "Se estrena <a href=\"https://_{type: 'screen', 'id': 8587, 'screen_type': movie}\">The Lion King</a> (El rey león, 1994), que se convierte en la película animada dibujada a mano más taquillera de la historia.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_rei_leao.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n94",
+      "title": "Cuatro bodas y un funeral",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 712, 'screen_type': movie}\">Four Weddings and a Funeral</a> (Cuatro bodas y un funeral, 1994) se convierte en la película británica más taquillera hasta entonces, con una recaudación de más de 245,7 millones de dólares en todo el mundo.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_quatro_casamentos_funeral.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n95",
+      "title": "Stop-motion",
+      "description": "Se estrena <a href=\"https://_{type: 'screen', 'id': 9479, 'screen_type': movie}\">The Nightmare Before Christmas</a> (El extraño mundo de Jack, 1993), dirigida por <a href=\"https://_{type: 'screen', 'id': 510, 'screen_type': person}\">Tim Burton</a>. La película fue un éxito y se convirtió en un motor para futuros éxitos de la animación en <strong>stop-motion</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_estranho_mundo_jack_tim_burton.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n95",
+      "title": "Ghost in the Shell",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 9323, 'screen_type': movie}\">Ghost In The Shell</a> (1995) demuestra la intención de <a href=\"https://_{type: 'screen', 'id': 12180, 'screen_type': person}\">Oshii Mamoru</a> (n. 1951) de usar la animación para temas más adultos.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_fantasma_futuro.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n95",
+      "title": "Animación 3D",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 862, 'screen_type': movie}\">Toy Story</a> (1995), de Pixar, se convierte en el primero de muchos largometrajes de animación por CGI exitosos. El proceso prácticamente reemplaza a la animación convencional en 2D.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_toy_story.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n95",
+      "title": "Dogma 95",
+      "description": "Los directores <a href=\"https://_{type: 'screen', 'id': 42, 'screen_type': person}\">Lars von Trier</a> (n. 1956) y <a href=\"https://_{type: 'screen', 'id': 4453, 'screen_type': person}\">Thomas Vinterberg</a> (n. 1969) firman el <strong>Manifiesto Dogma 95</strong> en París.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_dogma_95.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n96",
+      "title": "Scream",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 4232, 'screen_type': movie}\">Scream</a> (Scream: Grita antes de morir, 1996) reinventa las películas de asesinos psicópatas. Jóvenes brujas inicia una serie de terror suave para adolescentes.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_panico.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n97",
+      "title": "Titanic",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 597, 'screen_type': movie}\">Titanic</a> (1997) llega a los cines y recibe <strong>14 nominaciones al Óscar</strong>. La película recauda más de <strong>2100 millones de dólares</strong>, un hito sin precedentes en la historia hasta entonces.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_titanic.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n98",
+      "title": "J-horror",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 2671, 'screen_type': movie}\">Ringu</a> (El aro, 1998) es un éxito internacional y llama la atención sobre el llamado <strong>J-horror</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_ringu.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n98",
+      "title": "Brasil vuelve al juego",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 666, 'screen_type': movie}\">Central do Brasil</a> (Estación central, 1998) gana el Oso de Oro en el Festival de Berlín, revitalizando el prestigio del cine brasileño en el mundo.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_central_brasil.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n98",
+      "title": "Dil se...",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 21210, 'screen_type': movie}\">Dil se</a> (Dil Se.., 1998) se convierte en la primera película de Bollywood en entrar en la lista de las 10 más taquilleras del Reino Unido.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_dil_se.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n90",
+      "title": "Found footage",
+      "description": "Filmada en video, <a href=\"https://_{type: 'screen', 'id': 2667, 'screen_type': movie}\">The Blair Witch Project</a> (El proyecto de la bruja de Blair, 1999) se convierte en el primer proyecto importante en alcanzar un gran éxito gracias a la difusión por internet.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_bruxa_blair.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n99",
+      "title": "Matrix y las nuevas posibilidades del CGI",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 603, 'screen_type': movie}\">Matrix</a> (1999) ralentiza el tiempo y explora la realidad virtual generada por computadora.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_matrix.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "19\n99",
+      "title": "Comedia disparatada",
+      "description": "Se estrena <a href=\"https://_{type: 'screen', 'id': 2105, 'screen_type': movie}\">American Pie</a> (American Pie: Tu primera vez, 1999), con un tremendo éxito de público. La película fue precursora de las comedias disparatadas que invadieron los cines durante la década de 2000.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_american_pie.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n00",
+      "title": "Artes marciales y Ang Lee",
+      "description": "La película de artes marciales de <a href=\"https://_{type: 'screen', 'id': 1614, 'screen_type': person}\">Ang Lee</a> (n. 1954), <a href=\"https://_{type: 'screen', 'id': 146, 'screen_type': movie}\">Wo Hu Cang Long</a> (El tigre y el dragón, 2000), se convierte en un gran éxito y vuelve a popularizar el género en el mundo.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_tigre_dragao.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n00",
+      "title": "Las mujeres iraníes",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 13898, 'screen_type': movie}\">Dayereh</a> (El círculo, 2000), una conmovedora película de <a href=\"https://_{type: 'screen', 'id': 120229, 'screen_type': person}\">Jafar Panahi</a> sobre las mujeres iraníes, gana el premio FIPRESCI y el León de Oro en el Festival de Venecia.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_o_circulo.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n00",
+      "title": "El regreso de la comedia satírica",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 4247, 'screen_type': movie}\">Scary Movie</a> (Una película de miedo, 2000) llega a los cines y revive el subgénero de la comedia satírica, iniciado en los años ochenta con <a href=\"https://_{type: 'screen', 'id': 813, 'screen_type': movie}\">Airplane!</a> (¿Y dónde está el piloto?, 1980).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_todo_mundo_panico.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n00",
+      "title": "X-Men",
+      "description": "El éxito de <a href=\"https://_{type: 'screen', 'id': 36657, 'screen_type': movie}\">X-Men</a> (2000), dirigida por <a href=\"https://_{type: 'screen', 'id': 9032, 'screen_type': person}\">Bryan Singer</a> (n. 1965), trae una nueva era de adaptaciones de historietas.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_x_men.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n01",
+      "title": "Nuevo Cine Mexicano",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 55, 'screen_type': movie}\">Amores perros</a> (2000), de <a href=\"https://_{type: 'screen', 'id': 223, 'screen_type': person}\">Alejandro González Iñárritu</a> (n. 1963), y <a href=\"https://_{type: 'screen', 'id': 1391, 'screen_type': movie}\">Y tu mamá también</a> (2001), de <a href=\"https://_{type: 'screen', 'id': 11218, 'screen_type': person}\">Alfonso Cuarón</a> (n. 1961), forman las dos caras del Nuevo Cine Mexicano.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_amores_brutos.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n01",
+      "title": "La obra maestra latinoamericana",
+      "description": "Se estrena <a href=\"https://_{type: 'screen', 'id': 598, 'screen_type': movie}\">Cidade de Deus</a> (Ciudad de Dios, 2002). La película se convierte en un éxito y es nominada al Óscar.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_cidade_deus.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n01",
+      "title": "Harry Potter",
+      "description": "Se estrena <a href=\"https://_{type: 'screen', 'id': 671, 'screen_type': movie}\">Harry Potter and the Philosopher's Stone</a> (Harry Potter y la piedra filosofal, 2001), el inicio de una de las franquicias literarias juveniles más populares del cine, que inspiró otras adaptaciones a la pantalla.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_harry_potter.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n02",
+      "title": "El inicio de la captura de movimiento",
+      "description": "<strong>Gollum</strong>, en <a href=\"https://_{type: 'screen', 'id': 121, 'screen_type': movie}\">The Lord of the Rings: The Two Towers</a> (El señor de los anillos: Las dos torres, 2002), es el primer personaje creado por CGI en aparecer en el cine de gran circuito.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_gollum.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n02",
+      "title": "Los Estudios Ghibli encantan al mundo",
+      "description": "Se estrena <a href=\"https://_{type: 'screen', 'id': 129, 'screen_type': movie}\">Sen to Chihiro no Kamikakushi</a> (El viaje de Chihiro, 2001), que gana el Óscar y el Oso de Oro. El éxito engrandece el nombre de los <strong>Estudios Ghibli</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_viagem_chihiro.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n02",
+      "title": "El cine coreano llama la atención del mundo",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 670, 'screen_type': movie}\">Oldboy</a> (Oldboy: Cinco días para vengarse, 2003) llama la atención del mundo en el Festival de Cannes y recibe muchos elogios de <a href=\"https://_{type: 'screen', 'id': 138, 'screen_type': person}\">Quentin Tarantino</a> (n. 1963).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_oldboy.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n02",
+      "title": "Poder y responsabilidad",
+      "description": "Se estrena la película <a href=\"https://_{type: 'screen', 'id': 557, 'screen_type': movie}\">Spider-Man</a> (El hombre araña, 2002), de <a href=\"https://_{type: 'screen', 'id': 7623, 'screen_type': person}\">Sam Raimi</a> (n. 1959). La película cambia el panorama de las adaptaciones de superhéroes, al mantener la humanización traída por las películas de la franquicia <i>X-Men</i> junto con el colorido de las historietas.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_spider_man.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n03",
+      "title": "Un fenómeno llamado El señor de los anillos",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 122, 'screen_type': movie}\">The Lord of the Rings: The Return of the King</a> (El señor de los anillos: El retorno del rey, 2003) es la más exitosa de la saga y se lleva un total de 11 premios Óscar.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_senhor_aneis_retorno_rei.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n04",
+      "title": "Splatter",
+      "description": "La franquicia <i>El juego del miedo</i> impulsa la popularidad del subgénero <strong>splatter</strong>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_saw.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n08",
+      "title": "Universo Cinematográfico de Marvel",
+      "description": "Se estrena <a href=\"https://_{type: 'screen', 'id': 1726, 'screen_type': movie}\">Iron Man</a> (Iron Man: El hombre de hierro, 2008), que da inicio a su <strong>Universo Cinematográfico</strong>. Subestimado al principio, en pocos años todos los estudios intentan desarrollar un universo compartido similar en los cines.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_homem_ferro.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n08",
+      "title": "El caballero de la noche",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 155, 'screen_type': movie}\">The Dark Knight</a> (Batman: El caballero de la noche, 2008) es el mayor éxito de taquilla del año. Fue una de las primeras películas filmadas con cámaras <strong>IMAX</strong>, además de recibir 8 nominaciones al Óscar y ganar el de <strong>Mejor Actor de Reparto</strong> para <a href=\"https://_{type: 'screen', 'id': 1810, 'screen_type': person}\">Heath Ledger</a> (1979-2008), algo inédito hasta entonces para una película de superhéroes.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_batman_cavaleiro_trevas.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n09",
+      "title": "Actividad paranormal",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 23827, 'screen_type': movie}\">Paranormal Activity</a> (Actividad paranormal, 2007) se convierte en uno de los grandes éxitos de bajo presupuesto de la década y populariza definitivamente el <i>found footage</i>.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_atividade_paranormal.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n09",
+      "title": "3D",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 19995, 'screen_type': movie}\">Avatar</a> (2009) populariza los entornos intensamente renderizados por CGI mediante un sofisticado proceso en 3D. Pixar, DreamWorks y otros estudios siguen el mismo camino.",
+      "image_transparent": true,
+      "image": {
+        "image_type": "online_firebase",
+        "url": "images/img_avatar.webp",
+        "style": {
+          "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "footer",
+      "previous": "1970 a 1989",
+      "next": "2010 a la actualidad"
+    }
+  ]
+}

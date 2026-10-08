@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "title": "Visionaries",
+    "description": "The first inventors, dreamers and artists. From the invention of the Kinetoscope to the Lumière brothers' first known public screening of a film for a paying audience.",
+    "image": {
+      "image_type": "local",
+      "url": "img_great_train",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "The First Epics",
+    "description": "Epics are known for their huge budgets, grand sets, enormous casts, sweeping scope and, at times, their special effects. In the early days of cinema, rudimentary technology limited what filmmakers could produce, but as it developed, directors were free to let their imaginations run wild.",
+    "image": {
+      "image_type": "local",
+      "url": "img_cabiria",
+      "style": {
+        "scale_type": "center_crop",
+        "height": 250,
+        "resize": {
+          "height": 250
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Heroines and Women Directors",
+    "description": "The rise of the term femme fatale;  the popularization of the term “It Girl”; and Alice Guy-Blaché, one of cinema's most important pioneers, even though history forgot her for a long time. ",
+    "image": {
+      "image_type": "local",
+      "url": "img_alice",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Race Films: African American Pioneers",
+    "description": "People who defied stereotypes and racism. Directors, producers, actors and actresses who believed in the strength of their community became pioneers and made great films, showing that with hard work there is no obstacle we cannot overcome.",
+    "image": {
+      "image_type": "local",
+      "url": "img_oscar_micheaux",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Fantasy and Supernatural Cinema",
+    "description": "Early in cinema's evolution, some pioneers saw the potential of the seventh art to portray the mysterious, the terrifying, the fantastic and the supernatural. Filmmakers such as F. W. Murnau, Georges Méliès and Benjamin Christensen brought to the screen masterpieces that influenced future generations.",
+    "image": {
+      "image_type": "local",
+      "url": "img_nosferatus",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Silent Comedy",
+    "description": "One of cinema's first and most popular genres, comedy has been part of film from the very beginning. Names like Charlie Chaplin, Harold Lloyd and Buster Keaton are forever etched in history, influencing future comedians on the big screen.",
+    "image": {
+      "image_type": "local",
+      "url": "img_harold_clock",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "The \"Golden Age\" of Silent Film",
+    "description": "During this time, investment doubled. Major studios emerged, pouring ever more money into film production, and great directors made memorable films.",
+    "image": {
+      "image_type": "local",
+      "url": "img_fausto",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "Surrealism on Screen",
+    "description": "Rational reality gives way to the higher reality of dreams and uncensored desire. ",
+    "image": {
+      "image_type": "local",
+      "url": "img_cao_andaluz",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "The Dawn of the Talkies",
+    "description": "On October 23, 1927, “You Ain't Heard Nothin' Yet” was heard for the first time in a movie theater, and the era of sound film began. Suddenly, the image was no longer everything.",
+    "image": {
+      "image_type": "local",
+      "url": "img_jazz_singer",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

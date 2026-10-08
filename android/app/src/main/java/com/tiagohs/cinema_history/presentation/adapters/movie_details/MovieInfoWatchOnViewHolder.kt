@@ -1,19 +1,17 @@
 package com.tiagohs.cinema_history.presentation.adapters.movie_details
 
 import android.view.LayoutInflater
-import android.view.View
+import com.tiagohs.cinema_history.databinding.ViewNetworkItemBinding
+import com.tiagohs.cinema_history.databinding.AdapterMovieInfoWatchOnBinding
 import androidx.constraintlayout.widget.Constraints
-import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
 import com.tiagohs.entities.enums.NetworkType
 import com.tiagohs.entities.movie_info.MovieInfo
 import com.tiagohs.helpers.extensions.*
-import kotlinx.android.synthetic.main.adapter_movie_info_watch_on.*
-import kotlinx.android.synthetic.main.view_network_item.view.*
 
 class MovieInfoWatchOnViewHolder(
-    view: View
-) : BaseViewHolder<MovieInfo>(view) {
+    private val binding: AdapterMovieInfoWatchOnBinding
+) : BaseViewHolder<MovieInfo>(binding) {
 
     private var isSetup = false
 
@@ -25,37 +23,32 @@ class MovieInfoWatchOnViewHolder(
             watchOn.forEach { network ->
                 val color = network.type.color
                 val textColor = network.type.textColor
-                val view = LayoutInflater.from(containerView.context)
-                    .inflate(R.layout.view_network_item, null, false)
+                val itemBinding = ViewNetworkItemBinding.inflate(LayoutInflater.from(itemView.context), null, false)
                 val layoutParams = Constraints.LayoutParams(
                     Constraints.LayoutParams.WRAP_CONTENT,
                     Constraints.LayoutParams.WRAP_CONTENT
                 )
 
-                view.layoutParams = layoutParams
-                view.networkName.setResourceTextColor(textColor)
+                itemBinding.root.layoutParams = layoutParams
+                itemBinding.networkName.setResourceTextColor(textColor)
 
                 if (network.type == NetworkType.UNKNOWN) {
-                    view.networkName.setResourceText(network.name)
+                    itemBinding.networkName.setResourceText(network.name)
                 } else {
-                    network.type.networkName?.let { view.networkName.setResourceText(it) }
+                    network.type.networkName?.let { itemBinding.networkName.setResourceText(it) }
                 }
 
-                view.networkContainer.setOnClickListener {
-                    containerView.context.openLink(network.link)
+                itemBinding.networkContainer.setOnClickListener {
+                    itemView.context.openLink(network.link)
                 }
 
-                view.networkContainerCard.setCardBackgroundColor(containerView.context.getResourceColor(color))
+                itemBinding.networkContainerCard.setCardBackgroundColor(itemView.context.getResourceColor(color))
 
-                watchOnContainer.addView(view)
+                binding.watchOnContainer.addView(itemBinding.root)
             }
 
             isSetup = true
         }
 
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_movie_info_watch_on
     }
 }

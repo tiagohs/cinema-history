@@ -1,8 +1,8 @@
 package com.tiagohs.cinema_history.presentation.adapters.movie_details
 
-import android.content.Intent
-import android.view.View
 import com.tiagohs.cinema_history.R
+import android.content.Intent
+import com.tiagohs.cinema_history.databinding.AdapterMovieInfoLinkTopicsBinding
 import com.tiagohs.cinema_history.presentation.activities.MilMoviesPresentationActivity
 import com.tiagohs.cinema_history.presentation.activities.PresentationActivity
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
@@ -14,14 +14,13 @@ import com.tiagohs.entities.movie_info.MovieInfo
 import com.tiagohs.entities.tmdb.movie.Movie
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.ColorUtils
-import kotlinx.android.synthetic.main.view_link_topics.*
 
 class MovieInfoLinkTopicsViewHolder(
-    view: View,
+    private val binding: AdapterMovieInfoLinkTopicsBinding,
     private val appLanguage: String,
     private val movieInfoType: MovieInfoType,
     private val onScreenLink: ((Intent) -> Unit)? = null
-) : BaseViewHolder<MovieInfo>(view) {
+) : BaseViewHolder<MovieInfo>(binding) {
 
     override fun bind(item: MovieInfo, position: Int) {
         super.bind(item, position)
@@ -36,24 +35,31 @@ class MovieInfoLinkTopicsViewHolder(
     }
 
     private fun bindMilMovies(milMoviesMainTopic: MilMoviesMainTopic?, movie: Movie) {
-        val subtitleText =
-            "O filme ${movie.getMovieTitleFromAppLanguage(appLanguage)} faz parte da lista"
-        val titleText =
-            "1001 Filmes para ver antes de morrer ${milMoviesMainTopic?.title?.capitalize()}"
+        val context = itemView.context
+        val subtitleText = context.getString(
+            R.string.movie_link_mil_movies_subtitle, movie.getMovieTitleFromAppLanguage(appLanguage) ?: ""
+        )
+        val titleText = context.getString(
+            R.string.movie_link_mil_movies_title, milMoviesMainTopic?.title?.replaceFirstChar { it.titlecase() } ?: ""
+        )
         val image = milMoviesMainTopic?.image
         val intent =
-            MilMoviesPresentationActivity.newIntent(milMoviesMainTopic!!, containerView.context)
+            MilMoviesPresentationActivity.newIntent(milMoviesMainTopic!!, itemView.context)
 
         bind(image, subtitleText, titleText, null, intent)
     }
 
     private fun bindHistory(mainTopicItem: MainTopicItem?, movie: Movie) {
-        val subtitleText =
-            "Leia mais sobre o período em que ${movie.getMovieTitleFromAppLanguage(appLanguage)} foi lançado"
-        val titleText = "A História do cinema ${mainTopicItem?.title?.capitalize()}"
+        val context = itemView.context
+        val subtitleText = context.getString(
+            R.string.movie_link_history_subtitle, movie.getMovieTitleFromAppLanguage(appLanguage) ?: ""
+        )
+        val titleText = context.getString(
+            R.string.movie_link_history_title, mainTopicItem?.title?.replaceFirstChar { it.titlecase() } ?: ""
+        )
         val descriptionText = mainTopicItem?.description
         val image = mainTopicItem?.image
-        val intent = PresentationActivity.newInstance(containerView.context, mainTopicItem!!)
+        val intent = PresentationActivity.newInstance(itemView.context, mainTopicItem!!)
 
         bind(image, subtitleText, titleText, descriptionText, intent)
     }
@@ -68,30 +74,26 @@ class MovieInfoLinkTopicsViewHolder(
         val colorAsset = ColorUtils.getRandomColorAssets()
         val colorName = "md_${colorAsset.colorName}_500"
 
-        linkButtonContainerCard.setCardBackgroundColor(containerView.context.getResourceColor(colorName))
-        title.setResourceTextColor(colorName)
+        binding.blockSpecialContainerCard.linkButtonContainerCard.setCardBackgroundColor(itemView.context.getResourceColor(colorName))
+        binding.blockSpecialContainerCard.title.setResourceTextColor(colorName)
 
-        image?.let { mainTopicImage.loadImage(it, placeholder = null) }
+        image?.let { binding.blockSpecialContainerCard.mainTopicImage.loadImage(it, placeholder = null) }
 
-        subtitle.setResourceText(subtitleText)
-        subtitle.show()
+        binding.blockSpecialContainerCard.subtitle.setResourceText(subtitleText)
+        binding.blockSpecialContainerCard.subtitle.show()
 
-        title.setResourceText(titleText)
-        title.show()
+        binding.blockSpecialContainerCard.title.setResourceText(titleText)
+        binding.blockSpecialContainerCard.title.show()
 
         if (descriptionText != null) {
-            description.setResourceText(descriptionText)
-            description.show()
+            binding.blockSpecialContainerCard.description.setResourceText(descriptionText)
+            binding.blockSpecialContainerCard.description.show()
         } else {
-            description.hide()
+            binding.blockSpecialContainerCard.description.hide()
         }
 
-        linkButtonContainer.setOnClickListener { onScreenLink?.invoke(intent) }
-        linkButtonContainerCard.setOnClickListener { onScreenLink?.invoke(intent) }
-        blockSpecialContainer.setOnClickListener { onScreenLink?.invoke(intent) }
-    }
-
-    companion object {
-        const val LAYOUT_ID = R.layout.adapter_movie_info_link_topics
+        binding.blockSpecialContainerCard.linkButtonContainer.setOnClickListener { onScreenLink?.invoke(intent) }
+        binding.blockSpecialContainerCard.linkButtonContainerCard.setOnClickListener { onScreenLink?.invoke(intent) }
+        binding.blockSpecialContainerCard.blockSpecialContainer.setOnClickListener { onScreenLink?.invoke(intent) }
     }
 }

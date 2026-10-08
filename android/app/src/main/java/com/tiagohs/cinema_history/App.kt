@@ -2,9 +2,11 @@ package com.tiagohs.cinema_history
 
 import android.app.Application
 import android.content.Context
+import com.tiagohs.cinema_history.ads.AdsHistory
 import com.tiagohs.cinema_history.dagger.AppComponent
 import com.tiagohs.cinema_history.dagger.DaggerAppComponent
 import com.tiagohs.cinema_history.dagger.modules.AppModule
+import com.tiagohs.helpers.utils.ContentLanguage
 import timber.log.Timber
 
 class App: Application() {
@@ -17,8 +19,10 @@ class App: Application() {
 
         configureDagger()
         configureTimber()
+        configureContentLanguages()
 
-        // MobileAds.initialize(this, BuildConfig.ADMOB_APP_ID);
+        // Anúncios: o SDK só é inicializado depois do consentimento (HomeActivity -> AdsManager).
+        AdsHistory.registerSession(this)
     }
 
     @Suppress("DEPRECATION")
@@ -33,6 +37,13 @@ class App: Application() {
             Timber.plant(Timber.DebugTree())
         }
 
+    }
+
+    /** Em debug, inglês e espanhol ficam disponíveis em Configurações para revisar a tradução. */
+    private fun configureContentLanguages() {
+        if (BuildConfig.DEBUG) {
+            ContentLanguage.enablePreview(listOf(ContentLanguage.ENGLISH, ContentLanguage.SPANISH))
+        }
     }
 
     companion object {
