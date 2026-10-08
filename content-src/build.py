@@ -308,7 +308,8 @@ def chapter(path, write_images=False):
         if t == "sumario":
             need(f, ["title", "description", "image"], t)
             img = fetch_image(parse_image(f.get("image", ""), errors), errors, write_images)
-            sumario = {"id": page, "title": f.get("title", ""), "description": render(f.get("description", ""), errors),
+            # O sumário e os títulos são texto puro no app (não interpretam HTML).
+            sumario = {"id": page, "title": plain(f.get("title", "")), "description": plain(render(f.get("description", ""), errors)),
                        "image": local_image(img, 350)}
         elif t == "text":
             content.append({"type": "text", "content_text": render(" ".join(s["body"]), errors)})
@@ -321,10 +322,10 @@ def chapter(path, write_images=False):
                 notes.append(f"vídeo {f.get('youtube')}: \"{yt.get('title')}\" — {yt.get('author_name')}")
             if t == "video":
                 content.append({"type": "video", "video_id": f.get("youtube"), "information": {
-                    "contentTitle": render(f.get("title", ""), errors), "contentText": render(f.get("text", ""), errors),
+                    "contentTitle": plain(render(f.get("title", ""), errors)), "contentText": render(f.get("text", ""), errors),
                     "source": f.get("source", "")}})
             else:
-                content.append({"type": "essay", "video_id": f.get("youtube"), "title": f.get("title"),
+                content.append({"type": "essay", "video_id": f.get("youtube"), "title": plain(f.get("title", "")),
                                 "description": render(f.get("description", ""), errors), "channel": f.get("channel")})
         elif t == "quote":
             need(f, ["quote", "author"], t)
@@ -333,7 +334,7 @@ def chapter(path, write_images=False):
         elif t == "block":
             need(f, ["title", "image", "text"], t)
             img = fetch_image(parse_image(f.get("image", ""), errors), errors, write_images)
-            block = {"type": "block_special", "title": f.get("title"), "image": local_image(img),
+            block = {"type": "block_special", "title": plain(f.get("title", "")), "image": local_image(img),
                      "description": render(f.get("text", ""), errors)}
             if f.get("link"):
                 url, _, button = f["link"].partition("|")
@@ -344,7 +345,7 @@ def chapter(path, write_images=False):
             need(f, ["image", "title", "text", "source"], t)
             img = fetch_image(parse_image(f.get("image", ""), errors), errors, write_images)
             content.append({"type": "image", "image": local_image(img), "information": {
-                "contentTitle": render(f.get("title", ""), errors), "contentText": render(f.get("text", ""), errors),
+                "contentTitle": plain(render(f.get("title", ""), errors)), "contentText": render(f.get("text", ""), errors),
                 "source": f.get("source", "")}})
         elif t == "movies":
             movies = ids(s["body"])
@@ -458,7 +459,7 @@ def timeline(path, write_images=False):
                     errors.append(f"[item {f.get('title', '?')}] falta '{k}'")
             img = fetch_image(parse_image(f.get("image", ""), errors), errors, write_images)
             year = f.get("year", "")
-            items.append({"type": "item", "year": year[:2] + "\n" + year[2:], "title": f.get("title", ""),
+            items.append({"type": "item", "year": year[:2] + "\n" + year[2:], "title": plain(f.get("title", "")),
                           "description": render(f.get("text", ""), errors), "image_transparent": False,
                           "image": {"image_type": "local", "url": img, "style": {"scale_type": "center_crop"}}})
         else:
