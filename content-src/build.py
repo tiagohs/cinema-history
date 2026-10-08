@@ -42,7 +42,7 @@ ASSETS = os.path.join(ROOT, "android/app/src/main/assets/local/pt")
 DRAWABLE = os.path.join(ROOT, "android/app/src/main/res/drawable-xxhdpi")
 CACHE = os.path.join(HERE, "cache")
 KEY = "dac4d50f24dee29513738d8fa3470a3f"
-UA = {"User-Agent": "CinemaHistoryContentBuilder/1.0 (tiago.hsilva@gmail.com)"}
+UA = {"User-Agent": "CinemaHistoryContentBuilder/1.0 (https://github.com/tiagohs/cinema-history)"}
 
 TIMELINE_TEXT = {
     7: ("Timeline de Acontecimentos de 2010 a 2019", "6"),
