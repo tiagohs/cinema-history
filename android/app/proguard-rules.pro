@@ -31,3 +31,9 @@
 # Glide: módulo registrado por anotação (FirebaseAppStorageModule).
 -keep public class * extends com.bumptech.glide.module.AppGlideModule
 -keep class com.bumptech.glide.GeneratedAppGlideModuleImpl { *; }
+
+# Room (usado pelo WorkManager do SDK de anúncios): o banco gerado (*_Impl) é criado por reflexão.
+# Sem isto, o R8 full mode remove o construtor e o app fecha ao abrir
+# ("Failed to create an instance of androidx.work.impl.WorkDatabase").
+-keep class * extends androidx.room.RoomDatabase { <init>(); }
+-keep class androidx.work.impl.WorkDatabase_Impl { <init>(); }

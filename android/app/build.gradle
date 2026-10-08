@@ -111,6 +111,8 @@ dependencies {
     implementation dependencies.constrantlayout
     implementation dependencies.androidMaterial
     implementation dependencies.browser
+    // WorkManager atualizado (o play-services-ads traz a 2.7.0, com Room antigo sem regras para o R8 full mode)
+    implementation dependencies.workRuntime
     implementation dependencies.recyclerview // ConcatAdapter (anúncios nativos nas listas)
 
     // Components and Tools

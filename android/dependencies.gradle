@@ -57,6 +57,7 @@ ext {
     def playServicesAdsVersion = '25.5.0'
     def umpVersion = '3.2.0'
     def recyclerviewVersion = '1.4.0'
+    def workVersion = '2.10.5'
     def firebaseBomVersion = '34.4.0'
     def firebaseUiStorageVersion = '9.1.1'
 
@@ -100,6 +101,7 @@ ext {
             firebaseStorage             : "com.google.firebase:firebase-storage",
             firebaseRemoteConfig        : "com.google.firebase:firebase-config",
             playServicesAds             : "com.google.android.gms:play-services-ads:${playServicesAdsVersion}",
+            workRuntime                 : "androidx.work:work-runtime:${workVersion}",
             recyclerview                : "androidx.recyclerview:recyclerview:${recyclerviewVersion}",
             ump                         : "com.google.android.ump:user-messaging-platform:${umpVersion}",
             firebaseAnalytics           : "com.google.firebase:firebase-analytics",
