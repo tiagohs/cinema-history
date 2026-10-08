@@ -179,6 +179,8 @@ jobs:
               exit 1
             fi
             echo "Atualizando draft existente $TAG"
+            # O draft passa a apontar para o commit deste build (a tag é criada nele ao publicar).
+            gh release edit "$TAG" --target "${{ github.sha }}" --title "Cinema History $TAG (build ${{ steps.version.outputs.code }})"
           else
             gh release create "$TAG" \
               --draft \
