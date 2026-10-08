@@ -27,6 +27,7 @@ Comandos:
 """
 from __future__ import annotations
 
+import glob
 import io
 import json
 import os
@@ -239,9 +240,9 @@ def fetch_image(opts, errors, write=True):
     from PIL import Image
     url = source
     try:
-        req = urllib.request.Request(url, headers=UA)
-        with urllib.request.urlopen(req, timeout=60) as r:
-            data = r.read()
+        import subprocess
+        data = subprocess.run(["curl", "-sfL", "--max-time", "60", "-A", UA["User-Agent"], url],
+                              check=True, capture_output=True).stdout
         im = Image.open(io.BytesIO(data)).convert("RGB")
         if im.width > 1080:
             im = im.resize((1080, round(im.height * 1080 / im.width)), Image.LANCZOS)
@@ -424,6 +425,73 @@ def report(ch):
     print()
 
 
+# --------------------------------------------------------------------------------------
+# Timelines (content-src/pt/timelines/timeline_<n>.md)
+#
+#   # timeline
+#   mode: full | merge         (merge: mantém os itens existentes até "until" e acrescenta os novos)
+#   until: 2019                (só no merge)
+#   title: A História<br/>do Cinema:<br/>2020 até hoje
+#   page_title: 2020 até hoje
+#   previous: 2010 a 2019
+#   next: (opcional)
+#   color: md_red_500
+#
+#   # item
+#   year: 2020
+#   title: Título curto
+#   text: Descrição com {{m:ID}} e {{p:ID}}.
+#   image: name=img_... tmdb_movie=...
+# --------------------------------------------------------------------------------------
+
+def timeline(path, write_images=False):
+    n = int(re.findall(r"timeline_(\d+)\.md$", path)[0])
+    errors = []
+    head, items = {}, []
+    for sec in parse(path):
+        f = sec["fields"]
+        if sec["type"] == "timeline":
+            head = f
+        elif sec["type"] == "item":
+            for k in ("year", "title", "text", "image"):
+                if not f.get(k):
+                    errors.append(f"[item {f.get('title', '?')}] falta '{k}'")
+            img = fetch_image(parse_image(f.get("image", ""), errors), errors, write_images)
+            year = f.get("year", "")
+            items.append({"type": "item", "year": year[:2] + "\n" + year[2:], "title": f.get("title", ""),
+                          "description": render(f.get("text", ""), errors), "image_transparent": False,
+                          "image": {"image_type": "local", "url": img, "style": {"scale_type": "center_crop"}}})
+        else:
+            errors.append(f"seção desconhecida: # {sec['type']}")
+    out = os.path.join(ASSETS, "timelines", f"timeline_{n}.json")
+    if head.get("mode") == "merge":
+        doc = json.load(open(out))
+        until = head.get("until", "9999")
+        new_titles = {i["title"] for i in items}
+        old = [i for i in doc["timeline_list"] if i.get("type") == "item" and i["year"].replace("\n", "") <= until
+               and i["title"] not in new_titles]
+        merged = sorted(old + items, key=lambda i: i["year"].replace("\n", ""))
+    else:
+        doc = {"id": 2, "color": head.get("color", "md_red_500"), "title_text_color": "md_white_1000"}
+        merged = sorted(items, key=lambda i: i["year"].replace("\n", ""))
+    title = {"type": "title", "title": head.get("title", ""), "page_title": head.get("page_title", ""),
+             "coming_soon": False, "previous": head.get("previous", "")}
+    footer = {"type": "footer", "previous": head.get("previous", "")}
+    if head.get("next"):
+        title["next"] = footer["next"] = head["next"]
+    doc["timeline_list"] = [title] + merged + [footer]
+    return n, doc, items, errors
+
+
+def timeline_report(n, items, errors):
+    print(f"=== timeline_{n}")
+    for i in items:
+        print(f"\n[{i['year'].replace(chr(10), '')}] {i['title']}\n{plain(i['description'])}")
+    for e in errors:
+        print("  ✗ ERRO: " + e)
+    print()
+
+
 def main():
     args = sys.argv[1:]
     if not args or args[0] not in ("check", "build"):
@@ -432,6 +500,11 @@ def main():
     if args[0] == "check":
         bad = 0
         for p in args[1:]:
+            if "timeline_" in p:
+                n, _, items, errs = timeline(os.path.abspath(p))
+                timeline_report(n, items, errs)
+                bad += len(errs)
+                continue
             ch = chapter(os.path.abspath(p))
             report(ch)
             bad += len(ch["errors"])
@@ -439,7 +512,16 @@ def main():
 
     era_filter = int(args[args.index("--era") + 1]) if "--era" in args else None
     files = sorted(
-        (os.path.join(dp, f) for dp, _, fs in os.walk(os.path.join(HERE, "pt")) for f in fs if f.endswith(".md")))
+        (os.path.join(dp, f) for dp, _, fs in os.walk(os.path.join(HERE, "pt")) for f in fs
+         if f.endswith(".md") and not f.startswith("timeline_")))
+    for p in sorted(glob.glob(os.path.join(HERE, "pt", "timelines", "timeline_*.md"))):
+        n, doc, items, errs = timeline(p, write_images=True)
+        if errs:
+            timeline_report(n, items, errs)
+            bad_tl = True
+            continue
+        json.dump(doc, open(os.path.join(ASSETS, "timelines", f"timeline_{n}.json"), "w"), ensure_ascii=False, indent=2)
+        print(f"ok  timeline_{n}  ({len(items)} itens novos)")
     bad = 0
     sumarios = {}
     for p in files:
@@ -462,7 +544,7 @@ def main():
         by_id = {s["id"]: s for s in current}
         for s in items:
             by_id[s["id"]] = s
-        json.dump([by_id[k] for k in sorted(by_id)], open(path, "w"), ensure_ascii=False, indent=1)
+        json.dump([by_id[k] for k in sorted(by_id)], open(path, "w"), ensure_ascii=False, indent=2)
     return 1 if bad else 0
 
 

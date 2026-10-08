@@ -270,9 +270,9 @@
     "main_topic_type": "history_cinema",
     "layout_type": "card_full",
     "id": 7,
-    "title": "De 2010 até Hoje",
+    "title": "De 2010 a 2019",
     "subtitle": "Parte 07",
-    "description": "O 3D domina as telonas, uma nova leva de filmes de super-heróis aparece e domina as bilheterias mundiais. O Terror popular ganha uma nova roupagem com Invocação do Mal, e o terror psicológico renasce com grandes obras como A bruxa. O Streaming aparece de mansinho conquistando o público, crítica, e até mesmo os grandes diretores.",
+    "description": "O 3D domina as telonas e os super-heróis dominam as bilheterias mundiais. O terror ganha nova roupagem com Invocação do Mal e A Bruxa, a animação vai muito além da Disney, o cinema falado em outras línguas conquista o Oscar até a noite histórica de Parasita, e o streaming chega de mansinho, conquistando público, crítica e grandes diretores.",
     "blocked": false,
     "is_new": true,
     "image": {
@@ -309,5 +309,49 @@
     },
     "title_color": "md_white_1000",
     "color": "md_light_blue_900"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card_full",
+    "id": 8,
+    "title": "De 2020 até hoje",
+    "subtitle": "Parte 08",
+    "description": "A pandemia apaga as telas e o streaming entra em guerra, até as megafusões. Hollywood para em greve e discute a inteligência artificial, as redes sociais e os criadores da internet decidem sucessos, o terror vira a aposta mais segura e o cinema do mundo todo, do Brasil à Coreia, chega ao topo do Oscar.",
+    "blocked": false,
+    "is_new": true,
+    "image": {
+      "image_type": "local",
+      "url": "img_era8_ainda_estou_aqui",
+      "content_description": "Fernanda Torres, Selton Mello e os filhos na praia, em Ainda Estou Aqui.",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      },
+      "style": {
+        "height": 400,
+        "resize": {
+          "height": 400
+        },
+        "scale_type": "center_crop"
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_era8_pecadores_sol",
+      "content_description": "Michael B. Jordan diante de um sol vermelho, em Pecadores.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_start",
+    "quote": {
+      "quote": "Quando você supera a barreira de uma polegada das legendas, vai conhecer muitos outros filmes incríveis.",
+      "author": "Bong Joon Ho (Globo de Ouro, 2020)",
+      "text_color": "md_white_1000",
+      "background_color": "md_black_1000",
+      "icon_color": "md_white_1000"
+    },
+    "title_color": "md_white_1000",
+    "color": "md_deep_orange_900"
   }
 ]

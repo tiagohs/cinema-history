@@ -32,7 +32,7 @@ source: Youtube: Canal <i>CBS News</i>
 Para os atores, a ameaça da IA tinha rosto e corpo. No dia do anúncio da greve, o negociador-chefe do sindicato, Duncan Crabtree-Ireland, contou que os estúdios tinham proposto escanear os figurantes, pagar a eles um único dia de trabalho e ficar com a imagem digital para sempre, podendo usá-la sem nova autorização nem novo pagamento. A versão do sindicato, contestada pelos estúdios, correu o mundo e virou o símbolo do pesadelo: multidões de cena povoadas por cópias de pessoas que nunca mais seriam chamadas. O medo não parava nos figurantes. Dubladores viam programas imitarem suas vozes, e as estrelas sabiam que o rejuvenescimento digital já permitia pôr um rosto de 30 anos num ator de 80. A pergunta de fundo era simples: quem é o dono desse rosto?
 
 # image
-image: name=img_greves_piquete_nova_york url=https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAG-AFTRA_Picket_VI_%2853052244001%29.jpg/1280px-SAG-AFTRA_Picket_VI_%2853052244001%29.jpg
+image: name=img_greves_piquete_nova_york url=https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAG-AFTRA_Picket_VI_%2853052244001%29.jpg/960px-SAG-AFTRA_Picket_VI_%2853052244001%29.jpg
 title: Roteiristas e atores no mesmo piquete
 text: Piquete em Nova York em 17 de julho de 2023, três dias depois de os atores entrarem em greve. Os cartazes pretos são do <i>SAG-AFTRA</i>; os brancos e vermelhos, dos roteiristas da <i>WGA</i>.
 source: Wikimedia Commons: Eden, Janine and Jim (CC BY 2.0)
