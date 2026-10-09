@@ -315,9 +315,10 @@ def generate_chapter(prov, ch, cfg, force=False):
     tracks = []
     for t in ch["tracks"]:
         h = track_hash(prov, t, lang, cfg)
-        fname = f"{t['id']}.ogg"
+        # o hash no nome: áudio novo = endereço novo (o cache do servidor e o offline do app nunca ficam velhos)
+        fname = f"{t['id']}-{h[:10]}.ogg"
         dest = os.path.join(cdir, fname)
-        if not force and old.get(t["id"], {}).get("hash") == h and os.path.exists(dest):
+        if not force and old.get(t["id"], {}).get("hash") == h and os.path.exists(os.path.join(cdir, old[t["id"]].get("file", ""))):
             kept = dict(old[t["id"]])
             # o source_index não entra no hash (não muda o áudio): atualiza as marcas com o roteiro atual
             src = {sg["id"]: sg.get("source_index", -1) for sg in t["segments"]}

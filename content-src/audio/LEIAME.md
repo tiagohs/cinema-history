@@ -117,26 +117,25 @@ python3 content-src/audio/generate.py --provider chirp                         #
  "duration_s":640.2}
 ```
 
-## 5. Onde hospedar: Cloudflare R2 (recomendado)
+## 5. Onde hospedar: Cloudflare R2 + Worker
 
-- **Tamanho**: 48 kbps dá cerca de 21,6 MB por hora. Os 3 idiomas somam ~63 h, ou **~1,4 GB**.
-- **Custo**:
-  - O R2 dá 10 GB de armazenamento grátis por mês. Acima disso, custa US$ 0,015 por GB por mês.
-  - A saída de dados (egress) é grátis.
-  - As leituras são grátis até 10 milhões por mês. Acima disso, custam US$ 0,36 por milhão.
-  - **Na prática, o custo é US$ 0.**
-- **Passos**:
-  1. Crie o bucket `cinema-history-audio` no painel da Cloudflare, em R2.
-  2. Ligue um **domínio próprio** ao bucket, por exemplo `audio.<seu-domínio>`, em Settings → Custom Domains. O domínio `r2.dev` serve só para testes, porque tem limite de taxa.
-  3. Envie a pasta `out/<idioma>/` mantendo os caminhos:
-     ```bash
-     rclone copy content-src/audio/out/pt r2:cinema-history-audio/v1/pt --exclude 'amostras/**'
-     ```
-     O `wrangler r2 object put` também funciona, mas envia um arquivo por vez.
-  4. A URL pública de uma faixa fica assim: `https://audio.<seu-domínio>/v1/pt/main_1/page_1/01.ogg`, com o manifest em `…/page_1/manifest.json`.
-  5. Configure o cache: `Cache-Control: public, max-age=31536000` nos `.ogg` e um tempo curto no `manifest.json`.
-- **Versionamento**: o `hash` de cada faixa no manifest muda quando o áudio muda. Se a voz ou o formato mudar, publique em `v2/` e troque a `BASE_URL` do app (ver "No app").
-- `marks[].source_index` não entra no `hash` (não muda o áudio). Se só os índices mudarem, rode `scripts.py` e `generate.py` de novo: o script atualiza as marcas do manifest sem chamar a API.
+- **Tamanho**: 48 kbps dá cerca de 21,6 MB por hora (pt ≈ 480 MB; os 3 idiomas ≈ 1,4 GB).
+- **Custo**: US$ 0. O R2 dá 10 GB grátis por mês, não cobra tráfego de saída e dá 10 milhões de leituras por mês;
+  o Worker dá 100 mil requisições por dia, e o cache da borda atende boa parte sem chegar ao Worker.
+- **Sem domínio próprio**: o bucket fica privado e o Worker `cloudflare/audio-worker` entrega os arquivos em
+  `https://cinema-history-audio.<subdomínio>.workers.dev/<idioma>/main_<era>/page_<n>/...`, com suporte a Range
+  (avançar/voltar), ETag e cache.
+- **Nomes das faixas**: `<id>-<hash>.ogg`. Áudio novo = nome novo, então o cache (servidor e offline do app) nunca fica velho.
+
+Passo a passo:
+1. Ative o R2 no painel da Cloudflare (R2 → Purchase/Enable; o plano grátis pede cartão, mas não cobra dentro do limite).
+2. Crie o bucket: `npx wrangler r2 bucket create cinema-history-audio`.
+3. Publique o Worker: `cd cloudflare/audio-worker && npx wrangler deploy`.
+4. Envie os áudios (só o que mudou): `python3 content-src/audio/upload.py pt` (usa `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID`).
+5. Troque `AudioConfig.BASE_URL` pelo endereço do Worker (terminando com `/`).
+
+Token da Cloudflare (My Profile → API Tokens → Create Token → Custom): permissões de conta
+**Workers Scripts: Edit**, **Workers R2 Storage: Edit** e **Account Settings: Read**.
 
 ## 6. No app
 
