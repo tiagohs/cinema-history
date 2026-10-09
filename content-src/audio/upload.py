@@ -4,15 +4,16 @@ Envia os áudios gerados (out/<idioma>/...) para o bucket R2 cinema-history-audi
 
     CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=... python3 content-src/audio/upload.py pt [--dry-run]
 
-Usa o wrangler (npx wrangler r2 object put). As faixas têm o hash no nome, então só sobem as novas;
+Usa a API da Cloudflare (PUT de objeto no R2, 8 envios em paralelo). As faixas têm o hash no nome, então só sobem as novas;
 os manifest.json sobem sempre que mudam. O registro do que já subiu fica em out/.enviados.json.
 Depois de enviar, apague do bucket as faixas antigas se quiser (não atrapalham: nenhum manifest aponta para elas).
 """
 import hashlib
 import json
 import os
-import subprocess
 import sys
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -56,17 +57,37 @@ def main():
     print(f"{len(todo)} arquivos para enviar ({mb:,.1f} MB)")
     if dry:
         return 0
-    for i, (key, path, ext, h) in enumerate(todo, 1):
-        cmd = ["npx", "--yes", "wrangler@4", "r2", "object", "put", f"{BUCKET}/{key}", "--file", path,
-               "--content-type", TYPES[ext], "--remote"]
-        r = subprocess.run(cmd, capture_output=True, text=True)
-        if r.returncode != 0:
-            print(r.stdout[-500:], r.stderr[-1500:])
-            sys.exit(f"falhou em {key}")
-        reg[key] = h
-        if i % 20 == 0 or i == len(todo):
-            json.dump(reg, open(REG, "w"), indent=0, sort_keys=True)
-            print(f"  {i}/{len(todo)}")
+    base = (f"https://api.cloudflare.com/client/v4/accounts/{os.environ['CLOUDFLARE_ACCOUNT_ID']}"
+            f"/r2/buckets/{BUCKET}/objects/")
+    auth = {"Authorization": "Bearer " + os.environ["CLOUDFLARE_API_TOKEN"]}
+
+    def put(item):
+        key, path, ext, h = item
+        err = None
+        for _ in range(4):
+            try:
+                req = urllib.request.Request(base + key, data=open(path, "rb").read(), method="PUT",
+                                             headers={**auth, "Content-Type": TYPES[ext]})
+                with urllib.request.urlopen(req, timeout=120) as r:
+                    if json.load(r).get("success"):
+                        return item
+            except Exception as e:  # noqa: BLE001 - tenta de novo
+                err = e
+        raise RuntimeError(f"falhou em {key}: {err}")
+
+    tracks = [t for t in todo if t[2] != ".json"]
+    manifests = [t for t in todo if t[2] == ".json"]
+    done = 0
+    # faixas primeiro, manifests depois (o app nunca vê um manifest apontando para faixa que ainda não subiu)
+    for group in (tracks, manifests):
+        with ThreadPoolExecutor(8) as pool:
+            for key, _, _, h in pool.map(put, group):
+                reg[key] = h
+                done += 1
+                if done % 50 == 0 or done == len(todo):
+                    json.dump(reg, open(REG, "w"), indent=0, sort_keys=True)
+                    print(f"  {done}/{len(todo)}", flush=True)
+    json.dump(reg, open(REG, "w"), indent=0, sort_keys=True)
     return 0
 
 
