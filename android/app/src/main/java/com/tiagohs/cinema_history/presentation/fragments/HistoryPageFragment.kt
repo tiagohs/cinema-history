@@ -32,6 +32,10 @@ import com.tiagohs.cinema_history.presentation.activities.*
 import com.tiagohs.cinema_history.presentation.adapters.PageContentAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.cinema_history.presentation.configs.BaseFragment
+import com.tiagohs.cinema_history.presentation.configs.LargeScreen
+import com.tiagohs.cinema_history.presentation.configs.ReadingWidthDecoration
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
+import com.tiagohs.cinema_history.presentation.adapters.page.*
 import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.domain.presenter.HistoryPagePresenter
 import com.tiagohs.domain.views.HistoryPageView
@@ -75,6 +79,9 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
 
         // O topo da página é preto: status bar preta e opaca, para o texto não aparecer atrás dela ao rolar.
         binding.coordinatorLayout.setStatusBarBackgroundColor(android.graphics.Color.BLACK)
+        // O fundo da status bar do CoordinatorLayout fica ATRÁS do cabeçalho rolando: o texto aparecia
+        // por baixo dela. Uma faixa preta por cima de tudo, da altura da status bar, resolve.
+        addStatusBarCover()
 
         (activity as? BaseActivity<*>)?.setupToolbar(binding.toolbar, displayHomeAsUpEnabled = false)
         // tema à esquerda, idioma à direita (longe do título)
@@ -87,6 +94,9 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
         }
 
         setHasOptionsMenu(true)
+
+        // Tablets: o esqueleto de carregamento segue a mesma coluna de leitura do texto.
+        binding.loadContentView.limitContentWidth(R.dimen.ls_reading_max_width)
 
         presenter.onBindView(this)
         presenter.fetchPageContent(mainTopic?.id, sumario?.id)
@@ -184,6 +194,8 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
                 )
             )
             addOnScrollListener(HidingScrollListener(this@HistoryPageFragment, pageContent.contentList.size - 1))
+            // Tablets: coluna de leitura centralizada (texto ~680–720dp, mídia até 840dp). No celular não faz nada.
+            ReadingWidthDecoration.install(this) { holder -> isWideReadingItem(holder) }
 
             setupAudio(adAfter, adAdapter)
         }
@@ -204,6 +216,39 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
 
         setupHeader()
     }
+
+    private fun addStatusBarCover() {
+        val root = binding.coordinatorLayout
+        val cover = View(root.context).apply {
+            setBackgroundColor(android.graphics.Color.BLACK)
+            elevation = 64f * resources.displayMetrics.density
+            importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
+            // sem isto o CoordinatorLayout (fitsSystemWindows) empurra a faixa para baixo da status bar
+            fitsSystemWindows = true
+        }
+        root.addView(cover, androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0))
+        val update = {
+            val decor = activity?.window?.decorView
+            val fromInsets = decor?.let { androidx.core.view.ViewCompat.getRootWindowInsets(it) }
+                ?.getInsets(androidx.core.view.WindowInsetsCompat.Type.statusBars())?.top ?: 0
+            val resId = resources.getIdentifier("status_bar_height", "dimen", "android")
+            // a faixa fica no topo da TELA: desconta onde o coordinator começa
+            val loc = IntArray(2).also { root.getLocationOnScreen(it) }
+            val top = ((if (fromInsets > 0) fromInsets else if (resId > 0) resources.getDimensionPixelSize(resId) else 0) - loc[1])
+                .coerceAtLeast(0)
+            if (cover.layoutParams.height != top) {
+                cover.layoutParams = cover.layoutParams.apply { height = top }
+            }
+        }
+        root.addOnLayoutChangeListener { _, _, _, _, _, _, _, _, _ -> root.post { update() } }
+        root.post { update() }
+    }
+
+    /** Itens que podem ocupar a coluna de mídia (mais larga que a de texto) em telas grandes. */
+    private fun isWideReadingItem(holder: androidx.recyclerview.widget.RecyclerView.ViewHolder): Boolean =
+        holder is ImageViewHolder || holder is VideoViewHolder || holder is GifViewHolder ||
+            holder is SlideViewHolder || holder is MovieListViewHolder || holder is PersonListViewHolder ||
+            holder is MovieListSpecialViewHolder || holder is RecomendationsViewHolder
 
     private fun setupAudio(adAfter: Int?, adAdapter: NativeAdAdapter?) {
         audioBinder?.detach()
@@ -248,7 +293,8 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
         image.imageStyle?.height?.let {
             binding.pageHeaderImage.layoutParams = ConstraintLayout.LayoutParams(
                 ConstraintLayout.LayoutParams.MATCH_PARENT,
-                it.convertIntToDp(context)
+                // tablets: imagem do cabeçalho proporcionalmente mais alta (1.0 no celular)
+                LargeScreen.scaledHeightPx(requireContext(), it)
             ).apply {
                 topToBottom = R.id.headerContainer
                 startToStart = ConstraintSet.PARENT_ID

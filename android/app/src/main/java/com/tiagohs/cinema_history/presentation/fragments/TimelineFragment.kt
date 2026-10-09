@@ -1,5 +1,7 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
+import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.os.Bundle
 import android.view.ViewGroup
 import android.view.LayoutInflater
@@ -39,6 +41,10 @@ class TimelineFragment: BaseFragment<FragmentTimelineBinding>(), TimelineView, T
 
         getApplicationComponent()?.inject(this)
         (activity as? BaseActivity<*>)?.setupToolbar(binding.toolbar)
+
+        // Tablets: a linha do tempo fica numa coluna centralizada (a marca d'água do ano segue no canto da tela).
+        binding.timelineList.limitContentWidth(R.dimen.ls_list_max_width)
+        binding.loadView.limitContentWidth(R.dimen.ls_list_max_width)
 
         presenter.onBindView(this)
         presenter.fetchTimeline(timelineId)

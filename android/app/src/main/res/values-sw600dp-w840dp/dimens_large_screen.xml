@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    EXPANDED (window size class ≥ 840dp): tablet em paisagem, janelas largas, desktop.
+    Herda tudo de values-sw600dp e só sobrescreve o que cresce com a largura. Ver docs/TABLETS.md.
+-->
+<resources>
+
+    <integer name="ls_card_columns">3</integer>
+
+    <dimen name="ls_reading_max_width">720dp</dimen>
+    <dimen name="ls_list_max_width">840dp</dimen>
+    <dimen name="ls_details_max_width">960dp</dimen>
+    <dimen name="ls_text_max_width">720dp</dimen>
+    <dimen name="ls_list_side_padding">16dp</dimen>
+
+    <!-- ===== Home ===== -->
+    <dimen name="home_screen_padding">32dp</dimen>
+    <dimen name="home_hero_content_padding">32dp</dimen>
+    <dimen name="home_era_carousel_height">400dp</dimen>
+    <dimen name="home_era_item_width">280dp</dimen>
+    <dimen name="home_destination_list_padding">28dp</dimen>
+    <dimen name="home_destination_height">220dp</dimen>
+
+</resources>

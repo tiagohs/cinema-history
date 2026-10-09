@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.activities
 
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Drawable
@@ -101,6 +102,9 @@ class AwardActivity : BaseActivity<ActivityAwardDetailsBinding>(), AwardView, Aw
         getApplicationComponent()?.inject(this)
         setupToolbar(binding.toolbar)
         WindowCompat.getInsetsController(window, window.decorView).isAppearanceLightStatusBars = false
+
+        // Tablets: textos e pôster do destaque alinhados à mesma coluna do conteúdo das abas.
+        binding.heroContent.limitContentWidth(R.dimen.ls_details_max_width)
 
         motionEnabled = Motion.enabled(this)
         restoredYear = savedInstanceState?.getString(STATE_YEAR)

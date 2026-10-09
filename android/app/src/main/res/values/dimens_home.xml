@@ -17,6 +17,8 @@
     <dimen name="home_era_item_spacing">8dp</dimen>
     <dimen name="home_era_fade_threshold">96dp</dimen>
     <dimen name="home_destination_height">188dp</dimen>
+    <!-- home_screen_padding menos a margem de 4dp dos cartões (telas grandes: values-sw600dp*/dimens_large_screen.xml) -->
+    <dimen name="home_destination_list_padding">12dp</dimen>
     <dimen name="home_link_icon_container">40dp</dimen>
     <dimen name="home_card_corner">16dp</dimen>
     <dimen name="home_carousel_corner">28dp</dimen>

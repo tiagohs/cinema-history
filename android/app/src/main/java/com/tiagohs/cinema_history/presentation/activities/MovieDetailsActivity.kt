@@ -1,5 +1,7 @@
 package com.tiagohs.cinema_history.presentation.activities
 
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
+import com.tiagohs.cinema_history.presentation.configs.forScreen
 import android.animation.Animator
 import com.tiagohs.cinema_history.databinding.ActivityMovieDetailsBinding
 import android.content.Context
@@ -59,6 +61,11 @@ class MovieDetailsActivity : BaseActivity<ActivityMovieDetailsBinding>(), MovieD
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Tablets: título/notas do cabeçalho e blocos de informação numa coluna centralizada
+        // (o backdrop continua de ponta a ponta).
+        binding.headerInfoContainer.limitContentWidth(R.dimen.ls_details_max_width)
+        binding.pageContentListContainer.limitContentWidth(R.dimen.ls_details_max_width)
 
         getApplicationComponent()?.inject(this)
 
@@ -420,7 +427,7 @@ class MovieDetailsActivity : BaseActivity<ActivityMovieDetailsBinding>(), MovieD
     }
 
     private fun bindBackdrop(movie: Movie, title: String) {
-        val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_780)
+        val backdropPath = movie.backdropPath?.imageUrlFromTMDB(ImageSize.BACKDROP_780.forScreen(this))
 
         binding.movieBackdrop.loadImage(
             backdropPath,

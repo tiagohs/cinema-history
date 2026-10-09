@@ -1,5 +1,7 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
+import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -33,6 +35,8 @@ class AwardsFragment : BaseFragment<FragmentAwardsContentBinding>() {
         super.onViewCreated(view, savedInstanceState)
 
         expanded = savedInstanceState?.getBoolean(STATE_EXPANDED) ?: false
+        // Tablets: conteúdo da aba numa coluna centralizada (rola na tela toda).
+        binding.pageContentList.limitContentWidth(R.dimen.ls_details_max_width)
         setupArguments()
         setupList()
     }

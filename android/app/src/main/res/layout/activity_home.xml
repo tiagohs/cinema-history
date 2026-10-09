@@ -70,11 +70,13 @@
                     android:layout_marginTop="@dimen/home_hero_scrim_offset"
                     android:background="@drawable/background_home_scrim_bottom" />
 
-                <LinearLayout
+                <!-- Tablets: o texto do destaque não atravessa a imagem toda (ls_hero_text_max_width). -->
+                <com.tiagohs.cinema_history.presentation.views.MaxWidthLinearLayout
                     android:id="@+id/heroContent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
+                    android:layout_gravity="bottom|start"
+                    app:ls_maxWidth="@dimen/ls_hero_text_max_width"
                     android:orientation="vertical"
                     android:paddingStart="@dimen/home_hero_content_padding"
                     android:paddingEnd="@dimen/home_hero_content_padding"
@@ -173,7 +175,7 @@
 
                     </LinearLayout>
 
-                </LinearLayout>
+                </com.tiagohs.cinema_history.presentation.views.MaxWidthLinearLayout>
 
             </FrameLayout>
 
@@ -270,7 +272,13 @@
                 app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
                 tools:listitem="@layout/adapter_home_era" />
 
-            <!-- Citação da era em destaque (mesma citação usada na apresentação da era) -->
+            <!-- Citação da era em destaque (mesma citação usada na apresentação da era).
+                 Tablets: largura máxima (ls_list_max_width), alinhada ao título das seções. -->
+            <com.tiagohs.cinema_history.presentation.views.MaxWidthFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ls_maxWidth="@dimen/ls_list_max_width">
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/quoteCard"
                 style="@style/Widget.CinemaHistory.CardView.Filled"
@@ -322,6 +330,8 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+            </com.tiagohs.cinema_history.presentation.views.MaxWidthFrameLayout>
+
             <!-- ===== Outras áreas ===== -->
 
             <TextView
@@ -342,8 +352,8 @@
                 android:layout_marginTop="8dp"
                 android:clipToPadding="false"
                 android:nestedScrollingEnabled="false"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
+                android:paddingStart="@dimen/home_destination_list_padding"
+                android:paddingEnd="@dimen/home_destination_list_padding"
                 tools:itemCount="4"
                 tools:listitem="@layout/adapter_home_destination" />
 
@@ -358,6 +368,11 @@
                 android:text="@string/home_section_more_title"
                 android:textAppearance="?attr/textAppearanceHeadlineSmall"
                 android:textColor="?attr/colorOnSurface" />
+
+            <com.tiagohs.cinema_history.presentation.views.MaxWidthFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ls_maxWidth="@dimen/ls_list_max_width">
 
             <com.google.android.material.card.MaterialCardView
                 style="@style/Widget.CinemaHistory.CardView.Filled"
@@ -406,6 +421,8 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
+            </com.tiagohs.cinema_history.presentation.views.MaxWidthFrameLayout>
 
         </LinearLayout>
 

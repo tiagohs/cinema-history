@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.activities
 
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -25,7 +26,8 @@ class AboutActivty : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(setupContentView())
+        // Tablets: créditos e links numa coluna centralizada (o fundo continua de ponta a ponta).
+        setContentView(setupContentView().apply { limitContentWidth(R.dimen.ls_form_max_width) })
         com.tiagohs.helpers.edgetoedge.SystemBarsInsets.apply(this)
 
         supportActionBar?.setDisplayShowTitleEnabled(true)

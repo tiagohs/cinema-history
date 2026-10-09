@@ -45,11 +45,13 @@
             android:text="@string/onboarding_skip" />
     </LinearLayout>
 
-    <LinearLayout
+    <!-- Tablets: pontos e botão "Próximo" alinhados à coluna do texto (ls_form_max_width), não às bordas da tela. -->
+    <com.tiagohs.cinema_history.presentation.views.MaxWidthLinearLayout
         android:id="@+id/onboardingBottomBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="bottom|center_horizontal"
+        app:ls_maxWidth="@dimen/ls_form_max_width"
         android:gravity="center_vertical"
         android:minHeight="88dp"
         android:orientation="horizontal"
@@ -74,5 +76,5 @@
             android:text="@string/onboarding_next"
             app:icon="@drawable/ic_navigate_next_black_24dp"
             app:iconGravity="end" />
-    </LinearLayout>
+    </com.tiagohs.cinema_history.presentation.views.MaxWidthLinearLayout>
 </FrameLayout>

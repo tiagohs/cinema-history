@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.os.Bundle
 import android.view.ViewGroup
 import com.tiagohs.cinema_history.databinding.FragmentPersonDetailsBinding
@@ -33,6 +34,10 @@ class PersonDetailsFragment: BaseFragment<FragmentPersonDetailsBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // Tablets: cabeçalho e blocos de informação numa coluna centralizada (a foto continua de ponta a ponta).
+        binding.headerPersonContainer.limitContentWidth(R.dimen.ls_details_max_width)
+        binding.pageContentListContainer.limitContentWidth(R.dimen.ls_details_max_width)
 
         setupArguments()
         bindPersonDetails()

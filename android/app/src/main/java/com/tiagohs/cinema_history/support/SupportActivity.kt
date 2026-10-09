@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.support
 
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.content.Context
 import android.content.Intent
 import android.graphics.Paint
@@ -44,6 +45,8 @@ class SupportActivity : BaseActivity<ActivitySupportBinding>() {
 
         setupInsets()
         setupBenefits()
+        // Tablets: os botões fixos não esticam a tela toda (a barra continua de ponta a ponta).
+        binding.bottomBar.limitContentWidth(R.dimen.ls_form_max_width)
 
         binding.closeButton.setOnClickListener { finish() }
         binding.continueFreeButton.setOnClickListener { finish() }

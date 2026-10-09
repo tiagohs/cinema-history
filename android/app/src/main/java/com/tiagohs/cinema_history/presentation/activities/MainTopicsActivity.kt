@@ -14,6 +14,10 @@ import com.tiagohs.cinema_history.ads.AdPlacement
 import com.tiagohs.cinema_history.ads.adapterWithNativeAd
 import com.tiagohs.cinema_history.presentation.adapters.MainTopicsAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
+import com.tiagohs.cinema_history.presentation.configs.BalancedGridSpanLookup
+import com.tiagohs.cinema_history.presentation.configs.LargeScreen
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
+import com.tiagohs.entities.enums.MainTopicItemLayoutType
 import com.tiagohs.domain.presenter.MainTopicsPresenter
 import com.tiagohs.domain.views.MainTopicsView
 import com.tiagohs.entities.enums.MainTopicsType
@@ -153,8 +157,37 @@ class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsV
             false
         )
         binding.mainTopicsList.adapter = listAdapter
+        setupLargeScreenList(mainTopicsType)
 
         binding.mainTopicsList.startAnimation(AnimationUtils.createFadeInAnimation(300, 200))
+    }
+
+    /**
+     * Tablets (res/values-sw600dp*): prêmios, diretores e 1001 filmes viram uma grade de cartões
+     * (2 colunas em medium, 3 em expanded; citações e anúncio ocupam a linha toda). As eras da
+     * História do Cinema são uma sequência editorial (cartões de formatos diferentes intercalados
+     * com citações), então continuam numa coluna, só que centralizada e com largura máxima.
+     * No celular nada muda.
+     */
+    private fun setupLargeScreenList(type: MainTopicsType) {
+        val list = binding.mainTopicsList
+        if (!LargeScreen.isLarge(this)) return
+
+        val sidePadding = resources.getDimensionPixelSize(R.dimen.ls_list_side_padding)
+        list.setPaddingRelative(sidePadding, list.paddingTop, sidePadding, list.paddingBottom)
+        list.clipToPadding = false
+
+        if (type == MainTopicsType.HISTORY_CINEMA) {
+            list.limitContentWidth(R.dimen.ls_list_max_width)
+            binding.loadView.limitContentWidth(R.dimen.ls_list_max_width)
+            return
+        }
+
+        BalancedGridSpanLookup.applyIfMultiColumn(list, R.integer.ls_card_columns) { position ->
+            val (adapter, local) = BalancedGridSpanLookup.resolve(list.adapter, position) ?: return@applyIfMultiColumn true
+            val topicsAdapter = adapter as? MainTopicsAdapter ?: return@applyIfMultiColumn true // anúncio nativo
+            topicsAdapter.list.getOrNull(local)?.layoutType == MainTopicItemLayoutType.QUOTE
+        }
     }
 
     private fun onMainTopicSelected(mainTopic: MainTopic) {

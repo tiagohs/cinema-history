@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.activities
 
+import com.tiagohs.cinema_history.presentation.configs.forScreen
 import android.animation.Animator
 import android.view.LayoutInflater
 import com.tiagohs.cinema_history.databinding.ActivityMilMoviesPresentationBinding
@@ -15,6 +16,7 @@ import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.MovieListAdapter
 import com.tiagohs.cinema_history.presentation.adapters.decorators.ScaleMovieImageTransformer
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
+import com.tiagohs.cinema_history.presentation.configs.LargeScreen
 import com.tiagohs.domain.presenter.MilMoviesPresentationPresenter
 import com.tiagohs.domain.views.MilMoviesPresentationView
 import com.tiagohs.entities.enums.ImageSize
@@ -95,6 +97,11 @@ class MilMoviesPresentationActivity : BaseActivity<ActivityMilMoviesPresentation
             })
         }
 
+        if (setupLargeScreenPager()) {
+            bindHeader()
+            return
+        }
+
         val horizontalSpace = 42.convertIntToDp(this)
         val spaceBetweenItems = 32.convertIntToDp(this)
 
@@ -111,6 +118,10 @@ class MilMoviesPresentationActivity : BaseActivity<ActivityMilMoviesPresentation
             )
         )
 
+        bindHeader()
+    }
+
+    private fun bindHeader() {
         val titleColorRes = resources.getIdentifier(mainTopic.titleColor, "color", packageName)
         val titleColor = getResourceColor(titleColorRes)
 
@@ -124,8 +135,41 @@ class MilMoviesPresentationActivity : BaseActivity<ActivityMilMoviesPresentation
         binding.presentationSubtitle.startAnimation(AnimationUtils.createFadeInAnimation(200, 350))
     }
 
+    /**
+     * Tablets: em vez de um pôster esticado na largura toda (que viraria uma faixa horizontal em
+     * paisagem), cada página tem largura de pôster (proporcional à altura da janela) e os vizinhos
+     * aparecem dos dois lados, mostrando mais filmes ao mesmo tempo. No celular devolve false e o
+     * carrossel continua exatamente como antes.
+     */
+    private fun setupLargeScreenPager(): Boolean {
+        if (!LargeScreen.isLarge(this)) return false
+
+        val density = resources.displayMetrics.density
+        val windowWidth = (resources.configuration.screenWidthDp * density).toInt()
+        val windowHeight = (resources.configuration.screenHeightDp * density).toInt()
+        val minSide = (42 * density).toInt()
+        val pageWidth = (windowHeight * 0.55f).toInt().coerceIn((320 * density).toInt(), windowWidth - 2 * minSide)
+        val sidePadding = ((windowWidth - pageWidth) / 2).coerceAtLeast(minSide)
+
+        binding.moviesViewPager.offscreenPageLimit = 2
+        (binding.moviesViewPager.getChildAt(0) as? androidx.recyclerview.widget.RecyclerView)?.apply {
+            setPadding(sidePadding, paddingTop, sidePadding, paddingBottom)
+            clipToPadding = false
+        }
+        binding.moviesViewPager.setPageTransformer { page, position ->
+            val pageBinding = com.tiagohs.cinema_history.databinding.AdapterMovieListBinding.bind(page)
+            val distance = kotlin.math.abs(position).coerceAtMost(1f)
+            pageBinding.imageCard.scaleY = 1 - ScaleMovieImageTransformer.MIN_SCALE_Y * distance
+            pageBinding.imageCard.scaleX = 1 - ScaleMovieImageTransformer.MIN_SCALE_X * distance
+            // títulos só no pôster central
+            pageBinding.title.alpha = 1 - distance
+            pageBinding.originalTitle.alpha = 1 - distance
+        }
+        return true
+    }
+
     private fun loadBackdrop(movie: Movie) {
-        val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
+        val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500.forScreen(this)) ?: return
 
         binding.backdropImage.loadImage(url, placeholder = null, transform = BlurTransformation(35, 3))
     }

@@ -130,7 +130,11 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
     private fun setupHeroHeight() {
         val minHeight = resources.getDimensionPixelSize(R.dimen.home_hero_min_height)
         val maxHeight = resources.getDimensionPixelSize(R.dimen.home_hero_max_height)
-        val screenHeight = resources.displayMetrics.heightPixels
+        // Tablets: altura da janela (multi-janela / dobrável), não a do display inteiro.
+        val screenHeight = if (com.tiagohs.cinema_history.presentation.configs.LargeScreen.isLarge(this))
+            (resources.configuration.screenHeightDp * resources.displayMetrics.density).toInt()
+        else
+            resources.displayMetrics.heightPixels
         val height = (screenHeight * 0.66f).toInt().coerceIn(minHeight, maxHeight)
 
         binding.hero.layoutParams = binding.hero.layoutParams.apply { this.height = height }
@@ -248,7 +252,8 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
     // ---------------------------------------------------------------- Outras áreas
 
     private fun bindDestinations(destinations: List<HomeContentItem>) {
-        binding.destinationsList.layoutManager = GridLayoutManager(this, 2)
+        // 2 colunas no celular; 4 em tablets (res/values-sw600dp/dimens_large_screen.xml)
+        binding.destinationsList.layoutManager = GridLayoutManager(this, resources.getInteger(R.integer.ls_home_destination_columns))
         binding.destinationsList.adapter = HomeDestinationsAdapter(destinations).apply {
             onDestinationClicked = { openDestination(it) }
         }

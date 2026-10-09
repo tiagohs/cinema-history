@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.adapters
 
+import com.tiagohs.cinema_history.presentation.configs.forScreen
 import android.R.attr.radius
 import android.view.LayoutInflater
 import com.tiagohs.cinema_history.databinding.AdapterMovieListBinding
@@ -97,7 +98,7 @@ class MovieListAdapter(
         }
 
         private fun loadImage(movie: Movie) {
-            val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500) ?: return
+            val url = movie.posterPath?.imageUrlFromTMDB(ImageSize.POSTER_500.forScreen(itemView.context)) ?: return
 
             binding.image.loadImage(url)
 

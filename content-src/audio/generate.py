@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gera o áudio (Opus/ogg ~48 kbps, uma faixa por arquivo) a partir dos roteiros de roteiros/.
+"""Gera o áudio (Opus/ogg ~32 kbps, uma faixa por arquivo) a partir dos roteiros de roteiros/.
 
 Provedores:
   chirp   Google Cloud Text-to-Speech, vozes Chirp 3 HD (US$ 30 / 1 milhão de caracteres; 1 milhão grátis/mês)
@@ -49,7 +49,7 @@ PRECO_CHIRP_MILHAO = 30.0        # US$ por 1 milhão de caracteres (Chirp 3 HD)
 FREE_CHIRP_MES = 1_000_000       # caracteres grátis por mês (Chirp 3 HD)
 PRECO_GEMINI_HORA = 0.90         # US$ por hora de áudio (estimativa; doc de out/2026: 3.8 Flash TTS = US$ 0,81/h até 31/12/2026)
 CHARS_PER_MIN = {"pt": 900, "en": 1000, "es": 950}
-BITRATE = "48k"
+BITRATE = "32k"
 MAX_BYTES_REQ = 4000             # Cloud TTS aceita até 5000 bytes por requisição; folga para acentos
 
 CHIRP_URL = "https://texttospeech.googleapis.com/v1/text:synthesize"
@@ -104,6 +104,31 @@ def split_for_request(text, max_bytes=MAX_BYTES_REQ):
     if buf:
         out.append(buf)
     return out
+
+
+def split_long_sentence(text, max_chars):
+    """Quebra um trecho em pedaços de até max_chars nos sinais de pausa (; : , — ( ), sem alterar as palavras."""
+    pieces = re.split(r"(?<=[;:,)\u2014])\s+|\s+(?=[(\u2014])", text)
+    out, buf = [], ""
+    for p in pieces:
+        cand = (buf + " " + p).strip()
+        if buf and len(cand) > max_chars:
+            out.append(buf)
+            buf = p
+        else:
+            buf = cand
+    if buf:
+        out.append(buf)
+    # sem pontuação suficiente: corta por palavras
+    final = []
+    for o in out:
+        while len(o) > max_chars * 1.5:
+            cut = o.rfind(" ", 0, max_chars)
+            cut = cut if cut > 0 else max_chars
+            final.append(o[:cut])
+            o = o[cut:].strip()
+        final.append(o)
+    return [f for f in final if f]
 
 
 def wav_to_pcm(data, want_rate):
@@ -175,13 +200,25 @@ class Chirp:
             sys.exit("Defina GOOGLE_TTS_API_KEY (ou GOOGLE_ACCESS_TOKEN + GOOGLE_CLOUD_PROJECT).")
         pcm = b""
         for chunk in split_for_request(text):
-            body = {"input": {"text": chunk},
-                    "voice": {"languageCode": voice.split("-Chirp3")[0], "name": voice},
-                    "audioConfig": {"audioEncoding": "LINEAR16", "sampleRateHertz": self.rate,
-                                    "speakingRate": self.cfg.get("speaking_rate", 1.0)}}
-            r = http_post(url, body, headers)
-            pcm += wav_to_pcm(base64.b64decode(r["audioContent"]), self.rate)
+            pcm += self._request(chunk, voice, url, headers)
         return pcm
+
+    def _request(self, chunk, voice, url, headers, depth=0):
+        body = {"input": {"text": chunk},
+                "voice": {"languageCode": voice.split("-Chirp3")[0], "name": voice},
+                "audioConfig": {"audioEncoding": "LINEAR16", "sampleRateHertz": self.rate,
+                                "speakingRate": self.cfg.get("speaking_rate", 1.0)}}
+        try:
+            r = http_post(url, body, headers)
+        except RuntimeError as e:
+            # o Chirp recusa frases muito longas: quebra nas vírgulas/pontos e vírgulas (pausa curta, sem mudar o texto)
+            if "too long" not in str(e) or depth > 3:
+                raise
+            parts = split_long_sentence(chunk, max(120, 260 >> depth))
+            if len(parts) < 2:
+                raise
+            return b"".join(self._request(p, voice, url, headers, depth + 1) for p in parts)
+        return wav_to_pcm(base64.b64decode(r["audioContent"]), self.rate)
 
 
 class Gemini:
@@ -388,7 +425,7 @@ def dry_run(prov, cfg, langs, era, page):
     else:
         print(f"\nGemini: estimativa de US$ {PRECO_GEMINI_HORA:.2f}/hora de áudio (duração estimada por "
               f"caracteres/minuto: {CHARS_PER_MIN}). Confira o preço atual do modelo {cfg['gemini']['model']}.")
-    mb = tot[4] * 3600 * 48_000 / 8 / 1e6
+    mb = tot[4] * 3600 * int(BITRATE.rstrip("k")) * 1000 / 8 / 1e6
     print(f"Tamanho estimado em Opus {BITRATE}: ~{mb:,.0f} MB (~{mb / 1024:.2f} GB).")
 
 

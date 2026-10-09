@@ -18,6 +18,7 @@ import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.domain.presenter.PresentationPresenter
 import com.tiagohs.cinema_history.presentation.adapters.SumarioPresentationAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import com.tiagohs.entities.enums.ViewPosition
 import com.tiagohs.domain.views.PresentationView
 import com.tiagohs.entities.Quote
@@ -44,6 +45,9 @@ class PresentationActivity: BaseActivity<ActivityPresentationBinding>(), Present
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Tablets: sumário e textos numa coluna centralizada (a imagem do topo continua de ponta a ponta).
+        binding.presentationScroll.limitContentWidth(R.dimen.ls_list_max_width)
         setupToolbar(binding.toolbar)
 
         getApplicationComponent()?.inject(this)

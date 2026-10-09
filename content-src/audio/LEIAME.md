@@ -99,7 +99,7 @@ python3 content-src/audio/generate.py --provider chirp                         #
 - O script pode ser interrompido e retomado. O que já está no cache não é cobrado de novo.
 - Se um capítulo mudar, rode `scripts.py` e depois o `generate.py`. Só os segmentos alterados vão para a API. As faixas são remontadas e o `manifest.json` é atualizado.
 - Faixas que deixaram de existir são apagadas.
-- Cada faixa é um arquivo Opus em ogg a 48 kbps, mono, com os segmentos juntados e uma pausa entre eles. As pausas ficam em `vozes.json`, em `pausas_ms`.
+- Cada faixa é um arquivo Opus em ogg a 32 kbps, mono, com os segmentos juntados e uma pausa entre eles. As pausas ficam em `vozes.json`, em `pausas_ms`.
 - **Dependências**:
   - Python 3.9 ou mais novo, só com a biblioteca padrão. O `requests` não é necessário.
   - `ffmpeg` com libopus no PATH. Instale com `sudo apt install ffmpeg` ou `brew install ffmpeg`.
@@ -119,7 +119,7 @@ python3 content-src/audio/generate.py --provider chirp                         #
 
 ## 5. Onde hospedar: Cloudflare R2 + Worker
 
-- **Tamanho**: 48 kbps dá cerca de 21,6 MB por hora (pt ≈ 480 MB; os 3 idiomas ≈ 1,4 GB).
+- **Tamanho**: 32 kbps dá cerca de 14,4 MB por hora (pt ≈ 320 MB; os 3 idiomas ≈ 0,9 GB).
 - **Custo**: US$ 0. O R2 dá 10 GB grátis por mês, não cobra tráfego de saída e dá 10 milhões de leituras por mês;
   o Worker dá 100 mil requisições por dia, e o cache da borda atende boa parte sem chegar ao Worker.
 - **Sem domínio próprio**: o bucket fica privado e o Worker `cloudflare/audio-worker` entrega os arquivos em

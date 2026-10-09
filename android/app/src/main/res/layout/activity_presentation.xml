@@ -170,6 +170,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/presentationScroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -199,6 +200,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/mainTopicDescription"
+                android:maxWidth="@dimen/ls_text_max_width"
                 android:transitionName="mainTopicDescriptionTransition"
                 android:textSize="@dimen/text_size_zeplin_22pt"
                 android:textColor="@color/daynight_text_primary"

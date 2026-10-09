@@ -302,6 +302,9 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>(), AudioH
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             adapter = adapterPager
             currentItem = itemSelectedPosition
+            // Recriação (rotação, redimensionar janela/multi-janela): o ViewPager2 restaura a página
+            // aberta e avisa em onPageSelected; até lá, compartilhar usa a página inicial certa.
+            this@HistoryPagesActivity.currentPosition = itemSelectedPosition
 
             setPageTransformer(ZoomOutPageTransformer())
 

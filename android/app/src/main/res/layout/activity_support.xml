@@ -50,13 +50,16 @@
                     android:background="@drawable/background_support_header_scrim" />
             </FrameLayout>
 
-            <LinearLayout
+            <!-- Tablets: texto e preços numa coluna centralizada (ls_form_max_width); a imagem continua de ponta a ponta. -->
+            <com.tiagohs.cinema_history.presentation.views.MaxWidthLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="-40dp"
                 android:orientation="vertical"
                 android:paddingStart="24dp"
-                android:paddingEnd="24dp">
+                android:paddingEnd="24dp"
+                app:ls_maxWidth="@dimen/ls_form_max_width">
 
                 <TextView
                     android:id="@+id/supportKicker"
@@ -328,7 +331,7 @@
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
-            </LinearLayout>
+            </com.tiagohs.cinema_history.presentation.views.MaxWidthLinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

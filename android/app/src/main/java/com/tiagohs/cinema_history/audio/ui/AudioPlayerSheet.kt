@@ -62,6 +62,9 @@ class AudioPlayerSheet : BottomSheetDialogFragment(), ChapterAudioController.Lis
         (dialog as? BottomSheetDialog)?.behavior?.apply {
             state = BottomSheetBehavior.STATE_EXPANDED
             skipCollapsed = true
+            // Tablets: o player não estica a tela toda; fica centralizado com largura máxima (M3: 640dp).
+            val sheetMaxWidth = resources.getDimensionPixelSize(R.dimen.ls_sheet_max_width)
+            if (sheetMaxWidth > 0) maxWidth = sheetMaxWidth
         }
         // edge-to-edge: conteúdo acima da barra de navegação
         ViewCompat.setOnApplyWindowInsetsListener(binding.audioSheetContent) { v, insets ->
