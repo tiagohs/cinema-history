@@ -47,8 +47,9 @@ class TimelineItemViewHolder(
 
     private val context = itemView.context
     private val accentColor = context.getResourceColor(color)
-    private val inkColor = context.getResourceColor(R.color.md_black_1000)
-    private val whiteColor = context.getResourceColor(R.color.md_white_1000)
+    // Trilho/marcador: preto e branco no tema claro, invertidos no escuro.
+    private val inkColor = context.getResourceColor(R.color.daynight_text_primary)
+    private val whiteColor = context.getResourceColor(R.color.daynight_background)
     private val parallaxRange = context.resources.getDimension(R.dimen.timeline_parallax_range)
     private val enterOffset = context.resources.getDimension(R.dimen.timeline_enter_offset)
 

@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/textReference"
-            android:textColor="@color/md_black_1000"
+            android:textColor="@color/daynight_text_primary"
             android:textSize="@dimen/text_size_zeplin_22pt"
             android:fontFamily="@font/proxima_nova_regular"
             android:layout_margin="@dimen/activity_vertical_margin_2x"

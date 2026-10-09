@@ -53,7 +53,7 @@
                 android:id="@+id/title"
                 android:text="@string/selected_reference_type"
                 android:textSize="@dimen/text_size_zeplin_26pt"
-                android:textColor="@color/md_black_1000"
+                android:textColor="@color/daynight_text_primary"
                 android:fontFamily="@font/oswald_regular"
                 android:layout_marginStart="@dimen/activity_vertical_margin_2.2x"
                 android:layout_marginEnd="@dimen/activity_vertical_margin"

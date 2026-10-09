@@ -1,57 +1,59 @@
 <resources>
 
     <!--
-        Tema base do app em Material Design 3.
+        Tema base do app em Material Design 3, com versão clara e escura (DayNight).
+        A escolha (Claro / Escuro / Padrão do sistema) fica em Configurações e é aplicada com
+        AppCompatDelegate.setDefaultNightMode (App.onCreate e SettingPreferenceFragment).
 
         O app tem identidade própria (preto e branco, cores por era, Proxima Nova/Oswald), então o
         esquema de cores M3 é mapeado a partir das cores antigas (primary preto, accent azul) e as
         superfícies ficam neutras (sem o tom lilás padrão do baseline M3).
     -->
-    <style name="Base.AppTheme" parent="Theme.Material3.Light.NoActionBar">
-        <!-- Cores (esquema M3) -->
-        <item name="colorPrimary">@color/md_black_1000</item>
-        <item name="colorOnPrimary">@color/md_white_1000</item>
-        <item name="colorPrimaryContainer">@color/md_grey_200</item>
-        <item name="colorOnPrimaryContainer">@color/md_black_1000</item>
-        <item name="colorPrimaryInverse">@color/md_blue_200</item>
+    <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cores (esquema M3). Valores claros em values/colors_theme.xml; escuros em values-night/. -->
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorOnPrimary">@color/theme_on_primary</item>
+        <item name="colorPrimaryContainer">@color/theme_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/theme_on_primary_container</item>
+        <item name="colorPrimaryInverse">@color/theme_primary_inverse</item>
 
-        <item name="colorSecondary">@color/md_blue_500</item>
-        <item name="colorOnSecondary">@color/md_white_1000</item>
-        <item name="colorSecondaryContainer">@color/md_blue_50</item>
-        <item name="colorOnSecondaryContainer">@color/md_blue_900</item>
+        <item name="colorSecondary">@color/theme_secondary</item>
+        <item name="colorOnSecondary">@color/theme_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/theme_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/theme_on_secondary_container</item>
 
-        <item name="colorTertiary">@color/oscar</item>
-        <item name="colorOnTertiary">@color/md_black_1000</item>
-        <item name="colorTertiaryContainer">@color/md_amber_50</item>
-        <item name="colorOnTertiaryContainer">@color/md_brown_900</item>
+        <item name="colorTertiary">@color/theme_tertiary</item>
+        <item name="colorOnTertiary">@color/theme_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/theme_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/theme_on_tertiary_container</item>
 
-        <item name="colorError">@color/md_red_700</item>
-        <item name="colorOnError">@color/md_white_1000</item>
-        <item name="colorErrorContainer">@color/md_red_50</item>
-        <item name="colorOnErrorContainer">@color/md_red_900</item>
+        <item name="colorError">@color/theme_error</item>
+        <item name="colorOnError">@color/theme_on_error</item>
+        <item name="colorErrorContainer">@color/theme_error_container</item>
+        <item name="colorOnErrorContainer">@color/theme_on_error_container</item>
 
-        <item name="android:colorBackground">@color/md_white_1000</item>
-        <item name="colorOnBackground">@color/md_black_1000</item>
-        <item name="colorSurface">@color/md_white_1000</item>
-        <item name="colorOnSurface">@color/md_black_1000</item>
-        <item name="colorSurfaceVariant">@color/md_grey_200</item>
-        <item name="colorOnSurfaceVariant">@color/md_grey_700</item>
-        <item name="colorSurfaceInverse">@color/home_surface_inverse</item>
-        <item name="colorOnSurfaceInverse">@color/md_white_1000</item>
-        <item name="colorSurfaceBright">@color/md_white_1000</item>
-        <item name="colorSurfaceDim">@color/md_grey_300</item>
-        <item name="colorSurfaceContainerLowest">@color/md_white_1000</item>
-        <item name="colorSurfaceContainerLow">@color/md_white_1000</item>
-        <item name="colorSurfaceContainer">@color/md_grey_100</item>
-        <item name="colorSurfaceContainerHigh">@color/md_grey_200</item>
-        <item name="colorSurfaceContainerHighest">@color/md_grey_300</item>
-        <item name="colorOutline">@color/md_grey_500</item>
-        <item name="colorOutlineVariant">@color/md_grey_300</item>
+        <item name="android:colorBackground">@color/theme_background</item>
+        <item name="colorOnBackground">@color/theme_on_background</item>
+        <item name="colorSurface">@color/theme_surface</item>
+        <item name="colorOnSurface">@color/theme_on_surface</item>
+        <item name="colorSurfaceVariant">@color/theme_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/theme_on_surface_variant</item>
+        <item name="colorSurfaceInverse">@color/theme_surface_inverse</item>
+        <item name="colorOnSurfaceInverse">@color/theme_on_surface_inverse</item>
+        <item name="colorSurfaceBright">@color/theme_surface_bright</item>
+        <item name="colorSurfaceDim">@color/theme_surface_dim</item>
+        <item name="colorSurfaceContainerLowest">@color/daynight_background</item>
+        <item name="colorSurfaceContainerLow">@color/daynight_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/daynight_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/daynight_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/daynight_surface_container_highest</item>
+        <item name="colorOutline">@color/theme_outline</item>
+        <item name="colorOutlineVariant">@color/theme_outline_variant</item>
         <item name="elevationOverlayEnabled">false</item>
 
         <!-- Atributos legados (AppCompat). colorPrimaryDark é lido por SystemBarsInsets. -->
         <item name="colorPrimaryDark">@color/md_black_1000</item>
-        <item name="colorAccent">@color/md_blue_500</item>
+        <item name="colorAccent">@color/theme_secondary</item>
 
         <!-- Tipografia: Proxima Nova no texto e Oswald nos títulos grandes -->
         <item name="android:fontFamily">@font/proxima_nova_regular</item>
@@ -90,16 +92,17 @@
     <style name="AppTheme" parent="Base.AppTheme" />
 
     <!-- Tela "Sobre" (android-about-page): mantém a action bar escura de antes. -->
-    <style name="AboutTheme" parent="Theme.Material3.Light">
+    <style name="AboutTheme" parent="Theme.Material3.DayNight">
         <item name="colorPrimary">@color/md_black_1000</item>
         <item name="colorOnPrimary">@color/md_white_1000</item>
         <item name="colorPrimaryDark">@color/md_black_1000</item>
-        <item name="colorAccent">@color/md_blue_500</item>
-        <item name="colorSecondary">@color/md_blue_500</item>
-        <item name="colorSurface">@color/md_white_1000</item>
-        <item name="colorOnSurface">@color/md_black_1000</item>
-        <item name="colorSurfaceContainerLow">@color/md_white_1000</item>
-        <item name="android:colorBackground">@color/md_white_1000</item>
+        <item name="colorAccent">@color/theme_secondary</item>
+        <item name="colorSecondary">@color/theme_secondary</item>
+        <item name="colorSurface">@color/theme_surface</item>
+        <item name="colorOnSurface">@color/theme_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/theme_on_surface_variant</item>
+        <item name="colorSurfaceContainerLow">@color/daynight_surface_container_low</item>
+        <item name="android:colorBackground">@color/theme_background</item>
         <item name="actionBarStyle">@style/Widget.CinemaHistory.ActionBar.Dark</item>
         <item name="actionBarTheme">@style/ThemeOverlay.Material3.Dark.ActionBar</item>
 
@@ -160,6 +163,7 @@
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar" />
 
+    <!-- Menus pop-up da toolbar: claro no tema claro, escuro no escuro (values-night/styles.xml). -->
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
 
     <style name="ToolBarStandard" parent="ThemeOverlay.Material3.Dark.ActionBar">
@@ -199,7 +203,7 @@
         <item name="colorPrimary">@android:color/transparent</item>
     </style>
 
-    <style name="SplashScreenTheme" parent="Theme.Material3.Light.NoActionBar">
+    <style name="SplashScreenTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/md_black_1000</item>
         <item name="colorPrimaryDark">@color/md_black_1000</item>
         <item name="android:windowBackground">@drawable/background_splash_screen</item>
@@ -347,7 +351,10 @@
         força inset no topo e pinta o título de colorOnSurface. Como quase todas as telas usam
         cabeçalho com imagem atrás da status bar, mantemos o comportamento dos widgets Design.
     -->
-    <style name="Widget.CinemaHistory.AppBarLayout" parent="Widget.Design.AppBarLayout" />
+    <style name="Widget.CinemaHistory.AppBarLayout" parent="Widget.Design.AppBarLayout">
+        <!-- O padrão é ?attr/colorPrimary, que no tema escuro fica claro: as barras continuam pretas. -->
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
 
     <style name="Widget.CinemaHistory.CollapsingToolbar" parent="Widget.Design.CollapsingToolbar">
         <item name="scrimAnimationDuration">?attr/motionDurationMedium2</item>

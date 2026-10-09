@@ -146,6 +146,13 @@ def parse_year(path, errors):
                     if dept:
                         node["department"] = dept.strip()
             if node:
+                if winner:
+                    # vencedores levam o backdrop (imagens entre as categorias na tela de prêmios)
+                    target = node.get("movie") if node.get("type") == "person" else node
+                    if target and target.get("id"):
+                        bd = B.movie(target["id"]).get("backdrop_path")
+                        if bd:
+                            target["backdrop_path"] = bd
                 cur["nominee_list"].append(node)
         elif t == "person_list":
             for pid in re.findall(r"p:(\d+)", line):

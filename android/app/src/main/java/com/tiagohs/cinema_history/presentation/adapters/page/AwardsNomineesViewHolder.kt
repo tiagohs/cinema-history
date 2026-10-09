@@ -25,7 +25,6 @@ class AwardsNomineesViewHolder(
 
     private val layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL, false).apply {
         initialPrefetchItemCount = PREFETCH_ITEMS
-        recycleChildrenOnDetach = true
     }
 
     private var boundKey: String? = null
@@ -65,6 +64,12 @@ class AwardsNomineesViewHolder(
         } else if (changed) {
             layoutManager.scrollToPosition(0)
         }
+    }
+
+    /** Ao voltar para a tela sem novo bind (cache do RecyclerView), garante que a fileira tenha cartões. */
+    fun ensureLaidOut() {
+        val row = binding.nomineeRow
+        if (row.childCount == 0 && nomineeAdapter.itemCount > 0) row.requestLayout()
     }
 
     /** Guarda a posição horizontal antes de o ViewHolder ser reaproveitado. */

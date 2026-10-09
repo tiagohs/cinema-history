@@ -48,6 +48,10 @@ sealed class AwardItem(val key: String, val viewType: Int) {
 
     class People(key: String, val title: String?, val persons: List<Person>) : AwardItem(key, TYPE_PEOPLE_ROW)
 
+    /** Imagem larga do filme vencedor, entre as categorias (quando o ano não tem vídeo para o lugar). */
+    class Backdrop(key: String, val category: String?, val winner: Nominee, val movie: Nominee) :
+        AwardItem(key, TYPE_BACKDROP)
+
     class ReadMore(val expanded: Boolean) : AwardItem("read_more", TYPE_READ_MORE)
 
     companion object {
@@ -60,6 +64,10 @@ sealed class AwardItem(val key: String, val viewType: Int) {
         const val TYPE_VIDEO_WIDE = 6
         const val TYPE_PEOPLE_ROW = 7
         const val TYPE_READ_MORE = 8
+        const val TYPE_BACKDROP = 9
+
+        /** A cada quantas categorias entra um vídeo ou uma imagem. */
+        private const val MEDIA_EVERY = 2
 
         /** Vencedores primeiro (mantendo a ordem original entre eles e entre os indicados). */
         fun sortWinnersFirst(list: List<Nominee>?): List<Nominee> {
@@ -111,8 +119,24 @@ sealed class AwardItem(val key: String, val viewType: Int) {
                     card = true
                 )
             }
-            categories.drop(1).forEach { items += it }
-            if (videos.isNotEmpty()) items += Videos("y$year:videos", videosTitle, videos)
+            // A cada duas categorias: um vídeo do ano ou, sem vídeos sobrando, a imagem de um vencedor.
+            val pendingVideos = ArrayDeque(videos)
+            var sinceMedia = 1
+            categories.drop(1).forEachIndexed { index, category ->
+                items += category
+                sinceMedia++
+                val isLast = index == categories.size - 2
+                if (sinceMedia >= MEDIA_EVERY && !isLast) {
+                    val media: AwardItem? = pendingVideos.removeFirstOrNull()
+                        ?.let { Video("y$year:v${items.size}", it) }
+                        ?: backdropOf(year, items.size, category)
+                    if (media != null) {
+                        items += media
+                        sinceMedia = 0
+                    }
+                }
+            }
+            if (pendingVideos.isNotEmpty()) items += Videos("y$year:videos", videosTitle, pendingVideos.toList())
             people.forEachIndexed { index, list ->
                 items += People("y$year:people$index", list.title, list.persons.orEmpty())
             }
@@ -132,6 +156,13 @@ sealed class AwardItem(val key: String, val viewType: Int) {
                 }
             }
             return items
+        }
+
+        private fun backdropOf(year: String, position: Int, category: Category): Backdrop? {
+            val winner = category.nominees.firstOrNull { it.winner == true } ?: return null
+            val movie = if (winner.movie != null) winner.movie else winner
+            if (movie?.backdropPath.isNullOrBlank()) return null
+            return Backdrop("y$year:b$position", category.name, winner, movie!!)
         }
 
         /** Aba "Sobre": ficha do prêmio + o começo do histórico; o resto aparece em "Ler mais". */

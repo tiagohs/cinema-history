@@ -286,13 +286,14 @@ class MainTopicsAdapter(
         override fun bind(item: MainTopic, position: Int) {
             super.bind(item, position)
             val quote = item as? Quote ?: return
-            val quoteColor = if (isDarkMode) R.color.md_white_1000 else R.color.md_black_1000
+            // Lista clara segue o tema do app (texto escuro no claro, claro no escuro).
+            val quoteColor = if (isDarkMode) R.color.md_white_1000 else R.color.daynight_text_primary
 
             binding.quoteText.setResourceText(quote.quote)
             binding.quoteTextAuthor.setResourceText(quote.author)
 
             if (!isDarkMode) {
-                binding.quoteText.setResourceTextColor(R.color.md_black_1000)
+                binding.quoteText.setResourceTextColor(R.color.daynight_text_primary)
             }
 
             binding.quoteTop.setResourceImageColor(quoteColor)

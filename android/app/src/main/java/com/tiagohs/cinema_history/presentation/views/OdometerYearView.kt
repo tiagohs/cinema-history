@@ -8,6 +8,7 @@ import android.text.TextPaint
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.DecelerateInterpolator
+import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import com.tiagohs.cinema_history.R
 
@@ -27,7 +28,8 @@ class OdometerYearView @JvmOverloads constructor(
         textAlign = Paint.Align.CENTER
         textSize = context.resources.getDimension(R.dimen.timeline_year_watermark_size)
         typeface = try { ResourcesCompat.getFont(context, R.font.oswald_bold) } catch (e: Exception) { null }
-        color = 0xFF000000.toInt()
+        // Preto no tema claro, claro no escuro (é uma marca d'água com alpha baixo).
+        color = ContextCompat.getColor(context, R.color.daynight_text_primary)
     }
 
     private val digitWidth: Float

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinatorLayout"
-    android:background="@color/md_white_1000"
+    android:background="@color/daynight_background"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -254,14 +254,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/md_white_1000"
+        android:background="@color/daynight_background"
         app:shimmer_duration="800"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/md_white_1000"
+            android:background="@color/daynight_background"
             android:layout_marginStart="@dimen/activity_vertical_margin_2x"
             android:layout_marginEnd="@dimen/activity_vertical_margin_2x"
             android:orientation="vertical">
@@ -307,7 +307,7 @@
         android:layout_height="match_parent"
         android:id="@+id/pageContentList"
         android:alpha="0"
-        android:background="@color/md_white_1000"
+        android:background="@color/daynight_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

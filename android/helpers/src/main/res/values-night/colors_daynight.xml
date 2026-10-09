@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Versão escura (Material Design 3, esquema neutro sem tom lilás):
+    fundo #121212 e superfícies mais claras quanto mais "alto" o elemento; textos claros com
+    contraste AA (≥ 4,5:1) sobre todas as superfícies.
+-->
+<resources>
+    <color name="daynight_background">#FF121212</color>
+    <color name="daynight_surface_container_low">#FF1C1C1C</color>
+    <color name="daynight_surface_container">#FF212121</color>
+    <color name="daynight_surface_container_high">#FF2B2B2B</color>
+    <color name="daynight_surface_container_highest">#FF363636</color>
+
+    <color name="daynight_text_primary">#FFE6E6E6</color>
+    <color name="daynight_text_grey_900">#FFE0E0E0</color>
+    <color name="daynight_text_grey_800">#FFD0D0D0</color>
+    <color name="daynight_text_grey_700">#FFBDBDBD</color>
+    <color name="daynight_text_grey_600">#FFAAAAAA</color>
+    <color name="daynight_text_grey_500">#FF9E9E9E</color>
+
+    <color name="daynight_ink">#FFE6E6E6</color>
+    <color name="daynight_ripple_on_ink">#1F000000</color>
+    <color name="daynight_on_ink">#FF121212</color>
+
+    <color name="daynight_divider">#FF3A3A3A</color>
+    <color name="daynight_divider_strong">#FF4D4D4D</color>
+
+    <color name="daynight_link">#FF64B5F6</color>
+
+    <!-- Esqueletos de carregamento (shimmer) sobre o fundo escuro -->
+    <color name="cell_background_light">#FF2A2A2A</color>
+</resources>

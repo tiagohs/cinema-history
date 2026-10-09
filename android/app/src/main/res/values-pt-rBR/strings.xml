@@ -165,6 +165,7 @@
     <string name="award_read_more">Ler mais</string>
     <string name="award_read_less">Mostrar menos</string>
     <string name="award_ceremony_title">Sobre a cerimônia</string>
+    <string name="award_backdrop_winner">Vencedor · %1$s</string>
     <string name="award_videos_title">Vídeos</string>
     <string name="award_highlights_title">Destaques</string>
     <string name="award_year_error">Não foi possível carregar este ano.</string>
@@ -179,4 +180,11 @@
         <item quantity="other">%1$d indicados</item>
         <item quantity="many">%1$d indicados</item>
     </plurals>
+
+    <!-- Tema (Configurações) -->
+    <string name="appearance_title">Aparência</string>
+    <string name="theme_title">Tema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Escuro</string>
+    <string name="theme_system">Padrão do sistema</string>
 </resources>

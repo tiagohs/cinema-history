@@ -29,6 +29,7 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
     private val REFERENCES_KEY = "references"
     private val GLOSSARY_KEY = "glossary"
     private val AD_PRIVACY_KEY = "ad_privacy"
+    private val THEME_KEY = "app_theme"
 
     private var appLanguage: ListPreference? = null
     private var aboutLanguage: Preference? = null
@@ -50,12 +51,27 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
         glossaryLanguage = findPreference(GLOSSARY_KEY)
 
         setupLanguagePreference()
+        setupThemePreference()
 
         aboutLanguage?.intent = AboutActivty.newIntent(context)
         referencesLanguage?.intent = ReferenceActivity.newIntent(context)
         glossaryLanguage?.intent = GlossaryActivity.newIntent(context)
 
         setupAdPrivacyPreference()
+    }
+
+    /**
+     * Tema: Claro / Escuro / Padrão do sistema (padrão). Aplicado na hora com
+     * AppCompatDelegate.setDefaultNightMode (as telas abertas são recriadas no novo tema).
+     */
+    private fun setupThemePreference() {
+        val preference = findPreference<ListPreference>(THEME_KEY) ?: return
+
+        preference.value = settingManager.getThemeMode()
+        preference.setOnPreferenceChangeListener { _, newValue ->
+            settingManager.setThemeMode(newValue as String)
+            true
+        }
     }
 
     /** "Privacidade de anúncios": reabre o formulário de consentimento (exigido pelo GDPR). */

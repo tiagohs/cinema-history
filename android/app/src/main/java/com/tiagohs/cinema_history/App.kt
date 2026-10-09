@@ -6,6 +6,7 @@ import com.tiagohs.cinema_history.ads.AdsHistory
 import com.tiagohs.cinema_history.dagger.AppComponent
 import com.tiagohs.cinema_history.dagger.DaggerAppComponent
 import com.tiagohs.cinema_history.dagger.modules.AppModule
+import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.helpers.utils.ContentLanguage
 import timber.log.Timber
 import com.tiagohs.helpers.utils.RemoteContent
@@ -17,6 +18,9 @@ class App: Application() {
         super.onCreate()
 
         appContext = applicationContext
+
+        // Tema (Claro / Escuro / Padrão do sistema) antes de qualquer Activity ser criada.
+        SettingsManager.applySavedThemeMode(this)
 
         configureDagger()
         configureTimber()

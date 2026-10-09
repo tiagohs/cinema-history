@@ -102,8 +102,9 @@ class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsV
     }
 
     private fun setupLightScreen() {
-        val whiteColor = getResourceColor(R.color.md_white_1000)
-        val blackColor = getResourceColor(R.color.md_black_1000)
+        // "Modo claro" da lista: barra e fundo acompanham o tema do app (branco no claro, escuro no escuro).
+        val whiteColor = getResourceColor(R.color.daynight_background)
+        val blackColor = getResourceColor(R.color.daynight_text_primary)
 
         binding.toolbar.setBackgroundColor(whiteColor)
         binding.toolbarTitle.setTextColor(blackColor)
@@ -111,9 +112,9 @@ class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsV
 
         binding.mainTopicsList.setBackgroundColor(whiteColor)
 
-        WindowCompat.getInsetsController(window, window.decorView).isAppearanceLightStatusBars = true
+        WindowCompat.getInsetsController(window, window.decorView).isAppearanceLightStatusBars = !isDarkThemeActive()
 
-        setStatusBarColor(R.color.md_white_1000)
+        setStatusBarColor(R.color.daynight_background)
 
         binding.loadViewContainer.addView(
             LayoutInflater.from(this).inflate(

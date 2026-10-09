@@ -121,6 +121,7 @@ class AwardContentAdapter(
             AwardItem.TYPE_VIDEO_ROW -> VideoRowHolder(AdapterAwardMediaRowBinding.inflate(inflater, parent, false), press)
             AwardItem.TYPE_PEOPLE_ROW -> PeopleRowHolder(AdapterAwardMediaRowBinding.inflate(inflater, parent, false), press)
             AwardItem.TYPE_VIDEO_WIDE -> VideoWideHolder(AdapterAwardVideoWideBinding.inflate(inflater, parent, false))
+            AwardItem.TYPE_BACKDROP -> BackdropHolder(AdapterAwardVideoWideBinding.inflate(inflater, parent, false))
             else -> ReadMoreHolder(AdapterAwardReadMoreBinding.inflate(inflater, parent, false))
         }
     }
@@ -143,6 +144,7 @@ class AwardContentAdapter(
             is AwardItem.People -> (holder as PeopleRowHolder).bind(item)
             is AwardItem.Video -> (holder as VideoWideHolder).bind(item)
             is AwardItem.ReadMore -> (holder as ReadMoreHolder).bind(item)
+            is AwardItem.Backdrop -> (holder as BackdropHolder).bind(item)
         }
         maybeAnimateEntrance(holder.itemView)
     }
@@ -153,7 +155,12 @@ class AwardContentAdapter(
             is AwardsNomineesViewHolder -> holder.saveState()
             is TextHolder -> holder.recycle()
             is VideoWideHolder -> glide.clear(holder.thumb)
+            is BackdropHolder -> glide.clear(holder.thumb)
         }
+    }
+
+    override fun onViewAttachedToWindow(holder: RecyclerView.ViewHolder) {
+        if (holder is AwardsNomineesViewHolder) holder.ensureLaidOut()
     }
 
     override fun onFailedToRecycleView(holder: RecyclerView.ViewHolder): Boolean {
@@ -320,7 +327,6 @@ class AwardContentAdapter(
             binding.rowList.setRecycledViewPool(mediaPool)
             binding.rowList.layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL, false).apply {
                 initialPrefetchItemCount = 2
-                recycleChildrenOnDetach = true
             }
             binding.rowList.itemAnimator = null
             binding.rowList.adapter = adapter
@@ -399,7 +405,6 @@ class AwardContentAdapter(
             binding.rowList.setRecycledViewPool(mediaPool)
             binding.rowList.layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL, false).apply {
                 initialPrefetchItemCount = 4
-                recycleChildrenOnDetach = true
             }
             binding.rowList.itemAnimator = null
             binding.rowList.adapter = adapter
@@ -478,6 +483,34 @@ class AwardContentAdapter(
 
             val width = itemView.resources.displayMetrics.widthPixels
             Images.load(glide, binding.videoThumb, youtubeThumb(video.videoId), width, width * 9 / 16, crossFade = motionEnabled)
+        }
+    }
+
+    /** Imagem larga de um filme vencedor, entre as categorias. Toque abre o filme. */
+    inner class BackdropHolder(private val binding: AdapterAwardVideoWideBinding) : RecyclerView.ViewHolder(binding.root) {
+
+        val thumb get() = binding.videoThumb
+        private var movie: com.tiagohs.entities.awards.Nominee? = null
+
+        init {
+            binding.videoPlay.visibility = View.GONE
+            binding.videoCard.setOnClickListener { v -> movie?.let { actions.onNomineeClicked(it, v) } }
+        }
+
+        fun bind(item: AwardItem.Backdrop) {
+            movie = item.movie
+            val ctx = itemView.context
+            binding.videoTitle.text = item.movie.name
+            binding.videoTitle.visibility = View.VISIBLE
+            val person = item.winner.takeIf { it !== item.movie }?.name
+            val label = ctx.getString(R.string.award_backdrop_winner, item.category.orEmpty())
+            binding.videoText.text = if (person.isNullOrBlank()) label else "$label · $person"
+            binding.videoText.visibility = View.VISIBLE
+            binding.videoCard.contentDescription = item.movie.name
+
+            val width = itemView.resources.displayMetrics.widthPixels
+            Images.load(glide, binding.videoThumb, Images.tmdb(item.movie.backdropPath, ImageSize.BACKDROP_780),
+                width, width * 9 / 16, crossFade = motionEnabled)
         }
     }
 

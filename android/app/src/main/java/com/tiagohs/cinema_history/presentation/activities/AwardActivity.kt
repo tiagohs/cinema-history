@@ -275,7 +275,7 @@ class AwardActivity : BaseActivity<ActivityAwardDetailsBinding>(), AwardView, Aw
         binding.awardLabel.text = award.name
         Images.model(this, award.logo)?.let {
             val size = resources.getDimensionPixelSize(R.dimen.awards_logo_size)
-            Images.load(Glide.with(this), binding.awardLogo, it, size, size, crossFade = false)
+            Images.load(Glide.with(this), binding.awardLogo, it, size, size, crossFade = false, centerCrop = false)
         }
         binding.heroDetailsButton.setOnClickListener { openHighlight(it) }
         binding.heroPosterCard.setOnClickListener { openHighlight(it) }

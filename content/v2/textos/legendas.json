@@ -1,0 +1,45 @@
+{
+  "_info": "Fonte das legendas usadas pelo render.py. Use *palavra* para destacar em dourado. Mantenha igual aos .md desta pasta.",
+  "pt-BR": {
+    "feature": { "eyebrow": "De 1895 até hoje", "title": "História do *Cinema*" },
+    "languages": ["PT", "EN", "ES"],
+    "slides": {
+      "01": { "eyebrow": "1895 — hoje", "title": "130 anos de cinema em *8 eras*", "subtitle": "Do primeiro filme aos debates de hoje" },
+      "02": { "eyebrow": "Capítulos", "title": "Leia, assista e *descubra*", "subtitle": "Textos, vídeos, citações e curiosidades em cada capítulo" },
+      "03": { "eyebrow": "Premiações", "title": "Os grandes prêmios, *ano a ano*", "subtitle": "Vencedores e indicados desde 1929" },
+      "04": { "eyebrow": "Linha do tempo", "title": "Uma linha do tempo *animada*", "subtitle": "Os grandes marcos do cinema em ordem cronológica" },
+      "05": { "eyebrow": "Lista essencial", "title": "*1001 filmes* para ver antes de morrer", "subtitle": "Do clássico ao cult, era por era" },
+      "06": { "eyebrow": "Filmes e pessoas", "title": "Cada filme e artista *em detalhes*", "subtitle": "Sinopse, elenco, equipe, biografias e filmografias" },
+      "07": { "eyebrow": "Glossário e referências", "title": "Fale a língua do *cinema*", "subtitle": "Termos de A a Z e indicações de livros, filmes e vídeos" },
+      "08": { "eyebrow": "Três idiomas", "title": "Em português, inglês e *espanhol*", "subtitle": "Escolha o idioma do app e do conteúdo" }
+    }
+  },
+  "en-US": {
+    "feature": { "eyebrow": "From 1895 to today", "title": "History of *Cinema*" },
+    "languages": ["EN", "PT", "ES"],
+    "slides": {
+      "01": { "eyebrow": "1895 — today", "title": "130 years of film in *8 eras*", "subtitle": "From the very first films to today's debates" },
+      "02": { "eyebrow": "Chapters", "title": "Read, watch and *discover*", "subtitle": "Text, videos, quotes and trivia in every chapter" },
+      "03": { "eyebrow": "Film awards", "title": "The major awards, *year by year*", "subtitle": "Winners and nominees since 1929" },
+      "04": { "eyebrow": "Timeline", "title": "An *animated* timeline", "subtitle": "Cinema's milestones in chronological order" },
+      "05": { "eyebrow": "Essential list", "title": "*1001 movies* to see before you die", "subtitle": "From classics to cult films, era by era" },
+      "06": { "eyebrow": "Movies & people", "title": "Every film and artist *in detail*", "subtitle": "Synopsis, cast, crew, biographies and filmographies" },
+      "07": { "eyebrow": "Glossary & references", "title": "Speak the language of *film*", "subtitle": "Terms from A to Z, plus books, films and videos to explore" },
+      "08": { "eyebrow": "Three languages", "title": "In English, Portuguese and *Spanish*", "subtitle": "Choose the language of the app and its content" }
+    }
+  },
+  "es-419": {
+    "feature": { "eyebrow": "De 1895 a hoy", "title": "Historia del *Cine*" },
+    "languages": ["ES", "EN", "PT"],
+    "slides": {
+      "01": { "eyebrow": "1895 — hoy", "title": "130 años de cine en *8 eras*", "subtitle": "De las primeras películas a los debates de hoy" },
+      "02": { "eyebrow": "Capítulos", "title": "Lee, mira y *descubre*", "subtitle": "Textos, videos, citas y curiosidades en cada capítulo" },
+      "03": { "eyebrow": "Premios", "title": "Los grandes premios, *año a año*", "subtitle": "Ganadores y nominados desde 1929" },
+      "04": { "eyebrow": "Línea de tiempo", "title": "Una línea de tiempo *animada*", "subtitle": "Los hitos del cine en orden cronológico" },
+      "05": { "eyebrow": "Lista esencial", "title": "*1001 películas* que ver antes de morir", "subtitle": "Del clásico al cine de culto, era por era" },
+      "06": { "eyebrow": "Películas y personas", "title": "Cada película y artista *en detalle*", "subtitle": "Sinopsis, reparto, equipo, biografías y filmografías" },
+      "07": { "eyebrow": "Glosario y referencias", "title": "Habla el idioma del *cine*", "subtitle": "Términos de la A a la Z y recomendaciones de libros, películas y videos" },
+      "08": { "eyebrow": "Tres idiomas", "title": "En español, inglés y *portugués*", "subtitle": "Elige el idioma de la app y del contenido" }
+    }
+  }
+}

@@ -30,5 +30,8 @@ class Nominee(
     val country: String? = null,
 
     @SerializedName("director")
-    val director: String? = null
+    val director: String? = null,
+    /** Só nos vencedores (e no filme de uma pessoa vencedora): imagem larga do filme. */
+    @SerializedName("backdrop_path")
+    val backdropPath: String? = null
 ) : Serializable

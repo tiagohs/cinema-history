@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.tiagohs.cinema_history.BuildConfig
 import com.tiagohs.cinema_history.R
 import com.tiagohs.helpers.extensions.getResourceString
+import com.tiagohs.helpers.extensions.isDarkThemeActive
 import com.tiagohs.helpers.extensions.openLink
 import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
 import mehdi.sakout.aboutpage.AboutPage
@@ -108,7 +109,7 @@ class AboutActivty : AppCompatActivity() {
 
         return AboutPage(this)
             .isRTL(false)
-            .enableDarkMode(false)
+            .enableDarkMode(isDarkThemeActive()) // segue o tema do app (Configurações)
             .setImage(R.mipmap.ic_launcher)
             .setDescription(getString(R.string.app_description, getResourceString(R.string.app_name)))
             .addItem(Element().setTitle(getString(R.string.version, BuildConfig.VERSION_NAME)))

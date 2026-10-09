@@ -13,6 +13,7 @@
         android:id="@+id/yearBar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/awards_year_bar_height"
+        android:layout_marginTop="12dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 

@@ -1,6 +1,5 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
-import com.tiagohs.cinema_history.presentation.configs.StatusBarScrim
 
 import android.content.Intent
 import android.view.ViewGroup
@@ -65,7 +64,8 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
 
         getApplicationComponent()?.inject(this)
 
-        StatusBarScrim.apply(view)
+        // O topo da página é preto: status bar preta e opaca, para o texto não aparecer atrás dela ao rolar.
+        binding.coordinatorLayout.setStatusBarBackgroundColor(android.graphics.Color.BLACK)
 
         (activity as? BaseActivity<*>)?.setupToolbar(binding.toolbar, displayHomeAsUpEnabled = false)
 

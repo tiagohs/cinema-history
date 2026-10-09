@@ -38,8 +38,8 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:id="@+id/listIndicator"
             android:layout_gravity="center_horizontal|bottom"
-            app:dotFillColor="@color/md_black_1000"
-            app:dotStrokeColor="@color/md_grey_800"
+            app:dotFillColor="@color/daynight_ink"
+            app:dotStrokeColor="@color/daynight_text_grey_800"
         />
 
     </LinearLayout>
