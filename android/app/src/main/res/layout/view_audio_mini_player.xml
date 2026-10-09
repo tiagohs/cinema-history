@@ -62,22 +62,47 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <TextView
-            android:id="@+id/audioMiniTitle"
+        <!-- duas linhas: capítulo (pequeno) em cima, faixa embaixo; títulos longos cortam com "…" -->
+        <LinearLayout
+            android:id="@+id/audioMiniTexts"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="@color/md_white_1000"
-            android:textSize="14sp"
-            android:fontFamily="@font/proxima_nova_regular"
-            android:importantForAccessibility="no"
+            android:layout_marginBottom="1dp"
+            android:importantForAccessibility="noHideDescendants"
+            android:orientation="vertical"
             app:layout_constraintStart_toEndOf="@id/audioMiniBack15"
             app:layout_constraintEnd_toStartOf="@id/audioMiniExpand"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:text="Pathé Frères" />
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/audioMiniChapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/audio_mini_player_secondary"
+                android:textSize="11sp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:includeFontPadding="false"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="Capítulo 1 · Visionários" />
+
+            <TextView
+                android:id="@+id/audioMiniTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/md_white_1000"
+                android:textSize="14sp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:includeFontPadding="false"
+                tools:text="Pathé Frères" />
+        </LinearLayout>
 
         <ImageButton
             android:id="@+id/audioMiniExpand"

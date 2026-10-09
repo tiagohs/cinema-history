@@ -11,6 +11,7 @@ import android.util.TypedValue
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import com.tiagohs.cinema_history.presentation.configs.QuickSettingsMenu
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -76,6 +77,14 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
         binding.coordinatorLayout.setStatusBarBackgroundColor(android.graphics.Color.BLACK)
 
         (activity as? BaseActivity<*>)?.setupToolbar(binding.toolbar, displayHomeAsUpEnabled = false)
+        // tema à esquerda, idioma à direita (longe do título)
+        activity?.let { act ->
+            binding.toolbar.setNavigationIcon(
+                if (QuickSettingsMenu.isNight(act)) R.drawable.ic_light_mode_white_24dp else R.drawable.ic_dark_mode_white_24dp
+            )
+            binding.toolbar.setNavigationContentDescription(R.string.action_theme)
+            binding.toolbar.setNavigationOnClickListener { QuickSettingsMenu.toggleTheme(act, settingManager) }
+        }
 
         setHasOptionsMenu(true)
 
@@ -118,6 +127,8 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_history_page, menu)
+        activity?.let { QuickSettingsMenu.bind(it, menu) }
+        menu.findItem(R.id.action_theme)?.isVisible = false // fica na esquerda da toolbar
         if (BuildConfig.DEBUG) {
             menu.add(Menu.NONE, AudioDebugDialog.MENU_ID, Menu.CATEGORY_SECONDARY, "Áudio (debug)")
         }

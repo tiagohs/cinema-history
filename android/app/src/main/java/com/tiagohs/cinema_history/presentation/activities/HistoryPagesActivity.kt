@@ -41,6 +41,9 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>(), AudioH
     @Inject
     lateinit var dynamicLinkManager: DynamicLinkManager
 
+    @Inject
+    lateinit var localService: com.tiagohs.domain.services.LocalService
+
     var mainTopic: MainTopicItem? = null
     var adapterPager: PagePagerAdapter? = null
 
@@ -78,6 +81,14 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>(), AudioH
         hideLoading()
 
         chapterInterstitial.preload()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // idioma trocado aqui (chip da toolbar) ou em outra tela: reabre no mesmo capítulo, no novo idioma
+        com.tiagohs.cinema_history.presentation.configs.LocalizedMainTopic.reopenIfLanguageChanged(this, localService, mainTopic) { fresh ->
+            newIntent(this, fresh, binding.sumarioContentViewPager.currentItem, isFromUniversalLink)
+        }
     }
 
     override fun onBackPressed() {
@@ -338,7 +349,7 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>(), AudioH
             intent.putExtra(MAIN_TOPIC, mainTopic)
             intent.putExtra(Constants.IS_FROM_UNIVERSAL_LINK, isFromUniversalLink)
 
-            return intent
+            return com.tiagohs.cinema_history.presentation.configs.LocalizedMainTopic.tag(intent)
         }
     }
 }

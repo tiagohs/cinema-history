@@ -92,20 +92,7 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
     override fun onCreateOptionsMenu(menu: android.view.Menu): Boolean {
         super.onCreateOptionsMenu(menu)
 
-        menu.findItem(R.id.action_language)?.let { item ->
-            val languages = com.tiagohs.helpers.utils.ContentLanguage.ENABLED
-            if (languages.size < 2) {
-                item.isVisible = false
-            } else {
-                val current = com.tiagohs.helpers.utils.ContentLanguage.current()
-                val chip = item.actionView?.findViewById<android.widget.TextView>(R.id.languageChip)
-                chip?.text = current.uppercase()
-                val label = getString(R.string.action_language, java.util.Locale(current).let { it.getDisplayLanguage(it) })
-                item.title = label
-                chip?.contentDescription = label
-                chip?.setOnClickListener { switchToNextLanguage(languages, current) }
-            }
-        }
+        com.tiagohs.cinema_history.presentation.configs.QuickSettingsMenu.bind(this, menu)
 
         menu.findItem(R.id.action_support)?.let { item ->
             val supporter = Supporter.isSupporter(this)
@@ -113,34 +100,12 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
             item.setTitle(if (supporter) R.string.support_menu_supporter else R.string.support_menu)
         }
 
-        menu.findItem(R.id.action_theme)?.setIcon(
-            if (isNightModeActive()) R.drawable.ic_light_mode_white_24dp else R.drawable.ic_dark_mode_white_24dp
-        )
         return true
-    }
-
-    private fun isNightModeActive(): Boolean =
-        (resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK) ==
-            android.content.res.Configuration.UI_MODE_NIGHT_YES
-
-    /** PT → EN → ES → PT… (o AndroidX salva a escolha e recria as telas no novo idioma). */
-    private fun switchToNextLanguage(languages: List<String>, current: String) {
-        val next = languages[(languages.indexOf(current).coerceAtLeast(0) + 1) % languages.size]
-        androidx.appcompat.app.AppCompatDelegate.setApplicationLocales(
-            androidx.core.os.LocaleListCompat.forLanguageTags(next)
-        )
-    }
-
-    /** Alterna entre claro e escuro a partir do que está na tela agora (sai do "padrão do sistema"). */
-    private fun toggleTheme() {
-        settingsManager.setThemeMode(
-            if (isNightModeActive()) SettingsManager.THEME_LIGHT else SettingsManager.THEME_DARK
-        )
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.action_theme -> toggleTheme()
+            R.id.action_theme -> com.tiagohs.cinema_history.presentation.configs.QuickSettingsMenu.onItemSelected(this, item, settingsManager)
             R.id.action_settings -> openSettings()
             R.id.action_glossary -> openGlossary()
             R.id.action_about -> openAbout()

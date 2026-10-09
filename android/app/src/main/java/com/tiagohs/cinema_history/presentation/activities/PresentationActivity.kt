@@ -32,6 +32,9 @@ class PresentationActivity: BaseActivity<ActivityPresentationBinding>(), Present
     override fun onGetMenuLayoutId(): Int = 0
 
     @Inject
+    lateinit var localService: com.tiagohs.domain.services.LocalService
+
+    @Inject
     lateinit var presenter: PresentationPresenter
 
     @Inject
@@ -45,11 +48,18 @@ class PresentationActivity: BaseActivity<ActivityPresentationBinding>(), Present
 
         getApplicationComponent()?.inject(this)
 
+
         presenter.onBindView(this)
         presenter.fetchMoviesByListId(mainTopic)
 
         // Guarda a era aberta para o "Continue lendo" da Home.
         mainTopic?.let { settingsManager.setLastReadEraId(it.id) }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // idioma trocado em outra tela: reabre com a era no novo idioma
+        com.tiagohs.cinema_history.presentation.configs.LocalizedMainTopic.reopenIfLanguageChanged(this, localService, mainTopic) { fresh -> newInstance(this, fresh) }
     }
 
     override fun onBackPressed() {
@@ -168,7 +178,7 @@ class PresentationActivity: BaseActivity<ActivityPresentationBinding>(), Present
 
             intent.putExtra(MAIN_TOPIC, mainTopic)
 
-            return intent
+            return com.tiagohs.cinema_history.presentation.configs.LocalizedMainTopic.tag(intent)
         }
     }
 }

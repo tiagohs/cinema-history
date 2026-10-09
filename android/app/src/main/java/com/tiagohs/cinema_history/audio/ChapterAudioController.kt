@@ -220,6 +220,15 @@ class ChapterAudioController(
 
     fun currentTitle(): CharSequence? = controller?.mediaMetadata?.title ?: currentTrack()?.title
 
+    /** "Capítulo 1 · Visionários" da faixa que está tocando (no modo era, muda junto com o capítulo). */
+    fun currentChapterLabel(): String? {
+        val key = currentKey() ?: return null
+        val title = currentManifest()?.title?.takeIf { it.isNotBlank() }
+            // sem o manifest em memória: o "artista" do item já é o rótulo pronto (ver toMediaItem)
+            ?: return controller?.mediaMetadata?.artist?.toString()?.takeIf { it.isNotBlank() }
+        return chapterLabel(key, title)
+    }
+
     fun positionMs(): Long = controller?.currentPosition?.coerceAtLeast(0L) ?: 0L
 
     fun durationMs(): Long {
@@ -453,6 +462,18 @@ class ChapterAudioController(
         if (eraMode()) appendEra(m.key)
     }
 
+    /** Rótulo no idioma do áudio (não depende do Locale do applicationContext, que no Android < 13 ignora o idioma do app). */
+    private fun chapterLabel(key: ChapterKey, title: String): String {
+        val res = labelContexts.getOrPut(key.lang) {
+            val conf = android.content.res.Configuration(app.resources.configuration)
+            conf.setLocale(java.util.Locale.forLanguageTag(if (key.lang == "pt") "pt-BR" else key.lang))
+            app.createConfigurationContext(conf)
+        }
+        return res.getString(R.string.audio_chapter_label, key.page, title)
+    }
+
+    private val labelContexts = HashMap<String, android.content.Context>()
+
     private fun toMediaItem(m: AudioManifest, t: AudioTrack): MediaItem {
         val uri = m.trackUri(t)
         return MediaItem.Builder()
@@ -463,7 +484,8 @@ class ChapterAudioController(
                 MediaMetadata.Builder()
                     .setTitle(t.title)
                     .setDisplayTitle(t.title)
-                    .setArtist(m.title)
+                    // notificação/tela de bloqueio: "Abertura" + "Capítulo 1 · Visionários"
+                    .setArtist(chapterLabel(m.key, m.title))
                     .setAlbumTitle(m.eraTitle ?: m.title)
                     // capa no player do sistema (notificação, tela de bloqueio, Bluetooth do carro)
                     .setArtworkUri(Uri.parse("android.resource://${BuildConfig.APPLICATION_ID}/drawable/img_color_movies"))

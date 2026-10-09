@@ -82,9 +82,13 @@ class AudioMiniPlayer(
         binding.audioMiniBuffering.isVisible = audio.isBuffering()
 
         val title = audio.currentTitle()?.toString().orEmpty()
-        if (binding.audioMiniTitle.text?.toString() != title) {
+        val chapter = audio.currentChapterLabel().orEmpty()
+        if (binding.audioMiniTitle.text?.toString() != title || binding.audioMiniChapter.text?.toString() != chapter) {
             binding.audioMiniTitle.text = title
-            binding.audioMiniPlayerCard.contentDescription = context.getString(R.string.audio_mini_player_cd, title)
+            binding.audioMiniChapter.text = chapter
+            binding.audioMiniChapter.isVisible = chapter.isNotEmpty()
+            val spoken = if (chapter.isNotEmpty()) "$chapter, $title" else title
+            binding.audioMiniPlayerCard.contentDescription = context.getString(R.string.audio_mini_player_cd, spoken)
         }
         val duration = audio.durationMs()
         binding.audioMiniProgress.progress =

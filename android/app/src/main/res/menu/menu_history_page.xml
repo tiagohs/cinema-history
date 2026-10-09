@@ -3,6 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.tiagohs.cinema_history.MainActivity">
 
+    <!-- Idioma e tema à mão também durante a leitura (mesmo comportamento da Home) -->
+    <item
+        android:id="@+id/action_language"
+        android:title="@string/action_language"
+        app:actionLayout="@layout/view_home_language_action"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_theme"
+        android:icon="@drawable/ic_dark_mode_white_24dp"
+        android:title="@string/action_theme"
+        app:showAsAction="always" />
+
     <item
         android:id="@+id/action_references"
         android:icon="@drawable/ic_open_book_white_24dp"

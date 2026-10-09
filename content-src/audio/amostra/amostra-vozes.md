@@ -35,3 +35,11 @@ Disse o diretor sul-coreano Bong Joon Ho, no Globo de Ouro de dois mil e vinte.
   médio; a citação em voz diferente, mais próxima e pausada."
 - Compare 3 vozes de narrador ouvindo: pronúncia de "Lumière", "La Ciotat", "Grand Café";
   naturalidade dos números; cansaço depois de 1 minuto (imagine 15).
+
+## Texto curto (≤ 20 s) usado nas amostras de 09/10/2026
+
+> Em 28 de dezembro de 1895, em Paris, os irmãos Lumière apagaram as luzes e projetaram imagens em movimento para um público pagante. Na plateia, o mágico Georges Méliès entendeu: aquilo não era só um registro da realidade. Era uma nova forma de sonhar.
+
+Vozes geradas (Chirp 3 HD, pt-BR): Charon, Sadaltager, Iapetus, Algieba, Orus, Rasalgethi, Enceladus (M);
+Gacrux, Sulafat, Kore, Aoede, Despina, Leda (F). Para gerar de novo:
+`GOOGLE_TTS_API_KEY=... python3 content-src/audio/generate.py sample ...` (veja LEIAME.md).

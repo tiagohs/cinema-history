@@ -6,6 +6,7 @@
     <!-- Mini-player: escuro nos dois temas, como o rodapé preto da tela do capítulo. -->
     <color name="audio_mini_player_background">#FF1F1F1F</color>
     <color name="audio_mini_player_track">#40FFFFFF</color>
+    <color name="audio_mini_player_secondary">#B3FFFFFF</color>
     <color name="audio_header_button_stroke">#99FFFFFF</color>
     <color name="audio_header_button_ripple">#33FFFFFF</color>
 </resources>
