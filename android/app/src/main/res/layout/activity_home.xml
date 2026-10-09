@@ -273,11 +273,11 @@
                 tools:listitem="@layout/adapter_home_era" />
 
             <!-- Citação da era em destaque (mesma citação usada na apresentação da era).
-                 Tablets: largura máxima (ls_list_max_width), alinhada ao título das seções. -->
+                 Tablets: ocupa a largura toda, como as outras seções (um cartão estreito à esquerda deixava um vão). -->
             <com.tiagohs.cinema_history.presentation.views.MaxWidthFrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:ls_maxWidth="@dimen/ls_list_max_width">
+                app:ls_maxWidth="0dp">
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/quoteCard"
@@ -372,7 +372,7 @@
             <com.tiagohs.cinema_history.presentation.views.MaxWidthFrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:ls_maxWidth="@dimen/ls_list_max_width">
+                app:ls_maxWidth="0dp">
 
             <com.google.android.material.card.MaterialCardView
                 style="@style/Widget.CinemaHistory.CardView.Filled"
