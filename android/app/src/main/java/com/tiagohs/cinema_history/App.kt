@@ -29,6 +29,9 @@ class App: Application() {
 
         // Anúncios: o SDK só é inicializado depois do consentimento (HomeActivity -> AdsManager).
         AdsHistory.registerSession(this)
+
+        // Apoio (compra única): reconfirma no Google Play o apoio e o país ao abrir/voltar ao app.
+        com.tiagohs.cinema_history.support.Supporter.init(this)
     }
 
     @Suppress("DEPRECATION")

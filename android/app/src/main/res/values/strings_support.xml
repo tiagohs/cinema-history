@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Support (one-time purchase) and onboarding. The support offer itself only exists in Brazil (pt). -->
+<resources>
+    <!-- Support screen -->
+    <string name="support_kicker">Support the project</string>
+    <string name="support_title">Support the people telling this story</string>
+    <string name="support_intro">The app is free and will stay that way. If it is part of your movie-lover life, you can support it with a one-time payment — and get:</string>
+    <string name="support_benefit_audio_title">Audio narration of every chapter</string>
+    <string name="support_benefit_audio_subtitle">In Portuguese. English and Spanish coming soon.</string>
+    <string name="support_benefit_ads_title">No ads</string>
+    <string name="support_benefit_ads_subtitle">No ads, on any screen, forever.</string>
+    <string name="support_benefit_people_title">Help the people who research, write and organize the content</string>
+    <string name="support_benefit_people_subtitle">And keep Cinema History alive and growing.</string>
+    <string name="support_choose_value">Choose the amount</string>
+    <string name="support_choose_value_subtitle">The benefit is the same: you choose how much to give.</string>
+    <string name="support_tier_apoio">Support</string>
+    <string name="support_tier_apoio_description">Suggested amount</string>
+    <string name="support_tier_plus">Support+</string>
+    <string name="support_tier_plus_description">To give an extra hand</string>
+    <string name="support_tier_fa">Film buff</string>
+    <string name="support_tier_fa_description">For those who live for movies</string>
+    <string name="support_launch_badge">Launch price</string>
+    <string name="support_once_seal">One-time payment · no subscription</string>
+    <string name="support_button">Support with %1$s</string>
+    <string name="support_button_default">Support</string>
+    <string name="support_restore">Restore purchase</string>
+    <string name="support_continue_free">Continue for free</string>
+    <string name="support_loading">Loading prices from Google Play…</string>
+    <string name="support_error">Could not reach Google Play right now. Check your connection and try again.</string>
+    <string name="support_error_unavailable">Support is not available for this Google Play account right now.</string>
+    <string name="support_try_again">Try again</string>
+    <string name="support_pending_title">Payment processing</string>
+    <string name="support_pending_text">As soon as Google Play confirms the payment (some payment methods take a while), your support is unlocked automatically. You don\'t need to do anything.</string>
+    <string name="support_thanks_title">Thank you for your support!</string>
+    <string name="support_thanks_text">You help keep Cinema History alive — and free for everyone. Your benefits are already active:</string>
+    <string name="support_thanks_back">Back to the app</string>
+    <string name="support_purchase_success">Done! Thank you for supporting Cinema History.</string>
+    <string name="support_purchase_error">The purchase was not completed. Please try again in a moment.</string>
+    <string name="support_restore_success">Purchase restored. Thank you for your support!</string>
+    <string name="support_restore_none">No support purchase found for this Google account.</string>
+    <string name="support_restore_error">Could not check Google Play right now.</string>
+    <string name="support_close">Close</string>
+
+    <!-- Entry points -->
+    <string name="support_menu">Support the app</string>
+    <string name="support_menu_supporter">You are a supporter ♥</string>
+    <string name="support_settings_summary">One-time payment: audio narration and no ads</string>
+    <string name="support_settings_summary_supporter">Thank you for supporting Cinema History!</string>
+    <string name="support_about_thanks">Thanks to everyone who supports Cinema History ♥</string>
+    <string name="support_about_supporter">You support Cinema History. Thank you! ♥</string>
+    <string name="support_chapter_card_kicker">Cinema History</string>
+    <string name="support_chapter_card_title">Enjoying the read?</string>
+    <string name="support_chapter_card_text">The app is free and will stay that way. If you like, support it with a one-time payment and listen to narrated chapters, with no ads.</string>
+    <string name="support_chapter_card_button">Learn about supporting</string>
+    <string name="support_chapter_card_dismiss">Not now</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_start">Get started</string>
+    <string name="onboarding_1_kicker">Welcome</string>
+    <string name="onboarding_1_title">130 years of cinema in the palm of your hand</string>
+    <string name="onboarding_1_text">From the Lumière brothers\' first screening to streaming: the history of cinema told in 8 eras, with films, directors and trivia.</string>
+    <string name="onboarding_1_eras">8 eras · from 1895 to today</string>
+    <string name="onboarding_language">Language</string>
+    <string name="onboarding_theme">Theme</string>
+    <string name="onboarding_theme_system">System</string>
+    <string name="onboarding_2_kicker">Explore</string>
+    <string name="onboarding_2_title">Far beyond history</string>
+    <string name="onboarding_2_text">Everything that made cinema what it is, in one place.</string>
+    <string name="onboarding_2_awards">Awards since 1929</string>
+    <string name="onboarding_2_awards_subtitle">Oscars, Golden Globes, Cannes and more</string>
+    <string name="onboarding_2_timeline">Timeline</string>
+    <string name="onboarding_2_timeline_subtitle">The great milestones, year by year</string>
+    <string name="onboarding_2_movies">1001 movies</string>
+    <string name="onboarding_2_movies_subtitle">To see before you die</string>
+    <string name="onboarding_2_directors">Directors</string>
+    <string name="onboarding_2_directors_subtitle">Who changed the way films are made</string>
+    <string name="onboarding_3_kicker">Our promise</string>
+    <string name="onboarding_3_title">Culture is free. Long live cinema.</string>
+    <string name="onboarding_3_text">All of the app\'s content is — and will remain — free. Ads help keep the app alive: research, writing and constant updates.</string>
+    <string name="onboarding_3_badge">100% free</string>
+    <string name="onboarding_4_kicker">Optional</string>
+    <string name="onboarding_4_title">Want to help?</string>
+    <string name="onboarding_4_text">Cinema History is an independent project, made with research and a lot of love for cinema. With a one-time payment, you support the project and get:</string>
+    <string name="onboarding_4_support">Learn about supporting</string>
+    <string name="onboarding_4_later">Not now</string>
+
+    <!-- Debug (só em builds de debug: 7 toques na versão em Sobre) -->
+    <string name="support_debug_title" translatable="false">Apoio (debug)</string>
+    <string name="support_debug_force_offer" translatable="false">Forçar oferta (como BR + pt)</string>
+    <string name="support_debug_force_supporter" translatable="false">Forçar apoiador</string>
+    <string name="support_debug_force_pending" translatable="false">Simular pagamento pendente</string>
+    <string name="support_debug_reset_onboarding" translatable="false">Mostrar o onboarding de novo</string>
+    <string name="support_debug_reset_chapter_card" translatable="false">Zerar contador do cartão de fim de capítulo</string>
+    <string name="support_debug_preview" translatable="false">Prévia de debug: valores e compra simulados (sem Google Play).</string>
+    <string name="support_debug_status" translatable="false">País do Play: %1$s · idioma: %2$s · apoiador: %3$s</string>
+</resources>

@@ -73,22 +73,22 @@ class Chapter:
     def flush(self):
         self.cur = None
 
-    def add_text(self, original, hints=()):
+    def add_text(self, original, hints=(), src=-1):
         if self.cur is None or self.cur["kind"] != "body":
             self.new_track("body")
-        self.cur["segs"].append(("narrador", original, list(hints)))
+        self.cur["segs"].append(("narrador", original, list(hints), src))
 
-    def add_quote(self, quote, author):
+    def add_quote(self, quote, author, src=-1):
         if self.cur is None or self.cur["kind"] != "body":
             self.new_track("body")
         L = L10N[self.lang]
-        self.cur["segs"].append(("citacao", quote, []))
+        self.cur["segs"].append(("citacao", quote, [], src))
         if author:
             a = author.strip()
             a = re.sub(r"\s+-\s+", f", {L['in']} ", a)          # "Georges Méliès - Hugo"
             a = re.sub(r"\s*\(([^()]*)\)\s*$", r", \1", a)        # "Walter Salles (discurso, 2025)"
             # o "…" marca a atribuição (é removido na normalização)
-            self.cur["segs"].append(("narrador", f"…{L['said']} {a}.", []))
+            self.cur["segs"].append(("narrador", f"…{L['said']} {a}.", [], src))
 
 
 def _hints(raw):
@@ -115,19 +115,19 @@ def _split_long(segs, limit, lang):
     groups, cur, size = [], [], 0
     # parágrafo sozinho maior que o limite: quebra em fim de frase (caso raro)
     expanded = []
-    for sp, txt, h in segs:
+    for sp, txt, h, src in segs:
         if slen(txt, lang) <= limit or sp != "narrador":
-            expanded.append((sp, txt, h))
+            expanded.append((sp, txt, h, src))
             continue
         sentences = re.split(r"(?<=[.!?])\s+(?=[A-ZÀ-Ý\"'“])", txt)
         buf = ""
         for snt in sentences:
             if buf and slen(buf + " " + snt, lang) > limit * 0.6:
-                expanded.append((sp, buf, h)); h = []; buf = snt
+                expanded.append((sp, buf, h, src)); h = []; buf = snt
             else:
                 buf = (buf + " " + snt).strip()
         if buf:
-            expanded.append((sp, buf, h))
+            expanded.append((sp, buf, h, src))
     segs = expanded
     i = 0
     units = []
@@ -165,38 +165,41 @@ def build_chapter(lang, era, page, era_info, summary):
     desc = N.clean_html(summary.get("description", ""))
     t = ch.new_track("open", L["open"])
     opening = f"{era_sub}: {era_title}. {L['chapter']} {page}: {title}."
-    t["segs"].append(("narrador", N.clean_html(opening), []))
+    t["segs"].append(("narrador", N.clean_html(opening), [], -1))
     if desc:
-        t["segs"].append(("narrador", desc, []))
+        t["segs"].append(("narrador", desc, [], -1))
     ch.flush()
 
     movies = []
-    for el in data.get("content_list", []):
+    movies_src = None  # índice da primeira movie_list (a faixa "Vale a conferida" aponta para ela)
+    for idx, el in enumerate(data.get("content_list", [])):
         typ = el.get("type")
         if typ == "text":
             raw = el.get("content_text") or ""
             paras = N.split_paragraphs(raw)
             for i, p in enumerate(paras):
-                ch.add_text(p, _hints(raw) if i == 0 else ())
+                ch.add_text(p, _hints(raw) if i == 0 else (), src=idx)
         elif typ == "quote":
             q = el.get("quote") or {}
             qt = N.clean_html(q.get("quote") or "")
             if qt:
-                ch.add_quote(qt, N.clean_html(q.get("author") or ""))
+                ch.add_quote(qt, N.clean_html(q.get("author") or ""), src=idx)
         elif typ == "block_special":
             ch.flush()
             btitle = N.clean_html(el.get("title") or "")
             paras = N.split_paragraphs(el.get("description") or "")
             if paras:
                 tr = ch.new_track("more", f"{L['more']}: {btitle}")
-                tr["segs"].append(("narrador", f"{L['more']}: {btitle}.", []))
-                tr["segs"].extend(("narrador", p, []) for p in paras)
+                tr["segs"].append(("narrador", f"{L['more']}: {btitle}.", [], idx))
+                tr["segs"].extend(("narrador", p, [], idx) for p in paras)
             ch.flush()
         elif typ in MOVIE_LISTS:
             for m in el.get("movies") or []:
                 name = (m.get("title") or m.get("name") or m.get("original_title") or "").strip()
                 if name and name not in movies:
                     movies.append(name)
+                    if movies_src is None:
+                        movies_src = idx
         elif typ in VISUAL:
             # fronteira de bloco; uma citação depois de um visual abre o bloco seguinte
             if ch.cur is not None and ch.cur["kind"] == "body" and ch.cur["segs"]:
@@ -231,7 +234,8 @@ def build_chapter(lang, era, page, era_info, summary):
     if movies:
         lst = movies[0] if len(movies) == 1 else ", ".join(movies[:-1]) + f" {L['and']} " + movies[-1]
         final.append({"kind": "watch", "title": L["watch_title"],
-                      "segs": [("narrador", L["watch_text"].format(list=lst), [])]})
+                      "segs": [("narrador", L["watch_text"].format(list=lst), [],
+                                movies_src if movies_src is not None else -1)]})
 
     # títulos das faixas de texto
     used = set()
@@ -253,14 +257,15 @@ def build_chapter(lang, era, page, era_info, summary):
     tracks_out = []
     for ti, tr in enumerate(final):
         segs = []
-        for si, (spk, orig, _h) in enumerate(tr["segs"]):
+        for si, (spk, orig, _h, src) in enumerate(tr["segs"]):
             orig_clean = orig.lstrip("…") if spk == "narrador" else orig
             spoken = N.speak(orig_clean, lang)
             if orig.startswith("…"):
                 # atribuição de citação: o narrador fala "…, disse Fulano."
                 spoken = spoken[:1].lower() + spoken[1:]
-            segs.append({"id": f"{ti:02d}-{si + 1:02d}", "speaker": spk, "original": orig_clean,
-                         "text": spoken, "chars": chars_of(spoken)})
+            # source_index: índice do item em content_list de onde o segmento veio (-1 = abertura)
+            segs.append({"id": f"{ti:02d}-{si + 1:02d}", "speaker": spk, "source_index": src,
+                         "original": orig_clean, "text": spoken, "chars": chars_of(spoken)})
         c = sum(s["chars"] for s in segs)
         tracks_out.append({"id": f"{ti:02d}", "title": tr["title"], "kind": tr["kind"], "segments": segs,
                            "chars": c, "est_minutes": round(c / CHARS_PER_MIN[lang], 2)})

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding (primeira abertura): páginas em tela cheia com imagem, "Pular" sempre visível. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/onboardingRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_black_1000">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/onboardingPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/onboardingTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="24dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp">
+
+        <TextView
+            android:id="@+id/onboardingBrand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/oswald_bold"
+            android:letterSpacing="0.08"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/md_white_1000"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/onboardingSkip"
+            style="@style/Widget.CinemaHistory.Onboarding.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_skip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/onboardingBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:minHeight="88dp"
+        android:orientation="horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="12dp">
+
+        <LinearLayout
+            android:id="@+id/onboardingDots"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/onboardingNext"
+            style="@style/Widget.CinemaHistory.Onboarding.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:minWidth="132dp"
+            android:text="@string/onboarding_next"
+            app:icon="@drawable/ic_navigate_next_black_24dp"
+            app:iconGravity="end" />
+    </LinearLayout>
+</FrameLayout>

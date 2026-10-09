@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Apoyo (pago único) y onboarding. -->
+<resources>
+    <!-- Pantalla de apoyo -->
+    <string name="support_kicker">Apoya el proyecto</string>
+    <string name="support_title">Apoya a quienes cuentan esta historia</string>
+    <string name="support_intro">La app es gratuita y seguirá así. Si forma parte de tu vida de cinéfilo, puedes apoyarla con un pago único — y obtienes:</string>
+    <string name="support_benefit_audio_title">Narración en audio de todos los capítulos</string>
+    <string name="support_benefit_audio_subtitle">En portugués. Inglés y español muy pronto.</string>
+    <string name="support_benefit_ads_title">App sin anuncios</string>
+    <string name="support_benefit_ads_subtitle">Ningún anuncio, en ninguna pantalla, para siempre.</string>
+    <string name="support_benefit_people_title">Ayudas a quienes investigan, escriben y organizan el contenido</string>
+    <string name="support_benefit_people_subtitle">Y mantienes Cinema History vivo y creciendo.</string>
+    <string name="support_choose_value">Elige el monto</string>
+    <string name="support_choose_value_subtitle">El beneficio es el mismo: tú eliges cuánto quieres apoyar.</string>
+    <string name="support_tier_apoio">Apoyo</string>
+    <string name="support_tier_apoio_description">El monto sugerido</string>
+    <string name="support_tier_plus">Apoyo+</string>
+    <string name="support_tier_plus_description">Para dar una ayuda extra</string>
+    <string name="support_tier_fa">Fan del cine</string>
+    <string name="support_tier_fa_description">Para quien vive el cine</string>
+    <string name="support_launch_badge">Lanzamiento</string>
+    <string name="support_once_seal">Pago único · sin suscripción</string>
+    <string name="support_button">Apoyar con %1$s</string>
+    <string name="support_button_default">Apoyar</string>
+    <string name="support_restore">Restaurar compra</string>
+    <string name="support_continue_free">Seguir gratis</string>
+    <string name="support_loading">Cargando los precios de Google Play…</string>
+    <string name="support_error">No fue posible conectar con Google Play ahora. Revisa tu conexión e inténtalo de nuevo.</string>
+    <string name="support_error_unavailable">El apoyo no está disponible en esta cuenta de Google Play por ahora.</string>
+    <string name="support_try_again">Intentar de nuevo</string>
+    <string name="support_pending_title">Pago en proceso</string>
+    <string name="support_pending_text">En cuanto Google Play confirme el pago (algunos métodos tardan un poco), el apoyo se activa automáticamente. No necesitas hacer nada.</string>
+    <string name="support_thanks_title">¡Gracias por tu apoyo!</string>
+    <string name="support_thanks_text">Ayudas a mantener Cinema History vivo — y gratis para todos. Tus beneficios ya están activos:</string>
+    <string name="support_thanks_back">Volver a la app</string>
+    <string name="support_purchase_success">¡Listo! Gracias por apoyar Cinema History.</string>
+    <string name="support_purchase_error">La compra no se completó. Inténtalo de nuevo en unos instantes.</string>
+    <string name="support_restore_success">Compra restaurada. ¡Gracias por tu apoyo!</string>
+    <string name="support_restore_none">No se encontró ninguna compra de apoyo en esta cuenta de Google.</string>
+    <string name="support_restore_error">No fue posible consultar Google Play ahora.</string>
+    <string name="support_close">Cerrar</string>
+
+    <!-- Puntos de entrada -->
+    <string name="support_menu">Apoya la app</string>
+    <string name="support_menu_supporter">Eres colaborador ♥</string>
+    <string name="support_settings_summary">Pago único: narración en audio y app sin anuncios</string>
+    <string name="support_settings_summary_supporter">¡Gracias por apoyar Cinema History!</string>
+    <string name="support_about_thanks">Gracias a todos los que apoyan Cinema History ♥</string>
+    <string name="support_about_supporter">Apoyas Cinema History. ¡Gracias! ♥</string>
+    <string name="support_chapter_card_kicker">Cinema History</string>
+    <string name="support_chapter_card_title">¿Te gusta la lectura?</string>
+    <string name="support_chapter_card_text">La app es gratuita y seguirá así. Si quieres, apóyala con un pago único y escucha los capítulos narrados, sin anuncios.</string>
+    <string name="support_chapter_card_button">Conocer el apoyo</string>
+    <string name="support_chapter_card_dismiss">Ahora no</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Saltar</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_start">Empezar</string>
+    <string name="onboarding_1_kicker">Bienvenido</string>
+    <string name="onboarding_1_title">130 años de cine en la palma de tu mano</string>
+    <string name="onboarding_1_text">De la primera función de los hermanos Lumière al streaming: la historia del cine contada en 8 eras, con películas, directores y curiosidades.</string>
+    <string name="onboarding_1_eras">8 eras · de 1895 hasta hoy</string>
+    <string name="onboarding_language">Idioma</string>
+    <string name="onboarding_theme">Tema</string>
+    <string name="onboarding_theme_system">Sistema</string>
+    <string name="onboarding_2_kicker">Explora</string>
+    <string name="onboarding_2_title">Mucho más que historia</string>
+    <string name="onboarding_2_text">Todo lo que hizo del cine lo que es, en un solo lugar.</string>
+    <string name="onboarding_2_awards">Premios desde 1929</string>
+    <string name="onboarding_2_awards_subtitle">Óscar, Globo de Oro, Cannes y mucho más</string>
+    <string name="onboarding_2_timeline">Línea de tiempo</string>
+    <string name="onboarding_2_timeline_subtitle">Los grandes hitos, año a año</string>
+    <string name="onboarding_2_movies">1001 películas</string>
+    <string name="onboarding_2_movies_subtitle">Que ver antes de morir</string>
+    <string name="onboarding_2_directors">Directores</string>
+    <string name="onboarding_2_directors_subtitle">Quienes cambiaron la forma de hacer cine</string>
+    <string name="onboarding_3_kicker">Nuestro compromiso</string>
+    <string name="onboarding_3_title">La cultura es gratuita. Viva el cine.</string>
+    <string name="onboarding_3_text">Todo el contenido de la app es — y seguirá siendo — gratuito. Los anuncios ayudan a mantener la app viva: investigación, escritura y actualizaciones constantes.</string>
+    <string name="onboarding_3_badge">100% gratis</string>
+    <string name="onboarding_4_kicker">Opcional</string>
+    <string name="onboarding_4_title">¿Quieres ayudar?</string>
+    <string name="onboarding_4_text">Cinema History es un proyecto independiente, hecho con investigación y mucho amor por el cine. Con un pago único, apoyas el proyecto y obtienes:</string>
+    <string name="onboarding_4_support">Conocer el apoyo</string>
+    <string name="onboarding_4_later">Ahora no</string>
+</resources>

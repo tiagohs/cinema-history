@@ -9,6 +9,7 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.tiagohs.cinema_history.BuildConfig
+import com.tiagohs.cinema_history.support.Supporter
 import timber.log.Timber
 import java.util.Calendar
 
@@ -57,6 +58,7 @@ class ChapterInterstitial(private val activity: Activity) {
         nextRequests++
 
         val ad = interstitial
+        // canShowNow() é falso para quem apoia (canEverShow): o anúncio já carregado nunca aparece.
         if (ad == null || !canShowNow() || activity.isFinishing || activity.isDestroyed) {
             onContinue()
             preload()
@@ -84,7 +86,8 @@ class ChapterInterstitial(private val activity: Activity) {
     }
 
     private fun canEverShow(): Boolean =
-        AdsConfig.interstitialEnabled &&
+        !Supporter.isSupporter(activity) &&
+            AdsConfig.interstitialEnabled &&
             AdsManager.canRequestAds(activity) &&
             AdsHistory.sessions(activity) > 1 &&
             AdsHistory.interstitialsToday(activity) < AdsConfig.interstitialDailyCap

@@ -15,6 +15,14 @@
         android:title="@string/action_theme"
         app:showAsAction="always" />
 
+    <!-- Apoie o app (compra única): só com a oferta disponível (Brasil + pt) ou para quem já apoia. -->
+    <item
+        android:id="@+id/action_support"
+        android:icon="@drawable/ic_support_heart_24"
+        android:title="@string/support_menu"
+        android:visible="false"
+        app:showAsAction="never" />
+
     <item
         android:id="@+id/action_references"
         android:icon="@drawable/ic_open_book_white_24dp"

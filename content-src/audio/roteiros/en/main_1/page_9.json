@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 01: From 1895 to 1929. Chapter 9: The Dawn of the Talkies.",
      "text": "Part zero one: From eighteen ninety-five to nineteen twenty-nine. Chapter nine: The Dawn of the Talkies.",
      "chars": 104
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "On October 23, 1927, “You Ain't Heard Nothin' Yet” was heard for the first time in a movie theater, and the era of sound film began. Suddenly, the image was no longer everything.",
      "text": "On October twenty-third, nineteen twenty-seven, \"You Ain't Heard Nothin' Yet\" was heard for the first time in a movie theater, and the era of sound film began. Suddenly, the image was no longer everything.",
      "chars": 205
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "In his study of the early sound era titled You Ain't Heard Nothin' Yet, Andrew Sarris describes October 23, 1927, when The Jazz Singer (1927) premiered in New York, as \"a date forever marked in film history, as fearfully decisive as Waterloo, Sarajevo or Pearl Harbor.\" This hyperbolic sentence reflects the systemic nature of the change that sound would bring and the apocalyptic fears of those who believed talkies would diminish the art of film.",
      "text": "In his study of the early sound era titled You Ain't Heard Nothin' Yet, Andrew Sarris describes October twenty-third, nineteen twenty-seven, when The Jazz Singer, from nineteen twenty-seven, premiered in New York, as \"a date forever marked in film history, as fearfully decisive as Waterloo, Sarajevo or Pearl Harbor.\" This hyperbolic sentence reflects the systemic nature of the change that sound would bring and the apocalyptic fears of those who believed talkies would diminish the art of film.",
      "chars": 497
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "Sound had been an aspiration since the earliest days of cinema. As early as 1888, Eadweard Muybridge claimed to have discussed with Thomas Alva Edison the possibility of using the latter's sound recording process to accompany his prototype projector, the zoopraxiscope. Throughout the silent era, there were various experiments aimed at bringing mechanically recorded sound to the screen, and two formats gradually evolved: sound-on-disc (in which sound was played on a phonograph in sync with the image) and sound-on-film (in which it was physically recorded on the film on which the image was printed). Although the former method was initially successful, with the Vitaphone process dominating the industry, it was sound-on-film recording that prevailed.",
      "text": "Sound had been an aspiration since the earliest days of cinema. As early as eighteen eighty-eight, Eadweard Muybridge claimed to have discussed with Thomas Alva Edison the possibility of using the latter's sound recording process to accompany his prototype projector, the zoopraxiscope. Throughout the silent era, there were various experiments aimed at bringing mechanically recorded sound to the screen, and two formats gradually evolved: sound-on-disc (in which sound was played on a phonograph in sync with the image) and sound-on-film (in which it was physically recorded on the film on which the image was printed). Although the former method was initially successful, with the Vitaphone process dominating the industry, it was sound-on-film recording that prevailed.",
      "chars": 773
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "citacao",
+     "source_index": 3,
      "original": "The Jazz Singer brought sound, Lights of New York brought dialogue.",
      "text": "The Jazz Singer brought sound, Lights of New York brought dialogue.",
      "chars": 67
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "said Darryl F. Zanuck.",
      "text": "said Darryl F. Zanuck.",
      "chars": 22
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "In 1921, with Dream Street (1921), D. W. Griffith (1875-1948) tried to use the sound process in a feature film. Although it was first released in silent prints, a second version premiered in New York with an introduction narrated by the director himself, as well as a sequence with a recorded song and various sound effects.",
      "text": "In nineteen twenty-one, with Dream Street, from nineteen twenty-one, D. W. Griffith (eighteen seventy-five to nineteen forty-eight) tried to use the sound process in a feature film. Although it was first released in silent prints, a second version premiered in New York with an introduction narrated by the director himself, as well as a sequence with a recorded song and various sound effects.",
      "chars": 394
@@ -80,6 +87,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Like Griffith's Broken Blossoms (1919), Dream Street was based on the work of writer Thomas Burke and was set in the same location as the earlier film, London's Chinatown, but it did not achieve the same success. Using an anachronistic sound-on-disc process, Photokinema, Griffith's experiment failed, since most theaters could not accommodate the necessary equipment. The first commercial sound film premiered in August 1926, when Warner Bros. released Don Juan (1926), using the Vitaphone system. Directed by Alan Crosland (1894-1936), the swashbuckler was a mere vehicle for John Barrymore, accompanied by an orchestral score and sound effects recorded on disc.",
      "text": "Like Griffith's Broken Blossoms, from nineteen nineteen, Dream Street was based on the work of writer Thomas Burke and was set in the same location as the earlier film, London's Chinatown, but it did not achieve the same success. Using an anachronistic sound-on-disc process, Photokinema, Griffith's experiment failed, since most theaters could not accommodate the necessary equipment. The first commercial sound film premiered in August nineteen twenty-six, when Warner Bros. released Don Juan, from nineteen twenty-six, using the Vitaphone system. Directed by Alan Crosland (eighteen ninety-four to nineteen thirty-six), the swashbuckler was a mere vehicle for John Barrymore, accompanied by an orchestral score and sound effects recorded on disc.",
      "chars": 749
@@ -87,6 +95,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "However, it was The Jazz Singer, also by Crosland, that made the shift to sound irreversible. It may be hard for modern viewers to grasp the impact of this production. Based on the stage play by Samson Raphaelson, this highly mawkish story of a Jewish cantor's son who defies his own father with his desire to sing \"jazz\" - the film's definition of jazz consists of sentimental ballads and old-fashioned blackface performances - is not exactly a talkie. There is a soundtrack but, with the exception of two sequences, the dialogue is presented through intertitles.",
      "text": "However, it was The Jazz Singer, also by Crosland, that made the shift to sound irreversible. It may be hard for modern viewers to grasp the impact of this production. Based on the stage play by Samson Raphaelson, this highly mawkish story of a Jewish cantor's son who defies his own father with his desire to sing \"jazz\" - the film's definition of jazz consists of sentimental ballads and old-fashioned blackface performances - is not exactly a talkie. There is a soundtrack but, with the exception of two sequences, the dialogue is presented through intertitles.",
      "chars": 564
@@ -103,6 +112,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Yet the secret of its success lies precisely in the two talking scenes. In the middle of his act, Jakie Rabinowitz (Al Jolson) introduces the next song with stammering enthusiasm: \"Wait a minute, wait a minute, you ain't heard nothin' yet!\". Later, as Rabinowitz serenades his mother with \"Blue Skies,\" a 1926 Irving Berlin hit, he breaks off to tell her that if he makes it big, he'll take her to live in the Bronx, \"where the Ginsbergs, the Guttenbergs and the Goldbergs live. Oh, a whole lot of Bergs - I don't know 'em all \". Both scenes convey a sense of closeness and intimacy, while Jolson's exhilarating \"you ain't heard nothin' yet\" offered an irresistible catchphrase for the sound era.",
      "text": "Yet the secret of its success lies precisely in the two talking scenes. In the middle of his act, Jakie Rabinowitz (Al Jolson) introduces the next song with stammering enthusiasm: \"Wait a minute, wait a minute, you ain't heard nothin' yet!\". Later, as Rabinowitz serenades his mother with \"Blue Skies,\" a nineteen twenty-six Irving Berlin hit, he breaks off to tell her that if he makes it big, he'll take her to live in the Bronx, \"where the Ginsbergs, the Guttenbergs and the Goldbergs live. Oh, a whole lot of Bergs - I don't know 'em all \". Both scenes convey a sense of closeness and intimacy, while Jolson's exhilarating \"you ain't heard nothin' yet\" offered an irresistible catchphrase for the sound era.",
      "chars": 711
@@ -110,6 +120,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Lights of New York (1928), a Warner Bros. gangster melodrama, was the first all-talking feature film. A hit with audiences, though not with critics, Lights of New York became an unlikely watershed.",
      "text": "Lights of New York, from nineteen twenty-eight, a Warner Bros. gangster melodrama, was the first all-talking feature film. A hit with audiences, though not with critics, Lights of New York became an unlikely watershed.",
      "chars": 218
@@ -117,6 +128,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Technological advances during this period were numerous. The first microphones for recording sound were clumsy and bulky and produced low-quality sound. Technicians insisted that performers stay close to the microphones to get ideal sound quality; this meant that both the camera and the actors stopped moving, resulting in static films that fans and critics alike called \"teacup dramas.\"",
      "text": "Technological advances during this period were numerous. The first microphones for recording sound were clumsy and bulky and produced low-quality sound. Technicians insisted that performers stay close to the microphones to get ideal sound quality; this meant that both the camera and the actors stopped moving, resulting in static films that fans and critics alike called \"teacup dramas.\"",
      "chars": 388
@@ -133,6 +145,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "From the filmmakers' point of view, shooting with sound was a whole new game. Real locations were now hard to use, because as soon as the director shouted \"Action!\", someone nearby would probably start digging up a road or hammering metal. Nobody wanted to hear those sounds while the actors were speaking, so directors and producers were forced to go back to shooting in \"black box\" studios, which were now called \"sound stages.\"",
      "text": "From the filmmakers' point of view, shooting with sound was a whole new game. Real locations were now hard to use, because as soon as the director shouted \"Action!\", someone nearby would probably start digging up a road or hammering metal. Nobody wanted to hear those sounds while the actors were speaking, so directors and producers were forced to go back to shooting in \"black box\" studios, which were now called \"sound stages.\"",
      "chars": 430
@@ -140,6 +153,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "In the silent era, shooting with more than one camera was used only for big action stunts that could not easily be repeated. For example, if the scene shown in the image above, with the two people sitting in a park, were first shot in a wide shot, followed by close-ups of the man and the woman, it would be very difficult to edit or match the sound of each shot when they were all joined together. The orchestra and the dialogue would have to follow each other with split-second precision - if that didn't happen and the editor cut from a wide shot to a close-up, the sound would come out wrong. The solution was to run three cameras: one shooting the wide shot (in this case, the central camera) and the others shooting the actors' close-ups (in the image, one on the right and the other on the left with the boom operator). The actors, in turn, would have to play the entire scene in one continuous take to ensure that the sound on each camera matched perfectly.",
      "text": "In the silent era, shooting with more than one camera was used only for big action stunts that could not easily be repeated. For example, if the scene shown in the image above, with the two people sitting in a park, were first shot in a wide shot, followed by close-ups of the man and the woman, it would be very difficult to edit or match the sound of each shot when they were all joined together. The orchestra and the dialogue would have to follow each other with split-second precision - if that didn't happen and the editor cut from a wide shot to a close-up, the sound would come out wrong. The solution was to run three cameras: one shooting the wide shot (in this case, the central camera) and the others shooting the actors' close-ups (in the image, one on the right and the other on the left with the boom operator). The actors, in turn, would have to play the entire scene in one continuous take to ensure that the sound on each camera matched perfectly.",
      "chars": 965
@@ -156,6 +170,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Actors' performances were affected by this new technology. The director could no longer speak to them during the take, as had been the norm in silent film, and in the early years of sound, actors had to speak with unnatural precision to be successfully captured by the rudimentary recording technology.",
      "text": "Actors' performances were affected by this new technology. The director could no longer speak to them during the take, as had been the norm in silent film, and in the early years of sound, actors had to speak with unnatural precision to be successfully captured by the rudimentary recording technology.",
      "chars": 302
@@ -163,6 +178,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "It was only in 1932 in the United States, and later in other countries, that directional microphones were introduced, which could record specific sounds instead of picking up every sound. Note, finally, that the couple on the bench is lit by only two large studio spotlights, one on each side of the trio of cameras. In late silent films, close-ups were lit separately and with great care, in order to create attractive facial shadows and melancholy or romantic backgrounds. In this case, however, that technique is not possible, because the lighting would have to be behind or beside the actors, in place of the bushes. The lights would then be clearly visible in the wide shot, which is filmed at the same time as the close-ups.",
      "text": "It was only in nineteen thirty-two in the United States, and later in other countries, that directional microphones were introduced, which could record specific sounds instead of picking up every sound. Note, finally, that the couple on the bench is lit by only two large studio spotlights, one on each side of the trio of cameras. In late silent films, close-ups were lit separately and with great care, in order to create attractive facial shadows and melancholy or romantic backgrounds. In this case, however, that technique is not possible, because the lighting would have to be behind or beside the actors, in place of the bushes. The lights would then be clearly visible in the wide shot, which is filmed at the same time as the close-ups.",
      "chars": 745
@@ -179,6 +195,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "Creative directors were immediately frustrated by these obstacles to their artistic freedom, and the best of them devised ways to overcome them. Russian director Rouben Mamoulian (1897-1987) went to the West as a student of the great acting guru Konstantin Stanislavski (1863-1938). First, Mamoulian directed operas in Paris, London and New York, which quickly confirmed that he had no knack for naturalism.",
      "text": "Creative directors were immediately frustrated by these obstacles to their artistic freedom, and the best of them devised ways to overcome them. Russian director Rouben Mamoulian (eighteen ninety-seven to nineteen eighty-seven) went to the West as a student of the great acting guru Konstantin Stanislavski (eighteen sixty-three to nineteen thirty-eight). First, Mamoulian directed operas in Paris, London and New York, which quickly confirmed that he had no knack for naturalism.",
      "chars": 480
@@ -186,6 +203,7 @@
     {
      "id": "06-02",
      "speaker": "narrador",
+     "source_index": 20,
      "original": "Hired by Paramount on the strength of his inventive stage productions, his first film, Applause (1929), pushed the creative boundaries of sound films. The film's plot was not innovative - a fading stage performer sacrifices her career for her daughter - but a few key scenes made the industry stop and take notice. One example is the contrast between the quiet atmosphere of the convent where the daughter lived and the chaos of the traffic and street noise of bustling New York when she visits her mother; Mamoulian used the sound contrast to reflect the disoriented daughter's feelings.",
      "text": "Hired by Paramount on the strength of his inventive stage productions, his first film, Applause, from nineteen twenty-nine, pushed the creative boundaries of sound films. The film's plot was not innovative - a fading stage performer sacrifices her career for her daughter - but a few key scenes made the industry stop and take notice. One example is the contrast between the quiet atmosphere of the convent where the daughter lived and the chaos of the traffic and street noise of bustling New York when she visits her mother; Mamoulian used the sound contrast to reflect the disoriented daughter's feelings.",
      "chars": 608
@@ -202,6 +220,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "Worth watching: the films from this chapter are The Jazz Singer, M, Love Me Tonight and Lights of New York.",
      "text": "Worth watching: the films from this chapter are The Jazz Singer, M, Love Me Tonight and Lights of New York.",
      "chars": 107

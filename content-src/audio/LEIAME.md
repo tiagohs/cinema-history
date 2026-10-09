@@ -12,6 +12,7 @@ Tudo pronto para gerar o áudio no futuro. Os roteiros já estão gerados. Nenhu
 | `roteiros/<idioma>/main_<era>/page_<n>.txt` | O mesmo roteiro em versão legível, para revisar. |
 | `roteiros/resumo.csv` | Uma linha por capítulo: idioma, era, página, título, faixas, caracteres e minutos estimados. |
 | `generate.py` | Gera o áudio com Chirp 3 HD ou Gemini TTS. Tem os modos `--dry-run` (custo) e `--sample` (amostra de vozes). |
+| `make_test_assets.py` | Gera a fonte de teste do app (tons sintéticos + manifests) em `android/app/src/debug/assets/audio-test/`. Não chama nenhuma API. |
 | `vozes.json` | Vozes de narrador e de citação por idioma e provedor, mais as pausas e o modo de pronúncia. **São sugestões: confirme ouvindo a amostra.** |
 | `out/` | O áudio gerado: `out/<idioma>/main_<era>/page_<n>/<faixa>.ogg` e um `manifest.json` por capítulo. |
 | `cache/` | Cache por segmento (`<hash>.pcm`). Não apague: é ele que evita pagar de novo pelo que não mudou. |
@@ -27,7 +28,8 @@ Tudo pronto para gerar o áudio no futuro. Os roteiros já estão gerados. Nenhu
     - O título da faixa vem do primeiro `<strong>` ou link do bloco. Quando não há nenhum, vira "Parte N".
   - "Saiba mais: …": cada texto interno (`block_special`) vira uma faixa própria.
   - "Vale a conferida": a última faixa, com os títulos da `movie_list`.
-- **Segmento** `{id, speaker, original, text, chars}`
+- **Segmento** `{id, speaker, source_index, original, text, chars}`
+  - `source_index` é o índice, no `content_list` do JSON do capítulo, do item de onde o segmento veio. A abertura usa `-1`. "Saiba mais" aponta para o `block_special`, e "Vale a conferida" para a primeira `movie_list`. É o que o app usa para destacar o parágrafo lido.
   - `speaker` é `narrador` ou `citacao`. A citação é lida pela voz secundária, e depois o narrador diz "disse Fulano em Filme."
   - `original` é o texto limpo, sem HTML.
   - `text` é o texto que será falado.
@@ -111,7 +113,7 @@ python3 content-src/audio/generate.py --provider chirp                         #
 {"lang":"pt","era":1,"page":1,"title":"Visionários","provider":"chirp",
  "voices":{"narrador":"pt-BR-Chirp3-HD-Charon","citacao":"pt-BR-Chirp3-HD-Gacrux"},
  "tracks":[{"id":"00","title":"Abertura","kind":"open","file":"00.ogg","duration_s":21.4,"bytes":131072,"chars":284,"hash":"…",
-            "marks":[{"seg":"00-01","t":0.25},{"seg":"00-02","t":8.9}]}],
+            "marks":[{"seg":"00-01","t":0.25,"source_index":-1},{"seg":"00-02","t":8.9,"source_index":-1}]}],
  "duration_s":640.2}
 ```
 
@@ -133,21 +135,70 @@ python3 content-src/audio/generate.py --provider chirp                         #
      O `wrangler r2 object put` também funciona, mas envia um arquivo por vez.
   4. A URL pública de uma faixa fica assim: `https://audio.<seu-domínio>/v1/pt/main_1/page_1/01.ogg`, com o manifest em `…/page_1/manifest.json`.
   5. Configure o cache: `Cache-Control: public, max-age=31536000` nos `.ogg` e um tempo curto no `manifest.json`.
-- **Versionamento**: o app compara o `hash` de cada faixa no manifest para saber o que baixar de novo. Se a voz ou o formato mudar, publique em `v2/`.
+- **Versionamento**: o `hash` de cada faixa no manifest muda quando o áudio muda. Se a voz ou o formato mudar, publique em `v2/` e troque a `BASE_URL` do app (ver "No app").
+- `marks[].source_index` não entra no `hash` (não muda o áudio). Se só os índices mudarem, rode `scripts.py` e `generate.py` de novo: o script atualiza as marcas do manifest sem chamar a API.
 
-## 6. Como o app usaria (esboço)
+## 6. No app
 
-- **Player**:
-  - Use Media3 ExoPlayer, que toca ogg/opus nativamente no Android, dentro de um `MediaSessionService`.
-  - Cada faixa vira um `MediaItem`, com o título como metadado. A lista de faixas é a playlist do capítulo, e cada faixa é uma "subcategoria".
-  - O `MediaSession` cuida da tela bloqueada, da notificação, dos fones Bluetooth, do Android Auto e do foco de áudio.
-- **Tela do capítulo**: um botão "Ouvir" abre um mini player com a lista de faixas (Abertura, partes, "Saiba mais", "Vale a conferida"), anterior e próxima, ±15 s e velocidade de 0,75× a 2× com `player.setPlaybackSpeed`. A posição fica salva por capítulo.
-- **Destaque do parágrafo**:
-  - Cada `segments[].id` do roteiro corresponde a um parágrafo, e o manifest já traz `marks` com o segundo em que cada segmento começa.
-  - O app compara `currentPosition` com essas marcas para rolar e destacar o parágrafo na tela.
-  - Para o app achar o parágrafo, ligue `segments[].original` ao texto do JSON do capítulo, ou exporte junto um índice segmento → posição na página.
-- **Offline**:
-  - Use o `DownloadManager` do Media3 com `CacheDataSource` para baixar por faixa ou o capítulo inteiro.
-  - Mostre o tamanho antes de baixar. Um capítulo tem 5 a 15 MB.
-  - Em streaming, o ExoPlayer já faz cache progressivo.
-- **Descoberta**: o app baixa `manifest.json` do capítulo para saber quais faixas existem e a duração de cada uma. Se não houver manifest, o botão "Ouvir" fica escondido. Assim dá para lançar o áudio aos poucos, por idioma ou por era.
+O código fica em `android/app/src/main/java/com/tiagohs/cinema_history/audio/`.
+
+### Como o app consome os arquivos
+
+- **Endereço**: tudo sai de `AudioConfig.BASE_URL`, o único lugar a trocar. Hoje ele vale `https://audio.example.invalid/cinema-history/`, com um `TODO(R2)`.
+  - Troque pelo domínio do bucket, terminando com `/`. Exemplo: `https://audio.<seu-domínio>/v1/`.
+  - O app monta `<BASE_URL><idioma>/main_<era>/page_<n>/manifest.json`, que é a mesma estrutura de `out/`.
+  - O idioma vem de `ContentLanguage.current()`: pt, en ou es.
+- **Descoberta**: ao abrir um capítulo, o app baixa o `manifest.json` (`AudioRepository`).
+  - Se o manifest não existir (404), der erro ou não houver rede, o botão "Ouvir" não aparece.
+  - O resultado fica em memória: o positivo por 6 h e o negativo por 10 min.
+  - Assim dá para publicar o áudio aos poucos, por idioma, era ou capítulo, sem atualizar o app.
+- **Faixas**: o `file` de cada faixa é resolvido em relação à pasta do capítulo. Pode ser `01.ogg` ou um caminho relativo. Cada faixa vira um `MediaItem` com `mediaId` `<idioma>/<era>/<página>#<faixa>`.
+- **Destaque do texto**:
+  - O app compara a posição do player com `marks[].t` da faixa atual e pega o `source_index` do último segmento que já começou.
+  - O item correspondente do `content_list` ganha um fundo suave, e a lista rola até ele.
+  - "Ouvir a partir daqui" faz o caminho inverso: `source_index` → primeiro segmento → faixa e posição.
+  - Os índices valem para o `content_list` dos JSONs locais (`assets/local/<idioma>/pages`). Se um capítulo mudar, rode `scripts.py` e `generate.py` de novo.
+- **Player**: Media3 (`AudioPlaybackService`, um `MediaSessionService`). Ele cuida de:
+  - notificação e tela bloqueada, com voltar e avançar 15 s;
+  - fones e Bluetooth, e pausa ao desconectar o fone;
+  - foco de áudio;
+  - velocidade de 0,75× a 2×;
+  - timer de sono (15 a 60 min ou fim da faixa);
+  - "Ouvir a era inteira", que encadeia os capítulos seguintes que têm áudio, com a página acompanhando.
+  - A posição é salva por capítulo em `SharedPreferences` (`audio_positions`), e o app retoma de onde parou.
+- **Offline**: "Baixar para ouvir offline" grava as faixas no cache do Media3 (`SimpleCache` em `files/audio/cache`, sem despejo automático), usando um Worker do WorkManager.
+  - O manifest fica em `files/audio/manifests/`.
+  - O streaming normal não grava no cache, então o espaço só cresce com downloads pedidos pelo usuário.
+- **Acesso** (`support/Supporter.kt`):
+  - Sem oferta e sem apoio: nenhum controle de áudio.
+  - Com oferta e sem apoio: o botão aparece com cadeado. A faixa `00` (Abertura) toca grátis. Ao terminar, ou ao pedir outra faixa, abre `Supporter.openSupportScreen(activity, "audio")`.
+  - Apoiador: tudo liberado. Uma compra libera o áudio na hora, via `Supporter.addListener`.
+- **Anúncios**: o mini-player some quando o anúncio nativo do capítulo passa perto dele. Nenhum controle de áudio fica sobre o anúncio ou colado nele.
+
+### Onde trocar a BASE_URL
+
+`android/app/src/main/java/com/tiagohs/cinema_history/audio/AudioConfig.kt` → `BASE_URL`. Não há outro lugar.
+
+### Como testar sem áudio real (build debug)
+
+1. Gere a fonte de teste. Ela já está no repositório, então só é preciso rodar de novo se os roteiros mudarem:
+   ```bash
+   python3 content-src/audio/make_test_assets.py      # era 1, capítulos 1 e 2, em pt/en/es (~120 KB)
+   ```
+   - O script cria tons sintéticos em `android/app/src/debug/assets/audio-test/tones/`.
+   - Também cria um manifest por capítulo, montado a partir do roteiro real, com todas as faixas e marcas espalhadas pela duração do tom.
+   - Esses arquivos só entram no APK de debug.
+2. Instale o debug: `./gradlew :app:installDebug`.
+3. Abra Eras → Era 1 → Capítulo 1. No menu ⋮ da página, toque em **Áudio (debug)**:
+   - **Fonte de teste**: liga ou desliga `audio_test_source`, para usar `asset:///audio-test/` no lugar da `BASE_URL`.
+   - **Apoio: …**: simula "sem oferta", "cadeado" ou "apoiador" sem mexer no `Supporter`. "Comportamento real" volta a usar o `Supporter`.
+   - A tela é recriada para aplicar a escolha.
+4. Com "Fonte de teste" e "Apoio: apoiador", teste:
+   - o botão "Ouvir · N min" no cabeçalho;
+   - o mini-player acima do rodapé;
+   - o player expandido;
+   - o destaque do parágrafo e o chip "Voltar ao trecho";
+   - o toque longo → "Ouvir a partir daqui";
+   - "Ouvir a era inteira", que passa do capítulo 1 para o 2;
+   - o download.
+5. Com "Apoio: oferta, não apoia", só a Abertura toca. Ao terminar, o app chama `openSupportScreen`.

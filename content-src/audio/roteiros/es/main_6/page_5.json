@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 06: De 1990 a 2009. Capítulo 5: Cine europeo de los años 90.",
      "text": "Parte cero seis: De mil novecientos noventa a dos mil nueve. Capítulo cinco: Cine europeo de los años noventa.",
      "chars": 110
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "El diverso cine europeo de los años 90.",
      "text": "El diverso cine europeo de los años noventa.",
      "chars": 44
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "En los años noventa, el cine europeo intentó establecer una identidad continental frente a lo que se percibía como el imperialismo cultural de Hollywood. En la nueva división de los países de Europa Oriental y Central, los cineastas buscaron un equilibrio entre el deseo de un cine nacional propio y el reconocimiento como parte de la tradición europea. En parte como consecuencia de la Guerra Fría, estos países tenían antiguos mercados internos para producciones populares, y solo a unos pocos directores les correspondía producir las películas de mayor atractivo.",
      "text": "En los años noventa, el cine europeo intentó establecer una identidad continental frente a lo que se percibía como el imperialismo cultural de Hollywood. En la nueva división de los países de Europa Oriental y Central, los cineastas buscaron un equilibrio entre el deseo de un cine nacional propio y el reconocimiento como parte de la tradición europea. En parte como consecuencia de la Guerra Fría, estos países tenían antiguos mercados internos para producciones populares, y solo a unos pocos directores les correspondía producir las películas de mayor atractivo.",
      "chars": 566
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "En Hungría, la épica Sátántangó (1994), de Béla Tarr (n-1955), confirmó al director como sucesor natural de Miklós Jancsó (n-1921) y de István Szabó (n-1938). En la antigua Yugoslavia, Emir Kusturica (n-1954) desbancó a Dušan Makavejev (1932-2019) con películas como Underground (1995), una comedia surrealista sobre Yugoslavia desde la Segunda Guerra Mundial. Tanto Tarr como Kusturica obtuvieron aclamación internacional, lo que reportó pocos beneficios a los cineastas de sus países.",
      "text": "En Hungría, la épica Sátántangó, de mil novecientos noventa y cuatro, de Béla Tarr (nació en mil novecientos cincuenta y cinco), confirmó al director como sucesor natural de Miklós Jancsó (nació en mil novecientos veintiuno) y de István Szabó (nació en mil novecientos treinta y ocho). En la antigua Yugoslavia, Emir Kusturica (nació en mil novecientos cincuenta y cuatro) desbancó a Dušan Makavejev (mil novecientos treinta y dos a dos mil diecinueve) con películas como Underground, de mil novecientos noventa y cinco, una comedia surrealista sobre Yugoslavia desde la Segunda Guerra Mundial. Tanto Tarr como Kusturica obtuvieron aclamación internacional, lo que reportó pocos beneficios a los cineastas de sus países.",
      "chars": 720
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "En Polonia, Andrzej Wajda (n-1926) había cedido el puesto de gran cineasta nacional a Krzysztof Kieślowski (1941-1996) en la década de 1980, pero la condición de ícono nacional de ambos se vio trastocada por el hecho de que los dos se mudaron a Francia por motivos políticos y también atraídos por mejores condiciones económicas. Este comportamiento no fue nada raro: la \"Trilogía de los colores\" de Kieślowski (1993-1994), bautizada con los colores de la bandera de Francia, fue producida por el rumano Marin Karmitz (n-1938), el mismo productor que después atrajo a Michael Haneke (n-1942) de Austria a Francia.",
      "text": "En Polonia, Andrzej Wajda (nació en mil novecientos veintiséis) había cedido el puesto de gran cineasta nacional a Krzysztof [[pron: Kieślowski|Kieslovski]] (mil novecientos cuarenta y uno a mil novecientos noventa y seis) en la década de mil novecientos ochenta, pero la condición de ícono nacional de ambos se vio trastocada por el hecho de que los dos se mudaron a Francia por motivos políticos y también atraídos por mejores condiciones económicas. Este comportamiento no fue nada raro: la \"Trilogía de los colores\" de [[pron: Kieślowski|Kieslovski]] (mil novecientos noventa y tres a mil novecientos noventa y cuatro), bautizada con los colores de la bandera de Francia, fue producida por el rumano Marin Karmitz (nació en mil novecientos treinta y ocho), el mismo productor que después atrajo a Michael Haneke (nació en mil novecientos cuarenta y dos) de Austria a Francia.",
      "chars": 837
@@ -66,6 +71,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Las colaboraciones de este tipo no solo son capaces de plantear interrogantes sobre la nacionalidad de una película —la \"Trilogía de los colores\" está formada por películas de producción franco-polaca, dos de ellas en francés y una básicamente en polaco—, sino que también sugieren que Europa funciona como un microcosmos de la industria cinematográfica internacional en un momento en que Europa Occidental pierde sus talentos emergentes en favor de Hollywood, del mismo modo que Europa Oriental pierde los suyos en favor de Francia.",
      "text": "Las colaboraciones de este tipo no solo son capaces de plantear interrogantes sobre la nacionalidad de una película, la \"Trilogía de los colores\" está formada por películas de producción franco-polaca, dos de ellas en francés y una básicamente en polaco, sino que también sugieren que Europa funciona como un microcosmos de la industria cinematográfica internacional en un momento en que Europa Occidental pierde sus talentos emergentes en favor de Hollywood, del mismo modo que Europa Oriental pierde los suyos en favor de Francia.",
      "chars": 532
@@ -73,6 +79,7 @@
     {
      "id": "02-02",
      "speaker": "citacao",
+     "source_index": 6,
      "original": "El director Michael Haneke pretende deconstruir y criticar prácticamente todo el cine anterior, confrontando al público con su propia hipocresía.",
      "text": "El director Michael Haneke pretende deconstruir y criticar prácticamente todo el cine anterior, confrontando al público con su propia hipocresía.",
      "chars": 145
@@ -80,6 +87,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "dijo Kim Newman sobre Funny Games.",
      "text": "dijo Kim Newman sobre Funny Games.",
      "chars": 34
@@ -87,6 +95,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "La producción cinematográfica francesa de este período tuvo su camino allanado por una serie de producciones costosas y de gran envergadura, inspiradas en las tradiciones literarias e históricas francesas y generalmente protagonizadas por grandes figuras. El éxito de Cyrano de Bergerac (1990), de Jean-Paul Rappeneau (n-1932), junto con el de Jean de Florette (El manantial de las colinas, 1986), de Claude Berri (1934-2009), convirtió a Gérard Depardieu en una estrella de renombre internacional.",
      "text": "La producción cinematográfica francesa de este período tuvo su camino allanado por una serie de producciones costosas y de gran envergadura, inspiradas en las tradiciones literarias e históricas francesas y generalmente protagonizadas por grandes figuras. El éxito de Cyrano de Bergerac, de mil novecientos noventa, de Jean-Paul Rappeneau (nació en mil novecientos treinta y dos), junto con el de Jean de Florette (El manantial de las colinas, mil novecientos ochenta y seis), de Claude Berri (mil novecientos treinta y cuatro a dos mil nueve), convirtió a Gérard Depardieu en una estrella de renombre internacional.",
      "chars": 616
@@ -103,6 +112,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Al mismo tiempo, una serie de películas de bajo presupuesto, realizadas por directores más jóvenes, empleaba técnicas de Hollywood para expresar una visión estética singular. La década vio el ascenso de grandes talentos como Jean-Pierre Jeunet (n-1953) y Marc Caro (n-1956), que irrumpieron en la escena internacional con Delicatessen (1991), comedia surrealista de humor negro ambientada en una Francia postapocalíptica. La representación altamente estilizada de la juventud de los suburbios realizada por Mathieu Kassovitz (n-1967) en La Haine (El odio, 1995) se centra en temas de integración social que estaban en debate en la Francia contemporánea y que tenían eco a nivel internacional. Al igual que Luc Besson (n-1959), tanto Jeunet como Kassovitz partieron a hacer películas en los Estados Unidos.",
      "text": "Al mismo tiempo, una serie de películas de bajo presupuesto, realizadas por directores más jóvenes, empleaba técnicas de Hollywood para expresar una visión estética singular. La década vio el ascenso de grandes talentos como Jean-Pierre Jeunet (nació en mil novecientos cincuenta y tres) y Marc Caro (nació en mil novecientos cincuenta y seis), que irrumpieron en la escena internacional con Delicatessen, de mil novecientos noventa y uno, comedia surrealista de humor negro ambientada en una Francia postapocalíptica. La representación altamente estilizada de la juventud de los suburbios realizada por Mathieu Kassovitz (nació en mil novecientos sesenta y siete) en La Haine (El odio, mil novecientos noventa y cinco) se centra en temas de integración social que estaban en debate en la Francia contemporánea y que tenían eco a nivel internacional. Al igual que Luc Besson (nació en mil novecientos cincuenta y nueve), tanto Jeunet como Kassovitz partieron a hacer películas en los Estados Unidos.",
      "chars": 999
@@ -110,6 +120,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "El canto de sirena de Hollywood tuvo un impacto perjudicial en Alemania, pues muchos de los talentos de la década anterior, como Wolfgang Petersen (n-1941) y Roland Emmerich (n-1955), también abandonaron el barco. Además, la promesa y el prestigio vinculados al Nuevo Cine Alemán de los años setenta naufragaron.",
      "text": "El canto de sirena de Hollywood tuvo un impacto perjudicial en Alemania, pues muchos de los talentos de la década anterior, como Wolfgang Petersen (nació en mil novecientos cuarenta y uno) y Roland Emmerich (nació en mil novecientos cincuenta y cinco), también abandonaron el barco. Además, la promesa y el prestigio vinculados al Nuevo Cine Alemán de los años setenta naufragaron.",
      "chars": 381
@@ -126,6 +137,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "Al cine alemán le costó expresar una identidad propia y no surgieron cineastas con una obra consistente. Hacia el final de la década, los thrillers románticos de Tom Tykwer (n-1965), Winterschläfer (Soñadores, 1997) y Lola rennt (Corre Lola, corre (Run Lola Run), 1998), ofrecieron una esperanza inspiradora para el futuro, pero también él, poco después, siguió el gastado camino que conduce a Hollywood.",
      "text": "Al cine alemán le costó expresar una identidad propia y no surgieron cineastas con una obra consistente. Hacia el final de la década, los thrillers románticos de Tom Tykwer (nació en mil novecientos sesenta y cinco), Winterschläfer (Soñadores, mil novecientos noventa y siete) y Lola rennt (Corre Lola, corre (Run Lola Run), mil novecientos noventa y ocho), ofrecieron una esperanza inspiradora para el futuro, pero también él, poco después, siguió el gastado camino que conduce a Hollywood.",
      "chars": 491
@@ -133,6 +145,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "En el sur de Europa, la industria cinematográfica italiana miró con nostalgia hacia el pasado. Inspirándose en el neorrealismo y en las comedias de Totò para reproducir el éxito de Nuovo Cinema Paradiso (Cinema Paradiso, 1988), dirigida por Giuseppe Tornatore (n-1956), llegaron Il postino (El cartero (y Pablo Neruda), 1994), con el astro francés Philippe Noiret, dirigida por el inglés Michael Radford (n-1946), y La vita è bella (La Vida es Bella, 1997), de Roberto Benigni (n-1952). Pedro Almodóvar (n-1949) había dominado el cine nacional durante algún tiempo con su visión esotérica y excéntrica de la España posfranquista, filtrada por los lentes maníacos y saturados de color del melodrama, la comedia y el surrealismo. Siguió teniendo éxito con películas como La flor de mi secreto (1995) y Todo sobre mi madre (1999). Sin embargo, tuvo que compartir los laureles con Julio Medem (n-1958), que debutó con el drama rural Vacas (1992), y con el chileno Alejandro Amenábar (n-1972), cuyo thriller Abre los ojos (1997) atrajo suficiente atención internacional como para merecer una nueva versión en Hollywood con el nombre de Vanilla Sky (2001), con Penélope Cruz nuevamente en el papel principal.",
      "text": "En el sur de Europa, la industria cinematográfica italiana miró con nostalgia hacia el pasado. Inspirándose en el neorrealismo y en las comedias de Totò para reproducir el éxito de Nuovo Cinema Paradiso (Cinema Paradiso, mil novecientos ochenta y ocho), dirigida por Giuseppe Tornatore (nació en mil novecientos cincuenta y seis), llegaron Il postino (El cartero (y Pablo Neruda), mil novecientos noventa y cuatro), con el astro francés Philippe Noiret, dirigida por el inglés Michael Radford (nació en mil novecientos cuarenta y seis), y La vita è bella (La Vida es Bella, mil novecientos noventa y siete), de Roberto Benigni (nació en mil novecientos cincuenta y dos). Pedro Almodóvar (nació en mil novecientos cuarenta y nueve) había dominado el cine nacional durante algún tiempo con su visión esotérica y excéntrica de la España posfranquista, filtrada por los lentes maníacos y saturados de color del melodrama, la comedia y el surrealismo. Siguió teniendo éxito con películas como La flor de mi secreto, de mil novecientos noventa y cinco, y Todo sobre mi madre, de mil novecientos noventa y nueve. Sin embargo, tuvo que compartir los laureles con Julio Medem (nació en mil novecientos cincuenta y ocho), que debutó con el drama rural Vacas, de mil novecientos noventa y dos, y con el chileno Alejandro Amenábar (nació en mil novecientos setenta y dos), cuyo thriller Abre los ojos, de mil novecientos noventa y siete, atrajo suficiente atención internacional como para merecer una nueva versión en Hollywood con el nombre de Vanilla Sky, de dos mil uno, con Penélope Cruz nuevamente en el papel principal.",
      "chars": 1613
@@ -149,6 +162,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "Correspondió a dos directores daneses, Lars von Trier (n-1956) y Thomas Vinterberg (n-1969), el intento fundamental de lograr un renacimiento del cine nacional en esa época, con una mirada europea. En un simposio celebrado en París en 1995 para conmemorar el primer siglo del cine, presentaron el Manifiesto Dogma 95 y un \"Voto de castidad\", una serie de reglas que tenían como objetivo liberar a los artistas de la necesidad de competir con Hollywood. Presentándose como una \"acción de rescate\" contra los excesos cinematográficos de los grandes presupuestos, el movimiento Dogma 95 se propuso contrarrestar \"ciertas tendencias\" del cine, una referencia deliberada al célebre artículo \"Une certaine tendance du cinéma français\" (Una cierta tendencia del cine francés), de François Truffaut (1932-1984), publicado por la revista Cahiers du cinéma en 1954. Juraba revolucionar la preocupación cosmética del cine moderno, la previsibilidad de la trama y la superficialidad de la acción.",
      "text": "Correspondió a dos directores daneses, Lars von Trier (nació en mil novecientos cincuenta y seis) y Thomas Vinterberg (nació en mil novecientos sesenta y nueve), el intento fundamental de lograr un renacimiento del cine nacional en esa época, con una mirada europea. En un simposio celebrado en París en mil novecientos noventa y cinco para conmemorar el primer siglo del cine, presentaron el Manifiesto Dogma noventa y cinco y un \"Voto de castidad\", una serie de reglas que tenían como objetivo liberar a los artistas de la necesidad de competir con Hollywood. Presentándose como una \"acción de rescate\" contra los excesos cinematográficos de los grandes presupuestos, el movimiento Dogma noventa y cinco se propuso contrarrestar \"ciertas tendencias\" del cine, una referencia deliberada al célebre artículo \"Une certaine tendance du cinéma français\" (Una cierta tendencia del cine francés), de François [[pron: Truffaut|Trufó]] (mil novecientos treinta y dos a mil novecientos ochenta y cuatro), publicado por la revista Cahiers du cinéma en mil novecientos cincuenta y cuatro. Juraba revolucionar la preocupación cosmética del cine moderno, la previsibilidad de la trama y la superficialidad de la acción.",
      "chars": 1191
@@ -165,6 +179,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Para saber más: Dogma 95 y la esencia del cine.",
      "text": "Para saber más: Dogma noventa y cinco y la esencia del cine.",
      "chars": 60
@@ -172,6 +187,7 @@
     {
      "id": "06-02",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "El movimiento Dogma 95 fue una iniciativa de los cineastas daneses Lars von Trier y Thomas Vinterberg y se considera una de las mayores iniciativas de la historia del cine. Surgido a partir de su documento oficial, llamado El Manifiesto, fue publicado el 13 de marzo de 1995 en la ciudad danesa de Copenhague y presentado a toda la comunidad en un simposio internacional sobre el centenario del cine. La principal propuesta del movimiento era la creación de un cine más realista y menos comercial, que buscaba recuperar, en la visión de sus creadores, la esencia del cine.",
      "text": "El movimiento Dogma noventa y cinco fue una iniciativa de los cineastas daneses Lars von Trier y Thomas Vinterberg y se considera una de las mayores iniciativas de la historia del cine. Surgido a partir de su documento oficial, llamado El Manifiesto, fue publicado el trece de marzo de mil novecientos noventa y cinco en la ciudad danesa de Copenhague y presentado a toda la comunidad en un simposio internacional sobre el centenario del cine. La principal propuesta del movimiento era la creación de un cine más realista y menos comercial, que buscaba recuperar, en la visión de sus creadores, la esencia del cine.",
      "chars": 615
@@ -179,6 +195,7 @@
     {
      "id": "06-03",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "El Manifiesto firmado por Lars von Trier y Thomas Vinterberg se centraba en la crítica a la superproducción de películas, además de al hecho de considerarlas verdaderas obras de arte. La idea de concebir el cine como un lienzo de pintura, así como el uso de una gama de recursos que daban un tono de artificialidad exagerada a los largometrajes, era rechazada por ambos directores. El argumento de que el público no debe ser engañado y de que las tecnologías le quitaban al director el poder como autor de su propia obra también aparece entre las ideas del Manifiesto. La publicación incluía además el “Voto de Castidad”, que planteaba diez principios que debían seguirse de acuerdo con el movimiento Dogma 95. Son los siguientes:",
      "text": "El Manifiesto firmado por Lars von Trier y Thomas Vinterberg se centraba en la crítica a la superproducción de películas, además de al hecho de considerarlas verdaderas obras de arte. La idea de concebir el cine como un lienzo de pintura, así como el uso de una gama de recursos que daban un tono de artificialidad exagerada a los largometrajes, era rechazada por ambos directores. El argumento de que el público no debe ser engañado y de que las tecnologías le quitaban al director el poder como autor de su propia obra también aparece entre las ideas del Manifiesto. La publicación incluía además el \"Voto de Castidad\", que planteaba diez principios que debían seguirse de acuerdo con el movimiento Dogma noventa y cinco. Son los siguientes:",
      "chars": 743
@@ -195,6 +212,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "El rodaje debe realizarse en exteriores. No pueden usarse accesorios ni escenografía (si la trama requiere un accesorio particular, debe elegirse un exterior donde se encuentre). El sonido nunca debe producirse por separado de la imagen, ni viceversa. (Por lo tanto, no podrá utilizarse música que no se haya grabado en la escena). La cámara debe llevarse en mano. Se permiten todos los movimientos, o la inmovilidad, que resulten de los movimientos del cuerpo. (La película no debe hacerse donde está colocada la cámara; son las tomas las que deben desarrollarse donde transcurre la película). La película debe ser en color. No se acepta ninguna iluminación especial. (Si hay demasiada luz, la escena debe cortarse o, si no, puede colocarse una única lámpara sobre la cámara). Se prohíben los trucos fotográficos y los filtros. La película no debe contener ninguna acción “superficial”. (En ningún caso homicidios, uso de armas u otras). Se prohíben los desplazamientos temporales o geográficos. (Esto significa que la película transcurre en tiempo real). Las películas de género son inaceptables. La película debe ser en 35 mm, formato estándar. El nombre del director no debe figurar en los créditos.",
      "text": "El rodaje debe realizarse en exteriores. No pueden usarse accesorios ni escenografía (si la trama requiere un accesorio particular, debe elegirse un exterior donde se encuentre). El sonido nunca debe producirse por separado de la imagen, ni viceversa. (Por lo tanto, no podrá utilizarse música que no se haya grabado en la escena). La cámara debe llevarse en mano. Se permiten todos los movimientos, o la inmovilidad, que resulten de los movimientos del cuerpo. (La película no debe hacerse donde está colocada la cámara; son las tomas las que deben desarrollarse donde transcurre la película). La película debe ser en color. No se acepta ninguna iluminación especial. (Si hay demasiada luz, la escena debe cortarse o, si no, puede colocarse una única lámpara sobre la cámara). Se prohíben los trucos fotográficos y los filtros. La película no debe contener ninguna acción \"superficial\". (En ningún caso homicidios, uso de armas u otras). Se prohíben los desplazamientos temporales o geográficos. (Esto significa que la película transcurre en tiempo real). Las películas de género son inaceptables. La película debe ser en treinta y cinco milímetros, formato estándar. El nombre del director no debe figurar en los créditos.",
      "chars": 1224
@@ -202,6 +220,7 @@
     {
      "id": "07-02",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "En 2005 se añadieron nuevos principios al Manifiesto, que se aplicarían a las películas estrenadas a partir del año siguiente. Son los siguientes:",
      "text": "En dos mil cinco se añadieron nuevos principios al Manifiesto, que se aplicarían a las películas estrenadas a partir del año siguiente. Son los siguientes:",
      "chars": 155
@@ -209,6 +228,7 @@
     {
      "id": "07-03",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "La grabación debe hacerse en formato digital. El rodaje debe realizarse en Escocia; El rodaje no puede superar el plazo de 6 semanas; El costo total de la película no puede superar la cantidad de un millón de libras esterlinas.",
      "text": "La grabación debe hacerse en formato digital. El rodaje debe realizarse en Escocia; El rodaje no puede superar el plazo de seis semanas; El costo total de la película no puede superar la cantidad de un millón de libras esterlinas.",
      "chars": 230
@@ -216,6 +236,7 @@
     {
      "id": "07-04",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Aunque innovador, el Manifiesto también se considera controvertido. Sus ideas y sus películas divergen en algunos puntos, y sus reglas son casi imposibles de cumplir. Los propios autores del documento no las siguieron estrictamente. Un ejemplo clásico es Dogville (2003), dirigida por von Trier, que, aunque siguió muchas reglas del documento, no fue reconocida por Dogma 95.",
      "text": "Aunque innovador, el Manifiesto también se considera controvertido. Sus ideas y sus películas divergen en algunos puntos, y sus reglas son casi imposibles de cumplir. Los propios autores del documento no las siguieron estrictamente. Un ejemplo clásico es Dogville, de dos mil tres, dirigida por von Trier, que, aunque siguió muchas reglas del documento, no fue reconocida por Dogma noventa y cinco.",
      "chars": 398
@@ -223,6 +244,7 @@
     {
      "id": "07-05",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Al proponer la representación más fiel a la realidad, los creadores del Manifiesto pasan por alto que la realidad no es objetiva. El director de una película, como cualquier otro ser humano, tiene una visión propia de las cosas, es decir, no es imparcial. Esto se reflejará en la manera en que se hará la película, en sus predilecciones, en cómo se posicionará la cámara en una escena y en cómo se dirá lo que se quiere expresar. Así, la representación no será, del todo, lo real. Otra contradicción es no darle crédito al director cuando este imprimirá su mirada en la obra.",
      "text": "Al proponer la representación más fiel a la realidad, los creadores del Manifiesto pasan por alto que la realidad no es objetiva. El director de una película, como cualquier otro ser humano, tiene una visión propia de las cosas, es decir, no es imparcial. Esto se reflejará en la manera en que se hará la película, en sus predilecciones, en cómo se posicionará la cámara en una escena y en cómo se dirá lo que se quiere expresar. Así, la representación no será, del todo, lo real. Otra contradicción es no darle crédito al director cuando este imprimirá su mirada en la obra.",
      "chars": 575
@@ -239,6 +261,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "La primera película Dogma fue Festen (Celebración, 1998), filmada en video Sony Hi-8, que sigue la historia de una familia destrozada por un suicidio. La primera exploración de von Trier dentro de los preceptos Dogma fue Idioterne (Los idiotas, 1998), que se hizo famosa por su expresión franca sobre la sexualidad y su tratamiento de la discapacidad. El éxito de Celebración, junto con la fama de Los idiotas, le garantizó a Dogma un público global. En 1999, el movimiento ya se había extendido a Francia con Lovers (1999), de Jean-Marc Barr (n-1960), y a los Estados Unidos con Julien Donkey-Boy (1999), de Harmony Korine (n-1973). Se convirtió en un fenómeno mundial e, irónicamente, al mirar hacia las entrañas de Europa, Dogma 95 dio a luz un movimiento de impacto global.",
      "text": "La primera película Dogma fue Festen (Celebración, mil novecientos noventa y ocho), filmada en video Sony Hi-ocho, que sigue la historia de una familia destrozada por un suicidio. La primera exploración de von Trier dentro de los preceptos Dogma fue Idioterne (Los idiotas, mil novecientos noventa y ocho), que se hizo famosa por su expresión franca sobre la sexualidad y su tratamiento de la discapacidad. El éxito de Celebración, junto con la fama de Los idiotas, le garantizó a Dogma un público global. En mil novecientos noventa y nueve, el movimiento ya se había extendido a Francia con Lovers, de mil novecientos noventa y nueve, de Jean-Marc Barr (nació en mil novecientos sesenta), y a los Estados Unidos con Julien Donkey-Boy, de mil novecientos noventa y nueve, de Harmony Korine (nació en mil novecientos setenta y tres). Se convirtió en un fenómeno mundial e, irónicamente, al mirar hacia las entrañas de Europa, Dogma noventa y cinco dio a luz un movimiento de impacto global.",
      "chars": 989
@@ -246,6 +269,7 @@
     {
      "id": "08-02",
      "speaker": "citacao",
+     "source_index": 18,
      "original": "Corre, Lola, corre bien podría ser la obra de arte conceptual más concisa jamás estrenada en el cine, una descarga de choque del cine existencialista alemán.",
      "text": "Corre, Lola, corre bien podría ser la obra de arte conceptual más concisa jamás estrenada en el cine, una descarga de choque del cine existencialista alemán.",
      "chars": 157
@@ -253,6 +277,7 @@
     {
      "id": "08-03",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "dijo Ed Gonzalez sobre Corre, Lola, corre.",
      "text": "dijo Ed Gonzalez sobre Corre, Lola, corre.",
      "chars": 42
@@ -260,6 +285,7 @@
     {
      "id": "08-04",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "Algunos países más pequeños, cuyas producciones parecían concentrarse igualmente en torno a uno o dos directores, como Grecia con Theodoros Angelopoulos (n-1935), Portugal con Pedro Costa (n-1959) y Manoel de Oliveira (1908-2015) o Austria con Haneke, lucharon para que sus notables películas fueran catalogadas como \"europeas\" en lugar de ser saludadas como indicios de una supuesta nueva camada. Mia Aioniotita Kai Mia Mera (La eternidad y un día, 1998), de Angelopoulos, sigue una tradición cinematográfica de representar el tema universal del moribundo que se reconcilia con la vida. Sin embargo, durante toda la década, la tendencia a identificar las películas individuales como nacionales, en lugar de europeas, pareció casi imposible de modificar.",
      "text": "Algunos países más pequeños, cuyas producciones parecían concentrarse igualmente en torno a uno o dos directores, como Grecia con Theodoros Angelopoulos (nació en mil novecientos treinta y cinco), Portugal con Pedro Costa (nació en mil novecientos cincuenta y nueve) y Manoel de Oliveira (mil novecientos ocho a dos mil quince) o Austria con Haneke, lucharon para que sus notables películas fueran catalogadas como \"europeas\" en lugar de ser saludadas como indicios de una supuesta nueva camada. Mia Aioniotita Kai Mia Mera (La eternidad y un día, mil novecientos noventa y ocho), de Angelopoulos, sigue una tradición cinematográfica de representar el tema universal del moribundo que se reconcilia con la vida. Sin embargo, durante toda la década, la tendencia a identificar las películas individuales como nacionales, en lugar de europeas, pareció casi imposible de modificar.",
      "chars": 878
@@ -276,6 +302,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "Así, Haneke, alemán de nacimiento y criado en Austria, luchó durante toda la década para desprenderse de la visión habitual de sus películas como denuncias sobre la sociedad austríaca, en lugar de sobre la cultura occidental en su conjunto, incluso cuando, como ocurrió en su parodia del thriller Funny Games (Horas de terror, 1997), filmó en un lugar no declarado que podría encontrarse en cualquier zona rural de Europa, con el idioma como único indicador de la procedencia de la película. O von Trier, considerado esencialmente un director danés, pero cuyas películas rara vez hacen referencia a Dinamarca. Solo cuando los directores salen de sus países logran escapar de las fronteras nacionales: un testimonio de la complejidad de la tensión entre la nación y Europa que define la década.",
      "text": "Así, Haneke, alemán de nacimiento y criado en Austria, luchó durante toda la década para desprenderse de la visión habitual de sus películas como denuncias sobre la sociedad austríaca, en lugar de sobre la cultura occidental en su conjunto, incluso cuando, como ocurrió en su parodia del thriller Funny Games (Horas de terror, mil novecientos noventa y siete), filmó en un lugar no declarado que podría encontrarse en cualquier zona rural de Europa, con el idioma como único indicador de la procedencia de la película. O von Trier, considerado esencialmente un director danés, pero cuyas películas rara vez hacen referencia a Dinamarca. Solo cuando los directores salen de sus países logran escapar de las fronteras nacionales: un testimonio de la complejidad de la tensión entre la nación y Europa que define la década.",
      "chars": 820
@@ -292,6 +319,7 @@
     {
      "id": "10-01",
      "speaker": "narrador",
+     "source_index": 22,
      "original": "Vale la pena ver: las películas de este capítulo son Funny Games, La Haine, All About My Mother, Run Lola Run, Open Your Eyes, Dancer in the Dark, The Celebration, The Idiots, Life Is Beautiful, The Postman y Cinema Paradiso.",
      "text": "Vale la pena ver: las películas de este capítulo son Funny Games, La Haine, All About My Mother, Run Lola Run, Open Your Eyes, Dancer in the Dark, The Celebration, The Idiots, Life Is Beautiful, The Postman y Cinema Paradiso.",
      "chars": 225

@@ -40,6 +40,16 @@
         app:key="help_category"
         app:title="@string/general_title">
 
+        <!-- Apoie o app (compra única): visível só com a oferta (Brasil + pt) ou para quem já apoia.
+             Configurado em SettingPreferenceFragment. -->
+        <androidx.preference.Preference
+            app:key="support"
+            app:title="@string/support_menu"
+            app:summary="@string/support_settings_summary"
+            app:icon="@drawable/ic_support_heart_24"
+            app:isPreferenceVisible="false"
+            app:selectable="true" />
+
         <androidx.preference.Preference
             app:key="references"
             app:summary="@string/references_bibliographic_description"

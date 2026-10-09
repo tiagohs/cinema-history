@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 02: From 1930 to 1939. Chapter 9: The Romantic Comedy of the 1930s.",
      "text": "Part zero two: From nineteen thirty to nineteen thirty-nine. Chapter nine: The Romantic Comedy of the nineteen thirties.",
      "chars": 120
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "It makes perfect sense that the name of the most American of all film genres comes from baseball. The screwball comedy, a kind of grandfather of the romantic comedy, is made up of fast-paced, irreverent pictures, and it peaked in the 1930s and 1940s.",
      "text": "It makes perfect sense that the name of the most American of all film genres comes from baseball. The screwball comedy, a kind of grandfather of the romantic comedy, is made up of fast-paced, irreverent pictures, and it peaked in the nineteen thirties and nineteen forties.",
      "chars": 273
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "In his book Screwball: Hollywood's Madcap Romantic Comedies (1989), Ed Sikov writes that \"an entire genre developed around the perverse idea that love could only blossom through misunderstanding\".",
      "text": "In his book Screwball: Hollywood's Madcap Romantic Comedies, from nineteen eighty-nine, Ed Sikov writes that \"an entire genre developed around the perverse idea that love could only blossom through misunderstanding\".",
      "chars": 216
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 1,
      "original": "The genre dominated the screen from 1934 - the year that saw the production of Twentieth Century (1934), It Happened One Night (1934) and The Thin Man (1934) - until 1952, with the last of the classic screwball comedies - Monkey Business (1952) - directed by Howard Hawks (1896-1977). The essential themes of these films - the power of chance, prejudice against the rich and the conflict between romance and economic reality - made moviegoers in the period immediately following the New York stock market crash identify with them.",
      "text": "The genre dominated the screen from nineteen thirty-four - the year that saw the production of Twentieth Century, from nineteen thirty-four, It Happened One Night, from nineteen thirty-four, and The Thin Man, from nineteen thirty-four, - until nineteen fifty-two, with the last of the classic screwball comedies - Monkey Business, from nineteen fifty-two, - directed by Howard Hawks (eighteen ninety-six to nineteen seventy-seven). The essential themes of these films - the power of chance, prejudice against the rich and the conflict between romance and economic reality - made moviegoers in the period immediately following the New York stock market crash identify with them.",
      "chars": 677
@@ -59,6 +63,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Screwball comedies can incorporate elements of other genres, such as detective films (The Thin Man), gangster films in Ball of Fire (1941) and black comedy in Arsenic and Old Lace (1944). They can mix humor with stories of economic survival, as in The Palm Beach Story (1942), or dissect populist politics, as in Mr. Smith Goes to Washington (1939). They can be merciless and cynical, as seen in Nothing Sacred (1937), or relatively well-behaved, as in The Philadelphia Story (1940).",
      "text": "Screwball comedies can incorporate elements of other genres, such as detective films (The Thin Man), gangster films in Ball of Fire, from nineteen forty-one, and black comedy in Arsenic and Old Lace, from nineteen forty-four. They can mix humor with stories of economic survival, as in The Palm Beach Story, from nineteen forty-two, or dissect populist politics, as in Mr. Smith Goes to Washington, from nineteen thirty-nine. They can be merciless and cynical, as seen in Nothing Sacred, from nineteen thirty-seven, or relatively well-behaved, as in The Philadelphia Story, from nineteen forty.",
      "chars": 594
@@ -66,6 +71,7 @@
     {
      "id": "02-02",
      "speaker": "citacao",
+     "source_index": 4,
      "original": "When a man is facing a leopard in the middle of a lake, he's in no position to run away.",
      "text": "When a man is facing a leopard in the middle of a lake, he's in no position to run away.",
      "chars": 88
@@ -73,6 +79,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "said Dr. David Huxley (Cary Grant) in Bringing Up Baby.",
      "text": "said Dr. David Huxley (Cary Grant) in Bringing Up Baby.",
      "chars": 55
@@ -80,6 +87,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Twentieth Century, based on a Broadway hit by Ben Hecht and Charles MacArthur and directed by Hawks, provides one of the templates for the screwball comedy. Irreverent, acerbic and frenetic, the film stars John Barrymore (1882-1942) as a monstrously egotistical Broadway producer who tries to manipulate his former protégée, played by Carole Lombard (1908-1942), into signing with him once again during a transcontinental train journey. The climax points more to the restoration of a creative hostility between the two than to a romantic resolution.",
      "text": "Twentieth Century, based on a Broadway hit by Ben Hecht and Charles MacArthur and directed by Hawks, provides one of the templates for the screwball comedy. Irreverent, acerbic and frenetic, the film stars John Barrymore (eighteen eighty-two to nineteen forty-two) as a monstrously egotistical Broadway producer who tries to manipulate his former protégée, played by Carole Lombard (nineteen oh-eight to nineteen forty-two), into signing with him once again during a transcontinental train journey. The climax points more to the restoration of a creative hostility between the two than to a romantic resolution.",
      "chars": 611
@@ -96,6 +104,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Colliding egos are also present in Hawks's His Girl Friday (1940), a version of Hecht and MacArthur's play The Front Page (1928), which uses a similar narrative line. In the play, an editor tries to lure his best reporter back to work for him. In Hawks's version, Hildy Johnson becomes a female reporter, which adds sexual tension to the professional conflict. Screwball comedy often takes the form of an unsentimental education. In It Happened One Night (1934), directed by Frank Capra (1897-1991), Claudette Colbert's spoiled heiress learns about life and about her own feelings from Clark Gable's gruff journalist.",
      "text": "Colliding egos are also present in Hawks's His Girl Friday, from nineteen forty, a version of Hecht and MacArthur's play The Front Page, from nineteen twenty-eight, which uses a similar narrative line. In the play, an editor tries to lure his best reporter back to work for him. In Hawks's version, Hildy Johnson becomes a female reporter, which adds sexual tension to the professional conflict. Screwball comedy often takes the form of an unsentimental education. In It Happened One Night, from nineteen thirty-four, directed by Frank Capra (eighteen ninety-seven to nineteen ninety-one), Claudette Colbert's spoiled heiress learns about life and about her own feelings from Clark Gable's gruff journalist.",
      "chars": 707
@@ -103,6 +112,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "In My Man Godfrey (1936), by Gregory La Cava (1892-1952), William Powell plays a bum hired by Carole Lombard's scatterbrained socialite as the family butler. She falls in love with him, and he saves her father's business from bankruptcy. The fact that Godfrey is actually a blue blood living in the gutter by choice blunts any claim to social criticism.",
      "text": "In My Man Godfrey, from nineteen thirty-six, by Gregory La Cava (eighteen ninety-two to nineteen fifty-two), William Powell plays a bum hired by Carole Lombard's scatterbrained socialite as the family butler. She falls in love with him, and he saves her father's business from bankruptcy. The fact that Godfrey is actually a blue blood living in the gutter by choice blunts any claim to social criticism.",
      "chars": 404
@@ -119,6 +129,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "In The Philadelphia Story (1940), directed by George Cukor (1899-1983), Cary Grant helps his ex-wife Katharine Hepburn understand the limits of her own perfectionism. Hepburn's free and eccentric spirit makes Grant's insecure paleontologist abandon his absurdly cautious existence in the exemplary Bringing Up Baby (1938). Barbara Stanwyck's brazen con artist plans to fleece a rich, shy reptile expert (Henry Fonda) in The Lady Eve (1941), and then teach him a lesson.",
      "text": "In The Philadelphia Story, from nineteen forty, directed by George Cukor (eighteen ninety-nine to nineteen eighty-three), Cary Grant helps his ex-wife Katharine Hepburn understand the limits of her own perfectionism. Hepburn's free and eccentric spirit makes Grant's insecure paleontologist abandon his absurdly cautious existence in the exemplary Bringing Up Baby, from nineteen thirty-eight. Barbara Stanwyck's brazen con artist plans to fleece a rich, shy reptile expert (Henry Fonda) in The Lady Eve, from nineteen forty-one, and then teach him a lesson.",
      "chars": 558
@@ -126,6 +137,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Capra's films, however, are exceptions to the rule. For the most part, screwball comedies dispense with lessons on democracy and social engagement. The deepest message of any film in the genre comes in the form of an elegant demonstration of the true nature of the comic muse in Ninotchka (1939), directed by Ernst Lubitsch (1892-1947). Sitting in a café with Garbo's stern Soviet envoy, Melvyn Douglas's bon vivant tries to amuse her with a series of tedious jokes. Discouraged by the beauty's coldness, Douglas leans back in his chair, which breaks and sends him sprawling to the floor - and suddenly Garbo bursts into the most angelic laughter.",
      "text": "Capra's films, however, are exceptions to the rule. For the most part, screwball comedies dispense with lessons on democracy and social engagement. The deepest message of any film in the genre comes in the form of an elegant demonstration of the true nature of the comic muse in Ninotchka, from nineteen thirty-nine, directed by Ernst Lubitsch (eighteen ninety-two to nineteen forty-seven). Sitting in a café with Garbo's stern Soviet envoy, Melvyn Douglas's bon vivant tries to amuse her with a series of tedious jokes. Discouraged by the beauty's coldness, Douglas leans back in his chair, which breaks and sends him sprawling to the floor - and suddenly Garbo bursts into the most angelic laughter.",
      "chars": 701
@@ -142,6 +154,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "Worth watching: the films from this chapter are Bringing Up Baby, It Happened One Night, The Philadelphia Story, The Lady Eve, Mr. Smith Goes to Washington and Mr. Deeds Goes to Town.",
      "text": "Worth watching: the films from this chapter are Bringing Up Baby, It Happened One Night, The Philadelphia Story, The Lady Eve, Mr. Smith Goes to Washington and Mr. Deeds Goes to Town.",
      "chars": 183

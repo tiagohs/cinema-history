@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Páginas 2 e 4 do onboarding: lista de itens (recursos do app / benefícios do apoio) e ações opcionais. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/listItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/listBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_home_pill"
+        android:backgroundTint="@color/oscar"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="14dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:textAppearance="?attr/textAppearanceTitleSmall"
+        android:textColor="@color/md_black_1000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/listActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/listPrimary"
+            style="@style/Widget.CinemaHistory.Onboarding.Support"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="@string/onboarding_4_support"
+            android:textAppearance="?attr/textAppearanceTitleSmall" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/listSecondary"
+            style="@style/Widget.CinemaHistory.Onboarding.Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_4_later" />
+    </LinearLayout>
+</LinearLayout>

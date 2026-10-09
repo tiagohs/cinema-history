@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 05: De 1970 a 1989. Capítulo 5: El cine negro blaxploitation.",
      "text": "Parte cero cinco: De mil novecientos setenta a mil novecientos ochenta y nueve. Capítulo cinco: El cine negro blaxploitation.",
      "chars": 125
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "El movimiento que puso a artistas negros como protagonistas de las producciones audiovisuales.",
      "text": "El movimiento que puso a artistas negros como protagonistas de las producciones audiovisuales.",
      "chars": 94
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "Hollywood es blanco. Es un lugar de hombres blancos que hacen películas con personas blancas para que las vea un público de todos los colores. La diversidad todavía no es una prioridad en las producciones estadounidenses. Las actrices y los actores negros, cuando aparecen en pantalla, a menudo terminan con papeles estereotipados y peyorativos. Aunque hay algunas excepciones, como por ejemplo el elenco elegido para la adaptación en imagen real de The Lion King (El rey león, 2019), hay que entender que el problema todavía parece lejos de resolverse",
      "text": "Hollywood es blanco. Es un lugar de hombres blancos que hacen películas con personas blancas para que las vea un público de todos los colores. La diversidad todavía no es una prioridad en las producciones estadounidenses. Las actrices y los actores negros, cuando aparecen en pantalla, a menudo terminan con papeles estereotipados y peyorativos. Aunque hay algunas excepciones, como por ejemplo el elenco elegido para la adaptación en imagen real de The Lion King (El rey león, dos mil diecinueve), hay que entender que el problema todavía parece lejos de resolverse",
      "chars": 566
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "Un estudio de 2016 de la University of Southern California examinó las 800 películas más taquilleras entre 2007 y 2015, analizando 35.205 personajes, y constató que el 73,7 % son blancos. Y solo el 5,5 % de los 886 directores eran negros. Aun así, es importante destacar que, aunque lejos del ideal, el movimiento negro viene ganando fuerza en el cine de forma gradual y saludable.",
      "text": "Un estudio de dos mil dieciséis de la University of Southern California examinó las ochocientos películas más taquilleras entre dos mil siete y dos mil quince, analizando treinta y cinco mil doscientos cinco personajes, y constató que el setenta y tres coma siete por ciento son blancos. Y solo el cinco coma cinco por ciento de los ochocientos ochenta y seis directores eran negros. Aun así, es importante destacar que, aunque lejos del ideal, el movimiento negro viene ganando fuerza en el cine de forma gradual y saludable.",
      "chars": 526
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "citacao",
+     "source_index": 3,
      "original": "Sabíamos que teníamos algo realmente emocionante, pero no teníamos idea de lo grande que llegaría a ser.",
      "text": "Sabíamos que teníamos algo realmente emocionante, pero no teníamos idea de lo grande que llegaría a ser.",
      "chars": 104
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "dijo Richard Roundtree sobre Shaft, 1971.",
      "text": "dijo Richard Roundtree sobre Shaft, mil novecientos setenta y uno.",
      "chars": 66
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Este progreso es fruto de un trabajo agotador, construido con mucho esfuerzo y sudor por generaciones de cineastas negros que luchan por un cine más diverso. Uno de los hitos más emblemáticos de esa lucha surgió a comienzos de la década de 1970, cuando estallaban grandes revoluciones sociales y políticas en toda la industria cultural. En ese período, recordado como uno de los más turbulentos e importantes de la historia reciente, surgió un movimiento cinematográfico que finalmente dio voz al pueblo negro: el blaxploitation.",
      "text": "Este progreso es fruto de un trabajo agotador, construido con mucho esfuerzo y sudor por generaciones de cineastas negros que luchan por un cine más diverso. Uno de los hitos más emblemáticos de esa lucha surgió a comienzos de la década de mil novecientos setenta, cuando estallaban grandes revoluciones sociales y políticas en toda la industria cultural. En ese período, recordado como uno de los más turbulentos e importantes de la historia reciente, surgió un movimiento cinematográfico que finalmente dio voz al pueblo negro: el blaxploitation.",
      "chars": 548
@@ -80,6 +87,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "El término, sarcástico, fue acuñado por el exproductor y expresidente de la Los Angeles National Association of Colored People (NAACP), Junius Griffin, y surgió de la amalgama de las palabras black (negro) y exploitation (explotación). El blaxploitation, o blacksploitation, fue un movimiento étnico que puso a artistas negros como protagonistas de producciones audiovisuales.",
      "text": "El término, sarcástico, fue acuñado por el exproductor y expresidente de la Los Angeles National Association of Colored People (ene a a ce pe), Junius Griffin, y surgió de la amalgama de las palabras black (negro) y exploitation (explotación). El blaxploitation, o blacksploitation, fue un movimiento étnico que puso a artistas negros como protagonistas de producciones audiovisuales.",
      "chars": 384
@@ -87,6 +95,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Eran películas realizadas por cineastas negros, con actrices y actores negros, para que el público negro las viera y se sintiera representado. Los largometrajes del blaxploitation se ambientaban principalmente en barrios urbanos pobres y con frecuencia abordaban temas como la esclavitud y el mestizaje. Más que revolucionar el cine al poner en el centro de la trama a personajes hasta entonces periféricos, estas películas provocaban al statu quo y se burlaban de los arquetipos habituales de las películas blancas.",
      "text": "Eran películas realizadas por cineastas negros, con actrices y actores negros, para que el público negro las viera y se sintiera representado. Los largometrajes del blaxploitation se ambientaban principalmente en barrios urbanos pobres y con frecuencia abordaban temas como la esclavitud y el mestizaje. Más que revolucionar el cine al poner en el centro de la trama a personajes hasta entonces periféricos, estas películas provocaban al statu quo y se burlaban de los arquetipos habituales de las películas blancas.",
      "chars": 516
@@ -103,6 +112,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Una de las primeras y más representativas obras del blaxploitation, Shaft (1971), por ejemplo, está ambientada en Harlem —barrio periférico de Nueva York— y sigue la historia de un detective negro que se involucra con la mafia italiana para encontrar a la hija desaparecida de un gánster negro. La película abordaba el movimiento Black Power y cuestiones de raza, masculinidad y sexualidad. Basada en un libro escrito por Ernest Tidyman, cuyo protagonista era originalmente blanco, toda la trama de la película cambió significativamente con la simple elección del actor Richard Roundtree (n. 1942) para interpretar a John Shaft. Con un costo de 500 mil dólares, el largometraje recaudó 13 millones y demostró a los estudios tradicionales que aquel era un mercado prometedor.",
      "text": "Una de las primeras y más representativas obras del blaxploitation, Shaft, de mil novecientos setenta y uno, por ejemplo, está ambientada en Harlem, barrio periférico de Nueva York, y sigue la historia de un detective negro que se involucra con la mafia italiana para encontrar a la hija desaparecida de un gánster negro. La película abordaba el movimiento Black Power y cuestiones de raza, masculinidad y sexualidad. Basada en un libro escrito por Ernest Tidyman, cuyo protagonista era originalmente blanco, toda la trama de la película cambió significativamente con la simple elección del actor Richard Roundtree (nació en mil novecientos cuarenta y dos) para interpretar a John Shaft. Con un costo de quinientos mil dólares, el largometraje recaudó trece millones y demostró a los estudios tradicionales que aquel era un mercado prometedor.",
      "chars": 843
@@ -119,6 +129,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Para saber más: La representación absoluta de un movimiento.",
      "text": "Para saber más: La representación absoluta de un movimiento.",
      "chars": 60
@@ -126,6 +137,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "\"Es cool y rudo. Es un detective privado negro que enloquece a todas las chicas. No acepta órdenes de nadie, sea negro o blanco, pero arriesgaría el pellejo por un hermano. Hablo de Shaft. ¿Entendiste?\" Estos versos de la canción principal de Isaac Hayes (1942-2008), ganadora del Oscar, son la presentación perfecta para el héroe rebelde e ídolo afroamericano John Shaft, interpretado por Richard Roundtree, estrella del exitosísimo largometraje homónimo dirigido por Gordon Parks. Shaft siguió el camino abierto por Sweet Sweetback's Baadasssss Song (1971), de Melvin Van Peebles, y es ampliamente reconocida como la película que inició la breve (pero afectuosamente recordada) explosión del cine blaxploitation.",
      "text": "\"Es cool y rudo. Es un detective privado negro que enloquece a todas las chicas. No acepta órdenes de nadie, sea negro o blanco, pero arriesgaría el pellejo por un hermano. Hablo de Shaft. ¿Entendiste?\" Estos versos de la canción principal de Isaac Hayes (mil novecientos cuarenta y dos a dos mil ocho), ganadora del Oscar, son la presentación perfecta para el héroe rebelde e ídolo afroamericano John Shaft, interpretado por Richard Roundtree, estrella del exitosísimo largometraje homónimo dirigido por Gordon Parks. Shaft siguió el camino abierto por Sweet Sweetback's Baadasssss Song, de mil novecientos setenta y uno, de Melvin Van Peebles, y es ampliamente reconocida como la película que inició la breve (pero afectuosamente recordada) explosión del cine blaxploitation.",
      "chars": 777
@@ -133,6 +145,7 @@
     {
      "id": "04-03",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "El guion fue escrito por Ernest Tidyman (1928-1984), autor de una popular serie de historias de detectives protagonizadas por el personaje principal de la película. Tras el éxito de Sweetback, la MGM dio a Parks —un afroamericano, prestigioso escritor, compositor, fotógrafo y director de cine— autorización para realizar un proyecto destinado a explotar el emergente mercado del público negro. Parks quería una cara nueva para el papel principal y encontró exactamente lo que buscaba en Roundtree, exmodelo de Ebony y actor de teatro ocasional cuya presencia física y forma de actuar reunían la combinación exacta de machismo, virilidad y confianza que exigía el papel.",
      "text": "El guion fue escrito por Ernest Tidyman (mil novecientos veintiocho a mil novecientos ochenta y cuatro), autor de una popular serie de historias de detectives protagonizadas por el personaje principal de la película. Tras el éxito de Sweetback, la eme ge eme dio a Parks, un afroamericano, prestigioso escritor, compositor, fotógrafo y director de cine, autorización para realizar un proyecto destinado a explotar el emergente mercado del público negro. Parks quería una cara nueva para el papel principal y encontró exactamente lo que buscaba en Roundtree, exmodelo de Ebony y actor de teatro ocasional cuya presencia física y forma de actuar reunían la combinación exacta de machismo, virilidad y confianza que exigía el papel.",
      "chars": 729
@@ -140,6 +153,7 @@
     {
      "id": "04-04",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Si alguna vez hubo una película en la que la narrativa es simplemente un vehículo para lucir a un personaje, esa película es Shaft. Juntos, Tidyman, Parks y Roundtree crearon un sólido protagonista negro que —por primera vez en las películas de Hollywood— impone sus propias reglas, no escucha a nadie, da órdenes en lugar de recibirlas y no tiene el menor reparo en hacer bromas a costa de las autoridades blancas. A pesar (o posiblemente a causa) de sus insinuaciones subversivas y militantes, Shaft fue sumamente rentable tanto entre el público negro como entre el blanco, con una recaudación bruta de más de 23 millones de dólares solo en Estados Unidos. Un éxito tan amplio puede explicarse en parte por el hecho de que Shaft se siente perfectamente a gusto en cualquier situación, con personas de todo tipo, y porque su magnetismo y su sangre fría en medio de los tiroteos trascienden cualquier barrera de color.",
      "text": "Si alguna vez hubo una película en la que la narrativa es simplemente un vehículo para lucir a un personaje, esa película es Shaft. Juntos, Tidyman, Parks y Roundtree crearon un sólido protagonista negro que, por primera vez en las películas de Hollywood, impone sus propias reglas, no escucha a nadie, da órdenes en lugar de recibirlas y no tiene el menor reparo en hacer bromas a costa de las autoridades blancas. A pesar (o posiblemente a causa) de sus insinuaciones subversivas y militantes, Shaft fue sumamente rentable tanto entre el público negro como entre el blanco, con una recaudación bruta de más de veintitrés millones de dólares solo en Estados Unidos. Un éxito tan amplio puede explicarse en parte por el hecho de que Shaft se siente perfectamente a gusto en cualquier situación, con personas de todo tipo, y porque su magnetismo y su sangre fría en medio de los tiroteos trascienden cualquier barrera de color.",
      "chars": 926
@@ -156,6 +170,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "La obra tuvo una continuación en los años 2000, protagonizada por Samuel L. Jackson (n. 1948), que cuenta la historia del sobrino del Shaft original, un policía que intenta arrestar a un asesino racista y traficante de drogas que usa su dinero para seguir impune.",
      "text": "La obra tuvo una continuación en los años dos mil, protagonizada por Samuel L. Jackson (nació en mil novecientos cuarenta y ocho), que cuenta la historia del sobrino del Shaft original, un policía que intenta arrestar a un asesino racista y traficante de drogas que usa su dinero para seguir impune.",
      "chars": 299
@@ -163,6 +178,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Considerado el primer héroe de acción negro, Roundtree integra, junto a Pam Grier (n. 1949) y Jim Kelly (1946-2013), el grupo de actores que más se destacaron en el blaxploitation. Se convirtió en un ícono de la industria cultural y apareció posteriormente en series como 90210 y Desperate Housewives, y en la película Se7en (Se7en: Los Siete Pecados Capitales, 1995), de David Fincher (n. 1962).",
      "text": "Considerado el primer héroe de acción negro, Roundtree integra, junto a Pam Grier (nació en mil novecientos cuarenta y nueve) y Jim Kelly (mil novecientos cuarenta y seis a dos mil trece), el grupo de actores que más se destacaron en el blaxploitation. Se convirtió en un ícono de la industria cultural y apareció posteriormente en series como noventa mil doscientos diez y Desperate Housewives, y en la película Se7en (Se7en: Los Siete Pecados Capitales, mil novecientos noventa y cinco), de David Fincher (nació en mil novecientos sesenta y dos).",
      "chars": 548
@@ -170,6 +186,7 @@
     {
      "id": "05-03",
      "speaker": "citacao",
+     "source_index": 14,
      "original": "Yo no formo parte [del blaxploitation]. No me considero sociólogo, soy cineasta, entre otras cosas. Tal vez idiota, pero cineasta.",
      "text": "Yo no formo parte [del blaxploitation]. No me considero sociólogo, soy cineasta, entre otras cosas. Tal vez idiota, pero cineasta.",
      "chars": 130
@@ -177,6 +194,7 @@
     {
      "id": "05-04",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "dijo Melvin Van Peebles.",
      "text": "dijo Melvin Van Peebles.",
      "chars": 24
@@ -184,6 +202,7 @@
     {
      "id": "05-05",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "La vida turbulenta de los artistas como activistas por la causa negra se confundía con la obra que estaban ayudando a producir. La estrella de Super Fly (1972), Ron O’Neal (1937-2004), por ejemplo, creció en un barrio pobre de Cleveland, Ohio. Perdió a su padre y a su hermano a los 16 años. A lo largo de su vida, trabajó en la compañía de teatro afroamericana más antigua de los Estados Unidos. El éxito en las obras lo llevó a Nueva York, donde daba clases de teatro en Harlem, en el Youth Arts Program, institución que ofrece formación artística y otorga becas de ayuda financiera a estudiantes de bajos recursos.",
      "text": "La vida turbulenta de los artistas como activistas por la causa negra se confundía con la obra que estaban ayudando a producir. La estrella de Super Fly, de mil novecientos setenta y dos, Ron O’Neal (mil novecientos treinta y siete a dos mil cuatro), por ejemplo, creció en un barrio pobre de Cleveland, Ohio. Perdió a su padre y a su hermano a los dieciséis años. A lo largo de su vida, trabajó en la compañía de teatro afroamericana más antigua de los Estados Unidos. El éxito en las obras lo llevó a Nueva York, donde daba clases de teatro en Harlem, en el Youth Arts Program, institución que ofrece formación artística y otorga becas de ayuda financiera a estudiantes de bajos recursos.",
      "chars": 690
@@ -200,6 +219,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "Fue en ese período cuando lo invitaron a participar en Super Fly. El largometraje sigue a un traficante que quiere salir del mundo del crimen y, para lograr su objetivo, necesita realizar un último golpe. Éxito instantáneo, la película causó gran polémica por la forma en que se representaba a los personajes, echando aún más leña a la discusión sobre el papel del blaxploitation. El Congress for Racial Equality (Congreso para la Igualdad Racial), la National Association for the Advancement of Colored People (Asociación Nacional para el Progreso de las Personas de Color) y otras organizaciones intentaron bloquear su distribución. El Student National Coordinating Committee (Comité Nacional de Coordinación Estudiantil) también protestó contra la película como una herramienta de opresión blanca.",
      "text": "Fue en ese período cuando lo invitaron a participar en Super Fly. El largometraje sigue a un traficante que quiere salir del mundo del crimen y, para lograr su objetivo, necesita realizar un último golpe. Éxito instantáneo, la película causó gran polémica por la forma en que se representaba a los personajes, echando aún más leña a la discusión sobre el papel del blaxploitation. El Congress for Racial Equality (Congreso para la Igualdad Racial), la National Association for the Advancement of Colored People (Asociación Nacional para el Progreso de las Personas de Color) y otras organizaciones intentaron bloquear su distribución. El Student National Coordinating Committee (Comité Nacional de Coordinación Estudiantil) también protestó contra la película como una herramienta de opresión blanca.",
      "chars": 800
@@ -207,6 +227,7 @@
     {
      "id": "06-02",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "Sin embargo, a pesar de todas las polémicas, lo que más se destacó en el largometraje fue la banda sonora producida por el cantante y compositor Curtis Mayfield (1942-1999), que rápidamente se convirtió en un clásico del cine estadounidense y hasta hoy es recordada como una de las mejores de todos los tiempos. Las bandas sonoras del blaxploitation eran compuestas casi todas por músicos negros consagrados de la industria estadounidense, como Quincy Jones, Barry White, Marvin Gaye y James Brown.",
      "text": "Sin embargo, a pesar de todas las polémicas, lo que más se destacó en el largometraje fue la banda sonora producida por el cantante y compositor Curtis Mayfield (mil novecientos cuarenta y dos a mil novecientos noventa y nueve), que rápidamente se convirtió en un clásico del cine estadounidense y hasta hoy es recordada como una de las mejores de todos los tiempos. Las bandas sonoras del blaxploitation eran compuestas casi todas por músicos negros consagrados de la industria estadounidense, como Quincy Jones, Barry White, Marvin Gaye y James Brown.",
      "chars": 553
@@ -223,6 +244,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 20,
      "original": "El funk y el jazz siempre estaban presentes y se consolidaron como parte significativa del movimiento. El reconocimiento fue tan grande que el tema de Shaft ganó el Óscar a la Mejor Canción Original, lo que consagró al compositor Isaac Hayes como el primer negro de la historia en ganar un Óscar en una categoría que no fuera de actuación. Se estima que hasta 1976 se habían producido aproximadamente 200 películas. Los subgéneros eran muy diversos e iban desde historias de crimen, artes marciales, cárcel, comedia, nostalgia y drama hasta wésterns, musicales y terror.",
      "text": "El funk y el jazz siempre estaban presentes y se consolidaron como parte significativa del movimiento. El reconocimiento fue tan grande que el tema de Shaft ganó el Óscar a la Mejor Canción Original, lo que consagró al compositor Isaac Hayes como el primer negro de la historia en ganar un Óscar en una categoría que no fuera de actuación. Se estima que hasta mil novecientos setenta y seis se habían producido aproximadamente doscientos películas. Los subgéneros eran muy diversos e iban desde historias de crimen, artes marciales, cárcel, comedia, nostalgia y drama hasta wésterns, musicales y terror.",
      "chars": 603
@@ -230,6 +252,7 @@
     {
      "id": "07-02",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "Sin embargo, la trama solía sacar a la luz algo intrínseco del movimiento. En Blacula (Drácula negro, 1972), el conde Drácula muerde a un príncipe africano y lo encierra en un ataúd. El príncipe logra liberarse siglos después y adopta un nuevo nombre: Blácula. Mientras sacia su sed de sangre (y mata a varias personas en el camino), encuentra a una mujer que es la reencarnación de su antigua esposa. La película es uno de los largometrajes de terror más emblemáticos y característicos del blaxploitation. La ironía usada para desenmascarar el prejuicio se ponía en práctica satirizando las películas que tenían éxito en aquel período. Los héroes (o antihéroes) tienen una personalidad fuerte, son atractivos y luchan contra los males e injusticias de la sociedad.",
      "text": "Sin embargo, la trama solía sacar a la luz algo intrínseco del movimiento. En Blacula (Drácula negro, mil novecientos setenta y dos), el conde Drácula muerde a un príncipe africano y lo encierra en un ataúd. El príncipe logra liberarse siglos después y adopta un nuevo nombre: Blácula. Mientras sacia su sed de sangre (y mata a varias personas en el camino), encuentra a una mujer que es la reencarnación de su antigua esposa. La película es uno de los largometrajes de terror más emblemáticos y característicos del blaxploitation. La ironía usada para desenmascarar el prejuicio se ponía en práctica satirizando las películas que tenían éxito en aquel período. Los héroes (o antihéroes) tienen una personalidad fuerte, son atractivos y luchan contra los males e injusticias de la sociedad.",
      "chars": 790
@@ -246,6 +269,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 23,
      "original": "Los villanos son, en gran parte, policías blancos que ejercen esas opresiones. El resultado no podía ser otro: el público empezó a dividirse en sus opiniones sobre el género. Sweet Sweetback's Baadasssss Song (1971), por ejemplo, cuenta la historia de Sweetback, un prostituto que ayuda a un desconocido a escapar de la mira de dos policías racistas. El largometraje tuvo varias escenas censuradas y una parte de la crítica lo consideró sensacionalista. Algunos de los grupos que presionaron por el fin del movimiento estaban formados, incluso, por negros que acusaban a las películas de reforzar estereotipos negativos. Junius Griffin declaró que debían evitar que sus hijos fueran expuestos a esas obras, que glorificaban a \"los negros como drogadictos, proxenetas, gánsteres y supermachos\".",
      "text": "Los villanos son, en gran parte, policías blancos que ejercen esas opresiones. El resultado no podía ser otro: el público empezó a dividirse en sus opiniones sobre el género. Sweet Sweetback's Baadasssss Song, de mil novecientos setenta y uno, por ejemplo, cuenta la historia de Sweetback, un prostituto que ayuda a un desconocido a escapar de la mira de dos policías racistas. El largometraje tuvo varias escenas censuradas y una parte de la crítica lo consideró sensacionalista. Algunos de los grupos que presionaron por el fin del movimiento estaban formados, incluso, por negros que acusaban a las películas de reforzar estereotipos negativos. Junius Griffin declaró que debían evitar que sus hijos fueran expuestos a esas obras, que glorificaban a \"los negros como drogadictos, proxenetas, gánsteres y supermachos\".",
      "chars": 820
@@ -253,6 +277,7 @@
     {
      "id": "08-02",
      "speaker": "narrador",
+     "source_index": 24,
      "original": "Debido a las controversias y polémicas que alimentaban las divergencias de opinión, la popularidad del movimiento disminuyó hasta llegar a su fin. La popularización de estas obras inspiró a otros géneros a crear personajes negros con características similares. Algunos ejemplos famosos son Live and Let Die (007: Vive y deja morir, 1973) y Enter the Dragon (Operación Dragón, 1973), con Bruce Lee (1940-1973). El ascenso de artistas negros en la década de 1980, como Eddie Murphy (n. 1961), Denzel Washington (n. 1954), Samuel L. Jackson, Spike Lee (n. 1957) y Halle Berry (n. 1966), es reflejo del impacto indirecto que causó el blaxploitation.",
      "text": "Debido a las controversias y polémicas que alimentaban las divergencias de opinión, la popularidad del movimiento disminuyó hasta llegar a su fin. La popularización de estas obras inspiró a otros géneros a crear personajes negros con características similares. Algunos ejemplos famosos son Live and Let Die (cero cero siete: Vive y deja morir, mil novecientos setenta y tres) y Enter the Dragon (Operación Dragón, mil novecientos setenta y tres), con Bruce Lee (mil novecientos cuarenta a mil novecientos setenta y tres). El ascenso de artistas negros en la década de mil novecientos ochenta, como Eddie Murphy (nació en mil novecientos sesenta y uno), Denzel Washington (nació en mil novecientos cincuenta y cuatro), Samuel L. Jackson, Spike Lee (nació en mil novecientos cincuenta y siete) y Halle Berry (nació en mil novecientos sesenta y seis), es reflejo del impacto indirecto que causó el blaxploitation.",
      "chars": 910
@@ -260,6 +285,7 @@
     {
      "id": "08-03",
      "speaker": "narrador",
+     "source_index": 26,
      "original": "Quentin Tarantino, abiertamente gran admirador del blaxploitation, rindió homenaje al movimiento en su tercer largometraje. El director rescató a Pam Grier (n. 1949) del olvido para participar en Jackie Brown (1997).",
      "text": "Quentin Tarantino, abiertamente gran admirador del blaxploitation, rindió homenaje al movimiento en su tercer largometraje. El director rescató a Pam Grier (nació en mil novecientos cuarenta y nueve) del olvido para participar en Jackie Brown, de mil novecientos noventa y siete.",
      "chars": 279
@@ -276,6 +302,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 27,
      "original": "Para saber más: Uno de los pioneros del blaxploitation.",
      "text": "Para saber más: Uno de los pioneros del blaxploitation.",
      "chars": 55
@@ -283,6 +310,7 @@
     {
      "id": "09-02",
      "speaker": "narrador",
+     "source_index": 27,
      "original": "\"Esta película está dedicada a todos los hermanos y hermanas que ya están hartos del Hombre\". Con los 70 mil dólares que ganó por su comedia de 1970 Watermelon Man (1970), además de fondos adicionales (entre ellos un préstamo de Bill Cosby), Melvin Van Peebles (n. 1932) —uno de los primeros directores afroamericanos en trabajar en Hollywood— financió su nuevo proyecto, Sweet Sweetback's Baadasssss Song. Escribió, dirigió, compuso la música y protagonizó la película, lo que fue una sabia decisión económica y además le aseguró el control creativo total sobre la producción. A comienzos de 1971, Sweetback se estrenó en los dos únicos cines que aceptaron exhibirla. A finales de ese año, la película se había convertido en la producción independiente más rentable de la historia. Fue un éxito en todo Estados Unidos y obtuvo una recaudación bruta de más de 15 millones de dólares.",
      "text": "\"Esta película está dedicada a todos los hermanos y hermanas que ya están hartos del Hombre\". Con los setenta mil dólares que ganó por su comedia de mil novecientos setenta Watermelon Man, de mil novecientos setenta, además de fondos adicionales (entre ellos un préstamo de Bill Cosby), Melvin Van Peebles (nació en mil novecientos treinta y dos), uno de los primeros directores afroamericanos en trabajar en Hollywood, financió su nuevo proyecto, Sweet Sweetback's Baadasssss Song. Escribió, dirigió, compuso la música y protagonizó la película, lo que fue una sabia decisión económica y además le aseguró el control creativo total sobre la producción. A comienzos de mil novecientos setenta y uno, Sweetback se estrenó en los dos únicos cines que aceptaron exhibirla. A finales de ese año, la película se había convertido en la producción independiente más rentable de la historia. Fue un éxito en todo Estados Unidos y obtuvo una recaudación bruta de más de quince millones de dólares.",
      "chars": 988
@@ -290,6 +318,7 @@
     {
      "id": "09-03",
      "speaker": "narrador",
+     "source_index": 27,
      "original": "Sweetback es tan original en concepto y realización que desafió todas las expectativas y promovió una alternativa popular al paradigma dominante en Hollywood. Pero también toma prestados temas narrativos y convenciones de diversos géneros, como las películas de persecución de gánsteres, las de motociclistas y el porno soft-core. Por último, Sweetback es una película cuyo inesperado éxito comercial le aseguró un lugar a la cabeza de una explosión de producciones dirigidas al público negro, con elencos negros y/o realizadas por directores negros, un movimiento que pronto se conoció con el ambivalente nombre de blaxploitation.",
      "text": "Sweetback es tan original en concepto y realización que desafió todas las expectativas y promovió una alternativa popular al paradigma dominante en Hollywood. Pero también toma prestados temas narrativos y convenciones de diversos géneros, como las películas de persecución de gánsteres, las de motociclistas y el porno soft-core. Por último, Sweetback es una película cuyo inesperado éxito comercial le aseguró un lugar a la cabeza de una explosión de producciones dirigidas al público negro, con elencos negros y/o realizadas por directores negros, un movimiento que pronto se conoció con el ambivalente nombre de blaxploitation.",
      "chars": 631
@@ -306,6 +335,7 @@
     {
      "id": "10-01",
      "speaker": "narrador",
+     "source_index": 27,
      "original": "La impactante primera escena nos muestra a un Sweetback preadolescente (interpretado por Mario, hijo de Melvin) trabajando en un burdel, donde una prostituta agradecida grita su apodo durante un orgasmo. Después vemos a Sweetback, ya adulto, actuando como actor porno en un espectáculo de sexo en South Central, Los Ángeles. Al ver a dos policías blancos golpear casi hasta la muerte a un joven activista negro (Hubert Scales), Sweetback ataca a los agentes y por poco los mata. El resto de la película sigue las desventuras del héroe: huye y pide aventones en un intento desesperado por evitar ser capturado. En cierto momento, la vida de Sweetback se ve amenazada por una pandilla de motociclistas y solo sobrevive al ganar un duelo sexual público con la líder de la banda. Como dijo un crítico, Sweetback \"escapa de la policía violando a una mujer negra a punta de cuchillo, atraviesa a un policía con un taco de billar, mata a varios perros que lo persiguen, se cura con su propia orina y le arranca la cabeza a un lagarto de un mordisco antes de huir por la frontera mexicana hacia el desierto\". La película termina con las palabras \"Un negro 'Baadasssss' (de armas tomar) viene a cobrar algunas deudas\" pasando rápidamente por la pantalla.",
      "text": "La impactante primera escena nos muestra a un Sweetback preadolescente (interpretado por Mario, hijo de Melvin) trabajando en un burdel, donde una prostituta agradecida grita su apodo durante un orgasmo. Después vemos a Sweetback, ya adulto, actuando como actor porno en un espectáculo de sexo en South Central, Los Ángeles. Al ver a dos policías blancos golpear casi hasta la muerte a un joven activista negro (Hubert Scales), Sweetback ataca a los agentes y por poco los mata. El resto de la película sigue las desventuras del héroe: huye y pide aventones en un intento desesperado por evitar ser capturado. En cierto momento, la vida de Sweetback se ve amenazada por una pandilla de motociclistas y solo sobrevive al ganar un duelo sexual público con la líder de la banda. Como dijo un crítico, Sweetback \"escapa de la policía violando a una mujer negra a punta de cuchillo, atraviesa a un policía con un taco de billar, mata a varios perros que lo persiguen, se cura con su propia orina y le arranca la cabeza a un lagarto de un mordisco antes de huir por la frontera mexicana hacia el desierto\". La película termina con las palabras \"Un negro 'Baadasssss' (de armas tomar) viene a cobrar algunas deudas\" pasando rápidamente por la pantalla.",
      "chars": 1245
@@ -313,6 +343,7 @@
     {
      "id": "10-02",
      "speaker": "narrador",
+     "source_index": 27,
      "original": "Sea cual sea la conclusión de cada uno sobre el mensaje sociopolítico de Sweetback, la energía y el innovador estilo de dirección de Van Peebles difícilmente pueden negarse. Con un uso creativo de técnicas como el montaje, la superposición, las imágenes congeladas, los jump cuts (cortes bruscos), los zoom ins, la pantalla dividida, los diálogos estilizados, la exposición múltiple y una excelente banda sonora, Van Peebles abrió un nuevo territorio y desafió a espectadores de todas las razas.",
      "text": "Sea cual sea la conclusión de cada uno sobre el mensaje sociopolítico de Sweetback, la energía y el innovador estilo de dirección de Van Peebles difícilmente pueden negarse. Con un uso creativo de técnicas como el montaje, la superposición, las imágenes congeladas, los jump cuts (cortes bruscos), los zoom ins, la pantalla dividida, los diálogos estilizados, la exposición múltiple y una excelente banda sonora, Van Peebles abrió un nuevo territorio y desafió a espectadores de todas las razas.",
      "chars": 495
@@ -329,6 +360,7 @@
     {
      "id": "11-01",
      "speaker": "narrador",
+     "source_index": 28,
      "original": "A pesar de las críticas, muchas de las chispas de representatividad que se ven actualmente en el cine son resultado de las revoluciones que trajeron estos movimientos. Desde Hattie McDaniel (1893-1952) —la primera actriz negra en ganar el Óscar (que recibió el premio en un hotel que no permitía la entrada de negros)—, el auge de las race movies y el éxito de Sidney Poitier (n. 1927), hasta la reciente protesta de Oscar so White. No es posible medir la calidad del impacto que el blaxploitation causó en el cine estadounidense. Hay quien sostiene que fue significativo y necesario para la diversidad en las obras de Hollywood. Hay quien cuestiona la calidad y la relevancia de esa inclusión. Sin embargo, aunque su fin haya ocurrido hace décadas, las enseñanzas y el legado del movimiento siguen teniendo impacto hasta hoy.",
      "text": "A pesar de las críticas, muchas de las chispas de representatividad que se ven actualmente en el cine son resultado de las revoluciones que trajeron estos movimientos. Desde Hattie McDaniel (mil ochocientos noventa y tres a mil novecientos cincuenta y dos), la primera actriz negra en ganar el Óscar (que recibió el premio en un hotel que no permitía la entrada de negros), el auge de las race movies y el éxito de Sidney Poitier (nació en mil novecientos veintisiete), hasta la reciente protesta de Oscar so White. No es posible medir la calidad del impacto que el blaxploitation causó en el cine estadounidense. Hay quien sostiene que fue significativo y necesario para la diversidad en las obras de Hollywood. Hay quien cuestiona la calidad y la relevancia de esa inclusión. Sin embargo, aunque su fin haya ocurrido hace décadas, las enseñanzas y el legado del movimiento siguen teniendo impacto hasta hoy.",
      "chars": 909
@@ -345,6 +377,7 @@
     {
      "id": "12-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Vale la pena ver: las películas de este capítulo son Sweet Sweetback's Baadasssss Song, Shaft, Hit Man, Super Fly, The Legend of Nigger Charley, Black Mama, White Mama, Blacula, Slaughter, Trouble Man, Black Caesar, Blackenstein, Cleopatra Jones, Coffy, Detroit 9000, Gordon's War, Live and Let Die, The Mack, Scream Blacula Scream, Slaughter's Big Rip Off, The Spook Who Sat by the Door, That Man Bolt, Trick Baby, Hell Up In Harlem, Abby, Black Belt Jones, Black Eye, The Black Godfather, The Black Six, Foxy Brown, Get Christie Love!, Space Is the Place, Sugar Hill, Three the Hard Way, TNT Jackson, Together Brothers, Truck Turner, Willie Dynamite, Sheba, Baby, The Black Gestapo, Black Shampoo, Boss Nigger, Coonskin, Darktown Strutters, Dr. Black, Mr. Hyde, Dolemite, Mandingo, The Candy Tangerine Man, Welcome Home Brother Charles, Ebony, Ivory & Jade, The Muthers, Velvet Smooth, The Human Tornado, J.D.'s Revenge, Black Samurai, Bare Knuckles, Petey Wheatstraw, Death Dimension, Disco Godfather y Penitentiary.",
      "text": "Vale la pena ver: las películas de este capítulo son Sweet Sweetback's Baadasssss Song, Shaft, Hit Man, Super Fly, The Legend of Nigger Charley, Black Mama, White Mama, Blacula, Slaughter, Trouble Man, Black Caesar, Blackenstein, Cleopatra Jones, Coffy, Detroit nueve mil, Gordon's War, Live and Let Die, The Mack, Scream Blacula Scream, Slaughter's Big Rip Off, The Spook Who Sat by the Door, That Man Bolt, Trick Baby, Hell Up In Harlem, Abby, Black Belt Jones, Black Eye, The Black Godfather, The Black Six, Foxy Brown, Get Christie Love!, Space Is the Place, Sugar Hill, Three the Hard Way, TNT Jackson, Together Brothers, Truck Turner, Willie Dynamite, Sheba, Baby, The Black Gestapo, Black Shampoo, Boss Nigger, Coonskin, Darktown Strutters, doctor Black, Mr. Hyde, Dolemite, Mandingo, The Candy Tangerine Man, Welcome Home Brother Charles, Ebony, Ivory y Jade, The Muthers, Velvet Smooth, The Human Tornado, J.D.'s Revenge, Black Samurai, Bare Knuckles, Petey Wheatstraw, Death Dimension, Disco Godfather y Penitentiary.",
      "chars": 1027

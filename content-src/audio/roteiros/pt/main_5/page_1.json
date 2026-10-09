@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 05: De 1970 a 1989. Capítulo 1: Cinema da Europa Ocidental.",
      "text": "Parte zero cinco: De mil novecentos e setenta a mil novecentos e oitenta e nove. Capítulo um: Cinema da Europa Ocidental.",
      "chars": 121
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Os anos 1970 na Europa foi marcado por uma nova geração corajosa, furiosa e talentosa, com filmes poderosos e polêmicos.",
      "text": "Os anos mil novecentos e setenta na Europa foi marcado por uma nova geração corajosa, furiosa e talentosa, com filmes poderosos e polêmicos.",
      "chars": 140
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "Nos anos 1970, o panteão dos mestres consagrados que tinham dado tom o cinema da Europa ocidental nos anos do pós-guerra começou a descobrir que estava perdendo terreno para uma nova geração de cineastas talentosos e ambiciosos, com ideias e atitudes próprias. No cinema alemão, isto aconteceu de forma relativamente tranquila, pois no início da década havia poucos veteranos de qualquer nível. Em outros lugares, a transição foi menos sossegada, pois alguns dos antigos mestres - tais como Luis Buñuel (1900-1983), Robert Bresson (1901-1999) e Ingmar Bergman (1918-2007) - ainda estavam no auge.",
      "text": "Nos anos mil novecentos e setenta, o panteão dos mestres consagrados que tinham dado tom o cinema da Europa ocidental nos anos do pós-guerra começou a descobrir que estava perdendo terreno para uma nova geração de cineastas talentosos e ambiciosos, com ideias e atitudes próprias. No cinema alemão, isto aconteceu de forma relativamente tranquila, pois no início da década havia poucos veteranos de qualquer nível. Em outros lugares, a transição foi menos sossegada, pois alguns dos antigos mestres - tais como Luis [[pron: Buñuel|Bunhuél]] (mil e novecentos a mil novecentos e oitenta e três), Robert Bresson (mil novecentos e um a mil novecentos e noventa e nove) e Ingmar [[pron: Bergman|Bérigman]] (mil novecentos e dezoito a dois mil e sete) - ainda estavam no auge.",
      "chars": 734
@@ -52,6 +55,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "Os três tiveram uma boa década. A obra de Bergman incluiu Gritos e sussurros (1972), talvez seu filme mais arrebatador do ponto de vista psicológico, e A flauta mágica (1975), obra apontada por muitos como o mais perfeito exemplo de ópera filmada.",
      "text": "Os três tiveram uma boa década. A obra de [[pron: Bergman|Bérigman]] incluiu Gritos e sussurros, de mil novecentos e setenta e dois, talvez seu filme mais arrebatador do ponto de vista psicológico, e A flauta mágica, de mil novecentos e setenta e cinco, obra apontada por muitos como o mais perfeito exemplo de ópera filmada.",
      "chars": 306
@@ -59,6 +63,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Bresson ampliou seu escopo com a adaptação da obra de Dostoievski Quatro noites de um sonhador (1971) e a impiedosa fábula moral de O diabo provavelmente (1977). Buñuel foi provocante e irreverente como sempre em seus últimos filmes, que incluíram O Discreto Charme da Burguesia (1972) e Esse Obscuro Objeto do Desejo (1977).",
      "text": "Bresson ampliou seu escopo com a adaptação da obra de Dostoievski Quatro noites de um sonhador, de mil novecentos e setenta e um, e a impiedosa fábula moral de O diabo provavelmente, de mil novecentos e setenta e sete. [[pron: Buñuel|Bunhuél]] foi provocante e irreverente como sempre em seus últimos filmes, que incluíram O Discreto Charme da Burguesia, de mil novecentos e setenta e dois, e Esse Obscuro Objeto do Desejo, de mil novecentos e setenta e sete.",
      "chars": 441
@@ -75,6 +80,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Saiba mais: Política e Sadismo nos Cinemas.",
      "text": "Saiba mais: Política e Sadismo nos Cinemas.",
      "chars": 43
@@ -82,6 +88,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "O roteiro de Os 120 dias de Sodoma é baseado na obra de mesmo título de Marqués de Sade, que deu o seu nome à forma de perversão sexual especifica que o filme explora. Embora a narrativa seja em muitos aspectos diferente do livro de Sade, ainda assim conserva a sua essência. O projeto do Marques de Sade era em parte político, visando satirizar as instituições dominantes em sua época, sobretudo a Igreja Católica. Pasolini também era fervorosamente anti-clerical, mas relaciona Sodoma diretamente à história italiana.",
      "text": "O roteiro de Os cento e vinte dias de Sodoma é baseado na obra de mesmo título de Marqués de Sade, que deu o seu nome à forma de perversão sexual especifica que o filme explora. Embora a narrativa seja em muitos aspectos diferente do livro de Sade, ainda assim conserva a sua essência. O projeto do Marques de Sade era em parte político, visando satirizar as instituições dominantes em sua época, sobretudo a Igreja Católica. Pasolini também era fervorosamente anti-clerical, mas relaciona Sodoma diretamente à história italiana.",
      "chars": 529
@@ -89,6 +96,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "O filme é passado em Salò, uma república que durou pouquíssimo tempo e onde Mussolini estabeleceu sua última base de resistência no final da Segunda Guerra Mundial. Pasolini se viu envolvido nesses eventos e seu irmão foi morto em Salò. Na fantasia de Pasolini sobre esse episódio da guerra, quatro libertinos fascistas têm o poder total sobre um grupo de prisioneiros jovens e atraentes de ambos os sexos e submetem-nos a uma série de torturas sexuais e humilhações. Estas são apresentadas pelo diretor em uma série de cenas friamente formais que são curiosamente destituídas de qualquer tensão erótica. Não há tampouco a intenção de caracterizar os personagens: até os libertinos são pouco definidos, em termos de personalidade, e parecem não obter nenhum prazer verdadeiro de sua devassidão, enquanto suas vítimas são basicamente anônimas, simplesmente corpos a serem abusados e penetrados.",
      "text": "O filme é passado em Salò, uma república que durou pouquíssimo tempo e onde Mussolini estabeleceu sua última base de resistência no final da Segunda Guerra Mundial. Pasolini se viu envolvido nesses eventos e seu irmão foi morto em Salò. Na fantasia de Pasolini sobre esse episódio da guerra, quatro libertinos fascistas têm o poder total sobre um grupo de prisioneiros jovens e atraentes de ambos os sexos e submetem-nos a uma série de torturas sexuais e humilhações. Estas são apresentadas pelo diretor em uma série de cenas friamente formais que são curiosamente destituídas de qualquer tensão erótica. Não há tampouco a intenção de caracterizar os personagens: até os libertinos são pouco definidos, em termos de personalidade, e parecem não obter nenhum prazer verdadeiro de sua devassidão, enquanto suas vítimas são basicamente anônimas, simplesmente corpos a serem abusados e penetrados.",
      "chars": 893
@@ -96,6 +104,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "A intenção de Pasolini foi transformar o uso ilimitado do poder, levado à mais radical degradação sexual, em uma metáfora do próprio fascismo, visto como uma filosofia que adora o poder como fim em si mesmo. Há outras mensagens, contudo. Um libertino é identificado como um bispo e, a certa altura, duas das vítimas são submetidas a uma espécie de cerimônia de matrimonio, embora a consumação seja interrompida pelos libertinos, que interpõem os seus próprios corpos na união dos recém-casados. E, em uma cena especialmente notória, uma jovem nua é obrigada a comer excremento - Pasolini sempre argumentou que se trata de uma metáfora sobre o capitalismo de consumo de massa e sua produção de junk food.",
      "text": "A intenção de Pasolini foi transformar o uso ilimitado do poder, levado à mais radical degradação sexual, em uma metáfora do próprio fascismo, visto como uma filosofia que adora o poder como fim em si mesmo. Há outras mensagens, contudo. Um libertino é identificado como um bispo e, a certa altura, duas das vítimas são submetidas a uma espécie de cerimônia de matrimonio, embora a consumação seja interrompida pelos libertinos, que interpõem os seus próprios corpos na união dos recém-casados. E, em uma cena especialmente notória, uma jovem nua é obrigada a comer excremento - Pasolini sempre argumentou que se trata de uma metáfora sobre o capitalismo de consumo de massa e sua produção de junk food.",
      "chars": 703
@@ -112,6 +121,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "O filme termina em uma orgia de crueldade: as vítimas são estranguladas e escalpadas, línguas são cortadas e mamilos são queimados. Tudo transcorre ao som de Carmina Burana, a famosa obra de Carl Orff que Pasolini também considerava música fascista, além de uma leitura dos Cantos de Ezra Pound, o poeta americano que apoiou Mussolini.",
      "text": "O filme termina em uma orgia de crueldade: as vítimas são estranguladas e escalpadas, línguas são cortadas e mamilos são queimados. Tudo transcorre ao som de Carmina Burana, a famosa obra de Carl Orff que Pasolini também considerava música fascista, além de uma leitura dos Cantos de Ezra Pound, o poeta americano que apoiou Mussolini.",
      "chars": 335
@@ -119,6 +129,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "As obscenidades que o filme apresenta têm um poder inegável de chocar, possivelmente o mais perturbador é que, nesse ponto de sua carreira, Pasolini tinha, quando muito, uma atitude ambígua em relação ao corpo e à sexualidade. Se o objetivo da pornografia é estimular o desejo sexual, Sodoma não caberia na definição, porque o seu efeito e, presumivelmente, o seu fim são de gerar repugnância. Um pouco depois de este filme radical e perturbador ter sido concluído, e antes mesmo que fosse lançado, Pasolini foi assassinado. O seu filme foi perseguido ou proibido em muitos países e após várias décadas tornou-se disponível para o público em geral na Inglaterra e nos Estados Unidos.",
      "text": "As obscenidades que o filme apresenta têm um poder inegável de chocar, possivelmente o mais perturbador é que, nesse ponto de sua carreira, Pasolini tinha, quando muito, uma atitude ambígua em relação ao corpo e à sexualidade. Se o objetivo da pornografia é estimular o desejo sexual, Sodoma não caberia na definição, porque o seu efeito e, presumivelmente, o seu fim são de gerar repugnância. Um pouco depois de este filme radical e perturbador ter sido concluído, e antes mesmo que fosse lançado, Pasolini foi assassinado. O seu filme foi perseguido ou proibido em muitos países e após várias décadas tornou-se disponível para o público em geral na Inglaterra e nos Estados Unidos.",
      "chars": 683
@@ -135,6 +146,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Outros, porém, estavam em decadência. Profissão: Repórter (1975) tornou-se o último filme importante de Michelangelo Antonioni (1912-2007). O mesmo se pode dizer de Mihalis Kakogiannis (1922-2011), que concluiu com Ifigénia, de 1976, sua \"trilogia da Grécia Antiga\".",
      "text": "Outros, porém, estavam em decadência. Profissão: Repórter, de mil novecentos e setenta e cinco, tornou-se o último filme importante de Michelangelo Antonioni (mil novecentos e doze a dois mil e sete). O mesmo se pode dizer de Mihalis Kakogiannis (mil novecentos e vinte e dois a dois mil e onze), que concluiu com Ifigénia, de mil novecentos e setenta e seis, sua \"trilogia da Grécia Antiga\".",
      "chars": 392
@@ -142,6 +154,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Na França, os antigos leões da nouvelle vague continuaram a desenvolver estilos distintos. Claude Chabrol (1930-2010) começou uma década prolifica com um de seus melhores filmes, O Açougueiro (1970), inspirado em Hitchcock e François Truffaut (1932-1984) fez sucesso de bilheteria com seu filme sobre cinema A Noite Americana (1973).",
      "text": "Na França, os antigos leões da nouvelle vague continuaram a desenvolver estilos distintos. Claude Chabrol (mil novecentos e trinta a dois mil e dez) começou uma década prolifica com um de seus melhores filmes, O Açougueiro, de mil novecentos e setenta, inspirado em [[pron: Hitchcock|Rítchcók]] e François [[pron: Truffaut|Trufô]] (mil novecentos e trinta e dois a mil novecentos e oitenta e quatro) fez sucesso de bilheteria com seu filme sobre cinema A Noite Americana, de mil novecentos e setenta e três.",
      "chars": 472
@@ -158,6 +171,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Porém, em consistência, foram superados pelo seu colega do Cahiers du cinema, Eric Rohmer (1920-1910), que concluiu seus seis contos morais com O joelho de Claire (1970) e Amor à Tarde (1972). Antes de embarcar na série \"Comédies et Proverbes\" nos anos 1980, Rohmer se desviou, fazendo duas adaptações literárias - enquanto Jacques Rivette (n-1928) viveu seu momento mais experimental e divertido em Celine e Julie vão de barco (1974).",
      "text": "Porém, em consistência, foram superados pelo seu colega do Cahiers du cinema, Eric Rohmer (mil novecentos e vinte-mil novecentos e dez), que concluiu seus seis contos morais com O joelho de Claire, de mil novecentos e setenta, e Amor à Tarde, de mil novecentos e setenta e dois. Antes de embarcar na série \"Comédies et Proverbes\" nos anos mil novecentos e oitenta, Rohmer se desviou, fazendo duas adaptações literárias - enquanto Jacques Rivette (nasceu em mil novecentos e vinte e oito) viveu seu momento mais experimental e divertido em Celine e Julie vão de barco, de mil novecentos e setenta e quatro.",
      "chars": 605
@@ -165,6 +179,7 @@
     {
      "id": "06-02",
      "speaker": "citacao",
+     "source_index": 10,
      "original": "Uma fascinante perplexidade é o que você retira de O Conformista.",
      "text": "Uma fascinante perplexidade é o que você retira de O Conformista.",
      "chars": 65
@@ -172,6 +187,7 @@
     {
      "id": "06-03",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "disse Tim Parks sobre O Conformista.",
      "text": "disse Tim Parks sobre O Conformista.",
      "chars": 36
@@ -179,6 +195,7 @@
     {
      "id": "06-04",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "O triste declínio de Jacques Demy (1931-1990) prosseguiu com o conto de fadas Pele de asno (1970), inspirado em Cocteau. Agnès Varda (n-1928), sua esposa, produziu pouco na década, mas Uma canta, a outra não (1977) apresenta uma visão calorosa e romântica das turbulências do feminismo.",
      "text": "O triste declínio de Jacques Demy (mil novecentos e trinta e um a mil novecentos e noventa) prosseguiu com o conto de fadas Pele de asno, de mil novecentos e setenta, inspirado em Cocteau. Agnès Varda (nasceu em mil novecentos e vinte e oito), sua esposa, produziu pouco na década, mas Uma canta, a outra não, de mil novecentos e setenta e sete, apresenta uma visão calorosa e romântica das turbulências do feminismo.",
      "chars": 417
@@ -195,6 +212,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Outros cineastas abordaram questões sociais, políticas e históricas. A viagem dos comediantes (1975) deu fama a Theo Angelopoulos (n-1935), que ficou conhecido internacionalmente por filmes complexos enraizados na história da Grécia. A compaixão pelos pobres vinculada a preocupações sociais permeia filmes italianos como A árvore dos tamancos (1978), de Ermanno Olmi (n-1931), e Pai patrão (1977), dos irmãos Taviani, Paolo (n-1931) e Vittorio (n-1929), ao passo que O caso Mattei (1972), de Francesco Rosi (n-1922), investiga a corrupção na política de forma Impiedosa.",
      "text": "Outros cineastas abordaram questões sociais, políticas e históricas. A viagem dos comediantes, de mil novecentos e setenta e cinco, deu fama a Theo Angelopoulos (nasceu em mil novecentos e trinta e cinco), que ficou conhecido internacionalmente por filmes complexos enraizados na história da Grécia. A compaixão pelos pobres vinculada a preocupações sociais permeia filmes italianos como A árvore dos tamancos, de mil novecentos e setenta e oito, de Ermanno Olmi (nasceu em mil novecentos e trinta e um), e Pai patrão, de mil novecentos e setenta e sete, dos irmãos Taviani, Paolo (nasceu em mil novecentos e trinta e um) e Vittorio (nasceu em mil novecentos e vinte e nove), ao passo que O caso Mattei, de mil novecentos e setenta e dois, de Francesco Rosi (nasceu em mil novecentos e vinte e dois), investiga a corrupção na política de forma Impiedosa.",
      "chars": 854
@@ -211,6 +229,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Saiba mais: Como um filme virou um símbolo de violência sexual nos Cinemas.",
      "text": "Saiba mais: Como um filme virou um símbolo de violência sexual nos Cinemas.",
      "chars": 75
@@ -218,6 +237,7 @@
     {
      "id": "08-02",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "A cena destruiu a vida de uma atriz e ofuscou a filmografia de Bernardo Bertolucci. Antes do movimento #Metoo e do caso Weinstein, Último tango em Paris (1972) e sua cena forte de sodomia se tornaram um símbolo da violência sexual no cinema. Os anos 70 ficou famoso por ser uma época experimental nos cinemas, com os estúdios dando uma grande liberdade aos diretores. Coisas boas aconteceram com isso, mas, consequentemente, coisas ruins também ocorreram.",
      "text": "A cena destruiu a vida de uma atriz e ofuscou a filmografia de Bernardo Bertolucci. Antes do movimento #Metoo e do caso Weinstein, Último tango em Paris, de mil novecentos e setenta e dois, e sua cena forte de sodomia se tornaram um símbolo da violência sexual no cinema. Os anos setenta ficou famoso por ser uma época experimental nos cinemas, com os estúdios dando uma grande liberdade aos diretores. Coisas boas aconteceram com isso, mas, consequentemente, coisas ruins também ocorreram.",
      "chars": 490
@@ -225,6 +245,7 @@
     {
      "id": "08-03",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "No filme do diretor italiano, Maria Schneider, com 19 anos no início das filmagens, vive uma tórrida paixão com um viúvo americano de passagem por Paris, interpretado por Marlon Brando. O ator americano de \"Uma rua chamada pecado\" seria indicado ao Oscar por esse papel. Eles decidem não saber nada um do outro, nem mesmo o nome. Esse encontro ao mesmo tempo duro e mórbido atinge seu ápice em uma cena de sexo não consensual, com um tablete de manteiga na falta de lubrificante.",
      "text": "No filme do diretor italiano, Maria Schneider, com dezenove anos no início das filmagens, vive uma tórrida paixão com um viúvo americano de passagem por Paris, interpretado por Marlon Brando. O ator americano de \"Uma rua chamada pecado\" seria indicado ao Oscar por esse papel. Eles decidem não saber nada um do outro, nem mesmo o nome. Esse encontro ao mesmo tempo duro e mórbido atinge seu ápice em uma cena de sexo não consensual, com um tablete de manteiga na falta de lubrificante.",
      "chars": 485
@@ -232,6 +253,7 @@
     {
      "id": "08-04",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Embora tenha sido simulada, essa cena de estupro garante a reputação do filme, mas marcaria para sempre a jovem atriz, como conta sua prima, a jornalista Vanessa Schneider, em \"Tu t'appelais Maria Schneider\", livro lançado este ano. Segundo a atriz, que atuaria em mais de 50 filmes, Brando e Bertolucci não tinham alertado sobre o uso da manteiga. Ao comentar mais uma vez esta cena, em entrevista ao tabloide \"Daily Mail\" em 2007, a atriz diz que suas \"lágrimas eram verdadeiras\" no filme.",
      "text": "Embora tenha sido simulada, essa cena de estupro garante a reputação do filme, mas marcaria para sempre a jovem atriz, como conta sua prima, a jornalista Vanessa Schneider, em \"Tu t'appelais Maria Schneider\", livro lançado este ano. Segundo a atriz, que atuaria em mais de cinquenta filmes, Brando e Bertolucci não tinham alertado sobre o uso da manteiga. Ao comentar mais uma vez esta cena, em entrevista ao tabloide \"Daily Mail\" em dois mil e sete, a atriz diz que suas \"lágrimas eram verdadeiras\" no filme.",
      "chars": 509
@@ -239,6 +261,7 @@
     {
      "id": "08-05",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Em dezembro de 2016, a polêmica voltou: um vídeo de 2013 ressurgiu nas redes sociais e chocou Hollywood. \"A sequência da manteiga é uma ideia que eu tive com Marlon na véspera da filmagem. Eu queria que Maria reagisse, que ela fosse humilhada\", conta Bertolucci. \"Eu não queria que ela interpretasse a raiva, eu queria que ela sentisse raiva e humilhação\", completou. Nos Estados Unidos, a polêmica ganhou corpo, menos de um ano antes do caso Weinstein e das revelações sobre as agressões sexuais sofridos por várias atrizes. Na época, o diretor italiano se pronunciou mais uma vez, considerando \"desoladora\" a ingenuidade daqueles que não sabem que \"o sexo é (quase) sempre simulado no cinema\".",
      "text": "Em dezembro de dois mil e dezesseis, a polêmica voltou: um vídeo de dois mil e treze ressurgiu nas redes sociais e chocou Hollywood. \"A sequência da manteiga é uma ideia que eu tive com Marlon na véspera da filmagem. Eu queria que Maria reagisse, que ela fosse humilhada\", conta Bertolucci. \"Eu não queria que ela interpretasse a raiva, eu queria que ela sentisse raiva e humilhação\", completou. Nos Estados Unidos, a polêmica ganhou corpo, menos de um ano antes do caso Weinstein e das revelações sobre as agressões sexuais sofridos por várias atrizes. Na época, o diretor italiano se pronunciou mais uma vez, considerando \"desoladora\" a ingenuidade daqueles que não sabem que \"o sexo é (quase) sempre simulado no cinema\".",
      "chars": 723
@@ -255,6 +278,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "Um diretor que construiu sua carreira no cinema lidando com casos de justiça provocada pelo Estado foi Costa-Gavras (n-1933), nascido na Grécia, que se naturalizou francês. Nos anos 1970, ele dirigiu A confissão (1970), criticando os comunistas em Praga em 1951, Estado de sitio (1972), mirando o envolvimento da CIA, no Uruguai e Sessão especial de justiça (1975), tratando do governo de Vichy, na Franca, durante a guerra.",
      "text": "Um diretor que construiu sua carreira no cinema lidando com casos de justiça provocada pelo Estado foi Costa-Gavras (nasceu em mil novecentos e trinta e três), nascido na Grécia, que se naturalizou francês. Nos anos mil novecentos e setenta, ele dirigiu A confissão, de mil novecentos e setenta, criticando os comunistas em Praga em mil novecentos e cinquenta e um, Estado de sitio, de mil novecentos e setenta e dois, mirando o envolvimento da cê i á, no Uruguai e Sessão especial de justiça, de mil novecentos e setenta e cinco, tratando do governo de Vichy, na Franca, durante a guerra.",
      "chars": 589
@@ -262,6 +286,7 @@
     {
      "id": "09-02",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "Eclético como era, Louis Malle (1932-1995) movimentava-se com facilidade por temas políticos e históricos e também por dramas familiares intimistas. Em Lacombe Lucien (1974), ele confrontou o tema delicado do fascismo francês durante a Ocupação, ao passo que em Sopro no coração (1971) ele chocou a sociedade francesa com o tratamento simpático que deu ao incesto entre mãe e filho. Marco Ferreri (1928-1997) alarmou os censores com suas alegorias sobre a ganância capitalista - sexo e extravagâncias da gula em A comilança (1973) e mais exagero com o elaborado A última mulher (1976). Mas o escândalo provocado por esses filmes não se comparou com o furor em torno de O último tango em Paris (1972), de Bernardo Bertolucci (1940).",
      "text": "Eclético como era, Louis Malle (mil novecentos e trinta e dois a mil novecentos e noventa e cinco) movimentava-se com facilidade por temas políticos e históricos e também por dramas familiares intimistas. Em Lacombe Lucien, de mil novecentos e setenta e quatro, ele confrontou o tema delicado do fascismo francês durante a Ocupação, ao passo que em Sopro no coração, de mil novecentos e setenta e um, ele chocou a sociedade francesa com o tratamento simpático que deu ao incesto entre mãe e filho. Marco Ferreri (mil novecentos e vinte e oito a mil novecentos e noventa e sete) alarmou os censores com suas alegorias sobre a ganância capitalista - sexo e extravagâncias da gula em A comilança, de mil novecentos e setenta e três, e mais exagero com o elaborado A última mulher, de mil novecentos e setenta e seis. Mas o escândalo provocado por esses filmes não se comparou com o furor em torno de O último tango em Paris, de mil novecentos e setenta e dois, de Bernardo Bertolucci, de mil novecentos e quarenta.",
      "chars": 1011
@@ -269,6 +294,7 @@
     {
      "id": "09-03",
      "speaker": "citacao",
+     "source_index": 18,
      "original": "Como foi que consegui tolerar você por tanto tempo e não dizer nada? Eu sei do que você é feita – com seus carinhos vazios e seu sorriso falso.",
      "text": "Como foi que consegui tolerar você por tanto tempo e não dizer nada? Eu sei do que você é feita, com seus carinhos vazios e seu sorriso falso.",
      "chars": 142
@@ -276,6 +302,7 @@
     {
      "id": "09-04",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "disse Karin (Ingrid Thulin) para Maria (liv Ullmann) em Gritos e Sussurros.",
      "text": "disse Karin (Ingrid Thulin) para Maria (liv Ullmann) em Gritos e Sussurros.",
      "chars": 75
@@ -283,6 +310,7 @@
     {
      "id": "09-05",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "Considerado obsceno por tribunais italianos, o filme forneceu farto material para a imprensa por causa da presença de Marlon Brando no elenco. O último filme de Pier Paolo Pasolini - Saló ou os 120 dias de Sodoma (1975), que transportou os excessos do Marquês de Sade para a breve república italiana de 1944 - quase rivalizou em escândalo com o de Bertolucci.",
      "text": "Considerado obsceno por tribunais italianos, o filme forneceu farto material para a imprensa por causa da presença de Marlon Brando no elenco. O último filme de Pier Paolo Pasolini - Saló ou os cento e vinte dias de Sodoma, de mil novecentos e setenta e cinco, que transportou os excessos do Marquês de Sade para a breve república italiana de mil novecentos e quarenta e quatro - quase rivalizou em escândalo com o de Bertolucci.",
      "chars": 429
@@ -299,6 +327,7 @@
     {
      "id": "10-01",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "Muitos desses filmes representavam uma reação aberta ou implícita à ascensão do feminismo. Manifestações com mais autoridade surgiram com a obra de uma série de diretoras da Europa ocidental nos anos 1970. Anja Breien (n-1940), da Noruega, obteve sucesso com o feminismo bem-humorado de Hustruer (1975). O melodrama de filmes italianos como O porteiro da noite (1974), de Liliana Cavani (n-1933) e Destino Insólito (1974), de Lina Wertmüller (n-1926), contrastava com o minimalismo da dramaturga francesa Marguerite Duras (1914-1996) em filmes como India Song (1975). O minimalismo também influenciou Jeanne Dielman (1975), um estudo sobre a prostituição burguesa por Chantal Akerman (n-1950). Diversas atrizes se voltaram para a direção, entre elas Gunnel Lindblom (n-1931) com seu estudo de uma família sueca desajustada, ironicamente intitulado Summer Paradise (Paraiso de verão, 1976).",
      "text": "Muitos desses filmes representavam uma reação aberta ou implícita à ascensão do feminismo. Manifestações com mais autoridade surgiram com a obra de uma série de diretoras da Europa ocidental nos anos mil novecentos e setenta. Anja Breien (nasceu em mil novecentos e quarenta), da Noruega, obteve sucesso com o feminismo bem-humorado de Hustruer, de mil novecentos e setenta e cinco. O melodrama de filmes italianos como O porteiro da noite, de mil novecentos e setenta e quatro, de Liliana Cavani (nasceu em mil novecentos e trinta e três) e Destino Insólito, de mil novecentos e setenta e quatro, de Lina Wertmüller (nasceu em mil novecentos e vinte e seis), contrastava com o minimalismo da dramaturga francesa Marguerite Duras (mil novecentos e catorze a mil novecentos e noventa e seis) em filmes como India Song, de mil novecentos e setenta e cinco. O minimalismo também influenciou Jeanne Dielman, de mil novecentos e setenta e cinco, um estudo sobre a prostituição burguesa por Chantal Akerman (nasceu em mil novecentos e cinquenta). Diversas atrizes se voltaram para a direção, entre elas Gunnel Lindblom (nasceu em mil novecentos e trinta e um) com seu estudo de uma família sueca desajustada, ironicamente intitulado Summer Paradise (Paraiso de verão, mil novecentos e setenta e seis).",
      "chars": 1295
@@ -306,6 +335,7 @@
     {
      "id": "10-02",
      "speaker": "narrador",
+     "source_index": 22,
      "original": "Por sua vez, na Espanha, Victor Erice (n-1940), com O espirito da colmeia (1973), provocou muitos debates. Estrelado pela menina Ana Torrent (n-1966), mas suscetível de ser interpretado de muitas outras além de um simples estudo da infância, esse filme de estreia estabeleceu Erice como um diretor igualado apenas por Terrence Malick (n-1943) na façanha de obter tamanha consideração diante de uma obra tio reduzida.",
      "text": "Por sua vez, na Espanha, Victor Erice (nasceu em mil novecentos e quarenta), com O espirito da colmeia, de mil novecentos e setenta e três, provocou muitos debates. Estrelado pela menina Ana Torrent (nasceu em mil novecentos e sessenta e seis), mas suscetível de ser interpretado de muitas outras além de um simples estudo da infância, esse filme de estreia estabeleceu Erice como um diretor igualado apenas por Terrence Malick (nasceu em mil novecentos e quarenta e três) na façanha de obter tamanha consideração diante de uma obra tio reduzida.",
      "chars": 546
@@ -322,6 +352,7 @@
     {
      "id": "11-01",
      "speaker": "narrador",
+     "source_index": 23,
      "original": "Vale a conferida: os filmes deste capítulo são Salò, or the 120 Days of Sodom, The Conformist, Last Tango in Paris, Claire's Knee, Cries and Whispers, Le Boucher, The Discreet Charm of the Bourgeoisie, Death in Venice, Amarcord e The Spirit of the Beehive.",
      "text": "Vale a conferida: os filmes deste capítulo são Salò, or the cento e vinte Days of Sodom, The Conformist, Last Tango in Paris, Claire's Knee, Cries and Whispers, Le Boucher, The Discreet Charm of the Bourgeoisie, Death in Venice, Amarcord e The Spirit of the Beehive.",
      "chars": 266

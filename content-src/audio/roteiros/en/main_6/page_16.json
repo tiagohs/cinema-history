@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 06: From 1990 to 2009. Chapter 16: British Cinema.",
      "text": "Part zero six: From nineteen ninety to two thousand nine. Chapter sixteen: British Cinema.",
      "chars": 90
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "The diverse British cinema of the 21st century.",
      "text": "The diverse British cinema of the twenty-first century.",
      "chars": 55
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "During the first decade of the 21st century, we saw British cinema scoop up a series of awards and director Danny Boyle (b. 1956) venture into Bollywood territory: Slumdog Millionaire (2008) made headlines by winning eight Oscars, including Best Picture.",
      "text": "During the first decade of the twenty-first century, we saw British cinema scoop up a series of awards and director Danny Boyle (born in nineteen fifty-six) venture into Bollywood territory: Slumdog Millionaire, from two thousand eight, made headlines by winning eight Oscars, including Best Picture.",
      "chars": 300
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "Acclaimed director Mike Leigh (b. 1943) found success with Vera Drake (2004), the story of a woman who performs illegal abortions, while newcomer Stephen Daldry (b. 1961) burst onto the scene with Billy Elliot (2000), his upbeat drama about a boy from a mining community who learns to dance. The film was acclaimed by critics worldwide and caught Hollywood's attention.",
      "text": "Acclaimed director Mike Leigh (born in nineteen forty-three) found success with Vera Drake, from two thousand four, the story of a woman who performs illegal abortions, while newcomer Stephen Daldry (born in nineteen sixty-one) burst onto the scene with Billy Elliot, from two thousand, his upbeat drama about a boy from a mining community who learns to dance. The film was acclaimed by critics worldwide and caught Hollywood's attention.",
      "chars": 438
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "British society and its customs were captured both through the lens of Pawel Pawlikowski (b. 1957) in My Summer of Love (2004), which tells the bittersweet story of a teenage romance, and - albeit from a very different angle - by the French co-production directed by Stephen Frears (b. 1941), The Queen (2006), about the death of Princess Diana.",
      "text": "British society and its customs were captured both through the lens of Pawel Pawlikowski (born in nineteen fifty-seven) in My Summer of Love, from two thousand four, which tells the bittersweet story of a teenage romance, and - albeit from a very different angle - by the French co-production directed by Stephen Frears (born in nineteen forty-one), The Queen, from two thousand six, about the death of Princess Diana.",
      "chars": 418
@@ -66,6 +71,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Independent production companies such as Working Title Films built on the successful comedies and period dramas of the 1990s to secure distribution deals with American studios and produce more films of the kind, such as Bridget Jones's Diary (2001), Love Actually (2003), Pride & Prejudice (2005), and Atonement (2007).",
      "text": "Independent production companies such as Working Title Films built on the successful comedies and period dramas of the nineteen nineties to secure distribution deals with American studios and produce more films of the kind, such as Bridget Jones's Diary, from two thousand one, Love Actually, from two thousand three, Pride and Prejudice, from two thousand five, and Atonement, from two thousand seven.",
      "chars": 402
@@ -73,6 +79,7 @@
     {
      "id": "02-02",
      "speaker": "citacao",
+     "source_index": 6,
      "original": "The film combines a Western narrative and an Indian soul in a story deserving of every award.",
      "text": "The film combines a Western narrative and an Indian soul in a story deserving of every award.",
      "chars": 93
@@ -80,6 +87,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "said Karen Krizanowich on Slumdog Millionaire.",
      "text": "said Karen Krizanowich on Slumdog Millionaire.",
      "chars": 46
@@ -87,6 +95,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Although produced with American money, the Harry Potter franchise (2001-2011) was filmed in the United Kingdom at Leavesden Film Studios, located in Hertfordshire. Its films star local actors and count Englishmen Mike Newell (b. 1942) and David Yates (b. 1963) among their directors. The epic story of the young wizard is one of the highest-grossing film series of all time.",
      "text": "Although produced with American money, the Harry Potter franchise (two thousand one to twenty eleven) was filmed in the United Kingdom at Leavesden Film Studios, located in Hertfordshire. Its films star local actors and count Englishmen Mike Newell (born in nineteen forty-two) and David Yates (born in nineteen sixty-three) among their directors. The epic story of the young wizard is one of the highest-grossing film series of all time.",
      "chars": 438
@@ -103,6 +112,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Of all the award winners of this new millennium, the most idiosyncratic was the claymation Wallace & Gromit: The Curse of the Were-Rabbit (2005), by Nick Park (b. 1958) and Steve Box (b. 1967). Produced by Bristol-based Aardman Features and DreamWorks Animation, this inventive and hilarious film, packed with gadgets from the absent-minded inventor Wallace, slapstick humor, and comic references to the world of cinema, delights adults and children alike.",
      "text": "Of all the award winners of this new millennium, the most idiosyncratic was the claymation Wallace and Gromit: The Curse of the Were-Rabbit, from two thousand five, by Nick Park (born in nineteen fifty-eight) and Steve Box (born in nineteen sixty-seven). Produced by Bristol-based Aardman Features and DreamWorks Animation, this inventive and hilarious film, packed with gadgets from the absent-minded inventor Wallace, slapstick humor, and comic references to the world of cinema, delights adults and children alike.",
      "chars": 517
@@ -110,6 +120,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "A British film that covered more familiar territory, The Constant Gardener (2005), won numerous awards thanks to the powerful performances of its cast. It stars Ralph Fiennes as the disillusioned British diplomat Justin Quayle, who sets out to uncover the truth behind the murder of his idealistic wife (Rachel Weisz), a human rights activist, after she stumbles upon the shady practices of a major pharmaceutical company in Kenya. Although the plot is complex, Brazilian director Fernando Meirelles (b. 1955) does an excellent job with the exposition without slowing the pace of the narrative.",
      "text": "A British film that covered more familiar territory, The Constant Gardener, from two thousand five, won numerous awards thanks to the powerful performances of its cast. It stars Ralph Fiennes as the disillusioned British diplomat Justin Quayle, who sets out to uncover the truth behind the murder of his idealistic wife (Rachel Weisz), a human rights activist, after she stumbles upon the shady practices of a major pharmaceutical company in Kenya. Although the plot is complex, Brazilian director Fernando Meirelles (born in nineteen fifty-five) does an excellent job with the exposition without slowing the pace of the narrative.",
      "chars": 631
@@ -126,6 +137,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "While the revival of British cinema in the 1990s revolved around period dramas and romantic comedies, the 2000s brought weightier films and a United Kingdom willing to reflect on its not-so-distant colonial past in The Last King of Scotland (2006), directed by Scotsman Kevin Macdonald (b. 1967). This low-budget picture became a box office hit thanks to a screenplay co-written by Peter Morgan, co-writer of The Queen, and to a forceful performance by Forest Whitaker (b. 1961) as the Ugandan dictator General Idi Amin, which earned him an Oscar. The mesmerizing Whitaker manages to project the intimidating, murderous nature of this deranged leader in such a way that he comes across as a deeply flawed human being rather than a stereotypical figure of evil.",
      "text": "While the revival of British cinema in the nineteen nineties revolved around period dramas and romantic comedies, the two thousands brought weightier films and a United Kingdom willing to reflect on its not-so-distant colonial past in The Last King of Scotland, from two thousand six, directed by Scotsman Kevin Macdonald (born in nineteen sixty-seven). This low-budget picture became a box office hit thanks to a screenplay co-written by Peter Morgan, co-writer of The Queen, and to a forceful performance by Forest Whitaker (born in nineteen sixty-one) as the Ugandan dictator General Idi Amin, which earned him an Oscar. The mesmerizing Whitaker manages to project the intimidating, murderous nature of this deranged leader in such a way that he comes across as a deeply flawed human being rather than a stereotypical figure of evil.",
      "chars": 836
@@ -142,6 +154,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Worth watching: the films from this chapter are Slumdog Millionaire, Atonement, Pride & Prejudice, Wallace & Gromit: The Curse of the Were-Rabbit, My Summer of Love, The Constant Gardener, The Queen, Love Actually, The Last King of Scotland, Shaun of the Dead, Snatch and Johnny English.",
      "text": "Worth watching: the films from this chapter are Slumdog Millionaire, Atonement, Pride and Prejudice, Wallace and Gromit: The Curse of the Were-Rabbit, My Summer of Love, The Constant Gardener, The Queen, Love Actually, The Last King of Scotland, Shaun of the Dead, Snatch and Johnny English.",
      "chars": 291

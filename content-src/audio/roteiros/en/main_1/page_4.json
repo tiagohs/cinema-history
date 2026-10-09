@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 01: From 1895 to 1929. Chapter 4: Race Films: African American Pioneers.",
      "text": "Part zero one: From eighteen ninety-five to nineteen twenty-nine. Chapter four: Race Films: African American Pioneers.",
      "chars": 118
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "People who defied stereotypes and racism. Directors, producers, actors and actresses who believed in the strength of their community became pioneers and made great films, showing that with hard work there is no obstacle we cannot overcome.",
      "text": "People who defied stereotypes and racism. Directors, producers, actors and actresses who believed in the strength of their community became pioneers and made great films, showing that with hard work there is no obstacle we cannot overcome.",
      "chars": 239
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "In the early years of silent film, African Americans were not portrayed in a positive light. Their characters were limited to highly stereotyped roles and, more often than not, if an African American appeared in a film, the role would be played by a white actor wearing blackface. But men like Noble Johnson (1881-1978) and Oscar Micheaux (1884-1951) were not content to simply stand by, watching sequel after sequel of these blatantly racist depictions. They knew there were many African American actors and actresses who were capable of acting if they were given a chance.",
      "text": "In the early years of silent film, African Americans were not portrayed in a positive light. Their characters were limited to highly stereotyped roles and, more often than not, if an African American appeared in a film, the role would be played by a white actor wearing blackface. But men like Noble Johnson (eighteen eighty-one to nineteen seventy-eight) and Oscar Micheaux (eighteen eighty-four to nineteen fifty-one) were not content to simply stand by, watching sequel after sequel of these blatantly racist depictions. They knew there were many African American actors and actresses who were capable of acting if they were given a chance.",
      "chars": 643
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 1,
      "original": "Even knowing it would be hard work, these men were willing to take the risk. These film pioneers would begin producing films with all-Black casts aimed at the African American community. These films, which came to be called black race films, or simply Race Films, are extremely important in the history of cinema.",
      "text": "Even knowing it would be hard work, these men were willing to take the risk. These film pioneers would begin producing films with all-Black casts aimed at the African American community. These films, which came to be called black race films, or simply Race Films, are extremely important in the history of cinema.",
      "chars": 313
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "The industry boundaries surrounding race films are complicated and porous, but the filmmakers nonetheless formed a distinct community of practice. Few of these early films survive, so evidence of this community of filmmakers must be drawn from other media: posters, newspaper ads, theater programs and, in some cases, only the handwritten notes of these filmmakers.",
      "text": "The industry boundaries surrounding race films are complicated and porous, but the filmmakers nonetheless formed a distinct community of practice. Few of these early films survive, so evidence of this community of filmmakers must be drawn from other media: posters, newspaper ads, theater programs and, in some cases, only the handwritten notes of these filmmakers.",
      "chars": 365
@@ -66,6 +71,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "The works that scholars generally call \"Race films\" emerged during the early years of the 20th century. These early films, many of them produced by the Hampton and Tuskegee Institutes, were closely aligned with the African American \"uplift\" movement and its most prominent exponent, Booker T. Washington (1856-1915). A Trip to Tuskegee (1909), John Henry at Hampton (1913) and A Day at Tuskegee (1913) are all products of that historical moment.",
      "text": "The works that scholars generally call \"Race films\" emerged during the early years of the twentieth century. These early films, many of them produced by the Hampton and Tuskegee Institutes, were closely aligned with the African American \"uplift\" movement and its most prominent exponent, Booker T. Washington (eighteen fifty-six to nineteen fifteen). A Trip to Tuskegee, from nineteen oh-nine, John Henry at Hampton, from nineteen thirteen, and A Day at Tuskegee, from nineteen thirteen, are all products of that historical moment.",
      "chars": 531
@@ -73,6 +79,7 @@
     {
      "id": "02-02",
      "speaker": "citacao",
+     "source_index": 6,
      "original": "One of the greatest tasks of my life has been to teach the colored man that he can do anything.",
      "text": "One of the greatest tasks of my life has been to teach the colored man that he can do anything.",
      "chars": 95
@@ -80,6 +87,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "said Oscar Micheaux.",
      "text": "said Oscar Micheaux.",
      "chars": 20
@@ -87,6 +95,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Alongside the Hampton / Tuskegee films, a group of African American filmmakers and entrepreneurs began to specialize in films made for African American audiences. The Foster Photoplay Company, founded in 1913 by journalist and filmmaker William Foster (1884-1940) — also known as Juli Jones — was one of the first such companies. Foster's own films drew on the uplift movement, telling the story, for example, of a sleeping car attendant: The Railroad Porter (1913), a respected position in the African American community.",
      "text": "Alongside the Hampton / Tuskegee films, a group of African American filmmakers and entrepreneurs began to specialize in films made for African American audiences. The Foster Photoplay Company, founded in nineteen thirteen by journalist and filmmaker William Foster (eighteen eighty-four to nineteen forty), also known as Juli Jones, was one of the first such companies. Foster's own films drew on the uplift movement, telling the story, for example, of a sleeping car attendant: The Railroad Porter, from nineteen thirteen, a respected position in the African American community.",
      "chars": 579
@@ -94,6 +103,7 @@
     {
      "id": "02-05",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Other production companies, such as the Afro-American Film Company, The Hunter C. Haynes Photoplay Company and The Peter P. Jones Photoplay Company, also specialized in films aimed at this audience in the early 1910s. African Americans, like everyone else, were avid moviegoers and, since movie theaters were segregated during this period, there were separate exhibition circuits for African American and white audiences. Some production companies managed to capitalize on this separate circuit by selling films directly to African American theater owners.",
      "text": "Other production companies, such as the Afro-American Film Company, The Hunter C. Haynes Photoplay Company and The Peter P. Jones Photoplay Company, also specialized in films aimed at this audience in the early nineteen tens. African Americans, like everyone else, were avid moviegoers and, since movie theaters were segregated during this period, there were separate exhibition circuits for African American and white audiences. Some production companies managed to capitalize on this separate circuit by selling films directly to African American theater owners.",
      "chars": 564
@@ -110,6 +120,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Learn more: Blackface.",
      "text": "Learn more: Blackface.",
      "chars": 22
@@ -117,6 +128,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Blackface is a practice that is at least 200 years old. It is believed to have begun around 1830 in New York. But it is not just about painting one's skin a different color.",
      "text": "Blackface is a practice that is at least two hundred years old. It is believed to have begun around eighteen thirty in New York. But it is not just about painting one's skin a different color.",
      "chars": 192
@@ -124,6 +136,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "It was a practice in which Black people were ridiculed for the entertainment of white people. Negative stereotypes came attached to the jokes, especially in the United States and Europe. In the 19th century, white actors used paint to blacken their faces in comedic shows, behaving in an exaggerated way to illustrate behaviors that white people associated with Black people. They also mocked the accents of the characters they played. This arose at a time when Black people were not even allowed to take the stage and act because of the color of their skin.",
      "text": "It was a practice in which Black people were ridiculed for the entertainment of white people. Negative stereotypes came attached to the jokes, especially in the United States and Europe. In the nineteenth century, white actors used paint to blacken their faces in comedic shows, behaving in an exaggerated way to illustrate behaviors that white people associated with Black people. They also mocked the accents of the characters they played. This arose at a time when Black people were not even allowed to take the stage and act because of the color of their skin.",
      "chars": 564
@@ -131,6 +144,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Even in the 20th century, it was very rare for Black actors to be given prominent roles. Roles that called for an African or Asian appearance were often played by white actors in blackface, that is, with their skin darkened. The practice continued on TV shows and in theater for much of the 20th century. The BBC, for example, aired a program that used blackface for 20 years, between 1958 and 1978. The show, called The Black and White Minstrel Show, was extremely popular, with an audience that reached as many as 16 million people. The program won the prestigious Golden Rose of Montreux award in 1961.",
      "text": "Even in the twentieth century, it was very rare for Black actors to be given prominent roles. Roles that called for an African or Asian appearance were often played by white actors in blackface, that is, with their skin darkened. The practice continued on TV shows and in theater for much of the twentieth century. The BBC, for example, aired a program that used blackface for twenty years, between nineteen fifty-eight and nineteen seventy-eight. The show, called The Black and White Minstrel Show, was extremely popular, with an audience that reached as many as sixteen million people. The program won the prestigious Golden Rose of Montreux award in nineteen sixty-one.",
      "chars": 672
@@ -138,6 +152,7 @@
     {
      "id": "03-05",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "As anti-racist movements grew, blackface was gradually eliminated from entertainment and is now seen as shameful and deplorable. But that has not stopped some people from still using the practice.",
      "text": "As anti-racist movements grew, blackface was gradually eliminated from entertainment and is now seen as shameful and deplorable. But that has not stopped some people from still using the practice.",
      "chars": 196
@@ -154,6 +169,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "The Birth of a Nation (1915), by D. W. Griffith (1875-1948), a film that broke box-office records and drew critical praise, told an extremely racist story, portraying African Americans as rapists and the Ku Klux Klan as a heroic group. Widely protested by African American audiences, The Birth of a Nation prompted a series of cinematic responses — most obviously The Birth of a Race (1918), a famous and troubled production conceived as a direct response to Griffith's film.",
      "text": "The Birth of a Nation, from nineteen fifteen, by D. W. Griffith (eighteen seventy-five to nineteen forty-eight), a film that broke box-office records and drew critical praise, told an extremely racist story, portraying African Americans as rapists and the Ku Klux Klan as a heroic group. Widely protested by African American audiences, The Birth of a Nation prompted a series of cinematic responses, most obviously The Birth of a Race, from nineteen eighteen, a famous and troubled production conceived as a direct response to Griffith's film.",
      "chars": 543
@@ -161,6 +177,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Griffith's film helped give a shared (though certainly not unified) purpose to several companies seeking to rehabilitate the image of African Americans on screen, even if profit was something even more important. Among them were the Lincoln Motion Picture Company (founded in 1916) and — the most famous of all the race films companies — the Micheaux Film Corporation, founded in 1918 by author and filmmaker Oscar Micheaux (1884-1951).",
      "text": "Griffith's film helped give a shared (though certainly not unified) purpose to several companies seeking to rehabilitate the image of African Americans on screen, even if profit was something even more important. Among them were the Lincoln Motion Picture Company (founded in nineteen sixteen) and, the most famous of all the race films companies, the Micheaux Film Corporation, founded in nineteen eighteen by author and filmmaker Oscar Micheaux (eighteen eighty-four to nineteen fifty-one).",
      "chars": 492
@@ -177,6 +194,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Oscar Micheaux's films, beginning with The Homesteader (1918), were the most successful race films of their time. Audiences eagerly awaited the release of these films, with their \"all-star colored casts,\" and Within Our Gates (1919) is one of the few examples of a race film that attracted the attention — and an audience — from the white press. While the films of Micheaux and Lincoln found a receptive audience, race films also faced enormous obstacles. Whereas better-funded production companies catering to white audiences could send one film out for distribution while shooting the next, Micheaux and Johnson had to devote their attention and resources to one film at a time.",
      "text": "Oscar Micheaux's films, beginning with The Homesteader, from nineteen eighteen, were the most successful race films of their time. Audiences eagerly awaited the release of these films, with their \"all-star colored casts,\" and Within Our Gates, from nineteen nineteen, is one of the few examples of a race film that attracted the attention, and an audience, from the white press. While the films of Micheaux and Lincoln found a receptive audience, race films also faced enormous obstacles. Whereas better-funded production companies catering to white audiences could send one film out for distribution while shooting the next, Micheaux and Johnson had to devote their attention and resources to one film at a time.",
      "chars": 713
@@ -184,6 +202,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "With the advent of sound, filmmaking became technically more complex and expensive, and companies such as Lincoln, which had always existed on the margins, were increasingly pushed aside. The fact that so few of these films survive is also partly a consequence of these companies' meager finances. The result, combined with consistent underfunding of African American film production, is that many people simply do not know that race films existed. In fact, African American filmmakers have been practicing the craft since the very beginning of the medium.",
      "text": "With the advent of sound, filmmaking became technically more complex and expensive, and companies such as Lincoln, which had always existed on the margins, were increasingly pushed aside. The fact that so few of these films survive is also partly a consequence of these companies' meager finances. The result, combined with consistent underfunding of African American film production, is that many people simply do not know that race films existed. In fact, African American filmmakers have been practicing the craft since the very beginning of the medium.",
      "chars": 556
@@ -200,6 +219,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "Worth watching: the films from this chapter are The Homesteader, The Green Eyed Monster, Within Our Gates, The Symbol of the Unconquered, Body and Soul, The Exile, The Emperor Jones, The Green Pastures, Harlem on the Prairie, Harlem Rides the Range, Lying Lips, The Blood of Jesus, Brother Martin: Servant of Jesus, Cabin in the Sky, Stormy Weather, Go Down, Death!, Dirty Gertie from Harlem U.S.A., Boy! What a Girl!, Hi-De-Ho, Sepia Cinderella and The Birth of a Race.",
      "text": "Worth watching: the films from this chapter are The Homesteader, The Green Eyed Monster, Within Our Gates, The Symbol of the Unconquered, Body and Soul, The Exile, The Emperor Jones, The Green Pastures, Harlem on the Prairie, Harlem Rides the Range, Lying Lips, The Blood of Jesus, Brother Martin: Servant of Jesus, Cabin in the Sky, Stormy Weather, Go Down, Death!, Dirty Gertie from Harlem U.S.A., Boy! What a Girl!, Hi-De-Ho, Sepia Cinderella and The Birth of a Race.",
      "chars": 470

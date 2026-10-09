@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 03: De 1940 a 1959. Capítulo 3: Neorrealismo Italiano.",
      "text": "Parte zero três: De mil novecentos e quarenta a mil novecentos e cinquenta e nove. Capítulo três: Neorrealismo Italiano.",
      "chars": 120
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Um movimento que surgiu nos anos 1940, caracterizado por histórias sobre a classe trabalhadora, filmadas com pouquíssimos recursos, o Neorrealismo italiano foi um importante movimento que buscava representar a condição de vida, opressão e desigualdade na Itália pós-Segunda Guerra.",
      "text": "Um movimento que surgiu nos anos mil novecentos e quarenta, caracterizado por histórias sobre a classe trabalhadora, filmadas com pouquíssimos recursos, o Neorrealismo italiano foi um importante movimento que buscava representar a condição de vida, opressão e desigualdade na Itália pós-Segunda Guerra.",
      "chars": 302
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "O termo \"neorrealismo\" foi cunhado pelos críticos italianos no início da década de 1940. O roteirista Cesare Zavattini (1902 –1949) foi um dos principais nomes do movimento e um de seus mais importantes teóricos. Ele convocou os cineastas para saírem às ruas, subirem em ônibus e bondes e roubarem as histórias do cotidiano, relatando em seu diário de guerra Diario di cinema e di vita: \"Montemos a câmera na rua, num quarto, observemos com paciência insaciável, treinemo-nos para contemplar nossos semelhantes em seus gestos mais simples.\"",
      "text": "O termo \"neorrealismo\" foi cunhado pelos críticos italianos no início da década de mil novecentos e quarenta. O roteirista Cesare Zavattini (mil novecentos e dois, mil novecentos e quarenta e nove) foi um dos principais nomes do movimento e um de seus mais importantes teóricos. Ele convocou os cineastas para saírem às ruas, subirem em ônibus e bondes e roubarem as histórias do cotidiano, relatando em seu diário de guerra Diario di cinema e di vita: \"Montemos a câmera na rua, num quarto, observemos com paciência insaciável, treinemo-nos para contemplar nossos semelhantes em seus gestos mais simples.\"",
      "chars": 606
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "Zavattini escreveu os roteiros de filmes como Ladrões de bicicletas (1948), Umberto D. (1952) e Milagre em Milão (1951), todos com foco nas dificuldades que as pessoas comuns enfrentavam na Itália da época. O cinema italiano do período neorrealista está repleto de histórias de pessoas tentando resolver dilemas cotidianos.",
      "text": "Zavattini escreveu os roteiros de filmes como Ladrões de bicicletas, de mil novecentos e quarenta e oito, Umberto D., de mil novecentos e cinquenta e dois, e Milagre em Milão, de mil novecentos e cinquenta e um, todos com foco nas dificuldades que as pessoas comuns enfrentavam na Itália da época. O cinema italiano do período neorrealista está repleto de histórias de pessoas tentando resolver dilemas cotidianos.",
      "chars": 414
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "O movimento era uma reação ao estilo dos filmes Telefono Bianco (Telefone Branco) da década de 1930, que copiavam os filmes de Hollywood e se concentravam na vida burguesa. As películas neorrealistas geralmente usavam atores amadores e eram filmadas em áreas pobres, in loco, retratando pessoas em suas atividades diárias, com ênfase no realismo áspero e na sensação de energia resistente.",
      "text": "O movimento era uma reação ao estilo dos filmes Telefono Bianco (Telefone Branco) da década de mil novecentos e trinta, que copiavam os filmes de Hollywood e se concentravam na vida burguesa. As películas neorrealistas geralmente usavam atores amadores e eram filmadas em áreas pobres, in loco, retratando pessoas em suas atividades diárias, com ênfase no realismo áspero e na sensação de energia resistente.",
      "chars": 408
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "citacao",
+     "source_index": 4,
      "original": "Faça filmes para se tornar um ser humano melhor.",
      "text": "Faça filmes para se tornar um ser humano melhor.",
      "chars": 48
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "disse Roberto Rossellini.",
      "text": "disse Roberto Rossellini.",
      "chars": 25
@@ -71,6 +78,7 @@
     {
      "id": "01-06",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Obsessão (1943), dirigido por Luchino Visconti (1906-1976), é as vezes citado como o primeiro filme neorrealista, embora seja uma obra com fortes elementos noir. Seu roteiro se baseia num romance policial de James M. Cain, O destino bate à sua porta (1934). Visconti trabalhou com seus colegas escritores e cineastas da revista Cinema, entre eles Giuseppe de Santis. É uma história horrível que se passa no interior da Itália, sobre um vagabundo que tem um caso com a dona de um restaurante; os amantes planejam matar o marido. Visconti enfrentou problemas com censura por causa do filme, que foi proibido na Itália sob o regime fascista.",
      "text": "Obsessão, de mil novecentos e quarenta e três, dirigido por Luchino Visconti (mil novecentos e seis a mil novecentos e setenta e seis), é as vezes citado como o primeiro filme neorrealista, embora seja uma obra com fortes elementos noir. Seu roteiro se baseia num romance policial de James M. Cain, O destino bate à sua porta, de mil novecentos e trinta e quatro. Visconti trabalhou com seus colegas escritores e cineastas da revista Cinema, entre eles Giuseppe de Santis. É uma história horrível que se passa no interior da Itália, sobre um vagabundo que tem um caso com a dona de um restaurante; os amantes planejam matar o marido. Visconti enfrentou problemas com censura por causa do filme, que foi proibido na Itália sob o regime fascista.",
      "chars": 744
@@ -87,6 +95,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Saiba mais: O estopim de uma revolução.",
      "text": "Saiba mais: O estopim de uma revolução.",
      "chars": 39
@@ -94,6 +103,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Considerado o estopim de uma revolução estética no cinema, Roma, cidade aberta (1945), de Rossellini, foi a primeira grande obra do neorrealismo italiano e conseguiu explodir as convenções do cinema dos telefones brancos do regime de Mussolini, em voga na Itália no começo da década de 1940. O filme de Rossellini sobre a Resistência Italiana foi escrito na época da luta subterrânea contra os nazistas. Lembrando a fórmula de Eisenstein do \"filme coral\", ele conta a história de um grupo de patriotas escondidos no apartamento de um litógrafo chama do Francesco (Francesco Grand Jaquet). O comunista que lidera o grupo, Manfredi (Marcello Pagliero), é perseguido pela Gestapo e finalmente captura do e executado. Pina (Anna Magnani), esposa de Francesco, e Don Pietro (Aldo Fabrizi), um padre de boa índole, morrem tentando ajudar Manfredi a escapar. Porém é a solidariedade de Roma enquanto cidade que antecipa a vitória final contra os invasores.",
      "text": "Considerado o estopim de uma revolução estética no cinema, Roma, cidade aberta, de mil novecentos e quarenta e cinco, de Rossellini, foi a primeira grande obra do neorrealismo italiano e conseguiu explodir as convenções do cinema dos telefones brancos do regime de Mussolini, em voga na Itália no começo da década de mil novecentos e quarenta. O filme de Rossellini sobre a Resistência Italiana foi escrito na época da luta subterrânea contra os nazistas. Lembrando a fórmula de [[pron: Eisenstein|Áizenstáin]] do \"filme coral\", ele conta a história de um grupo de patriotas escondidos no apartamento de um litógrafo chama do Francesco (Francesco Grand Jaquet). O comunista que lidera o grupo, Manfredi (Marcello Pagliero), é perseguido pela Gestapo e finalmente captura do e executado. Pina (Anna Magnani), esposa de Francesco, e Don Pietro (Aldo Fabrizi), um padre de boa índole, morrem tentando ajudar Manfredi a escapar. Porém é a solidariedade de Roma enquanto cidade que antecipa a vitória final contra os invasores.",
      "chars": 1001
@@ -101,6 +111,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "A escassez de recursos técnicos e financeiros acabou se mostrando uma virtude de Roma, cidade aberta, que foi filmado em um estilo documental. Ao mostrar pessoas reais em locações reais, o filme trouxe uma lufada de ar fresco para o cinema do Ocidente. A liberdade de movimentos da câmera e a autenticidade dos personagens, aliadas a uma nova maneira de se contar uma história, foram algumas das qualidades que transformaram o filme na revelação do Festival de Cannes de 1946, em que recebeu a Palma de Ouro. O neorrealismo logo se tornou o modelo estético para diretores interessados em uma descrição vívida da História e da sociedade.",
      "text": "A escassez de recursos técnicos e financeiros acabou se mostrando uma virtude de Roma, cidade aberta, que foi filmado em um estilo documental. Ao mostrar pessoas reais em locações reais, o filme trouxe uma lufada de ar fresco para o cinema do Ocidente. A liberdade de movimentos da câmera e a autenticidade dos personagens, aliadas a uma nova maneira de se contar uma história, foram algumas das qualidades que transformaram o filme na revelação do Festival de Cannes de mil novecentos e quarenta e seis, em que recebeu a Palma de Ouro. O neorrealismo logo se tornou o modelo estético para diretores interessados em uma descrição vívida da História e da sociedade.",
      "chars": 664
@@ -108,6 +119,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Um dos aspectos mais impressionantes do filme é a abordagem de Rossellini do drama de cada personagem. Alguns dos heróis do filme permanecerão para sempre nos corações dos espectadores. Quem é capaz de esquecer a visão de Pina, grávida, correndo por entre as balas, ou do bom padre alvejado diante dos olhos apavorados das crianças? Embora possa pender para o melo dramático, a história é tão comovente hoje em dia quanto na época. Não é de surpreender que, depois desse papel, Magnani tenha se tornado uma das maiores atrizes do cinema italiano.",
      "text": "Um dos aspectos mais impressionantes do filme é a abordagem de Rossellini do drama de cada personagem. Alguns dos heróis do filme permanecerão para sempre nos corações dos espectadores. Quem é capaz de esquecer a visão de Pina, grávida, correndo por entre as balas, ou do bom padre alvejado diante dos olhos apavorados das crianças? Embora possa pender para o melo dramático, a história é tão comovente hoje em dia quanto na época. Não é de surpreender que, depois desse papel, Magnani tenha se tornado uma das maiores atrizes do cinema italiano.",
      "chars": 546
@@ -124,6 +136,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Os protagonistas do neorrealismo variam de muito jovens a muito velhos. Umberto D. dirigido por Vittorio de Sica (1902-1974), conta a história de um velho (Carlo Battisti) empobrecido que se apega desesperadamente à sua dignidade. Ele vagueia por Roma com seu único e leal companheiro: um cachorro. Por outro lado, crianças têm papeis de destaque em Ladrões de bicicletas e Milagre em Milão (1951). Mas os diretores neorrealistas nem sempre tinham uma visão documentarista sobre o material.",
      "text": "Os protagonistas do neorrealismo variam de muito jovens a muito velhos. Umberto D. dirigido por Vittorio de Sica (mil novecentos e dois a mil novecentos e setenta e quatro), conta a história de um velho (Carlo Battisti) empobrecido que se apega desesperadamente à sua dignidade. Ele vagueia por Roma com seu único e leal companheiro: um cachorro. Por outro lado, crianças têm papeis de destaque em Ladrões de bicicletas e Milagre em Milão, de mil novecentos e cinquenta e um. Mas os diretores neorrealistas nem sempre tinham uma visão documentarista sobre o material.",
      "chars": 567
@@ -131,6 +144,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Milagre em Milão, de De Sica, por exemplo, fala de um grupo de mendigos que vive numa vila de barracos nos arredores da Milão do pós-guerra e pode muito bem ser descrito como \"realismo mágico\". Ele trata ao mesmo tempo de ambiciosos proprietários de terra e invasores mercenários com um forte elemento fantástico. E nem todos os filmes neorrealistas usavam atores amadores, Roma, cidade aberta (1945), de Roberto Rossellini (1906-1977), é estrelado por Anna Magnani (1908-1973), um dos principais nomes do cinema italiano do pós-guerra, e pelo ator, escritor e diretor Aldo Fabrizi (1905-1990).",
      "text": "Milagre em Milão, de De Sica, por exemplo, fala de um grupo de mendigos que vive numa vila de barracos nos arredores da Milão do pós-guerra e pode muito bem ser descrito como \"realismo mágico\". Ele trata ao mesmo tempo de ambiciosos proprietários de terra e invasores mercenários com um forte elemento fantástico. E nem todos os filmes neorrealistas usavam atores amadores, Roma, cidade aberta, de mil novecentos e quarenta e cinco, de Roberto Rossellini (mil novecentos e seis a mil novecentos e setenta e sete), é estrelado por Anna Magnani (mil novecentos e oito a mil novecentos e setenta e três), um dos principais nomes do cinema italiano do pós-guerra, e pelo ator, escritor e diretor Aldo Fabrizi (mil novecentos e cinco a mil novecentos e noventa).",
      "chars": 757
@@ -138,6 +152,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Roma, cidade aberta ganhou o Grande Prémio no Festival de Cannes e provocou impacto imediato. Reza a lenda que o diretor compôs o filme com \"refugos\" - pedaços de filmes dados a ele por soldados cinegrafistas americanos que libertaram Roma na Segunda Guerra Mundial. Seu estilo de filmagem, no entanto, estava restrito as condições sob as quais trabalhava. Rossellini dirigiu ainda Paisà (1946), um longo filme sobre o fim da guerra na Itália. A ele se seguiu o brutal Alemanha, ano zero (1948), que se passa na Berlim em ruinas e conta em detalhes o empenho de um jovem lutando para sobreviver logo depois da derrota dos nazistas. Há uma grande diferença entre os filmes da trilogia de guerra de Rossellini e seu trabalho com Ingrid Bergman em Stromboli (1950).",
      "text": "Roma, cidade aberta ganhou o Grande Prémio no Festival de Cannes e provocou impacto imediato. Reza a lenda que o diretor compôs o filme com \"refugos\" - pedaços de filmes dados a ele por soldados cinegrafistas americanos que libertaram Roma na Segunda Guerra Mundial. Seu estilo de filmagem, no entanto, estava restrito as condições sob as quais trabalhava. Rossellini dirigiu ainda Paisà, de mil novecentos e quarenta e seis, um longo filme sobre o fim da guerra na Itália. A ele se seguiu o brutal Alemanha, ano zero, de mil novecentos e quarenta e oito, que se passa na Berlim em ruinas e conta em detalhes o empenho de um jovem lutando para sobreviver logo depois da derrota dos nazistas. Há uma grande diferença entre os filmes da trilogia de guerra de Rossellini e seu trabalho com Ingrid [[pron: Bergman|Bérigman]] em Stromboli, de mil novecentos e cinquenta.",
      "chars": 846
@@ -154,6 +169,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "Este filme conta uma história estranha e assustadora sobre uma jovem imigrante lituana que se casa com um pescador italiano para fugir de um campo de refugiados no fim da guerra. Ela passa a viver com o marido numa remota ilha e se descobre confusa e oprimida pela sociedade machista que lá encontra.",
      "text": "Este filme conta uma história estranha e assustadora sobre uma jovem imigrante lituana que se casa com um pescador italiano para fugir de um campo de refugiados no fim da guerra. Ela passa a viver com o marido numa remota ilha e se descobre confusa e oprimida pela sociedade machista que lá encontra.",
      "chars": 300
@@ -161,6 +177,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "No início da década de 1950, o cinema neorrealista na Itália já não exibia o imediatismo que caracteriza o movimento nos anos que se seguiram à guerra. As condições haviam mudado, a sociedade italiana estava mais rica e os cineastas menos preocupados em retratar os que viviam à margem da sociedade. Ainda assim, a influência do neorrealismo foi grande; o Cinema Novo, no Brasil, o Cinema Livre, na Grã-Bretanha, a nouvelle vague francesa e o movimento cinéma verité nos documentários foram todos influenciados pelas obras de diretores como De Sica e Rossellini na década de 1940.",
      "text": "No início da década de mil novecentos e cinquenta, o cinema neorrealista na Itália já não exibia o imediatismo que caracteriza o movimento nos anos que se seguiram à guerra. As condições haviam mudado, a sociedade italiana estava mais rica e os cineastas menos preocupados em retratar os que viviam à margem da sociedade. Ainda assim, a influência do neorrealismo foi grande; o Cinema Novo, no Brasil, o Cinema Livre, na Grã-Bretanha, a nouvelle vague francesa e o movimento cinéma verité nos documentários foram todos influenciados pelas obras de diretores como De Sica e Rossellini na década de mil novecentos e quarenta.",
      "chars": 623
@@ -177,6 +194,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Vale a conferida: os filmes deste capítulo são Rome, Open City, Bicycle Thieves, Umberto D., Miracle in Milan, Ossessione, I Vitelloni e Stromboli.",
      "text": "Vale a conferida: os filmes deste capítulo são Rome, Open City, Bicycle Thieves, Umberto D., Miracle in Milan, Ossessione, I Vitelloni e Stromboli.",
      "chars": 147

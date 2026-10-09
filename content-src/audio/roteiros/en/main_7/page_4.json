@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 07: From 2010 to 2019. Chapter 4: Dark Comedy.",
      "text": "Part zero seven: From twenty ten to twenty nineteen. Chapter four: Dark Comedy.",
      "chars": 79
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Times have changed. Political polarization, political correctness and social problems shaped Hollywood comedy: more cynical, critical and urgent.",
      "text": "Times have changed. Political polarization, political correctness and social problems shaped Hollywood comedy: more cynical, critical and urgent.",
      "chars": 145
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "Comedies, like society, change over time. In an era when major powers have elected extremist candidates, alongside unbridled technological globalization, cynicism has taken over cinema. The cliché seen in the romantic comedies released in the '90s and 2000s has practically died, being reinvented in films such as Bridesmaids (2011) and Bad Moms (2016), where the helpless girl waiting for Prince Charming at the end no longer exists. Amid this social and political transition, Dark Comedy - or Black Comedy –, known here in Brazil as comédias de humor negro, gained even more popularity: films with a more acerbic, political and social humor.",
      "text": "Comedies, like society, change over time. In an era when major powers have elected extremist candidates, alongside unbridled technological globalization, cynicism has taken over cinema. The cliché seen in the romantic comedies released in the nineties and two thousands has practically died, being reinvented in films such as Bridesmaids, from twenty eleven, and Bad Moms, from twenty sixteen, where the helpless girl waiting for Prince Charming at the end no longer exists. Amid this social and political transition, Dark Comedy - or Black Comedy, known here in Brazil as comédias de humor negro, gained even more popularity: films with a more acerbic, political and social humor.",
      "chars": 681
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Dark Comedies are directly linked to dark humor, which has been popular for many decades, especially in the world of Stand-Up. A clear definition of dark humor would be: \"a comic style that makes fun of subjects considered taboo. While it is often used for mere shock value, it can also be used to provoke serious thought and discussion about subjects people might not otherwise want to talk about – murder, violence, sexuality, racism, homophobia and political corruption.\"",
      "text": "Dark Comedies are directly linked to dark humor, which has been popular for many decades, especially in the world of Stand-Up. A clear definition of dark humor would be: \"a comic style that makes fun of subjects considered taboo. While it is often used for mere shock value, it can also be used to provoke serious thought and discussion about subjects people might not otherwise want to talk about, murder, violence, sexuality, racism, homophobia and political corruption.\"",
      "chars": 473
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "citacao",
+     "source_index": 4,
      "original": "Something that is a hilarious comedy to one person may be a drama to another",
      "text": "Something that is a hilarious comedy to one person may be a drama to another",
      "chars": 76
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "said Yorgos Lanthimos.",
      "text": "said Yorgos Lanthimos.",
      "chars": 22
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "The genre throws humanity's worst impulses in the viewer's face. Some works of art use this humor as a way to shed light on an important topic, while others simply try to make the viewer laugh at an absurd situation. A recent example is the \"Heil Hitler\" salute in Jojo Rabbit (2019), directed by Taika Waititi (b. 1975), where he uses the repetition of the gesture to make explicit how idiotic it was to perform it.",
      "text": "The genre throws humanity's worst impulses in the viewer's face. Some works of art use this humor as a way to shed light on an important topic, while others simply try to make the viewer laugh at an absurd situation. A recent example is the \"Heil Hitler\" salute in Jojo Rabbit, from twenty nineteen, directed by Taika Waititi (born in nineteen seventy-five), where he uses the repetition of the gesture to make explicit how idiotic it was to perform it.",
      "chars": 453
@@ -80,6 +87,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Learn more: The funny, disturbing and realistic film Parasite.",
      "text": "Learn more: The funny, disturbing and realistic film Parasite.",
      "chars": 62
@@ -87,6 +95,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Since his feature film debut, Flandersui Gae (Barking Dogs Never Bite, 2000), Bong Joon Ho (b. 1969) has displayed traits of social criticism and satire combined with comedy with cruel touches, scenes of violence and a direct approach to how the social environment (in normal and extreme situations) influences individuals in the most varied ways. In Gisaengchung (Parasite, 2019), winner of the Palme d'Or at Cannes and the Oscar for Best Picture – an unprecedented feat in the history of the event -, the filmmaker reaffirms these core elements of his signature (here, he co-writes the screenplay with Jin Won Han (b. 1986), who was second unit director on Okja (2017)) and shows great maturity in directing a long, relatively slow film — slow because it is reflective in the way the drama is built — that is tremendously engaging.",
      "text": "Since his feature film debut, Flandersui Gae (Barking Dogs Never Bite, two thousand), Bong Joon Ho (born in nineteen sixty-nine) has displayed traits of social criticism and satire combined with comedy with cruel touches, scenes of violence and a direct approach to how the social environment (in normal and extreme situations) influences individuals in the most varied ways. In Gisaengchung (Parasite, twenty nineteen), winner of the Palme d'Or at Cannes and the Oscar for Best Picture, an unprecedented feat in the history of the event -, the filmmaker reaffirms these core elements of his signature (here, he co-writes the screenplay with Jin Won Han (born in nineteen eighty-six), who was second unit director on Okja, from twenty seventeen) and shows great maturity in directing a long, relatively slow film, slow because it is reflective in the way the drama is built, that is tremendously engaging.",
      "chars": 905
@@ -94,6 +103,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Two families are the focus of this plot. The Kims, a poor family who make a living folding pizza boxes and barely have money to eat; and the Parks, a very wealthy family who end up hiring, through a referral, young Ki-woo (Woo-sik Choi), who becomes the English tutor of the well-off family's eldest daughter, the insecure Da-hye (Ji-so Jung). A difference in social class is immediately exposed by the screenplay, which first highlights a little-known or even hidden side of South Korea — poverty, the outskirts of its enormous cities — and then uses this information to create a drama that, although political and critical, does not pontificate about this social chasm. The director's interest is in showing the environment branding individuals with fire and iron. And here that brand is made through work.",
      "text": "Two families are the focus of this plot. The Kims, a poor family who make a living folding pizza boxes and barely have money to eat; and the Parks, a very wealthy family who end up hiring, through a referral, young Ki-woo (Woo-sik Choi), who becomes the English tutor of the well-off family's eldest daughter, the insecure Da-hye (Ji-so Jung). A difference in social class is immediately exposed by the screenplay, which first highlights a little-known or even hidden side of South Korea, poverty, the outskirts of its enormous cities, and then uses this information to create a drama that, although political and critical, does not pontificate about this social chasm. The director's interest is in showing the environment branding individuals with fire and iron. And here that brand is made through work.",
      "chars": 806
@@ -101,6 +111,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "It so happens that the Kim family are swindlers, although they're not exactly bad people. The kind of crime they commit is treated by the screenplay as an easy way to make money and, possibly, to secure social mobility. The contrast between the physical spaces is seen in the size of the houses and in the colors that the production design and cinematography chose for each of them. When we see the Kims in their home environment, darker settings stand out, often at night, always with shots that suggest a cramped place, where these individuals are seen as insects, pests, parasites crowded into their habitat, who symbolically surrender to fumigation right at the beginning of the film.",
      "text": "It so happens that the Kim family are swindlers, although they're not exactly bad people. The kind of crime they commit is treated by the screenplay as an easy way to make money and, possibly, to secure social mobility. The contrast between the physical spaces is seen in the size of the houses and in the colors that the production design and cinematography chose for each of them. When we see the Kims in their home environment, darker settings stand out, often at night, always with shots that suggest a cramped place, where these individuals are seen as insects, pests, parasites crowded into their habitat, who symbolically surrender to fumigation right at the beginning of the film.",
      "chars": 688
@@ -117,6 +128,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "When we move to the Parks' mansion, we see a more inviting environment, between brown and beige inside and brightly lit, in different tones. In this place, individuals get lost amid the large spaces, which, being so impersonal, allow us to appreciate the feigned behaviors the screenplay will develop, almost as if it took the mansion as a museum of falsehoods, the place where the very rich \"are too kind and naive because they have so much\" and where the poor see the opportunity to indulge themselves, to infest their employers' space. For this there is a clever, comic and quick parasitization plan, along which the screenplay rises, never leaving its dark marks aside, but not yet embracing the thriller. The sharp and deliciously organic dialogue plus the exceptional performances of the entire cast make this journey of pseudo-climbing the social pyramid captivating from the start, and we can't take our eyes off it (it's a fact that the film's 2 hours and 10 minutes fly by).",
      "text": "When we move to the Parks' mansion, we see a more inviting environment, between brown and beige inside and brightly lit, in different tones. In this place, individuals get lost amid the large spaces, which, being so impersonal, allow us to appreciate the feigned behaviors the screenplay will develop, almost as if it took the mansion as a museum of falsehoods, the place where the very rich \"are too kind and naive because they have so much\" and where the poor see the opportunity to indulge themselves, to infest their employers' space. For this there is a clever, comic and quick parasitization plan, along which the screenplay rises, never leaving its dark marks aside, but not yet embracing the thriller. The sharp and deliciously organic dialogue plus the exceptional performances of the entire cast make this journey of pseudo-climbing the social pyramid captivating from the start, and we can't take our eyes off it (it's a fact that the film's two hours and ten minutes fly by).",
      "chars": 987
@@ -124,6 +136,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Then there's a blow. Dry. Raw. In a matter of seconds the director brings our mood crashing down from the heights, and this constant fall toward social and emotional hell will set the tone for the final stretch of the work. The text prepares a number of surprises for us, presented through different characters and motivations. Suddenly, clashes erupt between power struggles, a desire for revenge (from a sense of loss or of feeling discriminated against) and the marking of dominance between those who have money, some weapon, courage and those who have only their labor to offer. The macro socioeconomic relations are seen here in a small slice that mixes acerbic humor — which dissipates quickly, giving way to shock — and puts on the table other aspects of these people's lives: their different parental and marital relationships and their reactions to an extreme situation, with, in this case, the family as the target of defense and attack.",
      "text": "Then there's a blow. Dry. Raw. In a matter of seconds the director brings our mood crashing down from the heights, and this constant fall toward social and emotional hell will set the tone for the final stretch of the work. The text prepares a number of surprises for us, presented through different characters and motivations. Suddenly, clashes erupt between power struggles, a desire for revenge (from a sense of loss or of feeling discriminated against) and the marking of dominance between those who have money, some weapon, courage and those who have only their labor to offer. The macro socioeconomic relations are seen here in a small slice that mixes acerbic humor, which dissipates quickly, giving way to shock, and puts on the table other aspects of these people's lives: their different parental and marital relationships and their reactions to an extreme situation, with, in this case, the family as the target of defense and attack.",
      "chars": 945
@@ -140,6 +153,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "The only thing I don't like about Parasite is the ending. The shift from the director's merciless gaze to something a little more didactic and open-armed toward the film's true theme of conflict partially betrays the consequences the text holds in store for these characters. In a way, there is a double path of interpretation for what we see at the end. Even so, allowing this \"dream/wish\" or a real \"look toward the future\" in these scenes interrupts an almost cynical journey of belonging and not belonging to certain social strata, somewhat frustrating certain paths of the screenplay. The film, however, remains at a very high level. A huge surprise from Bong Joon Ho, who challenges himself a little and problematizes the status quo socially and emotionally in the broadest possible sense: after all, in the arrangements of our society, who is the parasite of whom?",
      "text": "The only thing I don't like about Parasite is the ending. The shift from the director's merciless gaze to something a little more didactic and open-armed toward the film's true theme of conflict partially betrays the consequences the text holds in store for these characters. In a way, there is a double path of interpretation for what we see at the end. Even so, allowing this \"dream/wish\" or a real \"look toward the future\" in these scenes interrupts an almost cynical journey of belonging and not belonging to certain social strata, somewhat frustrating certain paths of the screenplay. The film, however, remains at a very high level. A huge surprise from Bong Joon Ho, who challenges himself a little and problematizes the status quo socially and emotionally in the broadest possible sense: after all, in the arrangements of our society, who is the parasite of whom?",
      "chars": 871
@@ -156,6 +170,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Although dark humor in film has existed for many years – Monty Python's Life of Brian (1979) is one of the most famous examples -, the genre has gained more popularity in the last 10 years, culminating in Parasite (2019), a dark-humored thriller and winner of the Oscar for Best Picture. The film is a parable about class struggle and the traps of capitalism.",
      "text": "Although dark humor in film has existed for many years, Monty Python's Life of Brian, from nineteen seventy-nine, is one of the most famous examples -, the genre has gained more popularity in the last ten years, culminating in Parasite, from twenty nineteen, a dark-humored thriller and winner of the Oscar for Best Picture. The film is a parable about class struggle and the traps of capitalism.",
      "chars": 396
@@ -163,6 +178,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Screenwriters saw so many possibilities in dark humor that it can be seen across a wide range of genres and subgenres. With superheroes - kings of the box office in recent years - we had Deadpool (2016), a film that from beginning to end subverts the audience's expectations of what a superhero film should be. In the world of drama, The Lobster (2015), directed by Yorgos Lanthimos (b. 1976), stood out for its acerbic and cynical humor. In animation, we can mention The Simpsons, Rick and Morty, South Park and BoJack Horseman. In horror, Get Out (2017) became a landmark of the horror genre by raising serious discussions about racism without losing the qualities that make a film of the genre celebrated, while also using acerbic and critical humor.",
      "text": "Screenwriters saw so many possibilities in dark humor that it can be seen across a wide range of genres and subgenres. With superheroes - kings of the box office in recent years - we had Deadpool, from twenty sixteen, a film that from beginning to end subverts the audience's expectations of what a superhero film should be. In the world of drama, The Lobster, from twenty fifteen, directed by Yorgos Lanthimos (born in nineteen seventy-six), stood out for its acerbic and cynical humor. In animation, we can mention The Simpsons, Rick and Morty, South Park and BoJack Horseman. In horror, Get Out, from twenty seventeen, became a landmark of the horror genre by raising serious discussions about racism without losing the qualities that make a film of the genre celebrated, while also using acerbic and critical humor.",
      "chars": 819
@@ -170,6 +186,7 @@
     {
      "id": "05-03",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "But dark comedy doesn't live on social and political criticism alone: Game Night (2018), Horrible Bosses (2011), We're the Millers (2013), The Hangover (2009), Due Date (2010). Films that weren't concerned with delivering a critical message, but rather with using absurd situations – pushing the limit – to make the viewer laugh.",
      "text": "But dark comedy doesn't live on social and political criticism alone: Game Night, from twenty eighteen, Horrible Bosses, from twenty eleven, We're the Millers, from twenty thirteen, The Hangover, from two thousand nine, Due Date, from twenty ten. Films that weren't concerned with delivering a critical message, but rather with using absurd situations, pushing the limit, to make the viewer laugh.",
      "chars": 397
@@ -186,6 +203,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "Worth watching: the films from this chapter are Parasite, The Lobster, The Hangover, Bridesmaids, Jojo Rabbit, Deadpool, Get Out, Horrible Bosses, Game Night, The Wolf of Wall Street, Young Adult, What We Do in the Shadows, The Favourite, The Nice Guys, The Cabin in the Woods and The Ballad of Buster Scruggs.",
      "text": "Worth watching: the films from this chapter are Parasite, The Lobster, The Hangover, Bridesmaids, Jojo Rabbit, Deadpool, Get Out, Horrible Bosses, Game Night, The Wolf of Wall Street, Young Adult, What We Do in the Shadows, The Favourite, The Nice Guys, The Cabin in the Woods and The Ballad of Buster Scruggs.",
      "chars": 310

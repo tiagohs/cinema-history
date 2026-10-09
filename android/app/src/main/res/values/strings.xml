@@ -71,23 +71,30 @@
     <string name="contact_us">Get in Touch</string>
     <string name="email" translatable="false">tiago.hsilva@gmail.com</string>
     <string name="credits_terms">Credits and Terms</string>
-    <string name="tmdb_terms_description">Movies, actors, directors and image information are provided by the API TMDb but not endorsed or certified by TMDb.</string>
+    <string name="tmdb_notice" translatable="false">This product uses the TMDB API but is not endorsed or certified by TMDB.</string>
+    <string name="about_free_culture">Culture is free. Long live cinema.</string>
+    <string name="credits_tmdb">Movie and people information and images: TMDB</string>
+    <string name="credits_omdb">Ratings and additional movie data: OMDb API</string>
+    <string name="credits_awards">Awards data: Wikipedia (CC BY-SA 4.0) and Wikidata (CC0)</string>
+    <string name="credits_youtube">Videos: YouTube. Videos belong to their respective owners.</string>
+    <string name="credits_awards_link" translatable="false">https://www.wikidata.org/wiki/Wikidata:Licensing</string>
+    <string name="credits_youtube_link" translatable="false">https://www.youtube.com/t/terms</string>
     <string name="tmdb_terms_link" translatable="false">https://www.themoviedb.org/terms-of-use</string>
     <string name="tmdb_terms_title">TMDB Terms of Use</string>
     <string name="tmdb_api_terms_title">TMDB API Terms Of Use</string>
-    <string name="tmdb_api_terms_link" translatable="false">https://www.themoviedb.org/documentation/api/terms-of-use</string>
+    <string name="tmdb_api_terms_link" translatable="false">https://www.themoviedb.org/api-terms-of-use</string>
     <string name="omdb_api_terms_title">OMDB API Terms Of Use</string>
-    <string name="omdb_api_terms_link" translatable="false">http://www.omdbapi.com/legal.htm</string>
+    <string name="omdb_api_terms_link" translatable="false">https://www.omdbapi.com/legal.htm</string>
 
     <string name="version">Version %1s</string>
     <string name="responsable">App Development and Search by Tiago Silva</string>
     <string name="terms">Terms of Use</string>
     <string name="terms_link" translatable="false">https://website-cb5.pages.dev/cinema-history/termos/</string>
-    <string name="privacy">Privacy Politics</string>
+    <string name="privacy">Privacy Policy</string>
     <string name="privacy_link" translatable="false">https://website-cb5.pages.dev/cinema-history/privacidade/</string>
     <string name="creative_commons" translatable="false">Creative Commons — Atribuição 3.0 Brasil — CC BY 3.0 BR</string>
     <string name="creative_commons_link" translatable="false">https://creativecommons.org/licenses/by/3.0/br/</string>
-    <string name="app_description">%1s is a free application that seeks, in a fun and intuitive way, to bring the history of the film to everyone. Through images, videos, gifs, interviews, classifications and infographics, we present the trajectory of cinema from the first screening of the Lumière brothers to the present day. We rely on literature and documentaries and translate for this new media. Have a good time!</string>
+    <string name="app_description">%1s is a free app that tells the history of cinema in a fun, intuitive way, from the first Lumière screening to the present day. Explore 8 eras of film history, awards since 1929, an interactive timeline, the 1001 movies to see before you die, great directors and a glossary of film terms, in Portuguese, English and Spanish, with light and dark themes. In Brazil, chapters can also be heard with audio narration. Everything is based on books and documentaries, adapted to this new medium. Have fun!</string>
 
     <!-- Home -->
     <string name="start_journey">Start your Journey</string>

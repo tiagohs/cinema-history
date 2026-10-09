@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 04: De 1960 a 1969. Capítulo 6: La ciencia ficción en el cine.",
      "text": "Parte cero cuatro: De mil novecientos sesenta a mil novecientos sesenta y nueve. Capítulo seis: La ciencia ficción en el cine.",
      "chars": 126
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Tras una considerable edad de oro, las películas de ciencia ficción alcanzan la madurez en los años 1960.",
      "text": "Tras una considerable edad de oro, las películas de ciencia ficción alcanzan la madurez en los años mil novecientos sesenta.",
      "chars": 124
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "Las películas de ciencia ficción de la década de 1960 pertenecen a un género bastante amplio. Aunque los años 1950 son considerados la \"época de oro\" de este género cinematográfico, marcada por la paranoia un tanto noir de la Guerra Fría en películas como The Thing from Another World (La cosa del otro mundo, 1951), fue en la década de 1960 cuando la ciencia ficción alcanzó la madurez.",
      "text": "Las películas de ciencia ficción de la década de mil novecientos sesenta pertenecen a un género bastante amplio. Aunque los años mil novecientos cincuenta son considerados la \"época de oro\" de este género cinematográfico, marcada por la paranoia un tanto noir de la Guerra Fría en películas como The Thing from Another World (La cosa del otro mundo, mil novecientos cincuenta y uno), fue en la década de mil novecientos sesenta cuando la ciencia ficción alcanzó la madurez.",
      "chars": 473
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Las invasiones espaciales y los ataques de monstruos al estilo de la década de 1950 se siguieron filmando, pero la ciencia ficción se manifestó también en otras formas, tan variadas como la especulación política —The Manchurian Candidate (El embajador del miedo, 1962)—, el terror de Seconds (El otro Sr. Hamilton, 1966) y la icónica space opera —Barbarella (1968).",
      "text": "Las invasiones espaciales y los ataques de monstruos al estilo de la década de mil novecientos cincuenta se siguieron filmando, pero la ciencia ficción se manifestó también en otras formas, tan variadas como la especulación política, The Manchurian Candidate (El embajador del miedo, mil novecientos sesenta y dos), el terror de Seconds (El otro señor Hamilton, mil novecientos sesenta y seis) y la icónica space opera, Barbarella, de mil novecientos sesenta y ocho.",
      "chars": 466
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Películas que en la década de 1950 se habrían rodado en blanco y negro pasaron a ser en color. En King Kong vs. Godzilla (1963), titanes de eras remotas regresan con colores atractivos y una trayectoria más benévola: el temible Godzilla aparece como un defensor amigo de los niños. The Time Machine (La máquina del tiempo, 1960) es una aventura \"familiar\" en la que el director George Pal (1908-1980) suaviza el cruel pesimismo de la novela de H. G. Wells, publicada en 1895.",
      "text": "Películas que en la década de mil novecientos cincuenta se habrían rodado en blanco y negro pasaron a ser en color. En King Kong versus Godzilla, de mil novecientos sesenta y tres, titanes de eras remotas regresan con colores atractivos y una trayectoria más benévola: el temible Godzilla aparece como un defensor amigo de los niños. The Time Machine (La máquina del tiempo, mil novecientos sesenta) es una aventura \"familiar\" en la que el director George Pal (mil novecientos ocho a mil novecientos ochenta) suaviza el cruel pesimismo de la novela de H. G. Wells, publicada en mil ochocientos noventa y cinco.",
      "chars": 610
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "La ciencia ficción de la década de 1950 había tratado sobre el miedo y lo desconocido; la de la década de 1960 aprovechó la oportunidad que ofrecía la fascinación generalizada por la era espacial, fruto de la competencia entre los Estados Unidos y la Unión Soviética. La exploración de la Luna despertó el interés por las aventuras espaciales e impulsó los avances en efectos especiales (más concretamente las maquetas y la pintura mate), que hicieron posible recrear de manera convincente el futuro tecnologizado de 2001: A Space Odyssey (2001: Odisea del espacio, 1968).",
      "text": "La ciencia ficción de la década de mil novecientos cincuenta había tratado sobre el miedo y lo desconocido; la de la década de mil novecientos sesenta aprovechó la oportunidad que ofrecía la fascinación generalizada por la era espacial, fruto de la competencia entre los Estados Unidos y la Unión Soviética. La exploración de la Luna despertó el interés por las aventuras espaciales e impulsó los avances en efectos especiales (más concretamente las maquetas y la pintura mate), que hicieron posible recrear de manera convincente el futuro tecnologizado de dos mil uno: A Space Odyssey (dos mil uno: Odisea del espacio, mil novecientos sesenta y ocho).",
      "chars": 652
@@ -73,6 +79,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Para saber más: El planeta de los simios.",
      "text": "Para saber más: El planeta de los simios.",
      "chars": 41
@@ -80,6 +87,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Un clásico de las aventuras de ciencia ficción que sigue siendo tan poderoso hoy como en la época de su estreno, El planeta de los simios fue un proyecto con potencial para salir terriblemente mal. La nueva versión de Tim Burton en 2001 es un ejemplo de todo lo malo que podía ocurrir. Aunque el presupuesto de 100 millones de dólares todavía estuviera a dos décadas de distancia, seguía siendo una premisa arriesgada hacer una película a partir del libro de Pierre Boulle, La Planète des singes. Tener a tantos actores vestidos con trajes de simio bien podría ser una invitación a las burlas del público más que a los sustos.",
      "text": "Un clásico de las aventuras de ciencia ficción que sigue siendo tan poderoso hoy como en la época de su estreno, El planeta de los simios fue un proyecto con potencial para salir terriblemente mal. La nueva versión de Tim Burton en dos mil uno es un ejemplo de todo lo malo que podía ocurrir. Aunque el presupuesto de cien millones de dólares todavía estuviera a dos décadas de distancia, seguía siendo una premisa arriesgada hacer una película a partir del libro de Pierre Boulle, La Planète des singes. Tener a tantos actores vestidos con trajes de simio bien podría ser una invitación a las burlas del público más que a los sustos.",
      "chars": 634
@@ -87,6 +95,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Antes de que la película entrara en producción, el maquillador John Chambers calmó los temores de los jefes del estudio al filmar una prueba con Charlton Heston (como el humano Taylor) y Edward G. Robinson (como el simio Dr. Zaius). Al demostrar que el maquillaje de simio era convincente, Chambers recibió 50 mil dólares para desarrollar los efectos simiescos de la película. Robinson, temiendo que las horas en la silla del maquillador amenazaran su ya debilitada salud, dejó el elenco y fue reemplazado por Maurice Evans.",
      "text": "Antes de que la película entrara en producción, el maquillador John Chambers calmó los temores de los jefes del estudio al filmar una prueba con Charlton Heston (como el humano Taylor) y Edward G. Robinson (como el simio doctor Zaius). Al demostrar que el maquillaje de simio era convincente, Chambers recibió cincuenta mil dólares para desarrollar los efectos simiescos de la película. Robinson, temiendo que las horas en la silla del maquillador amenazaran su ya debilitada salud, dejó el elenco y fue reemplazado por Maurice Evans.",
      "chars": 534
@@ -94,6 +103,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Fue dinero bien gastado. Los simios que Taylor y sus dos colegas astronautas encuentran cuando su nave cae en un planeta desolado son realmente aterradores, sobre todo cuando nosotros y Taylor nos damos cuenta de que ellos mandan y de que los humanos son animales mudos en ese lugar extraño. La elección del elenco es perfecta. Heston, que pasa la mayor parte de la película vistiendo poco más que un taparrabos de cuero, es varonil y duro. Roddy McDowall y Kim Hunter, como los simios \"amistosos\" Cornelius y Zira, logran escapar del encierro de su impresionante maquillaje y ofrecen actuaciones conmovedoras. Salpicado de escenas antológicas como la primera visión que Taylor tiene del nuevo planeta, su captura y, naturalmente, el inolvidable final, el guion de Rod Serling y Michael Wilson es inteligente y está lleno de diálogos sensacionales (como el grito de Taylor exigiendo que el maldito simio apestoso le quite las patas de encima). Este clásico tuvo tres secuelas, una serie de TV, la ya mencionada y frustrante nueva versión e incluso una parodia hilarante en un episodio de Los Simpson.",
      "text": "Fue dinero bien gastado. Los simios que Taylor y sus dos colegas astronautas encuentran cuando su nave cae en un planeta desolado son realmente aterradores, sobre todo cuando nosotros y Taylor nos damos cuenta de que ellos mandan y de que los humanos son animales mudos en ese lugar extraño. La elección del elenco es perfecta. Heston, que pasa la mayor parte de la película vistiendo poco más que un taparrabos de cuero, es varonil y duro. Roddy McDowall y Kim Hunter, como los simios \"amistosos\" Cornelius y Zira, logran escapar del encierro de su impresionante maquillaje y ofrecen actuaciones conmovedoras. Salpicado de escenas antológicas como la primera visión que Taylor tiene del nuevo planeta, su captura y, naturalmente, el inolvidable final, el guion de Rod Serling y Michael Wilson es inteligente y está lleno de diálogos sensacionales (como el grito de Taylor exigiendo que el maldito simio apestoso le quite las patas de encima). Este clásico tuvo tres secuelas, una serie de tele, la ya mencionada y frustrante nueva versión e incluso una parodia hilarante en un episodio de Los Simpson.",
      "chars": 1102
@@ -110,6 +120,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "En Planet of the Apes (El planeta de los simios, 1968), estrenada el mismo año, la tripulación de una nave espacial cae en un planeta en una época en la que los simios han evolucionado hasta convertirse en la especie dominante y esclavizan a los humanos. La célebre imagen de la Estatua de la Libertad destrozada, al final de la película, simboliza perfectamente el miedo a la guerra nuclear y a sus efectos radiactivos, alimentado por la Crisis de los misiles en Cuba.",
      "text": "En Planet of the Apes (El planeta de los simios, mil novecientos sesenta y ocho), estrenada el mismo año, la tripulación de una nave espacial cae en un planeta en una época en la que los simios han evolucionado hasta convertirse en la especie dominante y esclavizan a los humanos. La célebre imagen de la Estatua de la Libertad destrozada, al final de la película, simboliza perfectamente el miedo a la guerra nuclear y a sus efectos radiactivos, alimentado por la Crisis de los misiles en Cuba.",
      "chars": 495
@@ -117,6 +128,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Cine barato y populista en Gran Bretaña, Estados Unidos y Japón, la ciencia ficción empezó a repercutir en otras culturas. Ensayos de futurismo serio, aunque eventualmente satírico, fueron realizados por directores de cine de arte como François Truffaut (1932-1984) en Fahrenheit 451 (1966) y Jean-Luc Godard (n-1930) en Alphaville (1965). En esta última, el estadounidense Eddie Constantine (1917-1993) interpreta al agente secreto Lemmy Caution, que no parecería fuera de lugar en un thriller noir de la década de 1940. Aunque ambientada en un futuro distópico, Alphaville se filmó en locaciones reales de París.",
      "text": "Cine barato y populista en Gran Bretaña, Estados Unidos y Japón, la ciencia ficción empezó a repercutir en otras culturas. Ensayos de futurismo serio, aunque eventualmente satírico, fueron realizados por directores de cine de arte como François [[pron: Truffaut|Trufó]] (mil novecientos treinta y dos a mil novecientos ochenta y cuatro) en Fahrenheit cuatrocientos cincuenta y un, de mil novecientos sesenta y seis, y Jean-Luc [[pron: Godard|Godar]] (nació en mil novecientos treinta) en Alphaville, de mil novecientos sesenta y cinco. En esta última, el estadounidense Eddie Constantine (mil novecientos diecisiete a mil novecientos noventa y tres) interpreta al agente secreto Lemmy Caution, que no parecería fuera de lugar en un thriller noir de la década de mil novecientos cuarenta. Aunque ambientada en un futuro distópico, Alphaville se filmó en locaciones reales de París.",
      "chars": 848
@@ -124,6 +136,7 @@
     {
      "id": "03-03",
      "speaker": "citacao",
+     "source_index": 12,
      "original": "2001 evita la verbalización intelectual y llega al subconsciente del espectador de una manera esencialmente poética y filosófica.",
      "text": "dos mil uno evita la verbalización intelectual y llega al subconsciente del espectador de una manera esencialmente poética y filosófica.",
      "chars": 136
@@ -131,6 +144,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "dijo Stanley Kubrick.",
      "text": "dijo Stanley Kubrick.",
      "chars": 21
@@ -138,6 +152,7 @@
     {
      "id": "03-05",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Curiosamente, con pocas excepciones que incluyen a Ray Bradbury (1920-2012) en Fahrenheit 451 y a John Wyndham (1903-1969) en The Day of the Triffids (El día del trífido, 1963), en la década de 1960 existía cierta reticencia a adaptar obras de autores vivos: Philip K. Dick solo aparecería con frecuencia en el cine a partir de Blade Runner (1982).",
      "text": "Curiosamente, con pocas excepciones que incluyen a Ray Bradbury (mil novecientos veinte a dos mil doce) en Fahrenheit cuatrocientos cincuenta y un y a John Wyndham (mil novecientos tres a mil novecientos sesenta y nueve) en The Day of the Triffids (El día del trífido, mil novecientos sesenta y tres), en la década de mil novecientos sesenta existía cierta reticencia a adaptar obras de autores vivos: Philip K. Dick solo aparecería con frecuencia en el cine a partir de Blade Runner, de mil novecientos ochenta y dos.",
      "chars": 518
@@ -154,6 +169,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "Aunque muchas películas de ciencia ficción tuvieron gran éxito, como las de la serie El planeta de los simios, la obra maestra de la década fue, sin duda, 2001: Odisea del espacio, dirigida por Stanley Kubrick (1928-1999). Beneficiada por efectos especiales aún inigualados, se convirtió en la fiebre espacial de la época. Aun con dudas sobre su significado, el público quedó hipnotizado por su visión trascendental. Aclamada y criticada, 2001 se atrevió a ser tanto cine de arte como una aventura a lo Buck Rogers, y su influencia sobre las películas de ciencia ficción posteriores es inestimable.",
      "text": "Aunque muchas películas de ciencia ficción tuvieron gran éxito, como las de la serie El planeta de los simios, la obra maestra de la década fue, sin duda, dos mil uno: Odisea del espacio, dirigida por Stanley Kubrick (mil novecientos veintiocho a mil novecientos noventa y nueve). Beneficiada por efectos especiales aún inigualados, se convirtió en la fiebre espacial de la época. Aun con dudas sobre su significado, el público quedó hipnotizado por su visión trascendental. Aclamada y criticada, dos mil uno se atrevió a ser tanto cine de arte como una aventura a lo Buck Rogers, y su influencia sobre las películas de ciencia ficción posteriores es inestimable.",
      "chars": 663
@@ -170,6 +186,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Para saber más: La máxima audacia de Kubrick en el cine.",
      "text": "Para saber más: La máxima audacia de Kubrick en el cine.",
      "chars": 56
@@ -177,6 +194,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Un artefacto de evidente origen extraterrestre desencadena y vigila etapas cruciales en el viaje del Hombre: de simio a explorador de las estrellas. En los albores de la era del Hombre aparece un misterioso monolito, catalizador de un salto evolutivo que convierte a los primates de recolectores y carroñeros en cazadores armados y asesinos. Milenios más tarde, un monolito descubierto por geólogos en servicio en la Luna emite alarmantes señales de onda corta en dirección a Júpiter. Una expedición enviada a investigar el caso (comandada de forma impasible por Keir Dullea y Gary Lockwood mientras los especialistas duermen en animación suspendida) es saboteada por la computadora de la nave espacial Discovery, HAL (con la voz de Douglas Rain), que está psicológicamente perturbada. De enorme repercusión, pero aún única, fríamente distante, obsesiva, pretenciosa, confusa y eternamente fascinante: 2001 es todo eso y más.",
      "text": "Un artefacto de evidente origen extraterrestre desencadena y vigila etapas cruciales en el viaje del Hombre: de simio a explorador de las estrellas. En los albores de la era del Hombre aparece un misterioso monolito, catalizador de un salto evolutivo que convierte a los primates de recolectores y carroñeros en cazadores armados y asesinos. Milenios más tarde, un monolito descubierto por geólogos en servicio en la Luna emite alarmantes señales de onda corta en dirección a Júpiter. Una expedición enviada a investigar el caso (comandada de forma impasible por Keir Dullea y Gary Lockwood mientras los especialistas duermen en animación suspendida) es saboteada por la computadora de la nave espacial Discovery, HAL (con la voz de Douglas Rain), que está psicológicamente perturbada. De enorme repercusión, pero aún única, fríamente distante, obsesiva, pretenciosa, confusa y eternamente fascinante: dos mil uno es todo eso y más.",
      "chars": 932
@@ -184,6 +202,7 @@
     {
      "id": "05-03",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Sin duda se apartó de la intención declarada de Stanley Kubrick de hacer una \"buena y típica película de ciencia ficción\" a partir del intrigante cuento de Arthur C. Clarke (coautor del guion) \"El centinela\". La película desafía las convenciones del género y se distingue de cualquier otra obra de ciencia ficción realizada hasta entonces. Desde el punto de vista visual, 2001 es innegablemente asombrosa. Sus revolucionarios efectos especiales, que merecieron el Oscar, ofrecen una admirable mezcla de imaginación y ciencia. Un meticuloso trabajo de mímica y el mejor maquillaje disponible en la época crean, en el primero de los cuatro actos de la película, la representación de simios por seres humanos más perfecta vista hasta entonces (todavía muy eficaz, aunque superada por la creación de John Chambers en El planeta de los simios, de 1968). La película está repleta de imágenes inolvidables: el inesperado y aturdidor corte de un hueso empuñado por un hombre-mono y lanzado al aire hasta transformarse en un satélite; la alineación del Sol y la Luna justo en el borde del monolito; el vals orbital en la estación espacial y el aterrizaje de una nave; el hábitat circular de la tripulación de la Discovery.",
      "text": "Sin duda se apartó de la intención declarada de Stanley Kubrick de hacer una \"buena y típica película de ciencia ficción\" a partir del intrigante cuento de Arthur C. Clarke (coautor del guion) \"El centinela\". La película desafía las convenciones del género y se distingue de cualquier otra obra de ciencia ficción realizada hasta entonces. Desde el punto de vista visual, dos mil uno es innegablemente asombrosa. Sus revolucionarios efectos especiales, que merecieron el Oscar, ofrecen una admirable mezcla de imaginación y ciencia. Un meticuloso trabajo de mímica y el mejor maquillaje disponible en la época crean, en el primero de los cuatro actos de la película, la representación de simios por seres humanos más perfecta vista hasta entonces (todavía muy eficaz, aunque superada por la creación de John Chambers en El planeta de los simios, de mil novecientos sesenta y ocho). La película está repleta de imágenes inolvidables: el inesperado y aturdidor corte de un hueso empuñado por un hombre-mono y lanzado al aire hasta transformarse en un satélite; la alineación del Sol y la Luna justo en el borde del monolito; el vals orbital en la estación espacial y el aterrizaje de una nave; el hábitat circular de la tripulación de la Discovery.",
      "chars": 1246
@@ -200,6 +219,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "El sonido es igualmente rico, con música coral experimental, temas clásicos (\"Así habló Zaratustra\", de Richard Strauss, y el vals \"El Danubio azul\", de Johann Strauss) que quedaron asociados para siempre a la película, y fragmentos de diálogo minimalista (como la orden a HAL de abrir las compuertas de las cápsulas) que suelen ser citados en una amplia gama de homenajes y referencias culturales.",
      "text": "El sonido es igualmente rico, con música coral experimental, temas clásicos (\"Así habló Zaratustra\", de Richard Strauss, y el vals \"El Danubio azul\", de Johann Strauss) que quedaron asociados para siempre a la película, y fragmentos de diálogo minimalista (como la orden a HAL de abrir las compuertas de las cápsulas) que suelen ser citados en una amplia gama de homenajes y referencias culturales.",
      "chars": 398
@@ -207,6 +227,7 @@
     {
      "id": "06-02",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "2001 puede considerarse una aventura misteriosa, un sermón, una visión, pero, aun considerada solo como un espectáculo impactante e insuperable, exige ser vista en pantalla grande para ser apreciada en toda su dimensión. Sus debilidades —una abstracción exagerada y una narrativa deficiente de una especulación mal articulada y mal resuelta sobre los orígenes y el destino de la vida humana— quedan más que compensadas por la arrebatadora relación entre el hombre y la máquina, su despojamiento visual y su serenidad y, sobre todo, la rapsódica exaltación del cielo, de la Tierra y del infinito.",
      "text": "dos mil uno puede considerarse una aventura misteriosa, un sermón, una visión, pero, aun considerada solo como un espectáculo impactante e insuperable, exige ser vista en pantalla grande para ser apreciada en toda su dimensión. Sus debilidades, una abstracción exagerada y una narrativa deficiente de una especulación mal articulada y mal resuelta sobre los orígenes y el destino de la vida humana, quedan más que compensadas por la arrebatadora relación entre el hombre y la máquina, su despojamiento visual y su serenidad y, sobre todo, la rapsódica exaltación del cielo, de la Tierra y del infinito.",
      "chars": 602
@@ -223,6 +244,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "Vale la pena ver: las películas de este capítulo son 2001: A Space Odyssey, Planet of the Apes, Alphaville, The Time Machine, Amphibian Man, The Day of the Triffids, The War Game y Quatermass and the Pit.",
      "text": "Vale la pena ver: las películas de este capítulo son dos mil uno: A Space Odyssey, Planet of the Apes, Alphaville, The Time Machine, Amphibian Man, The Day of the Triffids, The War Game y Quatermass and the Pit.",
      "chars": 211

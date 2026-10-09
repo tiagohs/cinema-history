@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 06: De 1990 a 2009. Capítulo 14: Blockbusters para a Família.",
      "text": "Parte zero seis: De mil novecentos e noventa a dois mil e nove. Capítulo catorze: Blockbusters para a Família.",
      "chars": 110
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Os Blockbusters continuam dominando as bilheterias, cada vez mais utilizando o CGI, e focando em um conteúdo para toda a família.",
      "text": "Os Blockbusters continuam dominando as bilheterias, cada vez mais utilizando o cê gê i, e focando em um conteúdo para toda a família.",
      "chars": 133
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "Desde o lançamento de Tubardo (1975), os campeões de bilheteria de verão (ou blockbusters) tem sido direcionado a plateias mais jovens. Os épicos e dramas para adultos são do passado: as últimas décadas vem sendo dominados pelo entretenimento para toda a família. Para a indústria, essa mudança representou um aumento nos lucros que vai além das arrecadações de bilheteria, incluindo desde brinquedos e outros produtos até vendas de vídeos, DVDs e Blurays, que muitas vezes, geram mais receita do que o próprio lançamento nos cinemas.",
      "text": "Desde o lançamento de Tubardo, de mil novecentos e setenta e cinco, os campeões de bilheteria de verão (ou blockbusters) tem sido direcionado a plateias mais jovens. Os épicos e dramas para adultos são do passado: as últimas décadas vem sendo dominados pelo entretenimento para toda a família. Para a indústria, essa mudança representou um aumento nos lucros que vai além das arrecadações de bilheteria, incluindo desde brinquedos e outros produtos até vendas de vídeos, DVDs e Blurays, que muitas vezes, geram mais receita do que o próprio lançamento nos cinemas.",
      "chars": 564
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "A Disney compreendeu o valor do entretenimento familiar desde o início. Branca de Neve e os sete anões (1937) foi o filme mais bem-sucedido do ano, com sua animação desenhada à mão estabelecendo uma tendência que duraria quase 50 anos. O último desenho convencional da Disney a dominar as bilheterias foi O Rei Leão (1994), um ano antes de um novato surgido do nada entrar na briga.",
      "text": "A Disney compreendeu o valor do entretenimento familiar desde o início. Branca de Neve e os sete anões, de mil novecentos e trinta e sete, foi o filme mais bem-sucedido do ano, com sua animação desenhada à mão estabelecendo uma tendência que duraria quase cinquenta anos. O último desenho convencional da Disney a dominar as bilheterias foi O Rei Leão, de mil novecentos e noventa e quatro, um ano antes de um novato surgido do nada entrar na briga.",
      "chars": 449
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "citacao",
+     "source_index": 4,
      "original": "Uma das poucas ocasiões em que é normal desfrutar de algo por ser inteligente e burro ao mesmo tempo, principalmente porque é inegavelmente divertido.",
      "text": "Uma das poucas ocasiões em que é normal desfrutar de algo por ser inteligente e burro ao mesmo tempo, principalmente porque é inegavelmente divertido.",
      "chars": 150
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "disse Todd Gilchrist sobre Transformers.",
      "text": "disse Todd Gilchrist sobre Transformers.",
      "chars": 40
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Nenhum estúdio controlou o entretenimento familiar de forma tão absoluta nas últimas décadas quanto a Pixar. Embora tenha passado a ser subsidiada pela Walt Disney Company em 2006, sua marca é tão forte que ainda é considerada uma entidade criativa independente. Nos seus filmes produzidos desde 1995, sua mistura característica de animação estonteante com roteiros inteligentes e emocionalmente cativantes que agradam a todas as idades se mostrou quase uma unanimidade de crítica e público.",
      "text": "Nenhum estúdio controlou o entretenimento familiar de forma tão absoluta nas últimas décadas quanto a Pixar. Embora tenha passado a ser subsidiada pela Walt Disney Company em dois mil e seis, sua marca é tão forte que ainda é considerada uma entidade criativa independente. Nos seus filmes produzidos desde mil novecentos e noventa e cinco, sua mistura característica de animação estonteante com roteiros inteligentes e emocionalmente cativantes que agradam a todas as idades se mostrou quase uma unanimidade de crítica e público.",
      "chars": 530
@@ -71,6 +78,7 @@
     {
      "id": "01-06",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Nas séries A era do gelo (2002), dos Blue Sky Studios, e Shrek (2001), da DreamWorks, a originalidade de seus primeiros filmes - especialmente em Shrek, com sua desconstrução dos contos de fada. A animação desenhada à mão de A Princesa e o Sapo (2009) marcou o retorno deslumbrante a um estilo clássico que a Disney havia praticamente abandonado. Diretores como Sylvain Chomet (n-1963) e Hayao Miyazak (n-1941) ficaram encarregados de preencher essa lacuna nos Estúdios Ghibli.",
      "text": "Nas séries A era do gelo, de dois mil e dois, dos Blue Sky Studios, e Shrek, de dois mil e um, da DreamWorks, a originalidade de seus primeiros filmes - especialmente em Shrek, com sua desconstrução dos contos de fada. A animação desenhada à mão de A Princesa e o Sapo, de dois mil e nove, marcou o retorno deslumbrante a um estilo clássico que a Disney havia praticamente abandonado. Diretores como Sylvain Chomet (nasceu em mil novecentos e sessenta e três) e Hayao Miyazak (nasceu em mil novecentos e quarenta e um) ficaram encarregados de preencher essa lacuna nos Estúdios Ghibli.",
      "chars": 585
@@ -87,6 +95,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Saiba mais: A Obra-Prima de Peter Jackson.",
      "text": "Saiba mais: A Obra-Prima de Peter Jackson.",
      "chars": 42
@@ -94,6 +103,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Como a trilogia escrita por J. R. R. Tolkien, a adaptação de Peter Jackson de O senhor dos anéis deve ser considerada uma só obra, apesar de muito longa. Vistos em sequência, os três filmes formam um conjunto quase perfeito, do prólogo espetacular até épica lista de créditos, um verdadeiro recorde. Tudo que diz respeito a este filme é sem precedentes na história do cinema. As três partes foram realizadas em um período corrido de 16 meses. E a incrível popularidade da série fez mais do que jus a todas as expectativas. Calcula-se que ela já tenha rendido quase três bilhões de dólares em bilheteria, mais do que qualquer outra trilogia, batendo até mesmo as super produções de Guerra nas Estrelas. Segundo cálculos de alguns especialistas, as vendas em DVD chegam pelo menos ao mesmo valor, isso sem falar na na exploração de uma linha de produtos licenciados, o que significa que o PIB da Terra Média rivaliza com o de muitos países de verdade. Felizmente, Jackson conseguiu atordoar não apenas os contadores, mas também a crítica. Cada filme superava o anterior nas listas de melhores obras e as três somadas amealharam nada menos do que 30 indicações ao Oscar, levando para casa 17 estatuetas.",
      "text": "Como a trilogia escrita por J. R. R. Tolkien, a adaptação de Peter Jackson de O senhor dos anéis deve ser considerada uma só obra, apesar de muito longa. Vistos em sequência, os três filmes formam um conjunto quase perfeito, do prólogo espetacular até épica lista de créditos, um verdadeiro recorde. Tudo que diz respeito a este filme é sem precedentes na história do cinema. As três partes foram realizadas em um período corrido de dezesseis meses. E a incrível popularidade da série fez mais do que jus a todas as expectativas. Calcula-se que ela já tenha rendido quase três bilhões de dólares em bilheteria, mais do que qualquer outra trilogia, batendo até mesmo as super produções de Guerra nas Estrelas. Segundo cálculos de alguns especialistas, as vendas em dê vê dê chegam pelo menos ao mesmo valor, isso sem falar na na exploração de uma linha de produtos licenciados, o que significa que o PIB da Terra Média rivaliza com o de muitos países de verdade. Felizmente, Jackson conseguiu atordoar não apenas os contadores, mas também a crítica. Cada filme superava o anterior nas listas de melhores obras e as três somadas amealharam nada menos do que trinta indicações ao Oscar, levando para casa dezessete estatuetas.",
      "chars": 1223
@@ -101,6 +111,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Se você viu os três filmes, não ficará surpreso em saber que eles receberam o Oscar de efeitos especiais. Estão todos repletos de monstros e batalhas que ficam mais impressionantes a cada episódio. Apesar disso, foi a trágica gura de Gollum que conseguiu capturar a imaginação das plateias. Inspirado nos movimentos armazenados no computador e na voz do ator Andy Serkis (n-1964) - que viraria referência em captura de movimento, e, alguns anos depois, seria o Caesar na nova trilogia Planeta dos Macacos (2011-2017) - o Gollum das telas era inteiramente digital e ainda assim foi convincente como um personagem de carne e osso.",
      "text": "Se você viu os três filmes, não ficará surpreso em saber que eles receberam o Oscar de efeitos especiais. Estão todos repletos de monstros e batalhas que ficam mais impressionantes a cada episódio. Apesar disso, foi a trágica gura de Gollum que conseguiu capturar a imaginação das plateias. Inspirado nos movimentos armazenados no computador e na voz do ator Andy Serkis (nasceu em mil novecentos e sessenta e quatro) - que viraria referência em captura de movimento, e, alguns anos depois, seria o Caesar na nova trilogia Planeta dos Macacos (dois mil e onze a dois mil e dezessete) - o Gollum das telas era inteiramente digital e ainda assim foi convincente como um personagem de carne e osso.",
      "chars": 695
@@ -117,6 +128,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Talvez seja isso que represente a maior conquista de Jackson: lembrar que efeitos especiais de ponta e domínio técnico não são suficientes para se fazer um grande filme. Embora seja protagonizado por hobbits, elfos e feiticeiros, todos os personagens são extremamente humanos. Gollum tem arrependimentos, tenta ser bom e provoca Sam, o'\"hobbit gorducho\". O feiticeiro Gandalf, interpretado com perfeição por Ian McKellen (n-1939), é por vezes paternalista e até malicioso, mas nunca perde sua aura de poder e autoridade. E os hobbits Frodo (com o olhar arregalado de Elijah Wood) e Sam (Sean Astin) começam como corajosos, mas ingênuos aventureiros até adquirirem o status de verdadeiros heróis. Quase tão memorável quanto os personagens é o cenário. A trilogia foi produzida na terra natal de Jackson, a Nova Zelândia, e pouquíssima magica digital foi necessária para criar paisagens deslumbrantes. Uma das cenas mais memoráveis do espetacular O Senhor dos Anéis: O Retorno do Rei (2003) é o acender dos faróis com a música cada vez mais volumosa. A câmera simplesmente viaja de um topo de montanha a outro conforme o sinal de alerta é aceso e avança contra o céu. Simplesmente maravilhoso.",
      "text": "Talvez seja isso que represente a maior conquista de Jackson: lembrar que efeitos especiais de ponta e domínio técnico não são suficientes para se fazer um grande filme. Embora seja protagonizado por hobbits, elfos e feiticeiros, todos os personagens são extremamente humanos. Gollum tem arrependimentos, tenta ser bom e provoca Sam, o'\"hobbit gorducho\". O feiticeiro Gandalf, interpretado com perfeição por Ian McKellen (nasceu em mil novecentos e trinta e nove), é por vezes paternalista e até malicioso, mas nunca perde sua aura de poder e autoridade. E os hobbits Frodo (com o olhar arregalado de Elijah Wood) e Sam (Sean Astin) começam como corajosos, mas ingênuos aventureiros até adquirirem o status de verdadeiros heróis. Quase tão memorável quanto os personagens é o cenário. A trilogia foi produzida na terra natal de Jackson, a Nova Zelândia, e pouquíssima magica digital foi necessária para criar paisagens deslumbrantes. Uma das cenas mais memoráveis do espetacular O Senhor dos Anéis: O Retorno do Rei, de dois mil e três, é o acender dos faróis com a música cada vez mais volumosa. A câmera simplesmente viaja de um topo de montanha a outro conforme o sinal de alerta é aceso e avança contra o céu. Simplesmente maravilhoso.",
      "chars": 1239
@@ -133,6 +145,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "É notável também que Jackson e seus corroteristas Fran Walsh (n-1959) e Philippa Boyens (n-1962) tenham conseguido extrair uma narrativa arrebatadora e veloz de uma fonte tão densa e aparentemente impenetrável. Ainda mais notável é o fato de que mesmo os fãs mais xiitas do livro adoraram o filme. No prólogo, curto e dramático, descobrimos que Sauron, a encarnação do mal, investiu todo o seu poder para forjar um anel, perdido em uma batalha épica contra uma aliança de homens e elfos. O anel finalmente vai parar nas mãos do pequeno hobbit Frodo Bolseiro. E aqui que começa a história. Frodo concorda em destruí-lo e assim derrotar Sauron de uma vez por todas. Entretanto, o anel só poderá ser destruído se for lançado no coração vulcânico do monte Doom, que fica, é claro, bem no interior do território inimigo. Ele parte nessa viagem perigosa na companhia de um grupo de zelosos hobbits, elfos, andes e homens, incluindo aí o feiticeiro Gandalf e o misterioso Aragorn (Viggo Mortensen). Traições, derramamento de sangue e batalhas acabam por dividir o grupo, e Frodo, com Sam (e depois com Gollum), parte para o vulcão sozinho, enquanto os demais se preparam para resistir a Sauron em um combate que vai abalar a Terra Média.",
      "text": "É notável também que Jackson e seus corroteristas Fran Walsh (nasceu em mil novecentos e cinquenta e nove) e Philippa Boyens (nasceu em mil novecentos e sessenta e dois) tenham conseguido extrair uma narrativa arrebatadora e veloz de uma fonte tão densa e aparentemente impenetrável. Ainda mais notável é o fato de que mesmo os fãs mais xiitas do livro adoraram o filme. No prólogo, curto e dramático, descobrimos que Sauron, a encarnação do mal, investiu todo o seu poder para forjar um anel, perdido em uma batalha épica contra uma aliança de homens e elfos. O anel finalmente vai parar nas mãos do pequeno hobbit Frodo Bolseiro. E aqui que começa a história. Frodo concorda em destruí-lo e assim derrotar Sauron de uma vez por todas. Entretanto, o anel só poderá ser destruído se for lançado no coração vulcânico do monte Doom, que fica, é claro, bem no interior do território inimigo. Ele parte nessa viagem perigosa na companhia de um grupo de zelosos hobbits, elfos, andes e homens, incluindo aí o feiticeiro Gandalf e o misterioso Aragorn (Viggo Mortensen). Traições, derramamento de sangue e batalhas acabam por dividir o grupo, e Frodo, com Sam (e depois com Gollum), parte para o vulcão sozinho, enquanto os demais se preparam para resistir a Sauron em um combate que vai abalar a Terra Média.",
      "chars": 1303
@@ -140,6 +153,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Apesar da amplitude da tela pintada por Jackson, a essência de sua obra são as pessoas, seus relacionamentos e as decisões que precisam tomar. A amizade e o autossacrifício estão fortemente presentes, bem como um sentido de mortalidade. As cenas finais deixam claro que a vitória pode ser nobre, mas ainda assim pode resultar de um sacrifício pessoal extremamente doloroso. Tolkien esteve nas trincheiras da Primeira Guerra Mundial e é difícil não criar paralelos entre suas experiências e o tom de melancolia que, em última instancia, cerca a parte final da trilogia. Para muita gente, o coração do filme não está nas cenas de bravura, mas em um momento tranquilo em que Gandalf consola Frodo, inconformado por ter que presenciar momentos tão terríveis. \"Todos que atravessam tempos difíceis lamentam sua sorte\", diz o mago, \"mas não podemos decidir a hora que vamos viver. A nós cabe apenas decidir o que fazer com o tempo que temos\". São momentos como esse que elevam o filme de Jackson à condição de obra-prima.",
      "text": "Apesar da amplitude da tela pintada por Jackson, a essência de sua obra são as pessoas, seus relacionamentos e as decisões que precisam tomar. A amizade e o autossacrifício estão fortemente presentes, bem como um sentido de mortalidade. As cenas finais deixam claro que a vitória pode ser nobre, mas ainda assim pode resultar de um sacrifício pessoal extremamente doloroso. Tolkien esteve nas trincheiras da Primeira Guerra Mundial e é difícil não criar paralelos entre suas experiências e o tom de melancolia que, em última instancia, cerca a parte final da trilogia. Para muita gente, o coração do filme não está nas cenas de bravura, mas em um momento tranquilo em que Gandalf consola Frodo, inconformado por ter que presenciar momentos tão terríveis. \"Todos que atravessam tempos difíceis lamentam sua sorte\", diz o mago, \"mas não podemos decidir a hora que vamos viver. A nós cabe apenas decidir o que fazer com o tempo que temos\". São momentos como esse que elevam o filme de Jackson à condição de obra-prima.",
      "chars": 1015
@@ -156,6 +170,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Os filmes mais bem-sucedidos da Disney na primeira década do século XXI começaram por incongruente que pareça, com um brinquedo de parque de diversões. Inspirado pelo último brinquedo do tipo projetado com financiamento da Disney, o produtor Jerry Buckheimer o transformou na franquia Piratas do Caribe.",
      "text": "Os filmes mais bem-sucedidos da Disney na primeira década do século vinte e um começaram por incongruente que pareça, com um brinquedo de parque de diversões. Inspirado pelo último brinquedo do tipo projetado com financiamento da Disney, o produtor Jerry Buckheimer o transformou na franquia Piratas do Caribe.",
      "chars": 310
@@ -163,6 +178,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "O primeiro filme, Piratas do Caribe: A maldição do Pérola Negra (2003), se mostrou um sucesso de verão surpreendentemente divertido, que remontava as aventuras de capa e espada da era de ouro de Hollywood, com o toque excêntrico de Johnny Depp (n-1963) como o permanentemente embriagado capitão Jack Sparrow.",
      "text": "O primeiro filme, Piratas do Caribe: A maldição do Pérola Negra, de dois mil e três, se mostrou um sucesso de verão surpreendentemente divertido, que remontava as aventuras de capa e espada da era de ouro de Hollywood, com o toque excêntrico de Johnny Depp (nasceu em mil novecentos e sessenta e três) como o permanentemente embriagado capitão Jack Sparrow.",
      "chars": 357
@@ -170,6 +186,7 @@
     {
      "id": "05-03",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "Duas fontes literárias estiveram por trás das franquias mais bem sucedidas da década. A série Harry Potter, de J. K. Rowling, teve um início titubeante graças à direção insossa de Chris Columbus (n-1958), mas ganhou força a partir do sombrio Harry Potter e o prisioneiro de Azkaban (2004), dirigido por Alfonso Cuarón (n-1961).",
      "text": "Duas fontes literárias estiveram por trás das franquias mais bem sucedidas da década. A série Harry Potter, de J. K. Rowling, teve um início titubeante graças à direção insossa de Chris Columbus (nasceu em mil novecentos e cinquenta e oito), mas ganhou força a partir do sombrio Harry Potter e o prisioneiro de Azkaban, de dois mil e quatro, dirigido por Alfonso Cuarón (nasceu em mil novecentos e sessenta e um).",
      "chars": 413
@@ -177,6 +194,7 @@
     {
      "id": "05-04",
      "speaker": "citacao",
+     "source_index": 13,
      "original": "O que estaria disposto a fazer para salvar essa moça? - Eu morrerei por ela! - Ótimo! Então, não tem problema nenhum.",
      "text": "O que estaria disposto a fazer para salvar essa moça? - Eu morrerei por ela! - Ótimo! Então, não tem problema nenhum.",
      "chars": 117
@@ -184,6 +202,7 @@
     {
      "id": "05-05",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "disse Jack Sparrow (Johnny Depp) e Will Turner III (Orlando Bloom) em Os Piratas do Caribe.",
      "text": "disse Jack Sparrow (Johnny Depp) e Will Turner Três (Orlando Bloom) em Os Piratas do Caribe.",
      "chars": 92
@@ -191,6 +210,7 @@
     {
      "id": "05-06",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Enquanto isso, Peter Jackson (n-1961) realizava a impressionante trilogia O senhor dos anéis (2001-2003), adaptada com brilhantismo pelo próprio Jackson, por Fran Walsh (n-1959) e Philippa Boyes. Roteiros engenhosos infelizmente ficaram de fora das risíveis (porém muito bem-sucedidas) Star Wars: Episódio I – A Ameaça Fantasma (1999), Star Wars: Episódio II – Ataque dos Clones (2002) e Star Wars: Episódio III – A Vingança dos Sith (2005), que deram continuidade à saga Guerra nas Estrelas de George Lucas (n-1944).",
      "text": "Enquanto isso, Peter Jackson (nasceu em mil novecentos e sessenta e um) realizava a impressionante trilogia O senhor dos anéis (dois mil e um a dois mil e três), adaptada com brilhantismo pelo próprio Jackson, por Fran Walsh (nasceu em mil novecentos e cinquenta e nove) e Philippa Boyes. Roteiros engenhosos infelizmente ficaram de fora das risíveis (porém muito bem-sucedidas) Star Wars: Episódio I, A Ameaça Fantasma, de mil novecentos e noventa e nove, Star Wars: Episódio Dois, Ataque dos Clones, de dois mil e dois, e Star Wars: Episódio Três, A Vingança dos Sith, de dois mil e cinco, que deram continuidade à saga Guerra nas Estrelas de George Lucas (nasceu em mil novecentos e quarenta e quatro).",
      "chars": 705
@@ -207,6 +227,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Outras forças dominantes nas bilheterias durante esse período foram as revitalizadas editoras de revistas em quadrinhos DC e Marvel. Com os sucessos dos filmes X-Men (2000), Homem Aranha (2002) e O Homem de Ferro (2008), a Marvel agora é era capaz de financiar suas próprias produções, iniciando uma tendência que dominaria as bilheterias na próxima década. A DC largou com um pouco de atraso, mas Batman Begins (2005) e Batman - O Cavaleio das Trevas (2008), ambos dirigidos por Christopher Nolan (n-1970), estabelecem o padrão para futuras adaptações dos quadrinhos.",
      "text": "Outras forças dominantes nas bilheterias durante esse período foram as revitalizadas editoras de revistas em quadrinhos dê cê e Marvel. Com os sucessos dos filmes X-Men, de dois mil, Homem Aranha, de dois mil e dois, e O Homem de Ferro, de dois mil e oito, a Marvel agora é era capaz de financiar suas próprias produções, iniciando uma tendência que dominaria as bilheterias na próxima década. A dê cê largou com um pouco de atraso, mas Batman Begins, de dois mil e cinco, e Batman - O Cavaleio das Trevas, de dois mil e oito, ambos dirigidos por Christopher Nolan (nasceu em mil novecentos e setenta), estabelecem o padrão para futuras adaptações dos quadrinhos.",
      "chars": 663
@@ -223,6 +244,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "Saiba mais: Harry Potter e o Prisioneiro de Azkaban: O Filme que definiu o tom da franquia.",
      "text": "Saiba mais: Harry Potter e o Prisioneiro de Azkaban: O Filme que definiu o tom da franquia.",
      "chars": 91
@@ -230,6 +252,7 @@
     {
      "id": "07-02",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "Harry Potter e o Prisioneiro de Azkaban, como cinema, é um dos melhores da série, pelo fato de apresentar uma grande evolução em relação aos seus antecessores. Porém, como adaptação, é um tanto decepcionante devido a pouca fidelidade do filme com a obra que originou. Mas como sabemos que Literatura e Cinema são duas linguagens completamente diferentes, analisemos o filme sob o ponto de vista cinematográfico.",
      "text": "Harry Potter e o Prisioneiro de Azkaban, como cinema, é um dos melhores da série, pelo fato de apresentar uma grande evolução em relação aos seus antecessores. Porém, como adaptação, é um tanto decepcionante devido a pouca fidelidade do filme com a obra que originou. Mas como sabemos que Literatura e Cinema são duas linguagens completamente diferentes, analisemos o filme sob o ponto de vista cinematográfico.",
      "chars": 411
@@ -237,6 +260,7 @@
     {
      "id": "07-03",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "Chris Columbus, diretor das duas aventuras anteriores, desta vez assume apenas o cargo de produtor, devido ao desgaste após tanto trabalho. Assim sendo, foi chamado para comandar esta terceira aventura o diretor mexicano Alfonso Cuáron, mais conhecido pelo filme E Sua Mãe Também (2002). Logo de cara, era possível perceber que seria um trabalho difícil, já que o terceiro livro é um dos mais complexos e desafiadores da série, não apenas por sua trama mais madura, mas porque é neste aqui que os personagens começam a lidar mais intensamente com seus sentimentos de adolescentes. Felizmente, Cuáron superou todos estes obstáculos, e criou um dos melhores filmes da série, mais divertido e sombrio. Apesar de trabalhar com a mesma equipe dos anteriores, Cuáron faz a produção evoluir em muitos quesitos, a começar pelo visual. Enquanto nos primeiros filmes os figurinos, apesar de criativos, soaram um pouco repetitivos, o diretor fez uma acertada escolha ao permitir que os protagonistas usassem roupas próprias e esta opção funciona perfeitamente, uma vez que sentimos que os atores estão mais à vontade em seus papéis. Isso deixa o filme com um visual mais moderno, além de causar maior identificação com a maioria dos fãs adolescentes.",
      "text": "Chris Columbus, diretor das duas aventuras anteriores, desta vez assume apenas o cargo de produtor, devido ao desgaste após tanto trabalho. Assim sendo, foi chamado para comandar esta terceira aventura o diretor mexicano Alfonso Cuáron, mais conhecido pelo filme E Sua Mãe Também, de dois mil e dois. Logo de cara, era possível perceber que seria um trabalho difícil, já que o terceiro livro é um dos mais complexos e desafiadores da série, não apenas por sua trama mais madura, mas porque é neste aqui que os personagens começam a lidar mais intensamente com seus sentimentos de adolescentes. Felizmente, Cuáron superou todos estes obstáculos, e criou um dos melhores filmes da série, mais divertido e sombrio. Apesar de trabalhar com a mesma equipe dos anteriores, Cuáron faz a produção evoluir em muitos quesitos, a começar pelo visual. Enquanto nos primeiros filmes os figurinos, apesar de criativos, soaram um pouco repetitivos, o diretor fez uma acertada escolha ao permitir que os protagonistas usassem roupas próprias e esta opção funciona perfeitamente, uma vez que sentimos que os atores estão mais à vontade em seus papéis. Isso deixa o filme com um visual mais moderno, além de causar maior identificação com a maioria dos fãs adolescentes.",
      "chars": 1252
@@ -253,6 +277,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "E se existe uma coisa que Cuáron faz bem é inserir sua marca no filme sem deixá-lo soar “autoral demais”. Utilizando sua câmera com mais intensidade que Columbus, o diretor opta por closes e movimentos criativos, além da utilização de planos mais abertos, que traduzem toda a beleza e imponência dos cenários de Hogwarts. O diretor enfatiza no clima vazio e sombrio das paisagens, sempre nublados, que ajudam a criar o tom sombrio ideal. Cuáron também confere um ritmo delicioso ao filme, tornando-o bem menos enfadonho que os dois primeiros. A costumeira abertura na casa dos Dursley, por exemplo, é rápida, mas define bem o que Potter é agora, um sujeito que está crescendo, que está começando a adquirir características de adolescente (reparem como ele quase sempre está irritado), em suma, está começando a amadurecer.",
      "text": "E se existe uma coisa que Cuáron faz bem é inserir sua marca no filme sem deixá-lo soar \"autoral demais\". Utilizando sua câmera com mais intensidade que Columbus, o diretor opta por closes e movimentos criativos, além da utilização de planos mais abertos, que traduzem toda a beleza e imponência dos cenários de Hogwarts. O diretor enfatiza no clima vazio e sombrio das paisagens, sempre nublados, que ajudam a criar o tom sombrio ideal. Cuáron também confere um ritmo delicioso ao filme, tornando-o bem menos enfadonho que os dois primeiros. A costumeira abertura na casa dos Dursley, por exemplo, é rápida, mas define bem o que Potter é agora, um sujeito que está crescendo, que está começando a adquirir características de adolescente (reparem como ele quase sempre está irritado), em suma, está começando a amadurecer.",
      "chars": 822
@@ -260,6 +285,7 @@
     {
      "id": "08-02",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "Os novos elementos inseridos também tornar o filme muito mais atraente. Desta vez, as criaturas mágicas surgem em maior quantidade e vão desde Hipogrifos (uma espécie de mistura entre um cavalo e uma águia), passando por bicho-papão e chegando aos Dementadores, seres que sugam a alma das pessoas. Novamente, o filme chama atenção pela quantidade de nomes conhecidos do cinema e do teatro britânico. Enquanto Maggie Smith e Alan Rickman dispensam elogios, algumas novidades surgem, como Michael Gambon, que substitui o falecido Richard Harris na pele de Albus Dumbledore. Gambon traz um ar muito mais ativo ao personagem, apagando a imagem lenta que Harris havia construído para o bruxo. David Thewlis interpreta Remus Lupin com muita simpatia, enquanto que Gary Oldman constrói uma composição fantástica para Sirius Black, o prisioneiro do título.",
      "text": "Os novos elementos inseridos também tornar o filme muito mais atraente. Desta vez, as criaturas mágicas surgem em maior quantidade e vão desde Hipogrifos (uma espécie de mistura entre um cavalo e uma águia), passando por bicho-papão e chegando aos Dementadores, seres que sugam a alma das pessoas. Novamente, o filme chama atenção pela quantidade de nomes conhecidos do cinema e do teatro britânico. Enquanto Maggie Smith e Alan Rickman dispensam elogios, algumas novidades surgem, como Michael Gambon, que substitui o falecido Richard Harris na pele de Albus Dumbledore. Gambon traz um ar muito mais ativo ao personagem, apagando a imagem lenta que Harris havia construído para o bruxo. David Thewlis interpreta Remus Lupin com muita simpatia, enquanto que Gary Oldman constrói uma composição fantástica para Sirius Black, o prisioneiro do título.",
      "chars": 848
@@ -267,6 +293,7 @@
     {
      "id": "08-03",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "E como já foi dito, Daniel Radcliffe, Rupert Grint e Emma Watson surgem bem mais à vontade em seus papéis, especialmente Radcliffe, que aqui começou a apresentar seu talento dramático, ao encarnar bem todas as angustias e medos do bruxinho. E mesmo com sua considerável queda de ritmo nos últimos 20 minutos, Harry Potter e o Prisioneiro de Azkaban se firmou como um dos grandes exemplares da série, aquele que será eternamente lembrado pela nova cara que deu às aventuras do jovem bruxo.",
      "text": "E como já foi dito, Daniel Radcliffe, Rupert Grint e Emma Watson surgem bem mais à vontade em seus papéis, especialmente Radcliffe, que aqui começou a apresentar seu talento dramático, ao encarnar bem todas as angustias e medos do bruxinho. E mesmo com sua considerável queda de ritmo nos últimos vinte minutos, Harry Potter e o Prisioneiro de Azkaban se firmou como um dos grandes exemplares da série, aquele que será eternamente lembrado pela nova cara que deu às aventuras do jovem bruxo.",
      "chars": 491
@@ -283,6 +310,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "Em Avatar (2009), o filme mais comercialmente bem-sucedido já feito até o momento (seria ultrapassado dez anos depois, com Vingadores: Ultimato (2019), James Cameron (n-1954) apresentou um espetáculo surpreendente em 3D, iniciando uma tendencia de filmes 3D nos próximos anos, sendo que poucos deles conseguiriam repetir o brilho e bom uso da tecnologia. O filme também trazia uma mensagem sobre a proteção do meio ambiente, em contraste com a maior parte dos sucessos do gênero.",
      "text": "Em Avatar, de dois mil e nove, o filme mais comercialmente bem-sucedido já feito até o momento (seria ultrapassado dez anos depois, com Vingadores: Ultimato, de dois mil e dezenove, James Cameron (nasceu em mil novecentos e cinquenta e quatro) apresentou um espetáculo surpreendente em três dê, iniciando uma tendencia de filmes três dê nos próximos anos, sendo que poucos deles conseguiriam repetir o brilho e bom uso da tecnologia. O filme também trazia uma mensagem sobre a proteção do meio ambiente, em contraste com a maior parte dos sucessos do gênero.",
      "chars": 558
@@ -299,6 +327,7 @@
     {
      "id": "10-01",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "Vale a conferida: os filmes deste capítulo são Harry Potter and the Prisoner of Azkaban, Avatar, Pirates of the Caribbean: The Curse of the Black Pearl, Transformers, The Lord of the Rings: The Fellowship of the Ring, Star Wars: Episode I - The Phantom Menace, Spider-Man, Hancock, King Kong, Mission: Impossible, The Dark Knight e Gladiator.",
      "text": "Vale a conferida: os filmes deste capítulo são Harry Potter and the Prisoner of Azkaban, Avatar, Pirates of the Caribbean: The Curse of the Black Pearl, Transformers, The Lord of the Rings: The Fellowship of the Ring, Star Wars: Episode I - The Phantom Menace, Spider-Man, Hancock, King Kong, Mission: Impossible, The Dark Knight e Gladiator.",
      "chars": 342

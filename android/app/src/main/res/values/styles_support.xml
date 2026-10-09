@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Estilos do onboarding (sempre sobre imagem escura, nos temas claro e escuro). -->
+<resources>
+
+    <!-- Onboarding: desenha atrás da status bar; fundo preto (as páginas são imagens escurecidas). -->
+    <style name="AppTheme.Onboarding" parent="AppTheme.AppThemeWithStatusTransparent">
+        <item name="android:windowBackground">@color/md_black_1000</item>
+    </style>
+
+    <style name="Widget.CinemaHistory.Onboarding.Toggle" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="backgroundTint">@color/onboarding_toggle_background</item>
+        <item name="android:textColor">@color/onboarding_toggle_text</item>
+        <item name="strokeColor">@color/home_outline_on_image</item>
+        <item name="rippleColor">@color/home_ripple_on_dark</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+
+    <style name="Widget.CinemaHistory.Onboarding.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/md_white_1000</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="iconTint">@color/md_black_1000</item>
+        <item name="rippleColor">@color/home_ripple_on_light</item>
+    </style>
+
+    <style name="Widget.CinemaHistory.Onboarding.Support" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/oscar</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="iconTint">@color/md_black_1000</item>
+        <item name="rippleColor">@color/home_ripple_on_light</item>
+    </style>
+
+    <style name="Widget.CinemaHistory.Onboarding.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="rippleColor">@color/home_ripple_on_dark</item>
+    </style>
+
+    <style name="TextAppearance.CinemaHistory.Onboarding.Label" parent="TextAppearance.CinemaHistory.Overline">
+        <item name="android:textColor">@color/home_text_on_image_secondary</item>
+    </style>
+</resources>

@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 04: De 1960 a 1969. Capítulo 2: Cine latinoamericano.",
      "text": "Parte cero cuatro: De mil novecientos sesenta a mil novecientos sesenta y nueve. Capítulo dos: Cine latinoamericano.",
      "chars": 116
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "La década de 1960 fue una década fervorosa para el cine latinoamericano, con el Cinema Novo de Brasil en primer plano.",
      "text": "La década de mil novecientos sesenta fue una década fervorosa para el cine latinoamericano, con el Cinema Novo de Brasil en primer plano.",
      "chars": 137
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "América Latina es una región inmensa y diversa. Geográficamente abarca todo el territorio que va desde el extremo sur de América del Sur hasta la frontera de California y las islas del Caribe. Políticamente, en la década de 1960 albergaba tanto al gobierno militar derechista de Brasil como al comunismo cubano. En el cine, algunos de sus países crearon industrias importantes antes y durante la década de 1960, mientras que otros tuvieron una producción cinematográfica mínima.",
      "text": "América Latina es una región inmensa y diversa. Geográficamente abarca todo el territorio que va desde el extremo sur de América del Sur hasta la frontera de California y las islas del Caribe. Políticamente, en la década de mil novecientos sesenta albergaba tanto al gobierno militar derechista de Brasil como al comunismo cubano. En el cine, algunos de sus países crearon industrias importantes antes y durante la década de mil novecientos sesenta, mientras que otros tuvieron una producción cinematográfica mínima.",
      "chars": 516
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "El cine nacional más importante de América del Sur fue, probablemente, el de Brasil. En la década de 1930 surgieron obras relevantes en el cine brasileño, pero su gran salto se produjo a comienzos de la década de 1960 con el floreciente Cinema Novo, movimiento cuyo lema era \"una idea en la cabeza y una cámara en la mano\".",
      "text": "El cine nacional más importante de América del Sur fue, probablemente, el de Brasil. En la década de mil novecientos treinta surgieron obras relevantes en el cine brasileño, pero su gran salto se produjo a comienzos de la década de mil novecientos sesenta con el floreciente Cinema Novo, movimiento cuyo lema era \"una idea en la cabeza y una cámara en la mano\".",
      "chars": 361
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "La figura más destacada del Cinema Novo fue el escritor y director Glauber Rocha (1939-1981), cuya película más conocida, El dragón de la maldad contra el santo guerrero (1969), es la historia de un pistolero contratado para matar bandidos que termina convirtiéndose en revolucionario.",
      "text": "La figura más destacada del Cinema Novo fue el escritor y director Glauber Rocha (mil novecientos treinta y nueve a mil novecientos ochenta y uno), cuya película más conocida, El dragón de la maldad contra el santo guerrero, de mil novecientos sesenta y nueve, es la historia de un pistolero contratado para matar bandidos que termina convirtiéndose en revolucionario.",
      "chars": 368
@@ -66,6 +71,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Para saber más: Una de las películas que cambiaron la historia del cine brasileño.",
      "text": "Para saber más: Una de las películas que cambiaron la historia del cine brasileño.",
      "chars": 82
@@ -73,6 +79,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Al asistir a una de las primeras proyecciones de Dios y el diablo en la tierra del sol, un crítico brasileño habría exclamado: \"¡Dios mío, Eisenstein ha renacido... y es brasileño!\" Nacido en Bahía, estado brasileño conocido como la cuna de la cultura afrobrasileña, Glauber creció fascinado por el misticismo y por los westerns estadounidenses. Con poco más de 20 años, se mudó a Río de Janeiro, donde se integró a un grupo de jóvenes cinéfilos que fundarían el influyente movimiento del Cinema Novo.",
      "text": "Al asistir a una de las primeras proyecciones de Dios y el diablo en la tierra del sol, un crítico brasileño habría exclamado: \"¡Dios mío, [[pron: Eisenstein|Áisenstain]] ha renacido... y es brasileño!\" Nacido en Bahía, estado brasileño conocido como la cuna de la cultura afrobrasileña, Glauber creció fascinado por el misticismo y por los westerns estadounidenses. Con poco más de veinte años, se mudó a Río de Janeiro, donde se integró a un grupo de jóvenes cinéfilos que fundarían el influyente movimiento del Cinema Novo.",
      "chars": 505
@@ -80,6 +87,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Influido por la política radical, como tantos de su generación, Glauber buscó explorar los vínculos entre los cambios históricos y la violencia en Dios y el diablo en la tierra del sol. Aquí se concentra en ejemplos de rebeliones populares en los sertones brasileños.",
      "text": "Influido por la política radical, como tantos de su generación, Glauber buscó explorar los vínculos entre los cambios históricos y la violencia en Dios y el diablo en la tierra del sol. Aquí se concentra en ejemplos de rebeliones populares en los sertones brasileños.",
      "chars": 267
@@ -87,6 +95,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Filmada en un blanco y negro árido que hace que la pantalla prácticamente reluzca de calor, Dios y el diablo en la tierra del sol alterna frenéticos movimientos de cámara con secuencias de montaje dinámico, superponiendo la música de Villa-Lobos al viento, a gritos y a disparos. El efecto final es la sensación de que la película y el país que retrata están a punto de estallar. Poco antes de que la película se terminara y se estrenara comercialmente, los militares brasileños dieron un golpe de Estado que instauró una dictadura que duró 20 años.",
      "text": "Filmada en un blanco y negro árido que hace que la pantalla prácticamente reluzca de calor, Dios y el diablo en la tierra del sol alterna frenéticos movimientos de cámara con secuencias de montaje dinámico, superponiendo la música de Villa-Lobos al viento, a gritos y a disparos. El efecto final es la sensación de que la película y el país que retrata están a punto de estallar. Poco antes de que la película se terminara y se estrenara comercialmente, los militares brasileños dieron un golpe de Estado que instauró una dictadura que duró veinte años.",
      "chars": 553
@@ -103,6 +112,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Influido por el neorrealismo italiano y la nouvelle vague francesa, Glauber debutó en el cine en 1962 con Barravento (1962) y luego dirigió Dios y el diablo en la tierra del sol (1964), un extraordinario estudio visual de la vida en el sertón que combina la leyenda local con música de J. S. Bach y Heitor Villa-Lobos para componer una dura crítica de las condiciones de supervivencia en el Nordeste empobrecido por la sequía. El golpe militar de 1964 impuso dificultades crecientes a la industria cinematográfica brasileña, a las que Glauber respondió con la alegórica Tierra en trance (1967).",
      "text": "Influido por el neorrealismo italiano y la nouvelle vague francesa, Glauber debutó en el cine en mil novecientos sesenta y dos con Barravento, de mil novecientos sesenta y dos, y luego dirigió Dios y el diablo en la tierra del sol, de mil novecientos sesenta y cuatro, un extraordinario estudio visual de la vida en el sertón que combina la leyenda local con música de J. S. Bach y Heitor Villa-Lobos para componer una dura crítica de las condiciones de supervivencia en el Nordeste empobrecido por la sequía. El golpe militar de mil novecientos sesenta y cuatro impuso dificultades crecientes a la industria cinematográfica brasileña, a las que Glauber respondió con la alegórica Tierra en trance, de mil novecientos sesenta y siete.",
      "chars": 734
@@ -110,6 +120,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Frente a la estilización de las películas de Glauber Rocha, otras figuras del Cinema Novo optaron por un estilo más realista. El exdirector de documentales Nelson Pereira dos Santos (n-1928) hizo Vidas secas (1963), un duro relato de la pobreza rural en el paisaje desolado del Nordeste. Ruy Guerra (n-1931) hizo Os Fuzis (1964), un vigoroso estudio de un grupo de soldados encargados de proteger un almacén contra campesinos hambrientos.",
      "text": "Frente a la estilización de las películas de Glauber Rocha, otras figuras del Cinema Novo optaron por un estilo más realista. El exdirector de documentales Nelson Pereira dos Santos (nació en mil novecientos veintiocho) hizo Vidas secas, de mil novecientos sesenta y tres, un duro relato de la pobreza rural en el paisaje desolado del Nordeste. Ruy Guerra (nació en mil novecientos treinta y uno) hizo Os Fuzis, de mil novecientos sesenta y cuatro, un vigoroso estudio de un grupo de soldados encargados de proteger un almacén contra campesinos hambrientos.",
      "chars": 557
@@ -117,6 +128,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Hacia el final de la década, después de los sucesivos golpes de 1964 y 1968, Joaquim Pedro de Andrade (1932-1988) realizó Macunaíma (1969), una comedia desenfrenada sobre temas raciales, sexuales y políticos adaptada de la novela homónima de Mário de Andrade.",
      "text": "Hacia el final de la década, después de los sucesivos golpes de mil novecientos sesenta y cuatro y mil novecientos sesenta y ocho, Joaquim Pedro de Andrade (mil novecientos treinta y dos a mil novecientos ochenta y ocho) realizó Macunaíma, de mil novecientos sesenta y nueve, una comedia desenfrenada sobre temas raciales, sexuales y políticos adaptada de la novela homónima de Mário de Andrade.",
      "chars": 395
@@ -133,6 +145,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "La década de 1960 también le dio al cine brasileño su premio internacional más importante. El pagador de promesas (1962), de Anselmo Duarte (1920-2009), la historia de un pequeño propietario rural que jura llevar una cruz hasta una iglesia lejana si su burro enfermo se cura, ganó la Palma de Oro del Festival de Cannes, y hasta hoy es el único ganador brasileño de ese prestigioso premio.",
      "text": "La década de mil novecientos sesenta también le dio al cine brasileño su premio internacional más importante. El pagador de promesas, de mil novecientos sesenta y dos, de Anselmo Duarte (mil novecientos veinte a dos mil nueve), la historia de un pequeño propietario rural que jura llevar una cruz hasta una iglesia lejana si su burro enfermo se cura, ganó la Palma de Oro del Festival de Cannes, y hasta hoy es el único ganador brasileño de ese prestigioso premio.",
      "chars": 464
@@ -140,6 +153,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Duarte exploró temas religiosos similares con Vereda da Salvação (1964), película sobre un hombre que cree ser Jesucristo. Los aspectos socialmente críticos de estas obras llevaron a que Anselmo Duarte fuera detenido como sospechoso de comunismo. También recibió críticas de los cineastas del Cinema Novo.",
      "text": "Duarte exploró temas religiosos similares con Vereda da Salvação, de mil novecientos sesenta y cuatro, película sobre un hombre que cree ser Jesucristo. Los aspectos socialmente críticos de estas obras llevaron a que Anselmo Duarte fuera detenido como sospechoso de comunismo. También recibió críticas de los cineastas del Cinema Novo.",
      "chars": 335
@@ -147,6 +161,7 @@
     {
      "id": "04-03",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Un movimiento paralelo al Cinema Novo brasileño se desarrolló en México, donde un grupo de jóvenes críticos creó la revista Nuevo Cine y formuló duras críticas contra el cine comercial mexicano, por su dependencia de géneros seguros como los musicales y las comedias.",
      "text": "Un movimiento paralelo al Cinema Novo brasileño se desarrolló en México, donde un grupo de jóvenes críticos creó la revista Nuevo Cine y formuló duras críticas contra el cine comercial mexicano, por su dependencia de géneros seguros como los musicales y las comedias.",
      "chars": 267
@@ -163,6 +178,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Para saber más: Cinema Novo: principales características.",
      "text": "Para saber más: Cinema Novo: principales características.",
      "chars": 57
@@ -170,6 +186,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "En su texto La estética del hambre, de 1965, Glauber Rocha escribió: “Sabemos nosotros, que hicimos estas películas feas y tristes, estas películas gritadas y desesperadas donde no siempre la razón habló más fuerte, que el hambre no será curada por las planificaciones de gabinete y que los remiendos del technicolor no esconden, sino que agravan sus tumores. Así, solamente una cultura del hambre, minando sus propias estructuras, puede superarse cualitativamente: y la más noble manifestación cultural del hambre es la violencia.”",
      "text": "En su texto La estética del hambre, de mil novecientos sesenta y cinco, Glauber Rocha escribió: \"Sabemos nosotros, que hicimos estas películas feas y tristes, estas películas gritadas y desesperadas donde no siempre la razón habló más fuerte, que el hambre no será curada por las planificaciones de gabinete y que los remiendos del technicolor no esconden, sino que agravan sus tumores. Así, solamente una cultura del hambre, minando sus propias estructuras, puede superarse cualitativamente: y la más noble manifestación cultural del hambre es la violencia.\"",
      "chars": 559
@@ -177,6 +194,7 @@
     {
      "id": "05-03",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Como principales características estéticas del movimiento, la falta de recursos y la libertad creativa permitieron a los cineastas del Cinema Novo desafiar, provocar y sorprender a los espectadores. Sin embargo, esa libertad, ese abandono de preciosismos técnicos, hizo de cada película una expresión de la visión particular de su director. Por eso, el movimiento no es necesariamente homogéneo en su estética, ya que la forma y el contenido de las películas variaron mucho en sus diferentes fases.",
      "text": "Como principales características estéticas del movimiento, la falta de recursos y la libertad creativa permitieron a los cineastas del Cinema Novo desafiar, provocar y sorprender a los espectadores. Sin embargo, esa libertad, ese abandono de preciosismos técnicos, hizo de cada película una expresión de la visión particular de su director. Por eso, el movimiento no es necesariamente homogéneo en su estética, ya que la forma y el contenido de las películas variaron mucho en sus diferentes fases.",
      "chars": 498
@@ -184,6 +202,7 @@
     {
      "id": "05-04",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "El Cinema Novo se moldeó a imagen de otros movimientos conocidos por su carácter subversivo, como el Neorrealismo italiano y la Nouvelle Vague francesa. En común con sus predecesores, los brasileños tenían la voluntad de filmar con presupuestos reducidos, muchas veces en locaciones reales y con actores no profesionales, tratando temas de la realidad de las clases oprimidas. La pasión por el cine y el deseo de usarlo como herramienta de transformación era lo que los movía a todos.",
      "text": "El Cinema Novo se moldeó a imagen de otros movimientos conocidos por su carácter subversivo, como el Neorrealismo italiano y la [[pron: Nouvelle Vague|Nuvel Vag]] francesa. En común con sus predecesores, los brasileños tenían la voluntad de filmar con presupuestos reducidos, muchas veces en locaciones reales y con actores no profesionales, tratando temas de la realidad de las clases oprimidas. La pasión por el cine y el deseo de usarlo como herramienta de transformación era lo que los movía a todos.",
      "chars": 484
@@ -191,6 +210,7 @@
     {
      "id": "05-05",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Aunque algunos directores del Cinema Novo veían a los franceses como burgueses o elitistas, coincidían en que la “teoría del autor” de la Nouvelle Vague era un concepto interesante, que permitía al cineasta imprimir sus visiones personales en las obras, lo que incluía opiniones políticas y preferencias estéticas.",
      "text": "Aunque algunos directores del Cinema Novo veían a los franceses como burgueses o elitistas, coincidían en que la \"teoría del autor\" de la [[pron: Nouvelle Vague|Nuvel Vag]] era un concepto interesante, que permitía al cineasta imprimir sus visiones personales en las obras, lo que incluía opiniones políticas y preferencias estéticas.",
      "chars": 314
@@ -198,6 +218,7 @@
     {
      "id": "05-06",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Por ese motivo, estéticamente el movimiento no tiene unidad. La propia “estética del hambre”, desarrollada por Glauber Rocha, trataba más de cuestiones conceptuales que visuales o técnicas. El objetivo era exponer las desigualdades sociales en los países del tercer mundo y hablar del hambre como síntoma de una sociedad enferma. Como dijo el cineasta: “[…] nuestra mayor miseria es que esta hambre, aun siendo sentida, no es comprendida.”",
      "text": "Por ese motivo, estéticamente el movimiento no tiene unidad. La propia \"estética del hambre\", desarrollada por Glauber Rocha, trataba más de cuestiones conceptuales que visuales o técnicas. El objetivo era exponer las desigualdades sociales en los países del tercer mundo y hablar del hambre como síntoma de una sociedad enferma. Como dijo el cineasta: \"[...] nuestra mayor miseria es que esta hambre, aun siendo sentida, no es comprendida.\"",
      "chars": 441
@@ -214,6 +235,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "J. M. García Ascot (1927-1986), miembro del círculo de Nuevo Cine, propuso caminos alternativos para el cine mexicano en En el balcón vacío (1961), basada en las memorias de infancia de su esposa durante la Guerra Civil Española y en su exilio en México, descrita por John King como \"una evocación proustiana del tiempo perdido\".",
      "text": "J. M. García Ascot (mil novecientos veintisiete a mil novecientos ochenta y seis), miembro del círculo de Nuevo Cine, propuso caminos alternativos para el cine mexicano en En el balcón vacío, de mil novecientos sesenta y uno, basada en las memorias de infancia de su esposa durante la Guerra Civil Española y en su exilio en México, descrita por John King como \"una evocación proustiana del tiempo perdido\".",
      "chars": 407
@@ -221,6 +243,7 @@
     {
      "id": "06-02",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "En 1965 y 1966 se realizaron dos importantes adaptaciones cinematográficas de historias del escritor colombiano Gabriel García Márquez: En este pueblo no hay ladrones (1965), de Alberto Isaac (1925-1988), y Tiempo de morir (1966), de Arturo Ripstein (n-1943).",
      "text": "En mil novecientos sesenta y cinco y mil novecientos sesenta y seis se realizaron dos importantes adaptaciones cinematográficas de historias del escritor colombiano Gabriel García Márquez: En este pueblo no hay ladrones, de mil novecientos sesenta y cinco, de Alberto Isaac (mil novecientos veinticinco a mil novecientos ochenta y ocho), y Tiempo de morir, de mil novecientos sesenta y seis, de Arturo Ripstein (nació en mil novecientos cuarenta y tres).",
      "chars": 454
@@ -228,6 +251,7 @@
     {
      "id": "06-03",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "Sin embargo, el artista de cine más ilustre que trabajaba en México fue el emigrado español Luis Buñuel (1900-1983), que había dejado su país de origen en la época de la Guerra Civil. Buñuel había hecho una carrera destacada en la industria mexicana a lo largo de la década de 1950 con películas como Los olvidados (1950), Él (1953) y Nazarín (1958), mezclas de comentario social y surrealismo.",
      "text": "Sin embargo, el artista de cine más ilustre que trabajaba en México fue el emigrado español Luis Buñuel (mil novecientos a mil novecientos ochenta y tres), que había dejado su país de origen en la época de la Guerra Civil. Buñuel había hecho una carrera destacada en la industria mexicana a lo largo de la década de mil novecientos cincuenta con películas como Los olvidados, de mil novecientos cincuenta, Él, de mil novecientos cincuenta y tres, y Nazarín, de mil novecientos cincuenta y ocho, mezclas de comentario social y surrealismo.",
      "chars": 538
@@ -244,6 +268,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "Entre las últimas películas mexicanas de Buñuel está El ángel exterminador (1962), una inquietante parábola sobre un grupo de personas atrapadas en una cena de la que, inexplicablemente, nadie logra salir. Este relato del discreto encanto de la burguesía marcó el tono de los últimos 15 años de la carrera de Buñuel, pero, a excepción de la satírica Simón del desierto (1965), todas sus películas posteriores se harían en Europa.",
      "text": "Entre las últimas películas mexicanas de Buñuel está El ángel exterminador, de mil novecientos sesenta y dos, una inquietante parábola sobre un grupo de personas atrapadas en una cena de la que, inexplicablemente, nadie logra salir. Este relato del discreto encanto de la burguesía marcó el tono de los últimos quince años de la carrera de Buñuel, pero, a excepción de la satírica Simón del desierto, de mil novecientos sesenta y cinco, todas sus películas posteriores se harían en Europa.",
      "chars": 489
@@ -251,6 +276,7 @@
     {
      "id": "07-02",
      "speaker": "narrador",
+     "source_index": 20,
      "original": "Además de la brasileña y la mexicana, la industria cinematográfica más notable de América Latina era la argentina. Leopoldo Torre Nilsson (1924-1978) ya había sido aclamado internacionalmente a fines de la década de 1950 por sus melodramáticos relatos sobre la decadente clase alta, en especial La casa del ángel (1957), exhibida y premiada en Cannes. Esta película se basa en una novela de Beatriz Guido, coautora del guion, quien llegaría a ser su esposa y guionista habitual.",
      "text": "Además de la brasileña y la mexicana, la industria cinematográfica más notable de América Latina era la argentina. Leopoldo Torre Nilsson (mil novecientos veinticuatro a mil novecientos setenta y ocho) ya había sido aclamado internacionalmente a fines de la década de mil novecientos cincuenta por sus melodramáticos relatos sobre la decadente clase alta, en especial La casa del ángel, de mil novecientos cincuenta y siete, exhibida y premiada en Cannes. Esta película se basa en una novela de Beatriz Guido, coautora del guion, quien llegaría a ser su esposa y guionista habitual.",
      "chars": 582
@@ -267,6 +293,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 22,
      "original": "Ella adaptó La mano en la trampa (1961) y Piel de verano (1961) de sus propias novelas. En El ojo de la cerradura (1966), Leopoldo Torre Nilsson (1924-1978) abordó más directamente la política sudamericana al narrar la historia de un revolucionario de derecha. A comienzos de la década de 1960, el éxito de Torre Nilsson ayudó a crear una nouvelle vague argentina, de inspiración parcialmente francesa.",
      "text": "Ella adaptó La mano en la trampa, de mil novecientos sesenta y uno, y Piel de verano, de mil novecientos sesenta y uno, de sus propias novelas. En El ojo de la cerradura, de mil novecientos sesenta y seis, Leopoldo Torre Nilsson (mil novecientos veinticuatro a mil novecientos setenta y ocho) abordó más directamente la política sudamericana al narrar la historia de un revolucionario de derecha. A comienzos de la década de mil novecientos sesenta, el éxito de Torre Nilsson ayudó a crear una nouvelle vague argentina, de inspiración parcialmente francesa.",
      "chars": 557
@@ -274,6 +301,7 @@
     {
      "id": "08-02",
      "speaker": "citacao",
+     "source_index": 23,
      "original": "Dios y el diablo en la tierra del sol, de Glauber Rocha, fue la película que jamás salió de mi cabeza",
      "text": "Dios y el diablo en la tierra del sol, de Glauber Rocha, fue la película que jamás salió de mi cabeza",
      "chars": 101
@@ -281,6 +309,7 @@
     {
      "id": "08-03",
      "speaker": "narrador",
+     "source_index": 23,
      "original": "dijo Bong Joon Ho, director de “Parásitos”.",
      "text": "dijo Bong Joon Ho, director de \"Parásitos\".",
      "chars": 43
@@ -288,6 +317,7 @@
     {
      "id": "08-04",
      "speaker": "narrador",
+     "source_index": 24,
      "original": "Entre las obras más notables de esa época están Tres veces Ana (1961), de David José Kohon (1919-2004), que cuenta tres historias de sexualidad en las que María Vaner interpreta a tres mujeres diferentes llamadas Ana, y Crónica de un niño solo (1965), de Leonardo Favio (n-1938), historia de un niño pobre en un orfanato.",
      "text": "Entre las obras más notables de esa época están Tres veces Ana, de mil novecientos sesenta y uno, de David José Kohon (mil novecientos diecinueve a dos mil cuatro), que cuenta tres historias de sexualidad en las que María Vaner interpreta a tres mujeres diferentes llamadas Ana, y Crónica de un niño solo, de mil novecientos sesenta y cinco, de Leonardo Favio (nació en mil novecientos treinta y ocho), historia de un niño pobre en un orfanato.",
      "chars": 444
@@ -304,6 +334,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 26,
      "original": "Sin embargo, el movimiento cinematográfico argentino más importante de la década de 1960 fue un intento consciente de alejarse de los modelos extranjeros. Fernando Solanas (n-1936) y Octavio Getino (n-1935) colaboraron en La hora de los hornos: Notas y testimonios sobre el neocolonialismo, la violencia y la liberación (1968). Relato didáctico de la historia y la política argentinas, esta película llegó a ser el modelo del \"Tercer Cine\": un estilo de cine propio del Tercer Mundo, alternativo al \"Primer Cine\" de Hollywood y al \"Segundo Cine\" de las nouvelles vagues.",
      "text": "Sin embargo, el movimiento cinematográfico argentino más importante de la década de mil novecientos sesenta fue un intento consciente de alejarse de los modelos extranjeros. Fernando Solanas (nació en mil novecientos treinta y seis) y Octavio Getino (nació en mil novecientos treinta y cinco) colaboraron en La hora de los hornos: Notas y testimonios sobre el neocolonialismo, la violencia y la liberación, de mil novecientos sesenta y ocho. Relato didáctico de la historia y la política argentinas, esta película llegó a ser el modelo del \"Tercer Cine\": un estilo de cine propio del Tercer Mundo, alternativo al \"Primer Cine\" de Hollywood y al \"Segundo Cine\" de las nouvelles vagues.",
      "chars": 684
@@ -311,6 +342,7 @@
     {
      "id": "09-02",
      "speaker": "narrador",
+     "source_index": 27,
      "original": "La industria chilena de cine encontró su espacio a fines de la década de 1960. El cineasta de vanguardia Raúl Ruiz (n-1941) debutó como director con Tres tristes tigres (1968), modelo de los juegos intelectuales que caracterizan su obra. Sin embargo, la mayor parte de su carrera transcurriría en el extranjero, principalmente en Francia.",
      "text": "La industria chilena de cine encontró su espacio a fines de la década de mil novecientos sesenta. El cineasta de vanguardia Raúl Ruiz (nació en mil novecientos cuarenta y uno) debutó como director con Tres tristes tigres, de mil novecientos sesenta y ocho, modelo de los juegos intelectuales que caracterizan su obra. Sin embargo, la mayor parte de su carrera transcurriría en el extranjero, principalmente en Francia.",
      "chars": 418
@@ -327,6 +359,7 @@
     {
      "id": "10-01",
      "speaker": "narrador",
+     "source_index": 29,
      "original": "De estilo más realista es El Chacal de Nahueltoro (1969), de Miguel Littin (n-1942), un retrato irregular pero sumamente vigoroso, al estilo de un documental, de un asesino cuyas experiencias sustentan la dramatización de las desesperadas condiciones de vida de los chilenos pobres. Tras la victoria del marxista Salvador Allende en las elecciones de 1970, Littin fue durante un breve período presidente de la empresa estatal Chile Films, pero renunció antes de que el derrocamiento de Allende les impusiera, a él y a Ruiz, el exilio.",
      "text": "De estilo más realista es El Chacal de Nahueltoro, de mil novecientos sesenta y nueve, de Miguel Littin (nació en mil novecientos cuarenta y dos), un retrato irregular pero sumamente vigoroso, al estilo de un documental, de un asesino cuyas experiencias sustentan la dramatización de las desesperadas condiciones de vida de los chilenos pobres. Tras la victoria del marxista Salvador Allende en las elecciones de mil novecientos setenta, Littin fue durante un breve período presidente de la empresa estatal Chile Films, pero renunció antes de que el derrocamiento de Allende les impusiera, a él y a Ruiz, el exilio.",
      "chars": 615
@@ -334,6 +367,7 @@
     {
      "id": "10-02",
      "speaker": "narrador",
+     "source_index": 30,
      "original": "Ninguno de los demás países de habla hispana del continente sudamericano (Bolivia, Colombia, Ecuador, Perú, Venezuela, Paraguay y Uruguay) mantuvo una producción significativa de películas a lo largo de la década de 1960; en algunos de esos países solo se hicieron documentales cortos. Sin embargo, muchas de las películas latinoamericanas más notables de la década se produjeron fuera del continente, en la isla caribeña de Cuba, donde la revolución de 1959 había cambiado la cara de lo que hasta entonces había sido una industria de poca relevancia.",
      "text": "Ninguno de los demás países de habla hispana del continente sudamericano (Bolivia, Colombia, Ecuador, Perú, Venezuela, Paraguay y Uruguay) mantuvo una producción significativa de películas a lo largo de la década de mil novecientos sesenta; en algunos de esos países solo se hicieron documentales cortos. Sin embargo, muchas de las películas latinoamericanas más notables de la década se produjeron fuera del continente, en la isla caribeña de Cuba, donde la revolución de mil novecientos cincuenta y nueve había cambiado la cara de lo que hasta entonces había sido una industria de poca relevancia.",
      "chars": 599
@@ -350,6 +384,7 @@
     {
      "id": "11-01",
      "speaker": "narrador",
+     "source_index": 32,
      "original": "En 1961, después de que el líder cubano Fidel Castro nacionalizara las industrias locales y estableciera lazos con la Unión Soviética, Estados Unidos rompió relaciones diplomáticas y el régimen de Castro pasó definitivamente a la órbita soviética. Esta nueva alineación encontró expresión cinematográfica cuando Mijaíl Kalatózov (1903-1973), el cineasta georgiano del clásico soviético Letyat Zhuravli (Cuando pasan las cigüeñas, 1957), viajó a la isla para hacer Soy Cuba (1964). Obra de propaganda visualmente impresionante, la película recorre la trayectoria del país desde la opresión prerrevolucionaria hasta un presente idealizado y celebratorio.",
      "text": "En mil novecientos sesenta y uno, después de que el líder cubano Fidel Castro nacionalizara las industrias locales y estableciera lazos con la Unión Soviética, Estados Unidos rompió relaciones diplomáticas y el régimen de Castro pasó definitivamente a la órbita soviética. Esta nueva alineación encontró expresión cinematográfica cuando Mijaíl Kalatózov (mil novecientos tres a mil novecientos setenta y tres), el cineasta georgiano del clásico soviético Letyat Zhuravli (Cuando pasan las cigüeñas, mil novecientos cincuenta y siete), viajó a la isla para hacer Soy Cuba, de mil novecientos sesenta y cuatro. Obra de propaganda visualmente impresionante, la película recorre la trayectoria del país desde la opresión prerrevolucionaria hasta un presente idealizado y celebratorio.",
      "chars": 780
@@ -357,6 +392,7 @@
     {
      "id": "11-02",
      "speaker": "narrador",
+     "source_index": 33,
      "original": "El cineasta cubano Tomás Gutiérrez Alea (1928-1996) firma una de las primeras producciones posrevolucionarias, la película bélica neorrealista Historias de la revolución (1960). Su obra posterior contiene una crítica social dialéctica en desarrollo: La muerte de un burócrata (1966) surgió como una sorprendente sátira de los espasmos de la burocracia socialista, mientras que Memorias del subdesarrollo (1968), un melancólico relato de la vida posrevolucionaria, muestra una notable inteligencia escéptica para una película producida bajo un régimen totalitario.",
      "text": "El cineasta cubano Tomás Gutiérrez Alea (mil novecientos veintiocho a mil novecientos noventa y seis) firma una de las primeras producciones posrevolucionarias, la película bélica neorrealista Historias de la revolución, de mil novecientos sesenta. Su obra posterior contiene una crítica social dialéctica en desarrollo: La muerte de un burócrata, de mil novecientos sesenta y seis, surgió como una sorprendente sátira de los espasmos de la burocracia socialista, mientras que Memorias del subdesarrollo, de mil novecientos sesenta y ocho, un melancólico relato de la vida posrevolucionaria, muestra una notable inteligencia escéptica para una película producida bajo un régimen totalitario.",
      "chars": 691
@@ -373,6 +409,7 @@
     {
      "id": "12-01",
      "speaker": "narrador",
+     "source_index": 35,
      "original": "Ese mismo año, Humberto Solás (1941-2008) realizó Lucía, una vigorosa narración de la experiencia femenina en tres períodos diferentes de la historia cubana, notable por su intensidad dramática y su impecable reconstrucción de época.",
      "text": "Ese mismo año, Humberto Solás (mil novecientos cuarenta y uno a dos mil ocho) realizó Lucía, una vigorosa narración de la experiencia femenina en tres períodos diferentes de la historia cubana, notable por su intensidad dramática y su impecable reconstrucción de época.",
      "chars": 269
@@ -380,6 +417,7 @@
     {
      "id": "12-02",
      "speaker": "narrador",
+     "source_index": 36,
      "original": "Las circunstancias de Cuba, el único país de América Latina que llevó a cabo una revolución de izquierda exitosa y duradera, fueron únicas, pero no así la tendencia a hacer películas políticamente comprometidas, como demuestra la abierta crítica social de las mejores películas realizadas en Brasil, Argentina y México. La América Latina de la década de 1960 era una región donde el cine no podía darse el lujo de no ser político.",
      "text": "Las circunstancias de Cuba, el único país de América Latina que llevó a cabo una revolución de izquierda exitosa y duradera, fueron únicas, pero no así la tendencia a hacer películas políticamente comprometidas, como demuestra la abierta crítica social de las mejores películas realizadas en Brasil, Argentina y México. La América Latina de la década de mil novecientos sesenta era una región donde el cine no podía darse el lujo de no ser político.",
      "chars": 449
@@ -396,6 +434,7 @@
     {
      "id": "13-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Vale la pena ver: las películas de este capítulo son Aruanda, Arraial do Cabo, Cinco Vezes Favela, Barravento, Os Cafajestes, Ganga Zumba, Vidas Secas, Deus e o Diabo na Terra do Sol, Os Fuzis, O Desafio, Terra em Transe, O Bravo Guerreiro, Fome de Amor, O Dragão da Maldade contra o Santo Guerreiro, Macunaíma, Os Herdeiros, Os Deuses e os Mortos, Como Era Gostoso o Meu Francês, Pindorama, O Pagador de Promessas, Simão do Deserto, A Hora dos Fornos: Notas e Testemunhos do Neocolonialismo, Violência e Libertação y Pele de Verão.",
      "text": "Vale la pena ver: las películas de este capítulo son Aruanda, Arraial do Cabo, Cinco Vezes Favela, Barravento, Os Cafajestes, Ganga Zumba, Vidas Secas, Deus e o Diabo na Terra do Sol, Os Fuzis, O Desafio, Terra em Transe, O Bravo Guerreiro, Fome de Amor, O Dragão da Maldade contra o Santo Guerreiro, Macunaíma, Os Herdeiros, Os Deuses e os Mortos, Como Era Gostoso o Meu Francês, Pindorama, O Pagador de Promessas, Simão do Deserto, A Hora dos Fornos: Notas e Testemunhos do Neocolonialismo, Violência e Libertação y Pele de Verão.",
      "chars": 532

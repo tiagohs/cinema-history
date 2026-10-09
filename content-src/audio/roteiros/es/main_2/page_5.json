@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 02: De 1930 a 1939. Capítulo 5: La sociedad en la pantalla.",
      "text": "Parte cero dos: De mil novecientos treinta a mil novecientos treinta y nueve. Capítulo cinco: La sociedad en la pantalla.",
      "chars": 121
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Durante la época económicamente convulsa de la Gran Depresión, las películas ofrecían una ventana accesible al mundo por el precio de una entrada.",
      "text": "Durante la época económicamente convulsa de la Gran Depresión, las películas ofrecían una ventana accesible al mundo por el precio de una entrada.",
      "chars": 146
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "Por el precio de una entrada, cualquiera que fuera al cine podía ver sofisticación y glamour en películas como Grand Hotel (Gran hotel, 1932) y Trouble in Paradise (Un ladrón en la alcoba, 1932), o conocer la vida de grandes hombres como Louis Pasteur y Emile Zola a través de películas biográficas. Con Citizen Kane (El ciudadano Kane, 1941), los espectadores pudieron adentrarse en el mundo de una celebridad contemporánea, el magnate de la prensa William Randolph Hearst.",
      "text": "Por el precio de una entrada, cualquiera que fuera al cine podía ver sofisticación y glamour en películas como Grand Hotel (Gran hotel, mil novecientos treinta y dos) y Trouble in Paradise (Un ladrón en la alcoba, mil novecientos treinta y dos), o conocer la vida de grandes hombres como Louis Pasteur y Emile Zola a través de películas biográficas. Con Citizen Kane (El ciudadano Kane, mil novecientos cuarenta y uno), los espectadores pudieron adentrarse en el mundo de una celebridad contemporánea, el magnate de la prensa William Randolph Hearst.",
      "chars": 550
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "De vez en cuando, los grandes estudios se sentían preparados para educar al público sobre algunos de los aspectos más oscuros de la sociedad estadounidense. En 1931, Warner Bros. compró un artículo autobiográfico escrito por Robert Elliott Burns, publicado en la revista True Detective y más tarde editado como el libro I Am a Fugitive from a Georgia Chain Gang.",
      "text": "De vez en cuando, los grandes estudios se sentían preparados para educar al público sobre algunos de los aspectos más oscuros de la sociedad estadounidense. En mil novecientos treinta y uno, Warner Bros. compró un artículo autobiográfico escrito por Robert Elliott Burns, publicado en la revista True Detective y más tarde editado como el libro I Am a Fugitive from a Georgia Chain Gang.",
      "chars": 387
@@ -59,6 +63,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Para saber más: Inventando el cine moderno al ignorar las convenciones.",
      "text": "Para saber más: Inventando el cine moderno al ignorar las convenciones.",
      "chars": 71
@@ -66,6 +71,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "El ciudadano Kane, el debut como director de Orson Welles (1915-1985), siempre ha sido considerada \"la mejor película de todos los tiempos\", lo que hace difícil analizarla con claridad. Se formaron mitos a su alrededor: que Welles fue pionero de una serie de técnicas cinematográficas innovadoras, que la película fue despreciada en la época de su estreno por considerarse demasiado pretenciosa.",
      "text": "El ciudadano Kane, el debut como director de Orson [[pron: Welles|Uels]] (mil novecientos quince a mil novecientos ochenta y cinco), siempre ha sido considerada \"la mejor película de todos los tiempos\", lo que hace difícil analizarla con claridad. Se formaron mitos a su alrededor: que [[pron: Welles|Uels]] fue pionero de una serie de técnicas cinematográficas innovadoras, que la película fue despreciada en la época de su estreno por considerarse demasiado pretenciosa.",
      "chars": 442
@@ -73,6 +79,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Welles no fue el primero en usar técnicas como una mayor profundidad de campo, decorados con techo visible, superposición sonora, jump cuts, diálogos \"naturalistas\" en los que las réplicas se atropellan, iluminación en claroscuro o una narración con múltiples puntos de vista, aunque ningún otro cineasta se había atrevido a combinarlas con tanto fervor y creatividad estética como él.",
      "text": "[[pron: Welles|Uels]] no fue el primero en usar técnicas como una mayor profundidad de campo, decorados con techo visible, superposición sonora, jump cuts, diálogos \"naturalistas\" en los que las réplicas se atropellan, iluminación en claroscuro o una narración con múltiples puntos de vista, aunque ningún otro cineasta se había atrevido a combinarlas con tanto fervor y creatividad estética como él.",
      "chars": 385
@@ -80,6 +87,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Cuando El ciudadano Kane llegó a las salas, la mayoría de los críticos la recibió con entusiasmo; sin embargo, su estreno fue saboteado. El magnate de la prensa William Randolph Hearst no tuvo el menor problema en reconocerse en el personaje de Charles Foster Kane. En un abrir y cerrar de ojos, toda su poderosa maquinaria de relaciones públicas entró en acción contra la película de Welles, asegurándose de que nunca tuviera un estreno decente.",
      "text": "Cuando El ciudadano Kane llegó a las salas, la mayoría de los críticos la recibió con entusiasmo; sin embargo, su estreno fue saboteado. El magnate de la prensa William Randolph Hearst no tuvo el menor problema en reconocerse en el personaje de Charles Foster Kane. En un abrir y cerrar de ojos, toda su poderosa maquinaria de relaciones públicas entró en acción contra la película de [[pron: Welles|Uels]], asegurándose de que nunca tuviera un estreno decente.",
      "chars": 446
@@ -87,6 +95,7 @@
     {
      "id": "02-05",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Para una obra tan revolucionaria, el mensaje detrás de la película es sorprendentemente convencional: no hay que envidiar a los ricos por su riqueza, porque han perdido los placeres simples del amor verdadero y la felicidad. Aun así, merece su primer puesto, en primer lugar, porque la firma de Welles es tan cautivadora y está impresa de forma tan indeleble en cada fotograma; en segundo lugar, porque hoy los espectadores pueden reconocer mucho de Welles en el propio protagonista.",
      "text": "Para una obra tan revolucionaria, el mensaje detrás de la película es sorprendentemente convencional: no hay que envidiar a los ricos por su riqueza, porque han perdido los placeres simples del amor verdadero y la felicidad. Aun así, merece su primer puesto, en primer lugar, porque la firma de [[pron: Welles|Uels]] es tan cautivadora y está impresa de forma tan indeleble en cada fotograma; en segundo lugar, porque hoy los espectadores pueden reconocer mucho de [[pron: Welles|Uels]] en el propio protagonista.",
      "chars": 483
@@ -94,6 +103,7 @@
     {
      "id": "02-06",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "El ciudadano Kane sigue siendo una película importantísima; sin embargo, en medio de su grandilocuencia visual, su exhibicionismo barroco y sus técnicas ostentosas, por fascinantes que sean, podemos escuchar el aullido de la frustración y del bloqueo creativo que el futuro reservaba al genial Welles, como una terrible premonición.",
      "text": "El ciudadano Kane sigue siendo una película importantísima; sin embargo, en medio de su grandilocuencia visual, su exhibicionismo barroco y sus técnicas ostentosas, por fascinantes que sean, podemos escuchar el aullido de la frustración y del bloqueo creativo que el futuro reservaba al genial [[pron: Welles|Uels]], como una terrible premonición.",
      "chars": 332
@@ -110,6 +120,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "A pesar de las dudas sobre el tema —un director lo descartó con el argumento de que era inadecuado para una época en que la gente en general se encontraba tan deprimida que muchos estaban \"saltando por las ventanas\"—, el estudio insistió, y Burns, aunque técnicamente todavía era un prófugo de la justicia, fue contratado en secreto para trabajar en una primera versión del guion. El éxito de I Am a Fugitive from a Chain Gang (Soy un fugitivo, 1932), dirigida por Mervyn LeRoy (1900-1987) y con Paul Muni (1895-1967) en el papel del fugitivo James Allen, reveló de forma contundente la crueldad del sistema penal del sur de Estados Unidos.",
      "text": "A pesar de las dudas sobre el tema, un director lo descartó con el argumento de que era inadecuado para una época en que la gente en general se encontraba tan deprimida que muchos estaban \"saltando por las ventanas\", el estudio insistió, y Burns, aunque técnicamente todavía era un prófugo de la justicia, fue contratado en secreto para trabajar en una primera versión del guion. El éxito de I Am a Fugitive from a Chain Gang (Soy un fugitivo, mil novecientos treinta y dos), dirigida por Mervyn LeRoy (mil novecientos a mil novecientos ochenta y siete) y con Paul Muni (mil ochocientos noventa y cinco a mil novecientos sesenta y siete) en el papel del fugitivo James Allen, reveló de forma contundente la crueldad del sistema penal del sur de Estados Unidos.",
      "chars": 760
@@ -117,6 +128,7 @@
     {
      "id": "03-02",
      "speaker": "citacao",
+     "source_index": 5,
      "original": "Esa cuchara de plata siempre se me quedó atravesada en la garganta.",
      "text": "Esa cuchara de plata siempre se me quedó atravesada en la garganta.",
      "chars": 67
@@ -124,6 +136,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "dijo Charles Foster Kane, Orson Welles.",
      "text": "dijo Charles Foster Kane, Orson [[pron: Welles|Uels]].",
      "chars": 39
@@ -131,6 +144,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Fritz Lang (1890-1976) realizó una poderosa denuncia de otro sórdido secreto estadounidense. Fury (Furia, 1936) se inspiró en la historia real de un doble linchamiento ocurrido en San José tres años antes. Spencer Tracy (1900-1967) interpreta a Joe Wilson, un hombre acusado por error de secuestrar a un niño. Cuando una turba enardecida le prende fuego a la cárcel, él logra escapar, pero finge estar muerto para que los responsables sean acusados de asesinato.",
      "text": "Fritz Lang (mil ochocientos noventa a mil novecientos setenta y seis) realizó una poderosa denuncia de otro sórdido secreto estadounidense. Fury (Furia, mil novecientos treinta y seis) se inspiró en la historia real de un doble linchamiento ocurrido en San José tres años antes. Spencer Tracy (mil novecientos a mil novecientos sesenta y siete) interpreta a Joe Wilson, un hombre acusado por error de secuestrar a un niño. Cuando una turba enardecida le prende fuego a la cárcel, él logra escapar, pero finge estar muerto para que los responsables sean acusados de asesinato.",
      "chars": 575
@@ -147,6 +161,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "En realidad, casi todas las personas linchadas en esa época eran negras, un hecho que ningún estudio tenía interés en divulgar. La fuerza singular de Furia reside en la manera en que los espectadores se ven impulsados a simpatizar, de forma incómoda, con los linchadores, que también se convierten en víctimas de una injusticia.",
      "text": "En realidad, casi todas las personas linchadas en esa época eran negras, un hecho que ningún estudio tenía interés en divulgar. La fuerza singular de Furia reside en la manera en que los espectadores se ven impulsados a simpatizar, de forma incómoda, con los linchadores, que también se convierten en víctimas de una injusticia.",
      "chars": 328
@@ -154,6 +169,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Frank Capra (1897-1991) ofreció una visión más optimista de las angustias del hombre común. El historiador Robert Sklar atribuye el secreto del éxito de Capra a \"su capacidad de convencer a los espectadores de que estaban viendo sus propias fuerzas y debilidades, sus propios sueños y valores; en fin, viéndose a sí mismos representados en la pantalla",
      "text": "Frank Capra (mil ochocientos noventa y siete a mil novecientos noventa y uno) ofreció una visión más optimista de las angustias del hombre común. El historiador Robert Sklar atribuye el secreto del éxito de Capra a \"su capacidad de convencer a los espectadores de que estaban viendo sus propias fuerzas y debilidades, sus propios sueños y valores; en fin, viéndose a sí mismos representados en la pantalla",
      "chars": 405
@@ -170,6 +186,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Los héroes de Capra pueden ser víctimas de políticos corruptos y del capitalismo, pero no son marginados. Representar en la pantalla la vida de los desposeídos era más problemático. Cuando Darryl Zanuck (1902-1979) adquirió los derechos de la novela The Grapes of Wrath (Las viñas de la ira, 1939), de John Steinbeck (1902-1968), el destino de los refugiados del Dust Bowl —una serie de violentas tormentas de polvo que devastaron el sur de Estados Unidos en la década de 1930— era una realidad que muchos no estaban dispuestos a enfrentar.",
      "text": "Los héroes de Capra pueden ser víctimas de políticos corruptos y del capitalismo, pero no son marginados. Representar en la pantalla la vida de los desposeídos era más problemático. Cuando Darryl Zanuck (mil novecientos dos a mil novecientos setenta y nueve) adquirió los derechos de la novela The Grapes of Wrath (Las viñas de la ira, mil novecientos treinta y nueve), de John Steinbeck (mil novecientos dos a mil novecientos sesenta y ocho), el destino de los refugiados del Dust Bowl, una serie de violentas tormentas de polvo que devastaron el sur de Estados Unidos en la década de mil novecientos treinta, era una realidad que muchos no estaban dispuestos a enfrentar.",
      "chars": 673
@@ -177,6 +194,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "La sensible versión cinematográfica de John Ford (1894-1973) tocó la conciencia colectiva de los cinéfilos de la década de 1940. El cantante Woody Guthrie, que reescribió la historia en forma de canción, resumió su importancia: \"Ve a ver Las viñas de la ira, compañero... tú eres la estrella de esa película. Ve a verte a ti mismo, a oír tus propias palabras y tu propia canción\".",
      "text": "La sensible versión cinematográfica de John Ford (mil ochocientos noventa y cuatro a mil novecientos setenta y tres) tocó la conciencia colectiva de los cinéfilos de la década de mil novecientos cuarenta. El cantante Woody Guthrie, que reescribió la historia en forma de canción, resumió su importancia: \"Ve a ver Las viñas de la ira, compañero... tú eres la estrella de esa película. Ve a verte a ti mismo, a oír tus propias palabras y tu propia canción\".",
      "chars": 456
@@ -193,6 +211,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "Vale la pena ver: las películas de este capítulo son Citizen Kane, Grand Hotel, Trouble in Paradise, City Lights, Fury y I Am a Fugitive from a Chain Gang.",
      "text": "Vale la pena ver: las películas de este capítulo son Citizen Kane, Grand Hotel, Trouble in Paradise, City Lights, Fury y I Am a Fugitive from a Chain Gang.",
      "chars": 155

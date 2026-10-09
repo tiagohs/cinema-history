@@ -12,6 +12,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.ads.AdsManager
+import com.tiagohs.cinema_history.support.Supporter
 import com.tiagohs.cinema_history.databinding.ActivityHomeBinding
 import com.tiagohs.cinema_history.databinding.ViewHomeLinkRowBinding
 import com.tiagohs.cinema_history.presentation.adapters.home.HomeDestinationsAdapter
@@ -66,7 +67,12 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
         presenter.fetchHomeContent()
 
         AdsManager.gatherConsent(this)
+
+        Supporter.addListener(supporterListener)
     }
+
+    /** Compra/restauração do apoio ou país da conta mudou: atualiza o item "Apoie o app". */
+    private val supporterListener: () -> Unit = { invalidateOptionsMenu() }
 
     override fun onResume() {
         super.onResume()
@@ -76,6 +82,7 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
     }
 
     override fun onDestroy() {
+        Supporter.removeListener(supporterListener)
         presenter.onUnbindView()
 
         super.onDestroy()
@@ -98,6 +105,12 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
                 chip?.contentDescription = label
                 chip?.setOnClickListener { switchToNextLanguage(languages, current) }
             }
+        }
+
+        menu.findItem(R.id.action_support)?.let { item ->
+            val supporter = Supporter.isSupporter(this)
+            item.isVisible = supporter || Supporter.isOfferAvailable(this)
+            item.setTitle(if (supporter) R.string.support_menu_supporter else R.string.support_menu)
         }
 
         menu.findItem(R.id.action_theme)?.setIcon(
@@ -132,6 +145,7 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(), HomeView {
             R.id.action_glossary -> openGlossary()
             R.id.action_about -> openAbout()
             R.id.action_references -> openReferences()
+            R.id.action_support -> Supporter.openSupportScreen(this, "menu")
             else -> return false
         }
 

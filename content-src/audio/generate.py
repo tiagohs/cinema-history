@@ -273,7 +273,9 @@ def build_track_pcm(prov, track, lang, cfg, narrator_override=None):
             gap = p.get("citacao", 700) if "citacao" in (prev, seg["speaker"]) else p.get("paragrafo", 450)
             out.append(silence(gap, prov.rate))
         ov = narrator_override if seg["speaker"] == "narrador" else None
-        marks.append({"seg": seg["id"], "t": round(sum(len(x) for x in out) / 2 / prov.rate, 2)})
+        # source_index: item de content_list do capítulo (-1 = abertura); o app usa para destacar o trecho
+        marks.append({"seg": seg["id"], "t": round(sum(len(x) for x in out) / 2 / prov.rate, 2),
+                      "source_index": seg.get("source_index", -1)})
         out.append(synth_cached(prov, seg_text(seg, cfg), lang, seg["speaker"], ov))
         prev = seg["speaker"]
     out.append(silence(p.get("fim_faixa", 600), prov.rate))
@@ -316,7 +318,13 @@ def generate_chapter(prov, ch, cfg, force=False):
         fname = f"{t['id']}.ogg"
         dest = os.path.join(cdir, fname)
         if not force and old.get(t["id"], {}).get("hash") == h and os.path.exists(dest):
-            tracks.append(old[t["id"]])
+            kept = dict(old[t["id"]])
+            # o source_index não entra no hash (não muda o áudio): atualiza as marcas com o roteiro atual
+            src = {sg["id"]: sg.get("source_index", -1) for sg in t["segments"]}
+            kept["marks"] = [{**m, "source_index": src.get(m["seg"], m.get("source_index", -1))}
+                             for m in kept.get("marks", [])]
+            kept["title"], kept["kind"] = t["title"], t.get("kind")
+            tracks.append(kept)
             continue
         print(f"  {lang} era {era} cap {page} faixa {t['id']} {t['title'][:50]!r} ({t['chars']} car.)")
         pcm, marks = build_track_pcm(prov, t, lang, cfg)

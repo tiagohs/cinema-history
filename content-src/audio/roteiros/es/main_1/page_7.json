@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 01: De 1895 a 1929. Capítulo 7: La \"Edad de Oro\" del cine mudo.",
      "text": "Parte cero uno: De mil ochocientos noventa y cinco a mil novecientos veintinueve. Capítulo siete: La \"Edad de Oro\" del cine mudo.",
      "chars": 129
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Durante ese tiempo, la inversión se duplicó. Surgieron grandes estudios, que invertían cada vez más en la producción de películas, y grandes directores realizaron filmes memorables.",
      "text": "Durante ese tiempo, la inversión se duplicó. Surgieron grandes estudios, que invertían cada vez más en la producción de películas, y grandes directores realizaron filmes memorables.",
      "chars": 181
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "A mediados de la década de 1920, el cine, desprovisto del habla, ya había desarrollado una forma de narración visual tan sutil y expresiva como las palabras. Aunque los intertítulos escritos reemplazaban los diálogos, eran las imágenes las que realmente conducían la narrativa y capturaban las emociones. Libre de las exigencias de la grabación sonora, la cámara, a la que F. W. Murnau (1888-1931) llamaba \"el pincel del director\", alcanzó una flexibilidad que no ha sido superada hasta hoy.",
      "text": "A mediados de la década de mil novecientos veinte, el cine, desprovisto del habla, ya había desarrollado una forma de narración visual tan sutil y expresiva como las palabras. Aunque los intertítulos escritos reemplazaban los diálogos, eran las imágenes las que realmente conducían la narrativa y capturaban las emociones. Libre de las exigencias de la grabación sonora, la cámara, a la que F. W. Murnau (mil ochocientos ochenta y ocho a mil novecientos treinta y uno) llamaba \"el pincel del director\", alcanzó una flexibilidad que no ha sido superada hasta hoy.",
      "chars": 562
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 1,
      "original": "Al no poder hablar, los actores confiaban en los gestos o en las expresiones faciales, y lograban la misma sutileza y profundidad de sentimiento que más tarde alcanzarían con el estilo más naturalista que trajo el cine sonoro.",
      "text": "Al no poder hablar, los actores confiaban en los gestos o en las expresiones faciales, y lograban la misma sutileza y profundidad de sentimiento que más tarde alcanzarían con el estilo más naturalista que trajo el cine sonoro.",
      "chars": 226
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "citacao",
+     "source_index": 2,
      "original": "Nada en el mundo puede compararse con el rostro humano. Es una tierra que nunca me canso de explorar. No hay mayor experiencia en un estudio que presenciar la expresión de un rostro sensible bajo el misterioso poder de la inspiración. Verlo animarse desde dentro y transformarse en poesía.",
      "text": "Nada en el mundo puede compararse con el rostro humano. Es una tierra que nunca me canso de explorar. No hay mayor experiencia en un estudio que presenciar la expresión de un rostro sensible bajo el misterioso poder de la inspiración. Verlo animarse desde dentro y transformarse en poesía.",
      "chars": 289
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "dijo Carl Theodor Dreyer.",
      "text": "dijo Carl Theodor Dreyer.",
      "chars": 25
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "El silencio, por lo tanto, no era una limitación. Para muchos estetas y teóricos del cine, la singularidad de las películas residía precisamente en su capacidad de contar una historia solo por medio de imágenes. Esta búsqueda de un cine puro encontró seguidores en países tan lejanos como Japón, donde la expresionista Kurutta ippêji (Una página de locura, 1926), dirigida por Teinosuke Kinugasa (1896-1982), utilizó solo imágenes para contar la perturbadora historia de los sucesos que ocurren dentro de un manicomio.",
      "text": "El silencio, por lo tanto, no era una limitación. Para muchos estetas y teóricos del cine, la singularidad de las películas residía precisamente en su capacidad de contar una historia solo por medio de imágenes. Esta búsqueda de un cine puro encontró seguidores en países tan lejanos como Japón, donde la expresionista Kurutta ippêji (Una página de locura, mil novecientos veintiséis), dirigida por Teinosuke Kinugasa (mil ochocientos noventa y seis a mil novecientos ochenta y dos), utilizó solo imágenes para contar la perturbadora historia de los sucesos que ocurren dentro de un manicomio.",
      "chars": 593
@@ -71,6 +78,7 @@
     {
      "id": "01-06",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Pocas películas llegaron a eliminar por completo los intertítulos, pero la mayor gloria de los últimos años del cine mudo reside, sin duda, en su refinamiento visual. Fausto (1926), de Murnau, a pesar de sus orígenes literarios en la leyenda del hombre que vende su alma al Diablo, es especialmente notable por su magnífica recreación de la Europa medieval.",
      "text": "Pocas películas llegaron a eliminar por completo los intertítulos, pero la mayor gloria de los últimos años del cine mudo reside, sin duda, en su refinamiento visual. Fausto, de mil novecientos veintiséis, de Murnau, a pesar de sus orígenes literarios en la leyenda del hombre que vende su alma al Diablo, es especialmente notable por su magnífica recreación de la Europa medieval.",
      "chars": 381
@@ -87,6 +95,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Esta fue una de las producciones más extravagantes de la Universum Film AG (UFA), la mayor productora alemana de la época, que también realizó las suntuosas Die Nibelungen: Siegfried (Los nibelungos: la muerte de Sigfrido, 1924) y Die Nibelungen: Kriemhilds Rache (Los nibelungos: la venganza de Krimilda, 1924), de Fritz Lang (1890-1976), así como Metrópolis (1927), la épica de ciencia ficción del mismo director.",
      "text": "Esta fue una de las producciones más extravagantes de la Universum Film AG (UFA), la mayor productora alemana de la época, que también realizó las suntuosas Die Nibelungen: Siegfried (Los nibelungos: la muerte de Sigfrido, mil novecientos veinticuatro) y Die Nibelungen: Kriemhilds Rache (Los nibelungos: la venganza de Krimilda, mil novecientos veinticuatro), de Fritz Lang (mil ochocientos noventa a mil novecientos setenta y seis), así como Metrópolis, de mil novecientos veintisiete, la épica de ciencia ficción del mismo director.",
      "chars": 535
@@ -94,6 +103,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Metrópolis, a pesar de su trama precaria, sigue siendo hasta hoy una de las evocaciones del futuro más visualmente impresionantes jamás vistas en la pantalla. El cine francés aspiró en varias ocasiones a la épica, pero nunca tanto como en la obra de Abel Gance (1889-1981), cuya película Napoléon (Napoleón, 1927) llevó el refinamiento estético del cine mudo al extremo. El director danés Carl Theodor Dreyer (1889-1968) dramatizó la historia francesa en La passion de Jeanne d'Arc (La pasión de Juana de Arco, 1928); sin embargo, evitó al máximo el espectáculo al concentrarse de forma obstinada en los registros emocionales transmitidos por el rostro humano.",
      "text": "Metrópolis, a pesar de su trama precaria, sigue siendo hasta hoy una de las evocaciones del futuro más visualmente impresionantes jamás vistas en la pantalla. El cine francés aspiró en varias ocasiones a la épica, pero nunca tanto como en la obra de Abel Gance (mil ochocientos ochenta y nueve a mil novecientos ochenta y uno), cuya película Napoléon (Napoleón, mil novecientos veintisiete) llevó el refinamiento estético del cine mudo al extremo. El director danés Carl Theodor Dreyer (mil ochocientos ochenta y nueve a mil novecientos sesenta y ocho) dramatizó la historia francesa en La passion de Jeanne d'Arc (La pasión de Juana de Arco, mil novecientos veintiocho); sin embargo, evitó al máximo el espectáculo al concentrarse de forma obstinada en los registros emocionales transmitidos por el rostro humano.",
      "chars": 814
@@ -110,6 +120,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Para saber más: La obra maestra del maestro Carl Theodor Dreyer.",
      "text": "Para saber más: La obra maestra del maestro Carl Theodor Dreyer.",
      "chars": 64
@@ -117,6 +128,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "El austero maestro danés Carl Theodor Dreyer realizó La pasión de Juana de Arco hace más de 80 años; sin embargo, pocos negarían que su cuidadosa producción todavía representa un estándar de excelencia para cualquier estudio de personaje en el cine.",
      "text": "El austero maestro danés Carl Theodor Dreyer realizó La pasión de Juana de Arco hace más de ochenta años; sin embargo, pocos negarían que su cuidadosa producción todavía representa un estándar de excelencia para cualquier estudio de personaje en el cine.",
      "chars": 254
@@ -124,6 +136,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "La película presenta el martirio de esta mezcla de guerrera y doncella, que carga sobre sus hombros el peso de una nación y lo hace mediante una fe inquebrantable que se manifiesta en la capacidad expresiva de los ojos de la protagonista. Esto se debe, en gran parte, a la actuación angustiada y etérea de la enigmática Maria Falconetti (1892-1946), una actriz de teatro descubierta por Dreyer en París. (Este no fue su debut en el cine, aunque, tal vez desalentada por los métodos de Dreyer, nunca hizo otra película). El sufrimiento de Falconetti, palpable en la pantalla, fue refinado de modo perverso: según cuenta la leyenda, fue obligada a arrodillarse sobre piedras y a ver exhaustivamente el material filmado hasta conocer en detalle cada rasgo de su rostro.",
      "text": "La película presenta el martirio de esta mezcla de guerrera y doncella, que carga sobre sus hombros el peso de una nación y lo hace mediante una fe inquebrantable que se manifiesta en la capacidad expresiva de los ojos de la protagonista. Esto se debe, en gran parte, a la actuación angustiada y etérea de la enigmática Maria Falconetti (mil ochocientos noventa y dos a mil novecientos cuarenta y seis), una actriz de teatro descubierta por Dreyer en París. (Este no fue su debut en el cine, aunque, tal vez desalentada por los métodos de Dreyer, nunca hizo otra película). El sufrimiento de Falconetti, palpable en la pantalla, fue refinado de modo perverso: según cuenta la leyenda, fue obligada a arrodillarse sobre piedras y a ver exhaustivamente el material filmado hasta conocer en detalle cada rasgo de su rostro.",
      "chars": 820
@@ -131,6 +144,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Situando la película en la ciudad de Ruan, en 1431, y basándose en las actas del juicio de Juana, Dreyer trabaja a partir de una paleta de emociones en bruto: las expresiones de Falconetti proclaman, alto y claro, la agonía presente, las glorias pasadas y los miedos futuros de su personaje. Muchas veces, al encuadrar el rostro de Juana en primer plano y en un ángulo ligeramente sesgado, contrapone la tristeza de ella a los rostros monstruosos de los jueces y teólogos reunidos para forzar su confesión, generando una atmósfera claustrofóbica y desesperante a partir de un simple movimiento de cámara.",
      "text": "Situando la película en la ciudad de Ruan, en mil cuatrocientos treinta y uno, y basándose en las actas del juicio de Juana, Dreyer trabaja a partir de una paleta de emociones en bruto: las expresiones de Falconetti proclaman, alto y claro, la agonía presente, las glorias pasadas y los miedos futuros de su personaje. Muchas veces, al encuadrar el rostro de Juana en primer plano y en un ángulo ligeramente sesgado, contrapone la tristeza de ella a los rostros monstruosos de los jueces y teólogos reunidos para forzar su confesión, generando una atmósfera claustrofóbica y desesperante a partir de un simple movimiento de cámara.",
      "chars": 631
@@ -138,6 +152,7 @@
     {
      "id": "03-05",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Como en películas posteriores, entre ellas Vredens Dag (Dies irae, 1943) y Ordet (La palabra, 1955), Dreyer aborda cuestiones de fe y espiritualidad al retratar personajes que supuestamente habrían alcanzado un estado de gracia, pero que son juzgados por una sociedad de escépticos y fanáticos violentos. La película sigue siendo una fascinante anomalía en la historia del cine europeo.",
      "text": "Como en películas posteriores, entre ellas Vredens Dag (Dies irae, mil novecientos cuarenta y tres) y Ordet (La palabra, mil novecientos cincuenta y cinco), Dreyer aborda cuestiones de fe y espiritualidad al retratar personajes que supuestamente habrían alcanzado un estado de gracia, pero que son juzgados por una sociedad de escépticos y fanáticos violentos. La película sigue siendo una fascinante anomalía en la historia del cine europeo.",
      "chars": 442
@@ -154,6 +169,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "De hecho, lo más extraordinario del último período del cine mudo era su capacidad de combinar grandilocuencia visual con intimismo. Esto también se aplica a Hollywood, cuyas mayores obras maestras fueron dirigidas por emigrantes europeos. Murnau llegó de Alemania para trabajar para la Fox y, en los melodramas románticos Sunrise: A Song of Two Humans (Amanecer, 1927) y City Girl (El pan nuestro de cada día, 1930), combinó belleza de estilo con una delicada atención a los sentimientos humanos. El sueco Victor Sjöström (1879-1960), conocido por sus estudios sobre la vida rural escandinava, eligió un escenario igualmente remoto para una de las últimas grandes películas mudas estadounidenses, The Wind (El viento, 1928), un vigoroso melodrama filmado en locación en el desierto de Mojave.",
      "text": "De hecho, lo más extraordinario del último período del cine mudo era su capacidad de combinar grandilocuencia visual con intimismo. Esto también se aplica a Hollywood, cuyas mayores obras maestras fueron dirigidas por emigrantes europeos. Murnau llegó de Alemania para trabajar para la Fox y, en los melodramas románticos Sunrise: A Song of Two Humans (Amanecer, mil novecientos veintisiete) y City Girl (El pan nuestro de cada día, mil novecientos treinta), combinó belleza de estilo con una delicada atención a los sentimientos humanos. El sueco Victor Sjöström (mil ochocientos setenta y nueve a mil novecientos sesenta), conocido por sus estudios sobre la vida rural escandinava, eligió un escenario igualmente remoto para una de las últimas grandes películas mudas estadounidenses, The Wind (El viento, mil novecientos veintiocho), un vigoroso melodrama filmado en locación en el desierto de Mojave.",
      "chars": 904
@@ -161,6 +177,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "La excelencia del cine mudo a finales de los años veinte ayuda a explicar por qué muchos veían la llegada del sonido como un retroceso. Gran parte de Lonesome (Soledad, 1928), dirigida por Paul Fejos (1897-1963), otro retrato de la vida urbana en los Estados Unidos realizado por un emigrante europeo, muestra todo el refinamiento del crepúsculo de aquella era del cine; sin embargo, en ella el clima se ve arruinado por secuencias de diálogo terriblemente banales.",
      "text": "La excelencia del cine mudo a finales de los años veinte ayuda a explicar por qué muchos veían la llegada del sonido como un retroceso. Gran parte de Lonesome (Soledad, mil novecientos veintiocho), dirigida por Paul Fejos (mil ochocientos noventa y siete a mil novecientos sesenta y tres), otro retrato de la vida urbana en los Estados Unidos realizado por un emigrante europeo, muestra todo el refinamiento del crepúsculo de aquella era del cine; sin embargo, en ella el clima se ve arruinado por secuencias de diálogo terriblemente banales.",
      "chars": 542
@@ -177,6 +194,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "El sonido abrió nuevas posibilidades para el cine y, hacia la década de 1930, el nuevo medio ya se había ganado su lugar en los Estados Unidos y en Europa occidental. Sin embargo, todavía pasarían años antes de que los cineastas tuvieran las condiciones técnicas para combinar el sonido con la fluidez visual de las últimas películas mudas. Esto puede confirmarse con el trabajo excepcional de las pocas industrias cinematográficas maduras que realizaron este tipo de películas después de 1930.",
      "text": "El sonido abrió nuevas posibilidades para el cine y, hacia la década de mil novecientos treinta, el nuevo medio ya se había ganado su lugar en los Estados Unidos y en Europa occidental. Sin embargo, todavía pasarían años antes de que los cineastas tuvieran las condiciones técnicas para combinar el sonido con la fluidez visual de las últimas películas mudas. Esto puede confirmarse con el trabajo excepcional de las pocas industrias cinematográficas maduras que realizaron este tipo de películas después de mil novecientos treinta.",
      "chars": 532
@@ -184,6 +202,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Hasta mediados de esa década, el cine soviético siguió produciendo excelentes películas mudas, como el clásico Bronenosets Potyomkin (El acorazado Potemkin, 1925), de Sergei M. Eisenstein (1898-1948), uno de los directores más influyentes de la historia del cine. En Japón, donde las películas habladas fueron raras hasta 1935, cineastas como Mikio Naruse (1905-1969) e Hiroshi Shimizu (1903-1966) combinaron las tradiciones locales con el estilo extravagante de los maestros occidentales de finales de la era muda. En películas como Rakudai Wa Shita Keredo (He nacido, pero..., 1932), Yasujiro Ozu (1903-1963) demostró que el cine mudo era capaz de un realismo tan auténtico como el que alcanzaron con sonido las películas neorrealistas de la Italia de la posguerra.",
      "text": "Hasta mediados de esa década, el cine soviético siguió produciendo excelentes películas mudas, como el clásico Bronenosets Potyomkin (El acorazado Potemkin, mil novecientos veinticinco), de Sergei M. [[pron: Eisenstein|Áisenstain]] (mil ochocientos noventa y ocho a mil novecientos cuarenta y ocho), uno de los directores más influyentes de la historia del cine. En Japón, donde las películas habladas fueron raras hasta mil novecientos treinta y cinco, cineastas como Mikio Naruse (mil novecientos cinco a mil novecientos sesenta y nueve) e Hiroshi Shimizu (mil novecientos tres a mil novecientos sesenta y seis) combinaron las tradiciones locales con el estilo extravagante de los maestros occidentales de finales de la era muda. En películas como Rakudai Wa Shita Keredo (He nacido, pero..., mil novecientos treinta y dos), Yasujiro Ozu (mil novecientos tres a mil novecientos sesenta y tres) demostró que el cine mudo era capaz de un realismo tan auténtico como el que alcanzaron con sonido las películas neorrealistas de la Italia de la posguerra.",
      "chars": 1031
@@ -200,6 +219,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Vale la pena ver: las películas de este capítulo son A Page of Madness, Sunrise: A Song of Two Humans, Metropolis, Napoleon, The Passion of Joan of Arc, City Girl, Battleship Potemkin, Pandora's Box, October (Ten Days that Shook the World) y Strike.",
      "text": "Vale la pena ver: las películas de este capítulo son A Page of Madness, Sunrise: A Song of Two Humans, Metropolis, Napoleon, The Passion of Joan of Arc, City Girl, Battleship Potemkin, Pandora's Box, October (Ten Days that Shook the World) y Strike.",
      "chars": 249

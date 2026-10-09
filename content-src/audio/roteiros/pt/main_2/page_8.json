@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 02: De 1930 a 1939. Capítulo 8: O Som e a Comédia.",
      "text": "Parte zero dois: De mil novecentos e trinta a mil novecentos e trinta e nove. Capítulo oito: O Som e a Comédia.",
      "chars": 111
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Quando os filmes falados substituíram o cinema mudo no final da década de 1920 os comediantes tomaram atitudes radicais para se adaptar as novas possibilidades, e novos mestres da comédia ganharam os holofotes.",
      "text": "Quando os filmes falados substituíram o cinema mudo no final da década de mil novecentos e vinte os comediantes tomaram atitudes radicais para se adaptar as novas possibilidades, e novos mestres da comédia ganharam os holofotes.",
      "chars": 228
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "A tradição inaugurada por Mack Sennett (1880-1960) de comédia física e pastelão foi transformada em uma coreografia verbal em que o ator interpretava o personagem sério enquanto o outro desfiava as piadas.",
      "text": "A tradição inaugurada por Mack Sennett (mil oitocentos e oitenta a mil novecentos e sessenta) de comédia física e pastelão foi transformada em uma coreografia verbal em que o ator interpretava o personagem sério enquanto o outro desfiava as piadas.",
      "chars": 248
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 1,
      "original": "Jimmy Durante (1893-1980), por exemplo, adorava inverter a ordem de suas frases e W. C Fields (1880-1946) - que improvisou a maioria de seus próprios diálogos - constantemente explorava duplos sentidos em filmes como É um presente (1934).",
      "text": "Jimmy Durante (mil oitocentos e noventa e três a mil novecentos e oitenta), por exemplo, adorava inverter a ordem de suas frases e W. C Fields (mil oitocentos e oitenta a mil novecentos e quarenta e seis) - que improvisou a maioria de seus próprios diálogos - constantemente explorava duplos sentidos em filmes como É um presente, de mil novecentos e trinta e quatro.",
      "chars": 367
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Ouvir os comediantes falarem era uma experiência nova e bizarra e alguns deles estavam mais aptos à nova mídia do que outros. Resistindo à tendência dos filmes falados, Charlie Chaplin (1889-1977) lançou o mudo Luzes da cidade (1931); o cineasta realizaria O grande ditador (1940), seu primeiro filme com diálogos, somente em 1940. Stan Laurel (1890-1965) e Oliver Hardy (1892-1957), os famosos O Gordo e o Magro, se adaptaram de imediato à nova era, mas, para outros comediantes, a transição não foi tão fácil.",
      "text": "Ouvir os comediantes falarem era uma experiência nova e bizarra e alguns deles estavam mais aptos à nova mídia do que outros. Resistindo à tendência dos filmes falados, Charlie Chaplin (mil oitocentos e oitenta e nove a mil novecentos e setenta e sete) lançou o mudo Luzes da cidade, de mil novecentos e trinta e um; o cineasta realizaria O grande ditador, de mil novecentos e quarenta, seu primeiro filme com diálogos, somente em mil novecentos e quarenta. Stan Laurel (mil oitocentos e noventa a mil novecentos e sessenta e cinco) e Oliver Hardy (mil oitocentos e noventa e dois a mil novecentos e cinquenta e sete), os famosos O Gordo e o Magro, se adaptaram de imediato à nova era, mas, para outros comediantes, a transição não foi tão fácil.",
      "chars": 746
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "citacao",
+     "source_index": 4,
      "original": "Talvez você possa sugerir algo. Para falar a verdade, você me lembra alguma coisa. Para mim, você se parece com um primata.",
      "text": "Talvez você possa sugerir algo. Para falar a verdade, você me lembra alguma coisa. Para mim, você se parece com um primata.",
      "chars": 123
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "disse Rufus T. Firefly (Groucho Marx) em O Diabo a Quatro.",
      "text": "disse Rufus T. Firefly (Groucho Marx) em O Diabo a Quatro.",
      "chars": 58
@@ -71,6 +78,7 @@
     {
      "id": "01-06",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Constrangido pelas pressões e restrições dos estúdios, Buster Keaton (1895-1966) se viu afastado dos floreios artísticos de seus filmes mudos e forçado a se comprometer com películas faladas, como Fale facilmente (1932). A carreira de Harold Lloyd entrou em declínio e Harry Langdon logo caiu no esquecimento.",
      "text": "Constrangido pelas pressões e restrições dos estúdios, Buster [[pron: Keaton|Kíton]] (mil oitocentos e noventa e cinco a mil novecentos e sessenta e seis) se viu afastado dos floreios artísticos de seus filmes mudos e forçado a se comprometer com películas faladas, como Fale facilmente, de mil novecentos e trinta e dois. A carreira de Harold Lloyd entrou em declínio e Harry Langdon logo caiu no esquecimento.",
      "chars": 395
@@ -87,6 +95,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Saiba mais: Comédia em dobro.",
      "text": "Saiba mais: Comédia em dobro.",
      "chars": 29
@@ -94,6 +103,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Quando o assunto é comédia, O Gordo e o Magro continuam sendo o protótipo da dupla yin yang. No entanto, suas personas opostas eram muito mais sutis e maleáveis do que as meras dicotomias gordo/magro ou palhaço/sério. As características de Laurel eram sua delicadeza afeminada e contemplativa e uma idiotice profunda que, às vezes, dava lugar a bizarros arroubos de esperteza. Ollie, por sua vez, era desajeitado e presunçoso, mas também tinha ganas de parecer galante, como indica seu hábito de balançar a gravata com timidez.",
      "text": "Quando o assunto é comédia, O Gordo e o Magro continuam sendo o protótipo da dupla yin yang. No entanto, suas personas opostas eram muito mais sutis e maleáveis do que as meras dicotomias gordo/magro ou palhaço/sério. As características de Laurel eram sua delicadeza afeminada e contemplativa e uma idiotice profunda que, às vezes, dava lugar a bizarros arroubos de esperteza. Ollie, por sua vez, era desajeitado e presunçoso, mas também tinha ganas de parecer galante, como indica seu hábito de balançar a gravata com timidez.",
      "chars": 527
@@ -101,6 +111,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Grande parte da genialidade da dupla estava em seu domínio das formalidades da comédia absurda: a lentidão tranquila dos olhares de surpresa que marcavam seus números; o jeito como Ollie encarava frustrado a câmera; e os episódios cuidadosamente encenados de sua guerra constante com o habitual \"escada\" James Finlayson (1887-1953), nos quais os dois observavam as explosões de ira deste antes de revidarem sempre depois de trocarem um aceno de cabeça solene.",
      "text": "Grande parte da genialidade da dupla estava em seu domínio das formalidades da comédia absurda: a lentidão tranquila dos olhares de surpresa que marcavam seus números; o jeito como Ollie encarava frustrado a câmera; e os episódios cuidadosamente encenados de sua guerra constante com o habitual \"escada\" James Finlayson (mil oitocentos e oitenta e sete a mil novecentos e cinquenta e três), nos quais os dois observavam as explosões de ira deste antes de revidarem sempre depois de trocarem um aceno de cabeça solene.",
      "chars": 517
@@ -117,6 +128,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Com o acréscimo do some de diálogos gravados, as comédias ingressaram no reino do surrealismo. Os momentos cômicos pendiam para o absurdo, com o pescoço de Oliver Hardy se esticando de forma impossível em Dois caipiras ladinos (1937) e Har Marx fazendo uma vela queimar nas duas pontas em Os Gênios da Pelota (1932). Esse tipo de situação fantástica preconizou o mundo ilógico da Turma do Permalonga.",
      "text": "Com o acréscimo do some de diálogos gravados, as comédias ingressaram no reino do surrealismo. Os momentos cômicos pendiam para o absurdo, com o pescoço de Oliver Hardy se esticando de forma impossível em Dois caipiras ladinos, de mil novecentos e trinta e sete, e Har Marx fazendo uma vela queimar nas duas pontas em Os Gênios da Pelota, de mil novecentos e trinta e dois. Esse tipo de situação fantástica preconizou o mundo ilógico da Turma do Permalonga.",
      "chars": 457
@@ -124,6 +136,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Muitos dos comediantes da década de 1930 vinham do vaudeville e haviam aprimorado suas habilidades nos palcos antes de entrarem para o cinema. O número da mesa de sinuca de W. C. Fields em Os seis aventureiros (1934) foi criado durante a época em que ele atuava no teatro. Jack Benny já era um violinista de sucesso e Jimmy Durante, um pianista de jazz - e ambos aproveitavam os talentos em suas interpretações.",
      "text": "Muitos dos comediantes da década de mil novecentos e trinta vinham do vaudeville e haviam aprimorado suas habilidades nos palcos antes de entrarem para o cinema. O número da mesa de sinuca de W. C. Fields em Os seis aventureiros, de mil novecentos e trinta e quatro, foi criado durante a época em que ele atuava no teatro. Jack Benny já era um violinista de sucesso e Jimmy Durante, um pianista de jazz - e ambos aproveitavam os talentos em suas interpretações.",
      "chars": 461
@@ -140,6 +153,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Invocando o perfeccionismo desenvolvido nos ensaios teatrais, Stan Laurel e Oliver Hardy trabalharam incansavelmente na sequência de dança de dois minutos em Dois caipiras ladinos (1937). Alguns desses comediantes criaram personas peculiares, definidas por características inconfundíveis, personagens populares ou traços distintivos, como o nariz grande de Jimmy Durante ou o magricela Stan em contraste com o rechonchudo Ollie. Esses dois alcançaram seu auge criativo durante os anos 1930, aparecendo em clássicos como Entrega a domicilio (1932).",
      "text": "Invocando o perfeccionismo desenvolvido nos ensaios teatrais, Stan Laurel e Oliver Hardy trabalharam incansavelmente na sequência de dança de dois minutos em Dois caipiras ladinos, de mil novecentos e trinta e sete. Alguns desses comediantes criaram personas peculiares, definidas por características inconfundíveis, personagens populares ou traços distintivos, como o nariz grande de Jimmy Durante ou o magricela Stan em contraste com o rechonchudo Ollie. Esses dois alcançaram seu auge criativo durante os anos mil novecentos e trinta, aparecendo em clássicos como Entrega a domicilio, de mil novecentos e trinta e dois.",
      "chars": 622
@@ -147,6 +161,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Talvez a criação cômica mais brilhante do período tenha sido os Irmãos Marx. Dos três, Groucho era a figura mais icônica, com seus óculos, seu charuto e seu estoque interminável de tiradas mordazes. Os Irmãos Marx levaram seu estilo pastelão anárquico do palco para as telas, combinando-o com diálogos complexos demais para a época em que atuavam no vaudeville.",
      "text": "Talvez a criação cômica mais brilhante do período tenha sido os Irmãos Marx. Dos três, Groucho era a figura mais icônica, com seus óculos, seu charuto e seu estoque interminável de tiradas mordazes. Os Irmãos Marx levaram seu estilo pastelão anárquico do palco para as telas, combinando-o com diálogos complexos demais para a época em que atuavam no vaudeville.",
      "chars": 361
@@ -163,6 +178,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Em filmes como Diabo a quatro (1933), eles definiram a arte da comédia sarcástica e sua influência em comediantes como Woody Allen (nascido em 1935) fica clara no filme A última noite de Boris Grushenko (1975), por exemplo.",
      "text": "Em filmes como Diabo a quatro, de mil novecentos e trinta e três, eles definiram a arte da comédia sarcástica e sua influência em comediantes como Woody Allen (nascido em mil novecentos e trinta e cinco) fica clara no filme A última noite de Boris Grushenko, de mil novecentos e setenta e cinco, por exemplo.",
      "chars": 308
@@ -170,6 +186,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Enquanto os Irmãos Marx definiam o cinema cômico, Os Três Patetas, seus conterrâneos nova-iorquinos, surgiam e se tornavam a pedra fundamental da comédia popular americana. Curly, Larry e Moe tiveram uma carreira extraordinariamente prolifica juntos, estrelando (com algumas mudanças posteriores na equipe) mais de 200 curtas e longas-metragens. Os Três Patetas são mais lembrados por seu estilo de pastelão repleto de violência, muitas vezes perpetrada uns contra os outros, em filmes como Médicos aloprados (1937).",
      "text": "Enquanto os Irmãos Marx definiam o cinema cômico, Os Três Patetas, seus conterrâneos nova-iorquinos, surgiam e se tornavam a pedra fundamental da comédia popular americana. Curly, Larry e Moe tiveram uma carreira extraordinariamente prolifica juntos, estrelando (com algumas mudanças posteriores na equipe) mais de duzentos curtas e longas-metragens. Os Três Patetas são mais lembrados por seu estilo de pastelão repleto de violência, muitas vezes perpetrada uns contra os outros, em filmes como Médicos aloprados, de mil novecentos e trinta e sete.",
      "chars": 549
@@ -186,6 +203,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "Vale a conferida: os filmes deste capítulo são Duck Soup, The Music Box, Dizzy Doctors, Horse Feathers, Modern Times, The Great Dictator e Way Out West.",
      "text": "Vale a conferida: os filmes deste capítulo são Duck Soup, The Music Box, Dizzy Doctors, Horse Feathers, Modern Times, The Great Dictator e Way Out West.",
      "chars": 152

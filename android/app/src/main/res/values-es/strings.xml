@@ -53,7 +53,11 @@
     <string name="buy">Comprar</string>
     <string name="contact_us">Contáctanos</string>
     <string name="credits_terms">Créditos y términos</string>
-    <string name="tmdb_terms_description">La información de películas, actores, directores e imágenes es proporcionada por la API de TMDb, pero no está respaldada ni certificada por TMDb.</string>
+    <string name="about_free_culture">La cultura es gratuita. Viva el cine.</string>
+    <string name="credits_tmdb">Información e imágenes de películas y personas: TMDB</string>
+    <string name="credits_omdb">Calificaciones y datos adicionales de películas: OMDb API</string>
+    <string name="credits_awards">Datos de los premios: Wikipedia (CC BY-SA 4.0) y Wikidata (CC0)</string>
+    <string name="credits_youtube">Videos: YouTube. Los videos pertenecen a sus respectivos autores.</string>
     <string name="tmdb_terms_title">Términos de uso de TMDB</string>
     <string name="tmdb_api_terms_title">Términos de uso de la API de TMDB</string>
     <string name="omdb_api_terms_title">Términos de uso de la API de OMDB</string>
@@ -62,7 +66,7 @@
     <string name="responsable">Desarrollo e investigación de la app por Tiago Silva</string>
     <string name="terms">Términos de uso</string>
     <string name="privacy">Política de privacidad</string>
-    <string name="app_description">%1s es una aplicación gratuita que busca, de forma divertida e intuitiva, acercar la historia del cine a todos. A través de imágenes, videos, gifs, entrevistas, clasificaciones e infografías, presentamos la trayectoria del cine desde la primera proyección de los hermanos Lumière hasta hoy. Nos basamos en libros y documentales y los adaptamos a este nuevo medio. ¡Que lo disfrutes!</string>
+    <string name="app_description">%1s es una app gratuita que cuenta la historia del cine de forma divertida e intuitiva, desde la primera proyección de los hermanos Lumière hasta hoy. Recorre 8 eras del séptimo arte, los premios desde 1929, una línea de tiempo interactiva, las 1001 películas que hay que ver antes de morir, grandes directores y un glosario de términos del cine, en portugués, inglés y español, con tema claro y oscuro. En Brasil, los capítulos también se pueden escuchar con narración en audio. Todo se basa en libros y documentales, adaptados a este nuevo medio. ¡Que lo disfrutes!</string>
 
     <!-- Home -->
     <string name="start_journey">Comienza tu recorrido</string>

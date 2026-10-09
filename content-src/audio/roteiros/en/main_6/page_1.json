@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 06: From 1990 to 2009. Chapter 1: European Period Drama.",
      "text": "Part zero six: From nineteen ninety to two thousand nine. Chapter one: European Period Drama.",
      "chars": 93
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "The artistic freedom of the '90s in European period dramas.",
      "text": "The artistic freedom of the nineties in European period dramas.",
      "chars": 63
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "After the collapse of the Eastern Bloc, Europe entered the 1990s fueled by, among other things, a spirit of artistic freedom. But the economic cost of change was reflected in budget constraints on film production in some countries, limiting costly period dramas to those countries that already had a long track record in the genre.",
      "text": "After the collapse of the Eastern Bloc, Europe entered the nineteen nineties fueled by, among other things, a spirit of artistic freedom. But the economic cost of change was reflected in budget constraints on film production in some countries, limiting costly period dramas to those countries that already had a long track record in the genre.",
      "chars": 343
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "The decade began with Jean-Paul Rappeneau's (b. 1932) dazzling adaptation of Cyrano de Bergerac (1990). In a role he and his big nose were born to play, Gérard Depardieu (b. 1948) gave one of his most endearing performances, conveying cunning, intelligence and emotion through Jean-Claude Carrière's dense screenplay.",
      "text": "The decade began with Jean-Paul Rappeneau's (born in nineteen thirty-two) dazzling adaptation of Cyrano de Bergerac, from nineteen ninety. In a role he and his big nose were born to play, Gérard Depardieu (born in nineteen forty-eight) gave one of his most endearing performances, conveying cunning, intelligence and emotion through Jean-Claude Carrière's dense screenplay.",
      "chars": 373
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "citacao",
+     "source_index": 3,
      "original": "Gwyneth Paltrow, in her first leading role, creates a heroine so dazzling that she seems entirely plausible as the playwright's guiding light.",
      "text": "Gwyneth Paltrow, in her first leading role, creates a heroine so dazzling that she seems entirely plausible as the playwright's guiding light.",
      "chars": 142
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "said Janet Maslin on Shakespeare in Love.",
      "text": "said Janet Maslin on Shakespeare in Love.",
      "chars": 41
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Rappeneau and Carrière teamed up again for Le Hussard sur le toit (The Horseman on the Roof, 1995), billed as the most expensive French film of all time, but lacking the depth of their earlier collaboration. La Reine Margot (Queen Margot, 1994) fared better. Decadent and gory, it felt more like a gangster film than a period drama.",
      "text": "Rappeneau and Carrière teamed up again for Le Hussard sur le toit (The Horseman on the Roof, nineteen ninety-five), billed as the most expensive French film of all time, but lacking the depth of their earlier collaboration. La Reine Margot (Queen Margot, nineteen ninety-four) fared better. Decadent and gory, it felt more like a gangster film than a period drama.",
      "chars": 364
@@ -71,6 +78,7 @@
     {
      "id": "01-06",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Ismail Merchant (1936-2005) and James Ivory (b. 1928) continued to dominate classic British cinema with two of their finest productions, Howards End (1992) and The Remains of the Day (1993), while Nicholas Hytner (b. 1956) oversaw the successful screen adaptation of Alan Bennett's play in The Madness of King George (1994).",
      "text": "Ismail Merchant (nineteen thirty-six to two thousand five) and James Ivory (born in nineteen twenty-eight) continued to dominate classic British cinema with two of their finest productions, Howards End, from nineteen ninety-two, and The Remains of the Day, from nineteen ninety-three, while Nicholas Hytner (born in nineteen fifty-six) oversaw the successful screen adaptation of Alan Bennett's play in The Madness of King George, from nineteen ninety-four.",
      "chars": 457
@@ -87,6 +95,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Learn more: A Fable of Love and Survival.",
      "text": "Learn more: A Fable of Love and Survival.",
      "chars": 41
@@ -94,6 +103,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "\"Buongiorno Principessa!\" Rarely has an expression taken from an Italian film become so well known in every corner of the world. And when it is spoken with arms flung wide by a child leaping out of a cupboard with the burst of joy we see in Guido and Dora's son... it melts anyone's heart. The film from which we borrowed the memory of this scene, as everyone knows, is Life Is Beautiful (1997), and it put actor, director and screenwriter Roberto Benigni in the international spotlight.",
      "text": "\"Buongiorno Principessa!\" Rarely has an expression taken from an Italian film become so well known in every corner of the world. And when it is spoken with arms flung wide by a child leaping out of a cupboard with the burst of joy we see in Guido and Dora's son... it melts anyone's heart. The film from which we borrowed the memory of this scene, as everyone knows, is Life Is Beautiful, from nineteen ninety-seven, and it put actor, director and screenwriter Roberto Benigni in the international spotlight.",
      "chars": 508
@@ -101,6 +111,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "The attention Life Is Beautiful drew is explained not only by the many awards it won in Europe and, above all, in Hollywood, but also by the debate it reignited (after Schindler's List (1993)) about the possibilities and limits of representing the Holocaust. The main reason for any controversy was precisely what defines this filmmaker's work: comedy. The Holocaust, it was argued, could not be viewed that way. Benigni reacted to this without bitterness, as can be seen in his answer in a 1999 interview with The Guardian: \"We clowns need to be mistreated. It keeps us alive, real. Only a genius like Fellini knew how to do that. He saw clowns as benefactors, saints, as the epitome of tragedy.\" This same personality that shrugged off bad reviews is the personality of Guido, the protagonist of Life Is Beautiful, played by Benigni, who bursts into the film with infectious enthusiasm. We know it won't all be roses, because the opening line serves as a warning: \"This is a simple story, but not an easy one to tell. Like a fable, there is sorrow, and like a fable, it is full of wonder and happiness.\"",
      "text": "The attention Life Is Beautiful drew is explained not only by the many awards it won in Europe and, above all, in Hollywood, but also by the debate it reignited (after Schindler's List, from nineteen ninety-three) about the possibilities and limits of representing the Holocaust. The main reason for any controversy was precisely what defines this filmmaker's work: comedy. The Holocaust, it was argued, could not be viewed that way. Benigni reacted to this without bitterness, as can be seen in his answer in a nineteen ninety-nine interview with The Guardian: \"We clowns need to be mistreated. It keeps us alive, real. Only a genius like Fellini knew how to do that. He saw clowns as benefactors, saints, as the epitome of tragedy.\" This same personality that shrugged off bad reviews is the personality of Guido, the protagonist of Life Is Beautiful, played by Benigni, who bursts into the film with infectious enthusiasm. We know it won't all be roses, because the opening line serves as a warning: \"This is a simple story, but not an easy one to tell. Like a fable, there is sorrow, and like a fable, it is full of wonder and happiness.\"",
      "chars": 1142
@@ -117,6 +128,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Roberto Benigni's reasons for making this film were neither political nor historical, although he and screenwriter Vincenzo Cerami (b. 1940) took the precaution of hiring consultants from the Center for Jewish Documentation in Milan and holding screenings for groups of Italian Jews before the release. His desire to tell a story of love and humanity in an extreme context needed only this, so to speak, scientific confirmation to launch into international distribution. And its success was confirmed in Cannes, Warsaw, the United States and even Jerusalem, where the film later won the \"Best Jewish Experience\" award at the Jerusalem Film Festival. The great human inspiration behind Life Is Beautiful was Rubino Romeo Salmonì (1920-2011). It was the story of this Italian Jew, captured by the Nazis in 1943, that caught Benigni's attention through the book Ho sconfitto Hitler (literally, I Defeated Hitler), in which he recounts how he survived Auschwitz. Before putting it into writing, Rubino shared his experience with children and teenagers, doing so in a more optimistic way, as the book reveals, adopting a tone of a certain irony. And it was this man's strong, confident spirit (one that never forgot comedy) that suggested the possibility of talking about love in the most catastrophic of situations. It is no accident that the film's seemingly trivial title also has a very specific origin: it was taken from the sentence with which Leon Trotsky ended his testament, written in Mexico: \"Life is beautiful. Let the future generations cleanse it of all evil, oppression and violence, and enjoy it to the full.\"",
      "text": "Roberto Benigni's reasons for making this film were neither political nor historical, although he and screenwriter Vincenzo Cerami (born in nineteen forty) took the precaution of hiring consultants from the Center for Jewish Documentation in Milan and holding screenings for groups of Italian Jews before the release. His desire to tell a story of love and humanity in an extreme context needed only this, so to speak, scientific confirmation to launch into international distribution. And its success was confirmed in Cannes, Warsaw, the United States and even Jerusalem, where the film later won the \"Best Jewish Experience\" award at the Jerusalem Film Festival. The great human inspiration behind Life Is Beautiful was Rubino Romeo Salmonì (nineteen twenty to twenty eleven). It was the story of this Italian Jew, captured by the Nazis in nineteen forty-three, that caught Benigni's attention through the book Ho sconfitto Hitler (literally, I Defeated Hitler), in which he recounts how he survived Auschwitz. Before putting it into writing, Rubino shared his experience with children and teenagers, doing so in a more optimistic way, as the book reveals, adopting a tone of a certain irony. And it was this man's strong, confident spirit (one that never forgot comedy) that suggested the possibility of talking about love in the most catastrophic of situations. It is no accident that the film's seemingly trivial title also has a very specific origin: it was taken from the sentence with which Leon Trotsky ended his testament, written in Mexico: \"Life is beautiful. Let the future generations cleanse it of all evil, oppression and violence, and enjoy it to the full.\"",
      "chars": 1674
@@ -124,6 +136,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Moreover, inventiveness in the service of humanism, far more than historical accuracy, was the main symbol of the campaign to spread the film around the world, and especially in the United States, where the term \"Italian fable\" circulated with the director's full approval; he only added that \"it was invented from the truth.\" By the time it reached the Oscars in 1999, Life Is Beautiful was already the highest-grossing foreign-language film of all time in the North American market: 21 million dollars.",
      "text": "Moreover, inventiveness in the service of humanism, far more than historical accuracy, was the main symbol of the campaign to spread the film around the world, and especially in the United States, where the term \"Italian fable\" circulated with the director's full approval; he only added that \"it was invented from the truth.\" By the time it reached the Oscars in nineteen ninety-nine, Life Is Beautiful was already the highest-grossing foreign-language film of all time in the North American market: twenty-one million dollars.",
      "chars": 528
@@ -140,6 +153,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Kenneth Branagh (b. 1960) followed up his blood-and-mud version of Henry V (1989) with Much Ado About Nothing (1993), the best Shakespeare adaptation of the decade, with the exception of Baz Luhrmann's (b. 1962) brilliant take on Romeo + Juliet (1996). Branagh's Hamlet (1996), however, the first to use Shakespeare's complete text, was only a partial success. Shakespeare in Love (1998), co-written by playwright Tom Stoppard (b. 1937), proved even more popular, captivating audiences and winning the Oscars for Best Picture and Best Original Screenplay. Derek Jarman (1942-1994) produced one of his finest works in 1991, an adaptation of another Elizabethan drama, Christopher Marlowe's Edward II.",
      "text": "Kenneth Branagh (born in nineteen sixty) followed up his blood-and-mud version of Henry the Fifth, from nineteen eighty-nine, with Much Ado About Nothing, from nineteen ninety-three, the best Shakespeare adaptation of the decade, with the exception of Baz Luhrmann's (born in nineteen sixty-two) brilliant take on Romeo + Juliet, from nineteen ninety-six. Branagh's Hamlet, from nineteen ninety-six, however, the first to use Shakespeare's complete text, was only a partial success. Shakespeare in Love, from nineteen ninety-eight, co-written by playwright Tom Stoppard (born in nineteen thirty-seven), proved even more popular, captivating audiences and winning the Oscars for Best Picture and Best Original Screenplay. Derek Jarman (nineteen forty-two to nineteen ninety-four) produced one of his finest works in nineteen ninety-one, an adaptation of another Elizabethan drama, Christopher Marlowe's Edward the Second.",
      "chars": 920
@@ -156,6 +170,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Many European countries examined more recent events. Michael Collins (1996) and Some Mother's Son (1996) turned their gaze to aspects of the Irish Troubles. Germany's small output of period films in the 1990s, which included Aimée & Jaguar (1999) and the delicate Europa Europa (1990), the latter directed by Agnieszka Holland (b. 1948), drew on events of World War II.",
      "text": "Many European countries examined more recent events. Michael Collins, from nineteen ninety-six, and Some Mother's Son, from nineteen ninety-six, turned their gaze to aspects of the Irish Troubles. Germany's small output of period films in the nineteen nineties, which included Aimée and Jaguar, from nineteen ninety-nine, and the delicate Europa Europa, from nineteen ninety, the latter directed by Agnieszka Holland (born in nineteen forty-eight), drew on events of World War Two.",
      "chars": 481
@@ -163,6 +178,7 @@
     {
      "id": "05-02",
      "speaker": "citacao",
+     "source_index": 11,
      "original": "Ultimately, no matter how many innovative and unconventional flourishes he applies, the success of any adaptation of a Shakespeare play is determined by two factors: the competence of the director and the ability of the principal cast members. Luhrmann, Danes, and DiCaprio put this Romeo + Juliet in good hands.",
      "text": "Ultimately, no matter how many innovative and unconventional flourishes he applies, the success of any adaptation of a Shakespeare play is determined by two factors: the competence of the director and the ability of the principal cast members. Luhrmann, Danes, and DiCaprio put this Romeo + Juliet in good hands.",
      "chars": 312
@@ -170,6 +186,7 @@
     {
      "id": "05-03",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "said James Berardinelli on Romeo + Juliet.",
      "text": "said James Berardinelli on Romeo + Juliet.",
      "chars": 42
@@ -177,6 +194,7 @@
     {
      "id": "05-04",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "The most important Spanish period film of the decade was the Oscar-winning Belle époque (1992). La lengua de las mariposas (Butterfly, 1999) and Ken Loach's (b. 1936) Land and Freedom (1995) focused on the Spanish Civil War, while Vacas (Cows, 1992) told the eccentric story of a Basque family over seven decades. A similar narrative structure was adopted by Hungarian director István Szabó (b. 1938) in Sunshine (1999), and with even better results by the Greek Theo Angelopoulos (b. 1935) in To Vlemma tou Odyssea (Ulysses' Gaze, 1995).",
      "text": "The most important Spanish period film of the decade was the Oscar-winning Belle époque, from nineteen ninety-two. La lengua de las mariposas (Butterfly, nineteen ninety-nine) and Ken Loach's (born in nineteen thirty-six) Land and Freedom, from nineteen ninety-five, focused on the Spanish Civil War, while Vacas (Cows, nineteen ninety-two) told the eccentric story of a Basque family over seven decades. A similar narrative structure was adopted by Hungarian director István Szabó (born in nineteen thirty-eight) in Sunshine, from nineteen ninety-nine, and with even better results by the Greek Theo Angelopoulos (born in nineteen thirty-five) in To Vlemma tou Odyssea (Ulysses' Gaze, nineteen ninety-five).",
      "chars": 708
@@ -184,6 +202,7 @@
     {
      "id": "05-05",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Il postino (The Postman, 1994), a fictional account of the meeting between Pablo Neruda and a lovestruck postman, was one of the most internationally successful Italian productions, though it was soon overshadowed by La vita è bella (Life Is Beautiful, 1997), directed by and starring Roberto Benigni (b. 1952). The comedy-drama, set mostly in a concentration camp, was one of the decade's biggest period-film hits, although opinions on its merits remain divided.",
      "text": "Il postino (The Postman, nineteen ninety-four), a fictional account of the meeting between Pablo Neruda and a lovestruck postman, was one of the most internationally successful Italian productions, though it was soon overshadowed by La vita è bella (Life Is Beautiful, nineteen ninety-seven), directed by and starring Roberto Benigni (born in nineteen fifty-two). The comedy-drama, set mostly in a concentration camp, was one of the decade's biggest period-film hits, although opinions on its merits remain divided.",
      "chars": 515
@@ -200,6 +219,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "Worth watching: the films from this chapter are Life Is Beautiful, Shakespeare in Love, Romeo + Juliet, Cyrano de Bergerac, Much Ado About Nothing, The Postman, Land and Freedom, The Horseman on the Roof, Queen Margot, The Madness of King George, Hamlet and Europa Europa.",
      "text": "Worth watching: the films from this chapter are Life Is Beautiful, Shakespeare in Love, Romeo + Juliet, Cyrano de Bergerac, Much Ado About Nothing, The Postman, Land and Freedom, The Horseman on the Roof, Queen Margot, The Madness of King George, Hamlet and Europa Europa.",
      "chars": 272

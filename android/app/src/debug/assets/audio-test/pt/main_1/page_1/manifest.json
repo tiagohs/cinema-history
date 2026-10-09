@@ -1,0 +1,237 @@
+{
+ "lang": "pt",
+ "era": 1,
+ "page": 1,
+ "title": "Visionários",
+ "era_title": "Parte 01 - De 1895 a 1929",
+ "provider": "test",
+ "voices": {},
+ "format": "audio/ogg; codecs=opus; 12kbps (teste)",
+ "tracks": [
+  {
+   "id": "00",
+   "title": "Abertura",
+   "kind": "open",
+   "file": "../../../tones/a.ogg",
+   "duration_s": 12.0,
+   "bytes": 19433,
+   "chars": 284,
+   "hash": "test-a",
+   "marks": [
+    {
+     "seg": "00-01",
+     "t": 0.25,
+     "source_index": -1
+    },
+    {
+     "seg": "00-02",
+     "t": 4.47,
+     "source_index": -1
+    }
+   ]
+  },
+  {
+   "id": "01",
+   "title": "Pathé Frères",
+   "kind": "body",
+   "file": "../../../tones/b.ogg",
+   "duration_s": 25.0,
+   "bytes": 39673,
+   "chars": 1046,
+   "hash": "test-b",
+   "marks": [
+    {
+     "seg": "01-01",
+     "t": 0.25,
+     "source_index": 0
+    },
+    {
+     "seg": "01-02",
+     "t": 14.64,
+     "source_index": 1
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "title": "Filme de rolo",
+   "kind": "body",
+   "file": "../../../tones/c.ogg",
+   "duration_s": 25.0,
+   "bytes": 39675,
+   "chars": 831,
+   "hash": "test-c",
+   "marks": [
+    {
+     "seg": "02-01",
+     "t": 0.25,
+     "source_index": 3
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "title": "28 de dezembro de 1895",
+   "kind": "body",
+   "file": "../../../tones/b.ogg",
+   "duration_s": 25.0,
+   "bytes": 39673,
+   "chars": 1008,
+   "hash": "test-b",
+   "marks": [
+    {
+     "seg": "03-01",
+     "t": 0.25,
+     "source_index": 5
+    },
+    {
+     "seg": "03-02",
+     "t": 10.18,
+     "source_index": 6
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "title": "Início da indústria cinematográfica indiana",
+   "kind": "body",
+   "file": "../../../tones/c.ogg",
+   "duration_s": 25.0,
+   "bytes": 39675,
+   "chars": 1635,
+   "hash": "test-c",
+   "marks": [
+    {
+     "seg": "04-01",
+     "t": 0.25,
+     "source_index": 8
+    },
+    {
+     "seg": "04-02",
+     "t": 5.77,
+     "source_index": 9
+    },
+    {
+     "seg": "04-03",
+     "t": 11.45,
+     "source_index": 10
+    },
+    {
+     "seg": "04-04",
+     "t": 12.79,
+     "source_index": 10
+    },
+    {
+     "seg": "04-05",
+     "t": 13.23,
+     "source_index": 11
+    },
+    {
+     "seg": "04-06",
+     "t": 16.51,
+     "source_index": 12
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "title": "Filmes em episódios",
+   "kind": "body",
+   "file": "../../../tones/b.ogg",
+   "duration_s": 25.0,
+   "bytes": 39673,
+   "chars": 951,
+   "hash": "test-b",
+   "marks": [
+    {
+     "seg": "05-01",
+     "t": 0.25,
+     "source_index": 14
+    }
+   ]
+  },
+  {
+   "id": "06",
+   "title": "Saiba mais: Os Filmes em Série",
+   "kind": "more",
+   "file": "../../../tones/c.ogg",
+   "duration_s": 25.0,
+   "bytes": 39675,
+   "chars": 2162,
+   "hash": "test-c",
+   "marks": [
+    {
+     "seg": "06-01",
+     "t": 0.25,
+     "source_index": 15
+    },
+    {
+     "seg": "06-02",
+     "t": 0.59,
+     "source_index": 15
+    },
+    {
+     "seg": "06-03",
+     "t": 9.43,
+     "source_index": 15
+    },
+    {
+     "seg": "06-04",
+     "t": 10.87,
+     "source_index": 15
+    },
+    {
+     "seg": "06-05",
+     "t": 15.0,
+     "source_index": 15
+    },
+    {
+     "seg": "06-06",
+     "t": 18.44,
+     "source_index": 15
+    }
+   ]
+  },
+  {
+   "id": "07",
+   "title": "O primeiro filme com algumas sequencias debaixo d'água",
+   "kind": "body",
+   "file": "../../../tones/b.ogg",
+   "duration_s": 25.0,
+   "bytes": 39673,
+   "chars": 1742,
+   "hash": "test-b",
+   "marks": [
+    {
+     "seg": "07-01",
+     "t": 0.25,
+     "source_index": 16
+    },
+    {
+     "seg": "07-02",
+     "t": 9.66,
+     "source_index": 17
+    }
+   ]
+  },
+  {
+   "id": "08",
+   "title": "Vale a conferida",
+   "kind": "watch",
+   "file": "../../../tones/c.ogg",
+   "duration_s": 25.0,
+   "bytes": 39675,
+   "chars": 213,
+   "hash": "test-c",
+   "marks": [
+    {
+     "seg": "08-01",
+     "t": 0.25,
+     "source_index": 18
+    }
+   ]
+  }
+ ],
+ "duration_s": 212.0,
+ "generated_at": "test"
+}

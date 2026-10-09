@@ -22,6 +22,11 @@ import androidx.recyclerview.widget.ConcatAdapter
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.ads.AdPlacement
 import com.tiagohs.cinema_history.ads.NativeAdAdapter
+import com.tiagohs.cinema_history.BuildConfig
+import com.tiagohs.cinema_history.audio.ChapterKey
+import com.tiagohs.cinema_history.audio.ui.AudioDebugDialog
+import com.tiagohs.cinema_history.audio.ui.PageAudioBinder
+import com.tiagohs.helpers.utils.ContentLanguage
 import com.tiagohs.cinema_history.presentation.activities.*
 import com.tiagohs.cinema_history.presentation.adapters.PageContentAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
@@ -59,6 +64,9 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
 
     private var footerShowsFromAppBar = false
 
+    /** Narração em áudio desta página (botão Ouvir, destaque do trecho, "Ouvir a partir daqui"). */
+    private var audioBinder: PageAudioBinder? = null
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -90,13 +98,29 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
     }
 
     override fun onDestroyView() {
+        audioBinder?.detach()
+        audioBinder = null
+
         super.onDestroyView()
 
         presenter.onUnbindView()
     }
 
+    override fun onResume() {
+        super.onResume()
+        audioBinder?.onResume()
+    }
+
+    override fun onPause() {
+        audioBinder?.onPause()
+        super.onPause()
+    }
+
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_history_page, menu)
+        if (BuildConfig.DEBUG) {
+            menu.add(Menu.NONE, AudioDebugDialog.MENU_ID, Menu.CATEGORY_SECONDARY, "Áudio (debug)")
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -107,6 +131,10 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
             }
             R.id.action_references -> {
                 activity?.startActivityWithSlideRightToLeftAnimation(ReferenceActivity.newIntent(context))
+                true
+            }
+            AudioDebugDialog.MENU_ID -> {
+                activity?.let { AudioDebugDialog.show(it) }
                 true
             }
             else -> false
@@ -122,6 +150,7 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
             // botões de navegação (próximo/compartilhar) e de outros elementos clicáveis.
             val contentList = pageContent.contentList
             val adAfter = chapterAdPosition(contentList)
+            val adAdapter = if (adAfter == null) null else NativeAdAdapter(AdPlacement.CHAPTER, viewLifecycleOwner)
             val createAdapter = { items: List<Content> ->
                 PageContentAdapter(items, mainTopic, settingManager.getMovieLanguage()).apply {
                     presentScreen = { presentScreen(it) }
@@ -130,11 +159,13 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
                     onLinkClicked = { onLinkClicked(it) }
                 }
             }
-            adapter = if (adAfter == null) createAdapter(contentList) else ConcatAdapter(
+            adapter = if (adAfter == null || adAdapter == null) createAdapter(contentList) else ConcatAdapter(
                 createAdapter(contentList.take(adAfter)),
-                NativeAdAdapter(AdPlacement.CHAPTER, viewLifecycleOwner),
+                adAdapter,
                 createAdapter(contentList.drop(adAfter))
             )
+            // Apoio: cartão discreto no FIM do capítulo (a cada 5 concluídos; só BR + pt, nunca para apoiadores).
+            adapter = com.tiagohs.cinema_history.support.ChapterEndSupportAdapter.append(adapter, context, "${mainTopic?.id}:${sumario?.id}")
             addItemDecoration(
                 SpaceOffsetDecoration(
                     10.convertIntToDp(context),
@@ -142,6 +173,8 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
                 )
             )
             addOnScrollListener(HidingScrollListener(this@HistoryPageFragment, pageContent.contentList.size - 1))
+
+            setupAudio(adAfter, adAdapter)
         }
 
         val tv = TypedValue()
@@ -161,6 +194,15 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
         setupHeader()
     }
 
+    private fun setupAudio(adAfter: Int?, adAdapter: NativeAdAdapter?) {
+        audioBinder?.detach()
+        audioBinder = null
+        val era = mainTopic?.id ?: return
+        val page = sumario?.id ?: return
+        audioBinder = PageAudioBinder(this, binding, ChapterKey(ContentLanguage.current(), era, page), adAfter, adAdapter)
+            .also { it.attach() }
+    }
+
     /** Posição do anúncio: entre dois textos, o mais perto possível do meio. Capítulos curtos ficam sem anúncio. */
     private fun chapterAdPosition(contents: List<Content>): Int? {
         if (contents.size < 6) return null
@@ -171,6 +213,8 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
     }
 
     override fun onScrollUp() {
+        // rolagem automática acompanhando a narração não esconde o rodapé/mini-player
+        if (audioBinder?.isAutoScrolling == true) return
         (activity as? HistoryPagesActivity)?.hideFooter()
     }
 
@@ -238,7 +282,7 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
 
             if (verticalOffset == 0) {
                 if (rect.bottom <= ViewCompat.getMinimumHeight(appBarLayout)) {
-                    activity?.hideFooter()
+                    if (audioBinder?.isAutoScrolling != true) activity?.hideFooter()
 
                     footerShowsFromAppBar = false
                 } else {
@@ -248,7 +292,7 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
                 }
             } else if (abs(verticalOffset) >= appBarLayout.totalScrollRange) {
                 if (rect.bottom <= ViewCompat.getMinimumHeight(appBarLayout)) {
-                    activity?.hideFooter()
+                    if (audioBinder?.isAutoScrolling != true) activity?.hideFooter()
 
                     footerShowsFromAppBar = false
                 } else {

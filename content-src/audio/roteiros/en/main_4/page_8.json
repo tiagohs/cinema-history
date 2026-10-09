@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 04: From 1960 to 1969. Chapter 8: The Spaghetti Western.",
      "text": "Part zero four: From nineteen sixty to nineteen sixty-nine. Chapter eight: The Spaghetti Western.",
      "chars": 97
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "The decade in which the Western began its rebirth in Europe.",
      "text": "The decade in which the Western began its rebirth in Europe.",
      "chars": 60
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "The Hollywood Western began to decline at the end of the 1950s. The enemy of the communities forging a new life for themselves on the great frontier was no longer the gunslinger dressed in black or the marauding Indian, but the specter of television, which offered audiences cheap series such as Gunsmoke and Bonanza. The genre would still have its swan song, however. It would be saved by the most un-Western place in the world - Europe.",
      "text": "The Hollywood Western began to decline at the end of the nineteen fifties. The enemy of the communities forging a new life for themselves on the great frontier was no longer the gunslinger dressed in black or the marauding Indian, but the specter of television, which offered audiences cheap series such as Gunsmoke and Bonanza. The genre would still have its swan song, however. It would be saved by the most un-Western place in the world - Europe.",
      "chars": 449
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "Film production in Europe gained momentum in the decade following the end of World War II, and Hollywood was the obvious model for producers to follow. Michael Carreras (1927-1994), of Hammer Film Productions, made the first Spaghetti Western, Tierra brutal (The Savage Guns, 1961), an English-language Anglo-Spanish coproduction.",
      "text": "Film production in Europe gained momentum in the decade following the end of World War Two, and Hollywood was the obvious model for producers to follow. Michael Carreras (nineteen twenty-seven to nineteen ninety-four), of Hammer Film Productions, made the first Spaghetti Western, Tierra brutal (The Savage Guns, nineteen sixty-one), an English-language Anglo-Spanish coproduction.",
      "chars": 381
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Except, however, for the English-speaking actors who sometimes appeared in these films, the new genre's language of choice was Italian. The first great Spaghetti Westerns were driven by a desire to reinvent the American Western and the Japanese samurai film. Sergio Leone (1929-1989) loosely based his Per un pugno di dollari (A Fistful of Dollars, 1964) on Yojimbo (1961), by Akira Kurosawa (1910-1998).",
      "text": "Except, however, for the English-speaking actors who sometimes appeared in these films, the new genre's language of choice was Italian. The first great Spaghetti Westerns were driven by a desire to reinvent the American Western and the Japanese samurai film. Sergio Leone (nineteen twenty-nine to nineteen eighty-nine) loosely based his Per un pugno di dollari (A Fistful of Dollars, nineteen sixty-four) on Yojimbo, from nineteen sixty-one, by Akira Kurosawa (nineteen ten to nineteen ninety-eight).",
      "chars": 500
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "In terms of morality, setting and style, the first film contrasts sharply with traditional Westerns. There are no good characters: the hero, played by Clint Eastwood (b. 1930) - star of the TV show Rawhide -, is a gunslinger driven by personal gain, with only momentary flashes of conscience. Native Americans play no role at all, not even in C'era una volta il West (Once Upon a Time in the West, 1968), which plays with the archetypal setting of westward expansion and its dangers.",
      "text": "In terms of morality, setting and style, the first film contrasts sharply with traditional Westerns. There are no good characters: the hero, played by Clint Eastwood (born in nineteen thirty) - star of the TV show Rawhide -, is a gunslinger driven by personal gain, with only momentary flashes of conscience. Native Americans play no role at all, not even in C'era una volta il West (Once Upon a Time in the West, nineteen sixty-eight), which plays with the archetypal setting of westward expansion and its dangers.",
      "chars": 515
@@ -73,6 +79,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Learn more: The Masterpiece of the Western.",
      "text": "Learn more: The Masterpiece of the Western.",
      "chars": 43
@@ -80,6 +87,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "By the mid-1960s, Hollywood had grown tired of Westerns, which were increasingly seen as a relic of another era. Naturally, the films remained essential to understanding the history of cinema, but the times were changing and the genre no longer seemed to have a place in popular culture. Sergio Leone thought otherwise. The Italian director sensed that the dying genre was ripe for reinvention. The lasting influence of his so-called spaghetti Westerns (nicknamed for their Italian locations and their copious use of blood) shows that he was right.",
      "text": "By the mid-nineteen sixties, Hollywood had grown tired of Westerns, which were increasingly seen as a relic of another era. Naturally, the films remained essential to understanding the history of cinema, but the times were changing and the genre no longer seemed to have a place in popular culture. Sergio Leone thought otherwise. The Italian director sensed that the dying genre was ripe for reinvention. The lasting influence of his so-called spaghetti Westerns (nicknamed for their Italian locations and their copious use of blood) shows that he was right.",
      "chars": 559
@@ -87,6 +95,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Leone had made a handful of films before inviting the relatively unknown Clint Eastwood to Italy for a remake of Akira Kurosawa's Yojimbo (1961), itself based on Dashiell Hammett's Red Harvest. A Fistful of Dollars (1964) was the first of the iconic Westerns starring the \"Man with No Name\". Made on a minimal budget, this innovative and refined film became a huge hit, and Leone followed it with For a Few Dollars More (1965), again starring Eastwood as another laconic, anonymous antihero. But the third part of the \"Man with No Name\" trilogy, The Good, the Bad and the Ugly, is the work that confirmed Leone's reputation as a film legend.",
      "text": "Leone had made a handful of films before inviting the relatively unknown Clint Eastwood to Italy for a remake of Akira Kurosawa's Yojimbo, from nineteen sixty-one, itself based on Dashiell Hammett's Red Harvest. A Fistful of Dollars, from nineteen sixty-four, was the first of the iconic Westerns starring the \"Man with No Name\". Made on a minimal budget, this innovative and refined film became a huge hit, and Leone followed it with For a Few Dollars More, from nineteen sixty-five, again starring Eastwood as another laconic, anonymous antihero. But the third part of the \"Man with No Name\" trilogy, The Good, the Bad and the Ugly, is the work that confirmed Leone's reputation as a film legend.",
      "chars": 698
@@ -94,6 +103,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Leone is not terribly interested in plot - in The Good, the Bad and the Ugly he is concerned with purely cinematic elements. He carefully composes every widescreen image as if he were painting a vast landscape; he indulges in extreme close-ups that often reveal little more than a character's eyes. Then there are his radical editing techniques, set to the rhythm of Ennio Morricone's famous score, which places unusual instruments and electric guitars alongside traditional orchestration. Every frame is coated in style the way sweat permanently coats the stars' faces.",
      "text": "Leone is not terribly interested in plot - in The Good, the Bad and the Ugly he is concerned with purely cinematic elements. He carefully composes every widescreen image as if he were painting a vast landscape; he indulges in extreme close-ups that often reveal little more than a character's eyes. Then there are his radical editing techniques, set to the rhythm of Ennio Morricone's famous score, which places unusual instruments and electric guitars alongside traditional orchestration. Every frame is coated in style the way sweat permanently coats the stars' faces.",
      "chars": 570
@@ -101,6 +111,7 @@
     {
      "id": "02-05",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "The Good, the Bad and the Ugly literally ends on the faces of Eastwood, Wallach and Van Cleef, as the antagonists stage a three-way duel in a cemetery. This scene has become one of the most imitated and parodied in film history. Morricone's hypnotic score builds in intensity while on screen ever-faster cuts move from one face to another, capturing every tense glance, every hand reaching for a gun. Camp, kitsch and exhilarating, the film is the work of a master rewriting the rules of the Western to suit Leone's singular vision.",
      "text": "The Good, the Bad and the Ugly literally ends on the faces of Eastwood, Wallach and Van Cleef, as the antagonists stage a three-way duel in a cemetery. This scene has become one of the most imitated and parodied in film history. Morricone's hypnotic score builds in intensity while on screen ever-faster cuts move from one face to another, capturing every tense glance, every hand reaching for a gun. Camp, kitsch and exhilarating, the film is the work of a master rewriting the rules of the Western to suit Leone's singular vision.",
      "chars": 532
@@ -117,6 +128,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Instead, most of the action unfolds in the Southern states, where Mexico and the Latino population play significant roles. Leone's world was violent and propelled by the celebrated music of Ennio Morricone (1928-2020). The director's next film, Per qualche dollaro in più (For a Few Dollars More, 1965), teamed Lee Van Cleef (1925-1989) with Eastwood, who plays a young upstart seeking a bit of moral guidance from a veteran more interested in revenge.",
      "text": "Instead, most of the action unfolds in the Southern states, where Mexico and the Latino population play significant roles. Leone's world was violent and propelled by the celebrated music of Ennio Morricone (nineteen twenty-eight to twenty twenty). The director's next film, Per qualche dollaro in più (For a Few Dollars More, nineteen sixty-five), teamed Lee Van Cleef (nineteen twenty-five to nineteen eighty-nine) with Eastwood, who plays a young upstart seeking a bit of moral guidance from a veteran more interested in revenge.",
      "chars": 531
@@ -124,6 +136,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Leone was once again helped by Morricone's music, with a central theme that highlights his gift for subtlety and adds emotional weight to the shootout that forms the film's climax. Il buono, il brutto, il cattivo (The Good, the Bad and the Ugly, 1966) cemented Leone's reputation as the master of the Spaghetti Western and Morricone's as the go-to composer for filmmakers in the genre.",
      "text": "Leone was once again helped by Morricone's music, with a central theme that highlights his gift for subtlety and adds emotional weight to the shootout that forms the film's climax. Il buono, il brutto, il cattivo (The Good, the Bad and the Ugly, nineteen sixty-six) cemented Leone's reputation as the master of the Spaghetti Western and Morricone's as the go-to composer for filmmakers in the genre.",
      "chars": 399
@@ -131,6 +144,7 @@
     {
      "id": "03-03",
      "speaker": "citacao",
+     "source_index": 10,
      "original": "If you're going to lose, you'd better lose properly. Whoever double-crosses me and leaves me alive, he understands nothing about me. Nothing!",
      "text": "If you're going to lose, you'd better lose properly. Whoever double-crosses me and leaves me alive, he understands nothing about me. Nothing!",
      "chars": 141
@@ -138,6 +152,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "said Tuco (Eli Wallach) in The Good, the Bad and the Ugly.",
      "text": "said Tuco (Eli Wallach) in The Good, the Bad and the Ugly.",
      "chars": 58
@@ -145,6 +160,7 @@
     {
      "id": "03-05",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Other directors would also have their careers defined by the Spaghetti Western. Sergio Corbucci (1926-1990) will be remembered for Django (1966), brutal even by the standards of this subgenre. In contrast to Leone's arid settings, Franco Nero's antihero hunts for his loot in a muddy, rain-soaked landscape, dragging a coffin containing his weapon of choice, a machine gun. Gianfranco Parolini (b. 1930) found success with the Sabata trilogy (1969-1971), starring Western stalwarts such as Lee Van Cleef and Yul Brynner.",
      "text": "Other directors would also have their careers defined by the Spaghetti Western. Sergio Corbucci (nineteen twenty-six to nineteen ninety) will be remembered for Django, from nineteen sixty-six, brutal even by the standards of this subgenre. In contrast to Leone's arid settings, Franco Nero's antihero hunts for his loot in a muddy, rain-soaked landscape, dragging a coffin containing his weapon of choice, a machine gun. Gianfranco Parolini (born in nineteen thirty) found success with the Sabata trilogy (nineteen sixty-nine to nineteen seventy-one), starring Western stalwarts such as Lee Van Cleef and Yul Brynner.",
      "chars": 617
@@ -161,6 +177,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "The films, full of blackmail and shootouts, are driven by the music of Marcello Giombini (1928-2003). Although it is still a great film, in Lo chiamavano Trinità... (They Call Me Trinity, 1970) by Enzo Barboni (1922-2002), comedy betrays the Spaghetti Western, which had already passed its heyday and become prime material for parody. The genre came to an end with Keoma (1976), but the spirit and style of the Spaghetti Western strongly influenced two generations of filmmakers, from Clint Eastwood (b. 1930) and Sam Raimi (b. 1959) to Quentin Tarantino (b. 1963) and Robert Rodriguez (b. 1968).",
      "text": "The films, full of blackmail and shootouts, are driven by the music of Marcello Giombini (nineteen twenty-eight to two thousand three). Although it is still a great film, in Lo chiamavano Trinità... (They Call Me Trinity, nineteen seventy) by Enzo Barboni (nineteen twenty-two to two thousand two), comedy betrays the Spaghetti Western, which had already passed its heyday and become prime material for parody. The genre came to an end with Keoma, from nineteen seventy-six, but the spirit and style of the Spaghetti Western strongly influenced two generations of filmmakers, from Clint Eastwood (born in nineteen thirty) and Sam Raimi (born in nineteen fifty-nine) to Quentin Tarantino (born in nineteen sixty-three) and Robert Rodriguez (born in nineteen sixty-eight).",
      "chars": 770
@@ -177,6 +194,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Worth watching: the films from this chapter are The Good, the Bad and the Ugly, Once Upon a Time in the West, Django, The Savage Guns, A Fistful of Dollars, The Great Silence and Duck, You Sucker.",
      "text": "Worth watching: the films from this chapter are The Good, the Bad and the Ugly, Once Upon a Time in the West, Django, The Savage Guns, A Fistful of Dollars, The Great Silence and Duck, You Sucker.",
      "chars": 196

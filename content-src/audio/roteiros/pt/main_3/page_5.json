@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 03: De 1940 a 1959. Capítulo 5: Cinema Nórdico.",
      "text": "Parte zero três: De mil novecentos e quarenta a mil novecentos e cinquenta e nove. Capítulo cinco: Cinema Nórdico.",
      "chars": 114
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "A década em que o mundo testemunhou o renascimento do cinema nórdico.",
      "text": "A década em que o mundo testemunhou o renascimento do cinema nórdico.",
      "chars": 69
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "A década de 1950 testemunhou um renascimento do cinema nórdico, que esteve na vanguarda das realizações cinematográficas durante a era dos filmes mudos. No fim da década de 1910 e início da de 1920, os melhores filmes de Carl Theodor Dreyer (1889-1968), Victor Sjöstrom (1879-1960) e Mauritz Stiller (1883-1928) alcançaram uma delicadeza e um naturalismo quase sem igual. Mas com a chegada do som e com a predominância de Hollywood, os pouco povoados países nórdicos ficaram linguística e culturalmente isolados.",
      "text": "A década de mil novecentos e cinquenta testemunhou um renascimento do cinema nórdico, que esteve na vanguarda das realizações cinematográficas durante a era dos filmes mudos. No fim da década de mil novecentos e dez e início da de mil novecentos e vinte, os melhores filmes de Carl Theodor Dreyer (mil oitocentos e oitenta e nove a mil novecentos e sessenta e oito), Victor Sjöstrom (mil oitocentos e setenta e nove a mil novecentos e sessenta) e Mauritz Stiller (mil oitocentos e oitenta e três a mil novecentos e vinte e oito) alcançaram uma delicadeza e um naturalismo quase sem igual. Mas com a chegada do som e com a predominância de Hollywood, os pouco povoados países nórdicos ficaram linguística e culturalmente isolados.",
      "chars": 729
@@ -52,6 +55,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "No fim da década de 1940, porém, a Escandinávia - em especial a Suécia - estava de novo produzindo filmes criativos. O historiador do cinema Peter Cowie afirmou que \"provavelmente nenhum outro país com uma população semelhante alcançou o sucesso artístico da Suécia no cinema\". Fundamental para esse sucesso foi a beleza fotogênica das paisagens rurais e urbanas e o contraste entre os costumes luteranos austeros a evolução da sociedade, no século XX, para uma democracia social secular.",
      "text": "No fim da década de mil novecentos e quarenta, porém, a Escandinávia - em especial a Suécia - estava de novo produzindo filmes criativos. O historiador do cinema Peter Cowie afirmou que \"provavelmente nenhum outro país com uma população semelhante alcançou o sucesso artístico da Suécia no cinema\". Fundamental para esse sucesso foi a beleza fotogênica das paisagens rurais e urbanas e o contraste entre os costumes luteranos austeros a evolução da sociedade, no século vinte, para uma democracia social secular.",
      "chars": 512
@@ -59,6 +63,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Esses temas foram expressos, na década de 1950, na obra de Ingmar Bergman (1918-2007). Suas melhores realizações do início da carreira, Juventude (1951), no alto e Monika e o Desejo (1953), eram filmes românticos melancólicos que tinham como pano de fundo o arquipélago de Estocolmo e a beleza selvagem e temporária que reflete a transitoriedade do amor. São produções de um veio marcadamente sueco também exemplificado por A Última Felicidade (1951), de Arne Mattsson (1919-1995) outra trágica história de amor que tem como pano de fundo a paisagem rural.",
      "text": "Esses temas foram expressos, na década de mil novecentos e cinquenta, na obra de Ingmar [[pron: Bergman|Bérigman]] (mil novecentos e dezoito a dois mil e sete). Suas melhores realizações do início da carreira, Juventude, de mil novecentos e cinquenta e um, no alto e Monika e o Desejo, de mil novecentos e cinquenta e três, eram filmes românticos melancólicos que tinham como pano de fundo o arquipélago de Estocolmo e a beleza selvagem e temporária que reflete a transitoriedade do amor. São produções de um veio marcadamente sueco também exemplificado por A Última Felicidade, de mil novecentos e cinquenta e um, de Arne Mattsson (mil novecentos e dezenove a mil novecentos e noventa e cinco) outra trágica história de amor que tem como pano de fundo a paisagem rural.",
      "chars": 751
@@ -66,6 +71,7 @@
     {
      "id": "02-03",
      "speaker": "citacao",
+     "source_index": 4,
      "original": "Inesperado, maravilhoso e chocante. Uma vez visto, torna-se inesquecível",
      "text": "Inesperado, maravilhoso e chocante. Uma vez visto, torna-se inesquecível",
      "chars": 72
@@ -73,6 +79,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "disse Critico Dave Calhoun sobre A palavra, 1955.",
      "text": "disse Critico Dave Calhoun sobre A palavra, mil novecentos e cinquenta e cinco.",
      "chars": 79
@@ -80,6 +87,7 @@
     {
      "id": "02-05",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Bergman então, passou para uma fase mais alegórica e existencial com O sétimo selo (1957). Apesar da ambientação medieval e da premissa fantástica, o filme trata de um dilema típico do século XX: o homem sem fé buscando um sentido para a vida. E Jungfrukällan (BR: A Fonte da Donzela (1960), Bergman revisita a Idade Média, explorando a herança cultural ambígua da Escandinávia: o paganismo cristianismo Morangos silvestres (1957) era um relato mais ameno e realístico de um homem fazendo o inventário da sua vida, um prenuncio da ênfase mais psicológica evidente nas obras dos anos 1960 do cineasta.",
      "text": "[[pron: Bergman|Bérigman]] então, passou para uma fase mais alegórica e existencial com O sétimo selo, de mil novecentos e cinquenta e sete. Apesar da ambientação medieval e da premissa fantástica, o filme trata de um dilema típico do século vinte: o homem sem fé buscando um sentido para a vida. E Jungfrukällan (BR: A Fonte da Donzela, de mil novecentos e sessenta, [[pron: Bergman|Bérigman]] revisita a Idade Média, explorando a herança cultural ambígua da Escandinávia: o paganismo cristianismo Morangos silvestres, de mil novecentos e cinquenta e sete, era um relato mais ameno e realístico de um homem fazendo o inventário da sua vida, um prenuncio da ênfase mais psicológica evidente nas obras dos anos mil novecentos e sessenta do cineasta.",
      "chars": 710
@@ -96,6 +104,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Saiba mais: A representação definitiva da morte no Cinema.",
      "text": "Saiba mais: A representação definitiva da morte no Cinema.",
      "chars": 58
@@ -103,6 +112,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "A imagem de uma Morte de manto preto e rosto branco (Bengt Ekerot) jogando xadrez na praia com um cruzado cansado e questionador (Max von Sydow) está tão arraigada na memória coletiva dos cinéfilos quanto King Kong no topo do Empire State Building. Essa cena da joia sueca o sétimo selo resume a importância, o encanto e o impacto que novas formas de cinema tiveram em uma certa época quando as certezas de Hollywood estavam em baixa.",
      "text": "A imagem de uma Morte de manto preto e rosto branco (Bengt Ekerot) jogando xadrez na praia com um cruzado cansado e questionador (Max von Sydow) está tão arraigada na memória coletiva dos cinéfilos quanto King Kong no topo do Empire State Building. Essa cena da joia sueca o sétimo selo resume a importância, o encanto e o impacto que novas formas de cinema tiveram em uma certa época quando as certezas de Hollywood estavam em baixa.",
      "chars": 434
@@ -110,6 +120,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Mas é uma pena que essa cena tenha passado a representar todo o filme no imaginário popular. Há uma ideia injusta de que o escritor e roteirista Ingmar Bergman foi solene demais ao tentar realizar algo que pudesse ser um arquétipo da seriedade e da qualidade artística. Na verdade, O sétimo selo embora tenha suas raízes nos grandes temas do auge de Bergman, e um filme muito divertido, frequentemente cômico - uma fabula medieval influenciada pelo entusiasmo do diretor pelos filmes de samurai de Akira Kurosawa - tão preocupado em celebrar os prazeres simples quanto em apontar tormentos complexos.",
      "text": "Mas é uma pena que essa cena tenha passado a representar todo o filme no imaginário popular. Há uma ideia injusta de que o escritor e roteirista Ingmar [[pron: Bergman|Bérigman]] foi solene demais ao tentar realizar algo que pudesse ser um arquétipo da seriedade e da qualidade artística. Na verdade, O sétimo selo embora tenha suas raízes nos grandes temas do auge de [[pron: Bergman|Bérigman]], e um filme muito divertido, frequentemente cômico - uma fabula medieval influenciada pelo entusiasmo do diretor pelos filmes de samurai de Akira [[pron: Kurosawa|Kurossaua]] - tão preocupado em celebrar os prazeres simples quanto em apontar tormentos complexos.",
      "chars": 600
@@ -117,6 +128,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "O cavaleiro, constantemente atormentado por curiosidades sobre Deus e o nada (ele chega a se aproximar de uma bruxa condenada para perguntar a ela o que o Demônio sabe sobre Deus), representa um lado de Bergman. O simples artista de circo, gentilmente repreendido por sua esposa prática \"Você e seus sonhos e visões\", diz ela na última fala do filme), representa o outro. Este busca redenção através de divertimentos honestos e fica consternado quando apresentação inocente é ofuscada pelo espetáculo grotesco, aprovado pela Igreja de uma multidão de penitentes sendo chicoteados e torturados. Bergmar está indignado e entristecido diante do mal praticado pelos homens em mente quando ele é sancionado por uma suposta religião, porem o filme também celebra o amor físico e espiritual, a expressão artística coletiva, a comida e a bebida e a beleza natural.",
      "text": "O cavaleiro, constantemente atormentado por curiosidades sobre Deus e o nada (ele chega a se aproximar de uma bruxa condenada para perguntar a ela o que o Demônio sabe sobre Deus), representa um lado de [[pron: Bergman|Bérigman]]. O simples artista de circo, gentilmente repreendido por sua esposa prática \"Você e seus sonhos e visões\", diz ela na última fala do filme), representa o outro. Este busca redenção através de divertimentos honestos e fica consternado quando apresentação inocente é ofuscada pelo espetáculo grotesco, aprovado pela Igreja de uma multidão de penitentes sendo chicoteados e torturados. Bergmar está indignado e entristecido diante do mal praticado pelos homens em mente quando ele é sancionado por uma suposta religião, porem o filme também celebra o amor físico e espiritual, a expressão artística coletiva, a comida e a bebida e a beleza natural.",
      "chars": 856
@@ -133,6 +145,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Alf Sjoberg (1903-1980) foi injustamente ofuscado pelos dois incríveis artistas suecos aos quais esteve associado. Seu filme mais conhecido Frenesi (1944), foi roteirizado por Bergman que leva o crédito por sua atmosfera psicológica sombria, embora a tensão claustrofóbica se deva com certeza ao diretor. Na década de 1950, Sjöberg adaptou obras do maior dramaturgo sueco, August Strindberg, produzindo uma inesquecível versão de Senhorita Júlia (1951) e um filme histórico inovador e divertido, Karin Månsdotter (1954), baseado na peça Erik XIV, de Strindberg.",
      "text": "Alf Sjoberg (mil novecentos e três a mil novecentos e oitenta) foi injustamente ofuscado pelos dois incríveis artistas suecos aos quais esteve associado. Seu filme mais conhecido Frenesi, de mil novecentos e quarenta e quatro, foi roteirizado por [[pron: Bergman|Bérigman]] que leva o crédito por sua atmosfera psicológica sombria, embora a tensão claustrofóbica se deva com certeza ao diretor. Na década de mil novecentos e cinquenta, Sjöberg adaptou obras do maior dramaturgo sueco, August Strindberg, produzindo uma inesquecível versão de Senhorita Júlia, de mil novecentos e cinquenta e um, e um filme histórico inovador e divertido, Karin Månsdotter, de mil novecentos e cinquenta e quatro, baseado na peça Erik Catorze, de Strindberg.",
      "chars": 721
@@ -149,6 +162,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Pouco conhecido fora da Suécia, Hasse Ekman (1915-2004) merece um reconhecimento maior por Moca com jacintos (1950), uma história assustadora sobre o suicídio de uma jovem. O filme mostra a incomum franqueza sexual do cinema sueco do pós-guerra, ao mesmo tempo que analisa o comprometimento do país ao decidir permanecer neutro durante a Segunda Guerra Mundial. Também digna de nota e a obra de Arne Sucksdorff (1917-2001), que mistura ficção e documentário de forma criativa.",
      "text": "Pouco conhecido fora da Suécia, Hasse Ekman (mil novecentos e quinze a dois mil e quatro) merece um reconhecimento maior por Moca com jacintos, de mil novecentos e cinquenta, uma história assustadora sobre o suicídio de uma jovem. O filme mostra a incomum franqueza sexual do cinema sueco do pós-guerra, ao mesmo tempo que analisa o comprometimento do país ao decidir permanecer neutro durante a Segunda Guerra Mundial. Também digna de nota e a obra de Arne Sucksdorff (mil novecentos e dezessete a dois mil e um), que mistura ficção e documentário de forma criativa.",
      "chars": 567
@@ -156,6 +170,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "O maior diretor dinamarquês, Carl Theodor Dreyer, fez apenas um filme nos anos 1950. A palavra (1955) é uma obra-prima, uma austera e compassiva parábola cujos elementos milagrosos são reprimidos com beleza pelo realismo sutil das atuações e dos cenários. A mesma década testemunhou o surgimento de Gabriel Axel (n-1918), que mais tarde alcançou fama internacional com A festa de Babette (1987). Seu filme de estreia, Nada além de problemas. 1955 é uma história realista encantadora sobre uma família de operários.",
      "text": "O maior diretor dinamarquês, Carl Theodor Dreyer, fez apenas um filme nos anos mil novecentos e cinquenta. A palavra, de mil novecentos e cinquenta e cinco, é uma obra-prima, uma austera e compassiva parábola cujos elementos milagrosos são reprimidos com beleza pelo realismo sutil das atuações e dos cenários. A mesma década testemunhou o surgimento de Gabriel Axel (nasceu em mil novecentos e dezoito), que mais tarde alcançou fama internacional com A festa de Babette, de mil novecentos e oitenta e sete. Seu filme de estreia, Nada além de problemas. mil novecentos e cinquenta e cinco é uma história realista encantadora sobre uma família de operários.",
      "chars": 656
@@ -172,6 +187,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "O mais talentoso diretor norueguês foi Arne Skouen (1913-2003) cujo filme Nove vidas (1957) recebeu aclamação internacional e uma indicação ao Oscar. A primeira diretora norueguesa, Edith Carlmar (191-2003). estreou com o assustador A morte é um carinho (1949) e esteve em atividade nos anos 1950. Seu último filme, a história de ritos de passagem A moça rebelde (1959), marca a primeira aparição, no cinema, da atriz Liv Ullmann (n- 1938).",
      "text": "O mais talentoso diretor norueguês foi Arne Skouen (mil novecentos e treze a dois mil e três) cujo filme Nove vidas, de mil novecentos e cinquenta e sete, recebeu aclamação internacional e uma indicação ao Oscar. A primeira diretora norueguesa, Edith Carlmar (cento e noventa e um-dois mil e três). estreou com o assustador A morte é um carinho, de mil novecentos e quarenta e nove, e esteve em atividade nos anos mil novecentos e cinquenta. Seu último filme, a história de ritos de passagem A moça rebelde, de mil novecentos e cinquenta e nove, marca a primeira aparição, no cinema, da atriz Liv Ullmann (nasceu em mil novecentos e trinta e oito).",
      "chars": 648
@@ -179,6 +195,7 @@
     {
      "id": "06-02",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Entre outras obras finlandesas dignas de nota estão A rena branca (1952), uma história folclórica lapona adaptada para o cinema por Erik Blomberg, que utiliza com destreza a paisagem nórdica, e o filme de guerra O soldado desconhecido (1955), de Edvin Laine (1905-1989) ainda hoje o maior sucesso do cinema finlandês.",
      "text": "Entre outras obras finlandesas dignas de nota estão A rena branca, de mil novecentos e cinquenta e dois, uma história folclórica lapona adaptada para o cinema por Erik Blomberg, que utiliza com destreza a paisagem nórdica, e o filme de guerra O soldado desconhecido, de mil novecentos e cinquenta e cinco, de Edvin Laine (mil novecentos e cinco a mil novecentos e oitenta e nove) ainda hoje o maior sucesso do cinema finlandês.",
      "chars": 427
@@ -195,6 +212,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Vale a conferida: os filmes deste capítulo são The Seventh Seal, Ordet, Summer Interlude, One Summer of Happiness, Summer with Monika, Sawdust and Tinsel e The Virgin Spring.",
      "text": "Vale a conferida: os filmes deste capítulo são The Seventh Seal, Ordet, Summer Interlude, One Summer of Happiness, Summer with Monika, Sawdust and Tinsel e The Virgin Spring.",
      "chars": 174

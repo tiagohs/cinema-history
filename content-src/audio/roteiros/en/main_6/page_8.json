@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 06: From 1990 to 2009. Chapter 8: The Animation Renaissance.",
      "text": "Part zero six: From nineteen ninety to two thousand nine. Chapter eight: The Animation Renaissance.",
      "chars": 99
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "With new studios and talent, Disney was no longer the center of animation production, while new technologies emerged.",
      "text": "With new studios and talent, Disney was no longer the center of animation production, while new technologies emerged.",
      "chars": 117
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "In the West, the shift from the vaguely pejorative term \"cartoon\" to the broader and nobler \"animated film\" happened largely thanks to films such as Pixar's Toy Story (1995). With its complex arrangement of feelings and a screenplay that shows writing for children does not mean dumbing down, the film had an appeal that bridged the generation gap.",
      "text": "In the West, the shift from the vaguely pejorative term \"cartoon\" to the broader and nobler \"animated film\" happened largely thanks to films such as Pixar's Toy Story, from nineteen ninety-five. With its complex arrangement of feelings and a screenplay that shows writing for children does not mean dumbing down, the film had an appeal that bridged the generation gap.",
      "chars": 368
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Pixar's subsequent works transcended the cute anthropomorphism model to tackle a range of unappealing but important themes, such as the apocalypse in WALL·E (2008) and the ravages of age in Up (2009). DreamWorks studio stuck more rigidly to the talking-animal model in films such as Madagascar (2005), although its biggest box office hit came in the form of a green ogre with a Scottish accent in Shrek (2001). Blue Sky Studios is known for the Ice Age franchise (2002), with clever animals trying to survive in the Paleolithic era.",
      "text": "Pixar's subsequent works transcended the cute anthropomorphism model to tackle a range of unappealing but important themes, such as the apocalypse in WALL·E, from two thousand eight, and the ravages of age in Up, from two thousand nine. DreamWorks studio stuck more rigidly to the talking-animal model in films such as Madagascar, from two thousand five, although its biggest box office hit came in the form of a green ogre with a Scottish accent in Shrek, from two thousand one. Blue Sky Studios is known for the Ice Age franchise, from two thousand two, with clever animals trying to survive in the Paleolithic era.",
      "chars": 617
@@ -59,6 +63,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Learn more: Studio Ghibli: Animations with Feeling.",
      "text": "Learn more: Studio Ghibli: Animations with Feeling.",
      "chars": 51
@@ -66,6 +71,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "You may never have heard this name, but you surely know titles such as Tonari no Totoro (My Neighbor Totoro, 1988), Sen to Chihiro no Kamikakushi (Spirited Away, 2001) or Hauru no Ugoku Shiro (Howl's Moving Castle, 2004). All of these incredible features were made by Studio Ghibli (Studio Ghibli, Inc.), a Japanese animation studio headquartered in Koganei, Tokyo.",
      "text": "You may never have heard this name, but you surely know titles such as Tonari no Totoro (My Neighbor Totoro, nineteen eighty-eight), Sen to Chihiro no Kamikakushi (Spirited Away, two thousand one) or Hauru no Ugoku Shiro (Howl's Moving Castle, two thousand four). All of these incredible features were made by Studio Ghibli (Studio Ghibli, Inc.), a Japanese animation studio headquartered in Koganei, Tokyo.",
      "chars": 407
@@ -73,6 +79,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Its main founder is director Hayao Miyazaki. Together with Isao Takahata (1935-2018), Miyazaki founded Studio Ghibli in 1985, with its first big hits Kaze no Tani no Naushika (Nausicaä of the Valley of the Wind, 1984) and Tenkū no Shiro Rapyuta (Castle in the Sky, 1986). Unlike conventional anime, in which studios make use of computer graphics, Studio Ghibli works with characters and settings made entirely by hand, and its productions usually take 5 to 8 years to complete.",
      "text": "Its main founder is director Hayao Miyazaki. Together with Isao Takahata (nineteen thirty-five to twenty eighteen), Miyazaki founded Studio Ghibli in nineteen eighty-five, with its first big hits Kaze no Tani no Naushika (Nausicaä of the Valley of the Wind, nineteen eighty-four) and Tenkū no Shiro Rapyuta (Castle in the Sky, nineteen eighty-six). Unlike conventional anime, in which studios make use of computer graphics, Studio Ghibli works with characters and settings made entirely by hand, and its productions usually take five to eight years to complete.",
      "chars": 561
@@ -80,6 +87,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Since its creation, the studio has produced more than 18 films. The stories of its features always portray social relationships, and its protagonists are usually strong, independent girls or young women who, along their journeys, pick up lessons, falls and rises. The beauty of Studio Ghibli's drawings and settings even became a music video for the song \"On Your Mark\" by the J-pop duo \"Chage & Aska,\" which was a big hit in 1995. Another project developed by the studio was the game Ni no Kuni for PlayStation 3, which arrived in Brazil in early 2013 and features an animated film across the game's stages.",
      "text": "Since its creation, the studio has produced more than eighteen films. The stories of its features always portray social relationships, and its protagonists are usually strong, independent girls or young women who, along their journeys, pick up lessons, falls and rises. The beauty of Studio Ghibli's drawings and settings even became a music video for the song \"On Your Mark\" by the J-pop duo \"Chage and Aska,\" which was a big hit in nineteen ninety-five. Another project developed by the studio was the game Ni no Kuni for PlayStation three, which arrived in Brazil in early twenty thirteen and features an animated film across the game's stages.",
      "chars": 647
@@ -87,6 +95,7 @@
     {
      "id": "02-05",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Among its award-winning works, the studio has seven of the highest-grossing animated films, with Spirited Away leading the chart with US$274 million grossed worldwide. The film won the Oscar for Best Animated Feature in 2003 and a Golden Bear at the Berlin Film Festival. In 2014, what was until then Hayao Miyazaki's last film, Kaze Tachinu (The Wind Rises, 2013), was released, although in 2019 it was announced that Miyazaki would return with a new film in the coming years. But Hayao Miyazaki has long been considered one of the greatest animation directors of all time.",
      "text": "Among its award-winning works, the studio has seven of the highest-grossing animated films, with Spirited Away leading the chart with two hundred seventy-four million dollars grossed worldwide. The film won the Oscar for Best Animated Feature in two thousand three and a Golden Bear at the Berlin Film Festival. In twenty fourteen, what was until then Hayao Miyazaki's last film, Kaze Tachinu (The Wind Rises, twenty thirteen), was released, although in twenty nineteen it was announced that Miyazaki would return with a new film in the coming years. But Hayao Miyazaki has long been considered one of the greatest animation directors of all time.",
      "chars": 647
@@ -103,6 +112,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "It was only in the late 1990s that the sublime films of the Japanese studio Ghibli, founded by Hayao Miyazaki (b. 1941) and Isao Takahata (1935-2018), found success in the West. It was only with the bloody ecological fantasy Mononoke Hime (Princess Mononoke, 1997) that they received their due. The acclaim earned by Sen to Chihiro no Kamikakushi (Spirited Away, 2001), about a young girl's coming of age in an elaborate fantasy world, led to the rediscovery of Ghibli's work.",
      "text": "It was only in the late nineteen nineties that the sublime films of the Japanese studio Ghibli, founded by Hayao Miyazaki (born in nineteen forty-one) and Isao Takahata (nineteen thirty-five to twenty eighteen), found success in the West. It was only with the bloody ecological fantasy Mononoke Hime (Princess Mononoke, nineteen ninety-seven) that they received their due. The acclaim earned by Sen to Chihiro no Kamikakushi (Spirited Away, two thousand one), about a young girl's coming of age in an elaborate fantasy world, led to the rediscovery of Ghibli's work.",
      "chars": 566
@@ -110,6 +120,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Mamoru Oshii (b. 1951) is another great pioneer of Japanese animation, having gained attention for his film Ghost in the Shell (1995), a futuristic police thriller that includes the existential musings of its main character, a cyborg. Mamoru maintained and refined this philosophical bent in films such as Sukai Kurora (The Sky Crawlers, 2008).",
      "text": "Mamoru Oshii (born in nineteen fifty-one) is another great pioneer of Japanese animation, having gained attention for his film Ghost in the Shell, from nineteen ninety-five, a futuristic police thriller that includes the existential musings of its main character, a cyborg. Mamoru maintained and refined this philosophical bent in films such as Sukai Kurora (The Sky Crawlers, two thousand eight).",
      "chars": 397
@@ -117,6 +128,7 @@
     {
      "id": "03-03",
      "speaker": "citacao",
+     "source_index": 9,
      "original": "I don't make the film. The film makes itself and I have no choice but to follow.",
      "text": "I don't make the film. The film makes itself and I have no choice but to follow.",
      "chars": 80
@@ -124,6 +136,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "said Hayao Miyazaki.",
      "text": "said Hayao Miyazaki.",
      "chars": 20
@@ -131,6 +144,7 @@
     {
      "id": "03-05",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Hollywood genres initially influenced Satoshi Kon (1963-2010), who worked exclusively with the Madhouse studio in Japan. His film Pāfekuto Burū (Perfect Blue, 1998), set amid Japan's teen pop culture, captured a Hitchcock-style sense of sexual menace.",
      "text": "Hollywood genres initially influenced Satoshi Kon (nineteen sixty-three to twenty ten), who worked exclusively with the Madhouse studio in Japan. His film Pāfekuto Burū (Perfect Blue, nineteen ninety-eight), set amid Japan's teen pop culture, captured a Hitchcock-style sense of sexual menace.",
      "chars": 293
@@ -138,6 +152,7 @@
     {
      "id": "03-06",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "A number of notable films in Europe turned to more traditional forms. UK-based Aardman Animations was the home of Peter Lord (b. 1953), Nick Park (b. 1958) and David Sproxton (b. 1954), the force behind Wallace and Gromit. They first drew attention with Creature Comforts (1989), which used audio of interviews with people on the street to give voice to stop-motion animals, although it was award-winning shorts such as The Wrong Trousers (1993) that propelled them onto the world stage.",
      "text": "A number of notable films in Europe turned to more traditional forms. UK-based Aardman Animations was the home of Peter Lord (born in nineteen fifty-three), Nick Park (born in nineteen fifty-eight) and David Sproxton (born in nineteen fifty-four), the force behind Wallace and Gromit. They first drew attention with Creature Comforts, from nineteen eighty-nine, which used audio of interviews with people on the street to give voice to stop-motion animals, although it was award-winning shorts such as The Wrong Trousers, from nineteen ninety-three, that propelled them onto the world stage.",
      "chars": 591
@@ -154,6 +169,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Learn more: Beauty and the Beast: The Disney Renaissance.",
      "text": "Learn more: Beauty and the Beast: The Disney Renaissance.",
      "chars": 57
@@ -161,6 +177,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Although The Little Mermaid (1989), based on Hans Christian Andersen's story of the same name, was Disney's first fairy tale in thirty years, since the release of Sleeping Beauty (1959), and thus ushered in the Disney Renaissance, Beauty and the Beast (1991) is definitely the most important of the works inspired by these tales as old as time. This distinction might even be attributed simply to the fact that it was the first animated film to compete for the Oscar for Best Picture, but its qualities and differences are also unique, elevating a production determined to be, if not the best, the greatest of the fairy tales turned into films and of the other works led by female characters, including those under the Disney Princess banner.",
      "text": "Although The Little Mermaid, from nineteen eighty-nine, based on Hans Christian Andersen's story of the same name, was Disney's first fairy tale in thirty years, since the release of Sleeping Beauty, from nineteen fifty-nine, and thus ushered in the Disney Renaissance, Beauty and the Beast, from nineteen ninety-one, is definitely the most important of the works inspired by these tales as old as time. This distinction might even be attributed simply to the fact that it was the first animated film to compete for the Oscar for Best Picture, but its qualities and differences are also unique, elevating a production determined to be, if not the best, the greatest of the fairy tales turned into films and of the other works led by female characters, including those under the Disney Princess banner.",
      "chars": 801
@@ -168,6 +185,7 @@
     {
      "id": "04-03",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "One of these traits holds the most obvious of the lessons in Beauty and the Beast: the understanding that a being's greatest beauty is the one within. When we compare the work's antagonist with the prince charming of the moment, we find an enormous discrepancy in how the animators present the two. Gaston's (Richard White) charm is an undeniable trait of the character, introduced as a true alpha male, although an extremely comic streak stems from this, all the more so because of the utter narcissism at the core of his being. On the other hand, when we are introduced to the Beast (Robby Benson), still in the film's opening, we come across a distorted, fur-covered, monstrous creature. The character design does not choose to make the Beast a being who, though bestial, is presentable; it dares to disfigure him as much as it can, lavishing care on his fur, unlike a certain live-action adaptation. As for Gaston's other traits, being the strongest of all or the hairiest of all, the antagonist ends up being no match for the Beast even in these attributes, the Beast being, initially, similar to Gaston in arrogance.",
      "text": "One of these traits holds the most obvious of the lessons in Beauty and the Beast: the understanding that a being's greatest beauty is the one within. When we compare the work's antagonist with the prince charming of the moment, we find an enormous discrepancy in how the animators present the two. Gaston's (Richard White) charm is an undeniable trait of the character, introduced as a true alpha male, although an extremely comic streak stems from this, all the more so because of the utter narcissism at the core of his being. On the other hand, when we are introduced to the Beast (Robby Benson), still in the film's opening, we come across a distorted, fur-covered, monstrous creature. The character design does not choose to make the Beast a being who, though bestial, is presentable; it dares to disfigure him as much as it can, lavishing care on his fur, unlike a certain live-action adaptation. As for Gaston's other traits, being the strongest of all or the hairiest of all, the antagonist ends up being no match for the Beast even in these attributes, the Beast being, initially, similar to Gaston in arrogance.",
      "chars": 1122
@@ -184,6 +202,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "On a final level, Beauty and the Beast invites the viewer to watch its character as a top-tier fairy tale turn into a strand inhabited by the most lavish, magical and grandiose musicals of all time, traits that also fit the work perfectly. First, regarding the ballroom sequence, Beauty and the Beast is part of Disney's investment in new technologies, such as those showcased in the visually impressive The Rescuers Down Under (1990). The ballroom, in this case, is made entirely on the computer, moving through the shots, something completely unprecedented for the company at the time, which was ambitious with this production. The daring camera movement lends value to the settings, allowing, as a result, an extremely fluid and enchanting flow, like a dance. Such grandeur is also noticeable in the exuberant colors of Be Our Guest. The musical sequences, therefore, had never been so lively before. With a very distinctive quality of animation, favoring the characters' movement over static presentation and seeking dynamism, the film finds formidable artistic value in many of its passages, such as the final fight between the Beast and Gaston, heightened by a rainstorm that complements the setting dazzlingly. Thus, the pinnacle of fairy tales is also one of the pinnacles of musicals.",
      "text": "On a final level, Beauty and the Beast invites the viewer to watch its character as a top-tier fairy tale turn into a strand inhabited by the most lavish, magical and grandiose musicals of all time, traits that also fit the work perfectly. First, regarding the ballroom sequence, Beauty and the Beast is part of Disney's investment in new technologies, such as those showcased in the visually impressive The Rescuers Down Under, from nineteen ninety. The ballroom, in this case, is made entirely on the computer, moving through the shots, something completely unprecedented for the company at the time, which was ambitious with this production. The daring camera movement lends value to the settings, allowing, as a result, an extremely fluid and enchanting flow, like a dance. Such grandeur is also noticeable in the exuberant colors of Be Our Guest. The musical sequences, therefore, had never been so lively before. With a very distinctive quality of animation, favoring the characters' movement over static presentation and seeking dynamism, the film finds formidable artistic value in many of its passages, such as the final fight between the Beast and Gaston, heightened by a rainstorm that complements the setting dazzlingly. Thus, the pinnacle of fairy tales is also one of the pinnacles of musicals.",
      "chars": 1308
@@ -200,6 +219,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "In France, Sylvain Chomet (b. 1963) emerged in 2003 with the strange hand-drawn comedy about a missing cyclist and a vocal trio, Les Triplettes de Belleville (The Triplets of Belleville, 2003). Chomet topped this success with L'Illusionniste (The Illusionist, 2010), based on an unfilmed screenplay by Jacques Tati. Set in the twilight years of stage magic acts, it also serves as an oblique commentary on the decline of hand-drawn animation.",
      "text": "In France, Sylvain Chomet (born in nineteen sixty-three) emerged in two thousand three with the strange hand-drawn comedy about a missing cyclist and a vocal trio, Les Triplettes de Belleville (The Triplets of Belleville, two thousand three). Chomet topped this success with L'Illusionniste (The Illusionist, twenty ten), based on an unfilmed screenplay by Jacques Tati. Set in the twilight years of stage magic acts, it also serves as an oblique commentary on the decline of hand-drawn animation.",
      "chars": 497
@@ -207,6 +227,7 @@
     {
      "id": "06-02",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "In the United States, Henry Selick (b. 1952) successfully combined stop-motion animation and 3D techniques in the creepy Coraline (2009). Based on the fantasy-horror story by Neil Gaiman (b. 1960), it follows Coraline, a feisty 11-year-old girl, annoyed with her busy, worn-out parents, who discovers a secret door to an \"Other World\" with \"Other Parents.\" The duplicate parents at first seem better, but Coraline learns to appreciate life in the real world.",
      "text": "In the United States, Henry Selick (born in nineteen fifty-two) successfully combined stop-motion animation and 3D techniques in the creepy Coraline, from two thousand nine. Based on the fantasy-horror story by Neil Gaiman (born in nineteen sixty), it follows Coraline, a feisty eleven-year-old girl, annoyed with her busy, worn-out parents, who discovers a secret door to an \"Other World\" with \"Other Parents.\" The duplicate parents at first seem better, but Coraline learns to appreciate life in the real world.",
      "chars": 513
@@ -214,6 +235,7 @@
     {
      "id": "06-03",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "Film animation. A genre that has always had so many particularities and that, for a long time, served only as entertainment for children. Then along came Pixar, a studio considered one of the greatest milestones in the genre for revolutionizing technical matters, but above all narratives and themes.",
      "text": "Film animation. A genre that has always had so many particularities and that, for a long time, served only as entertainment for children. Then along came Pixar, a studio considered one of the greatest milestones in the genre for revolutionizing technical matters, but above all narratives and themes.",
      "chars": 300
@@ -230,6 +252,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "However, Pixar did not have these characteristics from the very beginning. In 1979, George Lucas (b. 1944), the mind behind the Star Wars universe and founder of Lucasfilm, invited Ed Catmull (b. 1945) to join a team that would develop innovations in digital art. In 1983, Lucas decided to create a computer animation division called Pixar. Young animator John Lasseter (b. 1957) began doing his first work and, a year later, was hired to work on the short film The Adventures of André & Wally B. (1984), which would go on to become the first computer-animated short film. They astonished the worlds of film and technology by showing something that had never been done before.",
      "text": "However, Pixar did not have these characteristics from the very beginning. In nineteen seventy-nine, George Lucas (born in nineteen forty-four), the mind behind the Star Wars universe and founder of Lucasfilm, invited Ed Catmull (born in nineteen forty-five) to join a team that would develop innovations in digital art. In nineteen eighty-three, Lucas decided to create a computer animation division called Pixar. Young animator John Lasseter (born in nineteen fifty-seven) began doing his first work and, a year later, was hired to work on the short film The Adventures of André and Wally B., from nineteen eighty-four, which would go on to become the first computer-animated short film. They astonished the worlds of film and technology by showing something that had never been done before.",
      "chars": 793
@@ -246,6 +269,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 23,
      "original": "Despite their having taken the first big step in the history of animation, Lucas reached the limit of his ability to fund the project and, in 1985, Pixar's days seemed numbered. Then along came the newly minted millionaire Steve Jobs, who struck a deal with Lucas and paid around 5 million to take over this division of the company. And so the animation work continued. The fact that Apple's founder had become the company's owner led it down a new path. Seeing that Lasseter's work had borne good fruit, Jobs changed Pixar's face, investing in more short films. Disney's studios closely followed Pixar's development and soon became one of its main clients. After a few short films, and seeing that the business was becoming profitable, in 1991 Disney and Pixar announced that they were making a fully computer-animated feature film.",
      "text": "Despite their having taken the first big step in the history of animation, Lucas reached the limit of his ability to fund the project and, in nineteen eighty-five, Pixar's days seemed numbered. Then along came the newly minted millionaire Steve Jobs, who struck a deal with Lucas and paid around five million to take over this division of the company. And so the animation work continued. The fact that Apple's founder had become the company's owner led it down a new path. Seeing that Lasseter's work had borne good fruit, Jobs changed Pixar's face, investing in more short films. Disney's studios closely followed Pixar's development and soon became one of its main clients. After a few short films, and seeing that the business was becoming profitable, in nineteen ninety-one Disney and Pixar announced that they were making a fully computer-animated feature film.",
      "chars": 867
@@ -253,6 +277,7 @@
     {
      "id": "08-02",
      "speaker": "citacao",
+     "source_index": 25,
      "original": "I don't think either side thought Toy Story would turn out as well as it has. The technology is brilliant, the casting is inspired, and I think the story will touch a nerve. Believe me, when we first agreed to work together, we never imagined their first movie would be our big 1995 holiday feature, or that they would become a brand because of it.",
      "text": "I don't think either side thought Toy Story would turn out as well as it has. The technology is brilliant, the casting is inspired, and I think the story will touch a nerve. Believe me, when we first agreed to work together, we never imagined their first movie would be our big nineteen ninety-five holiday feature, or that they would become a brand because of it.",
      "chars": 364
@@ -260,6 +285,7 @@
     {
      "id": "08-03",
      "speaker": "narrador",
+     "source_index": 25,
      "original": "said Michael Eisner.",
      "text": "said Michael Eisner.",
      "chars": 20
@@ -267,6 +293,7 @@
     {
      "id": "08-04",
      "speaker": "narrador",
+     "source_index": 26,
      "original": "In 1995, the first of many feature films from the newly formed Pixar hit theaters: Toy Story (1995), directed by none other than John Lasseter. It would be the first fully computer-animated film in history, which required creating the software and hardware needed to make it a believable and revolutionary animation. However (and here the art/technology guideline comes into play), bringing a work of such scope to life was not enough: naturally, the plot was a concern for the filmmakers involved in the project.",
      "text": "In nineteen ninety-five, the first of many feature films from the newly formed Pixar hit theaters: Toy Story, from nineteen ninety-five, directed by none other than John Lasseter. It would be the first fully computer-animated film in history, which required creating the software and hardware needed to make it a believable and revolutionary animation. However (and here the art/technology guideline comes into play), bringing a work of such scope to life was not enough: naturally, the plot was a concern for the filmmakers involved in the project.",
      "chars": 549
@@ -283,6 +310,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 28,
      "original": "To that end, aware that the film would not survive on its technology alone (which would inexorably become obsolete and outdated within a few years) but rather through a compelling narrative, some fine names such as Joss Whedon (b. 1964) and Joel Cohen (b. 1963) were hired to join the writing team. And so Toy Story presented the story from the literal point of view of a... toy! Out of people's sight, the toys show that there is nothing inanimate about them: they talk, walk, think and, above all, feel emotions just like you or me.",
      "text": "To that end, aware that the film would not survive on its technology alone (which would inexorably become obsolete and outdated within a few years) but rather through a compelling narrative, some fine names such as Joss Whedon (born in nineteen sixty-four) and Joel Cohen (born in nineteen sixty-three) were hired to join the writing team. And so Toy Story presented the story from the literal point of view of a... toy! Out of people's sight, the toys show that there is nothing inanimate about them: they talk, walk, think and, above all, feel emotions just like you or me.",
      "chars": 575
@@ -290,6 +318,7 @@
     {
      "id": "09-02",
      "speaker": "narrador",
+     "source_index": 29,
      "original": "Toy Story turned out to be a pleasant surprise. Pixar gave us a pioneering film among the computer animations to come, with jaw-dropping technical visuals for its time and with characters (here I mean, in short, the toys) who are fascinating because of their peculiar traits, and compelling because they invite immediate audience identification: who has never felt a sharp pang of jealousy and thus perfectly understood Woody's motivations? Toy Story was acclaimed by critics, grossed more than 39 million dollars and received three Oscar nominations. It did not win any, it is true, but it won over audiences: far more than for its technical innovation or even its characters, it did so through the message intrinsic to the work. Clear messages throughout its films would become a Pixar trademark over the years.",
      "text": "Toy Story turned out to be a pleasant surprise. Pixar gave us a pioneering film among the computer animations to come, with jaw-dropping technical visuals for its time and with characters (here I mean, in short, the toys) who are fascinating because of their peculiar traits, and compelling because they invite immediate audience identification: who has never felt a sharp pang of jealousy and thus perfectly understood Woody's motivations? Toy Story was acclaimed by critics, grossed more than thirty-nine million dollars and received three Oscar nominations. It did not win any, it is true, but it won over audiences: far more than for its technical innovation or even its characters, it did so through the message intrinsic to the work. Clear messages throughout its films would become a Pixar trademark over the years.",
      "chars": 822
@@ -306,6 +335,7 @@
     {
      "id": "10-01",
      "speaker": "narrador",
+     "source_index": 31,
      "original": "Three years later, another of the studio's classics would take shape. We had come across a story about toys; now we would contemplate a story about small and seemingly simple beings. Insects. Its message is, I suppose, the most serious, impactful and contemporary of them all. A Bug's Life, also directed by John Lasseter together with Andrew Stanton (b. 1965), opened amid great expectations. Once again, Pixar pulled off the feat of reaching adult audiences with the same intensity as it reached children and teens. The critical reception of A Bug's Life (1998) was excellent, similar to that of Toy Story.",
      "text": "Three years later, another of the studio's classics would take shape. We had come across a story about toys; now we would contemplate a story about small and seemingly simple beings. Insects. Its message is, I suppose, the most serious, impactful and contemporary of them all. A Bug's Life, also directed by John Lasseter together with Andrew Stanton (born in nineteen sixty-five), opened amid great expectations. Once again, Pixar pulled off the feat of reaching adult audiences with the same intensity as it reached children and teens. The critical reception of A Bug's Life, from nineteen ninety-eight, was excellent, similar to that of Toy Story.",
      "chars": 650
@@ -313,6 +343,7 @@
     {
      "id": "10-02",
      "speaker": "citacao",
+     "source_index": 32,
      "original": "You don't talk very much. I like you!",
      "text": "You don't talk very much. I like you!",
      "chars": 37
@@ -320,6 +351,7 @@
     {
      "id": "10-03",
      "speaker": "narrador",
+     "source_index": 32,
      "original": "said Ellie (Elie Docter) in Up.",
      "text": "said Ellie (Elie Docter) in Up.",
      "chars": 31
@@ -327,6 +359,7 @@
     {
      "id": "10-04",
      "speaker": "narrador",
+     "source_index": 33,
      "original": "As of 2016, it has been 21 years since the studio's first release, and it is remarkable how much has been maintained, including the quality of its features, despite a few occasional missteps. Films such as Monsters, Inc. (2001), Finding Nemo (2003), The Incredibles (2004), WALL·E (2008), Up (2009) and Inside Out (2015) proved how the quality of its films only increased over time.",
      "text": "As of twenty sixteen, it has been twenty-one years since the studio's first release, and it is remarkable how much has been maintained, including the quality of its features, despite a few occasional missteps. Films such as Monsters, Inc., from two thousand one, Finding Nemo, from two thousand three, The Incredibles, from two thousand four, WALL·E, from two thousand eight, Up, from two thousand nine, and Inside Out, from twenty fifteen, proved how the quality of its films only increased over time.",
      "chars": 502
@@ -343,6 +376,7 @@
     {
      "id": "11-01",
      "speaker": "narrador",
+     "source_index": 35,
      "original": "The technical side has reached an incredible level and continues to evolve. And the themes and messages conveyed to viewers have been the biggest highlight throughout all these years. No studio in the film business (perhaps only Studio Ghibli can be compared here), including live-action films, has handled subjects such as friendship, family, loss, resilience, fear, adolescence, breaking stereotypes and love so well. And in spite of the great mass of films that try to explore these themes, Pixar stands out for bringing fun to children, and to young people and adults, fun accompanied by reflection. In fact, it is through this exercise that we build knowledge, and over these years Pixar has been a great producer, not limited to producing films, but also knowledge (and tears).",
      "text": "The technical side has reached an incredible level and continues to evolve. And the themes and messages conveyed to viewers have been the biggest highlight throughout all these years. No studio in the film business (perhaps only Studio Ghibli can be compared here), including live-action films, has handled subjects such as friendship, family, loss, resilience, fear, adolescence, breaking stereotypes and love so well. And in spite of the great mass of films that try to explore these themes, Pixar stands out for bringing fun to children, and to young people and adults, fun accompanied by reflection. In fact, it is through this exercise that we build knowledge, and over these years Pixar has been a great producer, not limited to producing films, but also knowledge (and tears).",
      "chars": 783
@@ -359,6 +393,7 @@
     {
      "id": "12-01",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Worth watching: the films from this chapter are O Castelo no Céu, Túmulo dos Vagalumes, Meu Amigo Totoro, O Serviço de Entregas da Kiki, Memórias de Ontem, Porco Rosso: O Último Herói Romântico, Eu Posso Ouvir o Oceano, PomPoko: A Grande Batalha dos Guaxinins, Sussuros do Coração, Princesa Mononoke, Meus Vizinhos: Os Yamadas, A Viagem de Chihiro, O Reino dos Gatos, O Castelo Animado, Contos de Terramar, Ponyo - Uma Amizade que Veio do Mar, O Mundo dos Pequeninos, Da Colina Kokuriko, Vidas ao Vento, O Conto da Princesa Kaguya, As Memórias de Marnie, Aya e a Bruxa, Branca de Neve e os Sete Anões, Pinóquio, Fantasia, Dumbo, Bambi, Alô, Amigos, Você Já Foi à Bahia?, Música, Maestro!, Como é Bom se Divertir, Tempo de Melodia, As Aventuras de Ichabod e Sr. Sapo, Cinderela, Alice no País das Maravilhas, As Aventuras de Peter Pan, A Dama e o Vagabundo, A Bela Adormecida, 101 Dálmatas, A Espada Era a Lei, Mogli - O Menino Lobo, Aristogatas, Robin Hood, Puff - O Ursinho Guloso, Bernardo e Bianca, O Cão e a Raposa, O Caldeirão Mágico, As Peripécias de um Ratinho Detetive, Oliver e Sua Turma, A Pequena Sereia, Duck Tales, O Filme: O Tesouro da Lâmpada Perdida, Bernardo e Bianca na Terra dos Cangurus, A Bela e a Fera, Aladdin, O Estranho Mundo de Jack, Aladdin - O Retorno de Jafar, O Rei Leão, Pateta - O Filme, Aladdin e os 40 Ladrões, Pocahontas - O Encontro de Dois Mundos, O Corcunda de Notre Dame, Hércules, A Bela e a Fera: O Natal Encantado, O Rei Leão II: O Reino de Simba, Mulan, Pocahontas 2 - Uma Jornada para o Novo Mundo, Doug: O Filme, Tarzan, Fantasia 2000, Tigrão – O Filme, Dinossauro, A Nova Onda do Imperador, A Pequena Sereia II - O Retorno Para o Mar, Hora do Recreio: O Filme, A Dama e o Vagabundo 2: As Aventuras de Banzé, Atlantis: O Reino Perdido, Peter Pan 2 - De Volta à Terra do Nunca, Lilo e Stitch, O Corcunda de Notre Dame II – O Segredo do Sino, Cinderela II: Os Sonhos se Realizam, Planeta do Tesouro, 101 Dálmatas 2 - A Aventura de Patch em Londres, Mogli: O Menino Lobo 2, Leitão - O Filme, Atlantis - O Retorno de Milo, Irmão Urso, O Cãozinho Esperto, O Rei Leão 3: Hakuna Matata, Nem Que a Vaca Tussa, Pooh e o Efalante, A Nova Onda do Kronk, Tarzan 2, Mulan 2: A Lenda Continua, Lilo & Stitch 2: Stitch Deu Defeito, O Galinho Chicken Little, Selvagem, Bambi 2, Cinderela III: Uma Volta no Tempo, A Família do Futuro, Tinker Bell: Uma Aventura no Mundo das Fadas, A Pequena Sereia: A História de Ariel, Bolt - Supercão, Tinker Bell e O Tesouro Perdido, Os Fantasmas de Scrooge, A Princesa e o Sapo, Tinker Bell e O Resgate das Fadas, Enrolados, O Ursinho Pooh, Marte Precisa de Mães, Tinker Bell: O Segredo das Fadas, Frankenweenie, Detona Ralph, Aviões, Frozen: Uma Aventura Congelante, Tinker Bell: Fadas e Piratas, Aviões 2: Heróis do Fogo ao Resgate, Operação Big Hero, Tinker Bell e o Monstro da Terra do Nunca, Zootopia, Moana: Um Mar de Aventuras, WiFi Ralph: Quebrando a Internet, Frozen II, Raya e o Último Dragão, Toy Story - Um Mundo de Aventuras, Vida de Inseto, Toy Story 2, Monstros S.A., Procurando Nemo, Os Incríveis, Carros, Ratatouille, WALL-E, Valente, Universidade Monstros, Divertida Mente, O Bom Dinossauro, Procurando Dory, Carros 3, Viva - A Vida é uma Festa, Os Incríveis 2, Toy Story 4, Dois Irmãos: Uma Jornada Fantástica, Soul, Toy Story, Beauty and the Beast, Spirited Away, Shrek, Ice Age, Wallace & Gromit: The Curse of the Were-Rabbit, Coraline, The Illusionist, The Lion King, The Nightmare Before Christmas, Up, My Neighbor Totoro, Paprika, Madagascar, Chicken Run and Finding Nemo.",
      "text": "Worth watching: the films from this chapter are O Castelo no Céu, Túmulo dos Vagalumes, Meu Amigo Totoro, O Serviço de Entregas da Kiki, Memórias de Ontem, Porco Rosso: O Último Herói Romântico, Eu Posso Ouvir o Oceano, PomPoko: A Grande Batalha dos Guaxinins, Sussuros do Coração, Princesa Mononoke, Meus Vizinhos: Os Yamadas, A Viagem de Chihiro, O Reino dos Gatos, O Castelo Animado, Contos de Terramar, Ponyo - Uma Amizade que Veio do Mar, O Mundo dos Pequeninos, Da Colina Kokuriko, Vidas ao Vento, O Conto da Princesa Kaguya, As Memórias de Marnie, Aya e a Bruxa, Branca de Neve e os Sete Anões, Pinóquio, Fantasia, Dumbo, Bambi, Alô, Amigos, Você Já Foi à Bahia?, Música, Maestro!, Como é Bom se Divertir, Tempo de Melodia, As Aventuras de Ichabod e Sr. Sapo, Cinderela, Alice no País das Maravilhas, As Aventuras de Peter Pan, A Dama e o Vagabundo, A Bela Adormecida, one hundred one Dálmatas, A Espada Era a Lei, Mogli - O Menino Lobo, Aristogatas, Robin Hood, Puff - O Ursinho Guloso, Bernardo e Bianca, O Cão e a Raposa, O Caldeirão Mágico, As Peripécias de um Ratinho Detetive, Oliver e Sua Turma, A Pequena Sereia, Duck Tales, O Filme: O Tesouro da Lâmpada Perdida, Bernardo e Bianca na Terra dos Cangurus, A Bela e a Fera, Aladdin, O Estranho Mundo de Jack, Aladdin - O Retorno de Jafar, O Rei Leão, Pateta - O Filme, Aladdin e os forty Ladrões, Pocahontas - O Encontro de Dois Mundos, O Corcunda de Notre Dame, Hércules, A Bela e a Fera: O Natal Encantado, O Rei Leão Two: O Reino de Simba, Mulan, Pocahontas two - Uma Jornada para o Novo Mundo, Doug: O Filme, Tarzan, Fantasia two thousand, Tigrão, O Filme, Dinossauro, A Nova Onda do Imperador, A Pequena Sereia Two - O Retorno Para o Mar, Hora do Recreio: O Filme, A Dama e o Vagabundo two: As Aventuras de Banzé, Atlantis: O Reino Perdido, Peter Pan two - De Volta à Terra do Nunca, Lilo e Stitch, O Corcunda de Notre Dame Two, O Segredo do Sino, Cinderela Two: Os Sonhos se Realizam, Planeta do Tesouro, one hundred one Dálmatas two - A Aventura de Patch em Londres, Mogli: O Menino Lobo two, Leitão - O Filme, Atlantis - O Retorno de Milo, Irmão Urso, O Cãozinho Esperto, O Rei Leão three: Hakuna Matata, Nem Que a Vaca Tussa, Pooh e o Efalante, A Nova Onda do Kronk, Tarzan two, Mulan two: A Lenda Continua, Lilo and Stitch two: Stitch Deu Defeito, O Galinho Chicken Little, Selvagem, Bambi two, Cinderela Three: Uma Volta no Tempo, A Família do Futuro, Tinker Bell: Uma Aventura no Mundo das Fadas, A Pequena Sereia: A História de Ariel, Bolt - Supercão, Tinker Bell e O Tesouro Perdido, Os Fantasmas de Scrooge, A Princesa e o Sapo, Tinker Bell e O Resgate das Fadas, Enrolados, O Ursinho Pooh, Marte Precisa de Mães, Tinker Bell: O Segredo das Fadas, Frankenweenie, Detona Ralph, Aviões, Frozen: Uma Aventura Congelante, Tinker Bell: Fadas e Piratas, Aviões two: Heróis do Fogo ao Resgate, Operação Big Hero, Tinker Bell e o Monstro da Terra do Nunca, Zootopia, Moana: Um Mar de Aventuras, WiFi Ralph: Quebrando a Internet, Frozen Two, Raya e o Último Dragão, Toy Story - Um Mundo de Aventuras, Vida de Inseto, Toy Story two, Monstros S.A., Procurando Nemo, Os Incríveis, Carros, Ratatouille, WALL-E, Valente, Universidade Monstros, Divertida Mente, O Bom Dinossauro, Procurando Dory, Carros three, Viva - A Vida é uma Festa, Os Incríveis two, Toy Story four, Dois Irmãos: Uma Jornada Fantástica, Soul, Toy Story, Beauty and the Beast, Spirited Away, Shrek, Ice Age, Wallace and Gromit: The Curse of the Were-Rabbit, Coraline, The Illusionist, The Lion King, The Nightmare Before Christmas, Up, My Neighbor Totoro, Paprika, Madagascar, Chicken Run and Finding Nemo.",
      "chars": 3640

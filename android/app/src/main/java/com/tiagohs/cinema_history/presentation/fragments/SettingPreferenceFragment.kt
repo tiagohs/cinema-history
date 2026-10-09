@@ -12,6 +12,7 @@ import java.util.Locale
 import com.tiagohs.cinema_history.App
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.ads.AdsManager
+import com.tiagohs.cinema_history.support.Supporter
 import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.cinema_history.presentation.activities.AboutActivty
 import com.tiagohs.cinema_history.presentation.activities.GlossaryActivity
@@ -30,6 +31,7 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
     private val GLOSSARY_KEY = "glossary"
     private val AD_PRIVACY_KEY = "ad_privacy"
     private val THEME_KEY = "app_theme"
+    private val SUPPORT_KEY = "support"
 
     private var appLanguage: ListPreference? = null
     private var aboutLanguage: Preference? = null
@@ -58,6 +60,22 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
         glossaryLanguage?.intent = GlossaryActivity.newIntent(context)
 
         setupAdPrivacyPreference()
+        setupSupportPreference()
+    }
+
+    /** "Apoie o app": só com a oferta disponível (Brasil + pt) ou para quem já apoia. */
+    private fun setupSupportPreference() {
+        val preference = findPreference<Preference>(SUPPORT_KEY) ?: return
+        val activity = activity ?: return
+        val supporter = Supporter.isSupporter(activity)
+
+        preference.isVisible = supporter || Supporter.isOfferAvailable(activity)
+        preference.setTitle(if (supporter) R.string.support_menu_supporter else R.string.support_menu)
+        preference.setSummary(if (supporter) R.string.support_settings_summary_supporter else R.string.support_settings_summary)
+        preference.setOnPreferenceClickListener {
+            Supporter.openSupportScreen(activity, "settings")
+            true
+        }
     }
 
     /**
@@ -126,6 +144,7 @@ class SettingPreferenceFragment: PreferenceFragmentCompat() {
         super.onResume()
 
         settingManager.registerOnSharedPreferenceChangeListener()
+        setupSupportPreference()
     }
 
     override fun onPause() {

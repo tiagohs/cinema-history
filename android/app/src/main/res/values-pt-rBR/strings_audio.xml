@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Narração em áudio dos capítulos (pacote audio/). Arquivo separado do strings.xml. -->
+<resources>
+    <string name="audio_listen_button">Ouvir · %1$d min</string>
+    <string name="audio_listen_button_cd">Ouvir este capítulo, %1$d minutos</string>
+    <string name="audio_listen_button_locked_cd">Ouvir a abertura grátis. Narração completa para apoiadores, %1$d minutos</string>
+    <string name="audio_play">Tocar</string>
+    <string name="audio_pause">Pausar</string>
+    <string name="audio_back_15">Voltar 15 segundos</string>
+    <string name="audio_forward_15">Avançar 15 segundos</string>
+    <string name="audio_previous_track">Faixa anterior</string>
+    <string name="audio_next_track">Próxima faixa</string>
+    <string name="audio_expand">Abrir o player de áudio</string>
+    <string name="audio_mini_player_cd">Player de áudio: %1$s</string>
+    <string name="audio_close">Parar e fechar o player</string>
+    <string name="audio_follow_resume">Voltar ao trecho</string>
+    <string name="audio_listen_from_here">Ouvir a partir daqui</string>
+    <string name="audio_listen_from_here_locked">Ouvir a partir daqui (apoiadores)</string>
+    <string name="audio_tracks">Faixas</string>
+    <string name="audio_speed">Velocidade</string>
+    <string name="audio_speed_cd">Velocidade: %1$s</string>
+    <string name="audio_sleep_timer">Timer de sono</string>
+    <string name="audio_sleep_off">Desligado</string>
+    <string name="audio_sleep_minutes">%1$d minutos</string>
+    <string name="audio_sleep_end_of_track">Fim da faixa</string>
+    <string name="audio_sleep_remaining">Para em %1$s</string>
+    <string name="audio_era_mode">Ouvir a era inteira</string>
+    <string name="audio_era_mode_desc">Continua nos próximos capítulos</string>
+    <string name="audio_download">Baixar para ouvir offline (%1$s)</string>
+    <string name="audio_downloading">Baixando… %1$d%%</string>
+    <string name="audio_downloaded">Disponível offline · Remover</string>
+    <string name="audio_downloaded_cd">Disponível offline. Toque para remover o download</string>
+    <string name="audio_download_failed">Falha no download. Toque para tentar de novo</string>
+    <string name="audio_locked_track_cd">%1$s, para apoiadores</string>
+    <string name="audio_current_track_cd">%1$s, tocando agora</string>
+    <string name="audio_preview_note">Prévia grátis: a abertura. Apoie o Cinema History para ouvir a narração completa.</string>
+    <string name="audio_unlock">Liberar a narração</string>
+    <string name="audio_chapter_label">Capítulo %1$d · %2$s</string>
+    <string name="audio_seek_cd">Posição da reprodução</string>
+    <string name="audio_error_playback">Não foi possível tocar o áudio. Verifique a conexão.</string>
+</resources>

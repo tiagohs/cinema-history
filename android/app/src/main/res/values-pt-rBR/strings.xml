@@ -53,15 +53,19 @@
     <string name="buy">Comprar</string>
     <string name="contact_us">Entre em contato</string>
     <string name="credits_terms">Créditos e Termos</string>
-    <string name="tmdb_terms_description">As informações dos filmes, atores, diretores e as imagens são fornecidas pela API TMDb mas não é endossado ou certificado pelo TMDb</string>
+    <string name="about_free_culture">Cultura é gratuita. Viva o cinema.</string>
+    <string name="credits_tmdb">Informações e imagens de filmes e pessoas: TMDB</string>
+    <string name="credits_omdb">Notas e dados complementares de filmes: OMDb API</string>
+    <string name="credits_awards">Dados dos prêmios: Wikipédia (CC BY-SA 4.0) e Wikidata (CC0)</string>
+    <string name="credits_youtube">Vídeos: YouTube. Os vídeos pertencem aos seus respectivos autores.</string>
     <string name="tmdb_terms_title">TMDB Termos de Uso</string>
     <string name="tmdb_api_terms_title">TMDB API Termos de Uso</string>
     <string name="omdb_api_terms_title">OMDB API Termos de Uso</string>
     <string name="version">Versão %1s</string>
     <string name="responsable">Desenvolvimento e Pesquisa por Tiago Silva</string>
-    <string name="terms">Termos</string>
+    <string name="terms">Termos de Uso</string>
     <string name="privacy">Política de Privacidade</string>
-    <string name="app_description">%1s é um aplicativo grátis que busca, de uma forma divertida e intuitiva, levar a história da sétima arte a todos. Através de imagens, vídeos, entrevistas e infográficos, apresentaremos a trajetória do cinema desde a primeira exibição dos irmãos Lumière até os dias de hoje. Nos baseamos na literatura e em documentários e traduzimos para essa nova mídia. Divirta-se!</string>
+    <string name="app_description">%1s é um aplicativo gratuito que conta a história do cinema de um jeito divertido e intuitivo, da primeira exibição dos irmãos Lumière até hoje. Percorra 8 eras da sétima arte, os prêmios desde 1929, uma linha do tempo interativa, os 1001 filmes para ver antes de morrer, grandes diretores e um glossário de termos do cinema, em português, inglês e espanhol, com tema claro e escuro. No Brasil, os capítulos também podem ser ouvidos com narração em áudio. Tudo se baseia em livros e documentários, traduzidos para essa nova mídia. Divirta-se!</string>
 
     <!-- Home -->
     <string name="start_journey">Iniciar a Jornada</string>

@@ -2,6 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinatorLayout"
@@ -206,12 +207,40 @@
                         android:paddingStart="@dimen/activity_vertical_margin_2x"
                         android:paddingEnd="@dimen/activity_vertical_margin_2x"
                         android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        app:layout_goneMarginBottom="@dimen/activity_vertical_margin_2x"
                         app:layout_constraintTop_toBottomOf="@id/pageTitle"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/audioListenButton"
                     />
+
+                    <!-- Narração em áudio: "▶ Ouvir · N min" (só aparece se o capítulo tem áudio; ver PageAudioBinder). -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/audioListenButton"
+                        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin_2x"
+                        android:minHeight="40dp"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="16dp"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/md_white_1000"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:visibility="gone"
+                        app:icon="@drawable/ic_audio_play"
+                        app:iconSize="18dp"
+                        app:iconPadding="6dp"
+                        app:iconTint="@color/md_white_1000"
+                        app:strokeColor="@color/audio_header_button_stroke"
+                        app:rippleColor="@color/audio_header_button_ripple"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:text="Ouvir · 12 min"
+                        tools:visibility="visible" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -312,5 +341,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <!-- Aparece quando o usuário rola por conta própria durante a narração: volta a acompanhar o trecho lido. -->
+    <com.google.android.material.chip.Chip
+        android:id="@+id/audioFollowChip"
+        style="@style/Widget.Material3.Chip.Assist.Elevated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
+        android:text="@string/audio_follow_resume"
+        android:visibility="gone"
+        app:chipIcon="@drawable/ic_audio_headphones"
+        app:chipIconTint="?attr/colorOnSurface"
+        app:chipIconVisible="true" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

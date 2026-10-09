@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 06: From 1990 to 2009. Chapter 13: Latin American Cinema.",
      "text": "Part zero six: From nineteen ninety to two thousand nine. Chapter thirteen: Latin American Cinema.",
      "chars": 98
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "The 1990s and 2000s brought Latin American film classics and the rise of new directors who conquered box offices and awards around the world.",
      "text": "The nineteen nineties and two thousands brought Latin American film classics and the rise of new directors who conquered box offices and awards around the world.",
      "chars": 161
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "With the arrival of the new millennium, Latin American cinema emerged as one of the best in the world. A generation of Mexican, Brazilian, Argentine, Chilean, and Peruvian filmmakers made films that captivated audiences in their own countries and around the globe. These directors won numerous awards, and some of them use their international standing to act as ambassadors for their respective national industries. In the early 1990s, such favorable circumstances would have been unimaginable.",
      "text": "With the arrival of the new millennium, Latin American cinema emerged as one of the best in the world. A generation of Mexican, Brazilian, Argentine, Chilean, and Peruvian filmmakers made films that captivated audiences in their own countries and around the globe. These directors won numerous awards, and some of them use their international standing to act as ambassadors for their respective national industries. In the early nineteen nineties, such favorable circumstances would have been unimaginable.",
      "chars": 506
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "In Mexico, years of poorly planned state intervention, along with distribution problems, had stripped the national cinema of its quality and its identity. By the mid-1990s, film production had fallen to the levels of the 1930s. Alfonso Cuarón (b. 1961) and Guillermo del Toro (b. 1964) were just two of the directors who stood out — with Solo con tu pareja (1992) and Cronos (1993) — but who felt that the only way forward was to leave for Hollywood.",
      "text": "In Mexico, years of poorly planned state intervention, along with distribution problems, had stripped the national cinema of its quality and its identity. By the mid-nineteen nineties, film production had fallen to the levels of the nineteen thirties. Alfonso [[pron: Cuarón|Kwa-RONE]] (born in nineteen sixty-one) and Guillermo del Toro (born in nineteen sixty-four) were just two of the directors who stood out, with Solo con tu pareja, from nineteen ninety-two, and Cronos, from nineteen ninety-three, but who felt that the only way forward was to leave for Hollywood.",
      "chars": 552
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "citacao",
+     "source_index": 3,
      "original": "Whenever you want to remember me, take a look at the picture we took together. I'm saying this because I'm afraid that one day you'll forget me.",
      "text": "Whenever you want to remember me, take a look at the picture we took together. I'm saying this because I'm afraid that one day you'll forget me.",
      "chars": 144
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "said Dora (Fernanda Montenegro) in Central Station.",
      "text": "said Dora (Fernanda Montenegro) in Central Station.",
      "chars": 51
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "The problems faced by the South American film industries were inextricably linked to the turbulent recent history of these societies. Dictatorships, institutionalized corruption, and ill-fated neoliberal experiments took their toll on cinema, including censorship, scarce funding, exile, and even murder. Add to this cultural turmoil on the continent the fact that thousands of movie theaters were converted into evangelical churches.",
      "text": "The problems faced by the South American film industries were inextricably linked to the turbulent recent history of these societies. Dictatorships, institutionalized corruption, and ill-fated neoliberal experiments took their toll on cinema, including censorship, scarce funding, exile, and even murder. Add to this cultural turmoil on the continent the fact that thousands of movie theaters were converted into evangelical churches.",
      "chars": 434
@@ -71,6 +78,7 @@
     {
      "id": "01-06",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "A bitter irony for Brazil, Argentina, and Mexico — the traditional powerhouses of Latin American cinema — was that their respective dictatorial governments were followed by democratically elected but philistine presidents who proved just as harmful to the national film industries as their predecessors. During President Fernando Collor de Mello's term, Brazil's film production shrank to a single feature film in three years, and in 1991 director Hector Babenco (b. 1946) declared, \"Brazilian cinema is dead.\" That makes the country's subsequent comeback all the more extraordinary.",
      "text": "A bitter irony for Brazil, Argentina, and Mexico, the traditional powerhouses of Latin American cinema, was that their respective dictatorial governments were followed by democratically elected but philistine presidents who proved just as harmful to the national film industries as their predecessors. During President Fernando Collor de Mello's term, Brazil's film production shrank to a single feature film in three years, and in nineteen ninety-one director Hector Babenco (born in nineteen forty-six) declared, \"Brazilian cinema is dead.\" That makes the country's subsequent comeback all the more extraordinary.",
      "chars": 615
@@ -87,6 +95,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Learn more: The Landmark of Brazilian Cinema.",
      "text": "Learn more: The Landmark of Brazilian Cinema.",
      "chars": 45
@@ -94,6 +103,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "City of God, released in 2002, changed the way films are made in Brazil, because its language is different from anything that had been done until then. It also changed the way poverty, destitution, the favelas, and crime were portrayed in the country's audiovisual works. The creative freedom given by the people in charge of the project made a big difference in the final result.",
      "text": "City of God, released in two thousand two, changed the way films are made in Brazil, because its language is different from anything that had been done until then. It also changed the way poverty, destitution, the favelas, and crime were portrayed in the country's audiovisual works. The creative freedom given by the people in charge of the project made a big difference in the final result.",
      "chars": 392
@@ -101,6 +111,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "It all began with the book Cidade de Deus (City of God), which was the product of extensive research and was intended, according to its author Paulo Lins, a former resident of Cidade de Deus, to reduce violence in the favela, police violence. Published in 1997, the book did not achieve Lins's goal, and he even declared that his work had been in vain. But the success and the mark left by the film prove the writer was wrong.",
      "text": "It all began with the book Cidade de Deus (City of God), which was the product of extensive research and was intended, according to its author Paulo Lins, a former resident of Cidade de Deus, to reduce violence in the favela, police violence. Published in nineteen ninety-seven, the book did not achieve Lins's goal, and he even declared that his work had been in vain. But the success and the mark left by the film prove the writer was wrong.",
      "chars": 443
@@ -108,6 +119,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Bráulio Mantovani (b. 1963) was chosen by Fernando Meirelles for the task of turning the book into a screenplay. \"By page 100 I thought it was impossible.\" Difficulties aside, the screenplay was written and the film was made by Meirelles and Kátia Lund (b. 1966), with lush cinematography by César Charlone (b. 1958). Upon release, it took a beating from the Brazilian film press. However, audiences and the Hollywood Academy saw it differently. Besides its success in theaters, in 2004 the film received four Oscar nominations: Mantovani competed for Best Adapted Screenplay; Charlone for Best Cinematography; Daniel Rezende, the editor, for Best Film Editing; and Fernando Meirelles and Kátia Lund were nominated for Best Director.",
      "text": "Bráulio Mantovani (born in nineteen sixty-three) was chosen by Fernando Meirelles for the task of turning the book into a screenplay. \"By page one hundred I thought it was impossible.\" Difficulties aside, the screenplay was written and the film was made by Meirelles and Kátia Lund (born in nineteen sixty-six), with lush cinematography by César Charlone (born in nineteen fifty-eight). Upon release, it took a beating from the Brazilian film press. However, audiences and the Hollywood Academy saw it differently. Besides its success in theaters, in two thousand four the film received four Oscar nominations: Mantovani competed for Best Adapted Screenplay; Charlone for Best Cinematography; Daniel Rezende, the editor, for Best Film Editing; and Fernando Meirelles and Kátia Lund were nominated for Best Director.",
      "chars": 815
@@ -115,6 +127,7 @@
     {
      "id": "02-05",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Brazil caught the world's attention a few years after Central Station had won the Golden Lion at the Berlin Film Festival, showing that it had not been luck and that the country was entering a new era of great works. Several subsequent films followed this school, such as Elite Squad (2007) and Carandiru (2003).",
      "text": "Brazil caught the world's attention a few years after Central Station had won the Golden Lion at the Berlin Film Festival, showing that it had not been luck and that the country was entering a new era of great works. Several subsequent films followed this school, such as Elite Squad, from two thousand seven, and Carandiru, from two thousand three.",
      "chars": 349
@@ -131,6 +144,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "In South America, this renaissance coincides with the beginning of a process of strengthening political democracy and economies across the continent. Brazil and Argentina were the first to introduce new film laws: the Brazilian government offered tax incentives in exchange for private-sector investment in national films, while Argentina rebuilt its dilapidated system of state subsidies. Other countries gradually followed these examples.",
      "text": "In South America, this renaissance coincides with the beginning of a process of strengthening political democracy and economies across the continent. Brazil and Argentina were the first to introduce new film laws: the Brazilian government offered tax incentives in exchange for private-sector investment in national films, while Argentina rebuilt its dilapidated system of state subsidies. Other countries gradually followed these examples.",
      "chars": 440
@@ -138,6 +152,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "The first signs of recovery came in 1998, when Central Station (1998), by Walter Salles (b. 1956), won the Golden Lion at the Berlin Film Festival. Salles's film was soon followed by two Mexican productions, Amores perros (2000), by Alejandro González Iñárritu (b. 1963), and Cuarón's Y tu mamá también (2001), as well as by City of God (2002), by Brazilian Fernando Meirelles (b. 1955). This quartet of films announced to the world the strong moment these film industries were enjoying.",
      "text": "The first signs of recovery came in nineteen ninety-eight, when Central Station, from nineteen ninety-eight, by Walter Salles (born in nineteen fifty-six), won the Golden Lion at the Berlin Film Festival. Salles's film was soon followed by two Mexican productions, Amores perros, from two thousand, by Alejandro González [[pron: Iñárritu|Ee-NYAR-ee-too]] (born in nineteen sixty-three), and [[pron: Cuarón|Kwa-RONE]]'s Y tu mamá también, from two thousand one, as well as by City of God, from two thousand two, by Brazilian Fernando Meirelles (born in nineteen fifty-five). This quartet of films announced to the world the strong moment these film industries were enjoying.",
      "chars": 629
@@ -145,6 +160,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Behind this promising moment lay a series of specific waves or movements: the Retomada (the rebirth of Brazilian cinema), New Mexican Cinema, New Argentine Cinema, and New Chilean Cinema. In Brazil there is a palpable sense of a filmmaking community, partly thanks to the influence of director-producers Salles and Meirelles, who encourage new filmmakers through their production companies — respectively, Rio de Janeiro-based VideoFilmes and São Paulo's O2 Filmes.",
      "text": "Behind this promising moment lay a series of specific waves or movements: the Retomada (the rebirth of Brazilian cinema), New Mexican Cinema, New Argentine Cinema, and New Chilean Cinema. In Brazil there is a palpable sense of a filmmaking community, partly thanks to the influence of director-producers Salles and Meirelles, who encourage new filmmakers through their production companies, respectively, Rio de Janeiro-based VideoFilmes and São Paulo's O2 Filmes.",
      "chars": 464
@@ -161,6 +177,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "An essential theme of these films is the search for meaning and personal fulfillment, as can be seen in Love for Sale (2006), a poetic film by Karim Ainouz (b. 1966) centered on a single mother's desire for self-determination; in the unsettling Happy Desert (2007), by Paulo Caldas (b. 1964), about a girl's entry into the world of prostitution and her attempt to escape it; and in Antônia (2007), by Tata Amaral (b. 1961), about a São Paulo music group and its struggle to get out of the favela through a record deal.",
      "text": "An essential theme of these films is the search for meaning and personal fulfillment, as can be seen in Love for Sale, from two thousand six, a poetic film by Karim Ainouz (born in nineteen sixty-six) centered on a single mother's desire for self-determination; in the unsettling Happy Desert, from two thousand seven, by Paulo Caldas (born in nineteen sixty-four), about a girl's entry into the world of prostitution and her attempt to escape it; and in Antônia, from two thousand seven, by Tata Amaral (born in nineteen sixty-one), about a São Paulo music group and its struggle to get out of the favela through a record deal.",
      "chars": 628
@@ -168,6 +185,7 @@
     {
      "id": "04-02",
      "speaker": "citacao",
+     "source_index": 14,
      "original": "The film is undeniably the work of an artist with the strength to look into the abyss, resulting in a strengthened humanity.",
      "text": "The film is undeniably the work of an artist with the strength to look into the abyss, resulting in a strengthened humanity.",
      "chars": 124
@@ -175,6 +193,7 @@
     {
      "id": "04-03",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "said Stephen Holden on Carandiru.",
      "text": "said Stephen Holden on Carandiru.",
      "chars": 33
@@ -182,6 +201,7 @@
     {
      "id": "04-04",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "The themes of brilliant and provocative independent filmmaker Beto Brant (b. 1964) range from the criminal underworld of O Invasor (2002), through the rich mix of art, physical disability, and sexual obsession in Delicate Crime (2005), to the tragic love story of Stray Dog (2007).",
      "text": "The themes of brilliant and provocative independent filmmaker Beto Brant (born in nineteen sixty-four) range from the criminal underworld of O Invasor, from two thousand two, through the rich mix of art, physical disability, and sexual obsession in Delicate Crime, from two thousand five, to the tragic love story of Stray Dog, from two thousand seven.",
      "chars": 352
@@ -198,6 +218,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "The Mexicans, whose success is due to the efforts of producers and backers rather than to a healthy industrial infrastructure, displayed the most effervescent facet of this new wave. Amores Perros is an electrifying, structurally ambitious, visceral, and disconcerting film that launched the international careers of González Iñárritu, screenwriter Guillermo Arriaga (b. 1958), and star Gael García Bernal (b. 1978). Together with Diego Luna (b. 1979), Bernal also starred in Y Tu Mamá También, whose director had returned to Mexico after making two films in Hollywood and produced a picture that is at once a road movie, a coming-of-age story, and a portrait of his country, all combined into one sensual blend.",
      "text": "The Mexicans, whose success is due to the efforts of producers and backers rather than to a healthy industrial infrastructure, displayed the most effervescent facet of this new wave. Amores Perros is an electrifying, structurally ambitious, visceral, and disconcerting film that launched the international careers of González [[pron: Iñárritu|Ee-NYAR-ee-too]], screenwriter Guillermo Arriaga (born in nineteen fifty-eight), and star Gael García Bernal (born in nineteen seventy-eight). Together with Diego Luna (born in nineteen seventy-nine), Bernal also starred in Y Tu Mamá También, whose director had returned to Mexico after making two films in Hollywood and produced a picture that is at once a road movie, a coming-of-age story, and a portrait of his country, all combined into one sensual blend.",
      "chars": 778
@@ -205,6 +226,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "The rigorous, artful combination of sex, faith, and meticulous aesthetics in Japón (2003), Batalla en el cielo (Battle in Heaven, 2005), and Stellet Licht (Silent Light, 2007), by Carlos Reygadas (b. 1971), drew both praise and controversy. Temporada de patos (Duck Season, 2004), by Fernando Eimbcke (b. 1970), was a glorious and hugely popular comedy about adolescence. Del Toro split his time between American projects and Spanish-Mexican co-productions, his mastery of fantasy allowing him to create both the escapism of Hellboy (2004) and the frightening, profound El laberinto del fauno (Pan's Labyrinth, 2006). Sin nombre (2009), by Cary Fukunaga (b. 1977), a moving story about gang culture and illegal immigrants, won two awards at the Sundance Film Festival.",
      "text": "The rigorous, artful combination of sex, faith, and meticulous aesthetics in Japón, from two thousand three, Batalla en el cielo (Battle in Heaven, two thousand five), and Stellet Licht (Silent Light, two thousand seven), by Carlos Reygadas (born in nineteen seventy-one), drew both praise and controversy. Temporada de patos (Duck Season, two thousand four), by Fernando Eimbcke (born in nineteen seventy), was a glorious and hugely popular comedy about adolescence. Del Toro split his time between American projects and Spanish-Mexican co-productions, his mastery of fantasy allowing him to create both the escapism of Hellboy, from two thousand four, and the frightening, profound El laberinto del fauno (Pan's Labyrinth, two thousand six). Sin nombre, from two thousand nine, by Cary Fukunaga (born in nineteen seventy-seven), a moving story about gang culture and illegal immigrants, won two awards at the Sundance Film Festival.",
      "chars": 934
@@ -221,6 +243,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 20,
      "original": "The countries of the continent share many political and social experiences, but their film output is understandably diverse. In Argentina, the region's largest source of world-class filmmakers, this variety is extraordinary. Pablo Trapero (b. 1971) epitomizes the talented generation that emerged from the country's newly founded state and private film schools. His realist style, which relies on non-professional actors and real-life subjects, has proved extremely versatile, ranging from his debut, Mundo grúa (1999), a bittersweet story of a middle-aged man trying to rebuild his life, through the road movie Familia rodante (Rolling Family, 2004), to the prison drama Leonera (Lion's Den, 2008).",
      "text": "The countries of the continent share many political and social experiences, but their film output is understandably diverse. In Argentina, the region's largest source of world-class filmmakers, this variety is extraordinary. Pablo Trapero (born in nineteen seventy-one) epitomizes the talented generation that emerged from the country's newly founded state and private film schools. His realist style, which relies on non-professional actors and real-life subjects, has proved extremely versatile, ranging from his debut, Mundo grúa, from nineteen ninety-nine, a bittersweet story of a middle-aged man trying to rebuild his life, through the road movie Familia rodante (Rolling Family, two thousand four), to the prison drama Leonera (Lion's Den, two thousand eight).",
      "chars": 767
@@ -237,6 +260,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "Learn more: Between Fantasy and Coldness.",
      "text": "Learn more: Between Fantasy and Coldness.",
      "chars": 41
@@ -244,6 +268,7 @@
     {
      "id": "07-02",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "Pan's Labyrinth may well be a grand summary of Mexican director Guillermo del Toro's career. He had worked on effects-heavy projects such as Hellboy (2004), and on others that build an atmosphere of suspense and tension while dealing with otherworldly matters, such as El espinazo del diablo (The Devil's Backbone, 2001). Pan's Labyrinth may be his most mature film. In it, the director manages to bring together his two particular strands. The result is a film that is at once dark and packed with effects.",
      "text": "Pan's Labyrinth may well be a grand summary of Mexican director Guillermo del Toro's career. He had worked on effects-heavy projects such as Hellboy, from two thousand four, and on others that build an atmosphere of suspense and tension while dealing with otherworldly matters, such as El espinazo del diablo (The Devil's Backbone, two thousand one). Pan's Labyrinth may be his most mature film. In it, the director manages to bring together his two particular strands. The result is a film that is at once dark and packed with effects.",
      "chars": 536
@@ -251,6 +276,7 @@
     {
      "id": "07-03",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "The film is set in 1944 and tells the story of Ofelia, a young girl who discovers a fantastic world of woodland creatures when her mother takes her to northern Spain to live with her stepfather, a bitter man and brutal officer in General Franco's fascist army. For this production, Del Toro assembles a roster of top-tier Spanish actors that includes Sergi López, Ariadna Gil, Maribel Verdú, and Ivana Baquero, who plays the girl who escapes her savage stepfather by entering a fantasy world.",
      "text": "The film is set in nineteen forty-four and tells the story of Ofelia, a young girl who discovers a fantastic world of woodland creatures when her mother takes her to northern Spain to live with her stepfather, a bitter man and brutal officer in General Franco's fascist army. For this production, Del Toro assembles a roster of top-tier Spanish actors that includes Sergi López, Ariadna Gil, Maribel Verdú, and Ivana Baquero, who plays the girl who escapes her savage stepfather by entering a fantasy world.",
      "chars": 507
@@ -258,6 +284,7 @@
     {
      "id": "07-04",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "Set against the backdrop of the period following the Spanish Civil War, the film's striking beauty and the strength of its performances offer the viewer many remarkable moments. \"Pan's Labyrinth was a very difficult film,\" Del Toro told Sight & Sound magazine, \"but it also became a battle over my commitment. I gave up my entire salary in order to make the film my way.\" If the story fails to fully merge reality and fantasy — Pan's Labyrinth consists of two separate halves rather than one spectacular whole — in the end, this does not make Del Toro's achievement any less extraordinary.",
      "text": "Set against the backdrop of the period following the Spanish Civil War, the film's striking beauty and the strength of its performances offer the viewer many remarkable moments. \"Pan's Labyrinth was a very difficult film,\" Del Toro told Sight and Sound magazine, \"but it also became a battle over my commitment. I gave up my entire salary in order to make the film my way.\" If the story fails to fully merge reality and fantasy, Pan's Labyrinth consists of two separate halves rather than one spectacular whole, in the end, this does not make Del Toro's achievement any less extraordinary.",
      "chars": 589
@@ -274,6 +301,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 22,
      "original": "Carlos Sorín (b. 1944) and Lisandro Alonso (b. 1975) also use amateur actors, the former in tender comedies about poor, provincial Argentines driven by their dreams — Bombón el perro (Bombón: The Dog, 2004) — and the latter drawing on a minimalist style to explore the isolation and alienation of those on the margins of society, in films such as La libertad (2001) and Los muertos (2004). By contrast, Daniel Burman (b. 1973) created wry explorations of Jewish identity and father-son relationships — Esperando al Mesías (Waiting for the Messiah, 2000), El abrazo partido (Lost Embrace, 2004), and Derecho de familia (Family Law, 2006) — that earned him the nickname \"the Woody Allen of Buenos Aires.\" Meanwhile, the refined, sensory style of Lucrecia Martel (b. 1966) in La Ciénaga (2001), La niña santa (The Holy Girl, 2004), and La mujer sin cabeza (The Headless Woman, 2008) offers scathing views of the family, sexuality, and the stagnant bourgeoisie of her country.",
      "text": "Carlos Sorín (born in nineteen forty-four) and Lisandro Alonso (born in nineteen seventy-five) also use amateur actors, the former in tender comedies about poor, provincial Argentines driven by their dreams, Bombón el perro (Bombón: The Dog, two thousand four), and the latter drawing on a minimalist style to explore the isolation and alienation of those on the margins of society, in films such as La libertad, from two thousand one, and Los muertos, from two thousand four. By contrast, Daniel Burman (born in nineteen seventy-three) created wry explorations of Jewish identity and father-son relationships, Esperando al Mesías (Waiting for the Messiah, two thousand), El abrazo partido (Lost Embrace, two thousand four), and Derecho de familia (Family Law, two thousand six), that earned him the nickname \"the Woody Allen of Buenos Aires.\" Meanwhile, the refined, sensory style of Lucrecia Martel (born in nineteen sixty-six) in La Ciénaga, from two thousand one, La niña santa (The Holy Girl, two thousand four), and La mujer sin cabeza (The Headless Woman, two thousand eight) offers scathing views of the family, sexuality, and the stagnant bourgeoisie of her country.",
      "chars": 1175
@@ -290,6 +318,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 24,
      "original": "Machuca (2004), by Chilean director Andrés Wood (b. 1965), focuses on the events that would lead to Pinochet's coup. Resisting the national tendency to favor international productions, it inspired a younger generation of filmmakers to be more original — while always keeping an eye on foreign festivals and markets. Many of these new directors examine the country's current situation, notably Alicia Scherson (b. 1974), with the enigmatic Play (2005), and Sebastián Silva (b. 1979), with the complex black comedy La nana (The Maid, 2009). In the deliciously perverse Tony Manero (2008) and Post Mortem (2010), Pablo Larraín (b. 1976) offers chilling glimpses of life under the dictatorship.",
      "text": "Machuca, from two thousand four, by Chilean director Andrés Wood (born in nineteen sixty-five), focuses on the events that would lead to Pinochet's coup. Resisting the national tendency to favor international productions, it inspired a younger generation of filmmakers to be more original, while always keeping an eye on foreign festivals and markets. Many of these new directors examine the country's current situation, notably Alicia Scherson (born in nineteen seventy-four), with the enigmatic Play, from two thousand five, and Sebastián Silva (born in nineteen seventy-nine), with the complex black comedy La nana (The Maid, two thousand nine). In the deliciously perverse Tony Manero, from two thousand eight, and Post Mortem, from twenty ten, Pablo Larraín (born in nineteen seventy-six) offers chilling glimpses of life under the dictatorship.",
      "chars": 850
@@ -297,6 +326,7 @@
     {
      "id": "09-02",
      "speaker": "narrador",
+     "source_index": 25,
      "original": "One of the most popular films of this era is the melancholy Uruguayan comedy Whisky (2004), by Juan Pablo Rebella (1974-2006) and Pablo Stoll (b. 1974). Peru's Claudia Llosa (b. 1976) deservedly won the Golden Lion at the Berlin Film Festival for The Milk of Sorrow, a local film about the clash between urban life and rural superstition.",
      "text": "One of the most popular films of this era is the melancholy Uruguayan comedy Whisky, from two thousand four, by Juan Pablo Rebella (nineteen seventy-four to two thousand six) and Pablo Stoll (born in nineteen seventy-four). Peru's Claudia Llosa (born in nineteen seventy-six) deservedly won the Golden Lion at the Berlin Film Festival for The Milk of Sorrow, a local film about the clash between urban life and rural superstition.",
      "chars": 430
@@ -304,6 +334,7 @@
     {
      "id": "09-03",
      "speaker": "citacao",
+     "source_index": 26,
      "original": "Iñárritu's style contains elements of Tarantino, Peckinpah, and others, but ultimately the synthesis is all his own.",
      "text": "[[pron: Iñárritu|Ee-NYAR-ee-too]]'s style contains elements of Tarantino, Peckinpah, and others, but ultimately the synthesis is all his own.",
      "chars": 116
@@ -311,6 +342,7 @@
     {
      "id": "09-04",
      "speaker": "narrador",
+     "source_index": 26,
      "original": "said James Berardinelli on Amores Perros.",
      "text": "said James Berardinelli on Amores Perros.",
      "chars": 41
@@ -318,6 +350,7 @@
     {
      "id": "09-05",
      "speaker": "narrador",
+     "source_index": 27,
      "original": "The common denominator that unites all these directors is not their style but their attitude. With no interest in making genre films or aping Hollywood, they make personal films, true to their own experiences, concerns, and cinematic language. The school that has exerted the greatest influence on the continent is probably Neorealism. Although they are not polemical, these Latin American films shed light on the political, social, and even psychological problems of their countries, reflecting on what it means to be Latin American after years of struggle.",
      "text": "The common denominator that unites all these directors is not their style but their attitude. With no interest in making genre films or aping Hollywood, they make personal films, true to their own experiences, concerns, and cinematic language. The school that has exerted the greatest influence on the continent is probably Neorealism. Although they are not polemical, these Latin American films shed light on the political, social, and even psychological problems of their countries, reflecting on what it means to be Latin American after years of struggle.",
      "chars": 558
@@ -334,6 +367,7 @@
     {
      "id": "10-01",
      "speaker": "narrador",
+     "source_index": 29,
      "original": "Although their stories are ostensibly regional, they are told with a flair that makes them universal. This Latin American renaissance is marked by a surprisingly large number of women filmmakers, a thriving documentary scene, and a spirit of collaboration both at home and abroad.",
      "text": "Although their stories are ostensibly regional, they are told with a flair that makes them universal. This Latin American renaissance is marked by a surprisingly large number of women filmmakers, a thriving documentary scene, and a spirit of collaboration both at home and abroad.",
      "chars": 280
@@ -341,6 +375,7 @@
     {
      "id": "10-02",
      "speaker": "narrador",
+     "source_index": 30,
      "original": "Although the Mexican government was slow to step in (it increased the state budget devoted to film only in 2004), there is a bubbling entrepreneurial spirit among the country's filmmakers — González Iñárritu, Cuarón, and Del Toro joined forces to found the production company Cha Cha Cha, while actors Bernal and Luna and producer Pablo Cruz did the same with their Canana. Similarly, Salles and Meirelles successfully balance international careers with productions in their own country.",
      "text": "Although the Mexican government was slow to step in (it increased the state budget devoted to film only in two thousand four), there is a bubbling entrepreneurial spirit among the country's filmmakers, González [[pron: Iñárritu|Ee-NYAR-ee-too]], [[pron: Cuarón|Kwa-RONE]], and Del Toro joined forces to found the production company Cha Cha Cha, while actors Bernal and Luna and producer Pablo Cruz did the same with their Canana. Similarly, Salles and Meirelles successfully balance international careers with productions in their own country.",
      "chars": 499
@@ -357,6 +392,7 @@
     {
      "id": "11-01",
      "speaker": "narrador",
+     "source_index": 32,
      "original": "In 2003, the Colombian government introduced laws supporting national cinema and a film fund to boost Colombian production. The result was an increase in the number of films made and a greater international presence. Two notable films, both released in 2009, are El vuelco del cangrejo (Crab Trap, 2009), by Oscar Ruiz Navia (b. 1982), an engaging, beautifully shot conflict between tradition and modernity set in a coastal village in Colombia, and Los viajes del viento (The Wind Journeys, 2009), by Ciro Guerra (b. 1981), an original fable about a legendary accordion player, with performance sequences that are at once cinematic and a musical tour de force.",
      "text": "In two thousand three, the Colombian government introduced laws supporting national cinema and a film fund to boost Colombian production. The result was an increase in the number of films made and a greater international presence. Two notable films, both released in two thousand nine, are El vuelco del cangrejo (Crab Trap, two thousand nine), by Oscar Ruiz Navia (born in nineteen eighty-two), an engaging, beautifully shot conflict between tradition and modernity set in a coastal village in Colombia, and Los viajes del viento (The Wind Journeys, two thousand nine), by Ciro Guerra (born in nineteen eighty-one), an original fable about a legendary accordion player, with performance sequences that are at once cinematic and a musical tour de force.",
      "chars": 753
@@ -373,6 +409,7 @@
     {
      "id": "12-01",
      "speaker": "narrador",
+     "source_index": 33,
      "original": "Learn more: Iñárritu's Brutality.",
      "text": "Learn more: [[pron: Iñárritu|Ee-NYAR-ee-too]]'s Brutality.",
      "chars": 33
@@ -380,6 +417,7 @@
     {
      "id": "12-02",
      "speaker": "narrador",
+     "source_index": 33,
      "original": "Quentin Tarantino (b. 1963) had such a strong and immediate effect on American filmmakers that it was only a matter of time before his influence spread to other countries. Amores Perros proves that by 2000 the Tarantino model of stylized violence and interwoven narratives had already made it south of the American border, to Mexico. The film marks the feature debut of Mexican director Alejandro González Iñárritu and, although the film ultimately offers nothing particularly new, his vibrant direction manages to inject energy, humor, intelligence, and tenderness into familiar plots.",
      "text": "Quentin Tarantino (born in nineteen sixty-three) had such a strong and immediate effect on American filmmakers that it was only a matter of time before his influence spread to other countries. Amores Perros proves that by two thousand the Tarantino model of stylized violence and interwoven narratives had already made it south of the American border, to Mexico. The film marks the feature debut of Mexican director Alejandro González [[pron: Iñárritu|Ee-NYAR-ee-too]] and, although the film ultimately offers nothing particularly new, his vibrant direction manages to inject energy, humor, intelligence, and tenderness into familiar plots.",
      "chars": 615
@@ -387,6 +425,7 @@
     {
      "id": "12-03",
      "speaker": "narrador",
+     "source_index": 33,
      "original": "Shot as three intertwined stories whose central characters meet at a certain key moment, Amores Perros stays true to the \"canine\" theme of its original title (Amores perros, in Spanish), as each segment of the film gives dogs a prominent role. In the first, a young man has an affair with his brother's wife and enters his prize dog in gruesome (and viscerally effective) fights in the hope of winning money to run away with his sister-in-law. In the second, a plot worthy of Edgar Allan Poe seen through the eyes of Luis Buñuel, a vain, crippled model loses her dog in a space beneath the floor of her apartment and is tormented by the sounds of the animal's incessant suffering, as well as by her inability to resolve the situation. In the last, a homeless hit man seeks redemption for the life he has led and recognition from his family, from whom he has long been estranged.",
      "text": "Shot as three intertwined stories whose central characters meet at a certain key moment, Amores Perros stays true to the \"canine\" theme of its original title (Amores perros, in Spanish), as each segment of the film gives dogs a prominent role. In the first, a young man has an affair with his brother's wife and enters his prize dog in gruesome (and viscerally effective) fights in the hope of winning money to run away with his sister-in-law. In the second, a plot worthy of Edgar Allan Poe seen through the eyes of Luis [[pron: Buñuel|Boon-yoo-ell]], a vain, crippled model loses her dog in a space beneath the floor of her apartment and is tormented by the sounds of the animal's incessant suffering, as well as by her inability to resolve the situation. In the last, a homeless hit man seeks redemption for the life he has led and recognition from his family, from whom he has long been estranged.",
      "chars": 878
@@ -394,6 +433,7 @@
     {
      "id": "12-04",
      "speaker": "narrador",
+     "source_index": 33,
      "original": "All three segments ironically illustrate man's inhumanity to his fellow man through his treatment of animals, which in turn suffer so much in the film that Amores Perros displays a conspicuous notice that no animals were mistreated during the making of the film. In fact, the frequent violence of the dogs (and violence against the dogs) is portrayed so realistically that it sometimes threatens to overwhelm the film. But Iñárritu manages to convey his message of bloody betrayal, callous dishonesty, and class division with an abundance of style, revealing in the process a powerful confidence in his actors' instincts as well as in his audience's intelligence.",
      "text": "All three segments ironically illustrate man's inhumanity to his fellow man through his treatment of animals, which in turn suffer so much in the film that Amores Perros displays a conspicuous notice that no animals were mistreated during the making of the film. In fact, the frequent violence of the dogs (and violence against the dogs) is portrayed so realistically that it sometimes threatens to overwhelm the film. But [[pron: Iñárritu|Ee-NYAR-ee-too]] manages to convey his message of bloody betrayal, callous dishonesty, and class division with an abundance of style, revealing in the process a powerful confidence in his actors' instincts as well as in his audience's intelligence.",
      "chars": 663
@@ -410,6 +450,7 @@
     {
      "id": "13-01",
      "speaker": "narrador",
+     "source_index": 34,
      "original": "In Venezuela, President Hugo Chávez seeks to take on \"the dictatorship of Hollywood\" with a new state-run studio, Villa del Cine, for the production of national feature films and documentaries. There are grants for independent filmmakers and exhibition laws to ensure that every Venezuelan film produced reaches the screen.",
      "text": "In Venezuela, President Hugo Chávez seeks to take on \"the dictatorship of Hollywood\" with a new state-run studio, Villa del Cine, for the production of national feature films and documentaries. There are grants for independent filmmakers and exhibition laws to ensure that every Venezuelan film produced reaches the screen.",
      "chars": 323
@@ -417,6 +458,7 @@
     {
      "id": "13-02",
      "speaker": "narrador",
+     "source_index": 36,
      "original": "A peaceful revolution is already sweeping Latin America — not political but cultural — one that promises to topple Hollywood's grip on movie theaters and popularize Latin American films with their domestic audiences. While this struggle continues, the best of these filmmakers are telling their stories in their own way and discovering that the rest of the world is watching.",
      "text": "A peaceful revolution is already sweeping Latin America, not political but cultural, one that promises to topple Hollywood's grip on movie theaters and popularize Latin American films with their domestic audiences. While this struggle continues, the best of these filmmakers are telling their stories in their own way and discovering that the rest of the world is watching.",
      "chars": 373
@@ -433,6 +475,7 @@
     {
      "id": "14-01",
      "speaker": "narrador",
+     "source_index": 37,
      "original": "Worth watching: the films from this chapter are City of God, Amores Perros, Y Tu Mamá También, Pan's Labyrinth, Central Station, Battle in Heaven, Tony Manero, Sin Nombre, Elite Squad, Lion's Den, The Motorcycle Diaries, Rolling Family, Family Law, La Libertad, Whisky, The Wind Journeys and Carandiru.",
      "text": "Worth watching: the films from this chapter are City of God, Amores Perros, Y Tu Mamá También, Pan's Labyrinth, Central Station, Battle in Heaven, Tony Manero, Sin Nombre, Elite Squad, Lion's Den, The Motorcycle Diaries, Rolling Family, Family Law, La Libertad, Whisky, The Wind Journeys and Carandiru.",
      "chars": 302

@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 01: De 1895 a 1929. Capítulo 2: Os primeiros Épicos.",
      "text": "Parte zero um: De mil oitocentos e noventa e cinco a mil novecentos e vinte e nove. Capítulo dois: Os primeiros Épicos.",
      "chars": 119
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Os épicos são conhecidos por seus orçamentos vultosos, cenários grandiosos, elencos enormes, olhar abrangente e, às vezes, por seus efeitos especiais. Nos primórdios do cinema, a tecnologia rudimentar limitava a capacidade de produção dos cineastas, porém, à medida que ela se desenvolveu, os diretores puderam dar asas à imaginação.",
      "text": "Os épicos são conhecidos por seus orçamentos vultosos, cenários grandiosos, elencos enormes, olhar abrangente e, às vezes, por seus efeitos especiais. Nos primórdios do cinema, a tecnologia rudimentar limitava a capacidade de produção dos cineastas, porém, à medida que ela se desenvolveu, os diretores puderam dar asas à imaginação.",
      "chars": 333
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "As origens do cinema épico se encontram na Europa e mais precisamente, na Itália, onde os cineastas buscaram inspiração no passado clássico de seu país para realizar filmes visualmente extravagantes e de dimensões operísticas. Enrico Guazzoni (1876-1949) utilizou 5 mil figurantes em seu drama de nove rolos Quo Vadis? (1912), ambientado na Roma Antiga. Giovanni Pastrone (1883-1959) filmou Cabiria: visão histórica do século III a.C. (1914) em múltiplas locações.",
      "text": "As origens do cinema épico se encontram na Europa e mais precisamente, na Itália, onde os cineastas buscaram inspiração no passado clássico de seu país para realizar filmes visualmente extravagantes e de dimensões operísticas. Enrico Guazzoni (mil oitocentos e setenta e seis a mil novecentos e quarenta e nove) utilizou cinco mil figurantes em seu drama de nove rolos Quo Vadis?, de mil novecentos e doze, ambientado na Roma Antiga. Giovanni Pastrone (mil oitocentos e oitenta e três a mil novecentos e cinquenta e nove) filmou Cabiria: visão histórica do século três antes de Cristo, de mil novecentos e catorze, em múltiplas locações.",
      "chars": 637
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 1,
      "original": "O filme tem três horas de duração, um elenco de centenas de atores e cenários espetaculares. Pastrone e seu fotógrafo espanhol Segundo de Chomón foram os primeiros a utilizar um sistema de carrinho sobre trilhos para que a câmera pudesse se mover, o que lhes possibilitou criar travellings (efeitos de aproximação com a câmera) ininterruptos. De Chómon foi um mestre dos efeitos especiais, colaborando em Napoleão (1927), dirigido por Abel Gance (1889-1981), um épico que explorou diversas técnicas de filmagem.",
      "text": "O filme tem três horas de duração, um elenco de centenas de atores e cenários espetaculares. Pastrone e seu fotógrafo espanhol Segundo de Chomón foram os primeiros a utilizar um sistema de carrinho sobre trilhos para que a câmera pudesse se mover, o que lhes possibilitou criar travellings (efeitos de aproximação com a câmera) ininterruptos. De Chómon foi um mestre dos efeitos especiais, colaborando em Napoleão, de mil novecentos e vinte e sete, dirigido por Abel Gance (mil oitocentos e oitenta e nove a mil novecentos e oitenta e um), um épico que explorou diversas técnicas de filmagem.",
      "chars": 592
@@ -59,6 +63,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Os épicos italianos do tipo espada e sandálias foram uma grande influência para a produção hollywoodiana e inspiraram Cecil B. DeMille (1881-1959) a realizar sua primeira versão de Os dez mandamentos (1923), um espetáculo de 136 minutos que dramatiza a história bíblica de Moisés. DeMille pôs novamente em ação seu tino em 1927, quando dirigiu o espetacular épico bíblico O rei dos reis (1927).",
      "text": "Os épicos italianos do tipo espada e sandálias foram uma grande influência para a produção hollywoodiana e inspiraram Cecil B. DeMille (mil oitocentos e oitenta e um a mil novecentos e cinquenta e nove) a realizar sua primeira versão de Os dez mandamentos, de mil novecentos e vinte e três, um espetáculo de cento e trinta e seis minutos que dramatiza a história bíblica de Moisés. DeMille pôs novamente em ação seu tino em mil novecentos e vinte e sete, quando dirigiu o espetacular épico bíblico O rei dos reis, de mil novecentos e vinte e sete.",
      "chars": 547
@@ -66,6 +71,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Quando a Primeira Guerra Mundial estourou em 1914, foi interrompido o desenvolvimento da indústria cinematográfica europeia, porém os cineastas americanos continuaram a romper as barreiras da sétima arte. D. W. Griffith (1875 1948) dirigiu uma saga sobre a Guerra Civil Americana, O nascimento de uma nação (1915), uma obra inovadora por seu estilo técnico e narrativo.",
      "text": "Quando a Primeira Guerra Mundial estourou em mil novecentos e catorze, foi interrompido o desenvolvimento da indústria cinematográfica europeia, porém os cineastas americanos continuaram a romper as barreiras da sétima arte. D. W. [[pron: Griffith|Grífit]] (mil oitocentos e setenta e cinco a mil novecentos e quarenta e oito) dirigiu uma saga sobre a Guerra Civil Americana, O nascimento de uma nação, de mil novecentos e quinze, uma obra inovadora por seu estilo técnico e narrativo.",
      "chars": 468
@@ -73,6 +79,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Ao mesmo tempo um dos mais reverenciados e repudiados filmes já feitos, o nascimento de uma nação, de D. W. Griffith, é importante pelos mesmos motivos que inspiram essas duas reações opostas. Raras vezes um filme mereceu tamanho louvor e desprezo, o que, de várias formas, aumenta seu valor não só nos anais do cinema, mas também como um artefato histórico fundamental (que alguns chamariam de relíquia).",
      "text": "Ao mesmo tempo um dos mais reverenciados e repudiados filmes já feitos, o nascimento de uma nação, de D. W. [[pron: Griffith|Grífit]], é importante pelos mesmos motivos que inspiram essas duas reações opostas. Raras vezes um filme mereceu tamanho louvor e desprezo, o que, de várias formas, aumenta seu valor não só nos anais do cinema, mas também como um artefato histórico fundamental (que alguns chamariam de relíquia).",
      "chars": 405
@@ -89,6 +96,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Embora o filme seja baseado na peça explicitamente racista de Thomas Dixon The Clansman: An Historical Romance of the Ku Klux Klan, relatos afirmam que Griffith era indiferente ao teor racista do tema central. O grau de cumplicidade do diretor ao veicular sua mensagem infame é motivo de discussão há quase um século. No entanto, não há controvérsias quanto aos méritos técnicos e artísticos da obra, Griffith estava, como de costume, mais interessado nas possibilidades do meio do que na mensagem e, nesse âmbito, ele estabelece os padrões da Hollywood moderna.",
      "text": "Embora o filme seja baseado na peça explicitamente racista de Thomas Dixon The Clansman: An Historical Romance of the Ku Klux Klan, relatos afirmam que [[pron: Griffith|Grífit]] era indiferente ao teor racista do tema central. O grau de cumplicidade do diretor ao veicular sua mensagem infame é motivo de discussão há quase um século. No entanto, não há controvérsias quanto aos méritos técnicos e artísticos da obra, [[pron: Griffith|Grífit]] estava, como de costume, mais interessado nas possibilidades do meio do que na mensagem e, nesse âmbito, ele estabelece os padrões da Hollywood moderna.",
      "chars": 562
@@ -96,6 +104,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "O nascimento de uma nação foi, de forma muito clara, o primeiro épico histórico já feito, provando que, mesmo na era do cinema mudo, as plateias estavam dispostas a assistir a uma história de mais de três horas. Com suas inúmeras inovações artísticas, Griffith essencialmente criou a linguagem cinematográfica contemporânea e, embora alguns elementos de O nascimento de uma nação possam parecer datados, praticamente todos os filmes lhe são devedores de alguma maneira. Griffith introduziu o uso de closes dramáticos, travelings e outros significativos movimentos de câmera: ação paralela, alternância de sequências e outras técnicas de montagem; e até mesmo a primeira trilha sonora orquestrada. É uma pena que todos esses elementos inovadores estivessem relacionados a uma história de valor tão duvidoso.",
      "text": "O nascimento de uma nação foi, de forma muito clara, o primeiro épico histórico já feito, provando que, mesmo na era do cinema mudo, as plateias estavam dispostas a assistir a uma história de mais de três horas. Com suas inúmeras inovações artísticas, [[pron: Griffith|Grífit]] essencialmente criou a linguagem cinematográfica contemporânea e, embora alguns elementos de O nascimento de uma nação possam parecer datados, praticamente todos os filmes lhe são devedores de alguma maneira. [[pron: Griffith|Grífit]] introduziu o uso de closes dramáticos, travelings e outros significativos movimentos de câmera: ação paralela, alternância de sequências e outras técnicas de montagem; e até mesmo a primeira trilha sonora orquestrada. É uma pena que todos esses elementos inovadores estivessem relacionados a uma história de valor tão duvidoso.",
      "chars": 806
@@ -103,6 +112,7 @@
     {
      "id": "03-03",
      "speaker": "citacao",
+     "source_index": 9,
      "original": "É o que eu realizei de mais grandioso, mas não estarei satisfeito até fazer algo mais... Eu sou, como todos os seres humanos, movido pela perfeição.",
      "text": "É o que eu realizei de mais grandioso, mas não estarei satisfeito até fazer algo mais... Eu sou, como todos os seres humanos, movido pela perfeição.",
      "chars": 148
@@ -110,6 +120,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "disse D. W. Griffith.",
      "text": "disse D. W. [[pron: Griffith|Grífit]].",
      "chars": 21
@@ -117,6 +128,7 @@
     {
      "id": "03-05",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "A primeira metade do filme começa antes da Guerra Civil, explicando a introdução da escravidão nos Estados Unidos antes do início da ação. Duas famílias, os Stoneman, do Norte, e os Cameron, do Sul, são apresentadas. A história é contada através dessas famílias e, muitas vezes, de seus criados, sintetizando os piores estereótipos raciais. À medida que a nação é dilacerada pela guerra, os escravos e os simpatizantes dos abolicionistas são vistos como a força destrutiva por trás de tudo.",
      "text": "A primeira metade do filme começa antes da Guerra Civil, explicando a introdução da escravidão nos Estados Unidos antes do início da ação. Duas famílias, os Stoneman, do Norte, e os Cameron, do Sul, são apresentadas. A história é contada através dessas famílias e, muitas vezes, de seus criados, sintetizando os piores estereótipos raciais. À medida que a nação é dilacerada pela guerra, os escravos e os simpatizantes dos abolicionistas são vistos como a força destrutiva por trás de tudo.",
      "chars": 490
@@ -124,6 +136,7 @@
     {
      "id": "03-06",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "O racismo do filme piora na segunda metade, que se passa durante a reconstrução e retrata a ascensão da Ku Klux Klan, cujos membros são apresentados como os supostos heróis da película. O fato de Griffith ter introduzido uma história de amor no meio desta recriação de uma guerra racial é extremamente audacioso: uma escolha ao mesmo tempo emocionante e perturbadora.",
      "text": "O racismo do filme piora na segunda metade, que se passa durante a reconstrução e retrata a ascensão da Ku Klux Klan, cujos membros são apresentados como os supostos heróis da película. O fato de [[pron: Griffith|Grífit]] ter introduzido uma história de amor no meio desta recriação de uma guerra racial é extremamente audacioso: uma escolha ao mesmo tempo emocionante e perturbadora.",
      "chars": 367
@@ -140,6 +153,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "O nascimento de uma nação é sem dúvida uma poderosa propaganda, muito embora sua mensagem política seja de revirar o estômago. O filme parece dizer que apenas a puritana Ku Klux Klan pode manter a unidade da nação. Não é de surpreender que, mesmo na sua época, o filme tenha sido visto com indignação. Recebeu protestos da Associação Nacional para o Progresso das Pessoas de Cor (NAACP, na sigla em inglês), gerou manifestações e, posteriormente, forçou o próprio Griffith a responder às críticas com seu ainda mais ambicioso Intolerância (1916). Ainda assim, o fato de o nascimento de uma nação ser respeitado e estudado até os dias de hoje - apesar do seu tema - revela sua importância duradoura.",
      "text": "O nascimento de uma nação é sem dúvida uma poderosa propaganda, muito embora sua mensagem política seja de revirar o estômago. O filme parece dizer que apenas a puritana Ku Klux Klan pode manter a unidade da nação. Não é de surpreender que, mesmo na sua época, o filme tenha sido visto com indignação. Recebeu protestos da Associação Nacional para o Progresso das Pessoas de Cor (êne á á cê pê, na sigla em inglês), gerou manifestações e, posteriormente, forçou o próprio [[pron: Griffith|Grífit]] a responder às críticas com seu ainda mais ambicioso Intolerância, de mil novecentos e dezesseis. Ainda assim, o fato de o nascimento de uma nação ser respeitado e estudado até os dias de hoje - apesar do seu tema - revela sua importância duradoura.",
      "chars": 730
@@ -156,6 +170,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Vale a conferida: os filmes deste capítulo são The Birth of a Nation, Quo Vadis?, Cabiria, Napoleon, The Last Days of Pompeii, The Ten Commandments, The King of Kings, Intolerance: Love's Struggle Throughout the Ages, Greed, Die Nibelungen: Siegfried e Die Nibelungen: Kriemhilds Rache.",
      "text": "Vale a conferida: os filmes deste capítulo são The Birth of a Nation, Quo Vadis?, Cabiria, Napoleon, The Last Days of Pompeii, The Ten Commandments, The King of Kings, Intolerance: Love's Struggle Throughout the Ages, Greed, Die Nibelungen: Siegfried e Die Nibelungen: Kriemhilds Rache.",
      "chars": 286

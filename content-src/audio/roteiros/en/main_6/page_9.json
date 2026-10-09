@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 06: From 1990 to 2009. Chapter 9: Comedies of the 1990s and 2000s.",
      "text": "Part zero six: From nineteen ninety to two thousand nine. Chapter nine: Comedies of the nineteen nineties and two thousands.",
      "chars": 124
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "The new era of romantic comedies and the boom of gross-out comedies.",
      "text": "The new era of romantic comedies and the boom of gross-out comedies.",
      "chars": 68
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "The 1990s and part of the 2000s were a prosperous time for comedies. The '80s were also an important time for the genre, but the two following decades proved that audiences were increasingly hungry for comedies of all kinds, bringing new actors and directors to stardom and dominating box offices around the world.",
      "text": "The nineteen nineties and part of the two thousands were a prosperous time for comedies. The eighties were also an important time for the genre, but the two following decades proved that audiences were increasingly hungry for comedies of all kinds, bringing new actors and directors to stardom and dominating box offices around the world.",
      "chars": 338
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "Experimentation was abundant, with filmmakers such as Quentin Tarantino (b. 1963), Lars Von Trier (b. 1956), Paul Thomas Anderson (b. 1970) and the Coen brothers pushing boundaries and exploring new visual and narrative approaches to storytelling. The enormous blockbusters that today arrive in the form of Marvel and DC movies were still many years away, leaving room for a variety of genres to flourish. It was in this environment that the romantic comedy gained ground.",
      "text": "Experimentation was abundant, with filmmakers such as Quentin Tarantino (born in nineteen sixty-three), Lars Von Trier (born in nineteen fifty-six), Paul Thomas Anderson (born in nineteen seventy) and the Coen brothers pushing boundaries and exploring new visual and narrative approaches to storytelling. The enormous blockbusters that today arrive in the form of Marvel and DC movies were still many years away, leaving room for a variety of genres to flourish. It was in this environment that the romantic comedy gained ground.",
      "chars": 529
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "citacao",
+     "source_index": 3,
      "original": "Whassup?",
      "text": "Whassup?",
      "chars": 8
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "said Scary Movie.",
      "text": "said Scary Movie.",
      "chars": 17
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "It probably started with When Harry Met Sally... (1989), whose success built momentum. Soon, similar films set out to prove that, no matter how bad things seemed for a character, there was always room for unexpected improvement. Joyful laughs and sentimental romance became a guilty pleasure for many.",
      "text": "It probably started with When Harry Met Sally..., from nineteen eighty-nine, whose success built momentum. Soon, similar films set out to prove that, no matter how bad things seemed for a character, there was always room for unexpected improvement. Joyful laughs and sentimental romance became a guilty pleasure for many.",
      "chars": 321
@@ -80,6 +87,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "As the '90s drew to a close, romantic comedies were as good as gold. In 1998 and 1999, respectively, three of the twenty highest-grossing films were romantic comedies. Probably one of the films that best represents this moment for the romantic comedy is Pretty Woman (1990), the film that introduced Julia Roberts (b. 1967) to the world, alongside Richard Gere (b. 1949).",
      "text": "As the nineties drew to a close, romantic comedies were as good as gold. In nineteen ninety-eight and nineteen ninety-nine, respectively, three of the twenty highest-grossing films were romantic comedies. Probably one of the films that best represents this moment for the romantic comedy is Pretty Woman, from nineteen ninety, the film that introduced Julia Roberts (born in nineteen sixty-seven) to the world, alongside Richard Gere (born in nineteen forty-nine).",
      "chars": 464
@@ -87,6 +95,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "We could cite many other examples, such as Sleepless in Seattle (1993), Notting Hill (1999), My Best Friend's Wedding (1997) and 10 Things I Hate About You (1999). The latter was aimed more at a teenage audience, an audience that took center stage in the comedies of the 2000s in another kind of subgenre: the gross-out comedy.",
      "text": "We could cite many other examples, such as Sleepless in Seattle, from nineteen ninety-three, Notting Hill, from nineteen ninety-nine, My Best Friend's Wedding, from nineteen ninety-seven, and ten Things I Hate About You, from nineteen ninety-nine. The latter was aimed more at a teenage audience, an audience that took center stage in the comedies of the two thousands in another kind of subgenre: the gross-out comedy.",
      "chars": 419
@@ -94,6 +103,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Following the mold of Porky's (1981), released 18 years earlier, American Pie (1999) hit theaters, dividing critics. The film was a box office hit, and without realizing it, directors Paul Weitz (b. 1965) and Chris Weitz (b. 1969) kicked off a wave of crude comedies aimed at teenage audiences, in which the premise of \"losing one's virginity\" was one of the main plot points.",
      "text": "Following the mold of Porky's, from nineteen eighty-one, released eighteen years earlier, American Pie, from nineteen ninety-nine, hit theaters, dividing critics. The film was a box office hit, and without realizing it, directors Paul Weitz (born in nineteen sixty-five) and Chris Weitz (born in nineteen sixty-nine) kicked off a wave of crude comedies aimed at teenage audiences, in which the premise of \"losing one's virginity\" was one of the main plot points.",
      "chars": 462
@@ -110,6 +120,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Learn more: The Modern Fairy Tale.",
      "text": "Learn more: The Modern Fairy Tale.",
      "chars": 34
@@ -117,6 +128,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "A 1940s-style romantic comedy with a modern twist, Pretty Woman was a refreshing antidote to the macho slugfest movies that dominated Hollywood output in the late 1980s. One of the highest-grossing films of the 1990s, it succeeded in making \"date movies\" popular again.",
      "text": "A nineteen forties-style romantic comedy with a modern twist, Pretty Woman was a refreshing antidote to the macho slugfest movies that dominated Hollywood output in the late nineteen eighties. One of the highest-grossing films of the nineteen nineties, it succeeded in making \"date movies\" popular again.",
      "chars": 304
@@ -124,6 +136,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "The film also gave huge boosts to the careers of its stars, Richard Gere (who had not had a hit film since the mid-1980s) and Julia Roberts, who was nominated for an Oscar for her performance. Gere makes a fine gentleman as Edward Lewis, a powerful businessman on a trip to Los Angeles who ends up getting lost around Hollywood Boulevard and asks the hooker-with-a-heart-of-gold Vivian (Roberts in a tiny miniskirt and thigh-high boots) how to get to the Beverly Hills hotel. Being a smart and sensitive prostitute, Vivian offers to take him where he needs to go and, with her charm, soon gets him to hire her for a week as his \"all-occasion\" woman. As a reward for her time and effort, she gets unlimited access to his credit card to buy clothes and learns how to behave in a fancy restaurant (thanks to the hotel's friendly manager, played by Héctor Elizondo). And, unsurprisingly, Vivian falls in love with her benefactor.",
      "text": "The film also gave huge boosts to the careers of its stars, Richard Gere (who had not had a hit film since the mid-nineteen eighties) and Julia Roberts, who was nominated for an Oscar for her performance. Gere makes a fine gentleman as Edward Lewis, a powerful businessman on a trip to Los Angeles who ends up getting lost around Hollywood Boulevard and asks the hooker-with-a-heart-of-gold Vivian (Roberts in a tiny miniskirt and thigh-high boots) how to get to the Beverly Hills hotel. Being a smart and sensitive prostitute, Vivian offers to take him where he needs to go and, with her charm, soon gets him to hire her for a week as his \"all-occasion\" woman. As a reward for her time and effort, she gets unlimited access to his credit card to buy clothes and learns how to behave in a fancy restaurant (thanks to the hotel's friendly manager, played by Héctor Elizondo). And, unsurprisingly, Vivian falls in love with her benefactor.",
      "chars": 937
@@ -131,6 +144,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "The whole story is highly improbable, of course. For starters, hardly any prostitute on Hollywood Boulevard is as well groomed as Vivian. Roberts's success in the role of a prostitute is politically incorrect, but the sheer charm of Pretty Woman never fails to shine through.",
      "text": "The whole story is highly improbable, of course. For starters, hardly any prostitute on Hollywood Boulevard is as well groomed as Vivian. Roberts's success in the role of a prostitute is politically incorrect, but the sheer charm of Pretty Woman never fails to shine through.",
      "chars": 275
@@ -147,6 +161,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Films such as The Girl Next Door (2004), Superbad (2007), The 40-Year-Old Virgin (2005), EuroTrip (2004), The House Bunny (2008) and National Lampoon's Van Wilder (2002) were subsequent films that took advantage of this subgenre. Among them, we can highlight The 40-Year-Old Virgin, starring Steve Carell (b. 1962), who a year later would also star in the series The Office, and directed by Judd Apatow (b. 1967), one of the directors who stood out most in this genre during the decade.",
      "text": "Films such as The Girl Next Door, from two thousand four, Superbad, from two thousand seven, The forty-Year-Old Virgin, from two thousand five, EuroTrip, from two thousand four, The House Bunny, from two thousand eight, and National Lampoon's Van Wilder, from two thousand two, were subsequent films that took advantage of this subgenre. Among them, we can highlight The forty-Year-Old Virgin, starring Steve Carell (born in nineteen sixty-two), who a year later would also star in the series The Office, and directed by Judd Apatow (born in nineteen sixty-seven), one of the directors who stood out most in this genre during the decade.",
      "chars": 637
@@ -154,6 +169,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "It was not only romantic comedies and gross-out comedies that stood out during these two decades. In the '90s, Jim Carrey (b. 1962), with his eccentric style, starred in Ace Ventura: Pet Detective (1994), The Mask (1994) and Dumb and Dumber (1994), all in the same year. The films were hits, making Jim Carrey one of the biggest names in the genre at the time. Eddie Murphy (b. 1961) followed the same path. Murphy had already been a household name since the 1980s, with the release of Beverly Hills Cop (1984). But it was with The Nutty Professor (1996) that we discovered Murphy's acting talent: he plays every member of Professor Sherman Klump's family.",
      "text": "It was not only romantic comedies and gross-out comedies that stood out during these two decades. In the nineties, Jim Carrey (born in nineteen sixty-two), with his eccentric style, starred in Ace Ventura: Pet Detective, from nineteen ninety-four, The Mask, from nineteen ninety-four, and Dumb and Dumber, from nineteen ninety-four, all in the same year. The films were hits, making Jim Carrey one of the biggest names in the genre at the time. Eddie Murphy (born in nineteen sixty-one) followed the same path. Murphy had already been a household name since the nineteen eighties, with the release of Beverly Hills Cop, from nineteen eighty-four. But it was with The Nutty Professor, from nineteen ninety-six, that we discovered Murphy's acting talent: he plays every member of Professor Sherman Klump's family.",
      "chars": 811
@@ -161,6 +177,7 @@
     {
      "id": "04-03",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "In the '80s, ZAZ-style comedy had dominated the box office with Airplane! (1980) and The Naked Gun: From the Files of Police Squad! (1988), but it ended up going on hiatus during the 1990s. Then, in 2000, the Wayans brothers released Scary Movie (2000). The film, which focused on poking fun at the major horror films released in the preceding years, was a tremendous success, reviving the parody subgenre. Films such as Epic Movie (2007), Meet the Spartans (2008), Superhero Movie (2008) and Tropic Thunder (2008) followed this line of humor.",
      "text": "In the eighties, ZAZ-style comedy had dominated the box office with Airplane!, from nineteen eighty, and The Naked Gun: From the Files of Police Squad!, from nineteen eighty-eight, but it ended up going on hiatus during the nineteen nineties. Then, in two thousand, the Wayans brothers released Scary Movie, from two thousand. The film, which focused on poking fun at the major horror films released in the preceding years, was a tremendous success, reviving the parody subgenre. Films such as Epic Movie, from two thousand seven, Meet the Spartans, from two thousand eight, Superhero Movie, from two thousand eight, and Tropic Thunder, from two thousand eight, followed this line of humor.",
      "chars": 690
@@ -177,6 +194,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "Worth watching: the films from this chapter are Pretty Woman, American Pie, Ace Ventura: Pet Detective, 10 Things I Hate About You, Scary Movie, The Mask, Superhero Movie, The Nutty Professor, Tropic Thunder, Dumb and Dumber, Happy Gilmore, Austin Powers: The Spy Who Shagged Me, There's Something About Mary, Rush Hour, The 40 Year Old Virgin, Superbad, The Girl Next Door, Yes Man, Notting Hill, How to Lose a Guy in 10 Days, She's All That, Doctor Dolittle, Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan, The Hangover, Pineapple Express and Johnny English.",
      "text": "Worth watching: the films from this chapter are Pretty Woman, American Pie, Ace Ventura: Pet Detective, ten Things I Hate About You, Scary Movie, The Mask, Superhero Movie, The Nutty Professor, Tropic Thunder, Dumb and Dumber, Happy Gilmore, Austin Powers: The Spy Who Shagged Me, There's Something About Mary, Rush Hour, The forty Year Old Virgin, Superbad, The Girl Next Door, Yes Man, Notting Hill, How to Lose a Guy in ten Days, She's All That, Doctor Dolittle, Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan, The Hangover, Pineapple Express and Johnny English.",
      "chars": 602

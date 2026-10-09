@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 05: From 1970 to 1989. Chapter 8: The Birth of the Blockbuster.",
      "text": "Part zero five: From nineteen seventy to nineteen eighty-nine. Chapter eight: The Birth of the Blockbuster.",
      "chars": 107
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "American blockbusters gained ground in the US with the release of Jaws, catching the attention of the major studios and producers.",
      "text": "American blockbusters gained ground in the US with the release of Jaws, catching the attention of the major studios and producers.",
      "chars": 130
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "In the 1970s, as the world shrank thanks to the ease of transportation and communication, Hollywood, paradoxically, made everything seem larger than life. The arrival of the modern blockbuster was a reminder that cinema can be the ultimate form of escapism, as well as an art form and a means of expression.",
      "text": "In the nineteen seventies, as the world shrank thanks to the ease of transportation and communication, Hollywood, paradoxically, made everything seem larger than life. The arrival of the modern blockbuster was a reminder that cinema can be the ultimate form of escapism, as well as an art form and a means of expression.",
      "chars": 320
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "The blockbuster is perhaps best defined as a film that uses a narrow set of parameters (science fiction, horror, comedy, fantasy, disaster or action) to draw the largest possible audience. But the concept behind the blockbuster matters too.",
      "text": "The blockbuster is perhaps best defined as a film that uses a narrow set of parameters (science fiction, horror, comedy, fantasy, disaster or action) to draw the largest possible audience. But the concept behind the blockbuster matters too.",
      "chars": 240
@@ -59,6 +63,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Learn more: Jaws: The Starting Point of the Blockbuster.",
      "text": "Learn more: Jaws: The Starting Point of the Blockbuster.",
      "chars": 56
@@ -66,6 +71,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "The film that invented the \"summer blockbuster\", and the first to pass the famous $100 million mark at the box office, was a genuine phenomenon. In the summer of 1975, everyone was talking about Jaws. The film wrecked a generation's swimming habits and launched the career of a talented young director.",
      "text": "The film that invented the \"summer blockbuster\", and the first to pass the famous one hundred million dollars mark at the box office, was a genuine phenomenon. In the summer of nineteen seventy-five, everyone was talking about Jaws. The film wrecked a generation's swimming habits and launched the career of a talented young director.",
      "chars": 334
@@ -73,6 +79,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "The shoot was famously troubled, prolonged by the difficulties of working at sea and by the malfunctioning mechanical predator. Even so, Jaws is a classic example of storytelling, combining horror, adventure and the journey of an outsider hero who must face the community and his own fear of water. The story deals with the disruption to the lives and livelihoods of the residents of the resort town of Amity after a great white shark decides to settle in its waters. When it attacks on the Fourth of July, police chief Martin Brody (Roy Scheider) heads out to sea aboard the Orca, with the brave Captain Quint (Robert Shaw) and oceanographer Matt Hooper (Richard Dreyfuss), to kill Amity's tormentor.",
      "text": "The shoot was famously troubled, prolonged by the difficulties of working at sea and by the malfunctioning mechanical predator. Even so, Jaws is a classic example of storytelling, combining horror, adventure and the journey of an outsider hero who must face the community and his own fear of water. The story deals with the disruption to the lives and livelihoods of the residents of the resort town of Amity after a great white shark decides to settle in its waters. When it attacks on the Fourth of July, police chief Martin Brody (Roy Scheider) heads out to sea aboard the Orca, with the brave Captain Quint (Robert Shaw) and oceanographer Matt Hooper (Richard Dreyfuss), to kill Amity's tormentor.",
      "chars": 701
@@ -80,6 +87,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Jaws gave early signs of Spielberg's pure cinematic instinct, from the use of the animal's point of view to heighten suspense to the push-pull shot in which Brody realizes the creature has devoured a boy before his eyes. But the film's success would have been unthinkable without the score by John Williams (b. 1932), built on two menacing notes that serve as the shark's theme, without Verna Fields' editing and without the actors' performances. It was an ad-lib by Roy Scheider that gave Jaws its best line: \"You're gonna need a bigger boat\".",
      "text": "Jaws gave early signs of Spielberg's pure cinematic instinct, from the use of the animal's point of view to heighten suspense to the push-pull shot in which Brody realizes the creature has devoured a boy before his eyes. But the film's success would have been unthinkable without the score by John Williams (born in nineteen thirty-two), built on two menacing notes that serve as the shark's theme, without Verna Fields' editing and without the actors' performances. It was an ad-lib by Roy Scheider that gave Jaws its best line: \"You're gonna need a bigger boat\".",
      "chars": 564
@@ -96,6 +104,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "What if your best friend were an alien, as in E.T. the Extra-Terrestrial (1982)? What happens when a passenger plane flies through a snowstorm with a bomb on board, as in Airport (1970)? Ideas like these were appealing enough to persuade Hollywood producers to invest in them, and to get huge audiences to buy tickets to see them.",
      "text": "What if your best friend were an alien, as in E.T. the Extra-Terrestrial, from nineteen eighty-two? What happens when a passenger plane flies through a snowstorm with a bomb on board, as in Airport, from nineteen seventy? Ideas like these were appealing enough to persuade Hollywood producers to invest in them, and to get huge audiences to buy tickets to see them.",
      "chars": 365
@@ -103,6 +112,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "The sheer scale and technical skill of blockbusters often inspire awe. The arrival of the mothership in Close Encounters of the Third Kind (1977) is breathtaking, and films like The Poseidon Adventure (1972) are thrilling.",
      "text": "The sheer scale and technical skill of blockbusters often inspire awe. The arrival of the mothership in Close Encounters of the Third Kind, from nineteen seventy-seven, is breathtaking, and films like The Poseidon Adventure, from nineteen seventy-two, are thrilling.",
      "chars": 266
@@ -110,6 +120,7 @@
     {
      "id": "03-03",
      "speaker": "citacao",
+     "source_index": 8,
      "original": "Some people go to the hardware store and make lamps out of bowling pins. I tell stories about aliens.",
      "text": "Some people go to the hardware store and make lamps out of bowling pins. I tell stories about aliens.",
      "chars": 101
@@ -117,6 +128,7 @@
     {
      "id": "03-04",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "said Steven Spielberg.",
      "text": "said Steven Spielberg.",
      "chars": 22
@@ -124,6 +136,7 @@
     {
      "id": "03-05",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Hollywood blockbusters blend spectacle with the real world. Films like The Towering Inferno (1974) filter possible real-world disasters through the Hollywood lens. It's life, but on a grand, glossy, fantastic scale. The blockbuster heightens drama with bigger and better special and sound effects. For audiences, these effects intensify the sense of terror or wonder when Good triumphs over Evil or when humanity survives against all odds.",
      "text": "Hollywood blockbusters blend spectacle with the real world. Films like The Towering Inferno, from nineteen seventy-four, filter possible real-world disasters through the Hollywood lens. It's life, but on a grand, glossy, fantastic scale. The blockbuster heightens drama with bigger and better special and sound effects. For audiences, these effects intensify the sense of terror or wonder when Good triumphs over Evil or when humanity survives against all odds.",
      "chars": 461
@@ -131,6 +144,7 @@
     {
      "id": "03-06",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Jaws (1975) is the first film to fit the description of a Hollywood blockbuster perfectly, and it was also a new experiment with its wide release. Its success partly reflected a change in the way films were distributed and promoted. Since the early days of cinema in the United States, distribution had been done city by city, from Los Angeles and New York and from there to smaller cities.",
      "text": "Jaws, from nineteen seventy-five, is the first film to fit the description of a Hollywood blockbuster perfectly, and it was also a new experiment with its wide release. Its success partly reflected a change in the way films were distributed and promoted. Since the early days of cinema in the United States, distribution had been done city by city, from Los Angeles and New York and from there to smaller cities.",
      "chars": 412
@@ -147,6 +161,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "Learn more: Star Wars - The Cultural Landmark.",
      "text": "Learn more: Star Wars - The Cultural Landmark.",
      "chars": 46
@@ -154,6 +169,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "No one expected writer-director George Lucas's film to be a hit. The studio bosses were so convinced that the film, \"a science fiction Western\" whose main cast was unknown (Harrison Ford, Mark Hamill and Carrie Fisher), would flop that they graciously handed Lucas, free of charge, the merchandising rights to any product related to Star Wars. Obviously, they did not expect it to generate 5 sequels, three \"prequel\" chapters, a spin-off based on the Ewoks, cartoons, computer games, toys, soundtracks, books, huge video and DVD sales, candy, clothing, bedding and even food (and countless parodies, notably three specific Star Wars episodes of the cartoon Family Guy). The film cost $11 million and grossed more than $460 million, but it did not seem to have the potential to become a huge hit.",
      "text": "No one expected writer-director George Lucas's film to be a hit. The studio bosses were so convinced that the film, \"a science fiction Western\" whose main cast was unknown (Harrison Ford, Mark Hamill and Carrie Fisher), would flop that they graciously handed Lucas, free of charge, the merchandising rights to any product related to Star Wars. Obviously, they did not expect it to generate five sequels, three \"prequel\" chapters, a spin-off based on the Ewoks, cartoons, computer games, toys, soundtracks, books, huge video and DVD sales, candy, clothing, bedding and even food (and countless parodies, notably three specific Star Wars episodes of the cartoon Family Guy). The film cost eleven million dollars and grossed more than four hundred sixty million dollars, but it did not seem to have the potential to become a huge hit.",
      "chars": 831
@@ -161,6 +177,7 @@
     {
      "id": "04-03",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "But Lucas had big dreams. Two decades before computer imagery was used to create fantastic worlds, the visionary director, using ultra-detailed models, clever tricks and well-chosen locations, told the story of another universe. The evil Empire, dominated by Darth Vader (David Prowse, with the voice of James Earl Jones), is in control; the rebel forces are gathering to try to overthrow the tyrants.",
      "text": "But Lucas had big dreams. Two decades before computer imagery was used to create fantastic worlds, the visionary director, using ultra-detailed models, clever tricks and well-chosen locations, told the story of another universe. The evil Empire, dominated by Darth Vader (David Prowse, with the voice of James Earl Jones), is in control; the rebel forces are gathering to try to overthrow the tyrants.",
      "chars": 401
@@ -168,6 +185,7 @@
     {
      "id": "04-04",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "Lucas created a mythology that was enthusiastically embraced by people of all ages. Besides giving rise to various creatures from a galaxy far, far away, his good-versus-evil storyline introduced us to people, phrases and concepts that have since become part of the collective consciousness: the Millennium Falcon (Han Solo's spaceship, which Lucas originally imagined looking like a flying hamburger), lightsabers (the sword-like weapon with its distinctive sound), the Imperial stormtroopers (\"May the Force be with you\") and, of course, the Jedi knights (today such an integral part of our collective unconscious that an internet campaign urging people to answer \"Jedi\" to a question about religion on a United Kingdom census form was hugely successful).",
      "text": "Lucas created a mythology that was enthusiastically embraced by people of all ages. Besides giving rise to various creatures from a galaxy far, far away, his good-versus-evil storyline introduced us to people, phrases and concepts that have since become part of the collective consciousness: the Millennium Falcon (Han Solo's spaceship, which Lucas originally imagined looking like a flying hamburger), lightsabers (the sword-like weapon with its distinctive sound), the Imperial stormtroopers (\"May the Force be with you\") and, of course, the Jedi knights (today such an integral part of our collective unconscious that an internet campaign urging people to answer \"Jedi\" to a question about religion on a United Kingdom census form was hugely successful).",
      "chars": 757
@@ -175,6 +193,7 @@
     {
      "id": "04-05",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "By bringing Star Wars to life, Lucas managed to create much more than just a film. He created a world, a new style of filmmaking and an unforgettable space opera that has never been surpassed.",
      "text": "By bringing Star Wars to life, Lucas managed to create much more than just a film. He created a world, a new style of filmmaking and an unforgettable space opera that has never been surpassed.",
      "chars": 192
@@ -191,6 +210,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Audiences across the country saw Jaws at the same time, turning the release into a nationally talked-about event. With Star Wars (1977), the balance between great character moments and pure excitement began to shift. Characters like Han Solo (Harrison Ford) and Obi-Wan Kenobi (Alec Guinness) remain important - the film wouldn't work if the audience didn't care about who is on screen - but they are never allowed to get in the way of the action.",
      "text": "Audiences across the country saw Jaws at the same time, turning the release into a nationally talked-about event. With Star Wars, from nineteen seventy-seven, the balance between great character moments and pure excitement began to shift. Characters like Han Solo (Harrison Ford) and Obi-Wan Kenobi (Alec Guinness) remain important - the film wouldn't work if the audience didn't care about who is on screen - but they are never allowed to get in the way of the action.",
      "chars": 469
@@ -198,6 +218,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "Steven Spielberg (b. 1946) kept his feet on the ground with a perfect blend of emotional truth and epic vision in Close Encounters of the Third Kind, but the character-driven blockbuster he championed became increasingly secondary. The Superman series is the first example of a film planned from the start to have sequels. Much of the sequel was shot at the same time as the first film.",
      "text": "Steven Spielberg (born in nineteen forty-six) kept his feet on the ground with a perfect blend of emotional truth and epic vision in Close Encounters of the Third Kind, but the character-driven blockbuster he championed became increasingly secondary. The Superman series is the first example of a film planned from the start to have sequels. Much of the sequel was shot at the same time as the first film.",
      "chars": 405
@@ -205,6 +226,7 @@
     {
      "id": "05-03",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Both films were huge successes. Audiences still responded well to good science fiction, as shown by the success of Alien (1979) and the Star Wars sequel, The Empire Strikes Back (1980).",
      "text": "Both films were huge successes. Audiences still responded well to good science fiction, as shown by the success of Alien, from nineteen seventy-nine, and the Star Wars sequel, The Empire Strikes Back, from nineteen eighty.",
      "chars": 222
@@ -212,6 +234,7 @@
     {
      "id": "05-04",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "Still, it was a hard formula to repeat: several attempts to ride the wave of Star Wars, especially Star Trek: The Motion Picture (1979), flopped. Spielberg had the Midas touch, but for every hit, such as Ghostbusters (1984), there was a flop. Studios know, however, that one big hit can pay for all the disappointments. And, for better or worse, Hollywood's love affair with the blockbuster remains alive and well, especially with the wave of superhero films in recent decades.",
      "text": "Still, it was a hard formula to repeat: several attempts to ride the wave of Star Wars, especially Star Trek: The Motion Picture, from nineteen seventy-nine, flopped. Spielberg had the Midas touch, but for every hit, such as Ghostbusters, from nineteen eighty-four, there was a flop. Studios know, however, that one big hit can pay for all the disappointments. And, for better or worse, Hollywood's love affair with the blockbuster remains alive and well, especially with the wave of superhero films in recent decades.",
      "chars": 518
@@ -228,6 +251,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "Worth watching: the films from this chapter are Jaws, Star Wars, Close Encounters of the Third Kind, Superman, The Towering Inferno, The Poseidon Adventure, E.T. the Extra-Terrestrial, Airport and The Empire Strikes Back.",
      "text": "Worth watching: the films from this chapter are Jaws, Star Wars, Close Encounters of the Third Kind, Superman, The Towering Inferno, The Poseidon Adventure, E.T. the Extra-Terrestrial, Airport and The Empire Strikes Back.",
      "chars": 221

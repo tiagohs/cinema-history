@@ -1,0 +1,161 @@
+{
+ "lang": "pt",
+ "era": 1,
+ "page": 2,
+ "title": "Os primeiros Épicos",
+ "era_title": "Parte 01 - De 1895 a 1929",
+ "provider": "test",
+ "voices": {},
+ "format": "audio/ogg; codecs=opus; 12kbps (teste)",
+ "tracks": [
+  {
+   "id": "00",
+   "title": "Abertura",
+   "kind": "open",
+   "file": "../../../tones/a.ogg",
+   "duration_s": 12.0,
+   "bytes": 19433,
+   "chars": 452,
+   "hash": "test-a",
+   "marks": [
+    {
+     "seg": "00-01",
+     "t": 0.25,
+     "source_index": -1
+    },
+    {
+     "seg": "00-02",
+     "t": 3.15,
+     "source_index": -1
+    }
+   ]
+  },
+  {
+   "id": "01",
+   "title": "Enrico Guazzoni",
+   "kind": "body",
+   "file": "../../../tones/b.ogg",
+   "duration_s": 25.0,
+   "bytes": 39673,
+   "chars": 1229,
+   "hash": "test-b",
+   "marks": [
+    {
+     "seg": "01-01",
+     "t": 0.25,
+     "source_index": 0
+    },
+    {
+     "seg": "01-02",
+     "t": 12.69,
+     "source_index": 1
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "title": "Cecil B. DeMille",
+   "kind": "body",
+   "file": "../../../tones/c.ogg",
+   "duration_s": 25.0,
+   "bytes": 39675,
+   "chars": 1420,
+   "hash": "test-c",
+   "marks": [
+    {
+     "seg": "02-01",
+     "t": 0.25,
+     "source_index": 3
+    },
+    {
+     "seg": "02-02",
+     "t": 9.5,
+     "source_index": 4
+    },
+    {
+     "seg": "02-03",
+     "t": 17.4,
+     "source_index": 5
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "title": "Piores estereótipos raciais",
+   "kind": "body",
+   "file": "../../../tones/b.ogg",
+   "duration_s": 25.0,
+   "bytes": 39673,
+   "chars": 2394,
+   "hash": "test-b",
+   "marks": [
+    {
+     "seg": "03-01",
+     "t": 0.25,
+     "source_index": 7
+    },
+    {
+     "seg": "03-02",
+     "t": 5.88,
+     "source_index": 8
+    },
+    {
+     "seg": "03-03",
+     "t": 13.96,
+     "source_index": 9
+    },
+    {
+     "seg": "03-04",
+     "t": 15.45,
+     "source_index": 9
+    },
+    {
+     "seg": "03-05",
+     "t": 15.66,
+     "source_index": 10
+    },
+    {
+     "seg": "03-06",
+     "t": 20.57,
+     "source_index": 11
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "title": "Associação Nacional para o Progresso das Pessoas de Cor",
+   "kind": "body",
+   "file": "../../../tones/c.ogg",
+   "duration_s": 25.0,
+   "bytes": 39675,
+   "chars": 730,
+   "hash": "test-c",
+   "marks": [
+    {
+     "seg": "04-01",
+     "t": 0.25,
+     "source_index": 13
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "title": "Vale a conferida",
+   "kind": "watch",
+   "file": "../../../tones/b.ogg",
+   "duration_s": 25.0,
+   "bytes": 39673,
+   "chars": 286,
+   "hash": "test-b",
+   "marks": [
+    {
+     "seg": "05-01",
+     "t": 0.25,
+     "source_index": 14
+    }
+   ]
+  }
+ ],
+ "duration_s": 137.0,
+ "generated_at": "test"
+}

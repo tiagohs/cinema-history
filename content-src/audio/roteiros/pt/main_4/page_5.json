@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 04: De 1960 a 1969. Capítulo 5: Filmes de Espionagem.",
      "text": "Parte zero quatro: De mil novecentos e sessenta a mil novecentos e sessenta e nove. Capítulo cinco: Filmes de Espionagem.",
      "chars": 121
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "A década que os filmes de espionagem ganharam grandes exemplos como a série 007.",
      "text": "A década que os filmes de espionagem ganharam grandes exemplos como a série zero zero sete.",
      "chars": 91
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "Os filmes de espionagem podem ser divididos em dois grupos. O primeiro é composto por thrillers com narrativas construídas ao redor de caçadas e perseguições. Exemplos desse tipo são os filmes da Bulldog Drummond e as aventuras de Alfred Hitchcock (1899-1980), Correspondente estrangeiro (1940) e O sabotador (1942).",
      "text": "Os filmes de espionagem podem ser divididos em dois grupos. O primeiro é composto por thrillers com narrativas construídas ao redor de caçadas e perseguições. Exemplos desse tipo são os filmes da Bulldog Drummond e as aventuras de Alfred [[pron: Hitchcock|Rítchcók]] (mil oitocentos e noventa e nove a mil novecentos e oitenta), Correspondente estrangeiro, de mil novecentos e quarenta, e O sabotador, de mil novecentos e quarenta e dois.",
      "chars": 419
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "O segundo grupo é o dos thrillers existenciais, adaptados de autores como Eric Ambler e Graham Greene, como Jornada do pavor (1942) e Quando desceram as trevas (1943). Esses têm protagonistas comuns em lugar de agentes secretos profissionais e se caracterizam pelo estilo entre o noir e o expressionista.",
      "text": "O segundo grupo é o dos thrillers existenciais, adaptados de autores como Eric Ambler e Graham Greene, como Jornada do pavor, de mil novecentos e quarenta e dois, e Quando desceram as trevas, de mil novecentos e quarenta e três. Esses têm protagonistas comuns em lugar de agentes secretos profissionais e se caracterizam pelo estilo entre o noir e o expressionista.",
      "chars": 365
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "O auge do filme de espionagem se deu durante a Guerra Fria, quando o gênero se tornou veículo do conflito geopolítico e ideológico entre o Ocidente livre e democrático e o bloco comunista totalitário. Os primeiros filmes desse período como Fui Comunista para o F.B.I. (1951), são produtos toscos da paranoia macartista.",
      "text": "O auge do filme de espionagem se deu durante a Guerra Fria, quando o gênero se tornou veículo do conflito geopolítico e ideológico entre o Ocidente livre e democrático e o bloco comunista totalitário. Os primeiros filmes desse período como Fui Comunista para o F.B.I., de mil novecentos e cinquenta e um, são produtos toscos da paranoia macartista.",
      "chars": 348
@@ -66,6 +71,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Quando o \"medo vermelho\" se dissipou, os cineastas puderam adotar um olhar mais crítico sobre o jogo da espionagem. Intriga internacional (1959), de Alfred Hitchcock (1899-1980), aborda a ambiguidade moral da Guerra Fria e o thriller Sob o domínio do mal (1962), de John Frankenheimer (1930-2002), explora as inquietações provocadas pelo tema da lavagem cerebral, típico da Guerra Fria, com uma trama que antecipa de maneira sinistra o assassinato do presidente Kennedy em 1963.",
      "text": "Quando o \"medo vermelho\" se dissipou, os cineastas puderam adotar um olhar mais crítico sobre o jogo da espionagem. Intriga internacional, de mil novecentos e cinquenta e nove, de Alfred [[pron: Hitchcock|Rítchcók]] (mil oitocentos e noventa e nove a mil novecentos e oitenta), aborda a ambiguidade moral da Guerra Fria e o thriller Sob o domínio do mal, de mil novecentos e sessenta e dois, de John Frankenheimer (mil novecentos e trinta a dois mil e dois), explora as inquietações provocadas pelo tema da lavagem cerebral, típico da Guerra Fria, com uma trama que antecipa de maneira sinistra o assassinato do presidente Kennedy em mil novecentos e sessenta e três.",
      "chars": 648
@@ -73,6 +79,7 @@
     {
      "id": "02-02",
      "speaker": "citacao",
+     "source_index": 6,
      "original": "James Bond: \"Você espera que eu fale?\"; Goldfinger: \"Não, Sr. Bond. Espero que você morra.\"",
      "text": "James Bond: \"Você espera que eu fale?\"; Goldfinger: \"Não, senhor Bond. Espero que você morra.\"",
      "chars": 94
@@ -80,6 +87,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "disse James Bond (Sean Connery) e Auric Goldfinger (Gert Frobe) em 007 contra Goldfinger.",
      "text": "disse James Bond (Sean Connery) e Auric Goldfinger (Gert Frobe) em zero zero sete contra Goldfinger.",
      "chars": 100
@@ -87,6 +95,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "Os filmes de espionagem da década de 1960 respondem a acontecimentos como a construção do Muro de Berlim (1961) e a Crise dos Misseis cubanos (1962). O thriller é representado sobretudo pelos filmes de James Bond, baseados em romances de lan Fleming, a começar por 007: Contra o Satânico Dr. No (1962), seguido por Moscou Contra 007 (1963).",
      "text": "Os filmes de espionagem da década de mil novecentos e sessenta respondem a acontecimentos como a construção do Muro de Berlim, de mil novecentos e sessenta e um, e a Crise dos Misseis cubanos, de mil novecentos e sessenta e dois. O thriller é representado sobretudo pelos filmes de James Bond, baseados em romances de lan Fleming, a começar por zero zero sete: Contra o Satânico doutor No, de mil novecentos e sessenta e dois, seguido por Moscou Contra zero zero sete, de mil novecentos e sessenta e três.",
      "chars": 505
@@ -103,6 +112,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Os filmes de 007 são fundamentalmente diferentes dos livros no sentido de que os cineastas substituíram os vilões soviéticos de Fleming por um sindicato do crime supranacional libertando o Bond das telas do contexto ideológico da Guerra Fria. Os filmes de James Bond combinam espetáculo visual (locações exóticas, sequências de ação) com situações de consumismo e permissividade sexual.",
      "text": "Os filmes de zero zero sete são fundamentalmente diferentes dos livros no sentido de que os cineastas substituíram os vilões soviéticos de Fleming por um sindicato do crime supranacional libertando o Bond das telas do contexto ideológico da Guerra Fria. Os filmes de James Bond combinam espetáculo visual (locações exóticas, sequências de ação) com situações de consumismo e permissividade sexual.",
      "chars": 397
@@ -110,6 +120,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Sucessos de bilheteria, a fórmula e a série permaneceram em produção quase continua até hoje. 007 Contra Goldfinger (1964) e 007 Contra a Chantagem Atômica (1965) assinalam o auge da \"bondmania\". Embora os filmes posteriores da série sejam mera repetição da mesma formula, James Bond continua sendo o arquétipo do agente secreto de ação, modelo para outras séries como Missão impossível e os filmes de Jason Bourne.",
      "text": "Sucessos de bilheteria, a fórmula e a série permaneceram em produção quase continua até hoje. zero zero sete Contra Goldfinger, de mil novecentos e sessenta e quatro, e zero zero sete Contra a Chantagem Atômica, de mil novecentos e sessenta e cinco, assinalam o auge da \"bondmania\". Embora os filmes posteriores da série sejam mera repetição da mesma formula, James Bond continua sendo o arquétipo do agente secreto de ação, modelo para outras séries como Missão impossível e os filmes de Jason Bourne.",
      "chars": 502
@@ -126,6 +137,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "Um contraciclo de filmes \"anti-Bond\", de meados dos anos 1960 trouxe uma perspectiva mais ambígua e cínica. Martin Ritt (1914-1990) dirigiu O Espião que Veio do Frio (1965), adaptação fiel da obra de John Le Carre que, com seu anti-herói mal-ajambrado, uma austera filmagem em preto e branco desoladas locações invernais, é a antítese dos filmes de 007.",
      "text": "Um contraciclo de filmes \"anti-Bond\", de meados dos anos mil novecentos e sessenta trouxe uma perspectiva mais ambígua e cínica. Martin Ritt (mil novecentos e catorze a mil novecentos e noventa) dirigiu O Espião que Veio do Frio, de mil novecentos e sessenta e cinco, adaptação fiel da obra de John Le Carre que, com seu anti-herói mal-ajambrado, uma austera filmagem em preto e branco desoladas locações invernais, é a antítese dos filmes de zero zero sete.",
      "chars": 458
@@ -133,6 +145,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Seu clima de suspeita e ambiguidade moral é mais próximo da angústia existencial do filme noir do que do mundo fantástico de James Bond. Michael Caine (n-1933) personifica o espião suburbano Harry Palmer em três filmes baseados em romances de Ipcress - Arquivo confidencial (1965), Funeral em Berlim (1966) e O Cérebro de Um Bilhão de Dólares (1967). Com seus informantes e agentes duplos, esses filmes refletem a realidade da espionagem tal como revelada em casos como o da rede de espionagem de Cambridge, de que faziam parte Guy Burgess, Donald Maciean e Kim Philby.",
      "text": "Seu clima de suspeita e ambiguidade moral é mais próximo da angústia existencial do filme noir do que do mundo fantástico de James Bond. Michael Caine (nasceu em mil novecentos e trinta e três) personifica o espião suburbano Harry Palmer em três filmes baseados em romances de Ipcress - Arquivo confidencial, de mil novecentos e sessenta e cinco, Funeral em Berlim, de mil novecentos e sessenta e seis, e O Cérebro de Um Bilhão de Dólares, de mil novecentos e sessenta e sete. Com seus informantes e agentes duplos, esses filmes refletem a realidade da espionagem tal como revelada em casos como o da rede de espionagem de Cambridge, de que faziam parte Guy Burgess, Donald Maciean e Kim Philby.",
      "chars": 695
@@ -149,6 +162,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Vale a conferida: os filmes deste capítulo são From Russia with Love, North by Northwest, The Manchurian Candidate, Dr. No, Goldfinger, The Spy Who Came In from the Cold, The Ipcress File e Billion Dollar Brain.",
      "text": "Vale a conferida: os filmes deste capítulo são From Russia with Love, North by Northwest, The Manchurian Candidate, doutor No, Goldfinger, The Spy Who Came In from the Cold, The Ipcress File e Billion Dollar Brain.",
      "chars": 214

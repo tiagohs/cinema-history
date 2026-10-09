@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 06: From 1990 to 2009. Chapter 3: American Independent Cinema.",
      "text": "Part zero six: From nineteen ninety to two thousand nine. Chapter three: American Independent Cinema.",
      "chars": 101
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "The heyday of American independent cinema.",
      "text": "The heyday of American independent cinema.",
      "chars": 42
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "Although American independent cinema enjoyed one of its great moments in the 1980s and 1990s, it was by no means a phenomenon confined to that period. True independent cinema - produced outside the major studios - is nothing new in the United States. Small studios and lone filmmakers have been making their own productions since the earliest days of cinema.",
      "text": "Although American independent cinema enjoyed one of its great moments in the nineteen eighties and nineteen nineties, it was by no means a phenomenon confined to that period. True independent cinema - produced outside the major studios - is nothing new in the United States. Small studios and lone filmmakers have been making their own productions since the earliest days of cinema.",
      "chars": 382
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Rather than being defined simply by production and distribution criteria, indie cinema is, at least in theory, cinema with ideas of its own, resistant to the norms of the mainstream and loosely tied to the counterculture. American independent films are seen as the creations of filmmakers with distinctive points of view, who usually produce and retain the rights to their work. This tradition includes names as varied as Andy Warhol (1929-1989), Robert Altman (1925-2006), John Cassavetes (1929-1987), and George A. Romero (b. 1940).",
      "text": "Rather than being defined simply by production and distribution criteria, indie cinema is, at least in theory, cinema with ideas of its own, resistant to the norms of the mainstream and loosely tied to the counterculture. American independent films are seen as the creations of filmmakers with distinctive points of view, who usually produce and retain the rights to their work. This tradition includes names as varied as Andy Warhol (nineteen twenty-nine to nineteen eighty-nine), Robert Altman (nineteen twenty-five to two thousand six), John Cassavetes (nineteen twenty-nine to nineteen eighty-seven), and George A. Romero (born in nineteen forty).",
      "chars": 651
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "citacao",
+     "source_index": 4,
      "original": "The Bill Murray performance we've been waiting for. His two halves have never come together like this, in a way that connects that hilarious detachment with the deep, abiding sense of isolation that must have spawned it.",
      "text": "The Bill Murray performance we've been waiting for. His two halves have never come together like this, in a way that connects that hilarious detachment with the deep, abiding sense of isolation that must have spawned it.",
      "chars": 220
@@ -57,6 +62,7 @@
     {
      "id": "01-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "said David Edelstein on Lost in Translation.",
      "text": "said David Edelstein on Lost in Translation.",
      "chars": 44
@@ -64,6 +70,7 @@
     {
      "id": "01-05",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "American independent film flourished as a visible culture in the 1980s. Key figures were the versatile John Sayles (b. 1950), making dramas against authoritarianism such as Matewan (1987), and Jim Jarmusch (b. 1953), whose laconic, hip style has its roots in the zero-budget New York scene of the late 1970s.",
      "text": "American independent film flourished as a visible culture in the nineteen eighties. Key figures were the versatile John Sayles (born in nineteen fifty), making dramas against authoritarianism such as Matewan, from nineteen eighty-seven, and Jim Jarmusch (born in nineteen fifty-three), whose laconic, hip style has its roots in the zero-budget New York scene of the late nineteen seventies.",
      "chars": 390
@@ -71,6 +78,7 @@
     {
      "id": "01-06",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Joel Coen (b. 1954) and Ethan Coen (b. 1957) first made their mark in 1984 with the black comedy Blood Simple (1984). A major turning point came in 1986, when Spike Lee (b. 1957) emerged with the sex comedy She's Gotta Have It (1986). His stylistic inventiveness, political provocation and hard-nosed entrepreneurship paved the way for a new wave of African American directors, such as John Singleton (b. 1968), Matty Rich (b. 1971) and the twins Albert Hughes and Allen Hughes (b. 1972), as well as for more experimental voices such as Julie Dash (b. 1952).",
      "text": "Joel Coen (born in nineteen fifty-four) and Ethan Coen (born in nineteen fifty-seven) first made their mark in nineteen eighty-four with the black comedy Blood Simple, from nineteen eighty-four. A major turning point came in nineteen eighty-six, when Spike Lee (born in nineteen fifty-seven) emerged with the sex comedy She's Gotta Have It, from nineteen eighty-six. His stylistic inventiveness, political provocation and hard-nosed entrepreneurship paved the way for a new wave of African American directors, such as John Singleton (born in nineteen sixty-eight), Matty Rich (born in nineteen seventy-one) and the twins Albert Hughes and Allen Hughes (born in nineteen seventy-two), as well as for more experimental voices such as Julie Dash (born in nineteen fifty-two).",
      "chars": 772
@@ -87,6 +95,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Many of these pioneers have sustained long careers of remarkable diversity. Sayles still makes critically acclaimed films, such as the unconventional Western Lone Star (1996) and the adoption drama Casa de los Babys (2003). Jarmusch continues to break boundaries with films such as the Western Dead Man (1995) and the series of vignettes about celebrities Coffee and Cigarettes (2003).",
      "text": "Many of these pioneers have sustained long careers of remarkable diversity. Sayles still makes critically acclaimed films, such as the unconventional Western Lone Star, from nineteen ninety-six, and the adoption drama Casa de los Babys, from two thousand three. Jarmusch continues to break boundaries with films such as the Western Dead Man, from nineteen ninety-five, and the series of vignettes about celebrities Coffee and Cigarettes, from two thousand three.",
      "chars": 462
@@ -103,6 +112,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Learn more: Tarantino's Definitive Signature.",
      "text": "Learn more: Tarantino's Definitive Signature.",
      "chars": 45
@@ -110,6 +120,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "From whatever angle one chooses to analyze Pulp Fiction, the conclusion is inescapable that it was not only one of the most important films of the '90s but also a major influence on an entire generation, a cinematic watershed, so to speak. The unmistakable filmmaking style that Quentin Tarantino had so firmly established with his Reservoir Dogs just two years earlier, blending varied techniques into a unique and original result, reached a kind of early climax with Pulp Fiction, since renowned filmmakers usually have a significant growth curve, which can last decades, before reaching their peak. And I would not even dare to state categorically, after all these years, that Tarantino's second feature really is his high point, because I honestly could no longer say; however, without a shadow of a doubt, this is the film that threw the doors wide open for the director and that also seeped most deeply, immediately, and indelibly into pop culture, with a veritable avalanche of iconic dialogue, unforgettable songs, and breathtaking sequences.",
      "text": "From whatever angle one chooses to analyze Pulp Fiction, the conclusion is inescapable that it was not only one of the most important films of the nineties but also a major influence on an entire generation, a cinematic watershed, so to speak. The unmistakable filmmaking style that Quentin Tarantino had so firmly established with his Reservoir Dogs just two years earlier, blending varied techniques into a unique and original result, reached a kind of early climax with Pulp Fiction, since renowned filmmakers usually have a significant growth curve, which can last decades, before reaching their peak. And I would not even dare to state categorically, after all these years, that Tarantino's second feature really is his high point, because I honestly could no longer say; however, without a shadow of a doubt, this is the film that threw the doors wide open for the director and that also seeped most deeply, immediately, and indelibly into pop culture, with a veritable avalanche of iconic dialogue, unforgettable songs, and breathtaking sequences.",
      "chars": 1054
@@ -117,6 +128,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "But what makes Pulp Fiction Pulp Fiction? That is a question that can have a myriad of answers, all of them valid. In my view, however, the work's great highlight is the way Tarantino, who wrote the screenplay based on stories created by himself and Roger Avary (b. 1965), tells three largely independent stories - four, if we count the one about the couple trying to steal some money, which opens and closes the film - inspired by the kind of literature the title openly announces, in a complex nonlinear narrative structure, each with its own beginning, middle, and end, but all in dialogue with one another within the overall theme of the criminal underworld in and around Los Angeles.",
      "text": "But what makes Pulp Fiction Pulp Fiction? That is a question that can have a myriad of answers, all of them valid. In my view, however, the work's great highlight is the way Tarantino, who wrote the screenplay based on stories created by himself and Roger Avary (born in nineteen sixty-five), tells three largely independent stories - four, if we count the one about the couple trying to steal some money, which opens and closes the film - inspired by the kind of literature the title openly announces, in a complex nonlinear narrative structure, each with its own beginning, middle, and end, but all in dialogue with one another within the overall theme of the criminal underworld in and around Los Angeles.",
      "chars": 708
@@ -133,6 +145,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "It is easy to spot films that were influenced by Pulp, such as Memento and City of God. The transformation - or, perhaps, appropriation - of nonlinear narrative as something of his own is, I would say, one of Tarantino's most misunderstood traits. The director is accused of being a copycat, a plagiarist, and every synonym for it, as if no other director did the same, or as if Tarantino himself had not stated that he uses references to works he likes to a greater or lesser degree. But what the director knows how to do is turn everything he \"copies or borrows\" into something easily identifiable as his own. We know we are watching a Tarantino film even if we come to it halfway through. The same can be said of directors such as Woody Allen and Steven Spielberg. Whether that is a good or bad thing is not for us to judge here. What is clear is that Tarantino knows how to turn what is seemingly commonplace into his signature, and that is what he did with nonlinear narrative in Pulp Fiction: he transformed the basics into a structure that unfolds into several parallel and sometimes tangential stories which, in the end, make plain the director's command of the camera and of editing, not to mention the ever-present and always perfect soundtrack, another cinematic watershed, by the way.",
      "text": "It is easy to spot films that were influenced by Pulp, such as Memento and City of God. The transformation - or, perhaps, appropriation - of nonlinear narrative as something of his own is, I would say, one of Tarantino's most misunderstood traits. The director is accused of being a copycat, a plagiarist, and every synonym for it, as if no other director did the same, or as if Tarantino himself had not stated that he uses references to works he likes to a greater or lesser degree. But what the director knows how to do is turn everything he \"copies or borrows\" into something easily identifiable as his own. We know we are watching a Tarantino film even if we come to it halfway through. The same can be said of directors such as Woody Allen and Steven Spielberg. Whether that is a good or bad thing is not for us to judge here. What is clear is that Tarantino knows how to turn what is seemingly commonplace into his signature, and that is what he did with nonlinear narrative in Pulp Fiction: he transformed the basics into a structure that unfolds into several parallel and sometimes tangential stories which, in the end, make plain the director's command of the camera and of editing, not to mention the ever-present and always perfect soundtrack, another cinematic watershed, by the way.",
      "chars": 1296
@@ -140,6 +153,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Each of the narrative threads that populate Tarantino's episodic film is riddled with dialogue that works as an expansion of what we saw in his first film. While his first film had dialogue confined to a single circle of people made up of white gangsters or bank robbers, in Pulp Fiction we see a mix of different characters in a pair dynamic (or nearly so): the couple of amateur robbers who open and close the film (Tim Roth and Amanda Plummer); the hitman duo Vincent Vega (John Travolta, revived by Tarantino) and Jules Winnfield (Samuel L. Jackson, revealed to the world here) on a mission; crime boss Marsellus Wallace (Ving Rhames) and Butch (Willis), a boxer in the twilight of his career, running into the rapists Zed (Peter Greene) and Maynard (Duane Whitaker); Vincent Vega and Mia Wallace (Uma Thurman) grappling with a heroin overdose and with drug dealer Lance (Eric Stoltz) and his wife Jody (Rosanna Arquette); and Vincent, Jules, Jimmie (Tarantino himself), and \"problem solver\" Mr. Wolf (Harvey Keitel) dealing with an unpleasant situation involving blood and bits of brain splattered all over a car.",
      "text": "Each of the narrative threads that populate Tarantino's episodic film is riddled with dialogue that works as an expansion of what we saw in his first film. While his first film had dialogue confined to a single circle of people made up of white gangsters or bank robbers, in Pulp Fiction we see a mix of different characters in a pair dynamic (or nearly so): the couple of amateur robbers who open and close the film (Tim Roth and Amanda Plummer); the hitman duo Vincent Vega (John Travolta, revived by Tarantino) and Jules Winnfield (Samuel L. Jackson, revealed to the world here) on a mission; crime boss Marsellus Wallace (Ving Rhames) and Butch (Willis), a boxer in the twilight of his career, running into the rapists Zed (Peter Greene) and Maynard (Duane Whitaker); Vincent Vega and Mia Wallace (Uma Thurman) grappling with a heroin overdose and with drug dealer Lance (Eric Stoltz) and his wife Jody (Rosanna Arquette); and Vincent, Jules, Jimmie (Tarantino himself), and \"problem solver\" Mr. Wolf (Harvey Keitel) dealing with an unpleasant situation involving blood and bits of brain splattered all over a car.",
      "chars": 1118
@@ -156,6 +170,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Each line of dialogue is carefully crafted to fit its character and that character's interaction with the other. There is a bit of everything, plus Tarantino's incredible ability to slip in pop culture references at every turn. The lines about the little differences between Europe and the United States, about Marsellus getting \"medieval\" on Zed, about the Bible passage Jules quotes before killing, and many others are, if we like, as empty of content as they are full of rhythm; or as full of social criticism as we choose to imagine, without forgetting that several of them are lifted - some word for word - from earlier works, in yet another demonstration of Tarantino's ability to remix what already exists and make it his own.",
      "text": "Each line of dialogue is carefully crafted to fit its character and that character's interaction with the other. There is a bit of everything, plus Tarantino's incredible ability to slip in pop culture references at every turn. The lines about the little differences between Europe and the United States, about Marsellus getting \"medieval\" on Zed, about the Bible passage Jules quotes before killing, and many others are, if we like, as empty of content as they are full of rhythm; or as full of social criticism as we choose to imagine, without forgetting that several of them are lifted - some word for word - from earlier works, in yet another demonstration of Tarantino's ability to remix what already exists and make it his own.",
      "chars": 733
@@ -163,6 +178,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "Pulp Fiction, with all its extreme violence (there are bits of brain in Vince and Jules's hair!), is a feast for the eyes and ears, as well as being educational. After all, where else could you learn that in Amsterdam they serve beer in glasses at the movie theater, or that a foot massage always has a sexual connotation?",
      "text": "Pulp Fiction, with all its extreme violence (there are bits of brain in Vince and Jules's hair!), is a feast for the eyes and ears, as well as being educational. After all, where else could you learn that in Amsterdam they serve beer in glasses at the movie theater, or that a foot massage always has a sexual connotation?",
      "chars": 322
@@ -179,6 +195,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Lee continued to examine relationships in Jungle Fever (1991) and explored documentary with When the Levees Broke: A Requiem in Four Acts (2006). The Coen brothers found fame beyond cinephile circles with Barton Fink (1991) and Fargo (1996). The Coens have since worked in a variety of commercial contexts, but the singularity of their consistent and sometimes perverse vision qualifies them as models of independence. David Lynch (b. 1946) developed his career in a similar way to the Coen brothers, starting out as the quintessential outsider with the frightening oddity of Eraserhead (1977).",
      "text": "Lee continued to examine relationships in Jungle Fever, from nineteen ninety-one, and explored documentary with When the Levees Broke: A Requiem in Four Acts, from two thousand six. The Coen brothers found fame beyond cinephile circles with Barton Fink, from nineteen ninety-one, and Fargo, from nineteen ninety-six. The Coens have since worked in a variety of commercial contexts, but the singularity of their consistent and sometimes perverse vision qualifies them as models of independence. David Lynch (born in nineteen forty-six) developed his career in a similar way to the Coen brothers, starting out as the quintessential outsider with the frightening oddity of Eraserhead, from nineteen seventy-seven.",
      "chars": 710
@@ -195,6 +212,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Launched in 1982, the Sundance Film Festival (as it has been called since 1991) put its seal on an independent film culture that thrived partly as a reaction to the prevailing conservatism of President Ronald Reagan's administration. Sundance launched the careers of many filmmakers, among them Steven Soderbergh (b. 1963), who won the Sundance Audience Award for sex, lies, and videotape (1989). The film drew attention to the new low-budget cinema by earning an Oscar nomination and the Palme d'Or at the Cannes Film Festival.",
      "text": "Launched in nineteen eighty-two, the Sundance Film Festival (as it has been called since nineteen ninety-one) put its seal on an independent film culture that thrived partly as a reaction to the prevailing conservatism of President Ronald Reagan's administration. Sundance launched the careers of many filmmakers, among them Steven Soderbergh (born in nineteen sixty-three), who won the Sundance Audience Award for sex, lies, and videotape, from nineteen eighty-nine. The film drew attention to the new low-budget cinema by earning an Oscar nomination and the Palme d'Or at the Cannes Film Festival.",
      "chars": 599
@@ -202,6 +220,7 @@
     {
      "id": "07-02",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "Since then, as a director and producer, Soderbergh has experimented with every kind of genre on every imaginable kind of budget, both inside and outside the mainstream. Robert Rodriguez (b. 1968) burst onto the scene at Sundance with the action film El Mariachi (1993), originally conceived for the low-cost Spanish-language home video market. After its phenomenal success, Rodriguez opened his own mini-studio, becoming a kind of Roger Corman (b. 1926) with a Latin accent.",
      "text": "Since then, as a director and producer, Soderbergh has experimented with every kind of genre on every imaginable kind of budget, both inside and outside the mainstream. Robert Rodriguez (born in nineteen sixty-eight) burst onto the scene at Sundance with the action film El Mariachi, from nineteen ninety-three, originally conceived for the low-cost Spanish-language home video market. After its phenomenal success, Rodriguez opened his own mini-studio, becoming a kind of Roger Corman (born in nineteen twenty-six) with a Latin accent.",
      "chars": 536
@@ -218,6 +237,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "Kevin Smith (b. 1970) showed up at Sundance with the raucous Clerks (1994), shot in the convenience store where he worked. An enthusiastic amateur who made it big, Smith remains the quintessential representative of the indie scene.",
      "text": "Kevin Smith (born in nineteen seventy) showed up at Sundance with the raucous Clerks, from nineteen ninety-four, shot in the convenience store where he worked. An enthusiastic amateur who made it big, Smith remains the quintessential representative of the indie scene.",
      "chars": 268
@@ -225,6 +245,7 @@
     {
      "id": "08-02",
      "speaker": "citacao",
+     "source_index": 19,
      "original": "You don't know about real loss, 'cause it only occurs when you've loved something more than you love yourself. I doubt you've ever dared to love anybody that much.",
      "text": "You don't know about real loss, 'cause it only occurs when you've loved something more than you love yourself. I doubt you've ever dared to love anybody that much.",
      "chars": 163
@@ -232,6 +253,7 @@
     {
      "id": "08-03",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "said Sean Maguire (Robin Williams) in Good Will Hunting.",
      "text": "said Sean Maguire (Robin Williams) in Good Will Hunting.",
      "chars": 56
@@ -239,6 +261,7 @@
     {
      "id": "08-04",
      "speaker": "narrador",
+     "source_index": 20,
      "original": "Another important strand was the so-called \"New Queer Cinema.\" An international phenomenon, in the United States its pioneers included Todd Haynes (b. 1961) with Poison (1991) and Gus Van Sant (b. 1952) with Mala Noche (1987). Both directors transcended the label with formally innovative films. Likewise, women found more room to create singular work in the independent sector, among them Allison Anders (b. 1954), with her study of a Hispanic gang in Los Angeles, Mi Vida Loca (1994), and Maggie Greenwald (b. 1955), with the revisionist Western The Ballad of Little Jo (1993).",
      "text": "Another important strand was the so-called \"New Queer Cinema.\" An international phenomenon, in the United States its pioneers included Todd Haynes (born in nineteen sixty-one) with Poison, from nineteen ninety-one, and Gus Van Sant (born in nineteen fifty-two) with Mala Noche, from nineteen eighty-seven. Both directors transcended the label with formally innovative films. Likewise, women found more room to create singular work in the independent sector, among them Allison Anders (born in nineteen fifty-four), with her study of a Hispanic gang in Los Angeles, Mi Vida Loca, from nineteen ninety-four, and Maggie Greenwald (born in nineteen fifty-five), with the revisionist Western The Ballad of Little Jo, from nineteen ninety-three.",
      "chars": 739
@@ -255,6 +278,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 23,
      "original": "Independent cinema provided a haven for experimental filmmakers, such as Todd Solondz (b. 1959), with provocative social satires like Happiness (1998); Larry Clark (b. 1943), with his portraits of urban teenagers such as the gutsy Kids (1995); Paul Thomas Anderson (b. 1970), with elegant ensemble pieces like Boogie Nights (1997); and Wes Anderson (b. 1969), with clever works like The Royal Tenenbaums (2001). Vincent Gallo (b. 1961) made his directorial debut with a film about a wrongly accused ex-convict, Buffalo '66 (1998), which won him a following of admirers for its reinterpretation of the genre, its eccentric soundtrack, and its innovative cinematography.",
      "text": "Independent cinema provided a haven for experimental filmmakers, such as Todd Solondz (born in nineteen fifty-nine), with provocative social satires like Happiness, from nineteen ninety-eight; Larry Clark (born in nineteen forty-three), with his portraits of urban teenagers such as the gutsy Kids, from nineteen ninety-five; Paul Thomas Anderson (born in nineteen seventy), with elegant ensemble pieces like Boogie Nights, from nineteen ninety-seven; and Wes Anderson (born in nineteen sixty-nine), with clever works like The Royal Tenenbaums, from two thousand one. Vincent Gallo (born in nineteen sixty-one) made his directorial debut with a film about a wrongly accused ex-convict, Buffalo 'sixty-six, from nineteen ninety-eight, which won him a following of admirers for its reinterpretation of the genre, its eccentric soundtrack, and its innovative cinematography.",
      "chars": 871
@@ -271,6 +295,7 @@
     {
      "id": "10-01",
      "speaker": "narrador",
+     "source_index": 24,
      "original": "Learn more: The Cynicism of the Coen Brothers.",
      "text": "Learn more: The Cynicism of the Coen Brothers.",
      "chars": 46
@@ -278,6 +303,7 @@
     {
      "id": "10-02",
      "speaker": "narrador",
+     "source_index": 24,
      "original": "One of the specialties of brothers and partners Joel and Ethan Coen is twisting well-established Hollywood genres into delightful, exuberant contemporary forms. The films of this duo, two of the most important filmmakers to emerge in the United States in the 1980s, remain excellent, and the fiendishly clever Fargo ranks among the best. It is a sordid tale that draws gasps of admiration and shock, but also big laughs. On screen are embezzlement, kidnapping, deceptions, misunderstandings, and murder, as well as another constant in the Coens' films: a crime that spins completely out of control.",
      "text": "One of the specialties of brothers and partners Joel and Ethan Coen is twisting well-established Hollywood genres into delightful, exuberant contemporary forms. The films of this duo, two of the most important filmmakers to emerge in the United States in the nineteen eighties, remain excellent, and the fiendishly clever Fargo ranks among the best. It is a sordid tale that draws gasps of admiration and shock, but also big laughs. On screen are embezzlement, kidnapping, deceptions, misunderstandings, and murder, as well as another constant in the Coens' films: a crime that spins completely out of control.",
      "chars": 610
@@ -285,6 +311,7 @@
     {
      "id": "10-03",
      "speaker": "narrador",
+     "source_index": 24,
      "original": "The Coens' clever ideas yield a peculiar, bizarre tragicomedy that manages to be both hugely entertaining and violently disturbing, through impeccably executed twists that contrast the essential effectiveness and innocence of some characters with the depravity of others. The hapless criminals and their victims are not there to elicit empathy, but to be cruelly manipulated for our amusement. The cold, malevolent spirit that has resurfaced in many of their other films led one critic of their work to call them \"artsy annoyances.\" But that does not diminish their flagrant talent for astonishing, bewildering, and entertaining audiences. Despite its stark look, Fargo is one of the brothers' most tender works, full of signature sequences and running gags that stretch across several scenes, but also with the redemptive comfort of plain decency. McDormand and the Coens' screenplay won two Oscars for breaking the old rules in a one-of-a-kind murder case.",
      "text": "The Coens' clever ideas yield a peculiar, bizarre tragicomedy that manages to be both hugely entertaining and violently disturbing, through impeccably executed twists that contrast the essential effectiveness and innocence of some characters with the depravity of others. The hapless criminals and their victims are not there to elicit empathy, but to be cruelly manipulated for our amusement. The cold, malevolent spirit that has resurfaced in many of their other films led one critic of their work to call them \"artsy annoyances.\" But that does not diminish their flagrant talent for astonishing, bewildering, and entertaining audiences. Despite its stark look, Fargo is one of the brothers' most tender works, full of signature sequences and running gags that stretch across several scenes, but also with the redemptive comfort of plain decency. McDormand and the Coens' screenplay won two Oscars for breaking the old rules in a one-of-a-kind murder case.",
      "chars": 958
@@ -301,6 +328,7 @@
     {
      "id": "11-01",
      "speaker": "narrador",
+     "source_index": 25,
      "original": "The comedy Slacker (1990) by Richard Linklater (b. 1960) embodied an indie aesthetic and also defined a subculture; his subsequent career would include both commercial films and experimental works such as the animated Waking Life (2001). Sofia Coppola (b. 1971), daughter of Francis Ford Coppola (b. 1939), showed that cinema ran in her veins with her brilliant feature debut The Virgin Suicides (2000), and won the Oscar for Best Original Screenplay for Lost in Translation (2003). After the experimental costume drama Marie Antoinette (2006), she revisited some of her themes in the spare Somewhere (2010).",
      "text": "The comedy Slacker, from nineteen ninety, by Richard Linklater (born in nineteen sixty) embodied an indie aesthetic and also defined a subculture; his subsequent career would include both commercial films and experimental works such as the animated Waking Life, from two thousand one. Sofia Coppola (born in nineteen seventy-one), daughter of Francis Ford Coppola (born in nineteen thirty-nine), showed that cinema ran in her veins with her brilliant feature debut The Virgin Suicides, from two thousand, and won the Oscar for Best Original Screenplay for Lost in Translation, from two thousand three. After the experimental costume drama Marie Antoinette, from two thousand six, she revisited some of her themes in the spare Somewhere, from twenty ten.",
      "chars": 753
@@ -317,6 +345,7 @@
     {
      "id": "12-01",
      "speaker": "narrador",
+     "source_index": 28,
      "original": "Still, the king of the film geeks remains Quentin Tarantino (b. 1963), whose obsessive cinephile energies (first unleashed in the inventive, economical tale of a jewel heist, Reservoir Dogs (1992)) led him to be hailed as cinema's wunderkind, his films packed with pop culture references. Tarantino's reputation has fluctuated, but he remains the main point of reference for fans of indie filmmaking. With Pulp Fiction (1994), he became one of the leading forces of independent cinema in the 1990s and 2000s, following up with films such as Kill Bill: Vol. 1 (2003), Kill Bill: Vol. 2 (2004) and what is probably his masterpiece alongside Pulp Fiction, Inglourious Basterds (2009).",
      "text": "Still, the king of the film geeks remains Quentin Tarantino (born in nineteen sixty-three), whose obsessive cinephile energies (first unleashed in the inventive, economical tale of a jewel heist, Reservoir Dogs, from nineteen ninety-two) led him to be hailed as cinema's wunderkind, his films packed with pop culture references. Tarantino's reputation has fluctuated, but he remains the main point of reference for fans of indie filmmaking. With Pulp Fiction, from nineteen ninety-four, he became one of the leading forces of independent cinema in the nineteen nineties and two thousands, following up with films such as Kill Bill: Vol. one, from two thousand three, Kill Bill: Vol. two, from two thousand four, and what is probably his masterpiece alongside Pulp Fiction, Inglourious Basterds, from two thousand nine.",
      "chars": 818
@@ -324,6 +353,7 @@
     {
      "id": "12-02",
      "speaker": "narrador",
+     "source_index": 29,
      "original": "Independent films also had an impact on documentaries, mainly thanks to investigative essays by Michael Moore (b. 1954) such as Roger & Me (1989) and Bowling for Columbine (2002). The impact of Moore's work spurred a new wave of extremely diverse documentaries, from the traditional social realism of Hoop Dreams (1994), by Steve James (b. 1954), to the more idiosyncratic storytelling of Capturing the Friedmans (2003), directed by Andrew Jarecki (b. 1963).",
      "text": "Independent films also had an impact on documentaries, mainly thanks to investigative essays by Michael Moore (born in nineteen fifty-four) such as Roger and Me, from nineteen eighty-nine, and Bowling for Columbine, from two thousand two. The impact of Moore's work spurred a new wave of extremely diverse documentaries, from the traditional social realism of Hoop Dreams, from nineteen ninety-four, by Steve James (born in nineteen fifty-four), to the more idiosyncratic storytelling of Capturing the Friedmans, from two thousand three, directed by Andrew Jarecki (born in nineteen sixty-three).",
      "chars": 596
@@ -340,6 +370,7 @@
     {
      "id": "13-01",
      "speaker": "narrador",
+     "source_index": 31,
      "original": "The indie world has been fertile ground for genre fans. The biggest success is The Blair Witch Project (1999), shot on video, a horror mockumentary that heralded a new wave of low-budget chillers. Money, of course, matters. Genre works can suffer from financial constraints.",
      "text": "The indie world has been fertile ground for genre fans. The biggest success is The Blair Witch Project, from nineteen ninety-nine, shot on video, a horror mockumentary that heralded a new wave of low-budget chillers. Money, of course, matters. Genre works can suffer from financial constraints.",
      "chars": 294
@@ -347,6 +378,7 @@
     {
      "id": "13-02",
      "speaker": "citacao",
+     "source_index": 32,
      "original": "My movies are my children. I love them all, but at the end of the day, I'll always have a soft spot for Reservoir Dogs. It was my first, the one that changed my life.",
      "text": "My movies are my children. I love them all, but at the end of the day, I'll always have a soft spot for Reservoir Dogs. It was my first, the one that changed my life.",
      "chars": 166
@@ -354,6 +386,7 @@
     {
      "id": "13-03",
      "speaker": "narrador",
+     "source_index": 32,
      "original": "said Quentin Tarantino.",
      "text": "said Quentin Tarantino.",
      "chars": 23
@@ -361,6 +394,7 @@
     {
      "id": "13-04",
      "speaker": "narrador",
+     "source_index": 33,
      "original": "Dramas thrive even with an almost theatrical scarcity of resources, whereas horror and science fiction are harder to produce when expectations have been fed by years of groundbreaking special effects. Even so, far from the glitter of big budgets, fresh ideas expressed inventively can produce science fiction that works by any measure. Gattaca (1997), Donnie Darko (2001), and A Scanner Darkly (2006) are independent productions reminiscent of the intimate science fiction of Alphaville (1965), by Jean-Luc Godard (b. 1930).",
      "text": "Dramas thrive even with an almost theatrical scarcity of resources, whereas horror and science fiction are harder to produce when expectations have been fed by years of groundbreaking special effects. Even so, far from the glitter of big budgets, fresh ideas expressed inventively can produce science fiction that works by any measure. Gattaca, from nineteen ninety-seven, Donnie Darko, from two thousand one, and A Scanner Darkly, from two thousand six, are independent productions reminiscent of the intimate science fiction of Alphaville, from nineteen sixty-five, by Jean-Luc [[pron: Godard|Go-dar]] (born in nineteen thirty).",
      "chars": 613
@@ -368,6 +402,7 @@
     {
      "id": "13-05",
      "speaker": "narrador",
+     "source_index": 34,
      "original": "A group of independent production companies came to dominate the circuit, among them October Films, Good Machine, and the once-mighty Miramax. However, since many lesser, mainstream-oriented films also benefited from the scene's prestige, over time the \"indie spirit\" became more of a label than a true ethic. Some of the major studios created supposedly autonomous subsidiaries, such as Fox Searchlight Pictures, aiming to capture some of the indie spirit under their own roofs.",
      "text": "A group of independent production companies came to dominate the circuit, among them October Films, Good Machine, and the once-mighty Miramax. However, since many lesser, mainstream-oriented films also benefited from the scene's prestige, over time the \"indie spirit\" became more of a label than a true ethic. Some of the major studios created supposedly autonomous subsidiaries, such as Fox Searchlight Pictures, aiming to capture some of the indie spirit under their own roofs.",
      "chars": 479
@@ -384,6 +419,7 @@
     {
      "id": "14-01",
      "speaker": "narrador",
+     "source_index": 36,
      "original": "Many filmmakers take a \"one for them, one for me\" approach, alternating between a film made at the studio's behest and one seasoned with their own idiosyncrasies. With the Hellboy films (2004-2008) sandwiching Pan's Labyrinth (2006), Mexican director Guillermo del Toro (b. 1964) was able to explore a Spanish-language story closer to his heart while also producing more commercial adventures drawn from comic books.",
      "text": "Many filmmakers take a \"one for them, one for me\" approach, alternating between a film made at the studio's behest and one seasoned with their own idiosyncrasies. With the Hellboy films (two thousand four to two thousand eight) sandwiching Pan's Labyrinth, from two thousand six, Mexican director Guillermo del Toro (born in nineteen sixty-four) was able to explore a Spanish-language story closer to his heart while also producing more commercial adventures drawn from comic books.",
      "chars": 482
@@ -391,6 +427,7 @@
     {
      "id": "14-02",
      "speaker": "narrador",
+     "source_index": 37,
      "original": "Rodriguez alternated between Spy Kids (2001) and the more experimental Sin City (2005) and Planet Terror (2007). Likewise, Soderbergh moved between unabashedly glossy productions (the Ocean's Eleven trilogy, 2001-2007) and risky ventures bordering on the avant-garde, such as The Girlfriend Experience (2009).",
      "text": "Rodriguez alternated between Spy Kids, from two thousand one, and the more experimental Sin City, from two thousand five, and Planet Terror, from two thousand seven. Likewise, Soderbergh moved between unabashedly glossy productions (the Ocean's Eleven trilogy, two thousand one to two thousand seven) and risky ventures bordering on the avant-garde, such as The Girlfriend Experience, from two thousand nine.",
      "chars": 408
@@ -398,6 +435,7 @@
     {
      "id": "14-03",
      "speaker": "narrador",
+     "source_index": 39,
      "original": "Gus van Sant also flirted with more conventional subjects - Good Will Hunting (1997) - before returning to more abstract material in Gerry (2002) and Elephant (2003). It is also not uncommon for independent directors to take on the lucrative job of script doctoring on Hollywood projects, refreshing mainstream productions with more personal authorial touches: Tarantino worked on Crimson Tide (1995) and Sayles on Apollo 13 (1995).",
      "text": "Gus van Sant also flirted with more conventional subjects - Good Will Hunting, from nineteen ninety-seven, - before returning to more abstract material in Gerry, from two thousand two, and Elephant, from two thousand three. It is also not uncommon for independent directors to take on the lucrative job of script doctoring on Hollywood projects, refreshing mainstream productions with more personal authorial touches: Tarantino worked on Crimson Tide, from nineteen ninety-five, and Sayles on Apollo thirteen, from nineteen ninety-five.",
      "chars": 536
@@ -414,6 +452,7 @@
     {
      "id": "15-01",
      "speaker": "narrador",
+     "source_index": 40,
      "original": "Learn more: Little Miss Sunshine: Beyond Appearances.",
      "text": "Learn more: Little Miss Sunshine: Beyond Appearances.",
      "chars": 53
@@ -421,6 +460,7 @@
     {
      "id": "15-02",
      "speaker": "narrador",
+     "source_index": 40,
      "original": "What sets winners apart from losers? Victories from defeats? What would truly allow a person to avoid failure and be driven to win? And what is the point of this relentless pursuit of winning, in its most normative sense? Just to win? To win for whom? For others? For the world? For oneself? That is how the first feature film by Jonathan Dayton and Valerie Faris premiered at the 2006 Sundance Film Festival, opening on Richard Hoover (Greg Kinnear) giving a talk about his self-help book introducing the nine steps needed to become a winner. Hoover's world is thus divided into two opposing positions: either you win, or you fail. The weight of the family, however, is carried by Sheryl (Toni Collette), wife, mother and the household's main breadwinner. Richard, meanwhile, although he applies the ideas in his book to raising his children, is frustrated at being unable to sell it to any publisher. In the figure of Sheryl's brother, Frank Ginsberg (Steve Carell), a scholar of the writer Proust, lies the tragic theme of the man who failed to kill himself. Forced to stay with his sister's family, Frank is reintroduced to his nephew Dwayne (Paul Dano), who, driven by his desire to become a test pilot, has taken a vow of silence, also as a result of his interest in the writings of Friedrich Nietzsche. But there are still more members of this captivating, relatable family to meet.",
      "text": "What sets winners apart from losers? Victories from defeats? What would truly allow a person to avoid failure and be driven to win? And what is the point of this relentless pursuit of winning, in its most normative sense? Just to win? To win for whom? For others? For the world? For oneself? That is how the first feature film by Jonathan Dayton and Valerie Faris premiered at the two thousand six Sundance Film Festival, opening on Richard Hoover (Greg Kinnear) giving a talk about his self-help book introducing the nine steps needed to become a winner. Hoover's world is thus divided into two opposing positions: either you win, or you fail. The weight of the family, however, is carried by Sheryl (Toni Collette), wife, mother and the household's main breadwinner. Richard, meanwhile, although he applies the ideas in his book to raising his children, is frustrated at being unable to sell it to any publisher. In the figure of Sheryl's brother, Frank Ginsberg (Steve Carell), a scholar of the writer Proust, lies the tragic theme of the man who failed to kill himself. Forced to stay with his sister's family, Frank is reintroduced to his nephew Dwayne (Paul Dano), who, driven by his desire to become a test pilot, has taken a vow of silence, also as a result of his interest in the writings of Friedrich Nietzsche. But there are still more members of this captivating, relatable family to meet.",
      "chars": 1401
@@ -437,6 +477,7 @@
     {
      "id": "16-01",
      "speaker": "narrador",
+     "source_index": 40,
      "original": "Besides those already mentioned, the heart of the story also includes Edwin Hoover (Alan Arkin), Richard's father. Kicked out of a retirement home over problems with heroin, this old man ends up developing his more human side in the bond he nurtures with Olive (Abigail Breslin), the couple's daughter, who sees in her grandfather the coach responsible for keeping alive her aspiring dreams of becoming Little Miss Sunshine. When the family learns that Olive has unexpectedly qualified to compete for the title, they all set off on a trip to Redondo Beach, crammed into a charming – and rusty – yellow Volkswagen bus. Michael Arndt's screenplay then throws the viewer into a far-from-conventional journey. The road trip formula is unquestionably successful when it carries a deep study of the idea of family, both as a whole and in its individuality. On the other hand, there are some questionable aspects to Arndt's work. The most tragic circumstances, which take place both in a motel and in a hospital, open the door to a reckless, almost insensitive, comedic treatment.",
      "text": "Besides those already mentioned, the heart of the story also includes Edwin Hoover (Alan Arkin), Richard's father. Kicked out of a retirement home over problems with heroin, this old man ends up developing his more human side in the bond he nurtures with Olive (Abigail Breslin), the couple's daughter, who sees in her grandfather the coach responsible for keeping alive her aspiring dreams of becoming Little Miss Sunshine. When the family learns that Olive has unexpectedly qualified to compete for the title, they all set off on a trip to Redondo Beach, crammed into a charming, and rusty, yellow Volkswagen bus. Michael Arndt's screenplay then throws the viewer into a far-from-conventional journey. The road trip formula is unquestionably successful when it carries a deep study of the idea of family, both as a whole and in its individuality. On the other hand, there are some questionable aspects to Arndt's work. The most tragic circumstances, which take place both in a motel and in a hospital, open the door to a reckless, almost insensitive, comedic treatment.",
      "chars": 1071
@@ -444,6 +485,7 @@
     {
      "id": "16-02",
      "speaker": "narrador",
+     "source_index": 40,
      "original": "Still, even with so many characters and subplots, the center of the story truly mirrors the journey of Olive, the Hoovers' naive and adorable daughter; the absolute soul of a gracefully revitalizing film. Young as she is, Abigail Breslin (b. 1996) wins over the audience playing a little girl who, though prone to insecurity, manages to overcome her fears, which are as powerful to her mind as adult fears are to the minds of grown-ups. The difference is that, while most adults prolong their own ordeals, Olive finds the key to getting past her fears and, on top of that, to getting past the worst nightmares of her loved ones. Even if it takes a few questionable routes, Little Miss Sunshine, a top-tier feel-good movie, is deeply surprising, bringing a spectacular cast, a committed screenplay, an emotional score and proficient direction. In the girl's mission to become Little Miss Sunshine, the family members redeem themselves, not by solving their problems, but by finding peace in the people with whom they will walk through the sea of challenges life brings. Victory, after all, lies not in the absence of defeat, but in the resolve to stand firm in the face of obstacles, which, even when they knock us down, need not necessarily crush hope, which, through thick and thin, will always remain.",
      "text": "Still, even with so many characters and subplots, the center of the story truly mirrors the journey of Olive, the Hoovers' naive and adorable daughter; the absolute soul of a gracefully revitalizing film. Young as she is, Abigail Breslin (born in nineteen ninety-six) wins over the audience playing a little girl who, though prone to insecurity, manages to overcome her fears, which are as powerful to her mind as adult fears are to the minds of grown-ups. The difference is that, while most adults prolong their own ordeals, Olive finds the key to getting past her fears and, on top of that, to getting past the worst nightmares of her loved ones. Even if it takes a few questionable routes, Little Miss Sunshine, a top-tier feel-good movie, is deeply surprising, bringing a spectacular cast, a committed screenplay, an emotional score and proficient direction. In the girl's mission to become Little Miss Sunshine, the family members redeem themselves, not by solving their problems, but by finding peace in the people with whom they will walk through the sea of challenges life brings. Victory, after all, lies not in the absence of defeat, but in the resolve to stand firm in the face of obstacles, which, even when they knock us down, need not necessarily crush hope, which, through thick and thin, will always remain.",
      "chars": 1323
@@ -460,6 +502,7 @@
     {
      "id": "17-01",
      "speaker": "narrador",
+     "source_index": 41,
      "original": "Throughout his career, the director-actor-screenwriter Orson Welles (1915-1985) clashed with the studios in a struggle for control, seeking a way to complete his vision. The situation is no different in today's Hollywood, and successful directors such as the Coen brothers insist on having the final say over the editing of their work, ensuring that their films stand apart from Hollywood conventions. The challenge for American independent filmmakers is to offer audiences genuine alternatives to the themes and practices of standard Hollywood production.",
      "text": "Throughout his career, the director-actor-screenwriter Orson Welles (nineteen fifteen to nineteen eighty-five) clashed with the studios in a struggle for control, seeking a way to complete his vision. The situation is no different in today's Hollywood, and successful directors such as the Coen brothers insist on having the final say over the editing of their work, ensuring that their films stand apart from Hollywood conventions. The challenge for American independent filmmakers is to offer audiences genuine alternatives to the themes and practices of standard Hollywood production.",
      "chars": 587
@@ -467,6 +510,7 @@
     {
      "id": "17-02",
      "speaker": "narrador",
+     "source_index": 42,
      "original": "Indeed, independent films can be box-office hits: Little Miss Sunshine (2006) and Paranormal Activity (2007), a horror film with a microscopic budget, are recent examples. Another is Catfish (2010), which became famous on the back of a controversy over its supposedly documentary nature.",
      "text": "Indeed, independent films can be box-office hits: Little Miss Sunshine, from two thousand six, and Paranormal Activity, from two thousand seven, a horror film with a microscopic budget, are recent examples. Another is Catfish, from twenty ten, which became famous on the back of a controversy over its supposedly documentary nature.",
      "chars": 332
@@ -474,6 +518,7 @@
     {
      "id": "17-03",
      "speaker": "narrador",
+     "source_index": 44,
      "original": "Since the turn of the 21st century, the health of American independent cinema has drained away noticeably, but as equipment costs fall, the internet market grows and Hollywood's creativity stagnates, a resurgence of independent production should not be ruled out.",
      "text": "Since the turn of the twenty-first century, the health of American independent cinema has drained away noticeably, but as equipment costs fall, the internet market grows and Hollywood's creativity stagnates, a resurgence of independent production should not be ruled out.",
      "chars": 271
@@ -490,6 +535,7 @@
     {
      "id": "18-01",
      "speaker": "narrador",
+     "source_index": 45,
      "original": "Worth watching: the films from this chapter are Pulp Fiction, Sex, Lies, and Videotape, Fargo, Good Will Hunting, The Blair Witch Project, The Royal Tenenbaums, Lost in Translation, El Mariachi, Clerks, Dead Man, Donnie Darko, Happiness, Being John Malkovich, Reservoir Dogs, Sin City, Little Miss Sunshine and Slacker.",
      "text": "Worth watching: the films from this chapter are Pulp Fiction, Sex, Lies, and Videotape, Fargo, Good Will Hunting, The Blair Witch Project, The Royal Tenenbaums, Lost in Translation, El Mariachi, Clerks, Dead Man, Donnie Darko, Happiness, Being John Malkovich, Reservoir Dogs, Sin City, Little Miss Sunshine and Slacker.",
      "chars": 319

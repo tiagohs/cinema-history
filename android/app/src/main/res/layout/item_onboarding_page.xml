@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uma página do onboarding: imagem em tela cheia + véu + conteúdo na parte de baixo. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_black_1000"
+    android:clipChildren="true">
+
+    <ImageView
+        android:id="@+id/pageImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/img_voyage" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_onboarding_scrim" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/pageScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/pageContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="96dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="104dp">
+
+            <TextView
+                android:id="@+id/pageKicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.CinemaHistory.Onboarding.Label"
+                tools:text="Bem-vindo" />
+
+            <TextView
+                android:id="@+id/pageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/oswald_bold"
+                android:includeFontPadding="false"
+                android:lineSpacingMultiplier="1.02"
+                android:textColor="@color/md_white_1000"
+                android:textSize="38sp"
+                tools:text="130 anos de cinema na palma da mão" />
+
+            <TextView
+                android:id="@+id/pageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingMultiplier="1.15"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColor="@color/home_text_on_image_secondary"
+                tools:text="Da primeira sessão dos irmãos Lumière ao streaming." />
+
+            <FrameLayout
+                android:id="@+id/pageExtra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

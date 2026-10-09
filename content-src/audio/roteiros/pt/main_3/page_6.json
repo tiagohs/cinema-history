@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Parte 03: De 1940 a 1959. Capítulo 6: O Faroeste em Hollywood.",
      "text": "Parte zero três: De mil novecentos e quarenta a mil novecentos e cinquenta e nove. Capítulo seis: O Faroeste em Hollywood.",
      "chars": 122
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "O gênero mais americano dos gêneros ganhou ainda mais popularidade nos anos 50, com Hollywood realizando mais de 800 filmes.",
      "text": "O gênero mais americano dos gêneros ganhou ainda mais popularidade nos anos cinquenta, com Hollywood realizando mais de oitocentos filmes.",
      "chars": 138
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "O faroeste foi um dos principais produtos de Hollywood desde o início do cinema. Ele é, sem dúvida, o mais americano dos gêneros, mas nem sempre o mais aclamado. Talvez porque pudessem ser produzidos rapidamente e com baixos orçamentos - a paisagem já estava pronta e cowboys de verdade estavam dispostos a trabalhar como figurantes - os filmes de faroeste costumavam ser desprezados como \"passatempo\".",
      "text": "O faroeste foi um dos principais produtos de Hollywood desde o início do cinema. Ele é, sem dúvida, o mais americano dos gêneros, mas nem sempre o mais aclamado. Talvez porque pudessem ser produzidos rapidamente e com baixos orçamentos - a paisagem já estava pronta e cowboys de verdade estavam dispostos a trabalhar como figurantes - os filmes de faroeste costumavam ser desprezados como \"passatempo\".",
      "chars": 402
@@ -52,6 +55,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "Na época do cinema mudo, pioneiros como Allan Dwan (1885-1981) e Raoul Walsh (1887-1980) geralmente produziam um filme por semana, do roteiro à edição final. Em 1909, o estúdio Bison chegou a California; em 1910, Broncho Billy Anderson se tornou o primeiro astro dos faroestes. De acordo com os cálculos do historiador do cinema Ed Buscombe, 213 dos 1001 filmes americanos feitos naquele ano eram faroestes. Com a chegada do som, a popularidade do gênero de algum modo caiu, apesar de a produção dos faroestes ter diminuído pouco até os anos 1960. Hollywood fez mais de 800 filmes do género na década de 1950.",
      "text": "Na época do cinema mudo, pioneiros como Allan Dwan (mil oitocentos e oitenta e cinco a mil novecentos e oitenta e um) e Raoul Walsh (mil oitocentos e oitenta e sete a mil novecentos e oitenta) geralmente produziam um filme por semana, do roteiro à edição final. Em mil novecentos e nove, o estúdio Bison chegou a California; em mil novecentos e dez, Broncho Billy Anderson se tornou o primeiro astro dos faroestes. De acordo com os cálculos do historiador do cinema Ed Buscombe, duzentos e treze dos mil e um filmes americanos feitos naquele ano eram faroestes. Com a chegada do som, a popularidade do gênero de algum modo caiu, apesar de a produção dos faroestes ter diminuído pouco até os anos mil novecentos e sessenta. Hollywood fez mais de oitocentos filmes do género na década de mil novecentos e cinquenta.",
      "chars": 813
@@ -59,6 +63,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Stagecoach (BR: No tempo das diligências (1939), de John Ford (1894-1973), marca o início de um período no qual os faroestes foram dirigidos por cineastas importantes, como o próprio Ford (retornando ao gênero depois de mais de 10 anos de afastamento). Michael Curtiz (1886-1962), Fritz Lang (1890-1976) e Howard Hawks (1896-1977), que criaram clássicos famosos como Rio vermelho (1948) e Onde Começa o Inferno (1959).",
      "text": "Stagecoach (BR: No tempo das diligências, de mil novecentos e trinta e nove, de John Ford (mil oitocentos e noventa e quatro a mil novecentos e setenta e três), marca o início de um período no qual os faroestes foram dirigidos por cineastas importantes, como o próprio Ford (retornando ao gênero depois de mais de dez anos de afastamento). Michael Curtiz (mil oitocentos e oitenta e seis a mil novecentos e sessenta e dois), Fritz Lang (mil oitocentos e noventa a mil novecentos e setenta e seis) e Howard Hawks (mil oitocentos e noventa e seis a mil novecentos e setenta e sete), que criaram clássicos famosos como Rio vermelho, de mil novecentos e quarenta e oito, e Onde Começa o Inferno, de mil novecentos e cinquenta e nove.",
      "chars": 729
@@ -66,6 +71,7 @@
     {
      "id": "02-03",
      "speaker": "citacao",
+     "source_index": 4,
      "original": "Rastro de ódio é um filme a que você assiste uma vez, duas vezes, e encontra mais sentido, se identifica com ele em outros níveis... É tão rico! É tão suntuoso!",
      "text": "Rastro de ódio é um filme a que você assiste uma vez, duas vezes, e encontra mais sentido, se identifica com ele em outros níveis... É tão rico! É tão suntuoso!",
      "chars": 160
@@ -73,6 +79,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "disse Martin Scorsese sobre Rastros de ódio, 1956.",
      "text": "disse Martin [[pron: Scorsese|Scorsézi]] sobre Rastros de ódio, mil novecentos e cinquenta e seis.",
      "chars": 79
@@ -80,6 +87,7 @@
     {
      "id": "02-05",
      "speaker": "narrador",
+     "source_index": 5,
      "original": "Após a Segunda Guerra Mundial, o interesse cada vez maior de Hollywood se ateve, a princípio, a diretores como Ford, e, depois, ao próprio gênero do faroeste acabou sendo visto como parte da mitologia americana, um espaço imaginário batalha entre os fora da lei e os defensores da ordem, entre a selvageria e a civilização.",
      "text": "Após a Segunda Guerra Mundial, o interesse cada vez maior de Hollywood se ateve, a princípio, a diretores como Ford, e, depois, ao próprio gênero do faroeste acabou sendo visto como parte da mitologia americana, um espaço imaginário batalha entre os fora da lei e os defensores da ordem, entre a selvageria e a civilização.",
      "chars": 323
@@ -96,6 +104,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "O faroeste é o gênero hollywoodiano mais fácil de ser reconhecido. A gangue de James em O Assassinato de Jesse James pelo Covarde Robert Ford (2007) e os bandidos de O grande roubo do trem (1903) usam chapéus diferentes, mas suas aparências e atitudes os identificam claramente como pertencentes ao mesmo gênero.",
      "text": "O faroeste é o gênero hollywoodiano mais fácil de ser reconhecido. A gangue de James em O Assassinato de Jesse James pelo Covarde Robert Ford, de dois mil e sete, e os bandidos de O grande roubo do trem, de mil novecentos e três, usam chapéus diferentes, mas suas aparências e atitudes os identificam claramente como pertencentes ao mesmo gênero.",
      "chars": 346
@@ -103,6 +112,7 @@
     {
      "id": "03-02",
      "speaker": "narrador",
+     "source_index": 8,
      "original": "Faroestes são quase sempre associados com um lugar e um período histórico específicos a oeste do rio Mississippi, sul do paralelo 49, norte do Rio Grande e em algum momento entre 1865 (fim da Guerra Civil Americana) e 1890 (quando o censo demográfico afirmou que A Fronteira já não existe).",
      "text": "Faroestes são quase sempre associados com um lugar e um período histórico específicos a oeste do rio Mississippi, sul do paralelo quarenta e nove, norte do Rio Grande e em algum momento entre mil oitocentos e sessenta e cinco (fim da Guerra Civil Americana) e mil oitocentos e noventa (quando o censo demográfico afirmou que A Fronteira já não existe).",
      "chars": 352
@@ -110,6 +120,7 @@
     {
      "id": "03-03",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "Tudo isso é uma simplificação. Há faroestes contemporâneos (Sua Última Façanha (1962)), faroestes canadenses (Região do Ódio (1954)), faroestes mexicanos (Vera Cruz (1954)) e faroestes da Costa Leste (O rufar dos tambores (1939)).",
      "text": "Tudo isso é uma simplificação. Há faroestes contemporâneos (Sua Última Façanha, de mil novecentos e sessenta e dois), faroestes canadenses (Região do Ódio, de mil novecentos e cinquenta e quatro), faroestes mexicanos (Vera Cruz, de mil novecentos e cinquenta e quatro) e faroestes da Costa Leste (O rufar dos tambores, de mil novecentos e trinta e nove).",
      "chars": 354
@@ -126,6 +137,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "Para alguns, o faroeste é uma narrativa que pode se passar no Texas, no Vietnã ou no espaço sideral: Outland - Comando titânio (1981) transfere Matar ou morrer (1952) para uma das luas de Júpiter. Ainda assim, o conjunto de eventos históricos, personagens e lugares mantêm seu núcleo.",
      "text": "Para alguns, o faroeste é uma narrativa que pode se passar no Texas, no Vietnã ou no espaço sideral: Outland - Comando titânio, de mil novecentos e oitenta e um, transfere Matar ou morrer, de mil novecentos e cinquenta e dois, para uma das luas de Júpiter. Ainda assim, o conjunto de eventos históricos, personagens e lugares mantêm seu núcleo.",
      "chars": 344
@@ -133,6 +145,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 12,
      "original": "O faroeste ao mesmo tempo celebra e reescreve a história dos Estados Unidos. John Ford, o mais conhecido diretor de faroestes, dizia que seu retrato do tiroteio de O.K. Corral, em Tombstone, no Arizona, em Paixão dos fortes (1946), era inspirado diretamente no relato feito pelo próprio Wyatt Earp. Essa história - como muitas das histórias de outros faroestes que se afirmam baseados em fatos reais - e discutível; diz-se que os faroestes não falam tanto sobre o Oeste, e sim sobre outros faroestes.",
      "text": "O faroeste ao mesmo tempo celebra e reescreve a história dos Estados Unidos. John Ford, o mais conhecido diretor de faroestes, dizia que seu retrato do tiroteio de O.K. Corral, em Tombstone, no Arizona, em Paixão dos fortes, de mil novecentos e quarenta e seis, era inspirado diretamente no relato feito pelo próprio Wyatt Earp. Essa história - como muitas das histórias de outros faroestes que se afirmam baseados em fatos reais - e discutível; diz-se que os faroestes não falam tanto sobre o Oeste, e sim sobre outros faroestes.",
      "chars": 530
@@ -149,6 +162,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Saiba mais: John Ford e o Racismo.",
      "text": "Saiba mais: John Ford e o Racismo.",
      "chars": 34
@@ -156,6 +170,7 @@
     {
      "id": "05-02",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Ford se tomou solidário aos nativos americanos e aos afro-americanos no fim da carreira, mas sempre teve que se defender de acusações de racismo. Ethan não é o único racista em Rastros de ódio (1956). Laurie, desesperada para que Martin desista da busca por Debbie, é igualmente virulenta: \"Trazer o que para casa? O que sobrou de uma menina que os comanches venderam seguidas vezes a quem pagasse mais, ela própria agora uma selvagem?\" Por ter sangue cherokee, Martin é aparentemente mais tolerante quanto à miscigenação inter-racial. Mas quando sua esposa indígena (Beulah Archuletta) se deita ao lado dele, ele a afasta. A tristeza que Martin expressa quando ela é encontrada morta pela cavalaria não abranda a maldade que o personagem - e Ford - lhe impõe.",
      "text": "Ford se tomou solidário aos nativos americanos e aos afro-americanos no fim da carreira, mas sempre teve que se defender de acusações de racismo. Ethan não é o único racista em Rastros de ódio, de mil novecentos e cinquenta e seis. Laurie, desesperada para que Martin desista da busca por Debbie, é igualmente virulenta: \"Trazer o que para casa? O que sobrou de uma menina que os comanches venderam seguidas vezes a quem pagasse mais, ela própria agora uma selvagem?\" Por ter sangue cherokee, Martin é aparentemente mais tolerante quanto à miscigenação inter-racial. Mas quando sua esposa indígena (Beulah Archuletta) se deita ao lado dele, ele a afasta. A tristeza que Martin expressa quando ela é encontrada morta pela cavalaria não abranda a maldade que o personagem - e Ford - lhe impõe.",
      "chars": 791
@@ -172,6 +187,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Levando em consideração o peso que o mito da Última Fronteira tem sobre a psique americana, é de esperar esse tipo de revisionismo. As vezes esse processo se transforma por si só em tema de faroestes, seja na forma de filmes iconoclastas como Oeste selvagem (1976), de Allen H. Miner (1917-2004), ou O homem que matou facínora (1962), do próprio Ford, famoso pela fala \"Este é o Oeste, senhor. Quando a lenda se torna verdade, escreva-a\".",
      "text": "Levando em consideração o peso que o mito da Última Fronteira tem sobre a psique americana, é de esperar esse tipo de revisionismo. As vezes esse processo se transforma por si só em tema de faroestes, seja na forma de filmes iconoclastas como Oeste selvagem, de mil novecentos e setenta e seis, de Allen H. Miner (mil novecentos e dezessete a dois mil e quatro), ou O homem que matou facínora, de mil novecentos e sessenta e dois, do próprio Ford, famoso pela fala \"Este é o Oeste, senhor. Quando a lenda se torna verdade, escreva-a\".",
      "chars": 534
@@ -179,6 +195,7 @@
     {
      "id": "06-02",
      "speaker": "narrador",
+     "source_index": 16,
      "original": "Como Altman, Ford sabia que o faroeste era uma lenda fabricada, mas contrário dele. Ford via isso em termos positivos: somente em Rastros de Ódio (1956) ele explorou adequadamente o lado negro do herói dos filmes de faroeste. No fim da década de 1930 e início da de 1940, o tom dominante dos faroestes era o de afirmação misturado com certa nostalgia.",
      "text": "Como Altman, Ford sabia que o faroeste era uma lenda fabricada, mas contrário dele. Ford via isso em termos positivos: somente em Rastros de Ódio, de mil novecentos e cinquenta e seis, ele explorou adequadamente o lado negro do herói dos filmes de faroeste. No fim da década de mil novecentos e trinta e início da de mil novecentos e quarenta, o tom dominante dos faroestes era o de afirmação misturado com certa nostalgia.",
      "chars": 423
@@ -186,6 +203,7 @@
     {
      "id": "06-03",
      "speaker": "citacao",
+     "source_index": 17,
      "original": "Os brutos também amam é de uma excelência... Se eu fosse fazer uma lista dos melhores filmes americanos, ele estaria nela.",
      "text": "Os brutos também amam é de uma excelência... Se eu fosse fazer uma lista dos melhores filmes americanos, ele estaria nela.",
      "chars": 122
@@ -193,6 +211,7 @@
     {
      "id": "06-04",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "disse Woody Allen sobre os brutos também amam.",
      "text": "disse Woody Allen sobre os brutos também amam.",
      "chars": 46
@@ -200,6 +219,7 @@
     {
      "id": "06-05",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "Jesse James (1939) - e sua sequência, A volta de Frank James (1940), de Fritz Lang - mostra os famosos irmãos foras da lei como defensores dos valores rurais contra a usurpação dos bancos do norte do país. Em O intrépido general Custer (1941), Raoul Walsh cria uma imagem romantizada do general Custer, e Buffalo Bill (1944), de William Wellman (1896-1975), faz a mesma coisa.",
      "text": "Jesse James, de mil novecentos e trinta e nove, - e sua sequência, A volta de Frank James, de mil novecentos e quarenta, de Fritz Lang - mostra os famosos irmãos foras da lei como defensores dos valores rurais contra a usurpação dos bancos do norte do país. Em O intrépido general Custer, de mil novecentos e quarenta e um, Raoul Walsh cria uma imagem romantizada do general Custer, e Buffalo Bill, de mil novecentos e quarenta e quatro, de William Wellman (mil oitocentos e noventa e seis a mil novecentos e setenta e cinco), faz a mesma coisa.",
      "chars": 545
@@ -207,6 +227,7 @@
     {
      "id": "06-06",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "Paixão dos fortes, de Ford, mostra Wyatt Earp (Henry Fonda) chegando a Tombstone e deixando a cidade onde os ladrões de gado e os índios bêbados foram substituídos por uma igreja e uma escola. Os Brutos Também Amam (1953) propicia uma versão mais autocritica da chegada do pistoleiro com um passado negro que liberta a cidade da vilania antes de voltar à vida selvagem.",
      "text": "Paixão dos fortes, de Ford, mostra Wyatt Earp (Henry Fonda) chegando a Tombstone e deixando a cidade onde os ladrões de gado e os índios bêbados foram substituídos por uma igreja e uma escola. Os Brutos Também Amam, de mil novecentos e cinquenta e três, propicia uma versão mais autocritica da chegada do pistoleiro com um passado negro que liberta a cidade da vilania antes de voltar à vida selvagem.",
      "chars": 401
@@ -223,6 +244,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "Faroestes menos afirmativos marcaram a década de 1940 e principalmente a de 1950. Escrito pelo roteirista Carl Foreman, que logo entraria para a lista negra do FBI. Entre outros escritores incluídos na lista que trabalharam em faroestes estão Albert Maltz e Ben Maddow, que escreveram A flecha quebrada (1950) e Johnny Guitar (1954), respectivamente. Broken Arrow É um exemplo precoce de um retrato mais solidário para com os nativos americanos, como também se vê em Apache: O Último Bravo (1954).",
      "text": "Faroestes menos afirmativos marcaram a década de mil novecentos e quarenta e principalmente a de mil novecentos e cinquenta. Escrito pelo roteirista Carl Foreman, que logo entraria para a lista negra do éfe bê i. Entre outros escritores incluídos na lista que trabalharam em faroestes estão Albert Maltz e Ben Maddow, que escreveram A flecha quebrada, de mil novecentos e cinquenta, e Johnny Guitar, de mil novecentos e cinquenta e quatro, respectivamente. Broken Arrow É um exemplo precoce de um retrato mais solidário para com os nativos americanos, como também se vê em Apache: O Último Bravo, de mil novecentos e cinquenta e quatro.",
      "chars": 636
@@ -230,6 +252,7 @@
     {
      "id": "07-02",
      "speaker": "narrador",
+     "source_index": 22,
      "original": "Johnny Guitar (um dos filmes preferidos dos diretores franceses da nouvelle vague), é estrelado por Sterling Hayden e Joan Crawford. Hayden denunciou pessoas para o Comitê de Atividades. Antiamericanas em 1951; um personagem obrigado a fazer o mesmo no filme.",
      "text": "Johnny Guitar (um dos filmes preferidos dos diretores franceses da nouvelle vague), é estrelado por Sterling Hayden e Joan Crawford. Hayden denunciou pessoas para o Comitê de Atividades. Antiamericanas em mil novecentos e cinquenta e um; um personagem obrigado a fazer o mesmo no filme.",
      "chars": 286
@@ -237,6 +260,7 @@
     {
      "id": "07-03",
      "speaker": "narrador",
+     "source_index": 23,
      "original": "O \"faroeste psicológico\" se tornou outra marca registrada do pós-guerra. Sua Única Saída (1947), de Raoul Walsh, traz um Robert Mitchum assombrado pelo passado numa paisagem escura ao estilo noir. Paul Newman é um desequilibrado Billy the Kid em Um de Nós Morrerá (1958), e em O matador (1950) Gregory Peck interpreta um homem perseguido pela própria reputação de o \"atirador mais rápido\", sabendo que algum jovem ambicioso surgirá para tirar-lhe o posto.",
      "text": "O \"faroeste psicológico\" se tornou outra marca registrada do pós-guerra. Sua Única Saída, de mil novecentos e quarenta e sete, de Raoul Walsh, traz um Robert Mitchum assombrado pelo passado numa paisagem escura ao estilo noir. Paul Newman é um desequilibrado Billy the Kid em Um de Nós Morrerá, de mil novecentos e cinquenta e oito, e em O matador, de mil novecentos e cinquenta, Gregory Peck interpreta um homem perseguido pela própria reputação de o \"atirador mais rápido\", sabendo que algum jovem ambicioso surgirá para tirar-lhe o posto.",
      "chars": 541
@@ -253,6 +277,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 25,
      "original": "O faroeste de Hollywood sobreviveu à década de 1960 e além, impulsionado por uma nova geração de diretores que se transferiram da televisão para a indústria cinematográfica, entre eles Robert Altman, Arthur Penn (1922-2010) e Sam Peckinpah (1925-1984). Peckinpah foi particularmente importante por revisitar apaixonadamente algumas tradições do faroeste como em Pistoleiros do entardecer (1962) e com mais violência em Meu ódio será sua herança (1969) e Pat Garrett & Billy the Kid (1973).",
      "text": "O faroeste de Hollywood sobreviveu à década de mil novecentos e sessenta e além, impulsionado por uma nova geração de diretores que se transferiram da televisão para a indústria cinematográfica, entre eles Robert Altman, Arthur Penn (mil novecentos e vinte e dois a dois mil e dez) e Sam Peckinpah (mil novecentos e vinte e cinco a mil novecentos e oitenta e quatro). Peckinpah foi particularmente importante por revisitar apaixonadamente algumas tradições do faroeste como em Pistoleiros do entardecer, de mil novecentos e sessenta e dois, e com mais violência em Meu ódio será sua herança, de mil novecentos e sessenta e nove, e Pat Garrett e Billy the Kid, de mil novecentos e setenta e três.",
      "chars": 695
@@ -260,6 +285,7 @@
     {
      "id": "08-02",
      "speaker": "narrador",
+     "source_index": 26,
      "original": "O gênero sobreviveu até mesmo ao fracasso de bilheteria de O portal do paraíso (1980). Hollywood fez uma pausa, mas prosseguiu produzindo faroestes adolescentes, faroestes com uma temática homossexual, e, em 2007, refilando Os indomáveis (1957), o tipo de combinação eficiente, baseada em personagens foras da lei e na paisagem que se tornou característica dos filmes da década de 1950.",
      "text": "O gênero sobreviveu até mesmo ao fracasso de bilheteria de O portal do paraíso, de mil novecentos e oitenta. Hollywood fez uma pausa, mas prosseguiu produzindo faroestes adolescentes, faroestes com uma temática homossexual, e, em dois mil e sete, refilando Os indomáveis, de mil novecentos e cinquenta e sete, o tipo de combinação eficiente, baseada em personagens foras da lei e na paisagem que se tornou característica dos filmes da década de mil novecentos e cinquenta.",
      "chars": 472
@@ -276,6 +302,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 27,
      "original": "Vale a conferida: os filmes deste capítulo são The Searchers, High Noon, Red River, Lonely Are the Brave, The Left Handed Gun, Rio Bravo e Johnny Guitar.",
      "text": "Vale a conferida: os filmes deste capítulo são The Searchers, High Noon, Red River, Lonely Are the Brave, The Left Handed Gun, Rio Bravo e Johnny Guitar.",
      "chars": 153

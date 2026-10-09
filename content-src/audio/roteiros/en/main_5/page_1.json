@@ -13,6 +13,7 @@
     {
      "id": "00-01",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "Part 05: From 1970 to 1989. Chapter 1: Western European Cinema.",
      "text": "Part zero five: From nineteen seventy to nineteen eighty-nine. Chapter one: Western European Cinema.",
      "chars": 100
@@ -20,6 +21,7 @@
     {
      "id": "00-02",
      "speaker": "narrador",
+     "source_index": -1,
      "original": "The 1970s in Europe were marked by a bold, angry and talented new generation making powerful, controversial films.",
      "text": "The nineteen seventies in Europe were marked by a bold, angry and talented new generation making powerful, controversial films.",
      "chars": 127
@@ -36,6 +38,7 @@
     {
      "id": "01-01",
      "speaker": "narrador",
+     "source_index": 0,
      "original": "In the 1970s, the pantheon of established masters who had set the tone for Western European cinema in the postwar years began to discover that it was losing ground to a new generation of talented, ambitious filmmakers with ideas and attitudes of their own. In German cinema this happened relatively smoothly, since at the start of the decade there were few veterans of any standing. Elsewhere the transition was less peaceful, as some of the old masters - such as Luis Buñuel (1900-1983), Robert Bresson (1901-1999) and Ingmar Bergman (1918-2007) - were still at their peak.",
      "text": "In the nineteen seventies, the pantheon of established masters who had set the tone for Western European cinema in the postwar years began to discover that it was losing ground to a new generation of talented, ambitious filmmakers with ideas and attitudes of their own. In German cinema this happened relatively smoothly, since at the start of the decade there were few veterans of any standing. Elsewhere the transition was less peaceful, as some of the old masters - such as Luis [[pron: Buñuel|Boon-yoo-ell]] (nineteen hundred to nineteen eighty-three), Robert Bresson (nineteen oh-one to nineteen ninety-nine) and Ingmar Bergman (nineteen eighteen to two thousand seven) - were still at their peak.",
      "chars": 679
@@ -43,6 +46,7 @@
     {
      "id": "01-02",
      "speaker": "narrador",
+     "source_index": 2,
      "original": "All three had a good decade. Bergman's work included Viskningar och rop (Cries and Whispers, 1972), perhaps his most psychologically overwhelming film, and Trollflöjten (The Magic Flute, 1975), a work regarded by many as the most perfect example of filmed opera.",
      "text": "All three had a good decade. Bergman's work included Viskningar och rop (Cries and Whispers, nineteen seventy-two), perhaps his most psychologically overwhelming film, and Trollflöjten (The Magic Flute, nineteen seventy-five), a work regarded by many as the most perfect example of filmed opera.",
      "chars": 295
@@ -50,6 +54,7 @@
     {
      "id": "01-03",
      "speaker": "narrador",
+     "source_index": 3,
      "original": "Bresson broadened his scope with the Dostoevsky adaptation Four Nights of a Dreamer (1971) and the merciless moral fable of The Devil, Probably (1977). Buñuel was as provocative and irreverent as ever in his last films, which included Le Charme discret de la bourgeoisie (The Discreet Charm of the Bourgeoisie, 1972) and Cet obscur objet du désir (That Obscure Object of Desire, 1977).",
      "text": "Bresson broadened his scope with the Dostoevsky adaptation Four Nights of a Dreamer, from nineteen seventy-one, and the merciless moral fable of The Devil, Probably, from nineteen seventy-seven. [[pron: Buñuel|Boon-yoo-ell]] was as provocative and irreverent as ever in his last films, which included Le Charme discret de la bourgeoisie (The Discreet Charm of the Bourgeoisie, nineteen seventy-two) and Cet obscur objet du désir (That Obscure Object of Desire, nineteen seventy-seven).",
      "chars": 462
@@ -66,6 +71,7 @@
     {
      "id": "02-01",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Learn more: Politics and Sadism in Cinema.",
      "text": "Learn more: Politics and Sadism in Cinema.",
      "chars": 42
@@ -73,6 +79,7 @@
     {
      "id": "02-02",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "The screenplay of Salò, or the 120 Days of Sodom is based on the work of the same title by the Marquis de Sade, who gave his name to the specific form of sexual perversion the film explores. Although the narrative differs from Sade's book in many respects, it still preserves its essence. The Marquis de Sade's project was partly political, aiming to satirize the dominant institutions of his time, above all the Catholic Church. Pasolini was also fervently anticlerical, but he ties Sodom directly to Italian history.",
      "text": "The screenplay of Salò, or the one hundred twenty Days of Sodom is based on the work of the same title by the Marquis de Sade, who gave his name to the specific form of sexual perversion the film explores. Although the narrative differs from Sade's book in many respects, it still preserves its essence. The Marquis de Sade's project was partly political, aiming to satirize the dominant institutions of his time, above all the Catholic Church. Pasolini was also fervently anticlerical, but he ties Sodom directly to Italian history.",
      "chars": 533
@@ -80,6 +87,7 @@
     {
      "id": "02-03",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "The film is set in Salò, a very short-lived republic where Mussolini established his last stronghold of resistance at the end of World War II. Pasolini was caught up in these events, and his brother was killed in Salò. In Pasolini's fantasy about this episode of the war, four fascist libertines have total power over a group of young, attractive prisoners of both sexes and subject them to a series of sexual tortures and humiliations. These are presented by the director in a series of coldly formal scenes that are curiously devoid of any erotic tension. Nor is there any intention of developing the characters: even the libertines are barely defined in terms of personality and seem to derive no real pleasure from their debauchery, while their victims are essentially anonymous, simply bodies to be abused and penetrated.",
      "text": "The film is set in Salò, a very short-lived republic where Mussolini established his last stronghold of resistance at the end of World War Two. Pasolini was caught up in these events, and his brother was killed in Salò. In Pasolini's fantasy about this episode of the war, four fascist libertines have total power over a group of young, attractive prisoners of both sexes and subject them to a series of sexual tortures and humiliations. These are presented by the director in a series of coldly formal scenes that are curiously devoid of any erotic tension. Nor is there any intention of developing the characters: even the libertines are barely defined in terms of personality and seem to derive no real pleasure from their debauchery, while their victims are essentially anonymous, simply bodies to be abused and penetrated.",
      "chars": 827
@@ -87,6 +95,7 @@
     {
      "id": "02-04",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "Pasolini's intention was to turn the unlimited use of power, taken to the most radical sexual degradation, into a metaphor for fascism itself, seen as a philosophy that worships power as an end in itself. There are other messages, however. One libertine is identified as a bishop and, at one point, two of the victims are subjected to a sort of wedding ceremony, although the consummation is interrupted by the libertines, who place their own bodies between the newlyweds. And, in a particularly notorious scene, a naked young woman is forced to eat excrement; Pasolini always argued that this was a metaphor for mass consumer capitalism and its production of junk food.",
      "text": "Pasolini's intention was to turn the unlimited use of power, taken to the most radical sexual degradation, into a metaphor for fascism itself, seen as a philosophy that worships power as an end in itself. There are other messages, however. One libertine is identified as a bishop and, at one point, two of the victims are subjected to a sort of wedding ceremony, although the consummation is interrupted by the libertines, who place their own bodies between the newlyweds. And, in a particularly notorious scene, a naked young woman is forced to eat excrement; Pasolini always argued that this was a metaphor for mass consumer capitalism and its production of junk food.",
      "chars": 670
@@ -94,6 +103,7 @@
     {
      "id": "02-05",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "The film ends in an orgy of cruelty: the victims are strangled and scalped, tongues are cut out and nipples are burned. It all unfolds to the sound of Carmina Burana, the famous work by Carl Orff that Pasolini also considered fascist music, along with a reading from the Cantos of Ezra Pound, the American poet who supported Mussolini.",
      "text": "The film ends in an orgy of cruelty: the victims are strangled and scalped, tongues are cut out and nipples are burned. It all unfolds to the sound of Carmina Burana, the famous work by Carl Orff that Pasolini also considered fascist music, along with a reading from the Cantos of Ezra Pound, the American poet who supported Mussolini.",
      "chars": 335
@@ -110,6 +120,7 @@
     {
      "id": "03-01",
      "speaker": "narrador",
+     "source_index": 4,
      "original": "The obscenities the film presents have an undeniable power to shock; perhaps most disturbing is that, at this point in his career, Pasolini had at best an ambiguous attitude toward the body and sexuality. If the aim of pornography is to stimulate sexual desire, Sodom would not fit the definition, because its effect and, presumably, its purpose are to generate revulsion. Shortly after this radical and disturbing film was completed, and even before it was released, Pasolini was murdered. His film was persecuted or banned in many countries, and only after several decades did it become available to the general public in England and the United States.",
      "text": "The obscenities the film presents have an undeniable power to shock; perhaps most disturbing is that, at this point in his career, Pasolini had at best an ambiguous attitude toward the body and sexuality. If the aim of pornography is to stimulate sexual desire, Sodom would not fit the definition, because its effect and, presumably, its purpose are to generate revulsion. Shortly after this radical and disturbing film was completed, and even before it was released, Pasolini was murdered. His film was persecuted or banned in many countries, and only after several decades did it become available to the general public in England and the United States.",
      "chars": 654
@@ -126,6 +137,7 @@
     {
      "id": "04-01",
      "speaker": "narrador",
+     "source_index": 6,
      "original": "Others, however, were in decline. Professione: reporter (The Passenger, 1975) became the last major film by Michelangelo Antonioni (1912-2007). The same can be said of Mihalis Kakogiannis (1922-2011), who concluded his \"Ancient Greek trilogy\" with Iphigenia, from 1976.",
      "text": "Others, however, were in decline. Professione: reporter (The Passenger, nineteen seventy-five) became the last major film by Michelangelo Antonioni (nineteen twelve to two thousand seven). The same can be said of Mihalis Kakogiannis (nineteen twenty-two to twenty eleven), who concluded his \"Ancient Greek trilogy\" with Iphigenia, from nineteen seventy-six.",
      "chars": 357
@@ -133,6 +145,7 @@
     {
      "id": "04-02",
      "speaker": "narrador",
+     "source_index": 7,
      "original": "In France, the old lions of the French New Wave continued to develop distinctive styles. Claude Chabrol (1930-2010) began a prolific decade with one of his best films, the Hitchcock-inspired Le Boucher (The Butcher, 1970), and François Truffaut (1932-1984) had a box-office hit with his film about filmmaking, La Nuit américaine (Day for Night, 1973).",
      "text": "In France, the old lions of the French New Wave continued to develop distinctive styles. Claude Chabrol (nineteen thirty to twenty ten) began a prolific decade with one of his best films, the Hitchcock-inspired Le Boucher (The Butcher, nineteen seventy), and François [[pron: Truffaut|Troo-foe]] (nineteen thirty-two to nineteen eighty-four) had a box-office hit with his film about filmmaking, La Nuit américaine (Day for Night, nineteen seventy-three).",
      "chars": 435
@@ -149,6 +162,7 @@
     {
      "id": "05-01",
      "speaker": "narrador",
+     "source_index": 9,
      "original": "In consistency, however, they were surpassed by their Cahiers du cinéma colleague Éric Rohmer (1920-2010), who completed his six Moral Tales with Le Genou de Claire (Claire's Knee, 1970) and L'Amour l'après-midi (Love in the Afternoon, 1972). Before embarking on the \"Comedies and Proverbs\" series in the 1980s, Rohmer took a detour, making two literary adaptations - while Jacques Rivette (b. 1928) enjoyed his most experimental and playful moment with Céline et Julie vont en bateau (Céline and Julie Go Boating, 1974).",
      "text": "In consistency, however, they were surpassed by their Cahiers du cinéma colleague Éric Rohmer (nineteen twenty to twenty ten), who completed his six Moral Tales with Le Genou de Claire (Claire's Knee, nineteen seventy) and L'Amour l'après-midi (Love in the Afternoon, nineteen seventy-two). Before embarking on the \"Comedies and Proverbs\" series in the nineteen eighties, Rohmer took a detour, making two literary adaptations - while Jacques Rivette (born in nineteen twenty-eight) enjoyed his most experimental and playful moment with Céline et Julie vont en bateau (Céline and Julie Go Boating, nineteen seventy-four).",
      "chars": 620
@@ -156,6 +170,7 @@
     {
      "id": "05-02",
      "speaker": "citacao",
+     "source_index": 10,
      "original": "A fascinating perplexity is what you take away from The Conformist.",
      "text": "A fascinating perplexity is what you take away from The Conformist.",
      "chars": 67
@@ -163,6 +178,7 @@
     {
      "id": "05-03",
      "speaker": "narrador",
+     "source_index": 10,
      "original": "said Tim Parks on The Conformist.",
      "text": "said Tim Parks on The Conformist.",
      "chars": 33
@@ -170,6 +186,7 @@
     {
      "id": "05-04",
      "speaker": "narrador",
+     "source_index": 11,
      "original": "The sad decline of Jacques Demy (1931-1990) continued with the Cocteau-inspired fairy tale Peau d'âne (Donkey Skin, 1970). Agnès Varda (b. 1928), his wife, produced little during the decade, but L'une chante, l'autre pas (One Sings, the Other Doesn't, 1977) offers a warm, romantic view of the upheavals of feminism.",
      "text": "The sad decline of Jacques Demy (nineteen thirty-one to nineteen ninety) continued with the Cocteau-inspired fairy tale Peau d'âne (Donkey Skin, nineteen seventy). Agnès Varda (born in nineteen twenty-eight), his wife, produced little during the decade, but L'une chante, l'autre pas (One Sings, the Other Doesn't, nineteen seventy-seven) offers a warm, romantic view of the upheavals of feminism.",
      "chars": 397
@@ -186,6 +203,7 @@
     {
      "id": "06-01",
      "speaker": "narrador",
+     "source_index": 13,
      "original": "Other filmmakers addressed social, political and historical issues. O Thiasos (The Travelling Players, 1975) brought fame to Theo Angelopoulos (b. 1935), who became internationally known for complex films rooted in Greek history. Compassion for the poor tied to social concerns pervades Italian films such as L'albero degli zoccoli (The Tree of Wooden Clogs, 1978), by Ermanno Olmi (b. 1931), and Padre padrone (1977), by the Taviani brothers, Paolo (b. 1931) and Vittorio (b. 1929), while Il caso Mattei (The Mattei Affair, 1972), by Francesco Rosi (b. 1922), ruthlessly investigates political corruption.",
      "text": "Other filmmakers addressed social, political and historical issues. O Thiasos (The Travelling Players, nineteen seventy-five) brought fame to Theo Angelopoulos (born in nineteen thirty-five), who became internationally known for complex films rooted in Greek history. Compassion for the poor tied to social concerns pervades Italian films such as L'albero degli zoccoli (The Tree of Wooden Clogs, nineteen seventy-eight), by Ermanno Olmi (born in nineteen thirty-one), and Padre padrone, from nineteen seventy-seven, by the Taviani brothers, Paolo (born in nineteen thirty-one) and Vittorio (born in nineteen twenty-nine), while Il caso Mattei (The Mattei Affair, nineteen seventy-two), by Francesco Rosi (born in nineteen twenty-two), ruthlessly investigates political corruption.",
      "chars": 781
@@ -202,6 +220,7 @@
     {
      "id": "07-01",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Learn more: How a Film Became a Symbol of Sexual Violence in Cinema.",
      "text": "Learn more: How a Film Became a Symbol of Sexual Violence in Cinema.",
      "chars": 68
@@ -209,6 +228,7 @@
     {
      "id": "07-02",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "The scene destroyed an actress's life and overshadowed the filmography of Bernardo Bertolucci. Before the #MeToo movement and the Weinstein case, Last Tango in Paris (1972) and its harsh sodomy scene became a symbol of sexual violence in cinema. The '70s were famous as an experimental era in cinema, with studios giving directors a great deal of freedom. Good things came of this but, as a consequence, bad things also happened.",
      "text": "The scene destroyed an actress's life and overshadowed the filmography of Bernardo Bertolucci. Before the #MeToo movement and the Weinstein case, Last Tango in Paris, from nineteen seventy-two, and its harsh sodomy scene became a symbol of sexual violence in cinema. The seventies were famous as an experimental era in cinema, with studios giving directors a great deal of freedom. Good things came of this but, as a consequence, bad things also happened.",
      "chars": 455
@@ -216,6 +236,7 @@
     {
      "id": "07-03",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "In the Italian director's film, Maria Schneider, 19 years old when shooting began, lives out a torrid affair with an American widower passing through Paris, played by Marlon Brando. The American star of \"A Streetcar Named Desire\" would be nominated for an Oscar for this role. They decide to know nothing about each other, not even their names. This encounter, at once harsh and morbid, reaches its climax in a non-consensual sex scene, with a stick of butter used in place of lubricant.",
      "text": "In the Italian director's film, Maria Schneider, nineteen years old when shooting began, lives out a torrid affair with an American widower passing through Paris, played by Marlon Brando. The American star of \"A Streetcar Named Desire\" would be nominated for an Oscar for this role. They decide to know nothing about each other, not even their names. This encounter, at once harsh and morbid, reaches its climax in a non-consensual sex scene, with a stick of butter used in place of lubricant.",
      "chars": 493
@@ -223,6 +244,7 @@
     {
      "id": "07-04",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "Although simulated, this rape scene secured the film's reputation, but it would mark the young actress forever, as her cousin, the journalist Vanessa Schneider, recounts in \"Tu t'appelais Maria Schneider,\" a book released this year. According to the actress, who would go on to appear in more than 50 films, Brando and Bertolucci had not warned her about the use of the butter. Commenting on this scene once again in an interview with the tabloid \"Daily Mail\" in 2007, the actress said her \"tears were real\" in the film.",
      "text": "Although simulated, this rape scene secured the film's reputation, but it would mark the young actress forever, as her cousin, the journalist Vanessa Schneider, recounts in \"Tu t'appelais Maria Schneider,\" a book released this year. According to the actress, who would go on to appear in more than fifty films, Brando and Bertolucci had not warned her about the use of the butter. Commenting on this scene once again in an interview with the tabloid \"Daily Mail\" in two thousand seven, the actress said her \"tears were real\" in the film.",
      "chars": 537
@@ -230,6 +252,7 @@
     {
      "id": "07-05",
      "speaker": "narrador",
+     "source_index": 14,
      "original": "In December 2016, the controversy returned: a 2013 video resurfaced on social media and shocked Hollywood. \"The sequence of the butter is an idea that I had with Marlon the day before shooting. I wanted Maria to react, to be humiliated,\" Bertolucci says. \"I didn't want her to act the rage, I wanted her to feel the rage and humiliation,\" he added. In the United States the controversy grew, less than a year before the Weinstein case and the revelations about the sexual assaults suffered by several actresses. At the time, the Italian director spoke out once more, calling \"dismaying\" the naivety of those who don't know that \"sex is (almost) always simulated in cinema.\"",
      "text": "In December twenty sixteen, the controversy returned: a twenty thirteen video resurfaced on social media and shocked Hollywood. \"The sequence of the butter is an idea that I had with Marlon the day before shooting. I wanted Maria to react, to be humiliated,\" Bertolucci says. \"I didn't want her to act the rage, I wanted her to feel the rage and humiliation,\" he added. In the United States the controversy grew, less than a year before the Weinstein case and the revelations about the sexual assaults suffered by several actresses. At the time, the Italian director spoke out once more, calling \"dismaying\" the naivety of those who don't know that \"sex is (almost) always simulated in cinema.\"",
      "chars": 694
@@ -246,6 +269,7 @@
     {
      "id": "08-01",
      "speaker": "narrador",
+     "source_index": 15,
      "original": "One director who built his film career dealing with cases of state-inflicted justice was the Greek-born, naturalized French Costa-Gavras (b. 1933). In the 1970s he directed L'Aveu (The Confession, 1970), criticizing the communists in Prague in 1951, État de siège (State of Siege, 1972), targeting CIA involvement in Uruguay, and Section spéciale (Special Section, 1975), dealing with the Vichy government in France during the war.",
      "text": "One director who built his film career dealing with cases of state-inflicted justice was the Greek-born, naturalized French Costa-Gavras (born in nineteen thirty-three). In the nineteen seventies he directed L'Aveu (The Confession, nineteen seventy), criticizing the communists in Prague in nineteen fifty-one, État de siège (State of Siege, nineteen seventy-two), targeting CIA involvement in Uruguay, and Section spéciale (Special Section, nineteen seventy-five), dealing with the Vichy government in France during the war.",
      "chars": 525
@@ -253,6 +277,7 @@
     {
      "id": "08-02",
      "speaker": "narrador",
+     "source_index": 17,
      "original": "Eclectic as he was, Louis Malle (1932-1995) moved easily between political and historical subjects and intimate family dramas. In Lacombe Lucien (1974), he confronted the delicate subject of French fascism during the Occupation, while in Le souffle au cœur (Murmur of the Heart, 1971) he shocked French society with his sympathetic treatment of mother-son incest. Marco Ferreri (1928-1997) alarmed the censors with his allegories of capitalist greed - sex and gluttonous extravagance in La Grande Bouffe (1973) and more excess with the elaborate La dernière femme (The Last Woman, 1976). But the scandal caused by these films did not compare with the furor surrounding Ultimo tango a Parigi (Last Tango in Paris, 1972), by Bernardo Bertolucci (b. 1940).",
      "text": "Eclectic as he was, Louis Malle (nineteen thirty-two to nineteen ninety-five) moved easily between political and historical subjects and intimate family dramas. In Lacombe Lucien, from nineteen seventy-four, he confronted the delicate subject of French fascism during the Occupation, while in Le souffle au cœur (Murmur of the Heart, nineteen seventy-one) he shocked French society with his sympathetic treatment of mother-son incest. Marco Ferreri (nineteen twenty-eight to nineteen ninety-seven) alarmed the censors with his allegories of capitalist greed - sex and gluttonous extravagance in La Grande Bouffe, from nineteen seventy-three, and more excess with the elaborate La dernière femme (The Last Woman, nineteen seventy-six). But the scandal caused by these films did not compare with the furor surrounding Ultimo tango a Parigi (Last Tango in Paris, nineteen seventy-two), by Bernardo Bertolucci (born in nineteen forty).",
      "chars": 931
@@ -260,6 +285,7 @@
     {
      "id": "08-03",
      "speaker": "citacao",
+     "source_index": 18,
      "original": "How have I managed to put up with you for so long and say nothing? I know what you're made of – with your empty caresses and your false smile.",
      "text": "How have I managed to put up with you for so long and say nothing? I know what you're made of, with your empty caresses and your false smile.",
      "chars": 141
@@ -267,6 +293,7 @@
     {
      "id": "08-04",
      "speaker": "narrador",
+     "source_index": 18,
      "original": "said Karin (Ingrid Thulin) to Maria (Liv Ullmann) in Cries and Whispers.",
      "text": "said Karin (Ingrid Thulin) to Maria (Liv Ullmann) in Cries and Whispers.",
      "chars": 72
@@ -274,6 +301,7 @@
     {
      "id": "08-05",
      "speaker": "narrador",
+     "source_index": 19,
      "original": "Ruled obscene by Italian courts, the film provided plenty of material for the press because of Marlon Brando's presence in the cast. The last film by Pier Paolo Pasolini - Salò o le 120 giornate di Sodoma (Salò, or the 120 Days of Sodom, 1975), which transposed the excesses of the Marquis de Sade to the short-lived Italian republic of 1944 - nearly rivaled Bertolucci's in scandal.",
      "text": "Ruled obscene by Italian courts, the film provided plenty of material for the press because of Marlon Brando's presence in the cast. The last film by Pier Paolo Pasolini - Salò o le one hundred twenty giornate di Sodoma (Salò, or the one hundred twenty Days of Sodom, nineteen seventy-five), which transposed the excesses of the Marquis de Sade to the short-lived Italian republic of nineteen forty-four - nearly rivaled Bertolucci's in scandal.",
      "chars": 445
@@ -290,6 +318,7 @@
     {
      "id": "09-01",
      "speaker": "narrador",
+     "source_index": 21,
      "original": "Many of these films represented an open or implicit reaction to the rise of feminism. More authoritative statements came with the work of a number of Western European women directors in the 1970s. Anja Breien (b. 1940), from Norway, found success with the good-humored feminism of Hustruer (Wives, 1975). The melodrama of Italian films such as Il portiere di notte (The Night Porter, 1974), by Liliana Cavani (b. 1933), and Travolti da un insolito destino nell'azzurro mare d'agosto (Swept Away, 1974), by Lina Wertmüller (b. 1926), contrasted with the minimalism of French playwright Marguerite Duras (1914-1996) in films such as India Song (1975). Minimalism also influenced Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles (1975), a study of bourgeois prostitution by Chantal Akerman (b. 1950). Several actresses turned to directing, among them Gunnel Lindblom (b. 1931) with her study of a dysfunctional Swedish family, ironically titled Summer Paradise (1976).",
      "text": "Many of these films represented an open or implicit reaction to the rise of feminism. More authoritative statements came with the work of a number of Western European women directors in the nineteen seventies. Anja Breien (born in nineteen forty), from Norway, found success with the good-humored feminism of Hustruer (Wives, nineteen seventy-five). The melodrama of Italian films such as Il portiere di notte (The Night Porter, nineteen seventy-four), by Liliana Cavani (born in nineteen thirty-three), and Travolti da un insolito destino nell'azzurro mare d'agosto (Swept Away, nineteen seventy-four), by Lina Wertmüller (born in nineteen twenty-six), contrasted with the minimalism of French playwright Marguerite Duras (nineteen fourteen to nineteen ninety-six) in films such as India Song, from nineteen seventy-five. Minimalism also influenced Jeanne Dielman, twenty-three quai du Commerce, one thousand eighty Bruxelles, from nineteen seventy-five, a study of bourgeois prostitution by Chantal Akerman (born in nineteen fifty). Several actresses turned to directing, among them Gunnel Lindblom (born in nineteen thirty-one) with her study of a dysfunctional Swedish family, ironically titled Summer Paradise, from nineteen seventy-six.",
      "chars": 1242
@@ -297,6 +326,7 @@
     {
      "id": "09-02",
      "speaker": "narrador",
+     "source_index": 22,
      "original": "Meanwhile, in Spain, Víctor Erice (b. 1940) sparked much debate with El espíritu de la colmena (The Spirit of the Beehive, 1973). Starring the young Ana Torrent (b. 1966), but open to many interpretations beyond a simple study of childhood, this debut feature established Erice as a director matched only by Terrence Malick (b. 1943) in the feat of earning such esteem on the strength of so small a body of work.",
      "text": "Meanwhile, in Spain, Víctor Erice (born in nineteen forty) sparked much debate with El espíritu de la colmena (The Spirit of the Beehive, nineteen seventy-three). Starring the young Ana Torrent (born in nineteen sixty-six), but open to many interpretations beyond a simple study of childhood, this debut feature established Erice as a director matched only by Terrence Malick (born in nineteen forty-three) in the feat of earning such esteem on the strength of so small a body of work.",
      "chars": 485
@@ -313,6 +343,7 @@
     {
      "id": "10-01",
      "speaker": "narrador",
+     "source_index": 23,
      "original": "Worth watching: the films from this chapter are Salò, or the 120 Days of Sodom, The Conformist, Last Tango in Paris, Claire's Knee, Cries and Whispers, Le Boucher, The Discreet Charm of the Bourgeoisie, Death in Venice, Amarcord and The Spirit of the Beehive.",
      "text": "Worth watching: the films from this chapter are Salò, or the one hundred twenty Days of Sodom, The Conformist, Last Tango in Paris, Claire's Knee, Cries and Whispers, Le Boucher, The Discreet Charm of the Bourgeoisie, Death in Venice, Amarcord and The Spirit of the Beehive.",
      "chars": 274
