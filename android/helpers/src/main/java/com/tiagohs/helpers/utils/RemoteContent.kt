@@ -74,10 +74,16 @@ object RemoteContent {
             val files = manifest.getJSONObject("files")
             val editor = prefs.edit()
             val keep = HashSet<String>()
+            val bundled = bundledHashes(context)
+            val language = ContentLanguage.current()
             for (path in files.keys()) {
                 if (path.contains("..")) continue
-                keep += path
+                // só o idioma em uso (os outros baixam se o usuário trocar de idioma)
+                if (!path.startsWith("$language/")) continue
                 val hash = files.getString(path)
+                // igual ao que já veio dentro do app: não precisa baixar
+                if (bundled[path] == hash) continue
+                keep += path
                 val target = File(dir, path)
                 if (prefs.getString("h:$path", null) == hash && target.isFile) continue
 
@@ -102,6 +108,13 @@ object RemoteContent {
             Timber.w(e, "RemoteContent: sync falhou")
         }
     }
+
+    /** Hashes do conteúdo embutido no app (assets/local/remote_manifest.json, gerado por content-src/remote.py). */
+    private fun bundledHashes(context: Context): Map<String, String> = try {
+        val files = JSONObject(context.assets.open("local/remote_manifest.json").bufferedReader().use { it.readText() })
+            .getJSONObject("files")
+        files.keys().asSequence().associateWith { files.getString(it) }
+    } catch (e: Exception) { emptyMap() }
 
     private fun get(client: OkHttpClient, url: String): String? =
         client.newCall(Request.Builder().url(url).build()).execute().use { r ->

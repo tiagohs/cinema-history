@@ -23,7 +23,7 @@ ASSETS = os.path.join(ROOT, "android/app/src/main/assets/local")
 LANGS = ("pt", "en", "es")
 # Arquivos atualizáveis pelo site (caminhos relativos a assets/local/<idioma>/). Para estender a outros
 # conteúdos, acrescente aqui — o app já procura qualquer arquivo de conteúdo no cache remoto.
-PUBLISH = ["awards.json", "awards/nominees/*.json", "awards/history/*.json"]
+PUBLISH = ["awards.json", "awards/nominees/*/*.json", "awards/history/*.json"]
 # Versão mínima do app (versionCode) que entende o conteúdo publicado.
 MIN_APP_VERSION = 20
 
@@ -47,6 +47,9 @@ def publish(site=None):
     manifest = {"format": 1, "min_app_version": MIN_APP_VERSION,
                 "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "files": files}
     with open(os.path.join(out, "manifest.json"), "w") as fh:
+        json.dump(manifest, fh, indent=1, sort_keys=True)
+    # o mesmo manifest vai dentro do app: o app só baixa o que for diferente do que já tem embutido
+    with open(os.path.join(ASSETS, "remote_manifest.json"), "w") as fh:
         json.dump(manifest, fh, indent=1, sort_keys=True)
     print(f"{len(files)} arquivos publicados em {out}")
     return 0

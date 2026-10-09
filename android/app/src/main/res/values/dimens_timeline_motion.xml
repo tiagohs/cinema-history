@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Linha do tempo animada pelo scroll -->
+    <item name="timeline_track_alpha" format="float" type="dimen">0.14</item>
+    <dimen name="timeline_parallax_range">22dp</dimen>
+    <dimen name="timeline_enter_offset">36dp</dimen>
+    <dimen name="timeline_year_watermark_size">96sp</dimen>
+    <dimen name="timeline_year_watermark_margin">12dp</dimen>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="awards_hero_height">460dp</dimen>
+    <dimen name="awards_hero_padding">20dp</dimen>
+    <dimen name="awards_hero_top_scrim">180dp</dimen>
+    <dimen name="awards_hero_bottom_scrim">320dp</dimen>
+    <dimen name="awards_hero_poster_width">104dp</dimen>
+    <dimen name="awards_hero_poster_height">156dp</dimen>
+    <dimen name="awards_hero_year_size">56sp</dimen>
+    <dimen name="awards_hero_title_size">26sp</dimen>
+    <dimen name="awards_logo_size">28dp</dimen>
+
+    <dimen name="awards_year_bar_height">56dp</dimen>
+    <dimen name="awards_year_pill_height">34dp</dimen>
+    <dimen name="awards_year_pill_min_width">64dp</dimen>
+
+    <dimen name="awards_screen_padding">16dp</dimen>
+    <dimen name="awards_row_spacing">8dp</dimen>
+    <dimen name="awards_row_vertical_padding">10dp</dimen>
+    <dimen name="awards_card_spacing">10dp</dimen>
+    <dimen name="awards_card_radius">8dp</dimen>
+    <dimen name="awards_card_width">108dp</dimen>
+    <dimen name="awards_card_height">162dp</dimen>
+    <dimen name="awards_winner_card_width">144dp</dimen>
+    <dimen name="awards_winner_card_height">216dp</dimen>
+    <dimen name="awards_winner_stroke">2dp</dimen>
+    <dimen name="awards_winner_glow">10dp</dimen>
+    <dimen name="awards_card_text_height">52dp</dimen>
+    <!-- pôster do vencedor (216) + espaço (8) + textos (52) + padding vertical (2 x 10) -->
+    <dimen name="awards_row_height">296dp</dimen>
+    <dimen name="awards_video_width">248dp</dimen>
+    <dimen name="awards_video_height">140dp</dimen>
+    <dimen name="awards_person_size">76dp</dimen>
+    <dimen name="awards_person_item_width">96dp</dimen>
+    <dimen name="awards_enter_offset">28dp</dimen>
+</resources>

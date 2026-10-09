@@ -38,6 +38,16 @@
         android:layout_height="0dp"
         android:id="@+id/divisor"
         android:background="@color/md_black_1000"
+        android:alpha="@dimen/timeline_track_alpha"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@id/circle"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:layout_width="@dimen/timeline_divisor_vertical_width"
+        android:layout_height="0dp"
+        android:id="@+id/divisorFill"
+        android:background="@color/md_black_1000"
         android:alpha="0.8"
         app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
         app:layout_constraintTop_toTopOf="@id/circle"

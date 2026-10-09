@@ -20,10 +20,15 @@ class TimelineTitleViewHolder(
     private val numberOfItens: Int,
     val callback: TimelineCallbacks,
     private val binding: AdapterTimelineTitleBinding
-) : BaseViewHolder<Timeline>(binding) {
+) : BaseViewHolder<Timeline>(binding), TimelineLineHolder {
+
+    override val lineFill: android.view.View get() = binding.divisorFill
+    override var lastLineProgress: Float = -1f
+
 
     init {
         bindColors()
+        binding.divisorFill.pivotY = 0f
     }
 
     override fun bind(item: Timeline, position: Int) {

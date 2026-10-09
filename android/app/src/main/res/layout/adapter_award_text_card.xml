@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Texto compacto (cerimônia, curiosidades, histórico): poucas linhas + "Ler mais". -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/awards_screen_padding"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="@dimen/awards_screen_padding"
+    android:background="@drawable/awards_card_surface"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/textImage"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="12dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        style="@style/TextAppearance.CinemaHistory.Awards.RowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone"
+        tools:text="Recordes e curiosidades"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textBody"
+        style="@style/TextAppearance.CinemaHistory.Awards.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="4"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/textToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawablePadding="2dp"
+        android:gravity="center_vertical"
+        android:minHeight="36dp"
+        android:text="@string/award_read_more"
+        android:textColor="@color/awards_gold"
+        android:textSize="14sp"
+        app:drawableEndCompat="@drawable/ic_awards_expand_16dp"
+        app:drawableTint="@color/awards_gold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textAction"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/awards_gold"
+        android:visibility="gone"
+        app:strokeColor="@color/awards_gold_dark"
+        tools:text="Clique aqui para acessar"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textCredits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/awards_on_surface_muted"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</LinearLayout>

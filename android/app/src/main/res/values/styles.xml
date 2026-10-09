@@ -372,4 +372,81 @@
         <item name="rippleColor">@color/home_ripple_on_dark</item>
     </style>
 
+    <!--
+        Tela de prêmios: escura, no estilo das plataformas de streaming, para os pôsteres
+        e o destaque do vencedor ganharem contraste. Desenha atrás da status bar (hero).
+    -->
+    <style name="AppTheme.AwardsDark" parent="AppTheme.AppThemeWithStatusTransparent">
+        <item name="android:windowBackground">@color/awards_background</item>
+        <item name="android:colorBackground">@color/awards_background</item>
+        <item name="colorOnBackground">@color/awards_on_surface</item>
+        <item name="colorSurface">@color/awards_surface</item>
+        <item name="colorOnSurface">@color/awards_on_surface</item>
+        <item name="colorSurfaceVariant">@color/awards_surface_high</item>
+        <item name="colorOnSurfaceVariant">@color/awards_on_surface_variant</item>
+        <item name="colorSurfaceContainer">@color/awards_surface</item>
+        <item name="colorSurfaceContainerLow">@color/awards_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/awards_surface_high</item>
+        <item name="colorOutline">@color/awards_outline</item>
+        <item name="colorPrimary">@color/awards_gold</item>
+        <item name="colorOnPrimary">@color/awards_on_gold</item>
+        <item name="colorSecondary">@color/awards_gold</item>
+        <item name="colorAccent">@color/awards_gold</item>
+        <item name="colorControlHighlight">#33FFFFFF</item>
+        <item name="android:textColorPrimary">@color/awards_on_surface</item>
+        <item name="android:textColorSecondary">@color/awards_on_surface_variant</item>
+        <item name="colorPrimaryDark">@color/awards_background</item>
+    </style>
+
+    <style name="Widget.CinemaHistory.TabLayout.Awards" parent="Widget.Material3.TabLayout">
+        <item name="android:background">@color/awards_background</item>
+        <item name="tabTextAppearance">@style/AppTheme.TextAppearance</item>
+        <item name="tabIndicatorColor">@color/awards_gold</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabSelectedTextColor">@color/awards_on_surface</item>
+        <item name="tabTextColor">@color/awards_on_surface_muted</item>
+        <item name="tabRippleColor">#22FFFFFF</item>
+        <item name="tabGravity">start</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabPaddingStart">16dp</item>
+        <item name="tabPaddingEnd">16dp</item>
+    </style>
+
+    <style name="Widget.CinemaHistory.Awards.SocialButton" parent="">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="tint">@color/awards_on_surface_variant</item>
+    </style>
+
+    <style name="ShapeAppearance.CinemaHistory.Awards.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="TextAppearance.CinemaHistory.Awards.Kicker" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.16</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/oswald_regular</item>
+    </style>
+
+    <style name="TextAppearance.CinemaHistory.Awards.RowTitle" parent="">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/awards_on_surface</item>
+        <item name="android:fontFamily">@font/oswald_regular</item>
+    </style>
+
+    <style name="TextAppearance.CinemaHistory.Awards.Body" parent="">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+        <item name="android:textColor">@color/awards_on_surface_variant</item>
+        <item name="android:textColorLink">@color/awards_gold</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+    </style>
+
 </resources>

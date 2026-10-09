@@ -1,136 +1,94 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
-import android.content.Intent
-import android.view.ViewGroup
-import android.view.LayoutInflater
-import com.tiagohs.cinema_history.databinding.FragmentAwardsContentBinding
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tiagohs.cinema_history.presentation.activities.MovieDetailsActivity
-import com.tiagohs.cinema_history.presentation.activities.PersonDetailsActivity
-import com.tiagohs.cinema_history.presentation.adapters.PageContentAdapter
+import com.bumptech.glide.Glide
+import com.tiagohs.cinema_history.databinding.FragmentAwardsContentBinding
+import com.tiagohs.cinema_history.presentation.adapters.awards.AwardActions
+import com.tiagohs.cinema_history.presentation.adapters.awards.AwardContentAdapter
+import com.tiagohs.cinema_history.presentation.adapters.awards.AwardItem
+import com.tiagohs.cinema_history.presentation.adapters.awards.AwardItemAnimator
 import com.tiagohs.cinema_history.presentation.configs.BaseFragment
-import com.tiagohs.domain.managers.SettingsManager
-import com.tiagohs.entities.awards.Nominee
+import com.tiagohs.cinema_history.presentation.configs.Motion
 import com.tiagohs.entities.enums.AwardsPageType
-import com.tiagohs.entities.enums.NomineeType
 import com.tiagohs.entities.main_topics.AwardMainTopic
-import com.tiagohs.helpers.extensions.convertIntToDp
-import com.tiagohs.helpers.extensions.openLink
-import com.tiagohs.helpers.extensions.startActivityWithSlideRightToLeftAnimation
-import com.tiagohs.helpers.tools.SpaceOffsetDecoration
-import javax.inject.Inject
 
+/**
+ * Aba "Sobre": ficha do prêmio e o histórico em versão compacta (primeiros parágrafos);
+ * o restante (vídeos, imagens, curiosidades) aparece em "Ler mais".
+ */
 class AwardsFragment : BaseFragment<FragmentAwardsContentBinding>() {
 
-    @Inject
-    lateinit var settingManager: SettingsManager
-
-    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?) = FragmentAwardsContentBinding.inflate(inflater, container, false)
+    override fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?) =
+        FragmentAwardsContentBinding.inflate(inflater, container, false)
 
     private var awardMainTopic: AwardMainTopic? = null
-    private var awardsPageType: AwardsPageType? = null
-
-    private var isListSetup = false
+    private var expanded = false
+    private var adapter: AwardContentAdapter? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        getApplicationComponent()?.inject(this)
-
+        expanded = savedInstanceState?.getBoolean(STATE_EXPANDED) ?: false
         setupArguments()
+        setupList()
     }
 
-    override fun onResume() {
-        super.onResume()
-
-        setupPageContent()
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putBoolean(STATE_EXPANDED, expanded)
     }
 
+    override fun onDestroyView() {
+        binding.pageContentList.adapter = null
+        adapter = null
+        super.onDestroyView()
+    }
+
+    @Suppress("DEPRECATION")
     private fun setupArguments() {
         awardMainTopic = arguments?.getSerializable(AWARD_MAIN_TOPIC) as? AwardMainTopic
-        awardsPageType = arguments?.getSerializable(AWARD_PAGE_TYPE) as? AwardsPageType
     }
 
-    private fun setupPageContent() {
-        val contentList = when (awardsPageType) {
-            AwardsPageType.HISTORY -> awardMainTopic?.history ?: emptyList()
-            else -> emptyList()
+    private fun setupList() {
+        val hostActions = (activity as? AwardScreenHost)?.awardActions ?: return
+        val actions = object : AwardActions by hostActions {
+            override fun onReadMoreClicked() = toggleExpanded()
         }
-
-        if (!isListSetup) {
-            binding.pageContentList.addItemDecoration(
-                SpaceOffsetDecoration(
-                    10.convertIntToDp(context),
-                    SpaceOffsetDecoration.TOP
-                )
-            )
-
-            isListSetup = true
-        }
+        val adapter = AwardContentAdapter(Glide.with(this), actions, Motion.enabled(context))
+        this.adapter = adapter
 
         binding.pageContentList.apply {
-            layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-            adapter =
-                PageContentAdapter(contentList, null, settingManager.getMovieLanguage()).apply {
-                    presentScreen = { presentScreen(it) }
-                    onMovieClicked = { onMovieSelected(it) }
-                    onPersonClicked = { onPersonClicked(it) }
-                    onNomineeClicked = { onNomineeClicked(it) }
-                    onLinkClicked = { onLinkClicked(it) }
-                }
-
+            layoutManager = LinearLayoutManager(context)
+            setHasFixedSize(true)
+            itemAnimator = AwardItemAnimator()
+            this.adapter = adapter
         }
+        submit(animate = false)
     }
 
-    private fun presentScreen(intent: Intent) {
-        activity?.startActivityWithSlideRightToLeftAnimation(intent)
+    private fun toggleExpanded() {
+        expanded = !expanded
+        submit(animate = expanded)
     }
 
-    private fun onMovieSelected(movieId: Int) {
-        val context = context ?: return
-
-        activity?.startActivityWithSlideRightToLeftAnimation(
-            MovieDetailsActivity.newIntent(
-                context,
-                movieId
-            )
-        )
+    private fun submit(animate: Boolean) {
+        val award = awardMainTopic ?: return
+        val adapter = adapter ?: return
+        if (animate) adapter.playEntrance()
+        adapter.submitList(AwardItem.forHistory(award, award.history.orEmpty(), expanded))
     }
 
-    private fun onPersonClicked(personId: Int) {
-        val context = context ?: return
-
-        activity?.startActivityWithSlideRightToLeftAnimation(
-            PersonDetailsActivity.newIntent(
-                context,
-                personId
-            )
-        )
-    }
-
-    private fun onNomineeClicked(nominee: Nominee) {
-        val id = nominee.id ?: return
-
-        when (nominee.type) {
-            NomineeType.MOVIE -> onMovieSelected(id)
-            NomineeType.PERSON -> onPersonClicked(id)
-        }
-    }
-
-    private fun onLinkClicked(url: String) {
-        context?.openLink(url)
-    }
-
-    override fun onErrorAction() {
-
-    }
+    override fun onErrorAction() {}
 
     companion object {
 
         const val AWARD_MAIN_TOPIC = "AWARD_MAIN_TOPIC"
         const val AWARD_PAGE_TYPE = "AWARD_PAGE_TYPE"
+        private const val STATE_EXPANDED = "STATE_EXPANDED"
 
         fun newInstance(
             awardMainTopic: AwardMainTopic,

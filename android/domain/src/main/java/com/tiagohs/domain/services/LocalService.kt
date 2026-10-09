@@ -7,6 +7,7 @@ import com.tiagohs.entities.Glossary
 import com.tiagohs.entities.HomeContentItem
 import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
+import com.tiagohs.entities.awards.AwardYearSummary
 import com.tiagohs.entities.awards.NomineeResult
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentNominee
@@ -25,7 +26,9 @@ class LocalService(retrofitConfig: RetrofitConfig): BaseService(retrofitConfig) 
 
     fun getPage(mainTopicId: Int, sumarioId: Int): Observable<Page> = buildLocalService(LocalServiceRetrofit::class.java).getPage(mainTopicId, sumarioId)
 
-    fun fetchAwardsNominees(awardId: Int): Observable<List<NomineeResult>> = buildLocalService(LocalServiceRetrofit::class.java).fetchAwardsNominees(awardId)
+    fun fetchAwardsNomineesIndex(awardId: Int): Observable<List<AwardYearSummary>> = buildLocalService(LocalServiceRetrofit::class.java).fetchAwardsNomineesIndex(awardId)
+
+    fun fetchAwardsNomineesYear(awardId: Int, year: String): Observable<NomineeResult> = buildLocalService(LocalServiceRetrofit::class.java).fetchAwardsNomineesYear(awardId, year)
 
     fun fetchAwardsHistory(awardId: Int): Observable<List<Content>> = buildLocalService(LocalServiceRetrofit::class.java).fetchAwardsHistory(awardId)
 

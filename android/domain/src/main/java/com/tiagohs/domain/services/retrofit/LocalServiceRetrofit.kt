@@ -5,6 +5,7 @@ import com.tiagohs.entities.HomeContentItem
 import com.tiagohs.entities.main_topics.MainTopic
 import com.tiagohs.entities.Page
 import com.tiagohs.entities.Sumario
+import com.tiagohs.entities.awards.AwardYearSummary
 import com.tiagohs.entities.awards.NomineeResult
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentNominee
@@ -30,8 +31,13 @@ interface LocalServiceRetrofit {
     @GET("awards")
     fun getAwardsMainTopics(): Observable<List<MainTopic>>
 
-    @GET("awards/nominees/{awardId}")
-    fun fetchAwardsNominees(@Path("awardId") awardId: Int): Observable<List<NomineeResult>>
+    /** Índice de anos do prêmio (mais recente primeiro). */
+    @GET("awards/nominees/{awardId}/index")
+    fun fetchAwardsNomineesIndex(@Path("awardId") awardId: Int): Observable<List<AwardYearSummary>>
+
+    /** Conteúdo de um único ano (categorias, vídeos, textos, júri). */
+    @GET("awards/nominees/{awardId}/{year}")
+    fun fetchAwardsNomineesYear(@Path("awardId") awardId: Int, @Path("year") year: String): Observable<NomineeResult>
 
     @GET("awards/history/{awardId}")
     fun fetchAwardsHistory(@Path("awardId") awardId: Int): Observable<List<Content>>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fileira horizontal genérica (vídeos, júri). A altura da lista é fixada pelo ViewHolder. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/awards_row_spacing">
+
+    <TextView
+        android:id="@+id/rowTitle"
+        style="@style/TextAppearance.CinemaHistory.Awards.RowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/awards_screen_padding"
+        android:paddingEnd="@dimen/awards_screen_padding"
+        tools:text="Vídeos" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rowList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/awards_screen_padding"
+        android:paddingTop="@dimen/awards_row_vertical_padding"
+        android:paddingEnd="@dimen/awards_screen_padding"
+        android:paddingBottom="@dimen/awards_row_vertical_padding" />
+
+</LinearLayout>

@@ -58,6 +58,11 @@ class FakeInterceptor(
             }
         }
 
+        // Rotas com parâmetros (ex.: /awards/nominees/{id}/index e /awards/nominees/{id}/{ano}).
+        if (raw.isBlank()) {
+            raw = com.tiagohs.entities.enums.LocalRoutes.resolve(request) ?: ""
+        }
+
         if (raw.isNotBlank()) {
             content = readFileFromStatus(raw)
         }

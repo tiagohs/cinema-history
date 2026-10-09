@@ -95,7 +95,39 @@ def http_json(url, headers=None):
     return {"__error__": "network"}
 
 
-_tmdb = _load("tmdb")
+class _SqliteCache:
+    """Cache do TMDB em SQLite (o JSON passou de 50 MB e era regravado a cada consulta).
+    Seguro para vários processos em paralelo. Migra o tmdb.json antigo na primeira vez."""
+
+    def __init__(self, name):
+        import sqlite3
+        path = os.path.join(CACHE, name + ".sqlite")
+        fresh = not os.path.exists(path)
+        self.db = sqlite3.connect(path, timeout=60, isolation_level=None)
+        self.db.execute("PRAGMA journal_mode=WAL")
+        self.db.execute("CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT)")
+        old = _cache_path(name)
+        if fresh and os.path.exists(old):
+            data = json.load(open(old))
+            self.db.execute("BEGIN")
+            self.db.executemany("INSERT OR REPLACE INTO kv VALUES (?, ?)",
+                                ((k, json.dumps(v, ensure_ascii=False)) for k, v in data.items()))
+            self.db.execute("COMMIT")
+
+    def __contains__(self, k):
+        return self.db.execute("SELECT 1 FROM kv WHERE k=?", (k,)).fetchone() is not None
+
+    def __getitem__(self, k):
+        row = self.db.execute("SELECT v FROM kv WHERE k=?", (k,)).fetchone()
+        if row is None:
+            raise KeyError(k)
+        return json.loads(row[0])
+
+    def __setitem__(self, k, v):
+        self.db.execute("INSERT OR REPLACE INTO kv VALUES (?, ?)", (k, json.dumps(v, ensure_ascii=False)))
+
+
+_tmdb = _SqliteCache("tmdb")
 
 
 def tmdb(path, **params):
@@ -103,8 +135,10 @@ def tmdb(path, **params):
     key = path + "?" + urllib.parse.urlencode(sorted((k, v) for k, v in params.items() if k != "api_key"))
     if key not in _tmdb:
         data = http_json(f"https://api.themoviedb.org/3{path}?" + urllib.parse.urlencode(params))
+        if "__error__" in data and data["__error__"] == "network":
+            return data  # falha de rede não vai para o cache
         _tmdb[key] = data
-        _save("tmdb", _tmdb)
+        return data
     return _tmdb[key]
 
 

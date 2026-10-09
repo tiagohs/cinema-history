@@ -67,7 +67,7 @@
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <activity android:name=".presentation.activities.AwardActivity"
-            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
+            android:theme="@style/AppTheme.AwardsDark" />
 
         <activity android:name=".presentation.activities.TimelineActivity" />
         <activity android:name=".presentation.activities.GlossaryActivity" />

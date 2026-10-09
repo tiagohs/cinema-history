@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uma categoria = uma fileira horizontal de pôsteres (vencedor primeiro). -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/awards_row_spacing">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/awards_screen_padding"
+        android:paddingEnd="@dimen/awards_screen_padding">
+
+        <TextView
+            android:id="@+id/categoryTitle"
+            style="@style/TextAppearance.CinemaHistory.Awards.RowTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Melhor Filme" />
+
+        <TextView
+            android:id="@+id/categoryCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/awards_on_surface_muted"
+            android:textSize="12sp"
+            tools:text="10 indicados" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nomineeRow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/awards_row_height"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/awards_screen_padding"
+        android:paddingTop="@dimen/awards_row_vertical_padding"
+        android:paddingEnd="@dimen/awards_screen_padding"
+        android:paddingBottom="@dimen/awards_row_vertical_padding"
+        tools:listitem="@layout/adapter_award_nominees_item"
+        tools:orientation="horizontal" />
+
+</LinearLayout>

@@ -5,8 +5,8 @@ Prêmios do app (indicados e vencedores por ano) a partir de arquivos de texto s
 Cada ano de cada prêmio fica em content-src/pt/awards/<id>/<ano>.md (ids: 1 Oscar, 2 Globo de Ouro,
 3 BAFTA, 4 Critics Choice, 5 SAG/Actor Awards, 6 Independent Spirit, 7 Cannes). O builder busca no TMDB
 o título em português, o pôster, o diretor, o nome e a foto das pessoas, e grava
-android/app/src/main/assets/local/pt/awards/nominees/nominees_<id>.json (os anos que não têm .md
-continuam como estão no JSON).
+android/app/src/main/assets/local/pt/awards/nominees/<id>/<ano>.json, um por ano, e o índice
+nominees/<id>/index.json (anos que não têm .md continuam como estão).
 
     python3 content-src/awards.py check [id]     # confere tudo e mostra o resumo, sem gravar
     python3 content-src/awards.py build [id]     # grava o JSON do app
@@ -175,25 +175,48 @@ def award_ids(arg):
     return sorted(int(os.path.basename(d)) for d in glob.glob(os.path.join(SRC, "*")) if os.path.basename(d).isdigit())
 
 
+def summary(year_doc):
+    """Resumo do ano para o índice: o vencedor da primeira categoria (pôster e nome)."""
+    cats = [c for c in year_doc["content"] if c["type"] == "awards_nominees"]
+    hl = None
+    for c in cats:
+        w = next((n for n in c["nominee_list"] if n.get("winner")), None)
+        if w:
+            node = w.get("movie") if w.get("type") == "person" and w.get("movie") else w
+            hl = {"category": c["name"], "type": node.get("type", "movie"), "id": node.get("id"),
+                  "name": node.get("name"), "image_path": node.get("image_path"), "director": node.get("director"),
+                  "backdrop_path": (B.movie(node["id"]).get("backdrop_path") if node.get("id") and node.get("type", "movie") == "movie" else None)}
+            break
+    nominees = sum(len(c["nominee_list"]) for c in cats)
+    return {"year": year_doc["year"], "categories": len(cats), "nominees": nominees, "highlight": hl}
+
+
 def build(aid, write):
+    """Um arquivo por ano (nominees/<id>/<ano>.json) + nominees/<id>/index.json com o resumo dos anos."""
     errors = []
-    out_path = os.path.join(OUT, f"nominees_{aid}.json")
-    current = json.load(open(out_path)) if os.path.exists(out_path) else []
-    by_year = {y["year"]: y for y in current}
+    out_dir = os.path.join(OUT, str(aid))
     srcs = sorted(glob.glob(os.path.join(SRC, str(aid), "[0-9][0-9][0-9][0-9].md")))
+    built = {}
     for path in srcs:
         year, content = parse_year(path, errors)
         if year:
-            by_year[year] = {"year": year, "content": content}
-    years = sorted(by_year.values(), key=lambda y: y["year"], reverse=True)
-    cats = sum(1 for y in years for c in y["content"] if c["type"] == "awards_nominees")
-    print(f"prêmio {aid}: {len(srcs)} anos no texto, {len(years)} anos no app "
-          f"({', '.join(y['year'] for y in years)}), {cats} categorias")
+            built[year] = {"year": year, "content": content}
+    existing = {f[:4] for f in os.listdir(out_dir) if re.match(r"\d{4}\.json$", f)} if os.path.isdir(out_dir) else set()
+    years = sorted(existing | set(built), reverse=True)
+    cats = sum(1 for y in built.values() for c in y["content"] if c["type"] == "awards_nominees")
+    print(f"prêmio {aid}: {len(srcs)} anos no texto ({cats} categorias), {len(years)} anos no app "
+          f"({years[-1] if years else '-'}–{years[0] if years else '-'})")
     for e in errors:
         print("   ERRO", e)
     if write and not errors:
-        with open(out_path, "w", encoding="utf-8") as fh:
-            json.dump(years, fh, ensure_ascii=False, indent=2)
+        os.makedirs(out_dir, exist_ok=True)
+        for y, doc in built.items():
+            with open(os.path.join(out_dir, f"{y}.json"), "w", encoding="utf-8") as fh:
+                json.dump(doc, fh, ensure_ascii=False, separators=(",", ":"))
+                fh.write("\n")
+        index = [summary(json.load(open(os.path.join(out_dir, f"{y}.json")))) for y in years]
+        with open(os.path.join(out_dir, "index.json"), "w", encoding="utf-8") as fh:
+            json.dump(index, fh, ensure_ascii=False, indent=1)
             fh.write("\n")
     return not errors
 

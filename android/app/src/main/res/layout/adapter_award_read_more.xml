@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/readMoreButton"
+    style="@style/Widget.Material3.Button.OutlinedButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/awards_screen_padding"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="@dimen/awards_screen_padding"
+    android:text="@string/award_read_more"
+    android:textColor="@color/awards_on_surface"
+    app:icon="@drawable/ic_awards_expand_16dp"
+    app:iconGravity="textEnd"
+    app:iconTint="@color/awards_gold"
+    app:strokeColor="@color/awards_outline" />

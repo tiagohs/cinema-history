@@ -158,4 +158,28 @@
     <string name="home_settings_description">Idioma y preferencias de la app</string>
     <string name="home_about_description">Sobre la app y su creador</string>
     <string name="home_era_quote_title">Cita de la era</string>
+
+    <!-- Tela de prêmios (hero, anos, fileiras) e linha do tempo -->
+    <string name="award_winner_of">Ganador — %1$s</string>
+    <string name="award_winner_badge">Ganador</string>
+    <string name="award_year_meta">%1$d categorías · %2$d nominados</string>
+    <string name="award_decade_label">Años %1$s</string>
+    <string name="award_choose_decade">Ir a la década</string>
+    <string name="award_read_more">Leer más</string>
+    <string name="award_read_less">Mostrar menos</string>
+    <string name="award_ceremony_title">Sobre la ceremonia</string>
+    <string name="award_videos_title">Videos</string>
+    <string name="award_highlights_title">Destacados</string>
+    <string name="award_year_error">No se pudo cargar este año.</string>
+    <string name="award_retry">Reintentar</string>
+    <string name="award_details_button">Detalles</string>
+    <string name="award_first_awarded">Primera ceremonia: %1$s</string>
+    <string name="award_hero_fallback_kicker">Premios y nominados</string>
+    <string name="award_about_title">Sobre el premio</string>
+    <string name="timeline_year_now">Ahora en %1$s</string>
+    <plurals name="award_nominees_count">
+        <item quantity="one">%1$d nominado</item>
+        <item quantity="other">%1$d nominados</item>
+        <item quantity="many">%1$d nominados</item>
+    </plurals>
 </resources>

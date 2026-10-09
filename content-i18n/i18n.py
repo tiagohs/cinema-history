@@ -377,6 +377,14 @@ def cmd_apply(args):
         sys.exit(f"Tradução incompleta: {report}")
     out_dir = L.lang_dir(args.lang)
     for rel, doc in docs.items():
+        if re.match(r"awards/nominees/\d+/\d{4}\.json$", rel.replace(os.sep, "/")):
+            # anos dos prêmios: JSON compacto, como no pt (são centenas de arquivos)
+            path = os.path.join(out_dir, rel)
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump(doc, fh, ensure_ascii=False, separators=(",", ":"))
+                fh.write("\n")
+            continue
         L.dump_json(os.path.join(out_dir, rel), doc)
     # remove arquivos que não existem mais no pt
     for rel in list(L.iter_json_files(args.lang)):

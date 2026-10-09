@@ -17,7 +17,6 @@ import com.tiagohs.cinema_history.databinding.AdapterPageImgBinding
 import com.tiagohs.cinema_history.databinding.AdapterPageGifBinding
 import com.tiagohs.cinema_history.databinding.AdapterPageEssayBinding
 import com.tiagohs.cinema_history.databinding.AdapterPageBlockSpecialBinding
-import com.tiagohs.cinema_history.databinding.AdapterPageAwardNomineesBinding
 import com.tiagohs.cinema_history.databinding.AdapterPageAudioStreamBinding
 import com.tiagohs.cinema_history.databinding.AdapterEmptyBinding
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
@@ -60,7 +59,7 @@ class PageContentAdapter(
             ContentType.MOVIE_LIST.ordinal -> MovieListViewHolder(AdapterPageListMoviesBinding.inflate(inflater, parent, false), mainTopic, appLanguage, onMovieClicked)
             ContentType.PERSON_LIST.ordinal -> PersonListViewHolder(AdapterPagePersonListBinding.inflate(inflater, parent, false), onPersonClicked)
             ContentType.MOVIE_LIST_SPECIAL.ordinal -> MovieListSpecialViewHolder(AdapterPageMovieListSpecialBinding.inflate(inflater, parent, false), onMovieClicked)
-            ContentType.AWARDS_NOMINEES.ordinal -> AwardsNomineesViewHolder(AdapterPageAwardNomineesBinding.inflate(inflater, parent, false), onNomineeClicked)
+            // AWARDS_NOMINEES: exibido só na tela de prêmios (AwardContentAdapter / AwardsNomineesViewHolder).
             ContentType.TWITTER.ordinal -> TwitterViewHolder(AdapterPageTwitterBinding.inflate(inflater, parent, false))
             ContentType.ESSAY.ordinal -> EssayViewHolder(AdapterPageEssayBinding.inflate(inflater, parent, false), appLanguage, onMovieClicked, onPersonClicked, onLinkClicked)
             else -> object : BasePageViewHolder(AdapterEmptyBinding.inflate(inflater, parent, false)) {}

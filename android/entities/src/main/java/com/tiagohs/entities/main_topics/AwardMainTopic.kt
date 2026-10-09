@@ -1,7 +1,7 @@
 package com.tiagohs.entities.main_topics
 
 import com.google.gson.annotations.SerializedName
-import com.tiagohs.entities.awards.NomineeResult
+import com.tiagohs.entities.awards.AwardYearSummary
 import com.tiagohs.entities.contents.ContentNominee
 import com.tiagohs.entities.awards.Social
 import com.tiagohs.entities.contents.Content
@@ -38,5 +38,6 @@ data class AwardMainTopic(
 ): MainTopic() , Serializable {
 
     var history: List<Content>? = null
-    var nomineesList: List<NomineeResult>? = null
+    /** Índice de anos (mais recente primeiro). O conteúdo de cada ano é carregado sob demanda. */
+    var yearIndex: List<AwardYearSummary>? = null
 }

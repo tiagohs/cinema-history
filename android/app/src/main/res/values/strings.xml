@@ -186,4 +186,27 @@
     <string name="home_settings_description">Language and app preferences</string>
     <string name="home_about_description">About the app and its creator</string>
     <string name="home_era_quote_title">Quote of the era</string>
+
+    <!-- Tela de prêmios (hero, anos, fileiras) e linha do tempo -->
+    <string name="award_winner_of">Winner — %1$s</string>
+    <string name="award_winner_badge">Winner</string>
+    <string name="award_year_meta">%1$d categories · %2$d nominees</string>
+    <string name="award_decade_label">%1$ss</string>
+    <string name="award_choose_decade">Jump to a decade</string>
+    <string name="award_read_more">Read more</string>
+    <string name="award_read_less">Show less</string>
+    <string name="award_ceremony_title">About the ceremony</string>
+    <string name="award_videos_title">Videos</string>
+    <string name="award_highlights_title">Highlights</string>
+    <string name="award_year_error">Couldn\'t load this year.</string>
+    <string name="award_retry">Try again</string>
+    <string name="award_details_button">Details</string>
+    <string name="award_first_awarded">First ceremony: %1$s</string>
+    <string name="award_hero_fallback_kicker">Awards and nominees</string>
+    <string name="award_about_title">About the award</string>
+    <string name="timeline_year_now">Now in %1$s</string>
+    <plurals name="award_nominees_count">
+        <item quantity="one">%1$d nominee</item>
+        <item quantity="other">%1$d nominees</item>
+    </plurals>
 </resources>
