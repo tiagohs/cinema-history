@@ -8,7 +8,7 @@
     android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
     android:paddingBottom="@dimen/activity_vertical_margin_2x">
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="@dimen/movie_item_image_width"
         android:layout_height="@dimen/movie_item_image_height"
         android:id="@+id/imageCard"
@@ -92,6 +92,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

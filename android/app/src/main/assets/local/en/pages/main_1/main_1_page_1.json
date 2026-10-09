@@ -15,8 +15,8 @@
         "image_type": "local",
         "url": "pathe_logo",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://img.youtube.com/vi/J9jBA-tZ7tU/0.jpg",
+          "image_type": "local",
+          "url": "img_gif_thumb_pathe_logo",
           "style": {
             "scale_type": "center_crop"
           }
@@ -54,11 +54,11 @@
     },
     {
       "type": "video",
-      "video_id": "ymjlHsPmesk",
+      "video_id": "1FAj9fJQRZA",
       "information": {
         "contentTitle": "The Arrival of a Train at La Ciotat ",
         "contentText": "One of the first films in history to be shown to a paying audience. The camera was placed near the tracks, so that the train grew larger as it approached, until it seemed it would burst through the screen and into the room. Legend has it that people ducked, screamed or got up to leave.",
-        "source": "YouTube: <i>maccafan21 [Ciné'Culte]</i> channel"
+        "source": "Youtube: Canal <i>Andy Myers</i>"
       }
     },
     {
@@ -87,11 +87,11 @@
     },
     {
       "type": "video",
-      "video_id": "a6f80XxlCZk",
+      "video_id": "ZNAHcMMOHE8",
       "information": {
         "contentTitle": "A Trip to the Moon (1902)",
         "contentText": "This was one of the earliest known science fiction films. A part near the end was animated, which also makes it one of the first animated films.",
-        "source": "YouTube: <i>maccafan21 [Ciné'Culte]</i> channel"
+        "source": "Youtube: Canal <i>Billi Brass Quintet</i>"
       }
     },
     {

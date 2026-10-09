@@ -25,8 +25,8 @@ import urllib.request
 
 import i18n_lib as L
 
-REGION = {"en": "US", "es": "MX"}
-UI_LANG = {"en": "en", "es": "es-419"}
+REGION = {"en": "US", "es": "MX", "pt": "BR"}
+UI_LANG = {"en": "en", "es": "es-419", "pt": "pt-BR"}
 WATCH_CACHE = os.path.join(L.HERE, "tmdb", "watch.json")
 REVIEW_LANGUAGES = {"en": {"en-US"}, "es": {"en-US"}}
 
@@ -47,6 +47,17 @@ PROVIDER_TYPES = {
     "The Criterion Channel": "criterionchannel",
     "Claro video": "claro_video",
     "Dailymotion": "dailymotion",
+    # Brasil
+    "Globoplay": "globo_play",
+    "Claro tv+": "claro_video",
+    "Looke": "looke",
+    "Looke Amazon Channel": "looke",
+    "Telecine": "telecine",
+    "Telecine Amazon Channel": "telecine",
+    "Vivo Play": "vivo_play",
+    "NOW": "now",
+    "UOL Play": "uol_play",
+    "Max Amazon Channel": "hbo_max",
     "Fandor": "fandor",
     # variantes com anúncios / canais
     "Netflix basic with Ads": "netflix",

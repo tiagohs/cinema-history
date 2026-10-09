@@ -1,5 +1,7 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
+import com.tiagohs.cinema_history.presentation.configs.StatusBarScrim
+
 import android.content.Intent
 import android.view.ViewGroup
 import android.view.LayoutInflater
@@ -62,6 +64,8 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
         super.onViewCreated(view, savedInstanceState)
 
         getApplicationComponent()?.inject(this)
+
+        StatusBarScrim.apply(view)
 
         (activity as? BaseActivity<*>)?.setupToolbar(binding.toolbar, displayHomeAsUpEnabled = false)
 
@@ -202,10 +206,8 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
         startAlphaAnimation(binding.mainTopicName, 200, 200)
         startAlphaAnimation(binding.pageTitle, 200, 400)
         startAlphaAnimation(binding.pageDescription, 200, 600) {
-            if (binding.pageHeaderImage != null) {
-                binding.pageHeaderImage?.loadImage(image, placeholder = null)
-            }
-
+            // a animação pode terminar depois que o ViewPager destruiu a view desta página
+            bindingOrNull?.pageHeaderImage?.loadImage(image, placeholder = null)
         }
         startAlphaAnimation(binding.pageContentList, 200, 800)
     }

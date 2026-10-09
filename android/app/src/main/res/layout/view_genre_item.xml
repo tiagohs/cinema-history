@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:backgroundTint="@color/grey_transparent_medium"
+    app:cardBackgroundColor="@color/grey_transparent_medium"
     android:layout_marginEnd="@dimen/activity_vertical_margin_1.2x"
     app:cardCornerRadius="@dimen/activity_vertical_margin_1.2x">
 
@@ -24,4 +24,4 @@
         app:layout_constraintTop_toBottomOf="@id/movieTitle"
     />
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

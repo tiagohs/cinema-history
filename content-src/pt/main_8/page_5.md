@@ -6,14 +6,20 @@ image: name=img_greves_duna_parte_dois_explosao tmdb_path=/24Ov8wnusgnzXwjV1eDm0
 # text
 Na madrugada de 2 de maio de 2023, cerca de 11.500 roteiristas do <i>Writers Guild of America</i> (WGA), o sindicato de quem escreve cinema e televisão nos Estados Unidos, cruzaram os braços. O efeito foi imediato. Os <i>talk shows</i> noturnos, escritos no próprio dia, passaram a exibir reprises naquela mesma semana, e logo havia piquetes diante dos portões da <i>Netflix</i>, da <i>Disney</i>, da <i>Warner</i> e da <i>Universal</i>. Do outro lado da mesa estava a <i>AMPTP</i>, a aliança que negocia em nome dos estúdios e das plataformas. Era a primeira greve dos roteiristas desde a de 2007–2008, que durou cem dias. Desta vez, o conflito duraria 148 dias e, em julho, ganharia a companhia dos atores. Hollywood ia parar quase inteira.
 
-# text
-O que estava em jogo era o dinheiro do streaming. Na TV tradicional, cada reprise rendia aos autores um <strong>residual</strong>, uma espécie de direito autoral. Nas plataformas, ele virou um valor fixo, igual para um fracasso e para um fenômeno mundial, e ninguém sabia quantas pessoas viam cada série, porque as empresas não divulgavam a audiência. As temporadas encolheram e surgiram as <i>mini rooms</i>: salas de roteiristas reduzidas, contratadas por poucas semanas e desfeitas antes da filmagem. E havia a novidade. Em novembro de 2022, a <i>OpenAI</i> tinha lançado o <i>ChatGPT</i>, e os roteiristas temiam que um estúdio pedisse a uma máquina o primeiro tratamento de um roteiro e depois pagasse um profissional só para “revisar” o texto, com cachê menor e sem crédito de autor. A <i>WGA</i> pediu que a IA não pudesse escrever nem reescrever roteiros. Os estúdios ofereceram apenas reuniões anuais para discutir avanços tecnológicos.
-
 # video
 youtube: eK9QWB1OOro
 title: A IA no centro da greve dos roteiristas
 text: Reportagem da <i>CNBC</i> sobre como a inteligência artificial virou um dos pontos centrais da greve dos roteiristas em 2023.
 source: Youtube: Canal <i>CNBC</i>
+
+# text
+O que estava em jogo era o dinheiro do streaming. Na TV tradicional, cada reprise rendia aos autores um <strong>residual</strong>, uma espécie de direito autoral. Nas plataformas, ele virou um valor fixo, igual para um fracasso e para um fenômeno mundial, e ninguém sabia quantas pessoas viam cada série, porque as empresas não divulgavam a audiência. As temporadas encolheram e surgiram as <i>mini rooms</i>: salas de roteiristas reduzidas, contratadas por poucas semanas e desfeitas antes da filmagem. E havia a novidade. Em novembro de 2022, a <i>OpenAI</i> tinha lançado o <i>ChatGPT</i>, e os roteiristas temiam que um estúdio pedisse a uma máquina o primeiro tratamento de um roteiro e depois pagasse um profissional só para “revisar” o texto, com cachê menor e sem crédito de autor. A <i>WGA</i> pediu que a IA não pudesse escrever nem reescrever roteiros. Os estúdios ofereceram apenas reuniões anuais para discutir avanços tecnológicos.
+
+# block
+title: 1960: a última greve dupla
+image: name=img_greves_1960_adoravel_pecadora tmdb_path=/gDVa3JFURhhcnic6fIhk3EPmbd0.jpg
+text: Antes de 2023, roteiristas e atores só tinham parado juntos uma vez. Em 16 de janeiro de 1960, o <i>Writers Guild</i> entrou em greve; em 7 de março, o <i>Screen Actors Guild</i> foi atrás. O motivo lembrava o de 63 anos depois: uma tecnologia nova exibia os filmes e os artistas não recebiam nada por isso. A novidade da vez era a televisão, que passava sem parar os longas comprados dos estúdios. Quem comandava os atores era o presidente do sindicato, {{p:18802}}. A greve parou oito grandes produções, entre elas {{m:24014}}, com {{p:3149}}, e terminou em 18 de abril com um acordo: residuais pela exibição na TV só para os filmes feitos dali em diante, e não para os produzidos desde 1948, como o sindicato pedia no começo. Em troca, os estúdios pagaram US$ 2,65 milhões, usados para criar o primeiro plano de previdência da categoria. Parte dos atores achou que Reagan tinha cedido demais. Os roteiristas ficaram em greve até 12 de junho. Reagan deixou a presidência do sindicato naquele mesmo ano e, duas décadas depois, chegaria à Casa Branca.
+link: https://www.sagaftra.org/about/our-history/1960s | Veja a história no site do SAG-AFTRA
 
 # text
 Em 13 de julho, foi a vez dos atores. O contrato do <i>SAG-AFTRA</i>, sindicato com cerca de 160 mil membros, tinha vencido na véspera, e a presidente {{p:53122}}, a eterna protagonista da série <i>The Nanny</i>, anunciou a greve num discurso inflamado em que chamou os estúdios de “uma entidade muito gananciosa”. Naquela mesma noite, em Londres, o elenco de {{m:872585}} deixou a pré-estreia antes da sessão, e {{p:525}} explicou à plateia que os atores tinham ido “escrever seus cartazes de piquete”. À meia-noite de 14 de julho, no horário da Califórnia, começava a primeira greve simultânea de roteiristas e atores desde 1960. Os atores pediam reajuste contra a inflação, uma fatia das receitas do streaming e regras para a inteligência artificial.
@@ -22,6 +28,9 @@ Em 13 de julho, foi a vez dos atores. O contrato do <i>SAG-AFTRA</i>, sindicato 
 quote: Não dá para mudar o modelo de negócios tanto quanto ele mudou e não esperar que o contrato mude também.
 author: Fran Drescher (discurso de anúncio da greve dos atores, 2023)
 
+# text
+Para os atores, a ameaça da IA tinha rosto e corpo. No dia do anúncio da greve, o negociador-chefe do sindicato, Duncan Crabtree-Ireland, contou que os estúdios tinham proposto escanear os figurantes, pagar a eles um único dia de trabalho e ficar com a imagem digital para sempre, podendo usá-la sem nova autorização nem novo pagamento. A versão do sindicato, contestada pelos estúdios, correu o mundo e virou o símbolo do pesadelo: multidões de cena povoadas por cópias de pessoas que nunca mais seriam chamadas. O medo não parava nos figurantes. Dubladores viam programas imitarem suas vozes, e as estrelas sabiam que o rejuvenescimento digital já permitia pôr um rosto de 30 anos num ator de 80. A pergunta de fundo era simples: quem é o dono desse rosto?
+
 # video
 youtube: J4SAPOX7R5M
 title: O discurso de Fran Drescher
@@ -29,7 +38,7 @@ text: Em 13 de julho de 2023, a presidente do <i>SAG-AFTRA</i> anunciou a greve 
 source: Youtube: Canal <i>CBS News</i>
 
 # text
-Para os atores, a ameaça da IA tinha rosto e corpo. No dia do anúncio da greve, o negociador-chefe do sindicato, Duncan Crabtree-Ireland, contou que os estúdios tinham proposto escanear os figurantes, pagar a eles um único dia de trabalho e ficar com a imagem digital para sempre, podendo usá-la sem nova autorização nem novo pagamento. A versão do sindicato, contestada pelos estúdios, correu o mundo e virou o símbolo do pesadelo: multidões de cena povoadas por cópias de pessoas que nunca mais seriam chamadas. O medo não parava nos figurantes. Dubladores viam programas imitarem suas vozes, e as estrelas sabiam que o rejuvenescimento digital já permitia pôr um rosto de 30 anos num ator de 80. A pergunta de fundo era simples: quem é o dono desse rosto?
+As regras da greve proibiam os atores de divulgar filmes dos estúdios ligados à <i>AMPTP</i>: nada de tapete vermelho, entrevistas, festivais ou postagens nas redes. As estreias aconteceram sem elenco, e o calendário desmoronou. {{m:693134}}, de {{p:137427}}, foi empurrado de novembro de 2023 para março de 2024, para não chegar aos cinemas sem {{p:1190668}} e {{p:505710}} na divulgação. {{m:937287}}, de {{p:78160}}, desistiu de abrir o <i>Festival de Veneza</i> e também foi para 2024. A cerimônia do <i>Emmy</i> passou de setembro para janeiro. Quem mais sofreu foram os que não estavam em greve: maquinistas, eletricistas, figurinistas e motoristas ficaram meses sem trabalho. Em agosto, um professor da Universidade Estadual da Califórnia em Northridge estimava que o prejuízo para a economia californiana passaria de US$ 5 bilhões se a paralisação chegasse a novembro. E chegou.
 
 # image
 image: name=img_greves_piquete_nova_york url=https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAG-AFTRA_Picket_VI_%2853052244001%29.jpg/960px-SAG-AFTRA_Picket_VI_%2853052244001%29.jpg
@@ -37,9 +46,6 @@ title: Roteiristas e atores no mesmo piquete
 text: Piquete em Nova York em 17 de julho de 2023, três dias depois de os atores entrarem em greve. Os cartazes pretos são do <i>SAG-AFTRA</i>; os brancos e vermelhos, dos roteiristas da <i>WGA</i>.
 source: Wikimedia Commons: Eden, Janine and Jim (CC BY 2.0)
 // licença: CC BY 2.0 — https://commons.wikimedia.org/wiki/File:SAG-AFTRA_Picket_VI_(53052244001).jpg
-
-# text
-As regras da greve proibiam os atores de divulgar filmes dos estúdios ligados à <i>AMPTP</i>: nada de tapete vermelho, entrevistas, festivais ou postagens nas redes. As estreias aconteceram sem elenco, e o calendário desmoronou. {{m:693134}}, de {{p:137427}}, foi empurrado de novembro de 2023 para março de 2024, para não chegar aos cinemas sem {{p:1190668}} e {{p:505710}} na divulgação. {{m:937287}}, de {{p:78160}}, desistiu de abrir o <i>Festival de Veneza</i> e também foi para 2024. A cerimônia do <i>Emmy</i> passou de setembro para janeiro. Quem mais sofreu foram os que não estavam em greve: maquinistas, eletricistas, figurinistas e motoristas ficaram meses sem trabalho. Em agosto, um professor da Universidade Estadual da Califórnia em Northridge estimava que o prejuízo para a economia californiana passaria de US$ 5 bilhões se a paralisação chegasse a novembro. E chegou.
 
 # text
 Os roteiristas voltaram primeiro. Depois de uma maratona de negociações com a presença dos próprios chefes dos estúdios, a <i>WGA</i> fechou um acordo provisório em 24 de setembro e encerrou a greve no dia 27. O contrato foi ratificado com 99% dos votos. Além das regras sobre IA, os roteiristas conquistaram um número mínimo de profissionais nas salas, um bônus pago quando uma produção é vista por 20% dos assinantes de uma plataforma nos Estados Unidos em 90 dias e, pela primeira vez, acesso ao total de horas assistidas de cada produção original. Os atores levaram mais tempo. O acordo do <i>SAG-AFTRA</i> saiu em 8 de novembro, e a greve terminou no dia 9, depois de 118 dias. Avaliado pelo sindicato em mais de US$ 1 bilhão, ele trouxe reajuste de 7%, aumento de 11% para os figurantes e um bônus de streaming, e foi aprovado em 5 de dezembro por 78% dos votantes.
@@ -63,8 +69,20 @@ source: Youtube: Canal <i>Industrial Light & Magic</i>
 # text
 A polêmica mais barulhenta veio em janeiro de 2025, dias antes do anúncio dos indicados ao Oscar. O montador de {{m:549509}}, Dávid Jancsó, contou numa entrevista que o programa <i>Respeecher</i>, de uma empresa ucraniana, tinha sido usado para deixar mais exata a pronúncia de algumas vogais nas falas em húngaro de {{p:3490}} e {{p:72855}}. O diretor {{p:55493}} respondeu que as atuações eram “inteiramente” dos atores, que nenhuma fala em inglês tinha sido alterada e que os desenhos arquitetônicos do filme tinham sido feitos à mão. Segundo a <i>Respeecher</i>, {{m:974950}} também usou a ferramenta. Em 2024, até o pequeno terror {{m:938614}} tinha enfrentado pedidos de boicote por usar IA em três imagens de transição. Brody ganhou o Oscar de Melhor Ator, e a Academia respondeu em abril de 2025 com uma regra curta: a IA “não ajuda nem prejudica” uma indicação, mas os votantes devem considerar o quanto um ser humano esteve “no centro da autoria criativa”.
 
+# image
+image: name=img_ia_brutalista_monte_carvao tmdb_path=/eQfsww1brf0BQfhxegtZ8zgHrVz.jpg
+title: <i>O Brutalista</i> (2024)
+text: Cena do filme de Brady Corbet sobre um arquiteto húngaro que recomeça a vida nos Estados Unidos. O uso de IA para ajustar a pronúncia do húngaro nos diálogos virou polêmica às vésperas do Oscar, em que Adrien Brody venceu como Melhor Ator.
+source: Divulgação <i>A24</i> (via TMDB)
+
 # text
 Outra frente, bem mais radical, era a geração de vídeo a partir de texto. Em fevereiro de 2024, a <i>OpenAI</i> apresentou o <i>Sora</i>, que criava cenas realistas de até um minuto a partir de uma frase. Dias depois, {{p:80602}} contou que tinha suspendido a ampliação de US$ 800 milhões dos seus estúdios em Atlanta por causa do que viu. Em setembro de 2024, a <i>Lionsgate</i>, de <i>John Wick</i> e <i>Jogos Vorazes</i>, fechou com a <i>Runway</i> um acordo para treinar um modelo com o seu catálogo. Em 2025, a <i>Netflix</i> revelou que o desabamento de um prédio em Buenos Aires na série argentina <i>O Eternauta</i> tinha sido feito com IA generativa, dez vezes mais rápido do que com efeitos tradicionais. E o <i>YouTube</i> se encheu de trailers falsos de filmes que não existiam: dois dos maiores canais do gênero, com mais de 2 milhões de inscritos somados, perderam a monetização e acabaram removidos no fim de 2025.
+
+# essay
+youtube: ZFitkz5VJvI
+title: Why AI “Art” Feels So Wrong
+description: Neste ensaio, Thomas Flight usa a ideia de “espanto” do escritor J. F. Martel para separar arte de artifício e explicar por que as imagens feitas por IA soam vazias. Ele passa por Tilly Norwood, pelo <i>Sora 2</i> e pelo caso de <i>O Brutalista</i>, admite que a IA pode servir de ferramenta, mas alerta para o risco de confundir imitação com expressão.
+channel: thomas_flight
 
 # text
 Os estúdios jogaram dos dois lados. Em junho de 2025, <i>Disney</i> e <i>Universal</i> processaram a <i>Midjourney</i>, gerador de imagens que, segundo elas, era um “poço sem fundo de plágio”, capaz de produzir seus personagens a pedido. A <i>Warner Bros. Discovery</i> entrou com ação parecida em setembro; os processos foram reunidos num só e, em 2026, o caso ainda estava na fase de produção de provas, sem decisão. Naquele mesmo setembro, a <i>OpenAI</i> lançou o <i>Sora 2</i>, com um aplicativo no estilo do <i>TikTok</i>, e a <i>Motion Picture Association</i> criticou a forma como a empresa tratava os direitos autorais. Mesmo assim, em 11 de dezembro, a <i>Disney</i> anunciou um investimento de US$ 1 bilhão na <i>OpenAI</i> e licenciou mais de 200 personagens para o aplicativo, sob críticas de sindicatos de Hollywood. O casamento durou pouco: em 24 de março de 2026, a <i>OpenAI</i> anunciou o fim do <i>Sora</i>, e a <i>Disney</i> saiu do acordo sem fazer o investimento.
@@ -76,26 +94,14 @@ Em setembro de 2025, a discussão ganhou um rosto que não existe. Criada pela p
 quote: Tilly Norwood não é uma atriz, é uma personagem gerada por um programa de computador treinado no trabalho de incontáveis atores profissionais, sem permissão nem pagamento.
 author: SAG-AFTRA (comunicado sobre Tilly Norwood, 2025)
 
+# text
+No cinema dos anos 2020, a inteligência artificial é ao mesmo tempo ferramenta, ameaça e mercadoria. Há usos que pouca gente contesta, como limpar um áudio, apagar um cabo de segurança ou rejuvenescer um rosto com a autorização do dono; outros, como retocar a pronúncia de uma fala que o ator gravou, ainda dividem opiniões. E há o que assusta: modelos treinados com filmes, vozes e rostos sem licença nem pagamento, e a promessa de baratear a produção dispensando justamente quem a faz. Não por acaso, os filmes de 2023 já falavam disso. A vilã de {{m:575264}} é uma IA chamada Entidade, e {{m:670292}}, de {{p:129894}}, imagina uma guerra entre humanos e máquinas. As greves não barraram a tecnologia, mas fixaram três princípios que ainda organizam a disputa: consentimento, pagamento e crédito. A pergunta deixou de ser se a IA vai entrar no set. Passou a ser quem decide as condições.
+
 # video
 youtube: qdYBwCwCtis
 title: A reação a Tilly Norwood
 text: Reportagem da <i>CBC</i> sobre a “atriz” criada por inteligência artificial e a onda de críticas de atores e do sindicato, em setembro de 2025.
 source: Youtube: Canal <i>CBC News: The National</i>
-
-# essay
-youtube: ZFitkz5VJvI
-title: Why AI “Art” Feels So Wrong
-description: Neste ensaio, Thomas Flight usa a ideia de “espanto” do escritor J. F. Martel para separar arte de artifício e explicar por que as imagens feitas por IA soam vazias. Ele passa por Tilly Norwood, pelo <i>Sora 2</i> e pelo caso de <i>O Brutalista</i>, admite que a IA pode servir de ferramenta, mas alerta para o risco de confundir imitação com expressão.
-channel: thomas_flight
-
-# block
-title: 1960: a última greve dupla
-image: name=img_greves_1960_adoravel_pecadora tmdb_path=/gDVa3JFURhhcnic6fIhk3EPmbd0.jpg
-text: Antes de 2023, roteiristas e atores só tinham parado juntos uma vez. Em 16 de janeiro de 1960, o <i>Writers Guild</i> entrou em greve; em 7 de março, o <i>Screen Actors Guild</i> foi atrás. O motivo lembrava o de 63 anos depois: uma tecnologia nova exibia os filmes e os artistas não recebiam nada por isso. A novidade da vez era a televisão, que passava sem parar os longas comprados dos estúdios. Quem comandava os atores era o presidente do sindicato, {{p:18802}}. A greve parou oito grandes produções, entre elas {{m:24014}}, com {{p:3149}}, e terminou em 18 de abril com um acordo: residuais pela exibição na TV só para os filmes feitos dali em diante, e não para os produzidos desde 1948, como o sindicato pedia no começo. Em troca, os estúdios pagaram US$ 2,65 milhões, usados para criar o primeiro plano de previdência da categoria. Parte dos atores achou que Reagan tinha cedido demais. Os roteiristas ficaram em greve até 12 de junho. Reagan deixou a presidência do sindicato naquele mesmo ano e, duas décadas depois, chegaria à Casa Branca.
-link: https://www.sagaftra.org/about/our-history/1960s | Veja a história no site do SAG-AFTRA
-
-# text
-No cinema dos anos 2020, a inteligência artificial é ao mesmo tempo ferramenta, ameaça e mercadoria. Há usos que pouca gente contesta, como limpar um áudio, apagar um cabo de segurança ou rejuvenescer um rosto com a autorização do dono; outros, como retocar a pronúncia de uma fala que o ator gravou, ainda dividem opiniões. E há o que assusta: modelos treinados com filmes, vozes e rostos sem licença nem pagamento, e a promessa de baratear a produção dispensando justamente quem a faz. Não por acaso, os filmes de 2023 já falavam disso. A vilã de {{m:575264}} é uma IA chamada Entidade, e {{m:670292}}, de {{p:129894}}, imagina uma guerra entre humanos e máquinas. As greves não barraram a tecnologia, mas fixaram três princípios que ainda organizam a disputa: consentimento, pagamento e crédito. A pergunta deixou de ser se a IA vai entrar no set. Passou a ser quem decide as condições.
 
 # movies
 872585, 693134, 937287, 335977, 398978, 940139, 938614, 549509, 974950, 575264, 670292, 24014

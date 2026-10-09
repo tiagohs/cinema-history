@@ -8,7 +8,7 @@
     android:layout_height="wrap_content"
     android:background="@android:color/transparent">
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pageContentListContainer"
@@ -43,7 +43,7 @@
                 app:layout_constraintGuide_percent="0.6"
                 />
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
                 android:layout_height="@dimen/movie_info_header_poster_height"
                 android:id="@+id/imageCard"
@@ -65,7 +65,7 @@
                     android:scaleType="centerCrop"
                     />
 
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
@@ -237,6 +237,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

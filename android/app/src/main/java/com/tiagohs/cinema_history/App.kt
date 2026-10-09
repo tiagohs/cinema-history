@@ -8,6 +8,7 @@ import com.tiagohs.cinema_history.dagger.DaggerAppComponent
 import com.tiagohs.cinema_history.dagger.modules.AppModule
 import com.tiagohs.helpers.utils.ContentLanguage
 import timber.log.Timber
+import com.tiagohs.helpers.utils.RemoteContent
 
 class App: Application() {
     var appComponent: AppComponent? = null
@@ -20,6 +21,7 @@ class App: Application() {
         configureDagger()
         configureTimber()
         configureContentLanguages()
+        configureRemoteContent()
 
         // Anúncios: o SDK só é inicializado depois do consentimento (HomeActivity -> AdsManager).
         AdsHistory.registerSession(this)
@@ -30,6 +32,12 @@ class App: Application() {
         appComponent = DaggerAppComponent.builder()
             .appModule(AppModule(this))
             .build()
+    }
+
+    /** Conteúdo atualizável pelo site (prêmios etc.): usa o cache já baixado e atualiza em segundo plano. */
+    private fun configureRemoteContent() {
+        RemoteContent.init(this)
+        Thread({ RemoteContent.sync(this) }, "remote-content").apply { isDaemon = true }.start()
     }
 
     private fun configureTimber() {

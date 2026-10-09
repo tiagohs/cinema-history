@@ -51,12 +51,16 @@
             android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
         />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/tryAgainButton"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/presentation_start_button_size"
             android:text="@string/try_again"
-            android:background="@color/md_black_1000"
+            style="@style/Widget.Material3.Button"
+                app:backgroundTint="@color/md_black_1000"
+                app:rippleColor="@color/home_ripple_on_dark"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
             android:paddingStart="@dimen/activity_vertical_margin_2.5x"
             android:paddingEnd="@dimen/activity_vertical_margin_2.5x"
             android:layout_marginTop="@dimen/activity_vertical_margin_3x"

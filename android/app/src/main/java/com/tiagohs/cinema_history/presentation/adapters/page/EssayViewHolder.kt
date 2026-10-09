@@ -33,7 +33,7 @@ class EssayViewHolder(
 
         binding.essayVideoViewer.setupPlayer(activity, contentEssay.videoId)
         binding.essayVideoTitle.setResourceText(contentEssay.title)
-        binding.essayVideoDescription.setResourceText(contentEssay.description)
+        binding.essayVideoDescription.setResourceStyledText(contentEssay.description)
         binding.essayVideoTitle.setResourceTextColor(colorAsset.textColorName)
         binding.essayVideoDescription.setResourceTextColor(colorAsset.textColorName)
 

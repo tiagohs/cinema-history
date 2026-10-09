@@ -1,0 +1,375 @@
+[
+  {
+    "old": "http://www.bafta.org/",
+    "new": "http://www.bafta.org/",
+    "status": "ok",
+    "note": "Site oficial do BAFTA; 403/Cloudflare é bloqueio de bot (WebFetch em bafta.org/heritage respondeu normalmente).",
+    "file": "awards.json",
+    "context": "BAFTA Film Awards"
+  },
+  {
+    "old": "http://www.blogosanosperdidos.com.br/2019/05/o-cinema-mudo-e-as-vamps.html",
+    "new": "https://web.archive.org/web/20210922082919/https://www.blogosanosperdidos.com.br/2019/05/o-cinema-mudo-e-as-vamps.html",
+    "status": "substituído",
+    "title": "O Cinema mudo e as Vamps (cópia no Wayback Machine)",
+    "note": "Domínio blogosanosperdidos.com.br não existe mais (NXDOMAIN). Não achei a matéria em outro endereço nem equivalente confiável em PT; snapshot de 22/09/2021 confirmado pela API do Wayback.",
+    "file": "glossary.json",
+    "context": "O Cinema mudo e as Vamps"
+  },
+  {
+    "old": "http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=2320",
+    "new": "http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=2320",
+    "status": "ok",
+    "note": "Portal Domínio Público (gov.br) existe; 403 é desafio Cloudflare. Snapshot de 22/04/2025 com status 200 confirma a página co_obra=2320 (Manifesto). Conteúdo não pôde ser lido por causa do bloqueio.",
+    "file": "main_1_page_8.json",
+    "context": "Clique aqui para ler o Manifesto em port"
+  },
+  {
+    "old": "http://www.mnemocine.com.br/index.php/cinema-categoria/24-histcinema/185-cinema-epico",
+    "new": "https://www.infopedia.pt/artigos/$cinema-epico-ou-historico",
+    "status": "substituído",
+    "title": "cinema épico ou histórico | Infopédia (Porto Editora)",
+    "note": "Mnemocine refez o site (WordPress novo) e o artigo antigo sumiu (404; busca interna não acha). Substituto em português de fonte confiável sobre o gênero épico. Alternativa: https://web.archive.org/web/20220618105404/http://www.mnemocine.com.br/index.php/cinema-categoria/24-histcinema/185-cinema-epico",
+    "file": "glossary.json",
+    "context": "Cinema Épico"
+  },
+  {
+    "old": "https://bloody-disgusting.com/editorials/3536526/afraid-afraid-intro-body-horror/",
+    "new": "https://bloody-disgusting.com/editorials/3536526/afraid-afraid-intro-body-horror/",
+    "status": "ok",
+    "note": "Página existe (403 é Cloudflare); título confirmado via WebFetch: 'Be Afraid, Be Very Afraid: An Intro to Body Horror!' (Meagan Navarro, 2018).",
+    "file": "glossary.json",
+    "context": "Be Afraid, Be Very Afraid: An Intro to B"
+  },
+  {
+    "old": "https://cinetoscopio.com.br/2017/12/22/o-que-e-um-cinetoscopio/",
+    "new": "https://pt.wikipedia.org/wiki/Cinetosc%C3%B3pio",
+    "status": "substituído",
+    "title": "Cinetoscópio – Wikipédia, a enciclopédia livre",
+    "note": "cinetoscopio.com.br virou outro site (notícias) e o artigo de 2017 não existe mais (404, busca interna vazia). Substituto em português. Alternativa fiel: https://web.archive.org/web/20171231231920/http://cinetoscopio.com.br:80/2017/12/22/o-que-e-um-cinetoscopio/",
+    "file": "glossary.json",
+    "context": "O que é um Cinetoscópio?"
+  },
+  {
+    "old": "https://en.wikipedia.org/wiki/Motion_Picture_Production_Code ",
+    "new": "https://en.wikipedia.org/wiki/Motion_Picture_Production_Code",
+    "status": "ok",
+    "note": "Existe (redireciona para o artigo 'Hays Code'). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Motion Picture Production Code"
+  },
+  {
+    "old": "https://en.wikipedia.org/wiki/Serial_film ",
+    "new": "https://en.wikipedia.org/wiki/Serial_film",
+    "status": "ok",
+    "note": "Existe ('Serial film - Wikipedia', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Serial Films"
+  },
+  {
+    "old": "https://filmschoolrejects.com/20-must-see-ozploitation-movies/ ",
+    "new": "https://www.acmi.net.au/stories-and-ideas/five-unmissable-ozploitation-horror-films/",
+    "status": "substituído",
+    "title": "Five unmissable Ozploitation horror films | ACMI",
+    "note": "Film School Rejects está fora do ar (página inicial diz 'FSR is currently offline', site à venda; o artigo dá 404). Substituto: matéria do ACMI (museu australiano de cinema). Alternativa fiel: https://web.archive.org/web/20250812055856/https://filmschoolrejects.com/20-must-see-ozploitation-movies/ (URL original também tinha espaço no final).",
+    "file": "glossary.json",
+    "context": "Go Down Under with 20 Must-See Ozploitat"
+  },
+  {
+    "old": "https://heritage.bafta.org/viewall",
+    "new": "https://www.bafta.org/heritage",
+    "status": "substituído",
+    "title": "Our Heritage | BAFTA",
+    "note": "Subdomínio heritage.bafta.org não existe mais (NXDOMAIN). A página 'Our Heritage' no site oficial conta a história do BAFTA desde 1947 com as datas-chave (sem linha do tempo dedicada). Snapshot antigo: https://web.archive.org/web/20220525170515/https://heritage.bafta.org/viewall",
+    "file": "history3.json",
+    "context": "Clique aqui para acessar"
+  },
+  {
+    "old": "https://letterboxd.com",
+    "new": "https://letterboxd.com",
+    "status": "ok",
+    "note": "Site do Letterboxd no ar; 403 é Cloudflare ('Just a moment...').",
+    "file": "main_8_page_2.json",
+    "context": "Conheça o Letterboxd"
+  },
+  {
+    "old": "https://theasc.com/asc/asc-museum-kinetoscope",
+    "new": "https://collection.sciencemuseumgroup.org.uk/objects/co18643/edison-kinetoscope",
+    "status": "substituído",
+    "title": "Edison Kinetoscope | Science Museum Group Collection",
+    "note": "Página do ASC Museum foi removida (404; a busca no site da ASC não acha o cinetoscópio). Substituto: ficha do objeto no acervo do Science Museum Group. Alternativa fiel: https://web.archive.org/web/20220323200538/https://theasc.com/asc/asc-museum-kinetoscope",
+    "file": "glossary.json",
+    "context": "ASC Museum: Kinetoscope"
+  },
+  {
+    "old": "https://time.com/5776406/blockbuster-meaning/",
+    "new": "https://time.com/5776406/blockbuster-meaning/",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou 'Why Hit Movies Are Called Blockbusters' (406 só para o curl).",
+    "file": "glossary.json",
+    "context": "Why Hit Movies Are Called Blockbusters"
+  },
+  {
+    "old": "https://vocal.media/horror/the-history-and-evolution-of-the-slasher-film",
+    "new": "https://faroutmagazine.co.uk/history-of-slasher-movies/",
+    "status": "substituído",
+    "title": "The history of slasher movies | Far Out Magazine",
+    "note": "Artigo do Vocal removido (404) e sem snapshot no Wayback. Substituto: matéria equivalente da Far Out (200).",
+    "file": "glossary.json",
+    "context": "The History and Evolution of the Slasher"
+  },
+  {
+    "old": "https://www.adobe.com/creativecloud/video/discover/rotoscoping-animation.html",
+    "new": "https://www.adobe.com/creativecloud/video/discover/rotoscoping-animation.html",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou 'What is rotoscoping animation and how to do it | Adobe' (403 é bloqueio do Akamai ao curl).",
+    "file": "glossary.json",
+    "context": "Animate reality with rotoscoping"
+  },
+  {
+    "old": "https://www.aicinema.com.br/como-fazer-um-roteiro/ ",
+    "new": "https://www.aicinema.com.br/como-fazer-um-roteiro/",
+    "status": "ok",
+    "note": "Existe ('Como Fazer um Roteiro - AIC', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Como Fazer um Roteiro "
+  },
+  {
+    "old": "https://www.amazon.com.br/Story-Film-Mark-Cousins/dp/186205942X",
+    "new": "https://www.amazon.com.br/Story-Film-Mark-Cousins/dp/186205942X",
+    "status": "ok",
+    "note": "Amazon bloqueia robôs (500/captcha); não deu para ver a página, mas o /dp/ por ISBN é estável. ATENÇÃO: o ASIN 186205942X é 'The Story of Film' (Pavilion, em inglês). A edição em português do verbete é a da Martins Fontes (2013, ISBN 978-85-8063-068-8) → https://www.amazon.com.br/dp/8580630681 (ISBN-10 calculado; não deu para verificar na Amazon).",
+    "file": "references.json",
+    "context": "História do Cinema: Dos Clássicos Mudos "
+  },
+  {
+    "old": "https://www.amazon.com/Be-Natural-Untold-Story-Guy-Blach%C3%A9/dp/B07V2B4PLJ",
+    "new": "https://www.amazon.com/Be-Natural-Untold-Story-Guy-Blach%C3%A9/dp/B07V2B4PLJ",
+    "status": "ok",
+    "note": "Amazon bloqueia robôs (o curl recebeu captcha; a auditoria, 404). O Wayback tem snapshot com status 200 da mesma URL em 01/02/2026, então a página provavelmente ainda existe. Se cair: DVD da Kino Lorber https://www.amazon.com/dp/B07T4N5BDT ou a página do filme em Cannes Classics https://cinemadedemain.festival-cannes.com/en/f/be-natural-the-untold-story-of-alice-guy-blache",
+    "file": "references.json",
+    "context": "Be Natural: The Untold Story of Alice Gu"
+  },
+  {
+    "old": "https://www.avmakers.com.br/blog/generos-cinematograficos-e-suas-convencoes/ ",
+    "new": "https://www.avmakers.com.br/blog/generos-cinematograficos-e-suas-convencoes/",
+    "status": "ok",
+    "note": "Existe ('Gêneros cinematográficos e suas convenções | Blog da AvMakers', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Gêneros Cinematográficos E Suas Convençõ"
+  },
+  {
+    "old": "https://www.bbc.com/portuguese/noticias/2015/01/150121_vert_cul_primeira_itgirl_ml ",
+    "new": "https://www.bbc.com/portuguese/noticias/2015/01/150121_vert_cul_primeira_itgirl_ml",
+    "status": "ok",
+    "note": "Existe ('Clara Bow: A primeira it girl do mundo - BBC News Brasil', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Clara Bow: A primeira 'it girl' do mundo"
+  },
+  {
+    "old": "https://www.boxofficepro.com/universal-guarantees-minimum-five-weekends-of-theatrical-exclusivity-seven-weekends-starting-in-2027/",
+    "new": "https://www.boxofficepro.com/universal-guarantees-minimum-five-weekends-of-theatrical-exclusivity-seven-weekends-starting-in-2027/",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou o título (Boxoffice Pro, 12/03/2026). 403 é Cloudflare.",
+    "file": "main_8_page_1.json",
+    "context": "Leia na Boxoffice Pro"
+  },
+  {
+    "old": "https://www.filmsite.org/serialfilms.html ",
+    "new": "https://www.filmsite.org/serialfilms.html",
+    "status": "ok",
+    "note": "Existe ('Serial Films: Part 1', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Serial Films"
+  },
+  {
+    "old": "https://www.hbobrasil.com/series/detail/the-movies/14936/ttl751980",
+    "new": "https://www.cnn.com/shows/the-movies-cnn",
+    "status": "substituído",
+    "title": "'The Movies' - CNN",
+    "note": "hbobrasil.com agora redireciona para skydance.com (sem snapshot no Wayback). Substituto: página oficial da série na CNN, com os episódios (anos 80, 90, 2000...). A página da HBO Max BR para 'the-movies' dá 404.",
+    "file": "references.json",
+    "context": "The Movies"
+  },
+  {
+    "old": "https://www.jws.com.br/2020/07/o-surgimento-do-cinemascope/",
+    "new": "https://www.dn.pt/arquivo/diario-de-noticias/cinemascope-um-ciclo-de-cinema-maior-que-a-vida-9080763.html",
+    "status": "substituído",
+    "title": "CinemaScope: um ciclo de cinema maior que a vida | Diário de Notícias",
+    "note": "jws.com.br agora redireciona para josewille.com.br; o artigo não existe (404, busca vazia) e não há snapshot no Wayback. Substituto em português (DN, 2018) que explica o surgimento do CinemaScope em 1953 como resposta à TV.",
+    "file": "glossary.json",
+    "context": "O surgimento do Cinemascope nos anos 195"
+  },
+  {
+    "old": "https://www.liveabout.com/slasher-movies-1873211",
+    "new": "https://www.liveabout.com/slasher-movies-1873211",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou 'The History of Slasher Movies' (402 só para o curl).",
+    "file": "glossary.json",
+    "context": "The History of Slasher Movies"
+  },
+  {
+    "old": "https://www.liveabout.com/what-is-a-road-movie-4178796",
+    "new": "https://www.liveabout.com/what-is-a-road-movie-4178796",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou 'What Is a Road Movie? Elements and Examples of the Genre' (402 só para o curl).",
+    "file": "glossary.json",
+    "context": "What Is a Road Movie? Elements and Examp"
+  },
+  {
+    "old": "https://www.masterclass.com/articles/film-101-what-is-a-close-up-shot-how-to-creatively-use-a-close-up-camera-angle-to-convey-emotion ",
+    "new": "https://www.masterclass.com/articles/film-101-what-is-a-close-up-shot-how-to-creatively-use-a-close-up-camera-angle-to-convey-emotion",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou o título (403 é Cloudflare). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "What Is a Close-Up Shot?"
+  },
+  {
+    "old": "https://www.masterclass.com/articles/learn-about-the-role-of-set-pieces-in-screenwriting ",
+    "new": "https://www.masterclass.com/articles/learn-about-the-role-of-set-pieces-in-screenwriting",
+    "status": "ok",
+    "note": "Existe; o título atual é 'The Role of Set Pieces in Film: Famous Set Piece Examples' (mesmo assunto). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Filmmaking 101: Learn About the Role of "
+  },
+  {
+    "old": "https://www.masterclass.com/articles/what-is-a-movie-director-the-responsibilities-of-a-film-director-and-tips-on-directing-actors ",
+    "new": "https://www.masterclass.com/articles/what-is-a-movie-director-the-responsibilities-of-a-film-director-and-tips-on-directing-actors",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou o título. A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "What Is a Movie Director? The Responsibi"
+  },
+  {
+    "old": "https://www.masterclass.com/articles/what-is-a-screenplay-formatting-tips-and-tricks ",
+    "new": "https://www.masterclass.com/articles/what-is-a-screenplay-formatting-tips-and-tricks",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou 'Learn How to Format a Screenplay: Step-by-Step Guide'. A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Learn How to Format a Screenplay: Step-b"
+  },
+  {
+    "old": "https://www.masterclass.com/articles/what-is-montage-in-filmmaking-how-to-create-a-memorable-montage",
+    "new": "https://www.masterclass.com/articles/what-is-montage-in-filmmaking-how-to-create-a-memorable-montage",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou 'Learn About Montage in Filmmaking: How to Create a Memorable Movie Montage' (403 é Cloudflare).",
+    "file": "glossary.json",
+    "context": "Learn About Montage in Filmmaking: How t"
+  },
+  {
+    "old": "https://www.poder360.com.br/poder-brasil/morte-de-rubens-paiva-foi-causada-pelo-estado-diz-nova-certidao/",
+    "new": "https://www.poder360.com.br/poder-brasil/morte-de-rubens-paiva-foi-causada-pelo-estado-diz-nova-certidao/",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou 'Morte de Rubens Paiva foi causada pelo Estado, diz nova certidão'.",
+    "file": "main_8_page_6.json",
+    "context": "Leia sobre a nova certidão"
+  },
+  {
+    "old": "https://www.popmatters.com/20-best-splatter-films-2496205725.html",
+    "new": "https://www.popmatters.com/20-best-splatter-films",
+    "status": "substituído",
+    "title": "The 20 Best Splatter Films of All Time » PopMatters",
+    "note": "Mesma matéria em novo endereço no mesmo site (a URL antiga dá 'Page Not Found', a nova dá 200 com o mesmo título).",
+    "file": "glossary.json",
+    "context": "The 20 Best Splatter Films of All Time"
+  },
+  {
+    "old": "https://www.sagaftra.org/about/our-history/1960s",
+    "new": "https://www.sagaftra.org/about/our-history/1960s",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou '1960s | SAG-AFTRA', com os eventos de 1960 a 1969.",
+    "file": "main_8_page_5.json",
+    "context": "Veja a história no site do SAG-AFTRA"
+  },
+  {
+    "old": "https://www.screendaily.com/news/wb-cast-off-coyote-vs-acme-scores-ketchups-top-debut-at-us-box-office-behind-spider-man/5219851.article",
+    "new": "https://www.screendaily.com/news/wb-cast-off-coyote-vs-acme-scores-ketchups-top-debut-at-us-box-office-behind-spider-man/5219851.article",
+    "status": "ok",
+    "note": "Existe; WebFetch confirmou a matéria de bilheteria de 'Coyote vs Acme' (405 é verificação humana).",
+    "file": "main_8_page_7.json",
+    "context": "Leia na Screen Daily"
+  },
+  {
+    "old": "https://www.studiobinder.com/blog/close-up-shot/ ",
+    "new": "https://www.studiobinder.com/blog/close-up-shot/",
+    "status": "ok",
+    "note": "Existe ('Close-Up Shots: Examples of Camera Movement & Angles', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Close-Up Shots: Examples of Camera Movem"
+  },
+  {
+    "old": "https://www.studiobinder.com/blog/exposition-in-film-screenplay/ ",
+    "new": "https://www.studiobinder.com/blog/exposition-in-film-screenplay/",
+    "status": "ok",
+    "note": "Existe ('Writing Exposition in Film: Mastering the Screenplay', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "Mastering the Screenplay: Writing Exposi"
+  },
+  {
+    "old": "https://www.studiobinder.com/blog/how-to-use-slow-motion-in-film-to-create-iconic-moments/ ",
+    "new": "https://www.studiobinder.com/blog/how-to-use-slow-motion-in-film-to-create-iconic-moments/",
+    "status": "ok",
+    "note": "Existe ('How to Use Slow Motion to Create Iconic Moments', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "How to Use Slow Motion to Create Iconic "
+  },
+  {
+    "old": "https://www.studiobinder.com/blog/what-is-a-jump-cut/ ",
+    "new": "https://www.studiobinder.com/blog/what-is-a-jump-cut/",
+    "status": "ok",
+    "note": "Existe ('What is a Jump Cut? 5 Ways to Use Jump Cuts in Film', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "What is a Jump Cut? 5 Ways to Use Jump C"
+  },
+  {
+    "old": "https://www.studiobinder.com/blog/what-is-imax-definition/ ",
+    "new": "https://www.studiobinder.com/blog/what-does-a-producer-do/",
+    "status": "substituído",
+    "title": "What Does a Producer Do — Types & Roles Explained",
+    "note": "ERRO DE CONTEÚDO, não link quebrado: no verbete 'Produtor' o link 'What Does a Producer Do...' aponta para a página do IMAX. A URL antiga é a mesma do verbete IMAX (veja a entrada seguinte), então troque só no verbete Produtor. A nova URL dá 200.",
+    "file": "glossary.json",
+    "context": "What Does a Producer Do: The Various Typ"
+  },
+  {
+    "old": "https://www.studiobinder.com/blog/what-is-imax-definition/ ",
+    "new": "https://www.studiobinder.com/blog/what-is-imax-definition/",
+    "status": "ok",
+    "note": "Verbete IMAX: existe ('What is IMAX and How It Changed the Way We Watch Movies', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "What is IMAX and How It Changed the Way "
+  },
+  {
+    "old": "https://www.studiobinder.com/blog/what-is-rotoscope-animation-definition/ ",
+    "new": "https://www.studiobinder.com/blog/what-is-rotoscope-animation-definition/",
+    "status": "ok",
+    "note": "Existe ('What is Rotoscope Animation? The Process Explained', 200). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "What is Rotoscope Animation? The Process"
+  },
+  {
+    "old": "https://www.studiobinder.com/blog/what-is-screenplay-definition/ ",
+    "new": "https://www.studiobinder.com/blog/what-is-screenplay-definition/",
+    "status": "ok",
+    "note": "Existe (200); o título atual é 'What is a Screenplay — Ultimate Guide for Screenwriters' (mesmo assunto). A URL original tem espaço no final: usar sem o espaço.",
+    "file": "glossary.json",
+    "context": "What is a Screenplay? A Brief Definition"
+  },
+  {
+    "old": "https://www2.bfi.org.uk/news-opinion/news-bfi/features/where-begin-giallo",
+    "new": "https://www.bfi.org.uk/features/where-begin-giallo",
+    "status": "substituído",
+    "title": "Where to begin with giallo | BFI",
+    "note": "Mesma matéria no novo endereço do BFI (200, mesmo título).",
+    "file": "glossary.json",
+    "context": "Where to begin with giallo"
+  },
+  {
+    "old": "https://www2.bfi.org.uk/news-opinion/news-bfi/lists/10-great-road-movies-21st-century",
+    "new": "https://www.bfi.org.uk/lists/10-great-road-movies-21st-century",
+    "status": "substituído",
+    "title": "10 great road movies of the 21st century | BFI",
+    "note": "Mesma matéria no novo endereço do BFI (200, mesmo título).",
+    "file": "glossary.json",
+    "context": "10 great road movies of the 21st century"
+  }
+]

@@ -57,7 +57,8 @@
         <activity android:name=".presentation.activities.MilMoviesPresentationActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
-        <activity android:name=".presentation.activities.HistoryPagesActivity" />
+        <activity android:name=".presentation.activities.HistoryPagesActivity"
+            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <activity android:name=".presentation.activities.PersonDetailsActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />

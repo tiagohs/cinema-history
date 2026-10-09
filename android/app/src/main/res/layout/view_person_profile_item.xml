@@ -60,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="@dimen/person_profile_item_circle_size"
         android:layout_height="@dimen/person_profile_item_circle_size"
         android:id="@+id/circle"
@@ -71,13 +71,13 @@
         app:layout_constraintEnd_toEndOf="@id/divisor"
         app:layout_constraintStart_toStartOf="@id/divisor" >
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/person_profile_item_inner_circle_size"
             android:layout_height="@dimen/person_profile_item_inner_circle_size"
             app:cardCornerRadius="@dimen/person_profile_item_inner_circle_radius"
             android:layout_gravity="center"
             app:cardBackgroundColor="@color/md_black_1000" />
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

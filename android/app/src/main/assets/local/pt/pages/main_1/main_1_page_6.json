@@ -81,8 +81,8 @@
         "image_type": "local",
         "url": "the_general_train",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://img.youtube.com/vi/yCH-tUmMl7Q/0.jpg",
+          "image_type": "local",
+          "url": "img_gif_thumb_the_general_train",
           "style": {
             "scale_type": "center_crop"
           }

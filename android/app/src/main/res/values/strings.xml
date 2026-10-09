@@ -171,4 +171,19 @@
     <string name="ad_badge">Ad</string>
     <string name="ad_privacy_title">Ad privacy</string>
     <string name="ad_privacy_summary">Review or change your ad consent choices</string>
+
+    <!-- Home (Material 3) -->
+    <string name="home_section_eras_title">Eras of cinema</string>
+    <string name="home_section_eras_subtitle">A journey through film history in %1$d parts</string>
+    <string name="home_see_all">See all</string>
+    <string name="home_continue_reading">Continue reading</string>
+    <string name="home_latest_era">Latest chapter</string>
+    <string name="home_start_reading">Start reading</string>
+    <string name="home_continue_button">Continue</string>
+    <string name="home_all_eras">All eras</string>
+    <string name="home_section_explore_title">Explore more</string>
+    <string name="home_section_more_title">More</string>
+    <string name="home_settings_description">Language and app preferences</string>
+    <string name="home_about_description">About the app and its creator</string>
+    <string name="home_era_quote_title">Quote of the era</string>
 </resources>

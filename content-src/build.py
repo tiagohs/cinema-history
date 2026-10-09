@@ -514,7 +514,8 @@ def main():
     era_filter = int(args[args.index("--era") + 1]) if "--era" in args else None
     files = sorted(
         (os.path.join(dp, f) for dp, _, fs in os.walk(os.path.join(HERE, "pt")) for f in fs
-         if f.endswith(".md") and not f.startswith("timeline_")))
+         if f.endswith(".md") and not f.startswith("timeline_")
+         and os.sep + "awards" + os.sep not in dp + os.sep))  # prêmios: content-src/awards.py
     for p in sorted(glob.glob(os.path.join(HERE, "pt", "timelines", "timeline_*.md"))):
         n, doc, items, errs = timeline(p, write_images=True)
         if errs:

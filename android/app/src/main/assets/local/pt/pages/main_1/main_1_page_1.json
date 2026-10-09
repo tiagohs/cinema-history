@@ -15,8 +15,8 @@
         "image_type": "local",
         "url": "pathe_logo",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://img.youtube.com/vi/J9jBA-tZ7tU/0.jpg",
+          "image_type": "local",
+          "url": "img_gif_thumb_pathe_logo",
           "style": {
             "scale_type": "center_crop"
           }
@@ -54,11 +54,11 @@
     },
     {
       "type": "video",
-      "video_id": "ymjlHsPmesk",
+      "video_id": "1FAj9fJQRZA",
       "information": {
         "contentTitle": "A chegada de um trem à estação de La Ciotat ",
         "contentText": "Um dos primeiros filmes da história a ser exibido a um público pagante. A câmera foi colocada perto dos trilhos, de modo que o trem aumentava conforme se aproximava, até parecer que atravessaria a tela e invadiria a sala. Diz a lenda que as pessoas se abaixavam, gritavam ou levantavam para sair.",
-        "source": "Youtube: Canal <i>maccafan21 [Ciné'Culte]</i>"
+        "source": "Youtube: Canal <i>Andy Myers</i>"
       }
     },
     {
@@ -87,11 +87,11 @@
     },
     {
       "type": "video",
-      "video_id": "a6f80XxlCZk",
+      "video_id": "ZNAHcMMOHE8",
       "information": {
         "contentTitle": "Viagem à Lua / A trip to Moon (1902)",
         "contentText": "Esse foi um dos primeiros filmes que se tem conhecimento de ficção científica. Uma parte perto do final foi animada, fazendo com que esse seja um dos primeiros filmes animados também.",
-        "source": "Youtube: Canal <i>maccafan21 [Ciné'Culte]</i>"
+        "source": "Youtube: Canal <i>Billi Brass Quintet</i>"
       }
     },
     {

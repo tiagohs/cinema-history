@@ -32,7 +32,7 @@
       "parameters": [
         {
           "key": "LINK",
-          "value": "https://heritage.bafta.org/viewall"
+          "value": "https://www.bafta.org/heritage"
         }
       ]
     },
@@ -41,5 +41,10 @@
   {
     "type": "text",
     "content_credits": "Wikipedia.com"
+  },
+  {
+    "type": "block_special",
+    "title": "From 2021 to 2026",
+    "description": "After the 2021 and 2022 ceremonies at the Royal Albert Hall, the BAFTA Film Awards moved to the Royal Festival Hall, at London's Southbank Centre, starting with the 76th edition in February 2023. The hosts also rotated: Rebel Wilson in 2022, Richard E. Grant and Alison Hammond in 2023, David Tennant in 2024 and 2025, and Alan Cumming in 2026.<br/><br/>In 2025 the British Academy created the Best Children's & Family Film category. The first winner was Wallace & Gromit: Vengeance Most Fowl, which also won Best Animated Film that same night; in 2026 the category went to Boong."
   }
 ]

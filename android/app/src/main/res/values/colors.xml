@@ -5,4 +5,13 @@
     <color name="colorAccent">@color/md_blue_500</color>
 
     <color name="colorOverlay">#78ffffff</color>
+
+    <!-- Material 3 / Home -->
+    <color name="home_surface_inverse">#FF121212</color>
+    <color name="home_ripple_on_light">#1F000000</color>
+    <color name="home_ripple_on_dark">#33FFFFFF</color>
+    <color name="home_outline_on_image">#B3FFFFFF</color>
+    <color name="home_hero_scrim">#CC000000</color>
+    <color name="home_text_on_image_secondary">#DEFFFFFF</color>
+    <color name="home_era_badge_background">#E6FFFFFF</color>
 </resources>

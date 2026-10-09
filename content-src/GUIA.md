@@ -29,7 +29,20 @@ resolve os links do TMDB, baixa as imagens e confere os vídeos.
 - Números em formato brasileiro: US$ 1,2 bilhão; 15 de março de 2020.
 - Nunca invente fato, número, data, citação ou vídeo. Se não conseguir confirmar, não use.
 
-## Elementos do capítulo (ordem livre, intercalando com o texto)
+## Elementos do capítulo (intercalados com o texto, seguindo o ritmo abaixo)
+**Ritmo da página** (regras do autor, valem para todo capítulo):
+1. A cada dois parágrafos de texto (`# text`) deve vir um elemento visual: imagem (`# image`), vídeo (`# video`
+   ou `# essay`) ou citação (`# quote`). Nunca mais de dois parágrafos seguidos sem um deles (o `# block` não
+   conta como elemento visual).
+2. Varie: não repita o mesmo tipo de elemento em sequência na mesma página (ex.: vídeo e, logo depois, outro
+   vídeo); alterne imagem, vídeo e citação. Evite também ensaio logo depois de vídeo (ou o contrário).
+3. Logo no início do capítulo (depois do cabeçalho com título/subtítulo), entre o primeiro e o segundo
+   parágrafo, deve vir um vídeo ou uma imagem.
+4. Nunca coloque um texto interno (`# block`) e uma citação (`# quote`) colados, em qualquer ordem: sempre há
+   pelo menos um parágrafo entre eles. O mesmo vale para quaisquer dois elementos especiais (block, quote,
+   video, image, essay): sempre separados por parágrafo. Na prática, cabe no máximo um elemento entre dois
+   parágrafos; não planeje mais elementos do que o capítulo tem de parágrafos.
+
 - `# sumario` (obrigatório, no topo): `title` curto (até ~45 caracteres), `description` de 1 a 2 frases
   (aparece no índice), `image`.
 - `# text`: um parágrafo por seção.

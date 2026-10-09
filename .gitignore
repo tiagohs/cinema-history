@@ -119,3 +119,4 @@ build/
 *~
 *.dat
 *.dep
+content-src/cache/tmdb.json

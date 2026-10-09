@@ -14,8 +14,8 @@ ext {
             interstitialChapter: 'ca-app-pub-5405332351907920/3203339213'
     ]
 
-    versionCode = 19
-    versionName = '2.4.0'
+    versionCode = 20
+    versionName = '2.5.0'
 
     buildToolsVersion = '36.0.0'
 

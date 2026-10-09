@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cartão de área do app na Home (1001 Filmes, Prêmios, Linha do tempo, Diretores). -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/destinationCard"
+    style="@style/Widget.CinemaHistory.CardView.Home"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_destination_height"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/md_black_1000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/destinationImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/img_godfather" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_home_scrim_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/destinationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/oswald_bold"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/home_destination_title_size"
+                tools:text="1001 Filmes" />
+
+            <TextView
+                android:id="@+id/destinationSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:textColor="@color/home_text_on_image_secondary"
+                tools:text="para Ver antes de Morrer" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -14,6 +14,7 @@ import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.entities.main_topics.MainTopicItem
+import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.domain.presenter.PresentationPresenter
 import com.tiagohs.cinema_history.presentation.adapters.SumarioPresentationAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
@@ -33,6 +34,9 @@ class PresentationActivity: BaseActivity<ActivityPresentationBinding>(), Present
     @Inject
     lateinit var presenter: PresentationPresenter
 
+    @Inject
+    lateinit var settingsManager: SettingsManager
+
     private var isFirstEnter = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +47,9 @@ class PresentationActivity: BaseActivity<ActivityPresentationBinding>(), Present
 
         presenter.onBindView(this)
         presenter.fetchMoviesByListId(mainTopic)
+
+        // Guarda a era aberta para o "Continue lendo" da Home.
+        mainTopic?.let { settingsManager.setLastReadEraId(it.id) }
     }
 
     override fun onBackPressed() {

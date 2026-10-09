@@ -13,7 +13,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.20" />
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="@dimen/timeline_footer_circle_container_size"
         android:layout_height="@dimen/timeline_footer_circle_container_size"
         android:id="@+id/circle"
@@ -24,14 +24,14 @@
         app:layout_constraintEnd_toEndOf="@id/divisor"
         app:layout_constraintStart_toStartOf="@id/divisor" >
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/timeline_footer_circle_size"
             android:layout_height="@dimen/timeline_footer_circle_size"
             app:cardCornerRadius="@dimen/timeline_footer_circle_radius"
             android:layout_gravity="center"
             app:cardBackgroundColor="@color/md_white_1000" />
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
     <View
         android:layout_width="@dimen/timeline_divisor_vertical_width"
@@ -168,7 +168,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/timeline_page_title_line_width"
             android:layout_height="@dimen/timeline_page_title_line_height"
             android:id="@+id/textLine"
@@ -218,13 +218,13 @@
             tools:text="Principais\nAcontecimentos"
             />
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/comingSoonTagContainer"
             android:layout_marginTop="@dimen/activity_vertical_margin_2x"
             android:layout_marginStart="@dimen/activity_vertical_margin_1.2x"
-            android:backgroundTint="@color/md_red_500"
+            app:cardBackgroundColor="@color/md_red_500"
             app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
             app:cardElevation="@dimen/activity_vertical_margin_1.2x"
             android:visibility="gone"
@@ -247,7 +247,7 @@
                 android:paddingEnd="@dimen/activity_vertical_margin_0.5x"
                 />
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

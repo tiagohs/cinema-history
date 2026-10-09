@@ -6,8 +6,20 @@ image: name=img_terror2020_hora_do_mal tmdb_path=/8VyTWJrNEyV2MTWvniDVp0MpOAe.jp
 # text
 A década de 2010 terminou com o terror reabilitado, e a de 2020 começou com ele na dianteira. Quando {{m:570670}} chegou às salas, no fim de fevereiro de 2020, ninguém imaginava que, semanas depois, os cinemas do mundo inteiro fechariam as portas por causa da pandemia. Na reabertura, o gênero mostrou uma vantagem que os blockbusters não tinham: filmes baratos, com público fiel, que não dependem de estrelas caras nem de efeitos que consomem centenas de milhões de dólares. Em 2021, segundo o site <i>The Numbers</i>, o terror respondeu por 12,9% dos ingressos vendidos nos Estados Unidos, o maior índice registrado para o gênero até então (só superado em 2025). O que parecia efeito colateral de um mercado vazio virou regra: nos anos seguintes, o terror se firmou como a aposta mais confiável de Hollywood e alcançou um prestígio que raramente tinha experimentado.
 
+# image
+image: name=img_terror2020_homem_invisivel tmdb_path=/q5t01d3MBFFsjwRjoS61LxXEEOr.jpg
+title: <i>O Homem Invisível</i> (2020)
+text: Uma mão marcada no vidro embaçado: o terror da <i>Blumhouse</i> estreou no fim de fevereiro de 2020 e foi um dos últimos sucessos de bilheteria antes de a pandemia fechar os cinemas.
+source: Divulgação <i>Universal Pictures</i> (via TMDB)
+
 # text
 A pandemia também ensinou os estúdios a mandar o terror direto para o streaming, e foram os testes com público que os fizeram mudar de ideia. {{m:882598}}, estreia em longa de {{p:2218465}}, tinha sido feito para o <i>Paramount+</i>; depois de sessões-teste muito positivas, a <i>Paramount</i> o levou aos cinemas em setembro de 2022. Custou US$ 17 milhões e rendeu US$ 217 milhões, ajudado por uma ação de marketing simples e perturbadora: atores sorrindo fixamente atrás do rebatedor em transmissões de jogos de beisebol. Na mesma época, {{m:913290}} escapou de ir direto para o <i>Hulu</i>. Escrito e dirigido por {{p:84833}}, comediante do grupo <i>The Whitest Kids U' Know</i>, o filme começa como suspense sobre uma casa alugada com reserva duplicada e muda de rumo várias vezes. Com orçamento de US$ 4,5 milhões, fez US$ 46 milhões no mundo.
+
+# video
+youtube: BcDK7lkzzsU
+title: Trailer de <i>Sorria</i>
+text: Feito para o <i>Paramount+</i>, o terror de Parker Finn foi parar nos cinemas depois de sessões-teste muito positivas e rendeu US$ 217 milhões com orçamento de US$ 17 milhões.
+source: Youtube: Canal <i>Paramount Pictures</i>
 
 # text
 Se a <strong>Blumhouse</strong> era a linha de montagem do terror, a <strong>A24</strong> virou a sua grife. A distribuidora de <i>A Bruxa</i> e {{m:493922}} usou a pandemia para um experimento: {{p:101542}} filmou na Nova Zelândia, em sequência e em segredo, dois longas com a mesma estrela, {{p:1137824}}. Em {{m:760104}}, homenagem aos <i>slashers</i> dos anos 1970 sobre uma equipe que roda um filme adulto numa fazenda do Texas, Goth interpreta tanto a jovem Maxine quanto a idosa Pearl. Meses depois, {{m:949423}} contou a origem da velha assassina com as cores saturadas dos musicais antigos, e a trilogia fechou com {{m:1023922}}. Em 2023, a distribuidora foi buscar no <i>YouTube</i> os irmãos australianos {{p:2070453|Danny}} e Michael Philippou, cujo {{m:1008042}} virou a maior bilheteria de terror da <i>A24</i> até então — trajetória contada no próximo capítulo.
@@ -34,11 +46,24 @@ Nenhum filme resume melhor a nova leva do que {{m:933260}}, da francesa {{p:1607
 quote: Há trinta anos, um produtor me disse que eu era uma “atriz de pipoca”.
 author: Demi Moore (discurso no Globo de Ouro, 2025)
 
+# text
+O terror de prestígio também olhou para trás. {{p:138781}}, que tinha estreado com <i>A Bruxa</i>, realizou um projeto que perseguia desde a adolescência: refilmar {{m:653}}, o clássico expressionista de F. W. Murnau. Seu {{m:426063}} trocou o vampiro de silhueta recortada por um conde em decomposição, quase irreconhecível sob a maquiagem de {{p:137905}}, e colocou no centro a Ellen de {{p:1459885}}, uma jovem atormentada desde a infância por uma presença que a deseja. Lançado nos Estados Unidos no Natal de 2024, custou US$ 50 milhões e fez US$ 182 milhões, a maior bilheteria da carreira de Eggers. Recebeu quatro indicações ao Oscar, em Fotografia, Figurino, Direção de Arte e Maquiagem, mas não levou nenhuma: perdeu justamente a de Maquiagem para <i>A Substância</i>.
+
 # video
 youtube: 8H64HNvXrqU
 title: Os bastidores de <i>A Substância</i>
 text: Coralie Fargeat apresenta os bastidores de <i>A Substância</i>, rodado na França e apoiado em efeitos práticos: a produção usou mais de 20 mil litros de sangue cenográfico.
 source: Youtube: Canal <i>MUBI</i>
+
+// [ritmo] elemento retirado (comentado) para cumprir as regras de ritmo: não havia parágrafo livre perto do tema para separá-lo dos outros elementos. Para usar, descomente e tire outro elemento.
+// # essay
+// youtube: IvZGrF1hSbY
+// title: Why Does The Substance Look Like That?
+// description: Neste ensaio sem <i>spoilers</i>, Thomas Flight mostra como o expressionismo alemão, o estilo que há mais de cem anos deu ao cinema filmes como o <i>Nosferatu</i> original, voltou a influenciar o visual de produções recentes como <i>A Substância</i>, com seus cenários exagerados, cores fortes e enquadramentos que deformam a realidade.
+// channel: thomas_flight
+
+# text
+Na outra ponta, o terror popular viveu o seu próprio <i>boom</i>. A <i>Blumhouse</i>, de {{p:84348}}, oficializou em janeiro de 2024 a fusão com a <i>Atomic Monster</i>, de {{p:2127}}, e teve seu maior fenômeno com um filme que a crítica detestou: {{m:507089}}, adaptação de um videogame independente. Mesmo lançado simultaneamente no streaming <i>Peacock</i>, fez US$ 297 milhões no mundo, a maior bilheteria da <i>Blumhouse</i> até então, sustentado por fãs que cresceram vendo o jogo no <i>YouTube</i>. Já {{p:933176}} financiou parte de {{m:663712}} com uma vaquinha na internet: o filme custou US$ 250 mil, rendeu US$ 15,8 milhões e ganhou fama com relatos de espectadores que passavam mal nas sessões. Em outubro de 2024, {{m:1034541|Terrifier 3}} estreou em primeiro lugar nos Estados Unidos e, com US$ 90 milhões, virou o filme sem classificação etária de maior bilheteria da história.
 
 # block
 title: O corpo como horror: o renascimento do body horror
@@ -46,25 +71,13 @@ image: name=img_terror2020_substancia tmdb_path=/bVSOgrxasVJF6V71T7v2KfBRSzu.jpg
 text: O <strong>body horror</strong>, o terror que nasce das transformações, mutilações e revoltas do próprio corpo, tem um patrono: {{p:224}}, que fez do gênero um estudo sobre desejo, tecnologia e doença em filmes como {{m:9426}}, vencedor do Oscar de Maquiagem. Nos anos 2020, esse cinema saiu das sessões da meia-noite e chegou ao centro dos festivais. Em 2021, {{p:1392433}} ganhou a Palma de Ouro com <i>Titane</i>, história de uma assassina que engravida depois de um encontro com um carro; foi apenas a segunda mulher a vencer o prêmio, depois de Jane Campion, em 1993. No ano seguinte, o próprio Cronenberg voltou a Cannes com {{m:819876}}. <i>A Substância</i> levou a tendência ao Oscar e, em 2026, a categoria de Maquiagem ainda indicou o norueguês {{m:1284120}}, releitura sangrenta do conto da Cinderela contada pelo lado da irmã que mutila o próprio corpo para caber no sapato. O fio que une esses filmes é claro: o corpo virou o lugar onde se encenam as angústias da época, do envelhecimento e dos padrões de beleza à maternidade e à identidade de gênero.
 
 # text
-O terror de prestígio também olhou para trás. {{p:138781}}, que tinha estreado com <i>A Bruxa</i>, realizou um projeto que perseguia desde a adolescência: refilmar {{m:653}}, o clássico expressionista de F. W. Murnau. Seu {{m:426063}} trocou o vampiro de silhueta recortada por um conde em decomposição, quase irreconhecível sob a maquiagem de {{p:137905}}, e colocou no centro a Ellen de {{p:1459885}}, uma jovem atormentada desde a infância por uma presença que a deseja. Lançado nos Estados Unidos no Natal de 2024, custou US$ 50 milhões e fez US$ 182 milhões, a maior bilheteria da carreira de Eggers. Recebeu quatro indicações ao Oscar, em Fotografia, Figurino, Direção de Arte e Maquiagem, mas não levou nenhuma: perdeu justamente a de Maquiagem para <i>A Substância</i>.
+Entre um polo e outro, {{p:291263}} seguiu fazendo filmes que não cabem em gaveta. Depois de <i>Corra!</i> e <i>Nós</i>, ele lançou em 2022 {{m:762504}}, mistura de faroeste, ficção científica e filme de monstro sobre dois irmãos que treinam cavalos para produções de Hollywood e tentam fotografar algo que se esconde nas nuvens sobre o rancho da família. Rodado em parte com câmeras IMAX, o longa é também uma reflexão sobre o espetáculo: sobre quem lucra com a imagem e quem é devorado por ela. Fez US$ 171 milhões no mundo. Não teve o impacto de <i>Corra!</i>, mas reforçou o que Peele havia mostrado na década anterior: o terror podia ser o espaço para cineastas negros contarem a história americana nos seus próprios termos. Três anos depois, essa ideia chegaria ao seu ponto mais alto.
 
 # video
 youtube: 54DUsbOBNPc
 title: Por trás das câmeras de <i>Nosferatu</i>
 text: Vídeo de bastidores divulgado pela <i>Universal</i> no Brasil, com cenas da produção do filme de Robert Eggers, ambientado na Alemanha do século XIX e estrelado por Bill Skarsgård como o conde Orlok.
 source: Youtube: Canal <i>Universal Pictures Brasil</i>
-
-# essay
-youtube: IvZGrF1hSbY
-title: Why Does The Substance Look Like That?
-description: Neste ensaio sem <i>spoilers</i>, Thomas Flight mostra como o expressionismo alemão, o estilo que há mais de cem anos deu ao cinema filmes como o <i>Nosferatu</i> original, voltou a influenciar o visual de produções recentes como <i>A Substância</i>, com seus cenários exagerados, cores fortes e enquadramentos que deformam a realidade.
-channel: thomas_flight
-
-# text
-Na outra ponta, o terror popular viveu o seu próprio <i>boom</i>. A <i>Blumhouse</i>, de {{p:84348}}, oficializou em janeiro de 2024 a fusão com a <i>Atomic Monster</i>, de {{p:2127}}, e teve seu maior fenômeno com um filme que a crítica detestou: {{m:507089}}, adaptação de um videogame independente. Mesmo lançado simultaneamente no streaming <i>Peacock</i>, fez US$ 297 milhões no mundo, a maior bilheteria da <i>Blumhouse</i> até então, sustentado por fãs que cresceram vendo o jogo no <i>YouTube</i>. Já {{p:933176}} financiou parte de {{m:663712}} com uma vaquinha na internet: o filme custou US$ 250 mil, rendeu US$ 15,8 milhões e ganhou fama com relatos de espectadores que passavam mal nas sessões. Em outubro de 2024, {{m:1034541|Terrifier 3}} estreou em primeiro lugar nos Estados Unidos e, com US$ 90 milhões, virou o filme sem classificação etária de maior bilheteria da história.
-
-# text
-Entre um polo e outro, {{p:291263}} seguiu fazendo filmes que não cabem em gaveta. Depois de <i>Corra!</i> e <i>Nós</i>, ele lançou em 2022 {{m:762504}}, mistura de faroeste, ficção científica e filme de monstro sobre dois irmãos que treinam cavalos para produções de Hollywood e tentam fotografar algo que se esconde nas nuvens sobre o rancho da família. Rodado em parte com câmeras IMAX, o longa é também uma reflexão sobre o espetáculo: sobre quem lucra com a imagem e quem é devorado por ela. Fez US$ 171 milhões no mundo. Não teve o impacto de <i>Corra!</i>, mas reforçou o que Peele havia mostrado na década anterior: o terror podia ser o espaço para cineastas negros contarem a história americana nos seus próprios termos. Três anos depois, essa ideia chegaria ao seu ponto mais alto.
 
 # text
 O ponto mais alto atende pelo nome de {{m:1233413}}. Escrito e dirigido por {{p:1056121}}, o filme se passa no Mississippi de 1932: os gêmeos Smoke e Stack, ambos vividos por {{p:135651}}, voltam à cidade natal para abrir um bar de blues e, na noite da inauguração, recebem a visita de vampiros. Coogler usa o mito para falar da herança cultural, da apropriação da música negra e da violência do Sul segregado. Com orçamento de US$ 90 milhões a US$ 100 milhões, o filme fez US$ 370 milhões no mundo, um resultado raríssimo para uma história original. No Oscar de 2026, recebeu 16 indicações, recorde absoluto que superou as 14 de <i>A Malvada</i>, <i>Titanic</i> e <i>La La Land</i>. Venceu quatro: Ator para Jordan, Roteiro Original para Coogler, Trilha Sonora para Ludwig Göransson e Fotografia para {{p:1385904}}, a primeira mulher a ganhar na categoria. O prêmio principal ficou com <i>Uma Batalha Após a Outra</i>.
@@ -73,11 +86,15 @@ O ponto mais alto atende pelo nome de {{m:1233413}}. Escrito e dirigido por {{p:
 quote: Eu sempre voltava aos vampiros por causa de tudo o que o vampiro representa no imaginário coletivo.
 author: Ryan Coogler (entrevista à NPR, 2025)
 
-# image
-image: name=img_terror2020_pecadores tmdb_path=/sqkSVOijtdqP1yPQ8vZidxXFauQ.jpg
-title: Smoke e Stack
-text: Michael B. Jordan como os gêmeos de <i>Pecadores</i>. O papel duplo lhe deu o Oscar de Melhor Ator; ele foi apenas o segundo a vencer a categoria interpretando dois personagens, depois de Lee Marvin em {{m:11694}}.
-source: TMDB / Warner Bros. Pictures
+// [ritmo] elemento retirado (comentado) para cumprir as regras de ritmo: não havia parágrafo livre perto do tema para separá-lo dos outros elementos. Para usar, descomente e tire outro elemento.
+// # essay
+// youtube: iiH6p6MORbY
+// title: Why Sinners' Cinematography is So Brilliant
+// description: Thomas Flight analisa a fotografia de <i>Pecadores</i>, que deu o Oscar a Autumn Durald Arkapaw, e explica o que os grandes formatos de película, como o IMAX de 70 mm, conseguem fazer na tela quando deixam de ser apenas argumento de marketing.
+// channel: thomas_flight
+
+# text
+<i>Pecadores</i> não veio sozinho: 2025 foi o ano da <i>Warner Bros.</i> no gênero. {{m:1038392}} fechou a saga dos Warren com US$ 499 milhões, a maior bilheteria da série, e Zach Cregger, de <i>Noites Brutais</i>, voltou com {{m:1078605}}. O ponto de partida é um mistério de conto de fadas: às 2h17 de uma madrugada, dezessete crianças da mesma turma saem de casa correndo e desaparecem no escuro, e só um aluno fica para trás. Contado em capítulos, cada um do ponto de vista de um personagem, o filme mistura terror, humor ácido e uma tensão que muitos leram como alegoria dos traumas coletivos das cidades americanas. Custou US$ 38 milhões e chegou a US$ 270 milhões no mundo. Quem roubou a cena foi a veterana {{p:23882}}, como a tia Gladys: quarenta anos depois de sua única indicação anterior, ela ganhou o Oscar de Atriz Coadjuvante em março de 2026.
 
 # video
 youtube: 7SkOOmEX0F4
@@ -85,26 +102,23 @@ title: O primeiro dia de <i>Pecadores</i>
 text: Imagens inéditas do primeiro dia de filmagem de <i>Pecadores</i>, narradas pelo próprio Ryan Coogler. O filme foi rodado em película, combinando os formatos IMAX e Ultra Panavision 70.
 source: Youtube: Canal <i>Proximity Media</i>
 
-# essay
-youtube: iiH6p6MORbY
-title: Why Sinners' Cinematography is So Brilliant
-description: Thomas Flight analisa a fotografia de <i>Pecadores</i>, que deu o Oscar a Autumn Durald Arkapaw, e explica o que os grandes formatos de película, como o IMAX de 70 mm, conseguem fazer na tela quando deixam de ser apenas argumento de marketing.
-channel: thomas_flight
-
-# text
-<i>Pecadores</i> não veio sozinho: 2025 foi o ano da <i>Warner Bros.</i> no gênero. {{m:1038392}} fechou a saga dos Warren com US$ 499 milhões, a maior bilheteria da série, e Zach Cregger, de <i>Noites Brutais</i>, voltou com {{m:1078605}}. O ponto de partida é um mistério de conto de fadas: às 2h17 de uma madrugada, dezessete crianças da mesma turma saem de casa correndo e desaparecem no escuro, e só um aluno fica para trás. Contado em capítulos, cada um do ponto de vista de um personagem, o filme mistura terror, humor ácido e uma tensão que muitos leram como alegoria dos traumas coletivos das cidades americanas. Custou US$ 38 milhões e chegou a US$ 270 milhões no mundo. Quem roubou a cena foi a veterana {{p:23882}}, como a tia Gladys: quarenta anos depois de sua única indicação anterior, ela ganhou o Oscar de Atriz Coadjuvante em março de 2026.
-
 # text
 Enquanto Hollywood descobria o prestígio do gênero, o resto do mundo provava sua força comercial. Na Coreia do Sul, {{m:838209}}, de {{p:1544991}}, acompanha uma xamã, seu aprendiz, um agente funerário e um geomante contratados para remover um túmulo amaldiçoado e, por baixo dos sustos, toca nas feridas da ocupação japonesa. Lançado em fevereiro de 2024, levou 11,9 milhões de espectadores aos cinemas e foi o primeiro filme de ocultismo do país a passar dos 10 milhões. Na Indonésia, o fenômeno é ainda maior: em 2024, cerca de 60% dos 258 filmes nacionais lançados eram de terror, e o gênero vendeu 54,6 milhões de ingressos. O nome mais respeitado dessa onda é {{p:121798}}, cujo {{m:925786}} foi o primeiro filme indonésio lançado em IMAX e levou 6,3 milhões de pessoas às salas.
+
+# image
+image: name=img_terror2020_pecadores tmdb_path=/sqkSVOijtdqP1yPQ8vZidxXFauQ.jpg
+title: Smoke e Stack
+text: Michael B. Jordan como os gêmeos de <i>Pecadores</i>. O papel duplo lhe deu o Oscar de Melhor Ator; ele foi apenas o segundo a vencer a categoria interpretando dois personagens, depois de Lee Marvin em {{m:11694}}.
+source: TMDB / Warner Bros. Pictures
+
+# text
+Da América Latina vieram algumas das obras mais assustadoras da década. O argentino {{m:744857}}, de {{p:531105}}, sobre uma possessão demoníaca que se alastra pelo interior, foi, em 2023, o primeiro filme latino-americano a vencer o prêmio de Melhor Filme do Festival de Sitges. No México, {{p:1659084}} estreou com {{m:772515}}, <i>body horror</i> sobre uma futura mãe assombrada por uma figura de ossos retorcidos, premiado em Tribeca. E {{p:10828}} enfim realizou seu {{m:1062722}}, que levou três Oscars em 2026; somados aos quatro de <i>Pecadores</i> e ao de Amy Madigan, foram oito estatuetas para histórias de monstros numa só noite. Da Austrália, além de <i>Fale Comigo</i>, veio {{m:938614}}, falso <i>talk show</i> de 1977 que acaba em tragédia. Seis anos depois das salas fechadas, o terror já não pede licença: lota cinemas, ganha prêmios e continua transformando os medos de cada época em experiência coletiva no escuro.
 
 # video
 youtube: LOP9H9-_Pac
 title: O mistério ocultista de <i>Exhuma</i>
 text: Bastidores de <i>Exhuma</i>, sobre a criação do mistério que reúne uma xamã, um agente funerário e o geomante mais respeitado do país diante de um túmulo que esconde uma maldição familiar.
 source: Youtube: Canal <i>Well Go USA Entertainment</i>
-
-# text
-Da América Latina vieram algumas das obras mais assustadoras da década. O argentino {{m:744857}}, de {{p:531105}}, sobre uma possessão demoníaca que se alastra pelo interior, foi, em 2023, o primeiro filme latino-americano a vencer o prêmio de Melhor Filme do Festival de Sitges. No México, {{p:1659084}} estreou com {{m:772515}}, <i>body horror</i> sobre uma futura mãe assombrada por uma figura de ossos retorcidos, premiado em Tribeca. E {{p:10828}} enfim realizou seu {{m:1062722}}, que levou três Oscars em 2026; somados aos quatro de <i>Pecadores</i> e ao de Amy Madigan, foram oito estatuetas para histórias de monstros numa só noite. Da Austrália, além de <i>Fale Comigo</i>, veio {{m:938614}}, falso <i>talk show</i> de 1977 que acaba em tragédia. Seis anos depois das salas fechadas, o terror já não pede licença: lota cinemas, ganha prêmios e continua transformando os medos de cada época em experiência coletiva no escuro.
 
 # movies
 882598, 913290, 760104, 949423, 1226578, 933260, 630240, 426063, 762504, 1078605, 1233413, 838209, 744857, 938614

@@ -272,7 +272,7 @@
     "id": 7,
     "title": "De 2010 a 2019",
     "subtitle": "Parte 07",
-    "description": "O 3D domina as telonas e os super-heróis dominam as bilheterias mundiais. O terror ganha nova roupagem com Invocação do Mal e A Bruxa, a animação vai muito além da Disney, o cinema falado em outras línguas conquista o Oscar até a noite histórica de Parasita, e o streaming chega de mansinho, conquistando público, crítica e grandes diretores.",
+    "description": "El 3D domina la pantalla grande y los superhéroes dominan las taquillas mundiales. El terror se renueva con El conjuro y La bruja, la animación va mucho más allá de Disney, el cine hablado en otros idiomas conquista el Óscar hasta la noche histórica de Parásitos, y el streaming llega sigilosamente, conquistando al público, a la crítica y a grandes directores.",
     "blocked": false,
     "is_new": true,
     "image": {
@@ -314,15 +314,15 @@
     "main_topic_type": "history_cinema",
     "layout_type": "card_full",
     "id": 8,
-    "title": "De 2020 até hoje",
+    "title": "De 2020 hasta hoy",
     "subtitle": "Parte 08",
-    "description": "A pandemia apaga as telas e o streaming entra em guerra, até as megafusões. Hollywood para em greve e discute a inteligência artificial, as redes sociais e os criadores da internet decidem sucessos, o terror vira a aposta mais segura e o cinema do mundo todo, do Brasil à Coreia, chega ao topo do Oscar.",
+    "description": "La pandemia apaga las pantallas y el streaming entra en guerra, hasta las megafusiones. Hollywood se detiene en huelga y debate sobre la inteligencia artificial, las redes sociales y los creadores de internet deciden los éxitos, el terror se vuelve la apuesta más segura y el cine de todo el mundo, de Brasil a Corea, llega a lo más alto del Óscar.",
     "blocked": false,
     "is_new": true,
     "image": {
       "image_type": "local",
       "url": "img_era8_ainda_estou_aqui",
-      "content_description": "Fernanda Torres, Selton Mello e os filhos na praia, em Ainda Estou Aqui.",
+      "content_description": "Fernanda Torres, Selton Mello y sus hijos en la playa, en Aún estoy aquí.",
       "animation": {
         "type": "blink",
         "duration": 1000
@@ -338,15 +338,15 @@
     "presentation_image": {
       "image_type": "local",
       "url": "img_era8_pecadores_sol",
-      "content_description": "Michael B. Jordan diante de um sol vermelho, em Pecadores.",
+      "content_description": "Michael B. Jordan frente a un sol rojo, en Pecadores.",
       "style": {
         "scale_type": "center_crop"
       }
     },
     "quote_position": "bottom_start",
     "quote": {
-      "quote": "Quando você supera a barreira de uma polegada das legendas, vai conhecer muitos outros filmes incríveis.",
-      "author": "Bong Joon Ho (Globo de Ouro, 2020)",
+      "quote": "Cuando superas la barrera de una pulgada de los subtítulos, vas a conocer muchas otras películas increíbles.",
+      "author": "Bong Joon Ho (Globo de Oro, 2020)",
       "text_color": "md_white_1000",
       "background_color": "md_black_1000",
       "icon_color": "md_white_1000"

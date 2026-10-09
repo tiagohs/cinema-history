@@ -70,8 +70,6 @@ dependencies {
     ksp dependencies.glideKsp
 
     // Firebase
-    implementation dependencies.firebaseStorage
-    implementation dependencies.firebaseUiStorage
 
     // Test Tools
     testImplementation dependencies.junit

@@ -468,6 +468,44 @@ def cmd_watch(args):
         print(f"{lang} ({region}): {with_any}/{len(cache)} filmes com algum provedor conhecido")
 
 
+def cmd_watch_pt(args):
+    """Refaz o 'onde assistir' do pt (Brasil) com os provedores do TMDB/JustWatch e confere vídeos do YouTube."""
+    import subprocess, urllib.parse
+    cache = R.load_watch_cache()
+    path = os.path.join(L.lang_dir(L.SOURCE_LANG), "specials", "movies.json")
+    doc = L.load_json(path)
+    yt_ok = {}
+
+    def youtube_alive(link):
+        m = re.search(r"(?:v=|youtu\.be/)([\w-]{11})", link)
+        if not m:
+            return True
+        vid = m.group(1)
+        if vid not in yt_ok:
+            url = "https://www.youtube.com/oembed?format=json&url=" + urllib.parse.quote(f"https://www.youtube.com/watch?v={vid}")
+            code = subprocess.run(["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", url], capture_output=True, text=True).stdout
+            yt_ok[vid] = code == "200"
+        return yt_ok[vid]
+
+    changed = empty = 0
+    for group in doc:
+        for movie in group.get("movies", []):
+            if movie.get("watchOn") is None:
+                continue
+            new = R.regional_watch_on(movie["id"], movie["watchOn"], "pt", cache)
+            info = (cache.get(str(movie["id"])) or {}).get("BR") or {}
+            for w in new:
+                if w["type"] == "youtube" and not youtube_alive(w["link"]):
+                    w["link"] = info.get("link") or w["link"]
+            if new != movie["watchOn"]:
+                changed += 1
+            if not new:
+                empty += 1
+            movie["watchOn"] = new
+    L.dump_json(path, doc)
+    print(f"pt: {changed} filmes com 'onde assistir' atualizado; {empty} sem nenhum provedor no Brasil")
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -475,6 +513,7 @@ def main():
     s = sub.add_parser("status"); s.add_argument("--lang", default="en"); s.set_defaults(fn=cmd_status)
     s = sub.add_parser("tmdb"); s.add_argument("--refresh", action="store_true"); s.set_defaults(fn=cmd_tmdb)
     s = sub.add_parser("watch"); s.add_argument("--refresh", action="store_true"); s.set_defaults(fn=cmd_watch)
+    s = sub.add_parser("watch-pt"); s.set_defaults(fn=cmd_watch_pt)
     s = sub.add_parser("export"); s.add_argument("--lang", required=True); s.add_argument("--groups")
     s.add_argument("--max-chars", type=int, default=60000); s.add_argument("--max-batches", type=int, default=0)
     s.add_argument("--start", type=int, default=1); s.set_defaults(fn=cmd_export)

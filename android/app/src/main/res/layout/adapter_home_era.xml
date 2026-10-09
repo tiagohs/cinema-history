@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Item do carrossel M3 de eras (Home). A largura define o tamanho do item grande do carrossel. -->
+<com.google.android.material.carousel.MaskableFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eraContainer"
+    android:layout_width="@dimen/home_era_item_width"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/home_era_item_spacing"
+    android:layout_marginEnd="@dimen/home_era_item_spacing"
+    android:background="@color/md_black_1000"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+    <ImageView
+        android:id="@+id/eraImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/img_cabinet" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/home_era_scrim_offset"
+        android:background="@drawable/background_home_scrim_bottom" />
+
+    <TextView
+        android:id="@+id/eraBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="12dp"
+        android:background="@drawable/background_home_pill"
+        android:backgroundTint="@color/md_green_500"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        android:textColor="@color/md_white_1000"
+        android:visibility="gone"
+        tools:text="Novo"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/eraContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/eraPart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_home_pill"
+            android:backgroundTint="@color/md_red_500"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:textColor="@color/md_white_1000"
+            tools:text="Parte 01" />
+
+        <TextView
+            android:id="@+id/eraTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/oswald_bold"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/home_era_title_size"
+            tools:text="De 1895 a 1929" />
+
+        <TextView
+            android:id="@+id/eraDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="@color/home_text_on_image_secondary"
+            tools:text="Os visionários, inventores, sonhadores." />
+
+    </LinearLayout>
+
+</com.google.android.material.carousel.MaskableFrameLayout>

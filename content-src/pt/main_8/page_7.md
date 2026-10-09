@@ -10,6 +10,12 @@ image: name=img_fusoes_top_gun_maverick tmdb_path=/AaV1YIdWKnjAIAOe8UUKBFm327v.j
 # text
 Em 12 de novembro de 2019, a <i>Disney</i> pôs no ar o <i>Disney+</i> e recebeu mais de 10 milhões de inscrições em um único dia. Era o tiro de largada de uma disputa que a imprensa americana logo batizou de <strong>guerra do streaming</strong>. Se a década anterior foi a da ascensão da <i>Netflix</i>, contada no capítulo “A revolução do streaming que mudou Hollywood”, a de 2020 começou com todos os grandes estúdios convencidos de que precisavam ter a sua própria Netflix. Cada um deixaria de licenciar filmes e séries para a concorrente e apostaria no próprio catálogo para atrair assinantes. O que parecia uma corrida por audiência virou uma guerra de desgaste, cara demais para quase todos os competidores. Ela terminaria em fusões, demissões, filmes engavetados e, seis anos depois, na venda de um dos estúdios mais antigos de Hollywood.
 
+# image
+image: name=img_streaming_dama_vagabundo tmdb_path=/73curw674iTzTX81AGaj5dyZUX5.jpg
+title: <i>A Dama e o Vagabundo</i> (2019)
+text: A refilmagem com cães de verdade foi um dos lançamentos do primeiro dia do <i>Disney+</i>, em 12 de novembro de 2019: um longa de estúdio feito para estrear direto no streaming, e não nas salas.
+source: Divulgação <i>Disney</i> (via TMDB)
+
 # text
 A corrida foi rápida. A <i>HBO Max</i> estreou em 27 de maio de 2020; o <i>Peacock</i>, da <i>NBCUniversal</i>, em 15 de julho; e o antigo <i>CBS All Access</i> virou <i>Paramount+</i> em 4 de março de 2021. A pandemia, que fechou as salas e embaralhou as janelas de exibição (assunto do capítulo “As telas apagadas”), funcionou como acelerador. A Disney estreou o musical {{m:556574|<i>Hamilton</i>}} direto na plataforma, a <i>Warner</i> lançou {{m:438631}} nos cinemas e na HBO Max no mesmo dia, e a plataforma ainda bancou {{m:791373}}, a versão de {{p:15217}} para um filme que tinha fracassado em 2017, nascida de uma campanha de fãs nas redes sociais. Em março de 2021, o Disney+ já passava de 100 milhões de assinantes. Wall Street premiava um único número, o de assinaturas, e as empresas gastavam o que fosse preciso para fazê-lo crescer.
 
@@ -31,6 +37,9 @@ image: name=img_batgirl_coyote_engavetado tmdb_path=/s6WNALkMPnBDadiKaS1JdRx9Hnw
 text: Em 2 de agosto de 2022, a <i>Warner Bros. Discovery</i> anunciou que <i>Batgirl</i> não seria lançado nem nos cinemas nem no streaming. Dirigido por {{p:1399841}} e {{p:1399842}}, o filme tinha custado cerca de US$ 90 milhões e estava praticamente pronto. {{p:2286683}} vivia Barbara Gordon, J.K. Simmons era o comissário Gordon, {{p:18269}} fazia o vilão Firefly e {{p:2232}} voltava a ser Batman. Encomendado pela gestão anterior como lançamento exclusivo da HBO Max, ele não cabia na nova estratégia, e a empresa preferiu abater o prejuízo nos impostos a gastar mais para lançá-lo. A animação <i>Scoob! Holiday Haunt</i> teve o mesmo destino. Em nota, o estúdio disse que a decisão não refletia a atuação de Leslie Grace e agradeceu aos diretores e aos elencos dos dois filmes, mas o caso virou símbolo de uma era em que um filme pronto pode simplesmente desaparecer. Em 2023, a história se repetiu com {{m:1204680}}, comédia com o Coiote dos <i>Looney Tunes</i>. Depois de protestos de artistas e fãs, o filme foi vendido em 2025 à pequena <i>Ketchup Entertainment</i> e chegou aos cinemas americanos no fim de agosto de 2026, estreando em segundo lugar nas bilheterias.
 link: https://www.screendaily.com/news/wb-cast-off-coyote-vs-acme-scores-ketchups-top-debut-at-us-box-office-behind-spider-man/5219851.article | Leia na Screen Daily
 
+# text
+O choque mais simbólico, porém, veio da própria Netflix. Em 19 de abril de 2022, a empresa anunciou que tinha perdido 200 mil assinantes no primeiro trimestre, a primeira queda em mais de uma década, e suas ações despencaram. A pioneira admitia que o mercado tinha limites e que mais de 100 milhões de lares assistiam ao serviço com a senha de outra pessoa. A resposta mudou o negócio inteiro. Em 3 de novembro de 2022, chegou o plano básico com anúncios, que no Brasil custava R$ 18,90. Em 23 de maio de 2023, começou a cobrança pelo compartilhamento de senhas fora de casa: R$ 12,90 por “assinante extra” no Brasil. O público reclamou, mas pagou. No fim de 2024, a Netflix passou de 300 milhões de assinaturas e, a partir de 2025, deixou de divulgar o número, como quem avisa que aquela corrida tinha acabado.
+
 # video
 youtube: Nw8RJL3_ADU
 title: Trailer de <i>Coyote vs. Acme</i>
@@ -38,10 +47,14 @@ text: O Coiote processa a empresa que lhe vendeu décadas de armadilhas defeituo
 source: Youtube: Canal <i>ParisFilmes</i>
 
 # text
-O choque mais simbólico, porém, veio da própria Netflix. Em 19 de abril de 2022, a empresa anunciou que tinha perdido 200 mil assinantes no primeiro trimestre, a primeira queda em mais de uma década, e suas ações despencaram. A pioneira admitia que o mercado tinha limites e que mais de 100 milhões de lares assistiam ao serviço com a senha de outra pessoa. A resposta mudou o negócio inteiro. Em 3 de novembro de 2022, chegou o plano básico com anúncios, que no Brasil custava R$ 18,90. Em 23 de maio de 2023, começou a cobrança pelo compartilhamento de senhas fora de casa: R$ 12,90 por “assinante extra” no Brasil. O público reclamou, mas pagou. No fim de 2024, a Netflix passou de 300 milhões de assinaturas e, a partir de 2025, deixou de divulgar o número, como quem avisa que aquela corrida tinha acabado.
-
-# text
 O episódio marcou o fim da era do <strong>crescimento a qualquer custo</strong>. Dali em diante, Wall Street queria ver lucro, e todos os serviços seguiram a mesma cartilha: preços mais altos, planos com publicidade, menos lançamentos e cancelamentos em série. Na Disney, o prejuízo da divisão de streaming chegou a US$ 1,47 bilhão em um único trimestre de 2022, e o conselho demitiu o presidente Bob Chapek. Em 20 de novembro daquele ano, {{p:1299481}}, que tinha deixado o cargo em 2020, voltou ao comando. A empresa então comprou a parte da <i>Comcast</i> no <i>Hulu</i>, numa negociação que custou cerca de US$ 9 bilhões entre 2023 e 2025, e começou a fundir o Hulu ao Disney+ num aplicativo só. Pacotes, anúncios, canais agrupados: o streaming, que tinha nascido para derrubar a TV a cabo, começava a se parecer com ela.
+
+# image
+image: name=img_streaming_bob_iger_d23 url=https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Bob_Iger_2019_Disney_Legends_Awards_Ceremony_D23_EXPO_2019_%2851441458130%29.jpg/960px-Bob_Iger_2019_Disney_Legends_Awards_Ceremony_D23_EXPO_2019_%2851441458130%29.jpg
+title: A volta de Iger
+text: Bob Iger no palco da D23 Expo, em agosto de 2019, três meses antes da estreia do <i>Disney+</i>. Ele deixou o comando da Disney em 2020 e voltou em novembro de 2022, com a missão de tirar o streaming do vermelho.
+source: Wikimedia Commons: nagi usano (CC BY-SA 2.0)
+// imagem: "Bob Iger 2019 Disney Legends Awards Ceremony D23 EXPO 2019 (51441458130)", foto de nagi usano, 23/ago/2019, CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Bob_Iger_2019_Disney_Legends_Awards_Ceremony_D23_EXPO_2019_(51441458130).jpg
 
 # text
 A mesma lógica empurrou a <i>Paramount</i>. Herdeira de um estúdio com origens em 1912, a empresa da família Redstone era pequena demais para a guerra e, em 2024, aceitou ser comprada pela <i>Skydance</i>, produtora de {{p:58433}}, filho do bilionário Larry Ellison, fundador da <i>Oracle</i>. David Ellison tinha produzido filmes da série <i>Missão: Impossível</i>, como {{m:575265}}, e {{m:361743}}, o sucesso que esperou a reabertura dos cinemas para estrear. O negócio, de US$ 8 bilhões, dependia do governo americano, e a política entrou em cena. Em julho de 2025, a Paramount pagou US$ 16 milhões para encerrar um processo de Donald Trump contra o programa <i>60 Minutes</i>, da CBS. Pouco depois, a CBS anunciou o fim do <i>talk show</i> de Stephen Colbert, crítico do presidente, alegando motivos financeiros. A agência reguladora <i>FCC</i> aprovou a fusão em 24 de julho, e a operação foi concluída em 7 de agosto de 2025.
@@ -79,18 +92,18 @@ source: Youtube: Canal <i>Oscars</i>
 # text
 Ainda havia resistência. Em julho de 2026, procuradores-gerais de 12 estados, liderados pelo da Califórnia, Rob Bonta, foram à Justiça para barrar a fusão, alegando que ela acabaria com a concorrência e prejudicaria, entre outros, o público dos cinemas. O sindicato dos roteiristas também entrou com uma ação, e milhares de profissionais de Hollywood assinaram uma carta aberta contra o negócio. O acordo com os estados, aprovado por uma juíza em 30 de setembro, obrigou a nova empresa a lançar nos cinemas americanos ao menos 30 filmes por ano nos dois primeiros anos e 32 nos três seguintes, a não aumentar por três anos o que cobra dos exibidores e a criar um conselho de independência editorial para a CBS e a CNN. Em 6 de outubro de 2026, a compra foi concluída. A empresa passou a se chamar <strong>Skydance</strong>, com David Ellison como CEO e {{p:2362590}}, ex-presidente-executivo da <i>Mattel</i> e produtor executivo de {{m:346698}}, como co-CEO.
 
-# video
-youtube: YYz6yIjgeOo
-title: Paramount conclui a compra da Warner Bros.
-text: Reportagem da agência Associated Press sobre o fechamento do negócio, em 6 de outubro de 2026. Paramount e Warner, dois estúdios centenários, passaram a operar sob o nome Skydance.
-source: Youtube: Canal <i>Associated Press</i>
-
 # quote
 quote: Hoje é um dia histórico, não só para a Skydance, mas para toda a nossa indústria.
 author: David Ellison (no fechamento da compra da Warner Bros. Discovery, 2026)
 
 # text
 O que isso significa para o cinema? Das cinco grandes da era de ouro de Hollywood — <i>MGM</i>, <i>Paramount</i>, <i>Warner</i>, <i>Fox</i> e <i>RKO</i> —, nenhuma é mais dona de si. A RKO parou de produzir nos anos 1950, e as outras quatro hoje pertencem a três grupos: a Amazon, a Disney, que comprou a Fox em 2019, e a Skydance. A concentração tem efeitos práticos: menos compradores para os projetos de roteiristas e diretores, menos portas para filmes médios e catálogos que dependem da contabilidade de uma corporação, como mostrou o caso <i>Batgirl</i>. Para as salas, a promessa de 30 filmes por ano é uma garantia que nunca precisou ser escrita antes, e vale por apenas cinco anos. A guerra do streaming não teve um vencedor claro. Teve sobreviventes, e eles são cada vez menos.
+
+# video
+youtube: YYz6yIjgeOo
+title: Paramount conclui a compra da Warner Bros.
+text: Reportagem da agência Associated Press sobre o fechamento do negócio, em 6 de outubro de 2026. Paramount e Warner, dois estúdios centenários, passaram a operar sob o nome Skydance.
+source: Youtube: Canal <i>Associated Press</i>
 
 # movies
 791373, 776503, 438631, 361743, 575265, 950387, 1061474, 1078605, 1233413, 1054867, 346698, 1204680

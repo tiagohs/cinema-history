@@ -13,7 +13,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.20" />
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="@dimen/timeline_footer_circle_container_size"
         android:layout_height="@dimen/timeline_footer_circle_container_size"
         android:id="@+id/circle"
@@ -24,14 +24,14 @@
         app:layout_constraintEnd_toEndOf="@id/divisor"
         app:layout_constraintStart_toStartOf="@id/divisor" >
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/timeline_footer_circle_size"
             android:layout_height="@dimen/timeline_footer_circle_size"
             app:cardCornerRadius="@dimen/timeline_footer_circle_radius"
             android:layout_gravity="center"
             app:cardBackgroundColor="@color/md_white_1000" />
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
     <View
         android:layout_width="@dimen/timeline_divisor_vertical_width"

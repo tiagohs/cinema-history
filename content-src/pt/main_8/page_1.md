@@ -6,6 +6,13 @@ image: name=img_covid_tenet_telas_apagadas tmdb_path=/gPucRIw0n3MPv7r1FEdMpngNXr
 # text
 A década de 2020 começou com uma festa. Em 9 de fevereiro, {{m:496243}} ganhou o Oscar de Melhor Filme, o primeiro em língua não inglesa da história, e o cinema parecia mais global e mais vivo do que nunca. Um mês depois, o mundo parou. Em 11 de março, a Organização Mundial da Saúde declarou que a COVID-19 era uma pandemia. A China já tinha fechado cerca de 70 mil salas em 23 de janeiro, véspera do Ano-Novo Lunar, a época mais lucrativa do ano para os cinemas do país. Itália, França, Espanha, Estados Unidos e Brasil foram atrás em poucos dias. Em meados de março, as duas maiores redes americanas, <i>AMC</i> e <i>Regal</i>, fecharam todas as suas salas. Em mais de um século de história, nunca tantas telas tinham se apagado ao mesmo tempo.
 
+# image
+image: name=img_covid_cinema_fechado_canada url=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/COVID-19_cinema_closure.jpg/960px-COVID-19_cinema_closure.jpg
+title: Fechado até segunda ordem
+text: Cinema em South Surrey, no Canadá, em abril de 2020. No letreiro, no lugar dos filmes em cartaz, um aviso: as portas estavam temporariamente fechadas pela saúde do público e dos funcionários.
+source: Wikimedia Commons: Northwest (CC BY-SA 4.0)
+// imagem: "COVID-19 cinema closure", foto de Northwest, abr/2020, CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:COVID-19_cinema_closure.jpg
+
 # text
 O primeiro aviso veio antes mesmo da declaração da OMS. Em 4 de março, os produtores de {{m:370172}}, a despedida de {{p:8784}} como James Bond, adiaram a estreia de abril para novembro de 2020: foi o primeiro grande filme a mudar de data por causa do vírus, e não seria o último adiamento do 007. No Brasil, 577 salas já estavam fechadas em 17 de março. Naquela mesma semana, as distribuidoras cancelaram os lançamentos e, na quinta-feira, 19 de março, pela primeira vez na história, nenhum filme estreou nos cinemas do país. <i>Cinemark</i>, <i>Kinoplex</i>, <i>Cinépolis</i>, <i>UCI</i> e <i>Espaço Itaú</i> fecharam as portas sem data para voltar. Segundo a <i>Ancine</i>, o público brasileiro, que tinha sido de 177,7 milhões de espectadores em 2019, despencou para 39,4 milhões em 2020.
 
@@ -31,14 +38,14 @@ source: Wikimedia Commons: dronepicr (CC BY 2.0)
 # text
 No meio do caos, um cineasta virou o porta-voz da sala escura. {{p:525}} queria que {{m:577922}}, estrelado por {{p:1117313}}, fosse o primeiro grande lançamento de Hollywood depois do fechamento, e convenceu a <i>Warner Bros.</i> a não mandá-lo para o streaming. Marcado para 17 de julho, o filme foi adiado para 31 de julho, depois para 12 de agosto, e finalmente estreou em 26 de agosto de 2020, em 70 países. Nos Estados Unidos, chegou em 3 de setembro, com os cinemas de Nova York e Los Angeles ainda fechados. Somou cerca de US$ 365 milhões no mundo, só uns US$ 58 milhões deles no mercado americano. Para as circunstâncias, não foi um fracasso, mas também não foi o resgate que o circuito esperava. Os estúdios empurraram boa parte dos grandes lançamentos que restavam de 2020 para o ano seguinte.
 
+# text
+O balanço do ano foi brutal. Segundo a <i>Motion Picture Association</i>, a bilheteria mundial caiu 72% em 2020 e fechou em US$ 12 bilhões, contra mais de US$ 40 bilhões no ano anterior. Nos Estados Unidos e no Canadá, a queda foi de 80%. A China, que reabriu suas salas em julho, faturou US$ 3 bilhões e ultrapassou pela primeira vez a América do Norte como o maior mercado de cinema do mundo. Em outubro, quando o 007 foi adiado de novo, o presidente da britânica <i>Cineworld</i>, dona da <i>Regal</i>, chamou a decisão de “a gota d'água” e fechou por tempo indeterminado todas as suas salas nos EUA, no Reino Unido e na Irlanda, afetando 45 mil trabalhadores. Em abril de 2021, as redes <i>ArcLight</i> e <i>Pacific</i> anunciaram que não reabririam nenhuma sala, nem o histórico <i>Cinerama Dome</i>, em Hollywood. A <i>Cineworld</i> pediria recuperação judicial em setembro de 2022, com dívidas de mais de US$ 4,8 bilhões.
+
 # video
 youtube: Bmw6VOj9igY
 title: Trailer de Tenet
 text: O filme de espionagem e viagem no tempo de Christopher Nolan virou o teste da reabertura dos cinemas em agosto de 2020. Mais tarde, ganhou o Oscar de Melhores Efeitos Visuais.
 source: Youtube: Canal <i>Warner Bros. Pictures Brasil</i>
-
-# text
-O balanço do ano foi brutal. Segundo a <i>Motion Picture Association</i>, a bilheteria mundial caiu 72% em 2020 e fechou em US$ 12 bilhões, contra mais de US$ 40 bilhões no ano anterior. Nos Estados Unidos e no Canadá, a queda foi de 80%. A China, que reabriu suas salas em julho, faturou US$ 3 bilhões e ultrapassou pela primeira vez a América do Norte como o maior mercado de cinema do mundo. Em outubro, quando o 007 foi adiado de novo, o presidente da britânica <i>Cineworld</i>, dona da <i>Regal</i>, chamou a decisão de “a gota d'água” e fechou por tempo indeterminado todas as suas salas nos EUA, no Reino Unido e na Irlanda, afetando 45 mil trabalhadores. Em abril de 2021, as redes <i>ArcLight</i> e <i>Pacific</i> anunciaram que não reabririam nenhuma sala, nem o histórico <i>Cinerama Dome</i>, em Hollywood. A <i>Cineworld</i> pediria recuperação judicial em setembro de 2022, com dívidas de mais de US$ 4,8 bilhões.
 
 # text
 A primeira batalha da guerra das janelas foi travada por bonecos coloridos. Sem cinemas abertos, a <i>Universal</i> lançou {{m:446893}} em 10 de abril de 2020 direto no aluguel digital nos Estados Unidos, a US$ 19,99, e o filme rendeu perto de US$ 100 milhões em três semanas. Animado, o chefe da <i>NBCUniversal</i>, Jeff Shell, disse ao <i>Wall Street Journal</i> que pretendia lançar filmes nos dois formatos mesmo depois da reabertura dos cinemas. A resposta veio em 28 de abril: a <i>AMC</i>, a maior rede de cinemas do mundo, anunciou que não exibiria mais nenhum filme da <i>Universal</i>. O boicote durou três meses. No fim de julho, as duas empresas fizeram as pazes com um acordo histórico: a exclusividade dos cinemas, que era de cerca de 90 dias, caiu para 17, e a rede passou a receber uma fatia da receita digital.
@@ -68,14 +75,20 @@ author: Christopher Nolan (ao The Hollywood Reporter, 2020)
 # text
 A revolta mais famosa, porém, veio de uma estrela. Em 9 de julho de 2021, {{m:497698}} estreou ao mesmo tempo nos cinemas e no <i>Premier Access</i> do <i>Disney+</i>. Em 29 de julho, {{p:1245}} processou a <i>Disney</i>: parte do seu pagamento dependia da bilheteria, e o lançamento simultâneo, segundo ela, violava o contrato e esvaziava as salas. A empresa respondeu em público que a atriz já tinha recebido US$ 20 milhões pelo filme. O caso terminou num acordo em 30 de setembro de 2021, com valor não divulgado. Foi um divisor de águas: ficou claro que o streaming mexia não só com as salas, mas também com a forma de pagar quem faz os filmes, uma discussão que voltaria com força nas greves de Hollywood de 2023.
 
-# text
-Até o Oscar mudou de cara. A cerimônia de 2021 foi adiada de 28 de fevereiro para 25 de abril, e pela primeira vez filmes lançados só no streaming puderam concorrer, desde que tivessem estreia prevista nos cinemas. A festa saiu do <i>Dolby Theatre</i> e foi para a <i>Union Station</i>, a estação de trem de Los Angeles, com plateia reduzida. <i>Nomadland</i>, um retrato silencioso de americanos que perderam a casa e vivem na estrada, levou Melhor Filme, Direção e Atriz, este último para {{p:3910}}, seu terceiro Oscar na categoria. Chloé Zhao se tornou a segunda mulher a vencer como diretora e a primeira não branca. Mas a cerimônia teve pouco público, no salão e em casa: com 10,4 milhões de espectadores nos EUA, foi a transmissão menos vista desde o início das medições.
-
 # video
 youtube: t1hkWbhhga8
 title: Nomadland vence o Oscar de Melhor Filme
 text: Na cerimônia de abril de 2021, realizada na <i>Union Station</i> de Los Angeles, <i>Nomadland</i> fechou a trajetória que começou no Leão de Ouro de Veneza, num dos festivais mais estranhos da história.
 source: Youtube: Canal <i>Oscars</i>
+
+# text
+Até o Oscar mudou de cara. A cerimônia de 2021 foi adiada de 28 de fevereiro para 25 de abril, e pela primeira vez filmes lançados só no streaming puderam concorrer, desde que tivessem estreia prevista nos cinemas. A festa saiu do <i>Dolby Theatre</i> e foi para a <i>Union Station</i>, a estação de trem de Los Angeles, com plateia reduzida. <i>Nomadland</i>, um retrato silencioso de americanos que perderam a casa e vivem na estrada, levou Melhor Filme, Direção e Atriz, este último para {{p:3910}}, seu terceiro Oscar na categoria. Chloé Zhao se tornou a segunda mulher a vencer como diretora e a primeira não branca. Mas a cerimônia teve pouco público, no salão e em casa: com 10,4 milhões de espectadores nos EUA, foi a transmissão menos vista desde o início das medições.
+
+# image
+image: name=img_nomadland_van_deserto tmdb_path=/QaSqbPfb0lKSXzmnVH5IRtYpjR.jpg
+title: <i>Nomadland</i> (2020)
+text: Frances McDormand vive Fern, viúva que troca a casa por uma van e passa a viver na estrada. O filme de Chloé Zhao levou Melhor Filme, Direção e Atriz na cerimônia de 2021, realizada na <i>Union Station</i>.
+source: Divulgação <i>Searchlight Pictures</i> (via TMDB)
 
 # text
 A volta só ficou evidente no fim de 2021, quando {{m:634649}}, com {{p:1136406}}, estreou apenas nos cinemas, em 16 de dezembro no Brasil e no dia seguinte nos Estados Unidos, e se tornou o primeiro filme desde o início da pandemia a passar de US$ 1 bilhão. O mundo de antes, porém, não voltou. A janela de 90 dias deu lugar a prazos de 17 a 45 dias, e, no começo de 2026, as projeções ainda punham a bilheteria mundial cerca de 13% abaixo da média de 2017 a 2019. No Brasil, em 2025, já havia mais salas do que em 2019, mas bem menos público. É nesse cinema abalado que começa o resto da década: as redes sociais ditando o sucesso, o terror como aposta segura, os cineastas vindos do YouTube, as greves e a inteligência artificial, a força dos filmes de fora de Hollywood, a guerra do streaming e a volta do filme-evento.

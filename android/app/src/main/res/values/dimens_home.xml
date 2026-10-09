@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Home (Material 3) -->
+    <dimen name="home_hero_min_height">400dp</dimen>
+    <dimen name="home_hero_max_height">580dp</dimen>
+    <dimen name="home_hero_content_padding">20dp</dimen>
+    <dimen name="home_hero_title_size">38sp</dimen>
+    <dimen name="home_hero_top_scrim">160dp</dimen>
+    <dimen name="home_hero_scrim_offset">120dp</dimen>
+    <dimen name="home_screen_padding">16dp</dimen>
+    <dimen name="home_section_spacing">28dp</dimen>
+    <dimen name="home_era_carousel_height">300dp</dimen>
+    <dimen name="home_era_item_width">220dp</dimen>
+    <dimen name="home_era_scrim_offset">90dp</dimen>
+    <dimen name="home_era_title_size">22sp</dimen>
+    <dimen name="home_destination_title_size">20sp</dimen>
+    <dimen name="home_era_item_spacing">8dp</dimen>
+    <dimen name="home_era_fade_threshold">96dp</dimen>
+    <dimen name="home_destination_height">188dp</dimen>
+    <dimen name="home_link_icon_container">40dp</dimen>
+    <dimen name="home_card_corner">16dp</dimen>
+    <dimen name="home_carousel_corner">28dp</dimen>
+    <dimen name="home_logo_size">36dp</dimen>
+</resources>

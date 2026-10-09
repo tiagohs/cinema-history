@@ -10,6 +10,12 @@ image: name=img_superman_2025_krypto_terra tmdb_path=/eGX66zonvc4bXg3rM08RUxdYSD
 # text
 Quando {{m:299534}} se tornou a maior bilheteria da história, em 2019, o modelo criado por {{p:10850}} parecia invencível: dezenas de filmes ligados entre si, lançados em ritmo industrial, cada um prometendo o próximo. A crise sanitária interrompeu o calendário, mas não a fórmula. Em dezembro de 2021, ainda em plena pandemia, {{m:634649}} reuniu {{p:1136406}} aos Homens-Aranha de {{p:2219}} e {{p:37625}} e transformou a nostalgia em acontecimento. O filme passou de US$ 1 bilhão em apenas 12 dias, sem sequer estrear na China, e terminou com cerca de US$ 1,92 bilhão, a maior bilheteria de 2021. Foi o último grande pico da velha engrenagem e, olhando para trás, também o seu ponto de virada: a partir dali, o gênero que dominou a década anterior começaria a mostrar sinais de cansaço.
 
+# image
+image: name=img_herois_vingadores_ultimato tmdb_path=/91iy9F1JOG1dvM6M6JNYgvScZpK.jpg
+title: <i>Vingadores: Ultimato</i> (2019)
+text: Os heróis reunidos no filme que fechou a Saga do Infinito da <i>Marvel</i>. Em julho de 2019, ele superou <i>Avatar</i> como a maior bilheteria da história, posto que perderia em 2021, quando um relançamento de <i>Avatar</i> na China o devolveu ao topo.
+source: Divulgação <i>Marvel Studios</i> (via TMDB)
+
 # text
 O problema começou pela quantidade. Com o <i>Disney+</i> no ar desde 2019, a <i>Marvel</i> passou a produzir para duas telas ao mesmo tempo. A chamada <strong>Fase 4</strong>, aberta pela série <i>WandaVision</i> em 15 de janeiro de 2021, reuniu sete filmes, oito séries e dois especiais em menos de dois anos, um volume que levou a própria imprensa especializada a perguntar se o estúdio ainda tinha um mapa. Para o espectador comum, cada novo filme passou a parecer lição de casa: era preciso ter visto as séries para entender quem era quem. Nos bastidores, a pressão também apareceu. Em setembro de 2023, os artistas de efeitos visuais da Marvel votaram por unanimidade pela sindicalização, queixando-se de prazos apertados, horas extras não pagas e excesso de trabalho nos filmes e séries da franquia. A máquina continuava girando, mas cada vez mais rápido e com menos cuidado.
 
@@ -25,19 +31,6 @@ channel: nerdwriter
 # text
 Do outro lado, a <i>DC</i> vivia uma crise ainda mais profunda. O universo iniciado por Zack Snyder chegou ao fim aos tropeços, e {{m:298618}}, lançado em junho de 2023 depois de anos de mudanças de diretor e das polêmicas envolvendo Ezra Miller, arrecadou só US$ 271 milhões para um orçamento estimado entre US$ 200 milhões e US$ 220 milhões. A <i>Warner Bros. Discovery</i> já havia decidido recomeçar do zero: em outubro de 2022, {{p:15218}}, diretor de <i>Guardiões da Galáxia</i>, e o produtor {{p:52259}} foram anunciados como chefes do novo <strong>DC Studios</strong>, com a missão de planejar um universo inteiro — filmes, séries e animações — sob uma única direção criativa. Mesmo fora dos universos compartilhados, o sinal era de alerta: {{m:889737}}, continuação de um filme que tinha passado de US$ 1 bilhão em 2019, fez cerca de US$ 208 milhões em 2024, pouco mais do que custou.
 
-# quote
-quote: As pessoas falam em fadiga de super-heróis, mas não acho que isso exista. As pessoas estão cansadas é de repetição.
-author: James Gunn (podcast Inside of You, 2023)
-
-# text
-Foi nesse cenário que a expressão <strong>“superhero fatigue”</strong> (fadiga dos super-heróis) virou tema de manchete, de mesa-redonda e de relatório de analista. Mas os números contavam uma história mais complicada. Em julho de 2024, {{m:533535}}, único filme da Marvel Studios nos cinemas naquele ano, juntou {{p:10859}} e {{p:6968}}, zombou da própria crise do estúdio e arrecadou US$ 1,34 bilhão, tornando-se o filme de classificação R (para maiores de 17 anos desacompanhados) de maior bilheteria da história até então. Já em 2025, a Marvel lançou três filmes que ficaram entre US$ 380 milhões e US$ 522 milhões, mesmo quando agradaram à crítica: {{m:822119}}, {{m:986056}}, um dos mais elogiados da nova fase, e {{m:617126}}, que inaugurou a Fase 6. O próprio Feige admitiu, em julho de 2025, que nas Fases 4 e 5 o estúdio tinha se expandido demais.
-
-# video
-youtube: ZtoEXyNUXUI
-title: Trailer de <i>Deadpool & Wolverine</i>
-text: O trailer oficial legendado do filme que fez piada com a própria crise da Marvel e, mesmo assim, passou de US$ 1 bilhão. Sinal de que o público não tinha se cansado dos super-heróis, e sim da repetição.
-source: Youtube: Canal <i>Marvel Brasil</i>
-
 # block
 title: Superman (2025): recomeçar um universo
 image: name=img_superman_2025_recomeco_dcu tmdb_path=/yRBc6WY3r1Fz5Cjd6DhSvzqunED.jpg
@@ -45,7 +38,30 @@ text: Quando assumiram o <i>DC Studios</i>, em 1º de novembro de 2022, James Gu
 link: https://en.wikipedia.org/wiki/Superman_(2025_film) | Saiba mais sobre o filme
 
 # text
+Foi nesse cenário que a expressão <strong>“superhero fatigue”</strong> (fadiga dos super-heróis) virou tema de manchete, de mesa-redonda e de relatório de analista. Mas os números contavam uma história mais complicada. Em julho de 2024, {{m:533535}}, único filme da Marvel Studios nos cinemas naquele ano, juntou {{p:10859}} e {{p:6968}}, zombou da própria crise do estúdio e arrecadou US$ 1,34 bilhão, tornando-se o filme de classificação R (para maiores de 17 anos desacompanhados) de maior bilheteria da história até então. Já em 2025, a Marvel lançou três filmes que ficaram entre US$ 380 milhões e US$ 522 milhões, mesmo quando agradaram à crítica: {{m:822119}}, {{m:986056}}, um dos mais elogiados da nova fase, e {{m:617126}}, que inaugurou a Fase 6. O próprio Feige admitiu, em julho de 2025, que nas Fases 4 e 5 o estúdio tinha se expandido demais.
+
+# quote
+quote: As pessoas falam em fadiga de super-heróis, mas não acho que isso exista. As pessoas estão cansadas é de repetição.
+author: James Gunn (podcast Inside of You, 2023)
+
+# text
 Enquanto os universos compartilhados patinavam, outro tipo de filme reconquistava as salas: o <strong>filme-evento</strong>, aquele que o público sente que precisa ver na maior tela possível. O caso fundador foi {{m:361743}}, de {{p:86270}}. Previsto para 2019 e adiado várias vezes, primeiro para concluir as cenas de ação e depois pela pandemia, o filme recebeu ofertas de plataformas de streaming, todas recusadas por {{p:500}}, que insistiu no lançamento exclusivo nos cinemas. As cenas aéreas foram filmadas de verdade, com câmeras certificadas pela <i>IMAX</i> instaladas dentro das cabines dos caças F/A-18, e renderam mais de 800 horas de material de voo. Lançado em maio de 2022, arrecadou cerca de US$ 1,5 bilhão, a maior bilheteria da carreira de Cruise. No fim do mesmo ano, {{m:76600}}, de {{p:2710}}, chegou a US$ 2,33 bilhões, apostando no 3D, no IMAX e em projeções com taxa de quadros mais alta.
+
+# video
+youtube: ZtoEXyNUXUI
+title: Trailer de <i>Deadpool & Wolverine</i>
+text: O trailer oficial legendado do filme que fez piada com a própria crise da Marvel e, mesmo assim, passou de US$ 1 bilhão. Sinal de que o público não tinha se cansado dos super-heróis, e sim da repetição.
+source: Youtube: Canal <i>Marvel Brasil</i>
+
+// [ritmo] elemento retirado (comentado) para cumprir as regras de ritmo: não havia parágrafo livre perto do tema para separá-lo dos outros elementos. Para usar, descomente e tire outro elemento.
+// # video
+// youtube: 6Pji4kgwt4w
+// title: Os bastidores aéreos de <i>Top Gun: Maverick</i>
+// text: Vídeo de bastidores sobre a aviação no filme, cujas cenas de voo foram rodadas com aviões reais. Foi o filme que convenceu Hollywood de que o público voltaria às salas por uma experiência impossível de repetir no sofá.
+// source: Youtube: Canal <i>Paramount Brasil</i>
+
+# text
+O verão americano de 2023 consolidou a tese. No mesmo dia, 21 de julho, estrearam {{m:346698}}, de {{p:45400}}, e {{m:872585}}, de {{p:525}}, e o público, embalado pelo meme <i>Barbenheimer</i>, tratou a dupla estreia como um programa obrigatório: <i>Barbie</i> chegou a US$ 1,44 bilhão e <i>Oppenheimer</i>, um drama histórico de três horas, a quase US$ 1 bilhão, com mais de US$ 17 milhões vindos de apenas 30 telas capazes de exibir a película IMAX 70 mm. Em 2024, {{m:693134}}, de {{p:137427}}, adiado por causa das greves de Hollywood, estreou em março só nos cinemas e somou US$ 715 milhões, dos quais cerca de 20% vieram das salas IMAX. A lição era clara: os espectadores, que haviam se acostumado a esperar qualquer filme chegar ao streaming, voltavam a pagar mais caro por um ingresso quando a projeção prometia algo que a televisão de casa não podia entregar.
 
 # image
 image: name=img_top_gun_maverick_cabine_caca tmdb_path=/5AcP07WJl1VZbnloLZrMVgYjR2s.jpg
@@ -53,39 +69,26 @@ title: Top Gun: Maverick (2022)
 text: Em vez de simular os voos em fundo verde, a produção colocou câmeras 6K certificadas pela IMAX dentro das cabines dos caças, com os atores voando no banco de trás. A experiência física virou peça de marketing.
 source: Divulgação <i>Paramount Pictures</i> (via TMDB)
 
-# video
-youtube: 6Pji4kgwt4w
-title: Os bastidores aéreos de <i>Top Gun: Maverick</i>
-text: Vídeo de bastidores sobre a aviação no filme, cujas cenas de voo foram rodadas com aviões reais. Foi o filme que convenceu Hollywood de que o público voltaria às salas por uma experiência impossível de repetir no sofá.
-source: Youtube: Canal <i>Paramount Brasil</i>
+// [ritmo] elemento retirado (comentado) para cumprir as regras de ritmo: não havia parágrafo livre perto do tema para separá-lo dos outros elementos. Para usar, descomente e tire outro elemento.
+// # video
+// youtube: b26ooADsW1I
+// title: As câmeras IMAX de <i>A Odisseia</i>
+// text: Entrevista exclusiva divulgada pela IMAX sobre o filme de Christopher Nolan rodado inteiramente com câmeras de película IMAX. O vídeo mostra como o formato passou a ser vendido como parte da própria experiência do filme.
+// source: Youtube: Canal <i>IMAX</i>
+
+// [ritmo] elemento retirado (comentado) para cumprir as regras de ritmo: não havia parágrafo livre perto do tema para separá-lo dos outros elementos. Para usar, descomente e tire outro elemento.
+// # essay
+// youtube: ZFVwqi8sElI
+// title: What Makes IMAX Different
+// description: O canal In Depth Cine explica o que torna as câmeras IMAX diferentes das câmeras de cinema comuns, como isso muda a imagem que vemos na tela e por que um formato de tão alta qualidade ainda aparece em só um punhado de filmes.
+// channel: in_depth_cine
+
+# text
+A nova geração de eventos também veio de lugares que Hollywood por muito tempo tratou como secundários. Os games, durante décadas sinônimo de adaptações fracassadas, viraram ouro: {{m:502356}} arrecadou US$ 1,36 bilhão em 2023, e {{m:950387}} fez a maior estreia de uma adaptação de game nos Estados Unidos e chegou a US$ 961 milhões. A animação puxou a bilheteria como nenhum outro gênero: {{m:1022789}} somou US$ 1,7 bilhão em 2024 e se tornou, naquele momento, a animação de maior bilheteria da história, e {{m:1241982}}, que nasceu como série para o <i>Disney+</i> e foi transformado em filme no meio da produção, passou de US$ 1 bilhão. O caminho inverso ao da Marvel diz muito sobre a década: o que era conteúdo de plataforma voltou a ser lançamento de cinema.
 
 # quote
 quote: Você salvou a pele de Hollywood e talvez tenha salvado a distribuição nos cinemas.
 author: Steven Spielberg para Tom Cruise (almoço dos indicados ao Oscar, 2023)
-
-# text
-O verão americano de 2023 consolidou a tese. No mesmo dia, 21 de julho, estrearam {{m:346698}}, de {{p:45400}}, e {{m:872585}}, de {{p:525}}, e o público, embalado pelo meme <i>Barbenheimer</i>, tratou a dupla estreia como um programa obrigatório: <i>Barbie</i> chegou a US$ 1,44 bilhão e <i>Oppenheimer</i>, um drama histórico de três horas, a quase US$ 1 bilhão, com mais de US$ 17 milhões vindos de apenas 30 telas capazes de exibir a película IMAX 70 mm. Em 2024, {{m:693134}}, de {{p:137427}}, adiado por causa das greves de Hollywood, estreou em março só nos cinemas e somou US$ 715 milhões, dos quais cerca de 20% vieram das salas IMAX. A lição era clara: os espectadores, que haviam se acostumado a esperar qualquer filme chegar ao streaming, voltavam a pagar mais caro por um ingresso quando a projeção prometia algo que a televisão de casa não podia entregar.
-
-# block
-title: IMAX: a sala como argumento
-image: name=img_odisseia_imax_batalha_troia tmdb_path=/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg
-text: Durante décadas, o IMAX foi associado a documentários de museu. Nos anos 2020, virou o lugar onde os blockbusters se decidem. Com pouco mais de 1.800 salas no mundo, uma fração mínima do circuito, a empresa fechou 2025 com recorde de US$ 1,28 bilhão em bilheteria, 13% acima do melhor ano anterior, de 2019. Christopher Nolan transformou o formato em assinatura, e {{m:1368337}} foi o primeiro longa filmado inteiramente com câmeras de película IMAX. Os ingressos para as sessões em 70 mm foram colocados à venda em 17 de julho de 2025, um ano antes da estreia, e parte delas esgotou em menos de 12 horas. Só 41 telas no mundo eram capazes de exibir essa versão, e a IMAX chegou a reformar projetores antigos e treinar novos projecionistas para atender à demanda. Em agosto de 2026, o filme se tornou a maior bilheteria da história da IMAX, superando o primeiro <i>Avatar</i>. Num mercado em que quase tudo chega ao streaming em poucas semanas, a própria sala virou o argumento de venda.
-link: https://au.variety.com/2026/film/news/the-odyssey-christopher-nolan-biggest-movie-imax-record-39268/ | Leia a reportagem da Variety
-
-# video
-youtube: b26ooADsW1I
-title: As câmeras IMAX de <i>A Odisseia</i>
-text: Entrevista exclusiva divulgada pela IMAX sobre o filme de Christopher Nolan rodado inteiramente com câmeras de película IMAX. O vídeo mostra como o formato passou a ser vendido como parte da própria experiência do filme.
-source: Youtube: Canal <i>IMAX</i>
-
-# essay
-youtube: ZFVwqi8sElI
-title: What Makes IMAX Different
-description: O canal In Depth Cine explica o que torna as câmeras IMAX diferentes das câmeras de cinema comuns, como isso muda a imagem que vemos na tela e por que um formato de tão alta qualidade ainda aparece em só um punhado de filmes.
-channel: in_depth_cine
-
-# text
-A nova geração de eventos também veio de lugares que Hollywood por muito tempo tratou como secundários. Os games, durante décadas sinônimo de adaptações fracassadas, viraram ouro: {{m:502356}} arrecadou US$ 1,36 bilhão em 2023, e {{m:950387}} fez a maior estreia de uma adaptação de game nos Estados Unidos e chegou a US$ 961 milhões. A animação puxou a bilheteria como nenhum outro gênero: {{m:1022789}} somou US$ 1,7 bilhão em 2024 e se tornou, naquele momento, a animação de maior bilheteria da história, e {{m:1241982}}, que nasceu como série para o <i>Disney+</i> e foi transformado em filme no meio da produção, passou de US$ 1 bilhão. O caminho inverso ao da Marvel diz muito sobre a década: o que era conteúdo de plataforma voltou a ser lançamento de cinema.
 
 # text
 O sucesso mais simbólico, porém, veio de onde menos se esperava: um filme original. {{m:1233413}}, de {{p:1056121}}, misturou terror de vampiros, blues e a história do Sul dos Estados Unidos nos anos 1930, foi filmado em 65 mm com câmeras IMAX e Ultra Panavision 70 e arrecadou cerca de US$ 370 milhões no mundo. Foi o primeiro filme original a passar de US$ 200 milhões no mercado americano desde <i>Viva: A Vida é uma Festa</i>, de 2017. Coogler ainda negociou com a <i>Warner</i> um acordo raro: corte final, participação na bilheteria desde o primeiro dólar e a posse do filme depois de 25 anos. A consagração veio no Oscar de 2026, com um recorde de 16 indicações, como conta o capítulo sobre o terror. Para Hollywood, o recado era outro: um diretor com uma ideia própria também podia virar evento, sem franquia por trás.
@@ -97,16 +100,22 @@ text: O trailer oficial do filme de Ryan Coogler, vendido não como mais um cap�
 source: Youtube: Canal <i>Warner Bros. Pictures Brasil</i>
 
 # text
-O ano de 2026 resumiu a década. Lançado em 17 de julho, <i>A Odisseia</i>, de Nolan, passou de US$ 1,6 bilhão e tirou de <i>Deadpool & Wolverine</i> o posto de filme de classificação R de maior bilheteria da história. Duas semanas depois, {{m:969681}}, de {{p:1144604}}, fez a segunda maior estreia mundial de todos os tempos (US$ 927 milhões) e em três semanas virou apenas o oitavo filme a ultrapassar US$ 2 bilhões. Os super-heróis não morreram: o mesmo personagem que fechou a era antiga voltou quase cinco anos depois tratado como acontecimento, e não como mais um capítulo. Agora a Marvel aposta tudo em {{m:1003596}}, dirigido pelos irmãos Russo e com {{p:3223}} de volta, desta vez como o Doutor Destino, o vilão que tomou o lugar de Kang; a estreia no Brasil está marcada para 17 de dezembro. A lição desses anos é que o público nunca se cansou do espetáculo. Cansou da fórmula.
+O ano de 2026 resumiu a década. Lançado em 17 de julho, {{m:1368337|<i>A Odisseia</i>}}, de Nolan, passou de US$ 1,6 bilhão e tirou de <i>Deadpool & Wolverine</i> o posto de filme de classificação R de maior bilheteria da história. Duas semanas depois, {{m:969681}}, de {{p:1144604}}, fez a segunda maior estreia mundial de todos os tempos (US$ 927 milhões) e em três semanas virou apenas o oitavo filme a ultrapassar US$ 2 bilhões. Os super-heróis não morreram: o mesmo personagem que fechou a era antiga voltou quase cinco anos depois tratado como acontecimento, e não como mais um capítulo. Agora a Marvel aposta tudo em {{m:1003596}}, dirigido pelos irmãos Russo e com {{p:3223}} de volta, desta vez como o Doutor Destino, o vilão que tomou o lugar de Kang; a estreia no Brasil está marcada para 17 de dezembro. A lição desses anos é que o público nunca se cansou do espetáculo. Cansou da fórmula.
+
+# block
+title: IMAX: a sala como argumento
+image: name=img_odisseia_imax_batalha_troia tmdb_path=/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg
+text: Durante décadas, o IMAX foi associado a documentários de museu. Nos anos 2020, virou o lugar onde os blockbusters se decidem. Com pouco mais de 1.800 salas no mundo, uma fração mínima do circuito, a empresa fechou 2025 com recorde de US$ 1,28 bilhão em bilheteria, 13% acima do melhor ano anterior, de 2019. Christopher Nolan transformou o formato em assinatura, e The Odyssey (BR: A Odisseia, 2026) foi o primeiro longa filmado inteiramente com câmeras de película IMAX. Os ingressos para as sessões em 70 mm foram colocados à venda em 17 de julho de 2025, um ano antes da estreia, e parte delas esgotou em menos de 12 horas. Só 41 telas no mundo eram capazes de exibir essa versão, e a IMAX chegou a reformar projetores antigos e treinar novos projecionistas para atender à demanda. Em agosto de 2026, o filme se tornou a maior bilheteria da história da IMAX, superando o primeiro <i>Avatar</i>. Num mercado em que quase tudo chega ao streaming em poucas semanas, a própria sala virou o argumento de venda.
+link: https://au.variety.com/2026/film/news/the-odyssey-christopher-nolan-biggest-movie-imax-record-39268/ | Leia a reportagem da Variety
+
+# text
+A volta do evento fecha bem uma era que começou com as telas apagadas. Em março de 2020, as salas do mundo inteiro fecharam, e muita gente apostou que o streaming tinha vencido de vez. Cinco anos depois, sessões de <i>A Odisseia</i> esgotavam um ano antes da estreia. No caminho, o cinema mudou de forma: aprendeu a nascer de memes e de canais do <i>YouTube</i>, viu o terror e os filmes falados em outras línguas ocuparem o centro, parou em greve para discutir o streaming e a inteligência artificial e assistiu à fusão de grandes estúdios. O que não mudou foi o motivo para sair de casa. Num tempo em que quase tudo cabe na tela do celular, a sala de cinema sobreviveu ao se tornar o lugar do que não cabe nela: o espetáculo visto em grupo, no escuro, como acontecimento.
 
 # video
 youtube: Y-Dcn-qnnjs
 title: Trailer de <i>A Odisseia</i>
 text: O trailer oficial do épico de Christopher Nolan baseado no poema de Homero, que se tornou a maior bilheteria da carreira do diretor e da história da IMAX.
 source: Youtube: Canal <i>Universal Pictures Brasil</i>
-
-# text
-A volta do evento fecha bem uma era que começou com as telas apagadas. Em março de 2020, as salas do mundo inteiro fecharam, e muita gente apostou que o streaming tinha vencido de vez. Cinco anos depois, sessões de <i>A Odisseia</i> esgotavam um ano antes da estreia. No caminho, o cinema mudou de forma: aprendeu a nascer de memes e de canais do <i>YouTube</i>, viu o terror e os filmes falados em outras línguas ocuparem o centro, parou em greve para discutir o streaming e a inteligência artificial e assistiu à fusão de grandes estúdios. O que não mudou foi o motivo para sair de casa. Num tempo em que quase tudo cabe na tela do celular, a sala de cinema sobreviveu ao se tornar o lugar do que não cabe nela: o espetáculo visto em grupo, no escuro, como acontecimento.
 
 # movies
 634649, 640146, 609681, 533535, 1061474, 361743, 76600, 872585, 693134, 1022789, 502356, 1233413, 1368337, 969681

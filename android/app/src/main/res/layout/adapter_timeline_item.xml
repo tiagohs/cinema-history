@@ -40,7 +40,7 @@
         tools:text="18\n95"
         />
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="@dimen/timeline_footer_circle_container_size"
         android:layout_height="@dimen/timeline_footer_circle_container_size"
         android:id="@+id/circle"
@@ -51,14 +51,14 @@
         app:layout_constraintEnd_toEndOf="@id/divisor"
         app:layout_constraintStart_toStartOf="@id/divisor" >
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="@dimen/timeline_footer_circle_size"
         android:layout_height="@dimen/timeline_footer_circle_size"
         app:cardCornerRadius="@dimen/timeline_footer_circle_radius"
         android:layout_gravity="center"
         app:cardBackgroundColor="@color/md_white_1000" />
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
     <View
         android:layout_width="0dp"
@@ -120,7 +120,7 @@
             app:layout_constraintEnd_toEndOf="@id/containerTopGuidelineVertical2"
             app:layout_constraintBottom_toBottomOf="parent">
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="@dimen/timeline_title_line_width"
                 android:layout_height="@dimen/timeline_title_line_height"
                 android:id="@+id/textLine"

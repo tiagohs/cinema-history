@@ -86,8 +86,8 @@
         "image_type": "local",
         "url": "alice_blache",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Alice_Guy.jpg/800px-Alice_Guy.jpg",
+          "image_type": "local",
+          "url": "img_gif_thumb_alice_blache",
           "style": {
             "scale_type": "center_crop"
           }

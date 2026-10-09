@@ -25,7 +25,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/775-le-voyage-dans-la-lune/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/775-le-voyage-dans-la-lune/watch?locale=BR"
           },
           {
             "type": "amazon_video",
@@ -270,7 +270,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/77621-within-our-gates/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/77621-within-our-gates/watch?locale=BR"
           }
         ],
         "did_you_know_list": [
@@ -342,7 +342,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/653-nosferatu-eine-symphonie-des-grauens/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/653-nosferatu-eine-symphonie-des-grauens/watch?locale=BR"
           },
           {
             "type": "more_options",
@@ -654,7 +654,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/19-metropolis/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/19-metropolis/watch?locale=BR"
           },
           {
             "type": "more_options",
@@ -998,7 +998,7 @@
           },
           {
             "type": "play_store",
-            "link": "https://play.google.com/store/movies/details/Nada_de_Novo_no_Front?gl=MX&hl=es-419&id=VFVs95FC7c4"
+            "link": "https://www.themoviedb.org/movie/143-all-quiet-on-the-western-front/watch?locale=MX"
           },
           {
             "type": "claro_video",
@@ -1181,7 +1181,7 @@
         "watchOn": [
           {
             "type": "apple_tv",
-            "link": "https://itunes.apple.com/mx/movie/freaks/id289885878"
+            "link": "https://www.themoviedb.org/movie/136-freaks/watch?locale=MX"
           },
           {
             "type": "amazon_video",
@@ -1719,7 +1719,12 @@
       {
         "id": 1859,
         "title": "Ninotchka",
-        "watchOn": []
+        "watchOn": [
+          {
+            "type": "hbo_max",
+            "link": "https://www.themoviedb.org/movie/1859-ninotchka/watch?locale=MX"
+          }
+        ]
       },
       {
         "id": 630,
@@ -2870,7 +2875,7 @@
           },
           {
             "type": "play_store",
-            "link": "https://play.google.com/store/movies/details/Matar_ou_Morrer?gl=MX&hl=es-419&id=BTE90AhaC4E"
+            "link": "https://www.themoviedb.org/movie/288-high-noon/watch?locale=MX"
           }
         ]
       },
@@ -3279,7 +3284,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/803-nuit-et-brouillard/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/803-nuit-et-brouillard/watch?locale=BR"
           }
         ]
       },
@@ -3778,7 +3783,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/239-some-like-it-hot/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/239-some-like-it-hot/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -3830,7 +3835,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/147-les-quatre-cents-coups/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/147-les-quatre-cents-coups/watch?locale=BR"
           }
         ]
       },
@@ -3844,7 +3849,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/5544-hiroshima-mon-amour/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/5544-hiroshima-mon-amour/watch?locale=BR"
           }
         ]
       },
@@ -4023,7 +4028,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/284-the-apartment/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/284-the-apartment/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -4121,7 +4126,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/662-la-jetee/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/662-la-jetee/watch?locale=BR"
           },
           {
             "type": "more_options",
@@ -4218,7 +4223,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/84972-chronique-d-un-ete-paris-1960/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/84972-chronique-d-un-ete-paris-1960/watch?locale=BR"
           }
         ]
       },
@@ -4233,7 +4238,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/499-cleo-de-5-a-7/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/499-cleo-de-5-a-7/watch?locale=BR"
           }
         ]
       },
@@ -4323,10 +4328,6 @@
           {
             "type": "amazon_video",
             "link": "https://www.themoviedb.org/movie/595-to-kill-a-mockingbird/watch?locale=MX"
-          },
-          {
-            "type": "more_options",
-            "link": "https://www.themoviedb.org/movie/595-to-kill-a-mockingbird/watch?locale=MX"
           }
         ]
       },
@@ -4361,7 +4362,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/1628-jules-et-jim/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/1628-jules-et-jim/watch?locale=BR"
           },
           {
             "type": "more_options",
@@ -4891,7 +4892,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/20108-au-hasard-balthazar/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/20108-au-hasard-balthazar/watch?locale=BR"
           }
         ]
       },
@@ -4905,7 +4906,7 @@
           },
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/4710-masculin-feminin/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/4710-masculin-feminin/watch?locale=BR"
           }
         ]
       },
@@ -5198,7 +5199,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/60315-high-school/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/60315-high-school/watch?locale=BR"
           }
         ]
       },
@@ -5288,7 +5289,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/26302/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/26302/watch?locale=BR"
           },
           {
             "type": "more_options",
@@ -5744,6 +5745,10 @@
         "title": "La última película",
         "watchOn": [
           {
+            "type": "hbo_max",
+            "link": "https://www.themoviedb.org/movie/25188-the-last-picture-show/watch?locale=MX"
+          },
+          {
             "type": "amazon_video",
             "link": "https://www.themoviedb.org/movie/25188-the-last-picture-show/watch?locale=MX"
           },
@@ -5958,7 +5963,7 @@
           },
           {
             "type": "play_store",
-            "link": "https://play.google.com/store/movies/details/O_Estranho_Sem_Nome?gl=MX&hl=es-419&id=6sII6L3uPvc"
+            "link": "https://www.themoviedb.org/movie/11901-high-plains-drifter/watch?locale=MX"
           },
           {
             "type": "claro_video",
@@ -6172,7 +6177,7 @@
           },
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/16306-la-planete-sauvage/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/16306-la-planete-sauvage/watch?locale=BR"
           },
           {
             "type": "amazon_video",
@@ -6539,7 +6544,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/10774-network/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/10774-network/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -6640,7 +6645,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/5879/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/5879/watch?locale=BR"
           }
         ]
       },
@@ -6691,7 +6696,7 @@
         "watchOn": [
           {
             "type": "play_store",
-            "link": "https://play.google.com/store/movies/details/Star_Wars_Uma_Nova_Esperan%C3%A7a_Legendado?gl=MX&hl=es-419&id=MU4KRmJ7Yl0"
+            "link": "https://www.themoviedb.org/movie/11-star-wars/watch?locale=MX"
           },
           {
             "type": "more_options",
@@ -6742,7 +6747,7 @@
         "watchOn": [
           {
             "type": "prime_video",
-            "link": "https://www.primevideo.com/detail/amzn1.dv.gti.96b86b01-1b2f-1e33-d551-e5068ec234c4?ie=UTF8&linkCode=xm2"
+            "link": "https://www.themoviedb.org/movie/11906-suspiria/watch?locale=MX"
           },
           {
             "type": "amazon_video",
@@ -6797,7 +6802,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/985-eraserhead/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/985-eraserhead/watch?locale=BR"
           }
         ]
       },
@@ -7210,7 +7215,7 @@
           },
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/1578-raging-bull/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/1578-raging-bull/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -7222,7 +7227,7 @@
           },
           {
             "type": "play_store",
-            "link": "https://play.google.com/store/movies/details/Touro_Indom%C3%A1vel_Dublado?gl=MX&hl=es-419&id=r9JxquxCAQ0"
+            "link": "https://www.themoviedb.org/movie/1578-raging-bull/watch?locale=MX"
           }
         ]
       },
@@ -7447,7 +7452,7 @@
           },
           {
             "type": "play_store",
-            "link": "https://play.google.com/store/movies/details/Poltergeist_LEG?gl=MX&hl=es-419&id=v5QGkNGIimk"
+            "link": "https://www.themoviedb.org/movie/609-poltergeist/watch?locale=MX"
           }
         ]
       },
@@ -7547,7 +7552,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/1091-the-thing/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/1091-the-thing/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -7596,7 +7601,7 @@
           },
           {
             "type": "play_store",
-            "link": "https://play.google.com/store/movies/details/Uma_Hist%C3%B3ria_de_Natal_Dublado?gl=MX&hl=es-419&id=Y1tZYMDsJS8"
+            "link": "https://www.themoviedb.org/movie/850-a-christmas-story/watch?locale=MX"
           }
         ]
       },
@@ -7643,7 +7648,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/1563-sans-soleil/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/1563-sans-soleil/watch?locale=BR"
           },
           {
             "type": "more_options",
@@ -7700,7 +7705,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/837-videodrome/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/837-videodrome/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -7894,7 +7899,7 @@
         "watchOn": [
           {
             "type": "apple_tv",
-            "link": "https://itunes.apple.com/mx/movie/this-is-spinal-tap/id1454423612?l=en&ign-mpt=uo%3D4"
+            "link": "https://www.themoviedb.org/movie/11031-this-is-spinal-tap/watch?locale=MX"
           },
           {
             "type": "amazon_video",
@@ -8251,6 +8256,10 @@
           {
             "type": "amazon_video",
             "link": "https://www.themoviedb.org/movie/6106-salvador/watch?locale=MX"
+          },
+          {
+            "type": "more_options",
+            "link": "https://www.themoviedb.org/movie/6106-salvador/watch?locale=MX"
           }
         ]
       },
@@ -8445,6 +8454,10 @@
         "watchOn": [
           {
             "type": "amazon_video",
+            "link": "https://www.themoviedb.org/movie/21521-a/watch?locale=MX"
+          },
+          {
+            "type": "more_options",
             "link": "https://www.themoviedb.org/movie/21521-a/watch?locale=MX"
           }
         ]
@@ -8856,7 +8869,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/5548-robocop/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/5548-robocop/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -9039,7 +9052,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/925-do-the-right-thing/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/925-do-the-right-thing/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -9293,7 +9306,12 @@
       {
         "id": 10617,
         "title": "Érase una vez en China",
-        "watchOn": []
+        "watchOn": [
+          {
+            "type": "more_options",
+            "link": "https://www.themoviedb.org/movie/10617/watch?locale=MX"
+          }
+        ]
       },
       {
         "id": 1541,
@@ -9305,7 +9323,7 @@
           },
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/1541-thelma-louise/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/1541-thelma-louise/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -9876,7 +9894,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/11104/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/11104/watch?locale=BR"
           }
         ]
       },
@@ -10180,7 +10198,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/145-breaking-the-waves/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/145-breaking-the-waves/watch?locale=BR"
           }
         ]
       },
@@ -10505,7 +10523,7 @@
           },
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/99-todo-sobre-mi-madre/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/99-todo-sobre-mi-madre/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -10558,7 +10576,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/843/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/843/watch?locale=BR"
           }
         ]
       },
@@ -11062,7 +11080,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/129112-das-madchen-wadjda/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/129112-das-madchen-wadjda/watch?locale=BR"
           },
           {
             "type": "apple_tv",
@@ -11136,7 +11154,7 @@
           },
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/76203-12-years-a-slave/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/76203-12-years-a-slave/watch?locale=BR"
           },
           {
             "type": "amazon_video",
@@ -11373,7 +11391,7 @@
         "watchOn": [
           {
             "type": "mubi",
-            "link": "https://www.themoviedb.org/movie/391713-lady-bird/watch?locale=MX"
+            "link": "https://www.themoviedb.org/movie/391713-lady-bird/watch?locale=BR"
           },
           {
             "type": "apple_tv",
