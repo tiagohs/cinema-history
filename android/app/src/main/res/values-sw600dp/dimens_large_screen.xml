@@ -33,24 +33,7 @@
     <dimen name="home_destination_list_padding">20dp</dimen>
     <dimen name="home_destination_height">200dp</dimen>
 
-    <!-- ===== Capítulos (dimens do módulo helpers) ===== -->
-    <dimen name="history_page_image_height">480dp</dimen>
-    <dimen name="history_page_image_degrade_bottom_height">240dp</dimen>
-    <dimen name="page_image_height">400dp</dimen>
-    <dimen name="page_video_height">420dp</dimen>
-    <dimen name="page_gif_height">360dp</dimen>
-    <dimen name="page_slide_height">440dp</dimen>
-    <dimen name="page_essay_height">400dp</dimen>
-
-    <!-- ===== Detalhes de filme / pessoa e apresentação da era (dimens do módulo helpers) ===== -->
-    <dimen name="movie_appbar_height">480dp</dimen>
-    <dimen name="person_details_appbar_height">520dp</dimen>
-    <dimen name="person_details_degrade_height">360dp</dimen>
-    <dimen name="person_details_special_appbar_height">400dp</dimen>
-    <dimen name="presentation_quote_width">220dp</dimen>
-
-    <!-- ===== Cartões das listas (MainTopics) ===== -->
-    <dimen name="main_topic_card_image_height">300dp</dimen>
-    <dimen name="main_topic_card_full_image_height">340dp</dimen>
+    <!-- Alturas de imagem/vídeo/cabeçalhos/cartões em tablets: ficam em helpers/src/main/res/values-sw600dp/dimens.xml,
+         junto da declaração base (o lint exige o valor padrão no mesmo módulo). -->
 
 </resources>
