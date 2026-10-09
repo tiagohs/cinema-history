@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ação da toolbar da Home: idioma atual (PT/EN/ES); tocar troca para o próximo. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp">
+
+    <TextView
+        android:id="@+id/languageChip"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_home_language_chip"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:gravity="center"
+        android:minWidth="44dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/md_white_1000"
+        android:textSize="13sp"
+        android:letterSpacing="0.08" />
+</FrameLayout>

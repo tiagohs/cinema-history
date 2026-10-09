@@ -33,6 +33,8 @@
     <!-- Settings -->
     <string name="action_about">Acerca de</string>
     <string name="action_reference">Referencias</string>
+    <string name="action_language">Idioma: %1$s (toca para cambiar)</string>
+    <string name="action_theme">Tema claro u oscuro</string>
     <string name="action_glossary">Glosario</string>
     <string name="action_settings">Configuración</string>
     <string name="action_share">Compartir</string>

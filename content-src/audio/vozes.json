@@ -1,0 +1,60 @@
+{
+  "_leia": "SUGESTÕES a confirmar ouvindo a amostra (generate.py --sample). Nomes conferidos na documentação pública em out/2026: Chirp 3 HD = <locale>-Chirp3-HD-<Voz> (https://docs.cloud.google.com/text-to-speech/docs/chirp3-hd); Gemini TTS usa só o nome da voz e detecta o idioma pelo texto (https://ai.google.dev/gemini-api/docs/speech-generation). As 30 vozes têm os mesmos nomes nos dois provedores. 'alternativas' = boas candidatas para a amostra.",
+  "pron": "original",
+  "_pron": "'original' manda o nome como está escrito; 'respell' troca as marcas [[pron: Nome|grafia]] pela grafia fonética. Teste os dois na amostra.",
+  "pausas_ms": {"paragrafo": 450, "citacao": 700, "inicio_faixa": 250, "fim_faixa": 600},
+  "chirp": {
+    "speaking_rate": 1.0,
+    "sample_rate": 24000,
+    "pt": {
+      "locale": "pt-BR",
+      "narrador": "pt-BR-Chirp3-HD-Charon",
+      "citacao": "pt-BR-Chirp3-HD-Gacrux",
+      "alternativas_narrador": ["Charon", "Iapetus", "Sadaltager", "Orus", "Kore", "Sulafat", "Erinome"],
+      "alternativas_citacao": ["Gacrux", "Algenib", "Vindemiatrix", "Schedar"]
+    },
+    "en": {
+      "locale": "en-US",
+      "narrador": "en-US-Chirp3-HD-Charon",
+      "citacao": "en-US-Chirp3-HD-Gacrux",
+      "alternativas_narrador": ["Charon", "Iapetus", "Sadaltager", "Rasalgethi", "Kore", "Sulafat"],
+      "alternativas_citacao": ["Gacrux", "Algenib", "Vindemiatrix", "Schedar"]
+    },
+    "es": {
+      "locale": "es-US",
+      "_locale": "es-US = espanhol latino-americano; troque por es-ES se o público principal for a Espanha.",
+      "narrador": "es-US-Chirp3-HD-Charon",
+      "citacao": "es-US-Chirp3-HD-Gacrux",
+      "alternativas_narrador": ["Charon", "Iapetus", "Sadaltager", "Orus", "Kore", "Sulafat"],
+      "alternativas_citacao": ["Gacrux", "Algenib", "Vindemiatrix", "Schedar"]
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.8-flash-tts",
+    "_model": "Alternativa mais barata: gemini-3.8-flash-lite-tts. Confira o nome atual na documentação antes de rodar.",
+    "pt": {
+      "narrador": "Charon",
+      "citacao": "Gacrux",
+      "estilo_narrador": "narrador de documentário em português do Brasil, tom calmo, claro e envolvente, ritmo moderado",
+      "estilo_citacao": "lendo uma citação, um pouco mais expressivo, ritmo natural",
+      "alternativas_narrador": ["Charon", "Iapetus", "Sadaltager", "Rasalgethi", "Kore", "Sulafat"],
+      "alternativas_citacao": ["Gacrux", "Algenib", "Vindemiatrix", "Schedar"]
+    },
+    "en": {
+      "narrador": "Charon",
+      "citacao": "Gacrux",
+      "estilo_narrador": "documentary narrator in American English, calm, clear and engaging, moderate pace",
+      "estilo_citacao": "reading a quotation, slightly more expressive, natural pace",
+      "alternativas_narrador": ["Charon", "Iapetus", "Sadaltager", "Rasalgethi", "Kore", "Sulafat"],
+      "alternativas_citacao": ["Gacrux", "Algenib", "Vindemiatrix", "Schedar"]
+    },
+    "es": {
+      "narrador": "Charon",
+      "citacao": "Gacrux",
+      "estilo_narrador": "narrador de documental en español latinoamericano neutro, tono sereno, claro y cautivador, ritmo moderado",
+      "estilo_citacao": "leyendo una cita, un poco más expresivo, ritmo natural",
+      "alternativas_narrador": ["Charon", "Iapetus", "Sadaltager", "Rasalgethi", "Kore", "Sulafat"],
+      "alternativas_citacao": ["Gacrux", "Algenib", "Vindemiatrix", "Schedar"]
+    }
+  }
+}
