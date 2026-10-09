@@ -143,7 +143,7 @@ O código fica em `android/app/src/main/java/com/tiagohs/cinema_history/audio/`.
 
 ### Como o app consome os arquivos
 
-- **Endereço**: tudo sai de `AudioConfig.BASE_URL`, o único lugar a trocar. Hoje ele vale `https://audio.example.invalid/cinema-history/`, com um `TODO(R2)`.
+- **Endereço**: tudo sai de `AudioConfig.BASE_URL`, o único lugar a trocar. Hoje: `https://cinema-history-audio.tiago-silva-93.workers.dev/` (bucket R2 `cinema-history-audio`, criado em 09/10/2026).
   - Troque pelo domínio do bucket, terminando com `/`. Exemplo: `https://audio.<seu-domínio>/v1/`.
   - O app monta `<BASE_URL><idioma>/main_<era>/page_<n>/manifest.json`, que é a mesma estrutura de `out/`.
   - O idioma vem de `ContentLanguage.current()`: pt, en ou es.

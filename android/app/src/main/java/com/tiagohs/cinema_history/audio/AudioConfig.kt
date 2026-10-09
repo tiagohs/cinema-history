@@ -17,11 +17,10 @@ object AudioConfig {
     /**
      * Único lugar para trocar o endereço do áudio. Precisa terminar com "/".
      *
-     * TODO(R2): trocar pelo domínio próprio do bucket R2, por exemplo
-     *  "https://audio.<seu-domínio>/v1/". Enquanto for ".invalid", nenhum manifest é encontrado e o
-     *  recurso fica escondido no app.
+     * Worker da Cloudflare (cloudflare/audio-worker) na frente do bucket R2 cinema-history-audio.
+     * Enquanto um capítulo não tiver áudio no bucket, o manifest dá 404 e o botão "Ouvir" não aparece.
      */
-    const val BASE_URL = "https://audio.example.invalid/cinema-history/"
+    const val BASE_URL = "https://cinema-history-audio.tiago-silva-93.workers.dev/"
 
     /** Fonte de teste (só em debug): app/src/debug/assets/audio-test/ (gerada por make_test_assets.py). */
     const val TEST_BASE_URL = "asset:///audio-test/"
