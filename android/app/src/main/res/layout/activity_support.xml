@@ -282,6 +282,19 @@
                         app:drawableStartCompat="@drawable/ic_support_check_24"
                         app:drawableTint="?attr/colorTertiary" />
 
+                    <!-- Transparência: quem fez o quê (o áudio é pago, então precisa estar claro) -->
+                    <TextView
+                        android:id="@+id/aiDisclosure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:drawablePadding="10dp"
+                        android:text="@string/support_ai_disclosure"
+                        android:textAppearance="?attr/textAppearanceBodySmall"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        app:drawableStartCompat="@drawable/ic_support_headphones_24"
+                        app:drawableTint="?attr/colorOnSurfaceVariant" />
+
                     <!-- Pagamento pendente (Pix/boleto) -->
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/pendingCard"

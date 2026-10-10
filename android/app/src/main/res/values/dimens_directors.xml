@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Tela "Diretores" (lista em grade agrupada por época, com filtros e a seção "Em alta").
+    Tablets: values-sw600dp*/dimens_directors.xml (mais colunas e cartões maiores).
+-->
+<resources>
+    <integer name="directors_grid_columns">2</integer>
+    <dimen name="directors_screen_padding">12dp</dimen>
+    <dimen name="directors_card_spacing">4dp</dimen>
+    <dimen name="directors_card_corner">16dp</dimen>
+    <dimen name="directors_card_name_size">18sp</dimen>
+    <dimen name="directors_trending_height">340dp</dimen>
+    <dimen name="directors_trending_item_width">240dp</dimen>
+    <dimen name="directors_trending_item_spacing">6dp</dimen>
+    <dimen name="directors_trending_name_size">26sp</dimen>
+    <dimen name="directors_trending_scrim_offset">110dp</dimen>
+    <dimen name="directors_trending_fade_threshold">96dp</dimen>
+    <dimen name="directors_section_title_size">22sp</dimen>
+    <dimen name="person_profile_media_corner">12dp</dimen>
+</resources>

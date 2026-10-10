@@ -33,7 +33,7 @@
     <string name="audio_download_failed">Falló la descarga. Toca para intentarlo de nuevo</string>
     <string name="audio_locked_track_cd">%1$s, para quienes apoyan</string>
     <string name="audio_current_track_cd">%1$s, sonando ahora</string>
-    <string name="audio_preview_note">Vista previa gratis: la apertura. Apoya a Cinema History para escuchar la narración completa.</string>
+    <string name="audio_preview_note">Vista previa gratis: la apertura. Apoya a Historia del Cine para escuchar la narración completa.</string>
     <string name="audio_unlock">Desbloquear la narración</string>
     <string name="audio_chapter_label">Capítulo %1$d · %2$s</string>
     <string name="audio_seek_cd">Posición de reproducción</string>

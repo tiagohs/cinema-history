@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tablets (medium): 3 colunas e cartões maiores. Valores padrão em values/dimens_directors.xml. -->
+<resources>
+    <integer name="directors_grid_columns">3</integer>
+    <dimen name="directors_screen_padding">20dp</dimen>
+    <dimen name="directors_trending_height">400dp</dimen>
+    <dimen name="directors_trending_item_width">280dp</dimen>
+    <dimen name="directors_card_name_size">20sp</dimen>
+</resources>

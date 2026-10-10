@@ -193,4 +193,39 @@
     <string name="theme_light">Claro</string>
     <string name="theme_dark">Escuro</string>
     <string name="theme_system">Padrão do sistema</string>
+
+    <!-- Diretores (lista nova e páginas especiais) -->
+    <string name="directors_intro">Conheça %1$d cineastas que mudaram o cinema, dos pioneiros do cinema mudo aos nomes em alta hoje.</string>
+    <string name="directors_filter_all">Todos</string>
+    <string name="directors_filter_trending">Em alta</string>
+    <string name="directors_region_all">Todas as regiões</string>
+    <string name="directors_era_silent">Pioneiros e cinema mudo</string>
+    <string name="directors_era_silent_period">Até 1929</string>
+    <string name="directors_era_golden">Era de ouro</string>
+    <string name="directors_era_golden_period">1930–1959</string>
+    <string name="directors_era_new_waves">Novas ondas</string>
+    <string name="directors_era_new_waves_period">1960–1979</string>
+    <string name="directors_era_modern">Fim do século</string>
+    <string name="directors_era_modern_period">1980–1999</string>
+    <string name="directors_era_contemporary">Século 21</string>
+    <string name="directors_era_contemporary_period">2000 até hoje</string>
+    <string name="directors_region_europe">Europa</string>
+    <string name="directors_region_north_america">América do Norte</string>
+    <string name="directors_region_latin_america">América Latina</string>
+    <string name="directors_region_asia">Ásia</string>
+    <string name="directors_region_africa">África</string>
+    <string name="directors_region_oceania">Oceania</string>
+    <string name="directors_trending_title">Em alta</string>
+    <string name="directors_trending_subtitle">Os cineastas que marcaram os últimos cinco anos</string>
+    <string name="directors_trending_badge">Em alta</string>
+    <string name="directors_trending_rank">#%1$d</string>
+    <string name="directors_empty">Nenhum diretor encontrado com esses filtros.</string>
+    <string name="directors_card_description">%1$s, %2$s, %3$s</string>
+    <string name="person_profile_quote_format">“%1$s”</string>
+    <string name="person_profile_play_video">Assistir ao vídeo: %1$s</string>
+    <plurals name="directors_count">
+        <item quantity="one">%d diretor</item>
+        <item quantity="other">%d diretores</item>
+        <item quantity="many">%d diretores</item>
+    </plurals>
 </resources>

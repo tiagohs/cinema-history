@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/directorsIntro"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="4dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="4dp"
+    android:paddingBottom="4dp"
+    android:maxWidth="@dimen/ls_text_max_width"
+    android:textAppearance="?attr/textAppearanceBodyMedium"
+    android:textColor="@color/daynight_text_grey_700"
+    tools:text="Conheça 45 cineastas que mudaram o cinema, dos pioneiros do cinema mudo aos nomes em alta hoje." />

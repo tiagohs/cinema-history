@@ -83,7 +83,10 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
         // por baixo dela. Uma faixa preta por cima de tudo, da altura da status bar, resolve.
         addStatusBarCover()
 
-        (activity as? BaseActivity<*>)?.setupToolbar(binding.toolbar, displayHomeAsUpEnabled = false)
+        // Cada página tem a própria toolbar. Não usar setSupportActionBar: com o ViewPager2 pré-carregando as
+        // páginas vizinhas, a action bar da Activity ficava apontando para a toolbar de outra página e os
+        // ícones (idioma, menu) sumiam/apareciam na página visível.
+        setupPageMenu()
         // tema à esquerda, idioma à direita (longe do título)
         activity?.let { act ->
             binding.toolbar.setNavigationIcon(
@@ -92,8 +95,6 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
             binding.toolbar.setNavigationContentDescription(R.string.action_theme)
             binding.toolbar.setNavigationOnClickListener { QuickSettingsMenu.toggleTheme(act, settingManager) }
         }
-
-        setHasOptionsMenu(true)
 
         // Tablets: o esqueleto de carregamento segue a mesma coluna de leitura do texto.
         binding.loadContentView.limitContentWidth(R.dimen.ls_reading_max_width)
@@ -135,16 +136,20 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
         super.onPause()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_history_page, menu)
+    private fun setupPageMenu() {
+        val toolbar = binding.toolbar
+        toolbar.menu.clear()
+        toolbar.inflateMenu(R.menu.menu_history_page)
+        val menu = toolbar.menu
         activity?.let { QuickSettingsMenu.bind(it, menu) }
         menu.findItem(R.id.action_theme)?.isVisible = false // fica na esquerda da toolbar
         if (BuildConfig.DEBUG) {
             menu.add(Menu.NONE, AudioDebugDialog.MENU_ID, Menu.CATEGORY_SECONDARY, "Áudio (debug)")
         }
+        toolbar.setOnMenuItemClickListener { onPageMenuItem(it) }
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    private fun onPageMenuItem(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_glossary -> {
                 activity?.startActivityWithSlideRightToLeftAnimation(GlossaryActivity.newIntent(context))
@@ -227,14 +232,17 @@ class HistoryPageFragment : BaseFragment<FragmentHistoryPageBinding>(), HistoryP
             fitsSystemWindows = true
         }
         root.addView(cover, androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0))
-        val update = {
-            val decor = activity?.window?.decorView
-            val fromInsets = decor?.let { androidx.core.view.ViewCompat.getRootWindowInsets(it) }
+        // Só usa a própria view (nada de resources/activity do Fragment): o post pode rodar depois que o
+        // Fragment saiu da tela (troca de idioma/tema recria tudo) e aí resources/activity lançam exceção.
+        val update = update@{
+            if (!root.isAttachedToWindow) return@update
+            val res = root.resources
+            val fromInsets = androidx.core.view.ViewCompat.getRootWindowInsets(root)
                 ?.getInsets(androidx.core.view.WindowInsetsCompat.Type.statusBars())?.top ?: 0
-            val resId = resources.getIdentifier("status_bar_height", "dimen", "android")
+            val resId = res.getIdentifier("status_bar_height", "dimen", "android")
             // a faixa fica no topo da TELA: desconta onde o coordinator começa
             val loc = IntArray(2).also { root.getLocationOnScreen(it) }
-            val top = ((if (fromInsets > 0) fromInsets else if (resId > 0) resources.getDimensionPixelSize(resId) else 0) - loc[1])
+            val top = ((if (fromInsets > 0) fromInsets else if (resId > 0) res.getDimensionPixelSize(resId) else 0) - loc[1])
                 .coerceAtLeast(0)
             if (cover.layoutParams.height != top) {
                 cover.layoutParams = cover.layoutParams.apply { height = top }

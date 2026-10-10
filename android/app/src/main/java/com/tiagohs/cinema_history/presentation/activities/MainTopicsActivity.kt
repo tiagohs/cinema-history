@@ -7,11 +7,22 @@ import android.graphics.PorterDuff
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.core.view.WindowCompat
+import androidx.recyclerview.widget.ConcatAdapter
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.chip.Chip
+import com.google.android.material.chip.ChipGroup
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.ads.AdPlacement
+import com.tiagohs.cinema_history.ads.NativeAdAdapter
 import com.tiagohs.cinema_history.ads.adapterWithNativeAd
+import com.tiagohs.cinema_history.presentation.adapters.directors.DirectorEra
+import com.tiagohs.cinema_history.presentation.adapters.directors.DirectorRegion
+import com.tiagohs.cinema_history.presentation.adapters.directors.DirectorsAdapter
+import com.tiagohs.cinema_history.presentation.adapters.directors.DirectorsCatalog
 import com.tiagohs.cinema_history.presentation.adapters.MainTopicsAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.cinema_history.presentation.configs.BalancedGridSpanLookup
@@ -38,14 +49,33 @@ class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsV
     private var mainTopicsType: MainTopicsType? = null
     private var isDarkMode = false
 
+    // Tela de diretores: filtros escolhidos (época/"todos"/"em alta" e região) e adapters da grade.
+    private var directors: List<DirectorsMainTopic> = emptyList()
+    private var directorsFilter = DirectorsCatalog.FILTER_ALL
+    private var directorsRegion: String? = null
+    private var directorsHead: DirectorsAdapter? = null
+    private var directorsTail: DirectorsAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        savedInstanceState?.let {
+            directorsFilter = it.getString(STATE_DIRECTORS_FILTER) ?: DirectorsCatalog.FILTER_ALL
+            directorsRegion = it.getString(STATE_DIRECTORS_REGION)
+        }
 
         getApplicationComponent()?.inject(this)
         setupToolbar(binding.toolbar)
 
         presenter.onBindView(this)
         presenter.fetchMainTopics(mainTopicsType)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.putString(STATE_DIRECTORS_FILTER, directorsFilter)
+        outState.putString(STATE_DIRECTORS_REGION, directorsRegion)
     }
 
     override fun onBackPressed() {
@@ -144,6 +174,12 @@ class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsV
 
     override fun bindMainTopics(mainTopics: List<MainTopic>) {
         val mainTopicsType = mainTopicsType?: return
+
+        if (mainTopicsType == MainTopicsType.DIRECTORS) {
+            bindDirectors(mainTopics.filterIsInstance<DirectorsMainTopic>())
+            return
+        }
+
         // Anúncio nativo depois do 3º item da lista (eras, prêmios, 1001 filmes, diretores).
         val listAdapter = adapterWithNativeAd(mainTopics, after = 3, AdPlacement.LISTS, this) { items ->
             MainTopicsAdapter(mainTopicsType, items, isDarkMode).apply {
@@ -190,6 +226,105 @@ class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsV
         }
     }
 
+    // ---------------------------------------------------------------- Diretores
+
+    /**
+     * Lista de diretores em grade (2 colunas no celular, 3/4 em tablets), agrupada por época, com o
+     * carrossel "Em alta" no topo e filtros fixos de época e região logo abaixo da barra.
+     */
+    private fun bindDirectors(items: List<DirectorsMainTopic>) {
+        directors = items
+
+        binding.appBar.layoutParams = binding.appBar.layoutParams.apply { height = ViewGroup.LayoutParams.WRAP_CONTENT }
+        binding.directorsFilters.visibility = View.VISIBLE
+        setupDirectorsChips()
+
+        val columns = resources.getInteger(R.integer.directors_grid_columns)
+        val padding = resources.getDimensionPixelSize(R.dimen.directors_screen_padding)
+        val head = DirectorsAdapter { openDirector(it) }
+        val tail = DirectorsAdapter { openDirector(it) }
+        directorsHead = head
+        directorsTail = tail
+
+        val list = binding.mainTopicsList
+        list.setPaddingRelative(padding, padding / 2, padding, padding)
+        list.clipToPadding = false
+        list.layoutManager = GridLayoutManager(this, columns).apply {
+            spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
+                override fun getSpanSize(position: Int): Int {
+                    val (adapter, local) = BalancedGridSpanLookup.resolve(list.adapter, position) ?: return columns
+                    val directorsAdapter = adapter as? DirectorsAdapter ?: return columns // anúncio nativo
+                    return if (directorsAdapter.isFullSpan(local)) columns else 1
+                }
+            }
+        }
+        // Anúncio nativo logo depois do carrossel "Em alta" (com filtros, vai para o fim da lista).
+        list.adapter = ConcatAdapter(head, NativeAdAdapter(AdPlacement.LISTS, this), tail)
+
+        renderDirectors()
+        list.startAnimation(AnimationUtils.createFadeInAnimation(300, 200))
+    }
+
+    private fun renderDirectors() {
+        val rows = DirectorsCatalog.rows(directors, directorsFilter, directorsRegion)
+        val adAt = DirectorsCatalog.adPosition(rows)
+
+        if (adAt >= 0) {
+            directorsHead?.submitList(rows.take(adAt))
+            directorsTail?.submitList(rows.drop(adAt))
+        } else {
+            directorsHead?.submitList(rows)
+            directorsTail?.submitList(emptyList())
+        }
+    }
+
+    private fun setupDirectorsChips() {
+        val eras = listOf(
+            DirectorsCatalog.FILTER_ALL to getString(R.string.directors_filter_all),
+            DirectorsCatalog.FILTER_TRENDING to getString(R.string.directors_filter_trending)
+        ) + DirectorEra.values().map { it.key to getString(it.title) }
+        val regions = listOf<Pair<String?, String>>(null to getString(R.string.directors_region_all)) +
+            DirectorRegion.values().map { it.key to getString(it.label) }
+
+        fillChips(binding.directorsEraChips, eras, directorsFilter) {
+            directorsFilter = it ?: DirectorsCatalog.FILTER_ALL
+            onDirectorsFilterChanged()
+        }
+        fillChips(binding.directorsRegionChips, regions, directorsRegion) {
+            directorsRegion = it
+            onDirectorsFilterChanged()
+        }
+    }
+
+    private fun fillChips(group: ChipGroup, options: List<Pair<String?, String>>, selected: String?, onSelected: (String?) -> Unit) {
+        group.setOnCheckedStateChangeListener(null)
+        group.removeAllViews()
+
+        options.forEach { (key, label) ->
+            val chip = layoutInflater.inflate(R.layout.view_directors_filter_chip, group, false) as Chip
+            chip.id = View.generateViewId()
+            chip.tag = key
+            chip.text = label
+            group.addView(chip)
+            if (key == selected) chip.isChecked = true
+        }
+
+        group.setOnCheckedStateChangeListener { chipGroup, checkedIds ->
+            val chip = checkedIds.firstOrNull()?.let { chipGroup.findViewById<Chip>(it) } ?: return@setOnCheckedStateChangeListener
+            onSelected(chip.tag as? String)
+        }
+    }
+
+    private fun onDirectorsFilterChanged() {
+        renderDirectors()
+        binding.mainTopicsList.scrollToPosition(0)
+        binding.appBar.setExpanded(true, true)
+    }
+
+    private fun openDirector(director: DirectorsMainTopic) {
+        startActivityWithSlideRightToLeftAnimation(PersonDetailsActivity.newIntent(this, director.personId))
+    }
+
     private fun onMainTopicSelected(mainTopic: MainTopic) {
         val intent = when (mainTopicsType) {
             MainTopicsType.HISTORY_CINEMA -> PresentationActivity.newInstance(
@@ -232,6 +367,8 @@ class MainTopicsActivity: BaseActivity<ActivityMainTopicsBinding>(), MainTopicsV
 
         const val MAIN_TOPIC_TYPE = "MAIN_TOPIC_TYPE"
         const val DARK_MODE = "DARK_MODE"
+        private const val STATE_DIRECTORS_FILTER = "STATE_DIRECTORS_FILTER"
+        private const val STATE_DIRECTORS_REGION = "STATE_DIRECTORS_REGION"
 
         fun newIntent(mainTopicType: MainTopicsType, context: Context, darkMode: Boolean = false) : Intent {
             val intent = Intent(context, MainTopicsActivity::class.java)

@@ -17,6 +17,10 @@ enum class NetworkType(
     @SerializedName("youtube")
     YOUTUBE("youtube", R.string.youtube, "youtube_color", "md_white_1000"),
 
+    /** Filme completo e gratuito no YouTube (domínio público ou canal oficial do detentor dos direitos). */
+    @SerializedName("youtube_free")
+    YOUTUBE_FREE("youtube_free", R.string.youtube_free, "youtube_color", "md_white_1000"),
+
     @SerializedName("kanopy")
     KANOPY("kanopy", R.string.kanopy, "kanopy_color", "md_white_1000"),
 

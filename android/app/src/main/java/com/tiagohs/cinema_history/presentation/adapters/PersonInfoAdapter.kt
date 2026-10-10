@@ -30,7 +30,7 @@ class PersonInfoAdapter(
             PersonInfoType.INFO_BIOGRAPHY.ordinal -> PersonInfoBiographyViewHolder(AdapterPersonInfoBiographyBinding.inflate(inflater, parent, false))
             PersonInfoType.INFO_SPECIAL_BIOGRAPHY.ordinal -> PersonInfoSpecialBiographyViewHolder(AdapterPersonInfoSpecialBiographyBinding.inflate(inflater, parent, false), onLinkClick)
             PersonInfoType.INFO_SPECIAL_FILMOGRAPHY.ordinal -> PersonInfoSpecialFilmographyViewHolder(AdapterPersonInfoSpecialFilmographyBinding.inflate(inflater, parent, false), onMovieSelected)
-            PersonInfoType.INFO_SPECIAL_PROFILE.ordinal -> PersonInfoSpecialProfileViewHolder(AdapterPersonInfoSpecialProfileBinding.inflate(inflater, parent, false))
+            PersonInfoType.INFO_SPECIAL_PROFILE.ordinal -> PersonInfoSpecialProfileViewHolder(AdapterPersonInfoSpecialProfileBinding.inflate(inflater, parent, false), onVideoClick)
             PersonInfoType.INFO_MIDIA.ordinal -> PersonInfoMidiaViewHolder(AdapterPersonInfoSpecialMidiaBinding.inflate(inflater, parent, false), onVideoClick, isSpecial)
             else -> object : BaseViewHolder<PersonInfo>(AdapterEmptyBinding.inflate(inflater, parent, false)) {}
         }

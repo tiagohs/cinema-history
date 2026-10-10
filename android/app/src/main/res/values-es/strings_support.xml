@@ -6,11 +6,11 @@
     <string name="support_title">Apoya a quienes cuentan esta historia</string>
     <string name="support_intro">La app es gratuita y seguirá así. Si forma parte de tu vida de cinéfilo, puedes apoyarla con un pago único — y obtienes:</string>
     <string name="support_benefit_audio_title">Narración en audio de todos los capítulos</string>
-    <string name="support_benefit_audio_subtitle">En portugués. Inglés y español muy pronto.</string>
+    <string name="support_benefit_audio_subtitle">Narración generada por inteligencia artificial (IA). En portugués; inglés y español muy pronto.</string>
     <string name="support_benefit_ads_title">App sin anuncios</string>
     <string name="support_benefit_ads_subtitle">Ningún anuncio, en ninguna pantalla. Pago único, sin suscripción.</string>
     <string name="support_benefit_people_title">Ayudas a quienes investigan, escriben y organizan el contenido</string>
-    <string name="support_benefit_people_subtitle">Y mantienes Cinema History vivo y creciendo.</string>
+    <string name="support_benefit_people_subtitle">Y mantienes Historia del Cine vivo y creciendo.</string>
     <string name="support_choose_value">Elige el monto</string>
     <string name="support_choose_value_subtitle">El beneficio es el mismo: tú eliges cuánto quieres apoyar.</string>
     <string name="support_tier_apoio">Apoyo</string>
@@ -32,9 +32,9 @@
     <string name="support_pending_title">Pago en proceso</string>
     <string name="support_pending_text">En cuanto Google Play confirme el pago (algunos métodos tardan un poco), el apoyo se activa automáticamente. No necesitas hacer nada.</string>
     <string name="support_thanks_title">¡Gracias por tu apoyo!</string>
-    <string name="support_thanks_text">Ayudas a mantener Cinema History vivo — y gratis para todos. Tus beneficios ya están activos:</string>
+    <string name="support_thanks_text">Ayudas a mantener Historia del Cine vivo — y gratis para todos. Tus beneficios ya están activos:</string>
     <string name="support_thanks_back">Volver a la app</string>
-    <string name="support_purchase_success">¡Listo! Gracias por apoyar Cinema History.</string>
+    <string name="support_purchase_success">¡Listo! Gracias por apoyar Historia del Cine.</string>
     <string name="support_purchase_error">La compra no se completó. Inténtalo de nuevo en unos instantes.</string>
     <string name="support_restore_success">Compra restaurada. ¡Gracias por tu apoyo!</string>
     <string name="support_restore_none">No se encontró ninguna compra de apoyo en esta cuenta de Google.</string>
@@ -45,10 +45,10 @@
     <string name="support_menu">Apoya la app</string>
     <string name="support_menu_supporter">Eres colaborador ♥</string>
     <string name="support_settings_summary">Pago único: narración en audio y app sin anuncios</string>
-    <string name="support_settings_summary_supporter">¡Gracias por apoyar Cinema History!</string>
-    <string name="support_about_thanks">Gracias a todos los que apoyan Cinema History ♥</string>
-    <string name="support_about_supporter">Apoyas Cinema History. ¡Gracias! ♥</string>
-    <string name="support_chapter_card_kicker">Cinema History</string>
+    <string name="support_settings_summary_supporter">¡Gracias por apoyar Historia del Cine!</string>
+    <string name="support_about_thanks">Gracias a todos los que apoyan Historia del Cine ♥</string>
+    <string name="support_about_supporter">Apoyas Historia del Cine. ¡Gracias! ♥</string>
+    <string name="support_chapter_card_kicker">Historia del Cine</string>
     <string name="support_chapter_card_title">¿Te gusta la lectura?</string>
     <string name="support_chapter_card_text">La app es gratuita y seguirá así. Si quieres, apóyala con un pago único y escucha los capítulos narrados, sin anuncios.</string>
     <string name="support_chapter_card_button">Conocer el apoyo</string>
@@ -82,7 +82,8 @@
     <string name="onboarding_3_badge">100% gratis</string>
     <string name="onboarding_4_kicker">Opcional</string>
     <string name="onboarding_4_title">¿Quieres ayudar?</string>
-    <string name="onboarding_4_text">Cinema History es un proyecto independiente, hecho con investigación y mucho amor por el cine. Con un pago único, apoyas el proyecto y obtienes:</string>
+    <string name="onboarding_4_text">Historia del Cine es un proyecto independiente, hecho con investigación y mucho amor por el cine. Con un pago único, apoyas el proyecto y obtienes:</string>
     <string name="onboarding_4_support">Conocer el apoyo</string>
     <string name="onboarding_4_later">Ahora no</string>
+    <string name="support_ai_disclosure">Sobre la narración: el texto, la investigación y la curaduría de la app fueron hechos y revisados por personas, con las fuentes indicadas en Referencias. La voz de la narración en audio se genera con inteligencia artificial (IA) a partir de esos textos.</string>
 </resources>

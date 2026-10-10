@@ -35,6 +35,7 @@ TRANSLATABLE_KEYS = {
     "content_description", "credits", "content_credits", "button_text", "buttonText",
     "page_title", "next", "previous", "awards", "content", "text", "name", "country",
     "presented_by", "department", "contentText", "contentTitle", "source",
+    "years",            # períodos do perfil de diretores ("Desde 2015", "n. 1969")
 }
 
 # Subárvores que nunca são traduzidas (dados de terceiros ou nomes próprios).
@@ -267,9 +268,12 @@ def load_json(path: str) -> Any:
 
 def dump_json(path: str, data: Any) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as fh:
+    # Grava num temporário e troca no fim: com disco cheio, o original fica intacto.
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
         json.dump(data, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
+    os.replace(tmp, path)
 
 
 def resolve_pointer(doc: Any, pointer: str) -> tuple[Any, Any]:

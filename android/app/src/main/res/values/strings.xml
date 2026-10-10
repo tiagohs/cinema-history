@@ -136,8 +136,7 @@
     <string name="director_profile">Director Profile</string>
     <string name="interviews">Interviews</string>
     <string name="no_summary">The plot is unknown.</string>
-    <string name="review_details_format" translatable="false">%1s | %3s</string>
-    <string name="review_details_format_with_date" translatable="false">%1s - %2s | %3s</string>
+    <string name="review_details_site_date" translatable="false">%1$s · %2$s</string>
     <string name="review_click_here">Click here to read the full Review</string>
     <string name="director_collection_title">The director %1s is known for…</string>
     <string name="collection_title">%1s Collection</string>
@@ -226,4 +225,39 @@
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
     <string name="theme_system">System default</string>
+
+    <!-- Diretores (lista nova e páginas especiais) -->
+    <string name="youtube_thumbnail_hq_link" translatable="false">https://img.youtube.com/vi/%1$s/hqdefault.jpg</string>
+    <string name="directors_intro">Meet %1$d filmmakers who changed cinema, from the silent-era pioneers to the names on the rise today.</string>
+    <string name="directors_filter_all">All</string>
+    <string name="directors_filter_trending">Trending</string>
+    <string name="directors_region_all">All regions</string>
+    <string name="directors_era_silent">Pioneers and silent cinema</string>
+    <string name="directors_era_silent_period">Until 1929</string>
+    <string name="directors_era_golden">Golden age</string>
+    <string name="directors_era_golden_period">1930–1959</string>
+    <string name="directors_era_new_waves">New waves</string>
+    <string name="directors_era_new_waves_period">1960–1979</string>
+    <string name="directors_era_modern">End of the century</string>
+    <string name="directors_era_modern_period">1980–1999</string>
+    <string name="directors_era_contemporary">21st century</string>
+    <string name="directors_era_contemporary_period">2000 to today</string>
+    <string name="directors_region_europe">Europe</string>
+    <string name="directors_region_north_america">North America</string>
+    <string name="directors_region_latin_america">Latin America</string>
+    <string name="directors_region_asia">Asia</string>
+    <string name="directors_region_africa">Africa</string>
+    <string name="directors_region_oceania">Oceania</string>
+    <string name="directors_trending_title">Trending</string>
+    <string name="directors_trending_subtitle">The filmmakers who defined the last five years</string>
+    <string name="directors_trending_badge">Trending</string>
+    <string name="directors_trending_rank">#%1$d</string>
+    <string name="directors_empty">No directors match these filters.</string>
+    <string name="directors_card_description">%1$s, %2$s, %3$s</string>
+    <string name="person_profile_quote_format">“%1$s”</string>
+    <string name="person_profile_play_video">Play video: %1$s</string>
+    <plurals name="directors_count">
+        <item quantity="one">%d director</item>
+        <item quantity="other">%d directors</item>
+    </plurals>
 </resources>
