@@ -1,0 +1,135 @@
+{
+ "lang": "pt",
+ "era": 7,
+ "page": 3,
+ "era_title": "Parte 07 - De 2010 a 2019",
+ "title": "O impacto da pirataria",
+ "tracks": [
+  {
+   "id": "00",
+   "title": "Abertura",
+   "kind": "open",
+   "segments": [
+    {
+     "id": "00-01",
+     "speaker": "narrador",
+     "source_index": -1,
+     "original": "Parte 07: De 2010 a 2019. Capítulo 3: O impacto da pirataria.",
+     "text": "Parte zero sete: De dois mil e dez a dois mil e dezenove. Capítulo três: O impacto da pirataria.",
+     "chars": 96
+    },
+    {
+     "id": "00-02",
+     "speaker": "narrador",
+     "source_index": -1,
+     "original": "A pirataria viu seu auge nos anos 2000, sendo a década de 2010 um período de metamorfose. Vimos o surgimento da \"Pirataria 3.0\", e mesmo com o impacto dos streamings, o prejuízo que a indústria sofre é enorme.",
+     "text": "A pirataria viu seu auge nos anos dois mil, sendo a década de dois mil e dez um período de metamorfose. Vimos o surgimento da \"Pirataria três vírgula zero\", e mesmo com o impacto dos streamings, o prejuízo que a indústria sofre é enorme.",
+     "chars": 237
+    }
+   ],
+   "chars": 333,
+   "est_minutes": 0.37
+  },
+  {
+   "id": "01",
+   "title": "Parte 1",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "01-01",
+     "speaker": "narrador",
+     "source_index": 0,
+     "original": "O cinema é geralmente considerado a forma de arte mais dominada pelos interesses corporativos. Escritores, diretores, atores e atrizes são frequentemente forçados a fazer concessões artísticas para satisfazer as demandas comerciais das empresas de mídia e executivos que financiam seus filmes. Você provavelmente já leu, viu ou ouviu inúmeras histórias de um cineasta furioso com a interferência do estúdio.",
+     "text": "O cinema é geralmente considerado a forma de arte mais dominada pelos interesses corporativos. Escritores, diretores, atores e atrizes são frequentemente forçados a fazer concessões artísticas para satisfazer as demandas comerciais das empresas de mídia e executivos que financiam seus filmes. Você provavelmente já leu, viu ou ouviu inúmeras histórias de um cineasta furioso com a interferência do estúdio.",
+     "chars": 407
+    }
+   ],
+   "chars": 407,
+   "est_minutes": 0.45
+  },
+  {
+   "id": "02",
+   "title": "Adam McKay",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "02-01",
+     "speaker": "narrador",
+     "source_index": 2,
+     "original": "Essa é, obviamente, uma versão banal e imprecisa da realidade. Se você pensar a respeito, há algo bastante subversivo na maneira como a indústria do cinema funciona. Algumas vezes por ano, os estúdios de cinema - propriedade de conglomerados de mídia multibilionários - financiam a arte. Grandes filmes, como Moneyball - Jogada de Risco (2011), A Rede Social (2010), Moonlight: Sob a Luz do Luar (2016) e O Regresso (2015) só nasceram por causa de grandes investimentos em produção e marketing de grandes empresas.",
+     "text": "Essa é, obviamente, uma versão banal e imprecisa da realidade. Se você pensar a respeito, há algo bastante subversivo na maneira como a indústria do cinema funciona. Algumas vezes por ano, os estúdios de cinema - propriedade de conglomerados de mídia multibilionários - financiam a arte. Grandes filmes, como Moneyball - Jogada de Risco, de dois mil e onze, A Rede Social, de dois mil e dez, Moonlight: Sob a Luz do Luar, de dois mil e dezesseis, e O Regresso, de dois mil e quinze, só nasceram por causa de grandes investimentos em produção e marketing de grandes empresas.",
+     "chars": 574
+    },
+    {
+     "id": "02-02",
+     "speaker": "narrador",
+     "source_index": 3,
+     "original": "Do ponto de vista de risco e recompensa de Hollywood, esses tipos de filmes são as decisões mais arriscadas, mais emocionais e baseadas no gosto que os executivos dos estúdios precisam tomar. Talvez o maior risco de todos seja que esses filmes menores tenham que sair muito bem. No jargão de Hollywood, eles são 100% \"dependentes da execução\". Qualquer empresário racional é, por direito, cauteloso a respeito desses saltos.",
+     "text": "Do ponto de vista de risco e recompensa de Hollywood, esses tipos de filmes são as decisões mais arriscadas, mais emocionais e baseadas no gosto que os executivos dos estúdios precisam tomar. Talvez o maior risco de todos seja que esses filmes menores tenham que sair muito bem. No jargão de Hollywood, eles são cem por cento \"dependentes da execução\". Qualquer empresário racional é, por direito, cauteloso a respeito desses saltos.",
+     "chars": 433
+    },
+    {
+     "id": "02-03",
+     "speaker": "citacao",
+     "source_index": 4,
+     "original": "O Brasil é líder mundial em consumo de pirataria on-line. O mercado ilegal para captar sinal de tv a cabo e filmes causa prejuízos bilionários para quem produz conteúdo legalmente e gera empregos",
+     "text": "O Brasil é líder mundial em consumo de pirataria on-line. O mercado ilegal para captar sinal de tv a cabo e filmes causa prejuízos bilionários para quem produz conteúdo legalmente e gera empregos",
+     "chars": 195
+    },
+    {
+     "id": "02-04",
+     "speaker": "narrador",
+     "source_index": 4,
+     "original": "disse Band News.",
+     "text": "disse Band News.",
+     "chars": 16
+    },
+    {
+     "id": "02-05",
+     "speaker": "narrador",
+     "source_index": 5,
+     "original": "No entanto, por muitas razões - o halo effect de ganhar um Oscar; o desejo de cultivar relacionamentos de talentos, ego; e, sim, o lado financeiro que vem com o sucesso - os estúdios assumem esses riscos quando produzem filmes menores. Quando esses filmes acabam mal, eles geralmente são devastadores. Não bons o suficiente para justificar uma campanha de marketing agressiva sem burburinho sobre o Oscar, eles se tornam pouco mais do que um exercício de controle de danos. Se, por algum milagre, derem certo, tornam-se mais do que a soma de seus retornos financeiros. Eles podem impactar o mundo por meio da forma artística e apaixonada com que essas histórias únicas são contadas.",
+     "text": "No entanto, por muitas razões - o halo effect de ganhar um Oscar; o desejo de cultivar relacionamentos de talentos, ego; e, sim, o lado financeiro que vem com o sucesso - os estúdios assumem esses riscos quando produzem filmes menores. Quando esses filmes acabam mal, eles geralmente são devastadores. Não bons o suficiente para justificar uma campanha de marketing agressiva sem burburinho sobre o Oscar, eles se tornam pouco mais do que um exercício de controle de danos. Se, por algum milagre, derem certo, tornam-se mais do que a soma de seus retornos financeiros. Eles podem impactar o mundo por meio da forma artística e apaixonada com que essas histórias únicas são contadas.",
+     "chars": 682
+    },
+    {
+     "id": "02-06",
+     "speaker": "narrador",
+     "source_index": 6,
+     "original": "Por exemplo, A Grande Aposta (2017), de Adam McKay (n-1968), colocou um ponto de exclamação sobre a crise financeira de uma forma que nenhum outro trabalho fez. Mesmo Hollywood tendo os seus problemas, ainda existe um pequeno ecossistema de negócios e criativo que ainda investem milhões de dólares para que as pessoas possam contar esse tipo de história.",
+     "text": "Por exemplo, A Grande Aposta, de dois mil e dezessete, de Adam McKay (nasceu em mil novecentos e sessenta e oito), colocou um ponto de exclamação sobre a crise financeira de uma forma que nenhum outro trabalho fez. Mesmo Hollywood tendo os seus problemas, ainda existe um pequeno ecossistema de negócios e criativo que ainda investem milhões de dólares para que as pessoas possam contar esse tipo de história.",
+     "chars": 409
+    }
+   ],
+   "chars": 2309,
+   "est_minutes": 2.57
+  },
+  {
+   "id": "03",
+   "title": "Pirataria",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "03-01",
+     "speaker": "narrador",
+     "source_index": 8,
+     "original": "Mas esse ecossistema está enfrentando uma ameaça terrível. E não é por causa dos vilões padrão geralmente culpados pelo declínio da qualidade e do lado adulto da indústria cinematográfica, como a ascensão da programação de televisão de alta qualidade, dos streamings, o domínio dos filmes de sucesso (ou de heróis) ou a prevalência de sequências. A ameaça número um para as empresas que financiam esses filmes de arte sofisticados é a pirataria. Todos os anos, milhões de \"transações\" de pirataria acontecem, representando uma perda incalculável de receita para aqueles que realmente pagaram para fazer e distribuir esses filmes. E esses números de pirataria continuam crescendo e evoluindo. Nos últimos anos, um novo tipo de pirataria, chamada de \"Pirataria 3.0\", vem crescendo no mundo todo. Sua premissa é oferecer de forma gratuita serviços de streamings, sem custo adicional.",
+     "text": "Mas esse ecossistema está enfrentando uma ameaça terrível. E não é por causa dos vilões padrão geralmente culpados pelo declínio da qualidade e do lado adulto da indústria cinematográfica, como a ascensão da programação de televisão de alta qualidade, dos streamings, o domínio dos filmes de sucesso (ou de heróis) ou a prevalência de sequências. A ameaça número um para as empresas que financiam esses filmes de arte sofisticados é a pirataria. Todos os anos, milhões de \"transações\" de pirataria acontecem, representando uma perda incalculável de receita para aqueles que realmente pagaram para fazer e distribuir esses filmes. E esses números de pirataria continuam crescendo e evoluindo. Nos últimos anos, um novo tipo de pirataria, chamada de \"Pirataria três vírgula zero\", vem crescendo no mundo todo. Sua premissa é oferecer de forma gratuita serviços de streamings, sem custo adicional.",
+     "chars": 894
+    },
+    {
+     "id": "03-02",
+     "speaker": "narrador",
+     "source_index": 9,
+     "original": "serviços de streamings, sem custo adicional. Em algum momento, os números se tornarão insustentáveis e os estúdios terão que reduzir suas fichas. Eles não reduzirão suas franquias (onde ganham dinheiro de verdade) ou filmes de terror de baixo orçamento. Eles reduzirão os filmes de arte que são arriscados e não têm um caminho fácil para a lucratividade. Em breve, é muito provável que filmes como A Grande Aposta poderão não ser mais produzidos.",
+     "text": "serviços de streamings, sem custo adicional. Em algum momento, os números se tornarão insustentáveis e os estúdios terão que reduzir suas fichas. Eles não reduzirão suas franquias (onde ganham dinheiro de verdade) ou filmes de terror de baixo orçamento. Eles reduzirão os filmes de arte que são arriscados e não têm um caminho fácil para a lucratividade. Em breve, é muito provável que filmes como A Grande Aposta poderão não ser mais produzidos.",
+     "chars": 446
+    }
+   ],
+   "chars": 1340,
+   "est_minutes": 1.49
+  }
+ ],
+ "chars": 4389,
+ "est_minutes": 4.88
+}

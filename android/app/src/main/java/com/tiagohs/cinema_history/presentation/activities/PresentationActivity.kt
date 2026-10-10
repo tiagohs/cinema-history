@@ -14,9 +14,11 @@ import com.tiagohs.helpers.extensions.loadImage
 import com.tiagohs.helpers.extensions.*
 import com.tiagohs.helpers.utils.AnimationUtils
 import com.tiagohs.entities.main_topics.MainTopicItem
+import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.domain.presenter.PresentationPresenter
 import com.tiagohs.cinema_history.presentation.adapters.SumarioPresentationAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import com.tiagohs.entities.enums.ViewPosition
 import com.tiagohs.domain.views.PresentationView
 import com.tiagohs.entities.Quote
@@ -31,18 +33,37 @@ class PresentationActivity: BaseActivity<ActivityPresentationBinding>(), Present
     override fun onGetMenuLayoutId(): Int = 0
 
     @Inject
+    lateinit var localService: com.tiagohs.domain.services.LocalService
+
+    @Inject
     lateinit var presenter: PresentationPresenter
+
+    @Inject
+    lateinit var settingsManager: SettingsManager
 
     private var isFirstEnter = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Tablets: sumário e textos numa coluna centralizada (a imagem do topo continua de ponta a ponta).
+        binding.presentationScroll.limitContentWidth(R.dimen.ls_list_max_width)
         setupToolbar(binding.toolbar)
 
         getApplicationComponent()?.inject(this)
 
+
         presenter.onBindView(this)
         presenter.fetchMoviesByListId(mainTopic)
+
+        // Guarda a era aberta para o "Continue lendo" da Home.
+        mainTopic?.let { settingsManager.setLastReadEraId(it.id) }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // idioma trocado em outra tela: reabre com a era no novo idioma
+        com.tiagohs.cinema_history.presentation.configs.LocalizedMainTopic.reopenIfLanguageChanged(this, localService, mainTopic) { fresh -> newInstance(this, fresh) }
     }
 
     override fun onBackPressed() {
@@ -161,7 +182,7 @@ class PresentationActivity: BaseActivity<ActivityPresentationBinding>(), Present
 
             intent.putExtra(MAIN_TOPIC, mainTopic)
 
-            return intent
+            return com.tiagohs.cinema_history.presentation.configs.LocalizedMainTopic.tag(intent)
         }
     }
 }

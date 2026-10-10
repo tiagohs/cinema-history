@@ -18,7 +18,15 @@ class TimelineItemFooterHolder(
     private val numberOfItens: Int,
     val callback: TimelineCallbacks,
     private val binding: AdapterTimelineFooterBinding
-) : BaseViewHolder<Timeline>(binding) {
+) : BaseViewHolder<Timeline>(binding), TimelineLineHolder {
+
+    override val lineFill: android.view.View get() = binding.divisorFill
+    override var lastLineProgress: Float = -1f
+
+    init {
+        binding.divisorFill.pivotY = 0f
+    }
+
 
     override fun bind(item: Timeline, position: Int) {
         super.bind(item, position)

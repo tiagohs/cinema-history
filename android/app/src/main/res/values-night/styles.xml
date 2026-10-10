@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Só o que muda no modo escuro além das cores (as cores ficam em values-night/colors_theme.xml
+        e helpers/res/values-night/colors_daynight.xml; o AppTheme é o mesmo de values/styles.xml).
+    -->
+
+    <!-- Menus pop-up da toolbar (a toolbar usa overlay escuro, então o pop-up precisa ser explícito). -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.Material3.Dark" />
+</resources>

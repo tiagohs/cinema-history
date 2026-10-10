@@ -5,10 +5,11 @@
   "timeline_list": [
     {
       "type": "title",
-      "title": "La historia<br/>del cine:<br/>2010 a la actualidad",
-      "page_title": "2010 a la actualidad",
+      "title": "La historia<br/>del cine:<br/>2010 a 2019",
+      "page_title": "2010 a 2019",
       "coming_soon": false,
-      "previous": "1990 a 2009"
+      "previous": "1990 a 2009",
+      "next": "2020 hasta hoy"
     },
     {
       "type": "item",
@@ -42,7 +43,7 @@
       "type": "item",
       "year": "20\n11",
       "title": "La evolución de los efectos especiales",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 37799, 'screen_type': movie}\">Rango</a> (2011), un wéstern animado protagonizado por un camaleón / lagarto con la voz de <a href=\"https://_{type: 'screen', 'id': 85, 'screen_type': person}\">Johnny Depp</a> (n-1963), fue el primer largometraje animado generado por la empresa de efectos especiales de <a href=\"https://_{type: 'screen', 'id': 1, 'screen_type': person}\">George Lucas</a> (n-1944), <i>Industrial Light & Magic</i> (ILM).",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 44896, 'screen_type': movie}\">Rango</a> (2011), un wéstern animado protagonizado por un camaleón / lagarto con la voz de <a href=\"https://_{type: 'screen', 'id': 85, 'screen_type': person}\">Johnny Depp</a> (n-1963), fue el primer largometraje animado generado por la empresa de efectos especiales de <a href=\"https://_{type: 'screen', 'id': 1, 'screen_type': person}\">George Lucas</a> (n-1944), <i>Industrial Light & Magic</i> (ILM).",
       "image_transparent": true,
       "image": {
         "image_type": "online_firebase",
@@ -161,6 +162,34 @@
         "url": "images/img_avengers_1.webp",
         "style": {
           "scale_type": "fit_center"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n12",
+      "title": "Irán llega al Oscar",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 60243, 'screen_type': movie}\">A Separation</a> (La separación, 2011), de <a href=\"https://_{type: 'screen', 'id': 229931, 'screen_type': person}\">Asghar Farhadi</a>, drama sobre una pareja de Teherán al borde del divorcio en el que nadie es del todo inocente, ganó el Oso de Oro en Berlín y, el 26 de febrero de 2012, le dio a Irán su primer Oscar, el de Película en Lengua Extranjera. Era la primera señal de una década en la que el cine hablado en otros idiomas se abriría paso en la Academia.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_separacao_oscar_ira",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n12",
+      "title": "El primer Oscar de Irán",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 60243, 'screen_type': movie}\">A Separation</a> (La separación, 2011), de <a href=\"https://_{type: 'screen', 'id': 229931, 'screen_type': person}\">Asghar Farhadi</a>, drama sobre una pareja de Teherán al borde del divorcio en el que nadie es del todo inocente, ganó el Oso de Oro en Berlín en 2011 y, el 26 de febrero de 2012, le dio a Irán su primer Oscar, el de Película en Lengua Extranjera. Abría una década en la que el cine hablado en otros idiomas ganaría espacio en la Academia.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_separacao_oscar_ira",
+        "style": {
+          "scale_type": "center_crop"
         }
       }
     },
@@ -349,6 +378,34 @@
     {
       "type": "item",
       "year": "20\n16",
+      "title": "Lápices de colores en el Oscar",
+      "description": "Hecha con lápices de colores, crayones, pintura y collage, <a href=\"https://_{type: 'screen', 'id': 223706, 'screen_type': movie}\">O Menino e o Mundo</a> (El niño y el mundo, 2014), del brasileño <a href=\"https://_{type: 'screen', 'id': 1052664, 'screen_type': person}\">Alê Abreu</a>, ganó en 2014 el Cristal al mejor largometraje y el premio del público en Annecy, el festival de animación más importante del mundo. En 2016 se convirtió en el primer largometraje animado brasileño nominado al Oscar, en una competencia en la que cuatro de los cinco candidatos venían de fuera de Disney.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_menino_e_o_mundo_oscar",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n16",
+      "title": "Un cometa en la taquilla",
+      "description": "Con <a href=\"https://_{type: 'screen', 'id': 372058, 'screen_type': movie}\">Your Name.</a> (Tu nombre, 2016), la historia de dos adolescentes que intercambian cuerpos sin haberse visto nunca, <a href=\"https://_{type: 'screen', 'id': 74091, 'screen_type': person}\">Makoto Shinkai</a> hizo la película japonesa más taquillera de la historia a nivel mundial, con unos US$ 400 millones, un récord que solo sería superado en 2020. En plena pausa del <i>Studio Ghibli</i>, el éxito demostraba que el anime no dependía de un solo estudio.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_your_name_cometa",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n17",
       "title": "Error histórico",
       "description": "Durante la ceremonia del Óscar se produjo una confusión histórica y embarazosa con el premio a Mejor Película, anunciado originalmente para <a href=\"https://_{type: 'screen', 'id': 313369, 'screen_type': movie}\">La La Land</a> (La La Land: Una historia de amor, 2016), que finalmente fue otorgado, como correspondía, al drama afroamericano de iniciación <a href=\"https://_{type: 'screen', 'id': 376867, 'screen_type': movie}\">Moonlight</a> (Luz de luna, 2016).",
       "image_transparent": false,
@@ -453,6 +510,20 @@
       "image": {
         "image_type": "online_firebase",
         "url": "images/img_icaro.webp",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n17",
+      "title": "Una silla vacía",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 229931, 'screen_type': person}\">Asghar Farhadi</a> volvió a ganar el Oscar a Película en Lengua Extranjera con <a href=\"https://_{type: 'screen', 'id': 375315, 'screen_type': movie}\">The Salesman</a> (El cliente, 2016), pero no fue a recoger la estatuilla. Boicoteó la ceremonia del 26 de febrero en protesta contra el decreto de Donald Trump que prohibía la entrada a Estados Unidos de ciudadanos de Irán y de otros seis países de mayoría musulmana. En el escenario, la ingeniera iraní-estadounidense Anousheh Ansari leyó la carta en la que el director calificaba la medida de “ley inhumana”.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_o_apartamento_boicote",
         "style": {
           "scale_type": "center_crop"
         }
@@ -642,13 +713,13 @@
     },
     {
       "type": "item",
-      "year": "20\n20",
-      "title": "El impacto de la pandemia",
-      "description": "La <strong>pandemia de coronavirus</strong> causa numerosos estragos en la industria cinematográfica. Los estudios de Hollywood se ven obligados a posponer el estreno de grandes éxitos y a alterar drásticamente los calendarios de sus producciones en todo el mundo. Además, los rodajes y producciones fueron especialmente susceptibles a las restricciones, incluidas las advertencias contra las reuniones de grupos, y varios de ellos fueron interrumpidos, modificados o cancelados. La industria cinematográfica mundial llega a perder US$ 32 000 millones en 2020 debido a la pandemia, una reducción del 71,5 % en los ingresos de taquilla en comparación con 2019.",
+      "year": "20\n19",
+      "title": "El salto de Miles",
+      "description": "El 24 de febrero, <a href=\"https://_{type: 'screen', 'id': 324857, 'screen_type': movie}\">Spider-Man: Into the Spider-Verse</a> (Spider-Man: Un nuevo universo, 2018), aventura del adolescente Miles Morales producida por <i>Sony</i>, rompió una racha de seis victorias de Disney y Pixar en el Oscar a Mejor Película Animada: era la primera vez desde <a href=\"https://_{type: 'screen', 'id': 44896, 'screen_type': movie}\">Rango</a> (2011) que la estatuilla iba a otro estudio. <a href=\"https://_{type: 'screen', 'id': 151007, 'screen_type': person}\">Peter Ramsey</a> se convirtió en el primer director negro en ganar en la categoría, y su estética de cómic en movimiento influiría en la animación de los años siguientes.",
       "image_transparent": false,
       "image": {
-        "image_type": "online_firebase",
-        "url": "images/img_coronavirus.webp",
+        "image_type": "local",
+        "url": "img_tl_aranhaverso_oscar",
         "style": {
           "scale_type": "center_crop"
         }
@@ -656,13 +727,13 @@
     },
     {
       "type": "item",
-      "year": "20\n20",
-      "title": "La competencia se intensifica",
-      "description": "Con el coronavirus, las principales empresas de medios, entre ellas <i>Disney, WarnerMedia, Viacom y Comcast</i>, dedicaron considerable atención a sus ofertas de programación por suscripción o streaming, y las guerras del streaming se intensificaron considerablemente frente a <strong>Netflix y Amazon</strong>.",
+      "year": "20\n19",
+      "title": "El niño demonio de China",
+      "description": "Relectura irreverente de un mito chino, <a href=\"https://_{type: 'screen', 'id': 615453, 'screen_type': movie}\">Ne Zha</a> (2019), de <a href=\"https://_{type: 'screen', 'id': 2367353, 'screen_type': person}\">Jiaozi</a>, se estrenó en los cines de China el 26 de julio y, una semana después, ya había superado a <i>Zootopia</i>, de Disney, como la película animada más taquillera de la historia del país. Superó los US$ 700 millones en todo el mundo, en ese entonces el mayor resultado de una película animada producida fuera de Estados Unidos.",
       "image_transparent": false,
       "image": {
-        "image_type": "online_firebase",
-        "url": "images/img_straming_fight_2.webp",
+        "image_type": "local",
+        "url": "img_tl_ne_zha_china",
         "style": {
           "scale_type": "center_crop"
         }
@@ -670,41 +741,13 @@
     },
     {
       "type": "item",
-      "year": "20\n20",
-      "title": "Disney+: un éxito",
-      "description": "Tras un año de existencia, <strong>Disney+</strong> resultó ser un éxito incomparable para <i>The Walt Disney Company</i>. El servicio ya contaba con 86,8 millones de suscriptores, poco menos de la meta de 90 millones que se había fijado para 2024. En comparación, Netflix tenía 190 millones de suscriptores, incluidos 73 millones en Estados Unidos.",
+      "year": "20\n19",
+      "title": "Adiós, “extranjera”",
+      "description": "Dos meses después de la ceremonia del Oscar en la que <a href=\"https://_{type: 'screen', 'id': 440298, 'screen_type': movie}\">Zimna wojna</a> (Cold War, 2018), hablada en polaco, y <a href=\"https://_{type: 'screen', 'id': 426426, 'screen_type': movie}\">Roma</a> (2018), en español, compitieron en Mejor Dirección, la Academia cambió, el 23 de abril, el nombre de la categoría de Mejor Película en Lengua Extranjera por <strong>Mejor Película Internacional</strong>. Según el comité responsable, la palabra “extranjera” había quedado obsoleta. La primera ganadora con el nuevo nombre sería <a href=\"https://_{type: 'screen', 'id': 496243, 'screen_type': movie}\">Parasite</a> (Parásitos, 2019), en febrero de 2020.",
       "image_transparent": false,
       "image": {
-        "image_type": "online_firebase",
-        "url": "images/img_disney_plus.webp",
-        "style": {
-          "scale_type": "center_crop"
-        }
-      }
-    },
-    {
-      "type": "item",
-      "year": "20\n20",
-      "title": "Estrenos simultáneos",
-      "description": "El estudio Warner Bros. anuncia que toda su lista de películas para 2021 se estrenaría simultáneamente en <strong>HBO Max y en los cines</strong>. La medida revolucionaria se interpretó como un gran esfuerzo para aumentar el número de suscriptores de HBO Max. Sin embargo, cineastas tradicionalistas como Christopher Nolan y Denis Villeneuve condenaron públicamente a la empresa por perjudicar a sus socios exhibidores sin previo aviso.",
-      "image_transparent": true,
-      "image": {
-        "image_type": "online_firebase",
-        "url": "images/img_hbo_max.webp",
-        "style": {
-          "scale_type": "fit_center"
-        }
-      }
-    },
-    {
-      "type": "item",
-      "year": "20\n21",
-      "title": "La pelea de gigantes atrae al público",
-      "description": "<a href=\"https://_{type: 'screen', 'id': 399566, 'screen_type': movie}\">Godzilla vs. Kong</a> (2021) se convirtió en la primera película en alcanzar casi US$ 100 millones en Estados Unidos y Canadá desde el inicio de la pandemia.",
-      "image_transparent": false,
-      "image": {
-        "image_type": "online_firebase",
-        "url": "images/img_godzilla_kong.webp",
+        "image_type": "local",
+        "url": "img_tl_filme_internacional_guerra_fria",
         "style": {
           "scale_type": "center_crop"
         }
@@ -712,7 +755,8 @@
     },
     {
       "type": "footer",
-      "previous": "1990 a 2009"
+      "previous": "1990 a 2009",
+      "next": "2020 hasta hoy"
     }
   ]
 }

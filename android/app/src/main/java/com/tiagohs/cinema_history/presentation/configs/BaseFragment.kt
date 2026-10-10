@@ -16,6 +16,10 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
     protected val binding: VB
         get() = checkNotNull(_binding) { "Binding is only valid between onCreateView and onDestroyView" }
 
+    /** Para callbacks assíncronos (animações, rede): null depois de onDestroyView. */
+    protected val bindingOrNull: VB?
+        get() = _binding
+
     abstract fun inflateBinding(inflater: LayoutInflater, container: ViewGroup?): VB
     abstract fun onErrorAction()
 

@@ -1,0 +1,235 @@
+{
+ "lang": "es",
+ "era": 1,
+ "page": 9,
+ "era_title": "Parte 01 - De 1895 a 1929",
+ "title": "El inicio de la era del cine hablado",
+ "tracks": [
+  {
+   "id": "00",
+   "title": "Apertura",
+   "kind": "open",
+   "segments": [
+    {
+     "id": "00-01",
+     "speaker": "narrador",
+     "source_index": -1,
+     "original": "Parte 01: De 1895 a 1929. Capítulo 9: El inicio de la era del cine hablado.",
+     "text": "Parte cero uno: De mil ochocientos noventa y cinco a mil novecientos veintinueve. Capítulo nueve: El inicio de la era del cine hablado.",
+     "chars": 135
+    },
+    {
+     "id": "00-02",
+     "speaker": "narrador",
+     "source_index": -1,
+     "original": "El 23 de octubre de 1927, “You Ain't Heard Nothin' Yet” se escucha por primera vez en una sala de cine, y comienza la era del cine sonoro. De repente, la imagen ya no era lo principal.",
+     "text": "El veintitrés de octubre de mil novecientos veintisiete, \"You Ain't Heard Nothin' Yet\" se escucha por primera vez en una sala de cine, y comienza la era del cine sonoro. De repente, la imagen ya no era lo principal.",
+     "chars": 215
+    }
+   ],
+   "chars": 350,
+   "est_minutes": 0.37
+  },
+  {
+   "id": "01",
+   "title": "You Ain't Heard Nothin' Yet",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "01-01",
+     "speaker": "narrador",
+     "source_index": 0,
+     "original": "En su estudio sobre los inicios del cine sonoro titulado You Ain't Heard Nothin' Yet (Todavía no han oído nada), Andrew Sarris describe el 23 de octubre de 1927, cuando The Jazz Singer (El cantor de jazz, 1927) se estrenó en Nueva York, como \"una fecha marcada para siempre en la historia del cine, tan temiblemente decisiva como Waterloo, Sarajevo o Pearl Harbor\". Esta frase hiperbólica refleja la naturaleza sistémica del cambio que traería el sonido y los temores apocalípticos de quienes creían que las películas habladas empobrecerían el arte cinematográfico.",
+     "text": "En su estudio sobre los inicios del cine sonoro titulado You Ain't Heard Nothin' Yet (Todavía no han oído nada), Andrew Sarris describe el veintitrés de octubre de mil novecientos veintisiete, cuando The Jazz Singer (El cantor de jazz, mil novecientos veintisiete) se estrenó en Nueva York, como \"una fecha marcada para siempre en la historia del cine, tan temiblemente decisiva como Waterloo, Sarajevo o Pearl Harbor\". Esta frase hiperbólica refleja la naturaleza sistémica del cambio que traería el sonido y los temores apocalípticos de quienes creían que las películas habladas empobrecerían el arte cinematográfico.",
+     "chars": 619
+    },
+    {
+     "id": "01-02",
+     "speaker": "narrador",
+     "source_index": 2,
+     "original": "El sonido había sido una aspiración desde los orígenes del cine. Ya en 1888, Eadweard Muybridge afirmaba haber discutido con Thomas Alva Edison la posibilidad de usar el proceso de grabación sonora de este último para acompañar su prototipo de proyector, el zoopraxiscopio. A lo largo de toda la era del cine mudo hubo diversos experimentos que buscaban llevar a la pantalla el sonido grabado mecánicamente, y dos formatos fueron evolucionando poco a poco: el del sonido en disco (en el que el sonido se reproducía en un fonógrafo sincronizado con la imagen) y el del sonido en película (en el que se grababa físicamente en la misma película en la que estaba impresa la imagen). Aunque al principio el primer método tuvo éxito, con el proceso Vitaphone dominando la industria, fue la grabación del sonido en película la que prevaleció.",
+     "text": "El sonido había sido una aspiración desde los orígenes del cine. Ya en mil ochocientos ochenta y ocho, Eadweard Muybridge afirmaba haber discutido con Thomas Alva Edison la posibilidad de usar el proceso de grabación sonora de este último para acompañar su prototipo de proyector, el zoopraxiscopio. A lo largo de toda la era del cine mudo hubo diversos experimentos que buscaban llevar a la pantalla el sonido grabado mecánicamente, y dos formatos fueron evolucionando poco a poco: el del sonido en disco (en el que el sonido se reproducía en un fonógrafo sincronizado con la imagen) y el del sonido en película (en el que se grababa físicamente en la misma película en la que estaba impresa la imagen). Aunque al principio el primer método tuvo éxito, con el proceso Vitaphone dominando la industria, fue la grabación del sonido en película la que prevaleció.",
+     "chars": 861
+    },
+    {
+     "id": "01-03",
+     "speaker": "citacao",
+     "source_index": 3,
+     "original": "El cantor de jazz trajo el sonido; Luces de Nueva York trajo los diálogos.",
+     "text": "El cantor de jazz trajo el sonido; Luces de Nueva York trajo los diálogos.",
+     "chars": 74
+    },
+    {
+     "id": "01-04",
+     "speaker": "narrador",
+     "source_index": 3,
+     "original": "dijo Darryl F. Zanuck.",
+     "text": "dijo Darryl F. Zanuck.",
+     "chars": 22
+    },
+    {
+     "id": "01-05",
+     "speaker": "narrador",
+     "source_index": 4,
+     "original": "En 1921, con Dream Street (1921), D. W. Griffith (1875-1948) intentó usar el proceso de sonorización en un largometraje. Aunque primero se estrenó en copias mudas, una segunda versión se presentó en Nueva York con una introducción narrada por el propio director, además de una secuencia con una canción grabada y diversos efectos sonoros.",
+     "text": "En mil novecientos veintiuno, con Dream Street, de mil novecientos veintiuno, D. W. [[pron: Griffith|Grífit]] (mil ochocientos setenta y cinco a mil novecientos cuarenta y ocho) intentó usar el proceso de sonorización en un largometraje. Aunque primero se estrenó en copias mudas, una segunda versión se presentó en Nueva York con una introducción narrada por el propio director, además de una secuencia con una canción grabada y diversos efectos sonoros.",
+     "chars": 438
+    }
+   ],
+   "chars": 2014,
+   "est_minutes": 2.12
+  },
+  {
+   "id": "02",
+   "title": "Broken Blossoms",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "02-01",
+     "speaker": "narrador",
+     "source_index": 6,
+     "original": "Al igual que Broken Blossoms (Lirios rotos, 1919), también de Griffith, Dream Street se basa en la obra del escritor Thomas Burke y transcurría en el mismo escenario que la película anterior, el barrio chino de Londres, pero no alcanzó el mismo éxito. Con un anacrónico proceso de sonido en disco, el Photokinema, el experimento de Griffith fracasó, pues la mayoría de los cines no tenía cómo instalar el equipo necesario. La primera película sonora comercial se estrenó en agosto de 1926, cuando Warner Bros. lanzó Don Juan (1926), con el sistema Vitaphone. Dirigida por Alan Crosland (1894-1936), la película de capa y espada era un mero vehículo para John Barrymore, acompañado por una banda sonora orquestal y por efectos sonoros grabados en disco.",
+     "text": "Al igual que Broken Blossoms (Lirios rotos, mil novecientos diecinueve), también de [[pron: Griffith|Grífit]], Dream Street se basa en la obra del escritor Thomas Burke y transcurría en el mismo escenario que la película anterior, el barrio chino de Londres, pero no alcanzó el mismo éxito. Con un anacrónico proceso de sonido en disco, el Photokinema, el experimento de [[pron: Griffith|Grífit]] fracasó, pues la mayoría de los cines no tenía cómo instalar el equipo necesario. La primera película sonora comercial se estrenó en agosto de mil novecientos veintiséis, cuando Warner Bros. lanzó Don Juan, de mil novecientos veintiséis, con el sistema Vitaphone. Dirigida por Alan Crosland (mil ochocientos noventa y cuatro a mil novecientos treinta y seis), la película de capa y espada era un mero vehículo para John Barrymore, acompañado por una banda sonora orquestal y por efectos sonoros grabados en disco.",
+     "chars": 876
+    },
+    {
+     "id": "02-02",
+     "speaker": "narrador",
+     "source_index": 7,
+     "original": "Sin embargo, fue El cantor de jazz, del mismo Crosland, la que hizo irrevocable el paso al sonido. Tal vez sea difícil para el espectador moderno comprender el impacto de esta producción. Basada en la obra teatral de Samson Raphaelson, esta historia sumamente sensiblera del hijo de un cantor judío que contraría a su propio padre con su deseo de cantar \"jazz\" (la definición de jazz de la película abarca baladas sentimentales y espectáculos a la antigua, en los que los cantantes se pintaban la cara de negro) no es exactamente una película hablada. Hay una banda sonora, pero, con excepción de dos secuencias, el diálogo se presenta mediante intertítulos.",
+     "text": "Sin embargo, fue El cantor de jazz, del mismo Crosland, la que hizo irrevocable el paso al sonido. Tal vez sea difícil para el espectador moderno comprender el impacto de esta producción. Basada en la obra teatral de Samson Raphaelson, esta historia sumamente sensiblera del hijo de un cantor judío que contraría a su propio padre con su deseo de cantar \"jazz\" (la definición de jazz de la película abarca baladas sentimentales y espectáculos a la antigua, en los que los cantantes se pintaban la cara de negro) no es exactamente una película hablada. Hay una banda sonora, pero, con excepción de dos secuencias, el diálogo se presenta mediante intertítulos.",
+     "chars": 658
+    }
+   ],
+   "chars": 1534,
+   "est_minutes": 1.61
+  },
+  {
+   "id": "03",
+   "title": "Lights of New York",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "03-01",
+     "speaker": "narrador",
+     "source_index": 9,
+     "original": "No obstante, el secreto de su éxito está precisamente en las dos escenas habladas. En medio de su número, Jakie Rabinowitz (Al Jolson) presenta la siguiente canción con un entusiasmo vacilante: \"¡Un momento, un momento, todavía no han escuchado nada!\". Más adelante, mientras Rabinowitz le da una serenata a su madre cantando \"Blue Skies\", un éxito de Irving Berlin de 1926, se interrumpe para decirle que, si triunfa, la llevará a vivir al Bronx, \"donde viven los Ginsberg, los Gutenberg y los Goldberg; un montón de 'Bergs', que ni siquiera los conozco a todos \". Ambas escenas transmiten una sensación de cercanía e intimidad, mientras que el entusiasta \"todavía no han escuchado nada\" de Jolson ofrecía un lema irresistible para la era del cine sonoro.",
+     "text": "No obstante, el secreto de su éxito está precisamente en las dos escenas habladas. En medio de su número, Jakie Rabinowitz (Al Jolson) presenta la siguiente canción con un entusiasmo vacilante: \"¡Un momento, un momento, todavía no han escuchado nada!\". Más adelante, mientras Rabinowitz le da una serenata a su madre cantando \"Blue Skies\", un éxito de Irving Berlin de mil novecientos veintiséis, se interrumpe para decirle que, si triunfa, la llevará a vivir al Bronx, \"donde viven los Ginsberg, los Gutenberg y los Goldberg; un montón de 'Bergs', que ni siquiera los conozco a todos \". Ambas escenas transmiten una sensación de cercanía e intimidad, mientras que el entusiasta \"todavía no han escuchado nada\" de Jolson ofrecía un lema irresistible para la era del cine sonoro.",
+     "chars": 778
+    },
+    {
+     "id": "03-02",
+     "speaker": "narrador",
+     "source_index": 10,
+     "original": "Lights of New York (Luces de Nueva York, 1928), un melodrama de gánsteres de Warner Bros., fue el primer largometraje completamente hablado. Con éxito de público, pero no de crítica, Luces de Nueva York se convirtió en un improbable parteaguas.",
+     "text": "Lights of New York (Luces de Nueva York, mil novecientos veintiocho), un melodrama de gánsteres de Warner Bros., fue el primer largometraje completamente hablado. Con éxito de público, pero no de crítica, Luces de Nueva York se convirtió en un improbable parteaguas.",
+     "chars": 266
+    },
+    {
+     "id": "03-03",
+     "speaker": "narrador",
+     "source_index": 11,
+     "original": "Los avances tecnológicos durante este período fueron numerosos. Los primeros micrófonos para grabar sonido eran torpes y voluminosos y producían un sonido de baja calidad. Los técnicos insistían en que los intérpretes permanecieran cerca de los micrófonos para obtener una calidad sonora ideal; esto significaba que tanto la cámara como los actores dejaban de moverse, lo que daba como resultado películas estáticas que los aficionados y los críticos por igual llamaban \"dramas de taza de té\".",
+     "text": "Los avances tecnológicos durante este período fueron numerosos. Los primeros micrófonos para grabar sonido eran torpes y voluminosos y producían un sonido de baja calidad. Los técnicos insistían en que los intérpretes permanecieran cerca de los micrófonos para obtener una calidad sonora ideal; esto significaba que tanto la cámara como los actores dejaban de moverse, lo que daba como resultado películas estáticas que los aficionados y los críticos por igual llamaban \"dramas de taza de té\".",
+     "chars": 493
+    }
+   ],
+   "chars": 1537,
+   "est_minutes": 1.62
+  },
+  {
+   "id": "04",
+   "title": "Parte 4",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "04-01",
+     "speaker": "narrador",
+     "source_index": 13,
+     "original": "Desde el punto de vista de los cineastas, filmar con sonido era un juego completamente nuevo. Las locaciones reales ahora eran difíciles de usar, porque, en cuanto el director gritaba \"¡Acción!\", probablemente alguien en las cercanías empezaría a excavar una calle o a martillar metal. Nadie quería oír esos sonidos mientras los actores hablaban; por eso, directores y productores se vieron obligados a volver a filmar en los estudios de \"caja negra\", que ahora se llamaban \"estudios de sonido\".",
+     "text": "Desde el punto de vista de los cineastas, filmar con sonido era un juego completamente nuevo. Las locaciones reales ahora eran difíciles de usar, porque, en cuanto el director gritaba \"¡Acción!\", probablemente alguien en las cercanías empezaría a excavar una calle o a martillar metal. Nadie quería oír esos sonidos mientras los actores hablaban; por eso, directores y productores se vieron obligados a volver a filmar en los estudios de \"caja negra\", que ahora se llamaban \"estudios de sonido\".",
+     "chars": 495
+    },
+    {
+     "id": "04-02",
+     "speaker": "narrador",
+     "source_index": 14,
+     "original": "En el período del cine mudo, las filmaciones con más de una cámara solo se usaban para grandes proezas de acción que no podían repetirse con facilidad. Por ejemplo, si la escena presentada en la imagen de arriba, con las dos personas sentadas en un parque, se filmara primero en un plano general, seguido de primeros planos del hombre y de la mujer, sería muy difícil editar o hacer coincidir el sonido de cada plano al unirlos todos. La orquesta y el diálogo tendrían que acompañarse con una precisión de fracciones de segundo; si eso no ocurría y el editor cortaba de un plano general a un primer plano, el sonido saldría mal. La solución era operar tres cámaras: una filmando el plano general (en este caso, la cámara central) y las otras filmando los primeros planos de los actores (en la imagen, una a la derecha y otra a la izquierda, con el operador de boom). Los actores, a su vez, tenían que hacer la escena completa en una toma continua para garantizar que el sonido de cada cámara coincidiera perfectamente.",
+     "text": "En el período del cine mudo, las filmaciones con más de una cámara solo se usaban para grandes proezas de acción que no podían repetirse con facilidad. Por ejemplo, si la escena presentada en la imagen de arriba, con las dos personas sentadas en un parque, se filmara primero en un plano general, seguido de primeros planos del hombre y de la mujer, sería muy difícil editar o hacer coincidir el sonido de cada plano al unirlos todos. La orquesta y el diálogo tendrían que acompañarse con una precisión de fracciones de segundo; si eso no ocurría y el editor cortaba de un plano general a un primer plano, el sonido saldría mal. La solución era operar tres cámaras: una filmando el plano general (en este caso, la cámara central) y las otras filmando los primeros planos de los actores (en la imagen, una a la derecha y otra a la izquierda, con el operador de boom). Los actores, a su vez, tenían que hacer la escena completa en una toma continua para garantizar que el sonido de cada cámara coincidiera perfectamente.",
+     "chars": 1018
+    }
+   ],
+   "chars": 1513,
+   "est_minutes": 1.59
+  },
+  {
+   "id": "05",
+   "title": "Parte 5",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "05-01",
+     "speaker": "narrador",
+     "source_index": 16,
+     "original": "La actuación de los intérpretes se vio afectada por esta nueva tecnología. El director ya no podía hablarles durante la toma, como era la norma en el cine mudo, y, en los primeros años del sonido, los actores tenían que hablar con una precisión poco natural para ser registrados con éxito por la rudimentaria tecnología de grabación.",
+     "text": "La actuación de los intérpretes se vio afectada por esta nueva tecnología. El director ya no podía hablarles durante la toma, como era la norma en el cine mudo, y, en los primeros años del sonido, los actores tenían que hablar con una precisión poco natural para ser registrados con éxito por la rudimentaria tecnología de grabación.",
+     "chars": 333
+    },
+    {
+     "id": "05-02",
+     "speaker": "narrador",
+     "source_index": 17,
+     "original": "Fue solo en 1932 en los Estados Unidos, y más tarde en otros países, cuando se introdujeron los micrófonos direccionales, capaces de grabar sonidos específicos en lugar de captar todos los sonidos. Obsérvese, por último, que la pareja de la banca está iluminada solo por dos grandes reflectores de estudio, uno a cada lado del trío de cámaras. En las últimas películas mudas, los primeros planos se iluminaban por separado y con gran cuidado, a fin de crear sombras faciales atractivas y fondos melancólicos o románticos. En este caso, sin embargo, esa técnica no es posible, porque la iluminación tendría que estar detrás o al lado de los actores, en el lugar de los arbustos. Las luces quedarían entonces claramente visibles en el plano general, que se filma simultáneamente con los primeros planos.",
+     "text": "Fue solo en mil novecientos treinta y dos en los Estados Unidos, y más tarde en otros países, cuando se introdujeron los micrófonos direccionales, capaces de grabar sonidos específicos en lugar de captar todos los sonidos. Obsérvese, por último, que la pareja de la banca está iluminada solo por dos grandes reflectores de estudio, uno a cada lado del trío de cámaras. En las últimas películas mudas, los primeros planos se iluminaban por separado y con gran cuidado, a fin de crear sombras faciales atractivas y fondos melancólicos o románticos. En este caso, sin embargo, esa técnica no es posible, porque la iluminación tendría que estar detrás o al lado de los actores, en el lugar de los arbustos. Las luces quedarían entonces claramente visibles en el plano general, que se filma simultáneamente con los primeros planos.",
+     "chars": 826
+    }
+   ],
+   "chars": 1159,
+   "est_minutes": 1.22
+  },
+  {
+   "id": "06",
+   "title": "Rouben Mamoulian",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "06-01",
+     "speaker": "narrador",
+     "source_index": 19,
+     "original": "Los directores creativos se frustraron de inmediato con estos obstáculos a su libertad artística, y los mejores idearon formas de superarlos. El director ruso Rouben Mamoulian (1897-1987) llegó a Occidente como alumno del gran gurú de la actuación Konstantin Stanislavski (1863-1938). Primero, Mamoulian dirigió óperas en París, Londres y Nueva York, que confirmaron rápidamente que no tenía inclinación por el naturalismo.",
+     "text": "Los directores creativos se frustraron de inmediato con estos obstáculos a su libertad artística, y los mejores idearon formas de superarlos. El director ruso Rouben Mamoulian (mil ochocientos noventa y siete a mil novecientos ochenta y siete) llegó a Occidente como alumno del gran gurú de la actuación Konstantin Stanislavski (mil ochocientos sesenta y tres a mil novecientos treinta y ocho). Primero, Mamoulian dirigió óperas en París, Londres y Nueva York, que confirmaron rápidamente que no tenía inclinación por el naturalismo.",
+     "chars": 533
+    },
+    {
+     "id": "06-02",
+     "speaker": "narrador",
+     "source_index": 20,
+     "original": "Contratado por Paramount gracias al vigor de sus ingeniosas producciones teatrales, su primera película, Applause (1929), amplió las fronteras creativas del cine sonoro. La trama no era innovadora (una artista de teatro decadente sacrifica su carrera por su hija), pero algunas escenas clave hicieron que la industria se detuviera a prestar atención. Un ejemplo es el contraste entre la atmósfera silenciosa del convento donde estaba la hija y el caos del tránsito y los sonidos callejeros de la efervescente Nueva York cuando ella visita a su madre; Mamoulian usó el contraste sonoro para reflejar las sensaciones de la hija desorientada.",
+     "text": "Contratado por Paramount gracias al vigor de sus ingeniosas producciones teatrales, su primera película, Applause, de mil novecientos veintinueve, amplió las fronteras creativas del cine sonoro. La trama no era innovadora (una artista de teatro decadente sacrifica su carrera por su hija), pero algunas escenas clave hicieron que la industria se detuviera a prestar atención. Un ejemplo es el contraste entre la atmósfera silenciosa del convento donde estaba la hija y el caos del tránsito y los sonidos callejeros de la efervescente Nueva York cuando ella visita a su madre; Mamoulian usó el contraste sonoro para reflejar las sensaciones de la hija desorientada.",
+     "chars": 664
+    }
+   ],
+   "chars": 1197,
+   "est_minutes": 1.26
+  },
+  {
+   "id": "07",
+   "title": "Vale la pena ver",
+   "kind": "watch",
+   "segments": [
+    {
+     "id": "07-01",
+     "speaker": "narrador",
+     "source_index": 21,
+     "original": "Vale la pena ver: las películas de este capítulo son The Jazz Singer, M, Love Me Tonight y Lights of New York.",
+     "text": "Vale la pena ver: las películas de este capítulo son The Jazz Singer, M, Love Me Tonight y Lights of New York.",
+     "chars": 110
+    }
+   ],
+   "chars": 110,
+   "est_minutes": 0.12
+  }
+ ],
+ "chars": 9414,
+ "est_minutes": 9.91
+}

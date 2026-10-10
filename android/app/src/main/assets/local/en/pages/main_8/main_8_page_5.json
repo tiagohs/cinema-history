@@ -1,0 +1,518 @@
+{
+  "number": 5,
+  "content_list": [
+    {
+      "type": "text",
+      "content_text": "In the early hours of May 2, 2023, some 11,500 members of the <i>Writers Guild of America</i> (WGA), the union representing film and television writers in the United States, put down their pens. The effect was immediate. The late-night <i>talk shows</i>, written the same day they air, switched to reruns that very week, and picket lines soon formed outside the gates of <i>Netflix</i>, <i>Disney</i>, <i>Warner</i> and <i>Universal</i>. On the other side of the table sat the <i>AMPTP</i>, the alliance that bargains on behalf of the studios and streamers. It was the writers' first strike since 2007–2008, which had lasted 100 days. This time, the fight would last 148 days and, in July, the actors would join in. Hollywood was about to grind almost entirely to a halt."
+    },
+    {
+      "type": "video",
+      "video_id": "eK9QWB1OOro",
+      "information": {
+        "contentTitle": "AI at the heart of the writers' strike",
+        "contentText": "<i>CNBC</i> report on how artificial intelligence became one of the central issues of the 2023 writers' strike.",
+        "source": "YouTube: <i>CNBC</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "What was really at stake was streaming money. On traditional TV, every rerun paid writers a <strong>residual</strong>, a kind of royalty. On the streaming platforms, that became a flat fee, the same for a flop as for a global phenomenon, and no one knew how many people watched each show, because the companies didn't release viewership data. Seasons got shorter, and <i>mini rooms</i> appeared: scaled-down writers' rooms, hired for a few weeks and disbanded before filming began. And there was something new. In November 2022, <i>OpenAI</i> had launched <i>ChatGPT</i>, and writers feared that a studio would ask a machine for the first draft of a script and then pay a professional merely to “polish” it, for a smaller fee and with no writing credit. The <i>WGA</i> demanded that AI be barred from writing or rewriting scripts. The studios offered only annual meetings to discuss advances in technology."
+    },
+    {
+      "type": "block_special",
+      "title": "1960: the last double strike",
+      "image": {
+        "image_type": "local",
+        "url": "img_greves_1960_adoravel_pecadora",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Before 2023, writers and actors had walked out together only once. On January 16, 1960, the <i>Writers Guild</i> went on strike; on March 7, the <i>Screen Actors Guild</i> followed. The cause echoed the one 63 years later: a new technology was showing films, and the artists were getting nothing for it. This time the novelty was television, which endlessly aired features bought from the studios. Leading the actors was the guild's president, <a href=\"https://_{type: 'screen', 'id': 18802, 'screen_type': person}\">Ronald Reagan</a>. The strike halted eight major productions, among them <a href=\"https://_{type: 'screen', 'id': 24014, 'screen_type': movie}\">Let's Make Love</a> (1960), starring <a href=\"https://_{type: 'screen', 'id': 3149, 'screen_type': person}\">Marilyn Monroe</a>, and ended on April 18 with a deal: residuals for TV airings only for films made from then on, and not for those produced since 1948, as the guild had originally demanded. In return, the studios paid $2.65 million, which was used to create the profession's first pension plan. Some actors felt Reagan had given away too much. The writers stayed on strike until June 12. Reagan stepped down as guild president that same year and, two decades later, would reach the White House.",
+      "click": {
+        "screen": "link_online",
+        "button_text": "See the story on the SAG-AFTRA website",
+        "parameters": [
+          {
+            "key": "LINK",
+            "value": "https://www.sagaftra.org/about/our-history/1960s"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "On July 13, it was the actors' turn. The contract of <i>SAG-AFTRA</i>, a union of about 160,000 members, had expired the day before, and its president, <a href=\"https://_{type: 'screen', 'id': 53122, 'screen_type': person}\">Fran Drescher</a>, forever the star of the series <i>The Nanny</i>, announced the strike in a fiery speech in which she called the studios “a very greedy entity.” That same night in London, the cast of <a href=\"https://_{type: 'screen', 'id': 872585, 'screen_type': movie}\">Oppenheimer</a> (2023) walked out of the premiere before the screening, and <a href=\"https://_{type: 'screen', 'id': 525, 'screen_type': person}\">Christopher Nolan</a> told the audience that the actors had gone “to write their picket signs.” At midnight on July 14, California time, the first simultaneous strike by writers and actors since 1960 began. The actors were seeking raises to keep up with inflation, a share of streaming revenue and rules on artificial intelligence."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "You cannot change the business model as much as it has changed and not expect the contract to change too.",
+        "author": "Fran Drescher (speech announcing the actors' strike, 2023)"
+      },
+      "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "For actors, the AI threat had a face and a body. On the day the strike was announced, the union's chief negotiator, Duncan Crabtree-Ireland, said the studios had proposed scanning background performers, paying them for a single day's work and keeping their digital likeness forever, free to use it without further consent or compensation. The union's account, disputed by the studios, made headlines around the world and became the emblem of the nightmare: crowd scenes populated by copies of people who would never be called back. The fear didn't stop with extras. Voice actors watched software imitate their voices, and stars knew that digital de-aging could already put a 30-year-old face on an 80-year-old actor. The underlying question was simple: who owns that face?"
+    },
+    {
+      "type": "video",
+      "video_id": "J4SAPOX7R5M",
+      "information": {
+        "contentTitle": "Fran Drescher's speech",
+        "contentText": "On July 13, 2023, the president of <i>SAG-AFTRA</i> announced the actors' strike with harsh criticism of the studios. The speech went viral and came to embody the profession's outrage.",
+        "source": "YouTube: <i>CBS News</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Strike rules barred actors from promoting films from studios tied to the <i>AMPTP</i>: no red carpets, interviews, festivals or social media posts. Premieres went ahead without casts, and the release calendar collapsed. <a href=\"https://_{type: 'screen', 'id': 137427, 'screen_type': person}\">Denis Villeneuve</a>'s <a href=\"https://_{type: 'screen', 'id': 693134, 'screen_type': movie}\">Dune: Part Two</a> (2024) was pushed from November 2023 to March 2024 so it wouldn't open without <a href=\"https://_{type: 'screen', 'id': 1190668, 'screen_type': person}\">Timothée Chalamet</a> and <a href=\"https://_{type: 'screen', 'id': 505710, 'screen_type': person}\">Zendaya</a> on the promotional trail. <a href=\"https://_{type: 'screen', 'id': 78160, 'screen_type': person}\">Luca Guadagnino</a>'s <a href=\"https://_{type: 'screen', 'id': 937287, 'screen_type': movie}\">Challengers</a> (2024) gave up its slot as the opening film of the <i>Venice Film Festival</i> and also moved to 2024. The <i>Emmy</i> ceremony shifted from September to January. Those who suffered most were the ones not on strike: grips, electricians, costume designers and drivers went months without work. In August, a professor at California State University, Northridge, estimated that the losses to California's economy would top $5 billion if the shutdown lasted until November. It did."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_greves_piquete_nova_york",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Writers and actors on the same picket line",
+        "contentText": "A picket line in New York on July 17, 2023, three days after the actors went on strike. The black signs belong to <i>SAG-AFTRA</i>; the white and red ones, to the <i>WGA</i> writers.",
+        "source": "Wikimedia Commons: Eden, Janine and Jim (CC BY 2.0)"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "The writers went back first. After a marathon of negotiations attended by the studio chiefs themselves, the <i>WGA</i> reached a tentative agreement on September 24 and ended the strike on the 27th. The contract was ratified with 99% of the vote. Beyond the AI rules, writers won minimum staffing levels for writers' rooms, a bonus paid when a show is watched by 20% of a platform's U.S. subscribers within 90 days and, for the first time, access to the total hours viewed for each original production. The actors took longer. The <i>SAG-AFTRA</i> deal came on November 8, and the strike ended on the 9th, after 118 days. Valued by the union at more than $1 billion, it brought a 7% pay increase, an 11% raise for background actors and a streaming bonus, and it was approved on December 5 by 78% of those voting."
+    },
+    {
+      "type": "block_special",
+      "title": "What the deals say about AI",
+      "image": {
+        "image_type": "local",
+        "url": "img_greves_cartaz_ia_piquete",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "The 2023 contracts were the first in film and television to treat artificial intelligence as a labor issue. Under the writers' contract, AI cannot write or rewrite literary material, and machine-generated text does not count as “source material,” meaning it cannot be used to strip credit or rights from the writers who were hired. A writer may use the tool if they choose and if the studio consents, but cannot be required to, and the studio must disclose when any material it hands over was produced with AI. The guild also reserved the right to challenge the use of scripts to train these programs. Under the actors' contract, creating and using a <strong>digital replica</strong>, whether scanned on set or assembled from existing footage, requires informed consent and payment, including in the case of deceased performers. The studios must also notify the union when they want to use a “synthetic performer,” a character created from scratch by computer. In 2026, the new actors' contract expanded these protections.",
+      "click": {
+        "screen": "link_online",
+        "button_text": "Read the WGA contract summary",
+        "parameters": [
+          {
+            "key": "LINK",
+            "value": "https://wgacontract2023.org/the-campaign/summary-of-the-2023-wga-mba"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "While Hollywood fought over the rules, the technology was already on screen. In <a href=\"https://_{type: 'screen', 'id': 335977, 'screen_type': movie}\">Indiana Jones and the Dial of Destiny</a> (2023), directed by <a href=\"https://_{type: 'screen', 'id': 366, 'screen_type': person}\">James Mangold</a> and released at the end of June 2023, the prologue set in 1944 shows <a href=\"https://_{type: 'screen', 'id': 3, 'screen_type': person}\">Harrison Ford</a> decades younger. According to the actor himself, an artificial intelligence program combed through the <i>Lucasfilm</i> archive, including footage that never made it into the films, to find the right lighting and expressions while he performed with markers on his face. Ford called the result “fantastic” and, in another interview, “a little spooky.” Digital de-aging was nothing new: <a href=\"https://_{type: 'screen', 'id': 1032, 'screen_type': person}\">Martin Scorsese</a> had already done the same with Robert De Niro and Al Pacino in <a href=\"https://_{type: 'screen', 'id': 398978, 'screen_type': movie}\">The Irishman</a> (2019). The difference was speed. In <a href=\"https://_{type: 'screen', 'id': 940139, 'screen_type': movie}\">Here</a> (2024), <a href=\"https://_{type: 'screen', 'id': 24, 'screen_type': person}\">Robert Zemeckis</a> used the <i>Metaphysic Live</i> tool to de-age and age <a href=\"https://_{type: 'screen', 'id': 31, 'screen_type': person}\">Tom Hanks</a> and <a href=\"https://_{type: 'screen', 'id': 32, 'screen_type': person}\">Robin Wright</a> in real time, right on set, from the characters' teenage years to old age."
+    },
+    {
+      "type": "video",
+      "video_id": "Q4P8FuQJIdM",
+      "information": {
+        "contentTitle": "The visual effects of Indiana Jones and the Dial of Destiny",
+        "contentText": "A video from <i>Industrial Light & Magic</i> on the effects it created for the film, including the de-aged Harrison Ford of the prologue, which became a reference point in the debate over AI in filmmaking.",
+        "source": "YouTube: <i>Industrial Light & Magic</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "The loudest controversy erupted in January 2025, days before the Oscar nominations were announced. <a href=\"https://_{type: 'screen', 'id': 549509, 'screen_type': movie}\">The Brutalist</a> (2024) editor Dávid Jancsó revealed in an interview that <i>Respeecher</i>, software from a Ukrainian company, had been used to refine the pronunciation of certain vowels in <a href=\"https://_{type: 'screen', 'id': 3490, 'screen_type': person}\">Adrien Brody</a> and <a href=\"https://_{type: 'screen', 'id': 72855, 'screen_type': person}\">Felicity Jones</a>'s Hungarian dialogue. Director <a href=\"https://_{type: 'screen', 'id': 55493, 'screen_type': person}\">Brady Corbet</a> responded that the performances were “completely” the actors' own, that no English dialogue had been altered and that the film's architectural drawings had been made by hand. According to <i>Respeecher</i>, <a href=\"https://_{type: 'screen', 'id': 974950, 'screen_type': movie}\">Emilia Pérez</a> (2024) had also used the tool. In 2024, even the small horror film <a href=\"https://_{type: 'screen', 'id': 938614, 'screen_type': movie}\">Late Night with the Devil</a> (2024) had faced calls for a boycott over its use of AI in three interstitial images. Brody won the Oscar for Best Actor, and in April 2025 the Academy answered with a brief rule: AI tools “neither help nor harm” a film's chances of a nomination, but voters should weigh how much a human being was “at the heart of the creative authorship.”"
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_ia_brutalista_monte_carvao",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "The Brutalist (2024)",
+        "contentText": "A scene from Brady Corbet's film about a Hungarian architect who rebuilds his life in the United States. The use of AI to adjust the Hungarian pronunciation in the dialogue sparked controversy on the eve of the Oscars, where Adrien Brody won Best Actor.",
+        "source": "Publicity image: <i>A24</i> (via TMDB)"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "Another, far more radical front was text-to-video generation. In February 2024, <i>OpenAI</i> unveiled <i>Sora</i>, which could create realistic scenes up to a minute long from a single sentence. Days later, <a href=\"https://_{type: 'screen', 'id': 80602, 'screen_type': person}\">Tyler Perry</a> said he had put an $800 million expansion of his Atlanta studios on hold because of what he had seen. In September 2024, <i>Lionsgate</i>, home of <i>John Wick</i> and <i>The Hunger Games</i>, struck a deal with <i>Runway</i> to train a model on its catalog. In 2025, <i>Netflix</i> revealed that a building collapse in Buenos Aires in the Argentine series <i>The Eternaut</i> had been made with generative AI, ten times faster than with traditional effects. And <i>YouTube</i> filled up with fake trailers for movies that didn't exist: two of the genre's biggest channels, with more than 2 million subscribers combined, were demonetized and eventually removed at the end of 2025."
+    },
+    {
+      "type": "essay",
+      "video_id": "ZFitkz5VJvI",
+      "title": "Why AI “Art” Feels So Wrong",
+      "description": "In this video essay, Thomas Flight draws on writer J. F. Martel's idea of “awe” to separate art from artifice and explain why AI-made images feel hollow. He touches on Tilly Norwood, <i>Sora 2</i> and the case of <i>The Brutalist</i>, concedes that AI can serve as a tool, but warns against mistaking imitation for expression.",
+      "channel": "thomas_flight"
+    },
+    {
+      "type": "text",
+      "content_text": "The studios played both sides. In June 2025, <i>Disney</i> and <i>Universal</i> sued <i>Midjourney</i>, an image generator that, they said, was a “bottomless pit of plagiarism,” capable of producing their characters on demand. <i>Warner Bros. Discovery</i> filed a similar suit in September; the cases were consolidated and, in 2026, were still in the discovery phase, with no ruling. That same September, <i>OpenAI</i> launched <i>Sora 2</i>, with a <i>TikTok</i>-style app, and the <i>Motion Picture Association</i> criticized the way the company handled copyright. Even so, on December 11, <i>Disney</i> announced a $1 billion investment in <i>OpenAI</i> and licensed more than 200 characters for the app, drawing criticism from Hollywood unions. The marriage was short-lived: on March 24, 2026, <i>OpenAI</i> announced it was shutting down <i>Sora</i>, and <i>Disney</i> walked away from the deal without making the investment."
+    },
+    {
+      "type": "text",
+      "content_text": "In September 2025, the debate acquired a face that doesn't exist. Created by <i>Particle6</i>, the production company of Dutch comedian Eline Van der Velden, the AI “actress” <strong>Tilly Norwood</strong> had debuted in a comedy sketch in July. At the <i>Zurich Summit</i>, an industry gathering held during the Zurich Film Festival, her creator said that talent agencies were interested in representing her. <a href=\"https://_{type: 'screen', 'id': 5081, 'screen_type': person}\">Emily Blunt</a> called the idea “really, really scary,” and <i>SAG-AFTRA</i> responded with a sharply worded statement. None of this stopped <i>Particle6</i> from announcing, in July 2026, the first feature film starring her, <i>Misaligned</i>. But the rules had already changed. In 2026, writers and actors renewed their contracts for four years without a strike, and the actors' deal set new limits on “synthetic performers.” In May, the Academy ruled that, starting with the 2027 Oscars, only performances “demonstrably performed by humans with their consent” and screenplays written by people would be eligible."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "Tilly Norwood is not an actor, it's a character generated by a computer program that was trained on the work of countless professional performers — without permission or compensation.",
+        "author": "SAG-AFTRA (statement on Tilly Norwood, 2025)"
+      },
+      "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "In the cinema of the 2020s, artificial intelligence is at once a tool, a threat and a commodity. Some uses few people dispute, such as cleaning up audio, erasing a safety cable or de-aging a face with its owner's permission; others, like touching up the pronunciation of a line the actor recorded, still divide opinion. And then there is what frightens people: models trained on films, voices and faces without license or payment, and the promise of cheaper production by doing away with the very people who make it. It is no coincidence that the films of 2023 were already talking about it. The villain of <a href=\"https://_{type: 'screen', 'id': 575264, 'screen_type': movie}\">Mission: Impossible - Dead Reckoning Part One</a> (2023) is an AI called the Entity, and <a href=\"https://_{type: 'screen', 'id': 670292, 'screen_type': movie}\">The Creator</a> (2023), directed by <a href=\"https://_{type: 'screen', 'id': 129894, 'screen_type': person}\">Gareth Edwards</a>, imagines a war between humans and machines. The strikes did not stop the technology, but they established three principles that still frame the fight: consent, compensation and credit. The question is no longer whether AI will make it onto the set. It is who sets the terms."
+    },
+    {
+      "type": "video",
+      "video_id": "qdYBwCwCtis",
+      "information": {
+        "contentTitle": "The backlash against Tilly Norwood",
+        "contentText": "<i>CBC</i> report on the “actress” created by artificial intelligence and the wave of criticism from actors and the union in September 2025.",
+        "source": "YouTube: <i>CBC News: The National</i> channel"
+      }
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "poster_path": "/dUPQszWoRSE9FucJTbVp2bwEi9G.jpg",
+          "popularity": 52.7423,
+          "vote_count": 12645,
+          "video": false,
+          "id": 872585,
+          "adult": false,
+          "backdrop_path": "/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+          "original_language": "en",
+          "original_title": "Oppenheimer",
+          "title": "Oppenheimer",
+          "vote_average": 8.0,
+          "overview": "A história do físico americano J. Robert Oppenheimer, seu papel no Projeto Manhattan e no desenvolvimento da bomba atômica durante a Segunda Guerra Mundial, e o quanto isso mudaria a história do mundo para sempre.",
+          "release_date": "2023-07-19",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            36
+          ]
+        },
+        {
+          "poster_path": "/VMy4UGsI2u3f4fALGeCqCdsQBb.jpg",
+          "popularity": 61.1309,
+          "vote_count": 8699,
+          "video": false,
+          "id": 693134,
+          "adult": false,
+          "backdrop_path": "/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+          "original_language": "en",
+          "original_title": "Dune: Part Two",
+          "title": "Duna: Parte Dois",
+          "vote_average": 8.1,
+          "overview": "A jornada de Paul Atreides continua. Ele está determinado a buscar vingança contra aqueles que destruíram sua família e seu lar. Com a ajuda de Chani e dos Fremen, ele embarca em uma jornada espiritual, mística e marcial. Se torna Muad'Dib, o líder messiânico dos Fremen, enquanto luta para evitar um futuro sombrio que ele testemunhou em visões. No entanto, suas ações inadvertidamente desencadeiam uma Guerra Santa em seu nome, que se espalha pelo universo conhecido. Enquanto enfrenta escolhas difíceis entre o amor por Chani e o destino de seu povo, Paul precisa usar suas habilidades e conhecimentos para evitar o terrível futuro que previu.",
+          "release_date": "2024-02-27",
+          "media_type": "movie",
+          "genre_ids": [
+            878,
+            12
+          ]
+        },
+        {
+          "poster_path": "/w1j3evHiwrGiQ6e9h1l9r66uo29.jpg",
+          "popularity": 19.6314,
+          "vote_count": 2880,
+          "video": false,
+          "id": 937287,
+          "adult": false,
+          "backdrop_path": "/tq8COKsI99Bivjd4CZIYVGoKcIx.jpg",
+          "original_language": "en",
+          "original_title": "Challengers",
+          "title": "Rivais",
+          "vote_average": 6.909,
+          "overview": "Tashi Duncan, atleta prodígio do tênis que se tornou treinadora, é uma força da natureza que não pede desculpas por seu jogo dentro e fora da quadra. Casada com um campeão que tem acumulado apenas derrotas nos últimos jogos, a estratégia de Tashi para a redenção de seu marido toma um rumo surpreendente quando ele deve enfrentar o fracassado Patrick nas quadras. Patrick foi o melhor amigo de seu marido, e é ex-namorado de Tashi. Quando o passado e o presente entram em colisão, e as tensões aumentam, Tashi deve se perguntar qual será o custo dessa vitória.",
+          "release_date": "2024-04-18",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            10749
+          ]
+        },
+        {
+          "poster_path": "/ohyBuxe8peJQSdoS5hw31VmKCZ4.jpg",
+          "popularity": 19.9481,
+          "vote_count": 4409,
+          "video": false,
+          "id": 335977,
+          "adult": false,
+          "backdrop_path": "/57JocxmicOoAMhkUSmdKBlpZWMT.jpg",
+          "original_language": "en",
+          "original_title": "Indiana Jones and the Dial of Destiny",
+          "title": "Indiana Jones e A Relíquia do Destino",
+          "vote_average": 6.491,
+          "overview": "Encontrando-se em uma nova era, aproximando-se da aposentadoria, Indy luta para se encaixar em um mundo que parece tê-lo superado. Mas quando os tentáculos de um mal muito familiar retornam na forma de um antigo rival, Indy deve colocar seu chapéu e pegar seu chicote mais uma vez para garantir que um antigo e poderoso artefato não caia nas mãos erradas.",
+          "release_date": "2023-06-25",
+          "media_type": "movie",
+          "genre_ids": [
+            12,
+            28
+          ]
+        },
+        {
+          "poster_path": "/9H1XgBZFoVnh7nSibGWZcJMOL6C.jpg",
+          "popularity": 18.6951,
+          "vote_count": 7769,
+          "video": false,
+          "id": 398978,
+          "adult": false,
+          "backdrop_path": "/1RDto0tLo8Fhq7OcwgDaM7nECb7.jpg",
+          "original_language": "en",
+          "original_title": "The Irishman",
+          "title": "O Irlandês",
+          "vote_average": 7.6,
+          "overview": "Frank Sheeran é um veterano de guerra cheio de condecorações que concilia a vida de caminhoneiro com a de assassino de aluguel número um da máfia. Promovido a líder sindical, ele torna-se o principal suspeito quando o mais famoso ex-presidente da associação desaparece misteriosamente.",
+          "release_date": "2019-11-01",
+          "media_type": "movie",
+          "genre_ids": [
+            80,
+            18,
+            36
+          ]
+        },
+        {
+          "poster_path": "/rmqBc3qRXeSgzCcWY2H4l9M8eIT.jpg",
+          "popularity": 7.1636,
+          "vote_count": 731,
+          "video": false,
+          "id": 940139,
+          "adult": false,
+          "backdrop_path": "/zrms2WPltCxTPoiNFNPtTih6NMf.jpg",
+          "original_language": "en",
+          "original_title": "Here",
+          "title": "Aqui",
+          "vote_average": 6.5,
+          "overview": "Ambientado em um único lugar, ’Aqui’ acompanha diversas famílias ao longo de gerações, todas conectadas por este espaço que um dia chamaram de lar. Estrelado por Tom Hanks e Robin Wright, é uma emocionante jornada de amor, perdas, risos e memórias, que nos transporta desde o passado mais distante até um futuro próximo. Uma viagem pela linha do tempo da humanidade, contada de forma emocionante e surpreendente, onde tudo acontece em um único lugar: Aqui.",
+          "release_date": "2024-10-30",
+          "media_type": "movie",
+          "genre_ids": [
+            18
+          ]
+        },
+        {
+          "poster_path": "/blckaGzdEJ4PdG5RxZPcb77VYFV.jpg",
+          "popularity": 11.3077,
+          "vote_count": 2319,
+          "video": false,
+          "id": 938614,
+          "adult": false,
+          "backdrop_path": "/umyOinNa6vqqnqoVc9QqzyaapUz.jpg",
+          "original_language": "en",
+          "original_title": "Late Night with the Devil",
+          "title": "Entrevista com o Demônio",
+          "vote_average": 7.091,
+          "overview": "O apresentador Jack Delroy tenta recuperar a audiência de seu programa, que despencou desde a trágica morte de sua esposa. Desesperado pelo sucesso, Jack planeja um especial para o Halloween de 1977, mas o que começa como uma noite de entretenimento se transforma em um pesadelo ao vivo.",
+          "release_date": "2024-03-19",
+          "media_type": "movie",
+          "genre_ids": [
+            27
+          ]
+        },
+        {
+          "poster_path": "/52iVP3AtNtpjFiBxlOYCUPXhr47.jpg",
+          "popularity": 42.2299,
+          "vote_count": 1849,
+          "video": false,
+          "id": 549509,
+          "adult": false,
+          "backdrop_path": "/hmZnqijPaaACjenDkrbWcCmcADI.jpg",
+          "original_language": "en",
+          "original_title": "The Brutalist",
+          "title": "O Brutalista",
+          "vote_average": 6.9,
+          "overview": "Fugindo da Europa pós-guerra, um arquiteto visionário chega à América para reconstruir sua vida, carreira e casamento. Sozinho em um novo país estranho, ele se estabelece na Pensilvânia, onde um rico e proeminente industrial reconhece seu talento.",
+          "release_date": "2024-12-20",
+          "media_type": "movie",
+          "genre_ids": [
+            18
+          ]
+        },
+        {
+          "poster_path": "/8ZOvbX3gCZZatUfaIZFFSAdiboW.jpg",
+          "popularity": 14.5492,
+          "vote_count": 2055,
+          "video": false,
+          "id": 974950,
+          "adult": false,
+          "backdrop_path": "/u2eA9pqi1q3DvevT7RuDuJHxxBT.jpg",
+          "original_language": "fr",
+          "original_title": "Emilia Pérez",
+          "title": "Emilia Pérez",
+          "vote_average": 6.4,
+          "overview": "No México, uma advogada recebe uma oferta inesperada para ajudar um temido chefe de cartel a se aposentar de seus negócios e desaparecer para sempre para que possa tornar a mulher que ela sempre sonhou em ser.",
+          "release_date": "2024-08-21",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            53
+          ]
+        },
+        {
+          "poster_path": "/hBKxN5Z8gRo2am0whMeQlPv19K4.jpg",
+          "popularity": 24.4686,
+          "vote_count": 5426,
+          "video": false,
+          "id": 575264,
+          "adult": false,
+          "backdrop_path": "/628Dep6AxEtDxjZoGP78TsOxYbK.jpg",
+          "original_language": "en",
+          "original_title": "Mission: Impossible - Dead Reckoning Part One",
+          "title": "Missão: Impossível - Acerto de Contas Parte 1",
+          "vote_average": 7.501,
+          "overview": "Ethan Hunt e sua equipe embarcam em sua missão mais perigosa: rastrear uma nova arma aterrorizante que ameaça toda a humanidade antes que caia em mãos erradas. Com o controle do futuro e o destino do mundo em jogo e as forças sombrias do passado de Ethan se aproximando, uma corrida mortal ao redor do globo começa. Confrontado por um inimigo misterioso e todo-poderoso, Ethan é forçado a considerar que nada pode importar mais do que sua missão – nem mesmo a vida daqueles com quem ele mais se importa.",
+          "release_date": "2023-07-08",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            12,
+            53
+          ]
+        },
+        {
+          "poster_path": "/a2CroeECoXPpvJlbUxtrfDd4Rih.jpg",
+          "popularity": 20.0956,
+          "vote_count": 4222,
+          "video": false,
+          "id": 670292,
+          "adult": false,
+          "backdrop_path": "/kjQBrc00fB2RjHZB3PGR4w9ibpz.jpg",
+          "original_language": "en",
+          "original_title": "The Creator",
+          "title": "Resistência",
+          "vote_average": 7.0,
+          "overview": "Em meio a uma futura guerra entre a raça humana e as forças da inteligência artificial, Joshua, um endurecido ex-agente das forças especiais que lamenta o desaparecimento de sua esposa, é recrutado para caçar e matar o Criador, o indescritível arquiteto da IA avançada que desenvolveu uma arma misteriosa com o poder de acabar com a guerra - e a própria humanidade.",
+          "release_date": "2023-09-27",
+          "media_type": "movie",
+          "genre_ids": [
+            878,
+            28,
+            12
+          ]
+        },
+        {
+          "poster_path": "/kmfwjd6Ttw1BfF4aoS6qVkwEgtt.jpg",
+          "popularity": 5.5323,
+          "vote_count": 187,
+          "video": false,
+          "id": 24014,
+          "adult": false,
+          "backdrop_path": "/gDVa3JFURhhcnic6fIhk3EPmbd0.jpg",
+          "original_language": "en",
+          "original_title": "Let's Make Love",
+          "title": "Adorável Pecadora",
+          "vote_average": 6.4,
+          "overview": "Ao descobrir que será alvo de uma peça teatral satírica, o bilionário Jean-Marc Clement resolve ir ao teatro para ver os ensaios. É lá que ele conhece a bela Amanda (Marilyn Monroe) e decide fazer parte da equipe para ficar perto dela.",
+          "release_date": "1960-09-08",
+          "media_type": "movie",
+          "genre_ids": [
+            35,
+            10749
+          ]
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 53122,
+          "profile_path": "/6IQlygYDyxuIRD5j9lPluknYoJp.jpg",
+          "name": "Fran Drescher"
+        },
+        {
+          "id": 18802,
+          "profile_path": "/tuB7bNPABSP3MtPKpdttbz2OdSU.jpg",
+          "name": "Ronald Reagan"
+        },
+        {
+          "id": 525,
+          "profile_path": "/xuAIuYSmsUzKlUMBFGVZaWsY3DZ.jpg",
+          "name": "Christopher Nolan"
+        },
+        {
+          "id": 137427,
+          "profile_path": "/xzQYqb4nR8xT7Zdw5itbEL9K3fd.jpg",
+          "name": "Denis Villeneuve"
+        },
+        {
+          "id": 3,
+          "profile_path": "/pjBMJVPpcZK23Vt1nzr1zEBTWrP.jpg",
+          "name": "Harrison Ford"
+        },
+        {
+          "id": 366,
+          "profile_path": "/pk0GDjn99crNwR4qgCCEokDYd71.jpg",
+          "name": "James Mangold"
+        },
+        {
+          "id": 24,
+          "profile_path": "/lPYDQ5LYNJ12rJZENtyASmVZ1Ql.jpg",
+          "name": "Robert Zemeckis"
+        },
+        {
+          "id": 31,
+          "profile_path": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
+          "name": "Tom Hanks"
+        },
+        {
+          "id": 55493,
+          "profile_path": "/o5RVawgYeKSzMt8o0VLg38ulHZX.jpg",
+          "name": "Brady Corbet"
+        },
+        {
+          "id": 3490,
+          "profile_path": "/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg",
+          "name": "Adrien Brody"
+        },
+        {
+          "id": 80602,
+          "profile_path": "/8KU0OizemVLrERXt5HJIa0PAkIN.jpg",
+          "name": "Tyler Perry"
+        },
+        {
+          "id": 5081,
+          "profile_path": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+          "name": "Emily Blunt"
+        }
+      ]
+    },
+    {
+      "type": "link_screen",
+      "subtitle": "The events that shaped the world",
+      "title": "Timeline of Events from 2020 to Today",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "7"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "The pandemic shuts down theaters, streaming consolidates, Hollywood grinds to a halt with strikes and world cinema rises to the top. Click here to see the main events in cinema from 2020 to today in chronological order."
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import com.tiagohs.cinema_history.databinding.AdapterEmptyBinding
 import com.tiagohs.cinema_history.databinding.AdapterTimelineFooterBinding
 import com.tiagohs.cinema_history.databinding.AdapterTimelineItemBinding
 import com.tiagohs.cinema_history.databinding.AdapterTimelineTitleBinding
+import com.bumptech.glide.RequestManager
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseAdapter
 import com.tiagohs.cinema_history.presentation.adapters.config.BaseViewHolder
@@ -21,7 +22,9 @@ class TimelineAdapter(
     val totalOfTimelines: Int,
     val color: String,
     val textColor: String,
-    val callback: TimelineCallbacks
+    val callback: TimelineCallbacks,
+    private val glide: RequestManager,
+    private val motionEnabled: Boolean
 ) : BaseAdapter<Timeline, BaseViewHolder<Timeline>>(list) {
 
     var onNextClicked: (() -> Unit)? = null
@@ -44,7 +47,7 @@ class TimelineAdapter(
                 callback,
                 AdapterTimelineTitleBinding.inflate(inflater, parent, false)
             )
-            TimelineType.ITEM.ordinal -> TimelineItemViewHolder(color, textColor, AdapterTimelineItemBinding.inflate(inflater, parent, false))
+            TimelineType.ITEM.ordinal -> TimelineItemViewHolder(color, textColor, AdapterTimelineItemBinding.inflate(inflater, parent, false), glide, motionEnabled)
             TimelineType.FOOTER.ordinal -> TimelineItemFooterHolder(
                 onNextClicked,
                 onPreviousClicked,
@@ -55,6 +58,10 @@ class TimelineAdapter(
             )
             else -> object : BaseViewHolder<Timeline>(AdapterEmptyBinding.inflate(inflater, parent, false)) {}
         }
+
+    override fun onViewRecycled(holder: BaseViewHolder<Timeline>) {
+        (holder as? TimelineItemViewHolder)?.onRecycled()
+    }
 
     override fun getItemId(position: Int): Long = list[position].hashCode().toLong()
 

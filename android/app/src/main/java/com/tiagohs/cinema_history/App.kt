@@ -6,8 +6,10 @@ import com.tiagohs.cinema_history.ads.AdsHistory
 import com.tiagohs.cinema_history.dagger.AppComponent
 import com.tiagohs.cinema_history.dagger.DaggerAppComponent
 import com.tiagohs.cinema_history.dagger.modules.AppModule
+import com.tiagohs.domain.managers.SettingsManager
 import com.tiagohs.helpers.utils.ContentLanguage
 import timber.log.Timber
+import com.tiagohs.helpers.utils.RemoteContent
 
 class App: Application() {
     var appComponent: AppComponent? = null
@@ -17,12 +19,19 @@ class App: Application() {
 
         appContext = applicationContext
 
+        // Tema (Claro / Escuro / Padrão do sistema) antes de qualquer Activity ser criada.
+        SettingsManager.applySavedThemeMode(this)
+
         configureDagger()
         configureTimber()
         configureContentLanguages()
+        configureRemoteContent()
 
         // Anúncios: o SDK só é inicializado depois do consentimento (HomeActivity -> AdsManager).
         AdsHistory.registerSession(this)
+
+        // Apoio (compra única): reconfirma no Google Play o apoio e o país ao abrir/voltar ao app.
+        com.tiagohs.cinema_history.support.Supporter.init(this)
     }
 
     @Suppress("DEPRECATION")
@@ -30,6 +39,12 @@ class App: Application() {
         appComponent = DaggerAppComponent.builder()
             .appModule(AppModule(this))
             .build()
+    }
+
+    /** Conteúdo atualizável pelo site (prêmios etc.): usa o cache já baixado e atualiza em segundo plano. */
+    private fun configureRemoteContent() {
+        RemoteContent.init(this)
+        Thread({ RemoteContent.sync(this) }, "remote-content").apply { isDaemon = true }.start()
     }
 
     private fun configureTimber() {

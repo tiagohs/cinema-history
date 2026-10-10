@@ -14,8 +14,8 @@ ext {
             interstitialChapter: 'ca-app-pub-5405332351907920/3203339213'
     ]
 
-    versionCode = 19
-    versionName = '2.4.0'
+    versionCode = 20
+    versionName = '2.5.0'
 
     buildToolsVersion = '36.0.0'
 
@@ -58,6 +58,8 @@ ext {
     def umpVersion = '3.2.0'
     def recyclerviewVersion = '1.4.0'
     def workVersion = '2.10.5'
+    def billingVersion = '8.0.0'
+    def media3Version = '1.6.1'
     def firebaseBomVersion = '34.4.0'
     def firebaseUiStorageVersion = '9.1.1'
 
@@ -104,6 +106,9 @@ ext {
             workRuntime                 : "androidx.work:work-runtime:${workVersion}",
             recyclerview                : "androidx.recyclerview:recyclerview:${recyclerviewVersion}",
             ump                         : "com.google.android.ump:user-messaging-platform:${umpVersion}",
+            billing                     : "com.android.billingclient:billing-ktx:${billingVersion}",
+            media3Exoplayer             : "androidx.media3:media3-exoplayer:${media3Version}",
+            media3Session               : "androidx.media3:media3-session:${media3Version}",
             firebaseAnalytics           : "com.google.firebase:firebase-analytics",
             firebaseUiStorage           : "com.firebaseui:firebase-ui-storage:${firebaseUiStorageVersion}",
             firebaseCrashlytics         : "com.google.firebase:firebase-crashlytics",

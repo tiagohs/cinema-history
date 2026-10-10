@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.activities
 
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.content.Context
 import android.view.LayoutInflater
 import com.tiagohs.cinema_history.databinding.ActivitySettingBinding
@@ -18,6 +19,8 @@ class SettingActivity: BaseActivity<ActivitySettingBinding>() {
         super.onCreate(savedInstanceState)
 
         setupToolbar(binding.toolbar, displayShowTitleEnabled = true)
+        // Tablets: preferências numa coluna centralizada, sem esticar os itens na tela toda.
+        binding.container.limitContentWidth(R.dimen.ls_form_max_width)
 
         startFragment(R.id.container, SettingPreferenceFragment())
     }

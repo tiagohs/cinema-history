@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Esquema de cores M3 do AppTheme (claro). A versão escura está em values-night/colors_theme.xml.
+    Os valores claros são os mesmos que o tema já usava (preto e branco + azul de destaque).
+-->
+<resources>
+    <color name="theme_primary">#FF000000</color>
+    <color name="theme_on_primary">#FFFFFFFF</color>
+    <color name="theme_primary_container">#FFEEEEEE</color>
+    <color name="theme_on_primary_container">#FF000000</color>
+    <color name="theme_primary_inverse">#FF90CAF9</color>
+
+    <color name="theme_secondary">#FF2196F3</color>
+    <color name="theme_on_secondary">#FFFFFFFF</color>
+    <color name="theme_secondary_container">#FFE3F2FD</color>
+    <color name="theme_on_secondary_container">#FF0D47A1</color>
+
+    <color name="theme_tertiary">@color/oscar</color>
+    <color name="theme_on_tertiary">#FF000000</color>
+    <color name="theme_tertiary_container">#FFFFF8E1</color>
+    <color name="theme_on_tertiary_container">#FF3E2723</color>
+
+    <color name="theme_error">#FFD32F2F</color>
+    <color name="theme_on_error">#FFFFFFFF</color>
+    <color name="theme_error_container">#FFFFEBEE</color>
+    <color name="theme_on_error_container">#FFB71C1C</color>
+
+    <color name="theme_background">@color/daynight_background</color>
+    <color name="theme_on_background">@color/daynight_text_primary</color>
+    <color name="theme_surface">@color/daynight_background</color>
+    <color name="theme_on_surface">@color/daynight_text_primary</color>
+    <color name="theme_surface_variant">#FFEEEEEE</color>
+    <color name="theme_on_surface_variant">@color/daynight_text_grey_700</color>
+    <color name="theme_surface_inverse">@color/home_surface_inverse</color>
+    <color name="theme_on_surface_inverse">#FFFFFFFF</color>
+    <color name="theme_surface_bright">#FFFFFFFF</color>
+    <color name="theme_surface_dim">#FFE0E0E0</color>
+    <color name="theme_outline">#FF9E9E9E</color>
+    <color name="theme_outline_variant">@color/daynight_divider</color>
+</resources>

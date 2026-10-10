@@ -1,0 +1,10 @@
+# Serve a narração do app (bucket R2 cinema-history-audio) em
+# https://cinema-history-audio.<conta>.workers.dev/<idioma>/main_<era>/page_<n>/{manifest.json,<faixa>.ogg}
+name = "cinema-history-audio"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+[[r2_buckets]]
+binding = "AUDIO"
+bucket_name = "cinema-history-audio"

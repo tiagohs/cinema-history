@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Narração em áudio: destaque do trecho lido e mini-player. Versão escura em values-night/colors_audio.xml. -->
+<resources>
+    <!-- Fundo suave do parágrafo sendo lido (contraste AA com daynight_text_primary). -->
+    <color name="audio_highlight">#FFE3F2FD</color>
+    <!-- Mini-player: escuro nos dois temas, como o rodapé preto da tela do capítulo. -->
+    <color name="audio_mini_player_background">#FF1F1F1F</color>
+    <color name="audio_mini_player_track">#40FFFFFF</color>
+    <color name="audio_mini_player_secondary">#B3FFFFFF</color>
+    <color name="audio_header_button_stroke">#99FFFFFF</color>
+    <color name="audio_header_button_ripple">#33FFFFFF</color>
+</resources>

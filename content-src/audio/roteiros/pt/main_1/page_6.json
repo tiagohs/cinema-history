@@ -1,0 +1,341 @@
+{
+ "lang": "pt",
+ "era": 1,
+ "page": 6,
+ "era_title": "Parte 01 - De 1895 a 1929",
+ "title": "A Comédia Muda",
+ "tracks": [
+  {
+   "id": "00",
+   "title": "Abertura",
+   "kind": "open",
+   "segments": [
+    {
+     "id": "00-01",
+     "speaker": "narrador",
+     "source_index": -1,
+     "original": "Parte 01: De 1895 a 1929. Capítulo 6: A Comédia Muda.",
+     "text": "Parte zero um: De mil oitocentos e noventa e cinco a mil novecentos e vinte e nove. Capítulo seis: A Comédia Muda.",
+     "chars": 114
+    },
+    {
+     "id": "00-02",
+     "speaker": "narrador",
+     "source_index": -1,
+     "original": "Um dos primeiros e mais populares gêneros do cinema, a comédia está desde o começo presente no cinema. Nomes como Charlie Chaplin, Harold Lloyd e Buster Keaton estão para sempre marcados na história, influenciando futuros comediantes nas grandes telas.",
+     "text": "Um dos primeiros e mais populares gêneros do cinema, a comédia está desde o começo presente no cinema. Nomes como Charlie Chaplin, Harold Lloyd e Buster [[pron: Keaton|Kíton]] estão para sempre marcados na história, influenciando futuros comediantes nas grandes telas.",
+     "chars": 252
+    }
+   ],
+   "chars": 366,
+   "est_minutes": 0.41
+  },
+  {
+   "id": "01",
+   "title": "Louis Lumière",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "01-01",
+     "speaker": "narrador",
+     "source_index": 0,
+     "original": "Desde os primórdios da sétima arte, uma série de filmes - como O jardineiro regado (1895), dirigido por Louis Lumière (1864-1948), em que um jardineiro tem uma sucessão de contratempos com sua mangueira de jardim - brincava com gags visuais de uma cena só.",
+     "text": "Desde os primórdios da sétima arte, uma série de filmes - como O jardineiro regado, de mil oitocentos e noventa e cinco, dirigido por Louis [[pron: Lumière|Lumiér]] (mil oitocentos e sessenta e quatro a mil novecentos e quarenta e oito), em que um jardineiro tem uma sucessão de contratempos com sua mangueira de jardim - brincava com gags visuais de uma cena só.",
+     "chars": 346
+    },
+    {
+     "id": "01-02",
+     "speaker": "citacao",
+     "source_index": 1,
+     "original": "Por trás de tudo isso – das roupas engraçadas, do bigode e dos pés grandes – eu gostaria de produzir algo que mexesse com as pessoas.",
+     "text": "Por trás de tudo isso, das roupas engraçadas, do bigode e dos pés grandes, eu gostaria de produzir algo que mexesse com as pessoas.",
+     "chars": 131
+    },
+    {
+     "id": "01-03",
+     "speaker": "narrador",
+     "source_index": 1,
+     "original": "disse Charlie Chaplin.",
+     "text": "disse Charlie Chaplin.",
+     "chars": 22
+    },
+    {
+     "id": "01-04",
+     "speaker": "narrador",
+     "source_index": 2,
+     "original": "Essas primeiras experiências foram um grande sucesso, porém, diversos atores muito populares durante a era do cinema mudo hoje se encontram esquecidos ou ofuscados tanto por Charlie Chaplin (1889-1977) quanto por Buster Keaton (1895-1966). A performance intrépida de Harold Lloyd (1893-1971) em O homem-mosca (1923) e a de Raymond Griffith (1895-1957) em Golpes de audácia (1926) são exemplos típicos de números cómicos criativos, e também servem para nos lembrar de como ícones culturais podem desaparecer da memória do público.",
+     "text": "Essas primeiras experiências foram um grande sucesso, porém, diversos atores muito populares durante a era do cinema mudo hoje se encontram esquecidos ou ofuscados tanto por Charlie Chaplin (mil oitocentos e oitenta e nove a mil novecentos e setenta e sete) quanto por Buster [[pron: Keaton|Kíton]] (mil oitocentos e noventa e cinco a mil novecentos e sessenta e seis). A performance intrépida de Harold Lloyd (mil oitocentos e noventa e três a mil novecentos e setenta e um) em O homem-mosca, de mil novecentos e vinte e três, e a de Raymond [[pron: Griffith|Grífit]] (mil oitocentos e noventa e cinco a mil novecentos e cinquenta e sete) em Golpes de audácia, de mil novecentos e vinte e seis, são exemplos típicos de números cómicos criativos, e também servem para nos lembrar de como ícones culturais podem desaparecer da memória do público.",
+     "chars": 812
+    }
+   ],
+   "chars": 1311,
+   "est_minutes": 1.46
+  },
+  {
+   "id": "02",
+   "title": "Keystone",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "02-01",
+     "speaker": "narrador",
+     "source_index": 4,
+     "original": "Durante a era do cinema mudo, foi na Europa que a comédia começou a desenvolver a lógica e a forma que assumiria nos anos 1920, com atores cômicos como André Deed (1879-1940) e, em especial, o incrivelmente popular Max Linder (1883-1925) fazendo as primeiras incursões no género.",
+     "text": "Durante a era do cinema mudo, foi na Europa que a comédia começou a desenvolver a lógica e a forma que assumiria nos anos mil novecentos e vinte, com atores cômicos como André Deed (mil oitocentos e setenta e nove a mil novecentos e quarenta) e, em especial, o incrivelmente popular Max Linder (mil oitocentos e oitenta e três a mil novecentos e vinte e cinco) fazendo as primeiras incursões no género.",
+     "chars": 402
+    },
+    {
+     "id": "02-02",
+     "speaker": "narrador",
+     "source_index": 5,
+     "original": "No entanto, foram os estúdios Keystone de Mack Serinett que desenvolveram as características que definiriam a comédia muda e começaram a produzir filmes desse tipo em escala industrial. A série Keystone kops se mostrou uma das favoritas das plateias após a fundação dos estúdios em 1912.",
+     "text": "No entanto, foram os estúdios Keystone de Mack Serinett que desenvolveram as características que definiriam a comédia muda e começaram a produzir filmes desse tipo em escala industrial. A série Keystone kops se mostrou uma das favoritas das plateias após a fundação dos estúdios em mil novecentos e doze.",
+     "chars": 304
+    }
+   ],
+   "chars": 706,
+   "est_minutes": 0.78
+  },
+  {
+   "id": "03",
+   "title": "Saiba mais: Um clássico nada barato",
+   "kind": "more",
+   "segments": [
+    {
+     "id": "03-01",
+     "speaker": "narrador",
+     "source_index": 6,
+     "original": "Saiba mais: Um clássico nada barato.",
+     "text": "Saiba mais: Um clássico nada barato.",
+     "chars": 36
+    },
+    {
+     "id": "03-02",
+     "speaker": "narrador",
+     "source_index": 6,
+     "original": "Keaton fez vários filmes que podem ser incluídos entre os melhores (e mais engraçados) de toda a produção crônica do cinema, porém nenhum deles é mais forte candidato ao primeiro lugar do que a obra prima atemporal A General (1927). Isso não se dá apenas pelo fluxo constante de ótimas gags, tampouco pela maneira como elas derivam totalmente das situações e do personagem, em vez de existirem isoladas da trama do filme. O que torna esse filme tão extraordinário é o fato de ele ser superlativo em todos os aspectos: humor, suspense, reconstituição histórica, estudo de personagens, beleza visual e precisão técnica.",
+     "text": "[[pron: Keaton|Kíton]] fez vários filmes que podem ser incluídos entre os melhores (e mais engraçados) de toda a produção crônica do cinema, porém nenhum deles é mais forte candidato ao primeiro lugar do que a obra prima atemporal A General, de mil novecentos e vinte e sete. Isso não se dá apenas pelo fluxo constante de ótimas gags, tampouco pela maneira como elas derivam totalmente das situações e do personagem, em vez de existirem isoladas da trama do filme. O que torna esse filme tão extraordinário é o fato de ele ser superlativo em todos os aspectos: humor, suspense, reconstituição histórica, estudo de personagens, beleza visual e precisão técnica.",
+     "chars": 644
+    },
+    {
+     "id": "03-03",
+     "speaker": "narrador",
+     "source_index": 6,
+     "original": "Boa parte desse prazer vem da própria narrativa, inspirada em um livro sobre as proezas reais de um grupo de soldados do Norte que, durante a Guerra Civil, se disfarçaram de sulistas para roubar um trem, que conduziram ao Norte para se reunirem aos seus camaradas unionistas até serem capturados e executados. Já que estava fazendo uma comédia, Keaton deixou de fora as execuções e mudou a perspectiva heroica para a de um sulista, Johnny Gray, um maquinista que, de forma estoica, se não absurda, decide perseguir sozinho os espiões unionistas quando eles roubam sua locomotiva - \"A General\" - e, dentro dela, Annabelle Lee (Marion Mack), o outro amor de sua vida.",
+     "text": "Boa parte desse prazer vem da própria narrativa, inspirada em um livro sobre as proezas reais de um grupo de soldados do Norte que, durante a Guerra Civil, se disfarçaram de sulistas para roubar um trem, que conduziram ao Norte para se reunirem aos seus camaradas unionistas até serem capturados e executados. Já que estava fazendo uma comédia, [[pron: Keaton|Kíton]] deixou de fora as execuções e mudou a perspectiva heroica para a de um sulista, Johnny Gray, um maquinista que, de forma estoica, se não absurda, decide perseguir sozinho os espiões unionistas quando eles roubam sua locomotiva - \"A General\" - e, dentro dela, Annabelle Lee (Marion Mack), o outro amor de sua vida.",
+     "chars": 665
+    },
+    {
+     "id": "03-04",
+     "speaker": "narrador",
+     "source_index": 6,
+     "original": "O filme foi um fracasso de bilheteria na época do lançamento, com as plateias mais interessadas em A carne e o diabo (1926), protagonizado por Greta Garbo (1905-1990).",
+     "text": "O filme foi um fracasso de bilheteria na época do lançamento, com as plateias mais interessadas em A carne e o diabo, de mil novecentos e vinte e seis, protagonizado por Greta Garbo (mil novecentos e cinco a mil novecentos e noventa).",
+     "chars": 234
+    },
+    {
+     "id": "03-05",
+     "speaker": "narrador",
+     "source_index": 6,
+     "original": "Ele também não impressionou os críticos, que não viram muita graça nas estripulias do maquinista. Keaton ficou arrasado com essa recepção, pois acreditava que o filme era sua obra-prima. Hoje, no entanto, A general figura em diversas listas de \"melhores filmes\" e, em 1989, foi selecionado pela Livraria do Congresso para a primeira leva de filmes americanos a serem preservados no Registro Nacional de Filmes dos Estados Unidos.",
+     "text": "Ele também não impressionou os críticos, que não viram muita graça nas estripulias do maquinista. [[pron: Keaton|Kíton]] ficou arrasado com essa recepção, pois acreditava que o filme era sua obra-prima. Hoje, no entanto, A general figura em diversas listas de \"melhores filmes\" e, em mil novecentos e oitenta e nove, foi selecionado pela Livraria do Congresso para a primeira leva de filmes americanos a serem preservados no Registro Nacional de Filmes dos Estados Unidos.",
+     "chars": 456
+    }
+   ],
+   "chars": 2035,
+   "est_minutes": 2.26
+  },
+  {
+   "id": "04",
+   "title": "Parte 3",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "04-01",
+     "speaker": "narrador",
+     "source_index": 7,
+     "original": "Chaplin, por sua vez, foi além do simples estilo pastelão dos estúdios Keystone e se tornou o maior astro de comédia da época, chegando a receber, em 1915, um salário semanal de 1.250 dólares (hoje, isso seria o equivalente a mais de 16.000,00 dólares). O controle que sua fama lhe permitiu exercer sobre o próprio material foi essencial para o sucesso de Chaplin. Dessa forma, ele foi se afastando cada vez mais das produções descuidadas e das comédias escrachadas da produtora (uma abordagem que nunca o agradara) e refinou seu álter ego cômico, um vagabundo maltrapilho, mas de bom coração, com seu chapéu-coco, a bengala e roupas folgadas.",
+     "text": "Chaplin, por sua vez, foi além do simples estilo pastelão dos estúdios Keystone e se tornou o maior astro de comédia da época, chegando a receber, em mil novecentos e quinze, um salário semanal de mil duzentos e cinquenta dólares (hoje, isso seria o equivalente a mais de dezesseis mil vírgula zero zero dólares). O controle que sua fama lhe permitiu exercer sobre o próprio material foi essencial para o sucesso de Chaplin. Dessa forma, ele foi se afastando cada vez mais das produções descuidadas e das comédias escrachadas da produtora (uma abordagem que nunca o agradara) e refinou seu álter ego cômico, um vagabundo maltrapilho, mas de bom coração, com seu chapéu-coco, a bengala e roupas folgadas.",
+     "chars": 703
+    },
+    {
+     "id": "04-02",
+     "speaker": "narrador",
+     "source_index": 8,
+     "original": "Dirigido por ele mesmo, Em busca do ouro (1925) foi uma das maiores bilheterias da era do cinema mudo e, como muitos de seus filmes, entre eles O garoto (1921), explorava temas que lhe eram caros - especialmente os efeitos da pobreza, algo que remete as próprias origens humildes do diretor.",
+     "text": "Dirigido por ele mesmo, Em busca do ouro, de mil novecentos e vinte e cinco, foi uma das maiores bilheterias da era do cinema mudo e, como muitos de seus filmes, entre eles O garoto, de mil novecentos e vinte e um, explorava temas que lhe eram caros - especialmente os efeitos da pobreza, algo que remete as próprias origens humildes do diretor.",
+     "chars": 345
+    },
+    {
+     "id": "04-03",
+     "speaker": "narrador",
+     "source_index": 10,
+     "original": "Keaton, ex-acrobata e ator mirim de vaudeville, diferia de Chaplin no sentido de que sua graça costumava vir do contraste entre seu rosto eternamente inexpressivo e as incríveis façanhas atléticas que seus personagens precisavam fazer para escapar do perigo. Com sua execução cuidadosa e desenvolta de sequências cada vez mais complexas, tão perigosas quanto espetaculares, Keaton aproximava a comédia física da poesia.",
+     "text": "[[pron: Keaton|Kíton]], ex-acrobata e ator mirim de vaudeville, diferia de Chaplin no sentido de que sua graça costumava vir do contraste entre seu rosto eternamente inexpressivo e as incríveis façanhas atléticas que seus personagens precisavam fazer para escapar do perigo. Com sua execução cuidadosa e desenvolta de sequências cada vez mais complexas, tão perigosas quanto espetaculares, [[pron: Keaton|Kíton]] aproximava a comédia física da poesia.",
+     "chars": 419
+    }
+   ],
+   "chars": 1467,
+   "est_minutes": 1.63
+  },
+  {
+   "id": "05",
+   "title": "O Gordo e o Magro",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "05-01",
+     "speaker": "narrador",
+     "source_index": 12,
+     "original": "A chegada do som alterou de forma radical a carreira de muitos atores da comédia muda. Chaplin resistiu aos filmes com diálogos até 1940, com O grande ditador (1940), preferindo usar efeitos sonoros em filmes como Tempos modernos (1936).",
+     "text": "A chegada do som alterou de forma radical a carreira de muitos atores da comédia muda. Chaplin resistiu aos filmes com diálogos até mil novecentos e quarenta, com O grande ditador, de mil novecentos e quarenta, preferindo usar efeitos sonoros em filmes como Tempos modernos, de mil novecentos e trinta e seis.",
+     "chars": 309
+    },
+    {
+     "id": "05-02",
+     "speaker": "narrador",
+     "source_index": 13,
+     "original": "Keaton teve dificuldades para se adaptar à comédia falada e atores como Harold Lloyd e Harry Langdon (1884-1944) perderam muito de sua verve e de seu encanto cômico. Laurel e Hardy, a dupla de O Gordo e o Magro, por terem começado a trabalhar no fim da era do cinema mudo puderam se adaptar à mudança e deram início à próxima geração de gênios cômicos.",
+     "text": "[[pron: Keaton|Kíton]] teve dificuldades para se adaptar à comédia falada e atores como Harold Lloyd e Harry Langdon (mil oitocentos e oitenta e quatro a mil novecentos e quarenta e quatro) perderam muito de sua verve e de seu encanto cômico. Laurel e Hardy, a dupla de O Gordo e o Magro, por terem começado a trabalhar no fim da era do cinema mudo puderam se adaptar à mudança e deram início à próxima geração de gênios cômicos.",
+     "chars": 413
+    },
+    {
+     "id": "05-03",
+     "speaker": "narrador",
+     "source_index": 16,
+     "original": "Em busca do ouro vem fortalecer a crença de Charles Chaplin de que tragédia e comédia nunca estão muito distantes uma da outra. Essa improvável inspiração dupla lhe veio depois de ver alguns slides sobre as privações sofridas pelos garimpeiros na corrida do ouro no Klondike, entre 1896-1898, e ler um livro sobre a tragédia da expedição de Donner, de 1846, em que um grupo de imigrantes preso pela neve na Sierra Nevada é obrigado a comer seus próprios sapatos e os cadáveres dos companheiros mortos.",
+     "text": "Em busca do ouro vem fortalecer a crença de Charles Chaplin de que tragédia e comédia nunca estão muito distantes uma da outra. Essa improvável inspiração dupla lhe veio depois de ver alguns slides sobre as privações sofridas pelos garimpeiros na corrida do ouro no Klondike, entre mil oitocentos e noventa e seis a mil oitocentos e noventa e oito, e ler um livro sobre a tragédia da expedição de Donner, de mil oitocentos e quarenta e seis, em que um grupo de imigrantes preso pela neve na Sierra Nevada é obrigado a comer seus próprios sapatos e os cadáveres dos companheiros mortos.",
+     "chars": 585
+    }
+   ],
+   "chars": 1307,
+   "est_minutes": 1.45
+  },
+  {
+   "id": "06",
+   "title": "Parte 5",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "06-01",
+     "speaker": "narrador",
+     "source_index": 18,
+     "original": "A partir desse tema sinistro e árido, Chaplin criou alta comédia. O conhecido vagabundo se torna um garimpeiro, juntando-se à massa de homens corajosos e otimistas para enfrentar os perigos do frio, da fome, da solidão e dos ursos que, vez por outra, podiam aparecer.",
+     "text": "A partir desse tema sinistro e árido, Chaplin criou alta comédia. O conhecido vagabundo se torna um garimpeiro, juntando-se à massa de homens corajosos e otimistas para enfrentar os perigos do frio, da fome, da solidão e dos ursos que, vez por outra, podiam aparecer.",
+     "chars": 267
+    },
+    {
+     "id": "06-02",
+     "speaker": "narrador",
+     "source_index": 19,
+     "original": "O filme foi, em todos os aspectos, o projeto mais elaborado da carreira de Chaplin. A equipe passou semanas filmando em locação nas geleiras de Truckee, na região castigada pela neve de Sierra Nevada. Lá, Chaplin recriou a imagem histórica dos garimpeiros lutando para atravessar a passagem de Chilkoot. Cerca de 600 figurantes, muitos deles andarilhos e vagabundos de Sacramento, foram levados de trem para escalar a passagem de 700m através da neve da montanha.",
+     "text": "O filme foi, em todos os aspectos, o projeto mais elaborado da carreira de Chaplin. A equipe passou semanas filmando em locação nas geleiras de Truckee, na região castigada pela neve de Sierra Nevada. Lá, Chaplin recriou a imagem histórica dos garimpeiros lutando para atravessar a passagem de Chilkoot. Cerca de seiscentos figurantes, muitos deles andarilhos e vagabundos de Sacramento, foram levados de trem para escalar a passagem de 700m através da neve da montanha.",
+     "chars": 470
+    },
+    {
+     "id": "06-03",
+     "speaker": "narrador",
+     "source_index": 21,
+     "original": "Para a tomada principal, a equipe voltou para o estúdio em Hollywood, onde uma cordilheira em miniatura muito convincente foi feita com madeira, tela de arame, estopa, argamassa, sal e farinha. Além disso, os técnicos do estúdio criaram maquetes primorosas para produzir os efeitos especiais exigidos por Chaplin, como a cabana dos garimpeiros, que é levada por uma tempestade até a beira de um precipício, em uma das mais longas sequencias de suspense cômico do cinema.",
+     "text": "Para a tomada principal, a equipe voltou para o estúdio em Hollywood, onde uma cordilheira em miniatura muito convincente foi feita com madeira, tela de arame, estopa, argamassa, sal e farinha. Além disso, os técnicos do estúdio criaram maquetes primorosas para produzir os efeitos especiais exigidos por Chaplin, como a cabana dos garimpeiros, que é levada por uma tempestade até a beira de um precipício, em uma das mais longas sequencias de suspense cômico do cinema.",
+     "chars": 470
+    }
+   ],
+   "chars": 1207,
+   "est_minutes": 1.34
+  },
+  {
+   "id": "07",
+   "title": "Saiba mais: Segundo Take",
+   "kind": "more",
+   "segments": [
+    {
+     "id": "07-01",
+     "speaker": "narrador",
+     "source_index": 22,
+     "original": "Saiba mais: Segundo Take.",
+     "text": "Saiba mais: Segundo Take.",
+     "chars": 25
+    },
+    {
+     "id": "07-02",
+     "speaker": "narrador",
+     "source_index": 22,
+     "original": "Para os puristas do cinema mudo, a decisão de Chaplin de relançar Em busca do ouro em uma versão sonora reduzida (com direito a mudanças na trama) em 1942 foi um sacrilégio. A narração ficou por conta do próprio diretor-ator.",
+     "text": "Para os puristas do cinema mudo, a decisão de Chaplin de relançar Em busca do ouro em uma versão sonora reduzida (com direito a mudanças na trama) em mil novecentos e quarenta e dois foi um sacrilégio. A narração ficou por conta do próprio diretor-ator.",
+     "chars": 253
+    },
+    {
+     "id": "07-03",
+     "speaker": "narrador",
+     "source_index": 22,
+     "original": "As plateias devem ter ficado surpresas com seu tom de voz melódico e empostado, e a narração empresta um curioso distanciamento à história. Chaplin narra as aventuras de seu próprio personagem em terceira pessoa, criando a impressão de que está observando de uma posição elevada os personagens que criara quase 20 anos antes.",
+     "text": "As plateias devem ter ficado surpresas com seu tom de voz melódico e empostado, e a narração empresta um curioso distanciamento à história. Chaplin narra as aventuras de seu próprio personagem em terceira pessoa, criando a impressão de que está observando de uma posição elevada os personagens que criara quase vinte anos antes.",
+     "chars": 328
+    },
+    {
+     "id": "07-04",
+     "speaker": "narrador",
+     "source_index": 22,
+     "original": "Em 1929, o diretor havia afirmado que os filmes falados estavam \"acabando com a arte mais antiga do mundo - a arte da pantomima. Eles estão arruinando a grande beleza do silêncio\". No entanto, a versão sonora de Em busca do ouro fez grande sucesso com o público na década de 1940, que não havia conhecido Chaplin em seu auge na era do cinema mudo.",
+     "text": "Em mil novecentos e vinte e nove, o diretor havia afirmado que os filmes falados estavam \"acabando com a arte mais antiga do mundo - a arte da pantomima. Eles estão arruinando a grande beleza do silêncio\". No entanto, a versão sonora de Em busca do ouro fez grande sucesso com o público na década de mil novecentos e quarenta, que não havia conhecido Chaplin em seu auge na era do cinema mudo.",
+     "chars": 393
+    }
+   ],
+   "chars": 999,
+   "est_minutes": 1.11
+  },
+  {
+   "id": "08",
+   "title": "A dança dos pãezinhos",
+   "kind": "body",
+   "segments": [
+    {
+     "id": "08-01",
+     "speaker": "narrador",
+     "source_index": 23,
+     "original": "O filme é repleto de cenas cômicas que se tornaram clássicas. O horror histórico da fome dos pioneiros do século XIX inspirou a sequência em que Carlitos e seu parceiro Big Jim (Mack Swain) ficam presos na neve e famintos. Aos olhos do delirante Big Jim, o amigo se transforma intermitentemente em um frango assado - um triunfo tanto do cinegrafista, que teve que fazer o complexo truque funcionar apenas com a câmera, quanto de Chaplin, que assume, como num passe de mágica, as características de um pássaro.",
+     "text": "O filme é repleto de cenas cômicas que se tornaram clássicas. O horror histórico da fome dos pioneiros do século dezenove inspirou a sequência em que Carlitos e seu parceiro Big Jim (Mack Swain) ficam presos na neve e famintos. Aos olhos do delirante Big Jim, o amigo se transforma intermitentemente em um frango assado - um triunfo tanto do cinegrafista, que teve que fazer o complexo truque funcionar apenas com a câmera, quanto de Chaplin, que assume, como num passe de mágica, as características de um pássaro.",
+     "chars": 514
+    },
+    {
+     "id": "08-02",
+     "speaker": "narrador",
+     "source_index": 24,
+     "original": "O sonho do garimpeiro solitário de oferecer um jantar de Ano-Novo para a bela garota do salão de dança (Georgia Hale (1905-1985), que substituiu Lita Grey (1908-1995), de 16 anos, quando esta ficou grávida e se casou com Chaplin) dá a oportunidade para outro famoso número de Chaplin: a dança dos pãezinhos. A brincadeira não era inédita no cinema, porém Chaplin confere uma personalidade única às pernas dançantes feitas de garfos e pães.",
+     "text": "O sonho do garimpeiro solitário de oferecer um jantar de Ano-Novo para a bela garota do salão de dança (Georgia Hale (mil novecentos e cinco a mil novecentos e oitenta e cinco), que substituiu Lita Grey (mil novecentos e oito a mil novecentos e noventa e cinco), de dezesseis anos, quando esta ficou grávida e se casou com Chaplin) dá a oportunidade para outro famoso número de Chaplin: a dança dos pãezinhos. A brincadeira não era inédita no cinema, porém Chaplin confere uma personalidade única às pernas dançantes feitas de garfos e pães.",
+     "chars": 541
+    },
+    {
+     "id": "08-03",
+     "speaker": "narrador",
+     "source_index": 25,
+     "original": "Em busca do ouro é considerado uma das mais perfeitas realizações de Chaplin. Embora seu gosto pelo próprio trabalho tenha mudado com o tempo, no fim da vida ele declararia diversas vezes que este era o filme pelo qual gostaria de ser lembrado.",
+     "text": "Em busca do ouro é considerado uma das mais perfeitas realizações de Chaplin. Embora seu gosto pelo próprio trabalho tenha mudado com o tempo, no fim da vida ele declararia diversas vezes que este era o filme pelo qual gostaria de ser lembrado.",
+     "chars": 244
+    }
+   ],
+   "chars": 1299,
+   "est_minutes": 1.44
+  },
+  {
+   "id": "09",
+   "title": "Vale a conferida",
+   "kind": "watch",
+   "segments": [
+    {
+     "id": "09-01",
+     "speaker": "narrador",
+     "source_index": 26,
+     "original": "Vale a conferida: os filmes deste capítulo são The Gold Rush, The General, Safety Last!, Hands Up!, The Kid e Steamboat Bill, Jr..",
+     "text": "Vale a conferida: os filmes deste capítulo são The Gold Rush, The General, Safety Last!, Hands Up!, The Kid e Steamboat Bill, Jr..",
+     "chars": 130
+    }
+   ],
+   "chars": 130,
+   "est_minutes": 0.14
+  }
+ ],
+ "chars": 10827,
+ "est_minutes": 12.03
+}

@@ -7,7 +7,10 @@ Além do texto, alguns dados do conteúdo em pt são específicos do Brasil:
     no país de referência (en -> EUA, es -> México). Quando o pt já tem um link direto
     adaptável (iTunes, Google Play, Netflix, YouTube...), ele é ajustado para o país;
     caso contrário o item aponta para a página "onde assistir" do TMDB naquele país.
-  * Críticas (review_results): só as críticas em inglês são mantidas fora do pt.
+  * Críticas (review_results): agrupadas pelo idioma em que foram escritas (pt, en, es) e mantidas
+    em todos os idiomas do app (o app mostra primeiro as do idioma atual).
+  * "YouTube (grátis)" (watchOn -> youtube_free): filme completo em domínio público ou em canal
+    oficial; vale para qualquer país e é mantido no topo da lista.
   * Links para páginas em português (livros na Amazon BR, artigos do glossário, manifesto...):
     substituídos pelo equivalente do idioma conforme regional/<idioma>.json.
 
@@ -25,10 +28,10 @@ import urllib.request
 
 import i18n_lib as L
 
-REGION = {"en": "US", "es": "MX"}
-UI_LANG = {"en": "en", "es": "es-419"}
+REGION = {"en": "US", "es": "MX", "pt": "BR"}
+UI_LANG = {"en": "en", "es": "es-419", "pt": "pt-BR"}
 WATCH_CACHE = os.path.join(L.HERE, "tmdb", "watch.json")
-REVIEW_LANGUAGES = {"en": {"en-US"}, "es": {"en-US"}}
+FREE_EVERYWHERE = ("youtube_free",)  # links válidos em qualquer país (filme completo gratuito)
 
 # Nome do provedor no TMDB -> NetworkType do app (entities/enums/NetworkType.kt)
 PROVIDER_TYPES = {
@@ -47,6 +50,17 @@ PROVIDER_TYPES = {
     "The Criterion Channel": "criterionchannel",
     "Claro video": "claro_video",
     "Dailymotion": "dailymotion",
+    # Brasil
+    "Globoplay": "globo_play",
+    "Claro tv+": "claro_video",
+    "Looke": "looke",
+    "Looke Amazon Channel": "looke",
+    "Telecine": "telecine",
+    "Telecine Amazon Channel": "telecine",
+    "Vivo Play": "vivo_play",
+    "NOW": "now",
+    "UOL Play": "uol_play",
+    "Max Amazon Channel": "hbo_max",
     "Fandor": "fandor",
     # variantes com anúncios / canais
     "Netflix basic with Ads": "netflix",
@@ -174,9 +188,10 @@ def _adapt_link(network: str, link: str, region: str, lang: str) -> str | None:
 
 def regional_watch_on(movie_id: int, pt_watch_on: list, lang: str, cache: dict) -> list:
     region = REGION[lang]
+    free = [dict(w) for w in pt_watch_on or [] if w.get("type") in FREE_EVERYWHERE]
     info = (cache.get(str(movie_id)) or {}).get(region)
     if not info:
-        return []
+        return free
     existing = {}
     for w in pt_watch_on or []:
         existing.setdefault(w.get("type"), w.get("link") or "")
@@ -189,7 +204,7 @@ def regional_watch_on(movie_id: int, pt_watch_on: list, lang: str, cache: dict) 
     # Serviços que o app não exibe individualmente: um item "Mais opções" com a página do país
     if info.get("other") and info.get("link"):
         result.append({"type": MORE_OPTIONS, "link": info["link"]})
-    return result
+    return free + result
 
 
 # --------------------------------------------------------------------------------------
@@ -202,13 +217,10 @@ def regionalize(doc, rel: str, lang: str, links: dict, watch_cache: dict):
         return doc
     _apply_links(doc, links)
     if rel == os.path.join("specials", "movies.json"):
-        allowed_reviews = REVIEW_LANGUAGES.get(lang, set())
         for group in doc:
             for movie in group.get("movies", []):
                 if "watchOn" in movie:
                     movie["watchOn"] = regional_watch_on(movie["id"], movie["watchOn"], lang, watch_cache)
-                if "review_results" in movie:
-                    movie["review_results"] = [r for r in movie["review_results"] if r.get("language") in allowed_reviews]
     return doc
 
 

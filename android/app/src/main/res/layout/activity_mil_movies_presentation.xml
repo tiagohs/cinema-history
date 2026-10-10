@@ -84,6 +84,7 @@
                     />
 
                 <ProgressBar
+                    android:indeterminateTint="?attr/colorSecondary"
                     android:layout_width="0dp"
                     android:layout_height="45dp"
                     android:id="@+id/loadingProgress"
@@ -155,7 +156,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.appcompat.widget.Toolbar
+            <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"

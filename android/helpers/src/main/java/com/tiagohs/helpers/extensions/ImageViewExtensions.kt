@@ -17,7 +17,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
-import com.google.firebase.storage.FirebaseStorage
+import com.tiagohs.helpers.utils.MediaUrls
 import com.stfalcon.imageviewer.StfalconImageViewer
 import com.tiagohs.entities.image.Image
 import com.tiagohs.entities.image.ImageStyle
@@ -111,11 +111,8 @@ fun ImageView.loadImage(
             glide.load(img)
         }
         ImageType.ONLINE_FIREBASE -> {
-            val storage = FirebaseStorage.getInstance()
-            val storageRef = storage.getReferenceFromUrl("gs://cinema-history.appspot.com")
-            val imageRef = storageRef.child(image.url)
-
-            glide.load(imageRef)
+            // Antigo Firebase Storage: as mesmas imagens agora ficam no Cloudflare Pages (MediaUrls).
+            glide.load(MediaUrls.media(image.url))
         } else -> {
             glide.load(image.url)
         }

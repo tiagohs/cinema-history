@@ -19,8 +19,36 @@
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory
+        app:key="appearance_category"
+        app:title="@string/appearance_title">
+
+        <!-- Claro / Escuro / Padrão do sistema. Salvo e aplicado pelo SettingsManager
+             (SettingPreferenceFragment), não pelo PreferenceManager. -->
+        <androidx.preference.ListPreference
+            app:key="app_theme"
+            app:title="@string/theme_title"
+            app:summary="%s"
+            app:icon="@drawable/ic_theme_grey_24dp"
+            app:entries="@array/theme_mode_entries"
+            app:entryValues="@array/theme_mode_values"
+            app:defaultValue="system"
+            app:persistent="false"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
         app:key="help_category"
         app:title="@string/general_title">
+
+        <!-- Apoie o app (compra única): visível só com a oferta (Brasil + pt) ou para quem já apoia.
+             Configurado em SettingPreferenceFragment. -->
+        <androidx.preference.Preference
+            app:key="support"
+            app:title="@string/support_menu"
+            app:summary="@string/support_settings_summary"
+            app:icon="@drawable/ic_support_heart_24"
+            app:isPreferenceVisible="false"
+            app:selectable="true" />
 
         <androidx.preference.Preference
             app:key="references"

@@ -28,6 +28,7 @@
             />
 
             <ProgressBar
+                android:indeterminateTint="?attr/colorSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:id="@+id/loadingProgress"

@@ -24,7 +24,8 @@ class SlideViewHolder(
         contentSlide.height?.let {
             binding.imageList.layoutParams = FrameLayout.LayoutParams(
                 FrameLayout.LayoutParams.MATCH_PARENT,
-                it.convertIntToDp(context)
+                // tablets: altura proporcional à coluna de mídia mais larga (1.0 no celular)
+                com.tiagohs.cinema_history.presentation.configs.LargeScreen.scaledHeightPx(context, it)
             )
         }
 

@@ -15,8 +15,8 @@
         "image_type": "local",
         "url": "pathe_logo",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://img.youtube.com/vi/J9jBA-tZ7tU/0.jpg",
+          "image_type": "local",
+          "url": "img_gif_thumb_pathe_logo",
           "style": {
             "scale_type": "center_crop"
           }
@@ -46,7 +46,7 @@
     },
     {
       "type": "text",
-      "content_text": "Pero una fecha quedó en la historia: el <strong>25 de diciembre de 1895</strong>, ampliamente considerada por los historiadores como la fecha de nacimiento del cine. Ese día exhibieron un programa corto con sus películas documentales ante un público que pagó su entrada; entre ellas, la hoy famosa <a href=\"https://_{type: 'screen', 'id': 160, 'screen_type': 'movie'}\">L'arrivée d'un train en gare de La Ciotat</a> (Llegada de un tren a la estación de la Ciotat, 1895)."
+      "content_text": "Pero una fecha quedó en la historia: el <strong>28 de diciembre de 1895</strong>, ampliamente considerada por los historiadores como la fecha de nacimiento del cine. Esa noche, en el Grand Café de París, exhibieron un programa corto de sus películas documentales ante un público que pagó entrada; poco después llegaría la hoy famosa <a href=\"https://_{type: 'screen', 'id': 160, 'screen_type': 'movie'}\">L'Arrivée d'un train en gare de La Ciotat</a> (La llegada de un tren a la estación de La Ciotat, 1896)."
     },
     {
       "type": "text",
@@ -54,11 +54,11 @@
     },
     {
       "type": "video",
-      "video_id": "ymjlHsPmesk",
+      "video_id": "1FAj9fJQRZA",
       "information": {
         "contentTitle": "Llegada de un tren a la estación de La Ciotat ",
         "contentText": "Una de las primeras películas de la historia en exhibirse ante un público que pagaba entrada. La cámara se colocó cerca de las vías, de modo que el tren crecía a medida que se acercaba, hasta parecer que atravesaría la pantalla e invadiría la sala. Cuenta la leyenda que la gente se agachaba, gritaba o se levantaba para salir.",
-        "source": "Youtube: Canal <i>maccafan21 [Ciné'Culte]</i>"
+        "source": "Youtube: Canal <i>Andy Myers</i>"
       }
     },
     {
@@ -87,11 +87,11 @@
     },
     {
       "type": "video",
-      "video_id": "a6f80XxlCZk",
+      "video_id": "ZNAHcMMOHE8",
       "information": {
         "contentTitle": "Viaje a la Luna / A Trip to the Moon (1902)",
         "contentText": "Esta fue una de las primeras películas de ciencia ficción de las que se tiene registro. Una parte cerca del final fue animada, lo que la convierte también en una de las primeras películas animadas.",
-        "source": "Youtube: Canal <i>maccafan21 [Ciné'Culte]</i>"
+        "source": "Youtube: Canal <i>Billi Brass Quintet</i>"
       }
     },
     {

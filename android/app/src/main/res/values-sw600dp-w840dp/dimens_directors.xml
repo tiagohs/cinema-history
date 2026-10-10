@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tablets (expanded): 4 colunas. Valores padrão em values/dimens_directors.xml. -->
+<resources>
+    <integer name="directors_grid_columns">4</integer>
+    <dimen name="directors_screen_padding">28dp</dimen>
+    <dimen name="directors_trending_item_width">300dp</dimen>
+</resources>

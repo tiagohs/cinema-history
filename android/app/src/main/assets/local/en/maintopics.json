@@ -270,9 +270,9 @@
     "main_topic_type": "history_cinema",
     "layout_type": "card_full",
     "id": 7,
-    "title": "From 2010 to Today",
+    "title": "From 2010 to 2019",
     "subtitle": "Part 07",
-    "description": "3D took over the big screen, and a new wave of superhero movies arrived and dominated the global box office. Mainstream horror got a makeover with The Conjuring, and psychological horror was reborn with great works like The Witch. Streaming quietly crept in, winning over audiences, critics and even the great directors.",
+    "description": "3D takes over the big screen and superheroes take over the global box office. Horror gets a makeover with The Conjuring and The Witch, animation goes far beyond Disney, films in other languages win over the Oscars right up to Parasite's historic night, and streaming quietly creeps in, winning over audiences, critics and major directors.",
     "blocked": false,
     "is_new": true,
     "image": {
@@ -309,5 +309,49 @@
     },
     "title_color": "md_white_1000",
     "color": "md_light_blue_900"
+  },
+  {
+    "main_topic_type": "history_cinema",
+    "layout_type": "card_full",
+    "id": 8,
+    "title": "From 2020 to today",
+    "subtitle": "Part 08",
+    "description": "The pandemic turns the screens dark and streaming goes to war, all the way to the megamergers. Hollywood stops on strike and debates artificial intelligence, social media and internet creators decide the hits, horror becomes the safest bet and cinema from all over the world, from Brazil to Korea, reaches the top of the Oscars.",
+    "blocked": false,
+    "is_new": true,
+    "image": {
+      "image_type": "local",
+      "url": "img_era8_ainda_estou_aqui",
+      "content_description": "Fernanda Torres, Selton Mello and their children on the beach, in I'm Still Here.",
+      "animation": {
+        "type": "blink",
+        "duration": 1000
+      },
+      "style": {
+        "height": 400,
+        "resize": {
+          "height": 400
+        },
+        "scale_type": "center_crop"
+      }
+    },
+    "presentation_image": {
+      "image_type": "local",
+      "url": "img_era8_pecadores_sol",
+      "content_description": "Michael B. Jordan in front of a red sun, in Sinners.",
+      "style": {
+        "scale_type": "center_crop"
+      }
+    },
+    "quote_position": "bottom_start",
+    "quote": {
+      "quote": "Once you overcome the one-inch-tall barrier of subtitles, you will be introduced to so many more amazing films.",
+      "author": "Bong Joon Ho (Golden Globes, 2020)",
+      "text_color": "md_white_1000",
+      "background_color": "md_black_1000",
+      "icon_color": "md_white_1000"
+    },
+    "title_color": "md_white_1000",
+    "color": "md_deep_orange_900"
   }
 ]

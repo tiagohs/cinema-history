@@ -8,7 +8,7 @@
     android:layout_height="wrap_content"
     android:background="@android:color/transparent">
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pageContentListContainer"
@@ -43,7 +43,7 @@
                 app:layout_constraintGuide_percent="0.6"
                 />
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
                 android:layout_height="@dimen/movie_info_header_poster_height"
                 android:id="@+id/imageCard"
@@ -65,7 +65,7 @@
                     android:scaleType="centerCrop"
                     />
 
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
@@ -80,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/movieDirectorsTitle"
                     android:text="@string/directors"
-                    android:textColor="@color/md_grey_800"
+                    android:textColor="@color/daynight_text_grey_800"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:visibility="gone"
@@ -93,7 +93,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/movieDirectors"
-                    android:textColor="@color/md_black_1000"
+                    android:textColor="@color/daynight_text_primary"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:textAlignment="textEnd"
@@ -110,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/movieScreenplayTitle"
                     android:text="@string/write_by"
-                    android:textColor="@color/md_grey_800"
+                    android:textColor="@color/daynight_text_grey_800"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -124,7 +124,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/movieScreenplay"
-                    android:textColor="@color/md_black_1000"
+                    android:textColor="@color/daynight_text_primary"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -142,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/originalLanguageTitle"
                     android:text="@string/language_original"
-                    android:textColor="@color/md_grey_800"
+                    android:textColor="@color/daynight_text_grey_800"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -156,7 +156,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/movieOriginalLanguage"
-                    android:textColor="@color/md_black_1000"
+                    android:textColor="@color/daynight_text_primary"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -174,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/runtimeTitle"
                     android:text="@string/duration"
-                    android:textColor="@color/md_grey_800"
+                    android:textColor="@color/daynight_text_grey_800"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -188,7 +188,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/movieRuntime"
-                    android:textColor="@color/md_black_1000"
+                    android:textColor="@color/daynight_text_primary"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -205,7 +205,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/releaseDateTitle"
                     android:text="@string/release"
-                    android:textColor="@color/md_grey_800"
+                    android:textColor="@color/daynight_text_grey_800"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -220,7 +220,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/movieReleaseDate"
-                    android:textColor="@color/md_black_1000"
+                    android:textColor="@color/daynight_text_primary"
                     android:fontFamily="@font/proxima_nova_regular"
                     android:textSize="@dimen/text_size_zeplin_22pt"
                     android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -237,6 +237,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

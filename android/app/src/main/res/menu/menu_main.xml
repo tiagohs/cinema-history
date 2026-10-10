@@ -1,19 +1,39 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.tiagohs.cinema_history.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Idioma (PT/EN/ES): tocar troca para o próximo idioma -->
+    <item
+        android:id="@+id/action_language"
+        android:title="@string/action_language"
+        app:actionLayout="@layout/view_home_language_action"
+        app:showAsAction="always" />
+
+    <!-- Tema claro/escuro -->
+    <item
+        android:id="@+id/action_theme"
+        android:icon="@drawable/ic_dark_mode_white_24dp"
+        android:title="@string/action_theme"
+        app:showAsAction="always" />
+
+    <!-- Apoie o app (compra única): só com a oferta disponível (Brasil + pt) ou para quem já apoia. -->
+    <item
+        android:id="@+id/action_support"
+        android:icon="@drawable/ic_support_heart_24"
+        android:title="@string/support_menu"
+        android:visible="false"
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/action_references"
         android:icon="@drawable/ic_open_book_white_24dp"
         android:title="@string/action_reference"
-        app:showAsAction="always" />
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/action_glossary"
         android:icon="@drawable/ic_library_books"
         android:title="@string/action_glossary"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/action_settings"

@@ -6,6 +6,7 @@ import com.google.android.gms.ads.MobileAds
 import com.google.android.ump.ConsentInformation
 import com.google.android.ump.ConsentRequestParameters
 import com.google.android.ump.UserMessagingPlatform
+import com.tiagohs.cinema_history.support.Supporter
 import timber.log.Timber
 import java.util.concurrent.atomic.AtomicBoolean
 
@@ -23,10 +24,17 @@ object AdsManager {
         UserMessagingPlatform.getConsentInformation(context.applicationContext)
 
     fun canRequestAds(context: Context): Boolean =
-        runCatching { consentInformation(context).canRequestAds() }.getOrDefault(false)
+        !Supporter.isSupporter(context) &&
+            runCatching { consentInformation(context).canRequestAds() }.getOrDefault(false)
 
     /** Chamado na tela inicial: atualiza o consentimento, mostra o formulário se necessário e inicializa o SDK. */
     fun gatherConsent(activity: Activity, onFinished: () -> Unit = {}) {
+        // Quem apoia não vê anúncios: nem consentimento nem inicialização do SDK.
+        if (Supporter.isSupporter(activity)) {
+            onFinished()
+            return
+        }
+
         val info = consentInformation(activity)
         val params = ConsentRequestParameters.Builder().build()
 
@@ -52,6 +60,7 @@ object AdsManager {
     }
 
     private fun initialize(context: Context) {
+        if (Supporter.isSupporter(context)) return
         if (!initialized.compareAndSet(false, true)) return
 
         val appContext = context.applicationContext

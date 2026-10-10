@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Etiqueta arredondada (cor aplicada por backgroundTint: cor da era, "Novo" etc.). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="100dp" />
+    <solid android:color="@color/md_white_1000" />
+</shape>

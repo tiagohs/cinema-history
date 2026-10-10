@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException
 import com.tiagohs.cinema_history.databinding.AdapterPageTwitterBinding
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.Color
 import android.net.Uri
 import android.os.Handler
 import android.view.MotionEvent
@@ -15,6 +16,7 @@ import android.webkit.WebViewClient
 import com.tiagohs.entities.contents.Content
 import com.tiagohs.entities.contents.ContentTwitter
 import com.tiagohs.helpers.extensions.hide
+import com.tiagohs.helpers.extensions.isDarkThemeActive
 import com.tiagohs.helpers.extensions.show
 
 class TwitterViewHolder(
@@ -31,7 +33,7 @@ class TwitterViewHolder(
     }
 
     private fun handleInWebiew(contentTwitter: ContentTwitter) {
-        val value = contentTwitter.twitterHtml
+        val value = withTwitterTheme(contentTwitter.twitterHtml)
 
         binding.webView.apply {
             binding.loadingProgress.show()
@@ -49,6 +51,9 @@ class TwitterViewHolder(
                 layoutAlgorithm = WebSettings.LayoutAlgorithm.NORMAL
                 useWideViewPort = false
             }
+
+            // Sem fundo branco fixo atrás do tweet (no tema escuro ficaria um retângulo branco).
+            setBackgroundColor(Color.TRANSPARENT)
 
             isHorizontalScrollBarEnabled = false;
             isVerticalScrollBarEnabled = false;
@@ -91,5 +96,15 @@ class TwitterViewHolder(
         } catch (e: Exception) {
             e.printStackTrace()
         }
+    }
+
+    /**
+     * No tema escuro, pede ao widget do Twitter/X o cartão escuro (data-theme="dark").
+     * Só altera o HTML na hora de exibir; o conteúdo original não muda.
+     */
+    private fun withTwitterTheme(html: String): String {
+        if (!itemView.context.isDarkThemeActive() || html.contains("data-theme")) return html
+        return html.replace("class=\"twitter-tweet\"", "class=\"twitter-tweet\" data-theme=\"dark\"")
+            .replace("class='twitter-tweet'", "class='twitter-tweet' data-theme='dark'")
     }
 }

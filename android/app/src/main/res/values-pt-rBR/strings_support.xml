@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Apoio (compra única) e onboarding. -->
+<resources>
+    <!-- Tela de apoio -->
+    <string name="support_kicker">Apoie o projeto</string>
+    <string name="support_title">Apoie quem conta essa história</string>
+    <string name="support_intro">O app é gratuito e vai continuar assim. Se ele faz parte da sua vida de cinéfilo, você pode apoiar com um pagamento único — e ganha:</string>
+    <string name="support_benefit_audio_title">Narração em áudio de todos os capítulos</string>
+    <string name="support_benefit_audio_subtitle">Narração gerada por inteligência artificial (IA). Em português; inglês e espanhol em breve.</string>
+    <string name="support_benefit_ads_title">App sem anúncios</string>
+    <string name="support_benefit_ads_subtitle">Nenhum anúncio, em nenhuma tela. Pagamento único, sem assinatura.</string>
+    <string name="support_benefit_people_title">Ajuda quem pesquisa, escreve e organiza o conteúdo</string>
+    <string name="support_benefit_people_subtitle">E mantém o História do Cinema vivo e crescendo.</string>
+    <string name="support_choose_value">Escolha o valor</string>
+    <string name="support_choose_value_subtitle">O benefício é o mesmo: você escolhe quanto quer apoiar.</string>
+    <string name="support_tier_apoio">Apoio</string>
+    <string name="support_tier_apoio_description">O valor sugerido</string>
+    <string name="support_tier_plus">Apoio+</string>
+    <string name="support_tier_plus_description">Para dar uma força extra</string>
+    <string name="support_tier_fa">Fã de cinema</string>
+    <string name="support_tier_fa_description">Para quem vive de cinema</string>
+    <string name="support_launch_badge">Lançamento</string>
+    <string name="support_once_seal">Pagamento único · sem assinatura</string>
+    <string name="support_button">Apoiar com %1$s</string>
+    <string name="support_button_default">Apoiar</string>
+    <string name="support_restore">Restaurar compra</string>
+    <string name="support_continue_free">Continuar grátis</string>
+    <string name="support_loading">Carregando os valores do Google Play…</string>
+    <string name="support_error">Não foi possível falar com o Google Play agora. Verifique sua conexão e tente de novo.</string>
+    <string name="support_error_unavailable">O apoio não está disponível nesta conta do Google Play no momento.</string>
+    <string name="support_try_again">Tentar de novo</string>
+    <string name="support_pending_title">Pagamento em processamento</string>
+    <string name="support_pending_text">Assim que o Google Play confirmar o pagamento (Pix ou boleto podem levar um tempo), o apoio é liberado automaticamente. Você não precisa fazer nada.</string>
+    <string name="support_thanks_title">Obrigado por apoiar!</string>
+    <string name="support_thanks_text">Você ajuda a manter o História do Cinema vivo — e gratuito para todo mundo. Seus benefícios já estão ativos:</string>
+    <string name="support_thanks_back">Voltar ao app</string>
+    <string name="support_purchase_success">Pronto! Obrigado por apoiar o História do Cinema.</string>
+    <string name="support_purchase_error">A compra não foi concluída. Tente de novo em instantes.</string>
+    <string name="support_restore_success">Compra restaurada. Obrigado por apoiar!</string>
+    <string name="support_restore_none">Nenhuma compra de apoio encontrada nesta conta do Google.</string>
+    <string name="support_restore_error">Não foi possível consultar o Google Play agora.</string>
+    <string name="support_close">Fechar</string>
+
+    <!-- Pontos de entrada -->
+    <string name="support_menu">Apoie o app</string>
+    <string name="support_menu_supporter">Você é apoiador ♥</string>
+    <string name="support_settings_summary">Pagamento único: narração em áudio e app sem anúncios</string>
+    <string name="support_settings_summary_supporter">Obrigado por apoiar o História do Cinema!</string>
+    <string name="support_about_thanks">Obrigado a todos que apoiam o História do Cinema ♥</string>
+    <string name="support_about_supporter">Você apoia o História do Cinema. Obrigado! ♥</string>
+    <string name="support_chapter_card_kicker">História do Cinema</string>
+    <string name="support_chapter_card_title">Gostando da leitura?</string>
+    <string name="support_chapter_card_text">O app é gratuito e vai continuar assim. Se quiser, apoie com um pagamento único e ouça os capítulos narrados, sem anúncios.</string>
+    <string name="support_chapter_card_button">Conhecer o apoio</string>
+    <string name="support_chapter_card_dismiss">Agora não</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Pular</string>
+    <string name="onboarding_next">Próximo</string>
+    <string name="onboarding_start">Começar</string>
+    <string name="onboarding_1_kicker">Bem-vindo</string>
+    <string name="onboarding_1_title">130 anos de cinema na palma da mão</string>
+    <string name="onboarding_1_text">Da primeira sessão dos irmãos Lumière ao streaming: a história do cinema contada em 8 eras, com filmes, diretores e curiosidades.</string>
+    <string name="onboarding_1_eras">8 eras · de 1895 até hoje</string>
+    <string name="onboarding_language">Idioma</string>
+    <string name="onboarding_theme">Tema</string>
+    <string name="onboarding_theme_system">Sistema</string>
+    <string name="onboarding_2_kicker">Explore</string>
+    <string name="onboarding_2_title">Muito além da história</string>
+    <string name="onboarding_2_text">Tudo o que fez o cinema ser o que é, em um só lugar.</string>
+    <string name="onboarding_2_awards">Prêmios desde 1929</string>
+    <string name="onboarding_2_awards_subtitle">Oscar, Globo de Ouro, Cannes e muito mais</string>
+    <string name="onboarding_2_timeline">Linha do tempo</string>
+    <string name="onboarding_2_timeline_subtitle">Os grandes marcos, ano a ano</string>
+    <string name="onboarding_2_movies">1001 filmes</string>
+    <string name="onboarding_2_movies_subtitle">Para ver antes de morrer</string>
+    <string name="onboarding_2_directors">Diretores</string>
+    <string name="onboarding_2_directors_subtitle">Quem mudou a forma de fazer cinema</string>
+    <string name="onboarding_3_kicker">Nosso compromisso</string>
+    <string name="onboarding_3_title">Cultura é gratuita. Viva o cinema.</string>
+    <string name="onboarding_3_text">Todo o conteúdo do app é — e continuará sendo — gratuito. Os anúncios ajudam a manter o app vivo: pesquisa, escrita e atualizações constantes.</string>
+    <string name="onboarding_3_badge">100% gratuito</string>
+    <string name="onboarding_4_kicker">Opcional</string>
+    <string name="onboarding_4_title">Quer ajudar?</string>
+    <string name="onboarding_4_text">O História do Cinema é um projeto independente, feito com pesquisa e muito amor pelo cinema. Com um pagamento único, você apoia o projeto e ganha:</string>
+    <string name="onboarding_4_support">Conhecer o apoio</string>
+    <string name="onboarding_4_later">Agora não</string>
+    <string name="support_ai_disclosure">Sobre a narração: o texto, a pesquisa e a curadoria do app foram feitos e revisados por pessoas, com as fontes listadas em Referências. A voz da narração em áudio é gerada por inteligência artificial (IA) a partir desses textos.</string>
+</resources>

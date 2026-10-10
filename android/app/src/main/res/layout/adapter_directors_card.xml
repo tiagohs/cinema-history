@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cartão da grade de diretores: retrato 3:4, nome, período e país. -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/directorCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/directors_card_spacing"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/md_black_1000"
+    app:cardCornerRadius="@dimen/directors_card_corner"
+    app:cardElevation="0dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/directorImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="3:4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/img_cabinet" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/background_home_scrim_bottom"
+            app:layout_constraintBottom_toBottomOf="@id/directorImage"
+            app:layout_constraintEnd_toEndOf="@id/directorImage"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="@id/directorImage" />
+
+        <TextView
+            android:id="@+id/directorBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_home_pill"
+            android:backgroundTint="@color/md_red_500"
+            android:paddingStart="8dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="2dp"
+            android:textAppearance="?attr/textAppearanceLabelSmall"
+            android:textColor="@color/md_white_1000"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Em alta"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/directorImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/directorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/oswald_bold"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/directors_card_name_size"
+                tools:text="Akira Kurosawa" />
+
+            <TextView
+                android:id="@+id/directorMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textAppearance="?attr/textAppearanceLabelSmall"
+                android:textColor="@color/home_text_on_image_secondary"
+                tools:text="1910–1998 · Japão" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

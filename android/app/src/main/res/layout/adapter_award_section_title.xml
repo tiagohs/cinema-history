@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sectionTitle"
+    style="@style/TextAppearance.CinemaHistory.Awards.Kicker"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/awards_screen_padding"
+    android:paddingTop="28dp"
+    android:paddingEnd="@dimen/awards_screen_padding"
+    android:paddingBottom="4dp"
+    android:textColor="@color/awards_gold"
+    tools:text="Destaques" />

@@ -2,6 +2,30 @@
   {
     "main_topic_type": "directors",
     "layout_type": "card_full",
+    "person_id": 11523,
+    "title": "Georges Méliès",
+    "image": {
+      "image_type": "local",
+      "url": "img_georges_melies",
+      "content_description": "Fotografia de Georges Méliès em preto e branco.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    },
+    "years": "1861–1938",
+    "country": "França",
+    "description": "O mágico que descobriu os efeitos especiais e levou o cinema à Lua",
+    "era": "silent",
+    "region": "europe",
+    "trending": 0
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
     "person_id": 1071403,
     "title": "Alice Guy Blaché",
     "image": {
@@ -15,17 +39,29 @@
         },
         "scale_type": "center_crop"
       }
-    }
+    },
+    "years": "1873–1968",
+    "country": "França / Estados Unidos",
+    "description": "A primeira diretora da história e uma das inventoras da narrativa no cinema",
+    "era": "silent",
+    "region": "europe",
+    "trending": 0
   },
   {
     "main_topic_type": "directors",
     "layout_type": "card_full",
-    "person_id": 138,
-    "title": "Quentin Tarantino",
+    "person_id": 253152,
+    "title": "Oscar Micheaux",
+    "years": "1884–1951",
+    "country": "Estados Unidos",
+    "description": "O pioneiro do cinema negro independente nos Estados Unidos",
+    "era": "silent",
+    "region": "north_america",
+    "trending": 0,
     "image": {
       "image_type": "local",
-      "url": "img_quentin",
-      "content_description": "Fotografia de Quentin Tarantino em preto e branco.",
+      "url": "img_dir_oscar_micheaux",
+      "content_description": "Fotografia de Oscar Micheaux.",
       "style": {
         "height": 350,
         "resize": {
@@ -38,12 +74,42 @@
   {
     "main_topic_type": "directors",
     "layout_type": "card_full",
-    "person_id": 1032,
-    "title": "Martin Scorsese",
+    "person_id": 13848,
+    "title": "Charlie Chaplin",
+    "years": "1889–1977",
+    "country": "Reino Unido / Estados Unidos",
+    "description": "O Vagabundo que fez o mundo inteiro rir e chorar no mesmo plano",
+    "era": "silent",
+    "region": "north_america",
+    "trending": 0,
     "image": {
       "image_type": "local",
-      "url": "img_scorsese",
-      "content_description": "Fotografia de Martin Scorsese em preto e branco.",
+      "url": "img_dir_chaplin",
+      "content_description": "Fotografia de Charlie Chaplin.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 68,
+    "title": "Fritz Lang",
+    "years": "1890–1976",
+    "country": "Áustria / Alemanha / Estados Unidos",
+    "description": "O arquiteto do expressionismo, de Metrópolis ao filme noir",
+    "era": "silent",
+    "region": "europe",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_fritz_lang",
+      "content_description": "Fotografia de Fritz Lang.",
       "style": {
         "height": 350,
         "resize": {
@@ -69,35 +135,29 @@
         },
         "scale_type": "center_crop"
       }
-    }
+    },
+    "years": "1895–1966",
+    "country": "Estados Unidos",
+    "description": "O rosto impassível por trás das acrobacias mais ousadas do cinema mudo",
+    "era": "silent",
+    "region": "north_america",
+    "trending": 0
   },
   {
     "main_topic_type": "directors",
     "layout_type": "card_full",
-    "person_id": 525,
-    "title": "Christopher Nolan",
+    "person_id": 1088239,
+    "title": "Humberto Mauro",
+    "years": "1897–1983",
+    "country": "Brasil",
+    "description": "O pai do cinema brasileiro, do Ciclo de Cataguases ao Cinema Novo",
+    "era": "silent",
+    "region": "latin_america",
+    "trending": 0,
     "image": {
       "image_type": "local",
-      "url": "img_nolan",
-      "content_description": "Fotografia de Christopher Nolan.",
-      "style": {
-        "height": 350,
-        "resize": {
-          "height": 350
-        },
-        "scale_type": "center_crop"
-      }
-    }
-  },
-  {
-    "main_topic_type": "directors",
-    "layout_type": "card_full",
-    "person_id": 11523,
-    "title": "Georges Méliès",
-    "image": {
-      "image_type": "local",
-      "url": "img_georges_melies",
-      "content_description": "Fotografia de Georges Méliès em preto e branco.",
+      "url": "img_dir_humberto_mauro",
+      "content_description": "Fotografia de Humberto Mauro.",
       "style": {
         "height": 350,
         "resize": {
@@ -116,6 +176,900 @@
       "image_type": "local",
       "url": "img_eisenstein",
       "content_description": "Fotografia de Sergei Eisenstein em preto e branco.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    },
+    "years": "1898–1948",
+    "country": "União Soviética",
+    "description": "O teórico da montagem que transformou o corte em linguagem",
+    "era": "silent",
+    "region": "europe",
+    "trending": 0
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 108983,
+    "title": "Dorothy Arzner",
+    "years": "1897–1979",
+    "country": "Estados Unidos",
+    "description": "A única diretora de Hollywood por mais de uma década",
+    "era": "golden",
+    "region": "north_america",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_dorothy_arzner",
+      "content_description": "Fotografia de Dorothy Arzner.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 2636,
+    "title": "Alfred Hitchcock",
+    "years": "1899–1980",
+    "country": "Reino Unido / Estados Unidos",
+    "description": "O mestre do suspense, que fez o público participar do medo",
+    "era": "golden",
+    "region": "europe",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_hitchcock",
+      "content_description": "Fotografia de Alfred Hitchcock.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 95501,
+    "title": "Yasujirō Ozu",
+    "years": "1903–1963",
+    "country": "Japão",
+    "description": "O poeta da família japonesa e da câmera na altura do tatame",
+    "era": "golden",
+    "region": "asia",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_ozu",
+      "content_description": "Fotografia de Yasujirō Ozu.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 5026,
+    "title": "Akira Kurosawa",
+    "years": "1910–1998",
+    "country": "Japão",
+    "description": "O imperador que abriu o Ocidente para o cinema japonês",
+    "era": "golden",
+    "region": "asia",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_kurosawa",
+      "content_description": "Fotografia de Akira Kurosawa.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 40,
+    "title": "Orson Welles",
+    "years": "1915–1985",
+    "country": "Estados Unidos",
+    "description": "O prodígio de Cidadão Kane, que reinventou a linguagem do cinema aos 25 anos",
+    "era": "golden",
+    "region": "north_america",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_orson_welles",
+      "content_description": "Fotografia de Orson Welles.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 6648,
+    "title": "Ingmar Bergman",
+    "years": "1918–2007",
+    "country": "Suécia",
+    "description": "Fé, morte e o silêncio de Deus no rosto de seus atores",
+    "era": "golden",
+    "region": "europe",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_bergman",
+      "content_description": "Fotografia de Ingmar Bergman.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 4415,
+    "title": "Federico Fellini",
+    "years": "1920–1993",
+    "country": "Itália",
+    "description": "O sonhador de Rimini que transformou memórias em espetáculo",
+    "era": "golden",
+    "region": "europe",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_fellini",
+      "content_description": "Fotografia de Federico Fellini.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 12160,
+    "title": "Satyajit Ray",
+    "years": "1921–1992",
+    "country": "Índia",
+    "description": "O humanista bengali que apresentou o cinema indiano ao mundo",
+    "era": "golden",
+    "region": "asia",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_satyajit_ray",
+      "content_description": "Fotografia de Satyajit Ray.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 557134,
+    "title": "Ousmane Sembène",
+    "years": "1923–2007",
+    "country": "Senegal",
+    "description": "O pai do cinema africano, que filmou na língua do seu povo",
+    "era": "new_waves",
+    "region": "africa",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_sembene",
+      "content_description": "Fotografia de Ousmane Sembène.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 6817,
+    "title": "Agnès Varda",
+    "years": "1928–2019",
+    "country": "Bélgica / França",
+    "description": "A avó da Nouvelle Vague, curiosa por gente comum até o último filme",
+    "era": "new_waves",
+    "region": "europe",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_agnes_varda",
+      "content_description": "Fotografia de Agnès Varda.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 240,
+    "title": "Stanley Kubrick",
+    "years": "1928–1999",
+    "country": "Estados Unidos / Reino Unido",
+    "description": "O perfeccionista que reinventou cada gênero em que tocou",
+    "era": "new_waves",
+    "region": "north_america",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_kubrick",
+      "content_description": "Fotografia de Stanley Kubrick.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 3776,
+    "title": "Jean-Luc Godard",
+    "years": "1930–2022",
+    "country": "França / Suíça",
+    "description": "O rebelde da Nouvelle Vague que quebrou todas as regras da montagem",
+    "era": "new_waves",
+    "region": "europe",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_godard",
+      "content_description": "Fotografia de Jean-Luc Godard.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 8452,
+    "title": "Andrei Tarkovsky",
+    "years": "1932–1986",
+    "country": "União Soviética",
+    "description": "O cineasta que esculpia o tempo, entre a fé, a memória e a natureza",
+    "era": "new_waves",
+    "region": "europe",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_tarkovsky",
+      "content_description": "Fotografia de Andrei Tarkovsky.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 1776,
+    "title": "Francis Ford Coppola",
+    "years": "n. 1939",
+    "country": "Estados Unidos",
+    "description": "O padrinho da Nova Hollywood, que arriscou tudo a cada filme",
+    "era": "new_waves",
+    "region": "north_america",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_coppola",
+      "content_description": "Fotografia de Francis Ford Coppola.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 544845,
+    "title": "Glauber Rocha",
+    "years": "1939–1981",
+    "country": "Brasil",
+    "description": "O profeta do Cinema Novo e da estética da fome",
+    "era": "new_waves",
+    "region": "latin_america",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_glauber_rocha",
+      "content_description": "Fotografia de Glauber Rocha.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 1032,
+    "title": "Martin Scorsese",
+    "image": {
+      "image_type": "local",
+      "url": "img_scorsese",
+      "content_description": "Fotografia de Martin Scorsese em preto e branco.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    },
+    "years": "n. 1942",
+    "country": "Estados Unidos",
+    "description": "Culpa, fé e violência nas ruas de Nova York, da Nova Hollywood até hoje",
+    "era": "new_waves",
+    "region": "north_america",
+    "trending": 0
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 488,
+    "title": "Steven Spielberg",
+    "years": "n. 1946",
+    "country": "Estados Unidos",
+    "description": "O inventor do blockbuster, entre tubarões, alienígenas e a memória da guerra",
+    "era": "new_waves",
+    "region": "north_america",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_spielberg",
+      "content_description": "Fotografia de Steven Spielberg.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 119294,
+    "title": "Abbas Kiarostami",
+    "years": "1940–2016",
+    "country": "Irã",
+    "description": "O poeta das estradas iranianas, onde ficção e realidade se confundem",
+    "era": "modern",
+    "region": "asia",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_kiarostami",
+      "content_description": "Fotografia de Abbas Kiarostami.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 608,
+    "title": "Hayao Miyazaki",
+    "years": "n. 1941",
+    "country": "Japão",
+    "description": "O mestre do Studio Ghibli, que desenha à mão mundos de vento e natureza",
+    "era": "modern",
+    "region": "asia",
+    "trending": 12,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_miyazaki",
+      "content_description": "Fotografia de Hayao Miyazaki.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 309,
+    "title": "Pedro Almodóvar",
+    "years": "n. 1949",
+    "country": "Espanha",
+    "description": "Cores fortes, melodrama e mulheres no centro da Espanha pós-Franco",
+    "era": "modern",
+    "region": "europe",
+    "trending": 11,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_almodovar",
+      "content_description": "Fotografia de Pedro Almodóvar.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 10757,
+    "title": "Jane Campion",
+    "years": "n. 1954",
+    "country": "Nova Zelândia",
+    "description": "A primeira mulher a ganhar a Palma de Ouro, de O Piano a Ataque dos Cães",
+    "era": "modern",
+    "region": "oceania",
+    "trending": 15,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_jane_campion",
+      "content_description": "Fotografia de Jane Campion.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 8574,
+    "title": "Walter Salles",
+    "years": "n. 1956",
+    "country": "Brasil",
+    "description": "De Central do Brasil a Ainda Estou Aqui, o primeiro Oscar do cinema brasileiro",
+    "era": "modern",
+    "region": "latin_america",
+    "trending": 5,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_walter_salles",
+      "content_description": "Fotografia de Walter Salles.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 5281,
+    "title": "Spike Lee",
+    "years": "n. 1957",
+    "country": "Estados Unidos",
+    "description": "O cronista do Brooklyn que pôs o racismo americano no centro da tela",
+    "era": "modern",
+    "region": "north_america",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_spike_lee",
+      "content_description": "Fotografia de Spike Lee.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 12453,
+    "title": "Wong Kar-wai",
+    "years": "n. 1958",
+    "country": "Hong Kong",
+    "description": "Amores desencontrados, neon e câmera lenta na Hong Kong dos anos 1990",
+    "era": "modern",
+    "region": "asia",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_wong_kar_wai",
+      "content_description": "Fotografia de Wong Kar-wai.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 138,
+    "title": "Quentin Tarantino",
+    "image": {
+      "image_type": "local",
+      "url": "img_quentin",
+      "content_description": "Fotografia de Quentin Tarantino em preto e branco.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    },
+    "years": "n. 1963",
+    "country": "Estados Unidos",
+    "description": "O cinéfilo de videolocadora que reinventou o cinema de gênero nos anos 90",
+    "era": "modern",
+    "region": "north_america",
+    "trending": 0
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 11218,
+    "title": "Alfonso Cuarón",
+    "years": "n. 1961",
+    "country": "México",
+    "description": "Planos-sequência impossíveis, do espaço sideral à Cidade do México dos anos 1970",
+    "era": "contemporary",
+    "region": "latin_america",
+    "trending": 0,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_cuaron",
+      "content_description": "Fotografia de Alfonso Cuarón.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 10828,
+    "title": "Guillermo del Toro",
+    "years": "n. 1964",
+    "country": "México",
+    "description": "O defensor dos monstros, de O Labirinto do Fauno a Frankenstein",
+    "era": "contemporary",
+    "region": "latin_america",
+    "trending": 3,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_del_toro",
+      "content_description": "Fotografia de Guillermo del Toro.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 137427,
+    "title": "Denis Villeneuve",
+    "years": "n. 1967",
+    "country": "Canadá",
+    "description": "Ficção científica monumental e silenciosa, de A Chegada a Duna",
+    "era": "contemporary",
+    "region": "north_america",
+    "trending": 4,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_villeneuve",
+      "content_description": "Fotografia de Denis Villeneuve.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 1016214,
+    "title": "Kleber Mendonça Filho",
+    "years": "n. 1968",
+    "country": "Brasil",
+    "description": "O crítico de Recife que virou o cineasta brasileiro mais premiado da atualidade",
+    "era": "contemporary",
+    "region": "latin_america",
+    "trending": 1,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_kleber_mendonca",
+      "content_description": "Fotografia de Kleber Mendonça Filho.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 21684,
+    "title": "Bong Joon-ho",
+    "years": "n. 1969",
+    "country": "Coreia do Sul",
+    "description": "O mestre coreano dos gêneros misturados que levou Parasita ao topo do Oscar",
+    "era": "contemporary",
+    "region": "asia",
+    "trending": 7,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_bong_joon_ho",
+      "content_description": "Fotografia de Bong Joon-ho.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 525,
+    "title": "Christopher Nolan",
+    "image": {
+      "image_type": "local",
+      "url": "img_nolan",
+      "content_description": "Fotografia de Christopher Nolan.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    },
+    "years": "n. 1970",
+    "country": "Reino Unido / Estados Unidos",
+    "description": "Tempo, memória e espetáculo em película: de Amnésia a Oppenheimer",
+    "era": "contemporary",
+    "region": "europe",
+    "trending": 6
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 68813,
+    "title": "Céline Sciamma",
+    "years": "n. 1978",
+    "country": "França",
+    "description": "O olhar feminino no cinema, de Tomboy a Retrato de uma Jovem em Chamas",
+    "era": "contemporary",
+    "region": "europe",
+    "trending": 14,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_celine_sciamma",
+      "content_description": "Fotografia de Céline Sciamma.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 1175620,
+    "title": "Justine Triet",
+    "years": "n. 1978",
+    "country": "França",
+    "description": "A diretora de Anatomia de uma Queda, Palma de Ouro e Oscar de roteiro",
+    "era": "contemporary",
+    "region": "europe",
+    "trending": 10,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_justine_triet",
+      "content_description": "Fotografia de Justine Triet.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 1487492,
+    "title": "Ryusuke Hamaguchi",
+    "years": "n. 1978",
+    "country": "Japão",
+    "description": "Conversas longas, carros e o teatro dos sentimentos no novo cinema japonês",
+    "era": "contemporary",
+    "region": "asia",
+    "trending": 9,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_hamaguchi",
+      "content_description": "Fotografia de Ryusuke Hamaguchi.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 291263,
+    "title": "Jordan Peele",
+    "years": "n. 1979",
+    "country": "Estados Unidos",
+    "description": "O comediante que fez do terror uma arma contra o racismo americano",
+    "era": "contemporary",
+    "region": "north_america",
+    "trending": 13,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_jordan_peele",
+      "content_description": "Fotografia de Jordan Peele.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 1395183,
+    "title": "Chloé Zhao",
+    "years": "n. 1982",
+    "country": "China / Estados Unidos",
+    "description": "Paisagens abertas e atores reais, de Nomadland a Hamnet",
+    "era": "contemporary",
+    "region": "asia",
+    "trending": 2,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_chloe_zhao",
+      "content_description": "Fotografia de Chloé Zhao.",
+      "style": {
+        "height": 350,
+        "resize": {
+          "height": 350
+        },
+        "scale_type": "center_crop"
+      }
+    }
+  },
+  {
+    "main_topic_type": "directors",
+    "layout_type": "card_full",
+    "person_id": 45400,
+    "title": "Greta Gerwig",
+    "years": "n. 1983",
+    "country": "Estados Unidos",
+    "description": "Do cinema independente a Barbie, a primeira diretora solo a passar de US$ 1 bilhão",
+    "era": "contemporary",
+    "region": "north_america",
+    "trending": 8,
+    "image": {
+      "image_type": "local",
+      "url": "img_dir_greta_gerwig",
+      "content_description": "Fotografia de Greta Gerwig.",
       "style": {
         "height": 350,
         "resize": {

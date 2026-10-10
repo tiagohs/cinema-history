@@ -57,7 +57,7 @@
     "id": 7,
     "name": "Cannes Film Festival",
     "country": "France",
-    "presented_by": "International Film Festival",
+    "presented_by": "Association Française du Festival International du Film",
     "first_awarded_date": "20/09/1946",
     "nominees_id": 7,
     "logo": {
@@ -104,9 +104,9 @@
     "main_topic_type": "awards",
     "layout_type": "card_full",
     "id": 2,
-    "name": "Golden Globes",
+    "name": "Golden Globe",
     "country": "United States",
-    "presented_by": "Hollywood Foreign Press Association",
+    "presented_by": "Dick Clark Productions (Penske Media Eldridge)",
     "first_awarded_date": "20/01/1944",
     "nominees_id": 2,
     "logo": {
@@ -158,7 +158,7 @@
     "id": 4,
     "name": "Critics Choice Awards",
     "country": "United States",
-    "presented_by": "Broadcast Film Critics Association",
+    "presented_by": "Critics Choice Association",
     "first_awarded_date": "22/01/1996",
     "nominees_id": 4,
     "logo": {
@@ -254,9 +254,9 @@
     "main_topic_type": "awards",
     "layout_type": "card_full",
     "id": 5,
-    "name": "Screen Actors Guild Awards (SAG)",
+    "name": "The Actor Awards (SAG Awards)",
     "country": "United States",
-    "presented_by": "Screen Actors Guild",
+    "presented_by": "SAG-AFTRA",
     "first_awarded_date": "25/02/1995",
     "nominees_id": 5,
     "logo": {

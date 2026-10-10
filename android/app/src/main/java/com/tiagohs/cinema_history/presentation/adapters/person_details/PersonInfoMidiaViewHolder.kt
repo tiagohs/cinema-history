@@ -75,9 +75,10 @@ class PersonInfoMidiaViewHolder(
             return
         }
 
-        binding.personMidiaTitle.setResourceTextColor(R.color.md_black_1000)
-        binding.personMidiaContainer.setResourceBackgroundColor(R.color.md_white_1000)
-        binding.videoList.setResourceBackgroundColor(R.color.md_white_1000)
-        binding.wallpapersList.setResourceBackgroundColor(R.color.md_white_1000)
+        // Página comum: segue o tema (claro/escuro).
+        binding.personMidiaTitle.setResourceTextColor(R.color.daynight_text_primary)
+        binding.personMidiaContainer.setResourceBackgroundColor(R.color.daynight_background)
+        binding.videoList.setResourceBackgroundColor(R.color.daynight_background)
+        binding.wallpapersList.setResourceBackgroundColor(R.color.daynight_background)
     }
 }

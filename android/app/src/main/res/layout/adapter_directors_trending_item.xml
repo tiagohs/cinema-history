@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Item do carrossel "Em alta" da tela de diretores (mesmo desenho dos cartões de era da Home). -->
+<com.google.android.material.carousel.MaskableFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trendingContainer"
+    android:layout_width="@dimen/directors_trending_item_width"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/directors_trending_item_spacing"
+    android:layout_marginEnd="@dimen/directors_trending_item_spacing"
+    android:background="@color/md_black_1000"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+    <ImageView
+        android:id="@+id/trendingImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/img_cabinet" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/directors_trending_scrim_offset"
+        android:background="@drawable/background_home_scrim_bottom" />
+
+    <TextView
+        android:id="@+id/trendingRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="12dp"
+        android:background="@drawable/background_home_pill"
+        android:backgroundTint="@color/md_red_500"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        android:textAppearance="?attr/textAppearanceLabelLarge"
+        android:textColor="@color/md_white_1000"
+        tools:text="#1" />
+
+    <LinearLayout
+        android:id="@+id/trendingContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/trendingMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:textColor="@color/home_text_on_image_secondary"
+            tools:text="n. 1968 · Brasil" />
+
+        <TextView
+            android:id="@+id/trendingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/oswald_bold"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/directors_trending_name_size"
+            tools:text="Kleber Mendonça Filho" />
+
+        <TextView
+            android:id="@+id/trendingTagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="@color/home_text_on_image_secondary"
+            tools:text="O crítico de Recife que virou o cineasta brasileiro mais premiado da atualidade" />
+
+    </LinearLayout>
+
+</com.google.android.material.carousel.MaskableFrameLayout>

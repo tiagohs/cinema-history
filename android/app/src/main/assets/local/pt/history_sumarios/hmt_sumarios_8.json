@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "As telas apagadas: a pandemia e o cinema",
+    "description": "Em março de 2020, a COVID-19 fechou os cinemas do planeta inteiro. Entre adiamentos, drive-ins e a guerra das janelas, o jeito de lançar filmes nunca mais foi o mesmo.",
+    "image": {
+      "image_type": "local",
+      "url": "img_covid_tenet_telas_apagadas",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "As redes sociais moldando o cinema",
+    "description": "TikTok, X, Instagram e Letterboxd tiraram dos estúdios o controle da conversa: memes criaram o Barbenheimer, afundaram a volta de Morbius, salvaram canções esquecidas e transformaram a geração Z em protagonista das salas.",
+    "image": {
+      "image_type": "local",
+      "url": "img_redes_barbie_conversivel_rosa",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "A nova leva do terror",
+    "description": "Depois da pandemia, o terror virou a aposta mais segura das salas. De Sorria e Noites Brutais a A Substância e Pecadores, o gênero saiu do nicho, conquistou o Oscar e se espalhou pelo mundo.",
+    "image": {
+      "image_type": "local",
+      "url": "img_terror2020_hora_do_mal",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Criadores da internet chegam às telas",
+    "description": "Dos irmãos Philippou a Kane Parsons, Curry Barker e Markiplier, cineastas formados no YouTube trocaram o canal pelo set e, em 2026, dominaram a bilheteria do terror.",
+    "image": {
+      "image_type": "local",
+      "url": "img_backrooms_sala_amarela",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Hollywood em greve e a disputa pela IA",
+    "description": "Em 2023, roteiristas e atores pararam Hollywood por meses para exigir sua parte no streaming e proteção contra a inteligência artificial. Logo depois, a IA entrou de vez em cena.",
+    "image": {
+      "image_type": "local",
+      "url": "img_greves_duna_parte_dois_explosao",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "O Mundo Além de Hollywood",
+    "description": "Depois de Parasita, filmes falados em outras línguas tomam o Oscar e as bilheterias, do Japão à Índia, da China à Coreia. Até que o Brasil, enfim, leva sua primeira estatueta com Ainda Estou Aqui.",
+    "image": {
+      "image_type": "local",
+      "url": "img_ainda_estou_aqui_familia_praia",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "A guerra do streaming e as fusões",
+    "description": "Do lançamento do Disney+ à venda da Warner Bros.: como a corrida por assinantes terminou em cortes, em filmes engavetados e na união de dois dos estúdios mais antigos de Hollywood.",
+    "image": {
+      "image_type": "local",
+      "url": "img_fusoes_top_gun_maverick",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "O cansaço dos super-heróis e a volta do evento",
+    "description": "Depois de Ultimato, a fórmula dos universos compartilhados se desgasta, enquanto Top Gun, Avatar, Duna e Nolan provam que o público ainda quer o espetáculo, desde que ele pareça único.",
+    "image": {
+      "image_type": "local",
+      "url": "img_superman_2025_krypto_terra",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  }
+]

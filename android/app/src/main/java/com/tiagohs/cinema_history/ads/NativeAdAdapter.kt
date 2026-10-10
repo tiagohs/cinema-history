@@ -16,6 +16,7 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdOptions
 import com.tiagohs.cinema_history.BuildConfig
 import com.tiagohs.cinema_history.databinding.ViewNativeAdBinding
+import com.tiagohs.cinema_history.support.Supporter
 import timber.log.Timber
 
 /** Blocos de anúncio nativo do app (cada um é um bloco no AdMob). */
@@ -38,25 +39,36 @@ class NativeAdAdapter(
     private var nativeAd: NativeAd? = null
     private var loading = false
     private var destroyed = false
+    private var appContext: Context? = null
+
+    /** Quem acabou de apoiar deixa de ver o anúncio na hora (sem reabrir a tela). */
+    private val supporterListener: () -> Unit = {
+        val context = appContext
+        if (context != null && Supporter.isSupporter(context)) removeAd()
+    }
 
     init {
         lifecycleOwner.lifecycle.addObserver(this)
+        Supporter.addListener(supporterListener)
     }
 
     override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
         super.onAttachedToRecyclerView(recyclerView)
+        appContext = recyclerView.context.applicationContext
         load(recyclerView.context)
     }
 
     private fun load(context: Context) {
         if (loading || nativeAd != null || destroyed) return
+        // Quem apoia não vê anúncios (AdsManager.canRequestAds também verifica).
+        if (Supporter.isSupporter(context)) return
         if (!AdsConfig.nativeEnabled || !AdsManager.canRequestAds(context)) return
 
         loading = true
 
         AdLoader.Builder(context, placement.unitId)
             .forNativeAd { ad ->
-                if (destroyed) {
+                if (destroyed || Supporter.isSupporter(context)) {
                     ad.destroy()
                     return@forNativeAd
                 }
@@ -88,8 +100,16 @@ class NativeAdAdapter(
         nativeAd?.let { holder.bind(it) }
     }
 
+    private fun removeAd() {
+        val ad = nativeAd ?: return
+        nativeAd = null
+        notifyItemRemoved(0)
+        ad.destroy()
+    }
+
     override fun onDestroy(owner: LifecycleOwner) {
         destroyed = true
+        Supporter.removeListener(supporterListener)
         nativeAd?.destroy()
         nativeAd = null
         owner.lifecycle.removeObserver(this)

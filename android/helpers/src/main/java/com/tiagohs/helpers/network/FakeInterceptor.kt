@@ -3,6 +3,7 @@ package com.tiagohs.helpers.network
 import android.content.Context
 import com.tiagohs.entities.enums.LocalFiles
 import com.tiagohs.helpers.utils.ContentLanguage
+import com.tiagohs.helpers.utils.RemoteContent
 import com.tiagohs.helpers.utils.FileUtils
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -57,6 +58,11 @@ class FakeInterceptor(
             }
         }
 
+        // Rotas com parâmetros (ex.: /awards/nominees/{id}/index e /awards/nominees/{id}/{ano}).
+        if (raw.isBlank()) {
+            raw = com.tiagohs.entities.enums.LocalRoutes.resolve(request) ?: ""
+        }
+
         if (raw.isNotBlank()) {
             content = readFileFromStatus(raw)
         }
@@ -71,6 +77,15 @@ class FakeInterceptor(
         val context = context ?: return ""
         val language = ContentLanguage.current()
 
+        // versão publicada no site (Cloudflare), se houver; ver RemoteContent
+        RemoteContent.cachedFile(ContentLanguage.assetPath(rawFileName, language))?.let {
+            return try { it.readText() } catch (e: IOException) { readAsset(context, rawFileName, language) }
+        }
+        return readAsset(context, rawFileName, language)
+    }
+
+    @Throws(IOException::class)
+    private fun readAsset(context: Context, rawFileName: String, language: String): String {
         return try {
             FileUtils.readAssetsFile(context, ContentLanguage.assetPath(rawFileName, language), "UTF-8")
         } catch (e: FileNotFoundException) {

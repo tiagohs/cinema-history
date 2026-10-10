@@ -35,6 +35,7 @@ TRANSLATABLE_KEYS = {
     "content_description", "credits", "content_credits", "button_text", "buttonText",
     "page_title", "next", "previous", "awards", "content", "text", "name", "country",
     "presented_by", "department", "contentText", "contentTitle", "source",
+    "years",            # períodos do perfil de diretores ("Desde 2015", "n. 1969")
 }
 
 # Subárvores que nunca são traduzidas (dados de terceiros ou nomes próprios).
@@ -89,9 +90,15 @@ def walk(doc: Any, file: str) -> WalkResult:
 
     def rec(node: Any, parts: list[Any], parent_key: str | None):
         if isinstance(node, dict):
-            if is_tmdb_object(node):
+            # Destaque do índice dos prêmios (awards/nominees/<id>/index.json): só o título do filme.
+            if parent_key == "highlight" and isinstance(node.get("id"), int) and "name" in node:
+                if node.get("type", "movie") == "movie":
+                    out.specials.append(Special(file, _ptr(parts + ["name"]), "movie_title", node["id"]))
+                if isinstance(node.get("category"), str) and node["category"].strip():
+                    out.texts.append((Occurrence(file, _ptr(parts + ["category"]), "category"), node["category"]))
                 return
             # Item de lista de indicados: {type: movie|person, id, name, ...}
+            # (antes do teste de objeto do TMDB: vencedores levam "backdrop_path")
             if parent_key in ("nominee_list",) or (parent_key == "movie" and "id" in node and "name" in node):
                 if node.get("type", "movie") == "movie" and isinstance(node.get("id"), int) and "name" in node:
                     out.specials.append(Special(file, _ptr(parts + ["name"]), "movie_title", node["id"]))
@@ -100,6 +107,8 @@ def walk(doc: Any, file: str) -> WalkResult:
                         out.texts.append((Occurrence(file, _ptr(parts + [k]), k), v))
                     elif k == "movie" and isinstance(v, dict):
                         rec(v, parts + [k], k)
+                return
+            if is_tmdb_object(node):
                 return
             # Filme de specials/movies: {id, title, original_title, ...}
             is_special_movie = file.startswith("specials/movies") and parent_key == "movies"
@@ -259,9 +268,12 @@ def load_json(path: str) -> Any:
 
 def dump_json(path: str, data: Any) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as fh:
+    # Grava num temporário e troca no fim: com disco cheio, o original fica intacto.
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
         json.dump(data, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
+    os.replace(tmp, path)
 
 
 def resolve_pointer(doc: Any, pointer: str) -> tuple[Any, Any]:

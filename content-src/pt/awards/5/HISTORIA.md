@@ -1,0 +1,7 @@
+# SAG Awards / The Actor Awards — mudanças de 2021 a 2026
+
+Em 14 de novembro de 2025, o SAG-AFTRA, sindicato dos atores dos Estados Unidos, anunciou que o Screen Actors Guild Awards passaria a se chamar The Actor Awards Presented by SAG-AFTRA a partir da 32ª edição, realizada em 1º de março de 2026. O novo nome vem da estatueta, que sempre se chamou The Actor, e, segundo a organização, reflete melhor o fato de ser o único prêmio da indústria dado a atores por atores. As categorias e a votação, feita só pelos membros do sindicato, não mudaram, e o prêmio de carreira passou a se chamar SAG-AFTRA Life Achievement Award.
+Fontes: The Actor Awards — FAQ do novo nome (https://www.actorawards.org/newname); CNN, 14/11/2025 (https://edition.cnn.com/2025/11/14/entertainment/sag-awards-changes-name); Wikipédia — 32nd Actor Awards (https://en.wikipedia.org/wiki/32nd_Actor_Awards).
+
+A transmissão também mudou nesses anos. Depois de 25 anos na TNT (e na TBS desde 2006), a cerimônia de 2023 foi transmitida ao vivo pelo canal da Netflix no YouTube, e, a partir de 2024, passou a ser exibida ao vivo na própria Netflix. Em 2021, por causa da pandemia de COVID-19, o programa teve só uma hora e foi pré-gravado, com os discursos gravados antes.
+Fontes: Wikipédia — Actor Awards (https://en.wikipedia.org/wiki/Actor_Awards); Wikipédia — 29th Screen Actors Guild Awards (https://en.wikipedia.org/wiki/29th_Screen_Actors_Guild_Awards); Wikipédia — 27th Screen Actors Guild Awards (https://en.wikipedia.org/wiki/27th_Screen_Actors_Guild_Awards).

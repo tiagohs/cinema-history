@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.content.res.Configuration
 import android.graphics.Typeface
 import android.graphics.drawable.Drawable
 import android.net.ConnectivityManager
@@ -71,6 +72,11 @@ val Context?.screenHeight: Int
     }
 
 /***** RESOURCES ******/
+
+/** true quando a tela está no tema escuro (escolha do usuário em Configurações ou do sistema). */
+fun Context.isDarkThemeActive(): Boolean =
+    (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+
 
 fun Context.getResourceColor(colorName: String?): Int {
     return try {

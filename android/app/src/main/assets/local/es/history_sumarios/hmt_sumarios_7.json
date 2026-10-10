@@ -163,5 +163,35 @@
         }
       }
     }
+  },
+  {
+    "id": 12,
+    "title": "Animación más allá de Disney",
+    "description": "Del stop-motion de Laika al anime de Makoto Shinkai, del trazo irlandés de Cartoon Saloon al Spider-Verso de Sony: la década en que la animación demostró que no es solo cosa de Disney, ni solo para niños.",
+    "image": {
+      "image_type": "local",
+      "url": "img_animacao_alem_disney_aranhaverso",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "title": "El cine extranjero conquista el Oscar",
+    "description": "De La Separación a Parásitos, la década en que Hollywood aprendió a leer subtítulos: iraníes, europeos, los “tres amigos” mexicanos y la ola coreana derriban la barrera de una pulgada.",
+    "image": {
+      "image_type": "local",
+      "url": "img_parasita_pedra",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
   }
 ]

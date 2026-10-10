@@ -33,6 +33,8 @@
     <!-- Settings -->
     <string name="action_about">Acerca de</string>
     <string name="action_reference">Referencias</string>
+    <string name="action_language">Idioma: %1$s (toca para cambiar)</string>
+    <string name="action_theme">Tema claro u oscuro</string>
     <string name="action_glossary">Glosario</string>
     <string name="action_settings">Configuración</string>
     <string name="action_share">Compartir</string>
@@ -51,7 +53,11 @@
     <string name="buy">Comprar</string>
     <string name="contact_us">Contáctanos</string>
     <string name="credits_terms">Créditos y términos</string>
-    <string name="tmdb_terms_description">La información de películas, actores, directores e imágenes es proporcionada por la API de TMDb, pero no está respaldada ni certificada por TMDb.</string>
+    <string name="about_free_culture">La cultura es gratuita. Viva el cine.</string>
+    <string name="credits_tmdb">Información e imágenes de películas y personas: TMDB</string>
+    <string name="credits_omdb">Calificaciones y datos adicionales de películas: OMDb API</string>
+    <string name="credits_awards">Datos de los premios: Wikipedia (CC BY-SA 4.0) y Wikidata (CC0)</string>
+    <string name="credits_youtube">Videos: YouTube. Los videos pertenecen a sus respectivos autores.</string>
     <string name="tmdb_terms_title">Términos de uso de TMDB</string>
     <string name="tmdb_api_terms_title">Términos de uso de la API de TMDB</string>
     <string name="omdb_api_terms_title">Términos de uso de la API de OMDB</string>
@@ -60,7 +66,7 @@
     <string name="responsable">Desarrollo e investigación de la app por Tiago Silva</string>
     <string name="terms">Términos de uso</string>
     <string name="privacy">Política de privacidad</string>
-    <string name="app_description">%1s es una aplicación gratuita que busca, de forma divertida e intuitiva, acercar la historia del cine a todos. A través de imágenes, videos, gifs, entrevistas, clasificaciones e infografías, presentamos la trayectoria del cine desde la primera proyección de los hermanos Lumière hasta hoy. Nos basamos en libros y documentales y los adaptamos a este nuevo medio. ¡Que lo disfrutes!</string>
+    <string name="app_description">%1s es una app gratuita que cuenta la historia del cine de forma divertida e intuitiva, desde la primera proyección de los hermanos Lumière hasta hoy. Recorre 8 eras del séptimo arte, los premios desde 1929, una línea de tiempo interactiva, las 1001 películas que hay que ver antes de morir, grandes directores y un glosario de términos del cine, en portugués, inglés y español, con tema claro y oscuro. En Brasil, los capítulos también se pueden escuchar con narración en audio. Todo se basa en libros y documentales, adaptados a este nuevo medio. ¡Que lo disfrutes!</string>
 
     <!-- Home -->
     <string name="start_journey">Comienza tu recorrido</string>
@@ -143,4 +149,86 @@
     <string name="ad_badge">Anuncio</string>
     <string name="ad_privacy_title">Privacidad de anuncios</string>
     <string name="ad_privacy_summary">Revisa o cambia tus opciones de consentimiento de anuncios</string>
+
+    <!-- Home (Material 3) -->
+    <string name="home_section_eras_title">Las eras del cine</string>
+    <string name="home_section_eras_subtitle">Un viaje por la historia del cine en %1$d partes</string>
+    <string name="home_see_all">Ver todas</string>
+    <string name="home_continue_reading">Sigue leyendo</string>
+    <string name="home_latest_era">Capítulo más reciente</string>
+    <string name="home_start_reading">Empezar a leer</string>
+    <string name="home_continue_button">Continuar</string>
+    <string name="home_all_eras">Todas las eras</string>
+    <string name="home_section_explore_title">Explora más</string>
+    <string name="home_section_more_title">Más</string>
+    <string name="home_settings_description">Idioma y preferencias de la app</string>
+    <string name="home_about_description">Sobre la app y su creador</string>
+    <string name="home_era_quote_title">Cita de la era</string>
+
+    <!-- Tela de prêmios (hero, anos, fileiras) e linha do tempo -->
+    <string name="award_winner_of">Ganador — %1$s</string>
+    <string name="award_winner_badge">Ganador</string>
+    <string name="award_year_meta">%1$d categorías · %2$d nominados</string>
+    <string name="award_decade_label">Años %1$s</string>
+    <string name="award_choose_decade">Ir a la década</string>
+    <string name="award_read_more">Leer más</string>
+    <string name="award_read_less">Mostrar menos</string>
+    <string name="award_ceremony_title">Sobre la ceremonia</string>
+    <string name="award_backdrop_winner">Ganador · %1$s</string>
+    <string name="award_videos_title">Videos</string>
+    <string name="award_highlights_title">Destacados</string>
+    <string name="award_year_error">No se pudo cargar este año.</string>
+    <string name="award_retry">Reintentar</string>
+    <string name="award_details_button">Detalles</string>
+    <string name="award_first_awarded">Primera ceremonia: %1$s</string>
+    <string name="award_hero_fallback_kicker">Premios y nominados</string>
+    <string name="award_about_title">Sobre el premio</string>
+    <string name="timeline_year_now">Ahora en %1$s</string>
+    <plurals name="award_nominees_count">
+        <item quantity="one">%1$d nominado</item>
+        <item quantity="other">%1$d nominados</item>
+        <item quantity="many">%1$d nominados</item>
+    </plurals>
+
+    <!-- Tema (Configurações) -->
+    <string name="appearance_title">Apariencia</string>
+    <string name="theme_title">Tema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="theme_system">Predeterminado del sistema</string>
+
+    <!-- Diretores (lista nova e páginas especiais) -->
+    <string name="directors_intro">Conoce a %1$d cineastas que cambiaron el cine, desde los pioneros del cine mudo hasta los nombres en auge hoy.</string>
+    <string name="directors_filter_all">Todos</string>
+    <string name="directors_filter_trending">En auge</string>
+    <string name="directors_region_all">Todas las regiones</string>
+    <string name="directors_era_silent">Pioneros y cine mudo</string>
+    <string name="directors_era_silent_period">Hasta 1929</string>
+    <string name="directors_era_golden">Edad de oro</string>
+    <string name="directors_era_golden_period">1930–1959</string>
+    <string name="directors_era_new_waves">Nuevas olas</string>
+    <string name="directors_era_new_waves_period">1960–1979</string>
+    <string name="directors_era_modern">Fin de siglo</string>
+    <string name="directors_era_modern_period">1980–1999</string>
+    <string name="directors_era_contemporary">Siglo XXI</string>
+    <string name="directors_era_contemporary_period">2000 hasta hoy</string>
+    <string name="directors_region_europe">Europa</string>
+    <string name="directors_region_north_america">América del Norte</string>
+    <string name="directors_region_latin_america">América Latina</string>
+    <string name="directors_region_asia">Asia</string>
+    <string name="directors_region_africa">África</string>
+    <string name="directors_region_oceania">Oceanía</string>
+    <string name="directors_trending_title">En auge</string>
+    <string name="directors_trending_subtitle">Los cineastas que marcaron los últimos cinco años</string>
+    <string name="directors_trending_badge">En auge</string>
+    <string name="directors_trending_rank">#%1$d</string>
+    <string name="directors_empty">Ningún director coincide con estos filtros.</string>
+    <string name="directors_card_description">%1$s, %2$s, %3$s</string>
+    <string name="person_profile_quote_format">“%1$s”</string>
+    <string name="person_profile_play_video">Ver video: %1$s</string>
+    <plurals name="directors_count">
+        <item quantity="one">%d director</item>
+        <item quantity="other">%d directores</item>
+        <item quantity="many">%d directores</item>
+    </plurals>
 </resources>

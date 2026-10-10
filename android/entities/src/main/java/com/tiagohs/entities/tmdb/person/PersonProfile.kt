@@ -7,5 +7,7 @@ import java.io.Serializable
 data class PersonProfile (
 
 	@SerializedName("years") val years : String,
-	@SerializedName("content") val content : String
+	@SerializedName("content") val content : String,
+	/** Imagem, vídeo ou citação exibida logo depois do parágrafo (ritmo das páginas especiais de diretores). */
+	@SerializedName("media") val media : PersonProfileMedia? = null
 ): Serializable

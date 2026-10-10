@@ -73,7 +73,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/imageCard"
@@ -168,7 +168,7 @@
                     app:layout_constraintBottom_toTopOf="@id/guidelineMovieDetails"
                 />
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/movie_item_language_card_height"
                     android:id="@+id/languageCard"
@@ -191,9 +191,9 @@
                         android:paddingStart="@dimen/activity_vertical_margin"
                         android:paddingEnd="@dimen/activity_vertical_margin"
                         />
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/movie_item_language_card_height"
                     android:id="@+id/genreCard"
@@ -216,11 +216,11 @@
                         android:paddingStart="@dimen/activity_vertical_margin"
                         android:paddingEnd="@dimen/activity_vertical_margin"
                     />
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

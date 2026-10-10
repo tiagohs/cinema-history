@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Carrossel M3 "Em alta" (mesmo componente da Home). -->
+<androidx.recyclerview.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trendingCarousel"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/directors_trending_height"
+    android:layout_marginTop="4dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:nestedScrollingEnabled="false"
+    app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
+    tools:listitem="@layout/adapter_directors_trending_item" />

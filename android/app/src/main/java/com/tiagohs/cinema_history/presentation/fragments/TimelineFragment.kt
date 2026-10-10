@@ -1,5 +1,7 @@
 package com.tiagohs.cinema_history.presentation.fragments
 
+import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.os.Bundle
 import android.view.ViewGroup
 import android.view.LayoutInflater
@@ -14,6 +16,10 @@ import com.tiagohs.cinema_history.presentation.adapters.TimelineAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.cinema_history.presentation.configs.BaseFragment
 import com.tiagohs.domain.views.TimelineView
+import com.bumptech.glide.Glide
+import com.tiagohs.cinema_history.presentation.adapters.timeline.TimelineScrollEffects
+import com.tiagohs.cinema_history.presentation.configs.Motion
+import com.tiagohs.helpers.extensions.getResourceColor
 import com.tiagohs.helpers.extensions.hide
 import com.tiagohs.helpers.extensions.show
 import javax.inject.Inject
@@ -28,6 +34,7 @@ class TimelineFragment: BaseFragment<FragmentTimelineBinding>(), TimelineView, T
 
     private var timelineId: Int = 1
     private var totalOfTimelines: Int = 0
+    private var scrollEffects: TimelineScrollEffects? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -35,11 +42,19 @@ class TimelineFragment: BaseFragment<FragmentTimelineBinding>(), TimelineView, T
         getApplicationComponent()?.inject(this)
         (activity as? BaseActivity<*>)?.setupToolbar(binding.toolbar)
 
+        // Tablets: a linha do tempo fica numa coluna centralizada (a marca d'água do ano segue no canto da tela).
+        binding.timelineList.limitContentWidth(R.dimen.ls_list_max_width)
+        binding.loadView.limitContentWidth(R.dimen.ls_list_max_width)
+
         presenter.onBindView(this)
         presenter.fetchTimeline(timelineId)
     }
 
     override fun onDestroyView() {
+        scrollEffects?.detach()
+        scrollEffects = null
+        binding.timelineList.adapter = null
+
         super.onDestroyView()
 
         presenter.onUnbindView()
@@ -55,16 +70,41 @@ class TimelineFragment: BaseFragment<FragmentTimelineBinding>(), TimelineView, T
     override fun isLast() = (activity as? TimelineActivity)?.isLast() ?: false
 
     override fun bindTimeline(timelines: TimelineResult) {
+        val context = context ?: return
+        val motionEnabled = Motion.enabled(context)
 
         binding.timelineList.apply {
-            layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
-            binding.timelineList.adapter = TimelineAdapter(timelines.timelineList, totalOfTimelines, timelines.color, timelines.titleTextColor, this@TimelineFragment).apply {
+            layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false).apply {
+                initialPrefetchItemCount = 2
+            }
+            setHasFixedSize(true)
+            itemAnimator = null
+            adapter = TimelineAdapter(
+                timelines.timelineList,
+                totalOfTimelines,
+                timelines.color,
+                timelines.titleTextColor,
+                this@TimelineFragment,
+                Glide.with(this@TimelineFragment),
+                motionEnabled
+            ).apply {
                 onNextClicked = { setNextPage() }
                 onPreviousClicked = { setPreviousPage() }
                 onUpClicked = { goToFirstItem() }
                 onDownClicked = { goToLastItem(timelines.timelineList.size - 1) }
             }
         }
+
+        // Marca d'água do ano na cor da época (translúcida, atrás dos cartões).
+        val accent = context.getResourceColor(timelines.color)
+        binding.yearWatermark.textColor = (accent and 0x00FFFFFF) or (WATERMARK_COLOR_ALPHA shl 24)
+
+        val effects = scrollEffects ?: TimelineScrollEffects(binding.timelineList, binding.yearWatermark, motionEnabled)
+            .also {
+                it.attach()
+                scrollEffects = it
+            }
+        effects.reset()
 
         (timelines.timelineList.firstOrNull() as? TimelineTitle)?.pageTitle?.let { binding.toolbarTitle.text = it }
     }
@@ -101,6 +141,7 @@ class TimelineFragment: BaseFragment<FragmentTimelineBinding>(), TimelineView, T
 
     companion object {
 
+        private const val WATERMARK_COLOR_ALPHA = 0x59
         const val TIMELINE_ID = "TIMELINE_ID"
         const val TOTAL_TIMELINES = "TOTAL_TIMELINES"
 

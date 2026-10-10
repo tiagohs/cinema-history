@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="4dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="4dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityHeading="true"
+        android:fontFamily="@font/oswald_bold"
+        android:includeFontPadding="false"
+        android:textColor="@color/daynight_text_primary"
+        android:textSize="@dimen/directors_section_title_size"
+        tools:text="Era de ouro" />
+
+    <TextView
+        android:id="@+id/sectionSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?attr/textAppearanceLabelLarge"
+        android:textColor="@color/daynight_text_grey_600"
+        tools:text="1930–1959 · 9 diretores" />
+
+</LinearLayout>

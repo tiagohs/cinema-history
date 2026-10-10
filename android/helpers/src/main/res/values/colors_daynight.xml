@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Cores que mudam entre o tema claro e o escuro (versão escura em values-night/colors_daynight.xml).
+
+    No claro elas têm exatamente as cores que o app já usava (branco, preto, cinzas do Material),
+    então trocar um @color/md_* fixo por uma destas não altera nada na versão clara.
+    Use-as para fundos de tela/cartão e textos que ficam sobre esses fundos. Elementos pretos de
+    propósito (cabeçalhos, faixas e cartões pretos com texto branco) continuam com md_black_1000.
+-->
+<resources>
+    <!-- Superfícies (em camadas, como no M3) -->
+    <color name="daynight_background">#FFFFFFFF</color>
+    <color name="daynight_surface_container_low">#FFFFFFFF</color>
+    <color name="daynight_surface_container">#FFF5F5F5</color>
+    <color name="daynight_surface_container_high">#FFEEEEEE</color>
+    <color name="daynight_surface_container_highest">#FFE0E0E0</color>
+
+    <!-- Textos sobre as superfícies acima (equivalentes a md_black_1000 e md_grey_900…600) -->
+    <color name="daynight_text_primary">#FF000000</color>
+    <color name="daynight_text_grey_900">#FF212121</color>
+    <color name="daynight_text_grey_800">#FF424242</color>
+    <color name="daynight_text_grey_700">#FF616161</color>
+    <color name="daynight_text_grey_600">#FF757575</color>
+    <color name="daynight_text_grey_500">#FF9E9E9E</color>
+
+    <!-- "Tinta": ícones e botões pretos sobre fundo branco; on_ink é o conteúdo por cima deles -->
+    <color name="daynight_ink">#FF000000</color>
+    <color name="daynight_ripple_on_ink">#33FFFFFF</color>
+    <color name="daynight_on_ink">#FFFFFFFF</color>
+
+    <!-- Divisores e linhas (md_grey_300 / md_grey_400) -->
+    <color name="daynight_divider">#FFE0E0E0</color>
+    <color name="daynight_divider_strong">#FFBDBDBD</color>
+
+    <!-- Links em textos HTML (md_blue_500) -->
+    <color name="daynight_link">#FF2196F3</color>
+</resources>

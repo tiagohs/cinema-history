@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">Entities</string>
 
-    <string name="award_history">Historia</string>
-    <string name="award_nominees">Nominados</string>
+    <string name="award_history">Acerca de</string>
+    <string name="award_nominees">Nominados y ganadores</string>
 
     <string name="brazil">Brasil</string>
     <string name="eua">Estados Unidos</string>
     <string name="more_watch_options">Más opciones</string>
+    <string name="review_language_portuguese">Portugués</string>
+    <string name="review_language_english">Inglés</string>
+    <string name="review_language_spanish">Español</string>
+    <string name="youtube_free">YouTube (gratis, película completa)</string>
 </resources>

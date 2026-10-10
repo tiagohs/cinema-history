@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/awards_screen_padding"
+    android:paddingTop="16dp"
+    android:paddingEnd="@dimen/awards_screen_padding"
+    android:paddingBottom="12dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/videoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/awards_surface_high"
+        app:cardCornerRadius="@dimen/awards_card_radius"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+
+        <com.tiagohs.cinema_history.presentation.views.AspectRatioImageView
+            android:id="@+id/videoThumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000" />
+
+        <ImageView
+            android:id="@+id/videoPlay"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_border_oval_2dp"
+            android:importantForAccessibility="no"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_awards_play_24dp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/videoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/awards_on_surface"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/videoText"
+        style="@style/TextAppearance.CinemaHistory.Awards.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="13sp" />
+
+</LinearLayout>

@@ -1,0 +1,602 @@
+{
+  "number": 12,
+  "content_list": [
+    {
+      "type": "text",
+      "content_text": "At the box office, the 2010s belonged to <i>Disney</i>, as we saw in the chapter <i>The Disney Decade</i>. At the Oscars for animation, too: between 2013 and 2018, the statuette went to Disney or <i>Pixar</i> six years in a row. But one look at the list of nominees tells a different story. In 2016, for example, four of the five contenders came from outside the House of Mouse: a puppet film for adults, a Brazilian animation drawn with colored pencils, a silent British claymation comedy, and an anime from <i>Studio Ghibli</i>. The decade in which a single studio dominated the market was also the one in which animation became more diverse than ever, with auteurs from Oregon to Kilkenny, from Tokyo to São Paulo, proving that animation is a way of making films, not a children's genre."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_animacao_shaun_carneiro_cidade",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "Shaun the Sheep Movie (2015)",
+        "contentText": "This dialogue-free comedy from Britain's <i>Aardman</i>, made with clay puppets animated frame by frame, was one of four non-Disney productions among the five nominees for the 2016 Oscar for Best Animated Feature.",
+        "source": "Publicity image: <i>StudioCanal</i> (via TMDB)"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "The first counterpoint was commercial. Founded in 2007 by <a href=\"https://_{type: 'screen', 'id': 5720, 'screen_type': person}\">Chris Meledandri</a>, a former <i>Fox</i> executive, <i>Illumination</i> partnered with <i>Universal</i> and bet on a cost-controlled formula: <a href=\"https://_{type: 'screen', 'id': 20352, 'screen_type': movie}\">Despicable Me</a> (2010) cost $69 million and grossed $543 million worldwide. Its little yellow sidekicks got a film of their own, and <a href=\"https://_{type: 'screen', 'id': 211672, 'screen_type': movie}\">Minions</a> (2015) topped $1.15 billion, the second-highest gross for an animated film up to that point, behind only <i>Frozen</i>. Part of the secret lay in Paris, far from Hollywood's costs: in 2011, the studio bought the animation division of the French company <i>Mac Guff</i>, which had already animated the first film. Illumination proved it was possible to rival Disney at the box office. Aesthetically, however, it was a conservative model: rapid-fire gags, cute characters, zero risk. The revolution would come from elsewhere."
+    },
+    {
+      "type": "text",
+      "content_text": "One of them is on the outskirts of Portland, Oregon. <i>Laika</i>, founded in 2005 and run by <a href=\"https://_{type: 'screen', 'id': 1033661, 'screen_type': person}\">Travis Knight</a>, had already drawn attention with <a href=\"https://_{type: 'screen', 'id': 14836, 'screen_type': movie}\">Coraline</a> (2009), the first stop-motion feature conceived and shot in stereoscopic 3D. Over the following decade, the studio turned frame-by-frame animation, the most handcrafted and slowest technique in filmmaking, into an auteur signature: <a href=\"https://_{type: 'screen', 'id': 77174, 'screen_type': movie}\">ParaNorman</a> (2012), by <a href=\"https://_{type: 'screen', 'id': 154705, 'screen_type': person}\">Chris Butler</a> and <a href=\"https://_{type: 'screen', 'id': 58897, 'screen_type': person}\">Sam Fell</a>, a zombie story about intolerance; <a href=\"https://_{type: 'screen', 'id': 170687, 'screen_type': movie}\">The Boxtrolls</a> (2014); and <a href=\"https://_{type: 'screen', 'id': 313297, 'screen_type': movie}\">Kubo and the Two Strings</a> (2016), Knight's directorial debut, a samurai fable inspired by ancient Japan. All five features Laika released between 2009 and 2019 were nominated for an Oscar. <i>Kubo</i> won the BAFTA and was only the second animated film in history nominated for the Oscar for visual effects. In 2020, <a href=\"https://_{type: 'screen', 'id': 458253, 'screen_type': movie}\">Missing Link</a> (2019) won the Golden Globe, beating Disney."
+    },
+    {
+      "type": "video",
+      "video_id": "f3cq2OQN07w",
+      "information": {
+        "contentTitle": "The origami of Kubo and the Two Strings",
+        "contentText": "Behind-the-scenes footage from Laika shows how the team created the folded paper that comes to life in the film, one of the most delicate challenges of frame-by-frame animation.",
+        "source": "YouTube: <i>LAIKA Studios</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "If stop-motion could be personal, it could also be adult. <a href=\"https://_{type: 'screen', 'id': 291270, 'screen_type': movie}\">Anomalisa</a> (2015), by <a href=\"https://_{type: 'screen', 'id': 202, 'screen_type': person}\">Charlie Kaufman</a> and <a href=\"https://_{type: 'screen', 'id': 1019303, 'screen_type': person}\">Duke Johnson</a>, began as a short film project funded by a <i>Kickstarter</i> campaign that raised $406,000 from 5,770 backers, twice its goal. It became a feature, and one of the saddest films of the decade: the story of a customer-service speaker in crisis who hears everyone in the world with the same voice, until he meets Lisa. The puppets, made with 3D printing, deliberately show the seam lines on their faces, as if each one's mask were about to fall off. <i>Anomalisa</i> was the first animated film to win the Grand Jury Prize at the Venice Film Festival, in 2015, and the first R-rated animated film to be nominated for the Oscar for Best Animated Feature."
+    },
+    {
+      "type": "block_special",
+      "title": "How Laika makes a film frame by frame",
+      "image": {
+        "image_type": "local",
+        "url": "img_laika_kubo_stop_motion",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "In stop-motion, nothing moves on its own. Puppets with articulated metal skeletons are posed by hand, photographed, moved a millimeter and photographed again: up to 24 shots for every second of film. The big problem has always been the face. The classic solution is replacement animation, in which the animator swaps the puppet's face for each frame, and Laika took it to another level with 3D printers. Since <a href=\"https://_{type: 'screen', 'id': 14836, 'screen_type': movie}\">Coraline</a>, faces have been modeled on the computer and printed in two parts, upper and lower; the seam between them is erased digitally afterward. On <i>Kubo and the Two Strings</i>, color printing even allowed for translucency, and the hero was given more than 48 million possible expressions. Production took 94 weeks and included a giant skeleton about five meters (16 feet) tall, which Laika touted as the largest puppet in stop-motion history. In 2016, the Academy gave two Laika technicians, Brian McLean and Martin Meunier, a Scientific and Technical Award for pioneering the use of rapid prototyping in character animation.",
+      "click": {
+        "screen": "link_online",
+        "button_text": "Read about the making of Kubo",
+        "parameters": [
+          {
+            "key": "LINK",
+            "value": "https://www.inverse.com/article/19265-kubo-and-the-two-strings-laika-stop-motion-animation"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "On the other side of the Atlantic, hand-drawn animation held its ground. In the small town of Kilkenny, Ireland, <i>Cartoon Saloon</i>, founded in 1999 by <a href=\"https://_{type: 'screen', 'id': 96676, 'screen_type': person}\">Tomm Moore</a>, <a href=\"https://_{type: 'screen', 'id': 96677, 'screen_type': person}\">Nora Twomey</a> and Paul Young, turned Celtic folklore into lines, circles and patterns reminiscent of medieval illuminated manuscripts. Moore's <a href=\"https://_{type: 'screen', 'id': 110416, 'screen_type': movie}\">Song of the Sea</a> (2014) tells the story of a girl who is a <i>selkie</i>, a creature from Irish legend who lives between sea and land. <a href=\"https://_{type: 'screen', 'id': 435129, 'screen_type': movie}\">The Breadwinner</a> (2017), directed by Twomey with Angelina Jolie as executive producer, brought the same handcrafted care to Kabul under the Taliban. Both were nominated for Oscars, and the studio still had <i>Wolfwalkers</i> ahead of it, in 2020. Also in Europe, stop-motion showed it could tackle hard subjects: <a href=\"https://_{type: 'screen', 'id': 393559, 'screen_type': movie}\">Ma vie de courgette</a> (My Life as a Zucchini, 2016), by Swiss director <a href=\"https://_{type: 'screen', 'id': 588869, 'screen_type': person}\">Claude Barras</a>, a Swiss-French coproduction co-written by Céline Sciamma, tells of children in an orphanage through puppets with enormous heads and sad eyes, and was nominated for an Oscar."
+    },
+    {
+      "type": "video",
+      "video_id": "VrhoOzW8oF8",
+      "information": {
+        "contentTitle": "Trailer for Song of the Sea",
+        "contentText": "Tomm Moore's second feature at <i>Cartoon Saloon</i> blends Irish legends and hand-drawn animation, with shapes and patterns inspired by Celtic art. The film was nominated for the Oscar for Best Animated Feature in 2015.",
+        "source": "YouTube: <i>StudiocanalUK</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "What do these films have in common, besides the Oscars? Often, the same American distributor. New York-based <i>GKIDS</i>, run by Eric Beckman, specialized in bringing foreign and independent animation to U.S. theaters and in running awards campaigns for the Academy. The strategy worked: by 2019, the company had racked up 11 nominations for Best Animated Feature, a record for an independent distributor in the category, with titles such as <a href=\"https://_{type: 'screen', 'id': 126319, 'screen_type': movie}\">Ernest et Célestine</a> (Ernest & Celestine, 2012), <i>Song of the Sea</i>, <i>The Breadwinner</i> and <i>My Life as a Zucchini</i>. Without GKIDS, much of the decade's world animation would have been confined to festivals. And borders grew ever more porous: Studio Ghibli itself coproduced <a href=\"https://_{type: 'screen', 'id': 337703, 'screen_type': movie}\">La Tortue rouge</a> (The Red Turtle, 2016), by Dutch director Michael Dudok de Wit, a dialogue-free film about a castaway, animated in France."
+    },
+    {
+      "type": "image",
+      "image": {
+        "image_type": "local",
+        "url": "img_menino_e_o_mundo_globo",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "information": {
+        "contentTitle": "The world through a child's eyes",
+        "contentText": "In <a href=\"https://_{type: 'screen', 'id': 223706, 'screen_type': movie}\"><i>Boy & the World</i></a>, cities rise like stacked toys around the planet: a critique of consumerism and industrialization made with the graphic freedom of a child's drawing.",
+        "source": "TMDB"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "It was also through GKIDS in the United States that Brazil made it to the Oscars. Boy & the World (2014), by <a href=\"https://_{type: 'screen', 'id': 1052664, 'screen_type': person}\">Alê Abreu</a>, premiered at the Ottawa International Animation Festival in 2013 and opened in Brazilian theaters in January 2014. The film follows a boy from the countryside who sets out in search of his father and finds factories, slums, advertising and devastation, all seen through a child's eyes. The sets and characters were made with colored pencils, crayons, paint and collage, combined with digital animation, and the sparse dialogue was recorded in backward Portuguese so that the images and music would speak louder: the score brings together Naná Vasconcelos, Barbatuques and a rap by Emicida. It won the Cristal for best feature and the audience award at Annecy, the world's most important animation festival, and was nominated for the 2016 Oscar, the first Brazilian animated feature ever in the running."
+    },
+    {
+      "type": "video",
+      "video_id": "DWlQ0YrxWV8",
+      "information": {
+        "contentTitle": "Trailer for Boy & the World",
+        "contentText": "Posted by Alê Abreu himself, the trailer gives a taste of the mix of colored pencil, crayon and collage that took this Brazilian animation to Annecy and the Oscars.",
+        "source": "YouTube: <i>Alê Abreu</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "In Japan, the decade marked the end of an era. <a href=\"https://_{type: 'screen', 'id': 149870, 'screen_type': movie}\">The Wind Rises</a> (2013), a loose biopic of Jiro Horikoshi, the engineer who designed the Zero fighter plane, was announced in 2013 as <a href=\"https://_{type: 'screen', 'id': 608, 'screen_type': person}\">Hayao Miyazaki</a>'s final feature. That same year, <a href=\"https://_{type: 'screen', 'id': 628, 'screen_type': person}\">Isao Takahata</a> released <a href=\"https://_{type: 'screen', 'id': 149871, 'screen_type': movie}\">The Tale of The Princess Kaguya</a> (2013), painted in watercolor and charcoal strokes. After <a href=\"https://_{type: 'screen', 'id': 242828, 'screen_type': movie}\">When Marnie Was There</a> (2014), Ghibli announced a pause in feature production, and many thought the studio was finished. It wasn't. Miyazaki, who had \"retired\" several times before, went back to work: he started storyboarding a new feature in 2016, and production was made official in 2017. The result wouldn't arrive until 2023: <a href=\"https://_{type: 'screen', 'id': 508883, 'screen_type': movie}\">The Boy and the Heron</a> (2023), which would earn him his second Oscar for Best Animated Feature. But in the 2010s, the void left by Ghibli opened the door to a new generation."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "My era of making feature-length animated films is absolutely over.",
+        "author": "Hayao Miyazaki (press conference on his retirement, Tokyo, 2013)"
+      },
+      "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "The biggest name of that generation was <a href=\"https://_{type: 'screen', 'id': 74091, 'screen_type': person}\">Makoto Shinkai</a>. With <a href=\"https://_{type: 'screen', 'id': 372058, 'screen_type': movie}\">Your Name.</a> (2016), the story of two teenagers who swap bodies without ever having met, he made the highest-grossing Japanese film in history worldwide, at about $400 million, a title it would hold until 2020. In Japan, the film cost ¥450 million, grossed ¥25 billion and spent twelve weekends at number one; at the time, it was the second-highest-grossing Japanese film in the country, behind only <i>Spirited Away</i>. Shinkai would repeat the feat with <a href=\"https://_{type: 'screen', 'id': 568160, 'screen_type': movie}\">Weathering with You</a> (2019). <a href=\"https://_{type: 'screen', 'id': 81718, 'screen_type': person}\">Mamoru Hosoda</a>, meanwhile, with <a href=\"https://_{type: 'screen', 'id': 110420, 'screen_type': movie}\">Wolf Children</a> (2012) and <a href=\"https://_{type: 'screen', 'id': 475215, 'screen_type': movie}\">Mirai</a> (2018), made delicate family dramas, and <i>Mirai</i> became the first Japanese animated feature from outside Ghibli to be nominated for an Oscar, in 2019. Anime was no longer synonymous with a single studio."
+    },
+    {
+      "type": "video",
+      "video_id": "soQXM3XVvIU",
+      "information": {
+        "contentTitle": "Trailer for Your Name.",
+        "contentText": "Released by Cinemark in Brazil, the trailer showcases Makoto Shinkai's visual signature, with luminous skies and cities drawn in the finest detail, in service of a teenage romance.",
+        "source": "YouTube: <i>Cinemark Brasil</i> channel"
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "The most visible turning point, however, came from a Hollywood studio. Produced by <a href=\"https://_{type: 'screen', 'id': 107446, 'screen_type': person}\">Phil Lord</a> and <a href=\"https://_{type: 'screen', 'id': 155267, 'screen_type': person}\">Christopher Miller</a>, the duo behind <i>The Lego Movie</i>, and directed by <a href=\"https://_{type: 'screen', 'id': 936670, 'screen_type': person}\">Bob Persichetti</a>, <a href=\"https://_{type: 'screen', 'id': 151007, 'screen_type': person}\">Peter Ramsey</a> and <a href=\"https://_{type: 'screen', 'id': 59918, 'screen_type': person}\">Rodney Rothman</a>, <a href=\"https://_{type: 'screen', 'id': 324857, 'screen_type': movie}\">Spider-Man: Into the Spider-Verse</a> (2018) swapped Peter Parker for Miles Morales, a Black and Puerto Rican teenager from Brooklyn, and told his story as if a comic book had come to life. With a crew of about 800 people at <i>Sony Pictures Imageworks</i>, the film grossed more than $350 million and, on February 24, 2019, broke Disney and Pixar's winning streak at the Oscars. It was the first time since <a href=\"https://_{type: 'screen', 'id': 44896, 'screen_type': movie}\">Rango</a> (2011) that the statuette had gone to another studio, and Ramsey became the first Black director to win in the category. In the years that followed, many studios would pursue a more graphic, less realistic look."
+    },
+    {
+      "type": "block_special",
+      "title": "The Spider-Verse Aesthetic",
+      "image": {
+        "image_type": "local",
+        "url": "img_aranhaverso_miles_salto",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "For more than twenty years, 3D animation chased realism: swaying fur, soft light, a camera that mimics a real lens. <i>Spider-Man: Into the Spider-Verse</i> went the other way. Most of the film was animated \"on twos,\" meaning each pose stays on screen for two frames, 12 per second, as in traditional hand-drawn animation, giving the movement a crisp, graphic rhythm. Motion blur was abolished. Instead of lens blur, the team knocked the color layers out of register, imitating a badly printed comic book page. Shadows became hatching and halftone dots, sound effects and caption boxes appear in the frame, and a new tool let artists draw ink lines over the 3D characters. Each spider from another dimension has its own style: Spider-Man Noir is black and white, Peni Parker looks straight out of an anime, and Spider-Ham out of a classic <i>Looney Tunes</i> cartoon. Developing the look took more than a year, and with such a painstaking process, the team produced an average of one second of animation per week, compared with the usual four or so.",
+      "click": {
+        "screen": "link_online",
+        "button_text": "See how the look was created",
+        "parameters": [
+          {
+            "key": "LINK",
+            "value": "https://www.creativebloq.com/features/how-into-the-spider-verse-got-its-mind-blowing-look"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "content_text": "The decade ended with streaming entering the game. <i>Netflix</i> released <a href=\"https://_{type: 'screen', 'id': 508965, 'screen_type': movie}\">Klaus</a> (2019), by <a href=\"https://_{type: 'screen', 'id': 124749, 'screen_type': person}\">Sergio Pablos</a>, a former Disney animator who came up with the original idea for <i>Despicable Me</i>. Pablos set up his own studio, <i>SPA Studios</i>, in Madrid. Hand-drawn, the film used volumetric lighting tools so the characters wouldn't look like stickers on a painted background. It won seven Annie Awards, including Best Feature, as well as the BAFTA for animation. That same year, Netflix acquired distribution rights for almost the entire world to <a href=\"https://_{type: 'screen', 'id': 586940, 'screen_type': movie}\">J'ai perdu mon corps</a> (I Lost My Body, 2019), by <a href=\"https://_{type: 'screen', 'id': 550481, 'screen_type': person}\">Jérémy Clapin</a>: the story of a severed hand that crosses Paris in search of its owner, and the first animated feature to win the Grand Prize of Cannes Critics' Week since the sidebar was created in 1962. At the 2020 Oscars, four of the five nominees came from outside Disney, although the statuette went back to Pixar, for <a href=\"https://_{type: 'screen', 'id': 301528, 'screen_type': movie}\">Toy Story 4</a> (2019)."
+    },
+    {
+      "type": "quote",
+      "quote": {
+        "quote": "When we hear that some kid said \"he looks like me,\" or \"they speak Spanish like us,\" we feel like we already won.",
+        "author": "Phil Lord (Oscar acceptance speech, 2019)"
+      },
+      "quote_mark_color": "md_red_500"
+    },
+    {
+      "type": "text",
+      "content_text": "And then there was China. <a href=\"https://_{type: 'screen', 'id': 615453, 'screen_type': movie}\">Ne Zha</a> (2019), by <a href=\"https://_{type: 'screen', 'id': 2367353, 'screen_type': person}\">Jiao Zi</a>, is an irreverent retelling of a demon boy from Chinese mythology, inspired by the classic <i>Investiture of the Gods</i>. Released in July, by August it had already overtaken <i>Zootopia</i> as the highest-grossing animated film in the country's history, and it went on to earn more than $700 million worldwide, at the time the biggest result ever for an animated film produced outside the United States. It took five years of writing and production and more than 1,300 effects shots made by over 20 Chinese studios. From Oregon stop-motion to São Paulo colored pencils, from Brooklyn comic books to Chinese myth, the 2010s showed that animation has no owner, no age and no single technique. Disney kept selling more tickets. But many of the ideas that would define animation in the 2020s were born far from it."
+    },
+    {
+      "type": "video",
+      "video_id": "DNNIxgDAW38",
+      "information": {
+        "contentTitle": "The journey of Klaus's director",
+        "contentText": "Sergio Pablos talks about the origins of <i>Klaus</i> and his bet on showing what traditional 2D animation could still do, in a film made at his studio in Spain.",
+        "source": "YouTube: <i>Netflix</i> channel"
+      }
+    },
+    {
+      "type": "movie_list",
+      "movies": [
+        {
+          "poster_path": "/ict1oX2qqv59k2NKnlAX4rXdGeg.jpg",
+          "popularity": 15.6127,
+          "vote_count": 3950,
+          "video": false,
+          "id": 313297,
+          "adult": false,
+          "backdrop_path": "/bhspYsRMHgMqzUlxiVpIY8OrqMt.jpg",
+          "original_language": "en",
+          "original_title": "Kubo and the Two Strings",
+          "title": "Kubo e as Cordas Mágicas",
+          "vote_average": 7.6,
+          "overview": "Kubo vive uma normal e tranquila vida em uma pequena vila no Japão com sua mãe. Até que um espírito vingativo do passado muda completamente sua vida, ao fazer com que todos os tipos de deuses e monstros o persigam. Agora, para sobreviver, Kubo terá de encontrar uma armadura mágica que foi usada pelo seu falecido pai, um lendário guerreiro samurai.",
+          "release_date": "2016-08-18",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            12,
+            10751
+          ]
+        },
+        {
+          "poster_path": "/7D00TwSTRxxkfkDIkJxgv8sdBmY.jpg",
+          "popularity": 11.5,
+          "vote_count": 2876,
+          "video": false,
+          "id": 77174,
+          "adult": false,
+          "backdrop_path": "/fRhpdmaA1wTAboeiKW2ZHvDezIm.jpg",
+          "original_language": "en",
+          "original_title": "ParaNorman",
+          "title": "ParaNorman",
+          "vote_average": 7.1,
+          "overview": "Norman Babcock é um garoto que consegue ver e falar com os mortos. Entretanto, o único que acredita em suas habilidades é Neil, um amigo excêntrico. Um dia, o tio de Norman conta sobre um importante ritual anual realizado na cidade, com o objetivo de protegê-la de uma maldição jogada por uma bruxa séculos atrás. Norman resolve ajudar no ritual, mas as coisas não saem como planejado e uma nuvem mágica faz com que os mortos se levantem das tumbas da cidade.",
+          "release_date": "2012-08-03",
+          "media_type": "movie",
+          "genre_ids": [
+            10751,
+            16,
+            12,
+            35
+          ]
+        },
+        {
+          "poster_path": "/4DJ1zNr4Y6q7zQ27goEYla46VdO.jpg",
+          "popularity": 4.3272,
+          "vote_count": 1878,
+          "video": false,
+          "id": 291270,
+          "adult": false,
+          "backdrop_path": "/xNykrL50OsygNTtFuHCw9U0D3eu.jpg",
+          "original_language": "en",
+          "original_title": "Anomalisa",
+          "title": "Anomalisa",
+          "vote_average": 7.1,
+          "overview": "Michael Stone é um palestrante motivacional que acaba de chegar à cidade de Connecticut. Lá, ele conhece Lisa, que transforma a sua vida.",
+          "release_date": "2015-12-30",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            18,
+            10749,
+            35
+          ]
+        },
+        {
+          "poster_path": "/39aOJwueG1BX1OZqNdm9tnMUVjE.jpg",
+          "popularity": 8.7395,
+          "vote_count": 1635,
+          "video": false,
+          "id": 110416,
+          "adult": false,
+          "backdrop_path": "/mVLZvSe1Aa8CFKx0cInTamVZJrW.jpg",
+          "original_language": "en",
+          "original_title": "Song of the Sea",
+          "title": "A Canção do Mar",
+          "vote_average": 8.0,
+          "overview": "A história da viagem de volta da última criança das selkies, mulheres que se transformam em focas. Depois do desaparecimento de sua mãe, Ben e Saoirse são enviados para viver com a avó na cidade. Quando eles resolvem voltar para a sua casa à beira-mar, a viagem torna-se uma corrida contra o tempo, quando eles são atraídos para um mundo que conhecem apenas nos contos populares de sua mãe. Mas isso não é uma história de ninar, essas pessoas estão em nosso mundo por muito tempo. Logo fica claro para Ben que Saoirse é a chave para a sua sobrevivência.",
+          "release_date": "2014-06-23",
+          "media_type": "movie",
+          "genre_ids": [
+            10751,
+            16,
+            14
+          ]
+        },
+        {
+          "poster_path": "/n97gnpuOEyYixtYBQPkzW194Si5.jpg",
+          "popularity": 5.5716,
+          "vote_count": 960,
+          "video": false,
+          "id": 435129,
+          "adult": false,
+          "backdrop_path": "/fRtQdiESAdt9rjXCvZhvkmprvac.jpg",
+          "original_language": "en",
+          "original_title": "The Breadwinner",
+          "title": "A Ganha-Pão",
+          "vote_average": 7.8,
+          "overview": "Parvana é uma jovem que vive em um Afeganistão governado pelas forças do Talibã. Quando seu pai é preso de maneira injusta, ela precisa se disfarçar como um menino para trabalhar e garantir o sustento de sua família.",
+          "release_date": "2017-11-17",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            10752,
+            18
+          ]
+        },
+        {
+          "poster_path": "/4jsmf7rlHvHN0oxuXZPH8xrBt39.jpg",
+          "popularity": 8.2847,
+          "vote_count": 1557,
+          "video": false,
+          "id": 393559,
+          "adult": false,
+          "backdrop_path": "/lTOr8fcxlsLrGfe2lqZLCjhvrIH.jpg",
+          "original_language": "fr",
+          "original_title": "Ma vie de courgette",
+          "title": "Minha Vida de Abobrinha",
+          "vote_average": 7.8,
+          "overview": "Após a morte repentina de sua mãe abusiva, Abobrinha faz amizade com o policial Raymond, que o acompanha até o orfanato. No início, Abobrinha luta para encontrar seu lugar nesse estranho ambiente. Mas com a ajuda de Raymond e seus novos amigos, ele acaba aprendendo a confiar e encontra o amor.",
+          "release_date": "2016-09-22",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            35,
+            18
+          ]
+        },
+        {
+          "poster_path": "/pNdqVuROes4tdWSbHPu4sKnmlaJ.jpg",
+          "popularity": 2.4835,
+          "vote_count": 265,
+          "video": false,
+          "id": 223706,
+          "adult": false,
+          "backdrop_path": "/zmIFeh3xutkIFZBKYatzWF1XDu0.jpg",
+          "original_language": "pt",
+          "original_title": "O Menino e o Mundo",
+          "title": "O Menino e o Mundo",
+          "vote_average": 7.4,
+          "overview": "Cuca é um menino que vive em um mundo distante, numa pequena aldeia no interior de seu mítico país. Certo dia, ele vê seu pai partir em busca de trabalho, embarcando em um trem rumo à desconhecida capital. As semanas que se seguem são de angústia e lembranças confusas. Até que, numa determinada noite, uma lufada de vento arromba a janela do quarto e carrega o menino para um lugar distante e mágico.",
+          "release_date": "2014-01-17",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            14,
+            12,
+            10751
+          ]
+        },
+        {
+          "poster_path": "/uohDiUTPsGGkX4Sb9ZcVGwafEyH.jpg",
+          "popularity": 11.2486,
+          "vote_count": 3508,
+          "video": false,
+          "id": 149870,
+          "adult": false,
+          "backdrop_path": "/zZiflZpuaZerugtfdyXcg6dcylD.jpg",
+          "original_language": "ja",
+          "original_title": "風立ちぬ",
+          "title": "Vidas ao Vento",
+          "vote_average": 7.8,
+          "overview": "Jiro Horikoshi sonha em voar e projetar belos aviões, inspirado no famoso designer aeronáutico italiano Caproni. Míope desde criança e, portanto, incapaz de voar, Jiro ingressou na divisão aeronáutica de uma empresa de engenharia em 1927. Seu gênio logo é reconhecido e ele se torna um dos mais prestigiados projetistas aeronáuticos. O filme conta sua biografia e recria acontecimentos históricos que marcaram sua vida, como o terremoto de Kanto em 1923, a Grande Depressão, a epidemia de tuberculose e a entrada do Japão na guerra.",
+          "release_date": "2013-07-20",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            18,
+            36,
+            10749
+          ]
+        },
+        {
+          "poster_path": "/cerV9QJhSdDlnUigrsKZQfOeTpA.jpg",
+          "popularity": 10.7331,
+          "vote_count": 2062,
+          "video": false,
+          "id": 149871,
+          "adult": false,
+          "backdrop_path": "/lMaWlYThCSnsmW3usxWTpSuyZp1.jpg",
+          "original_language": "ja",
+          "original_title": "かぐや姫の物語",
+          "title": "O Conto da Princesa Kaguya",
+          "vote_average": 8.1,
+          "overview": "Kaguya era um minúsculo bebê quando foi encontrada dentro de um tronco de bambu brilhante. Passado o tempo, ela se transforma em uma bela jovem que passa a ser cobiçada por cinco nobres, dentre eles, o próprio Imperador. Mas nenhum deles é o que ela realmente quer. A moça envia seus pretendentes em tarefas aparentemente impossíveis para tentar evitar o casamento com um estranho que não ama. Mas Kaguya terá que enfrentar seu destino e punição por suas escolhas.",
+          "release_date": "2013-11-23",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            18,
+            14
+          ]
+        },
+        {
+          "poster_path": "/bMOKAjTU1TNUjRSF7icldbii06u.jpg",
+          "popularity": 32.5973,
+          "vote_count": 13071,
+          "video": false,
+          "id": 372058,
+          "adult": false,
+          "backdrop_path": "/mMtUybQ6hL24FXo0F3Z4j2KG7kZ.jpg",
+          "original_language": "ja",
+          "original_title": "君の名は。",
+          "title": "Your Name.",
+          "vote_average": 8.5,
+          "overview": "Mitsuha é a filha do prefeito de uma pequena cidade, mas sonha em tentar a sorte em Tóquio. Taki trabalha em um restaurante em Tóquio e deseja largar o seu emprego. Os dois não se conhecem, mas estão conectados pelas imagens de seus sonhos.",
+          "release_date": "2016-07-01",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            10749,
+            18
+          ]
+        },
+        {
+          "poster_path": "/koz5dqWUfXnapmwgko6o8caZn4b.jpg",
+          "popularity": 6.4385,
+          "vote_count": 892,
+          "video": false,
+          "id": 475215,
+          "adult": false,
+          "backdrop_path": "/r2FXILO1vUKXGS9xnPva4kkjdHo.jpg",
+          "original_language": "ja",
+          "original_title": "未来のミライ",
+          "title": "Mirai",
+          "vote_average": 7.2,
+          "overview": "Kun é um menino com uma infância feliz até a chegada de Mirai, sua irmãzinha. Com ciúmes desse bebê que monopoliza a atenção dos pais, ele vai se retraindo pouco a pouco. No fundo do seu jardim, o menino embarca em um mundo fantástico, onde o passado e o futuro se misturam. Lá, ele conhece seus parentes em diferentes idades da vida: sua mãe ainda criança, seu bisavô na juventude e sua pequena irmã na adolescência. Através dessas aventuras, Kun vai descobrir sua própria história.",
+          "release_date": "2018-07-20",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            10751,
+            14,
+            12,
+            18
+          ]
+        },
+        {
+          "poster_path": "/ybQSBSrINtjWsJQ6Ih8sva8HlEZ.jpg",
+          "popularity": 48.6543,
+          "vote_count": 17979,
+          "video": false,
+          "id": 324857,
+          "adult": false,
+          "backdrop_path": "/1ntePsIqeklfmrQJqZPncCydsqY.jpg",
+          "original_language": "en",
+          "original_title": "Spider-Man: Into the Spider-Verse",
+          "title": "Homem-Aranha: No Aranhaverso",
+          "vote_average": 8.402,
+          "overview": "Miles Morales é um jovem negro do Brooklyn que se tornou o Homem-Aranha inspirado no legado de Peter Parker, já falecido. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói aracnídeo sob um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras variações do Homem-Aranha.",
+          "release_date": "2018-12-06",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            28,
+            12,
+            878
+          ]
+        },
+        {
+          "poster_path": "/guyZW9AQdTMp2F4esttjyIMMK1k.jpg",
+          "popularity": 11.0199,
+          "vote_count": 4858,
+          "video": false,
+          "id": 508965,
+          "adult": false,
+          "backdrop_path": "/cYQvXNPZLow73lhspVQ7CYlT3Mi.jpg",
+          "original_language": "en",
+          "original_title": "Klaus",
+          "title": "Klaus",
+          "vote_average": 8.2,
+          "overview": "Um carteiro egoísta e um fabricante de brinquedos solitário cultivam uma amizade improvável e levam alegria a uma cidade fria e sombria.",
+          "release_date": "2019-11-08",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            10751,
+            35
+          ]
+        },
+        {
+          "poster_path": "/jH0mknMEByXUDTfiS1SQOxYDL5z.jpg",
+          "popularity": 4.3186,
+          "vote_count": 1373,
+          "video": false,
+          "id": 586940,
+          "adult": false,
+          "backdrop_path": "/rHJX9CMYk7FXxUV5la1dEFSPVCv.jpg",
+          "original_language": "fr",
+          "original_title": "J'ai perdu mon corps",
+          "title": "Perdi Meu Corpo",
+          "vote_average": 7.5,
+          "overview": "Romance, mistério e aventura se misturam na história de um jovem apaixonado em Paris e de uma mão decepada em busca de seu dono neste filme de animação impressionante.",
+          "release_date": "2019-11-06",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            18,
+            14
+          ]
+        },
+        {
+          "poster_path": "/zb8xejiaNR0snSJgDepwFQUIi2e.jpg",
+          "popularity": 13.5788,
+          "vote_count": 972,
+          "video": false,
+          "id": 615453,
+          "adult": false,
+          "backdrop_path": "/k1pJslKr4aDayw9kWwWnlC3MIP3.jpg",
+          "original_language": "zh",
+          "original_title": "哪吒之魔童降世",
+          "title": "Ne Zha",
+          "vote_average": 7.909,
+          "overview": "\"Ne Zha\" conta a história de um jovem prodígio, nascido como um demônio e destinado a trazer destruição, que luta contra o seu destino para se tornar um herói.  Ele nasce da união de uma pérola celestial e um coração de um demônio, amaldiçoado a trazer destruição ao mundo.  Por causa da sua origem demoníaca, Ne Zha é odiado e temido por todos, sendo forçado a lutar contra os seus próprios demônios interiores para provar o seu valor e mudar o seu destino. O filme acompanha a sua jornada enquanto ele tenta quebrar os grilhões do seu destino, escolhendo o bem em vez do mal para se tornar o herói que ele quer ser.",
+          "release_date": "2019-07-26",
+          "media_type": "movie",
+          "genre_ids": [
+            16,
+            14,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "type": "person_list",
+      "persons": [
+        {
+          "id": 1033661,
+          "profile_path": "/5JmhiYsF0H1geSwbX5NtByZuJjC.jpg",
+          "name": "Travis Knight"
+        },
+        {
+          "id": 202,
+          "profile_path": "/75aOpLBpvdtQM3BkWGFUvMs6LvH.jpg",
+          "name": "Charlie Kaufman"
+        },
+        {
+          "id": 96676,
+          "profile_path": "/gqUcu5yEtNgnCaA2jtSOs8DV1Gg.jpg",
+          "name": "Tomm Moore"
+        },
+        {
+          "id": 96677,
+          "profile_path": "/pdWB95taGC55C4rOgmsPM59gBSK.jpg",
+          "name": "Nora Twomey"
+        },
+        {
+          "id": 1052664,
+          "profile_path": "/sJi5xDlfVncGl7EJaTMHOKbDOtq.jpg",
+          "name": "Alê Abreu"
+        },
+        {
+          "id": 608,
+          "profile_path": "/ouhjt9KugzhWtdEyBPipihB3ic8.jpg",
+          "name": "Hayao Miyazaki"
+        },
+        {
+          "id": 74091,
+          "profile_path": "/z8TN4Nkmhem6XqcnH2jMn5Ayf97.jpg",
+          "name": "Makoto Shinkai"
+        },
+        {
+          "id": 81718,
+          "profile_path": "/MBrgo5yaOdV454lUgDJsqvbdxP.jpg",
+          "name": "Mamoru Hosoda"
+        },
+        {
+          "id": 107446,
+          "profile_path": "/2MagibFHZxky3FmMubyABUnf4lw.jpg",
+          "name": "Phil Lord"
+        },
+        {
+          "id": 151007,
+          "profile_path": "/eAL9QdCEYyxiMP9cl9lQddg8zEa.jpg",
+          "name": "Peter Ramsey"
+        },
+        {
+          "id": 124749,
+          "profile_path": "/yUbwlVSiUZpjRYoD4XqFdiM1Knq.jpg",
+          "name": "Sergio Pablos"
+        },
+        {
+          "id": 2367353,
+          "profile_path": "/9GVX1PAomTgqlAQplBfYCtblPE6.jpg",
+          "name": "Jiao Zi"
+        }
+      ]
+    },
+    {
+      "type": "link_screen",
+      "subtitle": "The events that shaped the world",
+      "title": "Timeline of Events from 2010 to 2019",
+      "click": {
+        "screen": "timeline",
+        "parameters": [
+          {
+            "key": "VIEWPAGER_INDEX",
+            "value": "6"
+          }
+        ]
+      },
+      "image": {
+        "image_type": "local",
+        "url": "img_timeline_poster",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      },
+      "description": "Animation beyond Disney, foreign cinema conquering the Oscars, superheroes, horror and streaming. Click here to see the main events in cinema from 2010 to 2019 in chronological order."
+    }
+  ]
+}

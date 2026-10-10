@@ -35,6 +35,13 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
         setContentView(binding.root)
 
         SystemBarsInsets.apply(this)
+
+        if (drawsBehindStatusBar()) StatusBarScrim.apply(binding.root)
+    }
+
+    protected fun drawsBehindStatusBar(): Boolean {
+        val a = theme.obtainStyledAttributes(intArrayOf(android.R.attr.windowTranslucentStatus))
+        return try { a.getBoolean(0, false) } finally { a.recycle() }
     }
 
     /*fun getConfiguratedAd(adView: AdView) {

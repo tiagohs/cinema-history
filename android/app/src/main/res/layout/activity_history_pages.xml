@@ -6,19 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinator"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="false">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+        android:fitsSystemWindows="false">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/pagesContainer"
-            android:fitsSystemWindows="true"
+            android:fitsSystemWindows="false"
             android:background="@color/md_black_1000"
             android:alpha="0"
             app:layout_constraintTop_toTopOf="parent"
@@ -153,6 +153,22 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 />
+
+            <!-- Mini-player da narração: logo acima do rodapé, à direita do card "Sumário" (ver AudioMiniPlayer).
+                 Em tablets a largura é limitada (ls_mini_player_max_width) e ele fica centralizado no espaço livre. -->
+            <include
+                android:id="@+id/audioMiniPlayer"
+                layout="@layout/view_audio_mini_player"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="6dp"
+                android:visibility="gone"
+                app:layout_constraintWidth_max="@dimen/ls_mini_player_max_width"
+                app:layout_constraintStart_toEndOf="@id/toolbarImageCardContainer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/footerContent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

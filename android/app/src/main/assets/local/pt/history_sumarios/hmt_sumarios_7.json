@@ -163,5 +163,35 @@
         }
       }
     }
+  },
+  {
+    "id": 12,
+    "title": "Animação Além da Disney",
+    "description": "Do stop-motion da Laika ao anime de Makoto Shinkai, do traço irlandês da Cartoon Saloon ao Aranhaverso da Sony: a década em que a animação mostrou que não é só da Disney, nem só para crianças.",
+    "image": {
+      "image_type": "local",
+      "url": "img_animacao_alem_disney_aranhaverso",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "title": "O cinema estrangeiro conquista o Oscar",
+    "description": "De A Separação a Parasita, a década em que Hollywood aprendeu a ler legendas: iranianos, europeus, os “três amigos” mexicanos e a onda coreana derrubam a barreira de uma polegada.",
+    "image": {
+      "image_type": "local",
+      "url": "img_parasita_pedra",
+      "style": {
+        "scale_type": "center_crop",
+        "resize": {
+          "height": 350
+        }
+      }
+    }
   }
 ]

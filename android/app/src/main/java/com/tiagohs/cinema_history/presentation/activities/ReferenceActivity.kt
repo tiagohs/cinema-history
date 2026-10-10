@@ -1,5 +1,6 @@
 package com.tiagohs.cinema_history.presentation.activities
 
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.content.Context
 import android.view.LayoutInflater
 import com.tiagohs.cinema_history.databinding.ActivityReferencesBinding
@@ -37,6 +38,10 @@ class ReferenceActivity : BaseActivity<ActivityReferencesBinding>(), ReferenceVi
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Tablets: conteúdo numa coluna centralizada.
+        binding.pageContentListContainer.limitContentWidth(R.dimen.ls_list_max_width)
+        binding.loadView.limitContentWidth(R.dimen.ls_list_max_width)
 
         setupToolbar(binding.toolbar, displayShowTitleEnabled = true)
 

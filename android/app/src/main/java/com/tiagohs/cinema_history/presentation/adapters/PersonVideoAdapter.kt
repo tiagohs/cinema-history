@@ -24,7 +24,7 @@ class PersonVideoAdapter(
         override fun bind(item: PersonVideo, position: Int) {
             super.bind(item, position)
             val context = itemView.context ?: return
-            val videoId = item.key
+            val videoId = item.key.trim()
 
             binding.videoThumb.loadImage(
                 context.getString(R.string.youtube_image_link, videoId),

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Página 1 do onboarding: eras + idioma + tema. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/erasPill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_home_pill"
+        android:backgroundTint="@color/oscar"
+        android:paddingStart="12dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="5dp"
+        android:text="@string/onboarding_1_eras"
+        android:textAppearance="?attr/textAppearanceLabelLarge"
+        android:textColor="@color/md_black_1000" />
+
+    <LinearLayout
+        android:id="@+id/languageSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="88dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_language"
+            android:textAppearance="@style/TextAppearance.CinemaHistory.Onboarding.Label" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/languageGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/languagePt"
+                style="@style/Widget.CinemaHistory.Onboarding.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PT" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/languageEn"
+                style="@style/Widget.CinemaHistory.Onboarding.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EN" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/languageEs"
+                style="@style/Widget.CinemaHistory.Onboarding.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ES" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="88dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_theme"
+            android:textAppearance="@style/TextAppearance.CinemaHistory.Onboarding.Label" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/themeGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/themeSystem"
+                style="@style/Widget.CinemaHistory.Onboarding.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/onboarding_theme_system" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/themeLight"
+                style="@style/Widget.CinemaHistory.Onboarding.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/theme_light" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/themeDark"
+                style="@style/Widget.CinemaHistory.Onboarding.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/theme_dark" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+</LinearLayout>

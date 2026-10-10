@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_white_1000"
+    android:background="@color/daynight_background"
     android:id="@+id/errorContainer"
     android:visibility="gone"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -24,6 +24,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/ic_signal_cellular"
+            app:tint="@color/daynight_ink"
             />
 
         <TextView
@@ -32,7 +33,7 @@
             android:fitsSystemWindows="true"
             android:id="@+id/errorTitle"
             android:text="@string/error_title_ops"
-            android:textColor="@color/md_black_1000"
+            android:textColor="@color/daynight_text_primary"
             android:fontFamily="@font/oswald_bold"
             android:textSize="@dimen/text_size_zeplin_34pt"
             android:layout_marginTop="@dimen/activity_vertical_margin_2x"
@@ -44,23 +45,27 @@
             android:fitsSystemWindows="true"
             android:id="@+id/errorDescription"
             android:text="@string/error_unknown"
-            android:textColor="@color/md_black_1000"
+            android:textColor="@color/daynight_text_primary"
             android:textAlignment="center"
             android:fontFamily="@font/proxima_nova_regular"
             android:textSize="@dimen/text_size_zeplin_22pt"
             android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
         />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/tryAgainButton"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/presentation_start_button_size"
             android:text="@string/try_again"
-            android:background="@color/md_black_1000"
+            style="@style/Widget.Material3.Button"
+                app:backgroundTint="@color/daynight_ink"
+                app:rippleColor="@color/daynight_ripple_on_ink"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
             android:paddingStart="@dimen/activity_vertical_margin_2.5x"
             android:paddingEnd="@dimen/activity_vertical_margin_2.5x"
             android:layout_marginTop="@dimen/activity_vertical_margin_3x"
-            android:textColor="@color/md_white_1000"
+            android:textColor="@color/daynight_on_ink"
             android:fontFamily="@font/proxima_nova_regular"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

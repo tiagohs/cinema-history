@@ -15,8 +15,8 @@
         "image_type": "local",
         "url": "melies_the_head",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://img.youtube.com/vi/SOQwk_373ME/0.jpg",
+          "image_type": "local",
+          "url": "img_gif_thumb_melies_the_head",
           "style": {
             "scale_type": "center_crop"
           }
@@ -94,8 +94,8 @@
         "image_type": "local",
         "url": "man_who_laughs",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://img.youtube.com/vi/s9ieJ8M9GsU/0.jpg",
+          "image_type": "local",
+          "url": "img_gif_thumb_man_who_laughs",
           "style": {
             "scale_type": "center_crop"
           }
@@ -167,8 +167,8 @@
         "image_type": "local",
         "url": "caligari_scene",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://images.adsttc.com/media/images/55e8/9d1b/46fe/9f6f/6100/00f4/newsletter/caligari_0.jpg?1441307927",
+          "image_type": "local",
+          "url": "img_gif_thumb_caligari_scene",
           "style": {
             "scale_type": "center_crop"
           }

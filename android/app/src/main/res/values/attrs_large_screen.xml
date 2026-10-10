@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MaxWidthFrameLayout / MaxWidthLinearLayout: largura máxima (0 = sem limite). Ver docs/TABLETS.md. -->
+    <declare-styleable name="MaxWidthLayout">
+        <attr name="ls_maxWidth" format="dimension" />
+    </declare-styleable>
+
+    <item name="ls_content_width_state" type="id" />
+</resources>

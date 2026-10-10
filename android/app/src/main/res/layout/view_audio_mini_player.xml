@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Mini-player da narração: barra fina logo acima do rodapé (Sumário / Próximo) da tela do capítulo.
+    Escuro nos dois temas, como o rodapé. Some junto com o rodapé ao rolar para ler e quando o anúncio
+    nativo da página passa perto (ver AudioMiniPlayer / PageAudioBinder).
+-->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audioMiniPlayerCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/audio_mini_player_background"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:strokeWidth="0dp"
+    app:rippleColor="@color/audio_header_button_ripple">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageButton
+            android:id="@+id/audioMiniPlayPause"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/audio_play"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_audio_play"
+            app:tint="@color/md_white_1000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/audioMiniBuffering"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateTint="@color/md_white_1000"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/audioMiniPlayPause"
+            app:layout_constraintEnd_toEndOf="@id/audioMiniPlayPause"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/audioMiniBack15"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/audio_back_15"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_audio_back_15"
+            app:tint="@color/md_white_1000"
+            app:layout_constraintStart_toEndOf="@id/audioMiniPlayPause"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- duas linhas: capítulo (pequeno) em cima, faixa embaixo; títulos longos cortam com "…" -->
+        <LinearLayout
+            android:id="@+id/audioMiniTexts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="1dp"
+            android:importantForAccessibility="noHideDescendants"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/audioMiniBack15"
+            app:layout_constraintEnd_toStartOf="@id/audioMiniExpand"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/audioMiniChapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/audio_mini_player_secondary"
+                android:textSize="11sp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:includeFontPadding="false"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="Capítulo 1 · Visionários" />
+
+            <TextView
+                android:id="@+id/audioMiniTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/md_white_1000"
+                android:textSize="14sp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:includeFontPadding="false"
+                tools:text="Pathé Frères" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/audioMiniExpand"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/audio_expand"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_audio_expand"
+            app:tint="@color/md_white_1000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/audioMiniProgress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="1000"
+            android:importantForAccessibility="no"
+            app:trackThickness="2dp"
+            app:trackCornerRadius="0dp"
+            app:indicatorColor="@color/md_white_1000"
+            app:trackColor="@color/audio_mini_player_track"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Véu escuro para legibilidade do texto sobre imagens (Home). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="90"
+        android:startColor="@color/home_hero_scrim"
+        android:centerColor="#66000000"
+        android:endColor="@android:color/transparent"
+        android:type="linear" />
+</shape>

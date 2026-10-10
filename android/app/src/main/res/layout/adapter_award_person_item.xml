@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/personRoot"
+    android:layout_width="@dimen/awards_person_item_width"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/awards_person_size"
+        android:layout_height="@dimen/awards_person_size">
+
+        <TextView
+            android:id="@+id/personInitials"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/awards_person_circle"
+            android:fontFamily="@font/oswald_regular"
+            android:gravity="center"
+            android:textColor="@color/awards_on_surface_variant"
+            android:textSize="22sp"
+            tools:text="GG" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/personPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.CinemaHistory.Awards.Circle" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/personName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:textColor="@color/awards_on_surface"
+        android:textSize="12sp"
+        tools:text="Greta Gerwig" />
+
+</LinearLayout>

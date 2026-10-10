@@ -1,0 +1,438 @@
+{
+  "id": 2,
+  "color": "md_deep_orange_500",
+  "title_text_color": "md_white_1000",
+  "timeline_list": [
+    {
+      "type": "title",
+      "title": "The History<br/>of Cinema:<br/>2020 to today",
+      "page_title": "2020 to today",
+      "coming_soon": false,
+      "previous": "2010 to 2019"
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "The screens go dark",
+      "description": "China closed some 70,000 theaters as early as January, and in March, the month the WHO declared COVID-19 a pandemic, Europe, the United States and Brazil followed suit; in Brazil, on March 19, for the first time in history, not a single film opened. <a href=\"https://_{type: 'screen', 'id': 370172, 'screen_type': movie}\">No Time to Die</a> (2021), <a href=\"https://_{type: 'screen', 'id': 8784, 'screen_type': person}\">Daniel Craig</a>'s farewell as James Bond, was the first major release postponed because of the virus; by year's end, the global box office had fallen 72%, to $12 billion.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_pandemia_007_adiado",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "The window wars",
+      "description": "With theaters closed, <i>Universal</i> released <a href=\"https://_{type: 'screen', 'id': 446893, 'screen_type': movie}\">Trolls World Tour</a> (2020) straight to digital rental at $19.99, and <i>AMC</i>, the world's largest theater chain, responded by boycotting the studio's films. Peace came in July with a landmark deal: the <strong>theatrical window</strong>, the period of exclusivity for theaters, shrank from about 90 days to 17.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_trolls_janela_17_dias",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "A Netflix for every studio",
+      "description": "<i>HBO Max</i> launched on May 27 and <i>NBCUniversal</i>'s <i>Peacock</i> on July 15; in March 2021, <i>CBS All Access</i> became <i>Paramount+</i>. The <strong>streaming wars</strong> had begun: each major studio started keeping its films for its own platform, and HBO Max even bankrolled <a href=\"https://_{type: 'screen', 'id': 15217, 'screen_type': person}\">Zack Snyder</a>'s <a href=\"https://_{type: 'screen', 'id': 791373, 'screen_type': movie}\"><i>Justice League</i></a>, a version born of a fan campaign on social media.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_guerra_streaming_snyder",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "Tenet tests the reopening",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 525, 'screen_type': person}\">Christopher Nolan</a> persuaded <i>Warner</i> to hold <a href=\"https://_{type: 'screen', 'id': 577922, 'screen_type': movie}\">Tenet</a> (2020) for theaters, and the film became the test of reopening: after three delays, it opened on August 26 in 70 countries. It made about $365 million worldwide, only some $58 million of it in the United States, where theaters in New York and Los Angeles were still closed.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_tenet_reabertura",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "Premiere in the living room",
+      "description": "<i>Disney</i> gave up on U.S. theaters for <a href=\"https://_{type: 'screen', 'id': 337401, 'screen_type': movie}\">Mulan</a> (2020), released in September on <i>Disney+</i> for $29.99 on top of the subscription, and sent <a href=\"https://_{type: 'screen', 'id': 508442, 'screen_type': movie}\">Soul</a> (2020) straight to the platform, at no extra cost, on Christmas. <i>Soul</i> won the Oscar for Best Animated Feature, and <strong>Disney+</strong>, launched in November 2019, passed 100 million subscribers in March 2021.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_soul_disney_plus",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n20",
+      "title": "Project Popcorn",
+      "description": "On December 3, <i>Warner</i> announced that all 17 of its 2021 films would open on the same day in U.S. theaters and on <i>HBO Max</i>, as <a href=\"https://_{type: 'screen', 'id': 464052, 'screen_type': movie}\">Wonder Woman 1984</a> (2020) would on Christmas. Many filmmakers had not been consulted: Nolan said they had gone to bed working for the greatest movie studio and woken up to find they were working for “the worst streaming service,” and <a href=\"https://_{type: 'screen', 'id': 137427, 'screen_type': person}\">Denis Villeneuve</a> wrote that Warner might have killed the <a href=\"https://_{type: 'screen', 'id': 438631, 'screen_type': movie}\">Dune</a> (2021) franchise.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_project_popcorn_mulher_maravilha",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n21",
+      "title": "Monsters call the crowds back",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 399566, 'screen_type': movie}\">Godzilla vs. Kong</a> (2021) opened with $123.1 million outside the United States, the biggest worldwide opening for a Hollywood film since the pandemic began, and arrived in the U.S. on March 31, simultaneously in theaters and on <i>HBO Max</i>, with $48.1 million in five days, the best U.S. result of the period to date. It finished with $470 million and was one of the first signs that audiences wanted to return to theaters.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_godzilla_kong_reabertura",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n21",
+      "title": "Oscars at the train station",
+      "description": "Postponed to April 25 and moved to Los Angeles's <i>Union Station</i> train terminal, the Oscar ceremony named <a href=\"https://_{type: 'screen', 'id': 581734, 'screen_type': movie}\"><i>Nomadland</i></a> (2020) Best Picture. <a href=\"https://_{type: 'screen', 'id': 1395183, 'screen_type': person}\">Chloé Zhao</a> became the second woman to win the Oscar for Best Director and the first woman of color, and <a href=\"https://_{type: 'screen', 'id': 3910, 'screen_type': person}\">Frances McDormand</a> won her third Oscar for Best Actress.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_nomadland_oscar_pandemia",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n21",
+      "title": "Three Spider-Men, one billion",
+      "description": "Released exclusively in theaters, <a href=\"https://_{type: 'screen', 'id': 634649, 'screen_type': movie}\">Spider-Man: No Way Home</a> (2021) brought <a href=\"https://_{type: 'screen', 'id': 1136406, 'screen_type': person}\">Tom Holland</a> together with the Spider-Men of <a href=\"https://_{type: 'screen', 'id': 2219, 'screen_type': person}\">Tobey Maguire</a> and <a href=\"https://_{type: 'screen', 'id': 37625, 'screen_type': person}\">Andrew Garfield</a> and crossed $1 billion in just 12 days, without even opening in China. The first film of the pandemic to reach that mark, it finished with about $1.92 billion, the biggest box office of 2021.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_sem_volta_para_casa_tres_aranhas",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n22",
+      "title": "Streaming takes the Oscar",
+      "description": "On March 27, <a href=\"https://_{type: 'screen', 'id': 776503, 'screen_type': movie}\">CODA</a> (2021), acquired by <i>Apple TV+</i> at the Sundance Film Festival, became the first film from a streaming service to win the Oscar for Best Picture. Ten days earlier, another tech giant, <i>Amazon</i>, had closed its $8.45 billion purchase of <i>MGM</i>, the studio of the roaring lion.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_coda_oscar_streaming",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n22",
+      "title": "Maverick saves the summer",
+      "description": "After turning down offers from streaming platforms, <a href=\"https://_{type: 'screen', 'id': 500, 'screen_type': person}\">Tom Cruise</a> released <a href=\"https://_{type: 'screen', 'id': 361743, 'screen_type': movie}\">Top Gun: Maverick</a> (2022) exclusively in theaters in May, with aerial scenes shot for real by <i>IMAX</i>-certified cameras mounted inside the fighter jet cockpits. <a href=\"https://_{type: 'screen', 'id': 86270, 'screen_type': person}\">Joseph Kosinski</a>'s film grossed about $1.5 billion, the biggest box office of Cruise's career, and Steven Spielberg went so far as to tell the actor he had saved “Hollywood's ass.”",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_top_gun_maverick_cabine",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n23",
+      "title": "Everything everywhere at the Oscars",
+      "description": "On March 12, <a href=\"https://_{type: 'screen', 'id': 545611, 'screen_type': movie}\">Everything Everywhere All at Once</a> (2022), <i>A24</i>'s multiverse comedy about a Chinese immigrant who owns a laundromat, won seven Oscars, including Best Picture. <a href=\"https://_{type: 'screen', 'id': 1620, 'screen_type': person}\">Michelle Yeoh</a> became the first Asian woman to win Best Actress, <a href=\"https://_{type: 'screen', 'id': 690, 'screen_type': person}\">Ke Huy Quan</a> took Best Supporting Actor and, on the same night, Germany's <a href=\"https://_{type: 'screen', 'id': 49046, 'screen_type': movie}\">Im Westen nichts Neues</a> (All Quiet on the Western Front, 2022) won four statuettes.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_tudo_em_todo_lugar_oscar",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n23",
+      "title": "Naatu Naatu!",
+      "description": "Although it was not India's pick for the Best International Feature Oscar, <a href=\"https://_{type: 'screen', 'id': 147021, 'screen_type': person}\">S. S. Rajamouli</a>'s Telugu-language epic <a href=\"https://_{type: 'screen', 'id': 579974, 'screen_type': movie}\">RRR</a> (2022) became a phenomenon on <i>Netflix</i> and made it to the awards through an independent campaign. The musical number “Naatu Naatu” won the Oscar for Best Original Song, the first ever for a song from an Indian film, and the movie became a symbol of <i>pan-Indian</i> cinema, in which productions from the south of the country began competing with Bollywood for the top spot.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_rrr_naatu_naatu",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n23",
+      "title": "Hollywood walks out",
+      "description": "<i>WGA</i> writers went on strike on May 2 and, on July 14, the actors of <i>SAG-AFTRA</i>, led by <a href=\"https://_{type: 'screen', 'id': 53122, 'screen_type': person}\">Fran Drescher</a>, joined them, in the first simultaneous strike by the two unions since 1960. The dispute centered on streaming money and rules for artificial intelligence, lasted 148 days for the writers and 118 for the actors, and delayed releases such as <a href=\"https://_{type: 'screen', 'id': 693134, 'screen_type': movie}\">Dune: Part Two</a> (2024).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_greves_2023_duna",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n23",
+      "title": "Barbenheimer",
+      "description": "On July 21, <a href=\"https://_{type: 'screen', 'id': 45400, 'screen_type': person}\">Greta Gerwig</a>'s <a href=\"https://_{type: 'screen', 'id': 346698, 'screen_type': movie}\">Barbie</a> (2023) and <a href=\"https://_{type: 'screen', 'id': 525, 'screen_type': person}\">Christopher Nolan</a>'s <a href=\"https://_{type: 'screen', 'id': 872585, 'screen_type': movie}\">Oppenheimer</a> (2023) opened together, and the internet turned the scheduling clash into a must-see outing: the <strong>Barbenheimer</strong> double feature. <i>Barbie</i> reached $1.44 billion; <i>Oppenheimer</i>, a three-hour historical drama, made nearly $1 billion and won seven Oscars, including Best Picture.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_barbenheimer_barbieland",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n23",
+      "title": "The film lover's diary",
+      "description": "Founded in New Zealand in 2011, <strong>Letterboxd</strong>, the social network where users log, rate and review the films they've seen, jumped from about 1.8 million members in 2020 to 10 million in 2023. In October, the month <a href=\"https://_{type: 'screen', 'id': 466420, 'screen_type': movie}\">Killers of the Flower Moon</a> (2023) opened, <a href=\"https://_{type: 'screen', 'id': 1032, 'screen_type': person}\">Martin Scorsese</a> joined the platform and quickly became its most-followed profile; by June 2026, the network had passed 30 million users.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_letterboxd_scorsese",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n23",
+      "title": "Superhero fatigue?",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1795072, 'screen_type': person}\">Nia DaCosta</a>'s <a href=\"https://_{type: 'screen', 'id': 609681, 'screen_type': movie}\">The Marvels</a> (2023) made just $206 million worldwide, the lowest gross in the Marvel Cinematic Universe, and <a href=\"https://_{type: 'screen', 'id': 1299481, 'screen_type': person}\">Bob Iger</a> admitted that at the studio “quantity diluted quality.” With production sped up to feed <i>Disney+</i>, <strong>superhero fatigue</strong> made headlines and, in December, the studio also lost Jonathan Majors, the Kang meant to anchor the new saga, who was fired after being convicted of assault.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_as_marvels_fadiga",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n24",
+      "title": "Japan beats Hollywood",
+      "description": "On March 10, <a href=\"https://_{type: 'screen', 'id': 940721, 'screen_type': movie}\">Godzilla Minus One</a> (2023), which cost less than $15 million according to director <a href=\"https://_{type: 'screen', 'id': 43652, 'screen_type': person}\">Takashi Yamazaki</a>, beat the American blockbusters to win the Oscar for Best Visual Effects, the franchise's first statuette in nearly 70 years. On the same night, <a href=\"https://_{type: 'screen', 'id': 508883, 'screen_type': movie}\">The Boy and the Heron</a> (2023) gave <a href=\"https://_{type: 'screen', 'id': 608, 'screen_type': person}\">Hayao Miyazaki</a>, at 83, his second Oscar for Best Animated Feature.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_godzilla_minus_one_oscar",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n24",
+      "title": "The horror in the mirror",
+      "description": "Winner of the screenplay award at Cannes, French director <a href=\"https://_{type: 'screen', 'id': 1607016, 'screen_type': person}\">Coralie Fargeat</a>'s <a href=\"https://_{type: 'screen', 'id': 933260, 'screen_type': movie}\">The Substance</a> (2024) was dropped by <i>Universal</i> in a dispute over final cut, ended up distributed by <i>MUBI</i> and became the company's highest-grossing release. The gory satire of Hollywood's obsession with youth earned five Oscar nominations, won for Makeup and Hairstyling and gave <a href=\"https://_{type: 'screen', 'id': 3416, 'screen_type': person}\">Demi Moore</a> the first nomination of her career.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_substancia_body_horror",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n25",
+      "title": "Fernanda Torres makes history",
+      "description": "Released in November 2024, <a href=\"https://_{type: 'screen', 'id': 8574, 'screen_type': person}\">Walter Salles</a>'s <a href=\"https://_{type: 'screen', 'id': 1000837, 'screen_type': movie}\">Ainda Estou Aqui</a> (I'm Still Here, 2024), about Eunice Paiva, who saw her husband, former congressman Rubens Paiva, taken away by agents of the military dictatorship, never to return, drew more than 5 million moviegoers in Brazil. On January 5, 2025, <a href=\"https://_{type: 'screen', 'id': 87335, 'screen_type': person}\">Fernanda Torres</a> won the Golden Globe for Best Actress in a Drama, the first Brazilian to win in an acting category, more than 25 years after her mother, <a href=\"https://_{type: 'screen', 'id': 10055, 'screen_type': person}\">Fernanda Montenegro</a>, was nominated for an Oscar for <a href=\"https://_{type: 'screen', 'id': 666, 'screen_type': movie}\">Central do Brasil</a> (Central Station, 1998).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_ainda_estou_aqui_globo",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n25",
+      "title": "The biggest animated film in history",
+      "description": "Released on January 29, the first day of the Chinese New Year, <a href=\"https://_{type: 'screen', 'id': 2367353, 'screen_type': person}\">Jiaozi</a>'s <a href=\"https://_{type: 'screen', 'id': 980477, 'screen_type': movie}\">Ne Zha 2</a> (2025) grossed about $2.27 billion, almost all of it in China. Made by more than 4,000 professionals from 138 Chinese studios, it became the highest-grossing animated film in history and the biggest hit ever for a film not in English.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_ne_zha_2_recorde",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n25",
+      "title": "Brazil's first Oscar",
+      "description": "On March 2, the Sunday of Carnival, <a href=\"https://_{type: 'screen', 'id': 1000837, 'screen_type': movie}\"><i>Ainda Estou Aqui</i></a> (I'm Still Here) won the Oscar for Best International Feature Film, the first ever for a Brazilian production, and the celebration swept through Rio's Sambadrome and the carnival floats of Salvador. It was also the first entirely Brazilian film nominated for Best Picture, and <a href=\"https://_{type: 'screen', 'id': 87335, 'screen_type': person}\">Fernanda Torres</a> was up for Best Actress.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_ainda_estou_aqui_oscar",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n25",
+      "title": "Recife at Cannes",
+      "description": "In May, <a href=\"https://_{type: 'screen', 'id': 1016214, 'screen_type': person}\">Kleber Mendonça Filho</a>'s <a href=\"https://_{type: 'screen', 'id': 1220564, 'screen_type': movie}\">O Agente Secreto</a> (The Secret Agent, 2025), a <i>thriller</i> set in Recife in 1977, at the height of the military dictatorship, won the Best Director and Best Actor awards at Cannes, the latter going to <a href=\"https://_{type: 'screen', 'id': 52583, 'screen_type': person}\">Wagner Moura</a>, the first Brazilian to be named Best Actor at the festival. In 2026, it won two Golden Globes and earned four Oscar nominations, including Best Picture and the first Best Actor nod for a Brazilian, but left the ceremony empty-handed.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_agente_secreto_cannes",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n25",
+      "title": "Golden",
+      "description": "An American production from <i>Sony Pictures Animation</i> about a <i>K-pop</i> group that hunts demons, <a href=\"https://_{type: 'screen', 'id': 3003169, 'screen_type': person}\">Maggie Kang</a> and Chris Appelhans's <a href=\"https://_{type: 'screen', 'id': 803796, 'screen_type': movie}\">KPop Demon Hunters</a> (2025) premiered on <i>Netflix</i> in June and became the most-watched film in the platform's history. In August, sing-along screenings took it to the top of the U.S. box office for a weekend and, in March 2026, it won the Oscars for Best Animated Feature and Best Original Song, for “Golden.”",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_guerreiras_kpop_golden",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n25",
+      "title": "The actress who doesn't exist",
+      "description": "In September, <strong>Tilly Norwood</strong>, an AI-generated “actress” from production company <i>Particle6</i>, sparked controversy when her creator said talent agencies wanted to represent her; <i>SAG-AFTRA</i> responded that she was a character generated by a computer program trained on the work of real actors, without permission or pay. That same month, <i>OpenAI</i> launched <i>Sora 2</i>, which generates videos from text, but it announced the shutdown of <i>Sora</i> in March 2026; in May, the Academy ruled that, starting with the 2027 Oscars, only performances “demonstrably performed by humans” would be eligible.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_ia_tilly_norwood_sora",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n26",
+      "title": "16 nominations",
+      "description": "<a href=\"https://_{type: 'screen', 'id': 1056121, 'screen_type': person}\">Ryan Coogler</a>'s <a href=\"https://_{type: 'screen', 'id': 1233413, 'screen_type': movie}\">Sinners</a> (2025), a vampire-and-blues horror film set in 1932 Mississippi, received 16 Oscar nominations, an all-time record that beat the 14 of <i>All About Eve</i>, <i>Titanic</i> and <i>La La Land</i>. On March 15, it won four, including Best Actor, for <a href=\"https://_{type: 'screen', 'id': 135651, 'screen_type': person}\">Michael B. Jordan</a>, and Best Cinematography, for <a href=\"https://_{type: 'screen', 'id': 1385904, 'screen_type': person}\">Autumn Durald Arkapaw</a>, the first woman to win in the category; the top prize went to <a href=\"https://_{type: 'screen', 'id': 4762, 'screen_type': person}\">Paul Thomas Anderson</a>'s <a href=\"https://_{type: 'screen', 'id': 1054867, 'screen_type': movie}\">One Battle After Another</a> (2025).",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_pecadores_recorde_oscar",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n26",
+      "title": "From YouTube to the top",
+      "description": "Two first-time directors who came up on <i>YouTube</i> dominated theaters: <a href=\"https://_{type: 'screen', 'id': 2381985, 'screen_type': person}\">Curry Barker</a>'s <a href=\"https://_{type: 'screen', 'id': 1339713, 'screen_type': movie}\">Obsession</a> (2026) opened on May 15 and topped $500 million, the biggest box office in <i>Focus Features</i> history. Two weeks later, <a href=\"https://_{type: 'screen', 'id': 1083381, 'screen_type': movie}\">Backrooms</a> (2026), which <a href=\"https://_{type: 'screen', 'id': 3688382, 'screen_type': person}\">Kane Parsons</a> developed from a short film he posted at age 16, scored the biggest opening in <i>A24</i> history and topped $400 million worldwide.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_backrooms_youtube",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n26",
+      "title": "An IMAX odyssey",
+      "description": "The first feature shot entirely on IMAX film cameras, <a href=\"https://_{type: 'screen', 'id': 525, 'screen_type': person}\">Christopher Nolan</a>'s <a href=\"https://_{type: 'screen', 'id': 1368337, 'screen_type': movie}\">The Odyssey</a> (2026) opened on July 17 with some of its 70mm screenings sold out a year in advance. It crossed $1.6 billion, took from <i>Deadpool & Wolverine</i> the title of highest-grossing R-rated film in history and became the biggest hit of all time for IMAX.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_odisseia_imax",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n26",
+      "title": "A brand new day for Spider-Man",
+      "description": "Released in the U.S. on July 31, <a href=\"https://_{type: 'screen', 'id': 1144604, 'screen_type': person}\">Destin Daniel Cretton</a>'s <a href=\"https://_{type: 'screen', 'id': 969681, 'screen_type': movie}\">Spider-Man: Brand New Day</a> (2026) posted the second-biggest worldwide opening of all time, $927 million, and within three weeks became only the eighth film to top $2 billion. Almost five years after <i>No Way Home</i>, Spider-Man proved that audiences hadn't tired of superheroes, but of the formula.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_homem_aranha_novo_dia",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "item",
+      "year": "20\n26",
+      "title": "Warner changes hands",
+      "description": "In December 2025, <i>Netflix</i> won the auction for the studios of <i>Warner Bros.</i>, the home of <a href=\"https://_{type: 'screen', 'id': 289, 'screen_type': movie}\"><i>Casablanca</i></a>, but <a href=\"https://_{type: 'screen', 'id': 58433, 'screen_type': person}\">David Ellison</a>'s <i>Paramount</i> launched a hostile bid and, in February 2026, Warner accepted the rival offer, worth about $81 billion. The deal closed on October 6: two century-old studios became a single company, <strong>Skydance</strong>, bound by a settlement with U.S. states to release at least 30 films a year in the country's theaters.",
+      "image_transparent": false,
+      "image": {
+        "image_type": "local",
+        "url": "img_tl_warner_skydance_casablanca",
+        "style": {
+          "scale_type": "center_crop"
+        }
+      }
+    },
+    {
+      "type": "footer",
+      "previous": "2010 to 2019"
+    }
+  ]
+}

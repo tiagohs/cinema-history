@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/progressSeekBar"
         android:max="100"
-        android:progressTint="@color/md_black_1000"
+        android:progressTint="@color/daynight_ink"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/controlButton"
         app:layout_constraintEnd_toStartOf="@id/rightContainer"
@@ -79,7 +79,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/md_grey_700"
+            android:textColor="@color/daynight_text_grey_700"
             android:id="@+id/progressTime"
             android:text="0:00"
             android:fontFamily="@font/proxima_nova_bold"
@@ -93,7 +93,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/md_grey_700"
+            android:textColor="@color/daynight_text_grey_700"
             android:id="@+id/totalTime"
             android:text="0:00"
             android:fontFamily="@font/proxima_nova_bold"

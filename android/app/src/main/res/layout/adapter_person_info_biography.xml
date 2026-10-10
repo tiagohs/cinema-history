@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@android:color/transparent">
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pageContentListContainer"
@@ -36,7 +36,7 @@
                 android:id="@+id/summaryTitle"
                 android:text="@string/biography"
                 android:textSize="@dimen/text_size_zeplin_34pt"
-                android:textColor="@color/md_black_1000"
+                android:textColor="@color/daynight_text_primary"
                 android:fontFamily="@font/oswald_regular"
                 android:layout_gravity="bottom"
                 app:layout_constraintTop_toTopOf="parent"
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/personBiography"
                 android:textSize="@dimen/text_size_zeplin_22pt"
-                android:textColor="@color/md_black_1000"
+                android:textColor="@color/daynight_text_primary"
                 android:fontFamily="@font/proxima_nova_regular"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
@@ -64,7 +64,7 @@
                 android:id="@+id/movieSummarySource"
                 android:text="@string/source_tmdb"
                 android:textSize="@dimen/text_size_zeplin_22pt"
-                android:textColor="@color/md_black_1000"
+                android:textColor="@color/daynight_text_primary"
                 android:fontFamily="@font/proxima_nova_regular"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/activity_vertical_margin_2x"
@@ -75,6 +75,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,8 +41,8 @@
         "image_type": "local",
         "url": "entreato_bale",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://img.youtube.com/vi/Fif9e6THwOI/0.jpg",
+          "image_type": "local",
+          "url": "img_gif_thumb_entreato_bale",
           "style": {
             "scale_type": "center_crop"
           }
@@ -66,8 +66,8 @@
         "image_type": "local",
         "url": "la_coquille",
         "thumbnail": {
-          "image_type": "online",
-          "url": "https://img.youtube.com/vi/-NqrwaxzP_U/0.jpg",
+          "image_type": "local",
+          "url": "img_gif_thumb_la_coquille",
           "style": {
             "scale_type": "center_crop"
           }

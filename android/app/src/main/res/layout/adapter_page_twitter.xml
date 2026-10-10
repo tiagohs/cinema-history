@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ProgressBar
+            android:indeterminateTint="?attr/colorSecondary"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:id="@+id/loadingProgress"

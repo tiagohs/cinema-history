@@ -138,14 +138,15 @@ dependencies {
     implementation dependencies.glide_transformations
 
     // Firebase
-    implementation dependencies.firebaseStorage
     implementation dependencies.firebaseRemoteConfig
 
     // Anúncios (AdMob) + consentimento (UMP)
     implementation dependencies.playServicesAds
     implementation dependencies.ump
+    implementation dependencies.billing
+    implementation dependencies.media3Exoplayer
+    implementation dependencies.media3Session
     implementation dependencies.firebaseAnalytics
-    implementation dependencies.firebaseUiStorage
     implementation dependencies.firebaseCrashlytics
 
     // Preference

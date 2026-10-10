@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="@android:color/transparent">
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pageContentListContainer"
@@ -39,7 +39,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/certification_card_height"
                     android:minWidth="@dimen/certification_card_height"
@@ -67,7 +67,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         />
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="@dimen/social_card_width"
@@ -92,6 +92,7 @@
                             android:layout_height="@dimen/social_image_size"
                             android:padding="@dimen/activity_vertical_margin_0.5x"
                             app:srcCompat="@drawable/ic_facebook_grey_dark"
+                            app:tint="@color/daynight_text_grey_800"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -125,6 +126,7 @@
                             android:layout_height="@dimen/social_image_size"
                             android:padding="@dimen/activity_vertical_margin_0.5x"
                             app:srcCompat="@drawable/ic_twitter_grey_dark"
+                            app:tint="@color/daynight_text_grey_800"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -158,6 +160,7 @@
                             android:layout_height="@dimen/social_image_size"
                             android:padding="@dimen/activity_vertical_margin_0.5x"
                             app:srcCompat="@drawable/ic_instagram_grey_dark"
+                            app:tint="@color/daynight_text_grey_800"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -190,6 +193,7 @@
                             android:layout_width="@dimen/social_image_size"
                             android:layout_height="@dimen/social_image_size"
                             app:srcCompat="@drawable/ic_link_grey_dark_24dp"
+                            app:tint="@color/daynight_text_grey_800"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -222,6 +226,7 @@
                             android:layout_width="@dimen/social_image_size"
                             android:layout_height="@dimen/social_image_size"
                             app:srcCompat="@drawable/ic_imdb_grey_dark_24dp"
+                            app:tint="@color/daynight_text_grey_800"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -240,7 +245,7 @@
                 android:id="@+id/summaryTitle"
                 android:text="@string/sinopsys"
                 android:textSize="@dimen/text_size_zeplin_34pt"
-                android:textColor="@color/md_black_1000"
+                android:textColor="@color/daynight_text_primary"
                 android:fontFamily="@font/oswald_regular"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
@@ -255,7 +260,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/movieSummary"
                 android:textSize="@dimen/text_size_zeplin_22pt"
-                android:textColor="@color/md_black_1000"
+                android:textColor="@color/daynight_text_primary"
                 android:fontFamily="@font/proxima_nova_regular"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.2x"
@@ -272,7 +277,7 @@
                 android:id="@+id/movieSummarySource"
                 android:text="@string/source_tmdb"
                 android:textSize="@dimen/text_size_zeplin_22pt"
-                android:textColor="@color/md_black_1000"
+                android:textColor="@color/daynight_text_primary"
                 android:fontFamily="@font/proxima_nova_regular"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="@dimen/activity_vertical_margin_2x"
@@ -319,14 +324,14 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/movieBudget"
                         android:fontFamily="@font/proxima_nova_bold"
-                        android:textColor="@color/md_black_1000"
+                        android:textColor="@color/daynight_text_primary"
                         android:textSize="@dimen/text_size_zeplin_26pt"
                         android:layout_marginBottom="@dimen/activity_vertical_margin_0.5x"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent" />
 
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="@dimen/indicator_size"
                         android:layout_height="@dimen/indicator_size"
                         app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
@@ -362,14 +367,14 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/movieRevenue"
                         android:fontFamily="@font/proxima_nova_bold"
-                        android:textColor="@color/md_black_1000"
+                        android:textColor="@color/daynight_text_primary"
                         android:textSize="@dimen/text_size_zeplin_26pt"
                         android:layout_marginBottom="@dimen/activity_vertical_margin_0.5x"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent" />
 
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="@dimen/indicator_size"
                         android:layout_height="@dimen/indicator_size"
                         app:cardCornerRadius="@dimen/activity_vertical_margin_0.5x"
@@ -397,7 +402,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

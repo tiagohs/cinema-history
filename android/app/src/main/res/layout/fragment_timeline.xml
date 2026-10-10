@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_white_1000">
+    android:background="@color/daynight_background">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             app:contentScrim="@color/md_black_1000"
             app:titleEnabled="false">
 
-            <androidx.appcompat.widget.Toolbar
+            <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
@@ -50,21 +50,34 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-            </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.MaterialToolbar>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/timelineList"
-        app:layout_constraintTop_toBottomOf="@id/appBar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+        android:layout_height="match_parent"
+        android:id="@+id/timelineContainer"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <!-- Ano em destaque (marca d'água) que rola como um odômetro conforme o scroll -->
+        <com.tiagohs.cinema_history.presentation.views.OdometerYearView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yearWatermark"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/timeline_year_watermark_margin"
+            android:alpha="0"
+            android:importantForAccessibility="no" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/timelineList" />
+
+    </FrameLayout>
 
     <com.facebook.shimmer.ShimmerFrameLayout
         android:id="@+id/loadView"

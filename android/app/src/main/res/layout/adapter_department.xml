@@ -7,7 +7,7 @@
     android:layout_height="@dimen/department_button_size"
     android:id="@+id/jobName"
     android:fontFamily="@font/roboto_light"
-    android:textColor="@color/md_black_1000"
+    android:textColor="@color/daynight_text_primary"
     android:textSize="@dimen/text_size_zeplin_18pt"
     android:background="@drawable/background_border_rectangle_white_1dp"
     android:paddingStart="@dimen/activity_vertical_margin_2x"

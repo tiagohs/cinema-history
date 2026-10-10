@@ -15,6 +15,12 @@ import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.snackbar.Snackbar
 import com.tiagohs.cinema_history.R
 import com.tiagohs.cinema_history.ads.ChapterInterstitial
+import android.graphics.Rect
+import com.tiagohs.cinema_history.audio.AudioHost
+import com.tiagohs.cinema_history.audio.ChapterAudioController
+import com.tiagohs.cinema_history.audio.ChapterKey
+import com.tiagohs.cinema_history.audio.ui.AudioMiniPlayer
+import com.tiagohs.cinema_history.audio.ui.AudioPlayerSheet
 import com.tiagohs.cinema_history.presentation.adapters.PagePagerAdapter
 import com.tiagohs.cinema_history.presentation.configs.BaseActivity
 import com.tiagohs.domain.managers.DynamicLinkManager
@@ -30,10 +36,13 @@ import java.lang.Exception
 import javax.inject.Inject
 
 
-class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
+class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>(), AudioHost {
 
     @Inject
     lateinit var dynamicLinkManager: DynamicLinkManager
+
+    @Inject
+    lateinit var localService: com.tiagohs.domain.services.LocalService
 
     var mainTopic: MainTopicItem? = null
     var adapterPager: PagePagerAdapter? = null
@@ -44,6 +53,15 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
     var currentPosition: Int = 0
 
     private val chapterInterstitial by lazy { ChapterInterstitial(this) }
+
+    // Narração em áudio: player compartilhado pelas páginas + mini-player acima do rodapé.
+    override val audio: ChapterAudioController by lazy {
+        ChapterAudioController(this) {
+            val topic = mainTopic ?: return@ChapterAudioController null
+            topic.id to (topic.sumarioList?.map { it.id } ?: emptyList())
+        }
+    }
+    private var miniPlayer: AudioMiniPlayer? = null
 
     override fun inflateBinding(inflater: LayoutInflater) = ActivityHistoryPagesBinding.inflate(inflater)
     override fun onGetMenuLayoutId(): Int = 0
@@ -56,12 +74,21 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
         startLoading()
 
         setupArguments()
+        setupAudio()
         setupPagesContainer()
         setupFooter()
 
         hideLoading()
 
         chapterInterstitial.preload()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // idioma trocado aqui (chip da toolbar) ou em outra tela: reabre no mesmo capítulo, no novo idioma
+        com.tiagohs.cinema_history.presentation.configs.LocalizedMainTopic.reopenIfLanguageChanged(this, localService, mainTopic) { fresh ->
+            newIntent(this, fresh, binding.sumarioContentViewPager.currentItem, isFromUniversalLink)
+        }
     }
 
     override fun onBackPressed() {
@@ -109,6 +136,56 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
 
             })
             ?.start()
+    }
+
+    private fun setupAudio() {
+        audio.addListener(followEraListener)
+        miniPlayer = AudioMiniPlayer(
+            binding.audioMiniPlayer,
+            audio,
+            footerHeight = { binding.footerContent.height },
+            onExpand = { openAudioSheet() }
+        )
+    }
+
+    /** "Ouvir a era inteira": quando a narração passa para o capítulo seguinte, a página acompanha. */
+    private val followEraListener = object : ChapterAudioController.Listener {
+        private var lastKey: ChapterKey? = null
+
+        override fun onAudioChanged() {
+            val key = audio.currentKey()
+            val previous = lastKey
+            lastKey = key
+            if (key == null || previous == null || key == previous) return
+            val topic = mainTopic ?: return
+            if (key.era != topic.id || previous.era != topic.id || key.lang != previous.lang) return
+            val list = topic.sumarioList ?: return
+            val visiblePage = list.getOrNull(binding.sumarioContentViewPager.currentItem)?.id
+            if (visiblePage != previous.page) return
+            val target = list.indexOfFirst { it.id == key.page }
+            if (target >= 0 && lifecycle.currentState.isAtLeast(androidx.lifecycle.Lifecycle.State.STARTED)) {
+                binding.sumarioContentViewPager.setCurrentItem(target, true)
+            }
+        }
+    }
+
+    override fun openAudioSheet() {
+        if (supportFragmentManager.findFragmentByTag(AudioPlayerSheet.TAG) != null || supportFragmentManager.isStateSaved) return
+        AudioPlayerSheet().show(supportFragmentManager, AudioPlayerSheet.TAG)
+    }
+
+    override fun miniPlayerSlot(): Rect? = miniPlayer?.slotOnScreen()
+
+    override fun miniPlayerReservedHeight(): Int = miniPlayer?.reservedHeight() ?: 0
+
+    override fun setMiniPlayerAdConflict(conflict: Boolean) {
+        miniPlayer?.setAdConflict(conflict)
+    }
+
+    override fun onDestroy() {
+        miniPlayer?.release()
+        miniPlayer = null
+        super.onDestroy()
     }
 
     private fun setupFooter() {
@@ -180,6 +257,7 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
         animate(binding.shareButton, 0f, DecelerateInterpolator(2f))
         animate(binding.sumarioContentIndicatorContainer, 0f, DecelerateInterpolator(2f))
         animate(binding.toolbarImageCardContainer, 0f, DecelerateInterpolator(4f))
+        miniPlayer?.setFooterShown(true)
     }
 
     fun hideFooter() {
@@ -194,6 +272,7 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
             ),
             AccelerateInterpolator(2f)
         )
+        miniPlayer?.setFooterShown(false)
     }
 
     private fun animate(view: View, translationY: Float, interpolator: Interpolator) {
@@ -223,6 +302,9 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             adapter = adapterPager
             currentItem = itemSelectedPosition
+            // Recriação (rotação, redimensionar janela/multi-janela): o ViewPager2 restaura a página
+            // aberta e avisa em onPageSelected; até lá, compartilhar usa a página inicial certa.
+            this@HistoryPagesActivity.currentPosition = itemSelectedPosition
 
             setPageTransformer(ZoomOutPageTransformer())
 
@@ -270,7 +352,7 @@ class HistoryPagesActivity : BaseActivity<ActivityHistoryPagesBinding>() {
             intent.putExtra(MAIN_TOPIC, mainTopic)
             intent.putExtra(Constants.IS_FROM_UNIVERSAL_LINK, isFromUniversalLink)
 
-            return intent
+            return com.tiagohs.cinema_history.presentation.configs.LocalizedMainTopic.tag(intent)
         }
     }
 }

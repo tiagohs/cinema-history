@@ -1,5 +1,7 @@
 package com.tiagohs.cinema_history.presentation.activities
 
+import com.tiagohs.cinema_history.R
+import com.tiagohs.cinema_history.presentation.configs.limitContentWidth
 import android.content.Context
 import android.view.LayoutInflater
 import com.tiagohs.cinema_history.databinding.ActivityGlossaryBinding
@@ -32,6 +34,10 @@ class GlossaryActivity : BaseActivity<ActivityGlossaryBinding>(), GlossaryView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Tablets: lista numa coluna centralizada (o índice A–Z continua na borda).
+        binding.contentList.limitContentWidth(R.dimen.ls_list_max_width)
+        binding.loadView.limitContentWidth(R.dimen.ls_list_max_width)
 
         setupToolbar(binding.toolbar, displayShowTitleEnabled = true)
 

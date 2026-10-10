@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Telas grandes (tablets, dobráveis abertos, janelas grandes). Ver docs/TABLETS.md.
+
+    Estes são os valores do CELULAR (compact): todos neutros, para o celular ficar idêntico.
+    - values-sw600dp/            → medium   (tablet em retrato, dobrável aberto): 600–839dp de largura
+    - values-sw600dp-w840dp/     → expanded (tablet em paisagem, janelas largas): ≥ 840dp de largura
+
+    Convenções:
+    - ls_*_max_width = 0dp significa "sem limite" (MaxWidthFrameLayout / MaxWidthLinearLayout,
+      layout_constraintWidth_max, LargeScreen.limitContentWidth e ReadingWidthDecoration ignoram 0).
+    - ls_text_max_width é usado em android:maxWidth de TextViews, onde 0 esconderia o texto;
+      por isso o valor do celular é "infinito".
+-->
+<resources>
+
+    <!-- true a partir de sw600dp: só para decisões que não dá para expressar com dimens/integers. -->
+    <bool name="ls_is_large_screen">false</bool>
+
+    <!-- Colunas das grades de cartões (prêmios, diretores, 1001 filmes). 1 = lista atual do celular. -->
+    <integer name="ls_card_columns">1</integer>
+    <!-- Colunas da grade "Explorar" da Home. -->
+    <integer name="ls_home_destination_columns">2</integer>
+
+    <!-- Coluna de leitura dos capítulos (parágrafos, citações, ensaios). -->
+    <dimen name="ls_reading_max_width">0dp</dimen>
+    <!-- Imagens, vídeos, GIFs, slides e carrosséis dentro do capítulo (um pouco mais largos que o texto). -->
+    <dimen name="ls_media_max_width">0dp</dimen>
+    <!-- Listas de uma coluna (glossário, referências, linha do tempo, eras, sumário). -->
+    <dimen name="ls_list_max_width">0dp</dimen>
+    <!-- Conteúdo das telas de detalhes (filme, pessoa, prêmios). -->
+    <dimen name="ls_details_max_width">0dp</dimen>
+    <!-- Telas de apoio, onboarding, sobre, configurações: formulários/textos curtos com botões. -->
+    <dimen name="ls_form_max_width">0dp</dimen>
+    <!-- Mini-player da narração e player expandido (bottom sheet). -->
+    <dimen name="ls_mini_player_max_width">0dp</dimen>
+    <dimen name="ls_sheet_max_width">0dp</dimen>
+    <!-- Bloco de texto sobre imagem (destaque da Home, cabeçalhos). -->
+    <dimen name="ls_hero_text_max_width">0dp</dimen>
+
+    <!-- android:maxWidth de TextViews de cabeçalho (título/descrição centralizados). -->
+    <dimen name="ls_text_max_width">4000dp</dimen>
+
+    <!-- Margem lateral extra das listas (somada às margens de 16dp dos itens → 24dp medium / 32dp expanded). -->
+    <dimen name="ls_list_side_padding">0dp</dimen>
+
+    <!-- Fator aplicado às alturas fixas (em dp) vindas do JSON do conteúdo (imagem do cabeçalho, vídeo, slide). -->
+    <item name="ls_media_height_scale" format="float" type="dimen">1.0</item>
+
+</resources>

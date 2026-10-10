@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yearPill"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/awards_year_pill_height"
+    android:layout_gravity="center_vertical"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:background="@drawable/awards_year_pill"
+    android:focusable="true"
+    android:clickable="true"
+    android:fontFamily="@font/oswald_regular"
+    android:gravity="center"
+    android:minWidth="@dimen/awards_year_pill_min_width"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:textColor="@color/awards_year_pill_text"
+    android:textSize="15sp"
+    tools:text="2026" />

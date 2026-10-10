@@ -46,10 +46,18 @@ class TimelineActivity : BaseActivity<ActivityTimelineBinding>(), TimelinePageVi
 
         presenter.onBindView(this)
 
-        startIndex = intent?.extras?.getString(VIEWPAGER_INDEX)?.toInt() ?: 0
+        // Recriação (rotação, redimensionar janela/multi-janela): volta para a página que estava aberta,
+        // não para a do intent (o adapter só é definido depois do carregamento e sobrescreveria a restaurada).
+        startIndex = savedInstanceState?.getInt(STATE_CURRENT_INDEX, -1)?.takeIf { it >= 0 }
+            ?: intent?.extras?.getString(VIEWPAGER_INDEX)?.toInt() ?: 0
         isFromUniversalLink = intent.getBooleanExtra(Constants.IS_FROM_UNIVERSAL_LINK, false)
 
         presenter.fetchTimelineItems()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(STATE_CURRENT_INDEX, if (adapterPager != null) currentIndex else startIndex)
     }
 
     override fun onBackPressed() {
@@ -158,6 +166,7 @@ class TimelineActivity : BaseActivity<ActivityTimelineBinding>(), TimelinePageVi
     }
 
     companion object {
+        private const val STATE_CURRENT_INDEX = "STATE_CURRENT_INDEX"
 
         const val VIEWPAGER_INDEX = "VIEWPAGER_INDEX"
 

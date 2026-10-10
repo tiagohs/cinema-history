@@ -119,3 +119,6 @@ build/
 *~
 *.dat
 *.dep
+content-src/cache/tmdb.json
+content-src/cache/tmdb.sqlite*
+content-src/cache/wikidata/

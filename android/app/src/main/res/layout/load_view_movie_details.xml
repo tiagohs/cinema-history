@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_white_1000">
+    android:background="@color/daynight_background">
 
     <ImageView
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                 android:id="@+id/movieDirectorsTitle"
                 android:text="                                           "
                 android:background="@color/cell_background_light"
-                android:textColor="@color/md_grey_800"
+                android:textColor="@color/daynight_text_grey_800"
                 android:fontFamily="@font/roboto_light"
                 android:textSize="@dimen/text_size_zeplin_22pt"
                 app:layout_constraintTop_toTopOf="parent"
@@ -75,7 +75,7 @@
                 android:id="@+id/movieScreenplayTitle"
                 android:text="                                   "
                 android:background="@color/cell_background_light"
-                android:textColor="@color/md_grey_800"
+                android:textColor="@color/daynight_text_grey_800"
                 android:fontFamily="@font/roboto_light"
                 android:textSize="@dimen/text_size_zeplin_22pt"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -89,7 +89,7 @@
                 android:id="@+id/originalLanguageTitle"
                 android:text="                       "
                 android:background="@color/cell_background_light"
-                android:textColor="@color/md_grey_800"
+                android:textColor="@color/daynight_text_grey_800"
                 android:fontFamily="@font/roboto_light"
                 android:textSize="@dimen/text_size_zeplin_22pt"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -103,7 +103,7 @@
                 android:id="@+id/runtimeTitle"
                 android:text="       "
                 android:background="@color/cell_background_light"
-                android:textColor="@color/md_grey_800"
+                android:textColor="@color/daynight_text_grey_800"
                 android:fontFamily="@font/roboto_light"
                 android:textSize="@dimen/text_size_zeplin_22pt"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"
@@ -116,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/movieRuntime"
                 android:text="                      "
-                android:textColor="@color/md_black_1000"
+                android:textColor="@color/daynight_text_primary"
                 android:fontFamily="@font/roboto_regular"
                 android:textSize="@dimen/text_size_zeplin_22pt"
                 android:layout_marginTop="@dimen/activity_vertical_margin_1.5x"

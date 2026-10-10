@@ -22,7 +22,8 @@ class VideoViewHolder(
         contentVideo.height?.let {
             binding.videoViewer.layoutParams = ConstraintLayout.LayoutParams(
                 ConstraintLayout.LayoutParams.MATCH_PARENT,
-                it.convertIntToDp(context)
+                // tablets: altura proporcional à coluna de mídia mais larga (1.0 no celular)
+                com.tiagohs.cinema_history.presentation.configs.LargeScreen.scaledHeightPx(context, it)
             ).apply {
                 setMargins(16.convertIntToDp(context), 0, 16.convertIntToDp(context), 0)
             }

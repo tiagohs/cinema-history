@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Screenshot da loja</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .canvas { width: var(--W); height: var(--H); }
+
+  .watermark { position: absolute; left: 50%; top: 400px; transform: translateX(-50%);
+    font-family: "Oswald"; font-weight: 700; font-size: 520px; line-height: 1; letter-spacing: -.01em;
+    color: transparent; -webkit-text-stroke: 2px rgba(226,182,91,.16); white-space: nowrap; }
+
+  .caption { position: absolute; left: 80px; right: 80px; top: 92px; text-align: center; z-index: 5; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 18px; font-family: "Oswald"; font-weight: 400;
+    font-size: 34px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; }
+  .eyebrow::before, .eyebrow::after { content: ""; width: 54px; height: 2px; background: linear-gradient(90deg, transparent, var(--gold)); }
+  .eyebrow::after { transform: scaleX(-1); }
+  .title { font-family: "Oswald"; font-weight: 700; text-transform: uppercase; font-size: 104px; line-height: 1.04;
+    letter-spacing: .005em; color: var(--ink); text-wrap: balance; text-shadow: 0 6px 30px rgba(0,0,0,.6); }
+  .title em { font-style: normal; }
+  .subtitle { margin: 24px auto 0; max-width: 860px; font-size: 40px; line-height: 1.25; color: var(--muted); text-wrap: balance; }
+
+  /* ---------- celular em CSS (genérico, sem marca) ---------- */
+  .stage { position: absolute; inset: 0; z-index: 3; }
+  .glow { position: absolute; left: 50%; top: 820px; width: 1100px; height: 900px; transform: translateX(-50%);
+    background: radial-gradient(closest-side, rgba(226,182,91,.28), rgba(226,182,91,.06) 60%, transparent); filter: blur(10px); }
+  .phone { position: absolute; padding: 2.1%;
+    background: linear-gradient(145deg, #3b342c 0%, #15120f 22%, #0a0908 60%, #2a241e 100%);
+    box-shadow: 0 0 0 2px rgba(246,220,151,.18), 0 40px 90px rgba(0,0,0,.75), 0 0 120px rgba(226,182,91,.10); }
+  .phone .screen { position: relative; overflow: hidden; aspect-ratio: 9 / 19.5; background: #000; }
+  .phone .screen img { display: block; width: 100%; height: auto; }
+  .phone .cam { position: absolute; top: 1.2%; left: 50%; width: 3.2%; aspect-ratio: 1; transform: translateX(-50%);
+    border-radius: 50%; background: #050505; box-shadow: inset 0 0 0 2px #1d1d1d; z-index: 2; }
+  .phone .side { position: absolute; right: -0.7%; top: 18%; width: .8%; height: 9%; border-radius: 4px; background: #2a241e; }
+  .statusbar { display: flex; align-items: center; justify-content: space-between; background: #000; color: #fff;
+    font-family: "Proxima Nova"; font-weight: 700; padding: 0 6.5%; }
+  .statusbar .icons { display: flex; gap: .5em; align-items: center; }
+  .statusbar .sig { width: 1em; height: 1em; background: #fff; clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+  .statusbar .wifi { width: 1.15em; height: .9em; background: #fff; clip-path: polygon(50% 100%, 0 25%, 15% 8%, 50% 0, 85% 8%, 100% 25%); }
+  .statusbar .bat { width: .6em; height: 1.05em; border-radius: 2px; background: #fff; }
+
+  .chip { position: absolute; z-index: 6; transform: translateX(-50%); padding: 14px 34px; border-radius: 999px;
+    font-family: "Oswald"; font-weight: 700; font-size: 40px; letter-spacing: .12em; color: #1a120c;
+    background: linear-gradient(180deg, var(--gold-hi), var(--gold) 60%, var(--gold-lo)); box-shadow: 0 10px 30px rgba(0,0,0,.5); white-space: nowrap; }
+
+  .fade-bottom { position: absolute; left: 0; right: 0; bottom: 0; height: 220px; z-index: 4;
+    background: linear-gradient(180deg, transparent, rgba(11,8,6,.85)); }
+</style>
+</head>
+<body>
+<div class="canvas" id="c">
+  <div class="beam"></div>
+  <div class="watermark" id="wm"></div>
+  <div class="caption">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 class="title" id="title"></h1>
+    <p class="subtitle" id="subtitle"></p>
+  </div>
+  <div class="stage" id="stage"><div class="glow"></div></div>
+  <div class="fade-bottom"></div>
+  <div class="vignette"></div>
+  <div class="grain"></div>
+</div>
+
+<script>
+/* CFG é injetado pelo render.py:
+   {w,h,layout:'single'|'duo'|'trio', eyebrow,title,subtitle,watermark,
+    phones:[{src, statusbar:true|false, chip?:'PT'}]} */
+const CFG = window.CFG;
+const c = document.getElementById('c');
+c.style.setProperty('--W', CFG.w + 'px');
+c.style.setProperty('--H', CFG.h + 'px');
+
+const esc = s => s.replace(/[&<>]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
+const mark = s => esc(s).replace(/\*(.+?)\*/g, '<em class="gold-text">$1</em>');
+document.getElementById('eyebrow').innerHTML = esc(CFG.eyebrow || '');
+if (!CFG.eyebrow) document.getElementById('eyebrow').style.display = 'none';
+document.getElementById('title').innerHTML = mark(CFG.title);
+document.getElementById('subtitle').innerHTML = esc(CFG.subtitle || '');
+document.getElementById('wm').textContent = CFG.watermark || '';
+
+// Layouts: posição (left/top), largura e rotação de cada celular. Canvas de referência 1080 de largura.
+const LAYOUTS = {
+  single: [ {x: 540, y: 470, w: 760, r: 0, z: 2} ],
+  duo:    [ {x: 330, y: 560, w: 590, r: -7, z: 1, dim: true},
+            {x: 700, y: 460, w: 650, r: 3,  z: 2} ],
+  trio:   [ {x: 240, y: 640, w: 480, r: -9, z: 1, dim: true},
+            {x: 840, y: 640, w: 480, r: 9,  z: 1, dim: true},
+            {x: 540, y: 540, w: 540, r: 0,  z: 2} ],
+};
+const k = CFG.w / 1080;
+const yShift = (CFG.h - 1920) * 0.35;   // canvas mais alto (1080x2340): desce um pouco os celulares
+const slots = LAYOUTS[CFG.layout] || LAYOUTS.single;
+const stage = document.getElementById('stage');
+
+CFG.phones.forEach((p, i) => {
+  const s = slots[Math.min(i, slots.length - 1)];
+  const w = s.w * k;
+  const ph = document.createElement('div');
+  ph.className = 'phone';
+  ph.style.width = w + 'px';
+  ph.style.left = (s.x * k - w / 2) + 'px';
+  ph.style.top = (s.y * k + yShift) + 'px';
+  ph.style.zIndex = s.z;
+  ph.style.borderRadius = (w * 0.13) + 'px';
+  ph.style.transform = `rotate(${s.r}deg)`;
+  ph.style.transformOrigin = '50% 0%';
+  if (s.dim) ph.style.filter = 'brightness(.78) saturate(.9)';
+  const scr = document.createElement('div');
+  scr.className = 'screen';
+  scr.style.borderRadius = (w * 0.11) + 'px';
+  if (p.statusbar) {
+    const sb = document.createElement('div');
+    sb.className = 'statusbar';
+    const fs = w * 0.034;
+    sb.style.height = (w * 0.075) + 'px';
+    sb.style.fontSize = fs + 'px';
+    sb.innerHTML = '<span>12:00</span><span class="icons"><i class="wifi"></i><i class="sig"></i><i class="bat"></i></span>';
+    scr.appendChild(sb);
+  }
+  const img = document.createElement('img');
+  img.src = p.src;
+  scr.appendChild(img);
+  ph.innerHTML = '<div class="cam"></div><div class="side"></div>';
+  ph.prepend(scr);
+  stage.appendChild(ph);
+  if (p.chip) {
+    const chip = document.createElement('div');
+    chip.className = 'chip';
+    chip.textContent = p.chip;
+    chip.style.left = (s.x * k + (s.r ? Math.sin(s.r*Math.PI/180) * -60 : 0)) + 'px';
+    chip.style.top = (s.y * k + yShift - 100) + 'px';
+    stage.appendChild(chip);
+  }
+});
+
+// Ajusta o título: no máximo 2 linhas, sem estourar a largura.
+async function fit() {
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(im => im.complete ? 0 : new Promise(r => { im.onload = im.onerror = r; })));
+  const t = document.getElementById('title');
+  let size = 104;
+  const lh = () => parseFloat(getComputedStyle(t).lineHeight);
+  while (size > 60 && (t.clientHeight > lh() * 2 + 4 || t.scrollWidth > t.clientWidth + 1)) {
+    size -= 2; t.style.fontSize = size + 'px';
+  }
+  const sub = document.getElementById('subtitle');
+  let ss = 40;
+  while (ss > 30 && sub.scrollHeight > parseFloat(getComputedStyle(sub).lineHeight) * 2 + 4) {
+    ss -= 1; sub.style.fontSize = ss + 'px';
+  }
+  // posiciona os celulares logo abaixo da legenda (mesmo respiro em todas as telas)
+  const capBottom = document.querySelector('.caption').getBoundingClientRect().bottom;
+  const minTop = Math.min(...slots.slice(0, CFG.phones.length).map((s, i) => s.y * k + yShift - (CFG.phones[i].chip ? 110 : 0)));
+  const off = capBottom + 56 * k - minTop;
+  stage.style.transform = `translateY(${off}px)`;
+  document.body.dataset.ready = '1';
+}
+fit();
+</script>
+</body>
+</html>

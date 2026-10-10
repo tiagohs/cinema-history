@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<!-- Aba "Sobre": ficha do prêmio + histórico compacto ("Ler mais"). -->
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/awards_background">
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pageContentList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/pageContentList" />
-</LinearLayout>
+        android:clipToPadding="false"
+        android:paddingBottom="32dp" />
 
+</FrameLayout>

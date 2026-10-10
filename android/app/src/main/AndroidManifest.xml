@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- Narração em áudio (AudioPlaybackService): tocar em segundo plano / tela bloqueada. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
 
@@ -57,7 +61,8 @@
         <activity android:name=".presentation.activities.MilMoviesPresentationActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
-        <activity android:name=".presentation.activities.HistoryPagesActivity" />
+        <activity android:name=".presentation.activities.HistoryPagesActivity"
+            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <activity android:name=".presentation.activities.PersonDetailsActivity"
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
@@ -66,7 +71,7 @@
             android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <activity android:name=".presentation.activities.AwardActivity"
-            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
+            android:theme="@style/AppTheme.AwardsDark" />
 
         <activity android:name=".presentation.activities.TimelineActivity" />
         <activity android:name=".presentation.activities.GlossaryActivity" />
@@ -74,6 +79,14 @@
         <activity android:name=".presentation.activities.AboutActivty"
             android:theme="@style/AboutTheme"/>
         <activity android:name=".presentation.activities.ReferenceActivity" />
+
+        <!-- Onboarding da primeira abertura (SplashScreenActivity decide) e tela de apoio (compra única). -->
+        <activity
+            android:name=".onboarding.OnboardingActivity"
+            android:theme="@style/AppTheme.Onboarding" />
+        <activity
+            android:name=".support.SupportActivity"
+            android:theme="@style/AppTheme.AppThemeWithStatusTransparent" />
 
         <!-- AdMob: ID do app (teste em debug; produção em dependencies.gradle → admob.appId) -->
         <meta-data
@@ -86,6 +99,16 @@
         <meta-data
             android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
             android:value="true" />
+
+        <!-- Narração em áudio dos capítulos (Media3): notificação, tela bloqueada, fones/Bluetooth. -->
+        <service
+            android:name=".audio.AudioPlaybackService"
+            android:foregroundServiceType="mediaPlayback"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaSessionService" />
+            </intent-filter>
+        </service>
 
         <!-- Guarda o idioma escolhido no app (AppCompatDelegate.setApplicationLocales) em Android < 13. -->
         <service

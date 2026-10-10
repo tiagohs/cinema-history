@@ -32,7 +32,7 @@
       "parameters": [
         {
           "key": "LINK",
-          "value": "https://heritage.bafta.org/viewall"
+          "value": "https://www.bafta.org/heritage"
         }
       ]
     },
@@ -41,5 +41,10 @@
   {
     "type": "text",
     "content_credits": "Wikipedia.com"
+  },
+  {
+    "type": "block_special",
+    "title": "De 2021 a 2026",
+    "description": "Después de las ceremonias de 2021 y 2022 en el Royal Albert Hall, los BAFTA Film Awards pasaron a realizarse en el Royal Festival Hall, en el Southbank Centre de Londres, a partir de la 76.ª edición, en febrero de 2023. Los presentadores también se fueron turnando: Rebel Wilson en 2022, Richard E. Grant y Alison Hammond en 2023, David Tennant en 2024 y 2025 y Alan Cumming en 2026.<br/><br/>En 2025 la Academia Británica creó la categoría de Mejor Película Infantil y Familiar (Children's & Family Film). La primera ganadora fue Wallace y Gromit: La venganza se sirve con plumas, que esa misma noche también se llevó Mejor Película Animada; en 2026 la categoría fue para Boong."
   }
 ]
