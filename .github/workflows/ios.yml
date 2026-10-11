@@ -82,7 +82,16 @@ jobs:
           cand.sort()
           print(cand[-1][1])
           ")
+          # Também testa no iOS mínimo suportado (18), onde o vidro cai no material translúcido.
+          UDID18=$(xcrun simctl list devices available -j | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)['devices']
+          cand=[(k,x['udid']) for k,v in d.items() if 'iOS-18' in k for x in v if x['name'].startswith('iPhone') and x['isAvailable']]
+          cand.sort()
+          print(cand[-1][1] if cand else '')
+          ")
           echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+          echo "udid18=$UDID18" >> "$GITHUB_OUTPUT"
           xcrun simctl boot "$UDID"
 
       - name: Testes do app
@@ -91,6 +100,7 @@ jobs:
           cd ios
           xcodebuild test -project CinemaHistory.xcodeproj -scheme CinemaHistory \
             -destination "id=${{ steps.sim.outputs.udid }}" \
+            ${{ steps.sim.outputs.udid18 && format('-destination "id={0}"', steps.sim.outputs.udid18) || '' }} \
             -derivedDataPath build -resultBundlePath build/testes.xcresult 2>&1 | tee ../xcodebuild-testes.log | tail -60
           exit ${PIPESTATUS[0]}
 
