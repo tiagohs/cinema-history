@@ -25,9 +25,10 @@ class RegrasDaPonteTest {
     }
 
     @Test
-    fun `regra 1 - nada de sealed generico nem Int opcional na fachada`() {
+    fun `regra 1 - nada de sealed generico, Int opcional ou colecao de numeros na fachada`() {
         val problemas = linhasPublicas().filter { (_, l) ->
-            Regex("""sealed\s+(class|interface)\s+\w+<""").containsMatchIn(l) || Regex(""":\s*Int\?""").containsMatchIn(l)
+            Regex("""sealed\s+(class|interface)\s+\w+<""").containsMatchIn(l) || Regex(""":\s*Int\?""").containsMatchIn(l) ||
+                Regex("""(List|Set|Map)<[^>]*\b(Int|Long|Double|Float|Boolean)\b""").containsMatchIn(l)
         }
         assertTrue(problemas.isEmpty(), "Fora da regra 1: $problemas")
     }

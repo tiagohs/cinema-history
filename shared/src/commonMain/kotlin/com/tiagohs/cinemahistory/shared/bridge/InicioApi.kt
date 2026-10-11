@@ -1,6 +1,8 @@
 package com.tiagohs.cinemahistory.shared.bridge
 
 import com.tiagohs.cinemahistory.shared.data.ContentSource
+import com.tiagohs.cinemahistory.shared.data.FonteDeConteudo
+import com.tiagohs.cinemahistory.shared.data.RepositorioDeConteudo
 import com.tiagohs.cinemahistory.shared.domain.ListarEras
 import com.tiagohs.cinemahistory.shared.model.Era
 import com.tiagohs.cinemahistory.shared.model.Idioma
@@ -10,8 +12,16 @@ import com.tiagohs.cinemahistory.shared.model.Resultado
 class ErasResultado(val eras: List<Era>?, val erro: String?)
 
 /** Fachada da área Início exposta ao Swift (uma classe por área). */
-class InicioApi(fonte: ContentSource) {
-    private val listarEras = ListarEras(fonte)
+class InicioApi(private val repositorio: RepositorioDeConteudo) {
+    constructor(fonte: ContentSource) : this(RepositorioDeConteudo(FonteDeConteudo(fonte)))
+
+    private val listarEras = ListarEras(repositorio)
+
+    /** UC-06 · citações fixas do Início. */
+    fun citacoes(idioma: Idioma): CitacoesResultado = repositorio.citacoesDoInicio(idioma).para(::CitacoesResultado)
+
+    /** UC-04 · cartões de seção do Início. */
+    fun itens(idioma: Idioma): ItensDoInicioResultado = repositorio.itensDoInicio(idioma).para(::ItensDoInicioResultado)
 
     fun eras(idioma: Idioma): ErasResultado = when (val r = listarEras(idioma)) {
         is Resultado.Sucesso -> ErasResultado(r.valor, null)
