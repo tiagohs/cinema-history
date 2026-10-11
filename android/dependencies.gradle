@@ -3,7 +3,7 @@ ext {
     // Android Config
     minSDK = 24 // play-services-ads 25 exige Android 7.0+
     targetSDK = 36
-    compileSDK = 36
+    compileSDK = 37 // exigido por core-ktx 1.19 e Glide 5; targetSDK continua 36 (sem mudar comportamento em execução)
 
     // AdMob - IDs de PRODUÇÃO (release). Debug usa sempre os IDs de teste do Google.
     admob = [
@@ -19,23 +19,23 @@ ext {
 
     buildToolsVersion = '36.0.0'
 
-    kotlinVersion = '2.3.21'
+    kotlinVersion = '2.4.21'
     kspVersion = '2.3.12'
 
     buildTools = '9.4.1'
     googleServices = '4.5.0'
     crashlyticsPluginVersion = '3.0.8'
 
-    def retrofitVersion = '2.11.0'
-    def okHttpVersion = '4.12.0'
+    def retrofitVersion = '3.0.0'
+    def okHttpVersion = '5.5.0'
     def daggerVersion = '2.60.1'
     def preferenceVersion = '1.2.1'
 
-    def appcompatVersion = '1.7.1'
-    def coreKtxVersion = '1.16.0'
-    def constraintlayoutVersion = '2.2.1'
-    def materialVersion = '1.12.0'
-    def browserVersion = '1.8.0'
+    def appcompatVersion = '1.8.0'
+    def coreKtxVersion = '1.19.1'
+    def constraintlayoutVersion = '2.2.2'
+    def materialVersion = '1.14.0'
+    def browserVersion = '1.10.0'
 
     def betterLinkMovementMethodVersion = '2.2.0'
     def overflowPagerIndicatorVersion = '3.0.1'
@@ -47,20 +47,20 @@ ext {
     def flexboxVersion = '3.0.0'
     def indicator_fast_scrollVersion = '1.4.0'
 
-    def gsonVersion = '2.11.0'
+    def gsonVersion = '2.14.0'
     def timberVersion = '5.0.1'
 
-    def androidyoutubeplayerCoreVersion = '12.1.2'
+    def androidyoutubeplayerCoreVersion = '13.0.0'
 
-    def glideVersion = '4.16.0'
+    def glideVersion = '5.0.9'
     def glideTransformationsVersion = '4.3.0'
     def playServicesAdsVersion = '25.5.0'
-    def umpVersion = '3.2.0'
+    def umpVersion = '4.0.0'
     def recyclerviewVersion = '1.4.0'
-    def workVersion = '2.10.5'
-    def billingVersion = '8.0.0'
-    def media3Version = '1.6.1'
-    def firebaseBomVersion = '34.4.0'
+    def workVersion = '2.12.0'
+    def billingVersion = '9.1.0'
+    def media3Version = '1.11.1'
+    def firebaseBomVersion = '35.0.0'
     def firebaseUiStorageVersion = '9.1.1'
 
 
@@ -70,8 +70,8 @@ ext {
     def rxPreferencesVersion = '2.0.1'
 
     def junitVersion = '4.13.2'
-    def testRunnerVersion = '1.6.2'
-    def espressoCoreVersion = '3.6.1'
+    def testRunnerVersion = '1.7.0'
+    def espressoCoreVersion = '3.7.0'
 
     dependencies = [
             appcompat                   : "androidx.appcompat:appcompat:${appcompatVersion}",

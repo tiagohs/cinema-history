@@ -49,21 +49,21 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: "17"
 
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
         with:
-          packages: "platforms;android-36 build-tools;36.0.0 platform-tools"
+          packages: "platforms;android-37.0 build-tools;36.0.0 platform-tools"
 
       - name: Set up Gradle (cache)
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v6
 
       - name: Configure local.properties for CI
         # O local.properties versionado aponta para o SDK do Mac; no runner usamos o SDK instalado acima.
@@ -117,7 +117,7 @@ jobs:
 
       - name: Upload content test report
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: content-test-report
           path: |
@@ -145,14 +145,14 @@ jobs:
           ls -la "$GITHUB_WORKSPACE/dist"
 
       - name: Upload workflow artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cinema-history-v${{ steps.version.outputs.name }}-${{ steps.version.outputs.code }}
           path: dist/*
           retention-days: 30
 
       - name: Upload debug preview APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cinema-history-v${{ steps.version.outputs.name }}-${{ steps.version.outputs.code }}-debug-preview
           path: dist-debug/*
