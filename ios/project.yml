@@ -18,9 +18,9 @@ targets:
     platform: iOS
     sources:
       - path: CinemaHistory
-        excludes: ["Resources/*.lproj"]
+        excludes: ["Resources/*.lproj", "Resources/*.xcstrings"]
       - path: CinemaHistory/Resources
-        includes: ["*.lproj"]
+        includes: ["*.lproj", "*.xcstrings"]
       # O mesmo conteúdo do Android, embutido como pasta (uma fonte só): vira "local" dentro do app.
       - path: ../android/app/src/main/assets/local
         type: folder

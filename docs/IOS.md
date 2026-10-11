@@ -9,8 +9,8 @@ do iOS, **(3)** manter fidelidade só onde ela importa (conteúdo, identidade vi
 | # | Decisão |
 |---|---|
 | 1 | iOS mínimo **17** |
-| 2 | Ponte Swift ↔ Kotlin com **SKIE** |
-| 3 | Imagens com **Nuke** |
+| 2 | Ponte Swift ↔ Kotlin com a **exportação padrão do Kotlin/Native** (sem SKIE), Kotlin **2.4.21** igual ao Android; regras e contrato da ponte abaixo |
+| 3 | Imagens com **Kingfisher** |
 | 4 | Áudio no iOS em **AAC (.m4a)**, cópia gerada a partir dos arquivos atuais |
 | 5 | Android **migra para o núcleo `:shared` depois** do lançamento iOS |
 | 6 | Nomes na App Store iguais ao Android: **História do Cinema / History of Cinema / Historia del Cine** |
@@ -127,7 +127,7 @@ implementar a lógica completa.
   imagem do capítulo com degradê — igual ao Android. Encolhe para a barra de navegação ao rolar.
 - **Corpo**: `ScrollView` + `LazyVStack`; cada tipo de bloco vira uma View:
   texto → `Text(AttributedString)` com links (filme/pessoa/tela abrem em *push*; links externos em `SFSafariViewController`);
-  imagem → Nuke + legenda/fonte; GIF → `LazyImage` animado; vídeo → miniatura + player do YouTube em `sheet`
+  imagem → Kingfisher + legenda/fonte; GIF → `KFAnimatedImage`; vídeo → miniatura + player do YouTube em `sheet`
   (WKWebView, sem autoplay); slide → `TabView(.page)`; citação → aspas grandes; ensaio, bloco especial, listas de
   filmes/pessoas, recomendações e indicados → componentes próprios com rolagem horizontal; post do X → cartão com link.
 - **Navegação entre capítulos**: barra inferior com **Sumário** (miniatura) · indicador · **Próximo**; deslizar
@@ -213,7 +213,7 @@ cinema-history/
 │  ├─ androidMain/ iosMain/  (arquivos, preferências, HTTP)
 │  └─ commonTest/
 ├─ android/               (migra para :shared depois do iOS)
-└─ ios/CinemaHistory/     ← SwiftUI (iOS 17+), SKIE, Nuke, GoogleMobileAds, Firebase
+└─ ios/CinemaHistory/     ← SwiftUI (iOS 18+), Kingfisher, GoogleMobileAds, Firebase
 ```
 Bibliotecas KMP: kotlinx.serialization, kotlinx.coroutines, Ktor (OkHttp/Darwin), multiplatform-settings, okio.
 
@@ -246,3 +246,21 @@ próximas gerações (en/es).
   bancários/fiscais, 3 produtos não consumíveis.
 - **AdMob**: app iOS novo (o `app-ads.txt` atual já serve). **Firebase**: app iOS novo (`GoogleService-Info.plist`).
 - Política de privacidade e termos: incluir iOS (ATT, StoreKit).
+
+
+## Ponte Kotlin ↔ Swift (decisão de 11/10/2026)
+
+A exportação padrão do Kotlin/Native foi escolhida no lugar do SKIE depois de um protótipo com 12 situações críticas
+testadas no simulador (branch `spike/exportacao-padrao`). O SKIE só suporta Kotlin até a série 2.2; sem ele o núcleo
+acompanha o Kotlin do Android e as bibliotecas mais novas.
+
+Regras (verificadas por `RegrasDaPonteTest` no `shared` e por `PonteContratoTests` no iOS):
+
+1. A fachada (`shared/.../bridge`) só expõe classes concretas: nada de `sealed` genérico, `Int?` ou coleções de números.
+2. Trabalho demorado (rede, sincronização, download, TMDB) devolve `Cancelavel`; no Swift, `aguardar { … }` liga a alça
+   ao cancelamento da `Task` (cancelar a `Task` sozinho **não** cancela a corrotina).
+3. Estado observável é `observar…(aoMudar): Cancelavel` sobre `StateFlow`; no Swift, `observar { … }` vira `AsyncStream`.
+4. A fachada não lança exceção; o que puder lançar leva `@Throws`.
+5. Closures em Swift capturam `[weak self]`; observações são canceladas ao sair da tela (ciclo Swift↔Kotlin vaza).
+6. Tipos com subtipos carregam um enum `tipo`; um teste em Swift garante que todo tipo tem tela.
+7. `PonteContratoTests` roda a cada build: se uma atualização do Kotlin mudar um comportamento, o CI falha antes do app.

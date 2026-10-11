@@ -19,7 +19,7 @@ struct InicioView: View {
             case .pronto(let eras):
                 ScrollView {
                     VStack(alignment: .leading, spacing: 14) {
-                        Text("HISTÓRIA DO CINEMA")
+                        Text("HISTORY OF CINEMA")
                             .font(Tipografia.rotulo())
                             .tracking(2.6)
                             .foregroundStyle(Paleta.ambar)
