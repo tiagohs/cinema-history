@@ -5,7 +5,7 @@ import java.io.File
 
 /** Lê o conteúdo real do app Android, a mesma pasta que o Xcode embute no iOS (uma fonte só). */
 class ConteudoDoAndroid : ContentSource {
-    private val raiz: File = generateSequence(File("").absoluteFile) { it.parentFile }
+    val raiz: File = generateSequence(File("").absoluteFile) { it.parentFile }
         .map { File(it, "android/app/src/main/assets/local") }
         .first { it.isDirectory }
 
