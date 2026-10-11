@@ -44,3 +44,27 @@ extension Color {
         )
     }
 }
+
+/// Vidro (Liquid Glass) do desenho: barras, chips, mini-player e cabeçalhos flutuantes — nunca blocos de leitura.
+/// No iOS 26 usa o Liquid Glass do sistema; no iOS 18 cai no material translúcido mais próximo.
+struct Vidro: ViewModifier {
+    var forma: AnyShape = AnyShape(Capsule())
+
+    func body(content: Content) -> some View {
+        #if compiler(>=6.2)
+        if #available(iOS 26.0, *) {
+            content.glassEffect(.regular, in: forma)
+        } else {
+            content.background(.ultraThinMaterial, in: forma)
+        }
+        #else
+        content.background(.ultraThinMaterial, in: forma)
+        #endif
+    }
+}
+
+extension View {
+    func vidro(_ forma: some Shape = Capsule()) -> some View {
+        modifier(Vidro(forma: AnyShape(forma)))
+    }
+}

@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 import Testing
 import Shared
 @testable import CinemaHistory
@@ -38,5 +39,12 @@ struct InicioViewModelTests {
 
     @Test func tokensDasErasCobremAsOitoCores() {
         #expect(Paleta.eras.count == 8)
+        #expect(Paleta.era(0) == Paleta.eras[0])
+        #expect(Paleta.era(99) == Paleta.eras[7])
+    }
+
+    @Test func vidroCompilaNasDuasVersoesDoSistema() {
+        _ = Text("x").vidro()
+        _ = Text("x").vidro(RoundedRectangle(cornerRadius: 20))
     }
 }

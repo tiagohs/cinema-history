@@ -51,6 +51,14 @@ jobs:
           java-version: "17"
       - uses: gradle/actions/setup-gradle@v6
 
+      - name: Usar o Xcode mais novo do runner (SDK com Liquid Glass)
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
+          echo "Usando $XCODE"
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+          xcrun simctl list runtimes | grep iOS
+
       - name: XCFramework do shared (release)
         run: ./gradlew :shared:assembleSharedReleaseXCFramework --no-daemon
 
@@ -65,11 +73,14 @@ jobs:
           UDID=$(xcrun simctl list devices available -j | python3 -c "
           import json,sys
           d=json.load(sys.stdin)['devices']
+          cand=[]
           for k,v in d.items():
               if 'iOS' in k:
                   for x in v:
                       if x['name'].startswith('iPhone') and x['isAvailable']:
-                          print(x['udid']); sys.exit()
+                          cand.append((k, x['udid']))
+          cand.sort()
+          print(cand[-1][1])
           ")
           echo "udid=$UDID" >> "$GITHUB_OUTPUT"
           xcrun simctl boot "$UDID"
