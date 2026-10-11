@@ -65,11 +65,11 @@ struct PonteSpikeTests {
         var reconhecidos = 0
         for bloco in blocos {
             switch bloco {
-            case let t as BlocoTexto: reconhecidos += t.html.isEmpty ? 0 : 1
-            case let v as BlocoVideo: reconhecidos += v.youtubeId.isEmpty ? 0 : 1
-            case let c as BlocoCitacao: reconhecidos += c.autor.isEmpty ? 0 : 1
-            case let i as BlocoImagem: reconhecidos += i.legenda == nil ? 1 : 0
-            case let l as BlocoListaFilmes: reconhecidos += l.ids.count == 2 ? 1 : 0
+            case let t as Bloco.Texto: reconhecidos += t.html.isEmpty ? 0 : 1
+            case let v as Bloco.Video: reconhecidos += v.youtubeId.isEmpty ? 0 : 1
+            case let c as Bloco.Citacao: reconhecidos += c.autor.isEmpty ? 0 : 1
+            case let i as Bloco.Imagem: reconhecidos += i.legenda == nil ? 1 : 0
+            case let l as Bloco.ListaFilmes: reconhecidos += l.ids.count == 2 ? 1 : 0
             default: reconhecidos += renderizadores.contains(bloco.tipo.name) ? 1 : 0
             }
         }
