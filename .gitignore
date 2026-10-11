@@ -122,3 +122,12 @@ build/
 content-src/cache/tmdb.json
 content-src/cache/tmdb.sqlite*
 content-src/cache/wikidata/
+
+# Núcleo compartilhado (KMP) e projeto iOS gerado
+/.gradle/
+/build/
+/shared/build/
+/.kotlin/
+/ios/CinemaHistory.xcodeproj/
+/ios/build/
+*.xcuserstate

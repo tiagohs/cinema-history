@@ -1,0 +1,63 @@
+name: CinemaHistory
+options:
+  bundleIdPrefix: com.tiagohs
+  deploymentTarget:
+    iOS: "18.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGNING_ALLOWED: "NO"
+targets:
+  CinemaHistory:
+    type: application
+    platform: iOS
+    sources:
+      - path: CinemaHistory
+        excludes: ["Resources/*.lproj"]
+      - path: CinemaHistory/Resources
+        includes: ["*.lproj"]
+      # O mesmo conteúdo do Android, embutido como pasta (uma fonte só): vira "local" dentro do app.
+      - path: ../android/app/src/main/assets/local
+        type: folder
+        name: local
+    dependencies:
+      - framework: ../shared/build/XCFrameworks/release/Shared.xcframework
+        embed: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tiagohs.cinemahistory
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "History of Cinema"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_EMIT_LOC_STRINGS: YES
+  CinemaHistoryTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: CinemaHistoryTests
+    dependencies:
+      - target: CinemaHistory
+      - framework: ../shared/build/XCFrameworks/release/Shared.xcframework
+        embed: false
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.tiagohs.cinemahistory.tests
+schemes:
+  CinemaHistory:
+    build:
+      targets:
+        CinemaHistory: all
+        CinemaHistoryTests: [test]
+    test:
+      targets:
+        - CinemaHistoryTests

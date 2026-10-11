@@ -1,0 +1,115 @@
+name: iOS e núcleo compartilhado
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/ios, "spike/**"]
+    paths:
+      - "shared/**"
+      - "ios/**"
+      - "android/app/src/main/assets/local/**"
+      - "gradle/**"
+      - "*.gradle.kts"
+      - ".github/workflows/ios.yml"
+  pull_request:
+    paths:
+      - "shared/**"
+      - "ios/**"
+      - ".github/workflows/ios.yml"
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  shared-jvm:
+    name: Testes do shared (JVM)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+      - run: ./gradlew :shared:jvmTest --no-daemon
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: relatorio-testes-shared
+          path: shared/build/reports/tests/jvmTest
+
+  ios:
+    name: App iOS (XCFramework, testes, simulador)
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: XCFramework do shared (release)
+        run: ./gradlew :shared:assembleSharedReleaseXCFramework --no-daemon
+
+      - name: Gerar o projeto Xcode
+        run: |
+          brew install xcodegen
+          cd ios && xcodegen generate
+
+      - name: Escolher o simulador
+        id: sim
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)['devices']
+          for k,v in d.items():
+              if 'iOS' in k:
+                  for x in v:
+                      if x['name'].startswith('iPhone') and x['isAvailable']:
+                          print(x['udid']); sys.exit()
+          ")
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+          xcrun simctl boot "$UDID"
+
+      - name: Testes do app
+        shell: bash
+        run: |
+          cd ios
+          xcodebuild test -project CinemaHistory.xcodeproj -scheme CinemaHistory \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -derivedDataPath build -resultBundlePath build/testes.xcresult 2>&1 | tee ../xcodebuild-testes.log | tail -60
+          exit ${PIPESTATUS[0]}
+
+      - name: Resumo das medidas
+        if: always()
+        run: |
+          {
+            echo "## Medidas do protótipo"
+            echo
+            grep -ho "MEDIDA|.*" xcodebuild-testes.log | sort -u | sed 's/^MEDIDA|/- /' || true
+            echo
+            echo "## Tamanho do XCFramework"
+            du -sh shared/build/XCFrameworks/release/Shared.xcframework/*/ || true
+          } >> "$GITHUB_STEP_SUMMARY"
+          grep -ho "MEDIDA|.*" xcodebuild-testes.log | sort -u > medidas.txt || true
+
+      - name: Print do simulador
+        run: |
+          APP=$(find ios/build/Build/Products -name "CinemaHistory.app" -maxdepth 3 | head -1)
+          xcrun simctl install "${{ steps.sim.outputs.udid }}" "$APP"
+          xcrun simctl launch "${{ steps.sim.outputs.udid }}" com.tiagohs.cinemahistory
+          sleep 6
+          xcrun simctl io "${{ steps.sim.outputs.udid }}" screenshot inicio.png
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ios-resultados
+          path: |
+            inicio.png
+            medidas.txt
+            xcodebuild-testes.log
+            ios/build/testes.xcresult
