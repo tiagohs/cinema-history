@@ -3,7 +3,8 @@ import Testing
 import Shared
 @testable import CinemaHistory
 
-/// Protótipo da exportação padrão do Kotlin/Native (sem SKIE): cada teste cobre uma situação crítica do app.
+/// Contrato da ponte Kotlin↔Swift (exportação padrão do Kotlin/Native): cada teste cobre uma situação crítica do app.
+/// Se uma atualização do Kotlin mudar um comportamento, o teste falha e a regra correspondente é revista.
 /// Linhas "MEDIDA|..." vão para o resumo do CI.
 private func medida(_ caso: String, _ texto: String) {
     print("MEDIDA|\(caso)|\(texto)")
@@ -36,8 +37,8 @@ private final class Caixa: @unchecked Sendable {
     var algumaNaPrincipal: Bool { trava.lock(); defer { trava.unlock() }; return _principal.contains(true) }
 }
 
-struct PonteSpikeTests {
-    let ponte = PonteSpike()
+struct PonteContratoTests {
+    let ponte = PonteContrato()
 
     // S1 · Resultado genérico (sealed + genérico) x resultado concreto
     @Test func s1_resultados() {
@@ -98,13 +99,15 @@ struct PonteSpikeTests {
         try await Task.sleep(nanoseconds: 300_000_000)
         let maisTarde = p.passosDaTarefaLonga
         let parou = maisTarde == depois
+        // Contrato: a exportação padrão NÃO propaga o cancelamento. Se passar a propagar, rever a regra 2.
+        #expect(!parou, "o cancelamento da Task passou a chegar ao Kotlin: rever a regra 2 da ponte")
         medida("S4a", "cancelar a Task do Swift parou a corrotina Kotlin: \(parou ? "SIM" : "NÃO") (passos \(depois) → \(maisTarde)); Kotlin viu CancellationException: \(p.tarefaLongaFoiCancelada ? "SIM" : "NÃO")")
     }
 
     // S4b · contorno: alça Cancelavel ligada ao cancelamento da Task
     @Test func s4b_cancelamentoComAlca() async throws {
         let p = ponte
-        let alca = p.tarefaLongaCancelavel(duracaoMs: 3000) { _ in }
+        let alca = p.tarefaLongaCancelavel(duracaoMs: 3000, aoTerminar: { _ in }, aoFalhar: { _ in })
         try await Task.sleep(nanoseconds: 200_000_000)
         alca.cancelar()
         try await Task.sleep(nanoseconds: 200_000_000)
@@ -114,6 +117,59 @@ struct PonteSpikeTests {
         #expect(p.tarefaLongaFoiCancelada)
         #expect(!alca.ativo)
         medida("S4b", "alça Cancelavel para a corrotina na hora: SIM")
+    }
+
+    // S4c · helper `aguardar`: cancelar a Task cancela a corrotina e lança CancellationError
+    @Test func s4c_helperAguardarCancela() async throws {
+        let p = PonteContrato()
+        let tarefa = Task {
+            try await aguardar { (ok: @escaping (KotlinInt) -> Void, falha: @escaping (String) -> Void) in
+                p.tarefaLongaCancelavel(duracaoMs: 3000, aoTerminar: ok, aoFalhar: falha)
+            }
+        }
+        try await Task.sleep(nanoseconds: 200_000_000)
+        tarefa.cancel()
+        let resultado = await tarefa.result
+        var foiCancelamento = false
+        if case .failure(let erro) = resultado { foiCancelamento = erro is CancellationError }
+        try await Task.sleep(nanoseconds: 200_000_000)
+        let depois = p.passosDaTarefaLonga
+        try await Task.sleep(nanoseconds: 300_000_000)
+        #expect(foiCancelamento)
+        #expect(p.passosDaTarefaLonga == depois)
+        #expect(p.tarefaLongaFoiCancelada)
+        medida("S4c", "helper aguardar: Task cancelada lança CancellationError e para a corrotina: SIM")
+    }
+
+    // S4d · helper `aguardar`: resultado e erro chegam pelo caminho certo
+    @Test func s4d_helperAguardarResultadoEErro() async throws {
+        let p = PonteContrato()
+        let passos = try await aguardar { (ok: @escaping (KotlinInt) -> Void, falha: @escaping (String) -> Void) in
+            p.tarefaLongaCancelavel(duracaoMs: 50, aoTerminar: ok, aoFalhar: falha)
+        }
+        #expect(passos.int32Value == 5)
+        do {
+            _ = try await aguardar { (ok: @escaping (String) -> Void, falha: @escaping (String) -> Void) in
+                p.falharCancelavel(aoTerminar: ok, aoFalhar: falha)
+            }
+            Issue.record("deveria falhar")
+        } catch {
+            #expect(error as? PonteErro == .falha("Sem internet"))
+        }
+    }
+
+    // S6b · helper `observar`: AsyncStream entrega o estado e para a observação quando o consumidor sai
+    @Test func s6b_helperObservar() async throws {
+        let p = PonteContrato()
+        let fluxo = observar { (aoMudar: @escaping (PlayerEstado) -> Void) in p.observarPlayer(aoMudar: aoMudar) }
+        p.emitir(quantos: 10, intervaloMs: 20)
+        var ultimo: Int32 = 0
+        for await estado in fluxo {
+            ultimo = estado.sequencia
+            if ultimo == 10 { break }
+        }
+        #expect(ultimo == 10)
+        medida("S6b", "helper observar: AsyncStream recebeu até o estado 10 e encerrou a observação")
     }
 
     // S5 · erros do Kotlin chegam como Error do Swift (com @Throws)
@@ -136,7 +192,7 @@ struct PonteSpikeTests {
 
     // S6 · fluxo de estado observado pelo Swift (player, download, idioma, apoio)
     @Test func s6_observarEstado() async throws {
-        let p = PonteSpike()
+        let p = PonteContrato()
         let caixa = Caixa()
         let alca = p.observarPlayer { estado in caixa.adicionar(estado.sequencia, principal: Thread.isMainThread) }
         try await Task.sleep(nanoseconds: 100_000_000)
@@ -158,7 +214,7 @@ struct PonteSpikeTests {
 
     // S7 · chamadas de alta frequência Swift → Kotlin
     @Test func s7_altaFrequencia() async {
-        let p = PonteSpike()
+        let p = PonteContrato()
         var inicio = agora()
         var acumulado: Int64 = 0
         for i in 0..<100_000 { acumulado += Int64(p.trechoAtual(posicaoMs: Int64(i * 30))) }
@@ -190,7 +246,7 @@ struct PonteSpikeTests {
 
     // S9 · memória: closure guardada pelo Kotlin e liberação
     @Test func s9_memoria() async throws {
-        let p = PonteSpike()
+        let p = PonteContrato()
         weak var fraca: Sentinela?
         do {
             let s = Sentinela()
@@ -204,11 +260,11 @@ struct PonteSpikeTests {
         let liberada = fraca == nil
 
         // ciclo entre os dois mundos: objeto Swift guarda a ponte, e a ponte guarda uma closure que captura o objeto Swift
-        final class Tela { var ponte: PonteSpike? }
+        final class Tela { var ponte: PonteContrato? }
         weak var telaFraca: Tela?
         do {
             let tela = Tela()
-            let pp = PonteSpike()
+            let pp = PonteContrato()
             tela.ponte = pp
             _ = pp.registrar { _ = tela }
             telaFraca = tela
@@ -217,6 +273,7 @@ struct PonteSpikeTests {
         let cicloColetado = telaFraca == nil
         #expect(presaEnquantoRegistrada)
         #expect(liberada)
+        // Ciclo Swift↔Kotlin sem [weak self] vaza hoje (regra 5); só é medido, a regra vale de qualquer jeito.
         medida("S9", "closure presa enquanto registrada: \(presaEnquantoRegistrada ? "SIM" : "NÃO"); liberada após remover + GC: \(liberada ? "SIM" : "NÃO"); ciclo Swift↔Kotlin sem [weak self] coletado: \(cicloColetado ? "SIM" : "NÃO (vaza)")")
     }
 
@@ -239,7 +296,7 @@ struct PonteSpikeTests {
             ((try? a.resourceValues(forKeys: [.fileSizeKey]).fileSize) ?? 0) < ((try? b.resourceValues(forKeys: [.fileSizeKey]).fileSize) ?? 0)
         })
         let texto = try String(contentsOf: maior, encoding: .utf8)
-        let p = PonteSpike()
+        let p = PonteContrato()
         _ = p.contarBlocos(textoDoCapitulo: texto)
         let inicio = agora()
         var blocos: Int32 = 0

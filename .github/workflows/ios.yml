@@ -3,7 +3,7 @@ name: iOS e núcleo compartilhado
 on:
   workflow_dispatch:
   push:
-    branches: [feature/ios, "spike/**"]
+    branches: [feature/ios]
     paths:
       - "shared/**"
       - "ios/**"
@@ -26,14 +26,14 @@ jobs:
     name: Testes do shared (JVM)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: "17"
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
       - run: ./gradlew :shared:jvmTest --no-daemon
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: relatorio-testes-shared
@@ -44,12 +44,12 @@ jobs:
     runs-on: macos-15
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: "17"
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
 
       - name: XCFramework do shared (release)
         run: ./gradlew :shared:assembleSharedReleaseXCFramework --no-daemon
@@ -104,7 +104,7 @@ jobs:
           sleep 6
           xcrun simctl io "${{ steps.sim.outputs.udid }}" screenshot inicio.png
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: ios-resultados

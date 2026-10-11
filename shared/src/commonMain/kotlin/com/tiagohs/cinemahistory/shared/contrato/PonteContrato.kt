@@ -1,7 +1,8 @@
 @file:OptIn(kotlin.concurrent.atomics.ExperimentalAtomicApi::class)
 
-package com.tiagohs.cinemahistory.shared.spike
+package com.tiagohs.cinemahistory.shared.contrato
 
+import com.tiagohs.cinemahistory.shared.bridge.Cancelavel
 import com.tiagohs.cinemahistory.shared.model.Resultado
 import kotlin.concurrent.atomics.AtomicBoolean
 import kotlin.concurrent.atomics.AtomicInt
@@ -57,10 +58,12 @@ expect object Memoria {
 }
 
 /**
- * Protótipo da ponte Kotlin↔Swift sem plugin. Cada função cobre uma situação crítica do app;
- * os testes em Swift (CinemaHistoryTests/PonteSpikeTests.swift) exercitam e medem cada uma.
+ * Contrato da ponte Kotlin↔Swift (exportação padrão do Kotlin/Native, sem plugin).
+ * Cada função reproduz uma situação crítica do app; os testes em Swift (CinemaHistoryTests/PonteContratoTests.swift)
+ * verificam o comportamento a cada build. Se uma atualização do Kotlin mudar algo, o CI falha antes do app.
+ * Só existe para testes: as telas nunca usam esta classe.
  */
-class PonteSpike {
+class PonteContrato {
     private val escopo = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     // S1 · resultado genérico x concreto
@@ -100,7 +103,7 @@ class PonteSpike {
         }
     }
 
-    fun tarefaLongaCancelavel(duracaoMs: Long, aoTerminar: (Int) -> Unit): Cancelavel {
+    fun tarefaLongaCancelavel(duracaoMs: Long, aoTerminar: (Int) -> Unit, aoFalhar: (String) -> Unit): Cancelavel {
         passos.store(0); cancelada.store(false)
         val job = escopo.launch {
             try {
@@ -116,6 +119,13 @@ class PonteSpike {
         }
         return Cancelavel(job)
     }
+
+    /** Padrão da fachada para trabalho que pode falhar: resultado ou erro por callback, com alça de cancelamento. */
+    fun falharCancelavel(aoTerminar: (String) -> Unit, aoFalhar: (String) -> Unit): Cancelavel =
+        Cancelavel(escopo.launch {
+            delay(5)
+            aoFalhar("Sem internet")
+        })
 
     // S5 · erros
     @Throws(Exception::class)

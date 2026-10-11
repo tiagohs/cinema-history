@@ -1,4 +1,4 @@
-package com.tiagohs.cinemahistory.shared.spike
+package com.tiagohs.cinemahistory.shared.contrato
 
 /** Os 16 tipos do enum de conteúdo do Android (UC-09). O Swift decide a renderização pelo [tipo]. */
 enum class BlocoTipo {
